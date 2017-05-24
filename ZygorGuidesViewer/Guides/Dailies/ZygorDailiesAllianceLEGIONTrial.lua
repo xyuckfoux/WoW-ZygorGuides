@@ -145,6 +145,16 @@ label "Shellback turtles"
 kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara Map/0 52.18,63.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41290
+Follow the path |goto Azsuna/0 50.27,30.51 < 30 |only if walking
+Follow the path |goto 52.80,33.91 < 30 |only if walking
+accept Aqueous Aethril##41290 |goto 54.44,36.27
+|tip You will accept this quest automatically.
+step
+click Aqueous Aethril##195114
+collect 12 Aqueous Aethril##135480 |q 41290/1 |goto 54.44,36.27
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42165
 accept Azsuna Specimens##42165 |goto Azsuna/0 34.02,45.19
 |tip You will accept this quest automatically.
@@ -215,6 +225,21 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41482/1 |goto 63.80,29.46
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41483
+Follow the path |goto Azsuna/0 47.60,28.99 < 30 |only if walking
+Follow the path |goto 42.72,33.07 < 30 |only if walking
+Follow the path |goto 41.20,35.34 < 30 |only if walking
+Follow the path up |goto 39.19,32.69 < 15 |only if walking
+Follow the path up |goto 37.18,30.67 < 15 |only if walking
+Follow the path |goto 38.85,27.87 < 20 |only if walking
+accept Brimstone Destroyer##41483 |goto 38.53,25.42
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41483/1 |goto 38.53,25.42
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42022
 Follow the path |goto Azsuna/0 46.20,44.55 < 30 |only if walking
 Follow the path |goto Azsuna/0 48.96,42.73 < 30 |only if walking
@@ -226,6 +251,16 @@ Kill enemies around this area
 clicknpc Bound Citizen##91449+
 |tip They look like night elves pinned to walls by spears around this area.
 Defend Against the Hatecoil |q 42022/1 |goto 54.28,44.20
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41529
+Follow the path |goto Azsuna/0 56.69,56.24 < 30 |only if walking
+Follow the path |goto 58.50,51.43 < 25 |only if walking
+accept Bushy Aethril##41529 |goto 62.25,49.27
+|tip You will accept this quest automatically.
+step
+click Bushy Aethril##0
+collect 10 Bushy Aethril##140951 |q 41529/1 |goto 62.25,49.27
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43193
@@ -292,6 +327,18 @@ step
 kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44187
+Follow the path |goto Azsuna/0 47.04,73.14 < 25 |only if walking
+Follow the path |goto 44.01,77.88 < 15 |only if walking
+Follow the path |goto 45.31,80.99 < 25 |only if walking
+Follow the path up |goto 46.73,80.13 < 25 |only if walking
+accept DANGER: Cinderwing##44187 |goto 46.84,77.70
+|tip You will accept this quest automatically.
+step
+kill Cinderwing##111674 |q 44187/1 |goto 46.84,77.70
+|tip Cinderwing is a rare elite. You will most likely need to find a group.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43175
 Follow the path |goto Azsuna/0 55.85,60.01 < 25 |only if walking
 Drop down |goto 56.09,62.29 < 25 |only if walking
@@ -333,6 +380,13 @@ accept DANGER: Jade Darkhaven##44190 |goto 40.37,76.85
 step
 kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
 |tip He is all the way at the top of the tower.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43798
+accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.46,50.10
+|tip You will accept this quest automatically.
+step
+kill Kosumoth the Hungering##111573 |q 43798/1 |goto 46.46,50.10
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44192
@@ -561,6 +615,17 @@ accept Felwort##41513 |goto Azsuna/0 40.60,46.73
 step
 click Felwort##195114
 collect Felwort |q 41513/1 |goto Azsuna/0 40.70,46.53
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41515
+Follow the path |goto Azsuna/0 46.25,44.65 < 30 |only if walking
+Follow the path |goto 46.28,51.59 < 30 |only if walking
+Cross the bridge |goto 48.32,54.49 < 20 |only if walking
+accept Felwort##41515 |goto 48.54,57.05
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41515/1 |goto 48.54,57.05
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41437

@@ -26865,7 +26865,7 @@ accept Essence of Regrowth##44076 |goto 40.96,58.80
 |only Druid
 step
 talk Keeper Remulos##103832
-turnin The Protectors##43991 |goto The Dreamgrove/0 40.14,26.78
+turnin The Protectors##43991 |goto The Dreamgrove/0 44.84,50.13
 |only Druid
 stickystart "Gathering_The_Dreamers_Druid"
 step

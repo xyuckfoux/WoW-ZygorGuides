@@ -331,7 +331,7 @@ end
 
 -- Checks if player can walk towards the destination. If this returns true, DoLinkage will create a "walk"-type connection.
 local ZGV_Pointer_phasedMaps
-local Lib_data_basenodes_MapsWithExplicitFloors
+local Lib_data_basenodes_FloorCrossings
 local neighbourhood_cache
 function Node:CanWalkTo(dest,debugmode)
 	--if type(dest)=="number" then dest=Lib.nodes.all[dest] end
@@ -388,7 +388,7 @@ function Node:CanWalkTo(dest,debugmode)
 		 or (n2.ms and n2.ms[n1_m])
 		)
 		-- and same floor, if that matters
-		and ((n1.f==n2.f) or not Lib_data_basenodes_MapsWithExplicitFloors[n1_m])
+		and ((n1.f==n2.f) or not Lib_data_basenodes_FloorCrossings[n1_m])
 		-- and same region
 		and (n1.region==n2.region)
 	) then return true,reason
@@ -574,7 +574,7 @@ function Node:InterfaceWithLib(lib)
 	Lib_GetDist = Lib.GetDist
 	ZGV=ZygorGuidesViewer
 	ZGV_Pointer_phasedMaps=	ZGV.Pointer.phasedMaps
-	Lib_data_basenodes_MapsWithExplicitFloors=Lib.data.basenodes.MapsWithExplicitFloors
+	Lib_data_basenodes_FloorCrossings=Lib.data.basenodes.FloorCrossings
 end
 function Node:CacheMaxSpeeds()
 	flightinzone={}

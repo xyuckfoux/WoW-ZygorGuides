@@ -268,7 +268,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH cauldron" |confirm
 step
 label "Enchanting craft"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -305,7 +305,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH pen" |confirm
 step
 label "Enchanting craft 2"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -342,7 +342,7 @@ Click here if you have Enchanting and want to craft this pet |next "Enchanting c
 Click here if you would like to purchase this from the Auction House |next "AH torch" |confirm
 step
 label "Enchanting craft 3"
-To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line" |confirm |or
+To obtain the formula to make this pet, click here to go to our Enchanting Quest Line guide |next "Zygor's Profession Guides\\Enchanting\\Quest Guides\\Enchanting Quest Line" |confirm |or
 collect 5 Chaos Crystal##124442 |c
 collect 20 Leylight Shard##124441 |c
 collect 50 Arkhana##124440 |c
@@ -446,7 +446,7 @@ Click here if you have Engineering and want to craft this pet |next "Engineering
 Click here if you would like to purchase this from the Auction House |next "AH Trigger" |confirm
 step
 label "Engineering Pet"
-To obtain the schematic to make this pet, click here to go to our Engineering Quest Line guide |next "Zygor's Alliance Profession Guides\\Engineering\\Legion\\Engineering Quest Line" |confirm |or
+To obtain the schematic to make this pet, click here to go to our Engineering Quest Line guide |next "Zygor's Profession Guides\\Engineering\\Quest Guides\\Engineering Quest Line" |confirm |or
 Once this schematic is learned, you will need to collect the following items:
 collect 50 Leystone Ore##123918 |c
 collect 50 Blood of Sargeras##124124 |c

@@ -1818,7 +1818,7 @@ Routing to the proper section. |next "auctionhouse" |only if skill("Engineering"
 step
 label levelengineer
 You will need at least _12500 gold_ to obtain this _mount_ |tip This will cost more gold if you do not farm for the required materials
-Click here to proceed to the _Engineering_ guide. |next "Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide" |confirm |only if ZGV.guidesets["ProfessionsH"]
+Click here to proceed to the _Engineering_ guide. |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide" |confirm |only if ZGV.guidesets["ProfessionsH"]
 skill Engineering,450
 Click here if you do not wish to make this mount yourself |confirm |next "auctionhouse"
 step
@@ -4747,7 +4747,7 @@ model={31837},
 description="This guide will help you acquire the Frost Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Frozo the Renowned##40160
 buy 1 Pattern: Frosty Flying Carpet##54798
 learn Frosty Flying Carpet##75597 |use Pattern: Frosty Flying Carpet##54798
@@ -4787,7 +4787,7 @@ model={28064},
 description="This guide will help you acquire the Magnificent Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Magar##3363
 learn Magnificent Flying Carpet##60971 |goto Orgrimmar/1 60.7,59.1
 step

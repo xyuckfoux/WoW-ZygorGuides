@@ -752,6 +752,16 @@ click Flourishing Aethril##195114
 collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46166
+Follow the path |goto Azsuna/0 63.34,29.83 < 25 |only if walking
+Follow the path |goto 63.43,33.65 < 25 |only if walking
+Follow the path |goto 60.82,34.73 < 25 |only if walking
+accept Garthulak the Crusher##46166 |goto Azsuna/0 59.63,36.14
+|tip You will accept this quest automatically.
+step
+kill Garthulak the Crusher##116955 |q 46166/1 |goto 59.63,36.14
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41455
 Follow the path |goto Azsuna/0 57.20,59.04 < 25 |only if walking
 Follow the path |goto 58.95,60.11 < 25 |only if walking
@@ -915,6 +925,14 @@ accept Kazruul##46165 |goto 62.69,46.32
 step
 kill Kazruul##118012
 Defeat Kazruul |q 46165/1 |goto 62.69,46.32
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46167
+Follow the path |goto Azsuna/0 47.51,29.14 < 25 |only if walking
+accept Kozrum##46167 |goto Azsuna/0 44.23,32.03
+|tip You will accept this quest automatically.
+step
+kill Kozrum##117061 |q 46167/1 |goto 44.23,32.03
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42101
@@ -1165,7 +1183,7 @@ Slay #10# Eredar at Soul Engine: Apocalypse |q 42275/1 |goto 32.03,52.59
 step
 label quest-46116
 Follow the path |goto Azsuna/0 64.49,26.06 < 25 |only if walking
-accept On Unhallowed Grounds##46116goto 64.03,19.55
+accept On Unhallowed Grounds##46116 |goto 64.03,19.55
 |tip You will accept this quest automatically.
 stickystart "unhallowed"
 step
@@ -1459,6 +1477,17 @@ accept Thar'gokk##46170 |goto Azsuna/0 42.56,41.02
 step
 kill Thar'gokk##117036
 Defeat Thar'gokk |q 46170/1 |goto 42.56,41.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46163
+Follow the path |goto Azsuna/0 42.21,11.33 < 25 |only if walking
+Follow the path |goto 46.69,10.63 < 25 |only if walking
+Follow the path |goto 48.99,10.56 < 25 |only if walking
+Cross the waterfall |goto 50.33,9.25 < 15 |only if walking
+accept Thaz'gul##46163 |goto Azsuna/0 52.02,11.79
+|tip You will accept this quest automatically.
+step
+kill Thaz'gul##117068 |q 46163/1 |goto 52.02,11.79
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018

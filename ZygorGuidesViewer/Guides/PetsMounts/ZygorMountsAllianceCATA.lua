@@ -4480,7 +4480,7 @@ model={31837},
 description="This guide will help you acquire the Frost Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Frozo the Renowned##40160
 buy 1 Pattern: Frosty Flying Carpet##54798
 learn Frosty Flying Carpet##75597 |use Pattern: Frosty Flying Carpet##54798
@@ -4520,7 +4520,7 @@ model={28064},
 description="This guide will help you acquire the Magnificent Flying Carpet mount.",
 },[[
 step
-Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
+Click here to level your tailoring skill if it is not level 425. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide" |only if ZGV.guidesets["ProfessionsA"] |confirm
 talk Georgio Bolero##1346
 learn Magnificent Flying Carpet##60971 |goto Stormwind City,53.1,81.3
 confirm

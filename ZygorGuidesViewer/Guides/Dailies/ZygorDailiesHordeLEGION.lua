@@ -814,6 +814,16 @@ click Flourishing Aethril##195114
 collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46166
+Follow the path |goto Azsuna/0 63.34,29.83 < 25 |only if walking
+Follow the path |goto 63.43,33.65 < 25 |only if walking
+Follow the path |goto 60.82,34.73 < 25 |only if walking
+accept Garthulak the Crusher##46166 |goto Azsuna/0 59.63,36.14
+|tip You will accept this quest automatically.
+step
+kill Garthulak the Crusher##116955 |q 46166/1 |goto 59.63,36.14
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41455
 Follow the path |goto Azsuna/0 57.20,59.04 < 25 |only if walking
 Follow the path |goto 58.95,60.11 < 25 |only if walking
@@ -977,6 +987,14 @@ accept Kazruul##46165 |goto 62.69,46.32
 step
 kill Kazruul##118012
 Defeat Kazruul |q 46165/1 |goto 62.69,46.32
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46167
+Follow the path |goto Azsuna/0 47.51,29.14 < 25 |only if walking
+accept Kozrum##46167 |goto Azsuna/0 44.23,32.03
+|tip You will accept this quest automatically.
+step
+kill Kozrum##117061 |q 46167/1 |goto 44.23,32.03
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42101
@@ -1227,7 +1245,7 @@ Slay #10# Eredar at Soul Engine: Apocalypse |q 42275/1 |goto 32.03,52.59
 step
 label quest-46116
 Follow the path |goto Azsuna/0 64.49,26.06 < 25 |only if walking
-accept On Unhallowed Grounds##46116goto 64.03,19.55
+accept On Unhallowed Grounds##46116 |goto 64.03,19.55
 |tip You will accept this quest automatically.
 stickystart "unhallowed"
 step
@@ -1521,6 +1539,17 @@ accept Thar'gokk##46170 |goto Azsuna/0 42.56,41.02
 step
 kill Thar'gokk##117036
 Defeat Thar'gokk |q 46170/1 |goto 42.56,41.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46163
+Follow the path |goto Azsuna/0 42.21,11.33 < 25 |only if walking
+Follow the path |goto 46.69,10.63 < 25 |only if walking
+Follow the path |goto 48.99,10.56 < 25 |only if walking
+Cross the waterfall |goto 50.33,9.25 < 15 |only if walking
+accept Thaz'gul##46163 |goto Azsuna/0 52.02,11.79
+|tip You will accept this quest automatically.
+step
+kill Thaz'gul##117068 |q 46163/1 |goto 52.02,11.79
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018
@@ -6691,6 +6720,22 @@ kill Leystone Basilisk##103514+
 collect 60 Leystone-Encrusted Spike##134104 |q 41505/1 |goto 80.39,66.52
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41507
+click Grapple Point |only if walking
+|tip It's a grey hook on top of the wall. |only if walking
+Click the first hook |goto Stormheim/0 58.53,48.86 < 6 |only if walking
+Click the second hook |goto 58.64,48.56 < 6 |only if walking
+Click the third hook |goto 58.16,47.81 < 6 |only if walking
+Click the fourth hook |goto 57.65,48.50 < 6 |only if walking
+Drop down |goto 57.52,47.55 < 20 |only if walking
+accept Leystone Basilisks##41507 |goto Stormheim/0 55.53,44.18
+|tip You will accept this quest automatically.
+step
+kill Leystone Basilisk##103514+
+|tip Mine the corpses.
+collect 60 Leystone-Encrusted Spike##134104 |q 41505/7 |goto 55.53,44.18
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45049
 Follow the path |goto Stormheim/0 39.62,63.29 < 30 |only if walking
 Follow the path |goto 43.85,58.14 < 30 |only if walking
@@ -8161,6 +8206,18 @@ Kill Duskwatch enemies around this area
 Slay #12# Duskwatch Forces |q 44801/1 |goto 31.69,53.18
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43778
+Cross the bridge |goto Suramar/0 43.59,35.22 < 25 |only if walking
+Follow the path |goto 44.90,31.73 < 20 |only if walking
+accept Enigmatic##43778 |goto Suramar/0 43.23,29.88
+|tip You will accept this quest automatically.
+step
+click Puzzle Box
+|tip Memorize the patterns of the tiles on the ground.
+|tip When the grid appears, walk on the tiles illustrated in the patterns.
+Solve the Enigma |q 43778/1 |goto 43.46,30.23
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41347
 Follow the path |goto Suramar/0 34.19,50.86 < 25 |only if walking
 Follow the path |goto 33.26,52.89 < 20 |only if walking
@@ -9164,10 +9221,10 @@ Travel to the Ruins of Falanaar |goto 22.69,36.69 < 50 |noway |c |q 43943
 step
 talk First Arcanist Thalyssra##109008
 Speak with Thalyssra |scenariostage 1 |goto 22.85,36.20
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 Enter the building |goto 22.88,35.62 > 1000 |c
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 _Follow the path and kill all enemies:_
 |tip As your withereds get more powerful from training, you'll be able to make it further through this area.
@@ -9180,13 +9237,13 @@ talk Withered Exile##110141+
 |tip Talk to them to recruit them to your army.
 |tip Your withered will sometimes run away when they are hurt. Click them to prevent them from leaving.
 Proceed as Far as you can into the Collapse |scenariostage 2
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 click Glimmering Treasure Chest
 |tip There may be more chests, depending on how far you got into the Collapse.
 Receive the Spoils of War |scenarioend |goto Suramar/0 22.79,36.15
 |tip Use the items you get in your bags to increase your reputation with The Nightfallen.
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 click Telemancy Beacon |goto 22.91,36.07 |n
 Return to Shal'Aran |goto 36.72,46.63 < 50 |noway |c
@@ -9700,6 +9757,23 @@ step
 label "Arach"
 kill Skittering Demon##117509+, Arachni Beast##117516+
 collect 30 Bolt of Felsilk##143856 |q 45694/4 |goto 39.09,27.91
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46105
+Follow the path |goto Broken Shore/0 51.00,25.25 < 25 |only if walking
+Follow the path |goto 51.00,31.01 < 25 |only if walking
+Follow the path |goto 52.29,33.39 < 25 |only if walking
+Follow the path |goto 48.51,35.39 < 25 |only if walking
+accept Arachnid Superiority##46105 |goto Broken Shore/0 43.13,37.46
+|tip You will accept this quest automatically.
+stickystart "Arachnid"
+step
+Enter the building |goto 42.45,35.95 < 20 |walk
+kill Syarrix##120236 |q 46105/2 |goto 41.86,34.08
+step
+label "Arachnid"
+kill Venemous Spitter##118721+, Noxious Weaver##118722+
+collect 8 Potent Venom Sac##147206 |q 46105/1 |goto Broken Shore/0 43.13,37.46
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46750
@@ -10397,6 +10471,24 @@ step
 click Raw Fel##236562
 Unleash Northern Fel Tower |q 46180/2 |goto 43.31,46.65
 |next "Court_Of_Farondis_WQ"
+step
+label quest-45929
+Follow the path |goto Broken Shore/0 43.99,58.29 < 25 |only if walking
+Follow the path |goto 47.06,58.43 < 25 |only if walking
+accept Purging the Flames##45929 |goto Broken Shore/0 54.53,49.69
+|tip You will accept this quest automatically.
+|only Shaman
+stickystart "Cindern 1"
+step
+kill Cindern the Everburning##118323 |q 45929/2 |goto 54.77,47.24
+|only Shaman
+step
+label "Cindern 1"
+kill 10 Burning Felcinder##118281 |q 45929/1 |goto 54.53,49.69
+|tip Drag Felcinders near the shaman totems to kill them quickly.
+|tip Felcinders will curse you with a stacking curse that causes you to take increased fire damage.
+|next "Court_Of_Farondis_WQ"
+|only Shaman
 step
 label quest-46075
 accept Relic Hunting##46075 |goto Broken Shore/0 53.47,14.01

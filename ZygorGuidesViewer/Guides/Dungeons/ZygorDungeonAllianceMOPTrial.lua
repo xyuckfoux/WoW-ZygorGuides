@@ -3,9 +3,11 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DungeonAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Classic Dungeons\\Deadmines (DM) 15-18",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Deadmines",{
 mapid=756,
 achieveid={628},
+condition_suggested="level>=15 and level<=21",
+keywords={"Westfall, Defias"},
 description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
@@ -271,9 +273,11 @@ step
 Congratulations, you have completed The Deadmines! |only if not heroic_dung()
 Congratulations, you have completed The Deadmines (Heroic)! |only if heroic_dung()
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Classic Dungeons\\Wailing Caverns (WC) 18-23",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Wailing Caverns",{
 mapid=749,
 achieveid={630},
+condition_suggested="level>=15 and level<=25",
+keywords={"WC, Barrens, Deviate"},
 description="This guide will walk you through the Wailing Caverns dungeon.",
 },[[
 step

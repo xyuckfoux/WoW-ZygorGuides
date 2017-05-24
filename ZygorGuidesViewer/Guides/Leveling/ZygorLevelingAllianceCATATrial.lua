@@ -17,7 +17,7 @@ step
 talk Joren Ironstock##37081
 accept Hold the Line!##24469 |goto Coldridge Valley 67.1,41.3
 step
-kill 6 Rockjaw Invader##37070+ |q 24469/1 |goto 63.6,50.7
+kill 6 Rockjaw Invader##37070 |q 24469/1 |goto 63.6,50.7
 step
 talk Joren Ironstock##37081
 turnin Hold the Line!##24469 |goto 67.1,41.3
@@ -33,7 +33,7 @@ Use Sten's First Aid Kit on Wounded Coldridge Mountaineers |use Sten's First Aid
 Aid #4# Wounded Coldridge Mountaineers |q 24471/1 |goto 69.3,55.2
 step
 label "Rockjaw_Goons"
-kill 3 Rockjaw Goon##37073+ |q 24470/1 |goto 63.29,57.04
+kill 3 Rockjaw Goon##37073 |q 24470/1 |goto 63.29,57.04
 step
 talk Joren Ironstock##37081
 turnin Give 'em What-For##24470 |goto 67.1,41.3
@@ -279,38 +279,38 @@ step
 talk "Doc" Cogspin##42323
 turnin The Future of Gnomeregan##26199 |goto 39.4,28.4
 accept Meet the High Tinker##26422 |goto 39.4,28.4
-only Gnome Priest
+|only Gnome Priest
 step
 talk Kelsey Steelspark##42366
 turnin The Future of Gnomeregan##26206 |goto 38.0,33.6
 accept Meet the High Tinker##26423 |goto 38.0,33.6
-only Gnome Rogue
+|only Gnome Rogue
 step
 talk Drill Sergeant Steamcrank##42324
 turnin The Future of Gnomeregan##26203 |goto 40.6,35.4
 accept Meet the High Tinker##26425 |goto 40.6,35.4
-only Gnome Warrior
+|only Gnome Warrior
 step
 talk Bipsi Frostflinger##42331
 turnin he Future of Gnomeregan##26197 |goto 41.1,29.1
 accept Meet the High Tinker##26421 |goto 41.1,29.1
-only Gnome Mage
+|only Gnome Mage
 step
 Leave the building |goto 39.58,37.35 < 10 |only if walking
 talk Alamar Grimm##460
 turnin The Future of Gnomeregan##26202 |goto 37.7,38.0
 accept Meet the High Tinker##26424 |goto 37.7,38.0
-only Gnome Warlock
+|only Gnome Warlock
 step
 talk Xi, Friend to the Small##63238
 turnin The Future of Gnomeregan##31135 |goto 40.1,35.6
 accept Meet the High Tinker##31137 |goto 40.1,35.6
-only Gnome Monk
+|only Gnome Monk
 step
 talk Muffinus Chromebrew##103614
 turnin The Future of Gnomeregan##42396 |goto 41.9,31.6
 accept Meet the High Tinker##41218 |goto 41.9,31.6
-only Gnome Hunter
+|only Gnome Hunter
 step
 talk High Tinker Mekkatorque##42317
 turnin Meet the High Tinker##31137 |goto 38.7,32.8 |only Gnome Monk
@@ -576,7 +576,7 @@ accept Fear No Evil##28812 |goto 35.01,38.26 |only Human Warlock
 accept Fear No Evil##28808 |goto 35.01,38.26 |only Human Mage
 accept Fear No Evil##28811 |goto 35.01,38.26 |only Human Rogue
 accept Fear No Evil##29082 |goto 35.01,38.26 |only !Human
-only !Monk
+|only !Monk
 stickystart "injuredsoldiers"
 step
 kill 8 Goblin Assassin##50039 |q 28797/1 |goto 30.7,29.1 |only Human Warrior
@@ -599,7 +599,7 @@ Revive #4# Injured Soldiers |q 28812/1 |goto 30.7,29.1 |only Human Warlock
 Revive #4# Injured Soldiers |q 28808/1 |goto 30.7,29.1 |only Human Mage
 Revive #4# Injured Soldiers |q 28811/1 |goto 30.7,29.1 |only Human Rogue
 Revive #4# Injured Soldiers |q 29082/1 |goto 30.7,29.1 |only !Human
-only !Monk
+|only !Monk
 step
 talk Brother Paxton##951
 turnin Fear No Evil##28813 |goto 35.01,38.26 |only Human Warrior
@@ -610,7 +610,7 @@ turnin Fear No Evil##28812 |goto 35.01,38.26 |only Human Warlock
 turnin Fear No Evil##28808 |goto 35.01,38.26 |only Human Mage
 turnin Fear No Evil##28811 |goto 35.01,38.26 |only Human Rogue
 turnin Fear No Evil##29082 |goto 35.01,38.26 |only !Human
-only !Monk
+|only !Monk
 step
 talk Sergeant Willem##823
 turnin They Sent Assassins##28797 |goto 35.7,39.8 |only Human Warrior
@@ -686,162 +686,214 @@ endlevel=58
 },[[
 step
 talk The Lich King##25462
-accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave,51.3,35.2
+accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.18
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin In Service Of The Lich King##12593 |goto 48,28.5
 accept The Emblazoned Runeblade##12619 |goto 48,28.5
 step
 click Battle-worn Sword##7961
-collect Battle-worn Sword##38607 |n
-Click the Battle-worn Sword in your bags next to a runeforge |use Battle-worn Sword##38607
-|tip The Runforges look like big demon skull furnaces with blue fire in them.
-collect Runebladed Sword|q 12619/1 |goto 47.4,31
+collect Battle-worn Sword##38607 |c |goto 47.4,31 |q 12619
+step
+Use the Battle-worn Sword next to the Runeforge |use Battle-worn Sword##38607
+collect Runebladed Sword##38631 |q 12619/1 |goto 47.39,31.24
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin The Emblazoned Runeblade##12619 |goto 48,28.5
 accept Runeforging: Preparation For Battle##12842 |goto 48,28.5
 step
-Use your Runeforging ability while standing near the Runeforge |cast Runeforging
-|tip They look like big skull furnaces.
-Engrave your sword with the rune of your choice |q 12842/1 |goto 47.4,31
-model 8176
+Use the Runeforging ability near the Runeforge |cast Runeforging##53428
+|tip Open your character's equipment window and engrave your weapon with a rune.
+Emblazon Your Weapon |q 12842/1 |goto 47.39,31.24
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin Runeforging: Preparation For Battle##12842 |goto 48,28.5
 accept The Endless Hunger##12848 |goto 48,28.5
 step
-Equip the Runed Soulblade |use Runed Soulblade##38707
 click Acherus Soul Prison##8115
-|tip It looks like a horned skull on the wall, chaining the prisoners
-kill Unworthy Initiate##29519, Unworthy Initiate##29565, Unworthy Initiate##29567, Unworthy Initiate##29566, Unworthy Initiate##29520
-Dominate an Unworthy Initiate |q 12848/1 |goto 48.9,28.7
+|tip They look like horned skulls on the wall, chaining the prisoners around this area.
+Watch the dialogue
+kill Unworthy Initiate##29565
+Dominate an Unworthy Initiate |q 12848/1 |goto 48.50,28.98
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin The Endless Hunger##12848 |goto 48,28.5
 accept The Eye Of Acherus##12636 |goto 48,28.5
 step
+Follow the path |goto 49.81,31.94 < 20 |walk
 talk The Lich King##25462
-turnin The Eye Of Acherus##12636 |goto 51.3,35.2
-accept Death Comes From On High##12641 |goto 51.3,35.2
+turnin The Eye Of Acherus##12636 |goto 51.34,35.18
+accept Death Comes From On High##12641 |goto 51.34,35.18
 step
 click Eye of Acherus Control Mechanism##8123
-You will take control over the Eye of Acherus |havebuff 136224 |q 12641
-Your World Map will NOT show your current position anymore!
-If you stay floating high enough, the soldiers will not attack you.
-Once the Eye stops moving, go immediately northeast to the blacksmith building.
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
-Analyze the New Avalon Forge |q 12641/1 |goto 52.1,35.2
+Take Control of the Eye of Acherus |havebuff The Eye of Acherus |goto 52.13,35.21 |q 12641
 step
-Go south to the big fort
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
-Analyze Scarlet Hold |q 12641/3
+_Go Northeast:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the blacksmith building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
+Analyze the New Avalon Forge |q 12641/1
 step
-Go west to the town hall building with a clock tower
-|tip It has a red roof and looks like an inn. NOT the big white building.
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
+_Go South:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the big fort building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
+Analyze the Scarlet Hold |q 12641/3
+step
+_Go West:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the town hall building with a clock tower, with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
 Analyze the New Avalon Town Hall |q 12641/2
 step
-Go south to the small church
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
+_Go South:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the small church building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
 Analyze the Chapel of the Crimson Flame |q 12641/4
 step
-Use your Recall Eye of Acherus ability to return to Ebon Hold |nobuff Spell_Shadow_UnholyFrenzy |petaction 5
+Use the Recall Eye of Acherus ability |petaction 5
+Click Here After You Return to Ebon Hold |confirm |c |q 12641
 step
 talk The Lich King##25462
-turnin Death Comes From On High##12641 |goto 51.3,35.2
-accept The Might Of The Scourge##12657 |goto 51.3,35.2
+turnin Death Comes From On High##12641 |goto 51.34,35.18
+accept The Might Of The Scourge##12657 |goto 51.34,35.18
 step
-Go through the pink teleporter |goto Plaguelands: The Scarlet Enclave 50.5,33.3 < 5 |c |walk
+Walk onto the teleport pad |goto 50.49,33.37 |n
+Teleport Upstairs |goto 50.13,32.49 < 10 |noway |c |q 12657
+step
 talk Highlord Darion Mograine##28444
-turnin The Might Of The Scourge##12657 |goto 48.9,29.7
-accept Report To Scourge Commander Thalanor##12850 |goto 48.9,29.7
+turnin The Might Of The Scourge##12657 |goto 48.88,29.76
+accept Report To Scourge Commander Thalanor##12850 |goto 48.88,29.76
 step
 talk Lord Thorval##28472
-accept The Power Of Blood, Frost And Unholy##12849 |goto 47.5,26.5 |instant
+accept The Power Of Blood, Frost And Unholy##12849 |goto 47.48,26.56 |instant
 step
 talk Scourge Commander Thalanor##28510
-turnin Report To Scourge Commander Thalanor##12850 |goto 51.6,34.5
-accept The Scarlet Harvest##12670 |goto 51.6,34.5
+|tip He walks around this area.
+turnin Report To Scourge Commander Thalanor##12850 |goto 50.70,35.09
+accept The Scarlet Harvest##12670 |goto 50.70,35.09
 step
-clicknpc Scourge Gryphon##29488 |goto 52.1,35 |n
-Arrive at Death's Breach |goto Plaguelands: The Scarlet Enclave,53.2,31.1 < 5 |noway |c
+clicknpc Scourge Gryphon##29488 |goto 50.96,36.15 |n
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12670
 step
 talk Prince Valanar##28377
-turnin The Scarlet Harvest##12670 |goto 52.3,34
-accept If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.3,34
+turnin The Scarlet Harvest##12670 |goto 52.28,33.96
+accept If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.28,33.96
 step
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 accept Grand Theft Palomino##12680 |goto 52.5,34.6
 step
 talk Olrun the Battlecaller##29047
-accept Death's Challenge##12733 |goto 54.6,34.2
+|tip She flies around this small area.
+accept Death's Challenge##12733 |goto 54.63,33.95
 step
-Walk around Death's Breach
-Challenge Death Knight Initiates to duel
-kill Death Knight Initiate##28392+, Death Knight Initiate##28394+
-Defeat 5 Death Knights in a duel |q 12733/1 |goto 51.7,35.1
+talk Death Knight Initiate##28406
+|tip They are all around this area.
+Tell them _"I challenge you, death knight!"_
+kill Death Knight Initiate##28392+
+Defeat #5# Death Knights in a Duel |q 12733/1 |goto 53.48,33.15
 step
 talk Olrun the Battlecaller##29047
-turnin Death's Challenge##12733 |goto 54.6,34.2
+|tip She flies around this small area.
+turnin Death's Challenge##12733 |goto 54.63,33.95
 step
 talk Orithos the Sky Darkener##28647
+|tip He paces around this area.
 accept Tonight We Dine In Havenshire##12679 |goto 53.2,36.9
+stickystart "Slay_Scarlet_Crusaders"
+stickystart "Citizens_Of_Havenshire"
 step
-kill Scarlet Captain##28611+, Scarlet Infantryman##28609+, Scarlet Medic##28608+, Scarlet Peasant##28557+
-kill 10 Scarlet Crusader |q 12678/1 |goto 52.2,45.9
-step
+Follow the path down |goto 50.66,38.32 < 20 |only if walking
+Follow the path down |goto 52.21,43.78 < 15 |only if walking
 click Abandoned Mail##4851
-|tip It's a roll of parchment on top of the mailbox, avoid clicking the mailbox itself.
-accept Abandoned Mail##12711 |goto 55.2,46.2 |instant
+|tip It looks like a roll of parchment on top of the mailbox.
+accept Abandoned Mail##12711 |goto 55.26,46.15 |instant
 step
-kill 10 Citizen of Havenshire##28660+ |q 12678/2 |goto 56.4,45
+label "Slay_Scarlet_Crusaders"
+Kill Scarlet enemies around this area
+Slay #10# Scarlet Crusaders |q 12678/1 |goto 52.2,45.9
+stickystart "Saronite_Arrows"
 step
+label "Citizens_Of_Havenshire"
+kill 10 Citizen of Havenshire##28660 |q 12678/2 |goto 56.4,45
+step
+label "Saronite_Arrows"
 click Saronite Arrow##8094+
-|tip Usually more than one spawn on top of each other, so you can click more than once
-collect 15 Saronite Arrow |q 12679/1 |goto 56.2,49.4
+|tip They look like yellow and green arrows stuck in the ground around this area.
+collect 15 Saronite Arrow##39160 |q 12679/1 |goto 56.2,49.4
 step
-Click on a Havenshire Colt to ride it. |clicknpc Havenshire Colt##28607 |invehicle |c |q 12680 |goto 55.6,43.2
-|tip Watch out for the Stable Master, he's elite and will pull you off the horse
-Once on the horse, run back here |goto 52.8,34.1 <5 |c
-Use your Deliver Stolen Horse ability on your bar when standing next to Salanar the Horseman |petaction Deliver Stolen Horse
+click Havenshire Horse
+|tip They are all around this area.
+|tip Watch out for Stable Master Kitrik, he's elite and will pull you off the horse.
+Ride the Havenshire Horse |invehicle |goto 55.74,43.39 |c |q 12680
+step
+Follow the path up |goto 53.05,43.28 < 20 |only if walking
+Continue up the path |goto 50.61,40.72 < 20 |only if walking
+Follow the path |goto 50.92,36.79 < 20 |only if walking
+Use the Deliver Stolen Horse ability next to Salanar the Horseman
+|tip He walks back and forth along this path.
+Successfully Steal the Horse |goto 52.8,34.1 |q 12680/1
 step
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 turnin Grand Theft Palomino##12680 |goto 52.5,34.6
 accept Into the Realm of Shadows##12687 |goto 52.5,34.6
 step
+Follow the path down |goto 50.66,38.32 < 20 |only if walking
+Follow the path down |goto 52.21,43.78 < 30 |only if walking
 kill Dark Rider of Acherus##28768
-clicknpc Acherus Deathcharger##28302 |goto 55.6,43.2 |invehicle |c
-|tip They walk around on horses.
-Run back to Death's Breach quickly |goto Plaguelands: The Scarlet Enclave 50.6,38.4 |noway |c |q 12687
+|tip They ride around on horses around this area.
+clicknpc Acherus Deathcharger##28302
+|tip It's the horse they were riding on before you killed them.
+Click Here After You Steal an Acherus Deathcharger |confirm |c |goto 55.6,43.2 |q 12687
 step
-Use your Horseman's Call ability on your bar when standing next to Salanar the Horseman |petaction Horseman's Call
+Follow the path up |goto 53.05,43.28 < 20 |only if walking
+Use the Horseman's Call ability
+Watch the dialogue
+Complete the Horseman's Challenge |q 12687/1 |goto 50.88,41.74
+step
+Follow the path up |goto 50.61,40.72 < 20 |only if walking
+Follow the path |goto 50.92,36.79 < 20 |only if walking
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 turnin Into the Realm of Shadows##12687 |goto 52.5,34.6
 step
 talk Prince Valanar##28377
 turnin If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.3,34
 step
 talk Orithos the Sky Darkener##28647
+|tip He paces around this area.
 turnin Tonight We Dine In Havenshire##12679 |goto 53.2,36.9
 step
 talk Prince Valanar##28377
 accept Gothik the Harvester##12697 |goto 52.3,34
 step
 talk Gothik the Harvester##28658
-turnin Gothik the Harvester##12697 |goto 54.1,35
-accept The Gift That Keeps On Giving##12698 |goto 54.1,35
+turnin Gothik the Harvester##12697 |goto 54.07,35.03
+accept The Gift That Keeps On Giving##12698 |goto 54.07,35.03
 step
-Use your Gift of the Harvester on Scarlet Miners inside this mine |use Gift of the Harvester##39253
-|tip It has a pretty low success rate, just keep trying
-Create 5 Scarlet Ghouls to follow you |goto 58.2,31
-confirm
-modelnpc 28819
-modelnpc 28897
+Follow the path down |goto 54.94,31.35 < 20 |only if walking
+Use the Gift of the Harvester on Scarlet Miners |use Gift of the Harvester##39253
+|tip They appear at the entrance of the mine.
+|tip Some will turn into Scarlet Ghosts and attack you.
+|tip It has a pretty low success rate, just keep trying.
+Click Here When 5 Scarlet Ghouls Are Following You |confirm |c |goto 58.18,31.01 |q 12698
+|tip The ghouls that count for the quest are more brown in color and have yellow circles around their feet.
 step
-Stand next to Gothik the Harvester
-|tip He is standing in front of a small roundish stone altar thing.  He has a goat skull on his head.
-Return 5 Scarlet Ghouls |q 12698/1
+Follow the path up |goto 57.03,31.24 < 20 |only if walking
+Follow the path |goto 54.69,31.79 < 20 |only if walking
+Return #5# Scarlet Ghouls |q 12698/1 |goto 54.07,35.03
+step
 talk Gothik the Harvester##28658
 turnin The Gift That Keeps On Giving##12698 |goto 54.1,35
 accept An Attack Of Opportunity##12700 |goto 54.1,35
@@ -850,246 +902,436 @@ talk Prince Valanar##28377
 turnin An Attack Of Opportunity##12700 |goto 52.3,34
 accept Massacre At Light's Point##12701 |goto 52.3,34
 step
-click Inconspicuous Mine Car##7997
-|tip It's a little mine car sitting next to an outhouse.
-The miner takes you to a ship
-click Scarlet Cannon##245
-|tip On the side of the ship.
-Shoot the soldiers on the beach with the cannon
-kill Scarlet Fleet Defender##28834+ |q 12701/1 |goto 58.5,33
+Follow the path down |goto 54.94,31.35 < 20 |only if walking |n
+Follow the path |goto 57.13,31.39 < 20 |only if walking |n
+Follow the path |goto 58.05,33.31 < 15 |only if walking |n
+Find the Inconspicuous Mine Cart |goto 58.50,33.03 < 15 |c |q 12701
 step
-Use your Skeletal Gryphon Escape ability on your hotbar to escape to Death's Breach |goto 52.6,34.5 < 5
+click Inconspicuous Mine Car##7997
+Ride in the Inconspicuous Mine Cart |goto 58.50,33.03 > 30 |c |q 12701
+step
+Ride to the Scarlet Fleet Ship |goto 67.94,46.09 < 20 |c |q 12701
+step
+click Scarlet Cannon##245
+kill Scarlet Fleet Defender##28834+
+|tip Use the abilities on your action bar to shoot the soldiers on the beach.
+Slay #100# Scarlet Defenders |q 12701/1 |goto 67.56,46.07
+step
+Use the Skeletal Gryphon Escape ability
+Escape to Death's Breach |goto 52.6,34.5 < 20 |noway |c |q 12701
+step
 talk Prince Valanar##28377
 turnin Massacre At Light's Point##12701 |goto 52.3,34
 accept Victory At Death's Breach!##12706 |goto 52.3,34
 step
 clicknpc Scourge Gryphon##29501 |goto 53.1,32.5 |n
-Arrive at Archerus |goto 51.1,34.7 < 5 |noway |c
+Fly Up to Archerus |goto 51.1,34.7 < 20 |noway |c |q 12706
 step
 talk Highlord Darion Mograine##28444
-turnin Victory At Death's Breach!##12706 |goto 48.9,29.7
-accept The Will Of The Lich King##12714 |goto 48.9,29.7
+turnin Victory At Death's Breach!##12706 |goto 48.87,29.76
+accept The Will Of The Lich King##12714 |goto 48.87,29.76
 step
 clicknpc Scourge Gryphon##29488 |goto 52.1,35 |n
-Arrive at Death's Breach |goto Plaguelands: The Scarlet Enclave,53.2,31.1 < 5 |noway |c
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12714
 step
 talk Prince Valanar##28907
-turnin The Will Of The Lich King##12714 |goto 53.5,36.6
-accept The Crypt of Remembrance##12715 |goto 53.5,36.6
+turnin The Will Of The Lich King##12714 |goto 53.47,36.55
+accept The Crypt of Remembrance##12715 |goto 53.47,36.55
 step
+Follow the path down |goto 50.75,38.22 < 20 |only if walking
+Continue down the path |goto 50.62,40.87 < 20 |only if walking
+Follow the path |goto 52.83,45.08 < 20 |only if walking
 talk Noth the Plaguebringer##28919
 accept The Plaguebringer's Request##12716 |goto 55.9,52.4
 step
-Go down into the crypt |goto 54.3,58.1 < 5 |c |walk
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin The Crypt of Remembrance##12715
-accept Nowhere To Run And Nowhere To Hide##12719
+|tip Downstairs inside the crypt.
+turnin The Crypt of Remembrance##12715 |goto 54.30,57.31
+accept Nowhere To Run And Nowhere To Hide##12719 |goto 54.30,57.31
 step
 talk Baron Rivendare##28910
-accept Lambs To The Slaughter##12722 |goto 54.7,57.4
+|tip Downstairs inside the crypt.
+accept Lambs To The Slaughter##12722 |goto 54.66,57.43
+stickystart "Slay_Scarlet_Crusade_Soldiers"
+stickystart "Crusader_Skulls"
+stickystart "Citizens_Of_New_Avalaon"
 step
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Enter the building |goto 57.67,64.41 < 10 |walk
 click Empty Cauldron##7199
-|tip In the basement of the building that looks like an inn.
-collect Empty Cauldron|q 12716/1 |goto 57.8,61.8
+|tip Downstairs inside the building.
+collect Empty Cauldron##39324 |q 12716/1 |goto 57.8,61.8
 step
+Leave the building |goto 57.67,64.41 < 10 |walk
+Follow the path |goto 58.48,64.68 < 15 |only if walking
 click Iron Chain##8040
-|tip It's inside the Forge.
-collect Iron Chain|q 12716/2 |goto 62,60.2
+|tip Inside the building.
+collect Iron Chain##39326 |q 12716/2 |goto 62.05,60.24
 step
-kill Mayor Quimby##28945 |q 12719/1 |goto 52.2,71.2
+Follow the path |goto 59.66,61.13 < 20 |only if walking
+Follow the path |goto 58.24,65.68 < 20 |only if walking
+Run up the stairs |goto 54.23,70.21 < 15 |only if walking
+kill Mayor Quimby##28945 |q 12719/1 |goto 52.24,71.17
+|tip Inside the building.
 step
 click New Avalon Registry##928
-collect New Avalon Registry|q 12719/2 |goto 52.5,71
+collect New Avalon Registry##39362 |q 12719/2 |goto 52.45,71.00
 step
-Run around the town and do the following:
-kill 10 Scarlet Commander##28936+, Scarlet Commander Rodrick##29000+, Scarlet Lord Jesseriah McCree##28964+, Scarlet Preacher##28939+, Scarlet Commander##54386+, Scarlet Crusader##28940+, Scarlet Marksman##28610+ |q 12722/1
-kill 15 Citizen of New Avalon##28942+, Citizen of New Avalon##28941+ |q 12722/2
-collect 10 Crusader Skull|q 12716/3
-modelnpc High Inquisitor Valroth##29001
+label "Slay_Scarlet_Crusade_Soldiers"
+Kill Scarlet enemies around this area
+Slay #10# Scarlet Crusade Soldiers |q 12722/1 |goto 54.27,70.15
 step
-Go down into the crypt |goto 54.3,58.1 < 5
+label "Crusader_Skulls"
+Kill Scarlet enemies around this area
+kill Citizen of New Avalon##28942+
+|tip Usually inside the buildings around this area.
+collect 10 Crusader Skull##39328 |q 12716/3 |goto 54.27,70.15
+step
+label "Citizens_Of_New_Avalaon"
+kill 15 Citizen of New Avalon##28942 |q 12722/2 |goto 54.27,70.15
+|tip Usually inside the buildings around this area.
+step
+Follow the path down |goto 56.04,61.53 < 20 |only if walking
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin Nowhere To Run And Nowhere To Hide##12719
-accept How To Win Friends And Influence Enemies##12720
+|tip Downstairs inside the crypt.
+turnin Nowhere To Run And Nowhere To Hide##12719 |goto 54.30,57.31
+accept How To Win Friends And Influence Enemies##12720 |goto 54.30,57.31
 step
 talk Baron Rivendare##28910
-turnin Lambs To The Slaughter##12722 |goto 54.7,57.4
+|tip Downstairs inside the crypt.
+turnin Lambs To The Slaughter##12722 |goto 54.66,57.43
 step
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
 talk Noth the Plaguebringer##28919
 turnin The Plaguebringer's Request##12716 |goto 55.9,52.4
 accept Noth's Special Brew##12717 |goto 55.9,52.4
 step
 click Plague Cauldron##4271
-turnin Noth's Special Brew##12717 |goto 56.1,52.1
+turnin Noth's Special Brew##12717 |goto 56.15,51.98
 step
-Open the Ornate Jeweled Box in your bags |use Ornate Jeweled Box##39418
-Equip the Keleseth's Persuader swords |use Keleseth's Persuader##39371
-Attack Scarlet soldiers and stop hitting them when they start talking, so you don't kill them too fast
-Repeat until a soldier gives you information
+Use the Ornate Jeweled Box |use Ornate Jeweled Box##39418
+|tip Equip Keleseth's Persuader.
+Click Here After You Equip Keleseth's Persuader |confirm |c |q 12720
+step
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Kill Scarlet enemies around this area
+|tip Try not to kill them too fast, and stop attacking them when they start talking.
+|tip Eventually one of the enemies will give you information.
 Reveal the "Crimson Dawn" |q 12720/1 |goto 55.8,65.8
-modelnpc Scarlet Commander##54386
-modelnpc Scarlet Preacher##28939
-modelnpc Scarlet Crusader##28940
-modelnpc Scarlet Marksman##28610
 step
-Go down into the crypt |goto 54.3,58.1 < 5
+Equip Your Normal Weapon
+Click Here After Equipping Your Normal Weapon |confirm |c |q 12720
+step
+Follow the path down |goto 56.04,61.53 < 20 |only if walking
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin How To Win Friends And Influence Enemies##12720
-accept Behind Scarlet Lines##12723
+|tip Downstairs inside the crypt.
+turnin How To Win Friends And Influence Enemies##12720 |goto 54.30,57.31
+accept Behind Scarlet Lines##12723 |goto 54.30,57.31
 step
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Continue following the path |goto 56.29,68.44 < 20 |only if walking
+Follow the path |goto 57.12,75.46 < 20 |only if walking
 talk Orbaz Bloodbane##28914
-|tip He is upstairs
-turnin Behind Scarlet Lines##12723 |goto 56.3,79.8
-accept The Path Of The Righteous Crusader##12724 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin Behind Scarlet Lines##12723 |goto 56.26,79.84
+accept The Path Of The Righteous Crusader##12724 |goto 56.26,79.84
 step
 talk Thassarian##28913
-accept Brothers In Death##12725 |goto 56.3,80.2
+|tip Upstairs inside the building.
+accept Brothers In Death##12725 |goto 56.27,80.15
 step
-Go northeast into Scarlet Hold and into the basement
+Follow the path |goto 57.00,77.83 < 20 |only if walking
+Enter the building |goto 61.10,68.06 < 15 |walk
+Follow the path |goto 62.22,68.69 < 10 |walk
+Follow the path |goto 62.40,69.32 < 10 |walk
+Run down the stairs |goto 62.77,68.63 < 7 |walk
 talk Koltira Deathweaver##28912
-turnin Brothers In Death##12725 |goto 63.0,67.8
-accept Bloody Breakout##12727 |goto 63.0,67.8
+|tip Downstairs in the building.
+turnin Brothers In Death##12725 |goto 62.96,67.85
+accept Bloody Breakout##12727 |goto 62.96,67.85
 step
-Koltira Deathweaver forms a bubble and you have to fight the mobs as the come in waves
-Stay inside the bubble, it reduces spell damage done to you, so you'll live
+Kill the enemies that attack in waves
 kill High Inquisitor Valroth##29001
+|tip Stay inside the bubble Koltira Deathweaver forms.
+|tip It reduces spell damage done to you, so you'll live.
 click High Inquisitor Valroth's Remains##2951
-collect Valroth's Head |q 12727/1
+|tip It will be wherever you ended up killing High Inquisitor Valroth.
+collect Valroth's Head |q 12727/1 |goto 62.91,68.10
 step
-Go upstairs in the fort
 click New Avalon Patrol Schedule##8051
+|tip It looks like a thick book sitting on a long table upstairs in a big open room in the fort.
 collect New Avalon Patrol Schedule|q 12724/1 |goto 63.0,68.3
 step
+Leave the building |goto 61.08,68.08 < 15 |walk
+Follow the path up |goto 58.70,71.30 < 20 |only if walking
 talk Orbaz Bloodbane##28914
-turnin The Path Of The Righteous Crusader##12724 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin The Path Of The Righteous Crusader##12724 |goto 56.26,79.84
 step
 talk Thassarian##28913
-turnin Bloody Breakout##12727 |goto 56.3,80.2
-accept A Cry For Vengeance!##12738 |goto 56.3,80.2
+|tip Upstairs inside the building.
+turnin Bloody Breakout##12727 |goto 56.27,80.15
+accept A Cry For Vengeance!##12738 |goto 56.27,80.15
 step
+Follow the path |goto 52.66,80.93 < 15 |only if walking
 talk Knight Commander Plaguefist##29053
+|tip He walks around this area.
 turnin A Cry For Vengeance!##12738 |goto 52.9,81.5
-accept A Special Surprise##12742 |only Human
-accept A Special Surprise##12743 |only NightElf
-accept A Special Surprise##12744 |only Dwarf
-accept A Special Surprise##12745 |only Gnome
-accept A Special Surprise##12746 |only Draenei
-accept A Special Surprise##28649 |only Worgen
+accept A Special Surprise##12742 |goto 52.9,81.5 |only Human
+accept A Special Surprise##12743 |goto 52.9,81.5 |only NightElf
+accept A Special Surprise##12744 |goto 52.9,81.5 |only Dwarf
+accept A Special Surprise##12745 |goto 52.9,81.5 |only Gnome
+accept A Special Surprise##12746 |goto 52.9,81.5 |only Draenei
+accept A Special Surprise##28649 |goto 52.9,81.5 |only Worgen
+accept A Special Surprise##12739 |goto 52.9,81.5 |only Tauren
+accept A Special Surprise##12747 |goto 52.9,81.5 |only BloodElf
+accept A Special Surprise##12748 |goto 52.9,81.5 |only Orc
+accept A Special Surprise##12749 |goto 52.9,81.5 |only Troll
+accept A Special Surprise##12750 |goto 52.9,81.5 |only Scourge
+accept A Special Surprise##28650 |goto 52.9,81.5 |only Goblin
 step
+Watch the dialogue
 kill Valok the Righteous##29070 |q 12746/1 |goto 54.5,83.4
-only Draenei
+|tip Inside the building.
+|only Draenei
 step
+Watch the dialogue
 kill Yazmina Oakenthorn##29065 |q 12743/1 |goto 54.2,83.9
-only NightElf
+|tip Inside the building.
+|only NightElf
 step
+Watch the dialogue
 kill Goby Blastenheimer##29068 |q 12745/1 |goto 53.9,83.8
-only Gnome
+|tip Inside the building.
+|only Gnome
 step
+Watch the dialogue
 kill Ellen Stanbridge##29061 |q 12742/1 |goto 53.5,83.8
-only Human
+|tip Inside the building.
+|only Human
 step
+Watch the dialogue
 kill Donovan Pulfrost##29067 |q 12744/1 |goto 54,83.3
-only Dwarf
+|tip Inside the building.
+|only Dwarf
 step
-kill Lord Harford##49355 |q 28649/1 |v
-only Worgen
+Watch the dialogue
+kill Lord Harford##49355 |q 28649/1 |goto 54.14,83.29
+|tip Inside the building.
+|only Worgen
+step
+Watch the dialogue
+kill Malar Bravehorn##29032 |q 12739/1 |goto 54.50,83.85
+|tip Inside the building.
+|only Tauren
+step
+Watch the dialogue
+kill Lady Eonys##29074 |q 12747/1 |goto 54.28,83.31
+|tip Inside the building.
+|only BloodElf
+step
+Watch the dialogue
+kill Kug Ironjaw##29072 |q 12748/1 |goto 53.77,83.27
+|tip Inside the building.
+|only Orc
+step
+Watch the dialogue
+kill Iggy Darktusk##29073 |q 12749/1 |goto 53.80,83.75
+|tip Inside the building.
+|only Troll
+step
+Watch the dialogue
+kill Antoine Brack##29071 |q 12750/1 |goto 53.54,83.30
+|tip Inside the building.
+|only Scourge
+step
+Watch the dialogue
+kill Gally Lumpstain##49356 |q 28650/1 |goto 54.11,83.77
+|tip Inside the building.
+|only Goblin
 step
 talk Knight Commander Plaguefist##29053
+|tip He walks around this area.
 turnin A Special Surprise##12742 |goto 52.9,81.5 |only Human
 turnin A Special Surprise##12743 |goto 52.9,81.5 |only NightElf
 turnin A Special Surprise##12744 |goto 52.9,81.5 |only Dwarf
 turnin A Special Surprise##12745 |goto 52.9,81.5 |only Gnome
 turnin A Special Surprise##12746 |goto 52.9,81.5 |only Draenei
 turnin A Special Surprise##28649 |goto 52.9,81.5 |only Worgen
+turnin A Special Surprise##12739 |goto 52.9,81.5 |only Tauren
+turnin A Special Surprise##12747 |goto 52.9,81.5 |only BloodElf
+turnin A Special Surprise##12748 |goto 52.9,81.5 |only Orc
+turnin A Special Surprise##12749 |goto 52.9,81.5 |only Troll
+turnin A Special Surprise##12750 |goto 52.9,81.5 |only Scourge
+turnin A Special Surprise##28650 |goto 52.9,81.5 |only Goblin
 accept A Sort Of Homecoming##12751 |goto 52.9,81.5
 step
+Follow the path |goto 52.72,80.46 < 15 |only if walking
 talk Thassarian##28913
-turnin A Sort Of Homecoming##12751 |goto 56.3,80.2
+|tip Upstairs inside the building.
+turnin A Sort Of Homecoming##12751 |goto 56.27,80.15
 step
 talk Orbaz Bloodbane##28914
-accept Ambush At The Overlook##12754 |goto 56.3,79.8
+|tip Upstairs inside the building.
+accept Ambush At The Overlook##12754 |goto 56.26,79.84
 step
-Use your Makeshift Cover while standing on the edge of the hill |use Makeshift Cover##39645
+Use the Makeshift Cover |use Makeshift Cover##39645
 kill Scarlet Courier##29076
-collect Scarlet Courier's Belongings |q 12754/1 |goto 60,78.5
-collect Scarlet Courier's Message |q 12754/2 |goto 60,78.5
+collect Scarlet Courier's Belongings##39646 |q 12754/1 |goto 59.97,78.57
+collect Scarlet Courier's Message##39647 |q 12754/2 |goto 59.97,78.57
 step
 talk Orbaz Bloodbane##28914
-turnin Ambush At The Overlook##12754 |goto 56.3,79.8
-accept A Meeting With Fate##12755 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin Ambush At The Overlook##12754 |goto 56.26,79.84
+accept A Meeting With Fate##12755 |goto 56.26,79.84
 step
+Follow the path down |goto 60.13,76.98 < 15 |only if walking
+Follow the path down |goto 60.47,80.43 < 20 |only if walking
+Follow the path |goto 62.90,85.29 < 20 |only if walking
 talk High General Abbendis##29077
-turnin A Meeting With Fate##12755 |goto 65.6,83.8
-accept The Scarlet Onslaught Emerges##12756 |goto 65.6,83.8
+turnin A Meeting With Fate##12755 |goto 65.65,83.82
+accept The Scarlet Onslaught Emerges##12756 |goto 65.65,83.82
 step
+Follow the path up |goto 63.40,85.39 < 20 |only if walking
+Continue up the path |goto 61.76,83.29 < 20 |only if walking
+Continue up the path |goto 60.55,79.94 < 20 |only if walking
+Follow the path up |goto 60.30,77.04 < 15 |only if walking
 talk Orbaz Bloodbane##28914
-turnin The Scarlet Onslaught Emerges##12756 |goto 56.3,79.8
-accept Scarlet Armies Approach...##12757 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin The Scarlet Onslaught Emerges##12756 |goto 56.26,79.84
+accept Scarlet Armies Approach...##12757 |goto 56.26,79.84
 step
-click Portal to Acherus##8046
-Teleport to Acherus |goto 50.2,32.6 < 5 |noway |c
+click Portal to Acherus##8046 |goto 56.18,80.04 |n
+Teleport to Acherus |goto 50.2,32.6 < 20 |noway |c |q 12757
 step
 talk Highlord Darion Mograine##28444
-turnin Scarlet Armies Approach...##12757 |goto 48.9,29.7
-accept The Scarlet Apocalypse##12778 |goto 48.9,29.7
+turnin Scarlet Armies Approach...##12757 |goto 48.89,29.77
+accept The Scarlet Apocalypse##12778 |goto 48.89,29.77
 step
-clicknpc Scourge Gryphon##29488 |goto 52.1,35 |n
-Arrive at Death's Breach |goto Plaguelands: The Scarlet Enclave,53.2,31.1 < 5 |noway |c
+clicknpc Scourge Gryphon##29488 |goto 52.08,35.03 |n
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12778
 step
+Run up the ramp |goto 53.31,36.37 < 10 |only if walking
 talk The Lich King##29110
-turnin The Scarlet Apocalypse##12778 |goto 53.6,36.9
-accept An End To All Things...##12779 |goto 53.6,36.9
+turnin The Scarlet Apocalypse##12778 |goto 53.57,36.85
+accept An End To All Things...##12779 |goto 53.57,36.85
 step
-Click the Horn of the Frostbrood in your bags |use Horn of the Frostbrood##39700
-This will summon a dragon for you to ride around on
-Fly and and use your dragon abilities to do the following:
-kill 150 Scarlet Soldier##4286+ |q 12779/1 |goto 55.8,61
-Destroy 10 Scarlet Ballistas |q 12779/2 |goto 55.8,61
-More can be found around [Plaguelands: The Scarlet Enclave,58.3,71.1]
+Use the Horn of the Frostbrood |use Horn of the Frostbrood##39700
+Summon a Dragon to Ride |invehicle |c |q 12779
+stickystart "Destroy_Scarlet_Ballistas"
 step
-Fly back to Death's Breach and click the red arrow on your hot bar to jump off the dragon |outvehicle |c |goto 52.8,37.3
+kill 150 Scarlet Soldier##4286 |q 12779/1 |goto 55.8,61
+|tip Use the abilities on your action bar.
 step
+label "Destroy_Scarlet_Ballistas"
+Destroy #10# Scarlet Ballistas |q 12779/2 |goto 55.8,61
+|tip They look like big wooden crossbow machines around this area.
+|tip Use the abilities on your action bar.
+step
+Return to Death's Breach |goto 52.47,37.18 < 20 |c |q 12779
+|tip Don't click the red arrow to stop controlling the Frostbrood Vanquisher yet.
+step
+Stop Controlling the Frostbrood Vanquisher |outvehicle |c |goto 52.53,37.39 |q 12779
+|tip Click the red arrow on your action bar.
+step
+Run up the ramp |goto 53.31,36.37 < 10 |only if walking
 talk The Lich King##29110
-turnin An End To All Things...##12779 |goto 53.6,36.9
-accept The Lich King's Command##12800 |goto 53.6,36.9
+turnin An End To All Things...##12779 |goto 53.57,36.85
+accept The Lich King's Command##12800 |goto 53.57,36.85
 step
-The path over to Browman Mill starts here
-Follow the path west |goto 33.9,30.4
+Follow the path |goto 50.16,31.36 < 20 |only if walking
+Enter the tunnel |goto 49.13,28.43 < 15 |only if walking
+Leave the tunnel |goto 47.35,24.82 < 15 |only if walking
+Follow the path |goto 46.77,22.04 < 15 |only if walking
+Follow the path down |goto 40.02,19.25 < 15 |only if walking
+Follow the path |goto 36.04,24.04 < 20 |only if walking
 talk Scourge Commander Thalanor##31082
-turnin The Lich King's Command##12800 |goto 50.4,31.9,0.5
-accept The Light of Dawn##12801 |goto 50.4,31.9,0.5
+|tip He paces back and forth.
+turnin The Lich King's Command##12800 |goto 33.99,30.36
+accept The Light of Dawn##12801 |goto 33.99,30.36
 step
 talk Highlord Darion Mograine##29173
-|tip If he is not here then the battle has already started an you might be able to join the battle at the chapel to save some time.
-Tell him you are ready for the siege (you may be unable to do this if someone else already has, don't worry)
-Wait for the battle to start in 5 minutes
-Help fight the epic battle at [Plaguelands: The Scarlet Enclave,38.9,38.2]
-Uncover The Light of Dawn |q 12801/1 |goto 34.4,31.1
+|tip If he's not here, then the battle has already started.
+|tip You may be able to join the battle.  Skip to the next step, try to do it, and see if it works.
+|tip If you're unable to join the battle, skip back to this step and wait for Highlord Darion Mograine to respawn.
+Tell him _"I am ready, Highlord.  Let the siege of Light's Hope begin!"_
+|tip If he's here, but you can't choose this dialogue, that just means someone else already did it.
+|tip Now you just need to wait for the battle to start.
+|tip The battle starts 5 minutes after someone initiates this dialogue with him.
+Click Here When the Battle Begins |confirm |c |goto 34.44,31.10 |q 12801
+step
+Kill enemies around this area
+|tip Follow your allies into battle.
+Watch the dialogue
+Uncover The Light of Dawn |q 12801/1 |goto 38.79,38.34
 step
 talk Highlord Darion Mograine##29173
-turnin The Light of Dawn##12801 |goto 39.1,39
-accept Taking Back Acherus##13165 |goto 39.1,39
+turnin The Light of Dawn##12801 |goto 39.11,39.16
+accept Taking Back Acherus##13165 |goto 39.11,39.16
 step
-Use your new Death Gate spell and click the purple portal to go to Ebon Hold |goto Eastern Plaguelands,83.7,50.0 < 5 |cast Death Gate |noway |c
+Use your Death Gate spell
+|tip Click the purple Death Gate portal that appears nearby.
+Travel to Ebon Hold |goto Eastern Plaguelands/0 83.7,50.0 < 20 |noway |c |q 13165
 step
 talk Highlord Darion Mograine##29173
-turnin Taking Back Acherus##13165 |goto 83.4,49.4
-accept The Battle For The Ebon Hold##13166 |goto 83.4,49.4
+turnin Taking Back Acherus##13165 |goto 83.44,49.46
+accept The Battle For The Ebon Hold##13166 |goto 83.44,49.46
 step
-Stand on the purple circle to teleport upstairs |goto 83.2,48.9 <5 |c
-kill Scourge Necromancer##31096+, Terrifying Abomination##31098+, Val'kyr Battle-maiden##31095+
-kill 10 Scourge |q 13166/2
-kill Patchwerk##31099 |q 13166/1 |goto 82.5,47.3
+Walk onto the teleport pad |goto 83.19,48.90 |n
+Teleport Downstairs |goto 82.68,47.79 < 10 |noway |c |q 13166
 step
-Stand on the purple circle to teleport downstairs |goto 83.3,49.1 <5 |c
+Kill enemies around this area
+Slay #10# Scourge |q 13166/2 |goto 81.99,46.37
+step
+kill Patchwerk##31099 |q 13166/1 |goto 81.99,46.37
+step
+Walk onto the teleport pad |goto 83.28,49.12 |n
+Teleport Upstairs |goto 83.28,49.12 < 5 |noway |c |q 13166
+step
 talk Highlord Darion Mograine##31084
-turnin The Battle For The Ebon Hold##13166 |goto 83.4,49.4
-accept Where Kings Walk##13188 |goto 83.4,49.4
+turnin The Battle For The Ebon Hold##13166 |goto 83.44,49.46
+accept Where Kings Walk##13188 |goto 83.44,49.46 |only Alliance
+accept Saurfang's Blessing##13189 |goto 83.44,49.46 |only Horde
 step
-Go to this spot |goto 83.7,51.2 <5 |c
-Click the portal to Stormwind |goto Elwynn Forest 33.4,52
-talk King Varian Wrynn##29611
-turnin Where Kings Walk##13188 |goto Stormwind City 85.8,31.7
+click Portal to Orgrimmar |goto 84.55,50.46 |n
+Teleport to Orgrimmar |goto Durotar/0 45.6,13.5 < 20 |noway |c |q 13189
+|only Horde
+step
+Enter the building |goto Orgrimmar/1 49.90,75.62 < 10 |walk
+talk High Overlord Saurfang##14720
+|tip Inside the building.
+turnin Saurfang's Blessing##13189 |goto Orgrimmar/1 48.27,70.97
+|only Horde
+step
+click Portal to Stormwind |goto 83.65,51.34 |n
+Teleport to Stormwind City |goto Elwynn Forest/0 33.4,52 < 20 |noway |c |q 13188
+|only Alliance
+step
+Enter the building |goto Stormwind City/0 80.60,37.89 < 15 |walk
+talk Anduin Wrynn##107574
+|tip Inside the building.
+turnin Where Kings Walk##13188 |goto Stormwind City/0 85.8,31.7
+|only Alliance
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (5-7)",{
 author="support@zygorguides.com",
@@ -1450,12 +1692,11 @@ image=ZGV.DIR.."\\Guides\\Images\\Westfall",
 next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",
 startlevel=10.5,
 dynamic=true,
-description="Westfall borders the Kingdom of Stormwind and is mostly populated by humans not under the Alliance's complete control. The region was stolen right under the Alliance's nose by its own bitter people. Once a rich agricultural center, this land has lain fallow and forgotten since the Second War, but was held by the Defias Brotherhood for a time before the Cataclysm. Stormwind claimed the land as its own, but found little time to be concerned with it, with insufficient funds and might to retake the region. A handful of farmers still tried to keep their land, and some even attempted a tithe to Stormwind every year, but most only grew enough to feed themselves. Bandits and gnolls raided those farms that remained, and Stormwind's resources were stretched too thin to protect the beleaguered populace. The Defias Brotherhood controlled much of the region, focused in the southern area of Moonbrook.",
 },[[
 step
 click Hero's Call Board##10016
 accept Hero's Call: Westfall!##28562 |goto Stormwind City/0 62.9,71.5
-only Pandaren
+|only Pandaren
 step
 Cross the bridge |goto Elwynn Forest/0 20.71,79.79 < 20 |only if walking
 talk Lieutenant Horatio Laine##42308
@@ -1921,24 +2162,24 @@ endlevel=8
 },[[
 step
 talk Ragnar Thunderbrew##1267
-accept Beer Basted Boar Ribs##384 |goto Dun Morogh/0 53.9,50.7
+accept Beer Basted Boar Ribs##384 |goto Dun Morogh/0 53.93,50.68
 step
 talk Innkeeper Belm##1247
 |tip Inside the building.
-turnin Bound for Kharanos##26380 |goto 54.5,50.8
-only Gnome
+turnin Bound for Kharanos##26380 |goto 54.49,50.84
+|only Gnome
 step
 talk Innkeeper Belm##1247
 |tip Inside the building.
-buy 1 Rhapsody Malt##2894 |q 384/2 |goto 54.5,50.8
+buy Rhapsody Malt##2894 |q 384/2 |goto 54.49,50.84
 step
 talk Innkeeper Belm##1247
 |tip Inside the building.
-home Thunderbrew Distillery |goto 54.5,50.8 |future |q 315
+home Thunderbrew Distillery |goto 54.49,50.84 |future |q 315
 step
 talk Rejold Barleybrew##1374
-|tip Outside.
-accept The Perfect Stout##315 |goto 54.2,51.2
+|tip Outside the building.
+accept The Perfect Stout##315 |goto 54.19,51.17
 step
 talk Captain Tharran##40950
 turnin On to Kharanos##26373 |goto 53.7,52.2 |only Gnome
@@ -1948,30 +2189,35 @@ Follow the path |goto 53.77,49.56 < 15 |only if walking
 kill Crag Boar##1125+
 collect 4 Tender Boar Ribs##60496 |q 384/1 |goto 56.0,48.4
 step
+Follow the path |goto 55.12,48.53 < 20 |only if walking
+Follow the path |goto 53.56,50.00 < 15 |only if walking
 talk Ragnar Thunderbrew##1267
-turnin Beer Basted Boar Ribs##384 |goto 53.9,50.7
+turnin Beer Basted Boar Ribs##384 |goto 53.93,50.68
 step
+Follow the path |goto 53.26,48.52 < 20 |only if walking
 talk Ciara Deepstone##42933
 accept Bound for Kharanos##26380 |goto 49.9,45.0
-only Dwarf
-stickystart "Frostmaneseer"
-stickystart "Shimmerweed"
-step "Frostmaneseer"
-Follow the path up
-kill 5 Frostmane Seer##41121+ |q 25724/1 |goto 51.5,40.7,0.5
-kill 7 Frostmane Snowstrider##41122+ |q 25724/2 |goto 51.5,40.7,0.5
-|tip The mobs also have a slight chance of dropping Shimmerweed
-step "Shimmerweed"
+stickystart "Frostmane_Snowstriders"
+stickystart "Shimmerweeds"
+step
+Follow the path up |goto 51.88,40.78 < 15 |only if walking
+kill 5 Frostmane Seer##41121+ |q 25724/1 |goto 49.53,40.67
+step
+label "Frostmane_Snowstriders"
+kill 7 Frostmane Snowstrider##41122+ |q 25724/2 |goto 49.53,40.67
+step
+label "Shimmerweeds"
 click Shimmerweed Basket##644+
-collect 7 Shimmerweed |q 315/1 |goto 48.6,38.0 |goto Dun Morogh/0 48.6,38.0
+|tip They look like wicker baskets on the ground around this area.
+collect 7 Shimmerweed##2676 |q 315/1 |goto 48.6,38.0 |goto 49.53,40.67
 step
 talk Innkeeper Belm##1247
-turnin Bound for Kharanos##26380 |goto 54.5,50.9
-only Dwarf
+|tip Inside the building.
+turnin Bound for Kharanos##26380 |goto 54.49,50.84
 step
 talk Rejold Barleybrew##1374
-|tip He is outside the inn
-turnin The Perfect Stout##315 |goto 54.2,51.2
+|tip Outside the building.
+turnin The Perfect Stout##315 |goto 54.19,51.17
 step
 talk Captain Tharran##40950
 turnin Frostmane Aggression##25724 |goto 53.7,52.2
@@ -1980,30 +2226,43 @@ accept Forced to Watch from Afar##313 |goto 53.7,52.2
 step
 talk Quartermaster Glynna##40951
 accept Pilfered Supplies##25668 |goto 53.7,52.1
+stickystart "Wendigos"
+stickystart "Pilfered_Supplies"
 step
-click Pilfered Supplies##335
+Follow the path |goto 52.66,51.80 < 20 |only if walking
+Follow the path down |goto 51.15,51.44 < 20 |only if walking
+Follow the path |goto Dun Morogh/7 61.51,86.26 < 15 |walk
+Continue following the path |goto Dun Morogh/7 58.55,75.55 < 15 |walk
+Follow the path |goto Dun Morogh/7 50.73,65.67 < 15 |walk
 talk Mountaineer Dunstan##40991
-Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
-Convey orders to Mountaineer Dunstan |q 313/1 |goto Dun Morogh/7 51.7,48.8
+Tell him _"Captain Tharran wants you to deploy your remote observation bots and withdraw to Kharanos."_
+Convey the Orders to Mountaineer Dunstan |q 313/1 |goto Dun Morogh/7 51.84,48.34
 step
-click Pilfered Supplies##335
+Follow the path |goto 58.03,53.50 < 10 |walk
 talk Mountaineer Lewin##40994
-Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
-Convey orders to Mountaineer Lewin |q 313/2 |goto Dun Morogh/7 60.4,55.9
+Tell him _"Captain Tharran wants you to deploy your remote observation bots and withdraw to Kharanos."_
+Convey the Orders to Mountaineer Lewin |q 313/2 |goto 60.29,56.23
 step
-click Pilfered Supplies##335
+Follow the path |goto 57.10,51.78 < 10 |walk
+Follow the path up |goto 60.43,37.00 < 15 |walk
 talk Mountaineer Valgrum##41056
-Tell him Captain Tharran wants him to deploy his remote observation bots and withdraw to Kharanos
-Convey orders to Mountaineer Valgrum |q 313/3 |goto Dun Morogh/7 61.4,22.6
-stickystart "Wendigo"
-stickystart "Pilferedsupplies"
-step "Wendigo"
-kill 10 Wendigo |q 25667/1 |goto Dun Morogh/7 53.8,48.1
-step "Pilferedsupplies"
-click Pilfered Supplies##335
-collect 6 Pilfered Supplies |q 25668/1 |goto Dun Morogh/7 53.8,48.1
-modelnpc Young Wendigo##40940
+Tell him _"Captain Tharran wants you to deploy your remote observation bots and withdraw to Kharanos."_
+Convey the Orders to Mountaineer Valgrum |q 313/3 |goto 61.51,22.23
 step
+label "Wendigos"
+Kill Wendigo enemies around this area
+Slay #10# Wendigos |q 25667/1 |goto 60.43,37.00
+step
+label "Pilfered_Supplies"
+click Pilfered Supplies##335+
+|tip They look like wooden crates and small barrels on the ground inside the cave.
+collect 6 Pilfered Supplies##55151 |q 25668/1 |goto 60.43,37.00
+step
+Follow the path |goto 54.41,47.39 < 10 |walk
+Follow the path up |goto 50.42,62.08 < 15 |walk
+Follow the path |goto 61.06,77.80 < 15 |walk
+Follow the path up |goto Dun Morogh/0 50.28,53.11 < 20 |only if walking
+Follow the path |goto Dun Morogh/0 51.52,51.20 < 20 |only if walking
 talk Quartermaster Glynna##40951
 turnin Pilfered Supplies##25668 |goto Dun Morogh/0 53.7,52.1
 step
@@ -2013,32 +2272,41 @@ turnin Forced to Watch from Afar##313 |goto 53.7,52.2
 accept Pushing Forward##25792 |goto 53.7,52.2
 step
 talk Razzle Sprysprocket##1269
-accept Operation Recombobulation##412 |goto 53.3,51.9
-stickystart "Constrictiontotems"
-stickystart "Gyromechanic"
-step "Constrictiontotems"
-Use the Rune of Fire in your bags next to Constriction Totems |use Rune of Fire##56009
-|tip They look like wooden spiked rods with green orbs at the top of them around this area.
-Burn 4 Constriction Totems |q 25792/1 |goto 57.3,56.8
-step "Gyromechanic"
-kill Frostmane Scavenger##41146+
-collect 8 Gyromechanic Gear |q 412/1 |goto 57.3,56.8
+|tip He walks around this small area.
+accept Operation Recombobulation##412 |goto 53.26,51.92
+stickystart "Burn_Constriction_Totems"
+stickystart "Gyromechanic_Gears"
 step
+label "Burn_Constriction_Totems"
+Follow the path |goto 54.83,54.32 < 20 |only if walking
+Follow the path |goto 55.61,56.24 < 20 |only if walking
+Use the Rune of Fire next to Constriction Totems |use Rune of Fire##56009
+|tip They look like wooden spiked rods with green orbs at the top of them around this area.
+Burn #4# Constriction Totems |q 25792/1 |goto 57.3,56.8
+step
+label "Gyromechanic_Gears"
+kill Frostmane Scavenger##41146+
+collect 8 Gyromechanic Gear##3084 |q 412/1 |goto 57.3,56.8
+step
+Follow the path |goto 55.60,56.22 < 20 |only if walking
+Follow the path |goto 54.72,54.32 < 20 |only if walking
 talk Captain Tharran##40950
 turnin Pushing Forward##25792 |goto 53.7,52.2
 step
 talk Razzle Sprysprocket##1269
+|tip He walks around this small area.
 turnin Operation Recombobulation##412 |goto 53.3,51.9
 step
 talk Captain Tharran##40950
 accept Help from Steelgrill's Depot##25838 |goto 53.7,52.2
 step
+Follow the path |goto 53.62,49.79 < 20 |only if walking
 talk Delber Cranktoggle##41363
-turnin Help from Steelgrill's Depot##25838 |goto 56.8,47.1
-accept The Ultrasafe Personnel Launcher##25839 |goto 56.8,47.1
+turnin Help from Steelgrill's Depot##25838 |goto 56.82,47.10
+accept The Ultrasafe Personnel Launcher##25839 |goto 56.82,47.10
 step
 clicknpc Ultrasafe Personnel Launcher##41398
-Use the Ultrasafe Personnel Launcher to deploy to Frostmane Retreat |q 25839/1 |goto 56.7,46.5
+Use the Ultrasafe Personnel Launcher to Deploy to Frostmane Retreat |q 25839/1 |goto 56.72,46.58
 step
 talk Slamp Wobblecog##41298
 turnin The Ultrasafe Personnel Launcher##25839 |goto 62.5,53.7
@@ -2046,26 +2314,30 @@ accept Eliminate the Resistance##25840 |goto 62.5,53.7
 accept Strike From Above##25841 |goto 62.5,53.7
 step
 talk Snevik the Blade##50601
-accept The View from Down Here##28868 |goto 62.5,53.8
+accept The View from Down Here##28868 |goto 62.54,53.81
+stickystart "Shrink_Frostmane_Builders"
+stickystart "Frostmane_Warriors"
 step
-Use your Signal Flare while standing in this circle of stones on the ground |use Signal Flare##56048
+Follow the path |goto 63.20,53.16 < 15 |only if walking
+Use the Signal Flare |use Signal Flare##56048
+|tip Stand in the circle of stones on the ground.
 Attack the Northern Frostmane Retreat |q 25841/1 |goto 64.5,54.4
 step
 kill Battok the Berserker##41284 |q 25840/1 |goto 63.8,55.7
 step
-Use your Signal Flare in this spot |use Signal Flare##56048
-Attack the Southern Frostmane Retreat |q 25841/2 |goto Dun Morogh/0 63.1,57.4
-stickystart "Frostmanebuilder"
-stickystart "Frostmanewarrior"
-step "Frostmanebuilder"
-Use your Viewpoint Equalizer to shrink Frostmane Builders |use Viewpoint Equalizer##67249
-Shrink 5 Frostmane Builders |q 28868/1 |goto 62.7,55.1
-modelnpc Frostmane Builder##41251
-step "Frostmanewarrior"
-kill 5 Frostmane Warrior##41258+ |q 25840/2 |goto 62.7,55.1
+Use your Signal Flare |use Signal Flare##56048
+Attack the Southern Frostmane Retreat |q 25841/2 |goto 63.1,57.4
+step
+label "Shrink_Frostmane_Builders"
+Use the Viewpoint Equalizer on Frostmane Builders |use Viewpoint Equalizer##67249
+|tip They look like trolls hammering and tinkering on things around this area.
+Shrink #5# Frostmane Builders |q 28868/1 |goto 62.7,55.1
+step
+label "Frostmane_Warriors"
+kill 5 Frostmane Warrior##41258 |q 25840/2 |goto 62.7,55.1
 step
 talk Snevik the Blade##50601
-turnin The View from Down Here##28868 |goto 62.5,53.8
+turnin The View from Down Here##28868 |goto 62.54,53.81
 step
 talk Slamp Wobblecog##41298
 turnin Eliminate the Resistance##25840 |goto 62.5,53.7
@@ -2081,213 +2353,239 @@ dynamic=true,
 endlevel=9
 },[[
 step
-Follow the path up |goto Dun Morogh/0 69.2,51.3 < 5 |only if walking
+Follow the path |goto Dun Morogh/0 63.22,53.15 < 20 |only if walking
+Continue following the path |goto Dun Morogh/0 64.69,53.25 < 15 |only if walking
+Follow the path |goto Dun Morogh/0 67.27,52.69 < 20 |only if walking
+Follow the path up |goto Dun Morogh/0 69.17,51.01 < 15 |only if walking
 talk Sergeant Flinthammer##41578
-turnin A Hand at the Ranch##25882 |goto 70.4,48.9
-accept It's Raid Night Every Night##25932
+turnin A Hand at the Ranch##25882 |goto Dun Morogh/0 70.4,48.9 |only if havequest(25882) or completedq(25882)
+accept It's Raid Night Every Night##25932 |goto Dun Morogh/0 70.4,48.9
 step
-Help Sergeant Flinthammer and his mountaineers fight off the Frostmane Raiders
-Defend Amberstill Ranch |q 25932 |goto 70.4,48.9
+Watch the dialogue
+kill Frostmane Raider##41603+
+Defend Amberstill Ranch |q 25932/1 |goto 70.29,49.32
 step
 talk Sergeant Flinthammer##41578
 turnin It's Raid Night Every Night##25932 |goto 70.4,48.9
 step
 talk Veron Amberstill##1261
+|tip He walks back and forth in this small area.
 accept Rams on the Lam##25905 |goto 70.7,48.9
 step
 talk Rudra Amberstill##1265
-accept Protecting the Herd##314 |goto 70.3,48.1
+accept Protecting the Herd##314 |goto 70.28,48.15
 step
-Follow the path up |goto 69.3,49.6 < 5 |only if walking
+Follow the path |goto 70.20,49.49 < 20 |only if walking
+Follow the path up |goto 69.3,49.6 < 15 |only if walking
+Follow the path |goto 69.53,46.69 < 15 |only if walking
 kill Vagash##1388
-collect Fang of Vagash |q 314/1 |goto 69.7,44.4
+|tip He looks like a yeti that walks in and out of this small cave.
+collect Fang of Vagash |q 314/1 |goto 69.40,45.20
 step
+Jump down here |goto 69.49,47.56 < 15 |only if walking
 talk Rudra Amberstill##1265
-turnin Protecting the Herd##314 |goto 70.3,48.1
+turnin Protecting the Herd##314 |goto 70.28,48.15
 step
-Whistle while standing next to Stolen Rams |script DoEmote("WHISTLE")
+Follow the path |goto 69.57,50.05 < 20 |only if walking
+Whistle next to Stolen Rams |script DoEmote("WHISTLE")
 |tip They look like different colored rams around this area.
-Recover 6 Stolen Rams |q 25905/1 |goto 67.6,55.0
+Recover #6# Stolen Rams |q 25905/1 |goto 67.6,55.0
 step
+Follow the path |goto 68.25,53.47 < 20 |only if walking
+Follow the path |goto 69.56,50.14 < 20 |only if walking
 talk Veron Amberstill##1261
+|tip He walks back and forth in this small area.
 turnin Rams on the Lam##25905 |goto 70.7,48.9
 step
 talk Sergeant Flinthammer##41578
 accept Help for the Quarry##25933 |goto 70.4,48.9
 step
-Go to the road |goto 69.9,53.2 < 5 |only if walking
+Follow the path |goto 69.48,50.20 < 20 |only if walking
+Follow the road |goto 69.95,53.23 < 20 |only if walking
+Follow the path down |goto 74.63,52.68 < 20 |only if walking
 talk Senator Mehr Stonehallow##1977
 accept The Public Servant##433 |goto 75.9,54.3
 step
 talk Foreman Stonebrow##1254
-turnin Help for the Quarry##25933 |goto 76.3,54.7
-accept Those Blasted Troggs!##432 |goto 76.3,54.7
+turnin Help for the Quarry##25933 |goto 76.31,54.67
+accept Those Blasted Troggs!##432 |goto 76.31,54.67
 step
 talk Prospector Drugan##50631
-accept Priceless Treasures##25937 |goto 76.2,53.0
+accept Priceless Treasures##25937 |goto 76.19,53.04
+stickystart "Rockjaw_Skullthumpers"
+stickystart "Rescue_Trapped_Miners"
+stickystart "Rockjaw_Bonesnappers"
 step
-kill 8 Rockjaw Skullthumper##1115+ |q 432/1 |goto Dun Morogh/0 77.6,56.2
-stickystart "Trappedminers"
-stickystart "Bonesnapper"
-stickystart "Frozenartifact"
-step "Trappedminers"
-Use Runes of Return on Trapped Miners |use Runes of Return##56222
-|tip They look like scared dwarves along the walls inside the cave.
-Rescue 7 Trapped Miners |q 433/1 |goto Dun Morogh/11 39.0,82.6
-step "Bonesnapper"
-kill 8 Rockjaw Bonesnapper##1117+ |q 432/2 |goto Dun Morogh/11 39.0,82.6
-step "Frozenartifact"
+Follow the path down |goto 75.31,54.61 < 15 |only if walking
+Follow the path |goto 75.16,56.63 < 20 |only if walking
 click Frozen Artifact##6752+
-collect 8 Frozen Artifact |q 25937/1 |goto Dun Morogh/11 39.0,82.6
+|tip They look like blocks of white ice on the ground around this area.
+collect 8 Frozen Artifact##56225 |q 25937/1 |goto Dun Morogh/11 39.0,82.6
 step
-Follow the path up |goto Dun Morogh/0 75.1,55.9 < 5 |only if walking
+label "Rockjaw_Skullthumpers"
+kill 8 Rockjaw Skullthumper##1115 |q 432/1 |goto Dun Morogh/11 39.0,82.6
+|tip You can find more outside the cave.
+step
+label "Rescue_Trapped_Miners"
+Use Runes of Return on Trapped Miners |use Runes of Return##56222
+|tip They look like scared dwarves along the walls inside of the cave.
+Rescue #7# Trapped Miners |q 433/1 |goto Dun Morogh/11 39.0,82.6
+step
+label "Rockjaw_Bonesnappers"
+kill 8 Rockjaw Bonesnapper##1117 |q 432/2 |goto Dun Morogh/11 39.0,82.6
+|tip You can find more outside the cave.
+step
+Follow the path up |goto Dun Morogh/0 75.03,56.14 < 15 |only if walking
 talk Senator Mehr Stonehallow##1977
 turnin The Public Servant##433 |goto 75.9,54.3
 step
 talk Foreman Stonebrow##1254
-turnin Those Blasted Troggs!##432 |goto 76.3,54.7
+turnin Those Blasted Troggs!##432 |goto 76.31,54.67
 step
 talk Prospector Gehn##1255
-turnin Priceless Treasures##25937 |goto 76.2,53.0
+turnin Priceless Treasures##25937 |goto 76.19,53.04
 step
 talk Senator Mehr Stonehallow##1977
 accept Trouble at the Lake##25986 |goto 75.9,54.3
 step
-Follow the path up to the road |goto 75.0,53.5 < 5 |only if walking
-Follow the road |goto Dun Morogh/0 74.5,51.2 <20 |only if walking
+Follow the path up |goto 75.28,54.00 < 15 |only if walking
+Follow the road |goto 74.46,51.33 <20 |only if walking
+Continue following the road |goto 78.61,48.21 < 20 |only if walking
 talk Khurgorn Singefeather##41804
-accept Dealing with the Surge##25979 |goto 82.6,48.3
+accept Dealing with the Surge##25979 |goto 82.64,48.30
 step
 talk Sergeant Bahrum##41786
-turnin Trouble at the Lake##25986 |goto 82.8,48.4
-accept Entombed in Ice##25978 |goto 82.8,48.4
-stickystart "Bedsurger"
-stickystart "Icytombs"
-step "Bedsurger"
-kill 6 Helm's Bed Surger##41762+ |q 25979/1 |goto 83.0,51.5
-step "Icytombs"
-Attack Icy Tombs
-Free 6 Frozen Mountaineers |q 25978/1 |goto 83.0,51.5
-modelnpc Icy Tomb##41768
+turnin Trouble at the Lake##25986 |goto 82.85,48.41
+accept Entombed in Ice##25978 |goto 82.85,48.41
+stickystart "Free_Frozen_Mountaineers"
+step
+kill 6 Helm's Bed Surger##41762 |q 25979/1 |goto 83.38,50.75
+step
+label "Free_Frozen_Mountaineers"
+kill Icy Tomb##41768+
+|tip They look like big green blocks of ice around this area.
+Free #6# Frozen Mountaineers |q 25978/1 |goto 83.38,50.75
 step
 talk Sergeant Bahrum##41786
-turnin Entombed in Ice##25978 |goto 82.9,48.4
+turnin Entombed in Ice##25978 |goto 82.85,48.41
 step
 talk Khurgorn Singefeather##41804
-turnin Dealing with the Surge##25979 |goto 82.6,48.3
+turnin Dealing with the Surge##25979 |goto 82.64,48.29
 step
 talk Sergeant Bahrum##41786
-accept Dark Iron Scheming##25997 |goto 82.9,48.4
+accept Dark Iron Scheming##25997 |goto 82.85,48.41
+stickystart "Dark_iron_Spies"
 step
+Follow the path |goto 84.13,55.93 < 20 |only if walking
 kill Captain Beld##6124
-|tip He's inside of the house at the bottom of the stairs
-collect Dark Iron Attack Plans |q 25997/2 |goto 85.2,60.6
+|tip Downstairs inside the building.
+collect Dark Iron Attack Plans##56264 |q 25997/2 |goto 85.17,60.61
 step
-kill 5 Dark Iron Spy##6123+ |q 25997/1 |goto 84.0,58.1
+label "Dark_iron_Spies"
+kill 5 Dark Iron Spy##6123 |q 25997/1 |goto 84.0,58.1
 step
+Follow the path |goto 84.13,55.93 < 20 |only if walking
 talk Sergeant Bahrum##41786
-turnin Dark Iron Scheming##25997 |goto 82.9,48.4
-accept Get to the Airfield##25998 |goto 82.9,48.4
+turnin Dark Iron Scheming##25997 |goto 82.85,48.41
+accept Get to the Airfield##25998 |goto 82.85,48.41
 step
-clicknpc Mathel's Flying Machine##41848 |goto Dun Morogh 75.3,52.8
-You will fly to the Ironforge Airfield |goto Dun Morogh 76.0,16.0 |noway |c
+Follow the road |goto 78.89,48.10 < 20 |only if walking |n
+Continue following the road |goto 75.38,49.76 < 20 |only if walking |n
+Jump down here |goto 75.25,51.95 < 15 |only if walking |n
+Locate Mathel's Flying Machine |goto 75.23,52.76 < 20 |c |q 25998
 step
-talk Commander Stonebreaker##41853
-turnin Get to the Airfield##25998 |goto 78.3,20.5
-accept Extinguish the Fires##26078 |goto 78.3,20.5
-step
-Use the Firefighting Gear on fires that are on the runway |use Firefighting Gear##56803
-Extinguish 6 Fires |q 26078/1 |goto 78.3,24.6
+clicknpc Mathel's Flying Machine##41848 |goto 75.23,52.76 |n
+Fly to the Ironforge Airfield |goto 76.01,16.80 < 20 |noway |c |q 25998
 step
 talk Commander Stonebreaker##41853
-turnin Extinguish the Fires##26078 |goto 78.3,20.5
-accept Rallying the Defenders##26085 |goto 78.3,20.5
+turnin Get to the Airfield##25998 |goto 78.25,20.51
+accept Extinguish the Fires##26078 |goto 78.25,20.51
 step
-Use the Ironforge Banner while standing next to Loose Snow |use Ironforge Banner##56809
+Use the Firefighting Gear on fires around this area |use Firefighting Gear##56803
+Extinguish #6# Fires |q 26078/1 |goto 78.3,24.6
+step
+talk Commander Stonebreaker##41853
+turnin Extinguish the Fires##26078 |goto 78.25,20.51
+accept Rallying the Defenders##26085 |goto 78.25,20.51
+step
+Follow the path |goto 78.14,26.79 < 20 |only if walking
+Use the Ironforge Banner next to Loose Snow |use Ironforge Banner##56809
 |tip They look like piles of white snow on the ground around this area.
-Plant 8 Ironforge Banners |q 26085/1 |goto 77.7,30.1
+Plant #8# Ironforge Banners |q 26085/1 |goto 77.7,30.1
 step
+Follow the path |goto 78.14,26.79 < 20 |only if walking
 talk Commander Stonebreaker##41853
-turnin Rallying the Defenders##26085 |goto 78.3,20.5
-accept Striking Back##26094 |goto 78.3,20.5
+turnin Rallying the Defenders##26085 |goto 78.25,20.51
+accept Striking Back##26094 |goto 78.25,20.51
 step
 clicknpc Repaired Bomber##42092
-Use Iron Hammer Bomb on the Dark Iron forces below |use Iron Hammer Bomb##56814
-Kill 30 Dark Iron Attackers |q 26094/1 |goto 77.1,18.5
+_As you fly:_
+Use the Iron Hammer Bomb on Dark Iron enemies below |use Iron Hammer Bomb##56814
+Slay #30# Dark Iron Attackers |q 26094/1 |goto 77.13,18.60
 step
 talk Commander Stonebreaker##41853
-turnin Striking Back##26094 |goto 78.3,20.5
-accept Grimaxe's Demise##26102 |goto 78.3,20.5
+turnin Striking Back##26094 |goto 78.25,20.51
+accept Grimaxe's Demise##26102 |goto 78.25,20.51
 step
-kill Dark Iron Golem##42008 |n
-kill General Grimaxe##42010 |q 26102/1 |goto 78.5,34.4
-|tip You will need to kill the Dark Iron Golem first.
+Follow the path |goto 78.14,26.79 < 20 |only if walking
+Follow the path |goto 78.46,30.55 < 20 |only if walking
+kill Dark Iron Golem##42008
+kill General Grimaxe##42010 |q 26102/1 |goto 78.41,34.83
+|tip He's standing on top of the golem.
 step
+Follow the path |goto 78.46,30.55 < 20 |only if walking
+Follow the path |goto 78.14,26.79 < 20 |only if walking
 talk Commander Stonebreaker##41853
-turnin Grimaxe's Demise##26102 |goto 78.3,20.5
-accept Demanding Answers##26112 |goto 78.3,20.5
-step
-clicknpc Rixa's Flying Machine##42175 |goto Dun Morogh 76.0,16.8
-You will fly back to the Gol'Bolar Quarry |goto Dun Morogh 75.7,53.5 |noway |c
+turnin Grimaxe's Demise##26102 |goto 78.25,20.51
+accept Demanding Answers##26112 |goto 78.25,20.51
 step
 talk Gremlock Pilsnor##1699
-|tip He's in the back room of the Thunderbrew Distillery.
+|tip Downstairs inside the building.
 accept Honor Students##6387 |goto 54.7,50.8
-only Dwarf
-step
-talk Gremlock Pilsnor##1699
-|tip He's in the back room of the Thunderbrew Distillery.
-accept Honor Students##6387 |goto 54.7,50.8
-only Gnome
+|only Dwarf, Gnome
 step
 talk Brolan Galebeard##43701
-turnin Honor Students##6387 |goto 53.8,52.8
-accept Ride to Ironforge##6391 |goto 53.8,52.8
-only Dwarf
-step
-talk Brolan Galebeard##43701
-turnin Honor Students##6387 |goto 53.8,52.8
-accept Ride to Ironforge##6391 |goto 53.8,52.8
-only Gnome
+turnin Honor Students##6387 |goto 53.80,52.76
+accept Ride to Ironforge##6391 |goto 53.80,52.76
+|only Dwarf, Gnome
 step
 talk Golnir Bouldertoe##4256
+|tip Downstairs inside the building.
 turnin Ride to Ironforge##6391 |goto Ironforge/0 51.6,26.4
 accept Gryth Thurden##6388 |goto Ironforge/0 51.6,26.4
-only Dwarf
+|only Dwarf, Gnome
 step
-talk Golnir Bouldertoe##4256
-turnin Ride to Ironforge##6391 |goto Ironforge/0 51.6,26.4
-accept Gryth Thurden##6388 |goto Ironforge/0 51.6,26.4
-only Gnome
-step
+Follow the path |goto 44.50,49.65 < 15 |walk
 talk Mountaineer Barleybrew##1959
-accept Reinforcements for Loch Modan##26131 |goto Ironforge,41.4,52.3
+accept Reinforcements for Loch Modan##26131 |goto 41.4,52.3
 step
 talk Moira Thaurissan##42129
-turnin Demanding Answers##26112 |goto 39.9,57.2
-accept Seize the Ambassador##26118 |goto 39.9,57.2
+turnin Demanding Answers##26112 |goto 39.78,57.33
+accept Seize the Ambassador##26118 |goto 39.78,57.33
 step
-Use the Sturdy Manacles on Ambassador Slaghammer |goto Ironforge/0 36.6,43.2 |use Sturdy Manacles##56837
-|tip He is upstairs.
-Take Ambassador Slaghammer to [Ironforge,43.6,50.6]
-Arrest Ambassador Slaghammer and bring him to the High Seat |q 26118/1
-modelnpc Ambassador Slaghammer##42146
+Follow the path |goto 44.54,49.46 < 15 |walk
+Follow the path |goto 43.92,45.77 < 15 |walk
+Use the Sturdy Manacles on Ambassador Slaghammer |use Sturdy Manacles##56837
+|tip Upstairs inside the building.
+Click Here After You Arrest Ambassador Slaghammer |confirm |c |goto 36.6,43.2 |q 26118
+step
+Follow the path |goto 43.92,45.77 < 15 |walk
+Follow the path |goto 44.54,49.46 < 15 |walk
+Watch the dialogue
+Arrest Ambassador Slaghammer and Bring Him to the High Seat |q 26118/1 |goto 40.87,52.89
 step
 talk Moira Thaurissan##42129
-turnin Seize the Ambassador##26118 |goto 39.9,57.2
+turnin Seize the Ambassador##26118 |goto 39.78,57.33
 step
 talk Gryth Thurden##1573
 turnin Gryth Thurden##6388 |goto 55.5,47.7
 accept Return to Gremlock##6392 |goto 55.5,47.7
-only Dwarf
-step
-talk Gryth Thurden##1573
-turnin Gryth Thurden##6388 |goto 55.5,47.7
-accept Return to Gremlock##6392 |goto 55.5,47.7
-only Gnome
+|only Dwarf, Gnome
 step
 talk Gremlock Pilsnor##1699
+|tip Downstairs inside the building.
 turnin Return to Gremlock##6392 |goto Dun Morogh/0 54.8,50.7
+|only Dwarf, Gnome
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)",{
 author="support@zygorguides.com",
@@ -2298,65 +2596,115 @@ dynamic=true,
 endlevel=12
 },[[
 step
-talk Pilot Hammerfoot##1960
-turnin Reinforcements for Loch Modan##26131 |goto Loch Modan,14.0,56.5
-|tip You will only be able to turn in this quest if you completed the Dun Morogh Guide.
-accept The Lost Pilot##26854 |goto Loch Modan,14.0,56.5
+talk Gryth Thurden##1573 |goto Ironforge/0 55.50,47.74 |n
+Tell him _"Mountaineer Barleybrew said you could help me get to Loch Modan."_
+Fly to Loch Modan |goto Loch Modan/0 13.93,56.72 < 20 |noway |c |q 26131
+|only if havequest(26131) or completedq(26131)
 step
-Enter the tunnel |goto 12.7,58.5 < 5 |only if walking
+talk Pilot Hammerfoot##1960
+turnin Reinforcements for Loch Modan##26131 |goto Loch Modan/0 14.0,56.5 |only if havequest(26131) or completedq(26131)
+accept The Lost Pilot##26854 |goto Loch Modan/0 14.0,56.5
+step
+Enter the tunnel |goto 12.7,58.5 < 10 |walk
+Leave the tunnel |goto 9.36,62.12 > 10000 |walk
+Follow the path down |goto Dun Morogh/0 88.28,51.23 < 20 |only if walking
 click A Dwarven Corpse##211
-turnin The Lost Pilot##26854 |goto Dun Morogh,87.6,50.1
-accept A Pilot's Revenge##26855 |goto Dun Morogh,87.6,50.1
+turnin The Lost Pilot##26854 |goto Dun Morogh/0 87.64,50.15
+accept A Pilot's Revenge##26855 |goto Dun Morogh/0 87.64,50.15
 step
 kill Mangeclaw##1961
-|tip He will walk down the mountain
-collect Mangy Claw |q 26855/1 |goto 87.5,50.2
+|tip He will walk down the mountain.
+collect Mangy Claw##3183 |q 26855/1 |goto 87.42,50.03
 step
-Enter the tunnel |goto 89.6,51.8 < 5 |only if walking
+Follow the path up |goto 87.93,51.06 < 20 |only if walking
+Enter the tunnel |goto 89.57,51.76 > 10000 |walk
+Leave the tunnel |goto Loch Modan/0 12.7,58.5 < 10 |walk
 talk Pilot Hammerfoot##1960
-turnin A Pilot's Revenge##26855 |goto Loch Modan,14.0,56.5
-accept South Gate Status Report##13635 |goto Loch Modan,14.0,56.5
+turnin A Pilot's Revenge##26855 |goto Loch Modan/0 14.0,56.5
+accept South Gate Status Report##13635 |goto Loch Modan/0 14.0,56.5
 step
-Enter the tunnel |goto 16.4,58.5 < 5 |only if walking
+Enter the tunnel |goto 16.41,58.46 < 10 |walk
+Leave the tunnel |goto 19.52,62.66 < 10 |walk
+Follow the path down |goto 21.58,66.03 < 20 |only if walking
+Continue down the path |goto 21.33,68.28 < 20 |only if walking
 talk Captain Rugelfuss##1092
-turnin South Gate Status Report##13635 |goto 23.4,75.0
-accept In Defense of the King's Lands##26146 |goto 23.4,75.0
+|tip Inside the building.
+turnin South Gate Status Report##13635 |goto 23.38,75.05
+accept In Defense of the King's Lands##26146 |goto 23.38,75.05
 step
 talk Mountaineer Cobbleflint##1089
-accept The Trogg Threat##26145 |goto 23.3,74.9
+|tip Inside the building.
+accept The Trogg Threat##26145 |goto 23.33,74.92
+stickystart "Trogg_Stone_Teeth"
 step
-Follow the path here |goto 22.8,77.8 < 10 |only if walking
-kill 12 Stonesplinter Trogg##1161+ |q 26146/1
-collect 8 Trogg Stone Tooth##2536 |q 26145/1 |goto 31.5,74.6
-modelnpc Stonesplinter Scout##1162
-You can find more mobs in the cave at [Loch Modan,32.9,69.5]
+Follow the path up |goto 22.77,77.89 < 15 |only if walking
+Continue following the path up |goto 23.86,79.61 < 15 |only if walking
+Follow the path |goto 27.79,76.33 < 15 |only if walking
+Follow the path down |goto 28.79,77.68 < 15 |only if walking
+kill 12 Stonesplinter Trogg##1161 |q 26146/1 |goto 31.50,78.40
 step
-Go back to the road |goto 30.9,78.5 |only if walking
+label "Trogg_Stone_Teeth"
+Kill Stonesplinter enemies around this area
+collect 8 Trogg Stone Tooth##2536 |q 26145/1 |goto 31.50,78.40
+step
+Follow the path up |goto 30.56,78.50 < 15 |only if walking
+Follow the path |goto 28.42,77.22 < 15 |only if walking
+Follow the path down |goto 27.46,76.41 < 15 |only if walking
+Continue down the path |goto 23.35,79.79 < 15 |only if walking
+Follow the path |goto 22.82,77.30 < 15 |only if walking
 talk Captain Rugelfuss##1092
-turnin In Defense of the King's Lands##26146 |goto 23.4,75.0
-accept A Decisive Strike##26148 |goto 23.4,75.0
+|tip Inside the building.
+turnin In Defense of the King's Lands##26146 |goto 23.38,75.05
+accept A Decisive Strike##26148 |goto 23.38,75.05
 step
 talk Mountaineer Cobbleflint##1089
-turnin The Trogg Threat##26145 |goto 23.3,74.9
+|tip Inside the building.
+turnin The Trogg Threat##26145 |goto 23.33,74.92
 step
 talk Mountaineer Wallbang##1090
+|tip Inside the building.
 accept Bigger and Uglier##26147 |goto 23.3,75.1
-stickystart "Troggs"
+stickystart "Stonesplinter_Bonesnappers"
+stickystart "Stonesplinter_Shamans"
 step
-Follow the path southeast |goto 29.3,66.7 < 15 |only if walking
-Enter the cave here |goto Loch Modan 32.9,70.1 |walk
-Follow the path in the cave down, around, and then up again |goto Loch Modan 34.3,61.0 |subzone Grizzlepaw Ridge
-kill Grawmug##42230 |q 26148/1
-step "Troggs"
-kill 8 Stonesplinter Bonesnapper##1164 |q 26147/2 |goto 35.5,64.9 |subzone Grizzlepaw Ridge
-kill 8 Stonesplinter Shaman##1197 |q 26147/1 |goto 35.5,64.9
+Follow the road |goto 21.49,72.98 < 20 |only if walking |n
+Continue following the road up |goto 24.95,67.91 < 20 |only if walking |n
+Follow the path |goto 28.48,65.90 < 20 |only if walking |n
+Follow the path |goto 30.63,69.74 < 15 |only if walking |n
+Enter the cave |goto 32.98,69.44 < 15 |walk |n
+Jump down here |goto 35.46,64.78 < 10 |walk |n
+Follow the path |goto 35.58,61.86 < 15 |walk |n
+Follow the path up |goto 35.30,59.52 < 15 |walk |n
+Follow the path |goto 33.29,60.81 < 15 |walk |n
+Follow the path up |goto 33.82,62.19 < 15 |c |q 26148
 step
-Go back to the road |goto 30.5,69.7 < 5 |only if walking
+Follow the path |goto 35.45,62.01 < 10 |walk
+Follow the path |goto 35.29,60.72 < 10 |walk
+kill Grawmug##42230 |q 26148/1 |goto 34.3,61.0
+step
+label "Stonesplinter_Bonesnappers"
+kill 8 Stonesplinter Bonesnapper##1164 |q 26147/2 |goto 33.09,60.69
+|tip They are all throughout the cave.
+step
+label "Stonesplinter_Shamans"
+kill 8 Stonesplinter Shaman##1197 |q 26147/1 |goto 33.09,60.69
+|tip They are all throughout the cave.
+step
+Follow the path |goto 35.69,60.02 < 15 |walk
+Follow the path up |goto 35.62,64.36 < 10 |walk
+Continue up the path |goto 34.99,63.45 < 10 |walk
+Follow the path |goto 34.95,65.18 < 10 |walk
+Leave the cave |goto 32.97,69.50 < 15 |walk
+Follow the path |goto 30.58,69.75 < 15 |only if walking
+Follow the road |goto 27.97,65.54 < 20 |only if walking
+Continue following the road |goto 23.65,69.71 < 20 |only if walking
 talk Captain Rugelfuss##1092
-turnin A Decisive Strike##26148 |goto 23.4,75.0
-accept Onward to Thelsamar##26176 |goto 23.4,75.0
+|tip Inside the building.
+turnin A Decisive Strike##26148 |goto 23.38,75.05
+accept Onward to Thelsamar##26176 |goto 23.38,75.05
 step
 talk Mountaineer Wallbang##1090
+|tip Inside the building.
 turnin Bigger and Uglier##26147 |goto 23.3,75.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (12-13)",{
@@ -2368,67 +2716,89 @@ dynamic=true,
 endlevel=13
 },[[
 step
+Follow the road |goto Loch Modan/0 21.57,72.88 < 20 |only if walking
+Continue following the road |goto Loch Modan/0 25.11,67.78 < 20 |only if walking
+Continue following the road |goto Loch Modan/0 28.17,64.93 < 20 |only if walking
+Follow the path down |goto Loch Modan/0 32.58,49.87 < 20 |only if walking
 talk Mountaineer Kadrell##1340
-turnin Onward to Thelsamar##26176 |goto Loch Modan 35.1,46.6
-|tip You will only be able to turn in this quest if you completed the Loch Modan 10-12 section.
-accept Out of Gnoll-Where##26842 |goto Loch Modan 35.1,46.6
-accept Stormpike's Order##13636 |goto Loch Modan 35.1,46.6
+turnin Onward to Thelsamar##26176 |goto Loch Modan/0 35.1,46.6 |only if havequest(26176) or completedq(26176)
+accept Out of Gnoll-Where##26842 |goto Loch Modan/0 35.1,46.6
+accept Stormpike's Order##13636 |goto Loch Modan/0 35.1,46.6
 step
 talk Innkeeper Hearthstove##6734
+|tip Inside the building.
 home Stoutlager Inn |goto 35.5,48.4 |future |q 13636
 step
 talk Vidra Hearthstove##1963
+|tip Inside the building.
 accept Thelsamar Blood Sausages##26860 |goto 34.8,49.3
 step
+Follow the path up |goto 34.49,47.38 < 20 |only if walking
 talk Thorgrum Borrelson##1572
-fpath Thelsamar |goto Loch Modan 33.9,50.9
+fpath Thelsamar |goto 33.9,50.9
 step
+Follow the path up |goto 34.92,46.40 < 15 |only if walking
+Follow the path up |goto 35.25,45.33 < 15 |only if walking
 talk Dakk Blunderblast##1777
-|tip He walks around, and may be outside
-accept Looking for Lurkers##25118 |goto 35.4,42.8
+accept Looking for Lurkers##25118 |goto 35.99,44.28
 step
 click Wanted! Poster##17
 accept Wanted: The Dark Iron Spy##13648 |goto 37.3,46.5
+stickystart "Bear_Rumps"
+stickystart "Forest_Lurkers"
 step
-Follow the path up |goto 40.7,58.4 < 5 |only if walking
-kill Gorick Guzzledraught##33456 |q 13648/1 |goto 36.8,61.1
+Follow the path |goto 38.28,47.77 < 20 |only if walking
+Follow the path up |goto 40.7,58.4 < 15 |only if walking
+Continue up the path |goto 40.25,61.32 < 15 |only if walking
+Continue up the path |goto 39.13,62.14 < 15 |only if walking
+kill Gorick Guzzledraught##33456 |q 13648/1 |goto 36.71,61.12
+|tip Inside the small cave.
+step
 click Stolen Explorers' League Document##8032
-accept Explorers' League Document (1 of 6)##13656 |goto 36.8,61.1
+|tip Inside the small cave.
+accept Explorers' League Document (1 of 6)##13656 |goto 36.75,61.11
 step
-kill Mosshide Scout##44161+, Mosshide Basher##44162+
-collect 12 Mosshide Ear |q 26842/1 |goto 26.9,56.3
-You can find more around [Loch Modan,27.3,43.8]
-stickystart "Blackbear"
-stickystart "Forestlurker"
-step "Blackbear"
+Follow the path down |goto 38.53,62.21 < 15 |only if walking
+Continue down the path |goto 39.68,62.11 < 15 |only if walking
+Continue down the path |goto 40.49,60.34 < 15 |only if walking
+Follow the path |goto 40.63,57.09 < 20 |only if walking
+Follow the path |goto 39.27,53.35 < 20 |only if walking
+Follow the path |goto 35.92,53.04 < 20 |only if walking
+Kill Mosshide enemies around this area
+collect 12 Mosshide Ear##60402 |q 26842/1 |goto 27.61,49.94
+step
+label "Bear_Rumps"
 kill Black Bear##1186+
-collect 8 Bear Rumps |q 26860/1 |goto 34.6,29.6
-You can find more:
-Around [Loch Modan,29.8,17.3]
-Around [Loch Modan,39.8,52.3]
-step "Forestlurker"
-kill 8 Forest Lurker##1195+ |q 25118/1
+collect 8 Bear Rump##60497 |q 26860/1 |goto 32.39,35.87
 step
+label "Forest_Lurkers"
+kill 8 Forest Lurker##1195 |q 25118/1 |goto 32.39,35.87
+step
+Follow the path down |goto 38.72,35.87 < 20 |only if walking
 click Stolen Explorers' League Document##3365
-accept Explorers' League Document (2 of 6)##13655 |goto 41.35,39.04
+|tip Under the dock.
+accept Explorers' League Document (2 of 6)##13655 |goto 41.37,38.98
 step
-talk Magistrate Bluntnose##1139
-turnin Wanted: The Dark Iron Spy##13648 |goto 34.6,43.1
-step
-talk Dakk Blunderblast##1777
-turnin Looking for Lurkers##25118 |goto 35.4,42.8
+Follow the path up |goto 39.67,38.18 < 15 |only if walking
+Follow the path |goto 38.29,38.60 < 20 |only if walking
+talk Torren Squarejaw##1153
+turnin Explorers' League Document (1 of 6)##13656 |goto 37.21,46.37
+turnin Explorers' League Document (2 of 6)##13655 |goto 37.21,46.37
 step
 talk Mountaineer Kadrell##1340
-turnin Out of Gnoll-Where##26842 |goto 35.1,46.6
+turnin Out of Gnoll-Where##26842 |goto 35.07,46.58
 step
 talk Vidra Hearthstove##1963
-turnin Thelsamar Blood Sausages##26860 |goto 34.8,49.3
+|tip Inside the building.
+turnin Thelsamar Blood Sausages##26860 |goto 34.83,49.28
 step
-talk Torren Squarejaw##1153
-turnin Explorers' League Document (2 of 6)##13655 |goto 37.2,47.8
+Follow the path up |goto 34.98,46.50 < 15 |only if walking
+talk Magistrate Bluntnose##1139
+turnin Wanted: The Dark Iron Spy##13648 |goto 34.60,44.46
 step
-talk Torren Squarejaw##1153
-turnin Explorers' League Document (1 of 6)##13656 |goto 37.2,47.8
+Follow the path up |goto 35.25,45.33 < 15 |only if walking
+talk Dakk Blunderblast##1777
+turnin Looking for Lurkers##25118 |goto 35.99,44.28
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (13-16)",{
 author="support@zygorguides.com",
@@ -2439,153 +2809,196 @@ dynamic=true,
 endlevel=16
 },[[
 step
+Follow the path |goto Loch Modan/0 33.87,45.05 < 15 |only if walking
+Follow the road |goto Loch Modan/0 32.16,43.10 < 20 |only if walking
+Continue following the road |goto Loch Modan/0 29.84,31.04 < 20 |only if walking
 talk Mountaineer Stormpike##1343
-turnin Stormpike's Order##13636 |goto Loch Modan,25.4,18.0
-|tip You will only be able to turn in this quest if you completed the Loch Modan 12-13 section.
-accept A Tiny, Clever Commander##26843
+turnin Stormpike's Order##13636 |goto Loch Modan/0 25.44,17.96 |only if havequest(13636) or completedq(13636)
+accept A Tiny, Clever Commander##26843 |goto Loch Modan/0 25.44,17.96
 step
-kill "Commander" Nazrim##44197 |q 26843/1 |goto 26.2,31.8
+Follow the path |goto 26.24,22.77 < 20 |only if walking
+Enter the cave |goto 25.38,30.46 < 15 |walk
+kill "Commander" Nazrim##44197 |q 26843/1 |goto 26.14,31.64
+|tip Inside the small cave.
 step
+Leave the cave |goto 25.27,30.34 < 15 |walk
+Follow the path |goto 26.23,22.91 < 20 |only if walking
 talk Mountaineer Stormpike##1343
-turnin A Tiny, Clever Commander##26843 |goto 25.4,18.0
-accept Kobold and Kobolder##26844
+turnin A Tiny, Clever Commander##26843 |goto 25.44,17.96
+accept Kobold and Kobolder##26844 |goto 25.44,17.96
+stickystart "Tunnel_Rat_Surveyors"
 step
-kill 5 Tunnel Rat Forager##1176 |q 26844/2 |goto 35.5,12.5
-kill 5 Tunnel Rat Surveyor##1177 |q 26844/1
-There are more deeper in, around [Loch Modan 35.3,16.1]
+Follow the path |goto 34.02,17.18 < 20 |only if walking
+kill 5 Tunnel Rat Forager##1176 |q 26844/2 |goto 35.08,17.24
 step
+label "Tunnel_Rat_Surveyors"
+kill 5 Tunnel Rat Surveyor##1177 |q 26844/1 |goto 35.08,17.24
+step
+Follow the path |goto 34.02,17.18 < 20 |only if walking
 talk Mountaineer Stormpike##1343
-turnin Kobold and Kobolder##26844 |goto 25.4,18.0
-accept Who's In Charge Here?##26845
-accept Filthy Paws##26863
+turnin Kobold and Kobolder##26844 |goto 25.44,17.96
+accept Who's In Charge Here?##26845 |goto 25.44,17.96
+accept Filthy Paws##26863 |goto 25.44,17.96
 step
 talk Scout Dorli##44200
 accept A Nasty Exploit##26846 |goto 25.4,17.8
+stickystart "Tunnel_Rat_Geomancers"
+stickystart "Miners_Gear"
 step
-Click Miner's League Crates and get Miners' Gear |model Miners' League Crate##36
+Follow the path |goto 34.02,17.18 < 20 |only if walking
+Enter the mine |goto 35.49,18.89 < 10 |walk
+Follow the path |goto 35.68,20.71 < 10 |walk
+Follow the path up |goto 36.01,22.74 < 10 |walk
+Continue following the path |goto 36.32,24.58 < 10 |walk
+Continue following the path |goto 36.61,25.83 < 10 |walk
+Continue following the path |goto 35.60,27.93 < 10 |walk
 kill Foreman Sharpsneer##44198
-collect Foreman Sharpsneer's Head |q 26845/1 |goto 34.7,27.2 |indoors Silver Stream Mine
-stickystart "Tunnelrat"
-stickystart "Minersgear"
-step "Tunnelrat"
-kill 5 Tunnel Rat Geomancer##1174+ |q 26846/1 |goto 35.5,27.8
-step "Minersgear"
-Click Miner's League Crates and get Miners' Gear |model Miners' League Crate##36
-collect 6 Miners' Gear |q 26863/1 |goto 35.5,27.8 |indoors Silver Stream Mine
+|tip Inside the cave.
+collect Foreman Sharpsneer's Head##60404 |q 26845/1 |goto 34.74,26.86
+step "Tunnel_Rat_Geomancers"
+kill 5 Tunnel Rat Geomancer##1174+ |q 26846/1 |goto 34.89,27.33
+step "Miners_Gear"
+click Miner's League Crates##271+
+|tip They look like piles of wooden crates inside the cave.
+collect 6 Miners' Gear##2640 |q 26863/1 |goto 34.89,27.33
 step
+Follow the path |goto 35.81,27.67 < 10 |walk
+Continue following the path |goto 36.64,25.27 < 10 |walk
+Follow the path |goto 36.10,22.87 < 10 |walk
+Follow the path up |goto 35.44,21.89 < 10 |walk
+Leave the mine |goto 35.49,18.89 < 10 |walk
+Follow the path |goto 34.02,17.18 < 20 |only if walking
 talk Mountaineer Stormpike##1343
-turnin Who's In Charge Here?##26845 |goto 25.4,18.0
-accept The Bearer of Gnoll-edge##26864
-turnin Filthy Paws##26863
+turnin Who's In Charge Here?##26845 |goto 25.44,17.96
+accept The Bearer of Gnoll-edge##26864 |goto 25.44,17.96
+turnin Filthy Paws##26863 |goto 25.44,17.96
 step
 talk Scout Dorli##44200
 turnin A Nasty Exploit##26846 |goto 25.4,17.8
 step
 talk Mountaineer Kadrell##1340
-turnin The Bearer of Gnoll-edge##26864 |goto 35.1,46.6
-accept Suddenly, Murlocs!##26927
+turnin The Bearer of Gnoll-edge##26864 |goto 35.06,46.58
+accept Suddenly, Murlocs!##26927 |goto 35.06,46.58
 step
 talk Cannary Caskshot##44345
+|tip Inside the building.
 turnin Suddenly, Murlocs!##26927 |goto 34.8,49.1
-accept Smells Like A Plan##26928
-accept A Load of Croc##26929
+accept Smells Like A Plan##26928 |goto 34.8,49.1
+accept A Load of Croc##26929 |goto 34.8,49.1
 step
 talk Mountaineer Kadrell##1340
-accept Buzz Off##26932 |goto 35.1,46.6
+accept Buzz Off##26932 |goto 35.06,46.58
 step
-click Stolen Explorers' League Document##8032
-|tip It is laying on the ground under the small bridge
-accept Explorers' League Document (2 of 6)##13655 |goto 41.4,39.0
+Follow the path |goto 37.13,45.75 < 20 |only if walking
+Follow the path up |goto 37.56,42.31 < 20 |only if walking
+Follow the path down |goto 39.04,38.35 < 20 |only if walking
+Follow the path |goto 41.45,40.68 < 20 |only if walking
+Kill Bluegill enemies around this area
+collect 7 Murloc Scent Gland##60511 |q 26928/1 |goto 44.84,52.95
+stickystart "Loch_Buzzards"
 step
-kill Bluegill Wanderer##44176+, Bluegill Mudskipper##44292+
-collect 7 Murloc Scent Gland |q 26928/1 |goto 42.5,39.5
-You can find more Bluegill murlocs at [Loch Modan,45.9,50.1]
-And also at [Loch Modan,49.0,56.1]
-stickystart "Lochcrocolisk"
-stickystart "Lochbuzzard"
-step "Lochcrocolisk"
 kill Loch Crocolisk##1693+
 collect 6 Intact Crocolisk Jaw |q 26929/1 |goto 50.8,62.8
-step "Lochbuzzard"
-kill 8 Loch Buzzard##44184 |q 26932/1
-More of these can be found at [Loch Modan,57.2,52.8]
+step
+label "Loch_Buzzards"
+kill 8 Loch Buzzard##44184 |q 26932/1 |goto 50.8,62.8
+step
+Follow the path up |goto 46.61,63.41 < 20 |only if walking
+Follow the path |goto 44.54,63.24 < 20 |only if walking
+Continue following the path |goto 39.78,53.83 < 20 |only if walking
+Follow the path down |goto 37.38,48.33 < 20 |only if walking
+talk Mountaineer Kadrell##1340
+turnin Buzz Off##26932 |goto 35.07,46.59
 step
 talk Cannary Caskshot##44345
-turnin Smells Like A Plan##26928 |goto 34.8,49.1
-accept Axis of Awful##26868
-turnin A Load of Croc##26929
+|tip Inside the building.
+turnin Smells Like A Plan##26928 |goto 34.78,49.13
+accept Axis of Awful##26868 |goto 34.78,49.13
+turnin A Load of Croc##26929 |goto 34.78,49.13
 step
 Use Cannary's Cache |use Cannary's Cache##60681
-collect Clever Plant Disguise Kit##60502 |q 26868
-collect Potent Murloc Pheromones##60503 |q 26868
+collect Clever Plant Disguise Kit##60502 |c |q 26868
+collect Potent Murloc Pheromones##60503 |c |q 26868
 step
-talk Mountaineer Kadrell##1340
-turnin Buzz Off##26932 |goto 35.1,46.6
-step
+Follow the path up |goto 36.23,46.95 < 15 |only if walking
+Follow the path |goto 40.08,52.33 < 20 |only if walking
+Follow the path down |goto 45.00,63.33 < 20 |only if walking
 Use your Clever Plant Disguise Kit |use Clever Plant Disguise Kit##60502
-Wear your Clever Plant Disguise |havebuff 132320 |c |q 26868 |goto 49.9,57.7
+Wear the Clever Plant Disguise |havebuff 132320 |goto 49.9,57.7 |q 26868
 step
-While disgued as the plant:
-Use your Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503
-Tag the Mosshide |q 26868/1 |goto 50.5,55.9
-modelnpc Mosshide Representative##44262
+Use the Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503
+Tag the Mosshide |q 26868/1 |goto 50.55,56.02
 step
-Follow the path up |goto 45.7,64.1 < 5 |only if walking
+Follow the path up |goto 46.61,63.41 < 20 |only if walking
+Follow the path |goto 44.54,63.24 < 20 |only if walking
+Continue following the path |goto 39.78,53.83 < 20 |only if walking
+Follow the path down |goto 37.38,48.33 < 20 |only if walking
 talk Cannary Caskshot##44345
-turnin Axis of Awful##26868 |goto 34.8,49.1
+|tip Inside the building.
+turnin Axis of Awful##26868 |goto 34.78,49.13
 step
 talk Jern Hornhelm##1105
-|tip He walks around a bit, you may have to look for him
-accept Resupplying the Excavation##13639 |goto 37.2,47.4
+|tip Downstairs inside the building.
+accept Resupplying the Excavation##13639 |goto 37.23,47.38
 step
-Go to this spot
-Find Huldar, Miran, and Saean |q 13639/1 |goto 56.4,66.0
-modelnpc Huldar##2057
-modelnpc Miran##1379
-modelnpc Saean##1380
+Follow the path up |goto 37.90,46.44 < 15 |only if walking
+Follow the path |goto 40.08,52.33 < 20 |only if walking
+Follow the path down |goto 45.00,63.33 < 20 |only if walking
+Find Huldar, Miran, and Saean |q 13639/1 |goto 56.36,65.98
 step
 talk Huldar##2057
-turnin Resupplying the Excavation##13639 |goto 56.4,66.0
-accept Protecting the Shipment##309
-Kill the Dark Iron dwarves that attack
+turnin Resupplying the Excavation##13639 |goto 56.36,65.98
+accept Protecting the Shipment##309 |goto 56.36,65.98
+step
+Watch the dialogue
+Kill the enemies that attack in waves
 kill Saean##1380
-Protect the Ironband Caravan |q 309/1
+Protect the Ironband Caravan |q 309/1 |goto 56.36,65.98
 step
-Follow this path up to the cave |goto 58.1,68.8 |walk
+Follow the path up |goto 58.1,68.8 < 15 |only if walking
+Continue up the path |goto 59.76,72.40 < 15 |only if walking
 click Stolen Explorers' League Document##8032
-|tip Watch out for the rare spider inside the cave!
-accept Explorers' League Document (3 of 6)##13657 |goto Loch Modan 61.7,73.1
+accept Explorers' League Document (3 of 6)##13657 |goto 61.70,73.16
 step
+Follow the path down |goto 61.50,72.15 < 10 |only if walking
+Continue down the path |goto 61.90,71.07 < 10 |only if walking
+Follow the path |goto 63.34,70.73 < 15 |only if walking
 talk Magmar Fellhew##1345
 accept Gathering Idols##26961 |goto 64.9,66.7
 step
 talk Prospector Ironband##1344
-turnin Protecting the Shipment##309 |goto 65.3,66.0
-accept Keep Your Hands Off The Goods!##13650
+turnin Protecting the Shipment##309 |goto 65.34,65.98
+accept Keep Your Hands Off The Goods!##13650 |goto 65.34,65.98
 step
-Follow the path |goto 67.2,68.7 < 5 |only if walking
-Follow the path up |goto 69.9,67.6 < 5 |only if walking
+Follow the path |goto 67.2,68.7 < 20 |only if walking
+Follow the path up |goto 69.9,67.6 < 10 |only if walking
+Follow the path |goto 68.97,66.04 < 10 |only if walking
 click Stolen Explorers' League Document##8032
 accept Explorers' League Document (4 of 6)##13658 |goto 68.1,66.1
+stickystart "Carved_Stone_Idols"
 step
+Follow the path |goto 68.97,66.04 < 10 |only if walking
+Follow the path |goto 69.99,67.60 < 15 |only if walking
 Inspect the Artifact of the Broken Tablet |q 13650/1 |goto 70.7,67.6
 step
+Follow the path |goto 72.05,68.10 < 15 |only if walking
 Inspect the Artifact of the Overdressed Woman |q 13650/3 |goto 72.7,65.5
 step
+Follow the path |goto 72.51,61.64 < 15 |only if walking
 Inspect the Artifact of the Upturned Giant |q 13650/2 |goto 70.1,60.0
 step
-kill Stonesplinter Digger##1167+, Stonesplinter Geomancer##1165+
-collect 8 Carved Stone Idol |q 26961/1 |goto 70.3,61.9
+label "Carved_Stone_Idols"
+Kill Stonesplinter enemies around this area
+collect 8 Carved Stone Idol##2636 |q 26961/1 |goto 70.3,61.9
 step
+Follow the path |goto 69.81,62.86 < 15 |only if walking
+Follow the path |goto 67.52,63.22 < 15 |only if walking
 talk Prospector Ironband##1344
-turnin Keep Your Hands Off The Goods!##13650 |goto 65.3,66.0
+turnin Keep Your Hands Off The Goods!##13650 |goto 65.34,65.98
 step
 talk Magmar Fellhew##1345
 turnin Gathering Idols##26961 |goto 64.9,66.7
-accept Joining the Hunt##13647
-step
-Follow this road east |goto 66.4,51.9 < 5
-confirm
+accept Joining the Hunt##13647 |goto 64.9,66.7
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (16-19)",{
 author="support@zygorguides.com",
@@ -2596,152 +3009,238 @@ dynamic=true,
 endlevel=19
 },[[
 step
+Follow the road |goto Loch Modan/0 63.80,59.67 < 20 |only if walking
+Follow the road up |goto Loch Modan/0 67.06,52.01 < 20 |only if walking
+Continue following the road |goto Loch Modan/0 71.87,52.01 < 20 |only if walking
+Follow the road |goto Loch Modan/0 77.89,58.22 < 20 |only if walking
+Follow the road up |goto Loch Modan/0 83.05,59.83 < 20 |only if walking
+Enter the building |goto Loch Modan/0 83.81,62.45 < 15 |only if walking
 talk Safety Warden Pipsy##44859
-accept Thistle While You Work##27025 |goto Loch Modan,82.8,63.5
+|tip Inside the building.
+accept Thistle While You Work##27025 |goto Loch Modan/0 82.8,63.5
 step
 talk Marek Ironheart##1154
-turnin Joining the Hunt##13647 |goto 81.8,61.7
-|tip You will only be able to turn in this quest if you completed the Loch Modan 13-16 section.
-accept Hornet Hunting##27028
-accept Foxtails By The Handful##27030
+|tip Inside the building.
+turnin Joining the Hunt##13647 |goto 81.76,61.66 |only if havequest(13647) or completedq(13647)
+accept Hornet Hunting##27028 |goto 81.76,61.66
+accept Foxtails By The Handful##27030 |goto 81.76,61.66
 step
 talk Bingles Blastenheimer##6577
-accept Wing Nut##27031 |goto 81.6,64.8
+|tip Standing on the rail of the balcony of the building.
+accept Wing Nut##27031 |goto 81.65,64.75
 step
 talk Vyrin Swiftwind##1156
+|tip Inside the building.
 home Farstrider Lodge |goto 81.9,64.6 |future |q 27016
 step
 talk Eeryven Grayer##41332
-fpath Farstrider Lodge |goto Loch Modan 81.9,64.1
+|tip Inside the building.
+fpath Farstrider Lodge |goto 81.88,64.07
 step
 talk Daryl the Youngling##1187
+|tip He walks around this small spot inside the building.
 accept The Joy of Boar Hunting##27016 |goto 83.5,65.4
 step
-kill Golden Eagle##44628+ |goto 78.3,65.5
-collect 3 Pristine Flight Feather |q 27031/1
+Jump down here |goto 81.58,64.61 < 10 |only if walking
+kill Golden Eagle##44628+
+collect 3 Pristine Flight Feather##60792 |q 27031/1 |goto 78.79,67.19
+stickystart "Fluffy_Fox_Tails"
+stickystart "Stabthistle_Seeds"
 step
+Follow the path |goto 79.53,63.76 < 15 |only if walking
+Follow the road |goto 79.29,59.21 < 20 |only if walking
+Follow the path |goto 75.76,54.68 < 20 |only if walking
+Follow the path |goto 75.12,44.78 < 20 |only if walking
 click Stolen Explorers' League Document##8032
-accept Explorers' League Document (6 of 6)##13659 |goto 73.2,35.9
-stickystart "Hillfox"
-stickystart "Stabthistle"
-step "Hillfox"
-kill Hill Fox##44635+
-collect 7 Fluffy Fox Tail |q 27030/1
-step "Stabthistle"
-Click Stabthistle Seed
-|tip You can find a lot of these around the base of trees
-collect 6 Stabthistle Seed |q 27025/1 |goto 74.9,44.6
-model Stabthistle Seed##7918
+accept Explorers' League Document (6 of 6)##13659 |goto 73.16,35.87
 step
+label "Fluffy_Fox_Tails"
+kill Hill Fox##44635+
+collect 7 Fluffy Fox Tail##60755 |q 27030/1 |goto 74.02,38.45
+step
+label "Stabthistle_Seeds"
+click Stabthistle Seed##205089+
+|tip They look like brown balls with spikes on them near the base of trees around this area.
+collect 6 Stabthistle Seed##60737 |q 27025/1 |goto 74.02,38.45
+stickystart "Glassy_Hornet_Wings"
+stickystart "Mudbelly_Boars"
+step
+Follow the path |goto 69.53,38.82 < 20 |only if walking
+Continue following the path |goto 62.01,39.36 < 20 |only if walking
 click Stolen Explorers' League Document##8032
 accept Explorers' League Document (5 of 6)##13660 |goto 53.7,38.1
-stickystart "Marshhornet"
-stickystart "Mudbellyboar"
-step "Marshhornet"
+step
+label "Glassy_Hornet_Wings"
 kill Marsh Hornet##44620+
-collect 6 Glassy Hornet Wing |q 27028/1 |goto 61.4,42.0
-step "Mudbellyboar"
-kill 10 Mudbelly Boar##44627+ |q 27016/1
-You can find more at [Loch Modan,54.6,39.6]
+collect 6 Glassy Hornet Wing##60754 |q 27028/1 |goto 55.22,39.42
+step
+label "Mudbelly_Boars"
+kill 10 Mudbelly Boar##44627 |q 27016/1 |goto 55.22,39.42
 step
 talk Bingles Blastenheimer##6577
-turnin Wing Nut##27031 |goto 81.6,64.8
-accept Bird is the Word##27032 |goto 81.6,64.8
+|tip Standing on the rail of the balcony of the building.
+turnin Wing Nut##27031 |goto 81.65,64.75
+accept Bird is the Word##27032 |goto 81.65,64.75
 step
 talk Safety Warden Pipsy##44859
+|tip Inside the building.
 turnin Thistle While You Work##27025 |goto 82.8,63.5
 accept Defcon: Bobcat##27026 |goto 82.8,63.5
 step
 talk Marek Ironheart##1154
-turnin Hornet Hunting##27028 |goto 81.8,61.7
-turnin Foxtails By The Handful##27030 |goto 81.8,61.7
+|tip Inside the building.
+turnin Hornet Hunting##27028 |goto 81.76,61.66
+turnin Foxtails By The Handful##27030 |goto 81.76,61.66
 step
 talk Daryl the Youngling##1187
+|tip He walks around this small spot inside the building.
 turnin The Joy of Boar Hunting##27016 |goto 83.5,65.4
 step
 talk Vyrin Swiftwind##1156
+|tip Inside the building.
 accept Vyrin's Revenge##27036 |goto 81.9,64.6
+stickystart "Bobcats"
 step
-kill 8 Bobcat##44188+ |q 27026/1 |goto 79.2,67.2
-You can find more Bobcats around [Loch Modan,72.0,72.0]
-step
-Follow the path inside the cave to the very end
+Jump down here |goto 81.58,64.64 < 7 |only if walking
+Follow the path |goto 78.32,69.50 < 20 |only if walking
+Follow the path |goto 77.35,72.91 < 20 |only if walking
+Follow the path |goto 71.35,72.51 < 20 |only if walking
+Enter the cave |goto 71.16,76.05 < 10 |walk
+Follow the path |goto 72.42,78.22 < 10 |walk
+Follow the path down |goto 74.06,78.00 < 10 |walk
+Follow the path |goto 75.82,78.90 < 15 |walk
+Follow the path |goto 76.65,83.24 < 10 |walk
+Follow the path |goto 77.62,82.48 < 15 |walk
+Continue following the path |goto 77.59,79.06 < 15 |walk
 talk Rusted Skystrider##44618
-turnin Bird is the Word##27032 |goto 78.6,76.2 |indoors Ironwing Cavern
-accept Skystrider's Heart##27033 |goto 78.6,76.2 |indoors Ironwing Cavern
+turnin Bird is the Word##27032 |goto 78.6,76.2
+accept Skystrider's Heart##27033 |goto 78.6,76.2
 step
-Follow the path up |goto 77.0,51.6 < 5 |only if walking
+label "Bobcats"
+Jump down here |goto 76.03,77.87 < 10 |walk
+Follow the path |goto 73.92,77.07 < 15 |walk
+Follow the path |goto 72.58,78.45 < 15 |walk
+Leave the cave |goto 71.32,76.41 < 15 |walk
+kill 8 Bobcat##44188 |q 27026/1 |goto 70.12,74.44
+step
+Follow the path |goto 74.57,69.98 < 20 |only if walking
+Continue following the path |goto 74.51,64.29 < 20 |only if walking
+Follow the path |goto 73.73,59.45 < 20 |only if walking
+Follow the path up |goto 77.0,51.6 < 15 |only if walking
+Continue up the path |goto 78.13,52.26 < 15 |only if walking
 kill Ol' Sooty##1225
-collect Ol' Sooty's Head |q 27036/1 |goto 80.3,52.1
+|tip Inside the small cave.
+collect Ol' Sooty's Head##2713 |q 27036/1 |goto 80.3,52.1
 step
+Leave the cave |goto 79.07,51.59 < 10 |walk
+Follow the path down |goto 77.66,52.77 < 10 |only if walking
+Follow the road |goto 77.10,57.04 < 20 |only if walking
+Continue following the road |goto 79.70,59.17 < 20 |only if walking
+Follow the road up |goto 83.05,59.83 < 20 |only if walking
+Enter the building |goto 83.81,62.45 < 15 |only if walking
 talk Safety Warden Pipsy##44859
+|tip Inside the building.
 turnin Defcon: Bobcat##27026 |goto 82.8,63.5
 step
 talk Bingles Blastenheimer##6577
-turnin Skystrider's Heart##27033 |goto 81.7,64.7
-accept He's That Age##27034 |goto 81.7,64.7
+|tip Standing on the rail of the balcony of the building.
+turnin Skystrider's Heart##27033 |goto 81.65,64.75
+accept He's That Age##27034 |goto 81.65,64.75
 step
 talk Daryl the Youngling##1187
+|tip He walks around this small spot inside the building.
 turnin Vyrin's Revenge##27036 |goto 83.5,65.5
 accept Vyrin's Revenge##27037 |goto 83.5,65.5
 step
 talk Vyrin Swiftwind##1156
+|tip Inside the building.
 turnin Vyrin's Revenge##27037 |goto 81.9,64.6
 step
+Jump down here |goto 81.64,63.31 < 10 |only if walking
+Follow the road |goto 79.26,59.24 < 20 |only if walking
+Continue following the road |goto 72.04,52.06 < 20 |only if walking
+Follow the road |goto 66.49,47.80 < 20 |only if walking
+Continue following the road |goto 61.52,32.81 < 20 |only if walking
 talk Ando Blastenheimer##44870
-turnin He's That Age##27034 |goto 58.5,29.1
-accept Standing Up##27035 |goto 58.5,29.1
+turnin He's That Age##27034 |goto 58.52,29.10
+accept Standing Up##27035 |goto 58.52,29.10
 step
+Follow the path |goto 53.57,25.73 < 10 |only if walking
 kill Twilight Landshaper##44724
-Destroy the Twilight Landshaper |q 27035/1 |goto 50.6,23.8
+Destroy the Twilight Landshaper |q 27035/1 |goto 50.53,23.79
 step
+Follow the path |goto 53.57,25.73 < 10 |only if walking
 talk Ando Blastenheimer##44870
-turnin Standing Up##27035 |goto 58.5,29.1
-accept Fight the Hammer##27074 |goto 58.5,29.1
+turnin Standing Up##27035 |goto 58.52,29.10
+accept Fight the Hammer##27074 |goto 58.52,29.10
 step
 talk Ashlan Stonesmirk##1073
-turnin Fight the Hammer##27074 |goto 64.3,26.6
-accept Servants of Cho'gall##27075 |goto 64.3,26.6
-accept Clutching at Chaos##27077 |goto 64.3,26.6
-stickystart "Mogrosh"
-stickystart "Nascentelementium"
-step "Mogrosh"
-kill 7 Mo'grosh Darkmauler##44758+, Mo'grosh Earthbender##44760+ |q 27075/1
-step "Nascentelementium"
+|tip He walks around this small camp.
+turnin Fight the Hammer##27074 |goto 64.14,26.61
+accept Servants of Cho'gall##27075 |goto 64.14,26.61
+accept Clutching at Chaos##27077 |goto 64.14,26.61
+stickystart "Nascent_Elementium_Spikes"
+step
+Follow the path |goto 63.33,24.64 < 15 |only if walking
+Follow the path |goto 64.97,20.96 < 15 |only if walking
+Kill Mo'grosh enemies around this area.
+Slay #7# Mo'grosh Ogres |q 27075/1 |goto 68.5,22.2
+step
+label "Nascent_Elementium_Spikes"
 click Nascent Elementium##9836+
-collect 10 Nascent Elementium Spike |q 27077/1 |goto 68.5,22.2
+|tip They look like wavy grey spikes on the ground around this area.
+collect 10 Nascent Elementium Spike##60738 |q 27077/1 |goto 68.5,22.2
 step
+Follow the path |goto 65.73,20.78 < 20 |only if walking
+Follow the path |goto 63.16,23.72 < 20 |only if walking
 talk Ashlan Stonesmirk##1073
-turnin Servants of Cho'gall##27075 |goto 64.1,26.6
-turnin Clutching at Chaos##27077 |goto 64.1,26.6
-accept Gor'kresh##27078 |goto 64.1,26.6
+|tip He walks around this small camp.
+turnin Servants of Cho'gall##27075 |goto 64.14,26.61
+turnin Clutching at Chaos##27077 |goto 64.14,26.61
+accept Gor'kresh##27078 |goto 64.14,26.61
 step
-Enter the cave |goto 74.8,19.8 < 5 |walk
-kill Gor'kresh##44771a |q 27078/1 |goto 79.7,14.8 |indoors Mo'grosh Stronghold
+Follow the path |goto 63.33,24.64 < 15 |only if walking
+Follow the path |goto 64.97,20.96 < 15 |only if walking
+Enter the cave |goto 74.8,19.8 < 10 |walk
+Follow the path |goto 75.59,18.29 < 10 |walk
+Follow the path |goto 75.29,15.90 < 10 |walk
+Follow the path |goto 78.05,15.90 < 10 |walk
+kill Gor'kresh##44771 |q 27078/1 |goto 79.67,14.83
 step
-Leave the cave |goto 74.8,19.8 < 5 |walk
+Follow the path |goto 78.90,15.56 < 10 |walk
+Follow the path |goto 77.43,16.09 < 10 |walk
+Follow the path |goto 75.29,15.90 < 10 |walk
+Follow the path |goto 75.59,18.29 < 10 |walk
+Leave the cave |goto 74.8,19.8 < 10 |walk
+Follow the path |goto 65.73,20.78 < 20 |only if walking
+Follow the path |goto 63.16,23.72 < 20 |only if walking
 talk Ashlan Stonesmirk##1073
-turnin Gor'kresh##27078 |goto 64.3,26.6
-accept Ando's Call##27115 |goto 64.3,26.6
+|tip He walks around this small camp.
+turnin Gor'kresh##27078 |goto 64.14,26.61
+accept Ando's Call##27115 |goto 64.14,26.61
 step
 talk Ando Blastenheimer##44870
-turnin Ando's Call##27115 |goto 58.5,29.1
-accept The Winds of Loch Modan##27116 |goto 58.5,29.1
-You will fly to Algaz Station |goto 25.6,17.5 < 5 |noway |c |q 27116
+turnin Ando's Call##27115 |goto 58.52,29.10
+accept The Winds of Loch Modan##27116 |goto 58.52,29.10
 step
-talk Mountaineer Stormpike##1343 |goto 25.4,18.0
-turnin The Winds of Loch Modan##27116
+Fly to Algaz Station |goto 25.6,17.5 < 20 |noway |c |q 27116
+step
+talk Mountaineer Stormpike##1343
+turnin The Winds of Loch Modan##27116 |goto 25.45,17.96
+accept Checking on the Boys##26137 |goto 25.45,17.96
+step
+Follow the road |goto 29.99,31.62 < 20 |only if walking
+Follow the path down |goto 33.81,44.96 < 15 |only if walking
+Follow the road |goto 35.55,46.73 < 20 |only if walking
+talk Torren Squarejaw##1153
+turnin Explorers' League Document (3 of 6)##13657 |goto 37.21,46.37
+turnin Explorers' League Document (4 of 6)##13658 |goto 37.21,46.37
+turnin Explorers' League Document (6 of 6)##13659 |goto 37.21,46.37
+turnin Explorers' League Document (5 of 6)##13660 |goto 37.21,46.37
+accept Heartfelt Appreciation##13661 |goto 37.21,46.37
 step
 talk Torren Squarejaw##1153
-turnin Explorers' League Document (2 of 6)##13655
-turnin Explorers' League Document (3 of 6)##13657
-turnin Explorers' League Document (4 of 6)##13658
-turnin Explorers' League Document (6 of 6)##13659
-turnin Explorers' League Document (5 of 6)##13660
-accept Heartfelt Appreciation##13661 |goto 37.3,47.8
-step
-talk Torren Squarejaw##1153
-turnin Heartfelt Appreciation##13661 |goto 37.3,47.8
+turnin Heartfelt Appreciation##13661 |goto 37.21,46.37
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)",{
 author="support@zygorguides.com",
@@ -2752,75 +3251,104 @@ dynamic=true,
 endlevel=21
 },[[
 step
+Follow the road |goto Loch Modan/0 32.09,43.34 < 20 |only if walking
+Continue following the road |goto Loch Modan/0 29.52,30.42 < 20 |only if walking
+Follow the road |goto Loch Modan/0 26.55,22.12 < 20 |only if walking
+Enter the tunnel |goto Loch Modan/0 25.57,10.27 < 10 |only if walking
+Leave the tunnel |goto Loch Modan/0 25.27,0.07 > 10000 |only if walking
+Enter the tunnel |goto Wetlands/0 55.14,83.55 < 10 |only if walking
+Leave the tunnel |goto Wetlands/0 50.64,82.59 < 10 |only if walking
 talk Mountaineer Rharen##41075
-accept The Stolen Keg##25395 |goto Wetlands,50.0,79.2
+turnin Checking on the Boys##26137 |goto Wetlands/0 49.95,79.16 |only if havequest(26137) or completedq(26137)
+accept The Stolen Keg##25395 |goto Wetlands/0 49.95,79.16
 step
 talk Mountaineer Grugelm##41074
-accept Cleaning Hovel##25211 |goto 49.9,79.2
+accept Cleaning Hovel##25211 |goto 49.91,79.24
+stickystart "Slay_Dragonmaw_Orcs"
 step
+Follow the path |goto 48.73,78.72 < 15 |only if walking
+Follow the path |goto 47.96,77.08 < 15 |only if walking
 click Mountaineer's Ale##7490
-collect Mountaineer's Ale |q 25395/1 |goto 47.8,74.3
+|tip It looks like a wooden barrel upstairs inside the building.
+collect Mountaineer's Ale##55209 |q 25395/1 |goto 47.81,74.35
 step
-kill Dragonmaw Grunt##41072+, Dragonmaw Scout##41080+
-kill 5 Dragonmaw Orc |q 25211/1 |goto 47.7,76.3
+label "Slay_Dragonmaw_Orcs"
+Kill Dragonmaw enemies around this area
+Slay #5# Dragonmaw Orcs |q 25211/1 |goto 47.65,76.16
 step
+Follow the path |goto 47.96,77.08 < 15 |only if walking
+Follow the path |goto 48.73,78.72 < 15 |only if walking
 talk Mountaineer Grugelm##41074
-turnin Cleaning Hovel##25211 |goto 49.9,79.2
+turnin Cleaning Hovel##25211 |goto 49.91,79.24
 step
 talk Mountaineer Rharen##41075
-turnin The Stolen Keg##25395 |goto 50.0,79.2
-accept Keg Run##25770 |goto 50.0,79.2
+turnin The Stolen Keg##25395 |goto 49.95,79.16
+accept Keg Run##25770 |goto 49.95,79.16
 step
-Follow this tunnel to the other side |goto 50.2,78.3 < 5 |walk
-Follow this tunnel to the other side |goto 49.3,70.6 < 5 |walk
+Enter the tunnel |goto 50.18,78.32 < 10 |only if walking |n
+Leave the tunnel |goto 50.14,71.59 < 10 |only if walking |n
+Follow the path down |goto 49.96,69.32 < 15 |only if walking |n
+Continue down the path |goto 47.96,67.64 < 15 |c |q 25770
+step
+Enter the tunnel |goto 49.32,70.56 < 10 |only if walking
+Leave the tunnel |goto 53.81,70.34 < 10 |only if walking
 talk Forba Slabchisel##41086
-turnin Keg Run##25770 |goto 57.5,71.8
-accept Fight the Flood##25721 |goto 57.5,71.8
+turnin Keg Run##25770 |goto 57.51,71.76
+accept Fight the Flood##25721 |goto 57.51,71.76
+step
+talk Elgin Baelor##41321
+fpath Slabchisel's Survey |goto 56.86,71.10
 step
 talk Surveyor Thurdan##41129
-accept Sedimentary, My Dear##25722 |goto 57.5,71.4
+accept Sedimentary, My Dear##25722 |goto 57.47,71.42
 step
 talk Dunlor Marblebeard##41128
-accept Thresh Out of Luck##25723 |goto 57.8,71.5
-stickystart "Flood"
-stickystart "Threshadon"
-stickystart "Deposit"
-step "Flood"
-kill 10 Flood Elemental##41132 |q 25721/1
-step "Threshadon"
+accept Thresh Out of Luck##25723 |goto 57.83,71.50
+stickystart "Threshadon_Chunks"
+stickystart "Flood_Sediment_Samples"
+step
+kill 10 Flood Elemental##41132 |q 25721/1 |goto 62.05,70.95
+step
+label "Threshadon_Chunks"
 kill Displaced Threshadon##41137+
-collect 8 Threshadon Chunk |q 25723/1 |goto 61.7,70.4
-step "Deposit"
-click Sediment Deposit##49
-collect 8 Flood Sediment Sample |q 25722/1
+collect 8 Threshadon Chunk##55232 |q 25723/1 |goto 62.05,70.95
+step
+label "Flood_Sediment_Samples"
+click Sediment Deposit##49+
+|tip They look like mounds of dirt underwater around this area.
+collect 8 Flood Sediment Sample##55231 |q 25722/1 |goto 62.05,70.95
 step
 talk Dunlor Marblebeard##41128
-turnin Thresh Out of Luck##25723 |goto 57.8,71.5
-accept Fenbush Berries##25725 |goto 57.8,71.5
+turnin Thresh Out of Luck##25723 |goto 57.83,71.50
+accept Fenbush Berries##25725 |goto 57.83,71.50
 step
 talk Surveyor Thurdan##41129
-turnin Sedimentary, My Dear##25722 |goto 57.5,71.4
-accept A Dumpy Job##25726 |goto 57.5,71.4
+turnin Sedimentary, My Dear##25722 |goto 57.47,71.42
+accept A Dumpy Job##25726 |goto 57.47,71.42
 step
 talk Forba Slabchisel##41086
 turnin Fight the Flood##25721 |goto 57.5,71.8
 accept Drungeld Glowerglare##25727 |goto 57.5,71.8
 step
 kill Silty Oozeling##41145+
-collect Dumpy Level |q 25726/1 |goto 56.0,73.7
+collect Dumpy Level##55234 |q 25726/1 |goto 56.0,73.7
 step
 talk Surveyor Thurdan##41129
 turnin A Dumpy Job##25726 |goto 57.5,71.4
 accept Down In Thelgen Rock##25734 |goto 57.5,71.4
+stickystart "Handfuls_Of_Fenberries"
 step
+Follow the path |goto 60.14,72.36 < 20 |only if walking
 kill Drungeld Glowerglare##41151
-|tip He's in a small cave.
-collect Glowerglare's Beard |q 25727/1 |goto 63.8,78.2
+|tip Inside the small cave.
+collect Glowerglare's Beard##55988 |q 25727/1 |goto 63.8,78.2
 step
-click Fenberries##28
-collect 15 Handful of Fenberries |q 25725/1 |goto 61.5,76.1
-More can be found at [Wetlands,56.8,74.9]
+label "Handfuls_Of_Fenberries"
+click Fenberries##28+
+|tip They look like small green shrubs on the ground around this area.
+collect 15 Handful of Fenberries##55233 |q 25725/1 |goto 61.25,74.93
 step
+Follow the path |goto 60.14,72.36 < 20 |only if walking
 talk Dunlor Marblebeard##41128
 turnin Fenbush Berries##25725 |goto 57.8,71.5
 accept Incendicite Ore##25735 |goto 57.8,71.5
@@ -2828,27 +3356,44 @@ step
 talk Forba Slabchisel##41086
 turnin Drungeld Glowerglare##25727 |goto 57.5,71.8
 accept Get Out Of Here, Stalkers##25733 |goto 57.5,71.8
+stickystart "Cave_Stalkers"
+stickystart "Incendicite_Ores"
+stickystart "Leech_Stalkers"
 step
-Enter the cave |goto Wetlands/0 52.5,63.5 < 20 |walk
-Follow the path down |goto Wetlands/0 46.1,60.9 |walk |indoors Thelgen Rock
-click Thelgen Seismograph##2091 |indoors Thelgen Rock
-collect Thelgen Seismic Record |q 25734/1 |goto Wetlands/0 47.9,66.0 |indoors Thelgen Rock
+Enter the cave |goto 52.5,63.5 < 20 |walk
+Follow the path |goto 51.05,62.03 < 15 |walk
+Follow the path down |goto 50.15,62.97 < 15 |walk
+Follow the path |goto 49.05,62.71 < 15 |walk
+Follow the path |goto 48.43,61.51 < 15 |walk
+Follow the path up |goto 47.95,59.80 < 15 |walk
+Follow the path |goto 46.11,59.77 < 15 |walk
+Follow the path down |goto 46.03,60.87 < 15 |walk
+Follow the path |goto 46.68,62.45 < 15 |walk
+click Thelgen Seismograph##2091
+collect Thelgen Seismic Record##55242 |q 25734/1 |goto 47.87,66.07
 step
-kill Torrention##41167 |indoors Thelgen Rock
-collect 1 Floodsurge Core##55243 |n |indoors Thelgen Rock
-Click the Floodsurge Core |use Floodsurge Core##55243 |indoors Thelgen Rock
-accept The Floodsurge Core##25736 |goto 47.6,65.5 |indoors Thelgen Rock
-stickystart "Cavestalker"
-stickystart "Pinkore"
-step "Cavestalker"
-kill 7 Cave Stalker##4040+ |q 25733/2 |indoors Thelgen Rock
-step "Pinkore"
-click Incendicite Mineral Vein##384 |indoors Thelgen Rock
-|tip They look like pink ore deposits with pink smoke coming off of them on the ground inside this cave.
-collect 8 Incendicite Ore |q 25735/1 |goto 46.0,60.3 |indoors Thelgen Rock
+kill Torrention##41167
+collect Floodsurge Core##55243 |n
+|tip You will automatically accept a quest upon looting this item.
+accept The Floodsurge Core##25736 |goto 47.6,65.5
 step
-Leave the cave |goto 52.5,63.5 < 5 |walk
-kill 7 Leech Stalker##1111+ |q 25733/1 |goto 54.0,64.1
+label "Cave_Stalkers"
+kill 7 Cave Stalker##4040 |q 25733/2 |goto 45.98,60.11
+step
+label "Incendicite_Ores"
+click Incendicite Mineral Vein##384
+|tip They look like ore deposits with smoke coming off of them inside the cave.
+collect 8 Incendicite Ore##55241 |q 25735/1 |goto 45.98,60.11
+step
+label "Leech_Stalkers"
+Follow the path |goto 46.37,59.49 < 15 |walk
+Follow the path down |goto 47.63,59.45 < 15 |walk
+Follow the path |goto 48.45,61.54 < 15 |walk
+Follow the path up |goto 49.24,62.83 < 15 |walk
+Follow the path |goto 50.58,62.55 < 15 |walk
+Follow the path |goto 51.44,61.99 < 15 |walk
+Leave the cave |goto 52.5,63.5 < 20 |walk
+kill 7 Leech Stalker##1111 |q 25733/1 |goto 53.84,64.32
 step
 talk Forba Slabchisel##41086
 turnin Get Out Of Here, Stalkers##25733 |goto 57.5,71.8
@@ -2863,8 +3408,10 @@ step
 talk Forba Slabchisel##41086
 accept Onwards to Menethil##25777 |goto 57.5,71.8
 step
-clicknpc Brisket##41260 |goto 57.1,71.7
-You will ride to Menethil Harbor |goto 12.4,50.4 < 5 |noway |c |q 25777
+clicknpc Brisket##41260 |goto 57.1,71.7 |n
+Begin Riding to Menethil Harbor |goto 57.1,71.7 > 30 |noway |c |q 25777
+step
+Ride to Menethil Harbor |goto 12.4,50.4 < 20 |c |q 25777
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",{
 author="support@zygorguides.com",
@@ -3410,7 +3957,7 @@ talk Colonel Troteman##43733
 accept AHHHHHHHHHHHH! AHHHHHHHHH!!!##26708 |goto 77.2,65.9
 step
 clicknpc Bravo Company Siege Tank##43714
-Take Control of the Bravo Company Siege Tank |invehicle |c |goto 77.09,65.97
+Take Control of the Bravo Company Siege Tank |invehicle |c |goto 77.09,65.97 |q 26708
 step
 Follow the path |goto 79.19,62.11 < 20 |only if walking
 Follow the path down |goto 77.56,56.19 < 20 |only if walking
@@ -3475,7 +4022,7 @@ In order to complete the Blasted Lands questline for Loremaster of Eastern Kingd
 talk Zidormi##88206 |goto Blasted Lands/0 48.1,7.3
 Tell her "Show me the Blasted Lands before the invasion."
 confirm
-only if havequest(34398) or completedq(34398)
+|only if havequest(34398) or completedq(34398)
 step
 talk Quartermaster Lungertz##5393
 turnin Blasted Lands: The Other Side of the World##28857 |goto Blasted Lands,60.1,13.5 |only !DeathKnight
@@ -3921,7 +4468,7 @@ step
 Cast Gift of the Naaru on a Draenei Survivor |cast Gift of the Naaru##28880
 |tip They are Draenei laying on the ground around this area.  They spawn in random locations, so you may have to search for one.
 Save a Draenei Survivor |q 9283/1 |goto 48.3,30.4
-only if havequest(9283)
+|only if havequest(9283)
 step
 label "Kill_Volatile_Mutations"
 kill 8 Volatile Mutation##16516 |q 10302/1 |goto 48.3,30.4
@@ -3936,7 +4483,7 @@ step
 talk Zalduun##16502
 |tip He walks around inside the building.
 turnin Rescue the Survivors!##9283 |goto 52.5,41.2
-only Draenei
+|only Draenei
 step
 talk Technician Zhanaa##17071
 |tip Outside the building.
@@ -4051,7 +4598,7 @@ accept The Great Moongraze Hunt##9454
 step
 talk Anchorite Fateema##17214 |goto Azuremyst Isle,48.4,51.8
 accept Medicinal Purpose##9463
-only Draenei
+|only Draenei
 step
 talk Technician Dyvuun##16551 |goto Azuremyst Isle,48.7,50.3
 turnin Travel to Azure Watch##9313
@@ -4127,11 +4674,11 @@ Uncover the Traitor |q 9531/1
 step
 talk Anchorite Fateema##17214 |goto 48.4,51.8
 turnin Medicinal Purpose##9463
-only Draenei
+|only Draenei
 step
 talk Daedal##17215 |goto 48.4,51.5
 accept An Alternative Alternative##9473
-only Draenei
+|only Draenei
 step
 talk Acteon##17110 |goto Azuremyst Isle,49.8,51.9
 turnin The Great Moongraze Hunt##9454
@@ -4154,7 +4701,7 @@ turnin The Great Moongraze Hunt##10324
 step
 talk Daedal##17215 |goto Azuremyst Isle,48.4,51.5
 turnin An Alternative Alternative##9473
-only Draenei
+|only Draenei
 step
 talk Exarch Menelaous##17116 |goto Azuremyst Isle,47.1,50.6
 turnin Strange Findings##9455
@@ -4165,26 +4712,26 @@ accept The Missing Fisherman##10428
 step
 talk Caregiver Chellan##16553 |goto Azuremyst Isle,48.3,49.2
 accept Beds, Bandages, and Beyond##9603
-only Draenei
+|only Draenei
 step
 talk Zaldaan##43991 |goto 49.7,49.1
 turnin Beds, Bandages, and Beyond##9603
 accept On the Wings of a Hippogryph##9604
-only Draenei
+|only Draenei
 step
 talk Nurguni##16768 |goto The Exodar,57.0,50.1
 turnin On the Wings of a Hippogryph##9604
 accept Hippogryph Master Stephanos##9605
-only Draenei
+|only Draenei
 step
 talk Stephanos##17555 |goto 54.5,36.3
 turnin Hippogryph Master Stephanos##9605
 accept Return to Caregiver Chellan##9606
-only Draenei
+|only Draenei
 step
 talk Caregiver Chellan##16553 |goto Azuremyst Isle,48.3,49.2
 turnin Return to Caregiver Chellan##9606
-only Draenei
+|only Draenei
 step
 kill 8 Infected Nightstalker Runt##17202+ |q 9456/1 |goto Azuremyst Isle,45.7,43.9
 step
@@ -4417,12 +4964,12 @@ turnin A Favorite Treat##9624
 step
 talk Princess Stillpine##17682 |goto 68.3,81.1
 accept Saving Princess Stillpine##9667
-only if completedq(9538)
+|only if completedq(9538)
 step
 Kill furbolgs in this camp until High Chief Bristlelimb appears
 kill High Chief Bristlelimb##17702
 collect The High Chief's Key##24099 |q 9667 |goto 64.5,77.7
-only if completedq(9538)
+|only if completedq(9538)
 step
 kill Lord Xiz##17701 |q 9666/1
 Use the Draenei Banner on Lord Xiz's corpse |use Draenei Banner##24084
@@ -4430,7 +4977,7 @@ Declare your Power |q 9666/2 |goto 68.8,68.1
 step
 click Princess Stillpine's Cage##1787
 Save Princess Stillpine |q 9667/1 |goto 68.2,81.1
-only if completedq(9538)
+|only if completedq(9538)
 step
 talk Kessel##17649 |goto 63.0,87.5
 turnin Declaration of Power##9666
@@ -4500,7 +5047,7 @@ step
 talk Stillpine Ambassador Frasaboo##18803 |goto 55.2,56.0
 turnin Saving Princess Stillpine##9667
 |tip You may not have this breadcrumb quest to turn in.
-only if completedq(9538)
+|only if completedq(9538)
 step
 talk Jessera of Mac'Aree##17663 |goto 56.4,56.8
 accept Mac'Aree Mushroom Menagerie##9648
@@ -5039,59 +5586,59 @@ Follow the path |goto 41.19,62.71 < 20 |only if walking
 talk Dentaria Silverglade##49479
 turnin Priestess of the Moon##28723 |goto 42.5,50.6
 accept Iverron's Antidote##28724 |goto 42.5,50.6
-only NightElf
+|only NightElf
 step
 click Moonpetal Lily##253+
 |tip They are all around these ponds.
 collect 7 Moonpetal Lily##10641 |q 28724/1 |goto 42.49,50.54
-only if havequest(28724)
+|only if havequest(28724)
 step
 talk Dentaria Silverglade##49479
 turnin Iverron's Antidote##28724 |goto 42.5,50.6
 accept The Woodland Protector##28725 |goto 42.5,50.6
-only NightElf
+|only NightElf
 step
 talk Tarindrella##49480
 |tip She will appear next to you when you reach the entrance of the cave.
 turnin The Woodland Protector##28725 |goto Teldrassil/2 44.5,82.2
 accept Webwood Corruption##28726 |goto Teldrassil/2 44.5,82.2
-only NightElf
+|only NightElf
 step
 kill 12 Webwood Spider##1986 |q 28726/1 |goto 46.02,60.91
 |tip They are all around inside this cave.
-only if havequest(28726)
+|only if havequest(28726)
 step
 _Next to you:_
 talk Tarindrella##49480
 turnin Webwood Corruption##28726
 accept Vile Touch##28727
-only NightElf
+|only NightElf
 step
 Follow the path down |goto 46.12,55.06 < 15 |walk
 Follow the path up |goto 39.27,31.34 < 15 |walk
 Continue up the path |goto 34.42,16.19 < 15 |walk
 kill Githyiss the Vile##1994+ |q 28727/1 |goto 44.9,28.1
-only if havequest(28727)
+|only if havequest(28727)
 step
 _Next to you:_
 talk Tarindrella##49480
 turnin Vile Touch##28727
 accept Signs of Things to Come##28728
-only NightElf
+|only NightElf
 step
 talk Dentaria Silverglade##49479
 turnin Signs of Things to Come##28728 |goto Shadowglen/0 42.50,50.47
 accept Teldrassil: Crown of Azeroth##28729 |goto Shadowglen/0 42.50,50.47
-only NightElf
+|only NightElf
 step
 Use the Crystal Phial near the water |use Crystal Phial##5185
 collect Filled Crystal Phial##5184 |q 28729/1 |goto 50.3,33.7
-only if havequest(28729)
+|only if havequest(28729)
 step
 talk Dentaria Silverglade##49479
 turnin Teldrassil: Crown of Azeroth##28729 |goto 42.50,50.49
 accept Precious Waters##28730 |goto 42.50,50.49
-only NightElf
+|only NightElf
 step
 Follow the ramp up |goto 41.90,63.50 < 15 |only if walking
 Continue up the ramp |goto 46.05,54.07 < 15 |only if walking
@@ -5100,7 +5647,7 @@ talk Tenaron Stormgrip##3514
 |tip In a room at the top of the tree.
 turnin Precious Waters##28730 |goto 47.2,55.9
 accept Teldrassil: Passing Awareness##28731 |goto 47.2,55.9
-only NightElf
+|only NightElf
 step
 Jump onto the roof of the house below |goto 47.96,59.95 < 15 |only if walking
 talk Porthannius##6780
@@ -5147,7 +5694,7 @@ step
 talk Corithras Moonrage##3515
 turnin Teldrassil: Passing Awareness##28731 |goto 55.8,53.9
 accept Teldrassil: The Refusal of the Aspects##929 |goto 55.8,53.9
-only NightElf
+|only NightElf
 step
 click Fel Cone##10405+
 |tip They look like big pine cones with green gas floating out of them on the ground around this area.
@@ -5159,7 +5706,7 @@ turnin Seek Redemption!##489 |goto 59.5,49.2
 step
 Use the Jade Phial near the water |use Jade Phial##5619
 collect Filled Jade Phial |q 929/1 |goto 62.1,50.8
-only if havequest(929)
+|only if havequest(929)
 step
 Follow the path |goto 62.82,50.10 < 20 |only if walking
 talk Gaerolas Talvethren##2107
@@ -5194,7 +5741,7 @@ turnin Teldrassil: The Refusal of the Aspects##929 |goto 55.8,53.9
 step
 talk Nyoma##4265
 accept Reminders of Home##6344 |goto 56.73,53.51
-only NightElf
+|only NightElf
 stickystart "Kill_Gnarlpine_Mystics"
 step
 Follow the path |goto 63.46,47.40 < 20 |only if walking
@@ -5321,21 +5868,21 @@ step
 talk Fidelio##40553
 turnin Reminders of Home##6344 |goto 55.47,50.42
 accept To Darnassus##6341 |goto 55.47,50.42
-only NightElf
+|only NightElf
 step
 talk Sister Aquinne##7316
 turnin To Darnassus##6341 |goto Darnassus/0 36.1,53.5
 accept An Unexpected Gift##6342 |goto Darnassus/0 36.1,53.5
-only NightElf
+|only NightElf
 step
 talk Leora##40552
 turnin An Unexpected Gift##6342 |goto 36.6,47.9
 accept Return to Nyoma##6343 |goto 36.6,47.9
-only NightElf
+|only NightElf
 step
 talk Nyoma##4265
 turnin Return to Nyoma##6343 |goto Teldrassil/0 56.73,53.52
-only NightElf
+|only NightElf
 step
 Follow the road |goto 55.76,50.83 < 20 |only if walking
 Continue following the road |goto 54.23,51.03 < 20 |only if walking
@@ -5508,16 +6055,16 @@ turnin Oakenscowl##2499 |goto 43.94,44.20
 step
 click Hero's Call Board##10016
 accept Hero's Call: Darkshore!##28490 |goto Darnassus/0 44.96,49.87
-only Draenei,Dwarf,Gnome,Human
+|only Draenei,Dwarf,Gnome,Human
 step
 talk Sentinel Cordressa Briarbow##42936
 |tip Upstairs inside the building.
 accept Breaking Waves of Change##26383 |goto 43.9,76.1
-only NightElf
+|only NightElf
 step
 talk Genn Greymane##48736
 accept Breaking Waves of Change##26385 |goto 48.2,14.7
-only Worgen
+|only Worgen
 step
 talk Tyrande Whisperwind##7999
 |tip Upstairs inside the building.
@@ -6451,37 +6998,37 @@ step
 talk Sergeant Cleese##35839
 turnin Your Instructor##14265 |goto 67.1,63.5
 accept Safety in Numbers##14286 |goto 67.1,63.5
-only Worgen Warrior
+|only Worgen Warrior
 step
 talk Loren the Fence##35871
 turnin Someone's Looking for You##14269 |goto 71.4,65.8
 accept Safety in Numbers##14285 |goto 71.4,65.8
-only Worgen Rogue
+|only Worgen Rogue
 step
 talk Vitus Darkwalker##35869
 turnin Shady Associates##14273 |goto 71.4,64.4
 accept Safety in Numbers##14287 |goto 71.4,64.4
-only Worgen Warlock
+|only Worgen Warlock
 step
 talk Huntsman Blake##35874
 turnin Someone's Keeping Track of You##14275 |goto 71.5,61.3
 accept Safety in Numbers##14290 |goto 71.5,61.3
-only Worgen Hunter
+|only Worgen Hunter
 step
 talk Myriam Spellwaker##35872
 turnin Arcane Inquiries##14277 |goto 68.0,64.7
 accept Safety in Numbers##14288 |goto 68.0,64.7
-only Worgen Mage
+|only Worgen Mage
 step
 talk Sister Almyra##35870
 turnin Seek the Sister##14278 |goto 70.4,65.5
 accept Safety in Numbers##14289 |goto 70.4,65.5
-only Worgen Priest
+|only Worgen Priest
 step
 talk Celestine of the Harvest##35873
 turnin The Winds Know Your Name... Apparently##14280 |goto 70.2,66.0
 accept Safety in Numbers##14291 |goto 70.2,66.0
-only Worgen Druid
+|only Worgen Druid
 step
 talk King Genn Greymane##35112
 turnin Safety in Numbers##14286 |goto 65.8,77.7 |only Worgen Warrior

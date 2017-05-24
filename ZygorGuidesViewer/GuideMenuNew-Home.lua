@@ -8,12 +8,23 @@ GuideMenu.Home={
 	{"title", text=[[This Update:]]},
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
 
-	{"section", text=[[EVENTS]]},
-	{"item", text=[[Updated |cfffe6100Children's Week Stormwind Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Stormwind Quests"},
-	{"item", text=[[Updated |cfffe6100Children's Week Shattrath Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Shattrath Quests"},
-	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Oracles Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Oracles Quests"},
-	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Wolvar Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Wolvar Quests"},
-	{"item", text=[[Updated |cfffe6100Children's Week Achievements|r.]], guide="EVENTS\\Children's Week\\Children's Week Achievements"},
+	{"section", text=[[LEVELING]]},
+	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 7 "Intolerable Infestation Guide"|r.]], guide="LEVELING\\Legion (100-110)\\7.2 New Content"},
+	{"section", text=[[MOUNTS]]},
+	{"item", text=[[Added |cfffe6100Brilliant Direbeak Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Predatory Bloodgazer"},
+	{"item", text=[[Added |cfffe6100Predatory Bloodgazer Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Predatory Bloodgazer"},
+	{"item", text=[[Added |cfffe6100Viridian Sharptalon Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Viridian Sharptalon"},
+	{"item", text=[[Added |cfffe6100Ivory Hawkstrider Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Ivory Hawkstrider"},
+	{"section", text=[[ACHIEVEMENTS]]},
+	{"item", text=[[Added |cfffe6100Black is the New Black Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Black is the New Black"},
+	{"item", text=[[Added |cfffe6100Dress In Lairs Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Dress in Lairs"},
+	{"item", text=[[Added |cfffe6100Outlandish Style Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Outlandish Style"},
+	{"item", text=[[Added |cfffe6100Suns Out, Thoridals Out Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Suns Out, Thori'dals Out"},
+	{"item", text=[[Added |cfffe6100Undying Aesthetics Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Undying Aesthetic"},
+	{"item", text=[[Added |cfffe6100Legendary Research Guide|r.]], guide="ACHIEVEMENTS\\Class Hall\\Legion\\Legendary Research"},
+	{"item", text=[[Added |cfffe6100So Hot Right Now Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\So Hot Right Now"},
+
+	{"separator"},
 
 	{"title", text=[[Recent Content:]]},
 
@@ -33,6 +44,13 @@ GuideMenu.Home={
 
 	{"section", text=[[DAILIES]]},
 	{"item", text=[[Added |cfffe6100Patch 7.2 World Quests|r.]], guide="DAILIES\\Legion\\World Quests"},
+
+	{"section", text=[[EVENTS]]},
+	{"item", text=[[Updated |cfffe6100Children's Week Stormwind Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Stormwind Quests", faction="A"},
+	{"item", text=[[Updated |cfffe6100Children's Week Shattrath Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Shattrath Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Oracles Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Oracles Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Wolvar Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Wolvar Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Achievements|r.]], guide="EVENTS\\Children's Week\\Children's Week Achievements"},
 
 	{"section", text=[[REPUTATIONS]], beta=true},
 	{"item", text=[[Added |cfffe6100Armies of Legionfall Reputation (BETA)|r.]], guide="REPUTATIONS\\Legion\\Armies of Legionfall", beta=true},
@@ -81,3 +99,6 @@ GuideMenu.Home={
 	{"item", text=[[Added |cfffe6100A Magnificent Contribution Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\A Magnificent Contribution", beta=true},
 	{"item", text=[[Added |cfffe6100Assume Command Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Assume Command", beta=true},
 }
+
+
+-- faction="Alliance" {"separator"},

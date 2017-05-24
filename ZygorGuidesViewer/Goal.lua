@@ -1326,13 +1326,7 @@ GOALTYPES['havebuff'] = {
 GOALTYPES['nobuff'] = {
 	parse = GOALTYPES['havebuff'].parse,
 	iscomplete = function(self)
-		for i=1,30 do
-			local name,_,tex = UnitBuff("player",i)
-			if name and (self.buff==fileid or name:find(self.buff)) then return false,true end
-			local name,_,tex = UnitDebuff("player",i)
-			if name and (self.buff==fileid or name:find(self.buff)) then return false,true end
-		end
-		return true,true
+		return not GOALTYPES['havebuff'].iscomplete(self),true
 	end
 }
 

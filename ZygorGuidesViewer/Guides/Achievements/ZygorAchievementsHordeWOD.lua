@@ -5111,7 +5111,7 @@ condition_end="achieved(9503)",
 description="Obtain 700 skill points in fishing.",
 },[[
 step
-To obtain 700 skill points in Fishing _click here_. |confirm |next "Profession Guides\\Fishing\\Fishing 600-700 Leveling Guide"
+To obtain 700 skill points in Fishing _click here_. |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"
 achieve 9503
 step
 Congratulations, you have earned the _Draenor Fisherman_ Achievement!
@@ -5184,7 +5184,7 @@ condition_end="achieved(9409)",
 description="Obtain 700 skill points in archaeology.",
 },[[
 step
-To obtain 700 skill points in Archaeology _click here_. |confirm |next "Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide"
+To obtain 700 skill points in Archaeology _click here_. |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"
 achieve 9409
 step
 Congratulations, you have earned the _Draenor Archaeologist_ Achievement!
@@ -5194,7 +5194,7 @@ condition_end="achieved(9500)",
 description="Obtain 700 skill points in cooking.",
 },[[
 step
-To obtain 700 skill points in Cooking _click here_. |confirm |next "Profession Guides\\Cooking\\Cooking 600-700 Leveling Guide"
+To obtain 700 skill points in Cooking _click here_. |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 600-700 Leveling Guide"
 |achieve 9500
 step
 Congratulations, you have earned the _Draenor Cook_ Achievement!
@@ -5268,7 +5268,7 @@ condition_end="achieved(9503)",
 description="Obtain 700 skill points in fishing.",
 },[[
 step
-To obtain 700 skill points in Fishing _click here_. |confirm |next "Profession Guides\\Fishing\\Fishing 600-700 Leveling Guide"
+To obtain 700 skill points in Fishing _click here_. |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"
 achieve 9503
 step
 Congratulations, you have earned the _Draenor Fisherman_ Achievement!
@@ -5279,17 +5279,17 @@ description="Obtain 700 skill points in a profession.",
 },[[
 step
 _Obtain 700 skill points_ in any profession below:
-_Click here_ for Alchemy |confirm |next "Profession Guides\\Alchemy\\Alchemy 600-700 Leveling Guide"
-_Click here_ for Blacksmithing |confirm |next "Profession Guides\\Blacksmithing\\Blacksmithing 600-700 Leveling Guide"
-_Click here_ for Enchanting |confirm |next "Profession Guides\\Enchanting\\Enchanting 600-700 Leveling Guide"
-_Click here_ for Engineering |confirm |next "Profession Guides\\Engineering\\Engineering 600-700 Leveling Guide"
-_Click here_ for Herbalism |confirm |next "Profession Guides\\Herbalism\\Herbalism 600-700 Leveling Guide"
-_Click here_ for Inscription |confirm |next "Profession Guides\\Inscription\\Inscription 600-700 Leveling Guide"
-_Click here_ for Jewelcrafting |confirm |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 600-700 Leveling Guide"
-_Click here_ for Leatherworking |confirm |next "Profession Guides\\Leatherworking\\Leatherworking 600-700 Leveling Guide"
-_Click here_ for Minin |confirm |next "Profession Guides\\Mining\\Mining 600-700 Leveling Guide"
-_Click here_ for Skinning |confirm |next "Profession Guides\\Skinning\\Skinning 600-700 Leveling Guide"
-_Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Tailoring 600-700 Leveling Guide"
+_Click here_ for Alchemy |confirm |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 600-700 Leveling Guide"
+_Click here_ for Blacksmithing |confirm |next "Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide"
+_Click here_ for Enchanting |confirm |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 600-700 Leveling Guide"
+_Click here_ for Engineering |confirm |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 600-700 Leveling Guide"
+_Click here_ for Herbalism |confirm |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 600-700 Leveling Guide"
+_Click here_ for Inscription |confirm |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 600-700 Leveling Guide"
+_Click here_ for Jewelcrafting |confirm |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide"
+_Click here_ for Leatherworking |confirm |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 600-700 Leveling Guide"
+_Click here_ for Minin |confirm |next "Profession Guides\\Mining\\Leveling Guides\\Mining 600-700 Leveling Guide"
+_Click here_ for Skinning |confirm |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 600-700 Leveling Guide"
+_Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide"
 |achieve 9464
 step
 Congratulations, you have earned the _Draenor Master_ Achievement!
@@ -5347,17 +5347,17 @@ description="Raise all primary professions to 700 skill points.",
 },[[
 step
 _Raise all primary professions_ to 700 skill points.
-_Click here_ for Alchemy |achieve 9087/1 |confirm |next "Profession Guides\\Alchemy\\Alchemy 600-700 Leveling Guide"
-_Click here_ for Blacksmithing |achieve 9087/2 |confirm |next "Profession Guides\\Blacksmithing\\Blacksmithing 600-700 Leveling Guide"
-_Click here_ for Enchanting |achieve 9087/3 |confirm |next "Profession Guides\\Enchanting\\Enchanting 600-700 Leveling Guide"
-_Click here_ for Engineering |achieve 9087/4 |confirm |next "Profession Guides\\Engineering\\Engineering 600-700 Leveling Guide"
-_Click here_ for Herbalism |achieve 9087/5 |confirm |next "Profession Guides\\Herbalism\\Herbalism 600-700 Leveling Guide"
-_Click here_ for Inscription |achieve 9087/6 |confirm |next "Profession Guides\\Inscription\\Inscription 600-700 Leveling Guide"
-_Click here_ for Jewelcrafting |achieve 9087/7 |confirm |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 600-700 Leveling Guide"
-_Click here_ for Leatherworking |achieve 9087/8 |confirm |next "Profession Guides\\Leatherworking\\Leatherworking 600-700 Leveling Guide"
-_Click here_ for Mining |achieve 9087/9 |confirm |next "Profession Guides\\Mining\\Mining 600-700 Leveling Guide"
-_Click here_ for Skinning |achieve 9087/10 |confirm |next "Profession Guides\\Skinning\\Skinning 600-700 Leveling Guide"
-_Click here_ for Tailoring |achieve 9087/11 |confirm |next "Profession Guides\\Tailoring\\Tailoring 600-700 Leveling Guide"
+_Click here_ for Alchemy |achieve 9087/1 |confirm |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 600-700 Leveling Guide"
+_Click here_ for Blacksmithing |achieve 9087/2 |confirm |next "Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide"
+_Click here_ for Enchanting |achieve 9087/3 |confirm |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 600-700 Leveling Guide"
+_Click here_ for Engineering |achieve 9087/4 |confirm |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 600-700 Leveling Guide"
+_Click here_ for Herbalism |achieve 9087/5 |confirm |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 600-700 Leveling Guide"
+_Click here_ for Inscription |achieve 9087/6 |confirm |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 600-700 Leveling Guide"
+_Click here_ for Jewelcrafting |achieve 9087/7 |confirm |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide"
+_Click here_ for Leatherworking |achieve 9087/8 |confirm |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 600-700 Leveling Guide"
+_Click here_ for Mining |achieve 9087/9 |confirm |next "Profession Guides\\Mining\\Leveling Guides\\Mining 600-700 Leveling Guide"
+_Click here_ for Skinning |achieve 9087/10 |confirm |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 600-700 Leveling Guide"
+_Click here_ for Tailoring |achieve 9087/11 |confirm |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide"
 step
 Congratulations, you have earned the _Grand Master of All_ Achievement!
 ]])
@@ -5405,7 +5405,7 @@ condition_end="achieved(9414)",
 description="Discover the Ogre artifacts.",
 },[[
 step
-_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide"
+_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"
 _OR_
 _Click here_ to continue |confirm |next
 step
@@ -5430,10 +5430,10 @@ description="Obtain 700 skill points in Fishing, First Aid, Cooking, and Archaeo
 },[[
 step
 _Obtain 700 skill points_ in Fishing, First Aid, Cooking, and Archaeology
-_Click here_ for Archaeology |achieve 9506/1 |confirm |next "Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide"
-_Click here_ for Cooking |achieve 9506/2 |confirm |next "Profession Guides\\Cooking\\Cooking 600-700 Leveling Guide"
-_Click here_ for First Aid |achieve 9506/3 |confirm |next "Profession Guides\\First Aid\\First Aid 600-700 Leveling Guide"
-_Click here_ for Fishing |achieve 9506/4 |confirm |next "Profession Guides\\Fishing\\Fishing 600-700 Leveling Guide"
+_Click here_ for Archaeology |achieve 9506/1 |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"
+_Click here_ for Cooking |achieve 9506/2 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 600-700 Leveling Guide"
+_Click here_ for First Aid |achieve 9506/3 |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 600-700 Leveling Guide"
+_Click here_ for Fishing |achieve 9506/4 |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"
 step
 Congratulations, you have earned the _Savage Skills to Pay the Bills_ Achievement!
 ]])
@@ -5648,7 +5648,7 @@ condition_end="achieved(9422)",
 description="Find 30 rare artifacts.",
 },[[
 step
-_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide"
+_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"
 _OR_
 _Click here_ to continue |confirm |next
 step
@@ -5661,7 +5661,7 @@ condition_end="achieved(9410)",
 description="Restore and display pristine versions of all Draenor Clans artifacts.",
 },[[
 step
-_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Archaeology 600-700 Leveling Guide"
+_Click here_ to level Archaeology |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 600-700 Leveling Guide"
 _OR_
 _Click here_ to continue |confirm |next
 step
@@ -5695,17 +5695,17 @@ description="Obtain 700 skill points in two primary professions.",
 },[[
 step
 _Obtain 700 skill points_ in two primary professions listed below:
-_Click here_ for Alchemy |confirm |next "Profession Guides\\Alchemy\\Alchemy 600-700 Leveling Guide"
-_Click here_ for Blacksmithing |confirm |next "Profession Guides\\Blacksmithing\\Blacksmithing 600-700 Leveling Guide"
-_Click here_ for Enchanting |confirm |next "Profession Guides\\Enchanting\\Enchanting 600-700 Leveling Guide"
-_Click here_ for Engineering |confirm |next "Profession Guides\\Engineering\\Engineering 600-700 Leveling Guide"
-_Click here_ for Herbalism |confirm |next "Profession Guides\\Herbalism\\Herbalism 600-700 Leveling Guide"
-_Click here_ for Inscription |confirm |next "Profession Guides\\Inscription\\Inscription 600-700 Leveling Guide"
-_Click here_ for Jewelcrafting |confirm |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 600-700 Leveling Guide"
-_Click here_ for Leatherworking |confirm |next "Profession Guides\\Leatherworking\\Leatherworking 600-700 Leveling Guide"
-_Click here_ for Mining |confirm |next "Profession Guides\\Mining\\Mining 600-700 Leveling Guide"
-_Click here_ for Skinning |confirm |next "Profession Guides\\Skinning\\Skinning 600-700 Leveling Guide"
-_Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Tailoring 600-700 Leveling Guide"
+_Click here_ for Alchemy |confirm |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 600-700 Leveling Guide"
+_Click here_ for Blacksmithing |confirm |next "Profession Guides\\Blacksmithing\\Leveling Guides\\Blacksmithing 600-700 Leveling Guide"
+_Click here_ for Enchanting |confirm |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 600-700 Leveling Guide"
+_Click here_ for Engineering |confirm |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 600-700 Leveling Guide"
+_Click here_ for Herbalism |confirm |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 600-700 Leveling Guide"
+_Click here_ for Inscription |confirm |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 600-700 Leveling Guide"
+_Click here_ for Jewelcrafting |confirm |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 600-700 Leveling Guide"
+_Click here_ for Leatherworking |confirm |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 600-700 Leveling Guide"
+_Click here_ for Mining |confirm |next "Profession Guides\\Mining\\Leveling Guides\\Mining 600-700 Leveling Guide"
+_Click here_ for Skinning |confirm |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 600-700 Leveling Guide"
+_Click here_ for Tailoring |confirm |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 600-700 Leveling Guide"
 step
 Congratulations, you have earned the _Working in Draenor_ Achievement!
 ]])

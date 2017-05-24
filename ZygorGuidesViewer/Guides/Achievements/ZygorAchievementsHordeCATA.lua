@@ -7401,7 +7401,7 @@ condition_end="achieved(133)",
 description="Obtain 300 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 300 skill points in first aid |achieve 133
 step
@@ -7412,7 +7412,7 @@ condition_end="achieved(131)",
 description="Obtain 150 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 150 skill points in first aid |achieve 131
 step
@@ -7423,7 +7423,7 @@ condition_end="achieved(132)",
 description="Obtain 225 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 225 skill points in first aid |achieve 132
 step
@@ -7434,7 +7434,7 @@ condition_end="achieved(135)",
 description="Obtain 450 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 450 skill points in first aid |achieve 135
 step
@@ -7445,7 +7445,7 @@ condition_end="achieved(4918)",
 description="Obtain 525 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 525 skill points in first aid |achieve 4918
 step
@@ -7456,7 +7456,7 @@ condition_end="achieved(134)",
 description="Obtain 375 skill points in first aid.",
 },[[
 step
-next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 Obtain 375 skill points in first aid |achieve 134
 step
@@ -7659,7 +7659,7 @@ condition_end="achieved(128)",
 description="Obtain 300 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 300 skill points in fishing |achieve 128
 step
@@ -7724,7 +7724,7 @@ condition_end="achieved(127)",
 description="Obtain 225 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 225 skill points in fishing |achieve 127
 step
@@ -7909,7 +7909,7 @@ condition_end="achieved(130)",
 description="Obtain 450 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 450 skill points in fishing |achieve 130
 step
@@ -7932,7 +7932,7 @@ condition_end="achieved(4917)",
 description="Obtain 525 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 525 skill points in fishing |achieve 4917
 step
@@ -7943,7 +7943,7 @@ condition_end="achieved(126)",
 description="Obtain 150 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 150 skill points in fishing |achieve 126
 step
@@ -7985,7 +7985,7 @@ condition_end="achieved(129)",
 description="Obtain 375 skill points in fishing.",
 },[[
 step
-next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 step
 Obtain 375 skill points in fishing |achieve 129
 step
@@ -11354,8 +11354,8 @@ Become a Grand Master in First Aid |achieve 730/2
 Become a Grand Master Cook |achieve 730/3
 confirm
 step
-Click here to become a Grand Master Fisherman |confirm |next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
-Click here to become a Grand Master in First Aid |confirm |next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+Click here to become a Grand Master Fisherman |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
+Click here to become a Grand Master in First Aid |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 Click here to become a Grand Master Cook |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
 achieve 730 |next
 step
@@ -11368,10 +11368,10 @@ Become an Illustrious Grand Master Cook |achieve 4915/3
 Become an Illustrious Grand Master in Archaeology |achieve 4915/4
 confirm
 step
-Click here to become an Illustrious Grand Master Fisherman |confirm |next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
-Click here to become an Illustrious Grand Master in First Aid |confirm |next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+Click here to become an Illustrious Grand Master Fisherman |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
+Click here to become an Illustrious Grand Master in First Aid |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 Click here to become an Illustrious Grand Master Cook |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
-Click here to become an Illustrious Grand Master in Archaeology |confirm |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
+Click here to become an Illustrious Grand Master in Archaeology |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
 achieve 4915 |next
 step
 Use Zygor's Professions & Achievements guide to do the following:
@@ -11381,10 +11381,10 @@ Become an Zen Master Cook |achieve 6836/3
 Become an Zen Master in Archaeology |achieve 6836/4
 confirm
 step
-Click here to become an Zen Master Fisherman |confirm |next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
-Click here to become an Zen Master in First Aid |confirm |next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+Click here to become an Zen Master Fisherman |confirm |next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
+Click here to become an Zen Master in First Aid |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 Click here to become an Zen Master Cook |confirm |next "Profession Guides\\Cooking\\Cooking 1-600 Leveling Guide"
-Click here to become an Zen Master in Archaeology |confirm |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
+Click here to become an Zen Master in Archaeology |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
 achieve 6836 |next
 step
 Earn the achievement Serious Skills to Pay the Bills! |achieve 6836
@@ -11401,17 +11401,17 @@ This achievement requires using our Professions guide to level your characters s
 Click here to select the profession you wish to level to obtain this achievement |confirm
 step
 Choose any primary profession below:
-Click here to use _Alchemy_ for the achievement. |next "Profession Guides\\Alchemy\\Alchemy 1-600 Leveling Guide"
-Click here to use _Blacksmithing_ for the achievement. |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
-Click here to use _Enchanting_ for the achievement. |next "Profession Guides\\Enchanting\\Enchanting 1-600 Leveling Guide"
-Click here to use _Engineering_ for the achievement. |next "Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide"
-Click here to use _Herbalism_ for the achievement. |next "Profession Guides\\Herbalism\\Herbalism 1-600 Leveling Guide"
-Click here to use _Inscription_ for the achievement. |next "Profession Guides\\Inscription\\Inscription 1-600 Leveling Guide"
-Click here to use _Jewelcrafting_ for the achievement. |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 1-600 Leveling Guide"
-Click here to use _Leatherworking_ for the achievement. |next "Profession Guides\\Leatherworking\\Leatherworking 1-600 Leveling Guide"
-Click here to use _Mining_ for the achievement. |next "Profession Guides\\Mining\\Mining 1-600 Leveling Guide"
-Click here to use _Skinning_ for the achievement. |next "Profession Guides\\Skinning\\Skinning 1-600 Leveling Guide"
-Click here to use _Tailoring_ for the achievement. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide"
+Click here to use _Alchemy_ for the achievement. |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-600 Leveling Guide"
+Click here to use _Blacksmithing_ for the achievement. |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
+Click here to use _Enchanting_ for the achievement. |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-600 Leveling Guide"
+Click here to use _Engineering_ for the achievement. |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide"
+Click here to use _Herbalism_ for the achievement. |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"
+Click here to use _Inscription_ for the achievement. |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide"
+Click here to use _Jewelcrafting_ for the achievement. |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"
+Click here to use _Leatherworking_ for the achievement. |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide"
+Click here to use _Mining_ for the achievement. |next "Profession Guides\\Mining\\Leveling Guides\\Mining 1-600 Leveling Guide"
+Click here to use _Skinning_ for the achievement. |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-600 Leveling Guide"
+Click here to use _Tailoring_ for the achievement. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide"
 confirm
 step
 Earn the achievement Professional Illustrious Grand Master! |achieve 6830
@@ -11428,17 +11428,17 @@ This achievement requires using our Professions guide to level your characters s
 Click here to select the professions you wish to level to obtain this achievement |confirm
 step
 Choose any primary profession below:
-Click here to use _Alchemy_ for the achievement. |next "Profession Guides\\Alchemy\\Alchemy 1-600 Leveling Guide"
-Click here to use _Blacksmithing_ for the achievement. |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
-Click here to use _Enchanting_ for the achievement. |next "Profession Guides\\Enchanting\\Enchanting 1-600 Leveling Guide"
-Click here to use _Engineering_ for the achievement. |next "Profession Guides\\Engineering\\Engineering 1-600 Leveling Guide"
-Click here to use _Herbalism_ for the achievement. |next "Profession Guides\\Herbalism\\Herbalism 1-600 Leveling Guide"
-Click here to use _Inscription_ for the achievement. |next "Profession Guides\\Inscription\\Inscription 1-600 Leveling Guide"
-Click here to use _Jewelcrafting_ for the achievement. |next "Profession Guides\\Jewelcrafting\\Jewelcrafting 1-600 Leveling Guide"
-Click here to use _Leatherworking_ for the achievement. |next "Profession Guides\\Leatherworking\\Leatherworking 1-600 Leveling Guide"
-Click here to use _Mining_ for the achievement. |next "Profession Guides\\Mining\\Mining 1-600 Leveling Guide"
-Click here to use _Skinning_ for the achievement. |next "Profession Guides\\Skinning\\Skinning 1-600 Leveling Guide"
-Click here to use _Tailoring_ for the achievement. |next "Profession Guides\\Tailoring\\Tailoring 1-600 Leveling Guide"
+Click here to use _Alchemy_ for the achievement. |next "Profession Guides\\Alchemy\\Leveling Guides\\Alchemy 1-600 Leveling Guide"
+Click here to use _Blacksmithing_ for the achievement. |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
+Click here to use _Enchanting_ for the achievement. |next "Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 1-600 Leveling Guide"
+Click here to use _Engineering_ for the achievement. |next "Profession Guides\\Engineering\\Leveling Guides\\Engineering 1-600 Leveling Guide"
+Click here to use _Herbalism_ for the achievement. |next "Profession Guides\\Herbalism\\Leveling Guides\\Herbalism 1-600 Leveling Guide"
+Click here to use _Inscription_ for the achievement. |next "Profession Guides\\Inscription\\Leveling Guides\\Inscription 1-600 Leveling Guide"
+Click here to use _Jewelcrafting_ for the achievement. |next "Profession Guides\\Jewelcrafting\\Leveling Guides\\Jewelcrafting 1-600 Leveling Guide"
+Click here to use _Leatherworking_ for the achievement. |next "Profession Guides\\Leatherworking\\Leveling Guides\\Leatherworking 1-600 Leveling Guide"
+Click here to use _Mining_ for the achievement. |next "Profession Guides\\Mining\\Leveling Guides\\Mining 1-600 Leveling Guide"
+Click here to use _Skinning_ for the achievement. |next "Profession Guides\\Skinning\\Leveling Guides\\Skinning 1-600 Leveling Guide"
+Click here to use _Tailoring_ for the achievement. |next "Profession Guides\\Tailoring\\Leveling Guides\\Tailoring 1-600 Leveling Guide"
 confirm
 step
 Earn the achievement Working Around the Clock! |achieve 6835
@@ -12762,7 +12762,7 @@ Proceeding to proper section |next |only if default
 Proceeding to proper section |next end |only if achieved(6838)
 step
 You can use our First Aid guide to earn the achievement Zen Master Medic
-Click here to use the First Aid Guide |confirm |next "Profession Guides\\First Aid\\First Aid 1-600 Leveling Guide"
+Click here to use the First Aid Guide |confirm |next "Profession Guides\\First Aid\\Leveling Guides\\First Aid 1-600 Leveling Guide"
 step
 label	end
 Congratulations! You have earned the Achievement Zen Master Medic_!

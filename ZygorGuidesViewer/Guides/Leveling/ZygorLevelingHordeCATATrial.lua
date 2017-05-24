@@ -1063,160 +1063,213 @@ dynamic=true,
 },[[
 step
 talk The Lich King##25462
-accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave 51.3,35.2
+accept In Service Of The Lich King##12593 |goto Plaguelands: The Scarlet Enclave/0 51.34,35.18
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin In Service Of The Lich King##12593 |goto 48,28.5
 accept The Emblazoned Runeblade##12619 |goto 48,28.5
 step
 click Battle-worn Sword##7961
-collect Battle-worn Sword##38607 |n
-use Battle-worn Sword##38607
-|tip The Runforges look like skull furnaces with blue fire.
-collect Runebladed Sword##38631 |q 12619/1 |goto 47.4,31
+collect Battle-worn Sword##38607 |c |goto 47.4,31 |q 12619
+step
+Use the Battle-worn Sword next to the Runeforge |use Battle-worn Sword##38607
+collect Runebladed Sword##38631 |q 12619/1 |goto 47.39,31.24
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin The Emblazoned Runeblade##12619 |goto 48,28.5
 accept Runeforging: Preparation For Battle##12842 |goto 48,28.5
 step
-Use your Runeforging ability while standing near the Runeforge |cast Runeforging
-|tip The Runforges look like skull furnaces with blue fire.
-Engrave Your Sword with a Rune |q 12842/1 |goto 47.4,31
+Use the Runeforging ability near the Runeforge |cast Runeforging##53428
+|tip Open your character's equipment window and engrave your weapon with a rune.
+Emblazon Your Weapon |q 12842/1 |goto 47.39,31.24
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin Runeforging: Preparation For Battle##12842 |goto 48,28.5
 accept The Endless Hunger##12848 |goto 48,28.5
 step
-use Runed Soulblade##38707 |equipped Runed Soulblade##38707
 click Acherus Soul Prison##8115
-|tip It looks like a horned skull on the wall, chaining the prisoners.
-kill Unworthy Initiate##29565, Unworthy Initiate##29565, Unworthy Initiate##29567, Unworthy Initiate##29566
-Dominate an Unworthy Initiate |q 12848/1 |goto 48.9,28.7
+|tip They look like horned skulls on the wall, chaining the prisoners around this area.
+Watch the dialogue
+kill Unworthy Initiate##29565
+Dominate an Unworthy Initiate |q 12848/1 |goto 48.50,28.98
 step
 talk Instructor Razuvious##28357
+|tip He walks around this area.
 turnin The Endless Hunger##12848 |goto 48,28.5
 accept The Eye Of Acherus##12636 |goto 48,28.5
 step
+Follow the path |goto 49.81,31.94 < 20 |walk
 talk The Lich King##25462
-turnin The Eye Of Acherus##12636 |goto 51.3,35.2
-accept Death Comes From On High##12641 |goto 51.3,35.2
+turnin The Eye Of Acherus##12636 |goto 51.34,35.18
+accept Death Comes From On High##12641 |goto 51.34,35.18
 step
-click Eye of Acherus Control Mechanism##8123 |goto Plaguelands: The Scarlet Enclave 51.0,36.3
-Take Control Over the Eye of Acherus |havebuff 136224 |q 12641
+click Eye of Acherus Control Mechanism##8123
+Take Control of the Eye of Acherus |havebuff 136224 |goto 52.13,35.21 |q 12641
 step
-Your World Map will NOT show your current position anymore!
-If you stay floating high enough the soldiers will not attack you
-Once the Eye stops moving, go immediately northeast to the blacksmith building
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
-Analyze the New Avalon Forge |q 12641/1 |goto 52.1,35.2
+_Go Northeast:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the blacksmith building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
+Analyze the New Avalon Forge |q 12641/1
 step
-Go south to the big fort
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
-Analyze Scarlet Hold |q 12641/3
+_Go South:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the big fort building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
+Analyze the Scarlet Hold |q 12641/3
 step
-Go west to the town hall building with a clock tower
-|tip It has a red roof and looks like an inn.
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
+_Go West:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the town hall building with a clock tower, with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
 Analyze the New Avalon Town Hall |q 12641/2
 step
-Go south to the small church
-Use your Siphon of Acherus ability near the floating red arrow |petaction 1
+_Go South:_
+|tip If you stay floating high enough, the soldiers will not attack you.
+|tip Go to the small church building with a floating red arrow above it.
+Use the Siphon of Acherus ability |petaction 1
+|tip Get near the floating red arrow.
 Analyze the Chapel of the Crimson Flame |q 12641/4
 step
-Use your _Recall Eye of Acherus_ ability
-Return to Ebon Hold |nobuff Spell_Shadow_UnholyFrenzy |petaction 5
+Use the Recall Eye of Acherus ability |petaction 5
+Click Here After You Return to Ebon Hold |confirm |c |q 12641
 step
 talk The Lich King##25462
-turnin Death Comes From On High##12641 |goto 51.3,35.2
-accept The Might Of The Scourge##12657 |goto 51.3,35.2
+turnin Death Comes From On High##12641 |goto 51.34,35.18
+accept The Might Of The Scourge##12657 |goto 51.34,35.18
 step
-_Stand on_ the purple circle to teleport upstairs |goto Plaguelands: The Scarlet Enclave 50.5,33.3 < 5 |walk
+Walk onto the teleport pad |goto 50.49,33.37 |n
+Teleport Upstairs |goto 50.13,32.49 < 10 |noway |c |q 12657
+step
 talk Highlord Darion Mograine##28444
-turnin The Might Of The Scourge##12657 |goto 48.9,29.7
-accept Report To Scourge Commander Thalanor##12850 |goto 48.9,29.7
+turnin The Might Of The Scourge##12657 |goto 48.88,29.76
+accept Report To Scourge Commander Thalanor##12850 |goto 48.88,29.76
 step
 talk Lord Thorval##28472
-accept The Power Of Blood, Frost And Unholy##12849 |goto 47.5,26.5 |instant
+accept The Power Of Blood, Frost And Unholy##12849 |goto 47.48,26.56 |instant
 step
 talk Scourge Commander Thalanor##28510
-turnin Report To Scourge Commander Thalanor##12850 |goto 51.6,34.5
-accept The Scarlet Harvest##12670 |goto 51.6,34.5
+|tip He walks around this area.
+turnin Report To Scourge Commander Thalanor##12850 |goto 50.70,35.09
+accept The Scarlet Harvest##12670 |goto 50.70,35.09
 step
-clicknpc Scourge Gryphon##29488 |goto Plaguelands: The Scarlet Enclave 52.1,35.0 < 5
+clicknpc Scourge Gryphon##29488 |goto 50.96,36.15 |n
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12670
+step
 talk Prince Valanar##28377
-turnin The Scarlet Harvest##12670 |goto 52.3,34
-accept If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.3,34
+turnin The Scarlet Harvest##12670 |goto 52.28,33.96
+accept If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.28,33.96
 step
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 accept Grand Theft Palomino##12680 |goto 52.5,34.6
 step
 talk Olrun the Battlecaller##29047
-accept Death's Challenge##12733 |goto 54.6,34.2
+|tip She flies around this small area.
+accept Death's Challenge##12733 |goto 54.63,33.95
 step
-talk Death Knight Initiate##28406+
+talk Death Knight Initiate##28406
+|tip They are all around this area.
 Tell them _"I challenge you, death knight!"_
-Defeat #5# Death Knights in a Duel |q 12733/1 |goto 51.7,35.1
+kill Death Knight Initiate##28392+
+Defeat #5# Death Knights in a Duel |q 12733/1 |goto 53.48,33.15
 step
 talk Olrun the Battlecaller##29047
-turnin Death's Challenge##12733 |goto 54.6,34.2
+|tip She flies around this small area.
+turnin Death's Challenge##12733 |goto 54.63,33.95
 step
 talk Orithos the Sky Darkener##28647
+|tip He paces around this area.
 accept Tonight We Dine In Havenshire##12679 |goto 53.2,36.9
+stickystart "Slay_Scarlet_Crusaders"
+stickystart "Citizens_Of_Havenshire"
 step
-kill Scarlet Captain##28611+, Scarlet Infantryman##28609+, Scarlet Medic##28608+, Scarlet Peasant##28557+
-Kill #10# Scarlet Crusaders |q 12678/1 |goto 52.2,45.9
-step
+Follow the path down |goto 50.66,38.32 < 20 |only if walking
+Follow the path down |goto 52.21,43.78 < 15 |only if walking
 click Abandoned Mail##4851
-|tip It's a roll of parchment on top of the mailbox, avoid clicking the mailbox itself.
-accept Abandoned Mail##12711 |goto 55.2,46.2 |instant
-stickystart "citizen"
+|tip It looks like a roll of parchment on top of the mailbox.
+accept Abandoned Mail##12711 |goto 55.26,46.15 |instant
 step
-click Saronite Arrow##8094+
-|tip Usually more than one spawn on top of each other, so you can click more than once.
-collect 15 Saronite Arrow##39160 |q 12679/1 |goto 56.2,49.4
-step "citizen"
+label "Slay_Scarlet_Crusaders"
+Kill Scarlet enemies around this area
+Slay #10# Scarlet Crusaders |q 12678/1 |goto 52.2,45.9
+stickystart "Saronite_Arrows"
+step
+label "Citizens_Of_Havenshire"
 kill 10 Citizen of Havenshire##28660 |q 12678/2 |goto 56.4,45
 step
-clicknpc Havenshire Colt##28607 |goto 55.6,43.2 < 15
-|tip Watch out for the Stable Master, he's elite and will pull you off the horse.
-_Go up_ the hill |goto Plaguelands: The Scarlet Enclave 56.8,31.0 < 10
-Use your _Deliver Stolen Horse_ ability on your bar when standing next to Salanar the Horseman |petaction Deliver Stolen Horse
-Deliver the Horse |q 12680/1 |goto 52.8,34.1
+label "Saronite_Arrows"
+click Saronite Arrow##8094+
+|tip They look like yellow and green arrows stuck in the ground around this area.
+collect 15 Saronite Arrow##39160 |q 12679/1 |goto 56.2,49.4
+step
+click Havenshire Horse
+|tip They are all around this area.
+|tip Watch out for Stable Master Kitrik, he's elite and will pull you off the horse.
+Ride the Havenshire Horse |invehicle |goto 55.74,43.39 |c |q 12680
+step
+Follow the path up |goto 53.05,43.28 < 20 |only if walking
+Continue up the path |goto 50.61,40.72 < 20 |only if walking
+Follow the path |goto 50.92,36.79 < 20 |only if walking
+Use the Deliver Stolen Horse ability next to Salanar the Horseman
+|tip He walks back and forth along this path.
+Successfully Steal the Horse |goto 52.8,34.1 |q 12680/1
 step
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 turnin Grand Theft Palomino##12680 |goto 52.5,34.6
 accept Into the Realm of Shadows##12687 |goto 52.5,34.6
 step
+Follow the path down |goto 50.66,38.32 < 20 |only if walking
+Follow the path down |goto 52.21,43.78 < 30 |only if walking
 kill Dark Rider of Acherus##28768
-clicknpc Acherus Deathcharger##28302 |goto 55.6,43.2 < 5
-|tip They walk around on horses.
-_Go up_ the hill |goto Plaguelands: The Scarlet Enclave 56.8,31.0 < 10
-Use your _Horseman's Call_ ability on your bar when standing next to Salanar the Horseman |petaction Horseman's Call
-Complete the Horseman's Challenge |q 12687/1 |goto Plaguelands: The Scarlet Enclave 52.6,34.4
+|tip They ride around on horses around this area.
+clicknpc Acherus Deathcharger##28302
+|tip It's the horse they were riding on before you killed them.
+Click Here After You Steal an Acherus Deathcharger |confirm |c |goto 55.6,43.2 |q 12687
 step
+Follow the path up |goto 53.05,43.28 < 20 |only if walking
+Use the Horseman's Call ability
+Watch the dialogue
+Complete the Horseman's Challenge |q 12687/1 |goto 50.88,41.74
+step
+Follow the path up |goto 50.61,40.72 < 20 |only if walking
+Follow the path |goto 50.92,36.79 < 20 |only if walking
 talk Salanar the Horseman##28653
+|tip He walks back and forth along this path.
 turnin Into the Realm of Shadows##12687 |goto 52.5,34.6
 step
 talk Prince Valanar##28377
 turnin If Chaos Drives, Let Suffering Hold The Reins##12678 |goto 52.3,34
 step
 talk Orithos the Sky Darkener##28647
+|tip He paces around this area.
 turnin Tonight We Dine In Havenshire##12679 |goto 53.2,36.9
 step
 talk Prince Valanar##28377
 accept Gothik the Harvester##12697 |goto 52.3,34
 step
 talk Gothik the Harvester##28658
-turnin Gothik the Harvester##12697 |goto 54.1,35
-accept The Gift That Keeps On Giving##12698 |goto 54.1,35
+turnin Gothik the Harvester##12697 |goto 54.07,35.03
+accept The Gift That Keeps On Giving##12698 |goto 54.07,35.03
 step
-use Gift of the Harvester##39253
-|tip Use the Gift of the Harvester on Scarlet Miners inside this mine.
+Follow the path down |goto 54.94,31.35 < 20 |only if walking
+Use the Gift of the Harvester on Scarlet Miners |use Gift of the Harvester##39253
+|tip They appear at the entrance of the mine.
+|tip Some will turn into Scarlet Ghosts and attack you.
 |tip It has a pretty low success rate, just keep trying.
-Create 5 Scarlet Ghouls |goto 58.2,31
-confirm |q 12698
+Click Here When 5 Scarlet Ghouls Are Following You |confirm |c |goto 58.18,31.01 |q 12698
+|tip The ghouls that count for the quest are more brown in color and have yellow circles around their feet.
 step
-Return #5# Scarlet Ghouls |q 12698/1 |goto 54.1,35
+Follow the path up |goto 57.03,31.24 < 20 |only if walking
+Follow the path |goto 54.69,31.79 < 20 |only if walking
+Return #5# Scarlet Ghouls |q 12698/1 |goto 54.07,35.03
 step
 talk Gothik the Harvester##28658
 turnin The Gift That Keeps On Giving##12698 |goto 54.1,35
@@ -1226,129 +1279,207 @@ talk Prince Valanar##28377
 turnin An Attack Of Opportunity##12700 |goto 52.3,34
 accept Massacre At Light's Point##12701 |goto 52.3,34
 step
-click Inconspicuous Mine Car##7997 |goto 58.5,33 < 5
-|tip It's a little mine car sitting next to an outhouse.
-click Scarlet Cannon##245
-|tip On the side of the ship.
-Shoot the soldiers on the beach with the cannon
-kill 100 Scarlet Fleet Defender##28834 |q 12701/1 |goto Plaguelands: The Scarlet Enclave 67.6,46.1
+Follow the path down |goto 54.94,31.35 < 20 |only if walking |n
+Follow the path |goto 57.13,31.39 < 20 |only if walking |n
+Follow the path |goto 58.05,33.31 < 15 |only if walking |n
+Find the Inconspicuous Mine Cart |goto 58.50,33.03 < 15 |c |q 12701
 step
-Use your _Skeletal Gryphon Escape_ ability
-Escape to Death's Breach |goto 52.6,34.5 < 5 |q 12701
+click Inconspicuous Mine Car##7997
+Ride in the Inconspicuous Mine Cart |goto 58.50,33.03 > 30 |c |q 12701
+step
+Ride to the Scarlet Fleet Ship |goto 67.94,46.09 < 20 |c |q 12701
+step
+click Scarlet Cannon##245
+kill Scarlet Fleet Defender##28834+
+|tip Use the abilities on your action bar to shoot the soldiers on the beach.
+Slay #100# Scarlet Defenders |q 12701/1 |goto 67.56,46.07
+step
+Use the Skeletal Gryphon Escape ability
+Escape to Death's Breach |goto 52.6,34.5 < 20 |noway |c |q 12701
 step
 talk Prince Valanar##28377
 turnin Massacre At Light's Point##12701 |goto 52.3,34
 accept Victory At Death's Breach!##12706 |goto 52.3,34
 step
-clicknpc Scourge Gryphon##29501 |goto Plaguelands: The Scarlet Enclave 53.1,32.4 < 5
+clicknpc Scourge Gryphon##29501 |goto 53.1,32.5 |n
+Fly Up to Archerus |goto 51.1,34.7 < 20 |noway |c |q 12706
+step
 talk Highlord Darion Mograine##28444
-turnin Victory At Death's Breach!##12706 |goto 48.9,29.7
-accept The Will Of The Lich King##12714 |goto 48.9,29.7
+turnin Victory At Death's Breach!##12706 |goto 48.87,29.76
+accept The Will Of The Lich King##12714 |goto 48.87,29.76
 step
-click Scourge Gryphon##29488 |goto Plaguelands: The Scarlet Enclave 52.1,35.0 < 5
+clicknpc Scourge Gryphon##29488 |goto 52.1,35 |n
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12714
+step
 talk Prince Valanar##28907
-turnin The Will Of The Lich King##12714 |goto Plaguelands: The Scarlet Enclave 53.5,36.6
-accept The Crypt of Remembrance##12715 |goto Plaguelands: The Scarlet Enclave 53.5,36.6
+turnin The Will Of The Lich King##12714 |goto 53.47,36.55
+accept The Crypt of Remembrance##12715 |goto 53.47,36.55
 step
+Follow the path down |goto 50.75,38.22 < 20 |only if walking
+Continue down the path |goto 50.62,40.87 < 20 |only if walking
+Follow the path |goto 52.83,45.08 < 20 |only if walking
 talk Noth the Plaguebringer##28919
 accept The Plaguebringer's Request##12716 |goto 55.9,52.4
 step
-_Enter_ the crypt |goto 54.3,58.1 < 5 |walk
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin The Crypt of Remembrance##12715 |goto 54.3,57.3
-accept Nowhere To Run And Nowhere To Hide##12719 |goto 54.3,57.3
+|tip Downstairs inside the crypt.
+turnin The Crypt of Remembrance##12715 |goto 54.30,57.31
+accept Nowhere To Run And Nowhere To Hide##12719 |goto 54.30,57.31
 step
 talk Baron Rivendare##28910
-accept Lambs To The Slaughter##12722 |goto 54.7,57.4
-stickystart "getskull"
-stickystart "crusaderskull"
-stickystart "citizenofavalon"
+|tip Downstairs inside the crypt.
+accept Lambs To The Slaughter##12722 |goto 54.66,57.43
+stickystart "Slay_Scarlet_Crusade_Soldiers"
+stickystart "Crusader_Skulls"
+stickystart "Citizens_Of_New_Avalaon"
 step
-_Enter_ the inn |goto 57.7,64.5 < 5 |walk
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Enter the building |goto 57.67,64.41 < 10 |walk
 click Empty Cauldron##7199
-|tip In the basement of the building that looks like an inn.
+|tip Downstairs inside the building.
 collect Empty Cauldron##39324 |q 12716/1 |goto 57.8,61.8
 step
+Leave the building |goto 57.67,64.41 < 10 |walk
+Follow the path |goto 58.48,64.68 < 15 |only if walking
 click Iron Chain##8040
-|tip It's inside the Forge.
-collect Iron Chain##39326 |q 12716/2 |goto 62,60.2
+|tip Inside the building.
+collect Iron Chain##39326 |q 12716/2 |goto 62.05,60.24
 step
-kill Mayor Quimby##28945 |q 12719/1 |goto 52.2,71.2
+Follow the path |goto 59.66,61.13 < 20 |only if walking
+Follow the path |goto 58.24,65.68 < 20 |only if walking
+Run up the stairs |goto 54.23,70.21 < 15 |only if walking
+kill Mayor Quimby##28945 |q 12719/1 |goto 52.24,71.17
+|tip Inside the building.
 step
 click New Avalon Registry##928
-collect New Avalon Registry##39362 |q 12719/2 |goto 52.5,71
-step "getskull"
-kill Scarlet Commander##28936+, Scarlet Crusader##28940+, Scarlet Marksman##28610+, Scarlet Preacher##28939+
-Kill #10# Scarlet Crusade Soldiers |q 12722/1 |goto 52.5,71
-step "crusaderskull"
-kill Scarlet Commander##28936+, Scarlet Crusader##28940+, Scarlet Marksman##28610+, Scarlet Preacher##28939+
-collect 10 Crusader Skull##39328 |q 12716/3 |goto 52.5,71
-step "citizenofavalon"
-kill Scarlet Commander##28936+, Scarlet Crusader##28940+, Scarlet Marksman##28610+, Scarlet Preacher##28939+
-kill 15 Citizen of New Avalon##28941 |q 12722/2 |goto 53.4,69.9
+collect New Avalon Registry##39362 |q 12719/2 |goto 52.45,71.00
 step
-_Go into_ the crypt |goto 54.3,58.1 < 5 |walk
+label "Slay_Scarlet_Crusade_Soldiers"
+Kill Scarlet enemies around this area
+Slay #10# Scarlet Crusade Soldiers |q 12722/1 |goto 54.27,70.15
+step
+label "Crusader_Skulls"
+Kill Scarlet enemies around this area
+kill Citizen of New Avalon##28942+
+|tip Usually inside the buildings around this area.
+collect 10 Crusader Skull##39328 |q 12716/3 |goto 54.27,70.15
+step
+label "Citizens_Of_New_Avalaon"
+kill 15 Citizen of New Avalon##28942 |q 12722/2 |goto 54.27,70.15
+|tip Usually inside the buildings around this area.
+step
+Follow the path down |goto 56.04,61.53 < 20 |only if walking
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin Nowhere To Run And Nowhere To Hide##12719 |goto 54.3,57.3
-accept How To Win Friends And Influence Enemies##12720 |goto 54.3,57.3
+|tip Downstairs inside the crypt.
+turnin Nowhere To Run And Nowhere To Hide##12719 |goto 54.30,57.31
+accept How To Win Friends And Influence Enemies##12720 |goto 54.30,57.31
 step
 talk Baron Rivendare##28910
-turnin Lambs To The Slaughter##12722 |goto 54.7,57.4
+|tip Downstairs inside the crypt.
+turnin Lambs To The Slaughter##12722 |goto 54.66,57.43
 step
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
 talk Noth the Plaguebringer##28919
 turnin The Plaguebringer's Request##12716 |goto 55.9,52.4
 accept Noth's Special Brew##12717 |goto 55.9,52.4
 step
 click Plague Cauldron##4271
-turnin Noth's Special Brew##12717 |goto 56.1,52.1
+turnin Noth's Special Brew##12717 |goto 56.15,51.98
 step
-use Ornate Jeweled Box##39418
-use Keleseth's Persuader##39371 |equipped Keleseth's Persuader##39371
-kill Scarlet Marksman##28610+, Scarlet Preacher##28939+, Scarlet Crusader##28940+
-Reveal the Crimson Dawn |q 12720/1 |goto 55.9,60.5
-|tip Attack Scarlet soldiers and stop hitting them when they start talking, so you don't kill them too fast. Repeat until a soldier gives you information.
+Use the Ornate Jeweled Box |use Ornate Jeweled Box##39418
+|tip Equip Keleseth's Persuader.
+Click Here After You Equip Keleseth's Persuader |confirm |c |q 12720
 step
-_Go into_ the crypt |goto 54.3,58.1 < 5 |walk
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Kill Scarlet enemies around this area
+|tip Try not to kill them too fast, and stop attacking them when they start talking.
+|tip Eventually one of the enemies will give you information.
+Reveal the "Crimson Dawn" |q 12720/1 |goto 55.8,65.8
+step
+Equip Your Normal Weapon
+Click Here After Equipping Your Normal Weapon |confirm |c |q 12720
+step
+Follow the path down |goto 56.04,61.53 < 20 |only if walking
+Enter the crypt |goto 54.3,58.1 < 10 |walk
+Run down the stairs |goto 53.60,58.05 < 7 |walk
+Continue down the stairs |goto 53.69,57.41 < 7 |walk
 talk Prince Keleseth##28911
-turnin How To Win Friends And Influence Enemies##12720 |goto 54.3,57.3
-accept Behind Scarlet Lines##12723 |goto 54.3,57.3
+|tip Downstairs inside the crypt.
+turnin How To Win Friends And Influence Enemies##12720 |goto 54.30,57.31
+accept Behind Scarlet Lines##12723 |goto 54.30,57.31
 step
-_Enter_ the tavern |goto 56.1,80.0 < 5 |walk
-_Go upstairs_ |goto 56.5,79.6 < 5 |walk
+Run up the stairs |goto 53.96,57.42 < 7 |walk
+Continue up the stairs |goto 53.60,57.57 < 7 |walk
+Continue up the stairs |goto 53.71,58.15 < 7 |walk
+Leave the crypt |goto 54.36,58.15 < 10 |walk
+Follow the path up |goto 55.96,59.90 < 20 |only if walking
+Continue following the path |goto 56.29,68.44 < 20 |only if walking
+Follow the path |goto 57.12,75.46 < 20 |only if walking
 talk Orbaz Bloodbane##28914
-|tip They are on the second floor.
-turnin Behind Scarlet Lines##12723 |goto 56.3,79.8
-accept The Path Of The Righteous Crusader##12724 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin Behind Scarlet Lines##12723 |goto 56.26,79.84
+accept The Path Of The Righteous Crusader##12724 |goto 56.26,79.84
 step
 talk Thassarian##28913
-accept Brothers In Death##12725 |goto 56.3,80.2
+|tip Upstairs inside the building.
+accept Brothers In Death##12725 |goto 56.27,80.15
 step
-_Enter_ Scarlet Hold |goto 61.9,68.2 < 5 |walk
-_Go downstairs_ |goto 62.7,68.6 < 5 |walk
+Follow the path |goto 57.00,77.83 < 20 |only if walking
+Enter the building |goto 61.10,68.06 < 15 |walk
+Follow the path |goto 62.22,68.69 < 10 |walk
+Follow the path |goto 62.40,69.32 < 10 |walk
+Run down the stairs |goto 62.77,68.63 < 7 |walk
 talk Koltira Deathweaver##28912
-|tip They are in the basement.
-turnin Brothers In Death##12725 |goto 63.0,67.8
-accept Bloody Breakout##12727 |goto 63.0,67.8
+|tip Downstairs in the building.
+turnin Brothers In Death##12725 |goto 62.96,67.85
+accept Bloody Breakout##12727 |goto 62.96,67.85
 step
-Koltira Deathweaver forms a bubble and you have to fight the mobs as they come in waves
-|tip Stay inside the bubble, it reduces spell damage done to you.
+Kill the enemies that attack in waves
 kill High Inquisitor Valroth##29001
+|tip Stay inside the bubble Koltira Deathweaver forms.
+|tip It reduces spell damage done to you, so you'll live.
 click High Inquisitor Valroth's Remains##2951
-collect Valroth's Head##39510 |q 12727/1 |goto 63.0,67.8
+|tip It will be wherever you ended up killing High Inquisitor Valroth.
+collect Valroth's Head |q 12727/1 |goto 62.91,68.10
 step
 click New Avalon Patrol Schedule##8051
-|tip It's on the second floor.
-collect New Avalon Patrol Schedule##39504 |q 12724/1 |goto 63.0,68.3
+|tip It looks like a thick book sitting on a long table upstairs in a big open room in the fort.
+collect New Avalon Patrol Schedule|q 12724/1 |goto 63.0,68.3
 step
+Leave the building |goto 61.08,68.08 < 15 |walk
+Follow the path up |goto 58.70,71.30 < 20 |only if walking
 talk Orbaz Bloodbane##28914
-turnin The Path Of The Righteous Crusader##12724 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin The Path Of The Righteous Crusader##12724 |goto 56.26,79.84
 step
 talk Thassarian##28913
-turnin Bloody Breakout##12727 |goto 56.3,80.2
-accept A Cry For Vengeance!##12738 |goto 56.3,80.2
+|tip Upstairs inside the building.
+turnin Bloody Breakout##12727 |goto 56.27,80.15
+accept A Cry For Vengeance!##12738 |goto 56.27,80.15
 step
+Follow the path |goto 52.66,80.93 < 15 |only if walking
 talk Knight Commander Plaguefist##29053
+|tip He walks around this area.
 turnin A Cry For Vengeance!##12738 |goto 52.9,81.5
+accept A Special Surprise##12742 |goto 52.9,81.5 |only Human
+accept A Special Surprise##12743 |goto 52.9,81.5 |only NightElf
+accept A Special Surprise##12744 |goto 52.9,81.5 |only Dwarf
+accept A Special Surprise##12745 |goto 52.9,81.5 |only Gnome
+accept A Special Surprise##12746 |goto 52.9,81.5 |only Draenei
+accept A Special Surprise##28649 |goto 52.9,81.5 |only Worgen
 accept A Special Surprise##12739 |goto 52.9,81.5 |only Tauren
 accept A Special Surprise##12747 |goto 52.9,81.5 |only BloodElf
 accept A Special Surprise##12748 |goto 52.9,81.5 |only Orc
@@ -1356,25 +1487,74 @@ accept A Special Surprise##12749 |goto 52.9,81.5 |only Troll
 accept A Special Surprise##12750 |goto 52.9,81.5 |only Scourge
 accept A Special Surprise##28650 |goto 52.9,81.5 |only Goblin
 step
-kill Malar Bravehorn##29032 |q 12739/1 |goto 54.5,83.9
-only Tauren
+Watch the dialogue
+kill Valok the Righteous##29070 |q 12746/1 |goto 54.5,83.4
+|tip Inside the building.
+|only Draenei
 step
-kill Iggy Darktusk##29073 |q 12749/1 |goto 53.8,83.8
-only Troll
+Watch the dialogue
+kill Yazmina Oakenthorn##29065 |q 12743/1 |goto 54.2,83.9
+|tip Inside the building.
+|only NightElf
 step
-kill Antoine Brack##29071 |q 12750/1 |goto 53.5,83.3
-only Scourge
+Watch the dialogue
+kill Goby Blastenheimer##29068 |q 12745/1 |goto 53.9,83.8
+|tip Inside the building.
+|only Gnome
 step
-kill Kug Ironjaw##29072 |q 12748/1 |goto 53.8,83.3
-only Orc
+Watch the dialogue
+kill Ellen Stanbridge##29061 |q 12742/1 |goto 53.5,83.8
+|tip Inside the building.
+|only Human
 step
-kill Lady Eonys##29074 |q 12747/1 |goto 54.3,83.3
-only BloodElf
+Watch the dialogue
+kill Donovan Pulfrost##29067 |q 12744/1 |goto 54,83.3
+|tip Inside the building.
+|only Dwarf
 step
-kill Gally Lumpstain |q 28650/1 |goto 54.1,83.8
-only Goblin
+Watch the dialogue
+kill Lord Harford##49355 |q 28649/1 |goto 54.14,83.29
+|tip Inside the building.
+|only Worgen
+step
+Watch the dialogue
+kill Malar Bravehorn##29032 |q 12739/1 |goto 54.50,83.85
+|tip Inside the building.
+|only Tauren
+step
+Watch the dialogue
+kill Lady Eonys##29074 |q 12747/1 |goto 54.28,83.31
+|tip Inside the building.
+|only BloodElf
+step
+Watch the dialogue
+kill Kug Ironjaw##29072 |q 12748/1 |goto 53.77,83.27
+|tip Inside the building.
+|only Orc
+step
+Watch the dialogue
+kill Iggy Darktusk##29073 |q 12749/1 |goto 53.80,83.75
+|tip Inside the building.
+|only Troll
+step
+Watch the dialogue
+kill Antoine Brack##29071 |q 12750/1 |goto 53.54,83.30
+|tip Inside the building.
+|only Scourge
+step
+Watch the dialogue
+kill Gally Lumpstain##49356 |q 28650/1 |goto 54.11,83.77
+|tip Inside the building.
+|only Goblin
 step
 talk Knight Commander Plaguefist##29053
+|tip He walks around this area.
+turnin A Special Surprise##12742 |goto 52.9,81.5 |only Human
+turnin A Special Surprise##12743 |goto 52.9,81.5 |only NightElf
+turnin A Special Surprise##12744 |goto 52.9,81.5 |only Dwarf
+turnin A Special Surprise##12745 |goto 52.9,81.5 |only Gnome
+turnin A Special Surprise##12746 |goto 52.9,81.5 |only Draenei
+turnin A Special Surprise##28649 |goto 52.9,81.5 |only Worgen
 turnin A Special Surprise##12739 |goto 52.9,81.5 |only Tauren
 turnin A Special Surprise##12747 |goto 52.9,81.5 |only BloodElf
 turnin A Special Surprise##12748 |goto 52.9,81.5 |only Orc
@@ -1383,93 +1563,152 @@ turnin A Special Surprise##12750 |goto 52.9,81.5 |only Scourge
 turnin A Special Surprise##28650 |goto 52.9,81.5 |only Goblin
 accept A Sort Of Homecoming##12751 |goto 52.9,81.5
 step
-_Go upstairs_ in the building |goto 56.5,79.7 < 5
+Follow the path |goto 52.72,80.46 < 15 |only if walking
 talk Thassarian##28913
-turnin A Sort Of Homecoming##12751 |goto 56.3,80.2
+|tip Upstairs inside the building.
+turnin A Sort Of Homecoming##12751 |goto 56.27,80.15
 step
 talk Orbaz Bloodbane##28914
-accept Ambush At The Overlook##12754 |goto 56.3,79.8
+|tip Upstairs inside the building.
+accept Ambush At The Overlook##12754 |goto 56.26,79.84
 step
-use Makeshift Cover##39645
-|tip Use your Makeshift Cover while standing on the edge of the hill.
+Use the Makeshift Cover |use Makeshift Cover##39645
 kill Scarlet Courier##29076
-collect Scarlet Courier's Belongings##39646 |q 12754/1 |goto 60,78.5
-collect Scarlet Courier's Message##39647 |q 12754/2 |goto 60,78.5
+collect Scarlet Courier's Belongings##39646 |q 12754/1 |goto 59.97,78.57
+collect Scarlet Courier's Message##39647 |q 12754/2 |goto 59.97,78.57
 step
 talk Orbaz Bloodbane##28914
-turnin Ambush At The Overlook##12754 |goto 56.3,79.8
-accept A Meeting With Fate##12755 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin Ambush At The Overlook##12754 |goto 56.26,79.84
+accept A Meeting With Fate##12755 |goto 56.26,79.84
 step
+Follow the path down |goto 60.13,76.98 < 15 |only if walking
+Follow the path down |goto 60.47,80.43 < 20 |only if walking
+Follow the path |goto 62.90,85.29 < 20 |only if walking
 talk High General Abbendis##29077
-turnin A Meeting With Fate##12755 |goto 65.6,83.8
-accept The Scarlet Onslaught Emerges##12756 |goto 65.6,83.8
+turnin A Meeting With Fate##12755 |goto 65.65,83.82
+accept The Scarlet Onslaught Emerges##12756 |goto 65.65,83.82
 step
+Follow the path up |goto 63.40,85.39 < 20 |only if walking
+Continue up the path |goto 61.76,83.29 < 20 |only if walking
+Continue up the path |goto 60.55,79.94 < 20 |only if walking
+Follow the path up |goto 60.30,77.04 < 15 |only if walking
 talk Orbaz Bloodbane##28914
-turnin The Scarlet Onslaught Emerges##12756 |goto 56.3,79.8
-accept Scarlet Armies Approach...##12757 |goto 56.3,79.8
+|tip Upstairs inside the building.
+turnin The Scarlet Onslaught Emerges##12756 |goto 56.26,79.84
+accept Scarlet Armies Approach...##12757 |goto 56.26,79.84
 step
-clicknpc Scourge Gryphon##29488 |goto Plaguelands: The Scarlet Enclave 53.1,32.5 < 5
+click Portal to Acherus##8046 |goto 56.18,80.04 |n
+Teleport to Acherus |goto 50.2,32.6 < 20 |noway |c |q 12757
+step
 talk Highlord Darion Mograine##28444
-turnin Scarlet Armies Approach...##12757 |goto 48.9,29.7
-accept The Scarlet Apocalypse##12778 |goto 48.9,29.7
+turnin Scarlet Armies Approach...##12757 |goto 48.89,29.77
+accept The Scarlet Apocalypse##12778 |goto 48.89,29.77
 step
-clicknpc Scourge Gryphon##29488 |goto 52.1,35 < 5
+clicknpc Scourge Gryphon##29488 |goto 52.08,35.03 |n
+Arrive at Death's Breach |goto 53.2,31.1 < 20 |noway |c |q 12778
+step
+Run up the ramp |goto 53.31,36.37 < 10 |only if walking
 talk The Lich King##29110
-turnin The Scarlet Apocalypse##12778 |goto 53.6,36.9
-accept An End To All Things...##12779 |goto 53.6,36.9
+turnin The Scarlet Apocalypse##12778 |goto 53.57,36.85
+accept An End To All Things...##12779 |goto 53.57,36.85
 step
-use Horn of the Frostbrood##39700
-|tip This will summon a dragon for you to ride.
-Fly and and use your dragon abilities to do the following:
+Use the Horn of the Frostbrood |use Horn of the Frostbrood##39700
+Summon a Dragon to Ride |invehicle |c |q 12779
+stickystart "Destroy_Scarlet_Ballistas"
+step
 kill 150 Scarlet Soldier##4286 |q 12779/1 |goto 55.8,61
+|tip Use the abilities on your action bar.
+step
+label "Destroy_Scarlet_Ballistas"
 Destroy #10# Scarlet Ballistas |q 12779/2 |goto 55.8,61
-There will be more around [58.3,71.1]
+|tip They look like big wooden crossbow machines around this area.
+|tip Use the abilities on your action bar.
 step
-Fly back to Death's Breach and click the red arrow on your hot bar to jump off the dragon |goto 52.8,37.3 < 10 |outvehicle |q 12779
+Return to Death's Breach |goto 52.47,37.18 < 20 |c |q 12779
+|tip Don't click the red arrow to stop controlling the Frostbrood Vanquisher yet.
 step
+Stop Controlling the Frostbrood Vanquisher |outvehicle |c |goto 52.53,37.39 |q 12779
+|tip Click the red arrow on your action bar.
+step
+Run up the ramp |goto 53.31,36.37 < 10 |only if walking
 talk The Lich King##29110
-turnin An End To All Things...##12779 |goto 53.6,36.9
-accept The Lich King's Command##12800 |goto 53.6,36.9
+turnin An End To All Things...##12779 |goto 53.57,36.85
+accept The Lich King's Command##12800 |goto 53.57,36.85
 step
-_Go through_ the tunnel |goto 49.5,29.5 < 10
+Follow the path |goto 50.16,31.36 < 20 |only if walking
+Enter the tunnel |goto 49.13,28.43 < 15 |only if walking
+Leave the tunnel |goto 47.35,24.82 < 15 |only if walking
+Follow the path |goto 46.77,22.04 < 15 |only if walking
+Follow the path down |goto 40.02,19.25 < 15 |only if walking
+Follow the path |goto 36.04,24.04 < 20 |only if walking
 talk Scourge Commander Thalanor##31082
-turnin The Lich King's Command##12800 |goto 33.9,30.4
-accept The Light of Dawn##12801 |goto 33.9,30.4
-step
-talk Highlord Darion Mograine##29173 |goto 34.4,31.1 < 5
-|tip If he is not here then the battle has already started an you might be able to join the battle at the chapel to save some time.
-Tell him _"I am ready, Highlord. Let the siege of Light's Hope begin!"_
-|tip You may be unable to do this if someone else already has.
-Wait 5 minutes for the battle to start
-Uncover The Light of Dawn |q 12801/1 |goto 38.9,38.2
+|tip He paces back and forth.
+turnin The Lich King's Command##12800 |goto 33.99,30.36
+accept The Light of Dawn##12801 |goto 33.99,30.36
 step
 talk Highlord Darion Mograine##29173
-turnin The Light of Dawn##12801 |goto 39.1,39
-accept Taking Back Acherus##13165 |goto 39.1,39
+|tip If he's not here, then the battle has already started.
+|tip You may be able to join the battle.  Skip to the next step, try to do it, and see if it works.
+|tip If you're unable to join the battle, skip back to this step and wait for Highlord Darion Mograine to respawn.
+Tell him _"I am ready, Highlord.  Let the siege of Light's Hope begin!"_
+|tip If he's here, but you can't choose this dialogue, that just means someone else already did it.
+|tip Now you just need to wait for the battle to start.
+|tip The battle starts 5 minutes after someone initiates this dialogue with him.
+Click Here When the Battle Begins |confirm |c |goto 34.44,31.10 |q 12801
 step
-Use your _Death Gate_ spell and click the purple portal to go to Ebon Hold |goto Eastern Plaguelands 83.7,50.0 < 5 |cast Death Gate |q 13165
+Kill enemies around this area
+|tip Follow your allies into battle.
+Watch the dialogue
+Uncover The Light of Dawn |q 12801/1 |goto 38.79,38.34
 step
 talk Highlord Darion Mograine##29173
-turnin Taking Back Acherus##13165 |goto 83.4,49.4
-accept The Battle For The Ebon Hold##13166 |goto 83.4,49.4
-stickystart "scourgekills"
+turnin The Light of Dawn##12801 |goto 39.11,39.16
+accept Taking Back Acherus##13165 |goto 39.11,39.16
 step
-_Stand on_ the purple circle to teleport upstairs |goto 83.2,48.9 < 5
-kill Patchwerk##31099 |q 13166/1 |goto 82.5,47.3
-step "scourgekills"
-kill Scourge Necromancer##31096+, Terrifying Abomination##31098+, Val'kyr Battle-maiden##31095+
-Kill #10# Scourge |q 13166/2 |goto 82.5,47.3
+Use your Death Gate spell
+|tip Click the purple Death Gate portal that appears nearby.
+Travel to Ebon Hold |goto Eastern Plaguelands/0 83.7,50.0 < 20 |noway |c |q 13165
 step
-_Stand on_ the purple circle to teleport downstairs |goto 83.3,49.1 < 5
+talk Highlord Darion Mograine##29173
+turnin Taking Back Acherus##13165 |goto 83.44,49.46
+accept The Battle For The Ebon Hold##13166 |goto 83.44,49.46
+step
+Walk onto the teleport pad |goto 83.19,48.90 |n
+Teleport Downstairs |goto 82.68,47.79 < 10 |noway |c |q 13166
+step
+Kill enemies around this area
+Slay #10# Scourge |q 13166/2 |goto 81.99,46.37
+step
+kill Patchwerk##31099 |q 13166/1 |goto 81.99,46.37
+step
+Walk onto the teleport pad |goto 83.28,49.12 |n
+Teleport Upstairs |goto 83.28,49.12 < 5 |noway |c |q 13166
+step
 talk Highlord Darion Mograine##31084
-turnin The Battle For The Ebon Hold##13166 |goto 83.4,49.4
-accept Warchief's Blessing##13189 |goto 83.4,49.4
+turnin The Battle For The Ebon Hold##13166 |goto 83.44,49.46
+accept Where Kings Walk##13188 |goto 83.44,49.46 |only Alliance
+accept Saurfang's Blessing##13189 |goto 83.44,49.46 |only Horde
 step
-Click the portal |goto 84.5,50.4 < 5 |n
-Arrive in Orgrimmar |goto Durotar 45.6,13.5 < 10 |noway |q 13189
+click Portal to Orgrimmar |goto 84.55,50.46 |n
+Teleport to Orgrimmar |goto Durotar/0 45.6,13.5 < 20 |noway |c |q 13189
+|only Horde
 step
-talk Vol'jin##86832
-turnin Warchief's Blessing##13189 |goto Orgrimmar 48.1,70.5
+Enter the building |goto Orgrimmar/1 49.90,75.62 < 10 |walk
+talk High Overlord Saurfang##14720
+|tip Inside the building.
+turnin Saurfang's Blessing##13189 |goto Orgrimmar/1 48.27,70.97
+|only Horde
+step
+click Portal to Stormwind |goto 83.65,51.34 |n
+Teleport to Stormwind City |goto Elwynn Forest/0 33.4,52 < 20 |noway |c |q 13188
+|only Alliance
+step
+Enter the building |goto Stormwind City/0 80.60,37.89 < 15 |walk
+talk Anduin Wrynn##107574
+|tip Inside the building.
+turnin Where Kings Walk##13188 |goto Stormwind City/0 85.8,31.7
+|only Alliance
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Undead (1-11)",{
 author="support@zygorguides.com",

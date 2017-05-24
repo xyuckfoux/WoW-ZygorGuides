@@ -1794,8 +1794,24 @@ Next to you
 talk Direbeak Hatchling##115785
 turnin Direbeak Team Rumble##44987
 step
-More content coming soon!
-confirm
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Direbeak Reunion##44988
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Return your Direbeak to Gull Rock |q 44988/1 |goto Stormheim/0 79.74,69.50
+step
+click Injured Direbeak Matriarch##116140
+_"Bandage the Injured Matriarch"_ |q 44988/2 |goto Stormheim/0 79.74,69.50
+step
+click the Quest completion box
+turnin Direbeak Reunion##44988
+collect Brilliant Direbeak##137579 |n |use Brilliant Direbeak##137579
+learnmount Brilliant Direbeak##213164
+step
+_Congratulations!_
+You are now the proud owner of a Brilliant Direbeak.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
 author="support@zygorguides.com",
@@ -1944,6 +1960,40 @@ Summon your Snowfeather Hatchling
 Next to you
 talk Snowfeather Hatchling##115784
 turnin Snowfeather Bonding##44959
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Hunting Lesson: Mudshell Conch##44960
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Mudshell Conches using your Snowfeather Hatchling and 2 Flying type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be flying type pets.
+Defeat #3# Mudshell Conchs |q 44960/1 |goto Highmountain/0 46.73,9.77
+|tip These can be found all around this area.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Hunting Lesson: Mudshell Conch##44960
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Teamwork Lesson: Naraxas##44961
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for Neltharion's Lair or enter the dungeon with your group |goto Neltharion's Lair/0 96.6,40.0 < 100 |c |q 44961
+step
+Make sure your Snowfeather Hatchling is summoned while you kill Naraxas
+kill Naraxas##91005 |q 44961/1 |goto 33.73,37.20
+|tip You can use our Neltharion's Lair dungeon guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Teamwork Lesson: Naraxas##44961
 step
 More content coming soon!
 confirm
@@ -2112,8 +2162,93 @@ Next to you
 talk Bloodgazer Hatchling##115787
 turnin Hunting Lesson: Juvenile Scuttleback##45010
 step
-More content coming soon!
-confirm
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Teamwork Lesson: Serpentrix##45012
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c |q 45012
+step
+Make sure your Bloodgazer Hatchling is summoned while you kill Serpentrix
+kill Serpentrix##91808 |q 45012/1 |goto Eye of Azshara/1 52.59,35.50
+|tip You can use our Eye of Azshara dungeon guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Teamwork Lesson: Serpentrix##45012
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Hunting Lesson: Felspider##45014
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Felspiders using your Bloodgazer Hatchling and 2 Critter type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be Critter type pets.
+Defeat #3# Felspiders |q 45014/1 |goto Azsuna/0 32.10,50.87
+|tip These can be found all around this area.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Felspider##45014
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Teamwork Lesson: Skorpyron##45016
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for The Nighthold or enter the raid with your group |goto The Nighthold/1 24.0,91.1 |c |q 45016
+step
+Make sure your Bloodgazer Hatchling is summoned before killing Skorpyron
+kill Skorpyron##102263 |q 45016/1 |goto 32.0,61.22
+|tip Check out our Nighthold guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Teamwork Lesson: Skorpyron##45016
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Bloodgazer Team Rumble##45018
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Bloodgazer Hatchling is summoned before starting each Pet Battle
+|tip Your Sharptalon Hatchling must be in the first battle slot.
+|tip Your other 2 pets must be Beast type pets.
+|tip Your Bloodgazer Hatchling can not die.
+Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45018/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Bloodgazer Team Rumble##45018
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Bloodgazer Reunion##45020
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Return your Bloodgazer to Alluvanon's Delta |q 45020/1 |goto Azsuna/0 35.63,7.71
+step
+click Injured Bloodgazer Matriarch##116139
+_"Bandage the Injured Matriarch"_ |q 45020/2 |goto Azsuna/0 35.63,7.71
+step
+click the Quest completion box
+turnin Bloodgazer Reunion##45020
+collect Predatory Bloodgazer##137577 |n |use Predatory Bloodgazer##137577
+learnmount Predatory Bloodgazer##213158
+step
+_Congratulations!_
+You are now the proud owner of a Predatory Bloodgazer.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
 author="support@zygorguides.com",
@@ -2329,7 +2464,85 @@ Next to you
 talk Sharptalon Hatchling##115786
 turnin Teamwork Lesson: Xavius##45015
 step
-More content coming soon!
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Sharptalon Team Rumble##45017
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned before starting each Pet Battle
+|tip Your Sharptalon Hatchling must be in the first battle slot.
+|tip Your other 2 pets must be Magic type pets.
+|tip Your Sharptalon Hatchling can not die.
+Defeat #3# Pet Battle world quests with your Sharptalon Hatchling |q 45017/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Sharptalon Team Rumble##45017
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Sharptalon Reunion##45019
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Follow the path |goto Highmountain/0 30.09,40.79 < 25 |only if walking
+Follow the path |goto 27.44,41.50 < 25 |only if walking
+Follow the path |goto 23.30,43.37 < 25 |only if walking
+Follow the path |goto Val'sharah/0 59.36,7.73 < 25 |notravel |only if walking
+Follow the path up |goto 49.45,7.85 < 25 |only if walking
+Make sure your Sharptalon Hatchling is summoned
+Return your Sharptalon to Verdant Vliffs |q 45019/1 |goto Val'sharah/0 47.01,10.58
+step
+click Injured Sharptalon Matriarch##116141
+_"Bandage the Injured Matriarch"_ |q 45019/2 |goto Val'sharah/0 47.01,10.58
+step
+click the Quest completion box
+turnin Sharptalon Reunion##45019
+collect Viridian Sharptalon##137580 |n |use Viridian Sharptalon##137580
+learnmount Viridian Sharptalon##213165
+step
+_Congratulations!_
+You are now the proud owner of a Viridian Sharptalon.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Ivory Hawkstrider",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"ivory","hawkstrider","ground","mount"},
+condition_end="hasmount(230401)",
+model={73991},
+description="This guide will help you acquire the Ivory Hawkstrider.",
+},[[
+step
+You Must first complete one of the 4 Hatchling Mounts before being able to start working toward this mount
+Check out either our Predatory Bloodgazer, Viridian Sharptalon, Snowfeather Hunter, or Brilliant Direbeak mount guides.
 confirm
+step
+Ride one of the 4 Falcosaur mounts that you have obtained
+talk Aviana##97925
+Click the new Dialogue options |goto Highmountain/0 32.22,66.84
+collect Ivory Talon##142361 |n
+|condition rep('Talons Vengeance')==Neutral
+step
+Next you must use this Ivory Talon and kill players
+|tip This Ivory Talon can only be used in World PvP Quest areas, and Falcosaur World Quest areas.
+|tip The Ivory Talon has a 15 minuite cooldown.
+confirm
+step
+Kill Players in World PvP Quest areas, and Falcosaur World Quest areas
+Use the Ivory Talon while in these areas |use Ivory Talon##142361
+|tip If you lose your Ivory Talon you may go back to Aviana to get another one.
+collect Mark of Prey##142363 |n |use Mark of Prey##142363
+|tip You will need 420 of these Marks without any reputation buffs to gain exalted reputation
+|condition rep('Talons Vengeance')==Exalted
+step
+talk Aviana##97925
+buy 1 Ivory Hawkstrider##142369 |n |use Ivory Hawkstrider##142369
+learnmount Ivory Hawkstrider##230401 |goto Highmountain/0 32.22,66.84
+step
+_Congratulations!_
+You are now the proud owner of a Ivory Hawkstrider.
 ]])
 ZGV.BETAEND()

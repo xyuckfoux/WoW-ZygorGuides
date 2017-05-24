@@ -8173,7 +8173,7 @@ ZygorGuidesViewer:RegisterInclude("A_One_That_Didn't_Get_Away",[[
 		Congratulations, you have _earned_ the _One That Didn't Get Away_ achievement!
 ]])
 ZygorGuidesViewer:RegisterInclude("A_Grand_Master_Fisherman",[[
-		next "Profession Guides\\Fishing\\Fishing 1-600 Leveling Guide"
+		next "Profession Guides\\Fishing\\Leveling Guides\\Fishing 1-600 Leveling Guide"
 	step
 		Obtain 450 skill points in fishing |achieve 130
 	step

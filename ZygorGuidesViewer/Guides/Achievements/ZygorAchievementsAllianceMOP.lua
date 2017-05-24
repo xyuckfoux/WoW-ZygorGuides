@@ -9391,7 +9391,7 @@ Plant any seeds you bought in the previous step. |goto Valley of the Four Winds 
 step
 label "mingus"
 You will need _Archaeology_ in order to attempt to get this Challenge Card.
-Click here to go to the Archaeology guide to begin Archaeology. You will need to be around level 500 in this skill. |confirm |next "Profession Guides\\Archaeology\\Archaeology 1-600 Leveling Guide"
+Click here to go to the Archaeology guide to begin Archaeology. You will need to be around level 500 in this skill. |confirm |next "Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 1-600 Leveling Guide"
 |only if skill("Archaeology")<1
 step
 Open your world map, find dig sites in Eastern Kingdoms then go to them

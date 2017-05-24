@@ -994,17 +994,20 @@ do
 
 
 			do -- INITIALIZE ADVANCED
+				local segment="advanced"
 				for i,pair in ipairs(Lib.data.basenodes.advanced) do
 					SmartAddNode(pair,nil,use_cache)
 				end
 				Lib.data.basenodes.advanced = nil
+
+				punchStartupTime(segment)
+				Lib.startup_framecount=Lib.startup_framecount+1
+				yield(segment,1)
 			end
-			punchStartupTime("advanced")
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("advanced",1)
 			
 
 			do -- INITIALIZE ZONE FLAGS
+				local segment="zoneflags"
 				for id,data in pairs(Lib.data.zoneflags) do
 					if type(id)=="string" then
 						local oldid=id
@@ -1013,27 +1016,28 @@ do
 						Lib.data.zoneflags[oldid]=nil
 					end
 				end
-			end
 
-			punchStartupTime("zoneflags")
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("zoneflags",1)
+				punchStartupTime(segment)
+				yield(segment,1)
+			end
 
 			resetStartupTime()
 
 			do -- INITIALIZE TAXIS
+				local segment="taxis"
+
 				-- add map IDs to taxis
 				InitializeTaxis(use_cache)
 				-- if available, try to glean known taxi routes. Otherwise assume they're not known.
-			end
 
-			punchStartupTime("taxis")
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("taxis",1)
+				punchStartupTime(segment)
+				yield(segment,1)
+			end
 
 			resetStartupTime()
 
 			do -- INITIALIZE INNS
+				local segment="inns"
 				local count=0	for z,zone in pairs(Lib.data.basenodes.inns) do  count=count+1  end
 				local progress=0
 				for z,zone in ZGV.OrderedPairs(Lib.data.basenodes.inns) do
@@ -1054,18 +1058,16 @@ do
 						end
 					end
 					progress=progress+1
-					maybeYield("inns",progress/count)
+					maybeYield(segment,progress/count)
 				end
+				punchStartupTime(segment)
+				yield(segment,1)
 			end
 
-			punchStartupTime("inns")
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("inns",1)
-			
-			
 			resetStartupTime()
 
 			do -- INITIALIZE GREEN BORDERS
+				local segment="green borders"
 				-- special cases, these zones are inter-crossable easily.
 				for pi,pair in ipairs(Lib.data.greenborders) do
 					local z1 = Lib.data.MapIDsByName[pair[1]]
@@ -1078,78 +1080,69 @@ do
 					local iz2=Lib.greenborders[z2] or {}   iz2[z1]=1   Lib.greenborders[z2] = iz2
 				end
 				Lib.data.greenborders=nil
+				punchStartupTime(segment)
+				yield(segment,1)
 			end
 
-			punchStartupTime("green borders")
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("green borders",1)
-
-
 			---- EVERYTHING ABOVE happens pretty fast. The init stages BELOW take a few seconds each.
-
 			
 			resetStartupTime()
 
+			
 			do -- INITIALIZE BORDERS
-				local count=0	for c,cont in pairs(Lib.data.basenodes.borders) do  for d,data in ipairs(cont) do  count=count+1  end end
+				local segment="borders"
+				local count=0	for d,data in ipairs(Lib.data.basenodes.borders) do  count=count+1  end
 				local progress=0
-				for c,cont in ZGV.OrderedPairs(Lib.data.basenodes.borders) do  -- yes, c is useless
-					for d,data in ipairs(cont) do
-						SmartAddNode(data,"border",use_cache)
-						progress=progress+1
-						if d%5==0 then maybeYield("borders",progress/count)  end
-					end
+				for d,data in ipairs(Lib.data.basenodes.borders) do
+					SmartAddNode(data,"border",use_cache)
+					progress=progress+1
+					if d%5==0 then maybeYield(segment,progress/count)  end
 				end
 				Lib.data.basenodes.borders = nil
+				punchStartupTime(segment)  --@~230ms
+				yield(segment,1)
 			end
-
-			punchStartupTime("borders")  --@~230ms
-			
 			
 
-			do -- INITIALIZE TRAVEL
-				local count=#Lib.data.basenodes.travel
-				for d,data in ipairs(Lib.data.basenodes.travel) do
+			do -- INITIALIZE TRANSIT
+				local segment="transit"
+				local count=#Lib.data.basenodes.transit
+				for d,data in ipairs(Lib.data.basenodes.transit) do
 					SmartAddNode(data,nil,use_cache)
-					if d%2==0 then  maybeYield("travel",d/count)  end
+					if d%2==0 then  maybeYield(segment,d/count)  end
 				end
-				Lib.data.basenodes.travel = nil
+				Lib.data.basenodes.transit = nil
 				--local t2b=debugprofilestop()  print("LibRover initialization: travel ",t2b-Lib.startup_now)  Lib.startup_now=t2b
 				--@~320ms
+				punchStartupTime(segment)  --@~320ms
+				yield(segment,1)
 			end
-
-			punchStartupTime("travel")  --@~320ms
-
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("travel",1)
 
 
 			do -- INITIALIZE EXPLICIT FLOORING
+				local segment="flooring"
 				local i=0
-				local count=0  for id,zonedata in pairs(Lib.data.basenodes.MapsWithExplicitFloors) do count=count+1 end
+				local count=0  for id,zonedata in pairs(Lib.data.basenodes.FloorCrossings) do count=count+1 end
 				local progress=0
-				for id,zonedata in ZGV.OrderedPairs(Lib.data.basenodes.MapsWithExplicitFloors) do
+				for id,zonedata in ZGV.OrderedPairs(Lib.data.basenodes.FloorCrossings) do
 					progress=progress+1
 					for n,nodedata in ipairs(zonedata) do
 						local node1,node2=SmartAddNode(nodedata,nil,use_cache)
 						if node1 then node1.flooring=true end
 						if node2 then node2.flooring=true end
-						i=i+1  if i%5==0 then  maybeYield("flooring",progress/count)  end
+						i=i+1  if i%5==0 then  maybeYield(segment,progress/count)  end
 					end
 					
-					Lib.data.basenodes.MapsWithExplicitFloors[id]=true  -- don't delete the entry, it'll come in handy to check WHICH maps need explicit floor crossing.
-					--i=i+1  if i%1==0 then yield("flooring") end
+					Lib.data.basenodes.FloorCrossings[id]=true  -- don't delete the entry, it'll come in handy to check WHICH maps need explicit floor crossing.
+					--i=i+1  if i%1==0 then yield(segment) end
 				end
-				
+				punchStartupTime(segment)  --@~380ms
+				yield(segment,1)
 			end
-
-			punchStartupTime("flooring")  --@~380ms
 			
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("flooring",1)
-
 
 			do -- INITIALIZE INDOOR AREAS
+				local segment="indoors"
 				local i=0
 				local count=0  for id,data in pairs(Lib.data.basenodes.indoorzones) do count=count+1 end
 				local progress=0
@@ -1157,19 +1150,55 @@ do
 					progress=progress+1
 					for n,node in ipairs(data) do
 						SmartAddNode(node,nil,use_cache)
-						i=i+1  if i%5==0 then  maybeYield("indoors",progress/count)  end
+						i=i+1  if i%5==0 then  maybeYield(segment,progress/count)  end
 					end
 					Lib.data.basenodes.indoorzones[id]=nil
 				end
+				punchStartupTime(segment)  --@~380ms
+				yield(segment,1)
 			end
 
-			punchStartupTime("indoors")  --@~380ms
 			
-			Lib.startup_framecount=Lib.startup_framecount+1
-			yield("indoors",1)
+			do -- INITIALIZE DUNGEON ENTRANCES
+				local segment="dungeonentrances"
+				local count=#Lib.data.basenodes.DungeonEntrances
+				for d,data in ipairs(Lib.data.basenodes.DungeonEntrances) do
+					SmartAddNode(data,nil,use_cache)
+					if d%2==0 then  maybeYield(segment,d/count)  end
+				end
+				Lib.data.basenodes.DungeonEntrances = nil
+				--local t2b=debugprofilestop()  print("LibRover initialization: travel ",t2b-Lib.startup_now)  Lib.startup_now=t2b
+				--@~320ms
+				punchStartupTime(segment)  --@~320ms
+				yield(segment,1)
+			end
 
+
+			do -- INITIALIZE DUNGEON FLOORS
+				local segment="dungeonfloors"
+				local i=0
+				local count=0  for id,zonedata in pairs(Lib.data.basenodes.DungeonFloors) do count=count+1 end
+				local progress=0
+				for id,zonedata in ZGV.OrderedPairs(Lib.data.basenodes.DungeonFloors) do
+					progress=progress+1
+					for n,nodedata in ipairs(zonedata) do
+						local node1,node2=SmartAddNode(nodedata,nil,use_cache)
+						if node1 then node1.flooring=true end
+						if node2 then node2.flooring=true end
+						i=i+1  if i%5==0 then  maybeYield(segment,progress/count)  end
+					end
+					
+					Lib.data.basenodes.FloorCrossings[id]=true  -- store it for floors-needed lookups
+				end
+				Lib.data.basenodes.DungeonFloors=nil
+				
+				punchStartupTime(segment)  --@~380ms
+				yield(segment,1)
+			end
+			
 
 			do -- INITIALIZE WALLS
+				local segment="walls"
 				for zone,zdata in ZGV.OrderedPairs(Lib.data.basenodes.walls) do
 					local zname,floor = zone:match("^(.-)%s*/%s*(.-)$")
 					zname=zname or zone
@@ -1193,10 +1222,9 @@ do
 					end
 					Lib.data.basenodes.walls[zone]=nil
 				end
+				punchStartupTime(segment)
+				yield(segment,1)
 			end
-
-			punchStartupTime("walls")
-			yield("walls",1)
 
 
 			do -- Find dark nodes and list them for quick lookup
@@ -1364,14 +1392,17 @@ do
 		local TOTALPROGRESS_DATA = {
 			{"start",0}, --ms
 			{"maxspeeds",5},
-			{"taxis",23},
-			{"inns",25},
-			{"borders",2},
-			{"travel",130},
-			{"flooring",110},
-			{"indoors",80},
-			{"dolinkage",1000},
-			{"portkeys",300},
+			{"taxis",96},
+			{"inns",56},
+			{"greenborders",0},
+			{"borders",240},
+			{"transit",466},
+			{"flooring",710},
+			{"indoors",600},
+			{"dungeonentrances",400},
+			{"dungeonfloors",600},
+			{"dolinkage",0},
+			{"portkeys",100},
 		}
 		local TOTALPROGRESSES = {}
 		local TOTALPROGRESS_TIME=0

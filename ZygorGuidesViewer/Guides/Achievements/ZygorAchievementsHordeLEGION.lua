@@ -1345,7 +1345,7 @@ description="This guide will walk you through completing the \"Heroic: Assault o
 },[[
 step
 For this achievement, complete Assault on Violet Hold on Heroic or higher difficulty
-Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
+Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
 Defeat the leader of the Assault on Violet Hold on Heroic difficulty or higher |achieve 10799
 step
 _Congratulations!_
@@ -1361,7 +1361,7 @@ description="This guide will walk you through completing the \"Heroic: Black Roo
 },[[
 step
 For this achievement, complete Black Rook Hold on Heroic or higher difficulty
-Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
+Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
 Defeat Lord Kur'talos Ravencrest in Black Rook Hold on Heroic difficulty or higher |achieve 10805
 step
 _Congratulations!_
@@ -1377,7 +1377,7 @@ description="This guide will walk you through completing the \"Heroic: Darkheart
 },[[
 step
 For this achievement, complete Darkheart Thicket on Heroic or higher difficulty
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
 Defeat Shade of Xavius in Darkheart Thicket on Heroic difficulty or higher |achieve 10784
 step
 _Congratulations!_
@@ -1393,7 +1393,7 @@ description="This guide will walk you through completing the \"Heroic: Eye of Az
 },[[
 step
 For this achievement, complete Eye of Azshara on Heroic or higher difficulty
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 Defeat the Wrath of Azshara in Eye of Azshara on Heroic difficulty or higher |achieve 10781
 step
 _Congratulations!_
@@ -1409,7 +1409,7 @@ description="This guide will walk you through completing the \"Heroic: Halls of 
 },[[
 step
 For this achievement, complete Halls of Valor on Heroic or higher difficulty
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
 Defeat Odyn in Halls of Valor on Heroic difficulty or higher |achieve 10788
 step
 _Congratulations!_
@@ -1425,7 +1425,7 @@ description="This guide will walk you through completing the \"Heroic: Nelthario
 },[[
 step
 For this achievement, complete Neltharion's Lair on Heroic or higher difficulty
-Click here to load "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
 Defeat Dargrul in Neltharion's Lair on Heroic difficulty or higher |achieve 10796
 step
 _Congratulations!_
@@ -1441,7 +1441,7 @@ description="This guide will walk you through completing the \"Heroic: Maw of So
 },[[
 step
 For this achievement, complete Maw of Souls on Heroic or higher difficulty
-Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Maw of Souls"
+Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls"
 Defeat Helya in Maw of Souls on Heroic difficulty or higher |achieve 10808
 step
 _Congratulations!_
@@ -1640,7 +1640,7 @@ description="This guide will walk you through completing the \"Mythic: Assault o
 step
 For this achievement, complete Assault on Violet Hold on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
+Click here to load the "Assault on Violet Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold"
 Defeat the leader of the Assault on Violet Hold on Mythic difficulty |achieve 10800
 step
 _Congratulations!_
@@ -1657,7 +1657,7 @@ description="This guide will walk you through completing the \"Mythic: Black Roo
 step
 For this achievement, complete Black Rook Hold on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
+Click here to load the "Black Rook Hold" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold"
 Defeat Lord Kur'talos Ravencrest in Black Rook Hold on Mythic difficulty |achieve 10806
 step
 _Congratulations!_
@@ -1674,7 +1674,7 @@ description="This guide will walk you through completing the \"Mythic: Darkheart
 step
 For this achievement, complete Darkheart Thicket on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
 Defeat Shade of Xavius in Darkheart Thicket on Mythic difficulty |achieve 10785
 step
 _Congratulations!_
@@ -1691,7 +1691,7 @@ description="This guide will walk you through completing the \"Mythic: Eye of Az
 step
 For this achievement, complete Eye of Azshara on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 Defeat the Wrath of Azshara in Eye of Azshara on Mythic difficulty |achieve 10782
 step
 _Congratulations!_
@@ -1708,7 +1708,7 @@ description="This guide will walk you through completing the \"Mythic: Halls of 
 step
 For this achievement, complete Halls of Valor on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
 Defeat Odyn in Halls of Valor on Mythic difficulty |achieve 10789
 step
 _Congratulations!_
@@ -1725,7 +1725,7 @@ description="This guide will walk you through completing the \"Mythic: Nelthario
 step
 For this achievement, complete Neltharion's Lair on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
 Defeat Dargrul in Neltharion's Lair on Mythic difficulty |achieve 10797
 step
 _Congratulations!_
@@ -1742,7 +1742,7 @@ description="This guide will walk you through completing the \"Mythic: Maw of So
 step
 For this achievement, complete Maw of Souls on Mythic difficulty
 |tip You will need to form your own group, rather than use the group finder.
-Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Maw of Souls"
+Click here to load the "Maw of Souls" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls"
 Defeat Helya in Maw of Souls on Mythic difficulty |achieve 10809
 step
 _Congratulations!_
@@ -1908,9 +1908,9 @@ description="This guide will walk you through completing the \"Return to Karazha
 step
 For this achievement, you will need to complete the Karazhan Attunement guide
 Afterwards, complete the Return to Karazhan dungeon
-Click here to load the "Karazhan Attunement" guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement"
+Click here to load the "Karazhan Attunement" guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement"
 If you have already completed the Attunement:
-Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
+Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
 Defeat Viz'aduum the Watcher in Return to Karazhan |achieve 11429
 step
 _Congratulations!_
@@ -3532,38 +3532,38 @@ Jump down here |goto Stormheim/0 47.17,41.27 < 20 |only if walking
 Explore Aggrammar's Vault |achieve 10668/1 |goto Stormheim/0 46.31,44.54
 |tip You will discover most of these naturally by using the "Stormheim" leveling guide.
 step
-Follow the path |goto 34.28,49.21 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path up |goto 35.14,47.28 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path |goto 37.60,45.57 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path up |goto 37.18,44.26 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Cross the bridge |goto 35.80,43.52 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path down |goto 32.91,42.05 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto 34.28,49.21 < 20 |only if walking() and alliance
+Follow the path up |goto 35.14,47.28 < 20 |only if walking() and alliance
+Follow the path |goto 37.60,45.57 < 20 |only if walking() and alliance
+Follow the path up |goto 37.18,44.26 < 30 |only if walking() and alliance
+Cross the bridge |goto 35.80,43.52 < 20 |only if walking() and alliance
+Follow the path down |goto 32.91,42.05 < 20 |only if walking() and alliance
 Explore Blackbeak Overlook |achieve 10668/2 |goto 35.55,37.43 |only Alliance
-Follow the path up |goto 35.76,30.91 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path up |goto 35.76,30.91 |only if walking() and horde
 Explore Blackbeak Overlook |achieve 10668/2 |goto 34.15,31.18 |only Horde
 step
-Jump down into the water |goto 58.94,56.65 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the water |goto 57.07,61.12 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Continue following the water |goto 55.10,66.86 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Jump down into the water |goto 58.94,56.65 < 20 |only if walking() and alliance
+Follow the water |goto 57.07,61.12 < 30 |only if walking() and alliance
+Continue following the water |goto 55.10,66.86 < 30 |only if walking() and alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 55.44,69.05 |only Alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 54.01,72.29 |only Horde
 step
-Follow the path |goto 72.17,59.32 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto 72.17,59.32 < 20 |only if walking() and alliance
 Explore Deyrgrot |achieve 10668/4 |goto 72.24,56.00 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the road |goto 62.49,55.09 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 66.11,54.63 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 69.22,53.12 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path down |goto 72.14,51.88 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
+Follow the path |goto 66.11,54.63 < 30 |only if walking() and horde
+Follow the path |goto 69.22,53.12 < 30 |only if walking() and horde
+Follow the path down |goto 72.14,51.88 < 20 |only if walking() and horde
 Explore Deyrgrot |achieve 10668/4 |goto 72.71,51.69 |only Horde
 step
 Explore Greywatch |achieve 10668/5 |goto 72.09,59.84 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the road |goto 62.49,55.09 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 65.38,54.68 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path up |goto 66.55,57.54 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 67.55,58.99 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path down |goto 69.53,58.74 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
+Follow the path |goto 65.38,54.68 < 30 |only if walking() and horde
+Follow the path up |goto 66.55,57.54 < 20 |only if walking() and horde
+Follow the path |goto 67.55,58.99 < 30 |only if walking() and horde
+Follow the path down |goto 69.53,58.74 < 30 |only if walking() and horde
 Explore Greywatch |achieve 10668/5 |goto 71.31,58.79 |only Horde
 step
 Follow the road |goto 60.08,53.29 < 30 |only if walking
@@ -3577,26 +3577,26 @@ Follow the road |goto 66.98,48.70 < 30 |only if walking
 Explore Haustvald |achieve 10668/7 |goto 68.20,47.43
 step
 Explore Hrydhal |achieve 10668/8 |goto 38.26,65.27 |only Alliance
-Cross the bridge |goto 44.15,60.52 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Cross the bridge |goto 44.15,60.52 < 20 |only if walking() and horde
 Explore Hrydhal |achieve 10668/8 |goto 44.42,63.46 |only Horde
 step
-Follow the path |goto 34.24,49.26 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path up |goto 35.08,47.32 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path |goto 37.55,45.63 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path |goto 38.74,45.24 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path down |goto 39.10,41.02 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path |goto 40.86,35.35 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Cross the bridge |goto 38.18,33.04 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto 34.24,49.26 < 20 |only if walking() and alliance
+Follow the path up |goto 35.08,47.32 < 20 |only if walking() and alliance
+Follow the path |goto 37.55,45.63 < 30 |only if walking() and alliance
+Follow the path |goto 38.74,45.24 < 30 |only if walking() and alliance
+Follow the path down |goto 39.10,41.02 < 30 |only if walking() and alliance
+Follow the path |goto 40.86,35.35 < 30 |only if walking() and alliance
+Cross the bridge |goto 38.18,33.04 < 20 |only if walking() and horde
 Follow the path down |goto 39.06,33.53 < 20 |only if walking
 Follow the path down |goto 40.30,30.15 < 30 |only if walking
 Explore Maw of Nashal |achieve 10668/9	|goto 37.82,29.23
 step
-Follow the path down |goto 60.55,52.10 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the road |goto 62.49,55.09 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 66.11,54.63 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 69.22,53.12 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path down |goto 72.14,51.88 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path |goto 72.14,59.37 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
+Follow the path |goto 66.11,54.63 < 30 |only if walking() and horde
+Follow the path |goto 69.22,53.12 < 30 |only if walking() and horde
+Follow the path down |goto 72.14,51.88 < 20 |only if walking() and horde
+Follow the path |goto 72.14,59.37 < 20 |only if walking() and alliance
 Follow the path |goto 72.77,57.09 < 30 |only if walking
 Explore Morheim |achieve 10668/10 |goto 78.29,57.01
 step
@@ -4095,7 +4095,7 @@ description="This guide will walk you through completing the \"A Cast Above the 
 },[[
 step
 Complete the "Drowned Mana" quest |condition completedq(42911) |or
-Click here to load the "Fishing Quest Line" guide |confirm |next "Zygor's Horde Profession Guides\\Fishing\\Legion\\Fishing Quest Line" |or
+Click here to load the "Fishing Quest Line" guide |confirm |next "Zygor's Profession Guides\\Fishing\\Quest Guides\\Fishing Quest Line" |or
 step
 collect Goblin Glider Kit##109076 |c |q 42911 |future
 |tip You can create these if you have Engineering.
@@ -4268,8 +4268,8 @@ Use the Frost Worm |use Frost Worm##133712
 Fish in the Water |cast Fishing##131474
 collect Coldriver Carp##133732 |achieve 10596/5 |goto 41.67,53.70
 step
-Cross the bridge |goto Stormheim/0 40.12,62.63 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path |goto Stormheim/0 42.97,58.94 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Cross the bridge |goto Stormheim/0 40.12,62.63 < 30 |only if walking() and alliance
+Follow the path |goto Stormheim/0 42.97,58.94 < 30 |only if walking() and alliance
 Follow the path down |goto Stormheim/0 43.32,59.71 < 20 |only if walking
 Continue down the path |goto Stormheim/0 43.28,61.11 < 20 |only if walking
 Use Arcane Lures |use Arcane Lure##139175
@@ -4961,10 +4961,10 @@ Aegis of Aggramar |achieve 10877/1
 Tidestone of Golganneth |achieve 10877/2
 Hammer of Khaz'goroth |achieve 10877/4
 Tears of Elune |achieve 10877/5
-Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Halls of Valor"
-Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
-Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
-Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Horde Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+Click here to load the "Halls of Valor" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor"
+Click here to load the "Neltharion's Lair" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair"
+Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket"
+Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 step
 For the Eye of Aman'Thul, you will need to complete the Suramar guide
 Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
@@ -6316,3 +6316,455 @@ step
 _Congratulations!_
 You have earned the _Rocfeather Skyhorn Kite_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Unbound",{
+condition_end="achieved(11609)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unbound"},
+description="This guide will walk you through completing the \"Power Unbound\" Achievement.",
+},[[
+step
+For this, you will need to completed the quest "A Gift From the Six"
+|tip Use the 7.2 Order Hall Quest guide to achieve this.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+Unlock a new set of traits for one artiface |achieve 11609
+step
+_Congratulations!_
+You have earned the _Power Unbound_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Unleashed",{
+condition_end="achieved(11610)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unleashed"},
+description="This guide will walk you through completing the \"Power Unleashed\" Achievement.",
+},[[
+step
+For this, you will need to unlock the potential for Artifacts for each of your specializations
+|tip Use the 7.2 Order Hall Quest guide to achieve this.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+Unlock a new set of traits for all specializations |achieve 11609
+step
+_Congratulations!_
+You have earned the _Power Unleashed_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Ascended",{
+condition_end="achieved(11772)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Ascended"},
+description="This guide will walk you through completing the \"Power Ascended\" Achievement.",
+},[[
+step
+For this, you will need to gather artifact power and rank up skills in a single artifact weapon
+|tip Use the 7.2 Order Hall Quest guide to unlock the extra 4 traits.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+You can use the World Quest guide to get Artifact Power Tokens
+Click here to load the World Quest Guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Use the Suramar guide to unlock big chunks of Artifact Power if you haven't
+Click here to load the Suramar guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Unlock a new set of traits for one artiface |achieve 11772
+step
+_Congratulations!_
+You have earned the _Power Ascended_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Legendary Research",{
+condition_end="achieved(11223)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unbound"},
+description="This guide will walk you through completing the \"Power Unbound\" Achievement.",
+},[[
+step
+Speak to the Order Advancement in your Order Hall
+You will need to unlock the "Increase the number of Legendary items you can equip by 1." trait
+You will need to collect Order Hall resources to achieve this
+|tip Use the World Quests guide to gather resources.
+Click here to load the World Quest Guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Unlock th e6th Tier of your Class Hall Research |achieve 11223
+step
+_Congratulations!_
+You have earned the _Power Unbound_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\So Hot Right Now",{
+condition_end="achieved(11741)",
+author="support@zygorguides.com",
+startlevel=60,
+endlevel=60,
+keywords={"So","Hot","Right","Now"},
+description="This guide will walk you through completing the \"So Hot Right Now\" Achievement.",
+},[[
+step
+label "loop"
+You will be collecting 8 pieces of any of the tier 1 pieces, attainted form Molten Core
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+step
+Lucifron drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Felheart, Might
+_Boots:_ Arcanist, Earthfury, Lawbringer, Cenarion
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Magmadar drops legs for each class except for Death Knight, Monk and Demon Hunter
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Gehennas drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Earthfury, Prophecy, Lawbringer, Nightslayer
+_Boots:_ Giantstalker's, Might
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Garr drops helmets for each class except for Death Knight, Monk and Demon Hunter
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Baron Geddon drops 5 different pieces of gear that are required for the achievement
+_Shoulders:_ Arcanist, Felheart, Earthfury, Lawbringer, Cenarion
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Shazzrah drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Arcanist, Cenarion, Giantstalker's
+_Boots:_ Felheart, Prophecy, Nightslayer
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Sulfuron Harbinger drops 4 different pieces of gear that are required for the achievement
+_Shoulders:_ Might, Prophecy, Giantstalker's, Nightslayer
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Golemagg the Incinerator drops chest pieces for each class except for Death Knight, Monk and Demon Hunter
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Ragnaros drops legs for each class except for Death Knight, Monk and Demon Hunter
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+The Bracers and Belt are random drops within the Molten Core
+You can also buy them from the Auction House since they are Bind on Equip
+Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
+Click here to continue |confirm
+step
+Click here to return to the start of the guide |confirm |next "loop"
+Collect a class armor set from Molten Core |achieve 11741
+step
+_Congratulations!_
+You have earned the _So Hot Right Now_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Dress in Lairs",{
+condition_end="achieved(11742)",
+author="support@zygorguides.com",
+startlevel=60,
+endlevel=60,
+keywords={"Dress","in","Lairs"},
+description="This guide will walk you through completing the \"Dress in Lairs\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 8 pieces of any of the tier 2 pieces, attainted form Blackwing Lair
+Note that the legs drop from the final boss in Molten Core
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+step
+kill Razorgore the Untamed##12435
+The set Bracers drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Vaelastrasz the Corrupt##13020
+The set Belt drops from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Broodlord Lashlayer##12017
+The set Boots drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Firemaw##11983
+The set Gloves drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Ebonroc##14601
+Additional set Gloves drop from this encounter
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Flamegor##11981
+Additional set Gloves drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Chromaggus##14020
+The set Shoulders drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+kill Nefarian##11583
+The set Chest and Helmet drop from this boss
+Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click here to continue |confirm
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Dress in Lairs Achievement |achieve 11742
+step
+_Congratulations!_
+You have earned the _Dress in Lairs_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Outlandish Style",{
+condition_end="achieved(11746)",
+author="support@zygorguides.com",
+startlevel=60,
+endlevel=60,
+keywords={"Outlandish","Style"},
+description="This guide will walk you through completing the \"Outlandish Style\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 4 pieces, attainted form Karazhan, Gruul's Lair and Magtheridon's Lair
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+step
+kill The Curator##15691
+The Token for the Gloves drops here
+Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to continue |confirm
+step
+kill Prince Malchezaar##15690
+The Token for the Headpiece drops here
+Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+Click here to continue |confirm
+step
+kill High King Maulgar##18831
+The Token for the Shoulders drops here
+Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to continue |confirm
+step
+kill Gruul the Dragonkiller##19044
+The Token for the Legs drops here
+Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to continue |confirm
+step
+kill Magtheridon##17257
+The Token for the Chest drops here
+Click here to load the Magtheridon's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Magtheridon's Lair"
+Click here to continue |confirm
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Outlandish Style Achievement |achieve 11746
+step
+_Congratulations!_
+You have earned the _Dress in Lairs_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Merely a Set",{
+condition_end="achieved(11747)",
+author="support@zygorguides.com",
+startlevel=70,
+endlevel=70,
+keywords={"Merely","a","Set"},
+description="This guide will walk you through completing the \"Merely a Set\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 5 armors, attainted form Serpentshrine Cavern and The Eye Raids
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill Leotheras the Blind##21215
+The Token for Gloves drop here
+Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill Fathom-Lord Karathress##21214
+The Token for Legs drop here
+Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill Lady Vashj##21212
+The Token for Helmets drop here
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill Void Reaver##19516
+The Token for the Shoulders drop here
+Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill Kael'thas Sunstrider##19622
+The Token for the Chests drop here
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+talk Veynna Dawnstar##21905 |only if rep ('The Scryers') >= Neutral
+Collect your tier pieces |goto Shattrath City 44.8,91.6 |only if rep ('The Scryers') >= Neutral
+talk Kelara##21906 |only if rep ('The Aldor') >= Neutral
+Collect your tier pieces |goto Shattrath City 24.8,27.0 |only if rep ('The Aldor') >= Neutral
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an alternate character
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Merely a Set Achievement |achieve 11747
+step
+_Congratulations!_
+You have earned the _Merely a Set_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Black is the New Black",{
+condition_end="achieved(11748)",
+author="support@zygorguides.com",
+startlevel=70,
+endlevel=70,
+keywords={"Black","is","the","New","Black"},
+description="This guide will walk you through completing the \"Black is the New Black\" Achievement.",
+},[[
+step
+label "start"
+This achievement requires that you collect 8 pieces of Tier 6 armors
+The pieces are located throughout 3 different raids, listed as follows:
+Hyjal Summit
+Black Temple
+Sunwell Plateau
+Click here to continue |confirm
+step
+You will need to collect tokens to trade for set pieces
+_Token of the Forgotten Conqueror:_ Paladin, Priest and Warlock
+_Token of the Forgotten Protector:_ Hunter, Shaman and Warrior
+_Token of the Forgotten Vanquisher:_ Druid, Mage and Rogue
+Click here to continue |confirm
+step
+From Hyjal Summit:
+Azgalor drops the Token for the Gloves
+Archimonde drops the Token for the Helmets
+|tip Refer to the Hyjal Summit Raid guide to accomplish this.
+Click here to load the Hyjal Summit guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)"
+Click here to continue |confirm
+step
+From Black Temple:
+Mother Shahraz drops the Token for the Shoulders
+The Illidari Council drops the Token for the Legs
+Illidan Stormrage drops the Token for the Chest
+Refer to the Black Temple guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Black Temple"
+Click here to continue |confirm
+step
+From Sunwell Plateau:
+Kalecgos drops the token for Bracers
+Brutallus drops the token for Belts
+Felmyst drops the token for Boots
+The Eredar Twins drop tokens for Bracers, Belts and Boots
+Refer to the Sunwell Plateau guide for more informatio |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Sunwell Plateau"
+Click here to continue |confirm
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Black is the new Black Achievement |achieve 11748
+step
+_Congratulations!_
+You have earned the _Black is the New Black_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Suns Out, Thori'dals Out",{
+condition_end="achieved(11749)",
+author="support@zygorguides.com",
+startlevel=70,
+endlevel=70,
+keywords={"Suns","Out","Thori'dals","Out","Sunwell","Plateau"},
+description="This guide will walk you through completing the \"Suns Out, Thori'dals Out\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 3 pieces of any of the tier 6 armors, attainted form Sunwell Plateau
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Felmyst##25038
+The Token for Boots drop from Felmyst as well as the Eradar Twins
+Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Grand Warlock Alythess##25166
+kill Lady Sacrolash##25165
+The Eradar Twins can drop Tokens for Bracers, Belts or Boots
+Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Brutallus##24882
+The Token for Belt can drop from Brutallus as well as The Eradar Twins
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Merely a Set Achievement |achieve 11749
+step
+_Congratulations!_
+You have earned the _Suns Out, Thori'dals Out_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Undying Aesthetic",{
+condition_end="achieved(11749)",
+author="support@zygorguides.com",
+startlevel=80,
+endlevel=80,
+keywords={"Undying","Aesthetic","Naxxramas"},
+description="This guide will walk you through completing the \"Undying Aesthetic\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 7 armors, attainted form Sunwell Plateau
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill
+The Token for Boots drop from Felmyst as well as the Eradar Twins
+Click here to load the  |confirm |next
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Grand Warlock Alythess##25166
+kill Lady Sacrolash##25165
+The Eradar Twins can drop Tokens for Bracers, Belts or Boots
+Click here to load the  |confirm |next
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Brutallus##24882
+The Token for Belt can drop from Brutallus as well as The Eradar Twins
+Click here to load the |confirm |next
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Merely a Set Achievement |achieve 11749
+step
+_Congratulations!_
+You have earned the _Suns Out, Thori'dals Out_ achievement
+]])
+ZGV.BETAEND()

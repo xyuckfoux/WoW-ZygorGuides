@@ -1375,9 +1375,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		If you are not Exalted with the Cenarion Expedition, you can turn in Lackey Ears for a repeatable quest, or run Heroic Dungeons.
 		The Heroic Dungeons are Slave Pens, Underbog and Steamvault.
 		Click here to do the repeatable quest |confirm |next "ears"
-		Click here to be taken to the Slave Pens |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens (SP) 61-65" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Underbog |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog (UB) 62-66" |only if ZGV.guidesets['DungeonAMOP']
-		Click here to be taken to the Steamvault |confirm |next "Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault (SV) 68-70" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Slave Pens |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Underbog |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog" |only if ZGV.guidesets['DungeonAMOP']
+		Click here to be taken to the Steamvault |confirm |next "Zygor's Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault" |only if ZGV.guidesets['DungeonAMOP']
 	step
 	label "ears"
 		kill Northsea Mercenary##25839+, Northsea Thug##25843+

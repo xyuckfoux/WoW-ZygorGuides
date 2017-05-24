@@ -957,8 +957,8 @@ startlevel=100.0,
 },[[
 step
 _Checking for Boosted Character..._
-|next "Boosted_Start" |only if _G.IsBoostTutorialScenario()
-|next "Non_Boosted_Start" |only if not _G.IsBoostTutorialScenario()
+|next "Boosted_Start" |only if intutorial
+|next "Non_Boosted_Start" |only if not intutorial
 step
 label "Boosted_Start"
 _On the Deck of the Airship:_
@@ -966,47 +966,47 @@ You Can Skip the Combat Training Scenario
 |tip Use your Hearthstone now if you want to skip the Combat Training scenario.
 |tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
 Click Here to Complete the Combat Training Scenario |confirm |q 44543 |future
-|only if _G.IsBoostTutorialScenario()
+|only if intutorial
 step
 _On the Deck of the Airship:_
 talk Warlord Zakgra##105317
 Talk to Warlord Zakgra |scenariostage 1 |q 44543 |future
-|only if _G.IsBoostTutorialScenario()
+|only if intutorial
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Charge ability on the Target Dummy
 |tip It appears on your action bar.
 Use Charge on the Target Dummy |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Mortal Strike ability on the Target Dummy
 |tip It appears on your action bar.
 Use Mortal Strike on the Target Dummy #3# Times |scenariogoal 3/30116 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Slam ability on the Target Dummy
 |tip It appears on your action bar.
 Use Slam on the Target Dummy #3# Times |scenariogoal 4/30117 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Colossus Smash ability on the Target Dummy
 |tip It appears on your action bar.
 Use Colossus Smash on the Target Dummy |scenariostage 5 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
 Use Colossus Smash #2# Times |scenariogoal 6/30118 |q 44543 |future
 Use Mortal Strike #3# Times |scenariogoal 6/30116 |q 44543 |future
 Use Slam #6# Times |scenariogoal 6/30117 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1015,7 +1015,7 @@ Use your Victory Rush ability on Arcane Constructs
 |tip It appears on your action bar.
 |tip You can only use the Victory Rush ability after killing an enemy.
 Kill an Arcane Construct and then Use Victory Rush on the Others #2# Times |scenariogoal 7/30119 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1023,12 +1023,12 @@ Use your Whirlwind ability on Arcane Constructs
 |tip It appears on your action bar.
 |tip Stand in the middle of the group of Arcane Constructs.
 Use Whirlwind on the Arcane Constructs |scenariogoal 8/30120 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 kill Arcane Construct##101738+
 Destroy the Arcane Constructs |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1036,54 +1036,54 @@ Use your Heroic Leap ability
 |tip It appears on your action bar.
 |tip It doesn't matter where you leap to.
 Use Heroic Leap |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warrior")
+|only if intutorial() and raceclass("Warrior")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Judgement ability on the Target Dummy
 |tip It appears on your action bar.
 Use Judgement on the Target Dummy #2# Times |scenariogoal 2/29793 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Blade of Justice ability on the Target Dummy
 |tip It appears on your action bar.
 Use Blade of Justice on the Target Dummy #2# Times |scenariogoal 3/29773 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Crusader Strike ability on the Target Dummy
 |tip It appears on your action bar.
 Use Crusader Strike on the Target Dummy #3# Times |scenariogoal 4/29769 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Templar's Verdict ability on the Target Dummy
 |tip It appears on your action bar.
 Use Templar's Verdict on the Target Dummy #3# Times |scenariogoal 5/29770 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1091,7 +1091,7 @@ Use Judgement #2# Times |scenariogoal 6/29793 |q 44543 |future
 Use Blade of Justice #2# Times |scenariogoal 6/29773 |q 44543 |future
 Use Crusader Strike #2# Times |scenariogoal 6/29769 |q 44543 |future
 Use Templar's Verdict #2# Times |scenariogoal 6/29770 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1100,19 +1100,19 @@ Use your Divine Storm ability on Arcane Constructs
 |tip Use your other abilities on the Arcane Constructs to earn 3 Holy Power so that you can use Divine Storm.
 |tip Stand in the middle of the group of Arcane Constructs.
 Earn 3 Holy Power and then Use Divine Storm |scenariogoal 7/32067 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 kill Arcane Construct##101738+
 Destroy the Arcane Constructs |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Divine Shield ability
 |tip It appears on your action bar.
 Use Divine Shield |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1120,61 +1120,61 @@ Use your Flash of Light ability
 |tip It appears on your action bar.
 |tip Make sure you're not targeting an NPC.
 Use Flash of Light to Heal Yourself #3# Times |scenariogoal 9/29772 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Paladin")
+|only if intutorial() and raceclass("Paladin")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Call Pet ability
 |tip It is already on your action bar.
 Use Call Pet |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Kill Command ability on the Target Dummy
 |tip It appears on your action bar.
 Use Kill Command to Command your Pet to Attack the Target Dummy #3# Times |scenariogoal 3/29829 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Dire Beast ability on the Target Dummy
 |tip It appears on your action bar.
 Use Dire Beast on the Target Dummy #2# Times |scenariogoal 4/29830 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Cobra Shot ability on the Target Dummy
 |tip It appears on your action bar.
 Use Cobra Shot on the Target Dummy #3# Times |scenariogoal 5/29831 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Bestial Wrath ability
 |tip It appears on your action bar.
 Use Bestial Wrath |scenariostage 6 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1182,80 +1182,80 @@ Use Kill Command #2# Times |scenariogoal 7/29829 |q 44543 |future
 Use Dire Beast #2# Times |scenariogoal 7/29830 |q 44543 |future
 Use Cobra Shot #5# Times |scenariogoal 7/29831 |q 44543 |future
 Use Beastial Wrath |scenariogoal 7/29832 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Multi-Shot ability on Arcane Constructs
 |tip It appears on your action bar.
 Use Multi-Shot on the Arcane Constructs |scenariogoal 8/29839 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 kill Arcane Construct##101738+
 Destroy the Arcane Constructs |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Feign Death ability
 |tip It appears on your action bar.
 Use Feign Death |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Attacker |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat Both Attackers |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Hunter")
+|only if intutorial() and raceclass("Hunter")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Deadly Poison ability
 |tip It is already on your action bar.
 Use Deadly Poison |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Stealth ability
 |tip It appears on your action bar.
 Use Stealth |scenariostage 3 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Garrote ability on the Target Dummy
 |tip It appears on your action bar.
 Use Garrote on the Target Dummy |scenariostage 4 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Mutilate ability on the Target Dummy
 |tip It appears on your action bar.
 Use Mutilate on the Target Dummy #3# Times |scenariogoal 5/30646 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Rupture ability on the Target Dummy
 |tip It appears on your action bar.
 Use Rupture on the Target Dummy |scenariostage 6 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1263,7 +1263,7 @@ Use your Envenom ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilities on the target dummy to build combo points so that you can use Envenom.
 Use Envenom on the Target Dummy |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1271,122 +1271,122 @@ Use Garrote #2# Times |scenariogoal 8/30645 |q 44543 |future
 Use Mutilate #4# Times |scenariogoal 8/30646 |q 44543 |future
 Use Rupture |scenariogoal 8/30647 |q 44543 |future
 Use Envenom |scenariogoal 8/30648 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Vanish ability
 |tip It appears on your action bar.
 Use Vanish |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Rogue")
+|only if intutorial() and raceclass("Rogue")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Shadow Word: Pain ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Shadow Word: Pain on the Target Dummy |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Penance ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Penance on the Target Dummy #2# Times |scenariogoal 3/30503 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Smite ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Smite on the Target Dummy #3# Times |scenariogoal 4/30504 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
 Cast Shadow Word: Pain |scenariogoal 5/30502 |q 44543 |future
 Cast Penance #2# Times |scenariogoal 5/30503 |q 44543 |future
 Cast Smite #4# Times |scenariogoal 5/30504 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Psychic Scream ability
 |tip It appears on your action bar.
 Cast Psychic Scream to Fear the Enemies Around You |scenariostage 6 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Power Word: Shield ability
 |tip It appears on your action bar.
 Cast Power Word: Shield on Yourself |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Plea ability
 |tip It appears on your action bar.
 Cast Plea to Heal Yourself #3# Times |scenariogoal 8/30523 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Priest")
+|only if intutorial() and raceclass("Priest")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Flame Shock ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Flame Shock on the Target Dummy |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Lava Burst ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Lava Burst on the Target Dummy #3# Times |scenariogoal 3/29960 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Lightning Bolt ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Lightning Bolt on the Target Dummy #3# Times |scenariogoal 4/29961 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1394,7 +1394,7 @@ Use your Earth Shock ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilities on the Target Dummy to generat Maelstrom, so that you can use Earth Shock.
 Cast Earth Shock on the Target Dummy #2# Times |scenariogoal 5/29962 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1402,26 +1402,26 @@ Cast Flame Shock |scenariogoal 6/29959 |q 44543 |future
 Cast Lava Burst #2# Times |scenariogoal 6/29960 |q 44543 |future
 Cast Lightning Bolt #4# Times |scenariogoal 6/29961 |q 44543 |future
 Cast Earth Shock #2# Times |scenariogoal 6/29962 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Hex ability on the Alliance Infantry
 |tip It appears on your action bar.
 Cast Hex on the Soldier |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Chain Lightning ability on the Arcane Constructs
 |tip It appears on your action bar.
 Cast Chain Lightning on the Arcane Constructs |scenariogoal 8/29964 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 kill Arcane Construct##101738+
 Destroy the Arcane Constructs |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1429,54 +1429,54 @@ Use your Healing Surge ability
 |tip It appears on your action bar.
 |tip Make sure you are not targeting an NPC.
 Cast Healing Surge to Heal Yourself #3# Times |scenariogoal 9/32737 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Fire Elemental ability
 |tip It appears on your action bar.
 Cast Fire Elemental |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 13 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Shaman")
+|only if intutorial() and raceclass("Shaman")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Summon Water Elemental ability
 |tip It is already on your action bar.
 Cast Summon Water Elemental |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Frostbolt ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Frostbolt on the Target Dummy #3# Times |scenariogoal 3/30560 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Ice Lance ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Ice Lance on the Target Dummy #3# Times |scenariogoal 4/30561 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1485,20 +1485,20 @@ Use your Ice Lance ability on the Target Dummy
 |tip Fingers of Frost appears as a buff to your character at the top right of the screen.
 |tip The icon for Fingers of Frost is a blue hand.
 Cast Ice Lance with Fingers of Frost #2# Times |scenariogoal 5/30614 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
 Cast Frostbolt #6# Times |scenariogoal 6/30560 |q 44543 |future
 Cast Ice Lance #2# Times |scenariogoal 6/30561 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Blink ability
 |tip It appears on your action bar.
 Cast Blink |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1506,66 +1506,66 @@ Use your Frost Nova ability
 |tip It appears on your action bar.
 |tip Wait untilt he enemy is text to you.
 Cast Frost Nova to Freeze the Enemy |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Blizzard ability on the Arcane Constructs
 |tip It appears on your action bar.
 Cast Blizzard on the Arcane Constructs |scenariogoal 9/30622 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 kill Arcane Construct##101738+
 Destroy the Arcane Constructs |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Mage")
+|only if intutorial() and raceclass("Mage")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Summon Voidwalker ability
 |tip It is already on your action bar.
 Cast Summon Voidwalker |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Agony ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Agony on the Target Dummy |scenariostage 3 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Corruption ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Corruption on the Target Dummy |scenariostage 4 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Drain Life ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Drain Life on the Target Dummy #2# Times |scenariogoal 5/29813 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1573,7 +1573,7 @@ Use your Unstable Affliction ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your Agony ability on the Target Dummy to generate Soul Shards, so you can use Unstable Affliction.
 Cast Unstable Affliction on the Target Dummy #3# Times |scenariogoal 6/29814 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1581,54 +1581,54 @@ Cast Agony |scenariogoal 7/29811 |q 44543 |future
 Cast Corruption |scenariogoal 7/29812 |q 44543 |future
 Cast Unstable Affliction #2# Times |scenariogoal 7/29814 |q 44543 |future
 Cast Drain Life #2# Times |scenariogoal 7/29813 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Life Tap ability
 |tip It appears on your action bar.
 Cast Life Tap #2# Times |scenariogoal 8/29816 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Fear ability on the Alliance Infantry
 |tip It appears on your action bar.
 Cast Fear on the Soldier |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Summon Doomguard ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Summon Doomguard |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Attacker |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat Both Attackers |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 13 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Warlock")
+|only if intutorial() and raceclass("Warlock")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Tiger Palm ability on the Target Dummy
 |tip It appears on your action bar.
 Use Tiger Palm on the Target Dummy #3# Times |scenariogoal 2/30392 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1636,7 +1636,7 @@ Use your Rising Sun Kick ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your Tiger Palm ability to generate Chi, so you can use Rising Sun Kick.
 Use Rising Sun Kick on the Target Dummy #2# Times |scenariogoal 3/30393 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1644,7 +1644,7 @@ Use your Blackout Kick ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your Tiger Palm ability to generate Chi, so you can use Blackout Kick.
 Use Blackout Kick on the Target Dummy #3# Times |scenariogoal 4/30395 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1652,7 +1652,7 @@ Use your Fists of Fury ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your Tiger Palm ability to generate Chi, so you can use Fists of Fury.
 Use Fists of Fury on the Target Dummy |scenariostage 5 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1660,14 +1660,14 @@ Use Tiger Palm #5# Times |scenariogoal 6/30392 |q 44543 |future
 Use Rising Sun Kick #2# Times |scenariogoal 6/30393 |q 44543 |future
 Use Blackout Kick #3# Times |scenariogoal 6/30395 |q 44543 |future
 Use Fists of Fury |scenariogoal 6/30396 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Roll ability
 |tip It appears on your action bar.
 Use Roll #2# Times |scenariogoal 7/30397 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1675,54 +1675,54 @@ Use your Effuse ability
 |tip It appears on your action bar.
 |tip Make sure you are not targeting an NPC.
 Use Effuse to Heal Yourself #3# Times |scenariogoal 8/30409 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Monk")
+|only if intutorial() and raceclass("Monk")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Moonkin Form ability
 |tip It is already on your action bar.
 Cast Moonkin Form |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Moonfire ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Moonfire on the Target Dummy |scenariogoal 3/32841 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Sunfire ability on the Target Dummy
 |tip It is already on your action bar.
 Cast Sunfire on the Target Dummy |scenariostage 3 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Solar Wrath ability on the Target Dummy
 |tip It appears on your action bar.
 Cast Solar Wrath on the Target Dummy #3# Times |scenariogoal 4/32843 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1730,7 +1730,7 @@ Use your Starsurge ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilties on the Target Dummy to generate Astral Power, so you can cast Starsurge.
 Cast Starsurge on the Target Dummy #3# Times |scenariogoal 5/32844 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1738,7 +1738,7 @@ Cast Moonfire |scenariogoal 6/32841 |q 44543 |future
 Cast Sunfire |scenariogoal 6/32842 |q 44543 |future
 Cast Solar Wrath #6# Times |scenariogoal 6/32843 |q 44543 |future
 Cast Starsurge #2# Times |scenariogoal 6/32844 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1746,61 +1746,61 @@ Use your Healing Touch ability
 |tip It appears on your action bar.
 |tip Make sure you are not targeting an NPC.
 Use Healing Touch to Heal Yourself #3# Times |scenariogoal 7/30432 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Entangling Roots ability on the Alliance Infantry
 |tip It appears on your action bar.
 Cast Entangling Roots |scenariostage 8 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(24858)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(24858)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Cat Form ability
 |tip It is already on your action bar.
 Use Cat Form to Shapeshift into a Cat |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Prowl ability on the Target Dummy
 |tip It is already on your action bar.
 Use Prowl to Enter Stealth |scenariostage 3 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Rake ability on the Target Dummy
 |tip It appears on your action bar.
 Use Rake on the Target Dummy |scenariostage 4 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Shred ability on the Target Dummy
 |tip It appears on your action bar.
 Use Shred on the Target Dummy #3# Times |scenariogoal 5/30427 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1808,7 +1808,7 @@ Use your Ferocious Bite ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilities on the Target Dummy to generate Combo Points, so that you can use Ferocious Bite.
 Use Ferocious Bite with Combo Points on the Target Dummy #3# Times |scenariogoal 6/30430 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1816,7 +1816,7 @@ Use your Rip ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilities on the Target Dummy to generate Combo Points, so that you can use Rip.
 Use Rip with Combo Points on the Target Dummy |scenariostage 7 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1824,14 +1824,14 @@ Use Rake |scenariogoal 8/30428 |q 44543 |future
 Use Shred #4# Times |scenariogoal 8/30427 |q 44543 |future
 Use Ferocious Bite |scenariogoal 8/30430 |q 44543 |future
 Use Rip |scenariogoal 8/30429 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Dash ability
 |tip It appears on your action bar.
 Use Dash to Move Faster in Cat Form |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1839,47 +1839,47 @@ Use your Healing Touch ability
 |tip It appears on your action bar.
 |tip Make sure you are not targeting an NPC.
 Use Healing Touch to Heal Yourself |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 13 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("Druid") and _G.IsPlayerSpell(768)
+|only if intutorial() and raceclass("Druid") and _G.IsPlayerSpell(768)
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Raise Dead ability
 |tip It is already on your action bar.
 Cast Raise Dead |scenariostage 2 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Outbreak ability on the Target Dummy
 |tip It appears on your action bar.
 Use Outbreak on the Target Dummy |scenariostage 3 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Festering Strike ability on the Target Dummy
 |tip It appears on your action bar.
 Use Festering Strike on the Target Dummy #3# Times |scenariogoal 4/30664 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1887,7 +1887,7 @@ Use your Scourge Strike ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use Festering Strike on the Target Dummy, then use Scourge Strike on the Target Dummy.
 Use Festering Strike then Scourge Strike on the Target Dummy #3# Times |scenariogoal 5/30665 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
@@ -1895,7 +1895,7 @@ Use your Death Coil ability on the Target Dummy
 |tip It appears on your action bar.
 |tip Use your other abilities to generate Runic Power, so you can use Death Coil.
 Use Death Coil on the Target Dummy #3# Times |scenariogoal 6/30666 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Use your abilities on the Target Dummy
@@ -1903,47 +1903,47 @@ Use Outbreak |scenariogoal 7/30663 |q 44543 |future
 Use Festering Strike #2# Times |scenariogoal 7/30664 |q 44543 |future
 Use Scourge Strike #4# Times |scenariogoal 7/30665 |q 44543 |future
 Use Death Coil #4# Times |scenariogoal 7/30666 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Death Strike ability on the Target Dummy
 |tip It appears on your action bar.
 Use Death Strike #2# Times |scenariogoal 8/31703 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Death Grip ability on the Alliance Infantry
 |tip It appears on your action bar.
 Use Death Grip |scenariostage 9 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Use your Army of the Dead ability
 |tip It appears on your action bar.
 Use Army of the Dead |scenariostage 10 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592
 Defeat the Soldier |scenariostage 11 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 kill Alliance Infantry##102592+
 |tip Two of them will attack you.
 Defeat the Attacking Soldiers |scenariostage 12 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Deck of the Airship:_
 Watch the dialogue
 Kill enemies around this area
 Defend the Airship |scenariostage 13 |q 44543 |future
-|only if _G.IsBoostTutorialScenario() and raceclass("DeathKnight")
+|only if intutorial() and raceclass("DeathKnight")
 step
 _On the Airship:_
 Prepare Your Character
@@ -1952,7 +1952,7 @@ Prepare Your Character
 clicknpc Armored Wind Rider##112565
 |tip On the right side at the back of the airship.
 Take the Wind Rider on the Back of the Airship and Join the Fleet |scenarioend |q 44543 |future
-|only if _G.IsBoostTutorialScenario()
+|only if intutorial
 step
 accept The Battle for Broken Shore##44543
 |tip You will accept this quest automatically.
@@ -10886,12 +10886,12 @@ step
 talk Bolas Skyfeather##107660
 turnin Bolas Bastion##42630 |goto 42.96,38.77
 step
-Cross the bridge |goto 51.56,38.35 < 15 |only if walking and not knowstaxi("Nesingwary")
-Cross the bridge |goto 58.85,14.79 < 15 |only if walking and not knowstaxi("Nesingwary")
-Follow the path |goto Highmountain/0 48.73,54.46 < 20 |only if walking and not knowstaxi("Nesingwary")
-Follow the path |goto Highmountain/0 47.95,54.02 < 20 |only if walking and not knowstaxi("Nesingwary")
-Follow the path |goto Thunder Totem/0 39.67,2.80 < 20 |only if walking and not knowstaxi("Nesingwary")
-Cross the river |goto Highmountain/0 42.20,52.84 < 20 |only if walking and not knowstaxi("Nesingwary")
+Cross the bridge |goto 51.56,38.35 < 15 |only if walking() and not knowstaxi("Nesingwary")
+Cross the bridge |goto 58.85,14.79 < 15 |only if walking() and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 48.73,54.46 < 20 |only if walking() and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 47.95,54.02 < 20 |only if walking() and not knowstaxi("Nesingwary")
+Follow the path |goto Thunder Totem/0 39.67,2.80 < 20 |only if walking() and not knowstaxi("Nesingwary")
+Cross the river |goto Highmountain/0 42.20,52.84 < 20 |only if walking() and not knowstaxi("Nesingwary")
 talk Tamara Sigmund##94973
 fpath Nesingwary |goto Highmountain/0 40.23,52.71
 step
@@ -14359,10 +14359,10 @@ turnin Building an Army##44636
 step
 talk First Arcanist Thalyssra##109008
 Speak with Thalyssra |scenariostage 1 |goto 22.85,36.20
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 Enter the building |goto 22.88,35.62 > 1000 |c
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 _Follow the path and kill all enemies:_
 |tip As your withereds get more powerful from training, you'll be able to make it further through this area.
@@ -14375,13 +14375,13 @@ talk Withered Exile##110141+
 |tip Talk to them to recruit them to your army.
 |tip Your withered will sometimes run away when they are hurt. Click them to prevent them from leaving.
 Proceed as Far as you can into the Collapse |scenariostage 2
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 step
 click Glimmering Treasure Chest
 |tip There may be more chests, depending on how far you got into the Collapse.
 Receive the Spoils of War |scenarioend |goto Suramar/0 22.79,36.15
 |tip Use the items you get in your bags to increase your reputation with The Nightfallen.
-|only if _G.C_Scenario.IsInScenario()
+|only if inscenario
 stickystart "Arcane_Amplifier"
 step
 Follow the path up |goto 65.18,52.05 < 20 |only if walking
@@ -16854,11 +16854,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warrior") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warrior") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -16867,11 +16867,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warrior") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warrior") and inscenario
 step
 label "Fel_Portals_Warrior"
 click Legion Portal
@@ -17590,11 +17590,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Paladin") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Paladin") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -17603,11 +17603,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Paladin") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Paladin") and inscenario
 step
 label "Fel_Portals_Paladin"
 click Legion Portal
@@ -18748,11 +18748,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Hunter") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Hunter") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -18761,11 +18761,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Hunter") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Hunter") and inscenario
 step
 label "Fel_Portals_Hunter"
 click Legion Portal
@@ -19825,11 +19825,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Rogue") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Rogue") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -19838,11 +19838,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Rogue") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Rogue") and inscenario
 step
 label "Fel_Portals_Rogue"
 click Legion Portal
@@ -20716,11 +20716,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Priest") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Priest") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -20729,11 +20729,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Priest") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Priest") and inscenario
 step
 label "Fel_Portals_Priest"
 click Legion Portal
@@ -21679,11 +21679,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Shaman") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Shaman") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -21692,11 +21692,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Shaman") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Shaman") and inscenario
 step
 label "Fel_Portals_Shaman"
 click Legion Portal
@@ -22828,11 +22828,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Mage") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Mage") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -22841,11 +22841,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Mage") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Mage") and inscenario
 step
 label "Fel_Portals_Mage"
 click Legion Portal
@@ -23651,11 +23651,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -23664,11 +23664,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
 step
 label "Fel_Portals_DemonHunter"
 click Legion Portal
@@ -24872,11 +24872,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warlock") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warlock") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -24885,11 +24885,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warlock") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Warlock") and inscenario
 step
 label "Fel_Portals_Warlock"
 click Legion Portal
@@ -25322,10 +25322,10 @@ talk Ritssyn Flamescowl##105102
 accept Finding Fizzlebang##41785 |goto 53.96,36.26
 |only Warlock
 step
-Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
-Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
-Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking() and alliance
+Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking() and alliance
+Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking() and horde
+Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking() and horde
 Follow the path |goto Stormheim/0 38.89,44.93 < 20 |only if walking
 talk Lulubelle Fizzlebang##104855
 turnin Finding Fizzlebang##41785 |goto Stormheim/0 39.37,42.24
@@ -25841,11 +25841,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Monk") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Monk") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -25854,11 +25854,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Monk") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Monk") and inscenario
 step
 label "Fel_Portals_Monk"
 click Legion Portal
@@ -26254,7 +26254,7 @@ turnin The Mead Master##41038 |goto 62.12,20.14
 accept Stolen Knowledge##41039 |goto 62.12,20.14
 |only Monk
 step
-Cross the bridge |goto 40.11,62.68 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Cross the bridge |goto 40.11,62.68 < 20 |only if walking() and alliance
 Cross the bridge |goto 44.15,60.44 < 20 |only if walking
 Follow the path |goto 44.63,63.30 < 20 |only if walking
 click Grapple Point |goto 45.12,63.84 |n
@@ -26855,11 +26855,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Druid") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Druid") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -26868,11 +26868,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Druid") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("Druid") and inscenario
 step
 label "Fel_Portals_Druid"
 click Legion Portal
@@ -27816,11 +27816,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -27829,11 +27829,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
+|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
 step
 label "Fel_Portals_DeathKnight"
 click Legion Portal
@@ -28962,8 +28962,11 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only DeathKnight
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto 44.79,63.17
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only DeathKnight
 step
 collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -28988,6 +28991,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only DeathKnight
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only DeathKnight
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only DeathKnight
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only DeathKnight
 step
 More content coming soon!
@@ -29167,8 +29183,11 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only DemonHunter
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto 44.79,63.17
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only DemonHunter
 step
 collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -29193,6 +29212,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only DemonHunter
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only DemonHunter
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only DemonHunter
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only DemonHunter
 step
 More content coming soon!
@@ -29386,8 +29418,11 @@ turnin The Command Center##46773 |goto Broken Shore/0 44.54,63.15
 turnin The Nether Disruptor##46774 |goto Broken Shore/0 44.54,63.15
 |only Druid
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Druid
 step
 Collect #100# Marks of the Sentinax |q 47139/1
@@ -29409,6 +29444,18 @@ Complete #12# World Quests in the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Druid
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Druid
+step
+kill Felflame Imp##107335+, Fiendish Trickster##107545+
+Slay #100# Demons |q 46252/1 |goto Azsuna/0 32.44,49.97
+|only Druid
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Druid
 step
 More content coming soon!
@@ -29588,8 +29635,11 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Hunter
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto 44.79,63.17
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Hunter
 step
 collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -29614,6 +29664,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Hunter
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only Hunter
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only Hunter
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Hunter
 step
 More content coming soon!
@@ -29795,8 +29858,11 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
 |only Mage
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Mage
 step
 You must go under the Sentinax that pats around the Broken Shore
@@ -29819,6 +29885,18 @@ Complete #12# World Quests on the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Mage
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
+|only Mage
+step
+Slay the Demons found all around Felsoul Hold
+kill 100 Demons |q 46252/1 |goto Suramar/0 29.23,61.22
+|only Mage
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
 |only Mage
 step
 More content coming soon!
@@ -30019,8 +30097,11 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Monk
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.79,63.19
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Monk
 step
 Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
@@ -30043,6 +30124,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Monk
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only Monk
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only Monk
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Monk
 step
 More content coming soon!
@@ -30240,8 +30334,11 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Paladin
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.79,63.19
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Paladin
 step
 Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
@@ -30264,6 +30361,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only Paladin
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Paladin
 step
 More content coming soon!
@@ -30443,8 +30553,11 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Priest
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto 44.79,63.17
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Priest
 step
 collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 44.79,63.17
@@ -30468,6 +30581,18 @@ Complete #12# World Quests in the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Priest
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Priest
+step
+kill Felflame Imp##107335+, Fiendish Trickster##107545+
+Slay #100# Demons |q 46252/1 |goto Azsuna/0 32.44,49.97
+|only Priest
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Priest
 step
 More content coming soon!
@@ -30649,8 +30774,11 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
 |only Rogue
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Rogue
 step
 You must go under the Sentinax that pats around the Broken Shore
@@ -30673,6 +30801,18 @@ Complete #12# World Quests on the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Rogue
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
+|only Rogue
+step
+Slay the Demons found all around Felsoul Hold
+kill 100 Demons |q 46252/1 |goto Suramar/0 29.23,61.22
+|only Rogue
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
 |only Rogue
 step
 More content coming soon!
@@ -30854,8 +30994,11 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
 |only Shaman
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Shaman
 step
 You must go under the Sentinax that pats around the Broken Shore
@@ -30878,6 +31021,18 @@ Complete #12# World Quests on the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Shaman
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
+|only Shaman
+step
+Slay the Demons found all around Felsoul Hold
+kill 100 Demons |q 46252/1 |goto Suramar/0 29.23,61.22
+|only Shaman
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
 |only Shaman
 step
 More content coming soon!
@@ -31057,8 +31212,11 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Warlock
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto 44.79,63.17
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Warlock
 step
 collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
@@ -31083,6 +31241,19 @@ To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies 
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Warlock
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only Warlock
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only Warlock
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Warlock
 step
 More content coming soon!
@@ -31296,8 +31467,11 @@ turnin The Command Center##46773 |goto Broken Shore/0 44.54,63.15
 turnin The Nether Disruptor##46774 |goto Broken Shore/0 44.54,63.15
 |only Warrior
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
 |only Warrior
 step
 Collect #100# Marks of the Sentinax |q 47139/1
@@ -31319,6 +31493,18 @@ Complete #12# World Quests in the Broken Shore |q 46248/1
 step
 talk Prophet Velen##120372
 turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Warrior
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Warrior
+step
+kill Felflame Imp##107335+, Fiendish Trickster##107545+
+Slay #100# Demons |q 46252/1 |goto Azsuna/0 32.44,49.97
+|only Warrior
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Warrior
 step
 More content coming soon!

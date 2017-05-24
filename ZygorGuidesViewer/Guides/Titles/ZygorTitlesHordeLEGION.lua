@@ -130,7 +130,7 @@ description="This guide will assist you in earning the Field Medic title.",
 step
 This title is earned by completing the _Field Medic_ achievement
 |tip You must complete all of the wounded NPC quests in the Broken Isles.
-Click here to load the First Aid Quest Line guide |next "Zygor's Horde Profession Guides\\First Aid\\Legion\\First Aid Quest Line"
+Click here to load the First Aid Quest Line guide |next "Zygor's Profession Guides\\First Aid\\Quest Guides\\First Aid Quest Line"
 Singed Note |achieve 11139/1
 Fevered Plea |achieve 11139/2
 Bloody Note |achieve 11139/3

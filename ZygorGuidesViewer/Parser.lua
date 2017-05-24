@@ -525,6 +525,17 @@ local ConditionEnv = {
 		local q = ZGV.Localizers:GetQuestData(quid)
 		return q
 	end,
+	intutorial = function()
+		return IsBoostTutorialScenario()
+	end,
+	inscenario = function()
+		return C_Scenario.IsInScenario()
+	end,
+	scenariostage = function(stage)
+		if not C_Scenario.IsInScenario() then return false end
+		local _,s = C_Scenario.GetInfo()
+		return s==stage
+	end,
 }
 setmetatable(ConditionEnv,{__index=function(t,k) return rawget(t,k:lower()) end})
 -- Store class constants

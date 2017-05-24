@@ -176,3 +176,64 @@ Search for _Grimrot_
 |tip Grimrot will only spawn with the diseased skin during nighttime hours.
 Use your Tame Beast ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/0 38.25,45.63
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Brown Bear",{
+model={14280},
+description="This guide will walk you through obtaining an old model Diseased Brown Bear pet.",
+},[[
+step
+Search for _Big Samras_
+|tip Big Samras is a level 25 rare mob.
+Use your Tame Beast ability on _Big Samras_ |cast Tame Beast##1515 |goto Hillsbrad Foothills/0 63.53,52.73
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Dark Brown Bear",{
+model={107617},
+description="This guide will walk you through obtaining an old model Diseased Dark Brown Bear pet.",
+},[[
+step
+Search for _Ol' Muddle_
+|tip Ol' Muddle is a rare spawn who will scale with your level.
+|tip Ol' Muddle wanders a small area. Check each point thoroughly.
+Check the first location |goto The Hinterlands/0 50.85,55.79
+Check the second location |goto The Hinterlands/0 63.87,54.32
+Check the third location |goto The Hinterlands/0 67.82,46.21
+Check the fourth location |goto The Hinterlands/0 71.97,52.06
+Use your Tame Beast ability on _Ol' Muddle_ |cast Tame Beast##1515
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased Gray Bear",{
+model={50931},
+description="This guide will walk you through obtaining an old model Diseased Gray Bear pet.",
+},[[
+step
+Search for _Mange_
+|tip Mange is a level 35 rare mob.
+Use your Tame Beast ability on _Mange_ |cast Tame Beast##1515 |goto Western Plaguelands/0 66.16,55.18
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Diseased White Bear",{
+model={50930},
+description="This guide will walk you through obtaining an old model Diseased White Bear pet.",
+},[[
+step
+Search for _Hibernus the Sleeper_
+|tip Hibernus the Sleeper is a level 7 rare mob.
+Use your Tame Beast ability on _Hibernus the Sleeper_ |cast Tame Beast##1515 |goto Tirisfal Glades/0 47.47,70.35
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model Gray Bear",{
+model={107595},
+description="This guide will walk you through obtaining an old model Gray Bear pet.",
+},[[
+step
+Search for _Grimrot_
+|tip Grimrot is a rare spawn who will scale with your level and has a 2 hour respawn timer.
+|tip Grimrot will only spawn with the gray skin during daytime hours.
+Use your Tame Beast ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/0 38.25,45.63
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Hunter Pets\\Legion Pets\\Beast Pets\\Bears\\Old Model White Bear",{
+model={1130},
+description="This guide will walk you through obtaining an old model White Bear pet.",
+},[[
+step
+Search for _Bjarn_
+|tip Bjarn is a level 8 rare mob with a respawn timer of around an hour.
+|tip Bjarn will wander a small area around these coordinates.
+Use your Tame Beast ability on _Bjarn_ |cast Tame Beast##1515 |goto Dun Morogh/0 66.55,59.20
+]])

@@ -364,7 +364,7 @@ click Legion Portal
 accept WANTED: Inquisitor Tivos##42631 |goto Azsuna/0 26.81,49.06
 |tip You will accept this quest automatically.
 step
-kill Inquisitor Tivos##107269 |q 42631/1 |goto 26.81,49.06
+kill Inquisitor Tivos##107269 |q 42631/1 |goto 28.29,51.95
 |tip He's downstairs.
 |next "Court_Of_Farondis_WQ"
 step
@@ -769,6 +769,28 @@ talk Veridis Fallon##107376
 turnin Work Order: Azsunite Pendant##41651 |goto 46.90,41.44
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41326
+accept Work Order: Stormscales##41326 |goto Azsuna/0 46.83,40.22
+|tip You will accept this quest automatically.
+step
+kill Cliffwing Hippogryph##89386+
+|tip Loot and Skin these.
+collect 40 Stormscale##124115 |q 41326/1 |goto Azsuna/0 47.49,51.56
+Once collected go back to the world quest location |goto Azsuna/0 46.83,40.22
+step
+talk Veridis Fallon##107376
+turnin Work Order: Stormscales##41326 |goto Azsuna/0 46.91,41.41
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41323
+accept Fatty Lion Seal Skin##41323 |goto Azsuna/0 31.98,34.64
+|tip You will accept this quest automatically.
+step
+kill Azsuna Lion Seal##89013+
+|tip Loot and Skin these.
+collect 8 Fatty Lion Seal Skin##134807 |q 41323/1 |goto Azsuna/0 30.48,34.10
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41514
 accept Felwort##41514 |goto Azsuna/0 68.37,28.92
 step
@@ -848,7 +870,7 @@ kill 6 Cove Skrog##89097 |q 42024/3
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41563
-accept Felhide##41563
+accept Felhide##41563 |goto Azsuna/0 41.44,71.3
 |tip You will accept this quest automatically.
 step
 This is an elite area, be wary of the enemies here.
@@ -898,6 +920,34 @@ Slay the waves of infernals
 accept WANTED: Infernal Lord##43610 |goto Azsuna/0 35.37,50.39
 step
 kill Infernal Lord##90803 |q 43610/1 |goto Azsuna/0 35.37,50.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41551
+accept Slab of Bacon##41551 |goto Azsuna/0 33.65,11.35
+|tip On top of the rock.
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Lion Seal##103784
+collect collect Thick Slab of Bacon##135511 |q 41551/1 |goto Azsuna/0 33.65,11.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44784
+Enter the building |goto Azsuna/0 53.77,40.31
+accept Advanced Wanding##44784 |goto Azsuna/17 62.86,86.74
+|tip You will accept this quest automatically.
+step
+Follow the path down |goto Azsuna/17 58.11,68.23
+Go through the Academy Door |goto Azsuna/17 50.40,50.09
+Use your extra action ability on the Wand Targets
+Hit 6 Wand Targets |q 44784/1 |goto Azsuna/17 33.62,42.69
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44049
+accept Evil Has Many Legs##44049 |goto Azsuna/0 44.34,82.09
+|tip You will accept this quest automatically.
+step
+Slay the spiders around this area
+Purge the Demonic Spiders |q 44049/1 |goto Azsuna/0 43.07,84.84
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42742
@@ -1548,6 +1598,14 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41486/1 |goto 38.19,68.86
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41855
+accept Stand Up to Bullies##41855 |goto Val'sharah/0 55.86,88.69
+|tip You will accept this quest automatically.
+step
+click Thistleleaf Bully##105009
+Stop the Thistleleaf Bully |q 41855/1 |goto Val'sharah/0 55.86,88.69
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41676
 talk Hobart Grapplehammer##93539
 buy 1 True Iron Barrel##136638 |condition itemcount(136638) >= 1 |goto Dalaran L/10 38.40,25.17
@@ -1644,6 +1702,13 @@ label "Acolyte of Elothir"
 Save 7 Acolyte of Elothir |q 41956/1 |goto Val'sharah/0 45.36,70.70
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43631
+accept WANTED: Skul'vrax##43631 |goto Val'sharah/0 60.23,87.23
+|tip You will accept this quest automatically.
+step
+kill Skul'vrax##93654 |q 43631/1 |goto Val'sharah/0 60.87,87.69
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41855
 accept Stand Up to Bullies##41855 |goto Val'sharah/0 55.86,88.69
 |tip You will accept this quest automatically.
@@ -1704,6 +1769,15 @@ accept WANTED: Kiranys Duskwhisper##43460 |goto Val'sharah/0 35.13,59.92
 |tip You will accept this quest automatically.
 step
 kill Kiranys Duskwhisper##94414 |q 43460/1 |goto Val'sharah/0 34.37,58.29
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44895
+Follow the path along the coast |goto Val'sharah/0 60.69,8.74
+accept Sharptalon Swarm!##44895 |goto Val'sharah/0 57.57,7.36
+|tip You will accept this quest automatically.
+step
+Slay the Sharptalon all along these hills on the coast
+Cull Sharptalon Falcosaurs |q 44895/1 |goto Val'sharah/0 50.42,8.53
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41091
@@ -2447,6 +2521,14 @@ step
 kill Shara Felbreath##97093 |q 41821/1 |goto Highmountain/0 50.97,25.62
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41549
+accept Slab of Bacon##41549 |goto Highmountain/0 42.00,49.36
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Ironhorn Bull##103681
+collect Thick Slab of Bacon##135511 |q 41549/1 |goto Highmountain/0 42.00,49.36
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41653
 accept Work Order: Skystone Pendant##41653 |goto Thunder Totem/0 38.08,46.05
 |tip You will accept this quest automatically.
@@ -2466,14 +2548,6 @@ accept Border Reinforcements##41308 |goto Highmountain/0 59.25,65.16
 step
 kill the enemies aroudn this area
 Reinforce the Stonehoof Watch defenses |q 41308/1 |goto Highmountain/0 59.25,65.16
-|next "Court_Of_Farondis_WQ"
-step
-label quest-41549
-accept Slab of Bacon##41549 |goto Highmountain/0 42.00,49.36
-|tip You will accept this quest automatically.
-step
-kill Well-Fed Ironhorn Bull##103681
-collect Thick Slab of Bacon##135511 |q 41549/1 |goto Highmountain/0 42.00,49.36
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41093
@@ -2557,10 +2631,18 @@ step
 label quest-41687
 Enter the cave |goto Highmountain/0 42.59,25.38
 accept Snail Fight!##41687 |goto Highmountain/31 49.27,43.55
+|tip You will accept this quest automatically.
 step
 talk Odrogg##104553
 Tell him "Let's do battle!"
 Defeat Odrogg |q 41687/1 |goto Highmountain/31 49.27,43.55
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41818
+accept WANTED: Majestic Elderhorn##41818 |goto Highmountain/0 47.40,32.57
+|tip You will accept this quest automatically.
+step
+kill Majestic Elderhorn##96410 |q 41818/1 |goto Highmountain/0 47.40,32.57
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41122
@@ -2586,6 +2668,14 @@ Use your extra action button and round up a bunch of these birds or you can just
 step
 kill 5 Icefang Packleader##97957 |q 41078/4 |goto Highmountain/0 56.09,54.77
 Use your extra action button and round up a bunch of these Wolves or you can just kill them.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44892
+accept Snowfeather Swarm!##44892 |goto Highmountain/0 36.89,17.59
+|tip You will accept this quest automatically.
+step
+Slay the Snowfeather enemies around this area
+Cull Snowfeather Falcosaurs |q 44892/1 |goto Highmountain/0 35.74,21.31
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42798
@@ -2944,6 +3034,7 @@ kill Soulbinder Halldora##109195 |q 42953/1 |goto 58.53,16.25
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41925
+Enter the Portal to Helheim |goto Stormheim/0 73.48,39.59
 accept Razing Hel##41925 |goto Helheim/0 62.92,29.39
 |tip You will accept this quest automatically.
 step
@@ -3138,9 +3229,33 @@ collect 40 Leystone-Encrusted Spike##134104 |q 41506/1 |goto 58.18,87.69
 step
 label quest-41519
 accept Felwort##41519 |goto Stormheim/0 36.67,49.12
+|tip You will accept this quest automatically.
 step
 click Felwort##195114
 collect Felwort |q 41519/1 |goto Stormheim/0 36.67,49.12
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41298
+accept Supplies Needed: Fjarnskaggl##41298 |goto Stormheim/0 60.63,50.96
+|tip You will accept this quest automatically.
+step
+You can either buy these from the AH or farm them if you have the profession Herbalism
+collect 40 Fjarnskaggl## |q 41298/1
+step
+talk Valdemar Stormseeker##106904
+turnin Supplies Needed: Fjarnskaggl##41298 |goto Stormheim/0 60.28,51.37
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41642
+accept Work Order: Warhide Footpads##41642 |goto Stormheim/0 60.65,50.98
+|tip You will accept this quest automatically.
+step
+Obtain 12 Stonehide leather and 5 Unbroken Claws
+create 1 Warhide Footpads##194709,Leatherworking,1
+collect 1 Warhide Footpads##128877 |q 41642/1
+step
+talk Valdemar Stormseeker##106904
+turnin Work Order: Warhide Footpads##41642 |goto Stormheim/0 60.28,51.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43722
@@ -3177,14 +3292,6 @@ collect 40 Fjarnskaggl## |q 41298/1
 step
 talk Valdemar Stormseeker##106904
 turnin Supplies Needed: Fjarnskaggl##41298 |goto Stormheim/0 60.28,51.37
-|next "Court_Of_Farondis_WQ"
-step
-label quest-41556
-accept Slab of Bacon##41556 |goto Stormheim/0 34.18,45.68
-|tip You will accept this quest automatically.
-step
-kill Well-Fed Musken##103786
-collect Thick Slab of Bacon##135511 |q 41556/1 |goto Stormheim/0 34.18,45.68
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43752
@@ -3237,6 +3344,19 @@ step
 kill Hannval the Butcher##107926 |q 43623/1 |goto Stormheim/0 51.73,74.63
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41654
+accept Work Order: Queen's Opal Loop##41654 |goto Stormheim/0 60.26,51.39
+|tip You will accept this quest automatically.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 1 Queen's Opal Loop>_
+collect 1 Queen's Opal Loop##136711 |goto 60.26,51.39
+|tip You can purchase one of these from the Auction House if you don't have the design.
+step
+talk Valdemar Stormseeker##106904
+turnin Work Order: Queen's Opal Loop##41654 |goto 60.26,51.39
+|next "Court_Of_Farondis_WQ"
+step
 label quest-40278
 accept My Beasts's Bidding##40278 |goto Stormheim/0 78.38,57.23
 |tip You will accept this quest automatically.
@@ -3252,16 +3372,6 @@ accept DANGER: Lagertha##42964 |goto Stormheim/0 61.19,72.52
 step
 kill Lagertha##109015 |q 42964/1 |goto Stormheim/0 62.27,73.41
 |tip This is an elite enemy and you will need a group to kill it.
-|next "Court_Of_Farondis_WQ"
-step
-label quest-41925
-Enter the Portal to Helheim |goto Stormheim/0 73.18,40.05
-accept Razing Hel##41925 |goto Helheim/0 66.25,47.63
-|tip You will accept this quest automatically.
-step
-kill the enemies around this area
-click Kvaldir Cages
-Assault Helheim |q 41925/1 |goto Helheim/0 64.56,29.13
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44032
@@ -3347,6 +3457,15 @@ kill Helarjar Mystcaller##111325+, Helarjar Berserker##111332+, Hellarjar Soulhu
 Slay 15 Helarjar Kvaldirs |q 43721/1 |goto Stormheim/0 85.09,10.89
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41944
+accept Jarrun's Ladder##41944 |goto Stormheim/0 56.93,46.29
+|tip You will accept this quest automatically.
+step
+talk Trapper Jarrun##105455
+Tell him "Let's do battle!"
+Defeat Trapper Jarrun |q 41944/1 |goto Stormheim/0 56.93,46.29
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41935
 accept Beasts of Burden##41935 |goto Stormheim/0 62.10,52.09
 |tip You will accept this quest automatically.
@@ -3366,6 +3485,73 @@ accept WANTED: Egyl the Enduring##43454 |goto Stormheim/0 41.55,32.62
 |tip You will accept this quest automatically.
 step
 kill Egyl the Enduring##98188 |q 43454/1 |goto Stormheim/0 41.50,33.59
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41570
+Enter the cave |goto Stormheim/0 32.90,55.72
+|tip It's behind the waterfall.
+accept Felhide##41570 |goto 32.62,55.84
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41570/1 |goto Stormheim/0 32.04,55.90
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41336
+accept Bristly Musken Hide##41336 |goto Stormheim/0 59.84,52.91
+|tip You will accept this quest automatically.
+step
+kill Wild Plains Runehorn##107803+
+|tip These can be found all around this area.
+|tip Loot and skin them.
+collect 12 Bristly Musken Hide##134812 |q 41336/1 |goto Stormheim/0 58.54,51.61
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41569
+accept Felhide##41569 |goto Stormheim/0 62.35,75.01
+|tip You will accept this quest automatically.
+step
+Enter the cave |goto Stormheim/0 62.35,75.01
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41569/1 |goto Stormheim/0 63.33,74.82
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44856
+Cross the bridge |goto Suramar/0 24.26,31.92 < 30 |only if walking
+accept Cut the Cattitude##44856 |goto Suramar/0 22.40,30.22
+|tip You will accept this quest automatically.
+step
+Chase Defiant Feathermoon Kittens
+|tip They're running around on the ground all around this area.
+|tip Position yourself and run towards the Defiant Feathermoon Kittens so that they run southwest to Yowlon.
+|tip You can see Yowlon as a yellow circle on your minimap.
+Herd #3# Lost Feathermane Kittens |q 44856/1 |goto 22.35,28.23
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44744
+accept Lifelines##44744 |goto Suramar/0 47.45,81.97
+|tip You will accept this quest automatically.
+step
+Cross the bridge |goto 48.38,80.46 < 20 |only if walking
+Run up the stairs |goto 48.49,79.06 < 20 |only if walking
+Follow the path |goto 49.34,76.27 < 20 |only if walking
+Follow the path |goto 49.85,74.84 < 20 |only if walking
+Kill enemies around this area
+Defend the Arcwine Distribution |q 44744/1 |goto 49.27,71.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44857
+Cross the bridge |goto Suramar/0 24.33,31.99 < 30 |only if walking
+Follow the road |goto Suramar/0 21.74,29.12 < 30 |only if walking
+Follow the path |goto Suramar/0 19.06,25.55 < 30 |only if walking
+accept Not There, Not Then, Not Forever##44857 |goto Suramar/0 18.98,23.74
+|tip You will accept this quest automatically.
+step
+Kill Darkfiend enemies around this area
+collect Satyr Horn##137189+ |n
+|tip You need these to destroy the totems.
+Use the Satyr Horns next to Darkfiend Totmes |use Satyr Horn##137189
+|tip They look like white totem poles with red cratches in them around this area.
+Purify the Corruption |q 44857/1 |goto 18.99,23.31
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42796
@@ -3511,8 +3697,10 @@ label quest-42859
 accept A Draught of Hope##42859 |goto Suramar/0 47.46,81.97
 |tip You will accept this quest automatically.
 step
+Follow the path |goto 48.84,83.60 < 20 |only if walking
+Follow the path |goto 50.91,82.41 < 20 |only if walking
 talk Ciele##109442
-Obtain Arcwine from Ciele |q 42859/1 |goto 48.68,84.40
+Obtain Arcwine from Ciele |q 42859/1 |goto 51.87,79.89
 step
 talk Nightborne Wretch##109409+
 |tip All around this whole area, you will likely have to search for them.
@@ -4010,6 +4198,15 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41493/1 |goto 24.45,10.87
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41346
+accept Velvety Stalker Hide##41346 |goto Suramar/0 32.33,35.61
+|tip You will accept this quest automatically.
+step
+kill Moonwhisper Stalker##103616+
+|tip Loot and Skin these.
+collect 8 Velvety Stalker Hide##134818 |q 41346/1 |goto Suramar/0 35.18,29.25
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44118
 accept DANGER: Auditor Esiel##44118 |goto Suramar/0 57.05,67.71
 |tip You will accept this quest automatically.
@@ -4050,6 +4247,13 @@ step
 talk First Arcanist Thalyssra##97140
 |tip Thalyssra may be in a slightly different spot, depending upon your progress in the Suramar questline.
 turnin Work Order: Queen's Opal Loop##41655 |goto 36.55,46.89
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44032
+accept WANTED: Apothecary Faldren##44032 |goto Suramar/0 42.25,54.80
+|tip You will accept this quest automatically.
+step
+kill Apothecary Faldren##110870 |q 44032/1 |goto Suramar/0 42.35,56.57
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41557
@@ -4093,6 +4297,24 @@ step
 talk Aulier##105250
 Tell him "Let's do battle!"
 Defeat Aulier |q 41895/1 |goto Suramar/0 51.99,54.89
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44856
+accept Cut the Cattitude##44856 |goto Suramar/0 22.34,30.23
+|tip You will accept this quest automatically.
+step
+Chase Lost Feathermoon Kittens
+|tip They're running around on the ground all around this area.
+|tip Position yourself and run towards the Lost Feathermoon Kittens so that they run back to where you picked up the quest.
+Herd #3# Lost Feathermane Kittens |q 44856/1 |goto 22.35,28.23
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44744
+accept Lifelines##44744 |goto Suramar/0 49.40,72.39
+|tip You will accept this quest automatically.
+step
+Slay the enemies that run into this area
+Defend the Arcwine Distribution |q 44744/1 |goto Suramar/0 49.40,72.39
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40299

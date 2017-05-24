@@ -1446,6 +1446,7 @@ GOALTYPES['goto'] = {
 		if self.x then
 			local cx,cy,cm,cf=HBD:GetPlayerZonePosition(true)
 			local gx,gy,dist = self.x,self.y,self.dist or 30
+			if not cx then return false,true end
 			local realdist=HBD:GetZoneDistance(cm,cf,cx,cy,gm,gf,gx,gy)
 			if gm2 and not realdist then realdist=HBD:GetZoneDistance(cm,cf,cx,cy,gm2,gf,gx,gy) end
 			if gm3 and not realdist then realdist=HBD:GetZoneDistance(cm,cf,cx,cy,gm3,gf,gx,gy) end

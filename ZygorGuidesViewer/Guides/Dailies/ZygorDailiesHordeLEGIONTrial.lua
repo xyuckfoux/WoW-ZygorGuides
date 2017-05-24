@@ -344,7 +344,7 @@ click Legion Portal
 accept WANTED: Inquisitor Tivos##42631 |goto Azsuna/0 26.81,49.06
 |tip You will accept this quest automatically.
 step
-kill Inquisitor Tivos##107269 |q 42631/1 |goto 26.81,49.06
+kill Inquisitor Tivos##107269 |q 42631/1 |goto 28.29,51.95
 |tip He's downstairs.
 |next "Court_Of_Farondis_WQ"
 step
@@ -631,6 +631,303 @@ accept DANGER: Immolian##43079 |goto Azsuna/0 28.71,49.46
 |tip You will accept this quest automatically.
 step
 kill Immolian##109630 |q 43079/1 |goto 28.71,49.46
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41435
+accept Smooth Leystone Deposits##41435 |goto Azsuna/0 54.59,36.63
+|tip You will accept this quest automatically.
+step
+click Smooth Leystone Deposit##195122
+collect Smooth Leystone Ore##141224 |q 41435/1 |goto 54.59,36.63
+|tip These veins are found all around the water.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41500
+Enter the cave |goto Azsuna/0 47.96,24.93 < 30
+accept Leyworms##41500 |goto 50.26,21.67
+|tip You will accept this quest automatically.
+step
+kill Burrowing Leyworm##106630+, Sorcerite##109338+
+collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
+|tip Mine the corpses.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42620
+Enter the crystal passage |goto Azsuna/0 60.08,11.43
+accept WANTED: Arcavellus##42620 |goto 59.83,12.08
+|tip You will accept this quest automatically.
+step
+kill Arcavellus##90244
+Arcavellus slain. |q 42620/1 |goto 59.83,12.08
+|tip Kill the Rift Wyrms to spawn Arcavellus.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42146
+accept Dazed and Confused and Adorable##42146 |goto Azsuna/0 50.03,41.44
+|tip You will accept this quest automatically.
+step
+click Beguiling Orb##0
+Defeat the Murlocs |q 42146/1 |goto 50.03,41.44
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44190
+Go up the path |goto Azsuna/0 41.53,74.20
+Enter the tower |goto 40.75,76.63
+|tip Go all the way to the top.
+accept DANGER: Jade Darkhaven##44190 |goto 40.37,76.85
+|tip You will accept this quest automatically.
+step
+kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
+|tip He is all the way at the top of the tower.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41482
+accept Brimstone Destroyer##41482 |goto Azsuna/0 63.80,29.46
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41482/1 |goto 63.80,29.46
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41437
+accept Fine Leystone Deposits##41437 |goto Azsuna/0 41.85,34.47
+|tip You will accept this quest automatically.
+step
+click Fine Leystone Deposit##195122
+collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
+|tip These are located all around the area.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41326
+accept Work Order: Stormscales##41326
+|tip You will accept this quest automatically.
+step
+collect 40 Stormscale##124115 |q 41326/1
+|tip These can be farmed by reptiles in Azsuna.
+step
+talk Veridis Fallon##107376
+turnin Work Order: Stormscales##41326 |goto Azsuna/0 46.92,41.43
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41564
+Run up the hidden path here |goto Azsuna/0 38.27,55.86
+Follow the path up |goto Azsuna/0 35.16,54.89
+Continue following the path |goto Azsuna/0 33.98,55.53
+Follow the path |goto Azsuna/0 30.61,54.77
+Follow the path down |goto Azsuna/0 29.03,55.37
+accept Felhide##41564 |goto Azsuna/0 29.72,57.18
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41259
+Follow the path |goto Azsuna/0 39.92,37.45
+Go down toward the water |goto Azsuna/0 32.79,30.39
+Cross the water here |goto Azsuna/0 32.14,28.66
+|tip Watch out for the Sea Skorg that pats around this area.
+Enter the cave |goto Azsuna/0 30.12,23.69
+|tip it is on the North side of this island.
+accept Slab of Bacon##41259 |goto Azsuna/0 30.12,23.69
+step
+kill Well-Fed Lion Seal##103784
+collect Slice of Bacon##133680 |q 41259/1 |goto Azsuna/0 30.59,25.50
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41651
+accept Work Order: Azsunite Pendant##41651 |goto Azsuna/0 46.91,41.43
+|tip You will accept this quest automatically.
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 1 Azsunite Pendant>_
+collect 1 Azsunite Pendant##130228
+|tip You can purchase one of these from the Auction House if you don't have the design.
+step
+talk Veridis Fallon##107376
+turnin Work Order: Azsunite Pendant##41651 |goto 46.90,41.44
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41326
+accept Work Order: Stormscales##41326 |goto Azsuna/0 46.83,40.22
+|tip You will accept this quest automatically.
+step
+kill Cliffwing Hippogryph##89386+
+|tip Loot and Skin these.
+collect 40 Stormscale##124115 |q 41326/1 |goto Azsuna/0 47.49,51.56
+Once collected go back to the world quest location |goto Azsuna/0 46.83,40.22
+step
+talk Veridis Fallon##107376
+turnin Work Order: Stormscales##41326 |goto Azsuna/0 46.91,41.41
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41323
+accept Fatty Lion Seal Skin##41323 |goto Azsuna/0 31.98,34.64
+|tip You will accept this quest automatically.
+step
+kill Azsuna Lion Seal##89013+
+|tip Loot and Skin these.
+collect 8 Fatty Lion Seal Skin##134807 |q 41323/1 |goto Azsuna/0 30.48,34.10
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41514
+accept Felwort##41514 |goto Azsuna/0 68.37,28.92
+step
+click Felwort##195114
+collect Felwort |q 41514/1 |goto Azsuna/0 68.37,28.92
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41513
+accept Felwort##41513 |goto Azsuna/0 40.60,46.73
+step
+click Felwort##195114
+collect Felwort |q 41513/1 |goto Azsuna/0 40.70,46.53
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41516
+accept Felwort##41516
+step
+click Felwort##195114
+collect Blood of Sargeras##124124 |q 41516/1 |goto Val'sharah/0 30.00,71.16
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43609
+Follow the path up |goto Azsuna/0 46.48,27.86
+accept WANTED: Doomlord Kazrok##43609 |goto Azsuna/0 44.22,28.20
+|tip You will accept this quest automatically.
+step
+kill Doomlord Kazrok##91579 |q 43609/1 |goto Azsuna/0 43.22,28.23
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42148
+accept The Wine's Gone Bad##42148 |goto Azsuna/0 43.33,8.96
+|tip You will accept this quest automatically.
+step
+click Vinu##106417
+Defeat Vinu |q 42148/1 |goto Azsuna/0 43.42,8.50
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41639
+accept Work Order: Battlebound Spaulders##41639 |goto Azsuna/0 46.99,40.26
+|tip You will accept this quest automatically.
+step
+collect 18 Stormscale##124115 |n
+create 1 Battlebound Spaulders##194745 |q 41639/1
+step
+talk Veridis Fallon##107376
+turnin Work Order: Battlebound Spaulders##41639 |goto Azsuna/0 46.91,41.41
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42154
+accept Help a Whelp##42154 |goto Azsuna/0 53.22,16.18
+|tip You will accept this quest automatically.
+step
+click Wounded Azurewing Whelpling
+Defeat the Scavenging Critters |q 42154/1 |goto Azsuna/0 53.22,16.18
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41582
+accept Smooth Sunrunner Hide##41582 |goto Azsuna/0 61.65,23.09
+|tip You will accept this quest automatically.
+step
+kill Equine Sunrunner##91308+
+|tip Loot and skin them.
+collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42024
+accept A Friend of My Enemy##42024 |goto Azsuna/0 48.98,60.26
+|tip You will accept this quest automatically.
+stickystart "Cove Skrog"
+step
+kill Prince Oceanus##89101 |q 42024/1 |goto Azsuna/0 53.43,63.82
+step
+kill Flog the Captain-Eater##89884 |q 42024/2 |goto Azsuna/0 45.18,57.78
+step
+label "Cove Skrog"
+kill 6 Cove Skrog##89097 |q 42024/3
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41563
+accept Felhide##41563 |goto Azsuna/0 41.44,71.3
+|tip You will accept this quest automatically.
+step
+This is an elite area, be wary of the enemies here.
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41563/1 |goto Azsuna/0 41.44,71.3
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43606
+accept WANTED: Arcavellus##43606 |goto Azsuna/0 59.15,13.00
+|tip You will accept this quest automatically.
+step
+Defeat the waves of enemies that come out of this portal
+kill Arcavellus##90244 |q 43606/1 |goto Azsuna/0 59.82,12.09
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44194
+accept DANGER: Torrentius##44194 |goto Azsuna/0 37.39,82.32
+|tip You will accept this quest automatically.
+step
+kill Torrentius##102064 |q 44194/1 |goto Azsuna/0 37.26,83.41
+|tip This is an elite enemy you will need a group to kill him.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42159
+accept Training with the Nightwatchers##42159 |goto Azsuna/0 46.34,40.39
+|tip You will accept this quest automatically.
+step
+talk Nightwatcher Merayl##106552
+Tell him "Let's do battle!"
+Defeat Nightwatcher Merayl |q 42159/1 |goto Azsuna/0 46.34,40.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41327
+accept Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.99,40.67
+|tip You will accept this quest automatically.
+step
+collect 40 Stormscale##124115 |q 41327/1
+|tip These can either be farmed with the skinning profession or you can buy them from the AH.
+step
+talk Veridis Fallon##107376
+turnin Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.91,41.41
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43610
+click cache of infernals |goto Azsuna/0 35.37,50.39
+Slay the waves of infernals
+accept WANTED: Infernal Lord##43610 |goto Azsuna/0 35.37,50.39
+step
+kill Infernal Lord##90803 |q 43610/1 |goto Azsuna/0 35.37,50.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41551
+accept Slab of Bacon##41551 |goto Azsuna/0 33.65,11.35
+|tip On top of the rock.
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Lion Seal##103784
+collect collect Thick Slab of Bacon##135511 |q 41551/1 |goto Azsuna/0 33.65,11.35
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44784
+Enter the building |goto Azsuna/0 53.77,40.31
+accept Advanced Wanding##44784 |goto Azsuna/17 62.86,86.74
+|tip You will accept this quest automatically.
+step
+Follow the path down |goto Azsuna/17 58.11,68.23
+Go through the Academy Door |goto Azsuna/17 50.40,50.09
+Use your extra action ability on the Wand Targets
+Hit 6 Wand Targets |q 44784/1 |goto Azsuna/17 33.62,42.69
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44049
+accept Evil Has Many Legs##44049 |goto Azsuna/0 44.34,82.09
+|tip You will accept this quest automatically.
+step
+Slay the spiders around this area
+Purge the Demonic Spiders |q 44049/1 |goto Azsuna/0 43.07,84.84
 |next "Court_Of_Farondis_WQ"
 step
 label "Court_Of_Farondis_WQ"

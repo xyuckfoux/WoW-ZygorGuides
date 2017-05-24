@@ -4242,7 +4242,7 @@ Kill enemies around this area
 |tip You can also kill other players, if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
-collect 500 Sightless Eye |condition curcount(1149) >= 500 |goto Dalaran L/11 68.95,58.41
+collect 500 Sightless Eyes |condition curcount(1149) >= 500 |goto Dalaran L/11 68.95,58.41
 step
 Follow the path down |goto 64.41,58.55 < 15 |walk
 Run up the stairs |goto 59.34,76.48 < 15 |walk
@@ -4662,7 +4662,7 @@ step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
 |tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
-Click Here After Hiring a Bodyguard |confirm |goto Dalaran L/11 68.99,58.38 |q 39602
+Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 39602
 step
 Follow the path down |goto 64.48,58.65 < 15 |walk
 talk Flitz##96347
@@ -5087,7 +5087,7 @@ Kill enemies around this area
 |tip You can also kill other players, if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
-collect 750 Sightless Eye |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
+collect 750 Sightless Eyes |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
 step
 Follow the path down |goto 64.41,58.55 < 15 |walk
 Run up the stairs |goto 59.34,76.48 < 15 |walk
@@ -6169,7 +6169,7 @@ Kill enemies around this area
 |tip You can also kill other players, if you enjoy PvP.
 |tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
 |tip When the guards are present, the named PvE enemies will appear.
-collect 750 Sightless Eye |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
+collect 750 Sightless Eyes |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
 step
 Follow the path |goto 59.77,39.31 < 20 |walk
 talk The Widow##97366
@@ -6273,156 +6273,50 @@ talk Professor Pallin##92195
 |tip Inside the building.
 Learn the Inscription Profession |condition skill("Inscription")>=1 |goto Dalaran L/10 41.27,37.02
 step
-|confirm
-step
 talk Professor Pallin##92195
 |tip Inside the building.
-accept Sign This##39847 |goto Dalaran L/10 41.27,37.02
-accept Our New Allies##39934 |goto Dalaran L/10 41.27,37.02
-accept Mysterious Messages##39944 |goto Dalaran L/10 41.27,37.02
-accept Mass Milling Techniques##39954 |goto Dalaran L/10 41.27,37.02
+accept Sign This##39847 |goto 41.27,37.02
 step
-click Steamy Romance Novel
-accept An Embarrassing Revelation##39961 |goto 41.47,37.64
-step
-talk Professor Pallin##92195
-|tip Inside the building.
-turnin An Embarrassing Revelation##39961 |goto Dalaran L/10 41.27,37.02
-accept The Plot Thickens##39955 |goto Dalaran L/10 41.27,37.02
-step
-talk Allari the Souleater##89398
-turnin Our New Allies##39934 |goto Azsuna/0 43.32,43.19
-accept The Price of Power##39935 |goto Azsuna/0 43.32,43.19
-step
-kill Wrathguard Invader##90230+, Vile Stalker##90241+, Felguard Shocktrooper##101943+
-Slay 15 Demons |q 39935/1 |goto 42.72,44.46
-step
-talk Allari the Souleater##89398
-turnin The Price of Power##39935 |goto Azsuna/0 43.32,43.19
-accept Scribal Knowledge##39939 |goto Azsuna/0 43.32,43.19
-accept Inscription of the Body##39936 |goto Azsuna/0 43.32,43.19
-step
-talk Zaria Shadowheart##97734
-turnin Scribal Knowledge##39939 |goto 65.04,25.93
-accept Control is Key##39941 |goto 65.04,25.93
-accept Runes of Power##39940 |goto 65.04,25.93
-stickystart "Fel Power Rune"
-step
-click Crystallized Fel Ward##6477
-kill Overseer Felorax##97847 |q 39941/1 |goto 68.40,26.16
-step
-label "Fel Power Rune"
-click 8 Fel Power Rune##6478 |q 39940/1 |goto 66.29,27.84
-|tip They look like green runes on the ground around this area.
-step
-talk Zaria Shadowheart##97734
-turnin Control is Key##39941 |goto 65.04,25.93
-turnin Runes of Power##39940 |goto 65.04,25.93
-step
-Follow the path |goto 63.87,25.62 < 15 |only if walking
-Continue following the path |goto 59.93,20.46 < 15 |only if walking
-talk Baric Stormrunner##97736
-turnin Inscription of the Body##39936 |goto 54.02,15.32
-accept Opposites Repel##39937 |goto 54.02,15.32
-step
-kill Nightfallen Hungerer##109826+, Withered Fanatic##90318+
-collect 10 Ley Dust##129105 |q 39937/1 |goto 55.70,17.16
-step
-Combine the 10 Ley Dust into a Ley Pigment |use Ley Dust##129105
-collect 1 Ley Pigment##136821 |q 39937/2 |goto 55.70,17.16
-step
-talk Baric Stormrunner##97736
-turnin Opposites Repel##39937 |goto 54.02,15.32
-accept Containing the Demon Within##39938 |goto 54.02,15.32
-step
-talk Baric Stormrunner##97736
-Start the Ritual |q 39938/1 |goto 54.02,15.32
-step
-click Baric's Ritual Essence
-Activate the first essence pool |q 39938/2 |goto 53.92,15.31
-step
-click Baric's Ritual Essence
-Activate the second essence pool |q 39938/3 |goto 53.84,15.11
-step
-click Baric's Ritual Essence
-Activate the third essence pool |q 39938/4 |goto 53.76,15.33
-step
-talk Baric Stormrunner##97736
-turnin Containing the Demon Within##39938 |goto 54.02,15.32
-accept The Burdens of Hunting##39943 |goto 54.02,15.32
-step
-talk Professor Pallin##92195
-|tip Inside the building.
-turnin The Burdens of Hunting##39943 |goto Dalaran L/10 41.27,37.02
-step
-click Runes of the Aqir##6477
-Inspect the Old Book |q 39954/1 |goto 41.50,36.10
-step
-click Scrolls, Scrolls, Scrolls##6477
-Inspect the Old Book |q 39954/1 |goto 41.07,38.00
-step
-click Verdigris or Malachite? Selecting the Pr##6477
-Inspect the Green Book |q 39954/3 |goto 40.74,37.58
-step
-click Runed Ladder
-Use the Runed Ladder |q 39954/4 |goto 40.84,36.47
-step
-click The Masterful Miller's Manual##6477
-collect The Masterful Miller's Manual##136931 |q 39954/5 |goto 40.84,36.47
-step
-talk Professor Pallin##92195
-|tip Inside the building.
-turnin Mass Milling Techniques##39954 |goto 41.27,37.02
-step
-Sign the contract |q 39847/1 |goto 41.39,37.11 |use Unsigned Contract##129047
+Use the Unsigned Contract |use Unsigned Contract##129047
+Sign the Contract |q 39847/1
 step
 talk Professor Pallin##92195
 |tip Inside the building.
 turnin Sign This##39847 |goto 41.27,37.02
 accept Smashing Herbs##39931 |goto 41.27,37.02
 step
-talk Bill Spearshaker##97762
-turnin The Plot Thickens##39955 |goto Ironforge/0 76.90,8.98
-accept The Legacy Passed On##39956 |goto Ironforge/0 76.90,8.98
+collect 50 Aethril##124101 |q 39931
+|tip Use the Aethril farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
 step
-click Unfinished Steamy Romance Novel
-Finish the Novel |q 39956/1 |goto 76.51,8.39
-|tip You may pick any sequence of answers to complete the Novel.
-step
-talk Bill Spearshaker##97762
-turnin The Legacy Passed On##39956 |goto Ironforge/0 76.90,8.98
-step
-Collect around 40 Aethril |q 39931 |goto Stormwind City/0 61.19,70.99
-|tip Buy it from the auction house.
-|tip If you have the Herbalism profession, you can gather it in Azsuna.
-|tip Use your Milling ability on the Aethrils
+Use Your Milling Ability:
+_<Mill 50 Aethril>_
+|tip They're in your bags.
+|tip You may need to mill more or less Aethril, depending on your luck.
 collect 20 Roseate Pigment##129032 |q 39931/1
 collect 2 Sallow Pigment##129034 |q 39931/2
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Smashing Herbs##39931 |goto Dalaran L/10 41.27,37.02
+turnin Smashing Herbs##39931 |goto 41.27,37.02
+Watch the dialogue
+accept Fish Ink##39932 |goto 41.27,37.02
 step
-talk Professor Pallin##92195
-|tip Inside the building.
-accept Fish Ink##39932 |goto Dalaran L/10 41.27,37.02
+kill Mak'rana Warrior##89053+
+collect 5 Oily Mak'rana Chunk##129060 |q 39932/1 |goto Azsuna/0 58.47,58.00
 step
-kill Mak'rana Warrior##89053+,
-collect 5 Oily Mak'rana Chunk##129060 |q 39932/1 |goto Azsuna/0 59.37,58.90
-step
-Follow the path |goto 55.57,59.34
+Follow the path |goto 57.80,59.01 < 20 |only if walking
+Follow the path |goto 55.57,59.34 < 20 |only if walking
+Follow the path up |goto 53.55,57.80 < 20 |only if walking
 kill Hatecoil Slavemaster##90109+
-collect 5 Hatecoil Scale Patch##129058 |q 39932/2 |goto 48.85,60.98
+collect 5 Hatecoil Scale Patch##129058 |q 39932/2 |goto 51.40,61.65
 step
-Follow the path |goto 51.99,60.70 < 15 |only if walking
-Follow the path up |goto 53.99,56.12 < 15 |only if walking
-Continue following the path |goto 55.69,53.04 < 15 |only if walking
-Continue following the path |goto 60.28,51.11 < 15 |only if walking
-Follow the path down |goto 62.39,48.04 < 15 |only if walking
-kill Subjugated Murloc##89811+
-collect 5 Salteye Oil##129059 |q 39932/3 |goto 63.61,41.33
+Follow the path |goto 46.13,43.87 < 30 |only if walking
+Jump down here |goto 47.49,41.94 < 20 |only if walking
+Kill Salteye enemies around this area
+collect 5 Salteye Oil##129059 |q 39932/3 |goto 49.59,38.53
 step
-Combine these 3 materials together
+Use the Salteye Oil |use Salteye Oil##129059
 collect Piscine Pigment##136811 |q 39932/4
 step
 talk Professor Pallin##92195
@@ -6430,151 +6324,378 @@ talk Professor Pallin##92195
 turnin Fish Ink##39932 |goto Dalaran L/10 41.27,37.02
 accept The Card Shark##39933 |goto Dalaran L/10 41.27,37.02
 step
-Go inside The Legerdemain Lounge |goto Dalaran L/10 46.14,38.24 < 5
-click Hearthstone Card##6478
-collect 10 Hearthstone Card##129092 |q 39933/1 |goto Dalaran L/10 48.37,40.53
+click Hearthstone Cards
+|tip They look like small blue playing cards on the ground inside the building.
+collect 10 Hearthstone Card##129092 |q 39933/1 |goto 47.62,39.60
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-Observe Professor Pallin |q 39933/2 |goto Dalaran L/10 41.27,37.02
+Tell him _"Here are the cards you wanted."_
+Watch the dialogue
+Observe Professor Pallin |q 39933/2 |goto 41.27,37.02
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin The Card Shark##39933 |goto Dalaran L/10 41.27,37.02
-accept The Ink Flows##39948 |goto Dalaran L/10 41.27,37.02
+turnin The Card Shark##39933 |goto 41.27,37.02
 step
-Enter the Underbelly |goto Dalaran L/10 60.22,48.46
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+accept Our New Allies##39934 |goto 41.27,37.02 |only if not ZGV:RaceClassMatch("DemonHunter")
+accept Our New Allies##40056 |goto 41.27,37.02 |only DemonHunter
+step
+talk Allari the Souleater##89398
+turnin Our New Allies##39934 |goto Azsuna/0 43.28,43.16 |only if havequest(39934) or completedq(39934)
+turnin Our New Allies##40056 |goto Azsuna/0 43.28,43.16 |only if havequest(40056) or completedq(40056)
+accept The Price of Power##39935 |goto Azsuna/0 43.28,43.16 |only if not ZGV:RaceClassMatch("DemonHunter")
+accept The Price of Power##40057 |goto Azsuna/0 43.28,43.16 |only DemonHunter
+step
+Kill enemies around this area
+|tip Lure the enemies to this spot to kill them quickly.
+|tip They turret does massive damage to them.
+Slay #15# Demons |q 39935/1 |goto 43.13,44.33 |only if havequest(39935) or completedq(39935)
+Slay #15# Demons |q 40057/1 |goto 43.13,44.33 |only if havequest(40057) or completedq(40057)
+step
+talk Allari the Souleater##89398
+turnin The Price of Power##39935 |goto 43.28,43.16 |only if havequest(39935) or completedq(39935)
+turnin The Price of Power##40057 |goto 43.28,43.16 |only if havequest(40057) or completedq(40057)
+accept Scribal Knowledge##39939 |goto 43.28,43.16
+accept Inscription of the Body##39936 |goto 43.28,43.16
+step
+talk Zaria Shadowheart##97734
+turnin Scribal Knowledge##39939 |goto 65.07,25.95
+accept Control is Key##39941 |goto 65.07,25.95
+accept Runes of Power##39940 |goto 65.07,25.95
+stickystart "Fel_Power_Runes_Inscription"
+step
+click Crystallized Fel Ward
+kill Overseer Felorax##97847 |q 39941/1 |goto 68.46,26.17
+step
+label "Fel_Power_Runes_Inscription"
+click Fel Power Runes
+|tip They look like green circular symbols on the ground around this area.
+Destroy #8# Fel Power Runes |q 39940/1 |goto 66.29,27.84
+step
+Follow the path up |goto 66.56,26.17 < 30 |only if walking
+Follow the path up |goto 65.66,25.59 < 20 |only if walking
+talk Zaria Shadowheart##97734
+turnin Control is Key##39941 |goto 65.07,25.95
+turnin Runes of Power##39940 |goto 65.07,25.95
+step
+Follow the path |goto 64.27,25.59 < 30 |only if walking
+Follow the path |goto 59.93,20.46 < 30 |only if walking
+talk Baric Stormrunner##97736
+turnin Inscription of the Body##39936 |goto 54.02,15.32
+accept Opposites Repel##39937 |goto 54.02,15.32
+step
+Kill enemies around this area
+collect 10 Ley Dust##129105 |q 39937/1 |goto 55.70,17.16
+step
+Use the Ley Dust |use Ley Dust##129105
+collect Ley Pigment##136821 |q 39937/2
+step
+talk Baric Stormrunner##97736
+turnin Opposites Repel##39937 |goto 54.02,15.32
+accept Containing the Demon Within##39938 |goto 54.02,15.32 |only if not ZGV:RaceClassMatch("DemonHunter")
+accept Containing the Demon Within##40060 |goto 54.02,15.32 |only DemonHunter
+step
+talk Baric Stormrunner##97736
+Watch the dialogue
+Start the Ritual |q 39938/1 |goto 54.02,15.32 |only if havequest(39938) or completedq(39938)
+Start the Ritual |q 40060/1 |goto 54.02,15.32 |only if havequest(40060) or completedq(40060)
+step
+click Baric's Ritual Essence
+Activate the First Essence Pool |q 39938/2 |goto 53.92,15.31 |only if havequest(39938) or completedq(39938)
+Activate the First Essence Pool |q 40060/2 |goto 53.92,15.31 |only if havequest(40060) or completedq(40060)
+step
+click Baric's Ritual Essence
+Activate the Second Essence Pool |q 39938/3 |goto 53.84,15.11 |only if havequest(39938) or completedq(39938)
+Activate the Second Essence Pool |q 40060/3 |goto 53.84,15.11 |only if havequest(40060) or completedq(40060)
+step
+click Baric's Ritual Essence
+Activate the Third Essence Pool |q 39938/4 |goto 53.76,15.33 |only if havequest(39938) or completedq(39938)
+Activate the Third Essence Pool |q 40060/4 |goto 53.76,15.33 |only if havequest(40060) or completedq(40060)
+step
+Watch the dialogue
+Complete the Ritual |q 39938/5 |goto 53.85,15.28 |only if havequest(39938) or completedq(39938)
+Complete the Ritual |q 40060/5 |goto 53.85,15.28 |only if havequest(40060) or completedq(40060)
+step
+talk Baric Stormrunner##97736
+turnin Containing the Demon Within##39938 |goto 54.02,15.32 |only if havequest(39938) or completedq(39938)
+turnin Containing the Demon Within##40060 |goto 54.02,15.32 |only if havequest(40060) or completedq(40060)
+accept The Burdens of Hunting##39943 |goto 54.02,15.32
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin The Burdens of Hunting##39943 |goto Dalaran L/10 41.27,37.02
+step
+Reach Level 104 |ding 104
+|tip Use the Leveling guides to accomplish this.
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+accept Mysterious Messages##39944 |goto 41.27,37.02
+step
+Follow the path down |goto Stormheim/0 60.53,52.12 < 20 |only if walking
+Follow the path |goto Stormheim/0 61.48,52.60 < 30 |only if walking
+Follow the path |goto Stormheim/0 65.72,50.30 < 30 |only if walking
+Follow the path up |goto Stormheim/0 67.54,44.84 < 20 |only if walking
+talk Nicholo Swiftfuse##97748
+turnin Mysterious Messages##39944 |goto Stormheim/0 69.28,40.59
+accept Runes Within the Ruins##39945 |goto Stormheim/0 69.28,40.59
+accept Right Tool for the Job##39946 |goto Stormheim/0 69.28,40.59
+stickystart "Runic_Bone_Knife_Inscription"
+step
+Follow the path |goto 67.47,45.00 < 30 |only if walking
+Follow the path |goto 67.96,46.72 < 30 |only if walking
+click Ancient Vrykul Rune Tablets
+|tip They look like grey stone slabs leaning on walls around this area.
+collect 10 Ancient Vrykul Rune Tablet##129164 |q 39945/1 |goto 69.89,44.47
+step
+label "Runic_Bone_Knife_Inscription"
+kill Bonespeaker Mystic##93071+
+|tip You can find them in the side rooms around this area.
+collect Runic Bone Knife##129169 |q 39946/1 |goto 69.89,44.47
+step
+Follow the path |goto 69.29,45.81 < 30 |only if walking
+Follow the path up |goto 67.25,47.55 < 20 |only if walking
+Follow the path up |goto 67.54,44.84 < 20 |only if walking
+talk Nicholo Swiftfuse##97748
+turnin Runes Within the Ruins##39945 |goto 69.28,40.59
+turnin Right Tool for the Job##39946 |goto 69.28,40.59
+accept Not So Complex?##39947 |goto 69.28,40.59
+step
+talk Nicholo Swiftfuse##97748
+Watch the dialogue
+Kill the enemies that attack in waves
+Protect Nicholo |q 39947/1 |goto 69.28,40.59
+step
+talk Nicholo Swiftfuse##97748
+turnin Not So Complex?##39947 |goto 69.28,40.59
+accept Ancient Vrykul Mastered##40052 |goto 69.28,40.59
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin Ancient Vrykul Mastered##40052 |goto Dalaran L/10 41.27,37.02
+step
+Reach Level 106 |ding 106
+|tip Use the Leveling guides to accomplish this.
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+accept The Ink Flows##39948 |goto 41.27,37.02
+step
 talk Raethan##97359
 Deliver the Contracts |q 39948/1 |goto Dalaran L/11 68.79,58.48
 step
 talk Raethan##97359
-turnin The Ink Flows##39948 |goto Dalaran L/11 68.79,58.48
-accept Once a Scribe Like You##39949 |goto Dalaran L/11 68.79,58.48
-step
-talk Inkrot##97756
-|tip He is under the stairs.
-kill Inkrot##97756
-collect Stolen Shadowruby##129292 |q 39949/1 |goto Dalaran L/11 60.48,77.02
+turnin The Ink Flows##39948 |goto 68.79,58.48
+accept Once a Scribe Like You##39949 |goto 68.79,58.48
 step
 talk Raethan##97359
-turnin Once a Scribe Like You##39949 |goto Dalaran L/11 68.79,58.48
-accept An Odd Trinket##39950 |goto Dalaran L/11 68.79,58.48
+Tell him _"I want to hire a personal bodyguard."_
+|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto 68.99,58.38 |q 39949
+step
+Follow the path down |goto 64.35,58.85 < 20 |walk
+talk Inkrot##97756
+|tip Under the stairs.
+Watch the dialogue
+kill Inkrot##97756
+collect Stolen Shadowruby##129292 |q 39949/1 |goto 60.44,78.16
+step
+Run up the stairs |goto 59.90,62.74 < 15 |walk
+talk Raethan##97359
+turnin Once a Scribe Like You##39949 |goto 68.79,58.48
+accept An Odd Trinket##39950 |goto 68.79,58.48
 step
 talk Professor Pallin##92195
 |tip Inside the building.
 turnin An Odd Trinket##39950 |goto Dalaran L/10 41.27,37.02
 accept Vision of Valor##39953 |goto Dalaran L/10 41.27,37.02
 step
-Go down in this direction |goto Stormheim/0 61.48,52.60  < 15 |only if walking
-Follow the path |goto Stormheim/0 65.72,50.30  < 15 |only if walking
-Go up the hill |goto Stormheim/0 67.47,45.00  < 15 |only if walking
-talk Nicholo Swiftfuse##97748
-turnin Mysterious Messages##39944 |goto Stormheim/0 69.28,40.59
-accept Runes Within the Ruins##39945 |goto Stormheim/0 69.28,40.59
-accept Right Tool for the Job##39946 |goto Stormheim/0 69.28,40.59
-stickystart "Bone Knife"
-step
-Go down the hill |goto Stormheim/0 67.47,45.00  < 15 |only if walking
-Follow the path |goto Stormheim/0 67.95,47.75  < 15 |only if walking
-click Ancient Vrykul Rune Tablet##6478
-collect 10 Ancient Vrykul Rune Tablet##129164 |q 39945/1 |goto Stormheim/0 71.56,42.43
-step
-label "Bone Knife"
-kill Bonespeaker Mystic##93071+
-collect 1 Runic Bone Knife##129169 |q 39946/1 |goto 70.25,43.51
-step
-Follow the path out |goto Stormheim/0 69.29,45.81  < 15 |only if walking
-Go up the hill |goto Stormheim/0 67.47,45.00  < 15 |only if walking
-talk Nicholo Swiftfuse##97748
-turnin Runes Within the Ruins##39945 |goto Stormheim/0 69.28,40.59
-turnin Right Tool for the Job##39946 |goto Stormheim/0 69.28,40.59
-accept Not So Complex?##39947 |goto Stormheim/0 69.28,40.59
-step
-talk Nicholo Swiftfuse##97748
-Start the Ritual and kill the waves of enemies
-Protect Nicholo |q 39947/1 |goto 69.25,40.22
-step
-talk Nicholo Swiftfuse##97748
-turnin Not So Complex?##39947 |goto Stormheim/0 69.28,40.59
-accept Ancient Vrykul Mastered##40052 |goto Stormheim/0 69.28,40.59
-step
-talk Professor Pallin##92195
-|tip Inside the building.
-turnin Ancient Vrykul Mastered##40052 |goto Dalaran L/10 41.27,37.02
-step
 Enter the Halls of Valor Dungeon
-Slay the enemies in this dungeon
+|tip Use the Group Finder to enter the dungeon.
+Kill enemies throughout the dungeon
+|tip Use the Halls of Valor dungeon guide to accomplish this.
 collect 5 Valarjar Rune-Sigil##131928 |q 39953/1
 step
-Defeat Odyn##95676 |q 39953/2 |goto Halls of Valor/3 51.37,88.73
+kill Odyn##95676
+|tip Use the Halls of Valor dungeon guide to accomplish this.
+Defeat Odyn |q 39953/2
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Vision of Valor##39953 |goto Dalaran L/10 41.27,37.02
+turnin Vision of Valor##39953 |goto 41.27,37.02
+step
+Reach Level 108 |ding 108
+|tip Use the Leveling guides to accomplish this.
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+accept Mass Milling Techniques##39954 |goto 41.27,37.02
+step
+click Runes of the Aqir
+Inspect the Old Book |q 39954/1 |goto 41.55,35.90
+step
+click Steamy Romance Novel
+accept An Embarrassing Revelation##39961 |goto 41.47,37.64
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin An Embarrassing Revelation##39961 |goto 41.27,37.02
+accept The Plot Thickens##39955 |goto 41.27,37.02 |only Alliance
+accept The Plot Thickens##39959 |goto 41.27,37.02 |only Horde
+step
+click Scrolls, Scrolls, Scrolls
+Inspect the Well-Worn Book |q 39954/2 |goto 41.07,38.00
+step
+click Verdigris or Malachite? Selecting the Proper Green Ink
+Inspect the Green Book |q 39954/3 |goto 40.66,37.73
+step
+click Runed Ladder
+Use the Runed Ladder |q 39954/4 |goto 40.84,36.47
+step
+click The Masterful Miller's Manual
+|tip It's next to you after the ladder takes you up.
+collect The Masterful Miller's Manual##136931 |q 39954/5 |goto 40.84,36.47
+step
+talk Professor Pallin##92195
+|tip Inside the building.
+turnin Mass Milling Techniques##39954 |goto 41.27,37.02
+step
+talk Bill Spearshaker##97762
+turnin The Plot Thickens##39955 |goto Ironforge/0 77.00,8.77
+accept The Legacy Passed On##39956 |goto Ironforge/0 77.00,8.77
+|only Alliance
+step
+click Unfinished Steamy Romance Novel
+|tip Choose any of the dialogue options, it doesn't matter.
+Complete the Steamy Romance Novel |q 39956/1 |goto 76.56,8.16
+|only Alliance
+step
+talk Bill Spearshaker##97762
+turnin The Legacy Passed On##39956 |goto 77.00,8.77
+|only Alliance
+step
+talk Francis Serbacon##97766
+turnin The Plot Thickens##39959 |goto Undercity/0 77.98,39.24
+accept The Legacy Passed On##39960 |goto Undercity/0 77.98,39.24
+|only Horde
+step
+click Unfinished Steamy Romance Novel
+|tip Choose any of the dialogue options, it doesn't matter.
+Complete the Steamy Romance Novel |q 39960/1 |goto 77.79,37.91
+|only Horde
+step
+talk Francis Serbacon##97766
+turnin The Legacy Passed On##39960 |goto 77.98,39.24
+|only Horde
+step
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
+step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+talk Professor Pallin##92195
+|tip Inside the building.
 accept Demon Ink##39957 |goto Dalaran L/10 41.27,37.02
 step
-This is a level 110 area, be sure you are max level before attempting to complete this quest.
-Follow the path |goto Azsuna/0 64.40,26.40 < 15 |only if walking
-Follow the path down |goto 65.95,21.01 < 15 |only if walking
-Follow the path up |goto 66.56,17.23 < 15 |only if walking
-Follow the path up |goto Suramar/0 23.40,58.10 < 15 |only if walking
-kill Wrathguard Fury##99581+, Sinister Shrieker##101900+, Abhorrent Artificer##106339+, Felsoul Trickster##106375+, Felsoul Inquisitor##101878+
-collect 25 Vial of Felsoul Blood##129204 |q 39957/1 |goto Suramar/0 31.84,68.15
+Follow the path |goto Suramar/0 34.95,51.04 < 30 |only if walking
+Follow the path up |goto Suramar/0 34.06,54.36 < 20 |only if walking
+Follow the path |goto Suramar/0 33.07,56.58 < 30 |only if walking
+Follow the path down |goto Suramar/0 32.75,58.79 < 20 |only if walking
+Kill demon enemies around this area
+|tip Some enemies won't drop the quest items.
+collect 25 Vial of Felsoul Blood##129204 |q 39957/1 |goto Suramar/0 31.68,63.62
 step
-Combine the 25 Vials |use Vial of Felsoul Blood##129204
+Use the Vial of Felsoul Blood |use Vial of Felsoul Blood##129204
 collect Felsoul Ink##137187 |q 39957/2
 step
 talk Professor Pallin##92195
 |tip Inside the building.
 turnin Demon Ink##39957 |goto Dalaran L/10 41.27,37.02
 step
-Buy about 80 Aethril or if you have Herbalism collect them by going to Azsuna
-collect Aethrem Crystal##136909 |q 39942
-|tip This quest item has a chance to be in every 5 herbs that are milled, so the quest item can be in the first herbs you mill or you may need to mill more then the 80 suggested.
+collect 40 Aethril##124101 |q 39942 |future
+|tip Use the Aethril farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
+step
+Use Your Milling Ability:
+_<Mill 40 Aethril>_
+|tip They're in your bags.
+|tip You may need to mill more or less Aethril, depending on your luck.
 accept Aethrem Crystal##39942
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Aethrem Crystal##39942 |goto Dalaran L/10 41.27,37.02
+turnin Aethrem Crystal##39942 |goto 41.27,37.02
 step
-Buy about 80 Dreamleaf or if you have Herbalism collect them by going to Val'sharah
-Use your milling ability on Dreamleaf until this quest pops up |cast Milling##51005
-collect Bulging Nightmare Pod##136912 |q 40062
-|tip This quest item has a chance to be in every 5 herbs that are milled, so the quest item can be in the first herbs you mill or you may need to mill more then the 80 suggested.
+collect 40 Dreamleaf##124102 |q 40062 |future
+|tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
+step
+Use Your Milling Ability:
+_<Mill 40 Dreamleaf>_
+|tip They're in your bags.
+|tip You may need to mill more or less Dreamleaf, depending on your luck.
 accept Bulging Nightmare Pod##40062
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Bulging Nightmare Pod##40062 |goto Dalaran L/10 41.27,37.02
+turnin Bulging Nightmare Pod##40062 |goto 41.27,37.02
 step
-Buy about 80 Foxflowers or if you have Herbalism collect them by going to Highmountain
-Use your milling ability on Dreamleaf until this quest pops up |cast Milling##51005
-collect Woody Seed Cluster##136915 |q 40064
-|tip This quest item has a chance to be in every 5 herbs that are milled, so the quest item can be in the first herbs you mill or you may need to mill more then the 80 suggested.
+collect 40 Foxflower##124103 |q 40064 |future
+|tip Use the Foxflower farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
+step
+Use Your Milling Ability:
+_<Mill 40 Foxflower>_
+|tip They're in your bags.
+|tip You may need to mill more or less Foxflower, depending on your luck.
 accept Woody Seed Cluster##40064
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Woody Seed Cluster##40064 |goto Dalaran L/10 41.27,37.02
+turnin Woody Seed Cluster##40064 |goto 41.27,37.02
 step
-Buy about 80 Fjarnskaggls or if you have Herbalism collect them by going to Stormheim
-Use your milling ability on the Fjarnskaggl until this quest pops up |cast Milling##51005
-collect Fjarnsk##136916 |q 40065
-|tip This quest item has a chance to be in every 5 herbs that are milled, so the quest item can be in the first herbs you mill or you may need to mill more then the 80 suggested.
+collect 40 Fjarnskaggl##124104 |q 40065 |future
+|tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
+step
+Use Your Milling Ability:
+_<Mill 40 Fjarnskaggl>_
+|tip They're in your bags.
+|tip You may need to mill more or less Fjarnskaggl, depending on your luck.
 accept Fjarnsk##40065
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Fjarnsk##40065 |goto Dalaran L/10 41.27,37.02
+turnin Fjarnsk##40065 |goto 41.27,37.02
 step
-Buy about 80 Starlight Roses or if you have Herbalism collect them by going to Suramar
-Use your milling ability on the Starlight Roses until this quest pops up |cast Milling##51005
-collect Roseate Essence##136917 |q 39951
+collect 40 Starlight Rose##124105 |q 39951 |future
+|tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
+|tip You can also buy them from the Auction House.
+step
+Use Your Milling Ability:
+_<Mill 40 Starlight Rose>_
+|tip They're in your bags.
+|tip You may need to mill more or less Starlight Rose, depending on your luck.
 accept Roseate Essence##39951
 step
 talk Professor Pallin##92195
 |tip Inside the building.
-turnin Roseate Essence##39951 |goto Dalaran L/10 41.39,37.13
+turnin Roseate Essence##39951 |goto 41.39,37.13
+step
+click Technique: Tome of the Tranquil Mind
+collect Technique: Tome of the Tranquil Mind##141447 |n
+Use the Technique: Tome of the Tranquil Mind |use Technique: Tome of the Tranquil Mind##141447
+Learn the Technique for Tome of the Tranquil Mind |learn Tome of the Tranquil Mind##227043 |goto 41.24,35.69
+step
+_Congratulations!_
+You completed the Inscription questline.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Profession Guides\\Inscription\\Legion\\Inscription 700-800",{
 author="support@zygorguides.com",
@@ -6585,57 +6706,49 @@ _Before Starting This Guide:_
 Complete the "Inscription Quest Line" Guide
 Click Here to Continue |confirm
 step
-click Technique: Tome of the Tranquil Mind
-collect Technique: Tome of the Tranquil Mind##141447 |n
-Use the Technique: Tome of the Tranquil Mind |use Technique: Tome of the Tranquil Mind##141447
-Learn Tome of the Tranquil Mind |learn Technique: Tome of the Tranquil Mind##227043 |goto Dalaran L/10 41.45,36.25
-step
 talk Jang Quillpaw##93544
-buy 440 Light Parchment##39354 |n
-collect 440 Light Parchment##39354 |condition skill("Inscription")>=719 |goto Dalaran L/10 41.08,36.40
+buy 500 Light Parchment##39354 |n
+collect 500 Light Parchment##39354 |goto Dalaran L/10 41.08,36.40
+|only if skill("Inscription") < 719
 step
-collect 21 Sallow Pigment##129034 |condition skill("Inscription")>=719
-collect 205 Roseate Pigment##129032 |condition skill("Inscription")>=719
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
+collect 25 Sallow Pigment##129034 |c
+collect 250 Roseate Pigment##129032 |c
+|tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
 |tip You can also buy them from the Auction House.
+|tip Use your Milling ability on Legion herbs to accomplish this.
+|only if skill("Inscription") < 719
 step
 Open Your Inscription Crafting Panel:
-_<Create 4 Tome of the Tranquil Mind>_
-Reach Level 704 Inscription |skill Inscription,704
-step
-Open Your Inscription Crafting Panel:
-_<Create 3 Prophecy Tarot Rank 2>_
+_<Create 25 Tome of the Tranquil Mind>_
 Reach Level 719 Inscription |skill Inscription,719
-|tip If the Darkmoon Faire is available, refer to our Darkmoon Faire guide to save up tokens and buy Rank 3, at it will reduce the material required to level.
+step
+collect 35 Darkmoon Prize Tickets |condition curcount(515) >= 35
+|tip Use the Darkmoon Faire guide to accomplish this.
+step
+talk Professor Thaddeus Paleo##14847
+|tip The Darkmoon Faire event must be active in order to reach him.
+buy Technique: Prophecy Tarot##137746 |n
+Use the Technique: Prophecy Tarot |use Technique: Prophecy Tarot##137746
+Learn the Rank 3 Technique for Prophecy Tarot |learn Prophecy Tarot##192856 |goto Darkmoon Island/0 51.9,60.9
 step
 talk Jang Quillpaw##93544
-buy 10 Light Parchment##39354 |n
-collect 10 Light Parchment##39354 |condition skill("Inscription")>=764 |goto Dalaran L/10 41.08,36.40
+buy 48 Light Parchment##39354 |n
+collect 48 Light Parchment##39354 |goto Dalaran L/10 41.08,36.40
+|only if skill("Inscription") < 800
 step
-collect 405 Roseate Pigment##129032
-collect 216 Sallow Pigment##129034
-collect 9 Felwort##124106
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
-|tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can get Felwort by completing World Quests, refer to the our World Quest Guide.
-|tip You can also buy them from the Auction House.
-step
-Open Your Inscription Crafting Panel:
-_<Create 9 Darkmoon Card of the Legion Rank 1>_
-Reach Level 764 Inscription |skill Inscription,764
-|tip If the Darkmoon Faire is available, refer to our Darkmoon Faire guide to save up tokens and buy Rank 3, at it will reduce the material required to level.
-step
-collect 900 Roseate Pigment
-collect 100 Sallow Pigment
-|tip You get these by gathering any herb in Legion, if you have Herbalism.
+collect 192 Sallow Pigment##129034 |c
+collect 1920 Roseate Pigment##129032 |c
+|tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
 |tip You can also buy them from the Auction House.
+|tip Use your Milling ability on Legion herbs to accomplish this.
 step
 Open Your Inscription Crafting Panel:
-_<Create 3 Prophecy Tarot Rank 2>_
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 48 Prophecy Tarot>_
 Reach Level 800 Inscription |skill Inscription,800
-|tip If the Darkmoon Faire is available, refer to our Darkmoon Faire guide to save up tokens and buy Rank 3, at it will reduce the material required to level.
 step
 _Congratulations!_
 You reached level 800 with the Inscription profession.

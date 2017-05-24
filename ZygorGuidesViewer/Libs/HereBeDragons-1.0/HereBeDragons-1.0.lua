@@ -1,6 +1,6 @@
 -- HereBeDragons is a data API for the World of Warcraft mapping system
 
-local MAJOR, MINOR = "HereBeDragons-ZGV", 26
+local MAJOR, MINOR = "HereBeDragons-ZGV", 27
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local HereBeDragons, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
@@ -61,9 +61,11 @@ local instanceIDOverrides = {
     [1465] = 1116, -- Tanaan
     -- Legion
     [1478] = 1220, -- Temple of Elune Scenario (Val'Sharah)
+    [1495] = 1220, -- Protection Paladin Artifact Scenario (Stormheim)
     [1502] = 1220, -- Dalaran Underbelly
     [1533] = 0,    -- Karazhan Artifact Scenario
     [1612] = 1220, -- Feral Druid Artifact Scenario (Suramar)
+    [1626] = 1220, -- Suramar Withered Scenario
 }
 
 -- unregister and store all WORLD_MAP_UPDATE registrants, to avoid excess processing when
@@ -213,22 +215,18 @@ if not oldversion or oldversion < 26 then
             end
         end
 
-        local floors
-        if IsLegion then
-            floors = { GetNumDungeonMapLevels() }
+        -- retrieve floors
+        local floors = { GetNumDungeonMapLevels() }
 
-            -- offset floors for terrain map
-            if DungeonUsesTerrainMap() then
-                for i = 1, #floors do
-                    floors[i] = floors[i] + 1
-                end
-            end
-        else
-            floors = {}
-            for f = 1, GetNumDungeonMapLevels() do
-                floors[f] = f
+
+        -- offset floors for terrain map
+        if DungeonUsesTerrainMap() then
+            for i = 1, #floors do
+                floors[i] = floors[i] + 1
             end
         end
+
+        -- check for fake floors
         if #floors == 0 and GetCurrentMapDungeonLevel() > 0 then
             floors[1] = GetCurrentMapDungeonLevel()
             mapData[id].fakefloor = GetCurrentMapDungeonLevel()
@@ -316,16 +314,6 @@ if not oldversion or oldversion < 26 then
         mapData[WORLDMAP_AZEROTH_ID].C = 0
         mapData[WORLDMAP_AZEROTH_ID].Z = 0
         mapData[WORLDMAP_AZEROTH_ID].name = WORLD_MAP
-
-        -- we only have data for legion clients, zeroing the coordinates
-        -- and niling out the floors temporarily disables the logic on live
-        if not IsLegion then
-            mapData[WORLDMAP_AZEROTH_ID][1] = 0
-            mapData[WORLDMAP_AZEROTH_ID][2] = 0
-            mapData[WORLDMAP_AZEROTH_ID][3] = 0
-            mapData[WORLDMAP_AZEROTH_ID][4] = 0
-            mapData[WORLDMAP_AZEROTH_ID].floors = {}
-        end
 
         -- alliance draenor garrison
         if mapData[971] then
@@ -766,7 +754,7 @@ end
 function HereBeDragons:GetUnitWorldPosition(unitId)
     -- get the current position
     local y, x, z, instanceID = UnitPosition(unitId)
-    if not x or not y then return nil, nil, nil end
+    if not x or not y then return nil, nil, instanceIDOverrides[instanceID] or instanceID end
 
     -- return transformed coordinates
     return applyCoordinateTransforms(x, y, instanceID)
@@ -778,7 +766,7 @@ end
 function HereBeDragons:GetPlayerWorldPosition()
     -- get the current position
     local y, x, z, instanceID = UnitPosition("player")
-    if not x or not y then return nil, nil, nil end
+    if not x or not y then return nil, nil, instanceIDOverrides[instanceID] or instanceID end
 
     -- return transformed coordinates
     return applyCoordinateTransforms(x, y, instanceID)
@@ -798,11 +786,12 @@ end
 function HereBeDragons:GetPlayerZonePosition(allowOutOfBounds)
     if not currentPlayerZoneMapID then return nil, nil, nil, nil end
     local x, y, instanceID = self:GetPlayerWorldPosition()
-    if not x or not y then return nil, nil, nil, nil end
 
-    x, y = self:GetZoneCoordinatesFromWorld(x, y, currentPlayerZoneMapID, currentPlayerLevel, allowOutOfBounds)
     if x and y then
+	x, y = self:GetZoneCoordinatesFromWorld((x or 0), (y or 0), currentPlayerZoneMapID, currentPlayerLevel, allowOutOfBounds)
         return x, y, currentPlayerZoneMapID, currentPlayerLevel, currentMapFile, currentMapIsMicroDungeon
+    else
+        return nil, nil, currentPlayerZoneMapID, currentPlayerLevel, currentMapFile, currentMapIsMicroDungeon
     end
     return nil, nil, nil, nil
 end

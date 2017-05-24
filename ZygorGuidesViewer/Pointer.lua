@@ -2867,6 +2867,10 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 			if ChatFrame1EditBox:HasFocus() then
 				ChatFrame1EditBox:SetText(ChatFrame1EditBox:GetText()..("%s/%s %.1f,%.1f"):format(Pointer.GetMapNameByID2(oldzone),GetCurrentMapDungeonLevel(),x*100,y*100))
 				ChatFrame1EditBox:SetFocus(true)
+			elseif ZygorGuidesWriterFrame and ZygorGuidesWriterFrame:IsVisible() then
+				ZGW.MapClickedF=GetCurrentMapDungeonLevel()
+				ZGW.MapClickedX=x
+				ZGW.MapClickedY=y
 			end
 
 		until true
@@ -3360,7 +3364,7 @@ function Pointer:GetNextInPath(pathname,testway)
 		--
 			if not curway then -- default to closest
 				local nearest_dist,nearest_way=9999,nil
-				for w,way in ipairs(pathpoints) do if way.frame_minimap and way.frame_minimap.dist<nearest_dist then nearest_dist,nearest_way=way.frame_minimap.dist,way end end
+				for w,way in ipairs(pathpoints) do if way.frame_minimap and way.frame_minimap.dist and way.frame_minimap.dist<nearest_dist then nearest_dist,nearest_way=way.frame_minimap.dist,way end end
 				return nearest_way
 			end
 

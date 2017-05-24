@@ -12,17 +12,18 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
-Enter the Darkheart Thicket Dungeon |goto Darkheart Thicket/0 36.71,14.16 < 10000 |noway |c
+Enter the Darkheart Thicket Dungeon |scenariostart
 |tip Use the Group Finder to enter the dungeon.
-step
-Begin the Darkheart Thicket Scenario |scenariostart
 step
 map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
 path	36.83,15.80	35.81,24.42	29.15,25.62
 path	23.48,24.40	22.68,30.12	25.37,33.84
 path	25.81,46.17	24.77,53.41	24.38,58.57
-Follow the path |goto 24.38,58.57 < 20 |noway |c
+Follow the path around to the right, then back to the left when you reach the tangled trees
+When you reach the Rotting Grotto, continue down the path to the right towards the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Archdruid Glaidalis##96512
 _DAMAGE:_
@@ -39,7 +40,9 @@ path follow loose; loop off; ants curved; dist 20
 path	25.77,65.18	26.42,74.32	32.37,81.02
 path	36.90,78.16	41.62,70.01	42.52,60.78
 path	43.19,49.45
-Follow the path |goto 43.19,49.45 < 20 |noway |c
+Follow the stone path as it curves left to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Oakheart##103344
 _DAMAGE:_
@@ -56,7 +59,11 @@ map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
 path	46.92,39.38	51.18,35.53	58.71,33.12
 path	61.58,36.45	64.40,41.60
-Follow the path |goto 64.40,41.60 < 20 |noway |c
+Take the northeast passage and follow the water to the second boss
+|tip Avoid touching the eggs, as they will spawn whelps.
+|tip Keep your back faced away from eggs as well. Getting knocked back into eggs will spawn whelps.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Dresaron##99200
 _EVERYONE:_
@@ -71,7 +78,10 @@ path follow loose; loop off; ants curved; dist 20
 path	62.86,49.12	59.35,54.65	57.71,60.05
 path	62.82,67.99	70.71,76.86	75.50,80.77
 path	80.36,84.78
-Follow the path |goto 80.36,84.78 < 20 |noway |c
+Go through the wood arch to the southwest and drop down
+Drop down again into the ravine and follow it south to reach the last boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shade of Xavius##101403
 _EVERYONE:_
@@ -91,14 +101,16 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
-Enter the Eye of Azshara Dungeon |goto 1046/1 47.59,87.41 < 10000 |noway |c
+Enter the Eye of Azshara Dungeon |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	46.79,83.06	51.94,72.80
 Enter the Eye of Azshara |q 38286/1 |goto 46.86,84.48 |only if not completedq(38286)
-Follow the path down |goto 51.94,72.80 < 20 |noway |c
+Follow the path forward to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Warlord Parjesh##91784
 _DAMAGE:_
@@ -115,7 +127,11 @@ step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	43.42,72.00	39.14,60.22	38.90,51.86
-Follow the path |goto 38.90,51.86 < 20 |noway |c
+Follow the path to the west and continue north
+|tip You will need to kill one or more Hatecoil Arcanists to drop the lightning from Lady Hatecoil.
+|tip Hatecoil Arcanists are located in the bright blue patches of flora.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Lady Hatecoil##91789
 _EVERYONE:_
@@ -129,11 +145,7 @@ _TANK:_
 |tip When Lady Hatecoil casts Beckon Storm, gain threat on the adds that spawn.
 Defeat Lady Hatecoil |scenariogoal 1/28777 |goto 46.49,49.88
 step
-map 1046/1
-path follow loose; loop off; ants curved; dist 20
-path	50.00,42.08	51.65,32.68
-Follow the path |goto 51.65,32.68 < 40 |noway |c
-step
+Go northeast to Serpentrix's island
 kill Serpentrix##91808
 |tip Kill all the enemies around Serpentix before attacking Serpentix.
 _EVERYONE:_
@@ -150,7 +162,10 @@ map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	65.27,34.60	75.32,37.40	76.11,48.17
 path	70.13,51.15
-Follow the path |goto 70.13,51.15 < 20 |noway |c
+Enter the large cave to the east and follow the right wall to the exit
+Curve around to the southwest and kill the two Skrog giants
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill King Deepbeard##91797
 _EVERYONE:_
@@ -165,7 +180,11 @@ _TANK:_
 |tip Try to keep him from attacking the Healer.
 Defeat King Deepbeard |scenariogoal 1/28778 |goto 66.32,50.04
 step
-Follow the path |goto 68.04,46.53 < 20 |noway |c
+map 1046/1
+path follow loose; loop off; ants curved; dist 20
+path	68.3,47.1	63.2,45.4
+Follow the north passage and drop down by the broken ship
+confirm
 step
 kill Wrath of Azshara##96028
 |tip Kill the enemies channeling him before attacking him.

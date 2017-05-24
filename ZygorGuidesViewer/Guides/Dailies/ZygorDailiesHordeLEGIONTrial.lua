@@ -253,6 +253,20 @@ clicknpc Bound Citizen##91449+
 Defend Against the Hatecoil |q 42022/1 |goto 54.28,44.20
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46146
+Follow the path |goto Azsuna/0 45.41,44.47
+accept The Burning Shores##46146 |goto 44.38,49.78
+|tip You will accept this quest automatically.
+stickystart "shores"
+step
+kill Hatefire the Burning##118827
+Defeat Hatefire the Burning |q 46146/2 |goto 44.38,49.78
+step
+label "shores"
+kill Felsiege Infernal##118816+, Doomflame Infernal##121045+, Blazing Infernal##118821+, Felwing Terror##118836+
+Kill #10# demons |q 46146/1 |goto 44.38,49.78
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41529
 Follow the path |goto Azsuna/0 56.69,56.24 < 30 |only if walking
 Follow the path |goto 58.50,51.43 < 25 |only if walking
@@ -589,6 +603,14 @@ kill Azsuna Lion Seal##89013+
 collect 8 Fatty Lion Seal Skin##134807 |q 41323/1 |goto Azsuna/0 30.48,34.10
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46161
+accept Felcaller Thalezra##46161 |goto Azsuna/0 49.16,44.02
+|tip You will accept this quest automatically.
+step
+kill Felcaller Thalezra##117056
+Defeat Felcaller Thalezra |q 46161/1 |goto Azsuna/0 49.16,44.02
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41563
 Carefully cross the rocks |goto Azsuna/0 45.60,72.22 < 30 |only if walking
 Follow the path |goto 43.53,71.70 < 30 |only if walking
@@ -834,6 +856,17 @@ click Iridescent Aethril##195114
 collect 10 Iridescent  Aethril##140950 |q 41528/1 |goto 45.46,10.21
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46165
+Follow the path |goto Azsuna/0 56.88,57.18 < 25 |only if walking
+Follow the path |goto 58.34,51.57 < 20 |only if walking
+Follow the path |goto 61.02,50.76 < 25 |only if walking
+accept Kazruul##46165 |goto 62.69,46.32
+|tip You will accept this quest automatically.
+step
+kill Kazruul##118012
+Defeat Kazruul |q 46165/1 |goto 62.69,46.32
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42101
 Cross the water |goto 56.88,56.51 < 30 |only if walking
 accept Language of the Lost##42101 |goto 59.51,54.10
@@ -1067,6 +1100,21 @@ Kill enemies around this area
 Slay #10# Eredar at Soul Engine: Apocalypse |q 42275/1 |goto 32.03,52.59
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46116
+Follow the path |goto Azsuna/0 64.49,26.06 < 25 |only if walking
+accept On Unhallowed Grounds##46116goto 64.03,19.55
+|tip You will accept this quest automatically.
+stickystart "unhallowed"
+step
+kill Corruptor Hel'drath##118753
+Defeat Corruptor Hel'drath |q 46116/2 |goto 63.60,18.60
+step
+label "unhallowed"
+kill Felblade Devastator##118782+, Corrupted Brute##116664+, Dreadflame Corruptor##118783+
+click Fel Corruptor
+Halt the corruption efforts |q 46116/1 |goto 64.03,19.55
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41896
 Follow the path |goto Azsuna/0 40.60,12.39 < 30 |only if walking
 Follow the path |goto Azsuna/0 38.93,15.22 < 30 |only if walking
@@ -1150,6 +1198,15 @@ kill Pridelord Meowl##90901 |q 42123/2 |goto 56.07,29.02
 step
 label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45058
+accept Release the Wardens!##45058 |goto Azsuna/0 60.15,24.60
+|tip You will accept this quest automatically.
+step
+click Captured Scalewarden##115969
+kill Wrathguard Doomblade##116026+, Felhound##116027+, Abyssal Devourer##116025+
+Repel the Legion forces |q 45058/1 |goto 60.15,24.60
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41324

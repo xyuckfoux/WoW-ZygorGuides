@@ -1969,11 +1969,11 @@ function ZGV:Options_DefineOptionTables()
 		--[[hidden--]] AddOption('showgreyvalue',{type = 'toggle', width="full", set = function(i,v) Setter_Simple(i,v)  ZGV.Loot:ToggleFrame() end, disabled=function() return not ZGV.db.profile.enable_vendor_tools end, _default=false, hidden=true })
 		AddOption('autobuy',{ type = 'toggle',_default=true,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end})  -- Buy guide items
 		--[[hidden--]] AddOption('autobuyframe',{ type='toggle',indent=20,_default=true, width="full", disabled=function() return not (self.db.profile.autobuy and ZGV.db.profile.enable_vendor_tools) end, indent=15, width="double", hidden=true}) -- Confirm purchase
+		AddOption('showgreysellbutton',{ type = 'toggle',_default=true,width="full", set=function(i,v) Setter_Simple(i,v)  ZGV.Loot:SetUpGreySellButton()  ZGV.Loot.greysellbutton:SetShown(v) end, disabled=function() return not ZGV.db.profile.enable_vendor_tools end })  -- Show vendor button
 		AddOption('autosell',{ type = 'toggle', _default=false,width="full",disabled=function() return not ZGV.db.profile.enable_vendor_tools end})  -- Sell gray items
 		AddOption('autosellother',{ type = 'toggle', _default=false,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end}) -- Sell unusable items
 		--AddOption('confirm_selling',{ type = 'toggle',indent=20, _default=false,width="full", disabled=true}) -- Sell unusable items
 			
-		--[[hidden--]] AddOption('showgreysellbutton',{ type = 'toggle',_default=true,width="full", disabled=function() return not ZGV.db.profile.enable_vendor_tools end, hidden=true})  -- Show vendor button
 			
 		--[[hidden--]] AddOption('im_prefer_repair',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self:UpdateLocking()  end, _default = true, descStyle="inline",disabled=function() return not ZGV.db.profile.enable_vendor_tools end, hidden=true }) -- Only find repair vendors
 
@@ -2185,7 +2185,6 @@ function ZGV:Options_DefineOptionTables()
 					refreshProfiles()
 					return getCurrentProfileIndex()
 				end,})
-			sh_newprofile=newprofile
 		EndSubgroup()
 
 		AddSubgroup("__deleteprofile",{

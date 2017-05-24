@@ -962,7 +962,11 @@ do
 			then
 				Lib.data.neighbourhood=nil
 				use_cache=nil
-				geterrorhandler()("LibRover: cache version mismatch, or caching disabled manually. Cache is off.")
+				if ZGV.DEV then
+					ZGV:Error("LibRover says versions of data and cache don't match.\n|rIf you're working on map data, ignore this.")
+				else
+					ZGV:ErrorThrow("Error in travel system: map cache version mismatch. Cache is disabled. Please report this!")
+				end
 				LibRover_Node:NeighbourhoodCache_Kill()
 			end  -- or don't use it after all.
 			Lib.use_cache = use_cache
@@ -1306,12 +1310,13 @@ do
 			Lib:Debug("&lr_init Initialization total: |cffffeeaa%.3f",debugprofilestop()-Lib.startup_starttime)
 
 			if Lib.use_cache and not Lib.SuppressWarnings and #Lib.nodes.all~=Lib.data.neighbourhood.count then
-				ZGV:Error("WARNING: Travel system reports map node count mismatch. Faction "..myfac..", "..#Lib.nodes.all.." nodes present, " .. tostring(Lib.data.neighbourhood.count) .. " expected.")
+				local s = "WARNING: Travel system reports map node count mismatch. Faction "..myfac..", "..#Lib.nodes.all.." nodes present, " .. tostring(Lib.data.neighbourhood.count) .. " expected."
 				if ZGV.DEV then
-					ZGV:Error("Re-bake the cache, or at least change the version number in LibRover/data to disable caching! Travel system is UNRELIABLE now! Don't go and commit this, eh?")
+					s = s .. "\nDEVs: If you're working on map data, increase the version number in LibRover/data. Bake the cache when you're done.\n|cffffdd00Travel system is UNRELIABLE now! |cffff0000Do not commit this!!|r"
 				else
-					ZGV:Error("Please file a bug report with the above message. You might want to disable the Travel System temporarily, as it's unstable now. We're sorry about that.")
+					s = s .. "\nPlease file a bug report with the above message. You might want to disable the Travel System temporarily, as it's unstable now. We're sorry about that."
 				end
+				ZGV:ErrorThrow(s)
 			end
 
 			return true
@@ -2076,12 +2081,17 @@ do
 			if self.extradata and self.extradata.multiple_ends then
 				-- this TRANSFORMS the ends into nodes! Supply plain data, don't get recycled.
 				self:Debug("WHOA! Multiple endpoints: %d, called by %s",#self.extradata.multiple_ends+1,self.caller_stack or "(no stack)")
-				local limit=100
+				local limit=10000
+				local t1=debugprofilestop()
 				for i,data in ipairs(self.extradata.multiple_ends) do
 					local node = LibRover_Node:New(data)
 					node.type="end"
 					AddNode(node)
 					limit=limit-1
+					if limit%10==0 then
+						local t2=debugprofilestop()
+						if t2-t1>50 then yield("PENDING") t1=t2 end
+					end
 					if limit<0 then break end
 				end
 				if limit<0 then self:Debug("CRAP. multiple_ends limit reached! Refusing to find out of so many.") end
@@ -2549,9 +2559,9 @@ do
 						end
 
 					-- fly to unknown taxi AND run/fly from there? nope! Penalize all movement from there, since we can't penalize arrival.
-					elseif current.type=="taxi" and not current.known then
+					elseif current.type=="taxi" and current.known==false then
 						mytime=COST_FAILURE+1
-						if cost_debugging then costdesc = costdesc .. "no arrive at strange taxi; " end
+						if cost_debugging then costdesc = costdesc .. "no arrival at unknown taxi; " end
 
 					else
 
@@ -2624,25 +2634,33 @@ do
 						end
 					-- ==
 
-					-- Don't start at unknown taxis that are: - too high level; - complicated
+					-- Don't start at unknown taxis that are: - too high level; - complicated. This means we DO allow starting at unknown but valid taxis.
 						if neigh.type=="taxi"
 						and (mode=="walk" or mode=="fly")
 						and not neigh.known then
-							if neigh.quest or neigh.factionid or neigh.condition then
-								mycost=mycost+120000
-								if cost_debugging then costdesc = costdesc .. "no walk to complicated taxi; " end
-							end
-							if neigh.level and ZGV:GetPlayerPreciseLevel()<neigh.level 
-							then
-								mycost=mycost+120000
-								if cost_debugging then costdesc = costdesc .. "no walk to overleveled taxi; " end
+							if (neigh.quest and not ZGV.completedQuests[neigh.quest])
+							or (neigh.condition and not neigh.condition()) then
+								mycost=mycost+COST_FAILURE+20
+								if cost_debugging then costdesc = costdesc .. "no walk to missing-quest/failed-condition taxi; " end
+							elseif (neigh.factionid and ZGV:GetReputation(neigh.factionid).standing<(neigh.factionstanding or 3)) then
+								mycost=mycost+COST_FAILURE+30
+								if cost_debugging then costdesc = costdesc .. "no walk to hostile-faction taxi; " end
+							elseif (neigh.level and ZGV:GetPlayerPreciseLevel()<neigh.level)
+							or (Lib.data.ZoneContLev[neigh.m].level>ZGV:GetPlayerPreciseLevel()+5) then
+								mycost=mycost+COST_FAILURE+40
+								if cost_debugging then costdesc = costdesc .. "no walk to high-level taxi; " end
 							end
 						end
 					-- ==
 
-					-- Seriously frown upon banned nodes.
+					if neigh.type=="taxi" and neigh.known==nil --[[ "maybe" --]] and Lib.data.ZoneContLev[neigh.m].level>ZGV:GetPlayerPreciseLevel()+5 then
+						mycost=mycost+COST_FAILURE+19
+						if cost_debugging then costdesc = costdesc .. "no assuming high-level taxi; " end  -- this means we DO assume not-sure-if-known (known==nil) taxis.
+					end
+
+					-- Seriously frown upon banned nodes :)
 						if lib_banned_nodes_any and lib_banned_nodes[neigh] then
-							mycost=mycost+COST_FAILURE+10
+							mycost=mycost+COST_FAILURE+99
 							if cost_debugging then costdesc = costdesc .. "banned; " end
 						end
 					-- ==

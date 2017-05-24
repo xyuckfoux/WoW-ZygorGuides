@@ -637,6 +637,7 @@ local function _StartupThread()
 
 	self:SetWaypointAddon(self.db.profile.waypointaddon)
 
+	ZGV.HBD:FixPhasedContinents()
 	
 	waitformaint("maint_startup_modules") ---------------------
 
@@ -665,7 +666,7 @@ local function _StartupThread()
 			if self.db.profile.safe_startup then t=debugprofilestop() yield(("Startup module: |cffffddee%s|r took %d ms"):format(name,t1)) end
 
 			if not self.db.profile.safe_startup then self:Debug("&startup Startup module: %s in %d ms",name,t1) end
-			if not ok then  self:Error("Error during initialization sequence '"..name.."':\n"..ret.."\n-- STACKTRACE: --\n"..ZGV.MinimizeStack(debugstack(thread)))  end
+			if not ok then  self:ErrorThrow("Error during initialization sequence '"..name.."':\n"..ret.."\n-- STACKTRACE: --\n"..ZGV.MinimizeStack(debugstack(thread)))  end
 
 			--if self.db.profile.safe_startup then t=debugprofilestop() yield("Finished startup module: "..name..(" in %d ms"):format(t1))
 			--elseif debugprofilestop()-t>100 then t=debugprofilestop() yield("(startup modules up to "..i..")") end
@@ -2643,7 +2644,7 @@ function ZGV:UpdateFrame(full,onupdate)
 						-- ICONS
 
 						if goal and self.db.profile.goalicons then
-							label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,0)
+							label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,(l==1 and -2 or -1))
 							icon:SetPoint("CENTER",line,"TOPLEFT",self.db.profile.fontsize*0.5+1,-self.db.profile.fontsize*0.5-1)
 							icon:SetSize(self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize,self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize) -- TODO SkinData friendly?
 							icon:Show()
@@ -2690,7 +2691,7 @@ function ZGV:UpdateFrame(full,onupdate)
 								icon:SetIcon(1)
 							end
 						else
-							label:SetPoint("TOPLEFT",line,"TOPLEFT",0,0)
+							label:SetPoint("LEFT",line,"TOPLEFT",0,-1)
 							icon:Hide()
 						end
 
@@ -5474,8 +5475,14 @@ ZGV.ParseLog = ""
 
 function ZGV:Error(s,...)
 	if (...) then s=s:format(...) end
-	self:Print(s)
+	self:Print("|cffff0000ERROR:|r "..s)
 	ZGV.ParseLog = ZGV.ParseLog .. s .. "\n"
+	return s
+end
+
+function ZGV:ErrorThrow(...)
+	local s = self:Error(...)
+	geterrorhandler()(s)
 end
 
 -- HBD migration snip: Ship Arrival Times 

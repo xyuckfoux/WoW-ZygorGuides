@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 21,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 23,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -27,8 +27,8 @@ data.MapIDsByName = {
  -- new ids for old maps? new versions
  ['Azshara L'] = 1038,['Azuremyst Isle L'] = 1092,['Black Temple L'] = 1085,['Deepholm L'] = 1060,['Firelands L'] = 1071,['Icecrown Citadel L'] = 1039,['Karazhan L'] = 1100,['Kun-Lai Summit L'] = 1058,['Temple of the Jade Serpent L'] = 1097,['Terrace of Endless Spring L'] = 1059,['The Exodar L'] = 1091,['The Maelstrom L A'] = 1056, ['The Maelstrom L'] = 1057, ['The Oculus L'] = 1104,['The Violet Hold L'] = 1054,['The Vortex Pinnacle L'] = 1070,['The Wandering Isle L'] = 1044,['Tirisfal Glades L'] = 1062,['Tol Barad L'] = 1090,['Ulduar L'] = 1076,
  -- new legion maps
- ['Abyssal Maw'] = 1075,['Acherus: The Ebon Hold'] = 1101,['Azsuna'] = {1015,1053},['Black Rook Hold'] = 1081,['Black Rook Hold B'] = 1099,['Broken Isles'] = 1007,['Broken Shore'] = {1021,1031},['Court of Stars'] = 1087,['Dalaran L']=1014,['Dalaran L1']=924,['Darkheart Thicket'] = 1067,['Dreadscar Rift'] = {1050,1051},['Emerald Dreamway'] = 1048,['Eye of Azshara'] = 1046, ['Eye of Azshara Map'] = 1096,['Gloaming Reef'] = 1084,['Hall of the Guardian'] = 1068,['Halls of Valor'] = 1041,['Helheim'] = 1022,['Helmouth Cliffs'] = 1042,['Helmouth Shallows'] = 1034,['Highmountain'] = 1024,['Malorne\'s Nightmare'] = 1086,['Mardum, the Shattered Abyss C'] = 1028, ['Mardum, the Shattered Abyss'] = 1052,['Neltharion\'s Lair'] = 1065,['Netherlight Temple'] = 1040,['Niskara'] = 1078,['Niskara B'] = 1047,['Shadowgore Citadel'] = 1073,['Shield\'s Rest'] = 1036,['Skyhold'] = 1035,['Skywall'] = 1049,['Stormheim'] = {1017,1037},['Suramar'] = {1033,1055},['The Arcway'] = {1079,1102},['The Beyond'] = 1069,['The Cove of Nashal'] = 1027,['The Dreamgrove'] = 1077,['The Emerald Nightmare'] = 1094,['The Naglfar'] = 1043,['The Nighthold'] = 1088,['Thunder Totem'] = 1080,['Trueshot Lodge'] = 1072,['Twisting Nether'] = 1020,['Ursoc\'s Lair'] = 1082,['Val\'sharah'] = 1018,['Vault of the Wardens'] = {1032,1045},['Violet Hold'] = 1066, ['Karazhan L'] = 1115, ['Assault on Broken Shore'] = 1149, ['Felwing Ledge'] = 1152, ['Fields of the Eternal Hunt'] = 1164, ['The Ruby Sanctum'] = 1151, ['The Lost Glacier'] = 1160, ['Halls of Valor'] = 1132, ['Lightless Cavern'] = 1142, ['Val\'sharah Invasion'] = 1158, ['Trial of Valor'] = 1114, ['The Fel Hammer'] = 1165,
- ['Cathedral of Eternal Night'] = 1146,
+ ['Abyssal Maw'] = 1075,['Acherus: The Ebon Hold'] = 1101,['Azsuna'] = 1015, ['Black Rook Hold'] = 1081,['Black Rook Hold B'] = 1099,['Broken Isles'] = 1007,['Broken Shore'] = {1021,1031},['Court of Stars'] = 1087,['Dalaran L']=1014,['Dalaran L1']=924,['Darkheart Thicket'] = 1067,['Dreadscar Rift'] = {1050,1051},['Emerald Dreamway'] = 1048,['Eye of Azshara'] = 1046, ['Eye of Azshara Map'] = 1096,['Gloaming Reef'] = 1084,['Hall of the Guardian'] = 1068,['Halls of Valor'] = 1041,['Helheim'] = 1022,['Helmouth Cliffs'] = 1042,['Helmouth Shallows'] = 1034,['Highmountain'] = 1024,['Malorne\'s Nightmare'] = 1086,['Mardum, the Shattered Abyss C'] = 1028, ['Mardum, the Shattered Abyss'] = 1052,['Neltharion\'s Lair'] = 1065,['Netherlight Temple'] = 1040,['Niskara'] = 1078,['Niskara B'] = 1047,['Shadowgore Citadel'] = 1073,['Shield\'s Rest'] = 1036,['Skyhold'] = 1035,['Skywall'] = 1049,['Stormheim'] = 1017, ['Suramar'] = {1033,1055},['The Arcway'] = {1079,1102},['The Beyond'] = 1069,['The Cove of Nashal'] = 1027,['The Dreamgrove'] = 1077,['The Emerald Nightmare'] = 1094,['The Naglfar'] = 1043,['The Nighthold'] = 1088,['Thunder Totem'] = 1080,['Trueshot Lodge'] = 1072,['Twisting Nether'] = 1020,['Ursoc\'s Lair'] = 1082,['Val\'sharah'] = 1018,['Vault of the Wardens'] = {1032,1045},['Violet Hold'] = 1066, ['Karazhan L'] = 1115, ['Assault on Broken Shore'] = 1149, ['Felwing Ledge'] = 1152, ['Fields of the Eternal Hunt'] = 1164, ['The Ruby Sanctum'] = 1151, ['The Lost Glacier'] = 1160, ['Halls of Valor'] = 1132, ['Lightless Cavern'] = 1142, ['Val\'sharah Invasion'] = 1158, ['Trial of Valor'] = 1114, ['The Fel Hammer'] = 1165,
+ ['Cathedral of Eternal Night'] = 1146, ['Azsuna Invasion'] = 1157, ['Stormheim Invasion'] = 1156, ['Highmountain Invasion'] = 1159,
 }
 data.MapIDsByNameR = {}
 for k,v in pairs(data.MapIDsByName) do 
@@ -1357,6 +1357,22 @@ data.basenodes.MapsWithExplicitFloors = {
 
 
 		},
+
+		----------------------------
+		---  STORMHEIM INVASION  ---
+		----------------------------
+		["Stormheim Invasion"] = {
+			"Stormheim Invasion/1 40.73,43.58 <radius:10> -x- Stormheim Invasion/2 44.02,34.65 <radius:15>"..
+			"{template:custom} {atob:Follow the path down} {btoa:Follow the path up}",
+		},
+
+		----------------------------
+		---  HIGHMOUNTAIN INVASION  ---
+		----------------------------
+		["Highmountain Invasion"] = {
+			"Highmountain Invasion/1 33.73,36.75 <radius:10> -x- Highmountain Invasion/2 38.80,28.00 <radius:15>"..
+			"{template:custom} {atob:Follow the path down} {btoa:Follow the path up}",
+		},		
 }
 
 
@@ -3369,6 +3385,8 @@ data.basenodes.travel = {
 		--Vault of the Wardens
 		"Azsuna/0 48.30,80.23 -x- Vault of the Wardens/1 70.28,77.60 {style:portal_dungeon}",
 		"Azsuna/0 48.30,80.23 -x- 1045/1 70.28,77.60 {style:portal_dungeon}",
+		--Cathedral of Eternal Night
+		"Broken Shore/0 64.70,16.59 -x- Cathedral of Eternal Night/1 46.8,90.2 {style:portal_dungeon}",
 -- RAID ENTRANCE/EXITS
 	--Molten Core
 	"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <template:portaldungeon>",

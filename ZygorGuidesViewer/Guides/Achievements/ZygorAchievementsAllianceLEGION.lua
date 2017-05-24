@@ -363,6 +363,25 @@ step
 _Congratulations!_
 You have earned the _Power Realized_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Order Hall\\Legion\\Power Unleashed",{
+condition_end="achieved(11610)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Power","Unleashed"},
+description="This guide will walk you through completing the \"Power Unleashed\" Achievement.",
+},[[
+step
+For this achievement, you will need to complete the quest chain to unlock the 7.2 extended artifact traits
+|tip You must have all 35 traits unlocked on your artifact before begginning this questline.
+|tip You can earn Artifact Power by completing World Quests as well as Dungeons.
+Click here to load the "Order Hall Quests" guide |confirm |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Unlock additional artifact traits |achieve 11610 |or
+step
+_Congratulations!_
+You have earned the _Power Unleashed_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Class Order Hall\\Legion\\Quite a Few Missions",{
 condition_end="achieved(11215)",
 author="support@zygorguides.com",
@@ -3300,6 +3319,28 @@ step
 _Congratulations!_
 You have earned the _Broken Isles Explorer_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two",{
+condition_end="achieved(11446)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Broken","Isles","Pathfinder"},
+description="This guide will walk you through completing the \"Broken Isles pathfinder, Part Two\" Achievement.",
+},[[
+step
+Earn the _Broken Isles Pathfinder, Part One_ achievement |achieve 11446/1
+Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |next "Zygor's Alliance Achievement Guides\\Class Order Hall\\Legion\\Broken Isles Pathfinder, Part One"
+Earn the _Explore Broken Shore_ achievement |achieve 11446/2
+Click here to load the "Explore Broken Shore" achievement guide |next "Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Broken Shore"
+|tip This achievement requires you to explore all areas of the Broken Shore zone.
+Earn the _Legionfall Commander_ achievement |achieve 11446/4
+|tip This achievement requires you to earn exalted reputation with the Armies of Legionfall faction.
+|tip You can accomplish this by completing quests and world quests in Broken Shore, as well as class order hall missions.
+step
+_Congratulations!_
+You have earned the _Broken Isles Pathfinder, Part Two_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
 condition_end="achieved(10665)",
 author="support@zygorguides.com",
@@ -3353,6 +3394,51 @@ step
 _Congratulations!_
 You have earned the _Explore Azsuna_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Broken Shore",{
+condition_end="achieved(11543)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Explore","Broken","Shore"},
+description="This guide will walk you through completing the \"Explore Broken Shore\" Achievement.",
+},[[
+step
+Explore Deliverance Point |achieve 11543/1 |goto Broken Shore/0 44.66,62.92
+step
+Follow the path |goto 40.67,61.72 < 20 |only if walking
+Drop down |goto 39.07,68.53 < 15 |only if walking
+Cross the water |goto 37.78,67.64 < 20 |only if walking
+Explore Deadwood Landing |achieve 11543/2 |goto 31.80,60.03
+step
+Swim across the water |goto 72.88,48.59 < 25 |only if walking
+Swim across the water |goto 76.43,52.88 < 25 |only if walking
+Explore Felfire Pass |achieve 11543/8 |goto 80.60,51.13
+step
+Follow the path |goto 69.08,47.06 < 20 |only if walking
+Follow the path |goto 66.26,42.03 < 25 |only if walking
+Follow the path |goto 69.99,35.58 < 25 |only if walking
+Explore Felrage Strand |achieve 11543/7 |goto 72.74,29.36
+step
+Go up the stairs |goto 50.86,18.85 < 15 |only if walking
+Go up the stairs |goto 49.68,18.73 < 15 |only if walking
+Explore The Weeping Terrace |achieve 11543/5 |goto 47.19,16.67
+step
+Follow the path |goto 51.17,23.12 < 20 |only if walking
+Explore Broken Valley |achieve 11543/4 |goto 50.85,29.15
+step
+Follow the path |goto 51.07,31.13 < 15 |only if walking
+Follow the path |goto 50.73,35.39 < 25 |only if walking
+Explore Soul Ruin |achieve 11543/3 |goto 52.04,37.80
+step
+Follow the path |goto 52.52,32.80 < 20 |only if walking
+Follow the path |goto 55.71,30.51 < 25 |only if walking
+Follow the path |goto 58.31,27.66 < 25 |only if walking
+Explore Tomb of Sargeras |achieve 11543/6 |goto 62.46,23.04
+step
+_Congratulations!_
+You have earned the _Explore Broken Shore_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Explore Highmountain",{
 condition_end="achieved(10667)",
 author="support@zygorguides.com",
@@ -4440,6 +4526,44 @@ step
 _Congratulations!_
 You have earned the _10,000 World Quests Completed_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\A Magic Contribution",{
+condition_end="achieved(11731)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Magic","Contribution"},
+description="This guide will walk you through completing the \"A Magic Contribution\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Mage Tower 5 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Mage Tower on the Broken Shore 5 times |achieve 11731 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _A Magic Contribution_ achievement
+]])
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\A Magnificent Contribution",{
+condition_end="achieved(11732)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Magnificent","Contribution"},
+description="This guide will walk you through completing the \"A Magnificent Contribution\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Mage Tower 50 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Mage Tower on the Broken Shore 50 times |achieve 11732 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _A Magnificent Contribution_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
 condition_end="achieved(10059)",
 author="support@zygorguides.com",
@@ -4463,6 +4587,25 @@ step
 _Congratulations!_
 You have completed the _Ain't No Mountain High Enough_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Assume Command",{
+condition_end="achieved(11736)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Assume","Command"},
+description="This guide will walk you through completing the \"Assume Command\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Command Center 50 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Command Center on the Broken Shore 50 times |achieve 11736 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _Assume Command_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Azsuna Matata",{
 condition_end="achieved(10763)",
 author="support@zygorguides.com",
@@ -4484,6 +4627,25 @@ step
 _Congratulations!_
 You have completed the _Azsuna Matata_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Disrupting the Nether",{
+condition_end="achieved(11737)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Disrupting","Nether"},
+description="This guide will walk you through completing the \"Disrupting the Nether\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Nether Disruptor 5 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Nether Disruptor on the Broken Shore 5 times |achieve 11737 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _Disrupting the Nether_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Good Suramaritan",{
 condition_end="achieved(11124)",
 author="support@zygorguides.com",
@@ -4604,6 +4766,25 @@ step
 _Congratulations!_
 You have earned the _Insurrection_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\It'll Nether Happen",{
+condition_end="achieved(11738)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Nether","Happen"},
+description="This guide will walk you through completing the \"It'll Nether Happen\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Nether Disruptor 50 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Nether Disruptor on the Broken Shore 50 times |achieve 11738 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _It'll Nether Happen_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Level 110",{
 condition_end="achieved(10671)",
 author="support@zygorguides.com",
@@ -4796,6 +4977,25 @@ step
 _Congratulations!_
 You have earned the _Pillars of Creation_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Take Command",{
+condition_end="achieved(11735)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Take","Command"},
+description="This guide will walk you through completing the \"Assume Command\" Achievement.",
+},[[
+step
+For this achievement, you will need to contribute to the Command Center 5 times
+|tip Each contribution requires 100 Legionfall War Supplies.
+|tip Legionfall War Supplies can be obtained through world quests, Class Order Hall missions, rare spawns, and treasures on the Broken Shore.
+click Legionfall Construction Table
+Contribute to the Command Center on the Broken Shore 5 times |achieve 11735 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _Take Command_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Tehd & Marius' Excellent Adventure",{
 condition_end="achieved(11186)",
 author="support@zygorguides.com",
@@ -4857,6 +5057,26 @@ step
 _Congratulations!_
 You have earned the _That's Val'sharah Folks!_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\They See Me Rolling",{
+condition_end="achieved(11607)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+keywords={"They","See","Me","Rolling"},
+description="This guide will walk you through completing the \"They See Me Rolling\" Achievement.",
+},[[
+step
+This achievement is earned by delivering a Barrel of Storm Brew without taking any damage
+|tip This must be completed during the world quest "Rolling Thunder."
+|tip Use our world quest guide to complete this quest.
+|tip Generally speaking, stay to the left side of the path to avoid most of the riders.
+Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+step
+_Congratulations!_
+You have earned the _They See Me Rolling_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life",{
 condition_end="achieved(11189)",
 author="support@zygorguides.com",
@@ -5941,6 +6161,24 @@ step
 _Congratulations!_
 You have earned the _You Ruined Everything!_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Reputation\\Legion\\Armies of Legionfall",{
+condition_end="achieved(11796)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Armies","Legionfall"},
+description="This guide will walk you through completing the \"Armies of Legionfall\" Achievement.",
+},[[
+step
+For this achievement, you will need to become _Exalted_ with the _Armies of Legionfall_
+|tip Refer to the Armies of Legionfall reputation guide and complete World Quests in Suramar to accomplish this.
+Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Alliance Reputations Guides\\Legion\\Armies of Legionfall"
+Become _Exalted_ with the _Armies of Legionfall_ |achieve 11796
+step
+_Congratulations!_
+You have earned _Armies of Legionfall_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Reputation\\Legion\\Broken Isles Diplomat",{
 condition_end="achieved(10672)",
 author="support@zygorguides.com",

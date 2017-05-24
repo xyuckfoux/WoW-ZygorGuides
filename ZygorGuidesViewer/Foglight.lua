@@ -2012,10 +2012,14 @@ Foglight.data = {
     {'Interface\\WorldMap\\Valsharah\\GLOAMINGREEF',239,301,136,274},
   },
   ['BrokenShore']={
-    {'Interface\\WorldMap\\BrokenShore\\THELOSTTEMPLE',337,289,613,126},
-    {'Interface\\WorldMap\\BrokenShore\\TOMBOFSARGERAS',414,281,373,0},
-    {'Interface\\WorldMap\\BrokenShore\\THEBLACKCITY',478,328,257,95},
-    {'Interface\\WorldMap\\BrokenShore\\BROKENSHORESOUTH',500,350,224,275}, -- guesstimate
+    {'Interface\\WorldMap\\BrokenShore\\THELOSTTEMPLE',308,244,632,169},
+    {'Interface\\WorldMap\\BrokenShore\\FELRAGESTRAND',332,276,596,100},
+    {'Interface\\WorldMap\\BrokenShore\\TOMBOFSARGERAS',312,301,500,0},
+    {'Interface\\WorldMap\\BrokenShore\\THEWEEPINGTERRACE',276,213,350,13},
+    {'Interface\\WorldMap\\BrokenShore\\BROKENVALLEY',338,322,254,84},
+    {'Interface\\WorldMap\\BrokenShore\\SOULRUIN',338,270,389,180},
+    {'Interface\\WorldMap\\BrokenShore\\DEADWOODLANDING',182,245,220,260},
+    {'Interface\\WorldMap\\BrokenShore\\DELIVERANCEPOINT',387,314,312,302},
   },
 
 }

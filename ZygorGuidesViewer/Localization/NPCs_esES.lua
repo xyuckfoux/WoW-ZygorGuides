@@ -7748,4 +7748,8 @@ ZygorGuidesViewer_L("NPCs", "esES", function() return {
 [117709]="Lady S'theno|",
 [117481]="Lady S'theno|",
 [103732]="Tylos Darksight|",
+[120085]="Champion Aquaclease|",
+[119944]="Lasan Skyhorn|",
+[119676]="Lasan Skyhorn|",
+[119184]="Tehd Shoemaker|",
 } end)

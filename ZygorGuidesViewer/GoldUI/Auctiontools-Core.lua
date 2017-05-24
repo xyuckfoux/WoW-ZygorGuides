@@ -629,7 +629,6 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 
 		if ZGV.DEV then
 			tooltip:AddDoubleLine("  STATUSNAME:",statusName)
-			tooltip:AddDoubleLine("  ITEMID:",itemId)
 			tooltip:AddDoubleLine("  STAG:",(priceStatus.stagnant and "yes" or "no"))
 		end
 

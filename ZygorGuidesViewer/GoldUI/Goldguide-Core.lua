@@ -202,19 +202,29 @@ function Goldguide:Update()
 				resultstatus = L["gold_gathering_no_results"]
 			else
 				local type = Goldguide.Gathering_Frame.TypeDropdown:GetCurrentSelectedItem():GetText()
-				local level = ZGV:GetSkill(type).level
-				if level==0 then
-					local profstrings = "" 
-					local gatheringprofs={herbalism="Herbalism",mining="Mining",skinning="Skinning",fishing="Fishing",enchanting="Enchanting"}
+				local profstrings = "" 
+				local gatheringprofs={herbalism="Herbalism",mining="Mining",skinning="Skinning",fishing="Fishing",enchanting="Enchanting"}
+				if type~="All" then
+					local level = ZGV:GetSkill(type).level
+					if level==0 then
+						for k,prof in pairs(gatheringprofs) do
+							local skill=ZGV:GetSkill(prof).level
+							if skill>0 then 
+								profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,skill)
+							end
+						end
+						resultstatus = L["gold_gathering_error_one_noskillin"]:format(type)..profstrings
+					else
+						resultstatus = L["gold_gathering_error_one_noresults"]:format(type)
+					end
+				else
 					for k,prof in pairs(gatheringprofs) do
 						local skill=ZGV:GetSkill(prof).level
 						if skill>0 then 
 							profstrings = profstrings .. "\n" .. L["gold_gathering_error_prof"]:format(prof,skill)
 						end
 					end
-					resultstatus = L["gold_gathering_error_one_noskillin"]:format(type)..profstrings
-				else
-					resultstatus = L["gold_gathering_error_one_noresults"]:format(type)
+					resultstatus = L["gold_gathering_error_one_nothing"]..profstrings
 				end
 			end
 		end
@@ -685,7 +695,7 @@ function Goldguide.Common:GetSmartProfitPerHour()
 end
 
 function Goldguide.Common:CalculateDetails(refresh)
-	if self.calculated_details and not refresh then return self.calculated_details end
+	if self.calculated_details and not refresh and not self.needsRecalc then return self.calculated_details end
 	self.needsRecalc = false
 
 	local dyna_title = {}
@@ -818,7 +828,7 @@ function Goldguide.Common:CalculateDetails(refresh)
 			if a.is_lively and b.is_lively then return a.profit>b.profit
 			elseif a.is_lively~=b.is_lively then return a.is_lively
 			elseif a.profit~=b.profit then return a.profit>b.profit
-			else return a[1]>b[1] end  -- last: by id
+			else return a[1] and b[1] and a[1]>b[1] end  -- last: by id
 		end
 
 		GOODITEMS=good_items

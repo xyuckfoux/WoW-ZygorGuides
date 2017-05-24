@@ -753,7 +753,7 @@ If you're new to the guides, or have only started using them on this character, 
 		['opt_autobuy'] = "Automatically buy guide items",				['opt_autobuy_desc'] = "Automatically buy the items in the current step of your guide when the vendor is opened.\n|cffffaa88Will not buy any items if you don't have enough money for all of them.",
 		['opt_autobuyframe'] = "Confirm before buying",				['opt_autobuyframe_desc'] = "Show the confirm window when current step is to purchase crafting materials and a vendor with the materials is opened.",
 		['opt_showgreyvalue'] = "Show value of grays",				['opt_showgreyvalue_desc'] = "Show window to view value of current gray items.",
-		['opt_showgreysellbutton'] = "Show vendor button",			['opt_showgreysellbutton_desc'] = "Show the button to automatically sell gray items in the vendor window.",
+		['opt_showgreysellbutton'] = "Enable \"Sell Grays\" button",			['opt_showgreysellbutton_desc'] = "Show a button to automatically sell gray items in the vendor window.",
 		['opt_confirm_selling'] = "Confirm before selling",
 		
 		['opt_analyzereps'] = "Detailed reputation gains",			['opt_analyzereps_desc'] = "Display verbose reputation gain messages in chat, showing percentage gained and next standing.",
@@ -1101,6 +1101,8 @@ If you're new to the guides, or have only started using them on this character, 
 	 ['pointer_arrowmenu_route_est'] = "  |cffccddeeEstimated time: |r%d:%02d",
 	 ['pointer_arrowmenu_route_retry'] = "Re-check route",
 	 ['pointer_arrowmenu_route_retry_desc'] = "Make sure this is still the best possible route.",
+
+	 ['pointer_arrow_noflightdata'] = "|cff88bbff(Flight connections unknown. Attempting best route.)|r",
 
 	 ['pointer_close_map'] = "(close map)",
 
@@ -1859,6 +1861,7 @@ If you're new to the guides, or have only started using them on this character, 
 	["gold_gathering_error_one_noskillin"] = "You have not learned %s.\n\nYour gathering professions are:",
 	["gold_gathering_error_one_lowskill"] = "Your skill in %s (%d) is too low.\nThere are no profitable routes for that skill level.",
 	["gold_gathering_error_one_noresults"] = "No gathering routes for %s were found to be profitable at this moment.",
+	["gold_gathering_error_one_nothing"] = "No gathering routes for your professions were found to be profitable at this moment.\n\nYour gathering professions are:",
 	["gold_gathering_error_prof"] = "%s (%d)",
 
 	["gold_farming_error_noresults"] = "No farmable items were found for your level.",

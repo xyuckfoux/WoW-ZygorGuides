@@ -1,5 +1,5 @@
-## Interface: 70200
-## Title: ZGV Legion Content Branch
+## Interface: 70100
+## Title: ZGV-20170203-findnearest
 ## Notes: Free multi-purpose leveling guide viewer.|n|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
 ## Author: Sinus Pi for Zygor Guides
 ## DefaultState: enabled
@@ -12,7 +12,7 @@
 ## X-eMail: zygor@zygorguides.com
 ## X-Website: http://zygorguides.com/
 ## X-License: GPL
-## Version: 6.0
+## Version: 6.1
 
 Libs\Libs.xml
 

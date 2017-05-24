@@ -956,6 +956,18 @@ function ZGV:Options_DefineOptionTables()
 		})
 		AddOptionSep()
 
+		AddOption('antspacing',{
+			type = 'toggle',
+			get = function() return ZGV.db.profile.antspacing==100 end,
+			set = function(i,v) 
+				local vol=v and 100 or 0
+				Setter_Simple(i,vol)  self.Pointer:SetAntSpacing(vol) 
+				--self:ShowWaypoints() 
+			end,
+			_default = 100
+		})
+
+
 		--[[ hidden --]] AddOption('corpsearrow',{
 			type = 'toggle',
 			disabled = function() return self.db.profile.waypointaddon=="none" end,
@@ -2601,14 +2613,6 @@ function ZGV:Options_DefineOptionTables()
 						colortable.r,colortable.g,colortable.b,colortable.a,colortable.alpha = r,g,b,a,a
 					end
 				end
-
-				AddOption('antspacing',{
-					type = 'select',
-					disabled = function() return self.db.profile.waypointaddon~="internal" and self.db.profile.waypointaddon~="tomtom" end,
-					values={ [0]=L["opt_antspacing_0"], [50]=L["opt_antspacing_yd"]:format(50), [100]=L["opt_antspacing_yd_def"]:format(100), [200]=L["opt_antspacing_yd"]:format(200), [300]=L["opt_antspacing_yd"]:format(300) },
-					set = function(i,v) Setter_Simple(i,v)  self.Pointer:SetAntSpacing(v) self:ShowWaypoints() end,
-					_default = 100
-				})
 
 				AddOption('antspeed',{
 					type = 'select',

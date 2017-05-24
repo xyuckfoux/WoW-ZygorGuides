@@ -248,18 +248,18 @@ function Poi.Waypoint_GetTooltipData(way)
 	end
 
 	local currencytooltip = {}
-	if newpoi.poicurrency and #newpoi.poicurrency>0 and (newpoi.poitype=="treasure" or newpoi.poitype=="rare") then
+	if newpoi.poicurrencydata and #newpoi.poicurrencydata>0 and (newpoi.poitype=="treasure" or newpoi.poitype=="rare") then
 		table.insert(currencytooltip,"|cffffffffCurrency:")
 
-		for _,currency in pairs(newpoi.poicurrency) do
+		for _,currency in pairs(newpoi.poicurrencydata) do
 			table.insert(currencytooltip,{text="|cffffffff".."|T"..currency.icon..":0|t "..currency.type})
 		end
 		table.insert(currencytooltip,"|cffffffff|r")
 	end
-	if newpoi.poicurrency and #newpoi.poicurrency>0 and (newpoi.poitype=="battlepet") then
+	if newpoi.poicurrencydata and #newpoi.poicurrencydata>0 and (newpoi.poitype=="battlepet") then
 		local data = {}
 
-		for _,currency in pairs(newpoi.poicurrency) do
+		for _,currency in pairs(newpoi.poicurrencydata) do
 			table.insert(data,"|cffffffff"..(currency.value and currency.value.." " or "").."|T"..currency.icon..":0|t")
 		end
 		table.insert(currencytooltip,"|cffffffffCost: "..table.concat(data,", ").."|cffffffff|r")

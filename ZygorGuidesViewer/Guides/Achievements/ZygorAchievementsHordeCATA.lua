@@ -7094,7 +7094,7 @@ learn Gigantic Feast##58527 |use Recipe: Gigantic Feast##43505
 learn Small Feast##58528 |use Recipe: Small Feast##43506
 learn Fish Feast##57423 |use Recipe: Fish Feast##43017
 step
-You can either _purchase_ these items from the Acution House or farm them
+You can either _purchase_ these items from the Auction House or farm them
 collect 1 Barrelhead Goby##41812
 collect 4 Bonescale Snapper##41808
 collect 5 Chilled Meat##43013
@@ -7379,7 +7379,7 @@ collect 1 Recipe: Delicious Chocolate Cake##33925 |n
 learn Stormchops##43758 |use Recipe: Stormchops##33871
 learn Delicious Chocolate Cake##43779 |use Recipe: Delicious Chocolate Cake##33925
 step
-You can either _purchase_ these items from the Acution House or farm them
+You can either _purchase_ these items from the Auction House or farm them
 collect 8 Small Eggs##6889
 collect 2 Buzzard Meat##27671
 collect 2 Clefthoof Meat##27678

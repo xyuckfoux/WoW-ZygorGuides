@@ -19,7 +19,6 @@ step
 	|poi_rare Amaukwa
 	|poilvl 91
 	|poispot Shadowmoon Valley D 37.20,36.40
-	|poitype rare
 	|poiquest 33061
 	|poiitem 109060
 	|poicurrency GR
@@ -37,7 +36,6 @@ step
 	|poi_rare Aqualir
 	|poilvl 101
 	|poispot Shadowmoon Valley D 50.80,78.80
-	|poitype rare
 	|poiquest 37356
 	|poiitem 119387
 	|poiitem 120945
@@ -50,7 +48,6 @@ step
 	|poi_rare Avalanche
 	|poilvl 100
 	|poispot Shadowmoon Valley D 67.8,84.9
-	|poitype rare
 	|poiquest 37410
 	|poiitem 119400
 	|poiitem 120945
@@ -64,7 +61,6 @@ step
 	|poi_rare Ba'ruun
 	|poilvl 91
 	|poispot Shadowmoon Valley D 52.80,16.80
-	|poitype rare
 	|poiquest 35731
 	|poiitem 113540
 	|poicurrency GR
@@ -77,7 +73,6 @@ step
 	|poi_rare Brambleking Fili
 	|poilvl 100
 	|poispot Shadowmoon Valley D 45.0,77.0
-	|poitype rare
 	|poiquest 33383
 	|poiitem 117551
 	|poiitem 120945
@@ -87,7 +82,6 @@ step
 	|poi_rare Dark Emanation
 	|poilvl 90
 	|poispot Shadowmoon Valley D 48.60,43.60
-	|poitype rare
 	|poiquest 33064
 	|poiitem 109075
 	|poicurrency GR
@@ -101,7 +95,6 @@ step
 	|poi_rare Darkmaster Go'vid
 	|poilvl 90
 	|poispot Shadowmoon Valley D 38.7,83.6
-	|poitype rare
 	|poiquest 35448
 	|poiitem 113548
 	|poicurrency GR
@@ -113,7 +106,6 @@ step
 	|poi_rare Darktalon
 	|poilvl 91
 	|poispot Shadowmoon Valley D 49.60,42.00
-	|poitype rare
 	|poiquest 35555
 	|poiitem 113541
 	|poicurrency GR
@@ -125,7 +117,6 @@ step
 	|poi_rare Demidos
 	|poilvl 103
 	|poispot Shadowmoon Valley D 46.00,71.60
-	|poitype rare
 	|poiquest 37351
 	|poiitem 119377
 	|poiitem 119431
@@ -139,7 +130,6 @@ step
 	|poi_rare Enavra
 	|poilvl 91
 	|poispot Shadowmoon Valley D 67.80,63.80
-	|poitype rare
 	|poiquest 35688
 	|poiitem 113556
 	|poicurrency GR
@@ -151,7 +141,6 @@ step
 	|poi_rare Faebright
 	|poilvl 91
 	|poispot Shadowmoon Valley D 61.60,61.80
-	|poitype rare
 	|poiquest 35725
 	|poiitem 113557
 	|poicurrency GR
@@ -163,7 +152,6 @@ step
 	|poi_rare Hypnocroak
 	|poilvl 91
 	|poispot Shadowmoon Valley D 37.40,48.80
-	|poitype rare
 	|poiquest 35558
 	|poiitem 113631
 	|poicurrency GR
@@ -174,7 +162,6 @@ step
 	|poi_rare Insha'tar
 	|poilvl 91
 	|poispot Shadowmoon Valley D 57.40,48.40
-	|poitype rare
 	|poiquest 35909
 	|poiitem 113571
 	|poicurrency GR
@@ -184,7 +171,6 @@ step
 	|poi_rare Killmaw
 	|poilvl 91
 	|poispot Shadowmoon Valley D 40.80,44.40
-	|poitype rare
 	|poiquest 33043
 	|poiitem 109078
 	|poicurrency GR
@@ -194,7 +180,6 @@ step
 	|poi_rare Ku'targ the Voidseer
 	|poilvl 91
 	|poispot Shadowmoon Valley D 32.20,35.00
-	|poitype rare
 	|poiquest 33039
 	|poiitem 109061
 	|poicurrency GR
@@ -205,7 +190,6 @@ step
 	|poi_rare Lady Temptessa
 	|poilvl 101
 	|poispot Shadowmoon Valley D 48.00,77.60
-	|poitype rare
 	|poiquest 37355
 	|poiitem 119360
 	|poiitem 120945
@@ -216,7 +200,6 @@ step
 	|poi_rare Leaf-Reader Kurri
 	|poilvl 91
 	|poispot Shadowmoon Valley D 37.60,14.60
-	|poitype rare
 	|poiquest 33055
 	|poiitem 108907
 	|poicurrency GR
@@ -227,7 +210,6 @@ step
 	|poi_rare Mad King Sporeon
 	|poilvl 91
 	|poispot Shadowmoon Valley D 45.00,20.90
-	|poitype rare
 	|poiquest 35906
 	|poiitem 113561
 	|poicurrency GR
@@ -238,7 +220,6 @@ step
 	|poi_rare Malgosh Shadowkeeper
 	|poilvl 100
 	|poispot Shadowmoon Valley D 29.60,50.80
-	|poitype rare
 	|poiquest 37357
 	|poiitem 119369
 	|poiitem 120945
@@ -251,7 +232,6 @@ step
 	|poi_rare Master Sergeant Milgra
 	|poilvl 101
 	|poispot Shadowmoon Valley D 51.80,79.20
-	|poitype rare
 	|poiquest 37353
 	|poiitem 119368
 	|poiitem 120945
@@ -262,7 +242,6 @@ step
 	|poi_rare Morva Soultwister
 	|poilvl 90
 	|poispot Shadowmoon Valley D 38.60,70.20
-	|poitype rare
 	|poiquest 35523
 	|poiitem 113559
 	|poicurrency GR
@@ -272,7 +251,6 @@ step
 	|poi_rare Mother Om'ra
 	|poilvl 91
 	|poispot Shadowmoon Valley D 44.00,57.60
-	|poitype rare
 	|poiquest 33642
 	|poiitem 113527
 	|poiitem 119449
@@ -284,7 +262,6 @@ step
 	|poi_rare Nagidna
 	|poilvl 100
 	|poispot Shadowmoon Valley D/0 60.8,89.9
-	|poitype rare
 	|poiquest 37409
 	|poiitem 119364
 	|poiitem 120945
@@ -297,7 +274,6 @@ step
 	|poi_rare Quartermaster Hershak
 	|poilvl 101
 	|poispot Shadowmoon Valley D 50.20,72.40
-	|poitype rare
 	|poiquest 37352
 	|poiitem 119382
 	|poiitem 120945
@@ -309,7 +285,6 @@ step
 	|poi_rare Rai'vosh
 	|poilvl 91
 	|poispot Shadowmoon Valley D 48.60,22.60
-	|poitype rare
 	|poiquest 35553
 	|poiitem 113542
 	|poicurrency GR
@@ -320,7 +295,6 @@ step
 	|poi_rare Rockhoof
 	|poilvl 91
 	|poispot Shadowmoon Valley D 53.00,50.60
-	|poitype rare
 	|poiquest 34068
 	|poiitem 109077
 	|poicurrency GR
@@ -330,7 +304,6 @@ step
 	|poi_rare Shadowspeaker Niir
 	|poilvl 101
 	|poispot Shadowmoon Valley D 48.20,81.00
-	|poitype rare
 	|poiquest 37354
 	|poiitem 119396
 	|poiitem 120945
@@ -341,7 +314,6 @@ step
 	|poi_rare Shinri
 	|poilvl 92
 	|poispot Shadowmoon Valley D 61.00,55.20
-	|poitype rare
 	|poiquest 35732
 	|poiitem 113543
 	|poicurrency GR
@@ -351,7 +323,6 @@ step
 	|poi_rare Slivermaw
 	|poilvl 100
 	|poispot Shadowmoon Valley D 61.7,89.0
-	|poitype rare
 	|poiquest 37411
 	|poiitem 119411
 	|poiitem 120945
@@ -363,7 +334,6 @@ step
 	|poi_rare Sneevel
 	|poilvl 92
 	|poispot Shadowmoon Valley D 27.60,43.60
-	|poitype rare
 	|poiquest 36880
 	|poiitem 118734
 	|poicurrency GR
@@ -374,7 +344,6 @@ step
 	|poi_rare Veloss
 	|poilvl 91
 	|poispot Shadowmoon Valley D 21.60,21.00
-	|poitype rare
 	|poiquest 33640
 	|poiitem 108906
 	|poicurrency GR
@@ -386,7 +355,6 @@ step
 	|poi_rare Venomshade
 	|poilvl 91
 	|poispot Shadowmoon Valley D 54.60,70.60
-	|poitype rare
 	|poiquest 33643
 	|poiitem 108957
 	|poicurrency GR
@@ -396,7 +364,6 @@ step
 	|poi_rare Voidseer Kalurg
 	|poilvl 91
 	|poispot Shadowmoon Valley D 32.60,41.40
-	|poitype rare
 	|poiquest 35847
 	|poiitem 109074
 	|poicurrency GR
@@ -410,7 +377,6 @@ step
 	|poi_rare Yggdrel
 	|poilvl 91
 	|poispot Shadowmoon Valley D 48.80,66.40
-	|poitype rare
 	|poiquest 33389
 	|poiitem 113570
 	|poicurrency GR
@@ -421,7 +387,6 @@ step
 	|poi_rare Pale Fishmonger
 	|poilvl 92
 	|poispot Frostfire Ridge 28.29,66.63
-	|poitype rare
 	|poiquest 34470
 	|poiitem 111666
 	|poiitem 109142
@@ -434,7 +399,6 @@ step
 	|poi_rare Ak'ox the Slaughterer
 	|poilvl 100
 	|poispot Frostfire Ridge 88.60,57.40
-	|poitype rare
 	|poiquest 37525
 	|poiitem 119365
 	|poiitem 120945
@@ -446,7 +410,6 @@ step
 	|poi_rare Breathless
 	|poilvl 90
 	|poispot Frostfire Ridge 27.40,50.00
-	|poitype rare
 	|poiquest 34497
 	|poiitem 111476
 	|poicurrency GR
@@ -456,7 +419,6 @@ step
 	|poi_rare Broodmother Reeg'ak
 	|poilvl 92
 	|poispot Frostfire Ridge 66.40,31.40
-	|poitype rare
 	|poiquest 33843
 	|poiitem 111533
 	|poicurrency GR
@@ -468,7 +430,6 @@ step
 	|poi_rare Canyon Icemother
 	|poilvl 91
 	|poispot Frostfire Ridge 34.00,23.20
-	|poitype rare
 	|poiquest 32941
 	|poiitem 101436
 	|poicurrency GR
@@ -478,7 +439,6 @@ step
 	|poi_rare Chillfang
 	|poilvl 90
 	|poispot Frostfire Ridge 41.20,68.20
-	|poitype rare
 	|poiquest 34843
 	|poiitem 111953
 	|poicurrency GR
@@ -490,7 +450,6 @@ step
 	|poi_rare Cindermaw
 	|poilvl 90
 	|poispot Frostfire Ridge 40.40,47.00
-	|poitype rare
 	|poiquest 33014
 	|poiitem 111490
 	|poicurrency GR
@@ -502,7 +461,6 @@ step
 	|poi_rare Coldstomp the Griever
 	|poilvl 91
 	|poispot Frostfire Ridge 25.40,55.00
-	|poitype rare
 	|poiquest 34129
 	|poiitem 112066
 	|poicurrency GR
@@ -512,7 +470,6 @@ step
 	|poi_rare Coldtusk
 	|poilvl 90
 	|poispot Frostfire Ridge 54.60,69.40
-	|poitype rare
 	|poiquest 34131
 	|poiitem 111484
 	|poicurrency GR
@@ -522,7 +479,6 @@ step
 	|poi_rare Cyclonic Fury
 	|poilvl 93
 	|poispot Frostfire Ridge 67.40,78.20
-	|poitype rare
 	|poiquest 34477
 	|poiitem 112086
 	|poicurrency GR
@@ -532,7 +488,6 @@ step
 	|poi_rare Firefury Giant
 	|poilvl 90
 	|poispot Frostfire Ridge 71.40,46.80
-	|poitype rare
 	|poiquest 33504
 	|poiitem 107661
 	|poicurrency GR
@@ -546,7 +501,6 @@ step
 	|poi_rare Giant-Slayer Kul
 	|poilvl 90
 	|poispot Frostfire Ridge 54.60,22.20
-	|poitype rare
 	|poiquest 32918
 	|poiitem 111530
 	|poicurrency GR
@@ -556,7 +510,6 @@ step
 	|poi_rare Gorg'ak the Lava Guzzler
 	|poilvl 100
 	|poispot Frostfire Ridge 70.00,36.00
-	|poitype rare
 	|poiquest 33512
 	|poiitem 111545
 	|poiitem 120945
@@ -567,7 +520,6 @@ step
 	|poi_rare Gorivax
 	|poilvl 101
 	|poispot Frostfire Ridge 38.00,14.00
-	|poitype rare
 	|poiquest 37388
 	|poiitem 119358
 	|poiitem 120945
@@ -579,7 +531,6 @@ step
 	|poi_rare Grutush the Pillager
 	|poilvl 90
 	|poispot Frostfire Ridge 38.60,63.00
-	|poitype rare
 	|poiquest 34865
 	|poiitem 112077
 	|poicurrency GR
@@ -590,7 +541,6 @@ step
 	|poi_rare Gruuk
 	|poilvl 90
 	|poispot Frostfire Ridge 50.30,52.60
-	|poitype rare
 	|poiquest 34825
 	|poiitem 111948
 	|poicurrency GR
@@ -600,7 +550,6 @@ step
 	|poi_rare Gurun
 	|poilvl 90
 	|poispot Frostfire Ridge 47.00,55.20
-	|poitype rare
 	|poiquest 34839
 	|poiitem 111955
 	|poicurrency GR
@@ -612,7 +561,6 @@ step
 	|poi_rare Hoarfrost
 	|poilvl 101
 	|poispot Frostfire Ridge 68.80,19.40
-	|poitype rare
 	|poiquest 37382
 	|poiitem 119415
 	|poiitem 120945
@@ -624,7 +572,6 @@ step
 	|poi_rare Huntmaster Kuang
 	|poilvl 92
 	|poispot Frostfire Ridge 58.60,34.20
-	|poitype rare
 	|poiquest 34130
 	|poicurrency GR
 	kill Giantslayer Kimla##78144
@@ -639,7 +586,6 @@ step
 	|poi_rare Jabberjaw
 	|poilvl 101
 	|poispot Frostfire Ridge 48.20,23.40
-	|poitype rare
 	|poiquest 37386
 	|poiitem 119390
 	|poiitem 120945
@@ -650,7 +596,6 @@ step
 	|poi_rare Jehil the Climber
 	|poilvl 92
 	|poispot Frostfire Ridge 61.60,26.40
-	|poitype rare
 	|poiquest 34708
 	|poiitem 112078
 	_Go up_ the ramp |goto Frostfire Ridge/0 61.0,26.7
@@ -662,7 +607,6 @@ step
 	|poi_rare Moltnoma
 	|poilvl 101
 	|poispot Frostfire Ridge 43.00,21.00
-	|poitype rare
 	|poiquest 37387
 	|poiitem 119356
 	|poiitem 120945
@@ -676,7 +620,6 @@ step
 	|poi_rare Mother of Goren
 	|poilvl 101
 	|poispot Frostfire Ridge 72.20,22.80
-	|poitype rare
 	|poiquest 37381
 	|poiitem 119376
 	|poiitem 120945
@@ -688,7 +631,6 @@ step
 	|poi_rare Ogom the Mangler
 	|poilvl 100
 	|poispot Frostfire Ridge 83.60,47.20
-	|poitype rare
 	|poiquest 37402
 	|poiitem 119366
 	|poiitem 120945
@@ -699,7 +641,6 @@ step
 	|poi_rare Primalist Mur'og
 	|poilvl 90
 	|poispot Frostfire Ridge 36.80,34.00
-	|poitype rare
 	|poiquest 33938
 	|poiitem 111576
 	|poicurrency GR
@@ -711,7 +652,6 @@ step
 	|poi_rare Ragore Driftstalker
 	|poilvl 100
 	|poispot Frostfire Ridge 86.60,48.80
-	|poitype rare
 	|poiquest 37401
 	|poiitem 119359
 	|poiitem 120945
@@ -722,7 +662,6 @@ step
 	|poi_rare Scout Goreseeker
 	|poilvl 93
 	|poispot Frostfire Ridge 76.40,63.40
-	|poitype rare
 	|poiquest 34132
 	|poiitem 112094
 	|poicurrency GR
@@ -733,7 +672,6 @@ step
 	|poi_rare Slogtusk the Corpse-Eater
 	|poilvl 101
 	|poispot Frostfire Ridge 45.00,15.00
-	|poitype rare
 	|poiquest 37385
 	|poiitem 119362
 	|poiitem 120945
@@ -744,7 +682,6 @@ step
 	|poi_rare Son of Goramal
 	|poilvl 101
 	|poispot Frostfire Ridge 38.20,16.00
-	|poitype rare
 	|poiquest 37383
 	|poiitem 119399
 	|poiitem 120945
@@ -755,7 +692,6 @@ step
 	|poi_rare The Beater
 	|poilvl 90
 	|poispot Frostfire Ridge 26.80,31.60
-	|poitype rare
 	|poiquest 34133
 	|poiitem 111475
 	|poicurrency GR
@@ -765,7 +701,6 @@ step
 	|poi_rare The Bone Crawler
 	|poilvl 101
 	|poispot Frostfire Ridge 72.20,33.00
-	|poitype rare
 	|poiquest 34361
 	|poiitem 111534
 	|poiitem 120945
@@ -776,7 +711,6 @@ step
 	|poi_rare Tor'goroth
 	|poilvl 101
 	|poispot Frostfire Ridge 43.60,09.40
-	|poitype rare
 	|poiquest 37384
 	|poiitem 119379
 	|poiitem 120945
@@ -788,7 +722,6 @@ step
 	|poi_rare Ug'lok the Frozen
 	|poilvl 100
 	|poispot Frostfire Ridge 40.60,12.40
-	|poitype rare
 	|poiquest 34522
 	|poiitem 119409
 	|poiitem 120945
@@ -800,7 +733,6 @@ step
 	|poi_rare Valkor
 	|poilvl 101
 	|poispot Frostfire Ridge 72.40,24.20
-	|poitype rare
 	|poiquest 37378
 	|poiitem 119416
 	|poiitem 120945
@@ -811,7 +743,6 @@ step
 	|poi_rare Vrok the Ancient
 	|poilvl 103
 	|poispot Frostfire Ridge 70.60,39.00
-	|poitype rare
 	|poiquest 37379
 	|poiitem 119416
 	|poiitem 120945
@@ -825,7 +756,6 @@ step
 	|poi_rare Yaga the Scarred
 	|poilvl 92
 	|poispot Frostfire Ridge/0 40.6,27.6
-	|poitype rare
 	|poiquest 34559
 	|poiitem 111477
 	|poicurrency GR
@@ -835,7 +765,6 @@ step
 	|poi_rare Earthshaker Holar
 	|poilvl 100
 	|poispot Frostfire Ridge 84.60,46.80
-	|poitype rare
 	|poiquest 37403
 	|poiitem 119374
 	|poiitem 120945
@@ -846,7 +775,6 @@ step
 	|poi_rare Gibblette the Cowardly
 	|poilvl 101
 	|poispot Frostfire Ridge 66.60,25.40
-	|poitype rare
 	|poiquest 37380
 	|poiitem 119349
 	|poiitem 120945
@@ -861,7 +789,6 @@ step
 	|poi_rare Kaga the Ironbender
 	|poilvl 100
 	|poispot Frostfire Ridge 86.80,45.00
-	|poitype rare
 	|poiquest 37404
 	|poiitem 119372
 	|poiitem 120945
@@ -873,7 +800,6 @@ step
 	|poi_rare Alkali
 	|poilvl 100
 	|poispot Gorgrond 58.60,41.20
-	|poitype rare
 	|poiquest 37371
 	|poiitem 119361
 	|poiitem 120945
@@ -886,7 +812,6 @@ step
 	|poi_rare Bashiok
 	|poilvl 92
 	|poispot Gorgrond 40.00,79.00
-	|poitype rare
 	|poiquest 35335
 	|poiitem 118222
 	|poicurrency GR
@@ -898,7 +823,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 69.20,44.60
-	|poitype rare
 	|poiquest 37369
 	|poiitem 119357
 	|poiitem 120945
@@ -911,7 +835,6 @@ step
 	|poi_rare Berthora
 	|poilvl 92
 	|poispot Gorgrond 39.40,74.60
-	|poitype rare
 	|poiquest 36597
 	|poiitem 118232
 	|poicurrency GR
@@ -922,7 +845,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 46.00,33.60
-	|poitype rare
 	|poiquest 37368
 	|poiitem 119228
 	|poiitem 120945
@@ -933,7 +855,6 @@ step
 	|poi_rare Char the Burning
 	|poilvl 94
 	|poispot Gorgrond 53.40,44.60
-	|poitype rare
 	|poiquest 35503
 	|poiitem 118212
 	|poicurrency GR
@@ -944,7 +865,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 48.20,21.00
-	|poitype rare
 	|poiquest 37362
 	|poiitem 119224
 	|poiitem 120945
@@ -955,7 +875,6 @@ step
 	|poi_rare Depthroot
 	|poilvl 100
 	|poispot Gorgrond 72.6,40.9
-	|poitype rare
 	|poiquest 37370
 	|poiitem 119406
 	|poiitem 120945
@@ -967,7 +886,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 50.00,23.80
-	|poitype rare
 	|poiquest 37366
 	|poiitem 119225
 	|poiitem 120945
@@ -978,7 +896,6 @@ step
 	|poi_rare Firestarter Grash
 	|poilvl 100
 	|poispot Gorgrond 58.00,36.40
-	|poitype rare
 	|poiquest 37373
 	|poiitem 119381
 	|poiitem 120945
@@ -990,7 +907,6 @@ step
 	|poi_rare Fossilwood the Petrified
 	|poilvl 92
 	|poispot Gorgrond 57.40,68.60
-	|poitype rare
 	|poiquest 36387
 	|poiitem 118221
 	|poicurrency GR
@@ -1000,7 +916,6 @@ step
 	|poi_rare Gelgor of the Blue Flame
 	|poilvl 93
 	|poispot Gorgrond 41.80,45.40
-	|poitype rare
 	|poiquest 36391
 	|poiitem 118230
 	|poicurrency GR
@@ -1013,7 +928,6 @@ step
 	|poi_rare Glut
 	|poilvl 93
 	|poispot Gorgrond 46.20,50.80
-	|poitype rare
 	|poiquest 36204
 	|poiitem 118229
 	|poicurrency GR
@@ -1023,7 +937,6 @@ step
 	|poi_rare Gnarljaw
 	|poilvl 101
 	|poispot Gorgrond/21 54.0,31.0
-	|poitype rare
 	|poiquest 37413
 	|poiitem 119397
 	|poiitem 120945
@@ -1038,7 +951,6 @@ step
 	|poi_rare Greldrok the Cunning
 	|poilvl 93
 	|poispot Gorgrond 46.80,43.20
-	|poitype rare
 	|poiquest 36186
 	|poiitem 118210
 	|poicurrency GR
@@ -1048,7 +960,6 @@ step
 	|poi_rare Grove Warden Yal
 	|poilvl 100
 	|poispot Gorgrond 59.7,42.9
-	|poitype rare
 	|poiquest 37375
 	|poiitem 119414
 	|poiitem 120945
@@ -1059,7 +970,6 @@ step
 	|poi_rare Hive Queen Skrikka
 	|poilvl 92
 	|poispot Gorgrond 52.5,70.1
-	|poitype rare
 	|poiquest 35908
 	|poiitem 118209
 	|poicurrency GR
@@ -1070,7 +980,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Gorgrond 46.1,27.2
-	|poitype rare
 	|poiquest 37365
 	|poiitem 119229
 	|poiitem 120945
@@ -1081,7 +990,6 @@ step
 	|poi_rare Hunter Bal'ra
 	|poilvl 100
 	|poispot Gorgrond 55.00,46.20
-	|poitype rare
 	|poiquest 37377
 	|poiitem 119412
 	|poiitem 120945
@@ -1093,7 +1001,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Gorgrond 47.60,30.60
-	|poitype rare
 	|poiquest 37367
 	|poiitem 119226
 	|poiitem 120945
@@ -1104,7 +1011,6 @@ step
 	|poi_rare King Slime
 	|poilvl 100
 	|poispot Gorgrond/21 42.0,75.1
-	|poitype rare
 	|poiquest 37412
 	|poiitem 119351
 	|poiitem 120945
@@ -1119,7 +1025,6 @@ step
 	|poi_rare Mandrakor
 	|poilvl 93
 	|poispot Gorgrond 50.60,53.20
-	|poitype rare
 	|poiquest 36178
 	|poiitem 118709
 	|poicurrency GR
@@ -1130,7 +1035,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 49.00,33.80
-	|poitype rare
 	|poiquest 37363
 	|poiitem 119230
 	|poiitem 120945
@@ -1141,7 +1045,6 @@ step
 	|poi_rare Mogamago
 	|poilvl 100
 	|poispot Gorgrond 61.80,39.30
-	|poitype rare
 	|poiquest 37376
 	|poiitem 119391
 	|poiitem 120945
@@ -1153,7 +1056,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 46.3,23.6
-	|poitype rare
 	|poiquest 37364
 	|poiitem 119227
 	|poiitem 120945
@@ -1164,7 +1066,6 @@ step
 	|poi_rare Mother Araneae
 	|poilvl 93
 	|poispot Gorgrond 53.40,78.20
-	|poitype rare
 	|poiquest 34726
 	|poiitem 118208
 	|poicurrency GR
@@ -1174,7 +1075,6 @@ step
 	|poi_rare Riptar
 	|poilvl 92
 	|poispot Gorgrond 37.60,81.40
-	|poitype rare
 	|poiquest 36600
 	|poiitem 118231
 	|poicurrency GR
@@ -1185,7 +1085,6 @@ step
 	|poi_rare Rolkor
 	|poilvl 93
 	|poispot Gorgrond 47.80,41.40
-	|poitype rare
 	|poiquest 36393
 	|poiitem 118211
 	|poicurrency GR
@@ -1194,7 +1093,6 @@ step
 	|poi_rare Stompalupagus
 	|poilvl 92
 	|poispot Gorgrond 54.20,72.40
-	|poitype rare
 	|poiquest 36837
 	|poiitem 118228
 	|poicurrency GR
@@ -1204,7 +1102,6 @@ step
 	|poi_rare Stomper Kreego
 	|poilvl 92
 	|poispot Gorgrond 38.20,66.20
-	|poitype rare
 	|poiquest 35910
 	|poiitem 118224
 	|poicurrency GR
@@ -1214,7 +1111,6 @@ step
 	|poi_rare Sulfurious
 	|poilvl 94
 	|poispot Gorgrond 40.20,59.60
-	|poitype rare
 	|poiquest 36394
 	|poiitem 114227
 	|poicurrency GR
@@ -1224,7 +1120,6 @@ step
 	|poi_rare Sunclaw
 	|poilvl 93
 	|poispot Gorgrond 44.60,92.20
-	|poitype rare
 	|poiquest 36656
 	|poiitem 118223
 	|poicurrency GR
@@ -1234,7 +1129,6 @@ step
 	|poi_rare Swift Onyx Flayer
 	|poilvl 100
 	|poispot Gorgrond 59.6,32.0
-	|poitype rare
 	|poiquest 37374
 	|poiitem 119367
 	|poiitem 120945
@@ -1247,7 +1141,6 @@ step
 	|poi_rare Sylldross
 	|poilvl 93
 	|poispot Gorgrond 64.00,61.80
-	|poitype rare
 	|poiquest 36794
 	|poiitem 118213
 	|poicurrency GR
@@ -1259,7 +1152,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Gorgrond 76.00,42.00
-	|poitype rare
 	|poiquest 37405
 	|poicurrency GR
 	kill Typhon##80371 |q 37405 |future |goto Gorgrond 76.00,42.00
@@ -1269,7 +1161,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Gorgrond 63.4,30.7
-	|poitype rare
 	|poiquest 37372
 	|poiitem 119395
 	|poiitem 120945
@@ -1281,7 +1172,6 @@ step
 	|poi_rare Roardan the Sky Terror (Alliance)
 	|poilvl 93
 	|poispot Gorgrond/0 53.0,63.1
-	|poitype rare
 	|poiquest 35817
 	|poiitem 113458
 	|poicurrency 
@@ -1293,7 +1183,6 @@ step
 	|poi_rare Biolante (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 60.80,54.00
-	|poitype rare
 	|poiquest 36502
 	|poicurrency
 	|poiitem 116159
@@ -1305,7 +1194,6 @@ step
 	|poi_rare Charl Doomwing (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 46.00,46.80
-	|poitype rare
 	|poiquest 35816
 	|poicurrency
 	|poiitem 113457
@@ -1317,7 +1205,6 @@ step
 	|poi_rare Crater Lord Igneous (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 42.80,59.20
-	|poitype rare
 	|poiquest 35812
 	|poicurrency
 	|poiitem 113449
@@ -1328,7 +1215,6 @@ step
 	|poi_rare Dessicus of the Dead Pools (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 40.50,51.00
-	|poitype rare
 	|poiquest 35809
 	|poicurrency
 	|poiitem 113446
@@ -1339,7 +1225,6 @@ step
 	|poi_rare Erosian the Violent (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 51.80,41.60
-	|poitype rare
 	|poiquest 35808
 	|poicurrency
 	|poiitem 113445
@@ -1350,7 +1235,6 @@ step
 	|poi_rare Fungal Praetorian (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 58.00,63.60
-	|poitype rare
 	|poiquest 35813
 	|poicurrency
 	|poiitem 113453
@@ -1361,7 +1245,6 @@ step
 	|poi_rare Khargax the Devourer (Alliance)
 	|poilvl 93
 	|poispot Gorgrond 52.40,65.80
-	|poitype rare
 	|poiquest 35820
 	|poicurrency
 	|poiitem 113461
@@ -1385,7 +1268,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 46.60,35.20
-	|poitype rare
 	|poiquest 37338
 	|poiitem 119378
 	|poiitem 120945
@@ -1398,7 +1280,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 44.00,38.00
-	|poitype rare
 	|poiquest 37339
 	|poiitem 119413
 	|poiitem 120945
@@ -1410,7 +1291,6 @@ step
 	|poi_rare Cro Fleshrender
 	|poilvl 95
 	|poispot Talador 37.3,70.5
-	|poitype rare
 	|poiquest 34165
 	|poiitem 116123
 	|poicurrency GR
@@ -1420,7 +1300,6 @@ step
 	|poi_rare Dr. Gloom
 	|poilvl 94
 	|poispot Talador 68.4,15.8
-	|poitype rare
 	|poiquest 34142
 	|poiitem 112499
 	|poicurrency GR
@@ -1430,7 +1309,6 @@ step
 	|poi_rare Echo of Murmur
 	|poilvl 95
 	|poispot Talador 34.20,57.00
-	|poitype rare
 	|poiquest 34221
 	|poiitem 113670
 	_Go right_ at the fork in the road |goto Talador/0 33.8,60.2
@@ -1441,7 +1319,6 @@ step
 	|poi_rare Felbark
 	|poilvl 95
 	|poispot Talador 50.80,83.80
-	|poitype rare
 	|poiquest 35018
 	|poiitem 112373
 	|poicurrency GR
@@ -1452,7 +1329,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 50.20,35.20
-	|poitype rare
 	|poiquest 37341
 	|poiitem 119386
 	|poiitem 120945
@@ -1463,7 +1339,6 @@ step
 	|poi_rare Frenzied Golem
 	|poilvl 95
 	|poispot Talador 46.2,54.8
-	|poitype rare
 	|poiquest 34145
 	|poiitem 113287
 	|poicurrency GR
@@ -1472,7 +1347,6 @@ step
 	|poi_rare Gennadian
 	|poilvl 94
 	|poispot Talador 67.40,80.60
-	|poitype rare
 	|poiquest 34929
 	|poiitem 116075
 	|poicurrency GR
@@ -1482,7 +1356,6 @@ step
 	|poi_rare Glimmerwing
 	|poilvl 94
 	|poispot Talador 31.80,63.80
-	|poitype rare
 	|poiquest 34189
 	|poiitem 116113
 	|poicurrency GR
@@ -1492,7 +1365,6 @@ step
 	|poi_rare Grrbrrgle
 	|poilvl 97
 	|poispot Talador 22.2,74.2
-	|poitype rare
 	|poiquest 36919
 	|poiitem 120436
 	|poicurrency GR
@@ -1506,7 +1378,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 47.60,39.00
-	|poitype rare
 	|poiquest 37340
 	|poiitem 119402
 	|poiitem 120945
@@ -1520,7 +1391,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 48.00,25.00
-	|poitype rare
 	|poiquest 37312
 	|poiitem 119403
 	|poiitem 120945
@@ -1533,7 +1403,6 @@ step
 	|poi_rare Hammertooth
 	|poilvl 94
 	|poispot Talador 62.00,46.00
-	|poitype rare
 	|poiquest 34185
 	|poiitem 116124
 	|poicurrency GR
@@ -1543,7 +1412,6 @@ step
 	|poi_rare Hen-Mother Hami
 	|poilvl 94
 	|poispot Talador 78.00,50.40
-	|poitype rare
 	|poiquest 34167
 	|poiitem 112369
 	|poicurrency GR
@@ -1553,7 +1421,6 @@ step
 	|poi_rare Kharazos the Triumphant + Galzomar + Sikthiss
 	|poilvl 95
 	|poispot Talador 56.60,63.60
-	|poitype rare
 	|poiquest 35219
 	|poiitem 116122
 	|poicurrency GR
@@ -1565,7 +1432,6 @@ step
 	|poi_rare Klikixx
 	|poilvl 95
 	|poispot Talador 66.80,85.40
-	|poitype rare
 	|poiquest 34498
 	|poiitem 116125
 	|poicurrency GR
@@ -1578,7 +1444,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Talador 33.5,37.8
-	|poitype rare
 	|poiquest 37348
 	|poiitem 119394
 	|poiitem 120945
@@ -1592,7 +1457,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Talador 33.80,37.80
-	|poitype rare
 	|poiquest 37346
 	|poiitem 119352
 	|poiitem 120945
@@ -1605,7 +1469,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 38.0,20.8
-	|poitype rare
 	|poiquest 37342
 	|poiitem 119385
 	|poiitem 120945
@@ -1616,7 +1479,6 @@ step
 	|poi_rare Lo'marg Jawcrusher
 	|poilvl 95
 	|poispot Talador 49.00,92.00
-	|poitype rare
 	|poiquest 34208
 	|poiitem 116070
 	|poicurrency GR
@@ -1628,7 +1490,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Talador 30.50,26.40
-	|poitype rare
 	|poiquest 37345
 	|poiitem 119388
 	|poiitem 120945
@@ -1641,7 +1502,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Talador 39.00,49.60
-	|poitype rare
 	|poiquest 37349
 	|poiitem 119353
 	|poiitem 120945
@@ -1652,7 +1512,6 @@ step
 	|poi_rare No'losh
 	|poilvl 95
 	|poispot Talador 86.40,30.40
-	|poitype rare
 	|poiquest 34859
 	|poiitem 116077
 	|poicurrency GR
@@ -1663,7 +1522,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Talador 31.40,47.50
-	|poitype rare
 	|poiquest 37344
 	|poiitem 119375
 	|poiitem 120945
@@ -1676,7 +1534,6 @@ step
 	|poi_rare Ra'kahn
 	|poilvl 95
 	|poispot Talador 59.50,59.60
-	|poitype rare
 	|poiquest 34196
 	|poiitem 116112
 	|poicurrency GR
@@ -1687,7 +1544,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Talador 41.00,42.00
-	|poitype rare
 	|poiquest 37347
 	|poiitem 119393
 	|poiitem 120945
@@ -1698,7 +1554,6 @@ step
 	|poi_rare Shirzir
 	|poilvl 95
 	|poispot Talador 41.80,59.40
-	|poitype rare
 	|poiquest 34671
 	|poiitem 112370
 	|poicurrency GR
@@ -1709,7 +1564,6 @@ step
 	|poi_rare Steeltusk
 	|poilvl 95
 	|poispot Talador 67.8,35.5
-	|poitype rare
 	|poiquest 36858
 	|poiitem 117562
 	|poicurrency GR
@@ -1719,7 +1573,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 46.00,27.40
-	|poitype rare
 	|poiquest 37337
 	|poiitem 119350
 	|poicurrency GR
@@ -1731,7 +1584,6 @@ step
 	|poi_rare Taladorantula
 	|poilvl 95
 	|poispot Talador 59.00,88.00
-	|poitype rare
 	|poiquest 34171
 	|poiitem 116126
 	|poicurrency GR
@@ -1742,7 +1594,6 @@ step
 	|poi_rare Talonpriest Zorkra
 	|poilvl 95
 	|poispot Talador 53.8,91.4
-	|poitype rare
 	|poiquest 34668
 	|poiitem 116110
 	|poicurrency GR
@@ -1752,7 +1603,6 @@ step
 	|poi_rare Underseer Bloodmane
 	|poilvl 94
 	|poispot Talador 63.80,20.70
-	|poitype rare
 	|poiquest 34945
 	|poiitem 112475
 	|poicurrency GR
@@ -1764,7 +1614,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Talador 36.80,41.00
-	|poitype rare
 	|poiquest 37350
 	|poiitem 119383
 	|poiitem 120945
@@ -1775,7 +1624,6 @@ step
 	|poi_rare Wandering Vindicator
 	|poilvl 94
 	|poispot Talador 69.7,33.2
-	|poitype rare
 	|poiquest 34205
 	|poiitem 112261
 	|poicurrency GR
@@ -1787,7 +1635,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Talador 38.00,14.60
-	|poitype rare
 	|poiquest 37343
 	|poiitem 119371
 	|poiitem 120945
@@ -1798,7 +1645,6 @@ step
 	|poi_rare Yazheera the Incinerator
 	|poilvl 94
 	|poispot Talador 53.80,25.80
-	|poitype rare
 	|poiquest 34135
 	|poiitem 112263
 	|poicurrency GR
@@ -1808,7 +1654,6 @@ step
 	|poi_rare Betsi Boombasket
 	|poilvl 97
 	|poispot Spires of Arak 58.20,84.60
-	|poitype rare
 	|poiquest 36291
 	|poiitem 116907
 	|poicurrency GR
@@ -1818,7 +1663,6 @@ step
 	|poi_rare Blade-Dancer Aeryx
 	|poilvl 96
 	|poispot Spires of Arak 46.80,23.00
-	|poitype rare
 	|poiquest 35599
 	|poiitem 116839
 	|poicurrency GR
@@ -1827,7 +1671,6 @@ step
 	|poi_rare Blightglow
 	|poilvl 97
 	|poispot Spires of Arak 64.00,64.80
-	|poitype rare
 	|poiquest 36283
 	|poiitem 118205
 	|poicurrency GR
@@ -1838,7 +1681,6 @@ step
 	|poi_rare Durkath Steelmaw
 	|poilvl 96
 	|poispot Spires of Arak 46.40,28.60
-	|poitype rare
 	|poiquest 36267
 	|poiitem 118198
 	|poicurrency GR
@@ -1849,7 +1691,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Spires of Arak 69.00,54.00
-	|poitype rare
 	|poiquest 37406
 	|poiitem 120945
 	|poicurrency AC
@@ -1861,7 +1702,6 @@ step
 	|poi_rare Festerbloom
 	|poilvl 96
 	|poispot Spires of Arak 54.80,39.60
-	|poitype rare
 	|poiquest 36297
 	|poiitem 118200
 	|poicurrency GR
@@ -1871,7 +1711,6 @@ step
 	|poi_rare Gaze
 	|poilvl 97
 	|poispot Spires of Arak 25.20,24.20
-	|poitype rare
 	|poiquest 36943
 	|poiitem 118696
 	|poicurrency GR
@@ -1883,7 +1722,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Spires of Arak 74.40,42.80
-	|poitype rare
 	|poiquest 37390
 	|poiitem 119404
 	|poiitem 120945
@@ -1894,7 +1732,6 @@ step
 	|poi_rare Gobblefin
 	|poilvl 97
 	|poispot Spires of Arak 33.00,59.00
-	|poitype rare
 	|poiquest 36305
 	|poiitem 116836
 	|poicurrency GR
@@ -1905,7 +1742,6 @@ step
 	|poi_rare Hermit Palefur
 	|poilvl 96
 	|poispot Spires of Arak 59.20,15.00
-	|poitype rare
 	|poiquest 36887
 	|poiitem 118279
 	|poicurrency GR
@@ -1915,7 +1751,6 @@ step
 	|poi_rare Jiasska the Sporegorger
 	|poilvl 97
 	|poispot Spires of Arak 56.60,94.60
-	|poitype rare
 	|poiquest 36306
 	|poiitem 118202
 	|poicurrency GR
@@ -1924,7 +1759,6 @@ step
 	|poi_rare Kalos the Bloodbathed
 	|poilvl 96
 	|poispot Spires of Arak 62.60,37.40
-	|poitype rare
 	|poiquest 36268
 	|poiitem 118735
 	|poicurrency GR
@@ -1934,7 +1768,6 @@ step
 	|poi_rare Mutafen
 	|poilvl 96
 	|poispot Spires of Arak 53.20,89.00
-	|poitype rare
 	|poiquest 36396
 	|poiitem 118206
 	|poicurrency GR
@@ -1944,7 +1777,6 @@ step
 	|poi_rare Nas Dunberlin
 	|poilvl 96
 	|poispot Spires of Arak 36.40,52.40
-	|poitype rare
 	|poiquest 36129
 	|poiitem 116837
 	|poicurrency GR
@@ -1954,7 +1786,6 @@ step
 	|poi_rare Oskiira the Vengeful
 	|poilvl 96
 	|poispot Spires of Arak 66.00,55.00
-	|poitype rare
 	|poiquest 36288
 	|poiitem 118204
 	|poicurrency GR
@@ -1964,7 +1795,6 @@ step
 	|poi_rare Poisonmaster Bortusk
 	|poilvl 96
 	|poispot Spires of Arak 59.40,37.40
-	|poitype rare
 	|poiquest 36279
 	|poiitem 118199
 	|poicurrency GR
@@ -1974,7 +1804,6 @@ step
 	|poi_rare Rotcap
 	|poilvl 97
 	|poispot Spires of Arak 38.40,27.80
-	|poitype rare
 	|poiquest 36470
 	|poiitem 118107
 	|poicurrency GR
@@ -1983,7 +1812,6 @@ step
 	|poi_rare Sangrikass
 	|poilvl 96
 	|poispot Spires of Arak 69.00,48.80
-	|poitype rare
 	|poiquest 36276
 	|poiitem 118203
 	|poicurrency GR
@@ -1995,7 +1823,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Spires of Arak 71.20,33.80
-	|poitype rare
 	|poiquest 37392
 	|poiitem 119363
 	|poiitem 120945
@@ -2008,7 +1835,6 @@ step
 	|poi_rare Shadowbark
 	|poilvl 96
 	|poispot Spires of Arak 52.00,35.40
-	|poitype rare
 	|poiquest 36478
 	|poiitem 118201
 	|poicurrency GR
@@ -2018,7 +1844,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Spires of Arak 51.80,07.20
-	|poitype rare
 	|poiquest 37394
 	|poiitem 119407
 	|poiitem 120945
@@ -2029,7 +1854,6 @@ step
 	|poi_rare Stonespite
 	|poilvl 96
 	|poispot Spires of Arak 33.40,22.00
-	|poitype rare
 	|poiquest 36265
 	|poiitem 116858
 	|poicurrency GR
@@ -2039,7 +1863,6 @@ step
 	|poi_rare Sunderthorn
 	|poilvl 96
 	|poispot Spires of Arak 58.60,45.20
-	|poitype rare
 	|poiquest 36298
 	|poiitem 116855
 	|poicurrency GR
@@ -2050,7 +1873,6 @@ step
 	|poi_rare Swarmleaf
 	|poilvl 97
 	|poispot Spires of Arak 52.80,54.80
-	|poitype rare
 	|poiquest 36472
 	|poiitem 116857
 	|poicurrency GR
@@ -2059,7 +1881,6 @@ step
 	|poi_rare Talonbreaker
 	|poilvl 96
 	|poispot Spires of Arak 54.60,63.20
-	|poitype rare
 	|poiquest 36278
 	|poiitem 116838
 	|poicurrency GR
@@ -2071,7 +1892,6 @@ step
 	|poi_rare Tesska the Broken
 	|poilvl 97
 	|poispot Spires of Arak 57.40,74.00
-	|poitype rare
 	|poiquest 36254
 	|poiitem 116852
 	|poicurrency GR
@@ -2081,7 +1901,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Spires of Arak 71.70,20.10
-	|poitype rare
 	|poiquest 37360
 	|poiitem 119373
 	|poiitem 120945
@@ -2094,7 +1913,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Spires of Arak 71.40,45.00
-	|poitype rare
 	|poiquest 37393
 	|poiitem 119401
 	|poiitem 120945
@@ -2105,7 +1923,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Spires of Arak 70.40,23.80
-	|poitype rare
 	|poiquest 37361
 	|poiitem 119354
 	|poiitem 120945
@@ -2118,7 +1935,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Spires of Arak 74.41,38.64
-	|poitype rare
 	|poiquest 37391
 	|poiitem 119398
 	|poiitem 120945
@@ -2129,7 +1945,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Spires of Arak 72.40,19.40
-	|poitype rare
 	|poiquest 37358
 	|poiitem 119410
 	|poiitem 120945
@@ -2141,7 +1956,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Spires of Arak 72.90,30.90
-	|poitype rare
 	|poiquest 37359
 	|poiitem 119392
 	|poiitem 120945
@@ -2153,7 +1967,6 @@ step
 	|poi_rare Ancient Blademaster
 	|poilvl 98
 	|poispot Nagrand D 84.60,53.40
-	|poitype rare
 	|poiquest 35778
 	|poiitem 116832
 	|poicurrency GR
@@ -2166,7 +1979,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 51.00,16.00
-	|poitype rare
 	|poiquest 37210
 	|poiitem 118654
 	|poicurrency GR
@@ -2178,7 +1990,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 62.60,16.80
-	|poitype rare
 	|poiquest 37211
 	|poiitem 118655
 	|poicurrency GR
@@ -2192,7 +2003,6 @@ step
 	|poi_rare Berserk T-300 Series Mark II
 	|poilvl 98
 	|poispot Nagrand D 76.9,64.4
-	|poitype rare
 	|poiquest 35735
 	|poiitem 116823
 	|poicurrency GR
@@ -2203,7 +2013,6 @@ step
 	|poi_rare Bonebreaker
 	|poilvl 100
 	|poispot Nagrand D 40.00,16.00
-	|poitype rare
 	|poiquest 37396
 	|poiitem 119370
 	|poiitem 120945
@@ -2215,7 +2024,6 @@ step
 	|poi_rare Brutag Grimblade
 	|poilvl 100
 	|poispot Nagrand D 43.00,36.40
-	|poitype rare
 	|poiquest 37400
 	|poiitem 119380
 	|poiitem 120945
@@ -2226,7 +2034,6 @@ step
 	|poi_rare Captain Ironbeard
 	|poilvl 99
 	|poispot Nagrand D 34.3,76.9
-	|poitype rare
 	|poiquest 34727
 	|poiitem 118244
 	|poiitem 116809
@@ -2240,7 +2047,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 64.20,30.00
-	|poitype rare
 	|poiquest 37221
 	|poiitem 118656
 	|poicurrency GR
@@ -2251,7 +2057,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 60.00,38.00
-	|poitype rare
 	|poiquest 37222
 	|poiitem 118657
 	|poicurrency GR
@@ -2261,7 +2066,6 @@ step
 	|poi_rare Durg Spinecrusher
 	|poilvl 100
 	|poispot Nagrand D 38.60,22.40
-	|poitype rare
 	|poiquest 37395
 	|poiitem 119405
 	|poiitem 120945
@@ -2272,7 +2076,6 @@ step
 	|poi_rare Explorer Nozzand
 	|poilvl 98
 	|poispot Nagrand D 89.00,41.20
-	|poitype rare
 	|poiquest 35623
 	|poiitem 118679
 	|poicurrency GR
@@ -2283,7 +2086,6 @@ step
 	|poi_rare Fangler
 	|poilvl 98
 	|poispot Nagrand D 74.80,11.80
-	|poitype rare
 	|poiquest 35836
 	|poiitem 116836
 	|poicurrency GR
@@ -2295,7 +2097,6 @@ step
 	|poi_rare Flinthide
 	|poilvl 99
 	|poispot Nagrand D 69.8,42.0
-	|poitype rare
 	|poiquest 35893
 	|poiitem 116807
 	|poicurrency GR
@@ -2306,7 +2107,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 48.20,22.20
-	|poitype rare
 	|poiquest 37223
 	|poiitem 118658
 	|poicurrency GR
@@ -2317,7 +2117,6 @@ step
 	|poi_rare Gar'lua
 	|poilvl 99
 	|poispot Nagrand D 52.20,55.80
-	|poitype rare
 	|poiquest 35715
 	|poiitem 118246
 	|poicurrency GR
@@ -2327,7 +2126,6 @@ step
 	|poi_rare Gaz'orda
 	|poilvl 99
 	|poispot Nagrand D 42.20,78.60
-	|poitype rare
 	|poiquest 34725
 	|poiitem 116798
 	|poicurrency GR
@@ -2337,7 +2135,6 @@ step
 	|poi_rare Gnarlhoof the Rabid
 	|poilvl 98
 	|poispot Nagrand D 66.60,56.60
-	|poitype rare
 	|poiquest 35717
 	|poiitem 116824
 	|poicurrency GR
@@ -2347,7 +2144,6 @@ step
 	|poi_rare Gorepetal
 	|poilvl 98
 	|poispot Nagrand D 93.20,28.20
-	|poitype rare
 	|poiquest 35898
 	|poiitem 116916
 	|poicurrency GR
@@ -2360,7 +2156,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Nagrand D 42.00,36.80
-	|poitype rare
 	|poiquest 37472
 	|poiitem 120945
 	|poicurrency AC
@@ -2374,7 +2169,6 @@ step
 	|poi_rare Graveltooth
 	|poilvl 98
 	|poispot Nagrand D 84.60,36.60
-	|poitype rare
 	|poiquest 36159
 	|poiitem 118689
 	|poicurrency GR
@@ -2386,7 +2180,6 @@ step
 	|poi_rare Greatfeather
 	|poilvl 98
 	|poispot Nagrand D 66.80,51.20
-	|poitype rare
 	|poiquest 35714
 	|poiitem 116795
 	|poicurrency GR
@@ -2396,7 +2189,6 @@ step
 	|poi_rare Grizzlemaw
 	|poilvl 98
 	|poispot Nagrand D 89.5,72.8
-	|poitype rare
 	|poiquest 35784
 	|poiitem 118687
 	|poicurrency GR
@@ -2406,7 +2198,6 @@ step
 	|poi_rare Hunter Blacktooth
 	|poilvl 98
 	|poispot Nagrand D 80.60,30.40
-	|poitype rare
 	|poiquest 35923
 	|poiitem 118245
 	|poicurrency GR
@@ -2417,7 +2208,6 @@ step
 	|poi_rare Hyperious
 	|poilvl 98
 	|poispot Nagrand D 87.00,55.00
-	|poitype rare
 	|poiquest 34862
 	|poiitem 116799
 	|poicurrency GR
@@ -2431,7 +2221,6 @@ step
 	|poi_rare Karosh Blackwind
 	|poilvl 100
 	|poispot Nagrand D 45.80,34.80
-	|poitype rare
 	|poiquest 37399
 	|poiitem 119355
 	|poiitem 120945
@@ -2442,7 +2231,6 @@ step
 	|poi_rare Krahl Deadeye
 	|poilvl 100
 	|poispot Nagrand D 43.80,34.40
-	|poitype rare
 	|poiquest 37473
 	|poiitem 120945
 	|poicurrency AC
@@ -2457,7 +2245,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Nagrand D 58.20,12.00
-	|poitype rare
 	|poiquest 37398
 	|poiitem 119384
 	|poiitem 120945
@@ -2470,7 +2257,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 52.00,90.00
-	|poitype rare
 	|poiquest 37408
 	|poiitem 120945
 	|poicurrency AC
@@ -2480,7 +2266,6 @@ step
 	|poi_rare Malroc Stonesunder
 	|poilvl 98
 	|poispot Nagrand D 81.20,60.00
-	|poitype rare
 	|poiquest 35932
 	|poiitem 116796
 	|poicurrency GR
@@ -2491,7 +2276,6 @@ step
 	|poi_rare Mr. Pinchy Sr.
 	|poilvl 100
 	|poispot Nagrand D 45.80,15.20
-	|poitype rare
 	|poiquest 36229
 	|poiitem 118690
 	|poicurrency GR
@@ -2503,7 +2287,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 34.00,51.00
-	|poitype rare
 	|poiquest 37224
 	|poiitem 118659
 	|poicurrency GR
@@ -2513,7 +2296,6 @@ step
 	|poi_rare Netherspawn
 	|poilvl 99
 	|poispot Nagrand D 47.60,70.80
-	|poitype rare
 	|poiquest 35865
 	|poiitem 116815
 	|poicurrency GR
@@ -2523,7 +2305,6 @@ step
 	|poi_rare Ophiis
 	|poilvl 99
 	|poispot Nagrand D 42.80,49.20
-	|poitype rare
 	|poiquest 35875
 	|poiitem 116765
 	|poicurrency GR
@@ -2534,7 +2315,6 @@ step
 	|poi_rare Outrider Duretha
 	|poilvl 98
 	|poispot Nagrand D 61.80,69.00
-	|poitype rare
 	|poiquest 35943
 	|poiitem 116800
 	|poicurrency GR
@@ -2544,7 +2324,6 @@ step
 	|poi_rare Pit Beast
 	|poilvl 100
 	|poispot Nagrand D 58.1,18.6
-	|poitype rare
 	|poiquest 37637
 	|poiitem 120317
 	|poiitem 120945
@@ -2556,7 +2335,6 @@ step
 	|poiaccess Completionist
 	|poilvl 101
 	|poispot Nagrand D 38.00,19.60
-	|poitype rare
 	|poiquest 37397
 	|poiitem 119389
 	|poiitem 120945
@@ -2572,7 +2350,6 @@ step
 	|poi_rare Redclaw the Feral
 	|poilvl 98
 	|poispot Nagrand D 73.60,57.80
-	|poitype rare
 	|poiquest 35712
 	|poiitem 118243
 	|poicurrency GR
@@ -2583,7 +2360,6 @@ step
 	|poi_rare Ru'klaa
 	|poilvl 99
 	|poispot Nagrand D 58.00,84.00
-	|poitype rare
 	|poiquest 35900
 	|poiitem 118688
 	|poicurrency GR
@@ -2594,7 +2370,6 @@ step
 	|poi_rare Scout Pokhar
 	|poilvl 98
 	|poispot Nagrand D 54.80,61.20
-	|poitype rare
 	|poiquest 35931
 	|poiitem 116797
 	|poicurrency GR
@@ -2606,7 +2381,6 @@ step
 	|poi_rare Sean Whitesea
 	|poilvl 99
 	|poispot Nagrand D 60.93,47.75
-	|poitype rare
 	|poiquest 35912
 	|poiitem 116834
 	|poicurrency GR
@@ -2618,7 +2392,6 @@ step
 	|poi_rare Soulfang
 	|poilvl 98
 	|poispot Nagrand D 75.60,65.00
-	|poitype rare
 	|poiquest 36128
 	|poiitem 116806
 	|poicurrency GR
@@ -2634,7 +2407,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Nagrand D 58.40,35.80
-	|poitype rare
 	|poiquest 37225
 	|poiitem 118660
 	|poicurrency GR
@@ -2644,7 +2416,6 @@ step
 	|poi_rare Tura'aka
 	|poilvl 99
 	|poispot Nagrand D 65.00,39.00
-	|poitype rare
 	|poiquest 35920
 	|poiitem 116814
 	|poicurrency GR
@@ -2654,7 +2425,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 37.00,38.00
-	|poitype rare
 	|poiquest 37520
 	|poiitem 120172
 	|poicurrency GR
@@ -2664,7 +2434,6 @@ step
 	|poi_rare Warmaster Blugthol
 	|poilvl 99
 	|poispot Nagrand D 82.60,76.20
-	|poitype rare
 	|poiquest 34645
 	|poiitem 116805
 	|poicurrency GR
@@ -2674,7 +2443,6 @@ step
 	|poi_rare Windcaller Korast
 	|poilvl 99
 	|poispot Nagrand D 70.60,29.40
-	|poitype rare
 	|poiquest 35877
 	|poiitem 116808
 	|poicurrency GR
@@ -2687,7 +2455,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Nagrand D 41.00,44.00
-	|poitype rare
 	|poiquest 37226
 	|poiitem 118661
 	|poicurrency GR
@@ -2698,7 +2465,6 @@ step
 	|poiaccess Completionist
 	|poilvl 103
 	|poispot Tanaan Jungle 41.40,79.60
-	|poitype rare
 	|poiquest 37407
 	|poicurrency GR
 	kill Keravnos##80398 |q 37407 |future |goto Tanaan Jungle 41.40,79.60
@@ -2708,7 +2474,6 @@ step
 	|poi_rare Bahameye
 	|poilvl 90
 	|poispot Shadowmoon Valley D 29.60,06.20
-	|poitype rare
 	|poiquest 35281
 	|poiitem 111666
 	|poicurrency GR
@@ -2719,7 +2484,6 @@ step
 	|poi_rare Gorum
 	|poilvl 91
 	|poispot Shadowmoon Valley D 21.60,33.00
-	|poitype rare
 	|poiquest 33664
 	|poiitem 113082
 	|poicurrency GR
@@ -2731,7 +2495,6 @@ step
 	|poi_rare Windfang Matriarch
 	|poilvl 90
 	|poispot Shadowmoon Valley D 42.80,41.00
-	|poitype rare
 	|poiquest 33038
 	|poiitem 113553
 	|poicurrency GR
@@ -2745,7 +2508,6 @@ step
 	|poi_rare Tho'gar Gorefist
 	|poilvl 100
 	|poispot Tanaan Jungle 13.60,56.80
-	|poitype rare
 	|poiquest 38747
 	|poiitem 127310
 	|poiitem 120945
@@ -2756,7 +2518,6 @@ step
 	|poi_rare The Iron Houndmaster
 	|poilvl 100
 	|poispot Tanaan Jungle 12.7,56.9
-	|poitype rare
 	|poiquest 38751
 	|poiitem 127321
 	|poiitem 120945
@@ -2769,7 +2530,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 16.00,59.20
-	|poitype rare
 	|poiquest 38750
 	|poiitem 127649
 	|poiitem 120945
@@ -2781,7 +2541,6 @@ step
 	|poi_rare Commander Krag'goth
 	|poilvl 100
 	|poispot Tanaan Jungle 15.00,54.20
-	|poitype rare
 	|poiquest 38746
 	|poiitem 127319
 	|poiitem 120945
@@ -2793,7 +2552,6 @@ step
 	|poi_rare Szirek the Twisted
 	|poilvl 100
 	|poispot Tanaan Jungle 16.00,57.20
-	|poitype rare
 	|poiquest 38752
 	|poiitem 127296
 	|poiitem 120945
@@ -2806,7 +2564,6 @@ step
 	|poi_rare Podlord Wakkawam
 	|poilvl 100
 	|poispot Tanaan Jungle 17.0,48.7
-	|poitype rare
 	|poiquest 38282
 	|poiitem 127336
 	|poiitem 120945
@@ -2817,7 +2574,6 @@ step
 	|poi_rare Bilkor the Thrower
 	|poilvl 100
 	|poispot Tanaan Jungle/0 23.8,51.9
-	|poitype rare
 	|poiquest 38262
 	|poiitem 127307
 	|poiitem 120945
@@ -2828,7 +2584,6 @@ step
 	|poi_rare Rogond the Tracker
 	|poilvl 100
 	|poispot Tanaan Jungle 20.5,49.6
-	|poitype rare
 	|poiquest 38263
 	|poiitem 127314
 	|poiitem 120945
@@ -2839,7 +2594,6 @@ step
 	|poi_rare Driss Vile
 	|poilvl 100
 	|poispot Tanaan Jungle 19.80,53.60
-	|poitype rare
 	|poiquest 38736
 	|poiitem 127331
 	|poiitem 120945
@@ -2852,7 +2606,6 @@ step
 	|poi_rare Drivnul
 	|poilvl 100
 	|poispot Tanaan Jungle 25.50,46.20
-	|poitype rare
 	|poiquest 38264
 	|poiitem 127298
 	|poiitem 120945
@@ -2864,7 +2617,6 @@ step
 	|poi_rare Dorg the Bloody
 	|poilvl 100
 	|poispot Tanaan Jungle 23.20,48.40
-	|poitype rare
 	|poiquest 38265
 	|poiitem 127301
 	|poiitem 120945
@@ -2875,7 +2627,6 @@ step
 	|poi_rare Bloodhunter Zulk
 	|poilvl 100
 	|poispot Tanaan Jungle 24.7,50.1
-	|poitype rare
 	|poiquest 38266
 	|poiitem 127303
 	|poiitem 120945
@@ -2888,7 +2639,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 22.20,50.80
-	|poitype rare
 	|poiquest 39159
 	|poiitem 127666
 	|poiitem 120945
@@ -2902,7 +2652,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 17.3,42.9
-	|poitype rare
 	|poiquest 38034
 	|poiitem 127661
 	|poiitem 120945
@@ -2914,7 +2663,6 @@ step
 	|poi_rare High Priest Ikzan
 	|poilvl 100
 	|poispot Tanaan Jungle 20.40,40.00
-	|poitype rare
 	|poiquest 38028
 	|poiitem 122117
 	|poiitem 120945
@@ -2925,7 +2673,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 27.60,32.80
-	|poitype rare
 	|poiquest 37937
 	|poiitem 127351
 	|poiitem 120945
@@ -2939,7 +2686,6 @@ step
 	|poi_rare Relgor
 	|poilvl 100
 	|poispot Tanaan Jungle 26.30,54.20
-	|poitype rare
 	|poiquest 38496
 	|poiitem 127335
 	|poiitem 120945
@@ -2950,7 +2696,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 28.60,50.80
-	|poitype rare
 	|poiquest 38775
 	|poiitem 127350
 	|poiitem 120945
@@ -2962,7 +2707,6 @@ step
 	|poi_rare Ceraxas
 	|poilvl 100
 	|poispot Tanaan Jungle 31.40,68.00
-	|poitype rare
 	|poiquest 38031
 	|poiitem 120945
 	|poicurrency AC
@@ -2972,7 +2716,6 @@ step
 	|poi_rare Jax'zor
 	|poilvl 100
 	|poispot Tanaan Jungle 26.6,75.3
-	|poitype rare
 	|poiquest 38030
 	|poiitem 127322
 	|poiitem 120945
@@ -2985,7 +2728,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 25.80,79.00
-	|poitype rare
 	|poiquest 38032
 	|poiitem 127300
 	|poiitem 120945
@@ -2999,7 +2741,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 25.40,77.20
-	|poitype rare
 	|poiquest 38029
 	|poiitem 127316
 	|poiitem 120945
@@ -3009,7 +2750,6 @@ step
 	|poi_rare Imp-Master Valessa
 	|poilvl 100
 	|poispot Tanaan Jungle 31.60,72.80
-	|poitype rare
 	|poiquest 38026
 	|poiitem 127655
 	|poiitem 120945
@@ -3020,7 +2760,6 @@ step
 	|poi_rare Belgork
 	|poilvl 100
 	|poispot Tanaan Jungle 35.40,46.80
-	|poitype rare
 	|poiquest 38609
 	|poiitem 127650
 	|poiitem 126950
@@ -3034,7 +2773,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 34.00,44.40
-	|poitype rare
 	|poiquest 38620
 	|poiitem 127327
 	|poiitem 120945
@@ -3048,7 +2786,6 @@ step
 	|poi_rare Gorabosh
 	|poilvl 100
 	|poispot Tanaan Jungle 33.00,35.70
-	|poitype rare
 	|poiquest 38709
 	|poiitem 127304
 	|poiitem 120945
@@ -3059,7 +2796,6 @@ step
 	|poi_rare Zoug the Heavy
 	|poilvl 100
 	|poispot Tanaan Jungle 37.00,32.80
-	|poitype rare
 	|poiquest 39045
 	|poiitem 127308
 	|poiitem 128252
@@ -3071,7 +2807,6 @@ step
 	|poi_rare Harbormaster Korak
 	|poilvl 100
 	|poispot Tanaan Jungle 39.60,32.60
-	|poitype rare
 	|poiquest 39046
 	|poiitem 127309
 	|poiitem 120945
@@ -3081,7 +2816,6 @@ step
 	|poi_rare Sergeant Mor'grak
 	|poilvl 100
 	|poispot Tanaan Jungle 42.40,37.30
-	|poitype rare
 	|poiquest 37953
 	|poiitem 127318
 	|poiitem 120945
@@ -3092,7 +2826,6 @@ step
 	|poi_rare Cindral the Wildfire
 	|poilvl 100
 	|poispot Tanaan Jungle 44.60,37.60
-	|poitype rare
 	|poiquest 37990
 	|poiitem 127660
 	|poiitem 128255
@@ -3106,7 +2839,6 @@ step
 	|poi_rare Felsmith Damorka
 	|poilvl 100
 	|poispot Tanaan Jungle 45.80,47.00
-	|poitype rare
 	|poiquest 38634
 	|poiitem 127302
 	|poiitem 128258
@@ -3117,7 +2849,6 @@ step
 	|poi_rare Executor Riloth
 	|poilvl 100
 	|poispot Tanaan Jungle 50.00,36.00
-	|poitype rare
 	|poiquest 38411
 	|poiitem 127323
 	|poiitem 120945
@@ -3130,7 +2861,6 @@ step
 	|poi_rare Grand Warlock Nethekurse
 	|poilvl 100
 	|poispot Tanaan Jungle 46.20,42.40
-	|poitype rare
 	|poiquest 38400
 	|poiitem 127299
 	|poiitem 120945
@@ -3140,7 +2870,6 @@ step
 	|poi_rare Commander Org'mok
 	|poilvl 100
 	|poispot Tanaan Jungle 51.00,46.00
-	|poitype rare
 	|poiquest 38749
 	|poiitem 127313
 	|poiitem 120945
@@ -3150,7 +2879,6 @@ step
 	|poi_rare Captain Grok'mar
 	|poilvl 100
 	|poispot Tanaan Jungle/0 48.6,57.4
-	|poitype rare
 	|poiquest 38820
 	|poiitem 127664
 	|poiitem 120945
@@ -3161,7 +2889,6 @@ step
 	|poi_rare Shadowthrash
 	|poilvl 100
 	|poispot Tanaan Jungle 49.70,61.40
-	|poitype rare
 	|poiquest 38812
 	|poiitem 127665
 	|poiitem 120945
@@ -3172,7 +2899,6 @@ step
 	|poi_rare Magwia
 	|poilvl 100
 	|poispot Tanaan Jungle 52.20,65.10
-	|poitype rare
 	|poiquest 38726
 	|poiitem 127332
 	|poiitem 120945
@@ -3183,7 +2909,6 @@ step
 	|poi_rare Bramblefell
 	|poilvl 100
 	|poispot Tanaan Jungle 40.80,70.00
-	|poitype rare
 	|poiquest 38209
 	|poiitem 127652
 	|poiitem 120945
@@ -3195,7 +2920,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 39.60,68.10
-	|poitype rare
 	|poiquest 38825
 	|poiitem 127653
 	|poiitem 120945
@@ -3207,7 +2931,6 @@ step
 	|poi_rare The Goreclaw
 	|poilvl 100
 	|poispot Tanaan Jungle 34.30,72.50
-	|poitype rare
 	|poiquest 38654
 	|poiitem 127305
 	|poiitem 120945
@@ -3220,7 +2943,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 39.40,73.80
-	|poitype rare
 	|poiquest 38632
 	|poiitem 127355
 	|poiitem 120945
@@ -3233,7 +2955,6 @@ step
 	|poi_rare Sylissa
 	|poilvl 100
 	|poispot Tanaan Jungle 41.00,78.80
-	|poitype rare
 	|poiquest 38628
 	|poiitem 127311
 	|poiitem 120945
@@ -3245,7 +2966,6 @@ step
 	|poilvl 100
 	|poiaccess Completionist
 	|poispot Tanaan Jungle 41.80,73.80
-	|poitype rare
 	|poiquest 38631
 	|poiitem 127356
 	|poiitem 120945
@@ -3260,7 +2980,6 @@ step
 	|poi_rare Captain Ironbeard
 	|poilvl 100
 	|poispot Tanaan Jungle 36.20,79.70
-	|poitype rare
 	|poiquest 38756
 	|poiitem 127659
 	|poiitem 128257
@@ -3274,7 +2993,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 34.60,78.20
-	|poitype rare
 	|poiquest 38764
 	|poiitem 127317
 	|poiitem 120945
@@ -3292,7 +3010,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 51.00,74.40
-	|poitype rare
 	|poiquest 38696
 	|poiitem 127654
 	|poiitem 120945
@@ -3307,7 +3024,6 @@ step
 	|poi_rare Broodlord Ixkor
 	|poilvl 100
 	|poispot Tanaan Jungle 57.60,67.20
-	|poitype rare
 	|poiquest 38589
 	|poiitem 127349
 	|poiitem 120945
@@ -3319,7 +3035,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 62.60,72.00
-	|poitype rare
 	|poiquest 38600
 	|poiitem 127315
 	|poiitem 120945
@@ -3332,7 +3047,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 63.60,81.10
-	|poitype rare
 	|poiquest 38604
 	|poiitem 127306
 	|poiitem 120945
@@ -3345,7 +3059,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 52.0,83.9
-	|poitype rare
 	|poiquest 38605
 	|poiitem 127418
 	|poiitem 120945
@@ -3358,7 +3071,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 48.80,72.80
-	|poitype rare
 	|poiquest 38597
 	|poiitem 127330
 	|poiitem 120945
@@ -3371,7 +3083,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 48.40,28.50
-	|poitype rare
 	|poiquest 38207
 	|poiitem 127340
 	|poiitem 120945
@@ -3385,7 +3096,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 52.80,25.60
-	|poitype rare
 	|poiquest 38211
 	|poiitem 127656
 	|poiitem 120945
@@ -3397,7 +3107,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 53.60,21.70
-	|poitype rare
 	|poiquest 38557
 	|poiitem 127297
 	|poiitem 120945
@@ -3411,7 +3120,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 57.10,22.80
-	|poitype rare
 	|poiquest 38457
 	|poiitem 127657
 	|poiitem 120945
@@ -3423,7 +3131,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 53.00,20.00
-	|poitype rare
 	|poiquest 38580
 	|poiitem 127320
 	|poiitem 120945
@@ -3436,7 +3143,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 60.20,20.90
-	|poitype rare
 	|poiquest 38579
 	|poiitem 127658
 	|poiitem 128232
@@ -3448,7 +3154,6 @@ step
 	|poi_rare Steelsnout
 	|poilvl 100
 	|poispot Tanaan Jungle 65.40,36.60
-	|poitype rare
 	|poiquest 38700
 	|poiitem 127357
 	|poiitem 120945
@@ -3460,7 +3165,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 15.40,63.40
-	|poitype rare
 	|poiquest 39288
 	|poiitem 128315
 	|poiitem 128025
@@ -3473,7 +3177,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 23.0,40.2
-	|poitype rare
 	|poiquest 39287
 	|poiitem 128315
 	|poiitem 128025
@@ -3486,7 +3189,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 32.40,74.00
-	|poitype rare
 	|poiquest 39290
 	|poiitem 128315
 	|poiitem 128025
@@ -3499,7 +3201,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 47.00,52.60
-	|poitype rare
 	|poiquest 39289
 	|poiitem 128315
 	|poiitem 128025
@@ -3511,7 +3212,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle/0 52.60,40.20
-	|poitype rare
 	|poiquest 38430
 	|poiitem 120945
 	|poiitem 127326
@@ -3527,7 +3227,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Tanaan Jungle/0 40.9,56.4
-	|poitype rare
 	|poiquest 40107
 	|poiitem 120945
 	|poiitem 129295
@@ -3540,7 +3239,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Tanaan Jungle/0 83.6,43.6
-	|poitype rare
 	|poiquest 40105
 	|poiitem 120945
 	|poiitem 108631
@@ -3554,7 +3252,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Tanaan Jungle/0 88.1,55.8
-	|poitype rare
 	|poiquest 40107
 	|poiitem 120945
 	|poiitem 108634
@@ -3567,7 +3264,6 @@ step
 	|poiaccess Completionist
 	|poilvl 102
 	|poispot Tanaan Jungle/0 80.6,56.4
-	|poitype rare
 	|poiquest 40107
 	|poiitem 120945
 	|poiitem 108633

@@ -2438,10 +2438,7 @@ kill Warlord Parjesh##91784
 collect Warlord Parjesh's Hauberk##130106 |q 40208/1 |goto Eye of Azshara/1 54.39,68.18
 step
 kill Wrath of Azshara##96028 |q 40208/2 |goto Eye of Azshara/1 55.69,53.20
-step
-Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137877
-|tip The Wrath of Azshara boss in the Eye of Azshara dropped this when you killed him.
-Learn the Rank 3 Recipe for Warhide Pants |learn Warhide Pants##194712
+|tip Save the Recipe for Warhide Pants (Rank 3)
 step
 talk Celea##98964
 turnin Scales of the Earth##40209 |goto Azsuna/0 47.49,44.17
@@ -2523,6 +2520,14 @@ turnin Respect for the Past##40205 |goto Thunder Totem/0 36.71,79.15
 turnin Evolution of the Past##40204 |goto Thunder Totem/0 36.71,79.15
 turnin Strength of the Past##40203 |goto Thunder Totem/0 36.71,79.15
 accept Well Spent Time##40415 |goto Thunder Totem/0 36.71,79.15
+step
+Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137871
+|tip This is from the quest Respect for the Past.
+Learn the Rank 2 Recipe for Warhide Pants |learn Warhide Pants##216233
+step
+Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137877
+|tip The Wrath of Azshara boss in the Eye of Azshara dropped this when you killed him.
+Learn the Rank 3 Recipe for Warhide Pants |learn Warhide Pants##194712
 step
 talk Namha Moonwater##93523
 |tip Inside the building.

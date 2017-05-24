@@ -2439,10 +2439,6 @@ collect Warlord Parjesh's Hauberk##130106 |q 40208/1 |goto Eye of Azshara/1 54.3
 step
 kill Wrath of Azshara##96028 |q 40208/2 |goto Eye of Azshara/1 55.69,53.20
 step
-Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137877
-|tip The Wrath of Azshara boss in the Eye of Azshara dropped this when you killed him.
-Learn the Rank 3 Recipe for Warhide Pants |learn Warhide Pants##194712
-step
 talk Celea##98964
 turnin Scales of the Earth##40209 |goto Azsuna/0 47.49,44.17
 turnin Scales of the Sea##40208 |goto Azsuna/0 47.49,44.17
@@ -2455,6 +2451,14 @@ turnin The Final Lessons##40202 |goto Thunder Totem/0 36.69,79.44
 accept Respect for the Past##40205 |goto Thunder Totem/0 36.69,79.44
 accept Evolution of the Past##40204 |goto Thunder Totem/0 36.69,79.44
 accept Strength of the Past##40203 |goto Thunder Totem/0 36.69,79.44
+step
+Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137871
+|tip This is from the quest Respect for the Past.
+Learn the Rank 2 Recipe for Warhide Pants |learn Warhide Pants##216233
+step
+Use the Recipe: Warhide Pants |use Recipe: Warhide Pants##137877
+|tip The Wrath of Azshara boss in the Eye of Azshara dropped this when you killed him.
+Learn the Rank 3 Recipe for Warhide Pants |learn Warhide Pants##194712
 step
 Cross the bridge |goto 40.18,74.18 < 15 |only if walking
 Follow the path up |goto 55.33,57.04 < 20 |only if walking

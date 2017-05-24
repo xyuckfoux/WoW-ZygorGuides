@@ -1124,3 +1124,29 @@ step
 _Congratulations!_
 You completed the Court of Stars dungeon!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Attunment",{
+mapid=1045,
+achieveid={10816},
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
+keywords={"Karazhan Kara"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Attunement for the Karazhan dungeon.",
+},[[
+step
+talk Archmage Khadgar##90417
+accept Edict of the God-King##45422 |goto Dalaran L/10 28.59,48.39
+step
+Enter the Halls of Valor on Mythic difficulty
+kill God-King Skovald##95675 |q 45422 /1 |goto Halls of Valor/3 51.44,88.83
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Dungeon",{
+mapid=1045,
+achieveid={10816},
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
+keywords={"Karazhan Kara"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Karazhan dungeon.",
+},[[
+step
+placeholder
+]])

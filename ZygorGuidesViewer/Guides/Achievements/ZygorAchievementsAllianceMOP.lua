@@ -3288,16 +3288,16 @@ In order to obtain this, you must complete the August Celestials dailies every t
 |tip If any other spirit needs your help, you can skip it for the day and it won't hinder your progress.
 |confirm
 step
-talk Sage Lotusbloom##64001
+talk Sage Whiteheart##64032
 The following quest will only be available the first time you are sent to Chi-Ji's area.
-accept Challenge At The Temple of the Red Crane##31379 |or |next "crane" |only if not completedq(31379) |goto Vale of Eternal Blossoms 62.8,23.4
+accept Challenge At The Temple of the Red Crane##31378 |or |next "crane" |only if not completedq(31378) |goto Vale of Eternal Blossoms 84.6,63.6
 Ask her how you can help the August Celestials today. Then click on whichever spirit needs you today.
 Chi-Ji the Red Crane |confirm |next "crane"
 step
 label crane
 talk Thelonius##60506
-turnin Challenge At The Temple of the Red Crane##31379 |goto Krasarang Wilds 31.3,63.4
-|only if not completedq(31379)
+turnin Challenge At The Temple of the Red Crane##31378 |goto Krasarang Wilds 31.3,63.4
+|only if not completedq(31378)
 step
 talk Thelonius##60506
 accept Students of Chi-Ji##30718 |goto 31.3,63.4
@@ -7365,7 +7365,7 @@ step
 You can find Jewel Fish in any body of water here.
 Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 Use your Fishing skill to fish in the water here.  |cast Fishing##131474
-collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 69.1,44.2
+collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 20.3,17.6
 |tip Fish in the Jewel Danio Schools to catch this.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Collections\\Going To Need A Bigger Bag",{

@@ -434,6 +434,15 @@
 		<Script file="Titles\ZygorTitlesAllianceWOD.lua"/>
 		<Script file="Titles\ZygorTitlesAllianceWODTrial.lua"/>
 
+		<!-- LEGION -->
+		<Script file="Titles\ZygorTitlesHordeLEGION_MASTER.lua"/>
+		<Script file="Titles\ZygorTitlesHordeLEGION.lua"/>
+		<Script file="Titles\ZygorTitlesHordeLEGIONTrial.lua"/>
+		
+		<Script file="Titles\ZygorTitlesAllianceLEGION_MASTER.lua"/>
+		<Script file="Titles\ZygorTitlesAllianceLEGION.lua"/>
+		<Script file="Titles\ZygorTitlesAllianceLEGIONTrial.lua"/>
+
 	<!-- REPUTATIONS -->
 		<!-- CATA -->	
 		<Script file="Reputations\ZygorReputationsHordeCATA_MASTER.lua"/>

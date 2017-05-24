@@ -579,6 +579,8 @@ function ZGV:Startup_LoadGuides_Threaded()
 	self.RegisterGuide=function() ZGV:Print("Too late to RegisterGuide at this point!") end
 	self.RegisterMapSpots=nil
 
+	SetMapToCurrentZone()  -- to counter any leftovers from mapping addons
+
 	self:SendMessage("ZYGORGV_LOADING")
 
 end

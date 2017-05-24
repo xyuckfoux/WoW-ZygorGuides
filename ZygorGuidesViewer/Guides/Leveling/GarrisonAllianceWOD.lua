@@ -5877,8 +5877,8 @@ keywords={"millhouse","manastorm","arcane","mage","polymorph","deadly","minions"
 description="This guilde will walk you through obtaining Millhouse Manastorm as a Garrison Follower.",
 },[[
 step
-Routing to Inn |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
-Routing to End |next "end" |only if default
+In order to attain the _For the Children!_ quest you will need to build an Inn in your Garrison
+Click here to continue |confirm
 step
 Reach level 100 |ding 100
 |tip Use the Leveling guides to accomplish this.
@@ -5905,7 +5905,6 @@ You will have a limited amount of time to retrieve the Miniature Iron Star and r
 If he does despawn, you will have to wait until the next time he randomly spawns in your Lunarfall Inn
 Recruit Millhouse Manastorm |condition hasfollower(455)
 step
-label "end"
 Congratulations, you now have Millhouse Manastorm as a Garrison Follower! |only if completedq(37179)
 You must have a Lunarfall Inn to recruit this Follower! |only if default
 ]])

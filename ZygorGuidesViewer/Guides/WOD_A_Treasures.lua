@@ -19,7 +19,6 @@ step
 	|poi_treasure Alchemist's Satchel
 	|poilvl 90
 	|poispot Shadowmoon Valley D 54.92,45.01
-	|poitype treasure
 	|poiquest 35581
 	|poiitem 109124
 	click Alchemist's Satchel##224756 |q 35581 |future |goto Shadowmoon Valley D 54.92,45.01
@@ -28,7 +27,6 @@ step
 	|poi_treasure Ancestral Greataxe
 	|poilvl 90
 	|poispot Shadowmoon Valley D 52.83,48.37
-	|poitype treasure
 	|poiquest 35584
 	|poiitem 113560
 	_Go up_ the path here |goto Shadowmoon Valley D/0 51.0,47.9
@@ -41,7 +39,6 @@ step
 	|poi_treasure Armored Elekk Tusk
 	|poilvl 90
 	|poispot Shadowmoon Valley D 41.42,27.98
-	|poitype treasure
 	|poiquest 33869
 	|poiitem 108902
 	_Go to_ the remains of the dead elekk |goto Shadowmoon Valley D 41.42,27.98
@@ -51,7 +48,6 @@ step
 	|poi_treasure Ashes of A'kumbo
 	|poilvl 90
 	|poispot Shadowmoon Valley D 37.78,44.35
-	|poitype treasure
 	|poiquest 33584
 	|poiitem 113531
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -66,7 +62,6 @@ step
 	|poi_treasure Astrologer's Box
 	|poilvl 90
 	|poispot Shadowmoon Valley D 49.31,37.60
-	|poitype treasure
 	|poiquest 33867
 	|poiitem 109739
 	_Go through_ the narrow pass here |goto Shadowmoon Valley D/0 47.5,39.5
@@ -81,7 +76,6 @@ step
 	|poi_treasure Beloved's Offering
 	|poilvl 90
 	|poispot Shadowmoon Valley D 36.77,41.42
-	|poitype treasure
 	|poiquest 33046
 	|poiitem 113547
 	|poicurrency GL
@@ -97,7 +91,6 @@ step
 	|poi_treasure Bubbling Cauldron
 	|poilvl 90
 	|poispot Shadowmoon Valley D 37.18,23.13
-	|poitype treasure
 	|poiquest 33613
 	|poiitem 108945
 	_Enter_ the cave here |goto Shadowmoon Valley D/0 37.8,22.3 < 5
@@ -109,7 +102,6 @@ step
 	|poi_treasure Cargo of the Raven Queen
 	|poilvl 90
 	|poispot Shadowmoon Valley D 84.56,44.78
-	|poitype treasure
 	|poiquest 33885
 	|poicurrency GR
 	map Shadowmoon Valley D/0
@@ -127,7 +119,6 @@ step
 	|poi_treasure Carved Drinking Horn
 	|poilvl 90
 	|poispot Shadowmoon Valley D 33.45,39.61
-	|poitype treasure
 	|poiquest 33569
 	|poiitem 113545
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -140,7 +131,6 @@ step
 	|poi_treasure The Crystal Blade of Torvath
 	|poilvl 90
 	|poispot Shadowmoon Valley D 61.70,67.90
-	|poitype treasure
 	|poiquest 34743
 	|poiitem 111636
 	|poicurrency GR
@@ -155,7 +145,6 @@ step
 	|poi_treasure Demonic Cache
 	|poilvl 90
 	|poispot Shadowmoon Valley D 20.38,30.65
-	|poitype treasure
 	|poiquest 33575
 	|poiitem 108904
 	_Enter_ Gul'var |goto Shadowmoon Valley D/0 22.1,30.7
@@ -167,7 +156,6 @@ step
 	|poi_treasure Dusty Lockbox
 	|poilvl 90
 	|poispot Shadowmoon Valley D 29.85,37.48
-	|poitype treasure
 	|poiquest 36879
 	|poiitem 3 RANDOM
 	|poicurrency GL
@@ -185,7 +173,6 @@ step
 	|poi_treasure False-Bottomed Jar
 	|poilvl 90
 	|poispot Shadowmoon Valley D 51.75,35.49
-	|poitype treasure
 	|poiquest 33037
 	|poicurrency GL
 	_Follow_ the road |goto Shadowmoon Valley D/0 49.1,32.2
@@ -196,7 +183,6 @@ step
 	|poi_treasure Fantastic Fish
 	|poilvl 90
 	|poispot Shadowmoon Valley D 26.53,05.68
-	|poitype treasure
 	|poiquest 34174
 	|poicurrency GR
 	_Follow_ the road |goto Shadowmoon Valley D/0 24.9,9.7
@@ -208,7 +194,6 @@ step
 	|poi_treasure Giant Moonwillow Cone
 	|poilvl 90
 	|poispot Shadowmoon Valley D 34.39,46.23
-	|poitype treasure
 	|poiquest 33891
 	|poiitem 108901
 	_Follow_ the path up the hill |goto Shadowmoon Valley D/0 39.5,53.6
@@ -222,7 +207,6 @@ step
 	|poi_treasure Glowing Cave Mushroom
 	|poilvl 90
 	|poispot Shadowmoon Valley D 48.72,47.53
-	|poitype treasure
 	|poiquest 35798
 	|poiitem 109127
 	_Enter_ the cave |goto Shadowmoon Valley D/0 46.4,45.0
@@ -234,7 +218,6 @@ step
 	|poi_treasure Greka's Urn
 	|poilvl 90
 	|poispot Shadowmoon Valley D 38.48,43.08
-	|poitype treasure
 	|poiquest 33614
 	|poiitem 113408
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -249,7 +232,6 @@ step
 	|poi_treasure Hanging Satchel
 	|poilvl 90
 	|poispot Shadowmoon Valley D 47.15,46.03
-	|poitype treasure
 	|poiquest 33564
 	|poiitem 108900
 	|poiitem 107640
@@ -268,7 +250,6 @@ step
 	|poi_treasure Iron Horde Cargo Shipment
 	|poilvl 90
 	|poispot Shadowmoon Valley D 42.10,61.30
-	|poitype treasure
 	|poiquest 33041
 	|poicurrency GR
 	_Go to_ the rear of the wagon |goto Shadowmoon Valley D 42.10,61.30
@@ -278,7 +259,6 @@ step
 	|poi_treasure Iron Horde Tribute
 	|poilvl 90
 	|poispot Shadowmoon Valley D 37.51,59.25
-	|poitype treasure
 	|poiquest 33567
 	|poiitem 108903
 	_Go up_ the path |goto Shadowmoon Valley D/0 38.9,58.4
@@ -291,7 +271,6 @@ step
 	|poi_treasure Kaliri Egg
 	|poilvl 90
 	|poispot Shadowmoon Valley D 57.92,45.31
-	|poitype treasure
 	|poiquest 33568
 	|poiitem 113271
 	_Go to_ the Kaliri nest behind the tree |goto Shadowmoon Valley D 57.92,45.31
@@ -301,7 +280,6 @@ step
 	|poi_treasure Mikkal's Chest
 	|poilvl 90
 	|poispot Shadowmoon Valley D 58.88,21.93
-	|poitype treasure
 	|poiquest 35603
 	|poiitem 113215
 	_Go to_ the top of the waterfall in Elodor |goto Shadowmoon Valley D/0 59.7,24.3
@@ -312,7 +290,6 @@ step
 	|poi_treasure Mushroom-Covered Chest
 	|poilvl 90
 	|poispot Shadowmoon Valley D 52.88,24.86
-	|poitype treasure
 	|poiquest 37254
 	|poicurrency GR
 	_Go to_ the Umbrafen Lake |goto Shadowmoon Valley D/0 52.2,26.1
@@ -323,7 +300,6 @@ step
 	|poi_treasure Orc Skeleton
 	|poilvl 90
 	|poispot Shadowmoon Valley D 66.96,33.49
-	|poitype treasure
 	|poiquest 36507
 	|poiitem 116875
 	_Go to_ the Moonlit Shore |goto Shadowmoon Valley D 66.96,33.49
@@ -333,7 +309,6 @@ step
 	|poi_treasure Peaceful Offering 1
 	|poilvl 90
 	|poispot Shadowmoon Valley D 43.75,60.62
-	|poitype treasure
 	|poiquest 33611
 	|poiitem 107650
 	_Go to_ the Western Pillar |goto Shadowmoon Valley D 43.75,60.62
@@ -343,7 +318,6 @@ step
 	|poi_treasure Peaceful Offering 2
 	|poilvl 90
 	|poispot Shadowmoon Valley D 45.22,60.49
-	|poitype treasure
 	|poiquest 33610
 	|poiitem 107650
 	_Go to_ the Eastern Pillar |goto Shadowmoon Valley D 45.22,60.49
@@ -353,7 +327,6 @@ step
 	|poi_treasure Peaceful Offering 3
 	|poilvl 90
 	|poispot Shadowmoon Valley D 44.48,63.57
-	|poitype treasure
 	|poiquest 33384
 	|poiitem 107650
 	_Go to_ the Southern Pillar |goto Shadowmoon Valley D 44.48,63.57
@@ -363,7 +336,6 @@ step
 	|poi_treasure Peaceful Offering 4
 	|poilvl 90
 	|poispot Shadowmoon Valley D 44.49,59.14
-	|poitype treasure
 	|poiquest 33612
 	|poiitem 107650
 	_Go to_ the Northern Pillar |goto Shadowmoon Valley D 44.49,59.14
@@ -373,7 +345,6 @@ step
 	|poi_treasure Ronokk's Belongings
 	|poilvl 90
 	|poispot Shadowmoon Valley D 31.22,39.05
-	|poitype treasure
 	|poiquest 33886
 	|poiitem 109081
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -388,7 +359,6 @@ step
 	|poi_treasure Rotting Basket
 	|poilvl 90
 	|poispot Shadowmoon Valley D/15 56.2,49.2
-	|poitype treasure
 	|poiquest 33572
 	|poiitem 113373
 	_Take the path_ through Bloodthorn Hill |goto Shadowmoon Valley D/0 25.8,32.6
@@ -401,7 +371,6 @@ step
 	|poi_treasure Rovo's Dagger
 	|poilvl 90
 	|poispot Shadowmoon Valley D 36.68,44.55
-	|poitype treasure
 	|poiquest 33573
 	|poiitem 113378
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -416,7 +385,6 @@ step
 	|poi_treasure Scaly Rylak Egg
 	|poilvl 90
 	|poispot Shadowmoon Valley D 67.05,84.18
-	|poitype treasure
 	|poiquest 33565
 	|poiitem 44722
 	modelnpc 85568
@@ -431,7 +399,6 @@ step
 	|poi_treasure Shadowmoon Exile Treasure
 	|poilvl 90
 	|poispot Shadowmoon Valley D 45.82,24.58
-	|poitype treasure
 	|poiquest 33570
 	|poiitem 113388
 	_Enter_ the cave at the base of Exile's Rise |goto Shadowmoon Valley D/0 46.2,27.0
@@ -442,7 +409,6 @@ step
 	|poi_treasure Shadowmoon Sacrificial Dagger
 	|poilvl 90
 	|poispot Shadowmoon Valley D 29.99,45.36
-	|poitype treasure
 	|poiquest 35919
 	|poiitem 113563
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -459,7 +425,6 @@ step
 	|poi_treasure Shadowmoon Treasure
 	|poilvl 90
 	|poispot Shadowmoon Valley D 28.23,39.24
-	|poitype treasure
 	|poiquest 33883
 	|poicurrency GR
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -475,7 +440,6 @@ step
 	|poi_treasure Stolen Treasure
 	|poilvl 90
 	|poispot Shadowmoon Valley D 27.05,02.48
-	|poitype treasure
 	|poiquest 35280
 	|poicurrency GR
 	_Cross_ the water |goto Shadowmoon Valley D/0 27.4,5.8
@@ -487,7 +451,6 @@ step
 	|poi_treasure Strange Spore
 	|poilvl 90
 	|poispot Shadowmoon Valley D 55.82,19.97
-	|poitype treasure
 	|poiquest 35600
 	|poiitem 118104
 	_Go to_ the steps |goto Shadowmoon Valley D/0 60.0,26.6 < 30
@@ -505,7 +468,6 @@ step
 	|poi_treasure Sunken Fishing Boat
 	|poilvl 90
 	|poispot Shadowmoon Valley D 37.19,26.01
-	|poitype treasure
 	|poiquest 35677
 	|poiitem 118414
 	_Go to_ the bottom of the pond |goto Shadowmoon Valley D 37.19,26.01
@@ -515,7 +477,6 @@ step
 	|poi_treasure Sunken Treasure
 	|poilvl 90
 	|poispot Shadowmoon Valley D 28.82,07.20
-	|poitype treasure
 	|poiquest 35279
 	|poicurrency GR
 	_Follow_ the side of the boat |goto Shadowmoon Valley D/0 27.3,8.1
@@ -525,7 +486,6 @@ step
 	|poi_treasure Swamplighter Hive
 	|poilvl 90
 	|poispot Shadowmoon Valley D 55.29,74.87
-	|poitype treasure
 	|poiquest 35580
 	|poiitem 117550
 	_Go to_ the river |goto Shadowmoon Valley D/0 52.0,69.0
@@ -537,7 +497,6 @@ step
 	|poi_treasure Uzko's Knickknacks
 	|poilvl 90
 	|poispot Shadowmoon Valley D 35.85,40.87
-	|poitype treasure
 	|poiquest 33540
 	|poiitem 113546
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -552,7 +511,6 @@ step
 	|poi_treasure Veema's Herb Bag
 	|poilvl 90
 	|poispot Shadowmoon Valley D 34.21,43.53
-	|poitype treasure
 	|poiquest 33866
 	|poiitem 109124
 	_Enter_ Anguish Fortress here |goto Shadowmoon Valley D/0 34.9,38.1
@@ -567,7 +525,6 @@ step
 	|poi_treasure Vindicator's Cache
 	|poilvl 90
 	|poispot Shadowmoon Valley D 51.14,79.12
-	|poitype treasure
 	|poiquest 33574
 	|poiitem 113375
 	_Go to_ the pond |goto Shadowmoon Valley D/0 50.4,78.9
@@ -578,7 +535,6 @@ step
 	|poi_treasure Waterlogged Chest
 	|poilvl 90
 	|poispot Shadowmoon Valley D 39.20,83.91
-	|poitype treasure
 	|poiquest 33566
 	|poiitem 113372
 	|poicurrency GL
@@ -592,7 +548,6 @@ step
 	|poi_treasure Arena Master's War Horn
 	|poilvl 90
 	|poispot Frostfire Ridge 23.17,24.95
-	|poitype treasure
 	|poiquest 33916
 	|poiitem 108735
 	_Enter_ the building here |goto Frostfire Ridge/0 23.3,24.1
@@ -602,7 +557,6 @@ step
 	|poi_treasure Spectator's Chest
 	|poilvl 90
 	|poispot Frostfire Ridge 24.24,27.12
-	|poitype treasure
 	|poiquest 33501
 	|poiitem 117442
 	|poiitem 117439
@@ -615,7 +569,6 @@ step
 	|poi_treasure Borrok the Devourer
 	|poilvl 90
 	|poispot Frostfire Ridge 61.90,42.54
-	|poitype treasure
 	|poiquest 33511
 	|poiitem 112110
 	|poicurrency GR
@@ -626,7 +579,6 @@ step
 	|poi_treasure Burning Pearl
 	|poilvl 90
 	|poispot Frostfire Ridge 42.16,19.30
-	|poitype treasure
 	|poiquest 34520
 	|poiitem 120341
 	|poicurrency GL
@@ -637,7 +589,6 @@ step
 	|poi_treasure Clumsy Cragmaul Brute
 	|poilvl 90
 	|poispot Frostfire Ridge 50.16,18.70
-	|poitype treasure
 	|poiquest 33531
 	|poiitem 112096
 	_Follow_ the narrow path to the Clumsy Brute corpse |goto Frostfire Ridge/0 50.8,20.0
@@ -646,7 +597,6 @@ step
 	|poi_treasure Crag-Leaper's Cache
 	|poilvl 90
 	|poispot Frostfire Ridge 42.66,31.75
-	|poitype treasure
 	|poiquest 33940
 	|poiitem 112187
 	_Go to_ this spot |goto Frostfire Ridge/0 43.0,31.2
@@ -656,7 +606,6 @@ step
 	|poi_treasure Envoy's Satchel
 	|poilvl 90
 	|poispot Frostfire Ridge 40.90,20.10
-	|poitype treasure
 	|poiquest 34473
 	|poiitem 110536
 	click Envoy's Satchel##229328 |q 34473 |future |goto Frostfire Ridge 40.90,20.10
@@ -664,7 +613,6 @@ step
 	|poi_treasure Forgotten Supplies
 	|poilvl 90
 	|poispot Frostfire Ridge 43.66,55.62
-	|poitype treasure
 	|poiquest 34841
 	|poicurrency GR
 	_Go up_ the hill |goto Frostfire Ridge/0 44.2,58.7
@@ -675,7 +623,6 @@ step
 	|poi_treasure Frozen Frostwolf Axe
 	|poilvl 90
 	|poispot Frostfire Ridge 24.18,48.60
-	|poitype treasure
 	|poiquest 34507
 	|poiitem 110689
 	_Enter_ the cave here |goto Frostfire Ridge/0 25.3,51.4
@@ -685,7 +632,6 @@ step
 	|poi_treasure Frozen Orc Skeleton
 	|poilvl 90
 	|poispot Frostfire Ridge 57.17,52.16
-	|poitype treasure
 	|poiquest 34476
 	|poiitem 111554
 	kill Frozen Fury##78631+
@@ -695,7 +641,6 @@ step
 	|poi_treasure Gnawed Bone
 	|poilvl 90
 	|poispot Frostfire Ridge 25.52,20.50
-	|poitype treasure
 	|poiquest 34648
 	|poiitem 111415
 	click Gnawed Bone##230425 |q 34648 |future |goto Frostfire Ridge 25.52,20.50
@@ -704,7 +649,6 @@ step
 	|poi_treasure Goren Leftovers
 	|poilvl 90
 	|poispot Frostfire Ridge 66.71,26.40
-	|poitype treasure
 	|poiquest 33948
 	|poiitem 111543
 	_Enter_ Magnarok |goto Frostfire Ridge/0 68.0,32.4
@@ -718,7 +662,6 @@ step
 	|poi_treasure Grimfrost Treasure
 	|poilvl 90
 	|poispot Frostfire Ridge 68.12,45.86
-	|poitype treasure
 	|poiquest 33947
 	|poicurrency GR
 	_Enter_ the building |goto Frostfire Ridge/0 67.9,46.0
@@ -728,7 +671,6 @@ step
 	|poi_treasure Iron Horde Munitions
 	|poilvl 90
 	|poispot Frostfire Ridge 56.72,71.86
-	|poitype treasure
 	|poiquest 36863
 	|poicurrency GR
 	click Iron Horde Munitions##236693 |q 36863 |future |goto Frostfire Ridge 56.72,71.86
@@ -737,7 +679,6 @@ step
 	|poi_treasure Iron Horde Supplies
 	|poilvl 90
 	|poispot Frostfire Ridge 68.90,69.10
-	|poitype treasure
 	|poiquest 33017
 	|poicurrency GR
 	click Iron Horde Supplies##224633 |q 33017 |future |goto Frostfire Ridge 68.90,69.10
@@ -746,7 +687,6 @@ step
 	|poi_treasure Lagoon Pool
 	|poilvl 90
 	|poispot Frostfire Ridge 21.89,09.63
-	|poitype treasure
 	|poiquest 33926
 	|poiitem 108739
 	_Go through_ the narrow pass |goto Frostfire Ridge/0 23.0,9.3
@@ -759,7 +699,6 @@ step
 	|poi_treasure Lucky Coin
 	|poilvl 90
 	|poispot Frostfire Ridge 19.21,12.02
-	|poitype treasure
 	|poiquest 34642
 	|poiitem 111408
 	_Go through_ the narrow pass |goto Frostfire Ridge 20.0,12.9 < 10
@@ -769,7 +708,6 @@ step
 	|poi_treasure Obsidian Petroglyph
 	|poilvl 90
 	|poispot Frostfire Ridge 38.30,37.82
-	|poitype treasure
 	|poiquest 33502
 	|poiitem 112087
 	_Enter_ the canyon |goto Frostfire Ridge/0 39.1,41.2 < 10
@@ -779,7 +717,6 @@ step
 	|poi_treasure Pale Loot Sack
 	|poilvl 90
 	|poispot Frostfire Ridge 21.68,50.76
-	|poitype treasure
 	|poiquest 34931
 	|poicurrency GR
 	_Enter_ the cave |goto Frostfire Ridge/0 19.5,50.6
@@ -792,7 +729,6 @@ step
 	|poi_treasure Raided Loot
 	|poilvl 90
 	|poispot Frostfire Ridge 37.26,59.14
-	|poitype treasure
 	|poiquest 34967
 	|poicurrency GR
 	_Enter_ the tower |goto Frostfire Ridge/0 37.5,59.8 < 10
@@ -803,7 +739,6 @@ step
 	|poi_treasure Sealed Jug
 	|poilvl 90
 	|poispot Frostfire Ridge 09.83,45.33
-	|poitype treasure
 	|poiquest 34641
 	|poiitem 111407
 	_Go down_ the path along the water's edge |goto Frostfire Ridge/0 10.8,48.5
@@ -812,7 +747,6 @@ step
 	|poi_treasure Slave's Stash
 	|poilvl 90
 	|poispot Frostfire Ridge 27.65,42.80
-	|poitype treasure
 	|poiquest 33500
 	|poiitem 43696
 	_Jump onto_ the small building here |goto Frostfire Ridge/0 27.4,42.4
@@ -823,7 +757,6 @@ step
 	|poi_treasure Snow-Covered Strongbox
 	|poilvl 90
 	|poispot Frostfire Ridge 23.97,12.91
-	|poitype treasure
 	|poiquest 34647
 	|poicurrency GL --25
 	|poicurrency GR
@@ -834,7 +767,6 @@ step
 	|poi_treasure Supply Dump
 	|poilvl 90
 	|poispot Frostfire Ridge 16.12,49.72
-	|poitype treasure
 	|poiquest 33942
 	|poicurrency GR
 	_Climb_ on this rock and use it to jump to the next one |goto Frostfire Ridge/0 15.2,50.7
@@ -843,7 +775,6 @@ step
 	|poi_treasure Survivalist's Cache
 	|poilvl 90
 	|poispot Frostfire Ridge 64.72,25.73
-	|poitype treasure
 	|poiquest 33946
 	|poicurrency GR
 	_Go up_ the hill next to the cave entrance |goto Frostfire Ridge/0 64.1,31.2
@@ -857,7 +788,6 @@ step
 	|poi_treasure Thunderlord Cache
 	|poilvl 90
 	|poispot Frostfire Ridge 34.19,23.48
-	|poitype treasure
 	|poiquest 32803
 	|poiitem 107658
 	_Jump onto_ the rocks |goto Frostfire Ridge/0 35.4,24.3
@@ -868,7 +798,6 @@ step
 	|poi_treasure Wiggling Egg
 	|poilvl 90
 	|poispot Frostfire Ridge 64.40,65.86
-	|poitype treasure
 	|poiquest 33505
 	|poiitem 112107
 	_Go up_ the snowy hill, starting here |goto Frostfire Ridge/0 65.9,62.8
@@ -880,7 +809,6 @@ step
 	|poi_treasure Young Orc Traveler
 	|poilvl 90
 	|poispot Frostfire Ridge 54.84,35.45
-	|poitype treasure
 	|poiquest 33525
 	|poiitem 112206
 	_Please Note_: The Snow Hare's Foot aquired from the Orc Traveler is only half of the treasure. Be sure not to destroy it
@@ -893,7 +821,6 @@ step
 	|poi_treasure Young Orc Woman
 	|poilvl 90
 	|poispot Frostfire Ridge 63.40,14.70
-	|poitype treasure
 	|poiquest 33525
 	|poiitem 112206
 	_Please Note_: The Frostwolf First-Fang aquired from the Young Orc Woman is only half of the treasure. Be sure not to destroy it
@@ -907,7 +834,6 @@ step
 	|poi_treasure Cragmaul Cache
 	|poilvl 90
 	|poispot Frostfire Ridge 39.66,17.18
-	|poitype treasure
 	|poiquest 33532
 	|poiitem 120945
 	|poicurrency AC
@@ -919,7 +845,6 @@ step
 	|poiaccess Completionist
 	|poilvl 90
 	|poispot Frostfire Ridge 45.4,50.8
-	|poitype treasure
 	|poiquest 33011
 	|poiitem 106899
 	|poicurrency GR
@@ -937,7 +862,6 @@ step
 	|poi_treasure Doorog's Secret Stash
 	|poilvl 90
 	|poispot Frostfire Ridge/2 37.1,69.8
-	|poitype treasure
 	|poiquest 35370
 	|poiitem 113189
 	|poicurrency GL
@@ -951,7 +875,6 @@ step
 	|poi_treasure Gorr'thogg's Personal Reserve
 	|poilvl 90
 	|poispot Frostfire Ridge/3 31.3,66.6
-	|poitype treasure
 	|poiquest 35367
 	|poiitem 113108
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -967,7 +890,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 36.4,28.8
-	|poitype treasure
 	|poiquest 35347
 	|poicurrency GR
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -981,7 +903,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/1 53.2,28.3
-	|poitype treasure
 	|poiquest 35368
 	|poicurrency GL
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -994,7 +915,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/1 48.6,67.1
-	|poitype treasure
 	|poiquest 35369
 	|poicurrency GL
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1007,7 +927,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 46.2,15.6
-	|poitype treasure
 	|poiquest 35371
 	|poicurrency GL
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1021,7 +940,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 52.1,52.0
-	|poitype treasure
 	|poiquest 35373
 	|poicurrency GL
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1036,7 +954,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 51.3,17.9
-	|poitype treasure
 	|poiquest 35567
 	|poicurrency GR
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1050,7 +967,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 76.7,62.1
-	|poitype treasure
 	|poiquest 35568
 	|poicurrency GR
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1066,7 +982,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/2 70.5,67.7
-	|poitype treasure
 	|poiquest 35569
 	|poicurrency GR
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1082,7 +997,6 @@ step
 	|poi_treasure Ogre Booty
 	|poilvl 90
 	|poispot Frostfire Ridge/1 45.5,67.2
-	|poitype treasure
 	|poiquest 35570
 	|poicurrency GR
 	_Warning_: You may have to contend with 99 elite Horde wolves to get this treasure
@@ -1096,7 +1010,6 @@ step
 	|poi_treasure Brokor's Sack
 	|poilvl 92
 	|poispot Gorgrond 41.73,52.97
-	|poitype treasure
 	|poiquest 36506
 	|poiitem 118702
 	|poicurrency GL
@@ -1107,7 +1020,6 @@ step
 	|poi_treasure Discarded Pack
 	|poilvl 92
 	|poispot Gorgrond 42.36,83.41
-	|poitype treasure
 	|poiquest 36625
 	|poiitem RANDOM
 	|poicurrency GL
@@ -1120,7 +1032,6 @@ step
 	|poi_treasure Evermorn Supply Cache
 	|poilvl 92
 	|poispot Gorgrond 41.82,78.02
-	|poitype treasure
 	|poiquest 36658
 	|poiitem RANDOM
 	|poicurrency GL
@@ -1132,7 +1043,6 @@ step
 	|poi_treasure Explorer Canister
 	|poilvl 92
 	|poispot Gorgrond 40.36,76.60
-	|poitype treasure
 	|poiquest 36621
 	|poiitem 118710
 	|poicurrency GR
@@ -1143,7 +1053,6 @@ step
 	|poi_treasure Femur of Improbability
 	|poilvl 92
 	|poispot Gorgrond 40.04,72.23
-	|poitype treasure
 	|poiquest 36170
 	|poiitem 118715
 	_Enter_ Deadgrin |goto Gorgrond/0 38.8,73.5
@@ -1153,7 +1062,6 @@ step
 	|poi_treasure Harvestable Precious Crystal
 	|poilvl 92
 	|poispot Gorgrond 46.10,49.99
-	|poitype treasure
 	|poiquest 36651
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 44.7,50.7
@@ -1163,7 +1071,6 @@ step
 	|poi_treasure Horned Skull
 	|poilvl 92
 	|poispot Gorgrond 42.58,46.85
-	|poitype treasure
 	|poiquest 35056
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 43.4,47.9
@@ -1173,7 +1080,6 @@ step
 	|poi_treasure Iron Supply Chest
 	|poilvl 92
 	|poispot Gorgrond 43.69,42.48
-	|poitype treasure
 	|poiquest 36618
 	|poicurrency GR
 	|poicurrency GL
@@ -1184,7 +1090,6 @@ step
 	|poi_treasure Laughing Skull Cache
 	|poilvl 92
 	|poispot Gorgrond 44.20,74.27
-	|poitype treasure
 	|poiquest 35709
 	|poicurrency GR
 	_Climb up_ on the tree trunk |goto Gorgrond/0 44.3,73.6 < 8
@@ -1193,7 +1098,6 @@ step
 	|poi_treasure Ockbar's Pack
 	|poilvl 92
 	|poispot Gorgrond 43.10,92.90
-	|poitype treasure
 	|poiquest 34241
 	|poiitem 118227
 	click Ockbar's Pack##227998 |q 34241 |future |goto Gorgrond/0 43.1,92.9
@@ -1202,7 +1106,6 @@ step
 	|poi_treasure Odd Skull
 	|poilvl 92
 	|poispot Gorgrond 52.51,66.96
-	|poitype treasure
 	|poiquest 36509
 	|poiitem 118717
 	|poicurrency GL
@@ -1212,7 +1115,6 @@ step
 	|poi_treasure Petrified Rylak Egg
 	|poilvl 92
 	|poispot Gorgrond 46.24,42.95
-	|poitype treasure
 	|poiquest 36521
 	|poiitem 118707
 	|poicurrency GL
@@ -1224,7 +1126,6 @@ step
 	|poi_treasure Pile of Rubble
 	|poilvl 92
 	|poispot Gorgrond 43.95,70.55
-	|poitype treasure
 	|poiquest 36118
 	|poiitem RANDOM
 	|poicurrency GL
@@ -1235,7 +1136,6 @@ step
 	|poi_treasure Remains of Balik Orecrusher
 	|poilvl 92
 	|poispot Gorgrond 53.12,74.49
-	|poitype treasure
 	|poiquest 36654
 	|poiitem 118714
 	_Enter_ the cave |goto Gorgrond/0 51.5,74.4
@@ -1245,7 +1145,6 @@ step
 	|poi_treasure Remains of Balldir Deeprock
 	|poilvl 92
 	|poispot Gorgrond 57.84,55.97
-	|poitype treasure
 	|poiquest 36605
 	|poiitem 118703
 	click Remains of Balldir Deeprock##236096 |q 36605 |future |goto Gorgrond 57.84,55.97
@@ -1254,7 +1153,6 @@ step
 	|poi_treasure Sasha's Secret Stash
 	|poilvl 92
 	|poispot Gorgrond 39.03,68.05
-	|poitype treasure
 	|poiquest 36631
 	|poiitem RANDOM
 	|poicurrency GL
@@ -1267,7 +1165,6 @@ step
 	|poi_treasure Sniper's Crossbow
 	|poilvl 92
 	|poispot Gorgrond 44.95,42.62
-	|poitype treasure
 	|poiquest 36634
 	|poiitem 118713
 	_Climb up_ the hill here |goto Gorgrond/0 44.6,42.3 < 10
@@ -1278,7 +1175,6 @@ step
 	|poiaccess Completionist
 	|poilvl 92
 	|poispot Gorgrond 48.12,93.37
-	|poitype treasure
 	|poiquest 36604
 	|poiitem RANDOM
 	|poicurrency GL
@@ -1292,7 +1188,6 @@ step
 	|poi_treasure Strange Looking Dagger
 	|poilvl 92
 	|poispot Gorgrond 52.97,79.95
-	|poitype treasure
 	|poiquest 34940
 	|poiitem 118718
 	|poicurrency GL
@@ -1305,7 +1200,6 @@ step
 	|poi_treasure Strange Spore
 	|poilvl 92
 	|poispot Gorgrond 57.08,65.30
-	|poitype treasure
 	|poiquest 37249
 	|poiitem 118106
 	_Go up_ this hill towards the mushroom caps |goto Gorgrond/0 57.6,64.7 < 10
@@ -1317,7 +1211,6 @@ step
 	|poi_treasure Suntouched Spear
 	|poilvl 92
 	|poispot Gorgrond 45.69,49.72
-	|poitype treasure
 	|poiquest 36610
 	|poiitem 118708
 	click Suntouched Spear##236099 |q 36610 |future |goto Gorgrond 45.69,49.72
@@ -1327,7 +1220,6 @@ step
 	|poiaccess Completionist
 	|poilvl 92
 	|poispot Gorgrond 59.4,63.7
-	|poitype treasure
 	|poiquest 36628
 	|poiitem 118712
 	Use your Mechashredder ability to reach the top of the mushroom |cast Summon Mechashredder 5000##164050 |only if garrisonability("LumberMill")
@@ -1339,7 +1231,6 @@ step
 	|poi_treasure Warm Goren Egg
 	|poilvl 92
 	|poispot Gorgrond 48.94,47.31
-	|poitype treasure
 	|poiquest 36203
 	|poiitem 118705
 	|poicurrency GL
@@ -1350,7 +1241,6 @@ step
 	|poi_treasure Weapons Cache
 	|poilvl 92
 	|poispot Gorgrond 49.28,43.63
-	|poitype treasure
 	|poiquest 36596
 	|poiitem 107645
 	|poicurrency GL
@@ -1361,7 +1251,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 42.34,54.77
-	|poitype treasure
 	|poiquest 36003
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1371,7 +1260,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 47.51,43.63
-	|poitype treasure
 	|poiquest 36717
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1381,7 +1269,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 53.35,46.79
-	|poitype treasure
 	|poiquest 35701
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1391,7 +1278,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 50.15,53.76
-	|poitype treasure
 	|poiquest 35984
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 49.5,53.4
@@ -1402,7 +1288,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond/19 36.8,50.5
-	|poitype treasure
 	|poiquest 36720
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 43.3,47.8
@@ -1415,7 +1300,6 @@ step
 	|poi_treasure Botani Essence Seed
 	|poilvl 92
 	|poispot Gorgrond 41.98,81.55
-	|poitype treasure
 	|poiquest 35982
 	|poicurrency GR
 	_Enter_ the Evermoon Springs |goto Gorgrond/0 44.1,79.5
@@ -1426,7 +1310,6 @@ step
 	|poi_treasure Forgotten Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 49.65,78.83
-	|poitype treasure
 	|poiquest 35968
 	|poicurrency GR
 	_Enter_ the ruins |goto Gorgrond/0 49.6,80.5
@@ -1438,7 +1321,6 @@ step
 	|poi_treasure Forgotten Skull Cache
 	|poilvl 92
 	|poispot Gorgrond 47.01,69.05
-	|poitype treasure
 	|poiquest 35971
 	|poicurrency GR
 	_Warning_: Be wary of Horde guards!
@@ -1450,7 +1332,6 @@ step
 	|poi_treasure Forgotten Skull Cache
 	|poilvl 92
 	|poispot Gorgrond 45.80,89.31
-	|poitype treasure
 	|poiquest 36019
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1461,7 +1342,6 @@ step
 	|poi_treasure Forgotten Skull Cache
 	|poilvl 92
 	|poispot Gorgrond 39.33,56.27
-	|poitype treasure
 	|poiquest 36716
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1471,7 +1351,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 56.74,57.27
-	|poitype treasure
 	|poiquest 35965
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1481,7 +1360,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 41.14,77.26
-	|poitype treasure
 	|poiquest 35980
 	|poicurrency GR
 	_Follow_ the outside wall of Evermorn Springs |goto Gorgrond/0 42.6,76.7
@@ -1493,7 +1371,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 60.50,72.76
-	|poitype treasure
 	|poiquest 36015
 	|poicurrency GR
 	_Enter_ Tangleheart |goto Gorgrond/0 56.3,71.8
@@ -1505,7 +1382,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 63.28,57.19
-	|poitype treasure
 	|poiquest 36430
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1516,7 +1392,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 47.64,76.79
-	|poitype treasure
 	|poiquest 36714
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1526,7 +1401,6 @@ step
 	|poi_treasure Mysterious Petrified Pod
 	|poilvl 92
 	|poispot Gorgrond 51.75,69.09
-	|poitype treasure
 	|poiquest 36715
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1537,7 +1411,6 @@ step
 	|poi_treasure Obsidian Crystal Formation
 	|poilvl 92
 	|poispot Gorgrond 40.95,67.32
-	|poitype treasure
 	|poiquest 35979
 	|poicurrency GR
 	_Enter_ the Stonemaul Arena |goto Gorgrond/0 41.9,65.3
@@ -1549,7 +1422,6 @@ step
 	|poi_treasure Remains of Explorer Engineer Toldirk Ashlamp
 	|poilvl 92
 	|poispot Gorgrond 45.96,93.57
-	|poitype treasure
 	|poiquest 35975
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1559,7 +1431,6 @@ step
 	|poi_treasure Remains of Grimnir Ashpick
 	|poilvl 92
 	|poispot Gorgrond 51.80,61.48
-	|poitype treasure
 	|poiquest 35966
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1570,7 +1441,6 @@ step
 	|poi_treasure Unknown Petrified Egg
 	|poilvl 92
 	|poispot Gorgrond 51.64,72.26
-	|poitype treasure
 	|poiquest 35967
 	|poicurrency GR
 	_Enter_ Overlook Ruins |goto Gorgrond/0 50.4,73.0
@@ -1582,7 +1452,6 @@ step
 	|poi_treasure Unknown Petrified Egg
 	|poilvl 92
 	|poispot Gorgrond 45.31,81.95
-	|poitype treasure
 	|poiquest 35981
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1593,7 +1462,6 @@ step
 	|poi_treasure Unknown Petrified Egg
 	|poilvl 92
 	|poispot Gorgrond 42.91,43.50
-	|poitype treasure
 	|poiquest 36001
 	|poicurrency GR
 	_Ascend_ the hill |goto Gorgrond/0 43.9,43.9
@@ -1604,7 +1472,6 @@ step
 	|poi_treasure Unknown Petrified Egg
 	|poilvl 92
 	|poispot Gorgrond 53.00,79.06
-	|poitype treasure
 	|poiquest 36713
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 51.4,77.6 < 10
@@ -1618,7 +1485,6 @@ step
 	|poi_treasure Unknown Petrified Egg
 	|poilvl 92
 	|poispot Gorgrond 47.24,51.80
-	|poitype treasure
 	|poiquest 36718
 	|poicurrency GR
 	|tip Click the mass of vines to summon your shredder, allowing you to access the treasure.
@@ -1630,7 +1496,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 45.63,49.31
-	|poitype treasure
 	|poiquest 36722
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1641,7 +1506,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond/19 60.5,43.1
-	|poitype treasure
 	|poiquest 36723
 	|poicurrency GR
 	_Enter_ the cave |goto Gorgrond/0 43.5,48.0 < 15
@@ -1654,7 +1518,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 41.76,45.27
-	|poitype treasure
 	|poiquest 36726
 	|poicurrency GR
 	_Go up_ the road |goto Gorgrond/0 41.6,46.9
@@ -1666,7 +1529,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 48.11,55.16
-	|poitype treasure
 	|poiquest 36730
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1677,7 +1539,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 51.33,40.55
-	|poitype treasure
 	|poiquest 36734
 	|poicurrency GR
 	_Go up_ the hill |goto Gorgrond/0 50.9,41.1 < 20
@@ -1689,7 +1550,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 46.05,63.05
-	|poitype treasure
 	|poiquest 36736
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1700,7 +1560,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 58.12,51.46
-	|poitype treasure
 	|poiquest 36739
 	|poicurrency GR
 	_Go up_ the hill and hug the wall |goto Gorgrond/0 57.8,52.3
@@ -1711,7 +1570,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 59.56,72.75
-	|poitype treasure
 	|poiquest 36781
 	|poicurrency GR
 	_Enter_ Tangleheart |goto Gorgrond/0 56.6,72.0
@@ -1724,7 +1582,6 @@ step
 	|poi_treasure Aged Stone Container
 	|poilvl 92
 	|poispot Gorgrond 45.74,88.21
-	|poitype treasure
 	|poiquest 36784
 	|poicurrency GR
 	_Go up_ here |goto Gorgrond/0 46.3,88.3
@@ -1735,7 +1592,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 45.54,42.98
-	|poitype treasure
 	|poiquest 36733
 	|poicurrency GR
 	_Go up_ the hill |goto Gorgrond/0 45.4,44.2 < 20
@@ -1746,7 +1602,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 45.07,69.93
-	|poitype treasure
 	|poiquest 36737
 	|poicurrency GR
 	_Walk across_ the stone |goto Gorgrond/0 44.7,70.3
@@ -1757,7 +1612,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 61.55,58.55
-	|poitype treasure
 	|poiquest 36740
 	|poicurrency GR
 	_Follow_ the uppper ridge |goto Gorgrond/0 61.2,56.5
@@ -1768,7 +1622,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 54.25,73.13
-	|poitype treasure
 	|poiquest 36782
 	|poicurrency GR
 	_Go up_ the hill |goto Gorgrond/0 54.4,71.2
@@ -1779,7 +1632,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 42.17,93.08
-	|poitype treasure
 	|poiquest 36787
 	|poicurrency GR
 	_Go up_ the trail |goto Gorgrond/0 42.5,91.0
@@ -1790,7 +1642,6 @@ step
 	|poi_treasure Ancient Ogre Cache
 	|poilvl 92
 	|poispot Gorgrond 41.52,86.52
-	|poitype treasure
 	|poiquest 36789
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1801,7 +1652,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 49.42,50.84
-	|poitype treasure
 	|poiquest 36710
 	|poicurrency GR
 	_Go up_ the trail |goto Gorgrond/0 50.3,49.8 < 10
@@ -1812,7 +1662,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 42.19,52.03
-	|poitype treasure
 	|poiquest 36727
 	|poicurrency GR
 	_Follow_ the road |goto Gorgrond/0 42.6,53.6
@@ -1824,7 +1673,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 43.36,51.69
-	|poitype treasure
 	|poiquest 36731
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1835,7 +1683,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 47.92,39.98
-	|poitype treasure
 	|poiquest 36735
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1846,7 +1693,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 50.32,66.58
-	|poitype treasure
 	|poiquest 36738
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1856,7 +1702,6 @@ step
 	|poi_treasure Ancient Titan Chest
 	|poilvl 92
 	|poispot Gorgrond 49.12,82.48
-	|poitype treasure
 	|poiquest 36783
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1866,7 +1711,6 @@ step
 	|poi_treasure Obsidian Crystal Formation
 	|poilvl 92
 	|poispot Gorgrond 48.11,46.38
-	|poitype treasure
 	|poiquest 36721
 	|poicurrency GR
 	_Follow_ the top ridge |goto Gorgrond/0 48.8,48.1
@@ -1877,7 +1721,6 @@ step
 	|poi_treasure Obsidian Crystal Formation
 	|poilvl 92
 	|poispot Gorgrond 41.85,58.89
-	|poitype treasure
 	|poiquest 36728
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1888,7 +1731,6 @@ step
 	|poi_treasure Obsidian Crystal Formation
 	|poilvl 92
 	|poispot Gorgrond 42.05,64.29
-	|poitype treasure
 	|poiquest 36729
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1898,7 +1740,6 @@ step
 	|poi_treasure Obsidian Crystal Formation
 	|poilvl 92
 	|poispot Gorgrond 44.18,46.65
-	|poitype treasure
 	|poiquest 36732
 	|poicurrency GR
 	|tip Click the boulder and Beatface will break it, allowing you to access the treasure.
@@ -1909,7 +1750,6 @@ step
 	|poi_treasure Aarko's Family Treasure
 	|poilvl 94
 	|poispot Talador 36.53,95.98
-	|poitype treasure
 	|poiquest 34182
 	|poiitem 117567
 	|poicurrency GR
@@ -1924,7 +1764,6 @@ step
 	|poi_treasure Amethyl Crystal
 	|poilvl 94
 	|poispot Talador 62.08,32.38
-	|poitype treasure
 	|poiquest 34236
 	|poiitem 116131
 	|poicurrency GR, GL
@@ -1934,7 +1773,6 @@ step
 	|poi_treasure Aruuna Mining Cart
 	|poilvl 94
 	|poispot Talador 81.84,34.94
-	|poitype treasure
 	|poiquest 34260
 	|poiitem 109118
 	_Enter_ the mine |goto Talador/0 78.5,35.5
@@ -1947,7 +1785,6 @@ step
 	|poi_treasure Barrel of Fish
 	|poilvl 94
 	|poispot Talador 62.41,47.97
-	|poitype treasure
 	|poiquest 34252
 	|poicurrency GR
 	click Barrel of Fish##228016 |q 34252 |future |goto Talador 62.41,47.97
@@ -1956,7 +1793,6 @@ step
 	|poi_treasure Bonechewer Remnants
 	|poilvl 94
 	|poispot Talador 33.29,76.80
-	|poitype treasure
 	|poiquest 34259
 	|poicurrency GL
 	_Enter_ the hut |goto Talador/0 33.6,76.2
@@ -1966,7 +1802,6 @@ step
 	|poi_treasure Bonechewer Spear
 	|poilvl 94
 	|poispot Talador 37.60,74.90
-	|poitype treasure
 	|poiquest 34148
 	|poiitem 112371
 	|poicurrency GR
@@ -1978,7 +1813,6 @@ step
 	|poi_treasure Bright Coin
 	|poilvl 94
 	|poispot Talador 73.52,51.37
-	|poitype treasure
 	|poiquest 34471
 	|poiitem 116127
 	|poicurrency GL
@@ -1989,7 +1823,6 @@ step
 	|poiaccess Completionist
 	|poilvl 94
 	|poispot Talador 70.10,07.00
-	|poitype treasure
 	|poiquest 36937
 	|poiitem 120945
 	|poicurrency AC
@@ -2002,7 +1835,6 @@ step
 	|poi_treasure Charred Sword
 	|poilvl 94
 	|poispot Talador 77.04,49.96
-	|poitype treasure
 	|poiquest 34248
 	|poiitem 116116
 	click Charred Sword##228012 |q 34248 |future |goto Talador 77.04,49.96
@@ -2011,7 +1843,6 @@ step
 	|poi_treasure Curious Deathweb Egg
 	|poilvl 94
 	|poispot Talador 66.50,86.94
-	|poitype treasure
 	|poiquest 34239
 	|poiitem 117569
 	_Enter_ the cave |goto Talador/0 61.3,84.2
@@ -2022,7 +1853,6 @@ step
 	|poi_treasure Deceptia's Smoldering Boots
 	|poilvl 94
 	|poispot Talador 58.90,12.00
-	|poitype treasure
 	|poiquest 33933
 	|poiitem 108743
 	click Deceptia's Smoldering Boots##226976 |q 33933 |future |goto Talador 58.90,12.00
@@ -2031,7 +1861,6 @@ step
 	|poi_treasure Draenei Weapons
 	|poilvl 94
 	|poispot Talador 55.25,66.71
-	|poitype treasure
 	|poiquest 34253
 	|poiitem 116118
 	|poicurrency GL
@@ -2041,7 +1870,6 @@ step
 	|poi_treasure Farmer's Bounty
 	|poilvl 94
 	|poispot Talador 35.41,96.56
-	|poitype treasure
 	|poiquest 34249
 	|poicurrency GL
 	_Follow_ the road |goto Talador/0 37.8,95.9
@@ -2052,7 +1880,6 @@ step
 	|poi_treasure Foreman's Lunchbox
 	|poilvl 94
 	|poispot Talador 57.36,28.66
-	|poitype treasure
 	|poiquest 34238
 	|poiitem 116120
 	_Enter_ Archenon Siegeyard |goto Talador/0 57.2,29.7
@@ -2066,7 +1893,6 @@ step
 	|poi_treasure Iron Box
 	|poilvl 94
 	|poispot Talador 64.58,79.20
-	|poitype treasure
 	|poiquest 34251
 	|poiitem 117571
 	|poicurrency GL
@@ -2077,7 +1903,6 @@ step
 	|poi_treasure Iron Scout
 	|poilvl 94
 	|poispot Talador 75.00,36.00
-	|poitype treasure
 	|poiquest 33649
 	|poicurrency GR
 	click Iron Scout##75644
@@ -2087,7 +1912,6 @@ step
 	|poi_treasure Isaari's Cache
 	|poilvl 94
 	|poispot Talador 57.20,75.40
-	|poitype treasure
 	|poiquest 34134
 	|poiitem 117563
 	|poicurrency GR
@@ -2097,7 +1921,6 @@ step
 	|poi_treasure Jug of Aged Ironwine
 	|poilvl 94
 	|poispot Talador 65.47,11.37
-	|poitype treasure
 	|poiquest 34233
 	|poiitem 117568
 	_Drop down_ at the waterfall |goto Talador/0 65.47,11.37 < 15
@@ -2108,7 +1931,6 @@ step
 	|poi_treasure Keluu's Belongings
 	|poilvl 94
 	|poispot Talador 75.68,41.40
-	|poitype treasure
 	|poiquest 34261
 	|poicurrency GL
 	click Keluu's Belongings##228025 |q 34261 |future |goto Talador 75.68,41.40
@@ -2117,7 +1939,6 @@ step
 	|poi_treasure Ketya's Stash
 	|poilvl 94
 	|poispot Talador 53.97,27.69
-	|poitype treasure
 	|poiquest 34290
 	|poiitem 116402
 	|poiitem 116121
@@ -2131,7 +1952,6 @@ step
 	|poiaccess Completionist
 	|poilvl 94
 	|poispot Talador 38.19,12.42
-	|poitype treasure
 	|poiquest 34258
 	|poicurrency GL
 	_Follow_ the pier |goto Talador/0 35.4,17.1
@@ -2141,7 +1961,6 @@ step
 	|poi_treasure Lightbearer
 	|poilvl 94
 	|poispot Talador 68.80,56.20
-	|poitype treasure
 	|poiquest 34101
 	|poiitem 109192
 	click Lightbearer##227527 |q 34101 |future |goto Talador 68.80,56.20
@@ -2150,7 +1969,6 @@ step
 	|poi_treasure Luminous Shell
 	|poilvl 94
 	|poispot Talador 52.56,29.54
-	|poitype treasure
 	|poiquest 34235
 	|poiitem 116132
 	|poicurrency GL
@@ -2160,7 +1978,6 @@ step
 	|poi_treasure Pure Crystal Dust
 	|poilvl 94
 	|poispot Talador 78.21,14.71
-	|poitype treasure
 	|poiquest 34263
 	|poiitem 117572
 	|poicurrency GL
@@ -2173,7 +1990,6 @@ step
 	|poi_treasure Relic of Aruuna
 	|poilvl 94
 	|poispot Talador 75.78,44.72
-	|poitype treasure
 	|poiquest 34250
 	|poiitem 116128
 	|poicurrency GL
@@ -2184,7 +2000,6 @@ step
 	|poi_treasure Relic of Telmor
 	|poilvl 94
 	|poispot Talador 46.96,91.74
-	|poitype treasure
 	|poiquest 34256
 	|poiitem 116128
 	|poicurrency GL
@@ -2195,7 +2010,6 @@ step
 	|poi_treasure Rook's Tacklebox
 	|poilvl 94
 	|poispot Talador 64.90,13.30
-	|poitype treasure
 	|poiquest 34232
 	|poiitem 116117
 	|poicurrency GL
@@ -2206,7 +2020,6 @@ step
 	|poi_treasure Rusted Lockbox
 	|poilvl 94
 	|poispot Talador 65.96,85.13
-	|poitype treasure
 	|poiquest 34276
 	|poiitem RANDOM
 	|poicurrency GL
@@ -2219,7 +2032,6 @@ step
 	|poi_treasure Soulbinder's Reliquary
 	|poilvl 94
 	|poispot Talador/14 28.2,34.9
-	|poitype treasure
 	|poiquest 34254
 	|poiitem 117570
 	|poicurrency GL
@@ -2231,7 +2043,6 @@ step
 	|poi_treasure Teroclaw Nest 1
 	|poilvl 94
 	|poispot Talador 74.60,29.30
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2241,7 +2052,6 @@ step
 	|poi_treasure Teroclaw Nest 10
 	|poilvl 94
 	|poispot Talador 39.30,77.70
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2251,7 +2061,6 @@ step
 	|poi_treasure Teroclaw Nest 2
 	|poilvl 94
 	|poispot Talador 73.50,30.70
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2261,7 +2070,6 @@ step
 	|poi_treasure Teroclaw Nest 3
 	|poilvl 94
 	|poispot Talador 74.30,34.00
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2271,7 +2079,6 @@ step
 	|poi_treasure Teroclaw Nest 4
 	|poilvl 94
 	|poispot Talador 72.80,35.60
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2281,7 +2088,6 @@ step
 	|poi_treasure Teroclaw Nest 5
 	|poilvl 94
 	|poispot Talador 72.40,37.00
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2291,7 +2097,6 @@ step
 	|poi_treasure Teroclaw Nest 6
 	|poilvl 94
 	|poispot Talador 70.90,35.50
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2301,7 +2106,6 @@ step
 	|poi_treasure Teroclaw Nest 7
 	|poilvl 94
 	|poispot Talador 70.80,32.00
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2311,7 +2115,6 @@ step
 	|poi_treasure Teroclaw Nest 8
 	|poilvl 94
 	|poispot Talador 54.10,56.30
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2321,7 +2124,6 @@ step
 	|poi_treasure Teroclaw Nest 9
 	|poilvl 94
 	|poispot Talador 39.80,76.70
-	|poitype treasure
 	|poiquest 35162
 	|poiitem 112699
 	If the nest is not here, click here to try _another location_ |confirm
@@ -2331,7 +2133,6 @@ step
 	|poi_treasure Treasure of Ango'rosh
 	|poilvl 94
 	|poispot Talador 38.33,84.50
-	|poitype treasure
 	|poiquest 34257
 	|poiitem 116119
 	_Go to_ the ruins |goto Talador/0 38.8,83.6
@@ -2341,7 +2142,6 @@ step
 	|poi_treasure Webbed Sac
 	|poilvl 94
 	|poispot Talador 65.44,88.60
-	|poitype treasure
 	|poiquest 34255
 	|poicurrency GL
 	_Enter_ the cave |goto Talador/0 61.3,84.2 < 15
@@ -2352,7 +2152,6 @@ step
 	|poi_treasure Yuuri's Gift
 	|poilvl 94
 	|poispot Talador 40.60,89.50
-	|poitype treasure
 	|poiquest 34140
 	|poicurrency GR
 	click Yuuri's Gift##227587 |q 34140 |future |goto Talador 40.60,89.50
@@ -2362,7 +2161,6 @@ step
 	|poi_treasure Gift of the Ancients
 	|poilvl 94
 	|poispot Talador 28.39,74.19
-	|poitype treasure
 	|poiquest 36829
 	|poiitem 118686
 	_Go up_ the trail |goto Talador/0 27.3,75.9 < 20
@@ -2374,7 +2172,6 @@ step
 	|poi_treasure Sparkling Pool
 	|poilvl 94
 	|poispot Talador 39.30,41.72
-	|poitype treasure
 	|poiquest 34207
 	|poiitem 112623
 	|poicurrency GR
@@ -2384,7 +2181,6 @@ step
 	|poiaccess Completionist
 	|poilvl 94
 	|poispot Talador 61.10,71.70
-	|poitype treasure
 	|poiquest 34116
 	|poiitem 117563
 	|poicurrency GR
@@ -2396,7 +2192,6 @@ step
 	|poi_treasure Abandoned Mining Pick
 	|poilvl 96
 	|poispot Spires of Arak 40.59,54.97
-	|poitype treasure
 	|poiquest 36458
 	|poiitem 116913
 	_Go up_ the hidden path |goto Spires of Arak/0 40.2,55.9
@@ -2406,7 +2201,6 @@ step
 	|poi_treasure Admiral Taylor's Coffer
 	|poilvl 96
 	|poispot Spires of Arak 36.19,54.46
-	|poitype treasure
 	|poiquest 36462
 	|poicurrency GR
 	click An Old Key##235366 |goto Spires of Arak 37.70,56.40 |only if itemcount(116020) < 1
@@ -2419,7 +2213,6 @@ step
 	|poi_treasure Assassin's Spear
 	|poilvl 96
 	|poispot Spires of Arak 49.20,37.21
-	|poitype treasure
 	|poiquest 36445
 	|poiitem 116835
 	_Go up_ the path |goto Spires of Arak 49.2,38.2
@@ -2429,7 +2222,6 @@ step
 	|poi_treasure Campaign Contributions
 	|poilvl 96
 	|poispot Spires of Arak 55.53,90.86
-	|poitype treasure
 	|poiquest 36367
 	|poicurrency GL
 	_Go up_ the hill |goto Spires of Arak 56.9,90.9
@@ -2441,7 +2233,6 @@ step
 	|poi_treasure Coinbender's Payment
 	|poilvl 96
 	|poispot Spires of Arak 68.42,88.98
-	|poitype treasure
 	|poiquest 36453
 	|poicurrency GL
 	click Coinbender's Payment##235299 |q 36453 |future |goto Spires of Arak 68.42,88.98
@@ -2450,7 +2241,6 @@ step
 	|poi_treasure Ephial's Dark Grimoire
 	|poilvl 96
 	|poispot Spires of Arak 36.58,57.91
-	|poitype treasure
 	|poiquest 36418
 	|poiitem 116914
 	_Enter_ the house |goto Spires of Arak/0 36.6,57.6 < 10
@@ -2460,7 +2250,6 @@ step
 	|poi_treasure Fractured Sunstone
 	|poilvl 96
 	|poispot Spires of Arak 50.50,22.10
-	|poitype treasure
 	|poiquest 36246
 	|poiitem 116919
 	click Fractured Sunstone##234157 |q 36246 |future |goto Spires of Arak 50.50,22.10
@@ -2469,7 +2258,6 @@ step
 	|poi_treasure Garrison Supplies
 	|poilvl 96
 	|poispot Spires of Arak 37.15,47.50
-	|poitype treasure
 	|poiquest 36420
 	|poicurrency GR
 	_Enter_ the small canyon |goto Spires of Arak/0 38.1,46.7
@@ -2479,7 +2267,6 @@ step
 	|poi_treasure Garrison Workman's Hammer
 	|poilvl 96
 	|poispot Spires of Arak 41.85,50.42
-	|poitype treasure
 	|poiquest 36451
 	|poiitem 116918
 	click Garrison Workman's Hammer##235289 |q 36451 |future |goto Spires of Arak 41.85,50.42
@@ -2488,7 +2275,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 1
 	|poilvl 96
 	|poispot Spires of Arak 43.90,15.00
-	|poitype treasure
 	|poiquest 36395
 	|poiitem 115463
 	click Elixir of Shadow Sight 1##234703 |q 36395 |future |goto Spires of Arak 43.90,15.00
@@ -2497,7 +2283,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 2
 	|poilvl 96
 	|poispot Spires of Arak 43.83,24.64
-	|poitype treasure
 	|poiquest 36397
 	|poiitem 115463
 	_Enter_ the burning hut |goto Spires of Arak/0 43.8,25.1 < 8
@@ -2507,7 +2292,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 3
 	|poilvl 96
 	|poispot Spires of Arak 69.20,43.30
-	|poitype treasure
 	|poiquest 36398
 	|poiitem 115463
 	_Go up_ the wall and drop down |goto Spires of Arak/0 68.9,43.4 < 10
@@ -2517,7 +2301,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 4
 	|poilvl 96
 	|poispot Spires of Arak 49.0,62.6
-	|poitype treasure
 	|poiquest 36399
 	|poiitem 115463
 	_Enter_ the hovel |goto Spires of Arak/0 48.8,62.0 < 10
@@ -2527,7 +2310,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 5
 	|poilvl 96
 	|poispot Spires of Arak 55.60,22.00
-	|poitype treasure
 	|poiquest 36400
 	|poiitem 115463
 	_Go around_ the small hills towards the tree |goto Spires of Arak/0 55.4,21.7 < 10
@@ -2537,7 +2319,6 @@ step
 	|poi_treasure Elixir of Shadow Sight 6
 	|poilvl 96
 	|poispot Spires of Arak 53.10,84.50
-	|poitype treasure
 	|poiquest 36401
 	|poiitem 115463
 	_Go to_ the edge of the water |goto Spires of Arak/0 53.6,84.1 < 20
@@ -2547,7 +2328,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 48.60,44.50
-	|poitype treasure
 	|poiquest 36386
 	|poiitem 118237
 	use Elixir of Shadow Sight##115463 |only if itemcount(115463) > 0
@@ -2557,7 +2337,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 57.00,79.00
-	|poitype treasure
 	|poiquest 36390
 	|poiitem 118241
 	Take the _side path_ to the altar |goto Spires of Arak/0 57.5,77.6 < 20 |only if itemcount(115463) > 0
@@ -2568,7 +2347,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 46.95,40.44
-	|poitype treasure
 	|poiquest 36389
 	|poiitem 118238
 	use Elixir of Shadow Sight##115463 |only if itemcount(115463) > 0
@@ -2578,7 +2356,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 52.03,19.58
-	|poitype treasure
 	|poiquest 36392
 	|poiitem 118239
 	_Go up_ the hill |goto Spires of Arak/0 51.2,20.7 < 15 |only if itemcount(115463) > 0
@@ -2589,7 +2366,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 42.40,26.70
-	|poitype treasure
 	|poiquest 36388
 	|poiitem 118242
 	use Elixir of Shadow Sight##115463 |only if itemcount(115463) > 0
@@ -2599,7 +2375,6 @@ step
 	|poi_treasure Gift of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 61.10,55.37
-	|poitype treasure
 	|poiquest 36381
 	|poiitem 118240
 	use Elixir of Shadow Sight##115463 |only if itemcount(115463) > 0
@@ -2609,7 +2384,6 @@ step
 	|poi_treasure Iron Horde Explosives
 	|poilvl 96
 	|poispot Spires of Arak 50.33,25.79
-	|poitype treasure
 	|poiquest 36444
 	|poiitem 118691
 	|poicurrency GR
@@ -2622,7 +2396,6 @@ step
 	|poi_treasure Lost Herb Satchel
 	|poilvl 96
 	|poispot Spires of Arak 50.78,28.74
-	|poitype treasure
 	|poiquest 36247
 	|poiitem 109124
 	|poiitem 109126
@@ -2636,7 +2409,6 @@ step
 	|poi_treasure Lost Ring
 	|poilvl 96
 	|poispot Spires of Arak 47.77,36.12
-	|poitype treasure
 	|poiquest 36411
 	|poiitem 116911
 	_Follow_ the path |goto Spires of Arak/0 47.1,37.8
@@ -2646,7 +2418,6 @@ step
 	|poi_treasure Misplaced Scroll
 	|poilvl 96
 	|poispot Spires of Arak 52.47,42.80
-	|poitype treasure
 	|poiquest 36416
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	|tip This treasure grants +1-4 to Archaeology skill level.
@@ -2659,7 +2430,6 @@ step
 	|poi_treasure Misplaced Scrolls
 	|poilvl 96
 	|poispot Spires of Arak 42.69,18.32
-	|poitype treasure
 	|poiquest 36244
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	|tip This treasure grants +1-4 to Archaeology skill level.
@@ -2671,7 +2441,6 @@ step
 	|poi_treasure Mysterious Mushrooms
 	|poilvl 96
 	|poispot Spires of Arak 63.58,67.37
-	|poitype treasure
 	|poiquest 36454
 	|poiitem 109127
 	_Go between_ these two ridges and continue up |goto Spires of Arak/0 63.2,66.5
@@ -2680,7 +2449,6 @@ step
 	|poi_treasure Nizzix's Chest
 	|poilvl 96
 	|poispot Spires of Arak 60.80,87.80
-	|poitype treasure
 	|poiquest 35481
 	|poicurrency GR
 	click Escape Pod##6477 |goto Spires of Arak/0 60.9,88.0 < 8
@@ -2690,7 +2458,6 @@ step
 	|poi_treasure Offering to the Raven Mother 1
 	|poilvl 96
 	|poispot Spires of Arak 53.31,55.52
-	|poitype treasure
 	|poiquest 36403
 	|poiitem 118267
 	_Go through_ the small opening |goto Spires of Arak/0 52.7,55.4 < 10
@@ -2701,7 +2468,6 @@ step
 	|poi_treasure Offering to the Raven Mother 2
 	|poilvl 96
 	|poispot Spires of Arak 48.35,52.61
-	|poitype treasure
 	|poiquest 36405
 	|poiitem 118267
 	_Go up_ the hill past Stonescale |goto Spires of Arak/0 49.1,52.3 < 15
@@ -2711,7 +2477,6 @@ step
 	|poi_treasure Offering to the Raven Mother 3
 	|poilvl 96
 	|poispot Spires of Arak 48.90,54.70
-	|poitype treasure
 	|poiquest 36406
 	|poiitem 118267
 	_Go up_ the path here |goto Spires of Arak/0 48.9,55.9 < 15
@@ -2721,7 +2486,6 @@ step
 	|poi_treasure Offering to the Raven Mother 4
 	|poilvl 96
 	|poispot Spires of Arak 51.88,64.65
-	|poitype treasure
 	|poiquest 36407
 	|poiitem 118267
 	_Go up_ the hidden path |goto Spires of Arak/0 51.5,63.8 < 10
@@ -2730,7 +2494,6 @@ step
 	|poi_treasure Offering to the Raven Mother 5
 	|poilvl 96
 	|poispot Spires of Arak 60.97,63.87
-	|poitype treasure
 	|poiquest 36410
 	|poiitem 118267
 	_Go up_ the hidden path |goto Spires of Arak/0 61.9,64.0 < 10
@@ -2739,7 +2502,6 @@ step
 	|poi_treasure Ogron Plunder
 	|poilvl 96
 	|poispot Spires of Arak 58.70,60.24
-	|poitype treasure
 	|poiquest 36340
 	|poiitem 116921
 	|poiitem 116922
@@ -2749,7 +2511,6 @@ step
 	|poi_treasure Orcish Signaling Horn
 	|poilvl 96
 	|poispot Spires of Arak 36.28,39.34
-	|poitype treasure
 	|poiquest 36402
 	|poiitem 120337
 	click Orcish Signaling Horn##234740 |q 36402 |future |goto Spires of Arak 36.28,39.34
@@ -2758,7 +2519,6 @@ step
 	|poi_treasure Outcast's Belongings 1
 	|poilvl 96
 	|poispot Spires of Arak 36.82,17.16
-	|poitype treasure
 	|poiquest 36243
 	|poiitem RANDOM
 	|poicurrency GL
@@ -2768,7 +2528,6 @@ step
 	|poi_treasure Outcast's Belongings 2
 	|poilvl 96
 	|poispot Spires of Arak 42.17,21.68
-	|poitype treasure
 	|poiquest 36447
 	|poiitem RANDOM
 	|poicurrency GL
@@ -2778,7 +2537,6 @@ step
 	|poi_treasure Outcast's Pouch
 	|poilvl 96
 	|poispot Spires of Arak 46.90,34.06
-	|poitype treasure
 	|poiquest 36446
 	|poiitem RANDOM
 	|poicurrency GL
@@ -2789,7 +2547,6 @@ step
 	|poi_treasure Relics of the Outcasts 1
 	|poilvl 96
 	|poispot Spires of Arak 42.96,16.37
-	|poitype treasure
 	|poiquest 36245
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Jump onto_ the wall from this point |goto Spires of Arak/0 43.4,15.3 < 8
@@ -2800,7 +2557,6 @@ step
 	|poi_treasure Relics of the Outcasts 2
 	|poilvl 96
 	|poispot Spires of Arak 45.96,44.15
-	|poitype treasure
 	|poiquest 36354
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Jump_ from this point on the rock to the rope tethered to the tree |goto Spires of Arak/0 46.9,43.6 < 7
@@ -2811,7 +2567,6 @@ step
 	|poi_treasure Relics of the Outcasts 3
 	|poilvl 96
 	|poispot Spires of Arak 43.16,27.26
-	|poitype treasure
 	|poiquest 36355
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Jump onto_ the stump and walk the rope around to the treasure |goto Spires of Arak/0 44.6,27.6 < 10
@@ -2822,7 +2577,6 @@ step
 	|poi_treasure Relics of the Outcasts 4
 	|poilvl 96
 	|poispot Spires of Arak 67.37,39.83
-	|poitype treasure
 	|poiquest 36356
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Mount up_ and jump from this point onto the wall |goto Spires of Arak/0 68.0,39.6 < 5
@@ -2833,7 +2587,6 @@ step
 	|poi_treasure Relics of the Outcasts 5
 	|poilvl 96
 	|poispot Spires of Arak 60.21,53.91
-	|poitype treasure
 	|poiquest 36359
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Jump onto_ the rope |goto Spires of Arak/0 60.2,53.2
@@ -2844,7 +2597,6 @@ step
 	|poi_treasure Relics of the Outcasts 6
 	|poilvl 96
 	|poispot Spires of Arak 51.89,48.92
-	|poitype treasure
 	|poiquest 36360
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	_Jump onto_ the wall here |goto Spires of Arak/0 52.1,49.0 < 5
@@ -2856,7 +2608,6 @@ step
 	|poi_treasure Rooby's Roo
 	|poilvl 96
 	|poispot Spires of Arak 37.37,50.56
-	|poitype treasure
 	|poiquest 36657
 	|poiitem 116887
 	_Enter_ the inn |goto Spires of Arak/0 37.6,51.2 < 5 |only if itemcount(114835) < 3 and not completedq(36657)
@@ -2870,7 +2621,6 @@ step
 	|poi_treasure Rukhmar's Image
 	|poilvl 96
 	|poispot Spires of Arak 44.33,12.04
-	|poitype treasure
 	|poiquest 36377
 	|poiitem 118693
 	_Enter_ the hovel |goto Spires of Arak/0 44.4,12.3
@@ -2879,7 +2629,6 @@ step
 	|poi_treasure Sailor Zazzuk's 180-Proof Rum
 	|poilvl 96
 	|poispot Spires of Arak 59.17,90.64
-	|poitype treasure
 	|poiquest 36366
 	|poiitem 116917
 	_Enter_ the little shack |goto Spires of Arak/0 59.1,90.6 < 5
@@ -2889,7 +2638,6 @@ step
 	|poi_treasure Sethekk Idol
 	|poilvl 96
 	|poispot Spires of Arak 68.33,38.93
-	|poitype treasure
 	|poiquest 36375
 	|poiitem 118692
 	_Go up_ the path |goto Spires of Arak/0 67.3,38.6
@@ -2899,7 +2647,6 @@ step
 	|poi_treasure Sethekk Ritual Brew
 	|poilvl 96
 	|poispot Spires of Arak 71.64,48.59
-	|poitype treasure
 	|poiquest 36450
 	|poiitem 109223
 	|poiitem 117437
@@ -2909,7 +2656,6 @@ step
 	|poi_treasure Shattered Hand Cache
 	|poilvl 96
 	|poispot Spires of Arak 56.23,28.81
-	|poitype treasure
 	|poiquest 36362
 	|poicurrency GR
 	_Enter_ the hut |goto Spires of Arak/0 56.1,28.7 < 10
@@ -2919,7 +2665,6 @@ step
 	|poi_treasure Shattered Hand Lockbox
 	|poilvl 96
 	|poispot Spires of Arak 47.92,30.65
-	|poitype treasure
 	|poiquest 36361
 	|poiitem 116920
 	click Shattered Hand Lockbox##234456 |q 36361 |future |goto Spires of Arak 47.92,30.65
@@ -2927,7 +2672,6 @@ step
 	|poi_treasure Shredder Parts
 	|poilvl 96
 	|poispot Spires of Arak 60.86,84.61
-	|poitype treasure
 	|poiquest 36456
 	|poicurrency GR
 	click Shredder Parts##235310 |q 36456 |future |goto Spires of Arak 60.86,84.61
@@ -2936,7 +2680,6 @@ step
 	|poi_treasure Smuggled Apexis Artifacts
 	|poilvl 96
 	|poispot Spires of Arak 56.29,45.31
-	|poitype treasure
 	|poiquest 36433
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	click Smuggled Apexis Artifacts##235135 |q 36433 |future |goto Spires of Arak 56.29,45.31
@@ -2946,7 +2689,6 @@ step
 	|poi_treasure Spray-O-Matic 5000 XT
 	|poilvl 96
 	|poispot Spires of Arak 59.63,81.34
-	|poitype treasure
 	|poiquest 36365
 	|poicurrency GR
 	click Spray-O-Matic 5000 XT##234471 |q 36365 |future |goto Spires of Arak 59.63,81.34
@@ -2955,7 +2697,6 @@ step
 	|poi_treasure Sun-Touched Cache 1
 	|poilvl 96
 	|poispot Spires of Arak 34.14,27.51
-	|poitype treasure
 	|poiquest 36421
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	|poicurrency GL
@@ -2966,7 +2707,6 @@ step
 	|poi_treasure Sun-Touched Cache 2
 	|poilvl 96
 	|poispot Spires of Arak 33.29,27.27
-	|poitype treasure
 	|poiquest 36422
 	|poicurrency AA --Arakkoa Archaeology Fragments
 	|poicurrency GL
@@ -2978,7 +2718,6 @@ step
 	|poi_treasure Toxicfang Venom
 	|poilvl 96
 	|poispot Spires of Arak 54.35,32.55
-	|poitype treasure
 	|poiquest 36364
 	|poiitem 118695
 	click Toxicfang Venom##234461 |q 36364 |future |goto Spires of Arak 54.35,32.55
@@ -2987,7 +2726,6 @@ step
 	|poi_treasure Waterlogged Satchel
 	|poilvl 96
 	|poispot Spires of Arak 66.47,56.53
-	|poitype treasure
 	|poiquest 36455
 	|poiitem RANDOM
 	|poicurrency GL
@@ -2998,7 +2736,6 @@ step
 	|poi_treasure Statue of Anzu
 	|poilvl 96
 	|poispot Spires of Arak 57.80,22.20
-	|poitype treasure
 	|poiquest 36374
 	|poiitem 118694
 	_Go up_ the narrow trail |goto Spires of Arak/0 56.8,25.4
@@ -3009,7 +2746,6 @@ step
 	|poi_treasure A Pile of Dirt
 	|poilvl 98
 	|poispot Nagrand D 73.07,10.80
-	|poitype treasure
 	|poiquest 35951
 	|poicurrency GR
 	_Go up_ the path |goto Nagrand D/0 74.9,8.7
@@ -3019,7 +2755,6 @@ step
 	|poi_treasure Abandoned Cargo
 	|poilvl 98
 	|poispot Nagrand D 67.65,59.71
-	|poitype treasure
 	|poiquest 35759
 	|poiitem 3 RANDOM
 	click Abandoned Cargo##233206 |q 35759 |future |goto Nagrand D 67.65,59.71
@@ -3028,7 +2763,6 @@ step
 	|poi_treasure Abu'Gar's Favorite Lure
 	|poilvl 98
 	|poispot Nagrand D 38.40,49.40
-	|poitype treasure
 	|poiquest 36711
 	|poiitem 114245
 	click Abu'Gar's Favorite Lure##233642 |q 36072 |future |or |goto Nagrand D 38.40,49.40
@@ -3039,7 +2773,6 @@ step
 	|poi_treasure Abu'gar's Missing Reel
 	|poilvl 98
 	|poispot Nagrand D 85.40,38.70
-	|poitype treasure
 	|poiquest 36711
 	|poiitem 114243
 	click Abu'gar's Missing Reel##233506 |q 36089 |future |or |goto Nagrand D 85.40,38.70
@@ -3050,7 +2783,6 @@ step
 	|poi_treasure Abu'gar's Vitality
 	|poilvl 98
 	|poispot Nagrand D 65.83,61.14
-	|poitype treasure
 	|poiquest 35711
 	|poiitem 114242
 	_Enter_ the warsong area |goto Nagrand D/0 69.0,64.3 < 20
@@ -3064,7 +2796,6 @@ step
 	|poi_treasure Adventurer's Mace
 	|poilvl 98
 	|poispot Nagrand D 75.81,62.03
-	|poitype treasure
 	|poiquest 36077
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3077,7 +2808,6 @@ step
 	|poi_treasure Adventurer's Pack 1
 	|poilvl 98
 	|poispot Nagrand D 82.27,56.60
-	|poitype treasure
 	|poiquest 35765
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3087,7 +2817,6 @@ step
 	|poi_treasure Adventurer's Pack 2
 	|poilvl 98
 	|poispot Nagrand D 45.63,52.00
-	|poitype treasure
 	|poiquest 35969
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3097,7 +2826,6 @@ step
 	|poi_treasure Adventurer's Pack 3
 	|poilvl 98
 	|poispot Nagrand D 69.95,52.44
-	|poitype treasure
 	|poiquest 35597
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3109,7 +2837,6 @@ step
 	|poi_treasure Adventurer's Pouch
 	|poilvl 98
 	|poispot Nagrand D 56.56,72.94
-	|poitype treasure
 	|poiquest 36050
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3121,7 +2848,6 @@ step
 	|poi_treasure Adventurer's Sack
 	|poilvl 98
 	|poispot Nagrand D 73.93,14.05
-	|poitype treasure
 	|poiquest 35955
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3132,7 +2858,6 @@ step
 	|poi_treasure Adventurer's Staff
 	|poilvl 98
 	|poispot Nagrand D 81.46,13.07
-	|poitype treasure
 	|poiquest 35953
 	|poiitem 116640
 	|poicurrency GL
@@ -3143,7 +2868,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 73.05,75.54
-	|poitype treasure
 	|poiquest 35673
 	|poicurrency GR
 	_Go up_ the path |goto Nagrand D/0 78.1,72.0 < 20
@@ -3154,7 +2878,6 @@ step
 	|poi_treasure Bag of Herbs
 	|poilvl 98
 	|poispot Nagrand D 62.54,67.08
-	|poitype treasure
 	|poiquest 36116
 	|poiitem 109124
 	|poiitem 109128
@@ -3169,7 +2892,6 @@ step
 	|poi_treasure Bone-Carved Dagger
 	|poilvl 98
 	|poispot Nagrand D 77.31,28.07
-	|poitype treasure
 	|poiquest 35986
 	|poiitem 116760
 	_Go to_ the earthen bridge |goto Nagrand D/0 78.8,26.4 < 20
@@ -3180,7 +2902,6 @@ step
 	|poi_treasure Bounty of the Elements
 	|poilvl 98
 	|poispot Nagrand D 77.08,16.62
-	|poitype treasure
 	|poiquest 36174
 	|poicurrency GR
 	_Go up_ the narrow trail carefully |goto Nagrand D/0 75.9,15.2 < 5
@@ -3192,7 +2913,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 81.08,37.25
-	|poitype treasure
 	|poiquest 35661
 	|poiitem 118262
 	_Follow the path_ up |goto Nagrand D/0 83.4,33.1 < 10
@@ -3206,7 +2926,6 @@ step
 	|poi_treasure Burning Blade Cache
 	|poilvl 98
 	|poispot Nagrand D 85.41,53.47
-	|poitype treasure
 	|poiquest 35696
 	|poiitem 1 RANDOM
 	_Go up_ the hill |goto Nagrand D/0 83.1,52.5 < 10
@@ -3218,7 +2937,6 @@ step
 	|poi_treasure Elemental Offering
 	|poilvl 98
 	|poispot Nagrand D 66.96,19.49
-	|poitype treasure
 	|poiquest 35954
 	|poiitem 118234
 	|poicurrency GL
@@ -3229,7 +2947,6 @@ step
 	|poi_treasure Elemental Shackles
 	|poilvl 98
 	|poispot Nagrand D 78.90,15.56
-	|poitype treasure
 	|poiquest 36036
 	|poiitem 118251
 	_Go up_ the hill |goto Nagrand D/0 77.4,12.0 < 10
@@ -3239,7 +2956,6 @@ step
 	|poi_treasure Fragment of Oshu'gun
 	|poilvl 98
 	|poispot Nagrand D 45.86,66.29
-	|poitype treasure
 	|poiquest 36020
 	|poiitem 117981
 	click Fragment of Oshu'gun##233560 |q 36020 |future |goto Nagrand D 45.86,66.29
@@ -3248,7 +2964,6 @@ step
 	|poi_treasure Freshwater Clam
 	|poilvl 98
 	|poispot Nagrand D 73.05,21.53
-	|poitype treasure
 	|poiquest 35692
 	|poiitem 118233
 	click Freshwater Clam##233132 |q 35692 |future |goto Nagrand D 73.05,21.53
@@ -3258,7 +2973,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 88.90,18.24
-	|poitype treasure
 	|poiquest 35660
 	|poicurrency GR
 	_Follow_ the path around towards the glider |goto Nagrand D/0 88.3,37.9 < 15
@@ -3270,7 +2984,6 @@ step
 	|poi_treasure Gambler's Purse
 	|poilvl 98
 	|poispot Nagrand D 75.37,47.11
-	|poitype treasure
 	|poiquest 36074
 	|poiitem 118236
 	click Gambler's Purse##233649 |q 36074 |future |goto Nagrand D 75.37,47.11
@@ -3279,7 +2992,6 @@ step
 	|poi_treasure Genedar Debris 1
 	|poilvl 98
 	|poispot Nagrand D 43.22,57.55
-	|poitype treasure
 	|poiquest 35987
 	|poicurrency GR
 	click Genedar Debris##233539 |q 35987 |future |goto Nagrand D 43.22,57.55
@@ -3288,7 +3000,6 @@ step
 	|poi_treasure Genedar Debris 2
 	|poilvl 98
 	|poispot Nagrand D 48.06,60.11
-	|poitype treasure
 	|poiquest 35999
 	|poicurrency GR
 	click Genedar Debris##233539 |q 35999 |future |goto Nagrand D 48.06,60.11
@@ -3297,7 +3008,6 @@ step
 	|poi_treasure Genedar Debris 3
 	|poilvl 98
 	|poispot Nagrand D 48.58,72.79
-	|poitype treasure
 	|poiquest 36008
 	|poicurrency GR
 	click Genedar Debris##233539 |q 36008 |future |goto Nagrand D 48.58,72.79
@@ -3306,7 +3016,6 @@ step
 	|poi_treasure Genedar Debris 4
 	|poilvl 98
 	|poispot Nagrand D 44.69,67.57
-	|poitype treasure
 	|poiquest 36002
 	|poicurrency GR
 	click Genedar Debris##233539 |q 36002 |future |goto Nagrand D 44.69,67.57
@@ -3315,7 +3024,6 @@ step
 	|poi_treasure Genedar Debris 5
 	|poilvl 98
 	|poispot Nagrand D 55.35,68.28
-	|poitype treasure
 	|poiquest 36011
 	|poicurrency GR
 	click Genedar Debris##233539 |q 36011 |future |goto Nagrand D 55.35,68.28
@@ -3325,7 +3033,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 72.97,62.12
-	|poitype treasure
 	|poiquest 35590
 	|poicurrency GR
 	_Go up_ the hill |goto Nagrand D/0 77.3,72.7
@@ -3339,7 +3046,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 47.20,74.25
-	|poitype treasure
 	|poiquest 35576
 	|poicurrency GR
 	_Click_ the goblin rocket |goto Nagrand D/0 58.5,76.3 < 5
@@ -3350,7 +3056,6 @@ step
 	|poi_treasure Golden Kaliri Egg
 	|poilvl 98
 	|poispot Nagrand D 58.28,52.49
-	|poitype treasure
 	|poiquest 35694
 	|poiitem 118266
 	_Jump from_ the rock onto the tree |goto Nagrand D/0 57.7,52.8 < 8
@@ -3359,7 +3064,6 @@ step
 	|poi_treasure Goldtoe's Plunder
 	|poilvl 98
 	|poispot Nagrand D 38.34,58.72
-	|poitype treasure
 	|poiquest 36109
 	|poicurrency GL
 	_Climb over_ the rocks and wait here for the parrot |goto Nagrand D/0 38.5,58.8 < 10
@@ -3370,7 +3074,6 @@ step
 	|poi_treasure Grizzlemaw's Bonepile
 	|poilvl 98
 	|poispot Nagrand D 87.10,72.88
-	|poitype treasure
 	|poiquest 36051
 	|poiitem 118054
 	_Go up_ the hill |goto Nagrand D/0 83.5,68.8 < 8
@@ -3382,7 +3085,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 87.62,44.98
-	|poitype treasure
 	|poiquest 35622
 	|poicurrency GR
 	_Cross_ the gap |goto Nagrand D/0 87.0,38.7 < 10
@@ -3394,7 +3096,6 @@ step
 	|poi_treasure Highmaul Sledge
 	|poilvl 98
 	|poispot Nagrand D 67.38,49.06
-	|poitype treasure
 	|poiquest 36039
 	|poiitem 118252
 	_Follow_ the canyon wall |goto Nagrand D/0 67.7,47.9
@@ -3404,7 +3105,6 @@ step
 	|poi_treasure Important Exploration Supplies
 	|poilvl 98
 	|poispot Nagrand D 75.23,65.63
-	|poitype treasure
 	|poiquest 36099
 	|poiitem 61986
 	|poicurrency GL
@@ -3417,7 +3117,6 @@ step
 	|poi_treasure Lost Pendant
 	|poilvl 98
 	|poispot Nagrand D 61.76,57.47
-	|poitype treasure
 	|poiquest 36082
 	|poiitem 116687
 	click Lost Pendant##233651 |q 36082 |future |goto Nagrand D 61.76,57.47
@@ -3427,7 +3126,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 70.53,13.85
-	|poitype treasure
 	|poiquest 35643
 	|poicurrency GR
 	_Follow_ this path around to the right |goto Nagrand D/0 72.3,12.5 < 10
@@ -3440,7 +3138,6 @@ step
 	|poi_treasure Ogre Beads
 	|poilvl 98
 	|poispot Nagrand D 80.96,79.79
-	|poitype treasure
 	|poiquest 36049
 	|poiitem 118255
 	_Go up_ the hill |goto Nagrand D/0 81.7,79.9 < 15
@@ -3450,7 +3147,6 @@ step
 	|poi_treasure Pale Elixir
 	|poilvl 98
 	|poispot Nagrand D 57.79,62.05
-	|poitype treasure
 	|poiquest 36115
 	|poiitem 118278
 	_Jump across_ the gap |goto Nagrand D/0 58.9,60.0 < 15
@@ -3462,7 +3158,6 @@ step
 	|poi_treasure Pokkar's Thirteenth Axe
 	|poilvl 98
 	|poispot Nagrand D 58.29,59.31
-	|poitype treasure
 	|poiquest 36021
 	|poiitem 116688
 	_Go to_ this platform |goto Nagrand D/0 58.0,57.8 < 10
@@ -3473,7 +3168,6 @@ step
 	|poi_treasure Polished Saberon Skull
 	|poilvl 98
 	|poispot Nagrand D 72.71,60.92
-	|poitype treasure
 	|poiquest 36035
 	|poiitem 118254
 	_Climb over_ the rocks |goto Nagrand D/0 77.0,61.4 < 15
@@ -3484,7 +3178,6 @@ step
 	|poi_treasure Saberon Stash
 	|poilvl 98
 	|poispot Nagrand D 75.18,64.94
-	|poitype treasure
 	|poiquest 36102
 	|poiitem 1 RANDOM
 	|poicurrency GL
@@ -3498,7 +3191,6 @@ step
 	|poi_treasure Smuggler's Cache
 	|poilvl 98
 	|poispot Nagrand D 89.07,33.13
-	|poitype treasure
 	|poiquest 36857
 	|poicurrency GR, GL
 	_Go down_ the hill |goto Nagrand D/0 88.5,33.4 < 20
@@ -3509,7 +3201,6 @@ step
 	|poi_treasure Spirit Coffer
 	|poilvl 98
 	|poispot Nagrand D 40.34,68.64
-	|poitype treasure
 	|poiquest 37435
 	|poicurrency GR
 	_Enter_ the cave |goto Nagrand D/0 41.8,68.2 < 10
@@ -3519,7 +3210,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 50.12,82.28
-	|poitype treasure
 	|poiquest 35577
 	|poicurrency GR
 	_Click_ the goblin rocket |goto Nagrand D/0 58.5,76.3 < 5
@@ -3530,7 +3220,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 52.67,80.08
-	|poitype treasure
 	|poiquest 35583
 	|poicurrency GR
 	_Click_ the goblin rocket |goto Nagrand D/0 58.5,76.3 < 5
@@ -3541,7 +3230,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 77.83,51.95
-	|poitype treasure
 	|poiquest 35591
 	|poicurrency GR
 	_Go up_ the hill |goto Nagrand D/0 77.3,72.7 < 15
@@ -3555,7 +3243,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 64.59,17.62
-	|poitype treasure
 	|poiquest 35648
 	|poicurrency GR
 	_Follow_ this path around to the right |goto Nagrand D/0 72.3,12.5 < 10
@@ -3568,7 +3255,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 70.60,18.60
-	|poitype treasure
 	|poiquest 35646
 	|poicurrency GR
 	_Follow_ this path around to the right |goto Nagrand D/0 72.3,12.5 < 10
@@ -3582,7 +3268,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 87.60,20.28
-	|poitype treasure
 	|poiquest 35662
 	|poicurrency GR
 	_Follow_ the path around towards the glider |goto Nagrand D/0 88.3,37.9 < 20
@@ -3595,7 +3280,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 88.27,42.62
-	|poitype treasure
 	|poiquest 35616
 	|poicurrency GR
 	_Cross_ the bridge |goto Nagrand D/0 87.1,39.4 < 10
@@ -3606,7 +3290,6 @@ step
 	|poi_treasure Telaar Defender Shield
 	|poilvl 98
 	|poispot Nagrand D 64.71,65.83
-	|poitype treasure
 	|poiquest 36046
 	|poiitem 118253
 	_Cross_ the waterfall here |goto Nagrand D/0 64.4,67.5 < 15
@@ -3615,7 +3298,6 @@ step
 	|poi_treasure Treasure of Kull'krosh
 	|poilvl 98
 	|poispot Nagrand D 37.71,70.65
-	|poitype treasure
 	|poiquest 34760
 	|poicurrency GR, GL
 	_Go up_ the ramp |goto Nagrand D/0 38.8,72.1 < 20
@@ -3629,7 +3311,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 49.97,66.51
-	|poitype treasure
 	|poiquest 35579
 	|poiitem 118264
 	_Click_ the goblin rocket |goto Nagrand D/0 58.5,76.3 < 5
@@ -3639,7 +3320,6 @@ step
 	|poi_treasure Warsong Cache
 	|poilvl 98
 	|poispot Nagrand D 51.72,60.29
-	|poitype treasure
 	|poiquest 35695
 	|poicurrency GR
 	click Warsong Cache##233135 |q 35695 |future |goto Nagrand D 51.72,60.29
@@ -3648,7 +3328,6 @@ step
 	|poi_treasure Warsong Helm
 	|poilvl 98
 	|poispot Nagrand D 52.41,44.38
-	|poitype treasure
 	|poiquest 36073
 	|poiitem 118250
 	click Warsong Helm##233645 |q 36073 |future |goto Nagrand D 52.41,44.38
@@ -3658,7 +3337,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 73.04,70.36
-	|poitype treasure
 	|poiquest 35678
 	|poicurrency GR
 	_Go up_ the path |goto Nagrand D/0 78.1,72.0 < 10
@@ -3670,7 +3348,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 76.06,69.90
-	|poitype treasure
 	|poiquest 35682
 	|poiitem 118678
 	_Go up_ the path |goto Nagrand D/0 78.1,72.0 < 10
@@ -3682,7 +3359,6 @@ step
 	|poiaccess Completionist
 	|poilvl 98
 	|poispot Nagrand D 80.65,60.54
-	|poitype treasure
 	|poiquest 35593
 	|poicurrency GR
 	_Go up_ the path |goto Nagrand D/0 78.1,72.0 < 20
@@ -3695,7 +3371,6 @@ step
 	|poi_treasure Warsong Supplies
 	|poilvl 98
 	|poispot Nagrand D 89.40,65.88
-	|poitype treasure
 	|poiquest 35976
 	|poicurrency GR
 	_Go up_ the hidden path |goto Nagrand D/0 88.9,65.8 < 10
@@ -3705,7 +3380,6 @@ step
 	|poi_treasure Watertight Bag
 	|poilvl 98
 	|poispot Nagrand D 64.76,35.73
-	|poitype treasure
 	|poiquest 36071
 	|poiitem 118235
 	click Watertight Bag##233641 |q 36071 |future |goto Nagrand D 64.76,35.73
@@ -3714,7 +3388,6 @@ step
 	|poi_treasure Adventurer's Pouch
 	|poilvl 98
 	|poispot Nagrand D/12 66.0,57.5
-	|poitype treasure
 	|poiquest 36088
 	|poiitem RANDOM
 	|poicurrency GL
@@ -3727,7 +3400,6 @@ step
 	|poi_treasure Spirit's Gift
 	|poilvl 98
 	|poispot Nagrand D 35.47,57.25
-	|poitype treasure
 	|poiquest 36846
 	|poicurrency GR
 	_Go up_ the path beneath the skull |goto Nagrand D/0 36.7,55.7 < 10
@@ -3739,7 +3411,6 @@ step
 	|poi_treasure Lunarfall Egg
 	|poilvl 90
 	|poispot Lunarfall/0 49.60,43.80
-	|poitype treasure
 	|poiquest 35530
 	|poicurrency GR
 	click Lunarfall Egg##232507 |q 35530 |future |goto Lunarfall/0 49.60,43.80
@@ -3749,7 +3420,6 @@ step
 	|poi_treasure Lunarfall Egg
 	|poilvl 90
 	|poispot Lunarfall/0 37.3,65.9
-	|poitype treasure
 	|poiquest 35530
 	|poicurrency GR
 	click Lunarfall Egg##232507 |q 35530 |future |goto Lunarfall/0 37.3,65.9
@@ -3759,7 +3429,6 @@ step
 	|poi_treasure Lunarfall Egg
 	|poilvl 90
 	|poispot Lunarfall/0 61.27,72.61
-	|poitype treasure
 	|poiquest 35530
 	|poicurrency GR
 	click Lunarfall Egg##232507 |q 35530 |future |goto Lunarfall/0 61.27,72.61
@@ -3769,7 +3438,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 1
 	|poilvl 90
 	|poispot Lunarfall/0 42.40,54.36
-	|poitype treasure
 	|poiquest 35381
 	|poicurrency GR
 	click Pippers' Buried Supplies 1##???? |q 35381 |future |goto Lunarfall/0 42.4,54.4
@@ -3778,7 +3446,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 1
 	|poilvl 90
 	|poispot Lunarfall/0 41.5,58.1
-	|poitype treasure
 	|poiquest 35381
 	|poicurrency GR
 	click Pippers' Buried Supplies 1##???? |q 35381 |future |goto Lunarfall/0 41.5,58.1
@@ -3787,7 +3454,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 1
 	|poilvl 90
 	|poispot Lunarfall/0 60.7,55.3
-	|poitype treasure
 	|poiquest 35381
 	|poicurrency GR
 	click Pippers' Buried Supplies 1##???? |q 35381 |future |goto Lunarfall/0 60.7,55.3
@@ -3796,7 +3462,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 2
 	|poilvl 90
 	|poispot Lunarfall/0 50.70,48.50
-	|poitype treasure
 	|poiquest 35382
 	|poicurrency GR
 	click Pippers' Buried Supplies 2##???? |q 35382 |future |goto Lunarfall/0 50.6,48.4
@@ -3805,7 +3470,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 2
 	|poilvl 90
 	|poispot Lunarfall/0 51.9,45.1
-	|poitype treasure
 	|poiquest 35382
 	|poicurrency GR
 	click Pippers' Buried Supplies 2##???? |q 35382 |future |goto Lunarfall/0 51.9,45.1
@@ -3814,7 +3478,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 2
 	|poilvl 90
 	|poispot Lunarfall/0 37.4,74.9
-	|poitype treasure
 	|poiquest 35382
 	|poicurrency GR, 200 OIL
 	click Pippers' Buried Supplies 2##???? |q 35382 |future |goto Lunarfall/0 37.4,74.9
@@ -3823,7 +3486,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 3
 	|poilvl 90
 	|poispot Lunarfall/0 30.80,28.30
-	|poitype treasure
 	|poiquest 35383
 	|poicurrency GR
 	click Pippers' Buried Supplies 3##???? |q 35383 |future |goto Lunarfall/0 31.1,27.6
@@ -3832,7 +3494,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 3
 	|poilvl 90
 	|poispot Lunarfall/0 35.0,23.8
-	|poitype treasure
 	|poiquest 35383
 	|poicurrency GR
 	click Pippers' Buried Supplies 3##???? |q 35383 |future |goto Lunarfall/0 35.0,23.8
@@ -3841,7 +3502,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 3
 	|poilvl 90
 	|poispot Lunarfall/0 37.9,43.8
-	|poitype treasure
 	|poiquest 35383
 	|poicurrency GR
 	click Pippers' Buried Supplies 3##???? |q 35383 |future |goto Lunarfall/0 37.9,43.8
@@ -3850,7 +3510,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 4
 	|poilvl 90
 	|poispot Lunarfall/0 49.19,76.83
-	|poitype treasure
 	|poiquest 35384
 	|poicurrency GR
 	click Pippers' Buried Supplies 4##???? |q 35384 |future |goto Lunarfall/0 49.1,76.9
@@ -3859,7 +3518,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 4
 	|poilvl 90
 	|poispot Lunarfall/0 46.5,76.1
-	|poitype treasure
 	|poiquest 35384
 	|poicurrency GR
 	click Pippers' Buried Supplies 4##???? |q 35384 |future |goto Lunarfall/0 46.5,76.1
@@ -3868,7 +3526,6 @@ step
 	|poi_treasure Pippers' Buried Supplies 4
 	|poilvl 90
 	|poispot Lunarfall/0 61.4,71.4
-	|poitype treasure
 	|poiquest 35384
 	|poicurrency GR
 	click Pippers' Buried Supplies 4##???? |q 35384 |future |goto Lunarfall/0 61.4,71.4
@@ -3877,7 +3534,6 @@ step
 	|poi_treasure Spark's Stolen Supplies
 	|poilvl 90
 	|poispot Shadowmoon Valley D 51.80,01.10
-	|poitype treasure
 	|poiquest 35289
 	|poicurrency GR
 	_Dive down_ under the water here and enter the cave |goto Lunarfall/0 49.1,11.6
@@ -3887,7 +3543,6 @@ step
 	|poi_treasure Axe of Weeping Wolf
 	|poilvl 100
 	|poispot Tanaan Jungle 15.00,54.40
-	|poitype treasure
 	|poiquest 38754
 	|poiitem 127325
 	_Enter_ the building |goto Tanaan Jungle/0 15.4,54.9 < 10
@@ -3897,7 +3552,6 @@ step
 	|poi_treasure The Eye of Grannok
 	|poilvl 100
 	|poispot Tanaan Jungle 15.90,59.30
-	|poitype treasure
 	|poiquest 38757
 	|poiitem 128220
 	_Enter_ the building |goto Tanaan Jungle/0 16.4,58.6 < 10
@@ -3908,7 +3562,6 @@ step
 	|poi_treasure Spoils of War
 	|poilvl 100
 	|poispot Tanaan Jungle 17.30,56.90
-	|poitype treasure
 	|poiquest 38755
 	|poicurrency 250 GR
 	click Spoils of War##241699 |quest 38755 |goto Tanaan Jungle 17.30,56.90 |future
@@ -3917,7 +3570,6 @@ step
 	|poi_treasure Stolen Captain's Chest
 	|poilvl 100
 	|poispot Tanaan Jungle 17.00,53.00
-	|poitype treasure
 	|poiquest 38283
 	|poiitem 128219
 	|poicurrency GL
@@ -3927,7 +3579,6 @@ step
 	|poi_treasure Weathered Axe
 	|poilvl 100
 	|poispot Tanaan Jungle 15.90,49.80
-	|poitype treasure
 	|poiquest 38208
 	|poiitem 127324
 	_Enter_ the cave |goto Tanaan Jungle/0 17.1,50.6 < 10
@@ -3938,7 +3589,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 25.30,50.20
-	|poitype treasure
 	|poiquest 38735
 	|poiitem 128222
 	_Go up_ the path |goto Tanaan Jungle/0 26.4,48.0 < 15
@@ -3950,7 +3600,6 @@ step
 	|poi_treasure Bleeding Hollow Warchest
 	|poilvl 100
 	|poispot Tanaan Jungle 22.00,47.80
-	|poitype treasure
 	|poiquest 38678
 	|poicurrency 50 GR
 	_Go up_ the path |goto Tanaan Jungle/0 26.4,48.0 < 15
@@ -3961,7 +3610,6 @@ step
 	|poi_treasure Looted Bleeding Hollow Treasure
 	|poilvl 100
 	|poispot Tanaan Jungle 26.80,44.10
-	|poitype treasure
 	|poiquest 38683
 	|poiitem 127709
 	_Go up_ the path |goto Tanaan Jungle/0 27.6,47.4
@@ -3972,7 +3620,6 @@ step
 	|poi_treasure The Blade of Kra'nak
 	|poilvl 100
 	|poispot Tanaan Jungle 19.30,40.90
-	|poitype treasure
 	|poiquest 38320
 	|poiitem 127338
 	_Enter_ the Ruins of Kra'nak |goto Tanaan Jungle/0 24.9,39.8 < 8
@@ -3985,7 +3632,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 31.40,31.10
-	|poitype treasure
 	|poiquest 38732
 	|poiitem 127413
 	_Go up_ the hill |goto Tanaan Jungle/0 26.0,33.8 < 8
@@ -3999,7 +3645,6 @@ step
 	|poi_treasure Partially Mined Apexis Crystal
 	|poilvl 100
 	|poispot Tanaan Jungle 28.80,34.60
-	|poitype treasure
 	|poiquest 38863
 	|poicurrency 150 AC
 	_Enter_ the cave |goto Tanaan Jungle/0 29.2,31.1 < 8
@@ -4010,7 +3655,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 34.70,34.60
-	|poitype treasure
 	|poiquest 38742
 	|poiitem 127669
 	_Enter_ the cave |goto Tanaan Jungle/0 32.5,37.3 < 8
@@ -4023,7 +3667,6 @@ step
 	|poi_treasure Looted Bleeding Hollow Treasure
 	|poilvl 100
 	|poispot Tanaan Jungle 26.50,63.00
-	|poitype treasure
 	|poiquest 38741
 	|poicurrency 150 AC, GR
 	_Follow_ the path towards the tower |goto Tanaan Jungle/0 25.9,60.6 < 20
@@ -4033,7 +3676,6 @@ step
 	|poi_treasure Tome of Secrets
 	|poilvl 100
 	|poispot Tanaan Jungle 32.40,70.40
-	|poitype treasure
 	|poiquest 38426
 	|poiitem 127670
 	_Go up_ the steps |goto Tanaan Jungle/0 30.6,71.0 < 8
@@ -4043,7 +3685,6 @@ step
 	|poi_treasure Polished Crystal
 	|poilvl 100
 	|poispot Tanaan Jungle 30.40,72.00
-	|poitype treasure
 	|poiquest 38629
 	|poiitem 127390
 	|poiitem 127389
@@ -4053,7 +3694,6 @@ step
 	|poi_treasure Pale Removal Equipment
 	|poilvl 100
 	|poispot Tanaan Jungle 37.05,46.30
-	|poitype treasure
 	|poiquest 38640
 	|poicurrency 75 GR
 	_Enter_ Ironmonger's Hold |goto Tanaan Jungle/0 38.7,44.2 < 15
@@ -4063,7 +3703,6 @@ step
 	|poi_treasure Strange Sapphire
 	|poilvl 100
 	|poispot Tanaan Jungle 36.30,43.50
-	|poitype treasure
 	|poiquest 37956
 	|poiitem 127397
 	_Go through_ the barricade |goto Tanaan Jungle/0 38.4,39.5 < 15
@@ -4074,7 +3713,6 @@ step
 	|poi_treasure The Commander's Shield
 	|poilvl 100
 	|poispot Tanaan Jungle 43.20,38.30
-	|poitype treasure
 	|poiquest 38821
 	|poiitem 127348
 	_Enter_ the building |goto Tanaan Jungle/0 42.5,37.8 < 5
@@ -4084,7 +3722,6 @@ step
 	|poi_treasure Dazzling Rod
 	|poilvl 100
 	|poispot Tanaan Jungle 42.80,35.40
-	|poitype treasure
 	|poiquest 38822
 	|poiitem 127859
 	_Enter_ the building |goto Tanaan Jungle/0 43.0,35.8 < 10
@@ -4095,7 +3732,6 @@ step
 	|poi_treasure Sacrificial Blade
 	|poilvl 100
 	|poispot Tanaan Jungle/0 46.9,42.2
-	|poitype treasure
 	|poiquest 38776
 	|poiitem 127328
 	click Sacrificial Blade##241760 |quest 38776 |goto Tanaan Jungle/0 46.9,42.2 |future
@@ -4104,7 +3740,6 @@ step
 	|poi_treasure Fel-Drenched Satchel
 	|poilvl 100
 	|poispot Tanaan Jungle 46.90,44.40
-	|poitype treasure
 	|poiquest 38773
 	|poiitem 128218
 	click Fel-Drenched Satchel##241745 |quest 38773 |goto Tanaan Jungle 46.90,44.40 |future
@@ -4113,7 +3748,6 @@ step
 	|poi_treasure Book of Zyzzix
 	|poilvl 100
 	|poispot Tanaan Jungle 46.90,36.60
-	|poitype treasure
 	|poiquest 38771
 	|poiitem 127347
 	_Go up_ the path |goto Tanaan Jungle/0 46.9,42.2 < 15
@@ -4122,7 +3756,6 @@ step
 	|poi_treasure Overgrown Relic
 	|poilvl 100
 	|poispot Tanaan Jungle 50.80,64.90
-	|poitype treasure
 	|poiquest 38731
 	|poiitem 127412
 	click Overgrown Relic##241656 |quest 38731 |goto Tanaan Jungle 50.80,64.90 |future
@@ -4131,7 +3764,6 @@ step
 	|poi_treasure Lodged Hunting Spear
 	|poilvl 100
 	|poispot Tanaan Jungle 54.80,69.30
-	|poitype treasure
 	|poiquest 38593
 	|poiitem 127334
 	_Climb up_ onto the rocks |goto Tanaan Jungle/0 55.0,67.1 < 8
@@ -4141,7 +3773,6 @@ step
 	|poi_treasure Crystalized Essence of Elements
 	|poilvl 100
 	|poispot Tanaan Jungle 47.90,70.40
-	|poitype treasure
 	|poiquest 38705
 	|poiitem 127329
 	_Go up_ the path and onto the big rock |goto Tanaan Jungle/0 47.8,70.8 < 10
@@ -4150,7 +3781,6 @@ step
 	|poi_treasure Forgotten Sack
 	|poilvl 100
 	|poispot Tanaan Jungle 57.00,65.00
-	|poitype treasure
 	|poiquest 38591
 	|poiitem 127408
 	|poiitem 110609
@@ -4161,7 +3791,6 @@ step
 	|poi_treasure Mysterious Corrupted Obelisk
 	|poilvl 100
 	|poispot Tanaan Jungle 46.20,72.80
-	|poitype treasure
 	|poiquest 38739
 	|poiitem 128320
 	_Enter_ the cave |goto Tanaan Jungle/0 47.3,70.6 < 10 |walk
@@ -4171,7 +3800,6 @@ step
 	|poi_treasure Forgotten Champion's Blade
 	|poilvl 100
 	|poispot Tanaan Jungle 41.60,73.30
-	|poitype treasure
 	|poiquest 38657
 	|poiitem 127339
 	click Forgotten Champion's Blade##241533 |quest 38657 |goto Tanaan Jungle 41.60,73.30 |future
@@ -4181,7 +3809,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 40.80,75.50
-	|poitype treasure
 	|poiquest 38639
 	|poiitem 127766
 	Get the Pollen Protection buff |havebuff Interface\Icons\Spell_Nature_ProtectionformNature |only if not completedq(38639)
@@ -4192,7 +3819,6 @@ step
 	|poi_treasure Snake Charmer's Flute
 	|poilvl 100
 	|poispot Tanaan Jungle 40.60,79.80
-	|poitype treasure
 	|poiquest 38638
 	|poiitem 127333
 	click Snake Charmer's Flute##241521 |quest 38638 |goto Tanaan Jungle 40.60,79.80 |future
@@ -4202,7 +3828,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 34.40,78.30
-	|poitype treasure
 	|poiquest 38762
 	|poicurrency 25 GR, GL
 	_Enter_ the cave |goto Tanaan Jungle/0 37.4,75.9 < 10
@@ -4216,7 +3841,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 35.00,77.30
-	|poitype treasure
 	|poiquest 38761
 	|poicurrency 25 GR, GL
 	_Enter_ the cave |goto Tanaan Jungle/0 37.4,75.9 < 10
@@ -4231,7 +3855,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 33.90,78.10
-	|poitype treasure
 	|poiquest 38760
 	|poicurrency 25 GR, GL
 	_Enter_ the cave |goto Tanaan Jungle/0 37.4,75.9 < 10
@@ -4245,7 +3868,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 35.90,78.60
-	|poitype treasure
 	|poiquest 38758
 	|poicurrency GL, 100 GR
 	_Enter_ the cave |goto Tanaan Jungle/0 37.4,75.9 < 10
@@ -4259,7 +3881,6 @@ step
 	|poi_treasure Brazier of Awakening
 	|poilvl 100
 	|poispot Tanaan Jungle 37.70,80.70
-	|poitype treasure
 	|poiquest 38788
 	|poiitem 127770
 	_Go down_ the short path |goto Tanaan Jungle/0 38.6,79.6 < 12
@@ -4270,7 +3891,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 48.50,75.20
-	|poitype treasure
 	|poiquest 38814
 	|poiitem 127337
 	_Enter_ the cave |goto Tanaan Jungle/0 44.6,77.6 < 5
@@ -4286,7 +3906,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 49.90,76.80
-	|poitype treasure
 	|poiquest 38809
 	|poiitem 128223
 	_Enter_ the cavern |goto Tanaan Jungle/0 44.6,77.5 < 8
@@ -4299,7 +3918,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 62.10,70.70
-	|poitype treasure
 	|poiquest 38602
 	|poiitem 128217
 	_Follow_ the shore |goto Tanaan Jungle/0 59.9,74.0 < 8
@@ -4311,7 +3929,6 @@ step
 	|poi_treasure Blackfang Island Cache
 	|poilvl 100
 	|poispot Tanaan Jungle 61.20,75.80
-	|poitype treasure
 	|poiquest 38601
 	|poicurrency GR
 	click Blackfang Island Cache##241449 |quest 38601 |goto Tanaan Jungle 61.20,75.80 |future
@@ -4320,7 +3937,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 49.90,79.60
-	|poitype treasure
 	|poiquest 38703
 	|poiitem 127354
 	_Go up_ the hill |goto Tanaan Jungle/0 51.5,79.4 < 8
@@ -4331,7 +3947,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 49.90,81.20
-	|poitype treasure
 	|poiquest 38702
 	|poiitem 127312
 	_Enter_ the cave |goto Tanaan Jungle/0 51.2,79.6 < 8
@@ -4340,7 +3955,6 @@ step
 	|poi_treasure Strange Fruit
 	|poilvl 100
 	|poispot Tanaan Jungle 64.6,42.1
-	|poitype treasure
 	|poiquest 38701
 	|poiitem 127396
 	click Loose Soil##241606 |goto Tanaan Jungle 64.70,42.80 < 8
@@ -4350,7 +3964,6 @@ step
 	|poi_treasure Rune Etched Femur
 	|poilvl 100
 	|poispot Tanaan Jungle 51.70,24.30
-	|poitype treasure
 	|poiquest 38686
 	|poiitem 127341
 	click Rune Etched Femur##241566 |quest 38686 |goto Tanaan Jungle 51.70,24.30 |future
@@ -4358,7 +3971,6 @@ step
 	|poi_treasure Jewel of the Fallen Star
 	|poilvl 100
 	|poispot Tanaan Jungle 58.50,25.20
-	|poitype treasure
 	|poiquest 38679
 	|poiitem 115808
 	|poiitem 115803
@@ -4372,7 +3984,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 62.60,20.50
-	|poitype treasure
 	|poiquest 38682
 	|poiitem 127401
 	_Go up_ the path |goto Tanaan Jungle/0 61.3,22.8 < 12
@@ -4383,7 +3994,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 51.60,32.70
-	|poitype treasure
 	|poiquest 39075
 	|poicurrency 500 AC
 	_Follow_ the fel river |goto Tanaan Jungle/0 53.2,28.8 < 12
@@ -4395,7 +4005,6 @@ step
 	|poiaccess Completionist
 	|poilvl 100
 	|poispot Tanaan Jungle 28.70,23.30
-	|poitype treasure
 	|poiquest 38334
 	|poiitem 127668
 	click Jewel of Hellfire##240580 |quest 38334 |goto Tanaan Jungle 28.70,23.30 |future
@@ -4404,7 +4013,6 @@ step
 	|poi_treasure Forgotten Shard of the Cipher
 	|poilvl 100
 	|poispot Tanaan Jungle 63.40,28.10
-	|poitype treasure
 	|poiquest 38740
 	|poiitem 128309
 	click Forgotten Shard of the Cipher##241671 |quest 38740 |goto Tanaan Jungle 63.40,28.10 |future
@@ -4413,7 +4021,6 @@ step
 	|poi_treasure Dead Man's Chest
 	|poilvl 100
 	|poispot Tanaan Jungle 54.90,90.70
-	|poitype treasure
 	|poiquest 39470
 	|poicurrency 100 GR
 	_Go through_ the narrow pass |goto Tanaan Jungle/0 54.6,83.2 < 8
@@ -4424,7 +4031,6 @@ step
 	|poi_treasure Bejeweled Egg
 	|poilvl 100
 	|poispot Tanaan Jungle 65.90,85.00
-	|poitype treasure
 	|poiquest 39469
 	|poiitem 128386
 	_Go through_ the narrow pass |goto Tanaan Jungle/0 54.6,83.2 < 8
@@ -4435,7 +4041,6 @@ step
 	|poi_treasure Forgotten Iron Horde Supplies
 	|poilvl 100
 	|poispot Tanaan Jungle 69.70,56.00
-	|poitype treasure
 	|poiquest 38704
 	|poicurrency 25 GR
 	_Go through_ the gates |goto Tanaan Jungle/0 69.3,53.4 < 8
@@ -4445,7 +4050,6 @@ step
 	|poi_treasure Stashed Bleeding Hollow Loot
 	|poilvl 100
 	|poispot Tanaan Jungle 73.60,43.20
-	|poitype treasure
 	|poiquest 38779
 	|poiitem 27729
 	|poicurrency GL

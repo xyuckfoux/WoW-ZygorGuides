@@ -4448,7 +4448,7 @@ step
 You can find Jewel Fish in any body of water here.
 Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 Use your Fishing skill to fish in the water here.  |cast Fishing##131474
-collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 69.1,44.2
+collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 20.3,17.6
 |tip Fish in the Jewel Danio Schools to catch this.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Dungeon Achievements\\Hydrophobia",{

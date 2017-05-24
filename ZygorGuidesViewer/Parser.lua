@@ -918,6 +918,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 						end
 					end
 
+					wipe(prevpathvars)
+
 
 					cmd_parsed=true
 				end
@@ -1066,7 +1068,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 								local map,flr,x,y,dist,err = ParseMapXYDist(coord)
 								if x then
 									if err then return parseerror(err) end  -- might happen, if the coords look good but map is bogus.
-									local point = {map=map or step.map or prevmap,floor=flr or step.floor or prevfloor,x=x,y=y,dist=dist or step.waypath.dist}
+									local point = {map=map or prevmap or step.map,floor=flr or prevfloor or step.floor,x=x,y=y,dist=dist or step.waypath.dist}
 									tinsert(step.waypath.coords,point)
 									prevmap,prevfloor = point.map,point.floor
 								else

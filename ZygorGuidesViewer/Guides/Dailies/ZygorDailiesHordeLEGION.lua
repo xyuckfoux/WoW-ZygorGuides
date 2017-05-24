@@ -872,6 +872,34 @@ kill Torrentius##102064 |q 44194/1 |goto Azsuna/0 37.26,83.41
 |tip This is an elite enemy you will need a group to kill him.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42159
+accept Training with the Nightwatchers##42159 |goto Azsuna/0 46.34,40.39
+|tip You will accept this quest automatically.
+step
+talk Nightwatcher Merayl##106552
+Tell him "Let's do battle!"
+Defeat Nightwatcher Merayl |q 42159/1 |goto Azsuna/0 46.34,40.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41327
+accept Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.99,40.67
+|tip You will accept this quest automatically.
+step
+collect 40 Stormscale##124115 |q 41327/1
+|tip These can either be farmed with the skinning profession or you can buy them from the AH.
+step
+talk Veridis Fallon##107376
+turnin Supplies Needed: Stormscales##41327 |goto Azsuna/0 46.91,41.41
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43610
+click cache of infernals |goto Azsuna/0 35.37,50.39
+Slay the waves of infernals
+accept WANTED: Infernal Lord##43610 |goto Azsuna/0 35.37,50.39
+step
+kill Infernal Lord##90803 |q 43610/1 |goto Azsuna/0 35.37,50.39
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42742
 _Enter the Darkheart Thicket Dungeon:_
 |tip Use the Group Finder to enter the dungeon.
@@ -1671,6 +1699,13 @@ step
 kill Bahagar##110562 |q 44301/1 |goto Val'sharah/0 45.60,88.78
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43460
+accept WANTED: Kiranys Duskwhisper##43460 |goto Val'sharah/0 35.13,59.92
+|tip You will accept this quest automatically.
+step
+kill Kiranys Duskwhisper##94414 |q 43460/1 |goto Val'sharah/0 34.37,58.29
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41091
 Cross the bridge |goto Thunder Totem/0 41.85,64.96 < 15 |only if walking
 Follow the path |goto Thunder Totem/0 39.66,75.66 < 20 |only if walking
@@ -1898,7 +1933,7 @@ accept Shipwreck Scavengers##41692 |goto Highmountain/0 44.47,9.74
 stickystart "Recover_Shipwrecked_Supplies"
 stickystart "Slay_Swamprock_Marshstompers"
 step
-kill Mrrklr##98311 |q 41692/1 |goto 44.47,9.74
+kill Mrrklr##98311 |q 41692/1 |goto 46.5,7.3
 step
 label "Recover_Shipwrecked_Supplies"
 click Shiprecked Supplies
@@ -1924,6 +1959,8 @@ kill Tufferfish##104598+
 |tip They are underwater around this area.
 |tip Use the abilities on your action bar to kill enemies.
 Collect #5# Tufferfish |q 41701/1 |goto 51.46,9.96
+step
+kill Brineclaw##104597 |q 41701/3 |goto 53.0,14.0
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43764
@@ -2271,6 +2308,7 @@ kill Crawshuk the Hungry##97345 |q 44291/1 |goto 48.37,40.18
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40951
+Enter the cave |goto Highmountain/0 41.30,72.44
 accept Bitestone Bazaar##40951 |goto Highmountain/5 55.57,47.76
 |tip You will accept this quest automatically.
 step
@@ -2532,6 +2570,22 @@ accept Mists Take You##41122 |goto Highmountain/0 52.34,80.07
 step
 Kill the enemies around this cave
 Cleanse the Echoing Halls |q 41122/1
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41078
+accept Munitions Testing##41078 |goto Highmountain/0 57.21,59.64
+|tip You will accept this quest automatically.
+step
+Speak to Gertie |q 41078/1 |goto Highmountain/0 57.64,56.57
+step
+click Razik's Weapon Rack##6478
+Grab a prototype from Razik's weapon rack |q 41078/2 |goto Highmountain/0 57.64,56.44
+step
+kill 5 Bonebeak Hawk##103592 |q 41078/3 |goto Highmountain/0 56.59,61.74
+Use your extra action button and round up a bunch of these birds or you can just kill them.
+step
+kill 5 Icefang Packleader##97957 |q 41078/4 |goto Highmountain/0 56.09,54.77
+Use your extra action button and round up a bunch of these Wolves or you can just kill them.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42798
@@ -3291,6 +3345,27 @@ step
 kill Helarjar Mystcaller##111325+, Helarjar Berserker##111332+, Hellarjar Soulhunter##111328+
 |tip They can be found all around this area.
 Slay 15 Helarjar Kvaldirs |q 43721/1 |goto Stormheim/0 85.09,10.89
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41935
+accept Beasts of Burden##41935 |goto Stormheim/0 62.10,52.09
+|tip You will accept this quest automatically.
+step
+talk Rydyr##105386
+Tell him "Let's do battle!"
+Defeat Rydyr |q 41935/2 |goto Stormheim/0 62.04,52.03
+step
+talk Andurs##105387
+Tell him "Let's do battle!"
+Defeat Andurs |q 41935/1 |goto Stormheim/0 62.18,52.03
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43454
+Enter the cave |goto Stormheim/0 41.42,31.93
+accept WANTED: Egyl the Enduring##43454 |goto Stormheim/0 41.55,32.62
+|tip You will accept this quest automatically.
+step
+kill Egyl the Enduring##98188 |q 43454/1 |goto Stormheim/0 41.50,33.59
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42796
@@ -4089,6 +4164,14 @@ label "Shellback turtles"
 kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara Map/0 52.18,63.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43804
+accept Hate the Hatecoil##43804 |goto Eye of Azshara Map/0 38.45,46.16
+|tip You will accept this quest automatically.
+step
+Slay the Naga around this area
+kill 15 Hatecoil Naga |q 43804/1 |goto Eye of Azshara Map/0 50.61,67.27
+|next "Court_Of_Farondis_WQ"
+step
 label "Court_Of_Farondis_WQ"
 talk Veridis Fallon##107376 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
 |tip Inside the building. |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
@@ -4124,4 +4207,42 @@ label "The_Kirin_Tor_Of_Dalaran_WQ"
 talk Warmage Silva##32725 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
 turnin The Kirin Tor of Dalaran##43179 |goto Dalaran L/10 33.44,47.35 |only if ZGV.questsbyid[43179] and ZGV.questsbyid[43179].complete
 |next "Choose_World_Quest"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Legion\\7.1 World Quests\\Helya's",{
+author="support@zygorguides.com",
+startlevel=110.0,
+},[[
+step
+talk Muninn##114946
+accept A Call to Action##44720 |goto Dalaran L/10 73.63,41.97
+step
+talk Havi##92539
+turnin A Call to Action##44720 |goto Stormheim/0 60.13,50.78
+accept A Threat Rises##44771 |goto Stormheim/0 60.13,50.78
+step
+click Keg of Grog##229547 |goto Stormheim/0 60.53,51.43
+Bring the Grog to Havi |q 44771/1 |goto Stormheim/0 60.13,50.78
+step
+talk Havi##92539
+turnin A Threat Rises##44771 |goto Stormheim/0 60.13,50.78
+accept Helya's Conquest##44721 |goto Stormheim/0 60.13,50.78
+step
+Follow the path down |goto Stormheim/0 63.15,48.94
+Investigate Tideskorn Harbor |q 44721/1 |goto Stormheim/0 58.54,44.73
+stickystart "Vagnhild"
+step
+kill 4 Helarjar Soulthief##115291 |q 44721/2 |goto Stormheim/0 56.77,45.56
+step
+label "Vagnhild"
+kill Vagnhild##114957 |q 44721/3 |goto Stormheim/0 55.99,40.89
+step
+talk Havi##92539
+Speak with Havi |q 44721/4 |goto Stormheim/0 60.13,50.78
+step
+talk Havi##92539
+turnin Helya's Conquest##44721 |goto Stormheim/0 60.13,50.78
+accept Odyn's Favor##44729 |goto Stormheim/0 60.13,50.78
+step
+Enter the Trial of Valor |goto Stormheim/0 71.19,72.71
+Defeat Odin and gain his favor |q 44729/1
 ]])

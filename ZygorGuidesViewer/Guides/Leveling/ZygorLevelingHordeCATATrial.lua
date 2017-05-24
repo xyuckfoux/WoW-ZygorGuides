@@ -3213,7 +3213,7 @@ turnin Proving Pit##24768 |goto 58.1,54.11
 only Troll Druid
 step
 talk Tunari##38245
-turnin Proving Pit##24786 |goto 46.8,58.3
+turnin Proving Pit##24786 |goto 58.1,49.11
 only Troll Priest
 step
 talk Legati##38244

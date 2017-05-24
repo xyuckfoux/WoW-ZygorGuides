@@ -1687,6 +1687,8 @@ GOALTYPES['poicurrency'] = {
 			elseif currency == "AA" then name,_,icon = GetCurrencyInfo(829) --arakkoa archaeo
 			elseif currency == "OIL" then name,_,icon = GetCurrencyInfo(1101)
 			elseif currency == "PC" then name,icon = "Pet Charms","Interface\\Icons\\achievement_guildperk_honorablemention"
+			elseif currency == "OR" then name,_,icon = GetCurrencyInfo(1220)
+			elseif currency == "AM" then name,_,icon = GetCurrencyInfo(1155)
 			 end
 
 			if name then table.insert(step.poicurrencydata,{value=value, type=name, icon=icon:gsub("\ ","\\")}) end
@@ -1800,11 +1802,45 @@ GOALTYPES['poivendor'] = {
 }
 
 
-GOALTYPES['poi_rare'] = GOALTYPES['poiname']
-GOALTYPES['poi_treasure'] = GOALTYPES['poiname']
-GOALTYPES['poi_battlepet'] = GOALTYPES['poiname']
-GOALTYPES['poi_achievement'] = GOALTYPES['poiname']
+GOALTYPES['poi_rare'] = {
+	parse = function(self,params,step)
+		step.poiname = params
+		self.poiname = params
+		step.poitype = "rare"
+	end,
+	gettext = GOALTYPES['poiname'].gettext,
+	onclick = GOALTYPES['poiname'].onclick,
+}
 
+GOALTYPES['poi_treasure'] = {
+	parse = function(self,params,step)
+		step.poiname = params
+		self.poiname = params
+		step.poitype = "treasure"
+	end,
+	gettext = GOALTYPES['poiname'].gettext,
+	onclick = GOALTYPES['poiname'].onclick,
+}
+
+GOALTYPES['poi_battlepet'] = {
+	parse = function(self,params,step)
+		step.poiname = params
+		self.poiname = params
+		step.poitype = "battlepet"
+	end,
+	gettext = GOALTYPES['poiname'].gettext,
+	onclick = GOALTYPES['poiname'].onclick,
+}
+
+GOALTYPES['poi_achievement'] = {
+	parse = function(self,params,step)
+		step.poiname = params
+		self.poiname = params
+		step.poitype = "achievement"
+	end,
+	gettext = GOALTYPES['poiname'].gettext,
+	onclick = GOALTYPES['poiname'].onclick,
+}
 
 local states={none=0,building=1,ready=2,active=3}
 

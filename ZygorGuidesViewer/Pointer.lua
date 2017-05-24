@@ -120,7 +120,7 @@ function Pointer:Startup()
 		:RegisterEvent("WORLD_MAP_UPDATE")
 		.__END
 
-	if ZGV.DEV then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(200) :SetJustifyH("LEFT") .__END  end
+	if ZGV.DEV then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
 
 	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
 
@@ -910,7 +910,7 @@ end
 local mix4=ZGV.mix4
 function markerproto:UpdateWorldMapIcon(m,f)
 	local self_f=self.f
-	if self.type=="ant" then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgi
+	if self.type=="ant" and ZGV.HBD.mapData[m] and ZGV.HBD.mapData[m][1]~=0 then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgri. DON'T in off-world maps that don't have base coords (only floors).
 
 	-- bandaid: prevent updates if coords are missing
 	if not self.m or not self.x or not self.y then return end
@@ -958,7 +958,7 @@ function markerproto:UpdateMiniMapIcon(m,f)
 	 ((self.onminimap=="zone" or self.onminimap=="zonedistance") and m==self.m)
 	) then
 		local self_f=self.f
-		if self.type=="ant" then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgi
+		if self.type=="ant" and ZGV.HBD.mapData[m] and ZGV.HBD.mapData[m][1]~=0 then self_f=nil end -- use no floor to make ants show up between floors and in dala/orgri. DON'T in off-world maps that don't have base coords (only floors).
 		-- bandaid: prevent showing if coords are missing
 		if not self.m or not self.x or not self.y then return end
 		local r = HBDPins:AddMinimapIconMF(Pointer, self.frame_minimap, self.m, self_f, self.x, self.y)
@@ -1370,7 +1370,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 		self.icon:Hide() self.arrow:Hide() return
 	end
 
-	local dist,x,y = HBDPins:GetDistanceToIcon(self)
+	local dist,x,y = HBDPins:GetDistanceToIcon(self)  -- ADDED by our own HBDragons.lua
 	if not dist --[[or IsInInstance()--]] then self.icon:Hide() self.arrow:Hide() return end
 
 	self.lastdist=self.dist
@@ -1931,6 +1931,8 @@ local idle_dots = {".","..","...","....","....."}
 local ARROW_FPS=1/30
 local arrow_elapse_sum=0
 function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
+	if not GetPlayerFacing() then self:Hide() return end
+
 	arrow_elapse_sum=arrow_elapse_sum+elapsed
 	if arrow_elapse_sum<ARROW_FPS then return end
 	elapsed=arrow_elapse_sum
@@ -2810,7 +2812,8 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 		my=1-my
 		local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
 		local px, py, pm, pf = HBD:GetPlayerZonePosition(true)
-		frame.ZygorCoordsDEV:SetText(("Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))
+		px, py, pm, pf, m, f = (px or 0), (py or 0), (pm or 0), (pf or 0), (m or 0), (f or 0)
+		frame.ZygorCoordsDEV:SetText(("Zone: \"%s\" %d / %d\n Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(ZGV.Pointer.GetMapNameByID2(m),m,f,px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))	
 	end
 
 	if IsMouseButtonDown("LeftButton") and (IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown() or ZGV.db.profile.no_shift_for_waypoints) then
@@ -4059,11 +4062,18 @@ function Pointer:ShowSet(waypath,name)
 		end
 
 		-- set up icons based on angles/loops
+		local markers = waypath.markers or "auto"
+		if markers=="auto" then markers = waypath.loop and "none" or "arrow" end
+		if markers=="arrows" then markers = "arrow" end
+		if markers=="dots" then markers = "dot" end
 		for k,point in ipairs(points) do
 			local icon
-			if point.player or waypath.markers=="none" or waypath.loop or (point.pathnode and point.pathnode.a_b__c_d) == "taxi_taxi__taxi_taxi" then
+			local marker=markers
+			if k==1 and waypath['start'] then marker=waypath['start']
+			elseif k==#points and waypath['end'] then marker=waypath['end'] end
+			if point.player or marker=="none" or (point.pathnode and point.pathnode.a_b__c_d) == "taxi_taxi__taxi_taxi" then
 				icon = self.Icons.none
-			elseif point.angle or waypath.markers=="arrows" then   -- WHEN is this set!?
+			elseif point.angle and marker=="arrow" then
 				icon=self.Icons.arrow
 			else
 				icon=point.icon or self.Icons.greendot

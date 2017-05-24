@@ -10370,14 +10370,17 @@ Slay #25# Legion |q 39983/2 |goto Azshara L/0 30.00,41.83
 step
 Follow the path |goto 29.94,40.50 < 20 |walk
 talk Unng Ak##97891
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - The Arrival##39983 |goto 29.45,39.32
 accept Huln's War - Malorne's Favored##40112 |goto 29.45,39.32
 step
 talk Eche'ro##98794
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Malorne's Favored##40112 |goto 27.95,47.35
 accept Huln's War - Stormrage##39988 |goto 27.95,47.35
 step
 talk Malfurion Stormrage##97892
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Stormrage##39988 |goto 27.89,51.77
 accept Huln's War - Reinforcements##39990 |goto 27.89,51.77
 step
@@ -10385,10 +10388,12 @@ Kill the enemies coming through the portal
 Defend Malfurion |q 39990/1 |goto 25.02,51.37
 step
 talk Malfurion Stormrage##97892
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Reinforcements##39990 |goto 27.89,51.77
 accept Huln's War - Shadowsong##40388 |goto 27.89,51.77
 step
 talk Jarod Shadowsong##97903
+|tip Do not click the arrow to leave the vehicle before turning in the quests.
 turnin Huln's War - Shadowsong##40388 |goto 31.35,52.47
 accept Huln's War - The Nathrezim##39992 |goto 31.35,52.47
 step
@@ -14736,7 +14741,7 @@ turnin Mangelrath##41309 |goto 35.78,72.41
 step
 Reach Honored Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Honored
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 turnin Seed of Hope##44561 |goto 36.85,46.55 |region suramar_shalaran
@@ -15034,7 +15039,7 @@ turnin And They Will Tremble##44052 |goto 36.89,46.61 |region suramar_shalaran
 step
 Reach 8000 Honored Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Honored")>=8000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk First Arcanist Thalyssra##97140
 accept The Perfect Opportunity##43309 |goto 36.88,46.61 |region suramar_shalaran
@@ -15208,7 +15213,7 @@ turnin Beware the Fury of a Patient Elf##43314 |goto Suramar/0 36.51,46.76 |regi
 step
 Reach Revered Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Revered
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 turnin Growing Strong##44562 |goto 36.54,46.81 |region suramar_shalaran
@@ -15216,7 +15221,7 @@ accept Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalar
 step
 Reach 7000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=7000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 accept A Growing Crisis##44152 |goto 36.53,46.81 |region suramar_shalaran
@@ -15277,7 +15282,7 @@ turnin The Stuff of Dreams##43362 |goto Suramar/0 36.53,46.81 |region suramar_sh
 step
 Reach 20000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=20000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 accept A Change of Seasons##43502 |goto 36.85,46.55 |region suramar_shalaran
@@ -15378,7 +15383,7 @@ turnin Bring Home the Beacon##43565 |goto 37.13,46.62 |region suramar_shalaran
 step
 Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Exalted
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+|tip Use the "World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
 |tip Upstairs.
@@ -15660,6 +15665,107 @@ Ride Deline's Gondola |q 44814/1 |goto 24.56,88.98
 step
 talk Silgryn##114948
 turnin Waning Refuge##44814 |goto 52.38,80.18
+step
+talk First Arcanist Thalyssra##115736
+accept A Message From Ly'leth##45262 |goto 36.50,46.73 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45262/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin A Message From Ly'leth##45262 |goto 36.50,46.73 |region suramar_shalaran
+accept Tavernkeeper's Fate##44742 |goto 36.50,46.73 |region suramar_shalaran
+step
+click Portal to Lunastre Estate
+Take the Portal to Lunastre Estate |q 44742/1 |goto 36.15,45.05 |region suramar_shalaran
+step
+Watch the dialogue
+Learn of Vanthir's Fate |q 44742/2 |goto 43.29,78.76
+step
+talk Ly'leth Lunastre##115247
+turnin Tavernkeeper's Fate##44742 |goto 43.29,78.76
+step
+talk First Arcanist Thalyssra##115248
+accept Essence Triangulation##44752 |goto 43.32,78.79
+step
+Follow the path |goto 42.74,78.51 < 20 |only if walking
+Follow the path |goto 42.91,76.82 < 20 |only if walking
+Jump down here |goto 41.99,71.58 < 30 |only if walking
+Follow the path |goto 41.41,69.97 < 20 |only if walking
+click Echo of Vanthir##115258
+|tip Inside the building.
+Watch the dialogue
+Collect the Promenade Essence |q 44752/1 |goto 41.75,69.77
+step
+click Portal to Sanctum of Order |goto 36.69,44.66 |n |region suramar_shalaran
+Teleport to the Sanctum of Order |goto 43.40,60.72 < 20 |noway |c |q 44752
+step
+Run down the stairs |goto 46.01,66.45 < 20 |only if walking
+Cross the bridge |goto 45.35,67.88 < 20 |only if walking
+click Echo of Vanthir##115259
+Watch the dialogue
+Collect the Shimmershade Garden Essence |q 44752/2 |goto 45.56,72.23
+step
+Cross the bridge |goto 44.88,73.17 < 20 |only if walking
+Follow the path up |goto 45.55,77.04 < 20 |only if walking
+Cross the bridge |goto 46.46,79.69 < 20 |only if walking
+Follow the path |goto 48.07,80.89 < 20 |only if walking
+Follow the path |goto 49.68,80.51 < 20 |only if walking
+Run up the stairs |goto 50.55,79.76 < 20 |only if walking
+click Echo of Vanthir##115260
+|tip Inside the building.
+Watch the dialogue
+Collect the Evermoon Bazaar Essence |q 44752/3 |goto 50.86,79.20
+step
+Run down the stairs |goto 51.02,78.58 < 20 |only if walking
+Walk onto the teleport pad |goto 51.55,78.96 < 7 |only if walking
+talk First Arcanist Thalyssra##115248
+|tip At the top of the tower.
+turnin Essence Triangulation##44752 |goto 52.09,79.18
+accept On Public Display##44753 |goto 52.09,79.18
+step
+talk First Arcanist Thalyssra##115557
+Talk to Thalyssra |q 44753/1 |goto 52.23,79.04
+step
+Watch the dialogue
+click Echo of Vanthir##115584
+|tip Click all of them that appear nearby as First Arcanist Thalyssra talks.
+Track Vanthir's Location |q 44753/2 |goto 52.29,79.01
+step
+talk First Arcanist Thalyssra##115557
+turnin On Public Display##44753 |goto 52.23,79.04
+accept Waxing Crescent##44754 |goto 52.23,79.04
+step
+click Portal to Sanctum of Order |goto 36.69,44.66 |n |region suramar_shalaran
+Teleport to the Sanctum of Order |goto 43.40,60.72 < 20 |noway |c |q 44754
+step
+kill Thoramir##115607
+|tip Allies will appear to help you fight him.
+collect Thoramir's Control Orb##142281 |q 44754/1 |goto 46.96,65.46
+step
+click Containment Field
+Free Vanthir |q 44754/2 |goto 48.89,67.10
+step
+talk Vanthir##115604
+turnin Waxing Crescent##44754 |goto 48.89,67.10
+step
+Watch the dialogue
+talk Vanthir##115604
+accept Sign of the Dusk Lily##44756 |goto 48.87,67.08
+step
+click Dusk Lily Sigil
+Place the Dusk Lily Sigil |q 44756/1 |goto 48.89,67.10
+step
+talk First Arcanist Thalyssra##115736
+turnin Sign of the Dusk Lily##44756 |goto 36.50,46.73 |region suramar_shalaran
+accept Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
+step
+Complete #10# World Quests in Suramar |q 45316/1
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+talk First Arcanist Thalyssra##115736
+turnin Stabilizing Suramar##45316 |goto 36.50,46.73 |region suramar_shalaran
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -16244,7 +16350,7 @@ collect Greater Demonic Runestone##139453 |q 43506/1
 step
 label "World_Quests_Warrior"
 Complete #30# World Quests |q 44667/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Warrior
 step
 talk Odyn##96469
@@ -17181,7 +17287,7 @@ turnin Blood of Sargeras##43534 |goto Eastern Plaguelands/20 52.30,78.05
 step
 label "World_Quests_Paladin"
 Complete #30# World Quests |q 43699/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Paladin
 step
 talk Lord Grayson Shadowbreaker##90250
@@ -18138,7 +18244,7 @@ stickystart "Arkhana_Hunter"
 stickystart "Arcane_Vessel_Fragments_Hunter"
 step
 Complete #30# World Quests |q 44680/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Hunter
 step
 label "Arkhana_Hunter"
@@ -19114,7 +19220,7 @@ Click Here After You Start the Mission |confirm |goto 37.41,44.25 |q 43469
 stickystart "Where_Mathias_Rogue"
 step
 Complete #30# World Quests |q 43470/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Rogue
 step
 label "Where_Mathias_Rogue"
@@ -19134,7 +19240,7 @@ step
 Complete a "Rare Elite" World Quest |q 43479/1
 |tip They are randomly available world quests.
 |tip On the world map, their icon looks like a blue circle with a yellow exclamation mark in it, with a golden dragon wrapping around the circle.
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Rogue
 step
 Click the Torch and run through the doorway |goto 45.02,54.87 < 10 |walk
@@ -20212,7 +20318,7 @@ turnin Elixirs of Aid##43832 |goto 51.57,47.84
 step
 label "World_Quests_Priest"
 Complete #30# World Quests |q 43399/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Priest
 step
 label "Lumenstones_Priest"
@@ -21129,7 +21235,7 @@ turnin In the House of Light and Shadow##44448 |goto Dalaran L/10 28.46,48.31
 step
 label "World_Quests_Shaman"
 Complete #30# World Quests |q 42988/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Shaman
 step
 talk Advisor Sevel##96746
@@ -22123,7 +22229,7 @@ accept The Might of the Tirisgarde##44689 |goto Hall of the Guardian/2 71.82,54.
 |only Mage
 step
 Complete #30# World Quests |q 44689/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Mage
 step
 talk Archmage Khadgar##107351
@@ -23197,7 +23303,7 @@ Complete the "Preparations for Invasion: Where Are the Felsouls?" Mission |q 426
 step
 label "World_Quests_DemonHunter"
 Complete #30# World Quests |q 44694/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only DemonHunter
 step
 Follow the path down |goto 68.46,66.55 < 15 |walk
@@ -24250,7 +24356,7 @@ collect Felsworn Heart##138989 |q 42660/1
 step
 label "World_Quests_Warlock"
 Complete #30# World Quests |q 44682/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Warlock
 step
 label "One_Who's_Worthy_Warlock"
@@ -25285,7 +25391,7 @@ turnin Odyn's Cauldron##41059 |goto The Wandering Isle L/0 51.41,48.39
 step
 label "World_Quests_Monk"
 Complete #30# World Quests |q 41086/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Monk
 step
 talk Iron-Body Ponshu##64975
@@ -26211,7 +26317,7 @@ collect 10 Blood of Sargeras##124124 |c |q 42365
 step
 label "World_Quests_Druid"
 Complete #30# World Quests |q 43403/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only Druid
 step
 talk Rensar Greathoof##101195
@@ -27073,7 +27179,7 @@ stickystart "Aggregates_Of_Anguish_DeathKnight"
 step
 label "World_Quests_DeathKnight"
 Complete #30# World Quests |q 43573/1
-|tip Use the World Quests guide to accomplish this.
+|tip Use the "World Quests" dailies guide to accomplish this.
 |only DeathKnight
 step
 talk Siouxsie the Banshee##93568

@@ -195,7 +195,7 @@ ZygorGuidesViewer:RegisterInclude("Steamwheedle_Preservation_Society",[[
 ----------------------------------------------
 --------- Warlords of Draenor Titles----------
 ----------------------------------------------
---- 2015-03-02 11:23:42.123
+--- 2015-01-14 09:41:19
 
 ZygorGuidesViewer:RegisterInclude("wod_spiritwalker",[[
 	step

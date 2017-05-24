@@ -15898,7 +15898,7 @@ Cure a Suramar Refugee |q 45265/1 |goto 37.49,47.44 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##115736
 turnin Feeding the Rebellion##45265 |goto 36.50,46.72 |region suramar_shalaran
-accept Tyrande's Command##44743 |goto 36.50,46.72 |region suramar_shalaran
+accept Liadrin's Command##44859 |goto 36.50,46.72 |region suramar_shalaran
 accept Mouths to Feed##44870 |goto 36.50,46.72 |region suramar_shalaran
 step
 Go down the stairs |goto 36.58,46.65 |region suramar_shalaran
@@ -15956,45 +15956,45 @@ Speak with Stellagosa to ride back to Shal'aran |goto 59.21,12.92
 talk First Arcanist Thalyssra##115736
 turnin A Dance With Dragons##44876 |goto Suramar/0 36.48,46.74 |region suramar_shalaran
 step
-talk Tyrande Whisperwind##114838
-turnin Tyrande's Command##44743 |goto 41.61,51.45
-accept Trolling Them##44858 |goto 41.61,51.45
+talk Lady Liadrin##114841
+turnin Liadrin's Command##44859 |goto 40.52,53.07
+accept Trolling Them##44860 |goto 40.52,53.07
 step
 talk Archmage Khadgar##114909
 accept Something's Not Quite Right...##44928 |goto 41.65,51.62
 stickystart "Dispelling Crystal"
 step
 click "Your Ancestors"
-Remove the First Insult |goto 42.56,51.30 |count 1 |q 44858/1
+Remove the First Insult |goto 42.56,51.30 |count 1 |q 44860/1
 step
 click "Just wanted you to feel at home, mon."
-Remove the Second Insult |goto 42.01,51.02 |count 2 |q 44858/1
+Remove the Second Insult |goto 42.01,51.02 |count 2 |q 44860/1
 step
 click "We found your mounts..."
-Remove the Third Insult |goto 40.61,51.80 |count 3 |q 44858/1
+Remove the Third Insult |goto 40.61,51.80 |count 3 |q 44860/1
 step
 click "Didn't want you to get the shakes."
-Remove the Fourth Insult |goto 40.30,52.05 |count 4 |q 44858/1
+Remove the Fourth Insult |goto 40.30,52.05 |count 4 |q 44860/1
 step
 click Replacement Sunwell
-Remove the Fifth Insult |goto 40.83,53.31 |count 5 |q 44858/1
+Remove the Fifth Insult |goto 40.83,53.31 |count 5 |q 44860/1
 step
 label "Dispelling Crystal"
 Use your Dispelling Crystal to remove the disguises of Infiltrators |use Dispelling Crystal##142375
 |tip Use this item when around units inside the camp.
 Discover Shal'dorei Infiltrators |q 44928/1 |goto 40.79,52.73
 step
-talk Tyrande Whisperwind##114838
-turnin Trolling Them##44858 |goto 41.61,51.45
+talk Lady Liadrin##114841
+turnin Trolling Them##44860 |goto 40.52,53.07
 step
 talk Archmage Khadgar##114909
 turnin Something's Not Quite Right...##44928 |goto 41.65,51.62
 step
-talk Tyrande Whisperwind##114838
-accept Arming the Rebels##44861 |goto 41.61,51.45
+talk Lady Liadrin##114841
+accept Arming the Rebels##44862 |goto 40.52,53.07
 step
 talk Victoire##116256
-turnin Arming the Rebels##44861 |goto 39.76,51.37
+turnin Arming the Rebels##44862 |goto 39.76,51.37
 accept Citizens' Army##44827 |goto 39.76,51.37
 step
 talk Chief Telemancer Oculeth##115342

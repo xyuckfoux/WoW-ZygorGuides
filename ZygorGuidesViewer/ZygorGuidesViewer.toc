@@ -1,6 +1,6 @@
 ## Interface: 70100
 ## Title: Zygor Guides Viewer 6.0
-## Notes: Free multi-purpose leveling guide viewer.|n|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
+## Notes: Free multi-purpose leveling guide viewer.|nRelease by xyuckfoux with credits to Foxez @ codedeception.net.|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
 ## Author: Sinus Pi for Zygor Guides
 ## DefaultState: enabled
 ## LoadOnDemand: 0

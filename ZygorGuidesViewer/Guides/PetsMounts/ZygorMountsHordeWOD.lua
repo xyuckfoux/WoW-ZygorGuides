@@ -1138,7 +1138,7 @@ description="This guide will help you acquire the Breezestrider Stallion mount."
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Vol'jin's Spear_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Vol'jin's Spear"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Vol'jin's Spear"
 |confirm
 step
 talk Dazzerian##85115 |goto Warspear 47.0,21.4
@@ -1153,7 +1153,7 @@ description="This guide will help you acquire the Domesticated Razorback mount."
 },[[
 step
 This mount requires you to be _Exalted_ with the _Steamwheedle "Preservation" Society_
-_Click here_ for the reputation guide |confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
+_Click here_ for the reputation guide |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
 |confirm
 step
 talk Gazrix Gearlock##88482 |goto Stormshield 43.2,77.4
@@ -1168,7 +1168,7 @@ description="This guide will help you acquire the Ironside Warwolf mount.",
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Laughing Skull Orcs_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Laughing Skull Orcs"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
 |confirm
 step
 talk Kil'rip##86698 |goto Frostwall 58.6,26.6
@@ -1183,7 +1183,7 @@ description="This guide will help you acquire the Shadowmane Charger mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with the _Arakkoa Outcasts_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
 |confirm
 step
 talk Ravenspeaker Skeega##86037 |goto Warspear 54.0,61.0
@@ -1198,7 +1198,7 @@ description="This guide will help you acquire the Swift Frostwolf mount.",
 },[[
 step
 This mount is _Horde only_ and requires you to be _Exalted_ with the _Frostwolf Orcs_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Frostwolf Orcs"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
 |confirm
 step
 talk Beska Redtusk##86036 |goto Warspear 53.6,62.6

@@ -305,8 +305,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here for Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -908,8 +908,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -4417,8 +4417,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -4851,8 +4851,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -5131,10 +5131,10 @@ step
 Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
 Exalted with The Sunreavers |condition rep("The Sunreavers")>=Exalted
 Click here for The Pre Quests. |next |only if not completedq(13838) |confirm
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |only if ZGV.guidesets["DailiesHCATA"] |confirm
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |only if ZGV.guidesets["DailiesHCATA"] |confirm |only if completedq(13678)
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] |confirm |only if completedq(13795)
-next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only !DeathKnight |only if ZGV.guidesets["DailiesHCATA"] |only if completedq(13794)
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
+next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
 Click here if you have completed the Pre Quests. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -5728,8 +5728,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849

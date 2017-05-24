@@ -3229,7 +3229,7 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 ZygorGuidesViewer:RegisterInclude("A_Zangarmarsh_Quests",[[
 	author support@zygorguides.com
 	image Zangarmarsh
-	next Zygor's Alliance Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)
+	next Zygor's Leveling Guides\\Outland 60-70\\Terokkar Forest (64-65)
 	startlevel 62.4
 	dynamic on
 	step
@@ -3794,11 +3794,11 @@ ZygorGuidesViewer:RegisterInclude("A_Icecrown_Argent_Crusade_Rep",[[
 	step
 		talk Highlord Tirion Fordring##28179
 		accept Once More Unto The Breach, Hero##13105 |only DeathKnight |goto 86.0,75.8
-		accept Once More Unto The Breach, Hero##13104 |only !DeathKnight |goto 86.0,75.8
+		accept Once More Unto The Breach, Hero##13104 |only if not DeathKnight |goto 86.0,75.8
 	step
 		talk The Ebon Watcher##30596
 		turnin Once More Unto The Breach, Hero##13105 |only DeathKnight |goto 83.0,72.9
-		turnin Once More Unto The Breach, Hero##13104 |only !DeathKnight |goto 83.0,72.9
+		turnin Once More Unto The Breach, Hero##13104 |only if not DeathKnight |goto 83.0,72.9
 		accept The Purging Of Scourgeholme##13118 |goto 83.0,72.9
 		accept The Scourgestone##13122 |goto 83.0,72.9
 	step

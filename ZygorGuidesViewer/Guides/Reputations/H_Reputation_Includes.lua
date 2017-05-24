@@ -680,7 +680,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		turnin A Champion Rises##13739 |goto 69.7,22.9 |only Scourge
 		turnin A Champion Rises##13740 |goto 69.7,22.9 |only BloodElf
 		accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-		accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+		accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 	step
 		talk Crok Scourgebane##33762
 		turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -688,7 +688,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	step
 		talk Eadric the Pure##33759
 		turnin Eadric the Pure##13794 |goto 70.0,23.4
-		only !DeathKnight
+		only if not DeathKnight
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Eastern_Plaguelands_Argent_Dawn",[[
@@ -1403,11 +1403,11 @@ ZygorGuidesViewer:RegisterInclude("H_Icecrown_Argent_Crusade_Rep",[[
 	step
 		talk Highlord Tirion Fordring##28179
 		accept Once More Unto The Breach, Hero##13105 |goto 86.0,75.8 |only DeathKnight
-		accept Once More Unto The Breach, Hero##13104 |goto 86.0,75.8 |only !DeathKnight
+		accept Once More Unto The Breach, Hero##13104 |goto 86.0,75.8 |only if not DeathKnight
 	step
 		talk The Ebon Watcher##30596
 		turnin Once More Unto The Breach, Hero##13105 |goto 83.0,72.9 |only DeathKnight
-		turnin Once More Unto The Breach, Hero##13104 |goto 83.0,72.9 |only !DeathKnight
+		turnin Once More Unto The Breach, Hero##13104 |goto 83.0,72.9 |only if not DeathKnight
 		accept The Purging Of Scourgeholme##13118 |goto 83.0,72.9
 		accept The Scourgestone##13122 |goto 83.0,72.9
 	step
@@ -8143,7 +8143,7 @@ ZygorGuidesViewer:RegisterInclude("H_Klaxxi",[[
 		Blood of Ancients |achieve 6540/3
 		Mazu's Bounty |achieve 6540/4
 		Please refer to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |only if not achieved(6540) and not ZGV.guidesets['LevelingHMOP']
-		Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Horde Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if not achieved(6540) and ZGV.guidesets['LevelingHMOP']
+		Click here to go to Zygor's Leveling and Loremaster guides for assistance in completing these questlines |confirm |next "Zygor's Leveling Guides\\Pandaria 85-90\\Dread Wastes (89-90)" |only if not achieved(6540) and ZGV.guidesets['LevelingHMOP']
 		confirm
 	step
 	label	klaxxi start

@@ -740,7 +740,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Klaxxi_.
 In order to become Exalted with the Klaxxi, refer to the Zygor Guides Reputation section.
-Click here for the daily quests. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here for the daily quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to check your progress. |confirm
 Click here to be taken to The Klaxxi Quartermaster to purchase the mount. |next "buy" |only if rep("The Klaxxi")>=Exalted
 step
@@ -784,7 +784,7 @@ description="This guide will help you acquire the Azure Water Strider mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with _The Anglers_.
-Click here to be taken to start _The Anglers_ dailies. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here to be taken to start _The Anglers_ dailies. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Anglers' Quartermaster to purchase the mount. |next "buy" |only if rep("The Anglers")>=Exalted
 Click here to check your progress. |confirm
 step
@@ -815,7 +815,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here in order to do The Tillers dailies. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here in order to do The Tillers dailies. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Routing to the proper section. |next "buy" |only if rep("The Tillers")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -848,7 +848,7 @@ label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
 Routing to the proper section |next |only if not completedq(31389)
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -885,7 +885,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here in |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here in |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Routing to the proper section. |next "buy" |only if rep("The Tillers")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -937,7 +937,7 @@ label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
 Routing to the proper section |next |only if not completedq(31389)
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -975,7 +975,7 @@ label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
 Routing to the proper section |next |only if not completedq(31389)
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1031,7 +1031,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here in |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here in |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Routing to the proper section. |next "buy" |only if rep("The Tillers")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1297,7 +1297,7 @@ kill Alani##64403
 collect 1 Reins of the Thundering Ruby Cloud Serpent##90655 |goto Vale of Eternal Blossoms 50.6,43.6
 step
 kill this point, you must be _Exalted_ with _Order of the Cloud Serpent_ and _The August Celestials_.
-Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsAMOP']
+Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsAMOP']
 Click here to be taken to the Order of the Cloud Serpent reputations guide to gain reputation with them. |confirm |next "Zygor's Allianct Reputations Guides\\Mists of Pandaria\\The August Celestials" |only if rep('The August Celestials')<Exalted and ZGV.guidesets['ReputationsAMOP']
 confirm
 only if rep('The August Celestials')<Exalted or rep('Order of the Cloud Serpent')<Exalted
@@ -1343,7 +1343,7 @@ description="This guide will help you acquire the Onyx Cloud Serpent mount.",
 step
 This mount requires you to be _Exalted_ with _Shado-Pan_.
 In order to become Exalted with the Shado-Pan, refer to the Zygor Guides Reputation section.
-Click here to be sent to the Shado-Pan daily quests. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here to be sent to the Shado-Pan daily quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Exalted with the Shado-Pan |achieve 6366
 step
 label "quest"
@@ -1868,7 +1868,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next b |confirm
 step
@@ -1899,7 +1899,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1932,8 +1932,8 @@ label "a"
 This mount requires you to be _Exalted_ with _Operation: Shieldwall_.
 Use the daily guides to earn Reputation with the Operation: Shieldwall.
 Click here to be taken to the pre-quests for the Operation: Shieldwall. |confirm |next "pre" |only if not ZGV.guidesets["DailiesAMOP"] and not ZGV.guidesets["ReputationsAMOP"] and not completedq(32108)
-Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\Operation: Shieldwall Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"] and not ZGV.guidesets["ReputationsAMOP"]
-Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Reputations Guides\\Mists of Pandaria\\Operation: Shieldwall" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\Operation: Shieldwall Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"] and not ZGV.guidesets["ReputationsAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Operation: Shieldwall\\Operation: Shieldwall" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
 Click here to be taken to the Operation: Shieldwall Quartermaster to purchase the mount. |next "buy" |only if rep("Operation: Shieldwall")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1989,7 +1989,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -2020,7 +2020,7 @@ description="This guide will help you acquire the Red Flying Cloud mount.",
 step
 This mount requires you to be _Exalted_ with _The Lorewalkers_.
 In order to become Exalted with the Lorewalkers, refer to the Zygor Guides Reputation section.
-Click here to access the Lorewalkers guide. |next "Zygor's Reputations Guides\\Mists of Pandaria\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
+Click here to access the Lorewalkers guide. |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
 Exalted with the Lorewalkers |achieve 6548
 step
 talk Tan Shin Tiao##64605

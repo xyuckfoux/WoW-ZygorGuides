@@ -3685,7 +3685,7 @@ do
 			local flightlicense = IsSpellKnown(90267)
 			local pandarialicense = IsSpellKnown(115913)
 			local draenorflying = playerlevel>=90 and IsSpellKnown(191645)
-			local legionflying = playerlevel>=100 and IsSpellKnown(999999)  -- unknown yet
+			local legionflying = playerlevel>=100 and IsSpellKnown(233368) -- Broken Isles Pathfinder 2
 
 			if ZGV and ZGV.db then  -- debug overrides
 				maxspeed=ZGV.db.profile.debug_librover_maxspeed or maxspeed
@@ -3988,7 +3988,7 @@ do
 		end
 
 
-		function PlayerHaveQuest(id)
+		function PlayerIsOnQuest(id)
 			local q=ZGV.questsbyid[id]
 			return q and q.inlog
 		end
@@ -4146,6 +4146,21 @@ do
 			return s
 		end
 
+		function LibRover:FindNode(map,f,x,y)
+			local mapid = self.data.MapIDsByName[map] or tonumber(map)
+			if not mapid then print("No such map!") end
+			local ret={}
+			for ni,node in ipairs(self.nodes.all) do
+				if node.m==mapid and math.abs(node.x*100-x)<1 and math.abs(node.y*100-y)<1 then
+					tinsert(ret,node)
+				end
+			end
+			if Spoo then
+				Spoo(nil,nil,ret)
+			else
+				for i,node in ipairs(ret) do print(node:tostring()) end
+			end
+		end
 		
 		do -- Tests
 		
@@ -4203,6 +4218,7 @@ do
 					if self.settings.flight.Northrend then ZGV.db.profile.debug_librover_flightcold=true end
 					if self.settings.flight.Pandaria then ZGV.db.profile.debug_librover_flightpandaria=true end
 					if self.settings.flight.Draenor then ZGV.db.profile.debug_librover_flightdraenor=true end
+					if self.settings.flight.Legion then ZGV.db.profile.debug_librover_flightlegion=true end
 				end
 
 				Lib:QueueFindPath(

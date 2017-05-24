@@ -3,14 +3,19 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Argent Dawn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Argent Dawn",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Argent Dawn faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={946},
-description="This Guide will help you get Reputation with The Argent Dawn",
 },[[
 #include "A_Eastern_Plaguelands_Argent_Dawn_Revered"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Bloodsail Buccaneers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Bloodsail Buccaneers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Bloodsail Buccaneers faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 The Bloodsail Buccaneer reputation requires a lot of farming
@@ -298,7 +303,10 @@ step
 label exalted
 Congratulations, you are Exalted with the Bloodsail Buccaneers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Brood of Nozdormu",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Brood of Nozdormu",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Brood of Nozdormu faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={956},
 },[[
 step
@@ -363,14 +371,19 @@ step
 label exalted
 Congratulations, you are Exalted with the Brood of Nozdormu!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Cenarion Circle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Cenarion Circle",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Cenarion Circle faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={953},
 },[[
 #include "A_Cenarion_Circle_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Darkmoon Faire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darkmoon Faire",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.",
+description="This guide will walk you through becoming exalted with the Darkmoon Faire faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 The Darkmoon Faire starts the first Sunday of the month and lasts for one week. The easiest way to earn reputation with
@@ -400,79 +413,110 @@ step
 label	"end"
 Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted |only if rep('Darkmoon Faire')>=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Home Cities Reputation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darnassus",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Darnassus faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
-talk Captain Lancy Revshon##49877
-buy Stormwind Tabard##45574 |goto Stormwind City 67.7,73.0
-Equip your Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574
-You can run any dungeon that grants experience to gain reputation for Stormwind
-Become Exalted with Stormwind |condition rep('Stormwind')==Exalted
-step
-label	"darn_tab"
 talk Moon Priestess Lasara##50305
-buy Darnassus Tabard##45579 |goto Darnassus 36.2,48.5
-Equip your Darnassus Tabard |use Darnassus Tabard##45579
-You can run any dungeon that grants experience to gain reputation for Darnassus.
+buy Darnassus Tabard##45579 |n |goto Darnassus 36.2,48.5
+Equip your Darnassus Tabard |equipped Darnassus Tabard##45579 |use Darnassus Tabard##45579 |future
+You can run any dungeon that grants experience to gain reputation for Darnassus
 Become Exalted with Darnassus |condition rep('Darnassus')==Exalted
 step
-label	"ex_tab"
-talk Kadu##50306
-buy Exodar Tabard##45580 |goto The Exodar 54.8,36.8
-Equip your Exodar Tabard |equipped Exodar Tabard##45580 |use Exodar Tabard##45580
-You can run any dungeon that grants experience to gain reputation for Exodar.
-Become Exalted with Exodar |condition rep('Exodar')==Exalted
+Congratulations, you have reached exalted with Darnassus!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Gnomeregan",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Gnomeregan faction.",
+condition_suggested="level>=1 and level<=60",
+},[[
 step
-label	"gnom_tab"
 talk Master Tinker Trini##50308
-buy Gnomeregan Tabard##45578 |goto Ironforge 55.3,48.2
-Equip your Gnomeregan Tabard |equipped Gnomeregan Tabard##45578 |use Gnomeregan Tabard##45578
-You can run any dungeon that grants experience to gain reputation for Gnomeregan.
+buy Gnomeregan Tabard##45578 |n |goto Ironforge 55.3,48.2
+Equip your Gnomeregan Tabard |equipped Gnomeregan Tabard##45578 |use Gnomeregan Tabard##45578 |future
+You can run any dungeon that grants experience to gain reputation for Gnomeregan
 Become Exalted with Gnomeregan |condition rep('Gnomeregan')==Exalted
 step
-label	"iron_tab"
-talk Captain Stonehelm##50309
-buy Ironforge Tabard##45577 |goto Ironforge 55.6,47.3
-Equip your Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577
-You can run any dungeon that grants experience to gain reputation for Ironforge.
-Become Exalted with Ironforge |condition rep('Ironforge')==Exalted
-step
-label	"gil_tab"
-talk Lord Candren##50307
-buy Gilneas Tabard##64882 |goto Darnassus 37.1,47.5
-Equip your Gilneas Tabard |equipped Gilneas Tabard##64882 |use Gilneas Tabard##64882
-You can run any dungeon that grants experience to gain reputation for Gilneas.
-Become Exalted with Gilneas |condition rep('Gilneas')==Exalted
-step
-label	"tush_tab"
-talk Adherent Hanjun##69334
-buy Tushui Tabard##83079 |goto Stormwind City 68.0,17.6
-Equip your Tushui Tabard |equipped Tushui Tabard##83079 |use Gilneas Tabard##83079
-You can run any dungeon that grants experience to gain reputation for Tushui Pandaren.
-Become Exalted with Tushui Pandaren |condition rep('Tushui Pandaren')==Exalted
-step
-label	"end"
-Congratulations, you have earned the Title _Ambassador_! |achieve 948
+Congratulations, you have reached exalted with Gnomeregan!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Hydraxian Waterlords",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Hydraxian Waterlords",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Hydraxian Waterlords faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={955},
 },[[
 step
-label noattune
 talk Lothos Riftwaker##14387
 Ask Lothos to transport you to Molten Core |goto Burning Steppes 18.2,24.9 < 5
 Kill every creature that is hostile in this instance in order to gain reputation |goto Molten Core/1 27.0,25.8
 |tip You will have to clear this place many times to reach Exalted
-Earn Exalted status with the Hydraxian Waterlords |condition rep('Hydraxian Waterlords')==Exalted |next "exalted"
+Earn Exalted status with the Hydraxian Waterlords |condition rep('Hydraxian Waterlords')==Exalted
 |tip You can only become Exalted by killing Golemagg the Incinerator or Ragnaros, the maximum rep you can get without these two dying is 20999/21000 Revered.
 step
-label exalted
 Congratulations, you are now Exalted with the Hydraxian Waterlords!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Ravenholdt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Ironforge",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with Ravenholdt to earn the title The Insane.",
+description="This guide will walk you through becoming exalted with the Ironforge faction.",
+condition_suggested="level>=1 and level<=60",
+},[[
+step
+talk Captain Stonehelm##50309
+buy Ironforge Tabard##45577 |n |goto Ironforge 55.6,47.3
+Equip your Ironforge Tabard |equipped Ironforge Tabard##45577 |use Ironforge Tabard##45577 |future
+You can run any dungeon that grants experience to gain reputation for Ironforge
+Become Exalted with Ironforge |condition rep('Ironforge')==Exalted
+step
+Congratulations, you have reached exalted with Ironforge!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The League of Arathor",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The League of Arathor faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={711},
+},[[
+step
+In order to gain reputation with The League of Arathor you must participate in Arathi Basin, but first you should make sure you have a quest in your log before you start.
+|confirm
+step
+talk Field Marshal Oslight##14983
+accept The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
+step
+To join Arathi Basin hit the _[H]_ key, click _Arathi Basin_, and click _Join Battle_.
+|confirm
+step
+While in Arathi Basin:
+Click the Banners at each location. |model 6271
+Assault the Mine |q 8105/1
+Assault the Lumber Mill |q 8105/2
+Assault the Blacksmith |q 8105/3
+Assault the Farm |q 8105/4
+Upon completing this quest and reach Friendly reputation with The League of Arathor you should be able to accept another quest from Field Marshal Oslight.
+step
+talk Field Marshal Oslight##14983
+turnin The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
+step
+talk Field Marshal Oslight##14983
+accept Control Four Bases##8114 |goto Arathi Highlands 40.0,46.7
+step
+Enter Arathi Basin and hold four bases at the same time. |q 8114/1
+step
+talk Field Marshal Oslight##14983
+turnin Control Four Bases##8114 |goto Arathi Highlands 40.0,46.7
+step
+Farm Arathi Basin until you are Exalted with The League of Arathor.
+Earn Exalted status with The League of Arathor |condition rep('The League of Arathor')==Exalted |next "exalted"
+step
+label exalted
+Congratulations, you are now Exalted with The League of Arathor!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Ravenholdt",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ravenholdt faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 In order to get Exalted with Ravenholdt Faction, you need to grind mobs to _11,999/12,000_ Honored reputation
@@ -510,9 +554,24 @@ step
 label	"end"
 Congratulations, you have reached Exalted with Ravenholdt!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\The Steamwheedle Cartel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Silverwing Sentinels",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with the Steamwheedle Cartel to earn the title The Insane.",
+description="This guide will walk you through becoming exalted with the Silverwing Sentinels faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={713},
+},[[
+step
+In order to gain reputation with the Silverwing Sentinels you and your team must capture flags in Warsong Gulch.
+To join Warsong Gulch hit the _[H]_ key, click _Warsong Gulch_, and click _Join Battle_.
+Earn Exalted status with the Silverwing Sentinels |condition rep('Silverwing Sentinels')==Exalted |next "exalted"
+step
+label exalted
+Congratulations, you are now Exalted with the Silverwing Sentinels!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The Steamwheedle Cartel",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Steamwheedle Cartel faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
 label	"Steam_Menu"
@@ -714,8 +773,114 @@ step
 label	"end"
 Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Thorium Brotherhood",{
-endlevel=50
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Stormpike Guard",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Stormpike Guard faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={709},
+},[[
+step
+In order to gain reputation with the Stormpike Guard you must participate in Alterac Valley, but first you should pick up a few quests.
+|confirm
+step
+talk Prospector Stonehewer##13816
+accept The Battle of Alterac##7141 |goto Hillsbrad Foothills 45.3,45.2
+step
+talk Lieutenant Haggerdin##13841
+accept Proving Grounds##7162 |goto 44.7,46.2
+step
+Enter the cave |goto 44.6,45.8 < 5 |walk
+talk Sergeant Durgen Stormpike##13777
+accept Alterac Valley Graveyards##7081 |goto 43.1,43.9
+accept Towers and Bunkers##7102 |goto 43.1,43.9
+accept Capture a Mine##7122 |goto 43.1,43.9
+step
+To join Alterac Valley hit the _[H]_ key, click _Alterac Valley_, and click _Join Battle_.
+|confirm
+step
+talk Murgot Deepforge##13257
+accept Armor Scraps##7223 |goto Alterac Valley 43.5,15.6
+step
+Enter the cave |goto 40.3,28.6 <5 |c
+step
+Follow the path around and click the Stormpike Banner
+click Stormpike Banner##5191
+collect Stormpike Banner##17849 |q 7162/1 |goto 41.9,36.2
+step
+label checklist
+Exit the cave |goto 40.3,28.6 < 5 |walk
+While in Alterac Valley:
+|tip You probably won't be able to do everything in one game, keep joining Alterac Valley matches.
+Click Horde Flag
+Assault any Graveyard |q 7081/1
+Capture any Mine |q 7122/1
+Click Horde Flag
+Assault any Tower |q 7102/1
+Loot Horde players when they die.
+collect 20 Armor Scraps##17422 |q 7223/1
+kill Drek'Thar##11946 |q 7141/1
+|model Horde Flag##5652
+step
+Before you leave Alterac Valley:
+talk Murgot Deepforge##13257
+turnin Armor Scraps##7223 |goto Alterac Valley 43.5,15.6
+step
+To return to the Alterac Valley checklist click here. |next "checklist" |confirm
+To continue forward click here. |confirm
+step
+talk Prospector Stonehewer##13816
+turnin The Battle of Alterac##7141 |goto Hillsbrad Foothills 45.3,45.2
+step
+talk Lieutenant Haggerdin##13841
+turnin Proving Grounds##7162 |goto 44.7,46.2
+step
+Enter the cave |goto 44.6,45.8 < 5 |walk
+talk Sergeant Durgen Stormpike##13777
+turnin Alterac Valley Graveyards##7081 |goto 43.1,43.9
+turnin Capture a Mine##7122 |goto 43.1,43.9
+turnin Towers and Bunkers##7102 |goto 43.1,43.9
+step
+Continue joining Alterac Valley until you reach Friendly with the Stormpike Guard. |condition rep('Stormpike Guard')>=Friendly |next "friendly"
+step
+label friendly
+talk Lieutenant Haggerdin##13841
+accept Rise and Be Recognized##7168 |goto Hillsbrad Foothills 44.7,46.2
+step
+Continue joining Alterac Valley until you reach Honored with the Stormpike Guard. |condition rep('Stormpike Guard')>=Honored |next "honored"
+step
+label honored
+talk Lieutenant Haggerdin##13841
+accept Honored Amongst the Guard##7169 |goto Hillsbrad Foothills 44.7,46.2
+step
+Continue joining Alterac Valley until you reach Revered with the Stormpike Guard. |condition rep('Stormpike Guard')==Revered |next "revered"
+step
+label revered
+talk Lieutenant Haggerdin##13841
+accept Earned Reverence##7170 |goto Hillsbrad Foothills 44.7,46.2
+step
+Continue joining Alterac Valley until you reach Exalted with the Stormpike Guard. |condition rep('Stormpike Guard')==Exalted |next "exalted"
+step
+label exalted
+Congratulations, you are now Exalted with the Stormpike Guard!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Stormwind",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Stormwind faction.",
+condition_suggested="level>=1 and level<=60",
+},[[
+step
+talk Captain Lancy Revshon##49877
+buy Stormwind Tabard##45574 |n |goto Stormwind City 67.7,73.0
+Equip your Stormwind Tabard |equipped Stormwind Tabard##45574 |use Stormwind Tabard##45574 |future
+You can run any dungeon that grants experience to gain reputation for Stormwind
+Become Exalted with Stormwind |condition rep('Stormwind')==Exalted
+step
+Congratulations, you have reached exalted with Stormwind!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Thorium Brotherhood",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Thorium Brotherhood faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
 talk Lunk##47269
@@ -1223,13 +1388,18 @@ step
 label exalted
 Congratulations, you are Exalted with the Thorium Brotherhood!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Timbermaw Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Timbermaw Hold",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Timbermaw Hold faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={944},
 },[[
 #include "A_Timbermaw_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Wintersaber Trainers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Wintersaber Trainers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Wintersaber Trainers faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
 This reputation will take _20 days_ to reach Exalted
@@ -1313,10 +1483,11 @@ step
 label exalted
 Congratulations, you are Exalted with the Wintersaber Trainers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+description="This guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 There can be an egg here |goto Shadowmoon Valley,69.4,63.6 < 5 |c
@@ -1537,12 +1708,12 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Neutral)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Friendly reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting friendly reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley 66.0,86.5
@@ -1599,11 +1770,11 @@ step
 Repeat this process daily until you are Friendly with the Netherwing faction
 Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
 author="support@zygorguides.com",
-achieveid={898},
-startlevel=80,
 description="This guide section will walk you through getting Neutral reputation with Netherwing faction. You need to have Artisan flying to complete this section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Mordenai##22113
@@ -1693,12 +1864,12 @@ step
 talk Yarzill the Merc##23141
 turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Friendly)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Honored reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Honored reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley 66.0,86.5
@@ -1778,10 +1949,11 @@ turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.
 step
 Repeat this process daily until you are Honored with the Netherwing faction. Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Friendly reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Friendly reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -1841,12 +2013,12 @@ step
 talk Chief Overseer Mudlump##23291
 turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley 66.8,86.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Honored)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Revered reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Revered reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley 66.0,86.5
@@ -1936,10 +2108,11 @@ step
 Repeat this process daily until you are Revered with the Netherwing faction
 Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Honored reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Honored reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -2005,12 +2178,12 @@ step
 talk Ja'y Nosliw##22433
 turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Revered)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Exalted reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley 66.0,86.5
@@ -2115,10 +2288,11 @@ turnin The Deadliest Trap Ever Laid##11101 |only if rep ('The Aldor') >= Friendl
 step
 Repeat this process daily until you are Exalted with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Revered reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Revered reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -2161,14 +2335,12 @@ talk Commander Arcus##23452
 turnin Commander Arcus##11100 |goto 62.4,29.3
 only if rep ('The Aldor') >= Friendly
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
 author="support@zygorguides.com",
+description="This guide section will walk you through the final steps of getting your Netherdrake Mount, once you've earned Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-description This guide section will walk you through the final steps of getting your Netherdrake Mount,
-description once you've earned Exalted reputation with the Netherwing faction.
-description You must have completed the Netherwing Reputation (Revered) guide section
-description in order to be able to complete the quests in this guide section.
-startlevel 80
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Bow to the Highlord##11107 |goto Shadowmoon Valley 66.1,86.4
@@ -2192,8 +2364,11 @@ accept Jorus the Cobalt Netherwing Drake##11109 |instant |or |goto 66.8,17.6
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Aldor",{
-description="This guide will walk you through becoming\nExalted with The Aldor faction.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Aldor",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Aldor faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={903, 1205},
 },[[
 step
 talk Haggard War Veteran##19684
@@ -2596,7 +2771,10 @@ step
 label exalted
 Congratulations, you are Exalted with The Aldor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Ashtongue Deathsworn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ashtongue Deathsworn",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ashtongue Deathsworn faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={958},
 },[[
 step
@@ -2617,15 +2795,19 @@ step
 label exalted
 Congratulations, you are now Exalted with the Ashtongue Deathsworn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Cenarion Expedition",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Cenarion Expedition",{
 author="support@zygorguides.com",
-description="This guide will take you through the quests needed to become Exalted with Cenarion Expedition",
+description="This guide will walk you through becoming exalted with the Cenarion Expedition faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={953},
 },[[
 #include "A_Cenarion_Expedition_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Consortium",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Consortium",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Consortium faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={902},
-description="This guide will help you earn Exalted\nreputation with The Consortium Faction.",
 },[[
 step
 From neutral, you have a few options as to how to earn your reputation
@@ -3147,8 +3329,24 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Consortium!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Honor Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Exodar",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Exodar faction.",
+condition_suggested="level>=1 and level<=70",
+},[[
+step
+talk Kadu##50306
+buy Exodar Tabard##45580 |n |goto The Exodar 54.8,36.8
+Equip your Exodar Tabard |equipped Exodar Tabard##45580 |use Exodar Tabard##45580 |future
+You can run any dungeon that grants experience to gain reputation for Exodar
+Become Exalted with Exodar |condition rep('Exodar')==Exalted
+step
+Congratulations, you have reached exalted with Exodar!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Honor Hold",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Honor Hold faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 talk Bernie Heisten##3546
@@ -3663,7 +3861,7 @@ You can also do the PVP daily quest to earn rep
 step
 talk Warrant Officer Tracy Proudwell##18266
 accept Hellfire Fortifications##13410 |only DeathKnight |goto Hellfire Peninsula 56.3,62.8
-accept Hellfire Fortifications##13408 |only !DeathKnight |goto Hellfire Peninsula 56.3,62.8
+accept Hellfire Fortifications##13408 |only if not DeathKnight |goto Hellfire Peninsula 56.3,62.8
 step
 Capture The Overlook |q 13410/1 |goto 40.1,48.5
 You will need to enable PVP in order to capture the objective
@@ -3687,23 +3885,23 @@ Capture The Overlook |q 13408/1 |goto 40.1,48.5
 You will need to enable PVP in order to capture the objective
 Type "/pvp" to enable player versus player combat
 Players of the opposing faction will now be able to attack you, so be warned
-|only !DeathKnight
+|only if not DeathKnight
 step
 Capture The Stadium |q 13408/1 |goto 35.7,51.5
 You will need to enable PVP in order to capture the objective
 Type "/pvp" to enable player versus player combat
 Players of the opposing faction will now be able to attack you, so be warned
-|only !DeathKnight
+|only if not DeathKnight
 step
 Capture Broken Hill |q 13408/3 |goto 40.2,56.7
 You will need to enable PVP in order to capture the objective
 Type "/pvp" to enable player versus player combat
 Players of the opposing faction will now be able to attack you, so be warned
-|only !DeathKnight
+|only if not DeathKnight
 step
 talk Warrant Officer Tracy Proudwell##18266
 turnin Hellfire Fortifications##13408 |only DeathKnight |goto Hellfire Peninsula 56.3,62.8
-turnin Hellfire Fortifications##13410 |only !DeathKnight |goto Hellfire Peninsula 56.3,62.8
+turnin Hellfire Fortifications##13410 |only if not DeathKnight |goto Hellfire Peninsula 56.3,62.8
 step
 After the quest is completed you will unlock a daily version of the quest
 |confirm
@@ -3757,8 +3955,10 @@ step
 label "grats"
 Congratulations, you are now Exalted with Honor Hold!!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Keepers of Time",{
-description="This guide will help you earn Exalted\nreputation with the Keepers of Time.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Keepers of Time",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Keepers of Time faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 This faction largely relies on running certain instances repeatedly in order to gain reputation
@@ -3883,15 +4083,18 @@ step
 label exalted
 Congratulations, you are now Exalted with the Keepers of Time!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Kurenai Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Kurenai",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kurenai faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={899},
-description="This Guide will help you reach Exalted status with the Kurenai Faction",
 },[[
 #include "A_Kurenai_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Lower City",{
-description="This guide will walk you through how to earn\nExalted with the Lower City.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Lower City",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Lower City faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 talk Rilak the Redeemed##22292
@@ -4195,9 +4398,11 @@ step
 label exalted
 Congratulations, you are now Exalted with the Lower City!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Ogri'la",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ogri'la",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ogri'la faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={896},
-description="This will walk you through the Pre-Quests for Ogri'la.",
 },[[
 step
 talk V'eru##22497
@@ -4325,13 +4530,13 @@ talk Sky Commander Keller##23334
 turnin The Skyguard Outpost##11062 |goto 27.4,52.7
 step
 talk Sky Sergeant Vanderlip##23120
-accept Bombing Run##11010 |only !Druid |goto 27.6,52.9
+accept Bombing Run##11010 |only if not Druid |goto 27.6,52.9
 accept Bombing Run##11102 |only Druid |goto 27.6,52.9
 step
 Use your Skyguard Bombs on Fel Cannonballs Stacks |use Skyguard Bombs##32456
 |tip They look like piles of gray stones on the gorund around this area.
 Destroy 15 Fel Cannonball Stacks |q 11010/1 |goto 33.3,44.0
-only !Druid
+only if not Druid
 step
 Use your Skyguard Bombs on Fel Cannonballs Stacks |use Skyguard Bombs##32456
 |tip They look like piles of gray stones on the gorund around this area.
@@ -4339,7 +4544,7 @@ Destroy 15 Fel Cannonball Stacks |q 11102/1 |goto 33.3,44.0
 only Druid
 step
 talk Sky Sergeant Vanderlip##23120
-turnin Bombing Run##11010 |only !Druid |goto 27.6,52.9
+turnin Bombing Run##11010 |only if not Druid |goto 27.6,52.9
 turnin Bombing Run##11102 |only Druid |goto 27.6,52.9
 step
 talk Sky Commander Keller##23334
@@ -4515,7 +4720,10 @@ step
 label exalted
 Congratulations, you are now Exalted with Ogri'la!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Scale of the Sands",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scale of the Sands",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Scale of the Sands faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={959},
 },[[
 step
@@ -4535,8 +4743,11 @@ step
 label exalted
 Congratulations, you are now Exalted with The Scale of the Sands!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Scryers",{
-description="This guide will walk you through becoming\nExalted with The Scryers faction.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scryers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Scryers faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={903, 1205},
 },[[
 step
 talk Haggard War Veteran##19684
@@ -4928,256 +5139,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Scryers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Sha'tari Skyguard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Sha'tar",{
 author="support@zygorguides.com",
-achieveid={894},
-description="This guide will take you through the quests needed to become Exalted with the Shatari Skyguard",
-},[[
-step
-label "pre"
-talk Yuula##23449
-accept Threat from Above##11096 |goto Shattrath City 64.3,42.3
-step
-kill 20 Gordunni Back-Breaker##22143+, Gordunni Soulreaper##23022+, Gordunni Head-Splitter##22148+, Gordunni Elementalist##22144+ |q 11096/1 |goto Terokkar Forest,21.8,16.1
-You can find more around the following location |goto 24.4,8.9
-step
-talk Yuula##23449
-turnin Threat from Above##11096 |goto Shattrath City 64.3,42.3
-accept To Skettis!##11098 |goto Shattrath City 64.3,42.3
-step
-talk Sky Sergeant Doryn##23048
-turnin To Skettis!##11098 |goto Terokkar Forest 64.5,66.7
-step
-talk Skyguard Handler Deesak##23415
-accept Hungry Nether Rays##11093 |goto 63.5,65.8
-step
-talk Severin##23042
-accept World of Shadows##11004 |goto 64.0,66.9
-stickystart "shadowdust"
-step
-Use your Nether Ray Cage |use Nether Ray Cage##32834
-|tip Keep your Nether Ray out while killing Warp Chasers and wait until it is done eating before you kill another.
-kill Blackwind Warp Chaser##23219+
-You can find more Warp Chasers at the following location |goto 64.5,84.4
-collect 10 Nether Ray Meal |q 11093/1 |goto 61.4,81.8
-step "shadowdust"
-kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
-collect 6 Shadow Dust |q 11004/1 |goto Terokkar Forest 61.6,75.3
-You can find more at the following locations:
-Location 1: |goto 69.5,85.5
-Location 2: |goto 73.2,87.9
-Location 3: |goto 75.2,81.3
-Location 4: |goto 69.2,74.1
-step
-talk Severin##23042
-turnin World of Shadows##11004 |goto 64.0,66.9
-step
-talk Skyguard Handler Deesak##23415
-turnin Hungry Nether Rays##11093 |goto 63.5,65.8
-step
-talk Sky Commander Adaris##23038
-accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
-step
-Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446 |goto 69.7,74.7
-You will get a buff Elixir of Shadows |havebuff 136152 |q 11005
-step
-kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
-step
-kill Talonpriest Ishaal##23066+ |q 11005/1 |goto 69.3,78.1
-collect Ishaal's Almanac##32523 |n |use Ishaal's Almanac##32523 |goto 69.3,78.1
-accept Ishaal's Almanac##11021 |goto 69.3,78.1
-step
-kill Talonpriest Skizzik##23067+ |q 11005/2 |goto 69.8,81.8
-step
-talk Sky Commander Adaris##23038
-turnin Secrets of the Talonpriests##11005 |goto 64.1,66.9
-turnin Ishaal's Almanac##11021 |goto 64.1,66.9
-accept An Ally in Lower City##11024 |goto 64.1,66.9
-step
-talk Rilak the Redeemed##22292
-turnin An Ally in Lower City##11024 |goto Shattrath City 52.5,21.0
-accept Countdown to Doom##11028 |goto 52.5,21.0
-step
-talk Nutral##18940
-turnin Countdown to Doom##11028 |goto Terokkar Forest 64.1,66.9
-step
-talk Hazzik##23306
-accept Hazzik's Bargain##11056 |goto 64.2,66.9
-step
-click Hazzik's Package##6396
-collect Hazzik's Package |q 11056/1 |goto 74.8,80.1
-step
-talk Hazzik##23306
-turnin Hazzik's Bargain##11056 |goto 64.3,66.9
-accept A Shabby Disguise##11029 |goto 64.3,66.9
-step
-Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741 |goto 66.2,77.5
-Wear the Shabby Arakkoa Disguise |havebuff 133707
-step
-talk Sahaak##23363
-buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
-step
-talk Hazzik##23306
-turnin A Shabby Disguise##11029 |goto 64.3,66.9
-accept Adversarial Blood##11885 |goto 64.3,66.9
-step
-kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
-collect 12 Shadow Dust##32388 |q 11885 |future |goto 61.6,75.3
-You can find more at the following locations:
-Location 1: |goto 69.5,85.5
-Location 2: |goto 73.2,87.9
-Location 3: |goto 75.2,81.3
-Location 4: |goto 69.2,74.1
-step
-talk Severin##23042
-accept More Shadow Dust##11006 |instant |goto 64.0,66.9
-collect 2 Elixir of Shadows##32446+ |q 11885 |future |goto 64.0,66.9
-step
-Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff 136152
-step
-kill Time-Lost Skettis High Priest##21787+
-kill Time-Lost Skettis Reaver##21651+
-kill Time-Lost Skettis Worshipper##21763+
-collect 40 Time-Lost Scroll##32620+ |goto 61.6,75.3
-You can find more at the following locations:
-Location 1:|goto 69.5,85.5
-Location 2: |goto 73.2,87.9
-Location 3: |goto 75.2,81.3
-Location 4: |goto 69.2,74.1
-step
-click Skull Pile##6393
-|tip This will use 10 Time-Lost Scrolls.
-<Call forth Darkscreecher Akkarai.>
-<Call forth Karrog.>
-<Call forth Gezzarak the Huntress.>
-<Call forth Vakkiz the Windrager.>
-kill Darkscreecher Akkarai##23161 |q 11885/1 |goto 69.7,74.7
-collect Akkarai's Talons##32715
-kill Karrog##23165 |q 11885/2 |goto 69.7,74.7
-collect Karrog's Spine##32717
-kill Gezzarak the Huntress##23163 |q 11885/3 |goto 69.7,74.7
-collect Gezzarak's Claws##32716
-kill Vakkiz the Windrager##23204 |q 11885/4 |goto 69.7,74.7
-collect Vakkiz's Scale##32718
-You can find more skull piles at the following locations:
-Location 1: |goto 70.1,79.5
-Location 1: |goto 73.5,80.7
-Location 1: |goto 70.2,83.3
-step
-talk Hazzik##23306
-turnin Adversarial Blood##11885 |goto 64.2,66.9
-accept Tokens of the Descendants##11074 |instant |goto 64.2,66.9
-step
-talk Sky Commander Adaris##23038
-accept Terokk's Downfall##11073 |goto 64.1,66.9
-step
-click Skull Pile##6393
-|tip This will use 1 Time-Lost Offering.
-<Call forth Terokk.>
-kill Terokk##21838 |goto 66.2,77.5
-|tip When he gets a shield and becomes immune, walk him over the Blue Smoke. A meteor will come down and break his shield.
-Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
-|confirm always
-step
-talk Sky Commander Adaris##23038
-turnin Terokk's Downfall##11073 |goto 64.1,66.9
-step
-label	"menu"
-You can do a couple dailys and also grind for reputation with the _Sha'tari Skyguard_
-Click here to do the Dailies and then grind |confirm always |next "dailies" |or
-Click here to grind for reputation |confirm always |next "grind" |or
-step
-label	"dailies"
-talk Sky Sergeant Doryn##23048
-accept Fires Over Skettis##11008 |goto Terokkar Forest 64.5,66.7
-step
-Fly to the top of this tree and use your Blasting charges to destroy _Monstrous Kaliri Eggs_
-Use the Skyguard Blasting Charges in your bags |use Skyguard Blasting Charges##32406
-Destroy 20 Monstrous Kaliri Eggs |q 11008/1 |goto 63.1,80.0
-You can find more eggs here:
-Location 1: |goto 61.3,79.9
-Location 2: |goto 67.5,79.3
-Location 3: |goto 68.0,85.6
-Location 4: |goto 70.3,84.5
-|model 378
-step
-talk Sky Sergeant Doryn##23048
-turnin Fires Over Skettis##11008 |goto 64.5,66.7
-step
-talk Skyguard Prisoner##23383
-accept Escape from Skettis##11085 |goto 61.0,75.6
-He can also be found at the following locations:
-Location 1: |goto 68.4,74.0
-Location 2: |goto 75.0,86.5
-step
-Escort the Skyguard Prisoner to the bottom of the bridge
-|tip Help him kill any mobs on the way down.
-Rescue the Skyguard Prisoner |q 11085/1
-|modelnpc 23383
-step
-talk Sky Sergeant Doryn##23048
-turnin Escape from Skettis##11085 |goto 64.5,66.7
-step
-label	"grind"
-kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
-collect 12 Shadow Dust##32388 |goto 61.6,75.3
-You can find more at the following locations:
-Location 1: |goto 69.5,85.5
-Location 1: |goto 73.2,87.9
-Location 1: |goto 75.2,81.3
-Location 1: |goto 69.2,74.1
-step
-talk Severin##23042
-accept More Shadow Dust##11006 |instant |n |goto 64.0,66.9
-collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
-step
-Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff 136152
-step
-kill Time-Lost Skettis High Priest##21787+
-kill Time-Lost Skettis Reaver##21651+
-kill Time-Lost Skettis Worshipper##21763+
-collect 40 Time-Lost Scroll##32620+ |goto 61.6,75.3
-You can find more at the following locations:
-Location 1: |goto 69.5,85.5
-Location 2: |goto 73.2,87.9
-Location 3: |goto 75.2,81.3
-Location 4: |goto 69.2,74.1
-step
-click Skull Pile##6393
-|tip This will use 10 Time-Lost Scrolls
-<Call forth Darkscreecher Akkarai.>
-<Call forth Karrog.>
-<Call forth Gezzarak the Huntress.>
-<Call forth Vakkiz the Windrager.>
-kill Darkscreecher Akkarai##23161
-collect Akkarai's Talons##32715 |goto 69.7,74.7
-kill Karrog##23165
-collect Karrog's Spine##32717 |goto 69.7,74.7
-kill Gezzarak the Huntress##23163
-collect Gezzarak's Claws##32716 |goto 69.7,74.7
-kill Vakkiz the Windrager##23204
-collect Vakkiz's Scale##32718 |goto 69.7,74.7
-You can find more skull piles at the following locations:
-Location 1: |goto 70.1,79.5
-Location 2: |goto 73.5,80.7
-Location 3: |goto 70.2,83.3
-step
-talk Hazzik##23306
-accept Tokens of the Descendants##11074 |instant |n |goto 64.3,66.9
-collect Time-Lost Offering##32720 |goto 64.3,66.9
-step
-click Skull Pile##6393
-|tip This will use 1 Time-Lost Offering.
-<Call forth Terokk.>
-kill Terokk##21838 |goto 66.2,77.5
-|tip When he gets a shield and becomes immune, walk him over the Blue Smoke. A meteor will come down and break his shield.
-Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
-|confirm always |next "menu"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Sha'tar",{
-description="This guide will walk you through\ngaining Exalted with The Sha'tar.",
+description="This guide will walk you through becoming exalted with The Sha'tar faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 talk Haggard War Veteran##19684
@@ -5735,21 +5700,275 @@ step
 label exalted
 Congratulations, you are now Exalted with The Sha'tar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Shattered Sun Offensive",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sha'tari Skyguard",{
 author="support@zygorguides.com",
-achieveid={897},
-description="This section is required to acces the\nShattered Sun Offensive daily quests.",
+description="This guide will walk you through becoming exalted with the Sha'tari Skyguard faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={894},
 },[[
-daily
+step
+label "pre"
+talk Yuula##23449
+accept Threat from Above##11096 |goto Shattrath City 64.3,42.3
+step
+kill 20 Gordunni Back-Breaker##22143+, Gordunni Soulreaper##23022+, Gordunni Head-Splitter##22148+, Gordunni Elementalist##22144+ |q 11096/1 |goto Terokkar Forest,21.8,16.1
+You can find more around the following location |goto 24.4,8.9
+step
+talk Yuula##23449
+turnin Threat from Above##11096 |goto Shattrath City 64.3,42.3
+accept To Skettis!##11098 |goto Shattrath City 64.3,42.3
+step
+talk Sky Sergeant Doryn##23048
+turnin To Skettis!##11098 |goto Terokkar Forest 64.5,66.7
+step
+talk Skyguard Handler Deesak##23415
+accept Hungry Nether Rays##11093 |goto 63.5,65.8
+step
+talk Severin##23042
+accept World of Shadows##11004 |goto 64.0,66.9
+stickystart "shadowdust"
+step
+Use your Nether Ray Cage |use Nether Ray Cage##32834
+|tip Keep your Nether Ray out while killing Warp Chasers and wait until it is done eating before you kill another.
+kill Blackwind Warp Chaser##23219+
+You can find more Warp Chasers at the following location |goto 64.5,84.4
+collect 10 Nether Ray Meal |q 11093/1 |goto 61.4,81.8
+step "shadowdust"
+kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
+collect 6 Shadow Dust |q 11004/1 |goto Terokkar Forest 61.6,75.3
+You can find more at the following locations:
+Location 1: |goto 69.5,85.5
+Location 2: |goto 73.2,87.9
+Location 3: |goto 75.2,81.3
+Location 4: |goto 69.2,74.1
+step
+talk Severin##23042
+turnin World of Shadows##11004 |goto 64.0,66.9
+step
+talk Skyguard Handler Deesak##23415
+turnin Hungry Nether Rays##11093 |goto 63.5,65.8
+step
+talk Sky Commander Adaris##23038
+accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
+step
+Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446 |goto 69.7,74.7
+You will get a buff Elixir of Shadows |havebuff 136152 |q 11005
+step
+kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
+step
+kill Talonpriest Ishaal##23066+ |q 11005/1 |goto 69.3,78.1
+collect Ishaal's Almanac##32523 |n |use Ishaal's Almanac##32523 |goto 69.3,78.1
+accept Ishaal's Almanac##11021 |goto 69.3,78.1
+step
+kill Talonpriest Skizzik##23067+ |q 11005/2 |goto 69.8,81.8
+step
+talk Sky Commander Adaris##23038
+turnin Secrets of the Talonpriests##11005 |goto 64.1,66.9
+turnin Ishaal's Almanac##11021 |goto 64.1,66.9
+accept An Ally in Lower City##11024 |goto 64.1,66.9
+step
+talk Rilak the Redeemed##22292
+turnin An Ally in Lower City##11024 |goto Shattrath City 52.5,21.0
+accept Countdown to Doom##11028 |goto 52.5,21.0
+step
+talk Nutral##18940
+turnin Countdown to Doom##11028 |goto Terokkar Forest 64.1,66.9
+step
+talk Hazzik##23306
+accept Hazzik's Bargain##11056 |goto 64.2,66.9
+step
+click Hazzik's Package##6396
+collect Hazzik's Package |q 11056/1 |goto 74.8,80.1
+step
+talk Hazzik##23306
+turnin Hazzik's Bargain##11056 |goto 64.3,66.9
+accept A Shabby Disguise##11029 |goto 64.3,66.9
+step
+Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741 |goto 66.2,77.5
+Wear the Shabby Arakkoa Disguise |havebuff 133707
+step
+talk Sahaak##23363
+buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
+step
+talk Hazzik##23306
+turnin A Shabby Disguise##11029 |goto 64.3,66.9
+accept Adversarial Blood##11885 |goto 64.3,66.9
+step
+kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
+collect 12 Shadow Dust##32388 |q 11885 |future |goto 61.6,75.3
+You can find more at the following locations:
+Location 1: |goto 69.5,85.5
+Location 2: |goto 73.2,87.9
+Location 3: |goto 75.2,81.3
+Location 4: |goto 69.2,74.1
+step
+talk Severin##23042
+accept More Shadow Dust##11006 |instant |goto 64.0,66.9
+collect 2 Elixir of Shadows##32446+ |q 11885 |future |goto 64.0,66.9
+step
+Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
+You will get a buff Elixir of Shadows |havebuff 136152
+step
+kill Time-Lost Skettis High Priest##21787+
+kill Time-Lost Skettis Reaver##21651+
+kill Time-Lost Skettis Worshipper##21763+
+collect 40 Time-Lost Scroll##32620+ |goto 61.6,75.3
+You can find more at the following locations:
+Location 1:|goto 69.5,85.5
+Location 2: |goto 73.2,87.9
+Location 3: |goto 75.2,81.3
+Location 4: |goto 69.2,74.1
+step
+click Skull Pile##6393
+|tip This will use 10 Time-Lost Scrolls.
+<Call forth Darkscreecher Akkarai.>
+<Call forth Karrog.>
+<Call forth Gezzarak the Huntress.>
+<Call forth Vakkiz the Windrager.>
+kill Darkscreecher Akkarai##23161 |q 11885/1 |goto 69.7,74.7
+collect Akkarai's Talons##32715
+kill Karrog##23165 |q 11885/2 |goto 69.7,74.7
+collect Karrog's Spine##32717
+kill Gezzarak the Huntress##23163 |q 11885/3 |goto 69.7,74.7
+collect Gezzarak's Claws##32716
+kill Vakkiz the Windrager##23204 |q 11885/4 |goto 69.7,74.7
+collect Vakkiz's Scale##32718
+You can find more skull piles at the following locations:
+Location 1: |goto 70.1,79.5
+Location 1: |goto 73.5,80.7
+Location 1: |goto 70.2,83.3
+step
+talk Hazzik##23306
+turnin Adversarial Blood##11885 |goto 64.2,66.9
+accept Tokens of the Descendants##11074 |instant |goto 64.2,66.9
+step
+talk Sky Commander Adaris##23038
+accept Terokk's Downfall##11073 |goto 64.1,66.9
+step
+click Skull Pile##6393
+|tip This will use 1 Time-Lost Offering.
+<Call forth Terokk.>
+kill Terokk##21838 |goto 66.2,77.5
+|tip When he gets a shield and becomes immune, walk him over the Blue Smoke. A meteor will come down and break his shield.
+Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
+|confirm always
+step
+talk Sky Commander Adaris##23038
+turnin Terokk's Downfall##11073 |goto 64.1,66.9
+step
+label	"menu"
+You can do a couple dailys and also grind for reputation with the _Sha'tari Skyguard_
+Click here to do the Dailies and then grind |confirm always |next "dailies" |or
+Click here to grind for reputation |confirm always |next "grind" |or
+step
+label	"dailies"
+talk Sky Sergeant Doryn##23048
+accept Fires Over Skettis##11008 |goto Terokkar Forest 64.5,66.7
+step
+Fly to the top of this tree and use your Blasting charges to destroy _Monstrous Kaliri Eggs_
+Use the Skyguard Blasting Charges in your bags |use Skyguard Blasting Charges##32406
+Destroy 20 Monstrous Kaliri Eggs |q 11008/1 |goto 63.1,80.0
+You can find more eggs here:
+Location 1: |goto 61.3,79.9
+Location 2: |goto 67.5,79.3
+Location 3: |goto 68.0,85.6
+Location 4: |goto 70.3,84.5
+|model 378
+step
+talk Sky Sergeant Doryn##23048
+turnin Fires Over Skettis##11008 |goto 64.5,66.7
+step
+talk Skyguard Prisoner##23383
+accept Escape from Skettis##11085 |goto 61.0,75.6
+He can also be found at the following locations:
+Location 1: |goto 68.4,74.0
+Location 2: |goto 75.0,86.5
+step
+Escort the Skyguard Prisoner to the bottom of the bridge
+|tip Help him kill any mobs on the way down.
+Rescue the Skyguard Prisoner |q 11085/1
+|modelnpc 23383
+step
+talk Sky Sergeant Doryn##23048
+turnin Escape from Skettis##11085 |goto 64.5,66.7
+step
+label	"grind"
+kill Skettis Soulcaller##21911+, Skettis Windwalker##21649+, Skettis Wing Guard##21644+, Skettis Talonite##21650+
+collect 12 Shadow Dust##32388 |goto 61.6,75.3
+You can find more at the following locations:
+Location 1: |goto 69.5,85.5
+Location 1: |goto 73.2,87.9
+Location 1: |goto 75.2,81.3
+Location 1: |goto 69.2,74.1
+step
+talk Severin##23042
+accept More Shadow Dust##11006 |instant |n |goto 64.0,66.9
+collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
+step
+Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
+You will get a buff Elixir of Shadows |havebuff 136152
+step
+kill Time-Lost Skettis High Priest##21787+
+kill Time-Lost Skettis Reaver##21651+
+kill Time-Lost Skettis Worshipper##21763+
+collect 40 Time-Lost Scroll##32620+ |goto 61.6,75.3
+You can find more at the following locations:
+Location 1: |goto 69.5,85.5
+Location 2: |goto 73.2,87.9
+Location 3: |goto 75.2,81.3
+Location 4: |goto 69.2,74.1
+step
+click Skull Pile##6393
+|tip This will use 10 Time-Lost Scrolls
+<Call forth Darkscreecher Akkarai.>
+<Call forth Karrog.>
+<Call forth Gezzarak the Huntress.>
+<Call forth Vakkiz the Windrager.>
+kill Darkscreecher Akkarai##23161
+collect Akkarai's Talons##32715 |goto 69.7,74.7
+kill Karrog##23165
+collect Karrog's Spine##32717 |goto 69.7,74.7
+kill Gezzarak the Huntress##23163
+collect Gezzarak's Claws##32716 |goto 69.7,74.7
+kill Vakkiz the Windrager##23204
+collect Vakkiz's Scale##32718 |goto 69.7,74.7
+You can find more skull piles at the following locations:
+Location 1: |goto 70.1,79.5
+Location 2: |goto 73.5,80.7
+Location 3: |goto 70.2,83.3
+step
+talk Hazzik##23306
+accept Tokens of the Descendants##11074 |instant |n |goto 64.3,66.9
+collect Time-Lost Offering##32720 |goto 64.3,66.9
+step
+click Skull Pile##6393
+|tip This will use 1 Time-Lost Offering.
+<Call forth Terokk.>
+kill Terokk##21838 |goto 66.2,77.5
+|tip When he gets a shield and becomes immune, walk him over the Blue Smoke. A meteor will come down and break his shield.
+Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
+|confirm always |next "menu"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Shattered Sun Offensive",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Shattered Sun Offensive faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={897},
+},[[
 #include "A_SSO_PreQuest_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Sporeggar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sporeggar",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sporeggar faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={900},
 },[[
 #include "A_Sporeggar_Faction"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Violet Eye",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Violet Eye",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Violet Eye faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={960},
 },[[
 step
@@ -5768,11 +5987,11 @@ step
 label exalted
 Congratulations, you are now Exalted with The Violet Eye!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Tournament\\Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Aspirant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader Title.",
+description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader title.",
+condition_suggested="level>=70 and level<=80",
 },[[
-daily
 step
 label "start"
 talk Arcanist Taelis##33625
@@ -5847,11 +6066,11 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Tournament\\Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and earn the Crusader Title.",
+description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section and earn the Crusader title.",
+condition_suggested="level>=70 and level<=80",
 },[[
-daily
 step
 label "start"
 talk Arcanist Taelis##33625
@@ -6436,7 +6655,7 @@ turnin A Champion Rises##13732 |only Dwarf |goto 69.7,22.9
 turnin A Champion Rises##13733 |only Gnome |goto 69.7,22.9
 turnin A Champion Rises##13734 |only Draenei |goto 69.7,22.9
 accept The Scourgebane##13795 |only DeathKnight |goto 69.7,22.9
-accept Eadric the Pure##13794 |only !DeathKnight |goto 69.7,22.9
+accept Eadric the Pure##13794 |only if not DeathKnight |goto 69.7,22.9
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -6444,14 +6663,16 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Alliance Vanguard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Alliance Vanguard",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Alliance Vanguard faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1012},
-description="This guide will help you get Exalted with the Alliance Vanguard",
 },[[
 step
 The most efficient way to earn reputation with the _Alliance Vanguard_ is to run any level 80 Northrend dungeon, or any Northrend Heroic.
@@ -6482,14 +6703,18 @@ Exalted with Valiance Expedition |condition rep('Valiance Expedition')==Exalted
 step
 Congratulations, you are Exalted with the _Alliance Vanguard!_
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Crusade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Crusade",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Argent Crusade faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={947},
-description="This guide will help you reach Exalted with the Argent Crusade",
 },[[
 #include "A_Icecrown_Argent_Crusade_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Ashen Verdict",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Ashen Verdict",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ashen Verdict faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={4598},
 },[[
 step
@@ -6509,7 +6734,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Ashen Verdict!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Frenzyheart Tribe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Frenzyheart Tribe",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Frenzyheart Tribe faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={950},
 },[[
 step
@@ -6840,17 +7068,21 @@ step
 label exalted
 Congratulations, you are now Exalted with the Frenzyheart Tribe!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Kalu'ak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kalu'ak",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kalu'ak faction.",
+condition_suggested="level>=70 and level<=80",
+achieveid={949},
 },[[
-description This step will lead you up to the Daily Quest portion
-description of the Kalu'ak.
-achieveid 949
 #include "AKaluak_rep"
 step
 label exalted
 Congratulations, you are Exalted with the Kalu'ak!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Kirin Tor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kirin Tor",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kirin Tor faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1008},
 },[[
 step
@@ -6962,7 +7194,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Kirin Tor!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Knights of the Ebon Blade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Knights of the Ebon Blade",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Knights of the Ebon Blade faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1009},
 },[[
 step
@@ -7111,7 +7346,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Knights of the Ebon Blade!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Oracles",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the The Oracles faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={951},
 },[[
 step
@@ -7444,7 +7682,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Oracles!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Sons of Hodir",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sons of Hodir faction.",
+condition_suggested="level>=70 and level<=80",
 },[[
 step
 Proceeding to Prequests next step |next |only if rep('The Sons of Hodir')<=Friendly
@@ -8601,9 +8842,11 @@ step
 label Exalted
 Congratulations, you are now Exalted with the Sons of Hodir!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Wyrmrest Accord",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Wyrmrest Accord faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1007},
-description="This guide will walk you through earning Exalted with\nThey Wyrmrest Accord faction.",
 },[[
 step
 talk Raelorasz##26117
@@ -9102,8 +9345,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Wyrmrest Accord!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Avengers of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Avengers of Hyjal",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Avengers of Hyjal faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={5827},
 },[[
 step
@@ -9126,11 +9371,12 @@ step
 label exalted
 Congratulations, you are now Exalted with the Avengers of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Baradin's Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Baradin's Wardens",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Baradin's Wardens faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={5375},
-description="This Guide will walk you through becoming\nExalted with Baradin's Wardens.",
 },[[
-daily
 step
 label "daily_reset"
 #include "A_Baradin_Hold_Dailies"
@@ -9140,8 +9386,10 @@ step
 label exalted
 Congratulations, you are now Exalted with Hellscream's Reach!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\The Earthen Ring",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Earthen Ring faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={4882},
 },[[
 step
@@ -9164,10 +9412,25 @@ step
 label exalted
 Congratulations, you are now Exalted with The Earthen Ring!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Gilneas",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Gilneas faction.",
+condition_suggested="level>=1 and level<=90",
+},[[
+step
+talk Lord Candren##50307
+buy Gilneas Tabard##64882 |n |goto Darnassus 37.1,47.5
+Equip your Gilneas Tabard |equipped Gilneas Tabard##64882 |use Gilneas Tabard##64882 |future
+You can run any dungeon that grants experience to gain reputation for Gilneas
+Become Exalted with Gilneas |condition rep('Gilneas')==Exalted
+step
+Congratulations, you have reached exalted with Gilneas!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Guardians of Hyjal",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Guardians of Hyjal faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={5827},
-description="This guide will walk you through becoming Exalted\nwith the Guardians of Hyjal faction.",
-endlevel=81
 },[[
 step
 click Hero's Call Board##10016
@@ -10195,7 +10458,10 @@ step
 label exalted
 Congratulations you are Exalted with the Guardians of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ramkahen faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={4884},
 },[[
 #include "A_Uldum_Leveling"
@@ -10240,10 +10506,11 @@ step
 label exalted
 Congratulations, you are now Exalted with Ramkahen!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Therazane",{
-achieveid={4881},
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Therazane",{
 author="support@zygorguides.com",
-description="Contains the pre-quests to unlock\nthe daily quests in Deepholm.\nYou must be at least level 82 to\ncomplete this guide section.",
+description="This guide will walk you through becoming exalted with the Therazane faction.",
+condition_suggested="level>=85 and level<=90",
+achieveid={4881},
 },[[
 #include "A_Deepholm_Leveling"
 step
@@ -10260,9 +10527,11 @@ step
 label exalted
 Congratulations, you are now Exalted with Therazane!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Wildhammer Clan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Wildhammer Clan",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming Exalted with the Wildhammer Clan faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={4885},
-description="This guide will walk you through becoming Exalted\nwith the Guardians of Hyjal faction.",
 },[[
 #include "A_Twilight_Leveling"
 step
@@ -10323,137 +10592,4 @@ Click here to go back to the dailies section of this guide. |confirm |next "dail
 step
 label exalted
 Congratulations, you are Exalted with the Wildhammer Clan!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\The League of Arathor",{
-},[[
-step
-In order to gain reputation with The League of Arathor you must participate in Arathi Basin, but first you should make sure you have a quest in your log before you start.
-|confirm
-step
-talk Field Marshal Oslight##14983
-accept The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
-step
-To join Arathi Basin hit the _[H]_ key, click _Arathi Basin_, and click _Join Battle_.
-|confirm
-step
-While in Arathi Basin:
-Click the Banners at each location. |model 6271
-Assault the Mine |q 8105/1
-Assault the Lumber Mill |q 8105/2
-Assault the Blacksmith |q 8105/3
-Assault the Farm |q 8105/4
-Upon completing this quest and reach Friendly reputation with The League of Arathor you should be able to accept another quest from Field Marshal Oslight.
-step
-talk Field Marshal Oslight##14983
-turnin The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
-step
-talk Field Marshal Oslight##14983
-accept Control Four Bases##8114 |goto Arathi Highlands 40.0,46.7
-step
-Enter Arathi Basin and hold four bases at the same time. |q 8114/1
-step
-talk Field Marshal Oslight##14983
-turnin Control Four Bases##8114 |goto Arathi Highlands 40.0,46.7
-step
-Farm Arathi Basin until you are Exalted with The League of Arathor.
-Earn Exalted status with The League of Arathor |condition rep('The League of Arathor')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with The League of Arathor!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\Silverwing Sentinels",{
-},[[
-step
-In order to gain reputation with the Silverwing Sentinels you and your team must capture flags in Warsong Gulch.
-To join Warsong Gulch hit the _[H]_ key, click _Warsong Gulch_, and click _Join Battle_.
-Earn Exalted status with the Silverwing Sentinels |condition rep('Silverwing Sentinels')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with the Silverwing Sentinels!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\Stormpike Guard",{
-},[[
-step
-In order to gain reputation with the Stormpike Guard you must participate in Alterac Valley, but first you should pick up a few quests.
-|confirm
-step
-talk Prospector Stonehewer##13816
-accept The Battle of Alterac##7141 |goto Hillsbrad Foothills 45.3,45.2
-step
-talk Lieutenant Haggerdin##13841
-accept Proving Grounds##7162 |goto 44.7,46.2
-step
-Enter the cave |goto 44.6,45.8 < 5 |walk
-talk Sergeant Durgen Stormpike##13777
-accept Alterac Valley Graveyards##7081 |goto 43.1,43.9
-accept Towers and Bunkers##7102 |goto 43.1,43.9
-accept Capture a Mine##7122 |goto 43.1,43.9
-step
-To join Alterac Valley hit the _[H]_ key, click _Alterac Valley_, and click _Join Battle_.
-|confirm
-step
-talk Murgot Deepforge##13257
-accept Armor Scraps##7223 |goto Alterac Valley 43.5,15.6
-step
-Enter the cave |goto 40.3,28.6 <5 |c
-step
-Follow the path around and click the Stormpike Banner
-click Stormpike Banner##5191
-collect Stormpike Banner##17849 |q 7162/1 |goto 41.9,36.2
-step
-label checklist
-Exit the cave |goto 40.3,28.6 < 5 |walk
-While in Alterac Valley:
-|tip You probably won't be able to do everything in one game, keep joining Alterac Valley matches.
-Click Horde Flag
-Assault any Graveyard |q 7081/1
-Capture any Mine |q 7122/1
-Click Horde Flag
-Assault any Tower |q 7102/1
-Loot Horde players when they die.
-collect 20 Armor Scraps##17422 |q 7223/1
-kill Drek'Thar##11946 |q 7141/1
-|model Horde Flag##5652
-step
-Before you leave Alterac Valley:
-talk Murgot Deepforge##13257
-turnin Armor Scraps##7223 |goto Alterac Valley 43.5,15.6
-step
-To return to the Alterac Valley checklist click here. |next "checklist" |confirm
-To continue forward click here. |confirm
-step
-talk Prospector Stonehewer##13816
-turnin The Battle of Alterac##7141 |goto Hillsbrad Foothills 45.3,45.2
-step
-talk Lieutenant Haggerdin##13841
-turnin Proving Grounds##7162 |goto 44.7,46.2
-step
-Enter the cave |goto 44.6,45.8 < 5 |walk
-talk Sergeant Durgen Stormpike##13777
-turnin Alterac Valley Graveyards##7081 |goto 43.1,43.9
-turnin Capture a Mine##7122 |goto 43.1,43.9
-turnin Towers and Bunkers##7102 |goto 43.1,43.9
-step
-Continue joining Alterac Valley until you reach Friendly with the Stormpike Guard. |condition rep('Stormpike Guard')>=Friendly |next "friendly"
-step
-label friendly
-talk Lieutenant Haggerdin##13841
-accept Rise and Be Recognized##7168 |goto Hillsbrad Foothills 44.7,46.2
-step
-Continue joining Alterac Valley until you reach Honored with the Stormpike Guard. |condition rep('Stormpike Guard')>=Honored |next "honored"
-step
-label honored
-talk Lieutenant Haggerdin##13841
-accept Honored Amongst the Guard##7169 |goto Hillsbrad Foothills 44.7,46.2
-step
-Continue joining Alterac Valley until you reach Revered with the Stormpike Guard. |condition rep('Stormpike Guard')==Revered |next "revered"
-step
-label revered
-talk Lieutenant Haggerdin##13841
-accept Earned Reverence##7170 |goto Hillsbrad Foothills 44.7,46.2
-step
-Continue joining Alterac Valley until you reach Exalted with the Stormpike Guard. |condition rep('Stormpike Guard')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with the Stormpike Guard!
 ]])

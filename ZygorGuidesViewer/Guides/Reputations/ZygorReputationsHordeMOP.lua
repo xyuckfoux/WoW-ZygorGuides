@@ -3,8 +3,27 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Chee Chee",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive\\Beastmaster Dailies",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Dominance Offensive faction.",
+achieveid={8206},
+startlevel=90,
+},[[
+#include "Sturdy_Traps"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive",{
+author="support@zygorguides.com",
+achieveid={7929},
+startlevel=90,
+description="This guide will take you through The Dominance Offensive dailies\nBecoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
+},[[
+#include "Dominance_Offensive"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Chee Chee.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Chee Chee after completing the Tillers prequests.
@@ -115,8 +134,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Ella",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Ella.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Ella after completing the Tillers prequests.
@@ -268,8 +290,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Farmer Fung",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Farmer Fung.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Farmer Fung after completing the Tillers prequests.
@@ -341,8 +366,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Fish Fellreed",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Fish Fellreed.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Fish Fellreed after completing the Tillers prequests.
@@ -428,8 +456,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Gina Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Gina Mudclaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Gina Mudclaw after completing the Tillers prequests.
@@ -504,8 +535,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Haohan Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Haohan Mudclaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Haohan Mudclaw after completing the Tillers prequests.
@@ -577,8 +611,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Jogu the Drunk",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Jogu the Drunk.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Jogu the Drunk after completing the Tillers prequests.
@@ -676,8 +713,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Old Hillpaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Old Hillpaw.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Old Hillpaw after completing the Tillers prequests.
@@ -755,9 +795,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Sho",{
-achieveid={6551},
-description="This guide will help you get BestFriend with the individuals in MoP",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Sho.",
+achieveid={6551, 6552},
+startlevel=90,
 },[[
 step
 You can only start earning reputation with Sho after completing the Tillers prequests.
@@ -839,16 +881,11 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\The Tillers",{
-achieveid={6544},
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming best friends with Tina Mudclaw.",
+achieveid={6551, 6552},
 startlevel=90,
-description="This guide will take you through The Tillers dailies\nBecoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
-},[[
-step
-#include "H_Tillers"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\Tina Mudclaw",{
-description="This guide will help you get BestFriend with the individuals in MoP",
 },[[
 step
 You can only start earning reputation with Tina Mudclaw after completing the Tillers prequests.
@@ -928,39 +965,30 @@ label "end"
 You have reached the end of the guide.
 Please click here to return to the beginning of the guide. |confirm |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The Anglers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Anglers faction.",
 achieveid={6547,7614},
 startlevel=90,
-description="This guide will take you through The Anglers dailies\nBecoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
 },[[
 #include "H_Anglers"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The August Celestials",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The August Celestials faction.",
 achieveid={6543},
 startlevel=90,
-description="This guide will take you through The August Celestials dailies\nBecoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
 },[[
 #include "August_Celestials"
 step
 label end
 This is the end of the current guide. Click here to go back to the beginning. |confirm |next "startaug"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Beast Master Dailies (Dominance Offensive)",{
-description="This guide will take you through the bonus Dominance Offensive Dailies.",
-},[[
-#include "Sturdy_Traps"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Dominance Offensive",{
-achieveid={7929},
-startlevel=90,
-description="This guide will take you through The Dominance Offensive dailies\nBecoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
-},[[
-#include "Dominance_Offensive"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Emperor Shaohao",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Emperor Shaohao faction.",
 achieveid={8715},
 startlevel=90,
-description="This guide will help you reach Exalted with Emperor Shaohao\nBecoming Exalted with the Shaohao allows you to purchase a Flying Mount, Battle Pet, some Trinkets, and a Disguise",
 },[[
 #include "timeless_isle_prequests"
 step
@@ -972,10 +1000,11 @@ kill Ordon Fire-Watcher##72894+, Ordon Candlekeeper##72875+, Ordon Oathguard##72
 step
 Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The Golden Lotus",{
-achieveid={7315,6546},
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Golden Lotus faction.",
+achieveid={7315, 6546},
 startlevel=90,
-description="This guide will take you through The Golden Lotus dailies\nBecoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
 },[[
 step
 Proceeding to Pre-Quests |next |only if default
@@ -986,16 +1015,32 @@ step
 label dailies
 #include "Golden_Lotus"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The Klaxxi",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Huojin Pandaren",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Huojin Pandaren faction.",
+},[[
+step
+talk Turtlemaster Odai##66022
+buy Huojin Tabard##83080 |goto Orgrimmar 69.8,41.1
+Equip your Huojin Tabard |equipped Huojin Tabard##83080 |use Huojin Tabard##83080 |future
+You can run any dungeon that grants experience to gain reputation for the Huojin Pandaren
+Become Exalted with Huojin Pandaren |condition rep('Huojin Pandaren')==Exalted
+step
+Congratulations, you have reached exalted with the Huojin Pandaren!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Klaxxi faction.",
 achieveid={6545},
 startlevel=90,
-description="This guide will take you through The Klaxxi dailies\nBecoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
 },[[
 #include "H_Klaxxi"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Lorewalkers",{
-condition_end="achieved(6548)",
-description="This guide will help you become Exalted with the Lorewalkers.\nBecoming Exalted with the Lorewalkers allows you to purchase the Disc of the Red Flying Cloud Mount.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Lorewalkers faction.",
+achieveid={6548},
+startlevel=90,
 },[[
 step
 click The Emperor's Burden - Part 8##
@@ -1199,9 +1244,11 @@ Watch his story, then click here |confirm always
 step
 Congratulations, you are now Exalted with the Lorewalkers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Nat Pagle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with Nat Pagle faction.",
 achieveid={7274},
-description="This guide will help you get BestFriend with the individuals in MoP",
+startlevel=90,
 },[[
 step
 label menu
@@ -1246,24 +1293,37 @@ turnin Mimic Octopus##31446 |goto Krasarang Wilds 68.4,43.5
 turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
 |next menu
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Order of the Cloud Serpent faction.",
 achieveid={6550},
 startlevel=90,
-description="This guide will take you through the Order of the Cloud Serpent dailies\nBecoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
 },[[
 #include "H_Cloud_Serpent"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Shado-Pan Assault faction.",
 achieveid={6366},
 startlevel=90,
-description="This guide will take you through the Shado-Pan dailies\nBecoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
 },[[
 #include "Shado_Pan_Daily_H"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria\\Sunreaver Onslaught Reputation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Sunreaver Onslaught",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sunreaver Onslaught faction.",
+achieveid={8209},
 startlevel=90,
-description="This guide will take you through The Sunreaver Onslaught dailies",
 },[[
 step
 #include "Sunreavers_dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Tillers faction.",
+achieveid={6544},
+startlevel=90,
+},[[
+step
+#include "H_Tillers"
 ]])

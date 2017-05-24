@@ -3,12 +3,12 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingACATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Dwarf (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Dwarf (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Dun Morogh",
 condition_suggested="raceclass('Dwarf') and level<=5",
 condition_suggested_exclusive=true,
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",
 startlevel=1,
 dynamic=true,
 endlevel=5
@@ -211,18 +211,18 @@ step
 talk Tharek Blackstone##1872
 turnin Don't Forget About Us##24493 |goto Dun Morogh/0 53.1,50.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Gnome (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Gnome (1-5)",{
 author="support@zygorguides.com",
 condition_suggested="raceclass('Gnome') and level<=5",
 condition_suggested_exclusive=true,
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",
 startlevel=1,
 dynamic=true,
 endlevel=5
 },[[
 step
 next "normalstart" |only Gnome
-next "oddstart" |only !Gnome
+next "oddstart" |only if not Gnome
 step
 label "normalstart"
 talk Nevin Twistwrench##45966
@@ -465,12 +465,12 @@ Continue following the road |goto 64.55,53.51 < 20 |only if walking
 talk Ciara Deepstone##42933
 accept Bound for Kharanos##26380 |goto Dun Morogh,49.9,45.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Human (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Human (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Elwynn Forest",
 condition_suggested="raceclass('Human') and level<=5",
 condition_suggested_exclusive=true,
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (5-7)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (5-7)",
 startlevel=1,
 dynamic=true,
 },[[
@@ -484,7 +484,7 @@ accept Beating them Back!##28765 |goto Northshire/0 33.6,53.0 |only Human Warloc
 accept Beating them Back!##28766 |goto Northshire/0 33.6,53.0 |only Human Warrior
 accept Beating them Back!##28767 |goto Northshire/0 33.6,53.0 |only Human Hunter
 accept Beating Them Back!##31139 |goto Northshire/0 33.6,53.0 |only Human Monk
-accept Beating Them Back!##29078 |goto Northshire/0 33.6,53.0 |only !Human
+accept Beating Them Back!##29078 |goto Northshire/0 33.6,53.0 |only if not Human
 step
 kill 6 Blackrock Battle Worg##49871 |q 28757/1 |goto 29.0,42.9 |only Human Mage
 kill 6 Blackrock Battle Worg##49871 |q 28762/1 |goto 29.0,42.9 |only Human Paladin
@@ -494,7 +494,7 @@ kill 6 Blackrock Battle Worg##49871 |q 28765/1 |goto 29.0,42.9 |only Human Warlo
 kill 6 Blackrock Battle Worg##49871 |q 28766/1 |goto 29.0,42.9 |only Human Warrior
 kill 6 Blackrock Battle Worg##49871 |q 28767/1 |goto 29.0,42.9 |only Human Hunter
 kill 6 Blackrock Battle Worg##49871 |q 31139/1 |goto 29.0,42.9 |only Human Monk
-kill 6 Blackrock Battle Worg##49871 |q 29078/1 |goto 29.0,42.9 |only !Human
+kill 6 Blackrock Battle Worg##49871 |q 29078/1 |goto 29.0,42.9 |only if not Human
 step
 talk Marshal McBride##197
 turnin Beating them Back!##28757 |goto 33.6,53.0 |only Human Mage
@@ -513,8 +513,8 @@ turnin Beating them Back!##28767 |goto 33.6,53.0 |only Human Hunter
 accept Lions for Lambs##28759 |goto 33.6,53.0 |only Human Hunter
 turnin Beating Them Back!##31139 |goto 33.6,53.0 |only Human Monk
 accept Lions for Lambs##31140 |goto 33.6,53.0 |only Human Monk
-turnin Beating Them Back!##29078 |goto 33.6,53.0 |only !Human
-accept Lions for Lambs##29079 |goto 33.6,53.0 |only !Human
+turnin Beating Them Back!##29078 |goto 33.6,53.0 |only if not Human
+accept Lions for Lambs##29079 |goto 33.6,53.0 |only if not Human
 step
 kill 8 Blackrock Spy##49874 |q 28769/1 |goto 25.4,41.1 |only Human Mage
 kill 8 Blackrock Spy##49874 |q 28770/1 |goto 25.4,41.1 |only Human Paladin
@@ -524,7 +524,7 @@ kill 8 Blackrock Spy##49874 |q 28773/1 |goto 25.4,41.1 |only Human Warlock
 kill 8 Blackrock Spy##49874 |q 28774/1 |goto 25.4,41.1 |only Human Warrior
 kill 8 Blackrock Spy##49874 |q 28759/1 |goto 25.4,41.1 |only Human Hunter
 kill 8 Blackrock Spy##49874 |q 31140/1 |goto 25.4,41.1 |only Human Monk
-kill 8 Blackrock Spy##49874 |q 29079/1 |goto 25.4,41.1 |only !Human
+kill 8 Blackrock Spy##49874 |q 29079/1 |goto 25.4,41.1 |only if not Human
 |tip They creep around near the trees around this area.
 step
 talk Marshal McBride##197
@@ -544,8 +544,8 @@ turnin Lions for Lambs##28759 |goto 33.6,53.0 |only Human Hunter
 accept Join the Battle!##28780 |only Human Hunter
 turnin Lions for Lambs##31140 |goto 33.6,53.0 |only Human Monk
 accept Join the Battle!##31143 |only Human Monk
-turnin Lions for Lambs##29079 |goto 33.6,53.0 |only !Human
-accept Join the Battle!##29080 |goto 33.6,53.0 |only !Human
+turnin Lions for Lambs##29079 |goto 33.6,53.0 |only if not Human
+accept Join the Battle!##29080 |goto 33.6,53.0 |only if not Human
 step
 talk Sergeant Willem##823
 turnin Join the Battle!##28789 |goto 35.7,39.8 |only Human Warrior
@@ -564,8 +564,8 @@ turnin Join the Battle!##28787 |goto 35.7,39.8 |only Human Rogue
 accept They Sent Assassins##28795 |goto 35.7,39.8 |only Human Rogue
 turnin Join the Battle!##31143 |goto 35.7,39.8 |only Human Monk
 accept They Sent Assassins##31144 |goto 35.7,39.8 |only Human Monk
-turnin Join the Battle!##29080 |goto 35.7,39.8 |only !Human
-accept They Sent Assassins##29081 |goto 35.7,39.8 |only !Human
+turnin Join the Battle!##29080 |goto 35.7,39.8 |only if not Human
+accept They Sent Assassins##29081 |goto 35.7,39.8 |only if not Human
 step
 talk Brother Paxton##951
 accept Fear No Evil##28813 |goto 35.01,38.26 |only Human Warrior
@@ -575,8 +575,8 @@ accept Fear No Evil##28810 |goto 35.01,38.26 |only Human Priest
 accept Fear No Evil##28812 |goto 35.01,38.26 |only Human Warlock
 accept Fear No Evil##28808 |goto 35.01,38.26 |only Human Mage
 accept Fear No Evil##28811 |goto 35.01,38.26 |only Human Rogue
-accept Fear No Evil##29082 |goto 35.01,38.26 |only !Human
-|only !Monk
+accept Fear No Evil##29082 |goto 35.01,38.26 |only if not Human
+|only if not Monk
 stickystart "injuredsoldiers"
 step
 kill 8 Goblin Assassin##50039 |q 28797/1 |goto 30.7,29.1 |only Human Warrior
@@ -586,7 +586,7 @@ kill 8 Goblin Assassin##50039 |q 28794/1 |goto 30.7,29.1 |only Human Priest
 kill 8 Goblin Assassin##50039 |q 28796/1 |goto 30.7,29.1 |only Human Warlock
 kill 8 Goblin Assassin##50039 |q 28792/1 |goto 30.7,29.1 |only Human Mage
 kill 8 Goblin Assassin##50039 |q 28795/1 |goto 30.7,29.1 |only Human Rogue
-kill 8 Goblin Assassin##50039 |q 29081/1 |goto 30.7,29.1 |only !Human
+kill 8 Goblin Assassin##50039 |q 29081/1 |goto 30.7,29.1 |only if not Human
 step
 label "injuredsoldiers"
 clicknpc Injured Stormwind Infantry##50047+
@@ -598,8 +598,8 @@ Revive #4# Injured Soldiers |q 28810/1 |goto 30.7,29.1 |only Human Priest
 Revive #4# Injured Soldiers |q 28812/1 |goto 30.7,29.1 |only Human Warlock
 Revive #4# Injured Soldiers |q 28808/1 |goto 30.7,29.1 |only Human Mage
 Revive #4# Injured Soldiers |q 28811/1 |goto 30.7,29.1 |only Human Rogue
-Revive #4# Injured Soldiers |q 29082/1 |goto 30.7,29.1 |only !Human
-|only !Monk
+Revive #4# Injured Soldiers |q 29082/1 |goto 30.7,29.1 |only if not Human
+|only if not Monk
 step
 talk Brother Paxton##951
 turnin Fear No Evil##28813 |goto 35.01,38.26 |only Human Warrior
@@ -609,8 +609,8 @@ turnin Fear No Evil##28810 |goto 35.01,38.26 |only Human Priest
 turnin Fear No Evil##28812 |goto 35.01,38.26 |only Human Warlock
 turnin Fear No Evil##28808 |goto 35.01,38.26 |only Human Mage
 turnin Fear No Evil##28811 |goto 35.01,38.26 |only Human Rogue
-turnin Fear No Evil##29082 |goto 35.01,38.26 |only !Human
-|only !Monk
+turnin Fear No Evil##29082 |goto 35.01,38.26 |only if not Human
+|only if not Monk
 step
 talk Sergeant Willem##823
 turnin They Sent Assassins##28797 |goto 35.7,39.8 |only Human Warrior
@@ -629,8 +629,8 @@ turnin They Sent Assassins##28795 |goto 35.7,39.8 |only Human Rogue
 accept The Rear is Clear##28821 |goto 35.7,39.8 |only Human Rogue
 turnin They Sent Assassins##31144 |goto 35.7,39.8 |only Human Monk
 accept The Rear is Clear##31145 |goto 35.7,39.8 |only Human Monk
-turnin They Sent Assassins##29081 |goto 35.7,39.8 |only !Human
-accept The Rear is Clear##29083 |goto 35.7,39.8 |only !Human
+turnin They Sent Assassins##29081 |goto 35.7,39.8 |only if not Human
+accept The Rear is Clear##29083 |goto 35.7,39.8 |only if not Human
 step
 talk Marshal McBride##197
 |tip Standing at the entrance of the building.
@@ -642,7 +642,7 @@ turnin The Rear is Clear##28822 |goto 33.6,53.0 |only Human Warlock
 turnin The Rear is Clear##28818 |goto 33.6,53.0 |only Human Mage
 turnin The Rear is Clear##28821 |goto 33.6,53.0 |only Human Rogue
 turnin The Rear is Clear##31145 |goto 33.6,53.0 |only Human Monk
-turnin The Rear is Clear##29083 |goto 33.6,53.0 |only !Human
+turnin The Rear is Clear##29083 |goto 33.6,53.0 |only if not Human
 accept Blackrock Invasion##26389 |goto 33.6,53.0
 step
 talk Milly Osworth##9296
@@ -671,7 +671,7 @@ talk Marshal McBride##197
 turnin Ending the Invasion!##26390 |goto 33.6,53.0
 accept Report to Goldshire##54 |goto 33.6,53.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Death Knight 55-58",
 condition_invalid="not raceclass('DeathKnight') ",
@@ -679,7 +679,7 @@ condition_invalid_msg="Death Knight only.",
 condition_suggested="raceclass('DeathKnight') and not completedq(13188)",
 condition_suggested_exclusive=true,
 condition_end="completedq(13188)",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)",
 startlevel=55,
 dynamic=true,
 endlevel=58
@@ -1333,10 +1333,10 @@ talk Anduin Wrynn##107574
 turnin Where Kings Walk##13188 |goto Stormwind City/0 85.8,31.7
 |only Alliance
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (5-7)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (5-7)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Elwynn_2",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (7-10)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (7-10)",
 startlevel=5.05,
 dynamic=true,
 },[[
@@ -1527,10 +1527,10 @@ Begin Riding the Stormcharger |invehicle |c |goto 42.1,65.9 |q 35
 step
 Ride to the Eastvale Logging Camp |goto 73.92,72.55 < 20 |c |q 35
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (7-10)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Elwynn Forest (7-10)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Elwynn_3",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)",
 startlevel=7.2,
 dynamic=true,
 },[[
@@ -1686,10 +1686,10 @@ Cross the bridge |goto 29.01,77.95 < 20 |only if walking
 talk Deputy Rainer##963
 turnin Riverpaw Gnoll Bounty##11 |goto 24.23,74.45
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Westfall (10-15)\\Westfall (10-15)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Westfall",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",
 startlevel=10.5,
 dynamic=true,
 },[[
@@ -1701,8 +1701,8 @@ step
 Cross the bridge |goto Elwynn Forest/0 20.71,79.79 < 20 |only if walking
 talk Lieutenant Horatio Laine##42308
 |tip He walks around this small area.
-turnin Hero's Call: Westfall!##28562 |goto Westfall/0 60.1,19.3 |only Pandaren and (havequest(28562) or completedq(28562))
-turnin Hero's Call: Westfall##26378 |goto Westfall/0 60.1,19.3 |only !Pandaren and (havequest(26378) or completedq(26378))
+turnin Hero's Call: Westfall!##28562 |goto Westfall/0 60.1,19.3 |only if Pandaren and (havequest(28562) or completedq(28562))
+turnin Hero's Call: Westfall##26378 |goto Westfall/0 60.1,19.3 |only if not Pandaren and (havequest(26378) or completedq(26378))
 accept Murder Was The Case That They Gave Me##26209 |goto Westfall/0 60.1,19.3
 turnin Furlbrow's Deed##184 |goto Westfall/0 60.1,19.3
 step
@@ -2152,10 +2152,10 @@ talk Marshal Gryan Stoutmantle##234
 turnin Return to Sentinel Hill##26370 |goto Westfall/0 56.37,49.63
 accept Threat to the Kingdom##26761 |goto Westfall/0 56.37,49.63
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (5-8)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Dun Morogh",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (8-10)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (8-10)",
 startlevel=5.05,
 dynamic=true,
 endlevel=8
@@ -2344,10 +2344,10 @@ turnin Eliminate the Resistance##25840 |goto 62.5,53.7
 turnin Strike From Above##25841 |goto 62.5,53.7
 accept A Hand at the Ranch##25882 |goto 62.5,53.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (8-10)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Dun Morogh (1-10)\\Dun Morogh (8-10)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Dun Morogh",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)",
 startlevel=8.2,
 dynamic=true,
 endlevel=9
@@ -2587,10 +2587,10 @@ talk Gremlock Pilsnor##1699
 turnin Return to Gremlock##6392 |goto Dun Morogh/0 54.8,50.7
 |only Dwarf, Gnome
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (10-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Loch Modan",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (12-13)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (12-13)",
 startlevel=10.75,
 dynamic=true,
 endlevel=12
@@ -2707,10 +2707,10 @@ talk Mountaineer Wallbang##1090
 |tip Inside the building.
 turnin Bigger and Uglier##26147 |goto 23.3,75.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (12-13)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (12-13)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Loch Modan_2",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (13-16)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (13-16)",
 startlevel=12.55,
 dynamic=true,
 endlevel=13
@@ -2800,10 +2800,10 @@ Follow the path up |goto 35.25,45.33 < 15 |only if walking
 talk Dakk Blunderblast##1777
 turnin Looking for Lurkers##25118 |goto 35.99,44.28
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (13-16)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (13-16)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Loch Modan_3",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (16-19)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (16-19)",
 startlevel=13.94,
 dynamic=true,
 endlevel=16
@@ -3000,10 +3000,10 @@ talk Magmar Fellhew##1345
 turnin Gathering Idols##26961 |goto 64.9,66.7
 accept Joining the Hunt##13647 |goto 64.9,66.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (16-19)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Loch Modan (10-19)\\Loch Modan (16-19)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Loch Modan_4",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)",
 startlevel=16.66,
 dynamic=true,
 endlevel=19
@@ -3242,10 +3242,10 @@ step
 talk Torren Squarejaw##1153
 turnin Heartfelt Appreciation##13661 |goto 37.21,46.37
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (19-21)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Wetlands",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (21-23)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Wetlands (19-26)\\Wetlands (21-23)",
 startlevel=19.65,
 dynamic=true,
 endlevel=21
@@ -3413,10 +3413,10 @@ Begin Riding to Menethil Harbor |goto 57.1,71.7 > 30 |noway |c |q 25777
 step
 Ride to Menethil Harbor |goto 12.4,50.4 < 20 |c |q 25777
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (16-21)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Redridge_Mountains_2",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Duskwood (21-26)\\Duskwood (21-26)",
 startlevel=15.6,
 dynamic=true,
 endlevel=21
@@ -4009,10 +4009,10 @@ talk Magistrate Solomon##344
 |tip Inside the building.
 turnin Triumphant Return##26726 |goto 28.9,41.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (58-60)\\Blasted Lands (58-60)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Blasted Lands",
-next="Zygor's Alliance Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)",
+next="Zygor's Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)",
 startlevel=58.15,
 dynamic=true,
 endlevel=60
@@ -4025,7 +4025,7 @@ confirm
 |only if havequest(34398) or completedq(34398)
 step
 talk Quartermaster Lungertz##5393
-turnin Blasted Lands: The Other Side of the World##28857 |goto Blasted Lands,60.1,13.5 |only !DeathKnight
+turnin Blasted Lands: The Other Side of the World##28857 |goto Blasted Lands,60.1,13.5 |only if not DeathKnight
 accept Minor Distractions##25710 |goto Blasted Lands,60.1,13.5
 step
 talk Mama Morton##44325
@@ -4419,12 +4419,12 @@ step
 talk Mayor Charlton Connisport##42349
 turnin The Downfall of Marl Wormthorn##26187 |goto 46.4,87.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Draenei (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Draenei (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azuremyst",
 condition_suggested="raceclass('Draenei') and level<=15",
 condition_suggested_exclusive=true,
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azuremyst Isle (1-11)\\Azuremyst Isle (5-11)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azuremyst Isle (1-11)\\Azuremyst Isle (5-11)",
 startlevel=1,
 dynamic=true,
 endlevel=5
@@ -4437,24 +4437,24 @@ step
 talk Proenitus##16477
 turnin You Survived!##9279 |only Draenei |goto 52.8,35.9
 accept Replenishing the Healing Crystals##9280 |only Draenei |goto 52.8,35.9
-accept Replenishing the Healing Crystals##9369 |only !Draenei |goto 52.8,35.9
+accept Replenishing the Healing Crystals##9369 |only if not Draenei |goto 52.8,35.9
 step
 kill Vale Moth##16520+
 collect 6 Vial of Moth Blood##22889 |q 9280/1 |only Draenei |goto 50.9,28.8
-collect 6 Vial of Moth Blood##22899 |q 9369/1 |only !Draenei |goto 50.9,28.8
+collect 6 Vial of Moth Blood##22899 |q 9369/1 |only if not Draenei |goto 50.9,28.8
 step
 talk Proenitus##16477
 turnin Replenishing the Healing Crystals##9280 |only Draenei |goto 52.8,35.9
 accept Urgent Delivery!##9409 |only Draenei |goto 52.8,35.9
-turnin Replenishing the Healing Crystals##9369 |only !Draenei |goto 52.8,35.9
-accept Urgent Delivery!##9409 |only !Draenei |goto 52.8,35.9
+turnin Replenishing the Healing Crystals##9369 |only if not Draenei |goto 52.8,35.9
+accept Urgent Delivery!##9409 |only if not Draenei |goto 52.8,35.9
 step
 talk Zalduun##16502
 |tip He walks around inside the building.
 turnin Urgent Delivery!##9409 |only Draenei |goto 52.5,41.2
 accept Rescue the Survivors!##9283 |only Draenei |goto 52.5,41.2
 accept Learning the Word##26970 |only Draenei Priest |goto 52.5,41.2
-turnin Urgent Delivery!##9409 |only !Draenei |goto 52.5,41.2
+turnin Urgent Delivery!##9409 |only if not Draenei |goto 52.5,41.2
 step
 talk Proenitus##16477
 |tip Outside the building.
@@ -4569,10 +4569,10 @@ talk Technician Zhanaa##17071
 turnin The Emitter##9312 |goto 50.66,48.04
 accept Travel to Azure Watch##9313 |goto 50.66,48.04
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azuremyst Isle (1-11)\\Azuremyst Isle (5-11)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azuremyst Isle (1-11)\\Azuremyst Isle (5-11)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azuremyst",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
 startlevel=5.43,
 dynamic=true,
 endlevel=11
@@ -4917,10 +4917,10 @@ step
 talk Sentinel Cordressa Briarbow##42936 |goto 43.9,76.1
 accept Breaking Waves of Change##26383
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (11-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (11-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Bloodmyst",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (12-20)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (12-20)",
 startlevel=11.58,
 endlevel=12
 },[[
@@ -4983,10 +4983,10 @@ talk Kessel##17649 |goto 63.0,87.5
 turnin Declaration of Power##9666
 accept Report to Exarch Admetius##9668
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (12-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Bloodmyst Isle (11-20)\\Bloodmyst Isle (12-20)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Bloodmyst",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",
 startlevel=12.30,
 endlevel=20
 },[[
@@ -5545,12 +5545,12 @@ step
 talk High Chief Stillpine##17440
 turnin Stillpine Hold##9559 |goto Azuremyst Isle,46.7,20.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Night Elf (1-11)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Night Elf (1-11)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\NightElf",
 condition_suggested="raceclass('NightElf') and level<=15",
 condition_suggested_exclusive=true,
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
 startlevel=1,
 dynamic=true,
 endlevel=11
@@ -6075,10 +6075,10 @@ Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 26383 |only
 Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 26385 |only if havequest(26385)
 Reach Rut'theran Village |goto Teldrassil/0 55.10,88.53 |noway |c |q 28490 |only if havequest(28490)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Darkshore",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (16-17)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (16-17)",
 startlevel=11.58,
 dynamic=true,
 endlevel=16
@@ -6466,10 +6466,10 @@ step
 talk Priestess Alinya##33107
 turnin In Aid of the Refugees##13601 |goto 42.5,45.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (16-17)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (16-17)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Darkshore",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (17-18)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (17-18)",
 startlevel=16.80,
 dynamic=true,
 endlevel=17
@@ -6542,10 +6542,10 @@ step
 Follow the path up |goto 43.3,51.4 < 5 |only if walking
 confirm |only if walking
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (17-18)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (17-18)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Darkshore",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",
 startlevel=17.47,
 dynamic=true,
 endlevel=18
@@ -6650,10 +6650,10 @@ talk Malfurion Stormrage##33091
 turnin The Eye of All Storms##13588 |goto 43.7,53.5
 accept Mounting the Offensive##13902 |goto 43.7,53.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (18-21)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Darkshore",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (21-27)\\Ashenvale (21-27)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (21-27)\\Ashenvale (21-27)",
 startlevel=18.55,
 dynamic=true,
 endlevel=21
@@ -6909,28 +6909,28 @@ step
 talk Felros##34403
 turnin The Tides Turn Against Us##13898 |goto 45.4,75.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Kalimdor (20-25)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Kalimdor (20-25)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Kingdoms (20-25)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Kingdoms (20-25)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\The Burning Crusade (60-62)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Burning Crusade (60-62)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Worgen (1-13)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Worgen (1-13)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Gilneas",
 condition_suggested="raceclass('Worgen') and level<=13 and not completedq(28517) and not raceclass('DEATHKNIGHT')",
@@ -6938,7 +6938,7 @@ condition_suggested_exclusive=true,
 condition_end="completedq(28517) or raceclass('DEATHKNIGHT')",
 condition_valid="raceclass('Worgen') ",
 condition_valid_msg="Worgen only.",
-next="Zygor's Alliance Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Darkshore (11-21)\\Darkshore (11-16)",
 startlevel=1,
 dynamic=true,
 endlevel=12

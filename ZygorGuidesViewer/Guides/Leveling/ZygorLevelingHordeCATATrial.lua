@@ -3,17 +3,17 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHCATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Blood Elf (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Blood Elf (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Eversong 1-5",
 condition_suggested="raceclass('BloodElf') and level<=5.39",
 condition_suggested_exclusive=true,
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)",
 startlevel=1.00,
 },[[
 step
 next "bestart" |only BloodElf
-next "nonbestart" |only !BloodElf
+next "nonbestart" |only if not BloodElf
 step
 label "bestart"
 talk Magistrix Erona##15278
@@ -134,10 +134,10 @@ turnin Tainted Arcane Sliver##8338 |goto 58.5,38.8
 step
 label	"nonbestart"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eversong Woods (1-12)\\Eversong Woods (5-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Eversong 5-12",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",
 startlevel=5.30,
 },[[
 step
@@ -567,10 +567,10 @@ step
 talk Runewarden Deryan##16362
 turnin Powering our Defenses##8490 |goto 44.2,85.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Ghostlands (12-20)\\Ghostlands (12-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Ghostlands (12-20)\\Ghostlands (12-20)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Ghostlands 12-20",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Hillsbrad Foothills (20-26)\\Hillsbrad Foothills (20-26)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Hillsbrad Foothills (20-26)\\Hillsbrad Foothills (20-26)",
 startlevel=12.85,
 },[[
 step
@@ -1049,7 +1049,7 @@ step
 talk Captain Helios##16220
 turnin Bring Me Kel'gash's Head!##9215 |goto 72.4,29.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Death Knight 55-58",
 condition_invalid="not raceclass('DeathKnight') ",
@@ -1057,7 +1057,7 @@ condition_invalid_msg="Death Knight only.",
 condition_suggested="raceclass('DeathKnight') and not completedq(13189)",
 condition_suggested_exclusive=true,
 condition_end="completedq(13189)",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (57-60)\\Blasted Lands (57-60)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (57-60)\\Blasted Lands (57-60)",
 startlevel=55,
 dynamic=true,
 },[[
@@ -1710,11 +1710,11 @@ talk Anduin Wrynn##107574
 turnin Where Kings Walk##13188 |goto Stormwind City/0 85.8,31.7
 |only Alliance
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Undead (1-11)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Undead (1-11)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Tirisfal 1-11",
 condition_suggested="raceclass('Scourge') and level<=11",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",
 startlevel=1,
 dynamic=true,
 },[[
@@ -2309,10 +2309,10 @@ step
 talk Executor Zygand##1515
 turnin Take to the Skies##25012 |goto 60.53,51.87
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Silverpine Forest (11-20)\\Silverpine Forest (11-20)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Silverpine 11-20",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Hillsbrad Foothills (20-26)\\Hillsbrad Foothills (20-26)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Hillsbrad Foothills (20-26)\\Hillsbrad Foothills (20-26)",
 startlevel=11.30,
 dynamic=true,
 },[[
@@ -2833,10 +2833,10 @@ step
 talk High Executor Darthalia##2215
 turnin Empire of Dirt##27746 |goto Hillsbrad Foothills 29.2,63.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (57-60)\\Blasted Lands (57-60)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Blasted Lands (57-60)\\Blasted Lands (57-60)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Blasted Lands",
-next="Zygor's Horde Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)",
+next="Zygor's Leveling Guides\\The Burning Crusade (60-70)\\Hellfire Peninsula (60-62)",
 startlevel=57.95,
 dynamic=true,
 },[[
@@ -3209,11 +3209,11 @@ _Follow the path_ up |goto 44.7,72.5 < 10 |only if walking
 talk Rohan Sunveil##42344
 turnin The Downfall of Marl Wormthorn##25720 |goto 49.8,71.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Orc (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Orc (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Durotar Orc 1-5",
 condition_suggested="raceclass('Orc') and level<=5",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",
 startlevel=1,
 dynamic=true,
 },[[
@@ -3330,11 +3330,11 @@ talk Zureetha Fargaze##3145
 turnin Burning Blade Medallion##25132 |goto 45.82,63.44
 accept Report to Sen'jin Village##25133 |goto 45.82,63.44
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Troll (1-5)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Troll (1-5)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Durotar Troll 1-5",
 condition_suggested="raceclass('Troll') and level<=5",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",
 startlevel=1,
 dynamic=true,
 },[[
@@ -3779,10 +3779,10 @@ talk Vol'jin##10540
 turnin An Ancient Enemy##24814 |goto 61.55,65.85
 accept Sen'jin Village##25073 |goto 61.55,65.85
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (5-8)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Durotar 5-8",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (8-11)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (8-11)",
 startlevel=5.1,
 dynamic=true,
 },[[
@@ -3906,10 +3906,10 @@ talk Gar'Thok##3139
 turnin Storming the Beaches##25177 |goto 51.9,43.5
 turnin Loss Reduction##25179 |goto 51.9,43.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (8-11)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Durotar (1-11)\\Durotar (8-11)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Durotar 8-11",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
 startlevel=8.10,
 dynamic=true,
 },[[
@@ -4120,11 +4120,11 @@ talk Neeru Fireblade##3216
 turnin Neeru Fireblade##25263 |goto Orgrimmar/2 58.2,54.5
 accept Ak'Zeloth##25264 |goto Orgrimmar/2 58.2,54.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Tauren (1-4)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Tauren (1-4)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Mulgore 1-4",
 condition_suggested="raceclass('Tauren') and level<=4",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Mulgore (4-10)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Mulgore (4-10)",
 startlevel=1,
 dynamic=true,
 },[[
@@ -4213,10 +4213,10 @@ Drink the Water of Vision |goto 15.6,30.3 > 30 |noway |c |q 24215
 step
 Fly to Bloodhoof Village |goto Mulgore/0 47.8,59.9 < 20 |c |q 24215
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Mulgore (4-10)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Mulgore (1-10)\\Mulgore (4-10)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Mulgore 4-10",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
 startlevel=4.77,
 dynamic=true,
 },[[
@@ -4490,10 +4490,10 @@ talk Vol'jin##86832
 |tip He is in the big center building
 turnin Walk With The Earth Mother##26397 |goto Orgrimmar 48.1,70.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Northern Barrens 10-13",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (13-17)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (13-17)",
 startlevel=10.90,
 dynamic=true,
 },[[
@@ -4649,10 +4649,10 @@ step
 talk Thork##3429
 turnin Crossroads Caravan Delivery##13975 |goto 48.7,59.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (13-17)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (13-17)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Northern Barrens 13-17",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (17-20)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (17-20)",
 startlevel=13.54,
 dynamic=true,
 },[[
@@ -4991,10 +4991,10 @@ step
 talk Nozzlepot##34698
 turnin Raging River Ride##26769 |goto 62.5,16.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (17-20)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (17-20)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Northern Barrens 17-20",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (20-26)\\Ashenvale (20-23)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (20-26)\\Ashenvale (20-23)",
 startlevel=17.80,
 dynamic=true,
 },[[
@@ -5259,10 +5259,10 @@ step
 Use the Abilities on your action bar to fight off the Burning Blade enemies
 Defend the Mor'shan Caravan Ride |q 29111/2 |goto Northern Barrens 42.9,15.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (10-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (10-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azshara 10-12",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (12-21)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (12-21)",
 startlevel=10.90,
 dynamic=true,
 },[[
@@ -5340,10 +5340,10 @@ turnin The Eyes of Ashenvale##14117 |goto 26.8,76.9
 turnin Return of the Highborne?##14127 |goto 26.8,76.9
 accept Return of the Highborne?##14128 |goto 26.8,76.9
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (12-21)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (12-21)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azshara 12-21",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (21-22)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (21-22)",
 startlevel=12.16,
 dynamic=true,
 },[[
@@ -6250,10 +6250,10 @@ step
 talk Gurlorn##37142
 accept Airborne Again##24497 |goto Azshara 53.0,49.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (21-22)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Azshara (10-22)\\Azshara (21-22)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azshara 21-22",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (20-26)\\Ashenvale (20-23)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Ashenvale (20-26)\\Ashenvale (20-23)",
 startlevel=21.32,
 dynamic=true,
 },[[
@@ -6373,28 +6373,28 @@ step
 talk Kulg Gorespatter##34195
 Ask him "_Send me to the Mor'shan Ramparts."_ |goto Ashenvale 94.4,46.8 < 10 |q 13866
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Kalimdor (20-25)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Kalimdor (20-25)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Kingdoms (20-25)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Classic (1-60)\\Eastern Kingdoms 1-60\\Eastern Kingdoms (20-25)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\The Burning Crusade (60-62)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Burning Crusade (60-62)",{
 author="support@zygorguides.com",
 },[[
 step
 Thank you for trying the Zygor Guides Version 2.0 Leveling Guides Demo.  Please visit ZygorGuides.com to purchase the complete in-game Version 2.0 leveling guides.  Take care!
 level 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Goblin (1-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Goblin (1-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\BilgeWater",
 condition_suggested="raceclass('Goblin') and level <=13 and not completedq(25267) and not raceclass('DEATHKNIGHT')",
@@ -6402,7 +6402,7 @@ condition_suggested_exclusive=true,
 condition_end="completedq(25267) or raceclass('DEATHKNIGHT')",
 condition_valid="raceclass('Goblin') ",
 condition_valid_msg="Goblin only.",
-next="Zygor's Horde Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
+next="Zygor's Leveling Guides\\Classic (1-60)\\Kalimdor 1-60\\Northern Barrens (10-20)\\Northern Barrens (10-13)",
 startlevel=1,
 dynamic=true,
 },[[

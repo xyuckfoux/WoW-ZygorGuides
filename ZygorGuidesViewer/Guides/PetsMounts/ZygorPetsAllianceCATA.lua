@@ -279,10 +279,10 @@ step
 label main
 Click here to unlock the daily quests for the Argent Tournament Grouns. |confirm
 If you have achieved champion rank already, click here. |next pet |confirm
-Click here if you are _Aspirant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Valiant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Aspirant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Valiant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
 #include "A_Argent_Tourney_PreQ"
 step
 Routing back. |next main |only if default
@@ -1094,10 +1094,10 @@ step
 label "main"
 Click here to unlock the daily quests for the Argent Tournament Grounds. |confirm
 If you have achieved champion rank already, click here. |next pet |confirm
-Click here if you are _Aspirant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Valiant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Aspirant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Valiant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
 #include "A_Argent_Tourney_PreQ"
 step
 Routing back. |next main |only if default
@@ -1652,10 +1652,10 @@ step
 label main
 Click here to unlock the daily quests for the Argent Tournament Grouns. |confirm
 If you have achieved champion rank already, click here. |next pet |confirm
-Click here if you are _Aspirant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Valiant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Aspirant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Valiant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
 #include "A_Argent_Tourney_PreQ"
 step
 Routing back. |next main |only if default
@@ -2755,10 +2755,10 @@ step
 label main
 Click here to unlock the daily quests for the Argent Tournament Grouns. |confirm
 If you have achieved champion rank already, click here. |next pet |confirm
-Click here if you are _Aspirant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Valiant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Aspirant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Valiant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
 #include "A_Argent_Tourney_PreQ"
 step
 Routing back. |next main |only if default
@@ -5599,11 +5599,11 @@ earn 50 Champion's Seal##241
 confirm
 step
 label choose
-For _Aspirant Rank Dailies_, click here. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |only if ZGV.guidesets["DailiesACATA"]
-For _Valiant Rank Dailies_, click here. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |only if ZGV.guidesets["DailiesACATA"]
-For _Champion Ranked Death Knight Dailies_, click here. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |only if ZGV.guidesets["DailiesACATA"]
-For _Champion Ranked Dailies_, click here. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if ZGV.guidesets["DailiesACATA"]
-For _Crusader Ranked Dailies_, click here. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Crusader Dailies" |only if ZGV.guidesets["DailiesACATA"]
+For _Aspirant Rank Dailies_, click here. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |only if ZGV.guidesets["DailiesACATA"]
+For _Valiant Rank Dailies_, click here. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |only if ZGV.guidesets["DailiesACATA"]
+For _Champion Ranked Death Knight Dailies_, click here. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |only if ZGV.guidesets["DailiesACATA"]
+For _Champion Ranked Dailies_, click here. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if ZGV.guidesets["DailiesACATA"]
+For _Crusader Ranked Dailies_, click here. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Crusader Dailies" |only if ZGV.guidesets["DailiesACATA"]
 Click here if you are exalted with The Silver Covenant. |next buy |confirm
 step
 Routing back to _Ranks_ |next choose |only if default
@@ -5951,10 +5951,10 @@ step
 label main
 Click here to unlock the daily quests for the Argent Tournament Grouns. |confirm
 If you have achieved champion rank already, click here. |next pet |confirm
-Click here if you are _Aspirant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Valiant Ranked_. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Aspirant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Valiant Ranked_. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and not a Death Knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here if you are _Champion Ranked_ and a Death knight. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only if ZGV.guidesets["DailiesACATA"]
 #include "A_Argent_Tourney_PreQ"
 step
 Routing back. |next main |only if default

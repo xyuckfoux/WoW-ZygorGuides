@@ -3,8 +3,8 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
 image=ZGV.DIR.."\\Guides\\Images\\TanaanJungle",
 condition_suggested_exclusive=true,
 startlevel=90,
@@ -327,8 +327,8 @@ step
 talk Prophet Velen##79206
 accept Step Three: Prophet!##34575 |goto Shadowmoon Valley D 27.0,8.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
 image=ZGV.DIR.."\\Guides\\Images\\ShadowmoonValleyDraenor",
 condition_suggested_exclusive=true,
 startlevel=90.5,
@@ -1681,8 +1681,8 @@ talk Yrel##73395
 turnin The Defense of Karabor##33256 |goto 46.38,38.62
 accept The Secrets of Gorgrond##33533 |goto 46.37,38.62 |only if not havequest(35556) and not completedq(35556)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)",
 image=ZGV.DIR.."\\Guides\\Images\\Gorgrond",
 condition_suggested_exclusive=true,
 startlevel=92,
@@ -2538,7 +2538,7 @@ scenariostage 6
 only if not completedq(37289)
 step
 #include "A_Garrison_Crowler"
-turnin Shadowmoon Invasion!##37289 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)
+turnin Shadowmoon Invasion!##37289 |next Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)
 step
 label "loggingcamp"
 talk Glirin##85119
@@ -3151,10 +3151,10 @@ talk Archmage Khadgar##77184
 turnin To Catch a Shadow##33116 |goto Shadowmoon Valley D/0 29.2,25.7
 step
 talk Cordana Felsong##72637
-turnin Cleaning Up Gul'var##33269 |goto 29.26,25.71 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)
+turnin Cleaning Up Gul'var##33269 |goto 29.26,25.71 |next Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",
 image=ZGV.DIR.."\\Guides\\Images\\Talador",
 startlevel=94,
 },[[
@@ -4182,7 +4182,7 @@ turnin Kaelynara Sunchaser##34448 |goto 51.62,50.48
 step
 talk Vindicator Icia##79618
 turnin Come Together##34707 |goto 69.65,21.60
-accept News from Spires of Arak##35554 |goto 69.65,21.60 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
+accept News from Spires of Arak##35554 |goto 69.65,21.60 |next Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
 step
 label "arcaneAS"
 talk Olivia Abbington##81358
@@ -5186,10 +5186,10 @@ turnin Kaelynara Sunchaser##34448 |goto 51.62,50.48
 step
 talk Vindicator Icia##79618
 turnin Come Together##34707 |goto 69.65,21.60
-accept News from Spires of Arak##35554 |next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
+accept News from Spires of Arak##35554 |next Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",
 image=ZGV.DIR.."\\Guides\\Images\\SpiresOfArak",
 condition_suggested_exclusive=true,
 startlevel=96,
@@ -6443,9 +6443,9 @@ accept Talonpriest Ishaal##37141 |goto 46.52,46.81
 step
 talk Lieutenant Willem##81929
 accept News from Nagrand##36606 |goto 39.88,60.83
-next Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)
+next Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)",{
 condition_suggested_exclusive=true,
 image=ZGV.DIR.."\\Guides\\Images\\NagrandDraenor",
 startlevel=98,
@@ -7554,7 +7554,7 @@ step
 talk Vindicator Nobundo##82214
 turnin The Dark Heart of Oshu'gun##35396 |goto 71.55,19.76
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (100)",{
 description="This guide will walk you through completing the main questline for the level 100 Tanaan Jungle zone.",
 },[[
 step
@@ -7877,7 +7877,7 @@ turnin A Message of Terrible Import##38578 |goto Tanaan Jungle/0 47.3,70.5
 step
 Congratulations, you've completed the Tanaan Jungle Main Questline!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\The Loremaster\\Loremaster of Draenor",{
 condition_end="achieved(9833)",
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="Complete the Draenor quest achievements.",
@@ -7887,11 +7887,11 @@ Use these Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
 condition achieved(9833) |next
-Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
-Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
-Talador |condition achieved(9833,3) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
-Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
-Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
+Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
+Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador |condition achieved(9833,3) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you earned the _Loremaster of Draenor_ Achievement!
 ]])

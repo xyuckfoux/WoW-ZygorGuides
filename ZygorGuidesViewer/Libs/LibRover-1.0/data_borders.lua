@@ -40,7 +40,7 @@ data.basenodes.borders = {
 		"Tanaris,25.9,66.3 -x- Uldum,70.6,22.5",
 		"Tanaris,28.0,51.3 -x- Un'Goro Crater,70.8,91.9",
 
-		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 {mode:PORTAL} {template:portalauto} {cond:IsQuestFlaggedCompleted(12613)}",
+		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 {mode:PORTAL} {template:portalauto} {cond:PlayerCompletedQuest(12613)}", -- Only if the player completed quest 12613 "Powering the Waygate - The Makers' Overlook"
 
 		"Ammen Vale,23.1,53.5 -x- Azuremyst Isle,67.1,53.8",
 		"Valley of Trials,73.4,67.11 -x- Durotar,50.6,68.4",
@@ -73,7 +73,7 @@ data.basenodes.borders = {
 		--"Loch Modan 25.6,10.7 -x- Wetlands 50.1,81.8",
 		"Wetlands 51.0,10.2 -x- Arathi Highlands 38.6,91.0",
 		"Wetlands 79.0,47.3 -x- Twilight Highlands 24.3,37.4",
-		"Arathi Highlands 13.7,31.1 -x- Hillsbrad Foothills 68.4,69.8 {cond:UnitLevel('player')>=40 or UnitFactionGroup('player')=='Horde'}", -- gate, with guards (lvl 35)
+		"Arathi Highlands 13.7,31.1 -x- Hillsbrad Foothills 68.4,69.8 {cond:UnitLevel('player')>=40 or UnitFactionGroup('player')=='Horde'}", -- gate, with guards (lvl 35), shouldn't be openly suggested for low-level Alliance players.
 		"Arathi Highlands 18.3,21.2 -x- Hillsbrad Foothills 74.3,65.2", -- break in wall
 		"Arathi Highlands 37.0,29.3 -x-  The Hinterlands/0 26.1,69.9",
 		"The Hinterlands 9.7,55.7 -x- Hillsbrad Foothills 73.1,52.8",
@@ -167,8 +167,8 @@ data.basenodes.borders = {
 
 		"Valley of the Four Winds 12.3,33.8 <region:topofthewallVFW> -x- Vale of Eternal Blossoms 11.8,99.9 <region:topofthewallVEB>",
 
-		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:IsQuestFlaggedCompleted(31512)}", --Alliance you actually get the ability to do this border during the quest... Lets see how it works.
-		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:IsQuestFlaggedCompleted(31511)}", --Horde
+		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:PlayerCompletedQuest(31512)}", -- Quest 31512 "A Witness to History" opens access to the Vale. --Alliance actually get the ability to do this border during the quest... Lets see how it works.
+		"Kun-Lai Summit,55.5,93.0 -x- Vale of Eternal Blossoms,44.1,12.8 {cond:PlayerCompletedQuest(31511)}", -- Horde variant of the above.
 
 		-- And now some stuff to appease the groundwalkers.
 		"The Jade Forest 44.46,89.43 -x- The Jade Forest 44.22,88.43",  -- Garrosh'ar point
@@ -198,9 +198,9 @@ data.basenodes.borders = {
 		"Frostfire Ridge/0 44.25,68.73 <radius:20> -x- Frostwall/0 32.18,53.49 {template:atob12} {atob1:Go uphill towards the Garrison} {atob2:Enter the Garrison} {btoa1:Leave Garrison following ramp up} {btoa2:Leave Garrison following ramp down}",
 		"Frostfire Ridge/0 49.68,60.39 <radius:20> -x- Frostwall/0 57.26,07.74 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}",
 
-		"Shadowmoon Valley D/0 27.2,15.0 <radius:30> -x- Lunarfall/0 16.0,30.0 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==1}",
+		"Shadowmoon Valley D/0 27.2,15.0 <radius:30> -x- Lunarfall/0 16.0,30.0 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==1}", -- Only if the Garrison is level 1
 		"Shadowmoon Valley D/0 32.4,23.5 <radius:30> -x- Lunarfall/0 63.3,91.3 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}",
-		"Shadowmoon Valley D/0 27.4,13.8 <radius:30> -x- Lunarfall/0 23.3,48.3 {template:atob} {atob:Walk up the path to enter your garrison} {btoa:Walk down the path to leave your garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}",
+		"Shadowmoon Valley D/0 27.4,13.8 <radius:30> -x- Lunarfall/0 23.3,48.3 {template:atob} {atob:Walk up the path to enter your garrison} {btoa:Walk down the path to leave your garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Only if the Garrison is level 3
 
 	----------------
 	---  LEGION  ---

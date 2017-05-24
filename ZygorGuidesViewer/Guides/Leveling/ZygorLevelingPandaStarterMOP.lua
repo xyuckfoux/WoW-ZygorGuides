@@ -2,7 +2,7 @@ local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("LevelingNMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Starter Guides\\Pandaren (1-12)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Pandaren (1-12)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\WanderingIsle",
 condition_suggested="raceclass('Pandaren') and level<=5",
@@ -768,12 +768,12 @@ turnin The Horde Way##31013 |goto 48.75,70.81
 ]])
 if UnitFactionGroup("player")~="Neutral" then return end
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Loremaster Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Gear Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Professions Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Your guides will load after you choose a faction.",{},[[]])

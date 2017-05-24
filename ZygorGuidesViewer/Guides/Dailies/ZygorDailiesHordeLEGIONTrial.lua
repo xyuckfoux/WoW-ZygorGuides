@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Legion\\World Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[

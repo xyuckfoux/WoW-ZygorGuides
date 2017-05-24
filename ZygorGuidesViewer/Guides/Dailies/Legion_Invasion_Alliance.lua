@@ -167,7 +167,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Event Guides\\Legion\\Pre-Laun
 
 
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Legion Intro",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro",{
 	author="support@zygorguides.com",
 	image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
 	startlevel=100.0,

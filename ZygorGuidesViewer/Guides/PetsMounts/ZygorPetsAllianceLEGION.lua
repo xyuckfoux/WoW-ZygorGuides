@@ -10,7 +10,7 @@ description="This guide will walk you through obtaining the Aquatic pet: Lagan",
 },[[
 step
 This pet is a reward for completing the dungeon achievement _Poor Unfortunate Souls_
-Click here to go to the guide for this achievement |next "Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm
+Click here to go to the guide for this achievement |next "Zygor's Achievements Guides\\Dungeons\\Legion\\Poor Unfortunate Souls" |confirm
 Click here to continue |confirm
 step
 Once this achievement is complete, this pet will be in your mailbox
@@ -145,7 +145,7 @@ description="This guide will walk you through obtaining the Dragonkin pet: Emmig
 },[[
 step
 This pet is a reward for completing the quest _On the Brink_ in Azsuna.
-Click here to proceed to the Azsuna quest guide |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
+Click here to proceed to the Azsuna quest guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna" |confirm
 collect Emmigosa##129178 |n
 learnpet Emmigosa##97207 |use Emmigosa##129178
 step
@@ -426,7 +426,7 @@ step
 This pet is a reward for completing the quest _Balance to Spare_ in Suramar
 |tip This quest requires you to be Honored with The Nightfallen before being able to start it.
 Reach Honored with The Nightfallen |condition rep("The Nightfallen")>=Honored
-Click here to proceed to the Suramar Quest guide |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
+Click here to proceed to the Suramar Quest guide |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |confirm
 collect Untethered Wyrmling##139790 |n
 learnpet Untethered Wyrmling##111423 |use Untethered Wyrmling##139790
 step

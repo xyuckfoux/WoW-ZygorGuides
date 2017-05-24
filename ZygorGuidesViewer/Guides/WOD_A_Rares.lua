@@ -9,7 +9,7 @@ ZygorGuidesViewer.GuideMenuTier = "WOD"
 
 -- show poi table with names visible: /run for k,v in ipairs(ZGV.Poi.Guide.steps) do v.tostring=function(s) return s.poi_rare end end  ;  Spoo(nil,nil,ZGV.Poi.Guide.steps)
 
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Rares",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Rares",{
 	hidden=true,
 	poi=true,
 	poitype="rare",

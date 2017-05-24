@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts",{
 author="support@zygorguides.com",
 condition_suggested="raceclass('DemonHunter') and level>=98",
 condition_suggested_exclusive=true,
@@ -495,7 +495,7 @@ talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
 turnin In the Blink of an Eye##44184 |goto Dalaran L/10 57.57,45.75 |only if havequest(44184) or completedq(44184)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts",{
 author="support@zygorguides.com",
 condition_suggested="not raceclass('DemonHunter') and level>=100",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",

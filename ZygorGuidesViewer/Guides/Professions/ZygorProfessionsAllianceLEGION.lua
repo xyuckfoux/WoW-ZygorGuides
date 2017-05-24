@@ -2059,11 +2059,11 @@ author="support@zygorguides.com",
 startlevel=100.0,
 },[[
 step
-Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking() and horde
-Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking() and horde
-Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking() and alliance
+Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and horde
+Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and horde
+Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and alliance
 Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
 Follow the beach |goto Stormheim/0 79.51,57.09 < 30 |only if walking
 Follow the water |goto Stormheim/0 82.65,67.39 < 30 |only if walking
@@ -2687,10 +2687,10 @@ talk Enchanter Nalthanis##93531
 |tip Inside the building.
 accept An Enchanting Home##39903 |goto Dalaran L/10 38.34,40.37
 step
-Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking() and alliance
-Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking() and alliance
-Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking() and horde
-Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking() and horde
+Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking and alliance
+Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking and alliance
+Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking and horde
+Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking and horde
 Follow the path |goto Stormheim/0 38.89,44.93 < 20 |only if walking
 Enter Tigrid's Home |q 39903/1 |goto Stormheim/0 39.35,42.67
 |tip Walk into the building.
@@ -3346,11 +3346,11 @@ talk Hobart Grapplehammer##93539
 |tip Inside the building.
 turnin Fire and Forget##40869 |goto 38.35,24.53
 step
-Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking() and horde
-Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking() and horde
-Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking() and alliance
+Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and horde
+Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and horde
+Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and alliance
 Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
 talk Fargo Flintlocke##102198
 turnin It's Not Rocket Science##40865 |goto Stormheim/0 78.29,57.25
@@ -3892,13 +3892,13 @@ collect Fevered Request##139529 |n
 accept Fevered Request##41985
 |tip You will accept this quest automatically.
 step
-Follow the path |goto 34.24,49.26 < 20 |only if walking() and alliance
-Follow the path up |goto 35.08,47.32 < 20 |only if walking() and alliance
-Follow the path |goto 37.55,45.63 < 30 |only if walking() and alliance
-Follow the path |goto 38.74,45.24 < 30 |only if walking() and alliance
-Follow the path down |goto 39.10,41.02 < 30 |only if walking() and alliance
-Follow the path |goto 40.86,35.35 < 30 |only if walking() and alliance
-Cross the bridge |goto 38.18,33.04 < 20 |only if walking() and horde
+Follow the path |goto 34.24,49.26 < 20 |only if walking and alliance
+Follow the path up |goto 35.08,47.32 < 20 |only if walking and alliance
+Follow the path |goto 37.55,45.63 < 30 |only if walking and alliance
+Follow the path |goto 38.74,45.24 < 30 |only if walking and alliance
+Follow the path down |goto 39.10,41.02 < 30 |only if walking and alliance
+Follow the path |goto 40.86,35.35 < 30 |only if walking and alliance
+Cross the bridge |goto 38.18,33.04 < 20 |only if walking and horde
 Follow the path down |goto 39.06,33.53 < 20 |only if walking
 talk Fevered Explorer##107008
 Treat the Fevered Explorer |q 41985/1 |goto 38.75,30.63
@@ -4839,7 +4839,7 @@ talk Kuhuine Tenderstride##92464
 turnin Ram's-Horn Trowel##40030 |goto Dalaran L/10 43.02,33.37
 accept Vrykul Herblore##40031 |goto Dalaran L/10 43.02,33.37
 step
-Cross the bridge |goto Stormheim/0 40.11,62.68 < 20 |only if walking() and alliance
+Cross the bridge |goto Stormheim/0 40.11,62.68 < 20 |only if walking and alliance
 Cross the bridge |goto Stormheim/0 44.15,60.44 < 20 |only if walking
 Follow the path |goto Stormheim/0 44.63,63.30 < 20 |only if walking
 click Grapple Point |goto Stormheim/0 45.12,63.84 |n
@@ -4850,14 +4850,14 @@ click The Tangled Beard
 |tip It looks like a small book laying next to the entry door of this building.
 collect The Tangled Beard##129201 |q 40031/1 |goto 42.95,65.43
 step
-Follow the path |goto 70.78,60.34 < 20 |only if walking() and alliance
-Follow the path |goto 69.12,61.57 < 30 |only if walking() and alliance
-Continue following the path |goto 66.14,62.46 < 30 |only if walking() and alliance
-Continue following the path |goto 64.03,63.37 < 20 |only if walking() and alliance
-Follow the path |goto 61.36,63.99 < 30 |only if walking() and alliance
-Follow the path |goto 58.52,66.87 < 30 |only if walking() and horde
-Follow the path |goto 58.83,65.02 < 20 |only if walking() and horde
-Follow the path |goto 60.12,63.39 < 30 |only if walking() and horde
+Follow the path |goto 70.78,60.34 < 20 |only if walking and alliance
+Follow the path |goto 69.12,61.57 < 30 |only if walking and alliance
+Continue following the path |goto 66.14,62.46 < 30 |only if walking and alliance
+Continue following the path |goto 64.03,63.37 < 20 |only if walking and alliance
+Follow the path |goto 61.36,63.99 < 30 |only if walking and alliance
+Follow the path |goto 58.52,66.87 < 30 |only if walking and horde
+Follow the path |goto 58.83,65.02 < 20 |only if walking and horde
+Follow the path |goto 60.12,63.39 < 30 |only if walking and horde
 click The Fjarnskaggl Fjormula
 |tip It looks like a brown book laying on the table.
 collect The Fjarnskaggl Fjormula##129200 |q 40031/2 |goto 61.30,63.15
@@ -5105,11 +5105,11 @@ click Fjarnskaggl
 |tip Track them on your minimap with "Find Herbs".
 collect 20 Fjarnskaggl##124104 |c |q 40033
 step
-Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking() and horde
-Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking() and horde
-Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking() and horde
-Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking() and alliance
+Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and horde
+Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and horde
+Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and horde
+Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and alliance
 Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
 Follow the beach |goto Stormheim/0 79.51,57.09 < 30 |only if walking
 Follow the path |goto Stormheim/0 81.85,63.76 < 30 |only if walking
@@ -6186,13 +6186,13 @@ talk Tiffany Cartier##93526
 |tip Inside the building.
 accept Come at Me, Brul##40540 |goto 40.27,34.68
 step
-Follow the path |goto Stormheim/0 34.24,49.26 < 20 |only if walking() and alliance
-Follow the path up |goto Stormheim/0 35.08,47.32 < 20 |only if walking() and alliance
-Follow the path |goto Stormheim/0 37.55,45.63 < 30 |only if walking() and alliance
-Follow the path |goto Stormheim/0 38.74,45.24 < 30 |only if walking() and alliance
-Follow the path down |goto Stormheim/0 39.10,41.02 < 30 |only if walking() and alliance
-Follow the path |goto Stormheim/0 37.66,32.15 < 30 |only if walking() and horde
-Follow the path up |goto Stormheim/0 39.79,34.30 < 30 |only if walking() and horde
+Follow the path |goto Stormheim/0 34.24,49.26 < 20 |only if walking and alliance
+Follow the path up |goto Stormheim/0 35.08,47.32 < 20 |only if walking and alliance
+Follow the path |goto Stormheim/0 37.55,45.63 < 30 |only if walking and alliance
+Follow the path |goto Stormheim/0 38.74,45.24 < 30 |only if walking and alliance
+Follow the path down |goto Stormheim/0 39.10,41.02 < 30 |only if walking and alliance
+Follow the path |goto Stormheim/0 37.66,32.15 < 30 |only if walking and horde
+Follow the path up |goto Stormheim/0 39.79,34.30 < 30 |only if walking and horde
 Follow the path up |goto Stormheim/0 41.30,35.73 < 20 |only if walking
 Run up the rocks |goto Stormheim/0 42.11,35.75 < 15 |only if walking
 talk Jabrul##100499
@@ -6670,8 +6670,8 @@ step
 click Black Rook Armor
 collect Black Rook Armor##129973 |q 40181/1 |count 5 |goto 40.72,51.05
 step
-Cross the bridge |goto Stormheim/0 40.09,62.68 < 20 |only if walking() and alliance
-Follow the path |goto Stormheim/0 42.85,59.15 < 20 |only if walking() and alliance
+Cross the bridge |goto Stormheim/0 40.09,62.68 < 20 |only if walking and alliance
+Follow the path |goto Stormheim/0 42.85,59.15 < 20 |only if walking and alliance
 Cross the bridge |goto Stormheim/0 44.15,60.48 < 20 |only if walking
 Follow the path |goto Stormheim/0 44.64,63.30 < 20 |only if walking
 Follow the path up |goto Stormheim/0 46.85,65.59 < 20 |only if walking

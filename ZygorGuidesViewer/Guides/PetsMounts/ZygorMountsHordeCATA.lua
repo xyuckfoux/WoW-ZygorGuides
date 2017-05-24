@@ -786,7 +786,7 @@ description="This guide will help you acquire the White Polar Bear mount.",
 },[[
 step
 This mount _requires_ you to have _The Sons of Hodir_ pre-quests completed. |next
-Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Reputations Guides\\Northrend\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
 confirm
 step
 label "dailies"
@@ -2005,7 +2005,7 @@ description="This guide will help you acquire the Brown Riding Camel and Tan Rid
 step
 title +Camel Mounts
 #include main_rep_mount,rep="Ramkahen",tabard="RamkahenTabard"
-Click here to refer to the Ramkahen reputation guide. |next "Zygor's Reputations Guides\\Cataclysm\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
+Click here to refer to the Ramkahen reputation guide. |next "Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
 |tip This will take you through the quests and any available daily.
 step
 talk Blacksmith Abasi##48617
@@ -3331,7 +3331,7 @@ label "Pre Quests"
 step
 You will need to be Revered with _The Oracles_ in order to obtain the Mysterious Egg.
 Refer to our Dailies and Reputation guides in order to earn rep.
-Click here for the Oracle Reputation section. |next "Zygor's Reputations Guides\\Northrend\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here for the Oracle Reputation section. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
 step
 label "Buy_it"
 talk Geen##31910
@@ -6990,7 +6990,7 @@ step
 This will require you to be _exalted_ with _The Wyrmrest Accord_
 #include "WATabard"
 The tabard will only give you reputation if the enemies in your current dungeon are high enough to give you experience.  |only if rep("The Wyrmrest Accord")<Exalted
-Click here to earn Reputation via quests and dailies. |next "Zygor's Reputations Guides\\Northrend\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here to earn Reputation via quests and dailies. |next "Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
 _Exalted_ with _The Wyrmrest Accord_ |condition rep("The Wyrmrest Accord")>=Exalted
 next |only if default
 next exalted |only if rep("The Wyrmrest Accord")>=Exalted
@@ -8065,7 +8065,7 @@ talk Deathstalker Visceri##33373
 turnin The Valiant's Challenge##13729 |goto 76.5,24.2
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8723,7 +8723,7 @@ You can buy a Darkspear Tabard from Champion Uru'zin in Orgrimmar at [50.0,58.5]
 |tip Wear the Darkspear Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll",{
-next="Zygor's Horde Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 endlevel=5
@@ -12055,17 +12055,17 @@ daily
 step
 talk Luuri##33771
 accept Among the Champions##13811 |goto Icecrown,69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 accept Threat From Above##13809 |goto 70.0,23.4
 |tip You must have turned in the quest The Black Knight's Fall from the ATG Black Knight Quest Chain guide section in order to be able to get this daily quest.
 accept Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 accept Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13811 |goto 72.2,22.5
@@ -12092,48 +12092,48 @@ Tell them you are ready to fight!
 Fight and defeat them
 |tip The best strategy to defeat the Champion riders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Champion rider (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Champion rider will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
 collect 4 Mark of the Champion |q 13811/1 |goto 71.6,23.8
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13811
-only !DeathKnight
+only if not DeathKnight
 step
 kill Deathspeaker Kharos##34808, Dark Zealot##34728+, Dark Ritualist##34734+
 kill 15 Cult of the Damned member |q 13810/1 |goto 64.3,21.4
-only !DeathKnight
+only if not DeathKnight
 step
 You will need to get a group of at least 3 people to do the daily quest in the next step of the guide.  Find a group, it should be pretty easy because there are always other players doing this quest.
-only !DeathKnight
+only if not DeathKnight
 step
 This is how this fight will happen:
 |tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do a lot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13809/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13809/2 |goto 44.1,32.6
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Horde Lance in your bags |use Horde Lance##46070
 Click to mount the Stabled Campaign Warhorse |invehicle |q 13862 |goto Icecrown,48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 kill 3 Boneguard Commander |q 13862/1 |goto 50.1,74.8
 |tip The best strategy to defeat the Boneguard Commanders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fights.  When the fights begin, immediately use your Charge ability on the Boneguard Commanders (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Boneguard Commanders will try to run away to get into Charge range.  When they start to run away, start spamming your Charge ability until you charge them in the back (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until you kill 3 Boneguard Commanders.  Also, it may help you try to party with other players while doing this quest, as it will get done much faster and there are always other players in this area doing this same daily quest.
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13862 |goto 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Luuri##33771
 turnin Among the Champions##13811 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Threat From Above##13809 |goto 70.0,23.4
 turnin Battle Before The Citadel##13862 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13810 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
 author="support@zygorguides.com",
@@ -12783,7 +12783,7 @@ turnin A Champion Rises##13738 |goto 69.7,22.9 |only Tauren
 turnin A Champion Rises##13739 |goto 69.7,22.9 |only Scourge
 turnin A Champion Rises##13740 |goto 69.7,22.9 |only BloodElf
 accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -12791,5 +12791,5 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 ]])

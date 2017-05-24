@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\A Classy Outfit",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\A Classy Outfit",{
 condition_end="achieved(11298)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -18,18 +18,18 @@ This item is earned by Reaching Level 110
 Earn the Class Order Hall Helm |achieve 11298/1
 step
 This item is earned by Recruiting 6 Champions for your Class Order Hall
-Click here load the "Class Order Hall" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here load the "Class Order Hall" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Earn the Class Order Hall Bracers |achieve 11298/2
 step
 This item is earned by completing your Class Order Hall Campaign
-Click here load the "Class Order Hall" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here load the "Class Order Hall" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Earn the Class Order Hall Chestpiece |achieve 11298/5 |or
 step
 This item is earned by Defeating 8 different final bosses found in Legion Dungeons
 Earn the Class Order Hall Leggings |achieve 11298/4
 step
 This item is earned by obtaining Honored reputation with The Nightfallen
-Click here load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
+Click here load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
 Earn the Class Order Hall Gloves |achieve 11298/3 |or
 step
 You will need to obtain 100,000 Artifact power to unlock this
@@ -40,13 +40,13 @@ This item is earned by becoming Revered with 2 Legion factions
 Earn the Class Order Hall Boots |achieve 11298/6
 step
 You will need to reach Exalted with the Nightfallen to unlock this piece
-Click here load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
+Click here load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)" |or
 Earn the Class Order Hall Shoulders |achieve 11298/8 |or
 step
 _Congratulations!_
 You have earned the _A Classy Outfit_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\A Glorious Campaign",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\A Glorious Campaign",{
 condition_end="achieved(10994)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -55,13 +55,13 @@ description="This guide will walk you through completing the \"A Glorious Campai
 },[[
 step
 For this achievement, you will need to complete a Class Order Hall Campaign on a single character
-Click here load the "Class Order Hall" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here load the "Class Order Hall" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Complete a Class Order Hall Questline |achieve 10994
 step
 _Congratulations!_
 You have earned the _A Glorious Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\A Heroic Campaign",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\A Heroic Campaign",{
 condition_end="achieved(11135)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -70,13 +70,13 @@ description="This guide will walk you through completing the \"A Heroic Campaign
 },[[
 step
 For this achievement, you will need to complete the Class Order Hall Campaigns on _3 different characters_
-Click here load the "Class Order Hall" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here load the "Class Order Hall" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Complete 3 Class Order Hall Campaign Questlines |achieve 11135
 step
 _Congratulations!_
 You have earned the _A Heroic Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\An Epic Campaign",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\An Epic Campaign",{
 condition_end="achieved(11136)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -85,13 +85,13 @@ description="This guide will walk you through completing the \"An Epic Campaign\
 },[[
 step
 For this achievement, you will need to complete the Class Order Hall Campaigns on _5 different characters_
-Click here load the "Class Order Hall" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here load the "Class Order Hall" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Complete 5 Class Order Hall Campaign Questlines |achieve 11136
 step
 _Congratulations!_
 You have earned the _An Epic Campaign_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Arsenal of Power",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Arsenal of Power",{
 condition_end="achieved(11171)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -101,14 +101,14 @@ description="This guide will walk you through completing the \"Arsenal of Power\
 step
 For this achievement, you will need to unlock each Artifact for your character specializations
 |tip Refer to our Legion Intro & Artifact gudie to accomplish this.
-Click here to load the "Legion Intro & Artifacts" guide ||confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not DemonHunter |or
-Click here to load the "Legion Intro & Artifacts" guide |confirm |next "Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only DemonHunter |or
+Click here to load the "Legion Intro & Artifacts" guide ||confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not DemonHunter |or
+Click here to load the "Legion Intro & Artifacts" guide |confirm |next "Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only DemonHunter |or
 Earn the _Arsenal of Power_ achievement |achieve 11171 |or
 step
 _Congratulations!_
 You have earned the _Arsenal of Power_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Artifact or Artifiction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Artifact or Artifiction",{
 condition_end="achieved(10852)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -125,7 +125,7 @@ step
 _Congratulations!_
 You have earned the _Artifact or Artifiction_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Broken Isles Pathfinder, Part One",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Broken Isles Pathfinder, Part One",{
 condition_end="achieved(11190)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -135,28 +135,28 @@ description="This guide will walk you through completing the \"Broken Isles Path
 step
 Earn the _Broken Isles Explorer_ achievement |achieve 11190/1 |or
 |tip Use the "Broken Isles Explorer" achievement guide to accomplish this.
-Click here to load the "Broken Isles Explorer" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer" |or
+Click here to load the "Broken Isles Explorer" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Broken Isles Explorer" |or
 step
 Earn the _Loremaster of Legion_ achievement |achieve 11190/2 |or
 |tip Use the "Loremaster of Legion" achievement guide to accomplish this.
-Click here to load the "Loremaster of Legion" guide |confirm |next "Zygor's Horde Achievement Guides\\Quests\\Legion\\Loremaster of Legion" |or
+Click here to load the "Loremaster of Legion" guide |confirm |next "Zygor's Achievements Guides\\Quests\\Legion\\Loremaster of Legion" |or
 step
 Earn the _Variety is the Spice of Life_ achievement |achieve 11190/3 |or
 |tip Use the "Variety is the Spice of Life" achievement guide to accomplish this.
-Click here to load the "Variety is the Spice of Life" guide |confirm |next "Zygor's Horde Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life" |or
+Click here to load the "Variety is the Spice of Life" guide |confirm |next "Zygor's Achievements Guides\\Quests\\Legion\\Variety is the Spice of Life" |or
 step
 Earn the _Broken Isles Diplomat_ achievement |achieve 11190/4 |or
 |tip Use the "Broken Isles Diplomat" achievement guide to accomplish this.
-Click here to load the "Broken Isles Diplomat" guide |confirm |next "Zygor's Horde Achievement Guides\\Reputation\\Legion\\Broken Isles Diplomat" |or
+Click here to load the "Broken Isles Diplomat" guide |confirm |next "Zygor's Achievements Guides\\Reputation\\Legion\\Broken Isles Diplomat" |or
 step
 Earn the _A Glorious Campaign_ achievement |achieve 11190/5 |or
 |tip Use the "A Glorious Campaign" achievement guide to accomplish this.
-Click here to load the "A Glorious Campaign" guide |confirm |next "Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\A Glorious Campaign" |or
+Click here to load the "A Glorious Campaign" guide |confirm |next "Zygor's Achievements Guides\\Class Order Hall\\Legion\\A Glorious Campaign" |or
 step
 _Congratulations!_
 You have earned the _Broken Isles Pathfinder, Part One_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Champions Rise",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Champions Rise",{
 condition_end="achieved(11221)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -166,7 +166,7 @@ description="This guide will walk you through completing the \"Champions Rise\" 
 step
 For this achievement, you will need to raise 8 Class Order Hall Champions to level 110
 |tip To accomplish this, use the Class Order Hall Quests guide to unlock all of the Champions.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Click here once you've completed the Class Order Hall Quest guide |confirm
 step
 From this point there are two ways to level your followers
@@ -178,7 +178,7 @@ step
 _Congratulations!_
 You have earned the _Champions Rise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Fighting with Style: Classic",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Fighting with Style: Classic",{
 condition_end="achieved(10461)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -188,23 +188,23 @@ description="This guide will walk you through completing the \"Fighting with Sty
 step
 For this achievement, you will need to recover a Pillar of Creation
 The easiest to attain this without doing Dungeons would be attained from questing in Val'sharah
-Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah" |or
+Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah" |or
 Retrieve the Tears of Elune |achieve 10461/1 |or
 step
 For this, you will need to complete the Light's Charge quest
 To accomplishthis, refer to the Class Order Hall Quests guide
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Complete the Light's Charge quest |achieve 10461/2 |or
 step
 For this, you will need to complete the first chapter of the Class Order Hall Quests
 To accomplish this, refer to the Class Order Hall Quests guide
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Complete the first order campaign effort |achieve 10461/3 |or
 step
 _Congratulations!_
 You have earned the _Fighting with Style: Classic_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Forged for Battle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Forged for Battle",{
 condition_end="achieved(10746)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -214,13 +214,13 @@ description="This guide will walk you through completing the \"Forged for Battle
 step
 For this achievement, you will need to complete the Order Campaign
 |tip Refer to our Class Order Hall Quests guide to accomplish this.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Earn the _Forged for Battle_ achievement |achieve 10746 |or
 step
 _Congratulations!_
 You have earned the _Forged for Battle_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Improving on History",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Improving on History",{
 condition_end="achieved(10459)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -231,14 +231,14 @@ step
 For this, you will need to complete the Balance of Power questline
 To unlock the questline, you will need to complete your Class Order Hall Quests
 Once you have completed the Class Order Hall Quests, complete the Balance of Power questline
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
-Click here to load the "Balance of Power" questline |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Balance of Power Questline" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Balance of Power" questline |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Balance of Power Questline" |or
 Complete the Improving on History questline |achieve 10459 |or
 step
 _Congratulations!_
 You have earned the _Improving on History_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Lead a Legion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Lead a Legion",{
 condition_end="achieved(11213)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -249,13 +249,13 @@ step
 For this, you will need to train 100 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Train 100 Troops |achieve 11213
 step
 _Congratulations!_
 You have earned the _Lead a Legion_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Legendary Research",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Legendary Research",{
 condition_end="achieved(11223)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -276,7 +276,7 @@ step
 _Congratulations!_
 You have earned the _Legendary Research_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Many Many Missions, Handle It!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Many Many Missions, Handle It!",{
 condition_end="achieved(11217)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -286,14 +286,14 @@ description="This guide will walk you through completing the \"Many Many Mission
 step
 For this achievement, you will need to complete 500 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Once you have, use Champions and Troops to complete 500 missions
 Complete 500 Class Order Hall Missions |achieve 11217
 step
 _Congratulations!_
 You have earned the _Many Many Missions, Handle It!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Many Missions",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Many Missions",{
 condition_end="achieved(11214)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -303,14 +303,14 @@ description="This guide will walk you through completing the \"Many Missions\" A
 step
 For this achievement, you will need to complete 10 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Once you have, use Champions and Troops to complete 10 missions
 Complete 10 Class Order Hall Missions |achieve 11214
 step
 _Congratulations!_
 You have earned the _Many Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Need Backup",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Need Backup",{
 condition_end="achieved(11219)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -323,13 +323,13 @@ Once there, search for a Mission that rewards _a Raid quest_
 |tip These may not always be available.
 The quest can be for _Normal, Heroic or Mythic difficulty_
 |tip You will be at a disadvantage on success chance, so try and counter all of the enemy abilities.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Obtain a Raid Quest from the Class Order Hall Mission Board |achieve 11219
 step
 _Congratulations!_
 You have earned the _Need Backup_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Part of History",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Part of History",{
 condition_end="achieved(10853)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -346,7 +346,7 @@ step
 _Congratulations!_
 You have earned the _Part of History_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Power Realized",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Power Realized",{
 condition_end="achieved(11144)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -357,14 +357,14 @@ step
 For this achievement, you will need to unlock every Artifact Trait for a single artifact weapon
 You will need around _5,220,000 Artifact Power_ to achieve this
 |tip You can earn Artifact Power by completing World Quests as well as Dungeons.
-Click here to access "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+Click here to access "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 Unlock every Artifact Trait for a Wepaon |achieve 11144 |or
 step
 _Congratulations!_
 You have earned the _Power Realized_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Power Unleashed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Power Unleashed",{
 condition_end="achieved(11610)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -375,14 +375,14 @@ step
 For this achievement, you will need to complete the quest chain to unlock the 7.2 extended artifact traits
 |tip You must have all 35 traits unlocked on your artifact before begginning this questline.
 |tip You can earn Artifact Power by completing World Quests as well as Dungeons.
-Click here to load the "Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Unlock additional artifact traits |achieve 11610 |or
 step
 _Congratulations!_
 You have earned the _Power Unleashed_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Quite a Few Missions",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Quite a Few Missions",{
 condition_end="achieved(11215)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -392,14 +392,14 @@ description="This guide will walk you through completing the \"Quite a Few Missi
 step
 For this achievement, you will need to complete 50 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Once you have, use Champions and Troops to complete 50 missions
 Complete 50 Class Order Hall Missions |achieve 11215
 step
 _Congratulations!_
 You have earned the _Quite a Few Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Raise an Army",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Raise an Army",{
 condition_end="achieved(11212)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -410,13 +410,13 @@ step
 For this achievement, you will need to train 20 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Train 20 Troops |achieve 11212
 step
 _Congratulations!_
 You have earned the _Raise an Army_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Roster of Champions",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Roster of Champions",{
 condition_end="achieved(11220)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -426,13 +426,13 @@ description="This guide will walk you through completing the \"Roster of Champio
 step
 To earn this achievement, you will need to collect the 8 Class Order Hall Champions
 To accomplish this, use the Class Order Hall Quests guide
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Collect 8 Champions |achieve 11220
 step
 _Congratulations!_
 You have earned the _Roster of Champions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\So Many Missions",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\So Many Missions",{
 condition_end="achieved(11216)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -442,14 +442,14 @@ description="This guide will walk you through completing the \"So Many Missions\
 step
 For this achievement, you will need to complete 100 Class Order Hall Missions found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests in order to access the mission board.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Once you have, use Champions and Troops to complete 100 missions
 Complete 100 Class Order Hall Missions |achieve 11216
 step
 _Congratulations!_
 You have earned the _So Many Missions_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\There's a Boss In There",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\There's a Boss In There",{
 condition_end="achieved(11218)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -462,13 +462,13 @@ Once there, search for a mission that rewards _a Dungeon quest_
 |tip These may not always be available.
 The quest can be for _Normal, Heroic or Mythic difficulty_
 |tip You will be at a disadvantage on success chance, so try and counter all of the enemy abilities.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Obtain a Dungeon Quest from the Class Order Hall Mission Board |achieve 11218
 step
 _Congratulations!_
 You have earned the _There's a Boss In There_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Training the Troops",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Class Order Hall\\Legion\\Training the Troops",{
 condition_end="achieved(10706)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -479,13 +479,13 @@ step
 For this achievement, you will need to train 5 Troops in your Class Order Hall
 To acheive this, speak to both Recruiters found in your Class Order Hall
 |tip You will need to progress a bit into the Class Order Hall Quests guide to recruit additional Troops.
-Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
+Click here to load the "Class Order Hall Quests" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests" |or
 Train 5 Troops |achieve 10706
 step
 _Congratulations!_
 You have earned the _Training the Troops_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Zoom!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Zoom!",{
 condition_end="achieved(10626)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -503,7 +503,7 @@ step
 _Congratulations!_
 You have earned the _Zoom!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Back",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Back",{
 condition_end="achieved(10687)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -525,7 +525,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Back_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Chest",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Chest",{
 condition_end="achieved(10682)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -547,7 +547,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Chest_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Feet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Feet",{
 condition_end="achieved(10685)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -569,7 +569,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Feet_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Hand",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Hand",{
 condition_end="achieved(10693)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -591,7 +591,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Hand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Head",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Head",{
 condition_end="achieved(10681)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -613,7 +613,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Head_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Legs",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Legs",{
 condition_end="achieved(10684)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -635,7 +635,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Legs_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Shirt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Shirt",{
 condition_end="achieved(10691)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -713,7 +713,7 @@ label "congrats"
 _Congratulations!_
 You have earned the _Fashionista: Shirt_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Shoulder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Shoulder",{
 condition_end="achieved(10692)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -735,7 +735,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Shoulder_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Tabard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Tabard",{
 condition_end="achieved(10690)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -810,7 +810,7 @@ label "congrats"
 _Congratulations!_
 You have earned the _Fashionista: Tabard_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Waist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Waist",{
 condition_end="achieved(10686)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -832,7 +832,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Waist_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Weapon & Off Hand",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Weapon & Off Hand",{
 condition_end="achieved(10689)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -854,7 +854,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Weapon & Off Hand_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\Fashionista: Wrist",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\Fashionista: Wrist",{
 condition_end="achieved(10688)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -876,7 +876,7 @@ step
 _Congratulations!_
 You have earned the _Fashionista: Wrist_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Collections\\Legion\\The Tangerine Traveler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Legion\\The Tangerine Traveler",{
 condition_end="achieved(10770)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -997,7 +997,7 @@ label "end"
 _Congratulations!_
 You have earned _The Tangerine Traveler_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\A Specter, Illuminated",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\A Specter, Illuminated",{
 condition_end="achieved(10707)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1016,7 +1016,7 @@ step
 _Congratulations!_
 You have earned the _A Specter, Illuminated_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Adds? More Like Bads",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Adds? More Like Bads",{
 condition_end="achieved(10711)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1035,7 +1035,7 @@ step
 _Congratulations!_
 You have earned the _Adds? More Like Bads_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Arcanic Cling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Arcanic Cling",{
 condition_end="achieved(10773)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1052,7 +1052,7 @@ step
 _Congratulations!_
 You have earned the _Arcanic Cling_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Black Rook Moan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Black Rook Moan",{
 condition_end="achieved(10710)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1071,7 +1071,7 @@ step
 _Congratulations!_
 You have earned the _Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Broken Isles Keymaster",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Broken Isles Keymaster",{
 condition_end="achieved(11181)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1095,7 +1095,7 @@ step
 _Congratulations!_
 You have earned the _Broken Isles Keymaster_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Burn After Reading",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Burn After Reading",{
 condition_end="achieved(11433)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1116,7 +1116,7 @@ step
 _Congratulations!_
 You have earned the _Burn After Reading_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Burning Down the House",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Burning Down the House",{
 condition_end="achieved(10769)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1135,7 +1135,7 @@ step
 _Congratulations!_
 You have earned the _Burning Down the House_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\But you Say He's Just a Friend",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\But you Say He's Just a Friend",{
 condition_end="achieved(10456)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1152,7 +1152,7 @@ step
 _Congratulations!_
 You have earned the _But you Say He's Just a Friend_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Can't Eat Just One",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Can't Eat Just One",{
 condition_end="achieved(10875)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1171,7 +1171,7 @@ step
 _Congratulations!_
 You have earned the _Can't Eat Just One_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Clean House",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Clean House",{
 condition_end="achieved(10775)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1189,7 +1189,7 @@ step
 _Congratulations!_
 You have earned the _Clean House_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Dine and Bash",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Dine and Bash",{
 condition_end="achieved(11338)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1208,7 +1208,7 @@ step
 _Congratulations!_
 You have earned the _Dine and Bash_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Dropping Some Eaves",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Dropping Some Eaves",{
 condition_end="achieved(10611)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1231,7 +1231,7 @@ step
 _Congratulations!_
 You have earned the _Dropping Some Eaves_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Egg-cellent!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Egg-cellent!",{
 condition_end="achieved(10766)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1251,7 +1251,7 @@ step
 _Congratulations!_
 You have earned the _Egg-cellent!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Got to Ketchum All",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Got to Ketchum All",{
 condition_end="achieved(10996)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1312,7 +1312,7 @@ step
 _Congratulations!_
 You have earned the _Got to Ketchum All_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Helheim Hath No Fury",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Helheim Hath No Fury",{
 condition_end="achieved(10411)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1335,7 +1335,7 @@ step
 _Congratulations!_
 You have earned the _Helheim Hath No Fury_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Assault on Violet Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Assault on Violet Hold",{
 condition_end="achieved(10799)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1351,7 +1351,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Assault on Violet Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Black Rook Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Black Rook Hold",{
 condition_end="achieved(10805)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1367,7 +1367,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Darkheart Thicket",{
 condition_end="achieved(10784)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1383,7 +1383,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Darkheart Thicket_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Eye of Azshara",{
 condition_end="achieved(10781)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1399,7 +1399,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Eye of Azshara_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Halls of Valor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Halls of Valor",{
 condition_end="achieved(10788)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1415,7 +1415,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Halls of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Neltharion's Lair",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Neltharion's Lair",{
 condition_end="achieved(10796)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1431,7 +1431,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Neltharion's Lair_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Maw of Souls",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Maw of Souls",{
 condition_end="achieved(10808)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1447,7 +1447,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Maw of Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Heroic: Vault of the Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Vault of the Wardens",{
 condition_end="achieved(10802)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1463,7 +1463,7 @@ step
 _Congratulations!_
 You have earned the _Heroic: Vault of the Wardens_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\I Ain't Even Cold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\I Ain't Even Cold",{
 condition_end="achieved(10679)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1484,7 +1484,7 @@ step
 _Congratulations!_
 You have earned the _I Aint Even Cold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\I Got What You Mead",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\I Got What You Mead",{
 condition_end="achieved(10542)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1509,7 +1509,7 @@ step
 _Congratulations!_
 You have earned the _I Got What You Mead_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\I Made a Food!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\I Made a Food!",{
 condition_end="achieved(10554)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1527,7 +1527,7 @@ step
 _Congratulations!_
 You have earned the _I Made a Food!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Instant Karma",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Instant Karma",{
 condition_end="achieved(10413)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1545,7 +1545,7 @@ step
 _Congratulations!_
 You have earned the _Instant Karma_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Keystone Challenger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Keystone Challenger",{
 condition_end="achieved(11184)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1566,7 +1566,7 @@ step
 _Congratulations!_
 You have earned the _Keystone Challenger_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Keystone Conqueror",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Keystone Conqueror",{
 condition_end="achieved(11185)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1587,7 +1587,7 @@ step
 _Congratulations!_
 You have earned the _Keystone Conqueror_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Keystone Initiate",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Keystone Initiate",{
 condition_end="achieved(11183)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1608,7 +1608,7 @@ step
 _Congratulations!_
 You have earned the _Keystone Initiate_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Keystone Master",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Keystone Master",{
 condition_end="achieved(11162)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1629,7 +1629,7 @@ step
 _Congratulations!_
 You have earned the _Keystone Master_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Assault on Violet Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Assault on Violet Hold",{
 condition_end="achieved(10800)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1646,7 +1646,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Assault on Violet Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Black Rook Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Black Rook Hold",{
 condition_end="achieved(10806)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1663,7 +1663,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Black Rook Hold_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Darkheart Thicket",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Darkheart Thicket",{
 condition_end="achieved(10785)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1680,7 +1680,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Darkheart Thicket_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Eye of Azshara",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Eye of Azshara",{
 condition_end="achieved(10782)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1697,7 +1697,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Eye of Azshara_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Halls of Valor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Halls of Valor",{
 condition_end="achieved(10789)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1714,7 +1714,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Halls of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Neltharion's Lair",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Neltharion's Lair",{
 condition_end="achieved(10797)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1731,7 +1731,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Neltharion's Lair_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Maw of Souls",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Maw of Souls",{
 condition_end="achieved(10809)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1748,7 +1748,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Maw of Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Vault of the Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Vault of the Wardens",{
 condition_end="achieved(10803)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1765,7 +1765,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Vault of the Wardens_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\No Time to Waste",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\No Time to Waste",{
 condition_end="achieved(10776)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1785,7 +1785,7 @@ step
 _Congratulations!_
 You have earned the _No Time to Waste_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\One Night in Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\One Night in Karazhan",{
 condition_end="achieved(11430)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1813,7 +1813,7 @@ step
 _Congratulations!_
 You have earned the _One Night in Karazhan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Poor Unfortunate Souls",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Poor Unfortunate Souls",{
 condition_end="achieved(10412)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1857,7 +1857,7 @@ step
 _Congratulations!_
 You have earned the _Poor Unfortunate Souls_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\The Rat Pack",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\The Rat Pack",{
 condition_end="achieved(11431)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1879,7 +1879,7 @@ step
 _Congratulations!_
 You have earned the _The Rat Pack_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Ready for Raiding V",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Ready for Raiding V",{
 condition_end="achieved(10458)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1897,7 +1897,7 @@ step
 _Congratulations!_
 You have earned the _Ready for Raiding V_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Return to Karazhan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Return to Karazhan",{
 condition_end="achieved(11429)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1916,7 +1916,7 @@ step
 _Congratulations!_
 You have earned the _Return to Karazhan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Scared Straight",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Scared Straight",{
 condition_end="achieved(11432)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1932,7 +1932,7 @@ step
 _Congratulations!_
 You have earned the _Scared Straight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Season Tickets",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Season Tickets",{
 condition_end="achieved(11335)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1951,7 +1951,7 @@ step
 _Congratulations!_
 You have earned the _Season Tickets_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Stag Party",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Stag Party",{
 condition_end="achieved(10544)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1977,7 +1977,7 @@ step
 _Congratulations!_
 You have earned the _Stag Party_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Stay Salty",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Stay Salty",{
 condition_end="achieved(10457)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -1996,7 +1996,7 @@ step
 _Congratulations!_
 You have earned the _Stay Salty_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Surge Protector",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Surge Protector",{
 condition_end="achieved(10543)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2012,7 +2012,7 @@ step
 _Congratulations!_
 You have earned the _Surge Protector_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Waiting for Gerdo",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Waiting for Gerdo",{
 condition_end="achieved(10610)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2034,7 +2034,7 @@ step
 _Congratulations!_
 You have earned the _Waiting for Gerdo_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Who's Afraid of the Dark",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Who's Afraid of the Dark",{
 condition_end="achieved(10680)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2055,7 +2055,7 @@ step
 _Congratulations!_
 You have earned the _Who's Afraid of the Dark?_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\You Used to Scrawl Me In Your Fel Tome",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\You Used to Scrawl Me In Your Fel Tome",{
 condition_end="achieved(10709)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2105,7 +2105,7 @@ step
 _Congratulations!_
 You have earned the _You Used to Scrawl Me In Your Fel Tome_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\You're Just Making It WORSE!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\You're Just Making It WORSE!",{
 condition_end="achieved(10553)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2115,7 +2115,7 @@ description="This guide will walk you through completing the \"You're Just Makin
 },[[
 step
 Refer to the _Follower Millhouse Manastorm_ guide in order to attain the Manastorm's Duplicator
-Click here to load the "Millhouse Manastorm" follower guide |confirm |next "Zygor's Horde Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm"
+Click here to load the "Millhouse Manastorm" follower guide |confirm |next "Zygor's Leveling Guides\\Draenor (90-100)\\Garrisons\\Followers\\Follower Millhouse Manastorm"
 Click here to continue |confirm
 step
 Use Manastorm's Duplicator on yourself at the start of the Millificent Manastorm encounter |use Manastorm's Duplicator##118938
@@ -2128,7 +2128,7 @@ _Congratulations!_
 You have earned the _You're just Making It WORSE!_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Boom Boom",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Boom Boom",{
 condition_end="achieved(11768)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2149,7 +2149,7 @@ step
 _Congratulations!_
 You have earned the _Boom Boom_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\A Steamy Romance Saga",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\A Steamy Romance Saga",{
 condition_end="achieved(11769)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2171,7 +2171,7 @@ step
 _Congratulations!_
 You have earned the _A Steamy Romance Saga_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Master of Shadows",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Master of Shadows",{
 condition_end="achieved(11703)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2192,7 +2192,7 @@ step
 _Congratulations!_
 You have earned the _Master of Shadows_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Mythic: Cathedral of Eternal Night",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Mythic: Cathedral of Eternal Night",{
 condition_end="achieved(11702)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2209,7 +2209,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Cathedral of Eternal Night_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Dungeons\\Legion\\Wailing Caverns",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Wailing Caverns",{
 condition_end="achieved(11765)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2226,7 +2226,7 @@ _Congratulations!_
 You have earned the _Pet Battle Challenge: Wailing Caverns_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Legion Brawler's Guild\\Educated Guesser",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\Educated Guesser",{
 author="support@zygorguides.com",
 condition_end="achieved(11570)",
 keywords={"Educated","Guesser"},
@@ -2259,7 +2259,7 @@ step
 _Congratulations!_
 You have earned the _Educated Guesser_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Legion Brawler's Guild\\I Am Thrall's Complete Lack Of Surprise",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\I Am Thrall's Complete Lack Of Surprise",{
 author="support@zygorguides.com",
 condition_end="achieved(11572)",
 keywords={"I","Am","Thrall's","Complete","Lack","Of","Surprise"},
@@ -2291,7 +2291,7 @@ step
 _Congratulations!_
 You have earned the _I Am Thrall's Complete Lack Of Surprise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Legion Brawler's Guild\\King of the Guild",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\King of the Guild",{
 author="support@zygorguides.com",
 condition_end="achieved(11566)",
 achieveid={11559,11561,11564,11566},
@@ -2306,7 +2306,7 @@ step
 _Congratulations!_
 You have earned the _King of the Guild_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Legion Brawler's Guild\\Rumble Club",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\Rumble Club",{
 author="support@zygorguides.com",
 condition_end="achieved(11573)",
 keywords={"Rumble","Club"},
@@ -2395,7 +2395,7 @@ step
 _Congratulations!_
 You have earned the _Rumble Club_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Events\\Legion Brawler's Guild\\You Are Not The Contents Of Your Wallet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\You Are Not The Contents Of Your Wallet",{
 author="support@zygorguides.com",
 condition_end="achieved(11567)",
 description="Obtain 20,000 Brawler's Gold",
@@ -2410,7 +2410,7 @@ step
 _Congratulations!_
 You have earned the _You Are Not The Contents Of Your Wallet_ achievement.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Adventurer of Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Adventurer of Azsuna",{
 condition_end="achieved(10456)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2589,7 +2589,7 @@ step
 _Congratulation!_
 You have earned the _Adventurer of Azsuna_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Adventurer of Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Adventurer of Highmountain",{
 condition_end="achieved(11264)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2793,7 +2793,7 @@ step
 _Congratulations!_
 You have earned the _Adventurer of Highmountain_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Adventurer of Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Adventurer of Stormheim",{
 condition_end="achieved(11263)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2984,7 +2984,7 @@ step
 _Congratulations!_
 You have earned the _Adventurer of Stormheim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Adventurer of Suramar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Adventurer of Suramar",{
 condition_end="achieved(11265)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -3230,7 +3230,7 @@ step
 _Congratulations!_
 You have earned the _Adventurer of Suramar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Adventurer of Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Adventurer of Val'sharah",{
 condition_end="achieved(11262)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -3387,7 +3387,7 @@ step
 _Congratulations!_
 You have earned the _Adventurer of Val'sharah_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Broken Isles Explorer",{
 condition_end="achieved(11188)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -3397,23 +3397,23 @@ description="This guide will walk you through completing the \"Broken Isles Expl
 step
 Explore Azsuna |achieve 11188/1
 |tip Use the "Explore Azsuna" achievement guide to accomplish this.
-Click here to load the "Explore Azsuna" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Azsuna"
+Click here to load the "Explore Azsuna" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Azsuna"
 step
 Explore Val'sharah |achieve 11188/2
 |tip Use the "Explore Val'sharah" achievement guide to accomplish this.
-Click here to load the "Explore Val'sharah" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Val'sharah"
+Click here to load the "Explore Val'sharah" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Val'sharah"
 step
 Explore Highmountain |achieve 11188/3
 |tip Use the "Explore Highmountain" achievement guide to accomplish this.
-Click here to load the "Explore Highmountain" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Highmountain"
+Click here to load the "Explore Highmountain" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Highmountain"
 step
 Explore Stormheim |achieve 11188/4
 |tip Use the "Explore Stormheim" achievement guide to accomplish this.
-Click here to load the "Explore Stormheim" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Stormheim"
+Click here to load the "Explore Stormheim" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Stormheim"
 step
 Explore Suramar |achieve 11188/5
 |tip Use the "Explore Suramar" achievement guide to accomplish this.
-Click here to load the "Explore Suramar" guide |confirm |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Suramar"
+Click here to load the "Explore Suramar" guide |confirm |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Suramar"
 step
 _Congratulations!_
 You have earned the _Broken Isles Explorer_ achievement
@@ -3427,9 +3427,9 @@ description="This guide will walk you through completing the \"Broken Isles path
 },[[
 step
 Earn the _Broken Isles Pathfinder, Part One_ achievement |achieve 11446/1
-Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |next "Zygor's Horde Achievement Guides\\Class Order Hall\\Legion\\Broken Isles Pathfinder, Part One"
+Click here to load the "Broken Isles Pathfinder, Part One" achievement guide |next "Zygor's Achievements Guides\\Class Order Hall\\Legion\\Broken Isles Pathfinder, Part One"
 Earn the _Explore Broken Shore_ achievement |achieve 11446/2
-Click here to load the "Explore Broken Shore" achievement guide |next "Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Broken Shore"
+Click here to load the "Explore Broken Shore" achievement guide |next "Zygor's Achievements Guides\\Exploration\\Legion\\Explore Broken Shore"
 |tip This achievement requires you to explore all areas of the Broken Shore zone.
 Earn the _Legionfall Commander_ achievement |achieve 11446/3
 |tip This achievement requires you to earn revered reputation with the Armies of Legionfall faction.
@@ -3438,7 +3438,7 @@ step
 _Congratulations!_
 You have earned the _Broken Isles Pathfinder, Part Two_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Azsuna",{
 condition_end="achieved(10665)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3492,7 +3492,7 @@ _Congratulations!_
 You have earned the _Explore Azsuna_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Broken Shore",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Broken Shore",{
 condition_end="achieved(11543)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -3536,7 +3536,7 @@ _Congratulations!_
 You have earned the _Explore Broken Shore_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Highmountain",{
 condition_end="achieved(10667)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3617,7 +3617,7 @@ step
 _Congratulations!_
 You have earned the _Explore Highmountain_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Stormheim",{
 condition_end="achieved(10668)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3631,38 +3631,38 @@ Jump down here |goto Stormheim/0 47.17,41.27 < 20 |only if walking
 Explore Aggrammar's Vault |achieve 10668/1 |goto Stormheim/0 46.31,44.54
 |tip You will discover most of these naturally by using the "Stormheim" leveling guide.
 step
-Follow the path |goto 34.28,49.21 < 20 |only if walking() and alliance
-Follow the path up |goto 35.14,47.28 < 20 |only if walking() and alliance
-Follow the path |goto 37.60,45.57 < 20 |only if walking() and alliance
-Follow the path up |goto 37.18,44.26 < 30 |only if walking() and alliance
-Cross the bridge |goto 35.80,43.52 < 20 |only if walking() and alliance
-Follow the path down |goto 32.91,42.05 < 20 |only if walking() and alliance
+Follow the path |goto 34.28,49.21 < 20 |only if walking and alliance
+Follow the path up |goto 35.14,47.28 < 20 |only if walking and alliance
+Follow the path |goto 37.60,45.57 < 20 |only if walking and alliance
+Follow the path up |goto 37.18,44.26 < 30 |only if walking and alliance
+Cross the bridge |goto 35.80,43.52 < 20 |only if walking and alliance
+Follow the path down |goto 32.91,42.05 < 20 |only if walking and alliance
 Explore Blackbeak Overlook |achieve 10668/2 |goto 35.55,37.43 |only Alliance
-Follow the path up |goto 35.76,30.91 |only if walking() and horde
+Follow the path up |goto 35.76,30.91 |only if walking and horde
 Explore Blackbeak Overlook |achieve 10668/2 |goto 34.15,31.18 |only Horde
 step
-Jump down into the water |goto 58.94,56.65 < 20 |only if walking() and alliance
-Follow the water |goto 57.07,61.12 < 30 |only if walking() and alliance
-Continue following the water |goto 55.10,66.86 < 30 |only if walking() and alliance
+Jump down into the water |goto 58.94,56.65 < 20 |only if walking and alliance
+Follow the water |goto 57.07,61.12 < 30 |only if walking and alliance
+Continue following the water |goto 55.10,66.86 < 30 |only if walking and alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 55.44,69.05 |only Alliance
 Explore Dreadwake's Landing |achieve 10668/3 |goto 54.01,72.29 |only Horde
 step
-Follow the path |goto 72.17,59.32 < 20 |only if walking() and alliance
+Follow the path |goto 72.17,59.32 < 20 |only if walking and alliance
 Explore Deyrgrot |achieve 10668/4 |goto 72.24,56.00 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
-Follow the path |goto 66.11,54.63 < 30 |only if walking() and horde
-Follow the path |goto 69.22,53.12 < 30 |only if walking() and horde
-Follow the path down |goto 72.14,51.88 < 20 |only if walking() and horde
+Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
+Follow the path |goto 66.11,54.63 < 30 |only if walking and horde
+Follow the path |goto 69.22,53.12 < 30 |only if walking and horde
+Follow the path down |goto 72.14,51.88 < 20 |only if walking and horde
 Explore Deyrgrot |achieve 10668/4 |goto 72.71,51.69 |only Horde
 step
 Explore Greywatch |achieve 10668/5 |goto 72.09,59.84 |only Alliance
-Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
-Follow the path |goto 65.38,54.68 < 30 |only if walking() and horde
-Follow the path up |goto 66.55,57.54 < 20 |only if walking() and horde
-Follow the path |goto 67.55,58.99 < 30 |only if walking() and horde
-Follow the path down |goto 69.53,58.74 < 30 |only if walking() and horde
+Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
+Follow the path |goto 65.38,54.68 < 30 |only if walking and horde
+Follow the path up |goto 66.55,57.54 < 20 |only if walking and horde
+Follow the path |goto 67.55,58.99 < 30 |only if walking and horde
+Follow the path down |goto 69.53,58.74 < 30 |only if walking and horde
 Explore Greywatch |achieve 10668/5 |goto 71.31,58.79 |only Horde
 step
 Follow the road |goto 60.08,53.29 < 30 |only if walking
@@ -3676,26 +3676,26 @@ Follow the road |goto 66.98,48.70 < 30 |only if walking
 Explore Haustvald |achieve 10668/7 |goto 68.20,47.43
 step
 Explore Hrydhal |achieve 10668/8 |goto 38.26,65.27 |only Alliance
-Cross the bridge |goto 44.15,60.52 < 20 |only if walking() and horde
+Cross the bridge |goto 44.15,60.52 < 20 |only if walking and horde
 Explore Hrydhal |achieve 10668/8 |goto 44.42,63.46 |only Horde
 step
-Follow the path |goto 34.24,49.26 < 20 |only if walking() and alliance
-Follow the path up |goto 35.08,47.32 < 20 |only if walking() and alliance
-Follow the path |goto 37.55,45.63 < 30 |only if walking() and alliance
-Follow the path |goto 38.74,45.24 < 30 |only if walking() and alliance
-Follow the path down |goto 39.10,41.02 < 30 |only if walking() and alliance
-Follow the path |goto 40.86,35.35 < 30 |only if walking() and alliance
-Cross the bridge |goto 38.18,33.04 < 20 |only if walking() and horde
+Follow the path |goto 34.24,49.26 < 20 |only if walking and alliance
+Follow the path up |goto 35.08,47.32 < 20 |only if walking and alliance
+Follow the path |goto 37.55,45.63 < 30 |only if walking and alliance
+Follow the path |goto 38.74,45.24 < 30 |only if walking and alliance
+Follow the path down |goto 39.10,41.02 < 30 |only if walking and alliance
+Follow the path |goto 40.86,35.35 < 30 |only if walking and alliance
+Cross the bridge |goto 38.18,33.04 < 20 |only if walking and horde
 Follow the path down |goto 39.06,33.53 < 20 |only if walking
 Follow the path down |goto 40.30,30.15 < 30 |only if walking
 Explore Maw of Nashal |achieve 10668/9	|goto 37.82,29.23
 step
-Follow the path down |goto 60.55,52.10 < 20 |only if walking() and horde
-Follow the road |goto 62.49,55.09 < 30 |only if walking() and horde
-Follow the path |goto 66.11,54.63 < 30 |only if walking() and horde
-Follow the path |goto 69.22,53.12 < 30 |only if walking() and horde
-Follow the path down |goto 72.14,51.88 < 20 |only if walking() and horde
-Follow the path |goto 72.14,59.37 < 20 |only if walking() and alliance
+Follow the path down |goto 60.55,52.10 < 20 |only if walking and horde
+Follow the road |goto 62.49,55.09 < 30 |only if walking and horde
+Follow the path |goto 66.11,54.63 < 30 |only if walking and horde
+Follow the path |goto 69.22,53.12 < 30 |only if walking and horde
+Follow the path down |goto 72.14,51.88 < 20 |only if walking and horde
+Follow the path |goto 72.14,59.37 < 20 |only if walking and alliance
 Follow the path |goto 72.77,57.09 < 30 |only if walking
 Explore Morheim |achieve 10668/10 |goto 78.29,57.01
 step
@@ -3761,7 +3761,7 @@ step
 _Congratulations!_
 You have earned the _Explore Stormheim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Suramar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Suramar",{
 condition_end="achieved(10669)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3815,7 +3815,7 @@ step
 _Congratulations!_
 You have earned the _Explore Suramar_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Explore Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Explore Val'sharah",{
 condition_end="achieved(10666)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3882,7 +3882,7 @@ step
 _Congratulations!_
 You have earned the _Explore Val'sharah_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Going Up",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Going Up",{
 condition_end="achieved(10627)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -3898,7 +3898,7 @@ step
 _Congratulations!_
 You have completed the _Going Up_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Higher Dimensional Learning",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Higher Dimensional Learning",{
 condition_end="achieved(11175)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -3964,7 +3964,7 @@ step
 _Congratulations!_
 You have earned the _Higher Dimensional Learning_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Underbelly Tycoon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Underbelly Tycoon",{
 condition_end="achieved(11066)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4120,7 +4120,7 @@ _Congratulations!_
 You have completed the _Underbelly Tycoon_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Treasures of Azsuna",{
 condition_end="achieved(11256)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4136,7 +4136,7 @@ step
 _Congratulations!_
 You have completed the _Treasures of Azsuna_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
 condition_end="achieved(11258)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4152,7 +4152,7 @@ step
 _Congratulations!_
 You have completed the _Treasures of Val'sharah_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Treasures of Highmountain",{
 condition_end="achieved(11257)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4168,7 +4168,7 @@ step
 _Congratulations!_
 You have completed the _Treasures of Highmountain_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Treasures of Stormheim",{
 condition_end="achieved(11259)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4184,7 +4184,7 @@ step
 _Congratulations!_
 You have completed the _Treasures of Stormheim_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Suramar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Treasures of Suramar",{
 condition_end="achieved(11260)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4201,7 +4201,7 @@ _Congratulations!_
 You have completed the _Treasures of Suramar_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\General\\Legion\\Brokenly Epic",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Legion\\Brokenly Epic",{
 condition_end="achieved(10765)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4212,14 +4212,14 @@ step
 For this, you will need to run _Mythic Dungeons_ for item level 840+ gear
 |tip Mythic dungeons need to be manually entered.
 Alternatively, the gear you recieve from World Quests steadily increases as your overall score rises
-Click here to load the "World Quest" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+Click here to load the "World Quest" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 The weekly world boss also has a chance for an 860 item level armor piece to drop
 Earn the _Brokenly Epic_ achievement |achieve 10765 |or
 step
 _Congratulations!_
 You have earned the _Brokenly Epic_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\General\\Legion\\Brokenly Superior",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Legion\\Brokenly Superior",{
 condition_end="achieved(10764)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4230,14 +4230,14 @@ step
 For this, you can run normal dungeons at level 110 to acquire 805 gear
 Press _"I"_ to queue up for a random dungeon
 Alternatively, World Quests will eventually reward you with 795+ gear
-Click here to open the "World Quest" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+Click here to open the "World Quest" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 The weekly world boss also has a chance for an 860 item level armor piece to drop
 Earn the _Brokenly Superior_ achievement |achieve 10764 |or
 step
 _Congratulations!_
 You have earned the _Brokenly Superior_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\General\\Wrath of the Lich King\\It's Over Nine Thousand!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Wrath of the Lich King\\It's Over Nine Thousand!",{
 condition_end="achieved(4496)",
 author="support@zygorguides.com",
 startlevel=80,
@@ -4253,7 +4253,7 @@ step
 _Congratulations!_
 You have earned the _It's Over Nine Thousand!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\General\\Wrath of the Lich King\\Needy",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Wrath of the Lich King\\Needy",{
 condition_end="achieved(559)",
 author="support@zygorguides.com",
 startlevel=80,
@@ -4267,7 +4267,7 @@ step
 _Congratulations!_
 You have have earned the _Needy_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\A Cast Above the Rest",{
 condition_end="achieved(10595)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4341,7 +4341,7 @@ label "Congrats_A_Cast_Above_the_Rest"
 _Congratulations!_
 You have earned the _A Cast Above the Rest_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Professions\\Fishing\\Bigger Fish to Fry",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\Bigger Fish to Fry",{
 condition_end="achieved(10596)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4350,7 +4350,7 @@ description="This guide will walk you through completing the \"Bigger Fish to Fr
 },[[
 step
 Earn the _A Cast Above the Rest_ achievement |condition achieved(10595)
-Click here to load the "A Cast Above the Rest" achievement guide |confirm |next "Zygor's Horde Achievement Guides\\Professions\\Fishing\\A Cast Above the Rest"
+Click here to load the "A Cast Above the Rest" achievement guide |confirm |next "Zygor's Achievements Guides\\Professions\\Fishing\\A Cast Above the Rest"
 step
 Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
 Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
@@ -4449,8 +4449,8 @@ Use the Frost Worm |use Frost Worm##133712
 Fish in the Water |cast Fishing##131474
 collect Coldriver Carp##133732 |achieve 10596/5 |goto 41.67,53.70
 step
-Cross the bridge |goto Stormheim/0 40.12,62.63 < 30 |only if walking() and alliance
-Follow the path |goto Stormheim/0 42.97,58.94 < 30 |only if walking() and alliance
+Cross the bridge |goto Stormheim/0 40.12,62.63 < 30 |only if walking and alliance
+Follow the path |goto Stormheim/0 42.97,58.94 < 30 |only if walking and alliance
 Follow the path down |goto Stormheim/0 43.32,59.71 < 20 |only if walking
 Continue down the path |goto Stormheim/0 43.28,61.11 < 20 |only if walking
 Use Arcane Lures |use Arcane Lure##139175
@@ -4558,7 +4558,360 @@ step
 _Congratulations!_
 You have earned the _Bigger Fish to Fry_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Cataclysm\\20 Dungeon Quests Completed",{
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Everything Tastes Better",{
+condition_end="achieved(10593)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Everything","Tastes","Better"},
+description="This guide will walk you through completing the \"Everything Tastes Better\" Achievement.",
+},[[
+step
+You will then need to either create 6 Crispy Bacon if you have the recipe, or buy them from the AH
+collect 6 Crispy Bacon##133681
+step
+Use the 6 Crispy Bacons |use Crispy Bacon##133681
+|tip Make sure you DO NOT already have a food buff on.
+Obtain a 6 hour "Yummy Bacon" buff |achieve 10593
+step
+_Congratulations!_
+You have earned the _Everything Tastes Better_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Legion Cooking",{
+condition_end="achieved(10589)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Legion","Cooking"},
+description="This guide will walk you through completing the \"Legion Cooking\" Achievement.",
+},[[
+step
+Get your cooking to the new max level "800"
+|tip Check out our Cooking guide to accomplish this.
+Obtain 800 skill points in Cooking |achieve 10589
+step
+_Congratulations!_
+You have earned the _Legion Cooking_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\The Legion Menu",{
+condition_end="achieved(10762)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Legion","Menu"},
+description="This guide will walk you through completing the \"Legion Cooking\" Achievement.",
+},[[
+step
+For this achievement you will need to cook up 15 of the Legion Cooking recipes
+|tip Check out our Legion Cooking Quest Line guide to obtain the first few recipes
+confirm
+step
+After that you will need to research through talking to Nomi and place Cooking Work Orders
+|tip You may choose any recipe to research, once choosen place the work orders in with the materials that are within that recipe.
+|tip Once the Work Order is finished there will be a chance to have that recipe inside.
+Cook 15 Legion recipes |achieve 10762
+step
+_Congratulations!_
+You have earned the _The Legion Menu_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Hot Swapper",{
+condition_end="achieved(10587)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Hot","Swapper"},
+description="This guide will walk you through completing the \"Hot Swapper\" Achievement.",
+},[[
+step
+You will first need to obtain the toy JewelCraft
+This toy can either be made by a Jewelcrafter or bought from the AH
+collect JewelCraft##130251
+|tip Once obtained add it to your toy collection
+step
+Open your toy box and use your newly obtained toy "JewelCraft" to start the game
+|tip Press alt + z to hide your UI, this will make playing the game easier.
+|tip Also zoom in to first person.
+Once the game is open the mechanics are similar to Bejeweled
+|tip Simply match the same icons together.
+Achieve 250,000 points in a single Jewelcrafting minigame |achieve 10587
+step
+_Congratulations!_
+You have earned the _Hot Swapper_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\The Shortest Distance",{
+condition_end="achieved(10588)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Shortest","Distance"},
+description="This guide will walk you through completing the \"The Shortest Distance\" Achievement.",
+},[[
+step
+You will first need to obtain the toy Blingtron's Circuit Design Tutorial
+This toy can either be made by Engineers or bought from the AH
+collect Blingtron's Circuit Design Tutorial##132518
+|tip Once obtained add it to your toy collection
+step
+Open your toy box and use your newly obtained toy "Blingtron's Circuit Design Tutorial" to start the game
+|tip Press alt + z to hide your UI, this will make playing the game easier.
+|tip Also zoom in to first person.
+This achievement is rather difficult, but a good tip is to remember that corners only have 2 lines so try to start from there.
+Reach level 20 in the Blingtron's Circuit Design Tutorial minigame |achieve 10588
+step
+_Congratulations!_
+You have earned the _The Shortest Distance_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Legion Curator",{
+condition_end="achieved(10604)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Legion","Curator"},
+description="This guide will walk you through completing the \"Legion Curator\" Achievement.",
+},[[
+step
+Restore and display pristine versions of all Legion Artifacts
+|tip These are randomly solved with Archaeology so don't give up!
+Pristine Imp's Cup |achieve 10604/1
+Pristine Flayed Skin Chronicle |achieve 10604/2
+Pristine Malformed Abyssal |achieve 10604/3
+Pristine Orb of Inner Chaos |achieve 10604/4
+Pristine Houndstooth Hauberk |achieve 10604/5
+Pristine Violetglass Vessel |achieve 10604/6
+Pristine Inert Leystone Charm |achieve 10604/7
+Pristine Quietwine Vial |achieve 10604/8
+Pristine Pre-War Highborne Tapestry |achieve 10604/9
+Pristine Nobleman's Letter Opener |achieve 10604/10
+Pristine Trailhead Drum |achieve 10604/11
+Pristine Moosebone Fish-Hook |achieve 10604/12
+Pristine Hand-Smoothed Pyrestone |achieve 10604/13
+Pristine Drogbar Gem-Roller |achieve 10604/14
+Pristine Stonewood Bow |achieve 10604/15
+step
+_Congratulations!_
+You have earned the _Legion Curator_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Surveying the Land",{
+condition_end="achieved(10601)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Surveying","the","Land"},
+description="This guide will walk you through completing the \"Surveying the Land\" Achievement.",
+},[[
+step
+For this achievement you will have to complete 1 out of the 13 Legion Archaeoglogy quest lines
+|tip You will need to be level 110 before being able to start these quest lines.
+Check out our Legion Archaeology Quest Line guide to help complete each quest line |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to see your progress on this achievement |confirm |or
+|only if not achieved(10601)
+step
+Crystalline Eye of Undravius |achieve 10601/1
+Starlight Beacon |achieve 10601/2
+Spear of Rethu |achieve 10601/3
+Crown Jewels of Suramar |achieve 10601/4
+Imp Generator |achieve 10601/5
+Black Rook Key |achieve 10601/6
+Wyrmy Tunkins |achieve 10601/7
+Shard of Sciallax |achieve 10601/8
+Prizerock Neckband |achieve 10601/9
+Blood of Young Mannoroth |achieve 10601/10
+Key of Nar'thalas Academy |achieve 10601/11
+Purple Hills of Mac'Aree |achieve 10601/12
+Spirit of Eche'ro |achieve 10601/13
+|only if not achieved(10601)
+step
+Obtain one of the rare archaeological finds below |achieve 10601
+step
+_Congratulations!_
+You have earned the _Surveying the Land_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\This Side Up",{
+condition_end="achieved(10602)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"This","Side","Up"},
+description="This guide will walk you through completing the \"A Keen Eye\" Achievement.",
+},[[
+step
+For this achievement you will have to complete 8 out of the 13 Legion Archaeoglogy quest lines
+|tip You will need to be level 110 before being able to start these quest lines.
+|tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 16 weeks to complete.
+Check out our Legion Archaeology Quest Line guide to help complete each quest line |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to see your progress on this achievement |confirm |or
+|only if not achieved(10602)
+step
+Crystalline Eye of Undravius |achieve 10602/1
+Starlight Beacon |achieve 10602/2
+Spear of Rethu |achieve 10602/3
+Crown Jewels of Suramar |achieve 10602/4
+Imp Generator |achieve 10602/5
+Black Rook Key |achieve 10602/6
+Wyrmy Tunkins |achieve 10602/7
+Shard of Sciallax |achieve 10602/8
+Prizerock Neckband |achieve 10602/9
+Blood of Young Mannoroth |achieve 10602/10
+Key of Nar'thalas Academy |achieve 10602/11
+Purple Hills of Mac'Aree |achieve 10602/12
+Spirit of Eche'ro |achieve 10602/13
+|only if not achieved(10602)
+step
+Obtain eight of the rare archaeological finds below |achieve 10602
+step
+_Congratulations!_
+You have earned the _This Side Up_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\A Keen Eye",{
+condition_end="achieved(10603)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"A","Keen","Eye"},
+description="This guide will walk you through completing the \"A Keen Eye\" Achievement.",
+},[[
+step
+For this achievement you will have to complete the 13 Legion Archaeology quest lines
+|tip You will need to be level 110 before being able to start these quest lines.
+|tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 26 weeks to complete.
+Check out our Legion Archaeology Quest Line guide to help complete each quest line |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here to see your progress on this achievement |confirm |or
+|only if not achieved(10603)
+step
+Crystalline Eye of Undravius |achieve 10603/1
+Starlight Beacon |achieve 10603/2
+Spear of Rethu |achieve 10603/3
+Crown Jewels of Suramar |achieve 10603/4
+Imp Generator |achieve 10603/5
+Black Rook Key |achieve 10603/6
+Wyrmy Tunkins |achieve 10603/7
+Shard of Sciallax |achieve 10603/8
+Prizerock Neckband |achieve 10603/9
+Blood of Young Mannoroth |achieve 10603/10
+Key of Nar'thalas Academy |achieve 10603/11
+Purple Hills of Mac'Aree |achieve 10603/12
+Spirit of Eche'ro |achieve 10603/13
+|only if not achieved(10603)
+step
+Obtain all of the rare archaeological finds below |achieve 10603
+step
+_Congratulations!_
+You have earned the _A Keen Eye_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\The Dwarven Dream",{
+condition_end="achieved(10606)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"The","Dwarven","Dream"},
+description="This guide will walk you through completing the \"The Dwarven Dream\" Achievement.",
+},[[
+step
+For this achievement you will need to complete the 5 Archaeology quest lines related to Brann Bronzebeard
+|tip You will need to be level 110 before being able to start these quest lines.
+|tip Only one Archaeology quest line is up every 2 weeks, so this achievement will take a minimum of 10 weeks to complete.
+|tip There are 13 quest lines in total so you may not see one of these for several rotations.
+|confirm
+step
+Complete the quest line beginning with _Fragments of the Fjord_ |achieve 10603/5
+Complete the quest line beginning with _Bits and Pieces_ |achieve 10603/1
+Complete the quest line beginning with _Fel Fragments_ |achieve 10603/12
+Complete the quest line beginning with _Out of the Frying Pan_ |achieve 10603/7
+Complete the quest line beginning with _One Step Closer_ |achieve 10603/10
+Check out our Legion Archaeology Quest Line guide to help complete each quest line |confirm |next "Zygor's Profession Guides\\Archaeology\\Quest Guides\\Legion Archaeology Quest Line" |or
+Click here once you have completed all 5 of these quest lines |confirm |or
+step
+Once you have aquired the 5 pieces for the Titan Disk Bann will give you a follow up quest
+|tip This quest is given to you as soon as you get the last of the 5 pieces.
+talk Brann Bronzebeard##103484
+accept The Relic Renewed##41170 |goto Suramar/0 27.0,70.0 |or
+accept The Relic Renewed##41170 |goto Azsuna/0 39.0,38.6 |or
+accept The Relic Renewed##41170 |goto Stormheim/0 52.2,52.6 |or
+|tip This quest will appear at whichever quest line you last finished.
+step
+Observe Brann |q 41170/1
+|tip Simple stand still and watch as Brann assembles the artifact.
+step
+talk Brann Bronzebeard##103484
+turnin The Relic Renewed##41170 |goto Suramar/0 27.0,70.0 |or
+turnin The Relic Renewed##41170 |goto Azsuna/0 39.0,38.6 |or
+turnin The Relic Renewed##41170 |goto Stormheim/0 52.2,52.6 |or
+step
+Help Brann find all the pieces for his titan relic |achieve 10606
+step
+_Congratulations!_
+You have earned the _The Dwarven Dream_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Handle With Care",{
+condition_end="achieved(10605)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Handle","With","Care"},
+description="This guide will walk you through completing the \"Handle With Care\" Achievement.",
+},[[
+step
+Restore one of each of the common Legion Artifacts
+|tip These are randomly solved with Archaeology so don't give up!
+Imp's Cup |achieve 10605/1
+Flayed Skin Chronicle |achieve 10605/2
+Malformed Abyssal |achieve 10605/3
+Orb of Inner Chaos |achieve 10605/4
+Houndstooth Hauberk |achieve 10605/5
+Violetglass Vessel |achieve 10605/6
+Inert Leystone Charm |achieve 10605/7
+Quietwine Vial |achieve 10605/8
+Pre-War Highborne Tapestry |achieve 10605/9
+Nobleman's Letter Opener |achieve 10605/10
+Trailhead Drum |achieve 10605/11
+Moosebone Fish-Hook |achieve 10605/12
+Hand-Smoothed Pyrestone |achieve 10605/13
+Drogbar Gem-Roller |achieve 10605/14
+Stonewood Bow |achieve 10605/15
+step
+_Congratulations!_
+You have earned the _Handle With Carer_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Getting Your Hands Dirty",{
+condition_end="achieved(10607)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Getting","Your","Hands","Dirty"},
+description="This guide will walk you through completing the \"Getting Your Hands Dirty\" Achievement.",
+},[[
+step
+For this achievement your will have to complete 50 Legion Digsites
+Digsites in Legion appear in only one zone in 2 week periods
+|tip These Digsites are associated with the Archaeology Quest Lines that cycle through every 2 weeks.
+Complete #50# Legion Digsites |achieve 10607
+step
+_Congratulations!_
+You have earned the _Getting Your Hands Dirty_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Sifting Through the Sand",{
+condition_end="achieved(10608)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Sifting","Through","the","Sand"},
+description="This guide will walk you through completing the \"Sifting Through the Sand\" Achievement.",
+},[[
+step
+For this achievement your will have to complete 100 Legion Digsites
+Digsites in Legion appear in only one zone in 2 week periods
+|tip These Digsites are associated with the Archaeology Quest Lines that cycle through every 2 weeks.
+Complete #100# Legion Digsites |achieve 10608
+step
+_Congratulations!_
+You have earned the _Sifting Through the Sand_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\No Stone Unturned",{
+condition_end="achieved(10609)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"No","Stone","Unturned"},
+description="This guide will walk you through completing the \"No Stone Unturned\" Achievement.",
+},[[
+step
+For this achievement your will have to complete 250 Legion Digsites
+Digsites in Legion appear in only one zone in 2 week periods
+|tip These Digsites are associated with the Archaeology Quest Lines that cycle through every 2 weeks.
+Complete #250# Legion Digsites |achieve 10609
+step
+_Congratulations!_
+You have earned the _No Stone Unturned_ achievement
+]])
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Cataclysm\\20 Dungeon Quests Completed",{
 condition_end="achieved(4957)",
 author="support@zygorguides.com",
 startlevel=1,
@@ -4576,7 +4929,7 @@ step
 _Congratulations!_
 You have earned the _20 Dungeon Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Cataclysm\\Justly Rewarded",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Cataclysm\\Justly Rewarded",{
 condition_end="achieved(5752)",
 author="support@zygorguides.com",
 startlevel=1,
@@ -4592,7 +4945,7 @@ step
 _Congratulations!_
 You have earned the _Justly Reward_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\50 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\50 World Quests Completed",{
 condition_end="achieved(11126)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4601,14 +4954,14 @@ description="This guide will walk you through completing the \"50 World Quests C
 },[[
 step
 You will need to do the following to complete 50 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _50 World Quests Completed_ achievement |achieve 11126
 step
 _Congratulations!_
 You have earned the _50 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\200 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\200 World Quests Completed",{
 condition_end="achieved(11127)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4617,14 +4970,14 @@ description="This guide will walk you through completing the \"200 World Quests 
 },[[
 step
 You will need to do the following to complete 200 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _200 World Quests Completed_ achievement |achieve 11127
 step
 _Congratulations!_
 You have earned the _200 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\500 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\500 World Quests Completed",{
 condition_end="achieved(11128)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4633,14 +4986,14 @@ description="This guide will walk you through completing the 500 World Quests Co
 },[[
 step
 You will need to do the following to complete 500 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _500 World Quests Completed_ achievement |achieve 11128
 step
 _Congratulations!_
 You have earned the _500 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\1000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\1000 World Quests Completed",{
 condition_end="achieved(11129)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4649,14 +5002,14 @@ description="This guide will walk you through completing the \"1000 World Quests
 },[[
 step
 You will need to do the following to complete 1,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _1,000 World Quests Completed_ achievement |achieve 11129
 step
 _Congratulations!_
 You have earned the _1,000 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\2500 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\2500 World Quests Completed",{
 condition_end="achieved(11130)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4665,14 +5018,14 @@ description="This guide will walk you through completing the \"2500 World Quests
 },[[
 step
 You will need to do the following to complete 2,500 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _2,500 World Quests Completed_ achievement |achieve 11130
 step
 _Congratulations!_
 You have earned the _2,500 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\5000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\5000 World Quests Completed",{
 condition_end="achieved(11131)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4681,14 +5034,14 @@ description="This guide will walk you through completing the \"5000 World Quests
 },[[
 step
 You will need to do the following to complete 5,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _5,000 World Quests Completed_ achievement |achieve 11131
 step
 _Congratulations!_
 You have earned the _5,000 World Quests Completed_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\10,000 World Quests Completed",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\10,000 World Quests Completed",{
 condition_end="achieved(11132)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4697,15 +5050,15 @@ description="This guide will walk you through completing the \"10,000 World Ques
 },[[
 step
 You will need to do the following to complete 10,000 World Quests:
-Click here to unlock World Quests |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to unlock World Quests |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Earn the _10,000 World Quests Completed_ achievement |achieve 11132
 step
 _Congratulations!_
 You have earned the _10,000 World Quests Completed_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\A Magic Contribution",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\A Magic Contribution",{
 condition_end="achieved(11731)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4724,7 +5077,7 @@ You have earned the _A Magic Contribution_ achievement
 ]])
 ZGV.BETAEND()
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\A Magnificent Contribution",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\A Magnificent Contribution",{
 condition_end="achieved(11732)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4742,7 +5095,7 @@ _Congratulations!_
 You have earned the _A Magnificent Contribution_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Ain't No Mountain High Enough",{
 condition_end="achieved(10059)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4760,13 +5113,13 @@ The Rivermane Tribe |achieve 10059/4
 The Bloodtotem Tribe |achieve 10059/5
 Secrets of Highmountain |achieve 10059/6
 Huln's War |achieve 10059/7
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
 step
 _Congratulations!_
 You have completed the _Ain't No Mountain High Enough_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Assume Command",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Assume Command",{
 condition_end="achieved(11736)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4784,7 +5137,7 @@ _Congratulations!_
 You have earned the _Assume Command_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Azsuna Matata",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Azsuna Matata",{
 condition_end="achieved(10763)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4800,13 +5153,13 @@ Defending Azure Wing Repose |achieve 10763/2
 Azsuna versus Azshara |achieve 10763/3
 Against the Giants |achieve 10763/4
 Mak'rana and the Fate of the Queen's Reprisal |achieve 10763/5
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
 step
 _Congratulations!_
 You have completed the _Azsuna Matata_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Disrupting the Nether",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Disrupting the Nether",{
 condition_end="achieved(11737)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4824,7 +5177,7 @@ _Congratulations!_
 You have earned the _Disrupting the Nether_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Good Suramaritan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Good Suramaritan",{
 condition_end="achieved(11124)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4846,12 +5199,12 @@ Moon Guard Stronghold |achieve 11124/8
 Tidying Tel'anor |achieve 11124/9
 Eminent Grow-main |achieve 11124/10
 Jandvik's Jarl |achieve 11124/11
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 _Congratulations!_
 You have completed the _Good Suramaritan_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Harbinger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Harbinger",{
 condition_end="achieved(11240)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4901,7 +5254,7 @@ step
 _Congratulations!_
 You have earned the _Harbinger_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Hatchling of the Talon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Hatchling of the Talon",{
 condition_end="achieved(10774)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -4920,7 +5273,7 @@ step
 _Congratulations!_
 You have completed the _Hatchling of the Talon_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Insurrection",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Insurrection",{
 condition_end="achieved(11340)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4939,13 +5292,13 @@ March on Suramar |achieve 11340/6
 Elisande's Retort |achieve 11340/7
 As Strong As Our Will |achieve 11340/8
 Breaking the Nighthold |achieve 11340/9
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 _Congratulations!_
 You have earned the _Insurrection_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\It'll Nether Happen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\It'll Nether Happen",{
 condition_end="achieved(11738)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4963,7 +5316,7 @@ _Congratulations!_
 You have earned the _It'll Nether Happen_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Level 110",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Level 110",{
 condition_end="achieved(10671)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4978,7 +5331,7 @@ step
 _Congratulations!_
 You have earned the _Level 110_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Leyline Bling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Leyline Bling",{
 condition_end="achieved(10756)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -4988,7 +5341,7 @@ description="This guide will walk you through completing the \"Leyline Bling\" A
 step
 To earn this achievement, you will need to activate _8_ Leylines found in Suramar
 To do so, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Leylines Activated:
 Anora Hollow |achieve 10756/1
 Elor'shan |achieve 10756/2
@@ -5002,7 +5355,7 @@ step
 _Congratulations!_
 You have earned the _Leyline Bling_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Lock, Stock and Two Smoking Goblins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Lock, Stock and Two Smoking Goblins",{
 condition_end="achieved(11232)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5011,7 +5364,7 @@ description="This guide will walk you through completing the \"Lock, Stock and T
 },[[
 step
 In order to complete this achievement, you will need to have completed the _What a Ripoff!_ achievement
-Click here to load the "What a Ripoff!" guide |confirm |next "Zygor's Horde Achievement Guides\\Quests\\Legion\\What a Ripoff!"
+Click here to load the "What a Ripoff!" guide |confirm |next "Zygor's Achievements Guides\\Quests\\Legion\\What a Ripoff!"
 |tip You may need a group of 2 or 3 in order to kill the objective enemies.
 talk Gazrix Gearlock##110018
 accept Time to Collect##43331 |goto Dalaran L/10 50.16,22.67
@@ -5033,7 +5386,7 @@ step
 _Congratulations!_
 You have completed the _Lock, Stock and Two Smoking Goblins_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Loremaster of Legion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Loremaster of Legion",{
 condition_end="achieved(11157)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5043,28 +5396,28 @@ description="This guide will walk you through completing the \"Loremaster of Leg
 step
 Earn the _Azsuna Matata_ achievement |achieve 10763
 |tip Use the "Azsuna" leveling guide to accomplish this.
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
 step
 Earn the _That's Val'sharah Folks!_ achievement |achieve 10698
 |tip Use the "Val'sharah" leveling guide to accomplish this.
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
 step
 Earn the _Vrykul Story, Bro_ achievement |achieve 10790
 |tip Use the "Stormheim" leveling guide to accomplish this.
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
 step
 Earn the _Ain't No Mountain High Enough_ achievement |achieve 10059
 |tip Use the "Highmountain" leveling guide to accomplish this.
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
 step
 Earn the _Good Suramaritan_ achievement |achieve 11124
 |tip Use the "Suramar" leveling guide to accomplish this.
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 step
 _Congratulations!_
 You have earned the _Loremaster of Legion_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Nightfallen But Not Forgotten",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Nightfallen But Not Forgotten",{
 condition_end="achieved(10617)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5073,13 +5426,13 @@ description="This guide will walk you through completing the \"Nightfallen But N
 },[[
 step
 Refer to the Suramar guide to complete this achievement
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Nightfallen But Not Forgotten_ achievement |achieve 10617
 step
 _Congratulations!_
 You have earned the _Nightfallen But Not Forgotten_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\No Shellfish Endeavor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\No Shellfish Endeavor",{
 condition_end="achieved(11427)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5093,12 +5446,12 @@ _Stormheim_ Now That's Just Clawful! |achieve 11427/1
 _Suramar_ Claws for Alarm! |achieve 11427/3
 _Highmountain_ Oh, the Clawdacity! |achieve 11427/2
 If the quests are available, refer to our World Quest guide
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 _Congratulations!_
 You have earned the _No Shellfish Endeavor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Now You're Thinking With Portals",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Now You're Thinking With Portals",{
 condition_end="achieved(11125)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5108,13 +5461,13 @@ description="This guide will walk you through completing the \"Now You're Thinki
 step
 To earn this achievement, you will need to activate _9_ portals in Suramar
 To do so, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Now You're Thinking With Portals_ achievement |achieve 11125
 step
 _Congratulations!_
 You have earned the _Now You're Thinking With Portals_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Pillars of Creation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Pillars of Creation",{
 condition_end="achieved(10877)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5129,10 +5482,10 @@ Aegis of Aggramar |achieve 10877/1
 Tidestone of Golganneth |achieve 10877/2
 Hammer of Khaz'goroth |achieve 10877/4
 Tears of Elune |achieve 10877/5
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
 Click here to continue |confirm
 step
 Once the leveling guides are completed, you will have the quest to attain the Pillar of Creation
@@ -5148,7 +5501,7 @@ Click here to load the "Darkheart Thicket" dungeon guide |confirm |next "Zygor's
 Click here to load the "Eye of Azshara" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
 step
 For the Eye of Aman'Thul, you will need to complete the Suramar guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 You will need to defeat Gul'dan in Nighthold to complete the questline
 Eye of Aman'Thul |achieve 10877/3
 step
@@ -5156,7 +5509,7 @@ _Congratulations!_
 You have earned the _Pillars of Creation_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Take Command",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Take Command",{
 condition_end="achieved(11735)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5174,7 +5527,7 @@ _Congratulations!_
 You have earned the _Take Command_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Tehd & Marius' Excellent Adventure",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Tehd & Marius' Excellent Adventure",{
 condition_end="achieved(11186)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5212,7 +5565,7 @@ step
 _Congratulations!_
 You have earned the _Tehd & Marius' Excellent Adventure_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\That's Val'sharah Folks!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\That's Val'sharah Folks!",{
 condition_end="achieved(10698)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5230,13 +5583,13 @@ Archdruid of the Claw |achieve 10698/4
 Into the Nightmare |achieve 10698/5
 All Nightmare Long |achieve 10698/6
 Archdruid of Lore |achieve 10698/7
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
 step
 _Congratulations!_
 You have earned the _That's Val'sharah Folks!_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\They See Me Rolling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\They See Me Rolling",{
 condition_end="achieved(11607)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5249,13 +5602,13 @@ This achievement is earned by delivering a Barrel of Storm Brew without taking a
 |tip This must be completed during the world quest "Rolling Thunder."
 |tip Use our world quest guide to complete this quest.
 |tip Generally speaking, stay to the left side of the path to avoid most of the riders.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 _Congratulations!_
 You have earned the _They See Me Rolling_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Variety is the Spice of Life",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Variety is the Spice of Life",{
 condition_end="achieved(11189)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5265,12 +5618,12 @@ description="This guide will walk you through completing the \"Variety is the Sp
 step
 Complete #100# different World Quests |achieve 11189 |or
 |tip Use the "World Quests" guide to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 step
 _Congratulations!_
 You have earned the _Variety is the Spice of Life_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Vrykul Story, Bro",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Vrykul Story, Bro",{
 condition_end="achieved(10790)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5289,12 +5642,12 @@ The Trial of Valor |achieve 10790/5
 To Helheim and Back |achieve 10790/6
 Secrets of the Shieldmaidens |achieve 10790/7
 The Champion of Stormheim |achieve 10790/8
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
 step
 _Congratulations!_
 You have completed the _Vrykul Story, Bro_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\What a Ripoff!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\What a Ripoff!",{
 condition_end="achieved(10793)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -5377,7 +5730,7 @@ step
 _Congratulations!_
 You have completed the _What a Ripoff!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Why Can't I Hold All This Mana?",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Why Can't I Hold All This Mana?",{
 condition_end="achieved(11133)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5440,14 +5793,14 @@ Use the Enchanted Burial Urn##140326 |use Enchanted Burial Urn##140326
 Click here to continue |confirm
 step
 To earn the rest of the unlockable Mana, refer to our Suramar Guide
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Earn the _Why Can't I Hold All This Mana?_ achievement |achieve 11133
 step
 _Congratulations!_
 You have earned the _Why Can't I Hold All This Mana?_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Crate Expectations",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Crate Expectations",{
 condition_end="achieved(11681)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5481,7 +5834,7 @@ step
 _Congratulations!_
 You have earned the _Crate Expectations_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Quests\\Legion\\Defender of the Broken Isles",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Defender of the Broken Isles",{
 condition_end="achieved(11544)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5500,9 +5853,24 @@ step
 _Congratulations!_
 You have earned the _Defender of the Broken Isles_ achievement
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Champions of Legionfall",{
+condition_end="achieved(11846)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Champions","of","Legionfall"},
+description="This guide will walk you through completing the \"Champions of Legionfall\" Achievement.",
+},[[
+step
+For this achievement you will need to complete the quest Champions of Legionfall
+Check out our Class Hall guides to accomplish this
+Complete "Champions of Legionfall" |achieve 11846
+step
+_Congratulations!_
+You have earned the _Champions of Legionfall_ achievement
+]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\A Change In Scenery",{
-condition_end="achieved(10742)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\A Change In Scenery",{
+condition_end="achieved(10817)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
@@ -5512,14 +5880,14 @@ description="This guide will walk you through completing the \"A Change In Scene
 step
 For this achievement, you will need take Spellblade Aluriel to 3 locations on seperate lockouts, defeating her in each
 That means that it will take 3 runs to earn this achievement minimum
-The Shal'dorei Terrace |achieve 10742/1
-Astromancer's Rise |achieve 10742/2
-The Shattered Walkway |achieve 10742/3
+The Shal'dorei Terrace |achieve 10817/1
+Astromancer's Rise |achieve 10817/2
+The Shattered Walkway |achieve 10817/3
 step
 _Congratulations!_
 You have earned the _A Change In Scenery_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Arcing Aqueducts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Arcing Aqueducts",{
 condition_end="achieved(10829)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5537,7 +5905,7 @@ step
 _Congratulations!_
 You have earned the _Arcing Aqueducts_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Betrayer's Rise",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Betrayer's Rise",{
 condition_end="achieved(10839)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5554,7 +5922,7 @@ step
 _Congratulations!_
 You have earned the _Betrayer's Rise_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Boneafide Tri Tip",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Boneafide Tri Tip",{
 condition_end="achieved(11386)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5580,7 +5948,7 @@ step
 _Congratulations!_
 You have earned the _Boneafide Tri Tip_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Buggy Fight",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Buggy Fight",{
 condition_end="achieved(10555)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5600,7 +5968,7 @@ step
 _Congratulations!_
 You have earned the _Buggy Fight_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Cage Rematch",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Cage Rematch",{
 condition_end="achieved(10678)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5617,7 +5985,7 @@ step
 _Congratulations!_
 You have earned the _Cage Rematch_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\The Chosen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\The Chosen",{
 condition_end="achieved(11387)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5633,7 +6001,22 @@ step
 _Congratulations!_
 You have earned the _The Chosen_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Darkbough",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Cutting Edge: Gul'dan",{
+condition_end="achieved(11192)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Cutting","Edge","Gul'dan"},
+description="This guide will walk you through completing the \"Cutting Edge: Gul'dan\" Achievement.",
+},[[
+step
+Enter The Nighthold raid |goto Suramar/0 44.15,59.74
+Defeat Gul'dan in The Nighthold on Mythic difficulty, before the opening of the Tomb of Sargeras |achieve 11192
+step
+_Congratulations!_
+You have earned the _Cutting Edge: Gul'dan_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Darkbough",{
 condition_end="achieved(10818)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5653,7 +6036,7 @@ step
 _Congratulations!_
 You have earned the _Darkbough_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Elementalry!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Elementalry!",{
 condition_end="achieved(10851)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5678,7 +6061,7 @@ step
 _Congratulations!_
 You have earned the _Elementalry!_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Fruit of All Evil",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Fruit of All Evil",{
 condition_end="achieved(10754)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5696,7 +6079,7 @@ step
 _Congratulations!_
 You have earned the _Fruit of All Evil_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Gluten Free",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Gluten Free",{
 condition_end="achieved(10742)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5713,7 +6096,7 @@ step
 _Congratulations!_
 You have earned the _Gluten Free_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Grand Opening",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Grand Opening",{
 condition_end="achieved(10697)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5732,7 +6115,7 @@ step
 _Congratulations!_
 You have earned the _Grand Opening_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\I Attack the Darkness",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\I Attack the Darkness",{
 condition_end="achieved(10755)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5752,8 +6135,8 @@ step
 _Congratulations!_
 You have earned the _I Attack the Darkness_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\I've Got My Eyes On You",{
-condition_end="achieved(10699)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\I've Got My Eyes On You",{
+condition_end="achieved(10696)",
 author="support@zygorguides.com",
 startlevel=110,
 endlevel=110,
@@ -5764,12 +6147,12 @@ step
 For this achievement, DPS down the eyes to 30% before letting them duplicate
 Kill the higher health ones that spawn immediately after the duplication
 Break bonds as fast as possible to avoid AoE daamage
-Defeat Gul'dan in The Nighthold on Normal difficulty or higher, after defeating 16 Eyes of Gul'dan within 3 seconds |achieve 10699
+Defeat Gul'dan in The Nighthold on Normal difficulty or higher, after defeating 16 Eyes of Gul'dan within 3 seconds |achieve 10696
 step
 _Congratulations!_
 You have earned the _I've Got My Eyes On You_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Imagined Dragons World Tour",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Imagined Dragons World Tour",{
 condition_end="achieved(10663)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5791,7 +6174,7 @@ step
 _Congratulations!_
 You have earned the _Imagined Dragons World Tour_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Infinitesimal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Infinitesimal",{
 condition_end="achieved(10699)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5814,7 +6197,7 @@ step
 _Congratulations!_
 You have earned the _Infinitesimal_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Cenarius",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Cenarius",{
 condition_end="achieved(10826)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5831,7 +6214,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Cenarius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Chronomatic Anomaly",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Chronomatic Anomaly",{
 condition_end="achieved(10842)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5846,7 +6229,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Chronomatic Anomaly_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Dragons of Nightmare",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Dragons of Nightmare",{
 condition_end="achieved(10825)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5863,7 +6246,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Dragons of Nightmare_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Elerethe Renferal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Elerethe Renferal",{
 condition_end="achieved(10822)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5880,7 +6263,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Elerethe Renferal_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Grand Magistrix Elisande",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Grand Magistrix Elisande",{
 condition_end="achieved(10849)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5895,7 +6278,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Grand Magistrix Elisande_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Guarm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Guarm",{
 condition_end="achieved(11397)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5912,22 +6295,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Guarm_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Gul'dan",{
-condition_end="achieved(11192)",
-author="support@zygorguides.com",
-startlevel=110,
-endlevel=110,
-keywords={"Mythic","Gul'dan"},
-description="This guide will walk you through completing the \"Mythic: Gul'dan\" Achievement.",
-},[[
-step
-Enter The Nighthold raid |goto Suramar/0 44.15,59.74
-Defeat Gul'dan in The Nighthold on Mythic difficulty, before the opening of the Tomb of Sargeras |achieve 11192
-step
-_Congratulations!_
-You have earned the _Mythic: Gul'dan_ achievement
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Helya",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Helya",{
 condition_end="achieved(11398)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5944,7 +6312,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Helya_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: High Botanist Tel'arn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: High Botanist Tel'arn",{
 condition_end="achieved(10846)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5959,7 +6327,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: High Botanist Tel'arn_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Il'gynoth",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Il'gynoth",{
 condition_end="achieved(10823)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5976,7 +6344,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Il'gynoth_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Krosus",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Krosus",{
 condition_end="achieved(10848)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -5991,7 +6359,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Krosus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Nythendra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Nythendra",{
 condition_end="achieved(10821)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6008,7 +6376,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Nythendra_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Odyn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Odyn",{
 condition_end="achieved(11396)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6025,7 +6393,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Odyn_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Skorpyron",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Skorpyron",{
 condition_end="achieved(10840)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6040,7 +6408,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Skorpyron_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Spellblade Aluriel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Spellblade Aluriel",{
 condition_end="achieved(10844)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6055,7 +6423,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Spellblade Aluriel_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Star Augur Etraeus",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Star Augur Etraeus",{
 condition_end="achieved(10845)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6070,7 +6438,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Star Augur Etraeus_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Tichondrius",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Tichondrius",{
 condition_end="achieved(10847)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6085,7 +6453,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Tichondrius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Trilliax",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Trilliax",{
 condition_end="achieved(10843)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6100,7 +6468,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Trilliax_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Ursoc",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Ursoc",{
 condition_end="achieved(10824)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6117,7 +6485,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Ursoc_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Xavius",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Mythic: Xavius",{
 condition_end="achieved(10827)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6134,7 +6502,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Xavius_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Nightspire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Nightspire",{
 condition_end="achieved(10838)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6153,7 +6521,7 @@ step
 _Congratulations!_
 You have earned the _Nightspire_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Not For You",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Not For You",{
 condition_end="achieved(10704)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6168,7 +6536,7 @@ step
 _Congratulations!_
 You have earned the _Not For You_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Patient Zero",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Patient Zero",{
 condition_end="achieved(11377)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6189,7 +6557,7 @@ step
 _Congratulations!_
 You have earned the _Patient Zero_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Rift of Aln",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Rift of Aln",{
 condition_end="achieved(10820)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6206,7 +6574,7 @@ step
 _Congratulations!_
 You have earned the _Rift of Aln_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Royal Athenaeum",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Royal Athenaeum",{
 condition_end="achieved(10837)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6225,7 +6593,7 @@ step
 _Congratulations!_
 You have earned the _Royal Athenaeum_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Scare Bear",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Scare Bear",{
 condition_end="achieved(10753)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6242,7 +6610,7 @@ step
 _Congratulations!_
 You have earned the _Scare Bear_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Took the Red Eye Down",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Took the Red Eye Down",{
 condition_end="achieved(10830)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6263,7 +6631,7 @@ step
 _Congratulations!_
 You have earned the _Took the Red Eye Down_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Tormented Guardians",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Tormented Guardians",{
 condition_end="achieved(10819)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6283,7 +6651,7 @@ step
 _Congratulations!_
 You have earned the _Tormented Guardians_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Trial of Valor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Trial of Valor",{
 condition_end="achieved(11394)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6300,7 +6668,7 @@ step
 _Congratulations!_
 You have earned the _Trial of Valor_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Unleashed Monstrosities",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Unleashed Monstrosities",{
 condition_end="achieved(11160)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6311,8 +6679,8 @@ description="This guide will walk you through completing the \"Unleashed Monstro
 step
 For this, you will need to kill _8 of the 11 World Bosses_ that spawn weekly
 You will only be able to get credit for a boss if the "World Quest" for it is currently active
-Click here to load the "Unlock World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests Unlock Quest Line"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the "Unlock World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Here is your progress:
 Na'zak the Fiend |achieve 11160/1 |or 8
 Nithogg |achieve 11160/2 |or 8
@@ -6329,7 +6697,7 @@ step
 _Congratulations!_
 You have earned the _Unleashed Monstrosities_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Use the Force(s)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Use the Force(s)",{
 condition_end="achieved(10772)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6352,7 +6720,7 @@ step
 _Congratulations!_
 You have earned the _Use the Force(s)_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Webbing Crashers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\Webbing Crashers",{
 condition_end="achieved(10771)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6374,7 +6742,7 @@ step
 _Congratulations!_
 You have earned the _Webbing Crashers_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\You Ruined Everything!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\You Ruined Everything!",{
 condition_end="achieved(11337)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -6395,7 +6763,92 @@ _Congratulations!_
 You have earned the _You Ruined Everything!_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\Armies of Legionfall",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Heroic: Trial of Valor",{
+condition_end="achieved(11426)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Trial","of","Valor","Heroic"},
+description="This guide will walk you through completing the \"Heroic: Trial of Valor\" Achievement.",
+},[[
+step
+For this achievement, defeat the following bosses in the Trials of Valor raid on Heroic difficulty or higher:
+Odyn |achieve 11426/1
+Guarm |achieve 11426/2
+Helya |achieve 11426/3
+step
+_Congratulations!_
+You have earned the _Heroic: Trial of Valor_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Terrors of the Shore",{
+condition_end="achieved(11786)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Terror","of","the","Shore"},
+description="This guide will walk you through completing the \"Terrors of the Shore\" Achievement.",
+},[[
+step
+For this achievement you will need to defeat all 4 of the Broken Shore world bosses
+|tip One World Boss will appear each time the Nether Disruptor is built.
+|tip To complete this achievement the region will have to have built the Nether Disruptor 4 times.
+kill Brutallus##117239 |goto Broken Shore/0 60.52,29.62 |achieve 11786/1
+|tip Brutallus can be found here and if up it will appear as a purple World Quest on your map.
+kill Malificus##117303 |goto Broken Shore/0 59.80,29.16 |achieve 11786/2
+|tip Malificus can be found here and if up it will appear as a purple World Quest on your map.
+kill Si'vash##117470 |goto Broken Shore/0 90.25,31.20 |achieve 11786/3
+|tip Si'vash can be found here and if up it will appear as a purple World Quest on your map.
+kill Apocron##121124 |goto Broken Shore/0 59.35,62.53 |achieve 11786/4
+|tip Apocron can be found here and if up it will appear as a purple World Quest on your map.
+step
+_Congratulations!_
+You have earned the _Terrors of the Shore_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Mythic: Gul'dan",{
+condition_end="achieved(10850)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Gul'dan"},
+description="This guide will walk you through completing the \"Mythic: Gul'dan\" Achievement.",
+},[[
+step
+Enter The Nighthold raid |goto Suramar/0 44.15,59.74 |region suramar_sanctum_depths
+This is the final boss in The Nighthold
+That said, you will need to have killed the other bosses before reaching Gul'dan
+Defeat Gul'dan in The Nighthold on Mythic difficulty |achieve 10850
+step
+_Congratulations!_
+You have earned the _Mythic: Gul'dan_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Raid\\Legion\\Burning Bridges",{
+condition_end="achieved(10575)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Burning","Bridges"},
+description="This guide will walk you through completing the \"Burning Bridges\" Achievement.",
+},[[
+step
+Enter The Nighthold raid |goto Suramar/0 44.15,59.74 |region suramar_sanctum_depths
+This achievement is obtained through fighting the boss Krosus
+Periodically during the fight this boss with cast Burning Pitch
+|tip This ability will place green circles on the ground all across the bridge.
+To do this achievement you will need to kill 15 Embers using the water under the bridge
+|tip To summon these Embers simply do not stand in the green circles to soak.
+The best way to complete this achievement is to allow all of the melee circles to spawn the Embers
+Once these are spawned DO NOT kill them, but be sure to interrupt and stun them to avoid taking to much damage
+|tip Spread out as well while still doing the other mechanics to minimize damage taken.
+When the bridge breaks these melee adds will drop into the water and be "quenched"
+You will need to do this to 15 Burning Embers, after this is completed you may kill the boss
+Defeat Krosus in the Nighthold after quenching 15 Burning Embers on Normal difficulty or higher |achieve 10575
+step
+_Congratulations!_
+You have earned the _Burning Bridges_ achievement
+]])
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\Armies of Legionfall",{
 condition_end="achieved(11796)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6405,14 +6858,14 @@ description="This guide will walk you through completing the \"Armies of Legionf
 step
 For this achievement, you will need to become _Exalted_ with the _Armies of Legionfall_
 |tip Refer to the Armies of Legionfall reputation guide and complete World Quests in Suramar to accomplish this.
-Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion\\Armies of Legionfall"
+Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall"
 Become _Exalted_ with the _Armies of Legionfall_ |achieve 11796
 step
 _Congratulations!_
 You have earned _Armies of Legionfall_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\Broken Isles Diplomat",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\Broken Isles Diplomat",{
 condition_end="achieved(10672)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6423,41 +6876,41 @@ step
 Reach _Revered_ reputation with the _Court of Farondis_ |achieve 10672/1
 |tip Use the "Azsuna" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Azsuna" leveling guide if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Azsuna" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Dreamweavers_ |achieve 10672/2
 |tip Use the "Val'sharah" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Val'sharah" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with the _Highmountain Tribe_ |achieve 10672/3
 |tip Use the "Highmountain" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Highmountain" leveling gudie if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Highmountain" leveling gudie if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Valarjar_ |achieve 10672/4
 |tip Use the "Stormheim" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Stormheim" leveling guide if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Stormheim" leveling guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Nightfallen_ |achieve 10672/5
 |tip Use the "Suramar" leveling guide to accomplish this.
 |tip Use the "World Quests" guide to accomplish this.
-Click here to complete the "Suramar" guide if you haven't done so already |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to complete the "Suramar" guide if you haven't done so already |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 Reach _Revered_ reputation with _The Wardens_ |achieve 10672/6
 |tip Use the "World Quests" guide to accomplish this.
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 step
 _Congratulations!_
 You have earned the _Broken Isles Diplomat_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\Friends in a Broken Land",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\Friends in a Broken Land",{
 condition_end="achieved(11159)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6467,24 +6920,24 @@ description="This guide will walk you through completing the \"Friends in a Brok
 step
 To earn this achievement, you will need to become exalted with one of the 6 factions of Legion, listed below:
 _Become Exalted with The Wardens_ |achieve 11159/1 |next "end" |or
-Click here to load the "World Quests" guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the "World Quests" guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 _Become Exalted with the Highmountain Tribe_ |achieve 11159/2 |next "end" |or
-Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
+Click here to load the "Highmountain" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Highmountain"
 _Become Exalted with the Court of Farondis_ |achieve 11159/3 |next "end" |or
-Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
+Click here to load the "Azsuna" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Azsuna"
 _Become Exalted with The Nightfallen_ |achieve 11159/4 |next "end" |or
-Click here to load the "Suramar" guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "Suramar" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 _Become Exalted with The Dreamweavers_ |achieve 11159/5 |next "end" |or
-Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+Click here to load the "Val'sharah" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah"
 _Become Exalted with The Valarjar_ |achieve 11159/6 |next "end" |or
-Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
+Click here to load the "Stormheim" leveling guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Stormheim"
 |tip To achieve this, complete a leveling guide of the associated faction as well as use our World Quest guide.
 step
 label "end"
 _Congratulations!_
 You have earned the _Friends in a Broken Land_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\The Nightfallen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\The Nightfallen",{
 condition_end="achieved(10778)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6494,15 +6947,15 @@ description="This guide will walk you through completing the \"The Nightfallen\"
 step
 For this achievement, you will need to become _Exalted_ with _The Nightfallen_
 |tip Refer to the Suramar guide and complete World Quests in Suramar to accomplish this.
-Click here to load the "Suramar" guide |confirm |next |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
-Click here to load the "World Quests" guide |confirm |next |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the "Suramar" guide |confirm |next |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the "World Quests" guide |confirm |next |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Become _Exalted_ with _The Nightfallen_ |achieve 10778
 step
 _Congratulations!_
 You have earned _The Nightfallen_ achievement
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\The Reputable",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\The Reputable",{
 condition_end="achieved(11652)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6518,7 +6971,7 @@ step
 _Congratulations!_
 You have earned the _The Reputable_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\Paragon of the Broken Isles",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Reputation\\Legion\\Paragon of the Broken Isles",{
 condition_end="achieved(11653)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6536,7 +6989,7 @@ _Congratulations!_
 You have earned the _Paragon of the Broken Isles_ achievement
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",
 author="support@zygorguides.com",
 startlevel=100,
@@ -6599,7 +7052,7 @@ description="This guide will walk you through completing the \"Power Unbound\" A
 step
 For this, you will need to completed the quest "A Gift From the Six"
 |tip Use the 7.2 Order Hall Quest guide to achieve this.
-Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 New Content"
 Unlock a new set of traits for one artiface |achieve 11609
 step
 _Congratulations!_
@@ -6616,7 +7069,7 @@ description="This guide will walk you through completing the \"Power Unleashed\"
 step
 For this, you will need to unlock the potential for Artifacts for each of your specializations
 |tip Use the 7.2 Order Hall Quest guide to achieve this.
-Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 New Content"
 Unlock a new set of traits for all specializations |achieve 11609
 step
 _Congratulations!_
@@ -6633,11 +7086,11 @@ description="This guide will walk you through completing the \"Power Ascended\" 
 step
 For this, you will need to gather artifact power and rank up skills in a single artifact weapon
 |tip Use the 7.2 Order Hall Quest guide to unlock the extra 4 traits.
-Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content"
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 New Content"
 You can use the World Quest guide to get Artifact Power Tokens
-Click here to load the World Quest Guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the World Quest Guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Use the Suramar guide to unlock big chunks of Artifact Power if you haven't
-Click here to load the Suramar guide |confirm |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Click here to load the Suramar guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
 Unlock a new set of traits for one artiface |achieve 11772
 step
 _Congratulations!_
@@ -6656,7 +7109,7 @@ Speak to the Order Advancement in your Order Hall
 You will need to unlock the "Increase the number of Legendary items you can equip by 1." trait
 You will need to collect Order Hall resources to achieve this
 |tip Use the World Quests guide to gather resources.
-Click here to load the World Quest Guide |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests"
+Click here to load the World Quest Guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Unlock th e6th Tier of your Class Hall Research |achieve 11223
 step
 _Congratulations!_
@@ -6804,34 +7257,105 @@ description="This guide will walk you through completing the \"Outlandish Style\
 },[[
 step
 label "start"
-You will be collecting 5 pieces of any of the tier 4 pieces, attainted form Karazhan, Gruul's Lair and Magtheridon's Lair
+You will be collecting 5 pieces of any of the tier 4 armors, attainted form Karazhan, Gruul's Lair and Magtheridon's Lair
 _Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+|achieve 11746
 Click here to continue |confirm
+step
+kill Attumen the Huntsman##16152
+The Harbinger Bands drop here |only Mage
+Vambraces of Courage drops here |only Warrior
+Stalker's War Bands drop here|only Hunter
+Whirlwind Bracers drop here |only Shaman
+Bracers of the White Stag drop here |only Druid
+|achieve 11746
+|confirm
+step
+kill Moroes##15687
+The Nethershard Girdle drops here |only Mage
+Boots of Valiance drop here |only Paladin
+Belt of Gale Force |only Shaman
+|achieve 11746
+|confirm
+step
+kill Maiden of Virtue##16457
+The Bracers of Justice drop here |only Paladin
+The Bracers of Maliciousness drop here |only Rogue
+The Bands of Indwelling drops here |only Priest
+Bands of Nefarious Deeds drop here |only Warlock
+|achieve 11746
+|confirm
 step
 kill The Curator##15691
 The Token for the Gloves drop here
 Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+|achieve 11746
 Click here to continue |confirm
+step
+kill Terestian Illhoof
+The Cincture of Will drops here |only Priest
+The Terestian Illhoof drops here |only Druid
+The Malefic Girdle drops here |only Warlock
+|achieve 11746
+|confirm
+step
+kill Shade of Aran##16524
+The Rapscallion Boots drop here |only Rogue
+The Boots of the Incorrupt drop here |only Priest
+The Boots of the Infernal Coven drop here |only Warlock
+|achieve 11746
+|confirm
+step
+kill Netherspite##15689
+The Girdle of Truth drops here
+|achieve 11746
+|confirm
+|only Paladin
+step
+Defeat the Chess Event in Karazhan
+The Battlescar Boots drop here |only Warrior
+The Girdle of Treachery drops here |only Rogue
+The Fiend Slayer Boots drop here |only Hunter
+The Forestlord Striders drops here |only Druid
+|achieve 11746
+|confirm
 step
 kill Prince Malchezaar##15690
 The Token for the Headpiece drops here
 Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+|achieve 11746
 Click here to continue |confirm
 step
 kill High King Maulgar##18831
 The Token for the Shoulders drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+|achieve 11746
 Click here to continue |confirm
 step
 kill Gruul the Dragonkiller##19044
 The Token for the Legs drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Windshear Boots also drop here |only Shaman
+|achieve 11746
 Click here to continue |confirm
 step
 kill Magtheridon##17257
 The Token for the Chest drops here
 Click here to load the Magtheridon's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Magtheridon's Lair"
+|achieve 11746
 Click here to continue |confirm
+step
+talk G'eras##18525
+buy Girdle of the Protector##33524 |goto Shattrath City/0 50.82,42.21 |condition itemcount(33524) >= 1 |only Warrior
+buy War-Feathered Loop##33280 |goto Shattrath City/0 50.82,42.21 |condition itemcount(33280) >= 1 |only Hunter
+|achieve 11746
+|confirm
+step
+talk Anwehu##27667
+buy Boots of Incantations##34919 |goto Shattrath City/0 48.17,42.95 |condition itemcount(34919) >= 1
+|achieve 11746
+|confirm
+|only Mage
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
@@ -6853,31 +7377,88 @@ description="This guide will walk you through completing the \"Merely a Set\" Ac
 step
 label "start"
 You will be collecting 5 pieces of any of the tier 5 armors, attainted form Serpentshrine Cavern and The Eye Raids
+You will also need to go into Gruul's Lair for the Belt |only Priest
 _Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+kill High King Maulgar##18831
+The Belt of Divine Inspiration drops here
+Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+|only Priest
+step
+Kill trash inside of "The Serpentshrine Cavern" raid
+The Boots of Courage Unending drop from them
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+|only Paladin
+step
+kill Hydross the Unstable##21216
+The Boots of the Shifting Nightmare drops here
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+|only Warlock
+step
+kill The Lurker Below##21217
+The Cord of Screaming Terrors drops here |only Warlock
+The Boots of Effortless Striking drop here |only Rogue
+The Tempest-Strider Boots drop here |only Shaman
+The Velvet Boots of the Guardian drops here |only Mage
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
 kill Leotheras the Blind##21215
 The Token for Gloves drop here
-Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+The Orca-Hide Boots drop here |only Druid
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
 kill Fathom-Lord Karathress##21214
 The Token for Legs drop here
-Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+The Soul-Strider Boots drop here |only Priest
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
 kill Lady Vashj##21212
 The Token for Helmets drop here
+Cobra-Lash Boots also drop here |only Hunter
+The Belt of One-Hundred Deaths drops here |only Rogue
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+step
+Kill trash inside of "The Eye" raid
+The Bands of the Celestial Archer drop from them
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+|only Hunter
+step
+kill Al'ar##19514
+The Mindstorm Wristbands drop here
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11747
+|only Mage
+step
+kill High Astromancer Solarian##18805
+The Girdle of the Righteous Path drops here |only Paladin
+Boots of the Resilient drop here |only Warrior
 Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
 kill Void Reaver##19516
 The Token for the Shoulders drop here
-Click here to load the  |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
+Wristguards of Determination drops here |only Warrior
+Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
@@ -6886,6 +7467,26 @@ The Token for the Chests drop here
 Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Serpentshrine Cavern"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
+step
+For the Belt of the Black Eagle, you will need a Leatherworker
+The pattern Drops from Serpent Shrine Cavern, or The Eye raids
+collect 4 Heavy Knothide Leather##23793 |n
+collect 10 Primal Air##22451 |n
+collect 10 Windscales##29547 |n
+collect 2 Rune Thread##14341 |n
+collect 2 Nether Vortex##30183 |n
+collect Belt of the Black Eagle##30046 |condition itemcount(30046) >= 1
+|only Hunter
+step
+talk Anwehu##27667
+buy Girdle of the Fearless##34941 |goto Shattrath City/0 48.8,42.8 |condition itemcount(34941) >= 1
+|only Warrior
+step
+talk G'eras##18525
+buy Master Assassin Wristwraps##33540 |goto Shattrath City/0 50.8,42.4 |condition itemcount(33540) >= 1 |only Rogue
+buy Stormwrap##33536 |goto Shattrath City/0 50.8,42.4 |condition itemcount(33536) >= 1 |only Shaman
+buy Starfire Waistband##33559 |goto Shattrath City/0 50.8,42.4 |condition itemcount(33559) >= 1 |only Druid
+|only Druid, Shaman, Rogue
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
@@ -6964,22 +7565,92 @@ _Important:_ You will be unable to earn this achievement if you are a Death Knig
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step
+Kill Tash throughout the Sunwell raid
+Collect the Gauntlets of the Ancient Shadowmoon |only Shaman
+Collect the Tranquil Majesty Wraps |only Druid
+|only Shaman, Druid
+step
+kill Kalecgos##24850
+Legplates of the Holy Juggernaut drop here |only Paladin
+The Starstalker Legguards drop here |only Hunter
+The Pantaloons of Calming Strife drop here |only Mage, Priest
+The Breeches of Natural Aggres drop here |only Druid
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
 kill Felmyst##25038
 The Token for Boots drop from Felmyst as well as the Eradar Twins
-Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+The Leggings of the Immortal Night drop here |only Rogue
+The Chain Links of the Tumultuous Storm drops here |only Shaman
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step
 kill Grand Warlock Alythess##25166
 kill Lady Sacrolash##25165
 The Eradar Twins can drop Tokens for Bracers, Belts or Boots
-Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Mantle of the Golden Forest drops here |only Hunter
+The Spaulders of the Thalassian Savoir also drop here |only Paladin
+The Pauldrons of Perseverance drops here |only Warrior
+The Amice of the Convoker drops here|only Warlock
+The Shoulderpads of Vehemence drop here |only Rogue
+The Equilibrium Epaulets drop here |only Shamaan
+The Spaulders of Reclamation drop here |only Druid
+The Shawl of Wonderment drops here |only Priest, Mage
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step
 kill Brutallus##24882
 The Token for Belt can drop from Brutallus as well as The Eradar Twins
-Click here to load the |confirm |next "Zygor's Horde Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+The Felfury Legplates drop here |only Warrior
+The Leggings of Calamity drop here |only Warlock
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill M'uru##25741
+The Heroic Judicator's Chestguard drops here |only Paladin
+Gauntlets of the Soothed Soul drop here |only Paladin
+The Vicious Hawkstrider Hauberk drops here |only Hunter
+Warharness of Reckless Fury drops here |only Warrior
+The Fel Conquerer Raiments drop here |only Warlock
+Collect the Harness of Carnal Instinct as well as a sunmote to trade |only Rogue
+The Shadowed Gauntlets of Paroxysm drops here |only Rogue
+The Garments of Serene Shores drop here |only Shaman
+The Robes of Faltered Light drops here |only Priest, Mage
+The Robes of Sunglow Vest drop here |only Druid
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+kill Kil'jaeden##25315
+The Helm of Burning Righteousness drops here |only Paladin
+The Coil of Alleria drops here |only Hunter
+The Thalassian Ranger Gauntlets also drop here |only Hunter
+The Crown of Anasterian also drops here |only Warrior
+The Borderland Paingrips drop here |only Warrior
+The Dark Conjuror's Collar drops here |only Warlock
+The Handguards of Defiled Worlds drops here |only Warlock
+The Duplicitous Guise drops here |only Rogue
+The Cowl of Gul'dan drops here |only Shaman
+The Cowl of Light's Purity drops here |only Priest, Mage
+The Handguards of the Dawn drops here |only Priest, Mage
+The Cover of Ursol the Wise drops here |only Druid
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to continue |confirm
+Earn the Merely a Set Achievement |achieve 11749
+step
+talk Yrma##25977
+Trade in tokens you have found in the instance here |goto Isle of Quel'Danas 50.2,28.2
+Trade the Harness of Carnal Instict as well as a Sunmote for the _Bladed Chaos Tunic_ |only Rogue
+Trade the Cowl of Lights Purity as well as a Sunmote for the _Helm of Arcane Purity_ |only Mage
+Trade the Gauntlets of the Ancient Shadowmoon as well as a Sunmote for the _Gauntlets of the Ancient Frostwolf_ |only Shaman
+Trade the Shawl of Wonderment as well as a Sunmote for the _Shoulderpads of Knowledge's Pursuit_ |only Mage
+Trade the Robes of Faltered Light as well as a Sunmote for the _Robes of Ghostly Hatred_ |only Mage
+Trade the Handguards of the Dawn as well as a Sunmote for the _Gloves of Tyri's Power_ |only Mage
+Trade the Pantaloons of Calming Strife as well as a Sunmote for _Pantaloons of Growing Strife_ |only Mage
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step

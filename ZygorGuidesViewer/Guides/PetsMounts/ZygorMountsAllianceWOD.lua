@@ -1090,7 +1090,7 @@ description="This guide will help you acquire the Armored Irontusk mount.",
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Sha'tari Defense_
 |tip This vendor is only available if you at least have a level 2 Trading Post in your garrision.
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Sha'tari Defense"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Sha'tari Defense"
 confirm
 step
 talk Maaria##85427
@@ -1106,7 +1106,7 @@ description="This guide will help you acquire the Domesticated Razorback mount."
 },[[
 step
 This mount requires you to be _Exalted_ with the _Steamwheedle "Preservation" Society_
-_Click here_ for the reputation guide |confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
+_Click here_ for the reputation guide |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
 confirm
 step
 talk Gazrix Gearlock##88482 |goto Stormshield 43.2,77.4
@@ -1121,7 +1121,7 @@ description="This guide will help you acquire the Dusty Rockhide mount.",
 },[[
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Council of Exarchs_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Council of Exarchs"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Council of Exarchs"
 confirm
 step
 talk Vindicator Nuurem ##85932
@@ -1137,7 +1137,7 @@ description="This guide will help you acquire the Shadowmane Charger mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with the _Arakkoa Outcasts_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
 confirm
 step
 talk Shadow-Sage Brakoss##85946
@@ -1210,7 +1210,7 @@ description="This guide will help you acquire the Pale Thorngrazer mount.",
 },[[
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Wrynn's Vanguard_
-_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Draenor\\Wrynn's Vanguard"
+_Click here_ for the reputation guide. |confirm |next "Zygor's Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard"
 confirm
 step
 talk Crafticus Mindbender##80882

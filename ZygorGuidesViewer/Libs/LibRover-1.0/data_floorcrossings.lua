@@ -382,7 +382,7 @@ data.basenodes.FloorCrossings = {
 			-- Rogue Order Hall Entrance
 				"Dalaran L/10 52.83,70.29 <radius:10> -x- Dalaran L/4 87.05,76.65 <radius:10> {template:atob}"..
 					"{atob:Talk to \"Red\" Jack Findle and Show Him Your Insignia, Enter the Doorway, and Run Down the Stairs}"..
-					"{btoa:Run Up the Stairs, Click the Torch, and Leave the Doorway} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+					"{btoa:Run Up the Stairs, Click the Torch, and Leave the Doorway} {cond:PlayerIsOnQuest(40832) or PlayerCompletedQuest(40832)}",
 		},
 
 
@@ -733,7 +733,7 @@ data.basenodes.FloorCrossings = {
 		---  DEMON HUNTER ORDER HALL  ---
 		---------------------------------
 		["Mardum, the Shattered Abyss"] = {
-			"Mardum, the Shattered Abyss/1 68.66,67.24 <radius:10> -x- Mardum, the Shattered Abyss/2 65.39,53.64 <radius:15>"..
+			"Mardum, the Shattered Abyss/2 68.66,67.24 <radius:10> -x- Mardum, the Shattered Abyss/3 65.39,53.64 <radius:15>"..
 			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up} {cond:PlayerCompletedQuest(42872)}",
 		},		
 

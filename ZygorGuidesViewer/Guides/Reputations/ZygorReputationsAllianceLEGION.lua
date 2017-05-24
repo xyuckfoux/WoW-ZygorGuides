@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Armies of Legionfall",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Armies","Legionfall","Army"},
@@ -13,7 +13,7 @@ description="This guide will walk you through gaining reputation with the \"Armi
 step
 _Earning reputation with Armies of Legionfall can be achieved by:_
 Completing Broken Shore world quests
-Click here to load the world quests guide |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Click here to load the world quests guide |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Completing quests offered by Excavator Karla
 |tip Karla offers a new quest every day. You can find her by looking for the new quest icon on the Broken Shore map.
 Turning in a building construction quest at Deliverance Point in Broken Shore rewards 150 reputation
@@ -28,7 +28,7 @@ _Congratulations!_
 You earned exalted reputation with the "Armies of Legionfall" faction.
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Conjurer Margoss",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Conjurer Margoss",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Conjurer","Margoss"},
@@ -57,7 +57,7 @@ step
 _Congratulations!_
 You earned Best Friend reputation with the "Conjurer Margoss" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Court of Farondis",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Court of Farondis",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Court","Farondis"},
@@ -72,7 +72,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Court of Farondis" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Dreamweavers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Dreamweavers",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Dreamweavers"},
@@ -87,7 +87,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Dreamweavers" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Highmountain Tribe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Highmountain Tribe",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Highmountain","Tribe"},
@@ -102,7 +102,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Highmountain Tribe" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\The Nightfallen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Nightfallen",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Nightfallen"},
@@ -129,7 +129,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with "The Nightfallen" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\Valarjar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Valarjar",{
 author="support@zygorguides.com",
 startlevel=100.0,
 keywords={"Valarjar"},
@@ -144,7 +144,7 @@ step
 _Congratulations!_
 You earned Exalted reputation with the "Valarjar" faction.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion\\The Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Wardens",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"Wardens"},

@@ -3,8 +3,8 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("LevelingAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Tanaan Jungle (90-90)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",
 image=ZGV.DIR.."\\Guides\\Images\\TanaanJungle",
 condition_suggested_exclusive=true,
 startlevel=90,
@@ -327,8 +327,8 @@ step
 talk Prophet Velen##79206
 accept Step Three: Prophet!##34575 |goto Shadowmoon Valley D 27.0,8.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
-next="Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)",{
+next="Zygor's Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)",
 image=ZGV.DIR.."\\Guides\\Images\\ShadowmoonValleyDraenor",
 condition_suggested_exclusive=true,
 startlevel=90.5,

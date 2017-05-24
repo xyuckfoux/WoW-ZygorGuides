@@ -303,7 +303,7 @@ Follow the path |goto 32.9,40.3 < 8
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-kill 1 Lady Anacondra##3671 |only if havequest(26870) |only if default
+kill 1 Lady Anacondra##3671 |only if default
 kill 1 Lady Anacondra##3671 |q Cleansing the Caverns##26870/2 |only if havequest(26870)
 |tip Lady Anacondra will cast Lightning Bolt on her current target
 |tip She will also put random players to sleep using Druid's Slumber

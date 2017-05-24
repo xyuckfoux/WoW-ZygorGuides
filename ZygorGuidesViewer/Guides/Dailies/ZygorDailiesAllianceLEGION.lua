@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DailiesALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Legion\\World Quests Unlock Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\World Quests Unlock Quest Line",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -67,9 +67,9 @@ Speak with Havi |q 44721/4 |goto 60.14,50.74
 step
 talk Havi##92539
 turnin Helya's Conquest##44721 |goto 60.14,50.74
-|next Zygor's Alliance Dailies Guides\\Legion\\World Quests
+|next Zygor's Dailies Guides\\Legion\\World Quests
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dailies Guides\\Legion\\World Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Legion\\World Quests",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -2179,6 +2179,13 @@ kill Abyssal Monstrosity##117054
 Defeat the Abyssal Monstrosity |q 45924/1 |goto 35.79,63.42
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45922
+accept Agmozuul##45922 |goto Val'sharah/0 55.85,69.61
+|tip You will accept this quest automatically.
+step
+kill Agmozuul##117039 |q 45922/1 |goto 55.85,69.61
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44033
 accept Aw, Nuts!##44033 |goto Val'sharah/0 54.52,72.91
 |tip You will accept this quest automatically.
@@ -2342,6 +2349,15 @@ Tell her: "_I'm ready. Give me the buoys._"
 click Enormous Sea Crab##109752
 |tip They swim below the boat on the ocean floor.
 Use the Satchel of Buoys on #15# Enormous Sea Crabs |use Satchel of Buoys##139044 |q 41273/1 |goto 28.66,49.46
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41532
+Follow the path |goto Val'sharah/0 68.20,48.61 < 20 |only if walking
+accept Bushy Dreamleaf##41532 |goto Val'sharah/0 65.55,43.71
+|tip You will accept this quest automatically.
+step
+click Bushy Dreamleaf##195114
+collect 10 Bushy Dreamleaf##140956 |q 41532/1 |goto 65.55,43.71
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42174
@@ -2890,6 +2906,16 @@ Fish from the Lively Mossgill Perch schools |cast Fishing##131474
 collect 10 Lively Mossgill Perch##134567 |q 41600/1 |goto 73.18,35.79
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41601
+Follow the path |goto Val'sharah/0 55.45,54.61 < 25 |only if walking
+Follow the path |goto 57.71,52.11 < 25 |only if walking
+accept Lively Mossgill Perch##41601 |goto Val'sharah/0 60.41,49.69
+|tip You will accept this quest automatically.
+step
+Fish from the Lively Mossgill Perch schools |cast Fishing##131474
+collect 10 Lively Mossgill Perch##134567 |q 41601/1 |goto 60.41,49.69
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44011
 Follow the path down |goto Val'sharah/0 56.71,62.57 < 30 |only if walking
 Follow the path up |goto 53.91,64.33 < 30 |only if walking
@@ -3076,7 +3102,7 @@ accept Purge of the Nightmare##43336 |goto Val'sharah/0 63.57,47.57
 |tip You will accept this quest automatically.
 step
 Kill enemies around this area
-clicknpc Bloodflower##219041+
+click Bloodflower##251766+
 |tip They look like skinny plants puffing purple smoke around this area.
 Cleanse Dreadroot |q 43336/1 |goto 63.57,47.57
 |next "Court_Of_Farondis_WQ"
@@ -3357,7 +3383,7 @@ kill Ancient Annihilator##110896 |q 41980/3 |goto 56.08,53.93
 step
 label quest-45921
 Follow the path |goto Val'sharah/0 53.42,74.12 < 20 |only if walking
-accept Thal'xur##45921 |goto Val'sharah/0 57.15,54.02
+accept Thal'xur##45921 |goto Val'sharah/0 50.65,73.95
 |tip You will accept this quest automatically.
 step
 kill Thal'xur##118016 |q 45921/1 |goto 50.65,73.95
@@ -3370,12 +3396,12 @@ Follow the path |goto 53.28,50.09 < 25 |only if walking
 Follow the path |goto 52.44,46.30 < 25 |only if walking
 Follow the path |goto 50.86,42.88 < 20 |only if walking
 Follow the path |goto 48.79,40.41 < 25 |only if walking
-accept Training with Durian##40279 |goto 46.95,39.70
+accept Training with Durian##40279 |goto Val'sharah/0 46.38,36.84
 |tip You will accept this quest automatically.
 step
 talk Durian Strongfruit##99035
 Tell him: "_Let's do battle!_"
-Defeat Durian Strongfruit |q 40279/1 |goto 46.95,39.70
+Defeat Durian Strongfruit |q 40279/1 |goto 46.38,36.84
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41992
@@ -3918,6 +3944,17 @@ accept Zagmothar##45927 |goto 66.03,66.88
 |tip You will accept this quest automatically.
 step
 kill Zagmothar##117964 |q 45927/1 |goto 66.03,66.88
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45926
+Follow the path |goto Val'sharah/0 53.44,74.08 < 20 |only if walking
+Follow the path |goto 51.50,75.66 < 20 |only if walking
+Follow the path |goto 48.08,77.73 < 25 |only if walking
+Follow the path |goto 45.76,80.63 < 25 |only if walking
+accept Zar'teth##45926 |goto Val'sharah/0 43.97,81.53
+|tip You will accept this quest automatically.
+step
+kill Zar'teth##118017 |q 45926/1 |goto 43.97,81.53
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43985
@@ -8031,6 +8068,17 @@ click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41491/1 |goto 23.10,61.27
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41447
+Follow the path |goto Suramar/0 26.46,34.39 < 25 |only if walking
+Follow the path |goto 24.94,38.43 < 25 |only if walking
+Follow the path |goto 23.93,42.05 < 25 |only if walking
+accept Burning Felslate Deposits##41447 |goto Suramar/0 21.69,40.51
+|tip You will accept this quest automatically.
+step
+click Burning Felslate Deposit##195122
+collect 10 Burning Felslate##141250 |q 41447/1 |goto 21.69,40.51
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41990
 accept Chopped##41990 |goto Suramar/0 62.96,60.73
 |tip You will accept this quest automatically.
@@ -8474,7 +8522,7 @@ accept Help on the Way##44811 |goto Suramar/0 49.26,77.22
 step
 click The Magistrix Will Fall!##3365
 |tip They are bright yellow scrolls located on the side of buildings.
-Serve #8# notices |q 44811/1 |goto 45.50,36.05
+Serve #8# notices |q 44811/1 |goto 48.25,76.71
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42071
@@ -10469,9 +10517,9 @@ Rescue Felbound Manasabers |q 46754/1 |goto 43.70,18.47
 |only Mage
 step
 label quest-46948
-Follow the path |goto Broken Shore/0 66.33,43.20 < 25 |only if walking
-Follow the path up |goto 67.95,33.96 < 20 |only if walking
-Follow the path down |goto 64.04,33.49 < 20 |only if walking
+Cross the water |goto Broken Shore/0 51.99,25.17 < 15 |only if walking
+Follow the path up |goto 55.46,27.66 < 20 |only if walking
+Follow the path |goto 57.47,28.54 < 20 |only if walking
 accept Malificus##46948 |goto 59.78,28.96
 |tip You will accept this quest automatically.
 step
@@ -10741,6 +10789,18 @@ kill Si'vash##117470 |q 46945/1 |goto 89.77,33.10
 |tip Dodge Tidal Waves that come from the sea. |grouprole EVERYONE
 |tip Avoid Submerge bubbles, as they will stun you for 6 seconds and deal frost damage. |grouprole EVERYONE
 |tip Pick up Sivashi Honor Guard quickly to avoid group damage. |grouprole TANK
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46360
+Cross the water |goto Broken Shore/0 76.83,53.45 < 25 |only if walking
+Follow the path |goto 81.59,49.08 < 25 |only if walking
+Follow the path |goto 79.39,41.64 < 25 |only if walking
+Enter the cave |goto 76.27,39.78 < 25 |only if walking
+accept Simply Stunning##46360 |goto Broken Shore/0 89.77,33.10
+|tip You will accept this quest automatically.
+step
+Stun #50# demons |q 46360/1 |goto 89.77,33.10
+|tip Use the extra action button that appears on-screen to stun demons.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46109

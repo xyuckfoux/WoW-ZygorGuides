@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 
 ZygorGuidesViewer.GuideMenuTier = "LEG"
  
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\POI Legion Treasures",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\POI Legion Treasures",{
 	hidden=true,
 	poi=true,
 	poitype=treasure,

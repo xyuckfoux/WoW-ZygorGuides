@@ -151,10 +151,10 @@ Slay Teron'gor |q Soulcarver Voss##37232/2 |goto Auchindoun/1 49.6,33.5 |only if
 Slay Teron'gor |q Vessel of Virtue##37233/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37233)
 Slay Teron'gor |q Go Fetch##37146/2 |goto Auchindoun/1 49.6,33.5 |only if havequest(37146)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37232) or havequest(37233) or havequest(37146)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37796)
 step
 Congratulations, you have completed _Auchindoun_!
@@ -354,10 +354,10 @@ Slay Gug'rokk |q Like a Dwarf In A Mine##37229/2 |goto Bloodmaul Slag Mines/1 65
 Slay Gug'rokk |q Ogre Ancestry##37142/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37142)
 Slay Gug'rokk |q A Fruitful Proposition##37228/2 |goto Bloodmaul Slag Mines/1 65.4,22.7 |only if havequest(37228)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37229) or havequest(37142) or havequest(37228)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\Muradin Bronzebeard Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\Muradin Bronzebeard Dailies"
 only if havequest(37795)
 step
 Congratulations, you have completed the _Bloodmaul Slag Mines_!
@@ -513,10 +513,10 @@ Slay Yalnu |q Lessons of the Past##37241/2 |goto The Everbloom/2 45.0,72.0 |only
 Slay Yalnu |q The Leaf-Reader##37240/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37240)
 Slay Yalnu |q Put a Bird on It##37227/2 |goto The Everbloom/2 45.0,72.0 |only if havequest(37227)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37241) or havequest(37240) or havequest(37227)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37790)
 step
 Congratulations, you have completed the _Everbloom_!
@@ -626,10 +626,10 @@ Slay Skylord Tovra |q Learning is Painful##37242/2 |goto Grimrail Depot/4 8.6,51
 Slay Skylord Tovra |q An Axe to Grind##37243/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37243)
 Slay Skylord Tovra |q Cold Steel Part II##37209/2 |goto Grimrail Depot/4 8.6,51.0 |only if havequest(37209)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37242) or havequest(37243) or havequest(37209)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37794)
 step
 Congratulations, you have completed the _Grimrail Depot_!
@@ -750,7 +750,7 @@ Slay Skulloc |q The Search Continues##37231/2 |goto Iron Docks/1 68.4,43.6 |only
 Slay Skulloc |q Bloody Expensive##37230/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37230)
 Slay Skulloc |q Budd's Gambit##37145/2 |goto Iron Docks/1 68.4,43.6 |only if havequest(37145)
 step
-Proceeding |next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+Proceeding |next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37231) or havequest(37230) or havequest(37145)
 step
 Congratulations, you have completed the _Iron Docks_!
@@ -890,10 +890,10 @@ Slay Ner'zhul |q Secrets of Soulbinding##37238/2 |goto Shadowmoon Burial Grounds
 Slay Ner'zhul |q Whispers in the Darkness##37245/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37245)
 Slay Ner'zhul |q Fate of the Fallen##37239/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if havequest(37239)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37238) or havequest(37245) or havequest(37239)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37792)
 step
 Congratulations, you have completed the _Shadowmoon Burial Grounds_!
@@ -1028,10 +1028,10 @@ Slay High Sage Viryx |q A Plea to the Sky##37235/2 |goto Skyreach/2 51.1,27.4 |o
 Slay High Sage Viryx |q The Dark Within##37234/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37234)
 Slay High Sage Viryx |q Sky Dancers##37147/2 |goto Skyreach/2 51.1,27.4 |only if havequest(37147)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37235) or havequest(37234) or havequest(37147)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37791)
 step
 Congratulations, you have completed _Skyreach_!
@@ -1205,10 +1205,10 @@ Slay Warlord Zaela |q Flamefly Trap##37244/2 |goto Upper Blackrock Spire 2/3 14.
 Slay Warlord Zaela |q Like Father, Like Son##37236/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37236)
 Slay Warlord Zaela |q A Hero's Quest is Never Complete##37237/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if havequest(37237)
 step
-next "Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
+next "Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies"
 only if havequest(37244) or havequest(37236) or havequest(37237)
 step
-next "Zygor's Horde Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
+next "Zygor's Leveling Guides\\Garrisons\\High Overlord Saurfang Dailies"
 only if havequest(37789)
 step
 Congratulations, you have completed _Upper Blackrock Spire_!

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Frostwall Tavern Dungeon Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Frostwall Tavern Dungeon Dailies",{
 description="This guide will take you through the Frostwall Tavern dungeon dailies.",
 },[[
 step
@@ -305,7 +305,7 @@ turnin A Hero's Quest is Never Complete##37237
 |tip Turn in NPCs can sometimes be found behind the tavern or downstairs.
 next "queuemenu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Fishing Dailies",{
 description="This guide will take you through the Fishing dailies.",
 },[[
 step
@@ -425,7 +425,7 @@ step
 You've completed the daily for today
 Click to restart the dailies run |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Battle Pets Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Battle Pets Dailies",{
 description="This guide will take you through the Battle Pets dailies.",
 },[[
 step
@@ -562,7 +562,7 @@ talk Kura Thunderhoof##91361
 turnin Critters of Draenor##38300 |goto 33.36,42.83
 next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\High Overlord Saurfang Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\High Overlord Saurfang Dailies",{
 description="This guide will walk you through completing the daily dungeon and weekly raid quests from High Overlord Saurfang in your garrison",
 endlevel=100
 },[[
@@ -785,7 +785,7 @@ label "End"
 You have completed today's daily quest, check back tomorrow!
 Click _here_ to return |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Harrison Jones Treasure Contracts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Harrison Jones Treasure Contracts",{
 description="This guide will walk you through completing the Master Relic Hunter quests offered by Harrison Jones in your garrison.",
 endlevel=100
 },[[
@@ -1145,7 +1145,7 @@ step
 You have finished today's daily Treasure Contract! Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Shadow Hunter Ty'jin Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Shadow Hunter Ty'jin Daily Quests",{
 description="This guide will walk you through completing the Group 3 daily kill quests offered by Shadow Hunter Ty'jin in your garrison",
 endlevel=100
 },[[
@@ -1270,7 +1270,7 @@ step
 You have finished today's daily group quest. Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Assault Daily Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Assault Daily Quests",{
 description="This guide will walk you through the Garrison Assault daily quests.",
 },[[
 step
@@ -1547,7 +1547,7 @@ You've completed the dailies for today
 Click to restart the dailies run |confirm |next "assault_dailies_start"
 |tip You can also click to restart if you want to do more Scouting Missives.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Garrison Building Dailies",{
 description="This guide will walk you through the garrison daily quests offered from various garrison buildings.",
 },[[
 step
@@ -1834,21 +1834,21 @@ use Traveler's Pet Supplies##122535 |only if itemcount(122535) >=1
 You have completed today's Menagerie daily quest
 Click here to return to the Main Menu |confirm |next "Menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Vol'jin's Headhunters Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Vol'jin's Headhunters Dailies",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the Vol'jin's Headhunters faction.",
 },[[
 step
 #include "H_Voljins_Headhunters_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Order of the Awakened Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\Order of the Awakened Dailies",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the Order of the Awakened faction.",
 },[[
 step
 #include "H_Order_of_Awakened_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\The Saberstalkers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Warlords of Draenor\\Tanaan Jungle (100)\\The Saberstalkers",{
 sugGroup="ACHIEVEMENTS\\Draenor Pathfinder",
 description="This guide will walk you through the daily quests for the The Saberstalkers faction.",
 },[[

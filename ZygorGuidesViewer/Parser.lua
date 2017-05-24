@@ -337,6 +337,7 @@ local ConditionEnv = {
 		Parser.ConditionEnv.level = ZGV:GetPlayerPreciseLevel()
 		Parser.ConditionEnv.intlevel = floor(Parser.ConditionEnv.level)
 		if ZGV.db.char.fakelevel and ZGV.db.char.fakelevel>0 then Parser.ConditionEnv.level=ZGV.db.char.fakelevel end
+		Parser.ConditionEnv.walking = Parser.ConditionEnv.iswalking()
 	end,
 
 	_Setup = function()
@@ -500,7 +501,7 @@ local ConditionEnv = {
 
 		return false
 	end,
-	walking = function()
+	iswalking = function()
 		return not IsFlying()
 	end,
 	selected = function(itemname)

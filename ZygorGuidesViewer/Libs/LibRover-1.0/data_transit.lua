@@ -309,12 +309,12 @@ data.basenodes.transit = {
     ---  DEMON HUNTER ORDER HALL  ---
     ---------------------------------
 	-- Portal from Dalaran to the Fel Hammer
-		"Dalaran L/10 98.02,69.27 -to- Mardum, the Shattered Abyss/1 59.18,85.75 {mode:PORTAL}"..
+		"Dalaran L/10 98.02,69.27 -to- Mardum, the Shattered Abyss/2 59.18,85.75 {mode:PORTAL}"..
 			"{template:atob} {atob:Glide to the Floating Island and Click the Illidari Gateway}"..
 			"{cond:PlayerCompletedQuest(42872)}",
 
 	-- Portal from the Fel Hammer to Dalaran
-		"Mardum, the Shattered Abyss/1 59.23,91.93 -to- Dalaran L/10 77.11,49.61 {mode:PORTAL}"..
+		"Mardum, the Shattered Abyss/2 59.23,91.93 -to- Dalaran L/10 77.11,49.61 {mode:PORTAL}"..
 			"{template:atob} {atob:Click the Illidari Gateway} {cond:PlayerCompletedQuest(42872)}",
 
 
@@ -324,11 +324,11 @@ data.basenodes.transit = {
     --------------------------
 	-- Kocker to Dalaran #1
 		"Dalaran L/4 39.67,21.52 -to- Dalaran L/10 54.20,32.68 {mode:PORTAL}"..
-			"{template:atob} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+			"{template:atob} {atob:Click the Kocker} {cond:PlayerIsOnQuest(40832) or PlayerCompletedQuest(40832)}",
 
 	-- Kocker to Dalaran #2
 		"Dalaran L/4 29.48,22.02 -to- Dalaran L/10 46.44,26.01 {mode:PORTAL}"..
-			"{template:atob} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+			"{template:atob} {atob:Click the Kocker} {cond:PlayerIsOnQuest(40832) or PlayerCompletedQuest(40832)}",
 
 
 

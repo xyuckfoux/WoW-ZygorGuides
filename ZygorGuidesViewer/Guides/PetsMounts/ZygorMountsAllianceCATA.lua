@@ -1582,7 +1582,7 @@ You can use our _dailies guide_ to earn reputation, or use our _leveling guide_ 
 Lastly, you can run dungeons with the _Ramkahen Tabard_ and continue to earn rep this way.
 Click here to use the Dailies guide |confirm |next dailies
 _
-Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Alliance Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingACATA']
+Click here to go to the leveling section to work on this rep |confirm |next "Zygor's Leveling Guides\\Cataclysm 80-85\\Uldum (83-84)" |only if ZGV.guidesets['LevelingACATA']
 step
 label "dailies"
 talk Nomarch Teneth##46603
@@ -8133,7 +8133,7 @@ You can buy an Exodar Tabard from Kadu at [The Exodar 69.6,61.7]
 |tip Wear the Exodar Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf",{
-next="Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Ironforge and\nGnomeregan factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8935,7 +8935,7 @@ You can buy a Gnomeregan Tabard from Master Tinker Trini at [Ironforge 56.2,48.5
 |tip Wear the Gnomeregan Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Gnome",{
-next="Zygor's Alliance Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
+next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf & Gnome (5-15)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Ironforge and\nGnomeregan factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -11838,17 +11838,17 @@ daily
 step
 talk Luuri##33771
 accept Among the Champions##13790 |goto Icecrown,69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 accept Threat From Above##13682 |goto 70.0,23.4
 |tip You must have turned in the quest The Black Knight's Fall from the ATG Black Knight Quest Chain guide section in order to be able to get this daily quest.
 accept Battle Before The Citadel##13861 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 accept Taking Battle To The Enemy##13789 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Alliance Lance in your bags |use Alliance Lance##46069
 Click to mount the Stabled Exodar Elekk |invehicle |q 13790 |goto 71.7,22.4
@@ -11875,48 +11875,48 @@ Tell them you are ready to fight!
 Fight and defeat them
 |tip The best strategy to defeat the Champion riders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Champion rider (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Champion rider will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back (use your Shield-Breaker ability as you circle around to come back to the Champion rider, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
 collect 4 Mark of the Champion |q 13790/1 |goto 71.6,23.8
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13790
-only !DeathKnight
+only if not DeathKnight
 step
 kill Deathspeaker Kharos##34808, Dark Zealot##34728+, Dark Ritualist##34734+
 kill 15 Cult of the Damned member |q 13789/1 |goto 64.3,21.4
-only !DeathKnight
+only if not DeathKnight
 step
 You will need to get a group of at least 3 people to do the daily quest in the next step of the guide.  Find a group, it should be pretty easy because there are always other players doing this quest.
-only !DeathKnight
+only if not DeathKnight
 step
 This is how this fight will happen:
 |tip You will pull Chillmaw first and fight him until he is at about 75% health.  At that point, a Cultist Bombardier will spawn to help Chillmaw fight.  Kill the Cultist Bombardier IMMEDIATELY, as they do alot of damage, compared to Chillmaw.  Continuing fighting Chillmaw and 2 other Cultist Bombardiers will spawn: 1 when Chillmaw is at about 50% health, and 1 when Chillmaw is at about 25% health.  Again, kill the Cultist Bombardiers immediately when they spawn and this fight will be a fairly easy one.
 kill Chillmaw |q 13682/1 |goto 44.1,32.6
 |tip Chillmaw is a big skeletal dragon that flies around this area.
 kill 3 Cultist Bombardier |q 13682/2 |goto 44.1,32.6
-only !DeathKnight
+only if not DeathKnight
 step
 Equip the Alliance Lance in your bags |use Alliance Lance##46069
 Click to mount the Stabled Campaign Warhorse |invehicle |q 13861 |goto Icecrown,48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 kill 3 Boneguard Commander |q 13861/1 |goto 50.1,74.8
 |tip The best strategy to defeat the Boneguard Commanders is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fights.  When the fights begin, immediately use your Charge ability on the Boneguard Commanders (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible).  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Boneguard Commanders will try to run away to get into Charge range.  When they start to run away, start spamming your Charge ability until you charge them in the back (use your Shield-Breaker ability as you circle around to come back to the Boneguard Commanders, if possible), then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until you kill 3 Boneguard Commanders.  Also, it may help you try to party with other players while doing this quest, as it will get done much faster and there are always other players in this area doing this same daily quest.
-only !DeathKnight
+only if not DeathKnight
 step
 Click the red arrow on your hotbar to get off your mount |outvehicle |q 13861 |goto 48.9,71.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Luuri##33771
 turnin Among the Champions##13790 |goto 69.9,23.3
-only !DeathKnight
+only if not DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Threat From Above##13682 |goto 70.0,23.4
 turnin Battle Before The Citadel##13861 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 step
 talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13789 |goto 69.9,23.5
-only !DeathKnight
+only if not DeathKnight
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
@@ -12559,7 +12559,7 @@ turnin A Champion Rises##13732 |goto 69.7,22.9 |only Dwarf
 turnin A Champion Rises##13733 |goto 69.7,22.9 |only Gnome
 turnin A Champion Rises##13734 |goto 69.7,22.9 |only Draenei
 accept The Scourgebane##13795 |goto 69.7,22.9 |only DeathKnight
-accept Eadric the Pure##13794 |goto 69.7,22.9 |only !DeathKnight
+accept Eadric the Pure##13794 |goto 69.7,22.9 |only if not DeathKnight
 step
 talk Crok Scourgebane##33762
 turnin The Scourgebane##13795 |goto 73.8,20.1
@@ -12567,7 +12567,7 @@ only DeathKnight
 step
 talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
-only !DeathKnight
+only if not DeathKnight
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Pre-Quests",{
 author="support@zygorguides.com",

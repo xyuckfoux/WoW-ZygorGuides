@@ -136,10 +136,8 @@ data.basenodes.DungeonEntrances = {
 			-- THE SHATTERED HALLS
 			"Hellfire Peninsula 47.48,52.02 -x- The Shattered Halls/1 61.14,92.81 {autotype:portal_dungeon}",
 
-			{{"Zangarmarsh 50.36,40.85",region="coilfang1",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Dive between pipes" else return "Swim to surface" end end},
-			 {"Zangarmarsh 50.67,40.07",region="coilfangpipe",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Swim through pipe" else return "Dive deep down pipe" end end}},
-			{{"Zangarmarsh 51.84,38.85",region="coilfangpipe",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Swim through pipe" else return "Swim into pipe" end end},
-			 {"Zangarmarsh 51.91,37.93",region="coilfang2",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Dive into pipe" else return "Swim to surface" end end}},
+			"Zangarmarsh 50.36,40.85 <region:coilfang1> -x- Zangarmarsh 50.67,40.07 <region:coilfangpipe> {template:atob12} {atob1:Dive between pipes} {atob2:Swim through pipe} {btoa1:Dive deep down pipe} {btoa2:Swim to surface}",
+			"Zangarmarsh 51.84,38.85 <region:coilfangpipe> -x- Zangarmarsh 51.91,37.93 <region:coilfang2> {template:atob12} {atob1:Swim through pipe} {atob2:Swim to surface} {btoa1:Dive into pipe} {btoa2:Swim into pipe}",
 			-- THE STEAMVAULT
 			"Zangarmarsh 50.29,33.33 <region:coilfang2> -x- The Steamvault 17.59,29.76 {autotype:portal_dungeon}",
 			-- THE SLAVE PENS

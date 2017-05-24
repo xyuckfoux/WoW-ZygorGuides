@@ -3,14 +3,19 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Argent Dawn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Argent Dawn",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Argent Dawn faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={946},
-description="This Guide will help you reach Exalted with The Argent Dawn",
 },[[
 #include "H_Eastern_Plaguelands_Argent_Dawn"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Bloodsail Buccaneers",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Bloodsail Buccaneers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Bloodsail Buccaneers faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 The Bloodsail Buccaneer reputation requires a lot of farming.
@@ -288,7 +293,10 @@ step
 label exalted
 Congratulations, you are Exalted with the Bloodsail Buccaneers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Brood of Nozdormu",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Brood of Nozdormu",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Brood of Nozdormu faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={956},
 },[[
 step
@@ -337,8 +345,11 @@ step
 label exalted
 Congratulations, you are Exalted with the Brood of Nozdormu!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Cenarion Circle",{
-description="This guide will walk you through gaining Cenarion Circle faction to become Exalted.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Cenarion Circle",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Cenarion Circle faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={953},
 },[[
 step
 label	"menu"
@@ -807,9 +818,11 @@ step
 label	"exalted"
 Congratulations, you are Exalted with Cenarion Expedition |only if rep('Cenarion Circle')==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Darkmoon Faire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darkmoon Faire",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with The Darkmoon Faire to earn the title _The Insane_.",
+description="This guide will walk you through becoming exalted with the Darkmoon Faire faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 The Darkmoon Faire starts the first Sunday of the month and lasts for one week. The easiest way to earn reputation with
@@ -838,189 +851,158 @@ step
 label	"end"
 Congratulations, you have reached Exalted with The Darkmoon Faire! |condition rep('Darkmoon Faire')>=Exalted |only if rep('Darkmoon Faire')>=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Home Cities Reputation",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Darkspear Trolls",{
 author="support@zygorguides.com",
-description="This guide will show you how to become exalted the fastest way, with all your Hometown Factions.",
+description="This guide will walk you through becoming exalted with the Darkspear Trolls faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
-label	"menu"
-This guide will show you how to become exalted the fastest way, with all your Hometown Factions.
-Below you will see which faction you are Exalted with and which ones you are not:
-Exalted with Orgrimmar |condition rep('Orgrimmar')==Exalted
-Click to use the Orgrimmar rep Guide |confirm always |next "org" |only if rep ('Orgrimmar')<=Revered
-or
-Exalted with Thunder Bluff |condition rep('Thunder Bluff')==Exalted
-Click to use the Thunder Bluff rep Guide |confirm always |next "tb" |only if rep ('Thunder Bluff')<=Revered
-or
-Exalted with Undercity |condition rep('Undercity')==Exalted
-Click to use the Undercity rep Guide |confirm always |next "uc" |only if rep ('Undercity')<=Revered
-or
-Exalted with Darkspear Trolls |condition rep('Darkspear Trolls')==Exalted
-Click to use the Darkspear Trolls Rep Guide |confirm always |next "troll" |only if rep ('Darkspear Trolls')<Revered
-or
-Exalted with Silvermoon City |condition rep('Silvermoon City')==Exalted
-Click to use Silvermoon City rep Guide |confirm always |next "belf" |only if rep('Silvermoon City')<=Revered
-or
-Exalted with Bilgewater Cartel |condition rep('Bilgewater Cartel')==Exalted
-Click to use the Bilgewater Cartel rep Guide |confirm always |next "bilge" |only if rep ('Bilgewater Cartel')<=Revered
-or
-Exalted with Huojin Pandaren |condition rep('Huojin Pandaren')==Exalted
-Click to use the Huojin Pandaren rep Guide |confirm always |next "huojin" |only if rep ('Huojin Pandaren')<=Revered
-|next "end" |only if achieved(762)
-step
-label	"org"
-talk Stone Guard Nargol##50488
-buy Orgrimmar Tabard##45581 |goto Orgrimmar,50.4,58.4
-step
-Equip your Orgrimmar Tabard |equipped Orgrimmar Tabard##45581 |use Orgrimmar Tabard##45581
-You can run any dungeon that grants experience to gain reputation for Orgrimmar.
-Friendly with Orgrimmar |condition rep('Orgrimmar')>=Friendly
-Honored with Orgrimmar |condition rep('Orgrimmar')>=Honored
-Revered with Orgrimmar |condition rep('Orgrimmar')>=Revered
-Become Exalted with Orgrimmar |condition rep('Orgrimmar')==Exalted
-|next "menu"
-step
-label	"tb"
-Skipping next part of guide |next "+tb_tab" |only if step:Find("+tb_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"tb_buy"
-talk Brave Tuho##50483
-buy Thunder Bluff Tabard##45584 |goto Thunder Bluff,47.0,50.2
-step
-label	"tb_tab"
-Equip your Thunder Bluff Tabard |equipped Thunder Bluff Tabard##45584 |use Thunder Bluff Tabard##45584
-You can run any dungeon that grants experience to gain reputation for Thunder Bluff.
-Friendly with Thunder Bluff |condition rep('Thunder Bluff')>=Friendly
-Honored with Thunder Bluff |condition rep('Thunder Bluff')>=Honored
-Revered with Thunder Bluff |condition rep('Thunder Bluff')>=Revered
-Become Exalted with Thunder Bluff |condition rep('Thunder Bluff')==Exalted
-|next "menu"
-step
-label	"belf"
-Skipping next part of guide |next "+belf_tab" |only if step:Find("+belf_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"belf_buy"
-talk Magistrix Nizara##50484
-buy Silvermoon City Tabard##45585 |goto Eversong Woods,54.3,50.8
-step
-label	"belf_tab"
-Equip your Silvermoon City Tabard |equipped Silvermoon City Tabard##45585 |use Silvermoon City Tabard##45585
-You can run any dungeon that grants experience to gain reputation for Silvermoon City.
-Friendly with Silvermoon City |condition rep('Silvermoon City')>=Friendly
-Honored with Silvermoon City |condition rep('Silvermoon City')>=Honored
-Revered with Silvermoon City |condition rep('Silvermoon City')>=Revered
-Become Exalted with Silvermoon City |condition rep('Silvermoon City')==Exalted
-|next "menu"
-step
-label	"uc"
-Skipping next part of guide |next "+uc_tab" |only if step:Find("+uc_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"uc_buy"
-talk Captain Donald Adams##50304
-buy Undercity Tabard##45583 |goto Undercity,63.0,49.1
-step
-label	"uc_tab"
-Equip your Undercity Tabard |equipped Undercity Tabard##45583 |use Undercity Tabard##45583
-You can run any dungeon that grants experience to gain reputation for Undercity.
-Friendly with Undercity |condition rep('Undercity')>=Friendly
-Honored with Undercity |condition rep('Undercity')>=Honored
-Revered with Undercity |condition rep('Undercity')>=Revered
-Become Exalted with Undercity |condition rep('Undercity')==Exalted
-|next "menu"
-step
-label	"troll"
-Skipping next part of guide |next "+troll_tab" |only if step:Find("+troll_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"troll_buy"
 talk Champion Uru'zin##50477
 buy Darkspear Tabard##45582 |goto Orgrimmar,50.0,58.1
-step
-label	"troll_tab"
-Equip your Darkspear Trolls Tabard |equipped Darkspear Tabard##45582 |use Darkspear Tabard##45582
-You can run any dungeon that grants experience to gain reputation for Darkspear Trolls.
-Friendly with Darkspear Trolls |condition rep('Darkspear Trolls')>=Friendly
-Honored with Darkspear Trolls |condition rep('Darkspear Trolls')>=Honored
-Revered with Darkspear Trolls |condition rep('Darkspear Trolls')>=Revered
+Equip your Darkspear Trolls Tabard |equipped Darkspear Tabard##45582 |use Darkspear Tabard##45582 |future
+You can run any dungeon that grants experience to gain reputation for the Darkspear Trolls
 Become Exalted with Darkspear Trolls |condition rep('Darkspear Trolls')==Exalted
-|next "menu"
 step
-label	"bilge"
-Skipping next part of guide |next "+bilge_tab" |only if step:Find("+bilge_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"bilge_buy"
-talk Frizzo Villamar##50323
-buy Bilgewater Cartel Tabard##64884 |goto Orgrimmar,50.1,58.6
-step
-label	"bilge_tab"
-Equip your Bilgewater Cartel Tabard |equipped Bilgewater Cartel Tabard##64884 |use Bilgewater Cartel Tabard##64884
-You can run any dungeon that grants experience to gain reputation for Bilgewater Cartel.
-Friendly with Bilgewater Cartel |condition rep('Bilgewater Cartel')>=Friendly
-Honored with Bilgewater Cartel |condition rep('Bilgewater Cartel')>=Honored
-Revered with Bilgewater Cartel |condition rep('Bilgewater Cartel')>=Revered
-Become Exalted with Bilgewater Cartel |condition rep('Bilgewater Cartel')==Exalted
-|next "menu"
-step
-label	"huojin"
-Skipping next part of guide |next "+huojin_tab" |only if step:Find("+huojin_buy"):IsComplete()
-Proceeding next step |next |only if default
-step
-label	"huojin_buy"
-talk Turtlemaster Odai##66022
-buy Huojin Tabard##83080 |goto Orgrimmar 69.8,41.1
-step
-label	"huojin_tab"
-Equip your Huojin Tabard |equipped Huojin Tabard##83080 |use Huojin Tabard##83080
-You can run any dungeon that grants experience to gain reputation for Bilgewater Cartel.
-Friendly with Huojin Pandaren |condition rep('Huojin Pandaren')>=Friendly
-Honored with Huojin Pandaren |condition rep('Huojin Pandaren')>=Honored
-Revered with Huojin Pandaren |condition rep('Huojin Pandaren')>=Revered
-Become Exalted with Huojin Pandaren |condition rep('Huojin Pandaren')==Exalted
-|next "menu"
-step
-label	"end"
-Congratulations, you have earned the Title _Ambassador_! |achieve 948
+Congratulations, you have reached exalted with the Darkspear Trolls!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Hydraxian Waterlords",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The Defilers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Defilers faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={710},
+},[[
+step
+In order to gain reputation with The Defilers you must participate in Arathi Basin, but first you should make sure you have a quest in your log before you start.
+|confirm
+step
+talk Deathmaster Dwire##15021
+accept The Battle for Arathi Basin!##8120 |goto Arathi Highlands 68.4,30.6
+step
+To join Arathi Basin hit the _[H]_ key, click _Arathi Basin_, and click _Join Battle_.
+|confirm
+step
+While in Arathi Basin:
+Click the Banners at each location. |model 6271
+Assault the Mine |q 8105/1
+Assault the Lumber Mill |q 8105/2
+Assault the Blacksmith |q 8105/3
+Assault the Farm |q 8105/4
+Upon completing this quest and reach Friendly reputation with The Defilers you should be able to accept another quest from Deathmaster Dwire.
+step
+talk Deathmaster Dwire##15021
+turnin The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
+step
+talk Deathmaster Dwire##15021
+accept Take Four Bases##8121 |goto Arathi Highlands 68.4,30.6
+step
+Enter Arathi Basin and hold four bases at the same time. |q 8121/1
+step
+talk Deathmaster Dwire##15021
+turnin Take Four Bases##8121 |goto Arathi Highlands 68.4,30.6
+step
+Farm Arathi Basin until you are Exalted with The Defilers.
+Earn Exalted status with The Defilers |condition rep('The Defilers')==Exalted |next "exalted"
+step
+label exalted
+Congratulations, you are now Exalted with The Defilers!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Frostwolf Clan",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Frostwolf Clan faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={708},
+},[[
+step
+In order to gain reputation with the Frostwolf Clan you must participate in Alterac Valley, but first you should pick up a few quests.
+|confirm
+step
+talk Voggah Deathgrip##13817
+accept The Battle for Alterac##7142 |goto Hillsbrad Foothills 58.7,34.2
+step
+talk Warmaster Laggrond##13840
+accept Proving Grounds##7161 |goto 57.8,33.3
+step
+Enter the cave |goto 58.7,33.4 < 5 |q 7161 |walk
+talk Corporal Teeka Bloodsnarl##13776
+accept Towers and Bunkers##7101 |goto 59.7,31.2
+accept The Graveyards of Alterac##7082 |goto 59.7,31.2
+accept Capture a Mine##7124 |goto 59.7,31.2
+step
+To join Alterac Valley hit the _[H]_ key, click _Alterac Valley_, and click _Join Battle_.
+|confirm
+step
+talk Smith Regzar##13176
+accept Enemy Booty##7224 |goto Alterac Valley 49.6,82.6
+step
+Enter the cave |goto 52.9,89.5 < 5 |q 7161 |walk
+Follow the path around and click the Frostwolf Banner
+click Frostwolf Banner##5571
+collect Frostwolf Banner##17850 |q 7161/1 |goto 50.6,93.3
+step
+Exit the cave |goto 52.9,89.5 < 5 |c |q 7161 |walk
+step
+label checklist
+While in Alterac Valley:
+|tip You probably won't be able to do everything in one game, keep joining Alterac Valley matches.
+Click Alliance Flag
+Assault any Graveyard |q 7082/1
+Capture any Mine |q 7124/1
+Click Horde Flag
+Assault any Tower |q 7101/1
+Loot Alliance players when they die.
+collect 20 Armor Scraps##17422 |q 7224/1
+kill Vanndar Stormpike##11948 |q 7142/1
+|model Alliance Flag##5651
+step
+Before you leave Alterac Valley:
+talk Smith Regzar##13176
+turnin Enemy Booty##7224 |goto Alterac Valley 49.6,82.6
+step
+To return to the Alterac Valley checklist click here. |next "checklist" |confirm
+To continue forward click here. |confirm
+step
+talk Voggah Deathgrip##13817
+turnin The Battle for Alterac##7142 |goto Hillsbrad Foothills 58.7,34.2
+step
+talk Warmaster Laggrond##13840
+turnin Proving Grounds##7161 |goto 57.8,33.3
+step
+Enter the cave |goto 58.7,33.4 < 5 |q 7124 |walk
+talk Corporal Teeka Bloodsnarl##13776
+turnin Towers and Bunkers##7101 |goto 59.7,31.2
+turnin The Graveyards of Alterac##7082 |goto 59.7,31.2
+turnin Capture a Mine##7124 |goto 59.7,31.2
+step
+Continue joining Alterac Valley until you reach Friendly with the Frostwolf Clan. |condition rep('Frostwolf Clan')>=Friendly |next "friendly"
+step
+label friendly
+talk Warmaster Laggrond##13840
+accept Rise and Be Recognized##7163 |goto Hillsbrad Foothills 57.8,33.3
+step
+Continue joining Alterac Valley until you reach Honored with the Frostwolf Clan. |condition rep('Frostwolf Clan')>=Honored |next "honored"
+step
+label honored
+talk Warmaster Laggrond##13840
+accept Honored Amongst the Clan##7164 |goto Hillsbrad Foothills 57.8,33.3
+step
+Continue joining Alterac Valley until you reach Revered with the Frostwolf Clan. |condition rep('Frostwolf Clan')==Revered |next "revered"
+step
+label revered
+talk Warmaster Laggrond##13840
+accept Earned Reverence##7165 |goto Hillsbrad Foothills 57.8,33.3
+step
+Continue joining Alterac Valley until you reach Exalted with the Frostwolf Clan. |condition rep('Frostwolf Clan')==Exalted |next "exalted"
+step
+label exalted
+Congratulations, you are now Exalted with the Frostwolf Clan!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Hydraxian Waterlords",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Hydraxian Waterlords faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={955},
 },[[
 step
-This reputation can be earned by running the Molten Core raid.
-Molten Core is a 40 man raid and will require you to be higher level, bringing some friends is recommended.
-|confirm
-step
-label start
-If you have never entered Molten Core before you will need to get your attunement to the instance. Click here. |next "attune" |confirm
-If you already have your attunement, click here. |next "noattune" |confirm
-step
-label
-talk Lothos Riftwaker##14387
-accept Attunement to the Core##7848 |goto Burning Steppes/16 54.3,83.5
-step
-Follow the path and click on the Shadowforge Gate to open it |goto Blackrock Depths 37.9,66.0 < 5
-Follow the path to this spot and jump into the lava |goto 55.4,32.4
-|tip It will do 600 damage every few seconds so most high levels will be in no danger.
-Swim through the lava to this point |goto Blackrock Depths/2 63.0,30.4 < 5
-If you are having trouble keeping your health up you can take breaks to heal at [Blackrock Depths/2 54.5,49.6] |n
-and [Blackrock Depths/2 59.4,33.7] |n
-step
-Follow this bridge across |goto Blackrock Depths/2 62.4,29.1 < 5 |c
-click Core Fragment##5740
-collect 1 Core Fragment |q 7848/1 |goto Blackrock Depths/2 69.2,36.9
-step
-Enter Molten Core through the portal in front of you
-|tip You must be in a raid group. |goto Molten Core |noway |c
-step
-Exit Molten Core through the portal behind you |goto Burning Steppes |noway |c
-step
-talk Lothos Riftwaker##14387
-turnin Attunement to the Core##7848 |goto Burning Steppes 18.2,24.9
-step
-label noattune
 talk Lothos Riftwaker##14387 |goto 18.2,24.9
 Ask Lothos to transport you to Molten Core |goto Molten Core |noway |c
 step
@@ -1030,12 +1012,27 @@ Click here to go back to the beginning of the guide |next "start" |confirm
 Earn Exalted status with the Hydraxian Waterlords |condition rep('Hydraxian Waterlords')==Exalted |next "exalted"
 |tip You can only become Exalted by killing Golemagg the Incinerator or Ragnaros, the maximum rep you can get without these two dying is 20999/21000 Revered.
 step
-label exalted
 Congratulations, you are now Exalted with the Hydraxian Waterlords!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Ravenholdt",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Orgrimmar",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with Ravenholdt to earn the title _The Insane_.",
+description="This guide will walk you through becoming exalted with the Orgrimmar faction.",
+condition_suggested="level>=1 and level<=60",
+},[[
+step
+talk Stone Guard Nargol##50488
+buy Orgrimmar Tabard##45581 |n |goto Orgrimmar,50.4,58.4
+Equip your Orgrimmar Tabard |equipped Orgrimmar Tabard##45581 |use Orgrimmar Tabard##45581 |future
+You can run any dungeon that grants experience to gain reputation for Orgrimmar
+Become Exalted with Orgrimmar |condition rep('Orgrimmar')==Exalted
+step
+Congratulations, you have reached exalted with Orgrimmar!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Ravenholdt",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ravenholdt faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={2336},
 },[[
 step
 In order to get Exalted with Ravenholdt Faction, you need to grind mobs to _11,999/12,000_ Honored reputation.
@@ -1071,9 +1068,10 @@ step
 label	"end"
 Congratulations, you have reached Exalted with Ravenholdt!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\The Steamwheedle Cartel",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\The Steamwheedle Cartel",{
 author="support@zygorguides.com",
-description="This Guide will help you get Reputation with the Steamwheedle Cartel to earn the title _The Insane_.",
+description="This guide will walk you through becoming exalted with The Steamwheedle Cartel faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
 label	"Steam_Menu"
@@ -1275,8 +1273,10 @@ step
 label	"end"
 Congratulations! You are honored with the Steamwheedle Cartel!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Thorium Brotherhood",{
-endlevel=49
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Thorium Brotherhood",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Thorium Brotherhood faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
 The Thorium Brotherhood reputation is gained through questing in Searing Gorge and Burning Steppes. It is also gained by turning certain items in to Lokhtos Darkbargainer, most of these items come from Molten Core. See our Hydraxian Waterlords guide for more information on Molten Core.
@@ -1782,8 +1782,24 @@ step
 label exalted
 Congratulations, you are Exalted with the Thorium Brotherhood!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Timbermaw Hold",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Thunder Bluff",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Thunder Bluff faction.",
+condition_suggested="level>=1 and level<=60",
+},[[
+step
+talk Brave Tuho##50483
+buy Thunder Bluff Tabard##45584 |n |goto Thunder Bluff,47.0,50.2
+Equip your Thunder Bluff Tabard |equipped Thunder Bluff Tabard##45584 |use Thunder Bluff Tabard##45584 |future
+You can run any dungeon that grants experience to gain reputation for Thunder Bluff
+Become Exalted with Thunder Bluff |condition rep('Thunder Bluff')==Exalted
+step
+Congratulations, you have reached exalted with Thunder Bluff!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Timbermaw Hold",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Timbermaw Hold faction.",
+condition_suggested="level>=1 and level<=60",
 achieveid={944},
 },[[
 step
@@ -1933,465 +1949,39 @@ step
 label	"exalted"
 Congratulations, you are now Exalted with Timbermaw Hold!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Tranquillien",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Undercity",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Undercity faction.",
+condition_suggested="level>=1 and level<=60",
 },[[
 step
-talk Courier Dawnstrider##16183
-turnin Missing in the Ghostlands##9144 |goto Eversong Woods,49.0,89.0
-|only if havequest(16183)
-step
-talk Apothecary Thedra##16196
-accept The Fallen Courier##9147 |goto 49.0,89.0
-step
-klll Starving Ghostclaw##16347+, Mistbat##16353+
-collect 4 Plagued Blood Sample |q 9147/1 |goto Ghostlands,49.3,12.6
-step
-talk Apothecary Thedra##16196
-turnin The Fallen Courier##9147 |goto Eversong Woods,49.0,89.0
-step
-talk Courier Dawnstrider##16183
-accept Delivery to Tranquillien##9148 |goto 49.0,89.0
-step
-talk Arcanist Vandril##16197
-turnin Delivery to Tranquillien##9148 |goto Ghostlands,46.3,28.4
-accept The Forsaken##9327 |or |goto Ghostlands,46.3,28.4
-accept the Forsaken##9329 |or |goto Ghostlands,46.3,28.4
-step
-talk Skymaster Sunwing##16189
-fpath Tranquillien |goto 45.4,30.5
-step
-talk High Executor Mavren##16252
-turnin The Forsaken##9329 |or |goto 44.8,32.5
-turnin The Forsaken##9327 |or |goto 44.8,32.5
-accept Return to Arcanist Vandril##9758 |goto 44.8,32.5
-step
-talk Arcanist Vandril##16197
-turnin Return to Arcanist Vandril##9758 |goto 46.3,28.4
-accept Suncrown Village##9138 |goto 46.3,28.4
-step
-talk Rathis Tomber##16224
-accept Tomber's Supplies##9152 |goto 47.3,28.6
-step
-talk Innkeeper Kalarin##16542
-home Tranquillien |goto 48.9,32.4
-step
-talk Apothecary Renzithen##16198
-accept The Plagued Coast##9149 |goto 47.7,34.9
-step
-kill 10 Nerubis Guard##16313+ |q 9138/1 |goto 60.6,14.0
-step
-talk Arcanist Vandril##16197
-turnin Suncrown Village##9138 |goto 46.3,28.4
-accept Goldenmist Village##9139 |goto 46.3,28.4
-step
-click Rathis Tomber's Supplies##1869
-|tip It's in a wagon with a purple canopy over it.
-collect Rathis Tomber's Supplies |q 9152/1 |goto 33.6,26.5
-step
-kill 6 Quel'dorei Ghost##16325+ |q 9139/1 |goto 27.3,16.2
-kill 4 Quel'dorei Wraith##16326+ |q 9139/2 |goto 27.3,16.2
-step
-kill Withered Grimscale##16403+, Zombified Grimscale##16402+
-collect 6 Plagued Murloc Spine |q 9149/1 |goto 20.5,21.4
-step
-talk Rathis Tomber##16224
-turnin Tomber's Supplies##9152 |goto 47.1,28.3
-step
-talk Arcanist Vandril##16197
-turnin Goldenmist Village##9139 |goto 46.3,28.4
-accept Windrunner Village##9140 |goto 46.3,28.4
-step
-talk Magister Darenis##16199
-accept Salvaging the Past##9150 |goto 46.0,32.0
-step
-talk Ranger Lethvalin##16213
-accept Help Ranger Valanna!##9145 |goto 45.5,32.5
-step
-talk Dame Auriferous##16231
-accept Investigate An'daroth##9160 |goto 44.9,32.5
-step
-talk Deathstalker Maltendis##16251
-accept Trouble at the Underlight Mines##9192 |goto 44.8,32.3
-step
-talk Deathstalker Rathiel##16200
-accept Down the Dead Scar##9155 |goto 46.0,33.6
-step
-talk Apothecary Renzithen##16198
-turnin The Plagued Coast##9149 |goto 47.7,34.9
-step
-talk Master Chef Mouldier##16253
-accept Culinary Crunch##9171 |goto 48.4,30.9
-step
-kill 10 Risen Hungerer##16301+ |q 9155/1 |goto 40.5,33.5
-kill 10 Gangled Cannibal##16309+ |q 9155/2 |goto 40.5,33.5
-More can be found around [38.3,36.5]
-step
-kill Arcane Devourer##16304+, Mana Shifter##16310+
-collect 8 Crystallized Mana Essence |q 9150/1 |goto 35.9,32.9
-step
-kill Spindleweb Spider##16350+
-collect 5 Crunchy Spider Leg |q 9171/1 |goto 27.6,31.1
-You can find more around [33.5,22.2]
-step
-Follow the path up |goto 37.7,22.9 < 10
-Go to this spot
-|tip Get near the intertwined tree lamp in the middle of the camp.
-Investigate An'daroth |q 9160/1 |goto 35.4,12.4
-kill 12 Sentinel Spy##16330+ |q 9160/2 |goto 35.4,12.4
-step
-talk Master Chef Mouldier##16253
-turnin Culinary Crunch##9171 |goto 48.0,31.0
-step
-talk Magister Darenis##16199
-turnin Salvaging the Past##9150 |goto 46.0,32.0
-step
-talk Dame Auriferous##16231
-turnin Investigate An'daroth##9160 |goto 44.9,32.5
-accept Into Occupied Territory##9163 |goto 44.9,32.5
-step
-talk Deathstalker Maltendis##16251
-accept Troll Juju##9199 |goto 44.7,32.3
-step
-talk Advisor Valwyn##16289
-accept Investigate the Amani Catacombs##9193 |goto 44.8,32.8
-step
-talk Deathstalker Rathiel##16200
-turnin Down the Dead Scar##9155 |goto 46.0,33.6
-step
-talk Apprentice Shatharia##16293
-accept Underlight Ore Samples##9207 |goto 31.4,48.3
-step
-kill 8 Blackpaw Gnoll##16334+ |q 9192/1 |goto 29.7,46.9
-kill 6 Blackpaw Scavenger##16335+ |q 9192/2 |goto 29.7,46.9
-kill 4 Blackpaw Shaman##16337+ |q 9192/3 |goto 29.7,46.9
-collect 6 Underlight Ore |q 9207/1 |goto 29.7,46.9
-step
-kill Phantasmal Seeker##16323+
-collect 6 Phantasmal Substance |q 9140/1 |goto 18.8,46.1
-kill Stonewing Slayer##16324+
-collect 4 Gargoyle Fragment |q 9140/2 |goto 18.8,46.1
-step
-click Night Elf Plans: An'daroth##183
-collect Night Elf Plans: An'daroth |q 9163/1 |goto 12.6,26.5
-It can also spawn at [13.7,26.8]
-step
-click Night Elf Plans: An'owyn##222
-collect Night Elf Plans: An'owyn |q 9163/2 |goto 12.9,23.9
-It can also spawn at [12.5,24.8]
-step
-click Night Elf Plans: Scrying on the Sin'dorei##164
-collect Night Elf Plans: Scrying on the Sin'dorei |q 9163/3 |goto 10.5,22.6
-step
-talk Arcanist Vandril##16197
-turnin Windrunner Village##9140 |goto 46.3,28.4
-step
-talk Dame Auriferous##16231
-turnin Into Occupied Territory##9163 |goto 44.9,32.5
-accept Deliver the Plans to An'telas##9166 |goto 44.9,32.5
-step
-talk Deathstalker Maltendis##16251
-turnin Trouble at the Underlight Mines##9192 |goto 44.7,32.3
-step
-talk High Executor Mavren##16252
-accept Retaking Windrunner Spire##9173 |goto 44.8,32.5
-step
-talk Magistrix Aminel##16205
-accept Spinal Dust##9218 |goto 48.9,31.3
-accept Rotting Hearts##9216 |goto 48.9,31.3
-step
-talk Dying Blood Elf##16601
-accept Anok'suten##9315 |goto 57.6,14.9
-step
-kill Anok'suten##16357 |q 9315/1 |goto 61.3,15.9
-|tip He walks all around this village, so you may need to search for him.
-step
-talk Ranger Valanna##16219
-turnin Help Ranger Valanna!##9145 |goto 69.4,15.2
-accept Dealing with Zeb'Sora##9143 |goto 69.4,15.2
-step
-kill Shadowpine Ripper##+, Shadowpine Witch##+
-collect 6 Zeb'Sora Troll Ear |q 9143/1 |goto 74.8,12.3
-step
-talk Ranger Valanna##16219
-turnin Dealing with Zeb'Sora##9143 |goto 69.4,15.2
-accept Report to Captain Helios##9146 |goto 69.4,15.2
-step
-talk Geranis Whitemorn##16201
-accept Forgotten Rituals##9157 |goto 72.3,19.1
-step
-talk Farstrider Sedina##16202
-accept Bearers of the Plague##9158 |goto 72.5,32.1
-step
-talk Farstrider Solanna##16463
-accept Attack on Zeb'Tela##9276 |goto 72.3,31.3
-step
-talk Captain Helios##16220
-turnin Report to Captain Helios##9146 |goto 72.4,29.6
-accept Shadowpine Weaponry##9214 |goto 72.4,29.6
-step
-talk Ranger Krenn'an##16462
-accept Spirits of the Drowned##9274 |goto 72.2,29.8
-step
-talk Ranger Vynna##16203
-accept The Traitor's Shadow##9161 |goto 72.0,32.6
-step
-kill 8 Ravening Apparition##16327+ |q 9274/1 |goto 73.5,21.9
-kill 8 Vengeful Apparition##16328+ |q 9274/2 |goto 73.5,21.9
-click Glistening Mud##49+
-collect 8 Wavefront Medallion |q 9157/1 |goto 73.5,21.9
-step
-talk Geranis Whitemorn##16201
-turnin Forgotten Rituals##9157 |goto 72.3,19.1
-accept Vanquishing Aquantion##9174 |goto 72.3,19.1
-step
-click Altar of Tidal Mastery##4853
-kill Aquantion##16292 |q 9174/1 |goto 71.3,15.1
-step
-talk Geranis Whitemorn##16201
-turnin Vanquishing Aquantion##9174 |goto 72.3,19.1
-step
-click Dusty Journal##470
-|tip It's laying on the balcony platform of this building.
-turnin The Traitor's Shadow##9161 |goto 79.6,17.6
-accept Hints of the Past##9162 |goto 79.6,17.6
-step
-kill 10 Ghostclaw Lynx##16348+ |q 9158/1 |goto 75.8,28.4
-|tip The Ghostclaw Lynx share spawn points with the bats.
-step
-talk Farstrider Sedina##16202
-turnin Bearers of the Plague##9158 |goto 72.5,32.1
-accept Curbing the Plague##9159 |goto 72.5,32.1
-step
-talk Ranger Krenn'an##16462
-turnin Spirits of the Drowned##9274 |goto 72.2,29.8
-step
-talk Ranger Vynna##16203
-turnin Hints of the Past##9162 |goto 72.0,32.6
-accept Report to Magister Kaendris##9172 |goto 72.0,32.6
-step
-talk Apothecary Venustus##16464
-accept A Little Dash of Seasoning##9275 |goto 72.6,31.6
-stickystart "shadowhead"
-step
-kill 10 Vampiric Mistbat##16354+ |q 9159/1 |goto 73.9,38.0
-step "shadowhead"
-kill 8 Shadowpine Shadowcaster##16469+ |q 9276/1 |goto 78.6,38.1
-collect 3 Shadowcaster Mace |q 9214/2 |goto 78.6,38.1
-kill 8 Shadowpine Headhunter##16344+ |q 9276/2 |goto 78.6,38.1
-collect 3 Headhunter Axe |q 9214/1 |goto 78.6,38.1
-step
-talk Farstrider Solanna##16463
-turnin Attack on Zeb'Tela##9276 |goto 72.3,31.3
-accept Assault on Zeb'Nowa##9277 |goto 72.3,31.3
-step
-talk Arcanist Vandril##16197
-turnin Anok'suten##9315 |goto 46.3,28.4
-step
-kill Risen Stalker##16302+, Risen Hungerer##16301+
-collect 10 Rotting Heart |q 9216/1 |goto 39.2,36.3
-You can find more around [37.8,45.8]
-step
-kill 8 Spindleweb Lurker##16351+ |q 9159/2 |goto 29.8,40.9
-You can find more around [26.4,53.5]
-step
-kill 8 Deatholme Acolyte##16315+ |q 9173/1
-kill 10 Fallen Ranger##16314+ |q 9173/2
-collect The Lady's Necklace##22597 |n
-Click The Lady's Necklace in your bags |use The Lady's Necklace##22597
-accept The Lady's Necklace##9175 |goto 17,59
-step
-talk Magistrix Aminel##16205
-turnin Rotting Hearts##9216 |goto 48.9,31.3
-step
-talk Magister Darenis##16199
-accept The Sanctum of the Sun##9151 |goto 46.0,31.9
-step
-talk High Executor Mavren##16252
-turnin Retaking Windrunner Spire##9173 |goto 44.8,32.4
-turnin The Lady's Necklace##9175 |goto 44.8,32.4
-step
-Follow this path |goto 55.2,44.8 < 5
-talk Magister Kaendris##16239
-turnin Report to Magister Kaendris##9172 |goto 55.1,48.8
-accept The Twin Ziggurats##9176 |goto 55.1,48.8
-step
-talk Magister Quallestis##16291
-turnin Underlight Ore Samples##9207 |goto 54.9,48.5
-step
-talk Magister Idonis##16204
-turnin The Sanctum of the Sun##9151 |goto 54.9,48.5
-accept War on Deatholme##9220 |goto 54.9,48.5
-step
-Follow this path |goto 57.1,45.0 < 5 |only if walking
-Follow the path up |goto 60.7,42.7 < 5 |only if walking
-talk Magister Sylastor##16237
-turnin Deliver the Plans to An'telas##9166 |goto 60.3,35.6
-accept Deactivate An'owyn##9169 |goto 60.3,35.6
-step
-kill Sentinel Infiltrator##16333+
-collect Crystal Controlling Orb##23191 |goto 57.8,64.9
-step
-click Night Elf Moon Crystal##6749
-Deactivate the Night Elf Moon Crystal |q 9169/1 |goto 58.0,65.1
-stickystart "hexxerstave"
-step
-click Raw Meat Rack##4351
-Poison the Raw Meat Rack |q 9275/1 |goto 65.1,66.8
-step
-click Smoked Meat Rack##409
-Poison the Smoked Meat Rack |q 9275/2 |goto 63.0,75.0
-step
-click Fresh Fish Rack##6705
-Poison the Fresh Fish Rack |q 9275/3 |goto 68.3,57.8
-step "hexxerstave"
-kill 10 Shadowpine Catlord##16345+ |q 9277/1 |goto 66.9,58.6
-collect 3 Catlord Claws |q 9214/3 |goto 66.9,58.6
-kill 10 Shadowpine Hexxer##16346+ |q 9277/2 |goto 66.9,58.6
-collect 3 Hexxer Stave |q 9214/4 |goto 66.9,58.6
-You can find more around [63.5,67.4]
-step
-talk Farstrider Sedina##16202
-turnin Curbing the Plague##9159 |goto 72.5,32.1
-step
-talk Farstrider Solanna##16463
-turnin Assault on Zeb'Nowa##9277 |goto 72.3,31.2
-step
-talk Captain Helios##16220
-turnin Shadowpine Weaponry##9214 |goto 72.4,29.6
-step
-talk Apothecary Venustus##16464
-turnin A Little Dash of Seasoning##9275 |goto 72.6,31.6
-stickystart "trolljuju"
-step
-Follow this path |goto 67.7,28.9 < 10 |only if walking
-Enter the Amani Catacombs |goto 66.2,28.5 < 10 |walk
-click Mummified Troll Remains##6804
-|tip Do this as you walk.
-Go to this spot
-Investigate the Amani Catacombs |q 9193/1 |goto 62.9,31.1
-step
-talk Ranger Lilatha##16295
-accept Escape from the Catacombs##9212
-Escort Ranger Lilatha back to Farstrider Enclave |q 9212/1 |goto 62.9,32.7
-step "trolljuju"
-kill Mummified Headhunter##16342+, Shadowpine Oracle##16343+
-collect 8 Troll Juju |q 9199/1 |goto 62.8,31.8
-click Mummified Troll Remains##6804
-Burn 10 Mummified Troll Remains |q 9193/2 |goto 62.8,31.8
-There are more Mummified Troll Remains in the hallway at [64.9,28.5]
-step
-talk Captain Helios##16220
-turnin Escape from the Catacombs##9212 |goto 72.4,29.6
-step
-Follow this path |goto 60.7,42.7 < 10 |walk
-talk Magister Sylastor##16237
-turnin Deactivate An'owyn##9169 |goto 60.3,35.6
-step
-talk Deathstalker Maltendis##16251
-turnin Troll Juju##9199 |goto 44.7,32.3
-step
-talk Advisor Valwyn##16289
-turnin Investigate the Amani Catacombs##9193 |goto 44.8,32.8
-stickystart "spinaldust"
-step
-click Worn Chest##10
-collect Stone of Flame |q 9176/1 |goto 40.4,49.8
-step
-click Dented Chest##10
-collect Stone of Light |q 9176/2 |goto 34.3,47.7
-step "spinaldust"
-kill Dreadbone Sentinel##16305+, Deathcage Sorcerer##16308+
-collect 10 Spinal Dust |q 9218/1 |goto 38.1,58.6
-You can find more around [36.3,68.8]
-stickystart "eyewailer"
-step
-Enter Deatholme |goto 36.0,71.7 < 10 |walk
-kill 6 Nerubis Centurion##16319+ |q 9220/2 |goto 36.9,76.1
-You can find a few more around [39.2,79.7]
-step "eyewailer"
-kill 5 Eye of Dar'Khan##16320+ |q 9220/1 |goto 37.8,81.3
-kill 6 Wailer##16321+ |q 9220/3 |goto 37.8,81.3
-step
-talk Apprentice Vor'el##16480
-accept Clearing the Way##9281 |goto 46.4,56.4
-step
-kill 10 Greater Spindleweb##16352+ |q 9281/1 |goto 46.9,60.4
-kill 10 Ghostclaw Ravager##16349+ |q 9281/2 |goto 46.9,60.4
-You can find more:
-Around [56.4,59.9]
-Around [42.8,55.8]
-step
-talk Apprentice Vor'el##16480
-turnin Clearing the Way##9281 |goto 46.4,56.4
-step
-talk Magister Kaendris##16239
-turnin The Twin Ziggurats##9176 |goto 55.1,48.8
-step
-talk Magister Idonis##16204
-turnin War on Deatholme##9220 |goto 54.9,48.6
-accept Dar'Khan's Lieutenants##9170 |goto 54.9,48.6
-step
-talk Arcanist Janeda##16240
-accept A Restorative Draught##9877 |goto 54.8,48.4
-step
-talk Apothecary Renzithen##16198
-turnin A Restorative Draught##9877 |goto 47.7,34.9
-accept Captives at Deatholme##9164 |goto 47.7,34.9
-step
-talk Magistrix Aminel##16205
-turnin Spinal Dust##9218 |goto 48.9,31.3
-step
-Enter Deatholme |goto 36.0,71.7 < 10 |walk
-Enter the crypt |goto 31.7,73.7 < 10 |walk
-kill Jurion the Deceiver##16248 |q 9170/3 |goto 32.1,74.3
-step
-talk Apothecary Enith##16208
-<Administer the restorative draught.>
-Rescue Apothecary Enith |q 9164/1 |goto 32.1,74.0
-step
-kill Mirdoran the Fallen##16250 |q 9170/1 |goto 37.4,79.3
-step
-kill Masophet the Black##16249 |q 9170/4 |goto 35.8,89.1
-He can also spawn at [29.3,88.9]
-step
-kill Borgoth the Bloodletter##16247 |q 9170/2 |goto 32.7,90.5
-He can also be found at [40.9,83.1]
-step
-talk Ranger Vedoran##16209
-<Administer the restorative draught.>
-Rescue Ranger Vedoran |q 9164/3 |goto 32.8,89.8
-step
-Follow the path up |goto 37.5,84.7 < 10
-talk Apprentice Varnis##16206
-<Administer the restorative draught.>
-Rescue Apprentice Varnis |q 9164/2 |goto 40.8,83.2
-step
-talk Magister Idonis##16204
-turnin Dar'Khan's Lieutenants##9170 |goto 54.9,48.5
-step
-talk Arcanist Janeda##16240
-turnin Captives at Deatholme##9164 |goto 54.8,48.4
-step
-click Wanted Poster: Kel'gash the Wicked##6902
-accept Bring Me Kel'gash's Head!##9215 |goto 72.2,31.2
-This is a group quest, so you may need some extra help with it.
-step
-kill Kel'gash the Wicked##16358
-collect Head of Kel'gash the Wicked |q 9215/1 |goto Ghostlands,65.3,79.5
-step
-talk Captain Helios##16220
-turnin Bring Me Kel'gash's Head!##9215 |goto 72.4,29.7
-step
-You should be Exalted with Tranquillien by this point.
-Earn Exalted with Tranquillien |condition rep('Tranquillien') |next "exalted"
+talk Captain Donald Adams##50304
+buy Undercity Tabard##45583 |n |goto Undercity,63.0,49.1
+Equip your Undercity Tabard |equipped Undercity Tabard##45583 |use Undercity Tabard##45583 |future
+You can run any dungeon that grants experience to gain reputation for Undercity
+Become Exalted with Undercity |condition rep('Undercity')==Exalted
+step
+Congratulations, you have reached exalted with Undercity!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Classic Reputations\\Warsong Outriders",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Warsong Outriders faction.",
+condition_suggested="level>=1 and level<=60",
+achieveid={712},
+},[[
+step
+In order to gain reputation with the Warsong Outriders you and your team must capture flags in Warsong Gulch.
+To join Warsong Gulch hit the _[H]_ key, click _Warsong Gulch_, and click _Join Battle_.
+Earn Exalted status with the Warsong Outriders |condition rep('Warsong Outriders')==Exalted |next "exalted"
 step
 label exalted
-Congratulations, you are Exalted with Tranquillien!
+Congratulations, you are now Exalted with the Warsong Outriders!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Egg Hunting - Optimized Path",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+description="This guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 There can be an egg here |goto Shadowmoon Valley,69.4,63.6 < 5 |c
@@ -2612,12 +2202,12 @@ step
 This is the end of the path.
 Click here to go back to the beginning of the path. |confirm |next "start"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Neutral)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Friendly reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Friendly reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
@@ -2673,11 +2263,11 @@ turnin Netherdust Pollen##11017 |goto 66.1,86.4
 step
 Repeat this process daily until you are Friendly with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Neutral) - Pre-Quests",{
 author="support@zygorguides.com",
-achieveid={898},
-startlevel=80,
 description="This guide section will walk you through getting Neutral reputation with Netherwing faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Mordenai##22113
@@ -2767,12 +2357,12 @@ step
 talk Yarzill the Merc##23141
 turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Friendly)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Honored reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Honored reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
@@ -2852,10 +2442,11 @@ turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.
 step
 Repeat this process daily until you are Honored with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Friendly) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Friendly reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Friendly reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -2915,12 +2506,12 @@ step
 talk Chief Overseer Mudlump##23291
 turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley,66.8,86.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Honored)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Revered reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Revered reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
@@ -3009,10 +2600,11 @@ turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
 step
 Repeat this process daily until you are Revered with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Honored) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Honored reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Honored reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -3078,12 +2670,12 @@ step
 talk Ja'y Nosliw##22433
 turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Revered)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered)",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Exalted reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+description="This guide section will walk you through getting Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-daily
 step
 talk Yarzill the Merc##23141
 accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
@@ -3188,10 +2780,11 @@ turnin The Deadliest Trap Ever Laid##11101 |only if rep ('The Aldor') >= Friendl
 step
 Repeat this process daily until you are Exalted with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Revered) - Pre-Quests",{
 author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through a chain of pre-quests, that become available\nonce you have earned Revered reputation with the Netherwing faction.\nThis chain of pre-quests will open up more Netherwing faction daily quests.",
+description="This guide section will walk you through a chain of pre-quests, that become available once you have earned Revered reputation with the Netherwing faction. This chain of pre-quests will open up more Netherwing faction daily quests.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
 step
 talk Taskmaster Varkule Dragonbreath##23140
@@ -3235,14 +2828,12 @@ talk Commander Arcus##23452
 turnin Commander Arcus##11100 |goto 62.4,29.3
 only if rep ('The Aldor') >= Friendly
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Netherwing\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!",{
 author="support@zygorguides.com",
+description="This guide section will walk you through the final steps of getting your Netherdrake Mount, once you've earned Exalted reputation with the Netherwing faction. You must have completed the Netherwing Reputation (Revered) guide section in order to be able to complete the quests in this guide section.",
+condition_suggested="level>=60 and level<=70",
+achieveid={898},
 },[[
-description This guide section will walk you through the final steps of getting your Netherdrake Mount,
-description once you've earned Exalted reputation with the Netherwing faction.
-description You must have completed the Netherwing Reputation (Revered) guide section
-description in order to be able to complete the quests in this guide section.
-startlevel 80
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Bow to the Highlord##11107 |goto Shadowmoon Valley,66.1,86.4
@@ -3266,8 +2857,11 @@ accept Jorus the Cobalt Netherwing Drake##11109 |instant |or |goto 66.8,17.6
 step
 Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Aldor",{
-description="This guide will walk you through becoming\nExalted with The Aldor faction.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Aldor",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Aldor faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={903, 1205},
 },[[
 step
 talk Haggard War Veteran##19684
@@ -3674,7 +3268,10 @@ step
 label exalted
 Congratulations, you are Exalted with The Aldor.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Ashtongue Deathsworn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ashtongue Deathsworn",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ashtongue Deathsworn faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={958},
 },[[
 step
@@ -3695,9 +3292,11 @@ step
 label exalted
 Congratulations, you are now Exalted with the Ashtongue Deathsworn!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Cenarion Expedition",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Cenarion Expedition",{
 author="support@zygorguides.com",
-description="This guide will take you through the quests needed to become Exalted with Cenarion Expedition",
+description="This guide will walk you through becoming exalted with the Cenarion Expedition faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={953},
 },[[
 step
 You will need to farm Cenarion Circle and Cenarion Expedition reputation.
@@ -4624,9 +4223,11 @@ step
 label exalted
 Congratulations, you are now Exalted with the Cenarion Expedition!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Consortium",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Consortium",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Consortium faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={902},
-description="This guide will help you earn exalted\nreputation with The Consortium Faction.",
 },[[
 step
 From neutral, you have a few options as to how to earn your reputation
@@ -5145,8 +4746,10 @@ step
 label "exalted"
 Congratulations, you are now Exalted with The Consortium.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Keepers of Time",{
-description="This guide will help you earn exalted\nreputation with the Keepers of Time.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Keepers of Time",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Keepers of Time faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 This faction largely relies on running certain instances repeatedly in order to gain reputation
@@ -5269,8 +4872,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Keepers of Time!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Lower City",{
-description="This guide will walk you through how to earn\nExalted with the Lower City.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Lower City",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Lower City faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 talk Rilak the Redeemed##22292
@@ -5592,10 +5197,11 @@ step
 label exalted
 Congratulations, you are now Exalted with the Lower City!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Mag'har",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Mag'har",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Mag'har faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={901},
-description="This Guide will help you reach Exalted status with the Mag'har Faction",
 },[[
 step
 talk Nazgrel##3230
@@ -6114,9 +5720,11 @@ step
 label exalted
 Congratulations, you are now Exalted with The Mag'har! |condition rep("The Mag'har")==Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Ogri'la",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Ogri'la",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ogri'la faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={896},
-description="This will walk you through the Pre-Quests for Ogri'la.",
 },[[
 step
 label "route"
@@ -6241,13 +5849,13 @@ talk Sky Commander Keller##23334
 turnin The Skyguard Outpost##11062 |goto 27.4,52.7
 step
 talk Sky Sergeant Vanderlip##23120
-accept Bombing Run##11010 |only !Druid |goto 27.6,52.9
+accept Bombing Run##11010 |only if not Druid |goto 27.6,52.9
 accept Bombing Run##11102 |only Druid |goto 27.6,52.9
 step
 Use your Skyguard Bombs on Fel Cannonballs Stacks |use Skyguard Bombs##32456
 |tip They look like piles of gray stones on the gorund around this area.
 Destroy 15 Fel Cannonball Stacks |q 11010/1 |goto 33.3,44.0
-only !Druid
+only if not Druid
 step
 Use your Skyguard Bombs on Fel Cannonballs Stacks |use Skyguard Bombs##32456
 |tip They look like piles of gray stones on the gorund around this area.
@@ -6255,7 +5863,7 @@ Destroy 15 Fel Cannonball Stacks |q 11102/1 |goto 33.3,44.0
 only Druid
 step
 talk Sky Sergeant Vanderlip##23120
-turnin Bombing Run##11010 |only !Druid |goto 27.6,52.9
+turnin Bombing Run##11010 |only if not Druid |goto 27.6,52.9
 turnin Bombing Run##11102 |only Druid |goto 27.6,52.9
 step
 talk Sky Commander Keller##23334
@@ -6430,7 +6038,10 @@ step
 label exalted
 Congratulation, you are now Exalted with Ogri'la.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Scale of the Sands",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scale of the Sands",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Scale of the Sands faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={959},
 },[[
 step
@@ -6450,8 +6061,11 @@ step
 label exalted
 Congratulations, you are now Exalted with The Scale of the Sands!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Scryers",{
-description="This guide will walk you through becoming\nExalted with The Scryers faction.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Scryers",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Scryers faction.",
+condition_suggested="level>=60 and level<=70",
+achieveid={903, 1205},
 },[[
 step
 talk Haggard War Veteran##19684
@@ -6842,8 +6456,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Scryers!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Sha'tar",{
-description="This guide will walk you through\ngaining exalted with The Sha'tar.",
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Sha'tar",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Sha'tar faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 talk Haggard War Veteran##19684
@@ -7642,10 +7258,11 @@ step
 label exalted
 Congratulations, you're now exalted with The Sha'tar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Sha'tari Skyguard",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sha'tari Skyguard",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sha'tari Skyguard faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={894},
-description="This guide will take you through the quests needed to become Exalted with the Shatari Skyguard",
 },[[
 step
 label "route"
@@ -7888,16 +7505,33 @@ kill Terokk##21838 |goto 66.2,77.5
 Killing Terokk will gain you 550 reputation with Ska'tari Skyguard
 |confirm always |next "menu"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Shattered Sun Offensive",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Shattered Sun Offensive",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Shattered Sun Offensive faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={897},
-description="This section is required to acces the\nShattered Sun Offensive daily quests.",
 },[[
-daily
 step
 #include "H_SSO_PreQuest_with_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Sporeggar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Silvermoon City",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Silvermoon City faction.",
+condition_suggested="level>=1 and level<=70",
+},[[
+step
+talk Magistrix Nizara##50484
+buy Silvermoon City Tabard##45585 |n |goto Eversong Woods,54.3,50.8
+Equip your Silvermoon City Tabard |equipped Silvermoon City Tabard##45585 |use Silvermoon City Tabard##45585 |future
+You can run any dungeon that grants experience to gain reputation for Silvermoon City
+Become Exalted with Silvermoon City |condition rep('Silvermoon City')==Exalted
+step
+Congratulations, you have reached exalted with Silvermoon City!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Sporeggar",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sporeggar faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={900},
 },[[
 step
@@ -8022,9 +7656,10 @@ step
 label	"exalted"
 Congratulations, you are now exalted with Sporeggar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\Thrallmar",{
-description="This guide will walk you through earning exalted with Thrallmar.",
-endlevel=61
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Thrallmar",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Thrallmar faction.",
+condition_suggested="level>=60 and level<=70",
 },[[
 step
 Grinding mobs in Hellfire Ramparts and Blood Furnace until 5,999 / 6,000 Honored would be best.  You won't be able to grind these two instance once you've passed the Honored threshold unless you do heroic, which you will only be able to do once per day.
@@ -8116,7 +7751,7 @@ talk Forward Commander To'arch##19273
 turnin Mission: The Abyssal Shelf##10162 |goto 65.9,43.6
 step
 talk Martik Tor'seldori##16577
-accept Falcon Watch##9498 |only !BloodElf |goto 55.2,39.1
+accept Falcon Watch##9498 |only if not BloodElf |goto 55.2,39.1
 accept Falcon Watch##9499 |only BloodElf |goto 55.2,39.1
 step
 talk Nazgrel##3230
@@ -8658,23 +8293,23 @@ After Honored, Normal Ramparts and Blood Furnace no long give reputation.  You w
 |confirm
 step
 talk Battlecryer Blackeye##18267
-accept Hellfire Fortifications##13409 |only !DeathKnight |goto Hellfire Peninsula,56.0,39.2
+accept Hellfire Fortifications##13409 |only if not DeathKnight |goto Hellfire Peninsula,56.0,39.2
 accept Hellfire Fortifications##13411 |only DeathKnight |goto Hellfire Peninsula,56.0,39.2
 step
 Capture The Overlook. |q 13409/1 |goto 40.1,48.5
 You will need to enable PVP in order to capture the objective.
 Type "/pvp" to enable player versus player combat. Players of the opposing faction will now be able to attack you, so be warned.
-only !DeathKnight
+only if not DeathKnight
 step
 Capture The Stadium. |q 13409/1 |goto 35.7,51.5
 You will need to enable PVP in order to capture the objective.
 Type "/pvp" to enable player versus player combat. Players of the opposing faction will now be able to attack you, so be warned.
-only !DeathKnight
+only if not DeathKnight
 step
 Capture Broken Hill. |q 13409/3 |goto 40.2,56.7
 You will need to enable PVP in order to capture the objective.
 Type "/pvp" to enable player versus player combat. Players of the opposing faction will now be able to attack you, so be warned.
-only !DeathKnight
+only if not DeathKnight
 step
 Capture The Overlook. |q 13411/1 |goto 40.1,48.5
 You will need to enable PVP in order to capture the objective.
@@ -8693,7 +8328,7 @@ only DeathKnight
 step
 talk Battlecryer Blackeye##18267
 turnin Hellfire Fortifications##13411 |only DeathKnight |goto Hellfire Peninsula,56.0,39.2
-turnin Hellfire Fortifications##13409 |only !DeathKnight |goto Hellfire Peninsula,56.0,39.2
+turnin Hellfire Fortifications##13409 |only if not DeathKnight |goto Hellfire Peninsula,56.0,39.2
 step
 After the quest is completed you will unlock a daily version of the quest.
 Click here to move onto it. |confirm
@@ -8722,7 +8357,468 @@ step
 label grats
 Congratulations, you are now exalted with Thrallmar!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Outland\\The Violet Eye",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\Tranquillien",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Tranquillien faction.",
+condition_suggested="level>=1 and level<=70",
+},[[
+step
+talk Courier Dawnstrider##16183
+turnin Missing in the Ghostlands##9144 |goto Eversong Woods,49.0,89.0
+|only if havequest(16183)
+step
+talk Apothecary Thedra##16196
+accept The Fallen Courier##9147 |goto 49.0,89.0
+step
+klll Starving Ghostclaw##16347+, Mistbat##16353+
+collect 4 Plagued Blood Sample |q 9147/1 |goto Ghostlands,49.3,12.6
+step
+talk Apothecary Thedra##16196
+turnin The Fallen Courier##9147 |goto Eversong Woods,49.0,89.0
+step
+talk Courier Dawnstrider##16183
+accept Delivery to Tranquillien##9148 |goto 49.0,89.0
+step
+talk Arcanist Vandril##16197
+turnin Delivery to Tranquillien##9148 |goto Ghostlands,46.3,28.4
+accept The Forsaken##9327 |or |goto Ghostlands,46.3,28.4
+accept the Forsaken##9329 |or |goto Ghostlands,46.3,28.4
+step
+talk Skymaster Sunwing##16189
+fpath Tranquillien |goto 45.4,30.5
+step
+talk High Executor Mavren##16252
+turnin The Forsaken##9329 |or |goto 44.8,32.5
+turnin The Forsaken##9327 |or |goto 44.8,32.5
+accept Return to Arcanist Vandril##9758 |goto 44.8,32.5
+step
+talk Arcanist Vandril##16197
+turnin Return to Arcanist Vandril##9758 |goto 46.3,28.4
+accept Suncrown Village##9138 |goto 46.3,28.4
+step
+talk Rathis Tomber##16224
+accept Tomber's Supplies##9152 |goto 47.3,28.6
+step
+talk Innkeeper Kalarin##16542
+home Tranquillien |goto 48.9,32.4
+step
+talk Apothecary Renzithen##16198
+accept The Plagued Coast##9149 |goto 47.7,34.9
+step
+kill 10 Nerubis Guard##16313+ |q 9138/1 |goto 60.6,14.0
+step
+talk Arcanist Vandril##16197
+turnin Suncrown Village##9138 |goto 46.3,28.4
+accept Goldenmist Village##9139 |goto 46.3,28.4
+step
+click Rathis Tomber's Supplies##1869
+|tip It's in a wagon with a purple canopy over it.
+collect Rathis Tomber's Supplies |q 9152/1 |goto 33.6,26.5
+step
+kill 6 Quel'dorei Ghost##16325+ |q 9139/1 |goto 27.3,16.2
+kill 4 Quel'dorei Wraith##16326+ |q 9139/2 |goto 27.3,16.2
+step
+kill Withered Grimscale##16403+, Zombified Grimscale##16402+
+collect 6 Plagued Murloc Spine |q 9149/1 |goto 20.5,21.4
+step
+talk Rathis Tomber##16224
+turnin Tomber's Supplies##9152 |goto 47.1,28.3
+step
+talk Arcanist Vandril##16197
+turnin Goldenmist Village##9139 |goto 46.3,28.4
+accept Windrunner Village##9140 |goto 46.3,28.4
+step
+talk Magister Darenis##16199
+accept Salvaging the Past##9150 |goto 46.0,32.0
+step
+talk Ranger Lethvalin##16213
+accept Help Ranger Valanna!##9145 |goto 45.5,32.5
+step
+talk Dame Auriferous##16231
+accept Investigate An'daroth##9160 |goto 44.9,32.5
+step
+talk Deathstalker Maltendis##16251
+accept Trouble at the Underlight Mines##9192 |goto 44.8,32.3
+step
+talk Deathstalker Rathiel##16200
+accept Down the Dead Scar##9155 |goto 46.0,33.6
+step
+talk Apothecary Renzithen##16198
+turnin The Plagued Coast##9149 |goto 47.7,34.9
+step
+talk Master Chef Mouldier##16253
+accept Culinary Crunch##9171 |goto 48.4,30.9
+step
+kill 10 Risen Hungerer##16301+ |q 9155/1 |goto 40.5,33.5
+kill 10 Gangled Cannibal##16309+ |q 9155/2 |goto 40.5,33.5
+More can be found around [38.3,36.5]
+step
+kill Arcane Devourer##16304+, Mana Shifter##16310+
+collect 8 Crystallized Mana Essence |q 9150/1 |goto 35.9,32.9
+step
+kill Spindleweb Spider##16350+
+collect 5 Crunchy Spider Leg |q 9171/1 |goto 27.6,31.1
+You can find more around [33.5,22.2]
+step
+Follow the path up |goto 37.7,22.9 < 10
+Go to this spot
+|tip Get near the intertwined tree lamp in the middle of the camp.
+Investigate An'daroth |q 9160/1 |goto 35.4,12.4
+kill 12 Sentinel Spy##16330+ |q 9160/2 |goto 35.4,12.4
+step
+talk Master Chef Mouldier##16253
+turnin Culinary Crunch##9171 |goto 48.0,31.0
+step
+talk Magister Darenis##16199
+turnin Salvaging the Past##9150 |goto 46.0,32.0
+step
+talk Dame Auriferous##16231
+turnin Investigate An'daroth##9160 |goto 44.9,32.5
+accept Into Occupied Territory##9163 |goto 44.9,32.5
+step
+talk Deathstalker Maltendis##16251
+accept Troll Juju##9199 |goto 44.7,32.3
+step
+talk Advisor Valwyn##16289
+accept Investigate the Amani Catacombs##9193 |goto 44.8,32.8
+step
+talk Deathstalker Rathiel##16200
+turnin Down the Dead Scar##9155 |goto 46.0,33.6
+step
+talk Apprentice Shatharia##16293
+accept Underlight Ore Samples##9207 |goto 31.4,48.3
+step
+kill 8 Blackpaw Gnoll##16334+ |q 9192/1 |goto 29.7,46.9
+kill 6 Blackpaw Scavenger##16335+ |q 9192/2 |goto 29.7,46.9
+kill 4 Blackpaw Shaman##16337+ |q 9192/3 |goto 29.7,46.9
+collect 6 Underlight Ore |q 9207/1 |goto 29.7,46.9
+step
+kill Phantasmal Seeker##16323+
+collect 6 Phantasmal Substance |q 9140/1 |goto 18.8,46.1
+kill Stonewing Slayer##16324+
+collect 4 Gargoyle Fragment |q 9140/2 |goto 18.8,46.1
+step
+click Night Elf Plans: An'daroth##183
+collect Night Elf Plans: An'daroth |q 9163/1 |goto 12.6,26.5
+It can also spawn at [13.7,26.8]
+step
+click Night Elf Plans: An'owyn##222
+collect Night Elf Plans: An'owyn |q 9163/2 |goto 12.9,23.9
+It can also spawn at [12.5,24.8]
+step
+click Night Elf Plans: Scrying on the Sin'dorei##164
+collect Night Elf Plans: Scrying on the Sin'dorei |q 9163/3 |goto 10.5,22.6
+step
+talk Arcanist Vandril##16197
+turnin Windrunner Village##9140 |goto 46.3,28.4
+step
+talk Dame Auriferous##16231
+turnin Into Occupied Territory##9163 |goto 44.9,32.5
+accept Deliver the Plans to An'telas##9166 |goto 44.9,32.5
+step
+talk Deathstalker Maltendis##16251
+turnin Trouble at the Underlight Mines##9192 |goto 44.7,32.3
+step
+talk High Executor Mavren##16252
+accept Retaking Windrunner Spire##9173 |goto 44.8,32.5
+step
+talk Magistrix Aminel##16205
+accept Spinal Dust##9218 |goto 48.9,31.3
+accept Rotting Hearts##9216 |goto 48.9,31.3
+step
+talk Dying Blood Elf##16601
+accept Anok'suten##9315 |goto 57.6,14.9
+step
+kill Anok'suten##16357 |q 9315/1 |goto 61.3,15.9
+|tip He walks all around this village, so you may need to search for him.
+step
+talk Ranger Valanna##16219
+turnin Help Ranger Valanna!##9145 |goto 69.4,15.2
+accept Dealing with Zeb'Sora##9143 |goto 69.4,15.2
+step
+kill Shadowpine Ripper##+, Shadowpine Witch##+
+collect 6 Zeb'Sora Troll Ear |q 9143/1 |goto 74.8,12.3
+step
+talk Ranger Valanna##16219
+turnin Dealing with Zeb'Sora##9143 |goto 69.4,15.2
+accept Report to Captain Helios##9146 |goto 69.4,15.2
+step
+talk Geranis Whitemorn##16201
+accept Forgotten Rituals##9157 |goto 72.3,19.1
+step
+talk Farstrider Sedina##16202
+accept Bearers of the Plague##9158 |goto 72.5,32.1
+step
+talk Farstrider Solanna##16463
+accept Attack on Zeb'Tela##9276 |goto 72.3,31.3
+step
+talk Captain Helios##16220
+turnin Report to Captain Helios##9146 |goto 72.4,29.6
+accept Shadowpine Weaponry##9214 |goto 72.4,29.6
+step
+talk Ranger Krenn'an##16462
+accept Spirits of the Drowned##9274 |goto 72.2,29.8
+step
+talk Ranger Vynna##16203
+accept The Traitor's Shadow##9161 |goto 72.0,32.6
+step
+kill 8 Ravening Apparition##16327+ |q 9274/1 |goto 73.5,21.9
+kill 8 Vengeful Apparition##16328+ |q 9274/2 |goto 73.5,21.9
+click Glistening Mud##49+
+collect 8 Wavefront Medallion |q 9157/1 |goto 73.5,21.9
+step
+talk Geranis Whitemorn##16201
+turnin Forgotten Rituals##9157 |goto 72.3,19.1
+accept Vanquishing Aquantion##9174 |goto 72.3,19.1
+step
+click Altar of Tidal Mastery##4853
+kill Aquantion##16292 |q 9174/1 |goto 71.3,15.1
+step
+talk Geranis Whitemorn##16201
+turnin Vanquishing Aquantion##9174 |goto 72.3,19.1
+step
+click Dusty Journal##470
+|tip It's laying on the balcony platform of this building.
+turnin The Traitor's Shadow##9161 |goto 79.6,17.6
+accept Hints of the Past##9162 |goto 79.6,17.6
+step
+kill 10 Ghostclaw Lynx##16348+ |q 9158/1 |goto 75.8,28.4
+|tip The Ghostclaw Lynx share spawn points with the bats.
+step
+talk Farstrider Sedina##16202
+turnin Bearers of the Plague##9158 |goto 72.5,32.1
+accept Curbing the Plague##9159 |goto 72.5,32.1
+step
+talk Ranger Krenn'an##16462
+turnin Spirits of the Drowned##9274 |goto 72.2,29.8
+step
+talk Ranger Vynna##16203
+turnin Hints of the Past##9162 |goto 72.0,32.6
+accept Report to Magister Kaendris##9172 |goto 72.0,32.6
+step
+talk Apothecary Venustus##16464
+accept A Little Dash of Seasoning##9275 |goto 72.6,31.6
+stickystart "shadowhead"
+step
+kill 10 Vampiric Mistbat##16354+ |q 9159/1 |goto 73.9,38.0
+step "shadowhead"
+kill 8 Shadowpine Shadowcaster##16469+ |q 9276/1 |goto 78.6,38.1
+collect 3 Shadowcaster Mace |q 9214/2 |goto 78.6,38.1
+kill 8 Shadowpine Headhunter##16344+ |q 9276/2 |goto 78.6,38.1
+collect 3 Headhunter Axe |q 9214/1 |goto 78.6,38.1
+step
+talk Farstrider Solanna##16463
+turnin Attack on Zeb'Tela##9276 |goto 72.3,31.3
+accept Assault on Zeb'Nowa##9277 |goto 72.3,31.3
+step
+talk Arcanist Vandril##16197
+turnin Anok'suten##9315 |goto 46.3,28.4
+step
+kill Risen Stalker##16302+, Risen Hungerer##16301+
+collect 10 Rotting Heart |q 9216/1 |goto 39.2,36.3
+You can find more around [37.8,45.8]
+step
+kill 8 Spindleweb Lurker##16351+ |q 9159/2 |goto 29.8,40.9
+You can find more around [26.4,53.5]
+step
+kill 8 Deatholme Acolyte##16315+ |q 9173/1
+kill 10 Fallen Ranger##16314+ |q 9173/2
+collect The Lady's Necklace##22597 |n
+Click The Lady's Necklace in your bags |use The Lady's Necklace##22597
+accept The Lady's Necklace##9175 |goto 17,59
+step
+talk Magistrix Aminel##16205
+turnin Rotting Hearts##9216 |goto 48.9,31.3
+step
+talk Magister Darenis##16199
+accept The Sanctum of the Sun##9151 |goto 46.0,31.9
+step
+talk High Executor Mavren##16252
+turnin Retaking Windrunner Spire##9173 |goto 44.8,32.4
+turnin The Lady's Necklace##9175 |goto 44.8,32.4
+step
+Follow this path |goto 55.2,44.8 < 5
+talk Magister Kaendris##16239
+turnin Report to Magister Kaendris##9172 |goto 55.1,48.8
+accept The Twin Ziggurats##9176 |goto 55.1,48.8
+step
+talk Magister Quallestis##16291
+turnin Underlight Ore Samples##9207 |goto 54.9,48.5
+step
+talk Magister Idonis##16204
+turnin The Sanctum of the Sun##9151 |goto 54.9,48.5
+accept War on Deatholme##9220 |goto 54.9,48.5
+step
+Follow this path |goto 57.1,45.0 < 5 |only if walking
+Follow the path up |goto 60.7,42.7 < 5 |only if walking
+talk Magister Sylastor##16237
+turnin Deliver the Plans to An'telas##9166 |goto 60.3,35.6
+accept Deactivate An'owyn##9169 |goto 60.3,35.6
+step
+kill Sentinel Infiltrator##16333+
+collect Crystal Controlling Orb##23191 |goto 57.8,64.9
+step
+click Night Elf Moon Crystal##6749
+Deactivate the Night Elf Moon Crystal |q 9169/1 |goto 58.0,65.1
+stickystart "hexxerstave"
+step
+click Raw Meat Rack##4351
+Poison the Raw Meat Rack |q 9275/1 |goto 65.1,66.8
+step
+click Smoked Meat Rack##409
+Poison the Smoked Meat Rack |q 9275/2 |goto 63.0,75.0
+step
+click Fresh Fish Rack##6705
+Poison the Fresh Fish Rack |q 9275/3 |goto 68.3,57.8
+step "hexxerstave"
+kill 10 Shadowpine Catlord##16345+ |q 9277/1 |goto 66.9,58.6
+collect 3 Catlord Claws |q 9214/3 |goto 66.9,58.6
+kill 10 Shadowpine Hexxer##16346+ |q 9277/2 |goto 66.9,58.6
+collect 3 Hexxer Stave |q 9214/4 |goto 66.9,58.6
+You can find more around [63.5,67.4]
+step
+talk Farstrider Sedina##16202
+turnin Curbing the Plague##9159 |goto 72.5,32.1
+step
+talk Farstrider Solanna##16463
+turnin Assault on Zeb'Nowa##9277 |goto 72.3,31.2
+step
+talk Captain Helios##16220
+turnin Shadowpine Weaponry##9214 |goto 72.4,29.6
+step
+talk Apothecary Venustus##16464
+turnin A Little Dash of Seasoning##9275 |goto 72.6,31.6
+stickystart "trolljuju"
+step
+Follow this path |goto 67.7,28.9 < 10 |only if walking
+Enter the Amani Catacombs |goto 66.2,28.5 < 10 |walk
+click Mummified Troll Remains##6804
+|tip Do this as you walk.
+Go to this spot
+Investigate the Amani Catacombs |q 9193/1 |goto 62.9,31.1
+step
+talk Ranger Lilatha##16295
+accept Escape from the Catacombs##9212
+Escort Ranger Lilatha back to Farstrider Enclave |q 9212/1 |goto 62.9,32.7
+step "trolljuju"
+kill Mummified Headhunter##16342+, Shadowpine Oracle##16343+
+collect 8 Troll Juju |q 9199/1 |goto 62.8,31.8
+click Mummified Troll Remains##6804
+Burn 10 Mummified Troll Remains |q 9193/2 |goto 62.8,31.8
+There are more Mummified Troll Remains in the hallway at [64.9,28.5]
+step
+talk Captain Helios##16220
+turnin Escape from the Catacombs##9212 |goto 72.4,29.6
+step
+Follow this path |goto 60.7,42.7 < 10 |walk
+talk Magister Sylastor##16237
+turnin Deactivate An'owyn##9169 |goto 60.3,35.6
+step
+talk Deathstalker Maltendis##16251
+turnin Troll Juju##9199 |goto 44.7,32.3
+step
+talk Advisor Valwyn##16289
+turnin Investigate the Amani Catacombs##9193 |goto 44.8,32.8
+stickystart "spinaldust"
+step
+click Worn Chest##10
+collect Stone of Flame |q 9176/1 |goto 40.4,49.8
+step
+click Dented Chest##10
+collect Stone of Light |q 9176/2 |goto 34.3,47.7
+step "spinaldust"
+kill Dreadbone Sentinel##16305+, Deathcage Sorcerer##16308+
+collect 10 Spinal Dust |q 9218/1 |goto 38.1,58.6
+You can find more around [36.3,68.8]
+stickystart "eyewailer"
+step
+Enter Deatholme |goto 36.0,71.7 < 10 |walk
+kill 6 Nerubis Centurion##16319+ |q 9220/2 |goto 36.9,76.1
+You can find a few more around [39.2,79.7]
+step "eyewailer"
+kill 5 Eye of Dar'Khan##16320+ |q 9220/1 |goto 37.8,81.3
+kill 6 Wailer##16321+ |q 9220/3 |goto 37.8,81.3
+step
+talk Apprentice Vor'el##16480
+accept Clearing the Way##9281 |goto 46.4,56.4
+step
+kill 10 Greater Spindleweb##16352+ |q 9281/1 |goto 46.9,60.4
+kill 10 Ghostclaw Ravager##16349+ |q 9281/2 |goto 46.9,60.4
+You can find more:
+Around [56.4,59.9]
+Around [42.8,55.8]
+step
+talk Apprentice Vor'el##16480
+turnin Clearing the Way##9281 |goto 46.4,56.4
+step
+talk Magister Kaendris##16239
+turnin The Twin Ziggurats##9176 |goto 55.1,48.8
+step
+talk Magister Idonis##16204
+turnin War on Deatholme##9220 |goto 54.9,48.6
+accept Dar'Khan's Lieutenants##9170 |goto 54.9,48.6
+step
+talk Arcanist Janeda##16240
+accept A Restorative Draught##9877 |goto 54.8,48.4
+step
+talk Apothecary Renzithen##16198
+turnin A Restorative Draught##9877 |goto 47.7,34.9
+accept Captives at Deatholme##9164 |goto 47.7,34.9
+step
+talk Magistrix Aminel##16205
+turnin Spinal Dust##9218 |goto 48.9,31.3
+step
+Enter Deatholme |goto 36.0,71.7 < 10 |walk
+Enter the crypt |goto 31.7,73.7 < 10 |walk
+kill Jurion the Deceiver##16248 |q 9170/3 |goto 32.1,74.3
+step
+talk Apothecary Enith##16208
+<Administer the restorative draught.>
+Rescue Apothecary Enith |q 9164/1 |goto 32.1,74.0
+step
+kill Mirdoran the Fallen##16250 |q 9170/1 |goto 37.4,79.3
+step
+kill Masophet the Black##16249 |q 9170/4 |goto 35.8,89.1
+He can also spawn at [29.3,88.9]
+step
+kill Borgoth the Bloodletter##16247 |q 9170/2 |goto 32.7,90.5
+He can also be found at [40.9,83.1]
+step
+talk Ranger Vedoran##16209
+<Administer the restorative draught.>
+Rescue Ranger Vedoran |q 9164/3 |goto 32.8,89.8
+step
+Follow the path up |goto 37.5,84.7 < 10
+talk Apprentice Varnis##16206
+<Administer the restorative draught.>
+Rescue Apprentice Varnis |q 9164/2 |goto 40.8,83.2
+step
+talk Magister Idonis##16204
+turnin Dar'Khan's Lieutenants##9170 |goto 54.9,48.5
+step
+talk Arcanist Janeda##16240
+turnin Captives at Deatholme##9164 |goto 54.8,48.4
+step
+click Wanted Poster: Kel'gash the Wicked##6902
+accept Bring Me Kel'gash's Head!##9215 |goto 72.2,31.2
+This is a group quest, so you may need some extra help with it.
+step
+kill Kel'gash the Wicked##16358
+collect Head of Kel'gash the Wicked |q 9215/1 |goto Ghostlands,65.3,79.5
+step
+talk Captain Helios##16220
+turnin Bring Me Kel'gash's Head!##9215 |goto 72.4,29.7
+step
+You should be Exalted with Tranquillien by this point.
+Earn Exalted with Tranquillien |condition rep('Tranquillien') |next "exalted"
+step
+label exalted
+Congratulations, you are Exalted with Tranquillien!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Burning Crusade Reputations\\The Violet Eye",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Violet Eye faction.",
+condition_suggested="level>=60 and level<=70",
 achieveid={960},
 },[[
 step
@@ -8745,30 +8841,34 @@ step
 label exalted
 Congratulations, you are now Exalted with The Violet Eye!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Tournament\\Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Aspirant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually the Crusader Title.",
+description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually the Crusader title.",
+condition_suggested="level>=70 and level<=80",
 },[[
-daily
 step
 #include "Argent Tourney_Aspirant"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Tournament\\Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Tournament\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and gain the Crusader Title.",
+description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race. You must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section in order to have access to the quests in this guide section and gain the Crusader title.",
+condition_suggested="level>=70 and level<=80",
 },[[
-daily
 step
 #include "Argent Tourney_Valiant"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Argent Crusade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Argent Crusade",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Argent Crusade faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={947},
-description="This guide will help reach Exalted with the Argent Crusade.",
 },[[
 #include "H_Icecrown_Argent_Crusade_Rep"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Ashen Verdict",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Ashen Verdict",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ashen Verdict faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={4598},
 },[[
 step
@@ -8788,7 +8888,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Ashen Verdict!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Frenzyheart Tribe",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Frenzyheart Tribe",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Frenzyheart Tribe faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={950},
 },[[
 step
@@ -9121,7 +9224,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Frenzyheart Tribe!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Horde Expedition",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Horde Expedition",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Horde Expedition faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1011},
 },[[
 step
@@ -9141,17 +9247,21 @@ Exalted with Warsong Offensive |condition rep('Warsong Offensive')==Exalted
 step
 Congratulation, You are now Exalted with the Horde Expedition!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Kalu'ak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kalu'ak",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kalu'ak faction.",
+condition_suggested="level>=70 and level<=80",
+achieveid={949},
 },[[
-description This step will lead you up to the Daily Quest portion
-description of the Kalu'ak.
-achieveid 949
 #include "Kaluak_Rep"
 step
 label exalted
 Congratulations, you are Exalted with the Kalu'ak!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Kirin Tor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Kirin Tor",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Kirin Tor faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1008},
 },[[
 step
@@ -9265,7 +9375,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Kirin Tor!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\Knights of the Ebon Blade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\Knights of the Ebon Blade",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Knights of the Ebon Blade faction.",
+condition_suggested="level>=55 and level<=80",
 achieveid={1009},
 },[[
 step
@@ -9405,7 +9518,10 @@ step
 label exalted
 Congratulations, you are now Exalted with the Knights of the Ebon Blade!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Oracles",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Oracles",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the The Oracles faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={951},
 },[[
 step
@@ -9536,7 +9652,10 @@ step
 label exalted
 Congratulations, you are now Exalted with The Oracles!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Sons of Hodir",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Sons of Hodir",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sons of Hodir faction.",
+condition_suggested="level>=70 and level<=80",
 },[[
 step
 Proceeding to Prequests next step |next "Daily" |only if rep('The Sons of Hodir')<=Friendly
@@ -9885,7 +10004,7 @@ accept Overstock##12833 |goto 40.9,85.3
 step
 Use your Improved Land Mines to place mines on the ground close to each other|use Improved Land Mines##40676
 |tip Garm Invaders and Snowblind Followers will run over the mines and die.
-kill 12 Garm Invader|q 12833/1 |goto 43.1,81.2
+kill 12 Garm Invader |q 12833/1 |goto 43.1,81.2
 |modelnpc 29619
 |modelnpc 29618
 step
@@ -10638,9 +10757,11 @@ step
 label Exalted
 Congratulations, you are now Exalted with the Sons of Hodir!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Northrend\\The Wyrmrest Accord",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Wrath of the Lich King Reputations\\The Wyrmrest Accord",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Wyrmrest Accord faction.",
+condition_suggested="level>=70 and level<=80",
 achieveid={1007},
-description="This guide will walk you through earning exalted with\nThey Wyrmrest Accord faction.",
 },[[
 step
 talk Raelorasz##26117
@@ -11145,8 +11266,10 @@ step
 label exalted
 Congratulation, you are now exalted with The Wyrmrest Accord!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Avengers of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Avengers of Hyjal",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Avengers of Hyjal faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={5827},
 },[[
 step
@@ -11164,7 +11287,24 @@ step
 label exalted
 Congratulations, you are now Exalted with the Avengers of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Dragonmaw Clan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Bilgewater Cartel",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Bilgewater Cartel faction.",
+condition_suggested="level>=80 and level<=85",
+},[[
+step
+talk Frizzo Villamar##50323
+buy Bilgewater Cartel Tabard##64884 |goto Orgrimmar,50.1,58.6
+Equip your Bilgewater Cartel Tabard |equipped Bilgewater Cartel Tabard##64884 |use Bilgewater Cartel Tabard##64884 |future
+You can run any dungeon that grants experience to gain reputation for the Bilgewater Cartel
+Become Exalted with Bilgewater Cartel |condition rep('Bilgewater Cartel')==Exalted
+step
+Congratulations, you have reached exalted with the Bilgewater Cartel!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Dragonmaw Clan",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Dragonmaw Clan faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={4886},
 },[[
 step
@@ -12256,9 +12396,11 @@ step
 label exalted
 Congratulations, you are now Exalted with the Dragonmaw Clan!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\The Earthen Ring",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Earthen Ring faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={4881},
-description="This guide will walk you through becoming exalted\nwith the Earthen Ring faction.",
 },[[
 step
 To gain reputation with The Earthen Ring you will either need to quest or run dungeons wearing The Earthen Ring Tabard.
@@ -14338,9 +14480,11 @@ step
 label exalted
 Congratulations, you are now Exalted with The Earthen Ring!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Guardians of Hyjal",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Guardians of Hyjal faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={4882},
-description="This guide will walk you through becoming exalted\nwith the Guardians of Hyjal faction.",
 },[[
 step
 click Warchief's Command Board##10014
@@ -15127,11 +15271,12 @@ step
 label exalted
 Congratulations you are Exalted with the Guardians of Hyjal!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Hellscream's Reach",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Hellscream's Reach",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Hellscream's Reach faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={5376},
-description="This Guide will walk you through becoming\nExalted with Hellscream's Reach.",
 },[[
-daily
 step
 label "daily_reset"
 You will have to do these dailies in order to gain reputation with Hellscream's Reach
@@ -15372,7 +15517,10 @@ step
 label exalted
 Congratulations, you are now Exalted with Hellscream's Reach!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Ramkahen faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={4884},
 },[[
 step
@@ -16334,7 +16482,10 @@ step
 label exalted
 Congratulations, you are now Exalted with Ramkahen!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm\\Therazane",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Therazane",{
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Therazane faction.",
+condition_suggested="level>=80 and level<=85",
 achieveid={4883},
 },[[
 step
@@ -17314,137 +17465,4 @@ Earn Exalted reputation with Therazane |condition rep('Therazane')==Exalted |nex
 step
 label exalted
 Congratulations, you are now Exalted with Therazane!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\The Defilers",{
-},[[
-step
-In order to gain reputation with The Defilers you must participate in Arathi Basin, but first you should make sure you have a quest in your log before you start.
-|confirm
-step
-talk Deathmaster Dwire##15021
-accept The Battle for Arathi Basin!##8120 |goto Arathi Highlands 68.4,30.6
-step
-To join Arathi Basin hit the _[H]_ key, click _Arathi Basin_, and click _Join Battle_.
-|confirm
-step
-While in Arathi Basin:
-Click the Banners at each location. |model 6271
-Assault the Mine |q 8105/1
-Assault the Lumber Mill |q 8105/2
-Assault the Blacksmith |q 8105/3
-Assault the Farm |q 8105/4
-Upon completing this quest and reach Friendly reputation with The Defilers you should be able to accept another quest from Deathmaster Dwire.
-step
-talk Deathmaster Dwire##15021
-turnin The Battle for Arathi Basin!##8105 |goto Arathi Highlands 40.0,46.7
-step
-talk Deathmaster Dwire##15021
-accept Take Four Bases##8121 |goto Arathi Highlands 68.4,30.6
-step
-Enter Arathi Basin and hold four bases at the same time. |q 8121/1
-step
-talk Deathmaster Dwire##15021
-turnin Take Four Bases##8121 |goto Arathi Highlands 68.4,30.6
-step
-Farm Arathi Basin until you are Exalted with The Defilers.
-Earn Exalted status with The Defilers |condition rep('The Defilers')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with The Defilers!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\Frostwolf Clan",{
-},[[
-step
-In order to gain reputation with the Frostwolf Clan you must participate in Alterac Valley, but first you should pick up a few quests.
-|confirm
-step
-talk Voggah Deathgrip##13817
-accept The Battle for Alterac##7142 |goto Hillsbrad Foothills 58.7,34.2
-step
-talk Warmaster Laggrond##13840
-accept Proving Grounds##7161 |goto 57.8,33.3
-step
-Enter the cave |goto 58.7,33.4 < 5 |q 7161 |walk
-talk Corporal Teeka Bloodsnarl##13776
-accept Towers and Bunkers##7101 |goto 59.7,31.2
-accept The Graveyards of Alterac##7082 |goto 59.7,31.2
-accept Capture a Mine##7124 |goto 59.7,31.2
-step
-To join Alterac Valley hit the _[H]_ key, click _Alterac Valley_, and click _Join Battle_.
-|confirm
-step
-talk Smith Regzar##13176
-accept Enemy Booty##7224 |goto Alterac Valley 49.6,82.6
-step
-Enter the cave |goto 52.9,89.5 < 5 |q 7161 |walk
-Follow the path around and click the Frostwolf Banner
-click Frostwolf Banner##5571
-collect Frostwolf Banner##17850 |q 7161/1 |goto 50.6,93.3
-step
-Exit the cave |goto 52.9,89.5 < 5 |c |q 7161 |walk
-step
-label checklist
-While in Alterac Valley:
-|tip You probably won't be able to do everything in one game, keep joining Alterac Valley matches.
-Click Alliance Flag
-Assault any Graveyard |q 7082/1
-Capture any Mine |q 7124/1
-Click Horde Flag
-Assault any Tower |q 7101/1
-Loot Alliance players when they die.
-collect 20 Armor Scraps##17422 |q 7224/1
-kill Vanndar Stormpike##11948 |q 7142/1
-|model Alliance Flag##5651
-step
-Before you leave Alterac Valley:
-talk Smith Regzar##13176
-turnin Enemy Booty##7224 |goto Alterac Valley 49.6,82.6
-step
-To return to the Alterac Valley checklist click here. |next "checklist" |confirm
-To continue forward click here. |confirm
-step
-talk Voggah Deathgrip##13817
-turnin The Battle for Alterac##7142 |goto Hillsbrad Foothills 58.7,34.2
-step
-talk Warmaster Laggrond##13840
-turnin Proving Grounds##7161 |goto 57.8,33.3
-step
-Enter the cave |goto 58.7,33.4 < 5 |q 7124 |walk
-talk Corporal Teeka Bloodsnarl##13776
-turnin Towers and Bunkers##7101 |goto 59.7,31.2
-turnin The Graveyards of Alterac##7082 |goto 59.7,31.2
-turnin Capture a Mine##7124 |goto 59.7,31.2
-step
-Continue joining Alterac Valley until you reach Friendly with the Frostwolf Clan. |condition rep('Frostwolf Clan')>=Friendly |next "friendly"
-step
-label friendly
-talk Warmaster Laggrond##13840
-accept Rise and Be Recognized##7163 |goto Hillsbrad Foothills 57.8,33.3
-step
-Continue joining Alterac Valley until you reach Honored with the Frostwolf Clan. |condition rep('Frostwolf Clan')>=Honored |next "honored"
-step
-label honored
-talk Warmaster Laggrond##13840
-accept Honored Amongst the Clan##7164 |goto Hillsbrad Foothills 57.8,33.3
-step
-Continue joining Alterac Valley until you reach Revered with the Frostwolf Clan. |condition rep('Frostwolf Clan')==Revered |next "revered"
-step
-label revered
-talk Warmaster Laggrond##13840
-accept Earned Reverence##7165 |goto Hillsbrad Foothills 57.8,33.3
-step
-Continue joining Alterac Valley until you reach Exalted with the Frostwolf Clan. |condition rep('Frostwolf Clan')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with the Frostwolf Clan!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Player Vs. Player\\Warsong Outriders",{
-},[[
-step
-In order to gain reputation with the Warsong Outriders you and your team must capture flags in Warsong Gulch.
-To join Warsong Gulch hit the _[H]_ key, click _Warsong Gulch_, and click _Join Battle_.
-Earn Exalted status with the Warsong Outriders |condition rep('Warsong Outriders')==Exalted |next "exalted"
-step
-label exalted
-Congratulations, you are now Exalted with the Warsong Outriders!
 ]])

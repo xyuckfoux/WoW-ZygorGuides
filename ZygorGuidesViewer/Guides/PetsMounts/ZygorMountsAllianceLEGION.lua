@@ -1948,3 +1948,671 @@ step
 _Congratulations!_
 You collected the _Ratstallion_ mount
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Miscellaneous Mounts\\Riddler's Mind-Worm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"riddler","mind","flying","mount","worm"},
+condition_end="hasmount(243025)",
+model={74314},
+description="This guide will help you acquire the Riddler's Mind-Worm.",
+},[[
+step
+Enter the Legerdemain Lounge |goto Dalaran L/10 46.14,38.18
+click Page 9 |goto Dalaran L/10 48.83,41.97
+|tip It's a small book on top of the shelf here.
+Click here to continue |confirm
+step
+click Page 78 |goto Duskwood/0 49.23,33.96
+|tip It's a small book on top of the table here.
+Click here to continue |confirm
+step
+Enter the Firelands |goto Mount Hyjal/0 47.55,77.91 < 5
+Cross the bridge after killing Baleroc |goto Firelands/1 49.1,15.8
+|tip You will need to kill all of the other bosses in the instance.
+|tip You can check out our Firelands guide to accomplish this.
+click Page 161 |goto Firelands/3 46.7,16.9
+|tip It's a small book lying on the ground.
+Click here to continue |confirm
+step
+click Page 655 |goto Uldum/0 70.50,78.09
+|tip It is a small book on the ground between 2 small palm trees.
+Click here to continue |confirm
+step
+talk Lorewalker Han##80633
+"Tell me of the Vale of Eternal Sorrows that surrond us."
+Queue for the Vale of Eternal Sorrows |goto Vale of Eternal Blossoms/0 83.17,30.58
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5 |noway |c
+step
+Enter the Vale of Eternal Sorrows |goto Siege of Orgrimmar/2 93.5,45.7 < 5
+|tip You must clear the instance up to Sha of Pride.
+|tip You can check out our Siege of Orgrimmar guide to accomplish this.
+click Page 845 |goto Siege of Orgrimmar/3 19.8,83.2
+|tip It is a small book lying on the ground in the corner.
+Click here to continue |confirm
+step
+Enter the Well of Eternity |goto Tanaris/18 22.86,64.32 < 5
+|tip You will need to kill the first 2 bosses.
+|tip You can check out our Well of Eternity guide to accomplish this.
+click Page 1127 |goto Well of Eternity/0 75.2,66.1
+|tip It is a small book lying the bottom of these steps.
+Click here to continue |confirm
+step
+click Page 2351 |goto Kun-Lai Summit/0 34.63,50.88
+|tip It is a small book between the paws of this statue.
+Click here to continue |confirm
+step
+click Page 5555 |goto Uldum/0 76.42,53.58
+|tip It is a small book on the platform of a giant statue.
+Click here to continue |confirm
+step
+click Gift of the Mind-Seekers
+collect Riddler's Mind-Worm##147835 |n
+Use the Riddler's Mind-Worm |use Riddler's Mind-Worm##147835
+learnmount Riddler's Mind-Worm##243025 |goto Westfall/0 30.55,27.50
+step
+_Congratulations!_
+You collected the _Riddler's Mind-Worm_ mount
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Player vs. Player Mounts\\Ivory Hawkstrider",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"ivory","hawkstrider","ground","mount"},
+condition_end="hasmount(230401)",
+model={73991},
+description="This guide will help you acquire the Ivory Hawkstrider.",
+},[[
+step
+You Must first complete one of the 4 Hatchling Mounts before being able to start working toward this mount
+Check out either our Predatory Bloodgazer, Viridian Sharptalon, Snowfeather Hunter, or Brilliant Direbeak mount guides.
+confirm
+step
+Ride one of the 4 Falcosaur mounts that you have obtained
+talk Aviana##97925
+Click the new Dialogue options |goto Highmountain/0 32.22,66.84
+collect Ivory Talon##142361 |n
+|condition rep('Talons Vengeance')==Neutral
+step
+Next you must use this Ivory Talon and kill players
+|tip This Ivory Talon can only be used in World PvP Quest areas, and Falcosaur World Quest areas.
+|tip The Ivory Talon has a 15 minuite cooldown.
+confirm
+step
+Kill Players in World PvP Quest areas, and Falcosaur World Quest areas
+Use the Ivory Talon while in these areas |use Ivory Talon##142361
+|tip If you lose your Ivory Talon you may go back to Aviana to get another one.
+collect Mark of Prey##142363 |n |use Mark of Prey##142363
+|tip You will need 420 of these Marks without any reputation buffs to gain exalted reputation
+|condition rep('Talons Vengeance')==Exalted
+step
+talk Aviana##97925
+buy 1 Ivory Hawkstrider##142369 |n |use Ivory Hawkstrider##142369
+learnmount Ivory Hawkstrider##230401 |goto Highmountain/0 32.22,66.84
+step
+_Congratulations!_
+You are now the proud owner of a Ivory Hawkstrider.
+]])
+ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Brinedeep Bottom-Feeder",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"brinedeep","bottom","feeder","quest","ground","mount"},
+condition_end="hasmount(214791)",
+model={68849},
+description="This guide will help you acquire the Brinedeep Bottom-Feeder Mount.",
+},[[
+step
+In order to attain this mount, you will need to reach _Best Friend_ status with Conjurer Margoss
+This will require you to collect _840 Drowned Mana_, which can be fished up in the pool near him
+Click here to continue |confirm
+step
+Use a gliding ability to jump across the gap |goto Dalaran L/10 26.92,19.60 < 20
+|tip If you're not a Demon Hunter, you will need a Goblin Glider attachment or the Emerald Winds toy.
+talk Conjurer Margoss##108825
+accept Drowned Mana##42911 |goto 23.10,-11.40
+step
+collect 1 Drowned Mana##138777 |q 42911/1 |goto Dalaran L/10 22.57,-12.00
+step
+talk Conjurer Margoss##108825
+turnin Drowned Mana##42911 |goto 23.10,-11.40
+step
+Use your Fishing Skill and collect Drowned Mana from the lake
+Use Mark of Aquaos to increase the drop rate of Drowned Mana for 10 minutes |use Mark of Aquaos##141975
+|tip If there are other players around, make sure you don't overlap the use of this items with theirs.
+collect 940 Drowned Mana##138777 |goto 22.57,-12.00
+|tip Save 100 Drowned Mana.
+step
+talk Conjurer Margoss##108825
+Tell him _I have 10 Drowned Mana for you._
+Become Conjurer Margoss' Best Friend |condition rep("Conjurer Margoss")==BestFriend
+step
+talk Conjurer Margoss##108825
+buy 1 Brinedeep Bottom-Feeder##138811 |n
+Use the Brinedeep Bottom-Feeder |use Brinedeep Bottom-Feeder##214791
+learnmount Brinedeep Bottom-Feeder##214791 |goto 23.10,-11.40
+step
+_Congratulations!_
+You collected the _Brinedeep Bottom-Feeder_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Great Northern Elderhorn",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"great","northern","elderhorn","leatherworking","ground","mount"},
+condition_end="hasmount(196681)",
+model={67042},
+description="This guide will help you acquire the Great Northern Elderhorn Mount.",
+},[[
+step
+Before starting this quest, you will need to reach _800 Leatherworking_
+Once that is attained, you need a few items in preparation for the quest
+_<Fighter Chow>_
+The recipe can be bought from the Auction House, or you can attain it by doing the quest _Morale Booster_ in the Azsuna guide, which is part of the _Let Sleeping Giants Lie / No Time for Tryouts_ questline
+You will need the food for the falling portions of the chase
+_<Stonehide Leather Barding>_
+This will prevent you from being dazed
+Click here to continue |confirm
+step
+talk Namha Moonwater##93523
+accept Mounting Made Easy##40215 |goto Dalaran L/10 35.01,29.40
+step
+click Great Northern Elderhorn
+Follow the Great Northern Elderhorn |goto Stormheim/0 62.5,23.8 < 30
+Run _AROUND_ the rocks here, do not try to directly follow it |goto 43.0,37.0 < 30
+Carefully jump down the waterfall area |goto 31.6,46.5 < 30
+Stick to the road without jumping after it |goto 39.7,47.3 < 30
+Run along the bridge |goto 42.8,58.6 < 30
+Run up the mountain |goto 47.3,61.2 < 30
+Take the right path |goto 48.3,59.5 < 30
+Weave through the trees without getting stuck |goto 52.6,57.2 < 30
+Jump down quickly, don't hesitate |goto 52.7,49.5 < 30
+Mount up and capture the Great Northern Elderhorn |q 40215/1 |goto 55.4,46.7
+step
+talk Namha Moonwater##93523
+turnin Mounting Made Easy##40215 |goto Dalaran L/10 35.01,29.40
+step
+Open Your Leatherworking Crafting Panel:
+_<Create 1 Elderhorn Riding Harness>_
+collect 1 Elderhorn Riding Harness##129962 |n
+Use the Elderhorn Riding Harness |use Elderhorn Riding Harness##129962
+learnmount Great Northern Elderhorn##213339
+step
+_Congratulations!_
+You collected the _Great Northern Elderhorn_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Spirit of Eche'ro",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"spirit","eche'ro","archaeology","ground","mount"},
+condition_end="hasmount(196681)",
+model={70874},
+description="This guide will help you acquire Spirit of Eche'ro Mount",
+},[[
+step
+This mount is awarded from the Bi-Weekly Archaeology quests that appear once you reach level 110
+If it doesn't appear to be available, you will have to wait for it to show up
+talk Dariness the Learned##93538
+|tip She walks around inside.
+accept The Right Path##41192 |goto Dalaran L/10 40.72,24.35
+step
+talk Lessah Moonwater##103485
+turnin The Right Path##41192 |goto Thunder Totem/0 45.90,45.06
+accept Laying to Rest##41193 |goto Thunder Totem/0 45.90,45.06
+step
+Open your map on complete Archaeology Digsites while in Highmountain
+collect 600 Bone Fragment of Eche'ro##134095 |q 41193/1
+step
+Observe the burial ceremony |q 41193/2 |goto Thunder Totem/0 45.90,45.06
+|tip Wait for the dialogue to complete.
+step
+talk Lessah Moonwater##103485
+turnin Laying to Rest##41193 |goto Thunder Totem/0 45.90,45.06
+step
+collect Spirit of Eche'ro##131734 |n
+|tip You will find it in your mailbox.
+Use the Spirit of Eche'ro |use Spirit of Eche'ro##131734
+learnmount Spirit of Eche'ro##196681
+step
+_Congratulations!_
+You collected the _Spirit of Eche'ro_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Steelbound Devourer",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"steelbound","devourer","ground","mount"},
+condition_end="hasmount(213209)",
+model={70099},
+description="This guide will help you acquire the Steelbound Devourer.",
+},[[
+step
+Click here if you are a Blacksmith and would like to make this mount |next "Steelbound" |confirm
+Click here if you would like to buy this mount from the AH |next "AH Mount" |confirm
+step
+label "Steelbound"
+The recipe for this mount drops off Tichondrius and does not have a 100 percent chance to drop
+|tip This recipe can only drop from normal difficulty or higher.
+|tip You do not need 800 blacksmithing to receive this recipe but you do need 800 blacksmithing to learn it.
+Enter The Nighthold with your group |goto Suramar/0 44.16,59.71 < 5 |c |walk
+step
+kill Tichondrius##103685
+|tip This boss can be found halfway through the instance.
+collect 1 Recipe: Fel Core Hound Harness##137687 |n
+Use the Recipe: Fel Core Hound Harness |use Recipe: Fel Core Hound Harness##137687
+learn Fel Core Hound Harness##213916
+step
+You will now need the following materials to make this mount:
+collect 100 Demonsteel Bar##124461
+collect 50 Blood of Sargeras##124124
+collect 10 Infernal Brimstone##124444
+collect 10 Felhide##124116
+step
+Open Your Blacksmithing Crafting Panel:
+_<Create 1 Fel Core Hound Harness>_
+collect 1 Fel Core Hound Harness##213916
+step
+Use the Steelbound Harness |use Steelbound Harness##137686
+learnmount Steelbound Devourer##213209 |next "Steelbound Grats"
+step
+label "AH Mount"
+talk Auctioneer Fitch##8719
+buy 1 Steelbound Harness##137686 |n |goto Stormwind City/0 61.15,70.79
+Use the Steelbound Harness |use Steelbound Harness##137686
+learnmount Steelbound Devourer##213209 |next "Steelbound Grats"
+step
+label "Steelbound Grats"
+_Congratulations!_
+You collected the _Steelbound Devourer_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Quest Mounts\\Llothien Prowler",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"llothian","prowler","world","quest","ground","mount"},
+condition_end="hasmount(171850)",
+model={68851},
+description="This guide will help you acquire the Llothian Prowler Mount.",
+},[[
+step
+There are a few ways that you can earn this mount:
+Doing World Quests when the _Nightfallen Hoard_ Emmisary reward is up
+During the _Withered Army Training_ Scenario in chests
+You can also find the Torn Invitation as a reward from the _Order Hall Mission Board_
+collect 1 Torn Invitation##140495 |q 44057 |future
+step
+Use the Torn Invitation |use Torn Invitation##140495
+accept A "Noble" Event##44057
+step
+Seach for the Order Hall Quests that have the following rewards:
+List of Invited Nobles
+Fox Hunt Invitation
+First Half of the Map
+Second Half of the Map
+Investigate the hunt |q 44057/1
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin  A "Noble" Event##44057 |goto Eastern Plaguelands/20 52.26,78.03
+accept Volpin the Elusive##44058 |goto 52.26,78.03
+|only Paladin
+step
+talk Siouxsie the Banshee##93568
+turnin  A "Noble" Event##44057 |goto Broken Shore/2 49.64,51.28
+accept Volpin the Elusive##44058 |goto 49.64,51.28
+|only DeathKnight
+step
+talk Skylord Omnuron##98002
+turnin  A "Noble" Event##44057 |goto The Dreamgrove/0 52.67,51.49
+accept Volpin the Elusive##44058 |goto 52.67,51.49
+|only Druid
+step
+talk Skyseer Ghrent##100635
+turnin  A "Noble" Event##44057 |goto Skyhold/1 59.77,13.42
+accept Volpin the Elusive##44058 |goto 59.77,13.42
+|only Warrior
+step
+Follow the path |goto 56.00,52.43 < 20 |only if walking
+Enter the building |goto 48.77,41.71 < 15 |walk
+talk Tactician Tinderfell##103023
+turnin  A "Noble" Event##44057 |goto Trueshot Lodge/0 42.78,46.93
+accept Volpin the Elusive##44058 |goto 42.78,46.93
+|only Hunter
+step
+talk Gakin the Darkbinder##106199
+turnin  A "Noble" Event##44057 |goto Dreadscar Rift/0 67.01,46.42
+accept Volpin the Elusive##44058 |goto 67.01,46.42
+|only Warlock
+step
+talk Archmage Melis##108515
+turnin  A "Noble" Event##44057 |goto Hall of the Guardian/1 80.97,62.97
+accept Volpin the Elusive##44058 |goto 80.97,62.97
+|only Mage
+step
+talk Alonsus Faol##110564
+turnin  A "Noble" Event##44057  |goto Netherlight Temple/1 51.53,47.81
+accept Volpin the Elusive##44058 |goto 51.53,47.81
+|only Priest
+step
+talk Ma'haat the Indomitable##42470
+turnin  A "Noble" Event##44057 |goto Deepholm/0 56.94,14.23
+accept Volpin the Elusive##44058 |goto 56.94,14.23
+|only Shaman
+step
+talk Iron-Body Ponshu##64975
+turnin  A "Noble" Event##44057 |goto The Wandering Isle L/0 51.41,48.39
+accept Volpin the Elusive##44058 |goto 51.41,48.39
+|only Monk
+step
+Follow the path down |goto  Mardum, the Shattered Abyss/1 68.46,66.55 < 15 |walk
+Follow the path down |goto 68.35,53.61 > 10000 |walk
+talk Allari the Souleater##98648
+|tip She walks around.
+turnin  A "Noble" Event##44057 |goto Mardum, the Shattered Abyss/2 56.46,60.39
+accept Volpin the Elusive##44058 |goto 56.46,60.39
+|only DemonHunter
+step
+kill Herald Gevedaun##112433
+talk Herald Gevedaun##112433
+Confront the Starter of the Hunt |q 44058/1 |goto Suramar/0 17.4,31.6
+step
+Follow the path |goto Suramar/0 22.95,30.69 < 30
+Follow the path |goto 25.26,32.88 < 30
+Follow the path |goto 27.35,33.18 < 30
+Follow the path |goto 30.09,35.55 < 30
+Find Volpin the Fox |q 44058/2
+step
+Kill the enemies that attack
+Defend Volpin the Fox |q 44058/3 |goto 30.05,35.49
+step
+talk Volpin##112443
+Calm Volpin the Fox |q 44058/4 |goto 30.05,35.49
+step
+Click the Quest Complete Box:
+turnin Volpin the Elusive##44058
+step
+collect Reins of the Llothien Prowler##137573 |n
+|tip You will find it in your mailbox.
+Use the Reins of the Llothien Prowler |use Reins of the Llothien Prowler##137573
+learnmount Llothien Prowler##171850
+step
+_Congratulations!_
+You collected the _Llothian Prowler_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Arcanist's Manasaber",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"arcanist","manasaber","flying","mount"},
+condition_end="hasmount(230987)",
+model={74032},
+description="This guide will help you acquire the Arcanist's Manasaber.",
+},[[
+step
+Earn Exalted reputation with the Nightfallen |condition rep("The Nightfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Complete the Suramar Insurrection quest line |achieve 11340
+|tip Use your Suramar guide to accomplish this.
+step
+collect Arcanist's Manasaber##142436 |use Arcanist's Manasaber##142436
+learnmount Arcanist's Manasaber##230987
+step
+_Congratulations!_
+You are now the proud owner of a Arcanist's Manasaber.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"cloudwing","hippogryph","flying","mount"},
+condition_end="hasmount(242881)",
+model={63628},
+description="This guide will help you acquire the Cloudwing Hippogryph.",
+},[[
+step
+Earn exalted reputation with Court of Farondis |condition rep("Court of Farondis")>=Exalted
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Azuna" leveling guide to accomplish this.
+|tip Complete world quests in Azuna.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Court##46745
+step
+talk Veredis Fallon##107376
+turnin Supplies From the Court##46745 |goto Azsuna/0 46.8,41.4
+step
+collect Farondis Chest##146897 |n
+Open up your Farondis Chest |use Farondis Chest##146897
+|tip This mount will have a small chance to be inside.
+collect Cloudwing Hippogryph##147806 |use Cloudwing Hippogryph##147806
+learnmount Cloudwing Hippogryph##242881
+step
+_Congratulations!_
+You are now the proud owner of a Cloudwing Hippogryph.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Highmountain Elderhorn",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"highmountain","elderhorn","ground","mount"},
+condition_end="hasmount(242874)",
+model={67039},
+description="This guide will help you acquire the Highmountain Elderhorn.",
+},[[
+step
+Earn exalted reputation with Highmountain |condition rep("Highmountain Tribe")>=Exalted
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Highmountain" leveling guide to accomplish this.
+|tip Complete world quests in Highmountain.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From Highmountain##46743
+step
+talk Ransa Greyfeather##106902
+turnin Supplies From Highmountain##46743 |goto Thunder Totem/0 38.22,46.01
+step
+collect Highmountain Supplies##146899 |n
+Open up your Highmountain Supplies |use Highmountain Supplies##146899
+|tip This mount will have a small chance to be inside.
+collect Highmountain Elderhorn##147807 |use Highmountain Elderhorn##147807
+learnmount Highmountain Elderhorn##242874
+step
+_Congratulations!_
+You are now the proud owner of a Highmountain Elderhorn.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Leywoven Flying Carpet",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"leywoven","carpet","flying","mount"},
+condition_end="hasmount(233364)",
+model={74480},
+description="This guide will help you acquire the Leywoven Flying Carpet.",
+},[[
+step
+Earn exalted reputation with Nightfallen |condition rep("The Nightfallen")>=Exalted
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Suramar" leveling guide to accomplish this.
+|tip Complete world quests in Suramar.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Nightfallen##46747
+step
+talk First Arcanist Thalyssra##97140
+turnin Supplies From the Nightfallen##46747 |goto Suramar/0 36.51,46.80 |region suramar_shalaran
+step
+collect Nightfallen Cache##146900 |n
+Open up your Nightfallen Cache |use Nightfallen Cache##146900
+|tip This mount will have a small chance to be inside.
+collect Leywoven Flying Carpet##143764 |use Leywoven Flying Carpet##143764
+learnmount Leywoven Flying Carpet##233364
+step
+_Congratulations!_
+You are now the proud owner of a Leywoven Flying Carpet.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Valarjar Stormwing",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"valarjar","stormwing","flying","mount"},
+condition_end="hasmount(242882)",
+model={68053},
+description="This guide will help you acquire the Valarjar Stormwing.",
+},[[
+step
+Earn exalted reputation with Valarjar |condition rep("Valarjar")>=Exalted
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Stormheim" leveling guide to accomplish this.
+|tip Complete world quests in Stormheim.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Valarjar##46746
+step
+talk Valdemar Stormseeker##106904
+turnin Supplies From the Valarjar##46746 |goto Stormheim/0 60.2,51.2
+step
+collect Valarjar Strongbox##146901 |n
+Open up your Valarjar Strongbox |use Valarjar Strongbox##146901
+|tip This mount will have a small chance to be inside.
+collect Valarjar Stormwing##147805 |use Valarjar Stormwing##147805
+learnmount Valarjar Stormwing##242882
+step
+_Congratulations!_
+You are now the proud owner of a Valarjar Stormwing.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Wild Dreamrunner",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"wild","dreamrunner","ground","mount"},
+condition_end="hasmount(242875)",
+model={76424},
+description="This guide will help you acquire the Wild Dreamrunner.",
+},[[
+step
+Earn exalted reputation with Dreamweavers |condition rep("Dreamweavers")>=Exalted
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+step
+Once exalted you will need to obtain 10,000 more reputation.
+|tip Use the "Val'Sharah" leveling guide to accomplish this.
+|tip Complete world quests in Val'Sharah.
+|tip Use the "World Quests" dailies guide to accomplish this.
+confirm
+step
+When you get to 10,000 reputation you will recieve a quest.
+accept Supplies From the Dreamweavers##46747
+step
+talk Sylvia Hartshorn##106901
+turnin Supplies From the Dreamweavers##46747 |goto Val'sharah/0 54.6,73.2
+step
+collect Dreamweaver Cache##146898 |n
+Open up your Dreamweaver Cache |use Dreamweaver Cache##146898
+|tip This mount will have a small chance to be inside.
+collect Wild Dreamrunner##147804 |use Wild Dreamrunner##147804
+learnmount Wild Dreamrunner##242875
+step
+_Congratulations!_
+You are now the proud owner of a Wild Dreamrunner.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Vendor Mounts\\Arcadian War Turtle",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"arcadian","war","turtle","quest","ground","mount"},
+condition_end="hasmount(227956)",
+model={68848},
+description="This guide will help you acquire the Arcadian War Turtle Mount.",
+},[[
+step
+To earn this mount, you will need to gather _150 Curious Coins_
+You can earn these doing the following:
+Emissary Quests via World Quests
+Mythic Dungeon Lockouts
+Heroic Dungeons
+These are extremely rare and will take time to accumulate
+Once you have 150 Coins:
+talk Xur'ios##107109
+buy 1 Arcadian War Turtle##141713 |n |goto Dalaran L/10 48.82,13.58
+Use the Arcadian War Turtle |use Arcadian War Turtle##141713
+learnmount Arcadian War Turtle##227956 |use Arcadian War Turtle##141713
+step
+_Congratulations!_
+You collected the _Arcadian War Turtle_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Vendor Mounts\\Bloodfang Widow",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"bloodfang","widow","ground","mount"},
+condition_end="hasmount(213115)",
+model={69276},
+description="This guide will help you acquire the Bloodfang Widow Mount.",
+},[[
+step
+To aqcuire this mount, you will need _2,000,000 gold_
+talk The Mad Merchant##108468
+|tip You can use the Looking for group feature to find the Mad Merchant on another server if he's not presently available on yours.
+buy 1 Bloodfang Cocoon##137570 |n |goto Dalaran L/10 43.30,47.18
+Use the Bloodfang Cocoon |use Bloodfang Cocoon##137570
+learnmount Bloodfang Widow##213115
+step
+_Congratulations!_
+You collected the _Bloodfang Widow_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Water Mounts\\Vendor Mounts\\Darkwater Skate",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"darkwater","darkmoon","faire","water","mount","skate"},
+condition_end="hasmount(228919)",
+model={73254},
+description="This guide will help you acquire the Darkwater Skate.",
+},[[
+step
+talk Galissa Sundew##55103
+buy 1 Darkwater Skate##142398 |n |goto Darkmoon Island/0 52.52,88.59
+|tip This mount costs 500 Darkmoon Daggermaw.
+|tip These can either be bought from the Auction House or farmed for by fishing in the water on Darkmoon Island.
+Use the Darkwater Skate |use Darkwater Skate##142398
+learnpet Darkwater Skate##228919
+step
+_Congratulations!_
+You collected the _Darkwater Skate_ mount
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Vendor Mounts\\Yu'lei, Daughter of Jade",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"yu'lei","daughter","jade","flying","mount"},
+condition_end="hasmount(127165)",
+model={43695},
+description="This guide will help you acquire Yu'lei, Daughter of Jade.",
+},[[
+step
+This mount can only be bought during the Mists of Pandaria Timewalking event
+|tip This event happens maybe once every 2 to 3 months.
+confirm
+step
+talk Mistweaver Xia##118828
+buy Yu'lei, Daughter of Jade##87775 |use Yu'lei, Daughter of Jade##87775 |goto Timeless Isle/0 43.00,55.21
+|tip This mount costs 5,000 Timewarped Badges.
+|tip These can be obtained through doing any timewalking dungeons.
+learnmount Yu'lei, Daughter of Jade##127165
+step
+_Congratulations!_
+You are now the proud owner of a Yu'lei, Daughter of Jade.
+]])

@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("LevelingHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts",{
 author="support@zygorguides.com",
 condition_suggested="raceclass('DemonHunter') and level>=98",
 condition_suggested_exclusive=true,
@@ -831,7 +831,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.49,45.67
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna
+Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next Zygor's Leveling Guides\\Legion (100-110)\\Azsuna
 |only if havequest(41220) and not completedq(41220)
 step
 click Illidari Gateway
@@ -845,7 +845,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 72.49,45.67
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludance, I have urgent business in Val'sharah. Can you secure a flight for me?"
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah
 |only if havequest(39861) and not completedq(39861)
 step
 click Illidari Gateway |goto Mardum, the Shattered Abyss/1 59.31,91.97 > 100
@@ -855,7 +855,7 @@ accept Keepers of the Hammer##38907 |goto Dalaran L/10 70.58,44.47
 |only if havequest(39733) or completedq(39733)
 step
 talk Aludane Whitecloud##96813
-Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain
+Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next Zygor's Leveling Guides\\Legion (100-110)\\Highmountain
 |only if havequest(38907) and not completedq(38907)
 step
 talk Nathanos Blightcaller##96683
@@ -946,10 +946,10 @@ step
 kill Genn Greymane##95451
 |tip Upstairs, on the deck of the airship.
 Defeat Genn Greymane |scenarioend |goto 69.76,80.21 |q 39801
-Complete Nathanos Blightcaller's Mission |q 39801/1 |goto 69.76,80.21 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim
+Complete Nathanos Blightcaller's Mission |q 39801/1 |goto 69.76,80.21 |next Zygor's Leveling Guides\\Legion (100-110)\\Stormheim
 |only if havequest(39801) or completedq(39801)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts",{
 author="support@zygorguides.com",
 condition_suggested="not raceclass('DemonHunter') and level>=100",
 image=ZGV.DIR.."\\Guides\\Images\\The_Broken_Shore",
@@ -7895,7 +7895,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.5,45.6
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna
+Fly Down with Khadgar |q 41220/1 |goto 72.5,45.6 |next Zygor's Leveling Guides\\Legion (100-110)\\Azsuna
 |only if havequest(41220)
 step
 talk Aerylia##96679
@@ -7952,7 +7952,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 70.52,44.10
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludane, I have urgent business in Val'sharah. Can you secure a flight for me?"_
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah
 |only if havequest(39861)
 step
 talk Aerylia##96679
@@ -7973,7 +7973,7 @@ Fly to Thunder Totem in Highmountain |q 38907/1 |goto 69.84,51.11
 |only if havequest(38907)
 step
 talk Aludane Whitecloud##96813 |goto 69.84,51.11 |n
-Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain
+Fly to Thunder Totem in Highmountain |goto 69.84,51.11 > 30 |noway |c |next Zygor's Leveling Guides\\Legion (100-110)\\Highmountain
 |only if havequest(38907)
 step
 talk Aerylia##96679
@@ -8111,10 +8111,10 @@ step
 kill Genn Greymane##95451
 |tip Upstairs, on the deck of the airship.
 Defeat Genn Greymane |scenarioend |goto 69.76,80.21 |q 39801
-Complete Nathanos Blightcaller's Mission |q 39801/1 |goto 69.76,80.21 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim
+Complete Nathanos Blightcaller's Mission |q 39801/1 |goto 69.76,80.21 |next Zygor's Leveling Guides\\Legion (100-110)\\Stormheim
 |only if havequest(39801) or completedq(39801)
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Azsuna",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Azsuna",
 startlevel=100.0,
@@ -9148,10 +9148,10 @@ Run up the stairs |goto Dalaran L/10 60.07,30.85 < 10 |only if walking
 Run up the stairs |goto Dalaran L/10 60.76,22.49 < 10 |only if walking
 talk Advisor Stillwater##106951
 |tip Inside the building.
-turnin Fate of the Queen's Reprisal##42244 |goto Dalaran L/10 61.11,16.99 |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
-turnin Fate of the Queen's Reprisal##42244 |goto Dalaran L/10 61.11,16.99 |next "Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
+turnin Fate of the Queen's Reprisal##42244 |goto Dalaran L/10 61.11,16.99 |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
+turnin Fate of the Queen's Reprisal##42244 |goto Dalaran L/10 61.11,16.99 |next "Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Val'sharah",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Valsharah",
 startlevel=100.0,
@@ -10048,10 +10048,10 @@ Enter the building |goto Dalaran L/10 52.88,51.99 < 10 |walk
 Use the Central Dalaran Teleport |q 40890/1 |goto Dalaran L/10 49.28,47.59
 step
 click Tears of Elune
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
-turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
+turnin The Tears of Elune##40890 |goto Dalaran L/12 45.86,65.15 |next "Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Highmountain",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Highmountain",
 startlevel=100.0,
@@ -10886,12 +10886,12 @@ step
 talk Bolas Skyfeather##107660
 turnin Bolas Bastion##42630 |goto 42.96,38.77
 step
-Cross the bridge |goto 51.56,38.35 < 15 |only if walking() and not knowstaxi("Nesingwary")
-Cross the bridge |goto 58.85,14.79 < 15 |only if walking() and not knowstaxi("Nesingwary")
-Follow the path |goto Highmountain/0 48.73,54.46 < 20 |only if walking() and not knowstaxi("Nesingwary")
-Follow the path |goto Highmountain/0 47.95,54.02 < 20 |only if walking() and not knowstaxi("Nesingwary")
-Follow the path |goto Thunder Totem/0 39.67,2.80 < 20 |only if walking() and not knowstaxi("Nesingwary")
-Cross the river |goto Highmountain/0 42.20,52.84 < 20 |only if walking() and not knowstaxi("Nesingwary")
+Cross the bridge |goto 51.56,38.35 < 15 |only if walking and not knowstaxi("Nesingwary")
+Cross the bridge |goto 58.85,14.79 < 15 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 48.73,54.46 < 20 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 47.95,54.02 < 20 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Thunder Totem/0 39.67,2.80 < 20 |only if walking and not knowstaxi("Nesingwary")
+Cross the river |goto Highmountain/0 42.20,52.84 < 20 |only if walking and not knowstaxi("Nesingwary")
 talk Tamara Sigmund##94973
 fpath Nesingwary |goto Highmountain/0 40.23,52.71
 step
@@ -11379,10 +11379,10 @@ kill Wrath of Dargrul##97266 |q 39780/2 |goto 53.07,70.52
 step
 talk Mayla Highmountain##93846
 turnin The Underking##39780 |goto 53.20,70.02
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
-accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
+accept Neltharion's Lair##39781 |goto 53.20,70.02 |next "Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Stormheim",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Stormheim",
 startlevel=100.0,
@@ -12642,10 +12642,10 @@ turnin Spilling Bad Blood##42645 |goto 74.91,55.58
 step
 Cross the bridge |goto 56.74,51.16 < 20 |only if walking
 click Snaggle's Note
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
-turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Horde Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
+turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Leveling Guides\\Starter Guides\\Demon Hunter Intro & Artifacts" |only if raceclass("DemonHunter")
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Suramar (110)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Suramar",
 startlevel=100.0,
@@ -16554,7 +16554,7 @@ talk Archmage Khadgar##115367
 turnin Breaching the Sanctum##44719 |goto 44.19,60.13 |region suramar_sanctum_depths
 accept Lord of the Shadow Council##45417 |goto 44.19,60.13 |region suramar_sanctum_depths
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
 startlevel=101.0,
 },[[
@@ -25294,10 +25294,10 @@ talk Ritssyn Flamescowl##105102
 accept Finding Fizzlebang##41785 |goto 53.96,36.26
 |only Warlock
 step
-Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking() and alliance
-Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking() and alliance
-Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking() and horde
-Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking() and horde
+Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking and alliance
+Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking and alliance
+Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking and horde
+Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking and horde
 Follow the path |goto Stormheim/0 38.89,44.93 < 20 |only if walking
 talk Lulubelle Fizzlebang##104855
 turnin Finding Fizzlebang##41785 |goto Stormheim/0 39.37,42.24
@@ -25607,9 +25607,36 @@ talk Allari the Souleater##89398
 turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 |only Warlock
 step
+talk Allari the Souleater##89398
+accept The Once and Future Lord of Shadows##45176 |goto 43.29,43.16
+|only Warlock
+step
+Enter Trial of Valor |goto Stormheim/0 71.15,72.76
+|tip Press I to queue for the LFR version or enter it with a raid on any other difficulty.
+confirm
+|only Warlock
+step
+Defeat Helya |q 45176/1
+|only Warlock
+step
+click Lord Illidan Stormrage##116697
+Use your Soul Prism of the Illidari to capture Illidan Soul
+Capture Illidans Soul |use Soul Prism of the Illidari##143661 |q 45176/2
+|tip This will be located up the right steps in Helyas room after you defeat her.
+|only Warlock
+step
+click Light's Heart
+turnin The Once and Future Lord of Shadows##45176 |goto Dreadscar Rift/0 53.17,32.63
+accept The Nighthold##45177 |goto Dreadscar Rift/0 53.17,32.63
+|only Warlock
+step
+talk Archmage Khadgar##90417
+turnin The Nighthold##45177 |goto Dalaran L/10 28.54,48.31
+|only Warlock
+step
 talk Murr##110408
 |tip This quest will only be available if you chose to get the "Shadow Pact" class hall upgrade.
-accept Champion Armaments##44228 |goto 57.29,52.50
+accept Champion Armaments##44228 |goto Dreadscar Rift/0 57.29,52.50
 |only Warlock
 step
 talk Murr##110408
@@ -26226,7 +26253,7 @@ turnin The Mead Master##41038 |goto 62.12,20.14
 accept Stolen Knowledge##41039 |goto 62.12,20.14
 |only Monk
 step
-Cross the bridge |goto 40.11,62.68 < 20 |only if walking() and alliance
+Cross the bridge |goto 40.11,62.68 < 20 |only if walking and alliance
 Cross the bridge |goto 44.15,60.44 < 20 |only if walking
 Follow the path |goto 44.63,63.30 < 20 |only if walking
 click Grapple Point |goto 45.12,63.84 |n
@@ -28604,7 +28631,7 @@ _Congratulations!_
 You completed your Class Hall campaign!
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Balance of Power Questline",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Balance of Power Questline",{
 author="support@zygorguides.com",
 startlevel=101.0,
 },[[
@@ -28722,7 +28749,7 @@ talk Senegos##100482
 turnin Essence of Power##43521 |goto 48.04,25.83
 ]])
 ZGV.BETAEND()
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Artifact Knowledge 1-25",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Artifact Knowledge 1-25",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -28752,7 +28779,7 @@ step
 label "Yay"
 Congratulations now that you are Artifact Knowledge level 25 you can start on your journey to level 50!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\7.2 New Content",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign",{
 author="support@zygorguides.com",
 startlevel=110.0,
 },[[
@@ -28958,7 +28985,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only DeathKnight
 step
 talk Prophet Velen##120372
@@ -28990,6 +29017,21 @@ Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only DeathKnight
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only DeathKnight
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only DeathKnight
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only DeathKnight
 step
 More content coming soon!
@@ -29193,7 +29235,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only DemonHunter
 step
 talk Prophet Velen##120372
@@ -29225,6 +29267,21 @@ Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only DemonHunter
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only DemonHunter
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only DemonHunter
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only DemonHunter
 step
 More content coming soon!
@@ -29471,6 +29528,21 @@ talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
 |only Druid
 step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Druid
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Druid
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Druid
+step
 More content coming soon!
 confirm
 |only Druid
@@ -29672,7 +29744,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only Hunter
 step
 talk Prophet Velen##120372
@@ -29704,6 +29776,21 @@ Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Hunter
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Hunter
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Hunter
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Hunter
 step
 More content coming soon!
@@ -29940,6 +30027,21 @@ talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
 |only Mage
 step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Mage
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Mage
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Mage
+step
 More content coming soon!
 confirm
 |only Mage
@@ -30160,7 +30262,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only Monk
 step
 talk Prophet Velen##120372
@@ -30192,6 +30294,21 @@ These are located in random spots inside of the Broken Isle
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Monk
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Monk
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Monk
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Monk
 step
 More content coming soon!
@@ -30411,7 +30528,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only Paladin
 step
 talk Prophet Velen##120372
@@ -30443,6 +30560,21 @@ These are located in random spots inside of the Broken Isle
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Paladin
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Paladin
 step
 More content coming soon!
@@ -30675,6 +30807,21 @@ Open #10# Hidden Wyrmtongue Caches in Broken Shore |q 46769/1
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Priest
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Priest
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Priest
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Priest
 step
 More content coming soon!
@@ -30911,6 +31058,21 @@ talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
 |only Rogue
 step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Rogue
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Rogue
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Rogue
+step
 More content coming soon!
 confirm
 |only Rogue
@@ -31145,6 +31307,21 @@ talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
 |only Shaman
 step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Shaman
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Shaman
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Shaman
+step
 More content coming soon!
 confirm
 |only Shaman
@@ -31346,7 +31523,7 @@ accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 step
 Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
 |tip Use our World Quest guide to accomplish this.
-To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+To load the World Quest guide, click here |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
 |only Warlock
 step
 talk Prophet Velen##120372
@@ -31378,6 +31555,21 @@ Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Warlock
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Warlock
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Warlock
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Warlock
 step
 More content coming soon!
@@ -31642,6 +31834,21 @@ Open #10# Hidden Wyrmtongue Caches in Broken Shore |q 46769/1
 step
 talk Archmage Khadgar##116302
 turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Warrior
+step
+talk Maiev Shadowsong##116576
+accept Take Out the Head...##46250 |goto 44.54,63.53
+|only Warrior
+step
+Slay #3# rare elite demon commanders on the Broken Shore |q 46250/1 |goto 58.61,43.48 |or
+|tip You can use the World Quest guide and click on rare icons on the world map to load some helpful tips.
+|tip These icons look like green skulls.
+|tip Rare spawns remain up for a short period of time, and change randomly.
+Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests" |or
+|only Warrior
+step
+talk Maiev Shadowsong##116576
+turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Warrior
 step
 More content coming soon!

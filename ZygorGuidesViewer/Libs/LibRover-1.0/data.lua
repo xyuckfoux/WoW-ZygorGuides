@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 38,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 38.2,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 

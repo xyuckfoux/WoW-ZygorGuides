@@ -9,15 +9,18 @@ GuideMenu.Home={
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
 
 	{"section", text=[[LEVELING]]},
-	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 8 "Relieved of Their Valuables"|r.]], guide="LEVELING\\Legion (100-110)\\7.2 New Content"},
+	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 9 "Take Out the Head..."|r.]], guide="LEVELING\\Legion (100-110)\\Broken Shore Campaign"},
 
 	{"section", text=[[ACHIEVEMENTS]]},
-	{"item", text=[[Added |cfffe6100Treasures of Azsuna|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Azsuna"},
-	{"item", text=[[Added |cfffe6100Treasures of Val'sharah|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Val'sharah"},
-	{"item", text=[[Added |cfffe6100Treasures of Highmountain|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Highmountain"},
-	{"item", text=[[Added |cfffe6100Treasures of Stormheim|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Stormheim"},
-	{"item", text=[[Added |cfffe6100Treasures of Suramar|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Suramar"},
-
+	{"item", text=[[Added |cfffe6100Legion Curator (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Legion Curator"},
+	{"item", text=[[Added |cfffe6100Surveying the Land (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Surveying the Land"},
+	{"item", text=[[Added |cfffe6100This Side Up (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\This Side Up"},
+	{"item", text=[[Added |cfffe6100A Keen Eye (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\A Keen Eye"},
+	{"item", text=[[Added |cfffe6100The Dwarven Dream (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\The Dwarven Dream"},
+	{"item", text=[[Added |cfffe6100Handle With Care (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Handle With Care"},
+	{"item", text=[[Added |cfffe6100Getting Your Hands Dirty (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Getting Your Hands Dirty"},
+	{"item", text=[[Added |cfffe6100Sifting Through the Sand (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Sifting Through the Sand"},
+	{"item", text=[[Added |cfffe6100No Stone Unturned (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\No Stone Unturned"},
 
 	{"separator"},
 
@@ -71,13 +74,11 @@ GuideMenu.Home={
 	{"item", text=[[Added |cfffe6100Ivory Hawkstrider Guide (Beta)|r.]], guide="PETSMOUNTS\\Mounts\\Legion\\Ivory Hawkstrider"},
 
 	{"section", text=[[ACHIEVEMENTS]]},
-	{"item", text=[[Added |cfffe6100Black is the New Black Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Black is the New Black"},
-	{"item", text=[[Added |cfffe6100Dress In Lairs Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Dress in Lairs"},
-	{"item", text=[[Added |cfffe6100Outlandish Style Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Outlandish Style"},
-	{"item", text=[[Added |cfffe6100Suns Out, Thoridals Out Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Suns Out, Thori'dals Out"},
-	{"item", text=[[Added |cfffe6100Undying Aesthetics Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\Undying Aesthetic"},
-	{"item", text=[[Added |cfffe6100Legendary Research Guide|r.]], guide="ACHIEVEMENTS\\Class Hall\\Legion\\Legendary Research"},
-	{"item", text=[[Added |cfffe6100So Hot Right Now Guide|r.]], guide="ACHIEVEMENTS\\Appearances\\Legion\\So Hot Right Now"},
+	{"item", text=[[Added |cfffe6100Treasures of Azsuna|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Azsuna"},
+	{"item", text=[[Added |cfffe6100Treasures of Val'sharah|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Val'sharah"},
+	{"item", text=[[Added |cfffe6100Treasures of Highmountain|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Highmountain"},
+	{"item", text=[[Added |cfffe6100Treasures of Stormheim|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Stormheim"},
+	{"item", text=[[Added |cfffe6100Treasures of Suramar|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Treasures of Suramar"},
 }
 
 

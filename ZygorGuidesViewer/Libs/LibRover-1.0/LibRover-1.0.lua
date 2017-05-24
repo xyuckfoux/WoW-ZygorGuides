@@ -116,6 +116,8 @@ do
 		local COST_CROSSCONTINENT_DEFAULT = 20
 		local COST_SHIP_DEFAULT = 240
 		local WALKSPEED=7
+		local COST_FAILURE = 100000 -- anything above means failed path
+		local COST_FORCED = -1000000  -- guaranteed best
 		local colors={['portal']="|cffff8800",['taxi']="|cff88ff00"}
 
 		local opened_count
@@ -144,7 +146,8 @@ do
 			remove_hairpins = true,
 			remove_standing = true
 		}
-
+		Lib.COST_FORCED = COST_FORCED
+		Lib.COST_FAILURE = COST_FAILURE
 
 		local lastupdate=0
 
@@ -1587,7 +1590,7 @@ do
 				end
 				Lib:Debug("|cffff8844 No idea where player's hearthstone is bound to: |cffff8800%s",bind)
 				ZGV.FAILEDHEARTH = bind
-				if ZGV.DEV then geterrorhandler()("Travel has no idea where player's hearthstone is bound to: "..bind) end
+				if ZGV.DEV and not Lib.FAILEDHEARTHNAME==bind then geterrorhandler()("Travel has no idea where player's hearthstone is bound to: "..bind) Lib.FAILEDHEARTHNAME=bind end
 				return nil
 			end
 
@@ -2051,7 +2054,7 @@ do
 
 				-- This allows for forcing the next node to be visited - like, flying on a taxi enforces the destination point.
 				if self.force_next then
-					local meta = {mode="taxi",cost=-1000000,time=0}
+					local meta = {mode="taxi",cost=COST_FORCED,time=0}
 					if self.force_next_manualmeta then meta=self.force_next_manualmeta end
 					self.startnode:AddNeigh(self.force_next,meta)  -- this should guarantee that this one will be most promising, yes?
 					if self.force_next.tostring then
@@ -2545,9 +2548,9 @@ do
 							mytime = 240
 						end
 
-					-- fly to unknown taxi AND run/fly from there? nope!
+					-- fly to unknown taxi AND run/fly from there? nope! Penalize all movement from there, since we can't penalize arrival.
 					elseif current.type=="taxi" and not current.known then
-						mytime=99999
+						mytime=COST_FAILURE+1
 						if cost_debugging then costdesc = costdesc .. "no arrive at strange taxi; " end
 
 					else
@@ -2602,53 +2605,57 @@ do
 						if cost_debugging then costdesc = costdesc .. "mud "..neighlink.mud.."; " end
 					end  -- Normally, we wouldn't even see this; but startnode is allowed to "see through thick fog" to latch onto the nodes.
 
-					if mode=="walk" and Lib.cfg.avoid_highlevel_zones and Lib.data.ZoneContLev[neigh.m].level-TMP_PLAYERLEVEL>=2 then
-						mycost = mycost * ( 1 + (Lib.data.ZoneContLev[neigh.m].level-TMP_PLAYERLEVEL)*0.2 )
-						if cost_debugging then costdesc = costdesc .. "high level avoid; " end
-					end
+					-- If high level zones are avoided... avoid.
+						if mode=="walk" and Lib.cfg.avoid_highlevel_zones and Lib.data.ZoneContLev[neigh.m].level-TMP_PLAYERLEVEL>=2 then
+							mycost = mycost * ( 1 + (Lib.data.ZoneContLev[neigh.m].level-TMP_PLAYERLEVEL)*0.2 )
+							if cost_debugging then costdesc = costdesc .. "high level avoid; " end
+						end
+					-- ==
 
-					if (mode=="walk" or mode=="fly") and Lib.cfg.prefer_taxi then
-						if maxspeed > 2 then
-							mycost=mycost*3
-							if cost_debugging then costdesc = costdesc .. "prefer taxi, cost*3; " end
-						else
-							mycost = mycost*2
-							if cost_debugging then costdesc = costdesc .. "prefer taxi, cost*2; " end
-						end --Don't want to use hearth too much. If maxspeed = 2 then we can't move quick anyhow so walking is already bad.
-					end
+					-- Penalize walking around, if taxis are preferred.
+						if (mode=="walk" or mode=="fly") and Lib.cfg.prefer_taxi then
+							if maxspeed > 2 then
+								mycost=mycost*3
+								if cost_debugging then costdesc = costdesc .. "prefer taxi, cost*3; " end
+							else
+								mycost = mycost*2
+								if cost_debugging then costdesc = costdesc .. "prefer taxi, cost*2; " end
+							end --Don't want to use hearth too much. If maxspeed = 2 then we can't move quick anyhow so walking is already bad.
+						end
+					-- ==
 
-					-- Don't start at taxis that are unknown and complicated.
-					if neigh.type=="taxi"
-					and (mode=="walk" or mode=="fly")
-					and not neigh.known and (neigh.quest or neigh.factionid or neigh.condition) then
-						-- don't walk to unknown special taxis
-						mycost=mycost+120000
-						if cost_debugging then costdesc = costdesc .. "no walk to strange taxi; " end
-					end
+					-- Don't start at unknown taxis that are: - too high level; - complicated
+						if neigh.type=="taxi"
+						and (mode=="walk" or mode=="fly")
+						and not neigh.known then
+							if neigh.quest or neigh.factionid or neigh.condition then
+								mycost=mycost+120000
+								if cost_debugging then costdesc = costdesc .. "no walk to complicated taxi; " end
+							end
+							if neigh.level and ZGV:GetPlayerPreciseLevel()<neigh.level 
+							then
+								mycost=mycost+120000
+								if cost_debugging then costdesc = costdesc .. "no walk to overleveled taxi; " end
+							end
+						end
+					-- ==
 
-					if neigh.type=="taxi"
-					and (mode=="walk" or mode=="fly")
-					and not neigh.known and neigh.level and ZGV:GetPlayerPreciseLevel()<neigh.level 
-					then
-						-- don't walk to unknown special taxis
-						mycost=mycost+120000
-						if cost_debugging then costdesc = costdesc .. "no walk to overleveled taxi; " end
-					end
+					-- Seriously frown upon banned nodes.
+						if lib_banned_nodes_any and lib_banned_nodes[neigh] then
+							mycost=mycost+COST_FAILURE+10
+							if cost_debugging then costdesc = costdesc .. "banned; " end
+						end
+					-- ==
 
-					-- Seriously frown upon banned nodes :)
-					if lib_banned_nodes_any and lib_banned_nodes[neigh] then
-						mycost=mycost+100000
-						if cost_debugging then costdesc = costdesc .. "banned; " end
-					end
-
-					-- ban by quest/faction
-					if (neigh.factionid and select(3,GetFactionInfoByID(neigh.factionid))<neigh.factionstanding)
-					or (neigh.quest and not IsQuestFlaggedCompleted(neigh.quest))
-					or (neigh.class and select(2,UnitClass("player"))~=neigh.class)
-					then -- Class only! woo
-						mycost = mycost+110000
-						if cost_debugging then costdesc = costdesc .. "bad faction/quest/class "..tostring(neigh.factionid).." "..tostring(neigh.quest).." "..tostring(neigh.class).."; " end
-					end
+					-- Ban nodes by quest/faction.
+						if (neigh.factionid and select(3,GetFactionInfoByID(neigh.factionid))<neigh.factionstanding)
+						or (neigh.quest and not IsQuestFlaggedCompleted(neigh.quest))
+						or (neigh.class and select(2,UnitClass("player"))~=neigh.class)
+						then -- Class only! woo
+							mycost = mycost+COST_FAILURE+100
+							if cost_debugging then costdesc = costdesc .. "bad faction/quest/class "..tostring(neigh.factionid).." "..tostring(neigh.quest).." "..tostring(neigh.class).."; " end
+						end
+					-- ==
 
 					--[[
 					if Lib.onlies and Lib.onlies[neigh.num] and Lib.onlies[neigh.num]~=current.num then
@@ -3544,6 +3551,15 @@ do
 					)
 				end
 
+				if code=="SUCCESS" and Lib.FORCE_FAILURE then self.success_endnode.cost = COST_FAILURE+123 end
+
+				-- Detect soft failure - path was found, but unacceptably long.
+				if code=="SUCCESS" and self.success_endnode and self.success_endnode.cost>=COST_FAILURE then
+					Lib:Debug("Path found has cost %d, that's unacceptable. Failing.",self.success_endnode.cost)
+					code="END"
+				end
+
+
 				if code=="PENDING" then
 					--## Show waiting animation.
 					if not self.quiet and not self.success_endnode and self.PathFoundHandler then
@@ -3557,14 +3573,18 @@ do
 					self:ReportPath(self.success_endnode)
 					self:Cleanup() -- does nothing so far
 				elseif code=="END" then
+					--[[
 					if self.success_endnode then
 						--self:ReportPath(self.success_endnode)
 						self:ReportPath(self.success_endnode)
 						if self.can_optimize_for_end then self.optimizing_for_end = true end
 					else
-						Lib:Debug("Path FAILED in %s frames, %d calcs, %.1f ms.", Lib.debug_frames_total,Lib.calculation_step,Lib.debug_time.all)
-						self:ReportFail()
+					--]]
+					Lib:Debug("Path FAILED in %s frames, %d calcs, %.1f ms.", Lib.debug_frames_total,Lib.calculation_step,Lib.debug_time.all)
+					self:ReportFail()
+					--[[
 					end
+					--]]
 					self:Cleanup() -- does nothing so far
 				elseif code=="ERROR" then
 					Lib:Debug("Path ERROR in %s frames, %d calcs, %.1f ms.", Lib.debug_frames_total,Lib.calculation_step,Lib.debug_time.all)
@@ -4046,7 +4066,15 @@ do
 			SetMapByID(501) --set map to Wintergrasp
 			local ret=false
 			for i=1,GetNumMapLandmarks() do
-				local name,_,textureIndex,_,_ = GetMapLandmarkInfo(i);
+				local name, textureIndex
+				-- [7.2 prep]
+				if ZGV.Patch_7_2 then
+					-- 7.2
+					name,_,textureIndex,_,_ = C_WorldMap.GetMapLandmarkInfo(i);
+				else
+					-- 7.1.5
+					name,_,textureIndex,_,_ = GetMapLandmarkInfo(i);
+				end
 				if ( name == "Wintergrasp Fortress") then
 					if ( textureIndex == 79 ) then   -- old trunk had 77
 						if UnitFactionGroup("player")=="Horde" then

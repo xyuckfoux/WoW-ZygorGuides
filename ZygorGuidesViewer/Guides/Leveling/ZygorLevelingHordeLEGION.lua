@@ -16253,7 +16253,7 @@ Continue down the stairs |goto 47.27,59.43 < 15 |only if walking
 Follow the path |goto 48.72,62.28 < 20 |only if walking
 click Duskwatch Scrying Orb
 |tip Inside the building.
-Inspect the Duskwatch Scrying Orb |q 45209/1 |count 1 |goto 49.96,62.04.
+Inspect the Duskwatch Scrying Orb |q 45209/1 |count 1 |goto 49.96,62.04
 step
 click Duskwatch Scrying Orb
 |tip Inside the building.
@@ -18376,6 +18376,22 @@ talk Kristoff##110434
 turnin Champion Armaments##44218 |goto 54.09,49.73
 |only Paladin
 step
+talk Injured Shieldbearer##118348
+accept An Urgent Warning##45974 |goto Eastern Plaguelands/20 42.59,70.27
+|only Paladin
+step
+talk Lord Maxwell Tyrosus##90259
+turnin An Urgent Warning##45974 |goto 49.77,72.27
+|tip If Lord Maxwell Tyrosus is on a mission, you will have to wait until it is completed to turn this quest in.
+accept Investigate the Broken Shore##45975
+|only Paladin
+step
+click Scouting Map
+Start the Menace on the Broken Shore Mission
+|tip You will need followers with 830 item level to efficiently complete this.
+"Menace on the Broken Shore" mission completed |q 45975/1 |goto Eastern Plaguelands/20 53.46,78.61
+|only Paladin
+step
 talk Snowfeather##113327
 |tip She appears next to you in Dalaran.
 accept Pledge of Loyalty##44090 |goto Dalaran L/10 58.39,45.75
@@ -19407,6 +19423,23 @@ Place a Work Order for Champion Armaments |q 44211/1 |goto 35.70,51.73
 step
 talk Berger the Steadfast##110412
 turnin Unseen Armaments##44211 |goto 35.70,51.73
+|only Hunter
+step
+talk Injured Archer##118429
+accept An Urgent Warning##46022 |goto 49.10,44.86
+|only Hunter
+step
+talk Tactician Tinderfell##103023
+turnin An Urgent Warning##46022 |goto 42.80,46.92
+accept Investigate the Broken Shore##46023 |goto 42.80,46.92
+|only Hunter
+step
+click Scouting Map
+Complete the "Menace on the Broken Shore" mission |q 46023/1 |goto 42.49,46.59
+|only Hunter
+step
+talk Tactician Tinderfell##103023
+turnin Investigate the Broken Shore##46023 |goto 42.80,46.92
 |only Hunter
 step
 talk Valeera Sanguinar##112679
@@ -21390,7 +21423,7 @@ turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 step
 talk Lilith##110595
 |tip This quest will only be available if you chose to get the "Armaments of Light" class hall upgrade.
-accept Champion Armaments##44229 |goto 45.49,26.63
+accept Champion Armaments##44229 |goto Netherlight Temple/1 45.49,26.63
 |only Priest
 step
 talk Lilith##110595
@@ -21399,6 +21432,23 @@ Place a Work Order for Champion Armaments |q 44229/1 |goto 45.49,26.63
 step
 talk Lilith##110595
 turnin Champion Armaments##44229 |goto 45.49,26.63
+|only Priest
+step
+talk Injured Acolyte##118432
+accept An Urgent Warning##46028 |goto 51.06,52.80
+|only Priest
+step
+talk Moira Thaurissan##109776
+turnin An Urgent Warning##46028 |goto 51.45,45.97
+accept Investigate the Broken Shore##46029 |goto 51.45,45.97
+|only Priest
+step
+click Command Map
+Complete the "Menace on the Broken Shore" mission |q 46029/1 |goto 49.68,45.94
+|only Priest
+step
+talk Moira Thaurissan##109776
+turnin Investigate the Broken Shore##46029 |goto 51.45,45.97
 |only Priest
 step
 talk Mackay Firebeard##114274
@@ -24604,6 +24654,23 @@ talk Slitesh##110433
 turnin Champion Armaments##44223 |goto 60.10,43.38
 |only DemonHunter
 step
+talk Injured Adept##118425
+accept An Urgent Warning##45993 |goto 63.04,37.53
+|only DemonHunter
+step
+talk Kor'vas Bloodthorn##108311
+turnin An Urgent Warning##45993 |goto 59.33,57.67
+accept Investigate the Broken Shore##45994 |goto 59.33,57.67
+|only DemonHunter
+step
+click Scouting Map
+Complete the "Menace on the Broken Shore" mission |q 45994/1 |goto 58.60,54.84
+|only DemonHunter
+step
+talk Kor'vas Bloodthorn##108311
+turnin Investigate the Broken Shore##45994 |goto 59.33,57.67
+|only DemonHunter
+step
 talk Black Harvest Acolyte##112693
 |tip They appear next to you in Dalaran.
 accept A Mutual Friend##44099 |goto Dalaran L/10 58.01,45.37
@@ -25525,6 +25592,23 @@ Use the "Unleash Infernal" Ability on Your Map |q 44227/3
 step
 talk Demonia Pickerin##113371
 turnin Unleashing our Wrath##44227 |goto 49.47,24.90
+|only Warlock
+step
+talk Injured Invoker##118423
+accept An Urgent Warning##45989 |goto Dreadscar Rift/0 58.36,36.95
+|only Warlock
+step
+talk Gakin the Darkbinder##106199
+turnin An Urgent Warning##45989 |goto 67.01,46.41
+accept Investigate the Broken Shore##45990 |goto 67.01,46.41
+|only Warlock
+step
+click Dreadscar Battle Plans
+Complete the "Menace on the Broken Shore" mission |q 45990/1 |goto 66.19,47.01
+|only Warlock
+step
+talk Gakin the Darkbinder##106199
+turnin Investigate the Broken Shore##45990 |goto 67.01,46.41
 |only Warlock
 step
 talk Initiate Da-Nel##112696
@@ -26470,6 +26554,22 @@ Claim #80# Lingering Soul Fragments |q 45175/1
 step
 talk Allari the Souleater##89398
 turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Monk
+step
+talk Injured Initiate##118430
+accept An Urgent Warning##46024	|goto The Wandering Isle L/0 50.98,58.52
+|only Monk
+step
+talk Master Hsu##99179
+turnin An Urgent Warning##46024 |goto  52.77,59.77
+|tip If Master Hsu is on a mission, you will have to wait until it is completed to turn this quest in.
+accept Investigate the Broken Shore##46025 |goto The Wandering Isle L/0 52.77,59.77
+|only Monk
+step
+click Scouting Map
+Start the Menace on the Broken Shore Mission
+|tip You will need followers with 830 item level to efficiently complete this.
+"Menace on the Broken Shore" mission completed |q 46025/1 |goto 52.90,60.16
 |only Monk
 step
 talk Archdruid Hamuul Runetotem##112689
@@ -27439,6 +27539,33 @@ talk Allari the Souleater##89398
 turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 |only Druid
 step
+talk Allari the Souleater##89398
+accept The Once and Future Lord of Shadows##45176 |goto 43.29,43.16
+|only Druid
+step
+Enter Trial of Valor |goto Stormheim/0 71.15,72.76
+|tip Press I to queue for the LFR version or enter it with a raid on any other difficulty.
+confirm
+|only Druid
+step
+Defeat Helya |q 45176/1
+|only Druid
+step
+click Lord Illidan Stormrage##116697
+Use your Soul Prism of the Illidari to capture Illidan Soul
+Capture Illidans Soul |use Soul Prism of the Illidari##143661 |q 45176/2
+|tip This will be located up the right steps in Helyas room after you defeat her.
+|only Druid
+step
+click Light's Heart
+turnin The Once and Future Lord of Shadows##45176 |goto The Dreamgrove/0 60.06,52.14
+accept The Nighthold##45177 |goto The Dreamgrove/0 60.06,52.14
+|only Druid
+step
+talk Archmage Khadgar##90417
+turnin The Nighthold##45177 |goto Dalaran L/10 28.54,48.31
+|only Druid
+step
 talk Highlord Darion Mograine##93437
 accept Return of the Four Horsemen##42449 |goto Broken Shore/2 50.92,50.74
 |only DeathKnight
@@ -28342,7 +28469,7 @@ turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 step
 talk Dead Collector Bane##110410
 |tip This quest will only be available if you chose to get the "Brothers in Arms" class hall upgrade.
-accept Champion Armaments##44231 |goto 51.78,32.38
+accept Champion Armaments##44231 |goto Broken Shore/2 51.78,32.38
 |only DeathKnight
 step
 talk Dead Collector Bane##110410
@@ -28351,6 +28478,23 @@ Place a Workorder for Champion armaments |q 44231/1 |goto 51.78,32.38
 step
 talk Dead Collector Bane##110410
 turnin Champion Armaments##44231 |goto 51.78,32.38
+|only DeathKnight
+step
+talk Injured Ebon Knight##118433
+accept An Urgent Warning##46030 |goto 48.44,47.50
+|only DeathKnight
+step
+talk Siouxsie the Banshee##93568
+turnin An Urgent Warning##46030 |goto 49.66,51.25
+accept Investigate the Broken Shore##46031 |goto 49.66,51.25
+|only DeathKnight
+step
+click Scouting Map
+Complete the "Menace on the Broken Shore" mission |q 46031/1 |goto 49.66,51.25
+|only DeathKnight
+step
+talk Siouxsie the Banshee##93568
+turnin Investigate the Broken Shore##46031 |goto 49.66,51.25
 |only DeathKnight
 step
 _Congratulations!_

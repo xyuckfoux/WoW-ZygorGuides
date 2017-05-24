@@ -9453,7 +9453,7 @@ Click here once Ook-Ook has spawned |confirm
 step
 kill Ook-Ook##56637
 |tip Ook-Ook will Ground Pound which is a frontal shockwave, do not stand in it.
-|tip At 90%, 60%, and 30% Ook-Ook will _Go Bananas_. This increases his attack speed and damage dealt each time. This buff stacks. He will also summon Rolling Barrels when he does this.
+|tip At 90%, 60%, and 30% Ook-Ook will Go Bananas. This increases his attack speed and damage dealt each time. This buff stacks. He will also summon Rolling Barrels when he does this.
 |tip DPS should click on Rolling Barrels and ride them into Ook-Ook. This will increase his damage taken as well as do a lot of damage. This effect stacks
 Defeat Ook-Ook |scenariogoal 1/19236 |goto 53.4,50.1
 step

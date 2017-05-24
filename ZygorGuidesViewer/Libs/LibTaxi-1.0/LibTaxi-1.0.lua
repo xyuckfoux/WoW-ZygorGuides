@@ -261,6 +261,15 @@ do
 		return Lib.taxitag2point[cont][tag]
 	end
 
+	function Lib:ClearAllKnowledge()
+		for c,cont in pairs(Lib.taxipoints) do
+			for z,zone in pairs(cont) do
+				node.known=false
+				Lib.master[node.name]=false
+			end
+		end
+	end
+
 	function Lib:ClearContinentKnowledge(cont,operator)
 		for z,zone in pairs(Lib.taxipoints[cont]) do
 			for n,node in ipairs(zone) do
@@ -362,6 +371,8 @@ do
 		end
 
 		self:Debug("We're on continent %d, and will be flying %s airlines.",cont,current_operator or "default")
+
+		Lib.master[cont]=true
 
 		-- We now see the map. Whatever's not on the map, is surely unknown - so, mark everything as unknown and learn what's known.
 
@@ -539,7 +550,7 @@ do
 	
 	function Lib:MarkKnownByLevels()
 		local level = UnitLevel("player")
-		for c,cont in pairs(Lib.taxipoints) do
+		for c,cont in pairs(Lib.taxipoints) do  if not Lib.master[c] then
 			for z,zone in pairs(cont) do
 				local zoneid = self.MapIDsByName[z]
 				if type(zoneid)=="table" then zoneid=zoneid[1] end  -- might cause trouble on phased maps :/
@@ -564,11 +575,6 @@ do
 					end
 				else --]]
 					for n,node in ipairs(zone) do
-						local achieveInfo
-						if node.achievemissing then
-							achieveInfo = {GetAchievementInfo(node.achievemissing)}
-						end
-					
 						if node.taxioperator and node.taxioperator=="blackcat" then node.known = true end --All blackcats are useable by an alliance character
 
 						if node.available then
@@ -576,7 +582,7 @@ do
 							Lib.master[node.name]= node.known;
 						elseif node.achievemissing then
 							-- If the player has the achievement, then the node is missing.
-							node.missing = achieveInfo[13] -- 13 = whether this toon has the achievement.
+							node.missing = select(13,GetAchievementInfo(node.achievemissing)) -- 13 = whether this toon has the achievement.
 						elseif Lib.master[node.name]==false then --if zone is overlevel and for some reason it is false, set it back to nil
 							Lib.master[node.name]=nil
 						elseif Lib.master[node.name]==true then -- we know a flightpath that is over our level
@@ -585,7 +591,7 @@ do
 					end
 				--end
 			end
-		end
+		end  end
 	end
 
 	function Lib:ResetKnowledge()

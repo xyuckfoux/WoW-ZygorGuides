@@ -120,7 +120,7 @@ function Pointer:Startup()
 		:RegisterEvent("WORLD_MAP_UPDATE")
 		.__END
 
-	if ZGV.DEV then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
+	if ZGV.DEV and ZGV.db.profile.debug_pointer then self.OverlayFrame.ZygorCoordsDEV = ZGV.ChainCall(WorldMapFrame.UIElementsFrame:CreateFontString(nil,"ARTWORK","GameFontHighlight")) :SetPoint("BOTTOMLEFT") :SetWidth(300) :SetJustifyH("LEFT") .__END  end
 
 	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
 
@@ -536,7 +536,7 @@ function Pointer:SetWaypoint (m,f,x,y,data,arrow)
 
 
 	waypoint:SetIcon(waypoint.icon)
-	if ZGV.DEV and waypoint.goal then
+	if ZGV.DEV and ZGV.db.profile.debug_pointer and waypoint.goal then
 		waypoint.frame_worldmap.label:SetText("   " .. (waypoint.goal and waypoint.goal.num..". " or "")  ..  waypoint:GetTitle()  ..  ("  %.1f,%.1f"):format(waypoint.x*100,waypoint.y*100))
 		waypoint.frame_worldmap.label:SetFont("Fonts\\ARIALN.TTF",5)
 	end
@@ -2480,6 +2480,10 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			)
 	end
 
+	if waypoint.errortext then
+		errortxt = (errortxt and errortxt.."\n" or "").."|cffff4400"..waypoint.errortext.."|r"
+	end
+
 	if ZGV.db.char.fakeinstance or not GetPlayerFacing() then
 		if ZGV.PointerMap.PreviewVisible then
 			errortxt=(errortxt and errortxt.."\n" or "").."Click to hide Map Preview"
@@ -4071,7 +4075,7 @@ function Pointer:ShowSet(waypath,name)
 		--globalize position! fill gm,gx,gy with world-global values. Otherwise ants can't travel over zone crossings.
 		for wpi,wp in ipairs(points) do
 			if not wp.gx and wp.m then  move_point_to_global(wp)  end
-			if (wpi%50==0) and Pointer.showset_timer then coroutine.yield() end
+			if (wpi%50==0) and Pointer.showset_timer and coroutine.running() then coroutine.yield() end
 		end
 
 		-- calculate path arrow angles
@@ -4101,7 +4105,7 @@ function Pointer:ShowSet(waypath,name)
 				icon=point.icon or self.Icons.greendot
 			end
 			point:SetIcon(icon)
-			if (k%50==0) and Pointer.showset_timer then coroutine.yield() end
+			if (k%50==0) and Pointer.showset_timer and coroutine.running() then coroutine.yield() end
 		end
 
 		-- Get all the other fields
@@ -4235,7 +4239,7 @@ local function PathFoundHandler(state,path,ext,reason)
 		reason = reason or "Destination unreachable."
 
 		if reason and ZGV.Pointer.DestinationWaypoint then
-			ZGV.Pointer.DestinationWaypoint.arrowtitle = reason
+			ZGV.Pointer.DestinationWaypoint.errortext = reason
 		end
 		Pointer:ShowArrow(ZGV.Pointer.DestinationWaypoint)
 

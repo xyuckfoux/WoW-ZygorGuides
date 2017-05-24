@@ -60,6 +60,7 @@ ZGV.Expansion_Mists = (build>=15799)
 ZGV.Expansion_Warlords = (build>=18566)
 ZGV.Expansion_Legion = (build>=22248)
 
+ZGV.Patch_7_2 = (build>=23721)
 
 -- local libs
 
@@ -3640,8 +3641,21 @@ function ZGV:FindEvent(eventName)
 	end
 	
 	for event=1, CalendarGetNumDayEvents(0,day) do --0 current month, 1 next month, -1 last month... Always want the current day.
-		local name,hr,mn,eventType,eventStatus,eventType2,texture = CalendarGetDayEvent(0,day,event)
-		name=name:upper() texture=texture:upper()
+		-- [7.2 prep]
+		local name,hr,mn,eventType,eventStatus,eventType2,texture
+		if ZGV.Patch_7_2 then
+			-- 7.2
+			local eventdata = C_Calendar.GetDayEvent(0,day,event)
+			if eventdata then
+				name = eventdata.title
+				texture = tostring(eventdata.texture)
+			end				
+		else
+			-- 7.1.5
+			name,hr,mn,eventType,eventStatus,eventType2,texture = CalendarGetDayEvent(0,day,event)
+		end
+		name=name:upper() 
+		texture=texture:upper()
 
 		if (texture=="CALENDAR_HARVESTFESTIVAL" and month>10) then --Stay the same
 			texture="CALENDAR_HARVESTFESTIVAL_PILGRIM" --Lovely work around for Harvest Festival and Pilgrim's Bounty having the same texture
@@ -5980,6 +5994,10 @@ end
 
 function ZGV:IsBoostedChar()
 	return IsQuestFlaggedCompleted(34398)
+end
+
+function ZGV.IsLegionBoatLock()
+	return (IsQuestFlaggedCompleted(40519) or IsQuestFlaggedCompleted(43926)) and not (IsQuestFlaggedCompleted(40593) or IsQuestFlaggedCompleted(40607))
 end
 
 

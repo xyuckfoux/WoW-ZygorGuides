@@ -382,6 +382,17 @@ kill Jade Darkhaven##34914 |q 44190/1 |goto 40.30,76.57
 |tip He is all the way at the top of the tower.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44191
+Follow the path |goto Azsuna/0 47.28,73.05 < 25 |only if walking
+Follow the path |goto 44.15,77.06 < 15 |only if walking
+Follow the path |goto 44.82,81.62 < 20 |only if walking
+Follow the path |goto 45.96,79.55 < 25 |only if walking
+accept DANGER: Karthax##44191 |goto 45.48,77.00
+|tip You will accept this quest automatically.
+step
+kill Karthax##111731 |q 44191/1 |goto 45.48,77.00
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43798
 accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.46,50.10
 |tip You will accept this quest automatically.
@@ -603,6 +614,26 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44044
+accept Felled Experiment##44044 |goto 43.30,72.05
+|tip You will accept this quest automatically.
+step
+kill Experimental Fel Corruptor##111763+ |q 44044/1 |goto 43.30,72.05
+kill Beguiled Inquisitor##111752+ |q 44044/2 |goto 43.30,72.05
+|tip These mobs are elite. You might need some help.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44050
+Follow the path |goto Azsuna/0 47.09,73.16 < 25 |only if walking
+Follow the path up |goto 41.64,73.61 < 20 |only if walking
+accept The Felsworn Must Fall##44050 |goto 41.09,75.75
+|tip You will accept this quest automatically.
+step
+kill Felsworn Adept##102059+ |q 44050/1 |goto 41.09,75.75
+kill Felsworn Betrayer##103972+ |q 44050/2 |goto 41.09,75.75
+kill Felsworn Defiler##111929+ |q 44050/3 |goto 41.09,75.75
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41514
 Follow the path |goto Azsuna/0 65.36,28.86 < 30 |only if walking
 accept Felwort##41514 |goto 68.37,28.92
@@ -792,6 +823,15 @@ kill Oublion##89350
 |tip Switch to fighting Queen Kraklaa when he casts the green bubble around himself.
 kill Queen Kraklaa##89287
 Kill Oublion |q 42021/4 |goto 63.86,63.55
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41528
+Follow the path |goto Azsuna/0 42.00,11.31 < 30 |only if walking
+accept Iridescent Aethril##41528 |goto 43.95,10.82
+|tip You will accept this quest automatically.
+step
+click Iridescent Aethril##195114
+collect 10 Iridescent  Aethril##140950 |q 41528/1 |goto 45.46,10.21
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42101

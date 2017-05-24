@@ -16659,7 +16659,7 @@ _Congratulations!_
 You have earned the _Dread Haste Makes Dread Waste_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\One Steppe Forward, Two Steppes Back",{
-condition_end="achieved(6540)",
+condition_end="achieved(6539)",
 author="support@zygorguides.com",
 startlevel=88,
 keywords={"One","Steppe","Forward","Two","Steppes","Back"},
@@ -16747,5 +16747,531 @@ Nesingwary's Safari |achieve 6301/6
 step
 _Congratulations!_
 You have earned the _Rally the Valley_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\A Taste of History",{
+condition_end="achieved(7318)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"A","Taste'","of","History"},
+description="This guide will walk you through completing the \"A Taste of History\" Achievement.",
+},[[
+step
+label "start"
+For this, you will need to kill mobs in Guo-Lai Halls for _"Ancient Guo-Lai Cache Key"_
+collect Ancient Guo-Lai Cache Key##87779 |n
+Click here to continue |confirm
+step
+Enter the tomb |goto Vale of Eternal Blossoms/0 22.44,26.89
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto Vale of Eternal Blossoms/18 65,72
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 54,17
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 59,13
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 58,6
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 71,27
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+click Ancient Guo-Lai Cache
+Find a Guo-Lai Vault Key and open an Ancient Guo-Lai Cache |achieve 7318 |goto 50,62
+Click here if there is no cache at this spot |confirm
+|tip Make sure you FULLY LOOT the Cache for credit.
+step
+Earn the _"A Taste of History"_ Achievement|achieve 7318
+Click here to go back to the start if you haven't earned the achievement yet |confirm |next "start"
+step
+_Congratulations!_
+You have earned the _Rally the Valley_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\One Step at a Time",{
+condition_end="achieved(7324)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"One","Step'","at","a","Time"},
+description="This guide will walk you through completing the \"One Step at a Time\" Achievement.",
+},[[
+step
+label "start"
+This achievement takes place during two quests:
+_"The Crumbling Hall"_ and _"The Thunder Below"_
+Note that only one will be offered at a time
+You will need to complete said quests without taking damage
+_"This requirement takes effect as soon as you accept the quest!"_
+The easiest way to do this is to have a friend run ahead of you and clear all of the enemies
+Complete The Crumbling Hall without taking any damage |achieve 7324/1
+Complete The Thunder Below without taking any damage |achieve 7324/2
+Click here to continue |confirm
+step
+talk Bartender Tomro##58691
+home The Golden Rose |goto Vale of Eternal Blossoms/0 35.35,77.65
+Set your hearth here so you can use it to port out of the ruins after you reach the goal
+|tip This will help prevent you from taking damage on your way out.
+step
+talk Anji Autumnlight##58919
+accept The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+accept The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+|achieve 30280 |next "end" |or
+step
+map Vale of Eternal Blossoms/0
+path loop off; dist 20
+path 22.29,26.54
+map Vale of Eternal Blossoms/18
+path loop off; dist 20
+path	53.33,87.33	47.46,81.40	51.13,67.67
+path	46.13,56.05	41.56,53.17	31.52,47.29
+path	27.62,41.74	31.03,28.40	34.68,22.02
+Follow the path
+Be on the look out for the _Red Statues_, as they will aggro when you are close to them
+They will be invulnerable until they aggro as well
+Click here to continue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	38.97,24.64	38.37,26.81	37.60,29.43
+path	39.48,30.79	41.29,32.17	44.16,33.64
+path	44.84,31.14	45.71,28.07	46.92,22.95
+path	44.67,21.33	41.65,19.60	40.70,22.17
+path	42.87,23.50	41.97,27.26
+Follow the path
+click Deactivate Final Spirit Wall
+Deactivate the Spirit Wall |q 7324/1
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	40.92,22.12	41.43,19.67	43.60,21.05
+path	46.62,22.98	45.73,28.40	49.52,30.64
+Follow the path
+click Ancient Guo-Lai Artifact
+Get the Ancient Guo-Lai Artifact |q 7324/2
+step
+talk Anji Autumnlight##58919
+turnin The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+turnin The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+|next "start"
+step
+label "Thunder"
+Second Part
+map Vale of Eternal Blossoms/0
+path loop off; dist 20
+path 22.29,26.54
+map Vale of Eternal Blossoms/18
+path loop off; dist 20
+path	52.43,86.40	47.97,80.26	52.56,62.79
+path	56.68,47.10	57.46,44.55	58.41,44.64
+path	58.22,42.24
+Follow the path
+Watch for the tile at the end, it switches and will damage you
+Try to jump over it
+Click here to contiue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	58.57,37.64	56.33,36.14	57.43,32.05
+path	60.92,34.24	60.70,35.50	62.27,36.60
+path	63.83,32.07	64.79,28.12	63.13,27.12
+path	62.54,24.60
+Follow the path
+click Ancient Guo-Lai Door
+Go through the gate
+Click here to continue |confirm
+step
+map Vale of Eternal Blossoms/18
+path loop off; dist 5
+path	68.32,24.62	69.83,17.36	64.37,17.14
+map Vale of Eternal Blossoms/19
+path loop off; dist 5
+path	65.47,22.00	62.19,34.62	60.42,47.21
+path	65.72,67.54	63.83,74.25	57.92,76.54
+kill Milau##64965 |q 30280/1
+For this, avoid the black clouds with 3 blue electric balls that appear
+DPS him as fast as you can to avoid the large AoE that he does
+step
+talk Anji Autumnlight##58919
+turnin The Crumbling Hall##30277 |goto Vale of Eternal Blossoms/0 21.4,71.6 |or
+turnin The Thunder Below##30280 |next "Thunder" |goto 21.4,71.6 |or
+step
+Complete The Crumbling Hall without taking any damage |achieve 7324/1
+Complete The Thunder Below without taking any damage |achieve 7324/2
+Click here to return to the start |confirm |next "start"
+step
+Earn the _"One Step at a Time"_ Achievement|achieve 7324
+Click here to go back to the start if you haven't earned the achievement yet |confirm |next "start"
+step
+label "end"
+_Congratulations!_
+You have earned the _One Step at a Time_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Crumble Bundle",{
+condition_end="achieved(8105)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"The","Crumble","Bundle"},
+description="This guide will walk you through completing the \"The Crumble Bundle\" Achievement.",
+},[[
+step
+label "start"
+You will have needed to unlock the _"Isle of Thunder"_ daily zone
+You will also need to have progressed enough to have learned the Saurok Jump ability
+Click here to load the Kirin Tor Offensive Guide |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\Kirin Tor Offensive Dailies"
+Click here to continue |confirm
+step
+You will have _10 Minutes_ to collect all of the pieces to the Chamberlain
+If you don't collect them _WITHIN_ 10 mintues, you won't earn the achievement
+To start, type _"/timer 600"_
+If you fail to collect them within 10 minutes, _you MUST wait for the 10 minutes to complete before attempting again!_
+Hit the start button on the timer that popped up upon accepting the quest
+accept The Crumbled Chamberlain##32505 |goto Isle of Thunder/0 35.00,47.52
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 34,49.8
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 36.3,48.9
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 37.8,53.8
+Click here if it's not at this spot |confirm
+step
+Go up the stairs |goto 34.04,58.09
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 33.6,59.9
+step
+Enter the building |goto 35.11,62.20 < 25
+Go up the stairs |goto 34.26,63.18 < 25
+Follow the path |goto 34.58,65.24 < 20
+Go up the stairs |goto 35.12,65.25 < 15
+Go through the broken wall |goto 34.47,62.22 < 15
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4 |goto 34.29,61.30
+|tip It's on the roof of the Hall of the Gradn Imperion building.
+Click here if it's not at this spot |confirm
+step
+click Torso of the Chamberlain
+collect Torso of the Chamberlain##93796 |q 32505/4|goto 36.8,59.9
+step
+Follow the path |goto 37.62,65.00 < 25
+Follow the path |goto 38.03,67.30 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 41.4,67.7
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 39.72,66.78 < 25
+Follow the path |goto 37.65,67.31 < 25
+Follow the path |goto 35.63,67.67 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 33.6,67.0
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 34.16,70.68 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 34.0,72.2
+|tip It will be on the roof of the tent if it is here.
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 33.76,73.87 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 31.5,75.3
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 32.37,79.19 < 25
+Follow the path |goto 33.80,79.25 < 25
+Follow the path |goto 35.13,76.78 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 35.9,75.1
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 36.64,72.99 < 25
+Follow the path |goto 38.68,72.25 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 39.1,73.5
+|tip Check inside of the tent.
+Click here if the staff isn't at this location |confirm
+step
+Follow the path |goto 39.45,74.87 < 25
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 36.9,75.6
+|tip Check the ledge, be careful not to fall.
+Click here if the staff isn't at this location |confirm
+step
+Jump down here |goto 38.02,78.52 < 15
+click Staff of the Chamberlain
+collect Staff of the Chamberlain##93794 |q 32505/3 |goto 37.8,79.1
+Click here if the staff isn't at this location |confirm
+step
+Jump down |goto 41.33,72.68 < 25
+Follow the path |goto 43.60,74.76 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 47.5,75.2
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.29,75.38 < 20
+Follow the path |goto 45.85,77.64 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 45.5,79.2
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.15,83.04 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 44.5,86.1
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 45.04,83.42
+Follow the path |goto 46.91,80.51
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 47.9,83.0
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 50.9,85.5
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 53.4,83.5
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 57.5,81.6
+|tip You will need to have access to the Saurok Jumping Ability to reach this.
+|tip Jump to the mountain peak.
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto 55.86,82.07 < 20
+Follow the path |goto 54.36,78.81 < 20
+Follow the path |goto 55.34,74.51 < 20
+click Shoulder of the Chamberlain
+collect Shoulder of the Chamberlain##93793 |q 32505/2 |goto 56.6,72.9
+Click here if the shoulder isn't at this location |confirm
+step
+Follow the path |goto Isle of Thunder/0 58.98,59.32 < 25
+Follow the path |goto 56.71,57.58 < 25
+Follow the path |goto 56.27,55.49 < 25
+Follow the path |goto 57.81,55.47 < 25
+Follow the path |goto 59.40,55.66 < 25
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 59.5,56.7
+|tip It's inside of the tent.
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 58.76,54.03 < 25
+Follow the path |goto 57.67,51.80 < 25
+Follow the path |goto 56.38,49.23 < 24
+Enter the tent |goto 56.48,46.74 < 15
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 56.5,45.8
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 55.85,47.72 < 15
+Follow the path |goto 54.15,49.40 < 15
+Follow the path |goto 53.62,47.45 < 15
+Follow the path |goto 54.80,47.58 < 15
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 54.2,48.6
+|tip It will be on the ledge.
+Click here if the hair isn't at this location |confirm
+step
+Jump to the ledge |goto 53.41,45.63 < 5
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 53.0,45.6
+|tip It will be on top of the tent, on the edge.
+|tip You will be able to reach it by walking close the edge of the wall.
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 53.3,43.1
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 50.1,40.8
+Click here if the hair isn't at this location |confirm
+step
+Follow the path |goto 50.30,38.60 < 25
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 52.5,37.1
+Click here if the hair isn't at this location |confirm
+step
+click Hair of the Chamberlain
+collect Hair of the Chamberlain##93795 |q 32505/1 |goto 51.1,31.2
+Click here if the hair isn't at this location |confirm
+step
+If you didn't make it in time, wait for the 10 minutes on the timer to end
+Once you have done so, click here |confirm |next "start"
+Earn the Crumble Bundle |achieve 8105
+step
+_Congratulations!_
+You have earned the _The Crumble Bundle_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Pay to Slay",{
+condition_end="achieved(8100)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"Pay","to","Slay"},
+description="This guide will walk you through completing the \"Pay to Slay\" Achievement.",
+},[[
+step
+For this, you will need to farm _"Shan'ze Ritual Stone's"_
+They can be obtained from Rare Elites and Treasure chests across the Isle of Thunder
+These can also be contiained in _"Arcane Troves"_, which are bought from Hiren Loresong with Elder Charm of Good Fortune
+|tip You will need 20 Lesser Charm of Good Fortune per Elder Charm of Good Fortune if you are trading.
+There are 13 Rare Spawns in the Isle of Thunder to farm for these as well
+talk Hiren Loresong##68000
+buy Arcane Trove##94219 |goto Isle of Thunder/0 64.70,74.55 |n
+collect 3 Shan'ze Ritual Stone##94221 only if itemcount(94221)>=3
+step
+kill Spirit of Warlord Teng##69471 |achieve 8101/1 |goto Isle of Thunder/0 55.2,87.7
+step
+_Congratulations!_
+You have earned the _Pay to Slay_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\It Was Worth Every Ritual Stone",{
+condition_end="achieved(8101)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"It","Was","Worth","Every","Ritual","Stone"},
+description="This guide will walk you through completing the \"It Was Worth Every Ritual Stone\" Achievement.",
+},[[
+step
+For this, you will need to defeat all of the Isle of Thunder summonable
+You will need to complete the achievement _"Pay to Slay"_ in order for this achievement to become available
+step
+kill Spirit of Warlord Teng##69471 |achieve 8101/1 |goto Isle of Thunder/0 55.2,87.7
+step
+kill Kor'dok and Tinzo the Emberkeeper##69633 |achieve 8101/2 |goto 30.8,58.6
+step
+kill Echo of Kros##69341 |achieve 8101/3 |goto 55.2,87.7
+step
+kill Electromancer Ju'le##69339 |achieve 8101/4 |goto 44.8,60.4
+step
+kill Qi'nor##69749 |achieve 8101/5 |goto 47.8,25.6
+step
+kill Ancient Mogu Guardian##69767 |achieve 8101/6 |goto 53.2,47.8
+step
+kill Windweaver Akil'amon##70080 |achieve 8101/7 |goto 69.6,39.0
+step
+kill Cera##69396 |achieve 8101/8 |goto 57.9,79.2
+step
+kill Incomplete Drakkari Colossus##69347 |achieve 8101/9 |goto 49.8,20.4
+step
+_Congratulations!_
+You have earned the _It Was Worth Every Ritual Stone_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Mogu Have Gotta Go-gu",{
+condition_end="achieved(8110)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"The","Mogu","Have","Gotta","Go-gu"},
+description="This guide will walk you through completing the \"The Mogu Have Gotta Go-gu\" Achievement.",
+},[[
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Haqin##94130 |n
+Use the Incantation of Haqin |use Incantation of Haqin##94130
+kill Haqin of the Hundred Spears##69800 |achieve 8110/1 |goto Isle of Thunder/0 38.9,59.3
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Vu##95350 |n
+Use the Incantation of Vu |use Incantation of Vu##95350
+kill Sparkmancer Vu##69961 |achieve 8110/2 |goto Isle of Thunder/0 38.5,54.8
+step
+kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
+|tip Kill them around the Court of Bones area.
+collect Incantation of Deng##94233 |n
+Use the Incantation of Deng |use Incantation of Deng##94233
+kill Forgemaster Deng##69809 |achieve 8110/3 |goto Isle of Thunder/0 38.7,58.1
+step
+_Congratulations!_
+You have earned the _The Mogu Have Gotta Go-gu_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\Stormbreaker",{
+condition_end="achieved(8121)",
+author="support@zygorguides.com",
+startlevel=86,
+keywords={"Stormbreaker"},
+description="This guide will walk you through completing the \"Stormbreaker\" Achievement.",
+},[[
+step
+Reference our _"Isle of Thunder"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Isle of Thunder"
+Isle of Thunder |achieve 8121/1
+step
+Reference our _"It Was Worth Every Ritual Stone"_ guide to earn this achievement |confirm |next
+Earn the "It Was Worth Every Ritual Stone" Achievement |achieve 8121/2
+step
+Reference our _"Thunder Plunder"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Thunder Plunder"
+Thunder Plunder |achieve 8121/3
+step
+Reference our _"The Crumble Bundle"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Crumble Bundle"
+The Crumble Bundle |achieve 8121/4
+step
+Reference our _"Ready for RAAAAIIIIDDD?!ing"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Ready for RAAAAIIIIDDD?!?ing"
+Ready for RAAAAIIIIDDD?!ing |achieve 8121/5
+step
+Reference our _"When in Ihgaluk, Do as the Skumblade Do"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\When in Ihgaluk, Do as the Skumblade Do"
+When in Ihgaluk, Do as the Skumblade Do |achieve 8121/6
+step
+Reference our _"The Mogu Have Gotta Go-gu"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievement Guides\\Quests\\Pandaria\\The Mogu Have Gotta Go-gu"
+Earn the "The Mogu Have Gotta Go-gu" Achievement |achieve 8121/7
+step
+Reference our _"This Isn't Even My Final Form"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\This Isn't Even My Final Form"
+Earn the "This Isn't Even My Final Form" Achievement |achieve 8121/8
+step
+Reference our _"Blue Response"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Blue Response"
+Earn the "Blue Response" Achievement |achieve 8121/9
+step
+Reference our _"Platform Hero"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Platform Hero"
+Earn the "Platform Hero" Achievement |achieve 8121/10
+step
+Reference our _"Speed Metal"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Speed Metal"
+Earn the "Speed Metal" Achievement |achieve 8121/11
+step
+Reference our _"You Made Me Bleed My Own Blood"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\You Made Me Bleed My Own Blood"
+Earn the "You Made Me Bleed My Own Blood" Achievement |achieve 8121/12
+step
+Reference our _"For the Ward!"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\For the Ward!"
+Earn the "For the Ward!" Achievement |achieve 8121/13
+step
+Reference our _"Boop"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Boop"
+Earn the "Boop" Achievement |achieve 8121/14
+step
+Reference the _"Our Powers Combined"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Our Powers Combined"
+Earn the "Our Powers Combined" Achievement |achieve 8121/15
+step
+Reference our _"Direhorn in a China Shop"_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Direhorn in a China Shop"
+Earn the "Direhorn in a China Shop" Achievement |achieve 8121/16
+step
+Reference our _"Zandalari Library Card "_ guide to earn this achievement |confirm |next "Zygor's Alliance Achievements Guides\\Quests\\Pandaria\\Zandalari Library Card"
+Earn the "Zandalari Library Card" Achievement |achieve 8121/17
+step
+_Congratulations!_
+You have earned the _One Step at a Time_ achievement
 ]])
 ZGV.BETAEND()

@@ -2990,13 +2990,13 @@ Carefully walk along the wall |goto 43.67,32.90 < 20 |only if walking
 Follow the path |goto 45.31,33.23 < 35 |only if walking
 Follow the path |goto 46.46,32.07 < 35 |only if walking
 Follow the path |goto 48.34,32.75 < 35 |only if walking
-Enter the cave |goto 49.61,33.84 < 20 |only if walking
-Follow the path |goto 51.02,32.35 < 20 |only if walking
-Follow the path |goto 51.75,32.82 < 20 |only if walking
-Follow the path |goto 51.92,31.85 < 20 |only if walking
-Follow the path |goto 51.05,30.75 < 20 |only if walking
-Follow the path |goto 51.03,29.82 < 20 |only if walking
-Follow the path |goto 52.08,30.58 < 20 |only if walking
+Enter the cave |goto 49.61,33.84 < 20 |walk
+Follow the path |goto 51.02,32.35 < 20 |walk
+Follow the path |goto 51.75,32.82 < 20 |walk
+Follow the path |goto 51.92,31.85 < 20 |walk
+Follow the path |goto 51.05,30.75 < 20 |walk
+Follow the path |goto 51.03,29.82 < 20 |walk
+Follow the path |goto 52.08,30.58 < 20 |walk
 kill Garvrulg##99610 |achieve 11265/1 |goto 53.25,30.17
 step
 Follow the path |goto 36.17,51.66 < 35 |only if walking
@@ -3890,8 +3890,8 @@ accept Experimental Potion: Test Subjects Needed##43478 |goto Dalaran L/11 76.03
 |tip You will be able to do this daily.
 |tip It nets you 150 Sightless Eyes each time you complete it.
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3899,8 +3899,8 @@ If you would like to farm summoned mobs, click here |confirm |next "itemMobs" |o
 If you plan to wait for rare spawns, click here |confirm |next "rareMobs" |or
 If you would like to fish, click here |confirm |next "Fish" |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3910,8 +3910,8 @@ buy 1 Widowsister Contract##139426 |n
 |tip This costs 250 Sightless Eyes.
 collect 1 Widowsister Contract##139426 |goto 72.10,24.46 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3920,8 +3920,8 @@ kill Widowsister##110737+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3930,8 +3930,8 @@ buy 1 Imp-Binding Contract##139425 |n
 |tip This costs 225 Sightless Eyes.
 collect 1 Imp-Binding Contract##139425 |goto Dalaran L/11 46.70,56.10 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3940,8 +3940,8 @@ kill Unamused Imp##110721+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3950,8 +3950,8 @@ buy 1 Screecher's Whistle##139424 |n
 |tip This costs 175 Sightless Eyes.
 collect 1 Screecher's Whistle##139424 |goto 66.29,81.25 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3960,8 +3960,8 @@ kill Sewer Screecher##110729+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3970,8 +3970,8 @@ buy 1 Croc Mojo##139423 |n
 |tip This costs 175 Sightless Eyes.
 collect 1 Croc Mojo##139423 |goto 65.63,80.20 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3980,8 +3980,8 @@ kill Underbelly Croc##110719+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3996,8 +3996,8 @@ kill Thieving Scoundrel##97390 |goto Dalaran L/11 54.45,62.63
 kill Xullorax##97388 |goto 38.01,41.81
 Click here to return to the menu |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -4006,8 +4006,8 @@ Fish from the Swirling Whorls |goto 69.55,21.31 |cast Fishing##131474
 |tip Fishing from Whorls is more efficient than buying Fel Chum.
 You are done fishing, click here |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -6317,3 +6317,192 @@ step
 _Congratulations!_
 You have earned the _Rocfeather Skyhorn Kite_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Unbound",{
+condition_end="achieved(11609)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unbound"},
+description="This guide will walk you through completing the \"Power Unbound\" Achievement.",
+},[[
+step
+For this, you will need to completed the quest "A Gift From the Six"
+|tip Use the 7.2 Order Hall Quest guide to achieve this.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Unlock a new set of traits for one artiface |achieve 11609
+step
+_Congratulations!_
+You have earned the _Power Unbound_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Unleashed",{
+condition_end="achieved(11610)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unleashed"},
+description="This guide will walk you through completing the \"Power Unleashed\" Achievement.",
+},[[
+step
+For this, you will need to unlock the potential for Artifacts for each of your specializations
+|tip Use the 7.2 Order Hall Quest guide to achieve this.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Unlock a new set of traits for all specializations |achieve 11609
+step
+_Congratulations!_
+You have earned the _Power Unleashed_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Artifacts\\Legion\\Power Ascended",{
+condition_end="achieved(11772)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Ascended"},
+description="This guide will walk you through completing the \"Power Ascended\" Achievement.",
+},[[
+step
+For this, you will need to gather artifact power and rank up skills in a single artifact weapon
+|tip Use the 7.2 Order Hall Quest guide to unlock the extra 4 traits.
+Click here to load the 7.2 Artifact Power Guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+You can use the World Quest guide to get Artifact Power Tokens
+Click here to load the World Quest Guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Use the Suramar guide to unlock big chunks of Artifact Power if you haven't
+Click here to load the Suramar guide |confirm |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Suramar (110)"
+Unlock a new set of traits for one artiface |achieve 11772
+step
+_Congratulations!_
+You have earned the _Power Ascended_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Class Hall\\Legion\\Legendary Research",{
+condition_end="achieved(11223)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Power","Unbound"},
+description="This guide will walk you through completing the \"Power Unbound\" Achievement.",
+},[[
+step
+Speak to the Order Advancement in your Order Hall
+You will need to unlock the "Increase the number of Legendary items you can equip by 1." trait
+You will need to collect Order Hall resources to achieve this
+|tip Use the World Quests guide to gather resources.
+Click here to load the World Quest Guide |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests"
+Unlock th e6th Tier of your Class Hall Research |achieve 11223
+step
+_Congratulations!_
+You have earned the _Power Unbound_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\So Hot Right Now",{
+condition_end="achieved(11741)",
+author="support@zygorguides.com",
+startlevel=60,
+endlevel=60,
+keywords={"So","Hot","Right","Now"},
+description="This guide will walk you through completing the \"So Hot Right Now\" Achievement.",
+},[[
+step
+label "loop"
+You will be collecting 8 pieces of any of the tier 1 pieces, attainted form Molten Core
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+step
+Lucifron drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Felheart, Might
+_Boots:_ Arcanist, Earthfury, Lawbringer, Cenarion
+Click here to continue |confirm
+step
+Magmadar drops legs for each class except for Death Knight, Monk and Demon Hunter
+Click here to continue |confirm
+step
+Gehennas drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Earthfury, Prophecy, Lawbringer, Nightslayer
+_Boots:_ Giantstalker's, Might
+Click here to continue |confirm
+step
+Garr drops helmets for each class except for Death Knight, Monk and Demon Hunter
+Click here to continue |confirm
+step
+Baron Geddon drops 5 different pieces of gear that are required for the achievement
+_Shoulders:_ Arcanist, Felheart, Earthfury, Lawbringer, Cenarion
+Click here to continue |confirm
+step
+Shazzrah drops 6 different pieces of gear that are required for the achievement
+_Gloves:_ Arcanist, Cenarion, Giantstalker's
+_Boots:_ Felheart, Prophecy, Nightslayer
+Click here to continue |confirm
+step
+Sulfuron Harbinger drops 4 different pieces of gear that are required for the achievement
+_Shoulders:_ Might, Prophecy, Giantstalker's, Nightslayer
+Click here to continue |confirm
+step
+Golemagg the Incinerator drops chest pieces for each class except for Death Knight, Monk and Demon Hunter
+Click here to continue |confirm
+step
+Ragnaros drops legs for each class except for Death Knight, Monk and Demon Hunter
+Click here to continue |confirm
+step
+The Bracers and Belt are random drops within the Molten Core
+You can also buy them from the Auction House since they are Bind on Equip
+Click here to continue
+step
+Click here to return to the start of the guide |confirm |next "loop"
+Collect a class armor set from Molten Core |achieve 11741
+step
+_Congratulations!_
+You have earned the _So Hot Right Now_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Black is the New Black",{
+condition_end="achieved(11748)",
+author="support@zygorguides.com",
+startlevel=70,
+endlevel=70,
+keywords={"Black","is","the","New","Black"},
+description="This guide will walk you through completing the \"Black is the New Black\" Achievement.",
+},[[
+step
+This achievement requires that you collect 8 pieces of Tier 6 armors
+The pieces are located throughout 3 different raids, listed as follows:
+_Hyjal Summit (2)_
+_Black Temple (3)_
+_Sunwell Plateau (4)_
+Click here to continue |confirm
+step
+You will need to collect tokens to trade for set pieces
+_Token of the Forgotten Conqueror:_ Paladin, Priest and Warlock
+_Token of the Forgotten Protector:_ Hunter, Shaman and Warrior
+_Token of the Forgotten Vanquisher:_ Druid, Mage and Rogue
+Click here to continue |confirm
+step
+_Congratulations!_
+You have earned the _Black is the New Black_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Accessor-Eyes",{
+condition_end="achieved(11743)",
+author="support@zygorguides.com",
+startlevel=60,
+endlevel=110,
+keywords={"Accessor","Eyes"},
+description="This guide will walk you through completing the \"Accessor-Eyes\" Achievement.",
+},[[
+step
+You will be collecting any "Brood of Nozdormu" set from the Temple of Ahn'Qiraj to earn this achievement
+_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+Click here to continue |confirm
+step
+Enter the Temple of Ahn'Qiraj
+Click here to continue |confirm
+step
+kill The Prophet Skeram##15263
+Click here to continue |confirm
+step
+Go up the stairs where the boss was
+Then, go down one pair of stairs, following the wall left
+talk Kandrostrasz##15503
+accept Mortal Champions##8579
+step
+|achieve 11743
+step
+_Congratulations!_
+You have earned the _Accessor-Eyes_ achievement
+]])
+ZGV.BETAEND()

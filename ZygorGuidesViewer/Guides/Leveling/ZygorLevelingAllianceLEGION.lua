@@ -19069,7 +19069,7 @@ accept Requesting Reinforcements##42402 |goto Trueshot Lodge/0 43.41,26.33
 step
 click Scouting Map
 Begin the "Requesting Reinforcements" Mission
-|tip This mission will take 12 hours to complete.
+|tip This mission will take 1 hour to complete.
 Complete the "Requesting Reinforcements" Mission |q 42402/1 |goto 42.50,46.63
 |only Hunter
 step
@@ -28684,6 +28684,125 @@ _Congratulations!_
 .
 You completed your Class Hall campaign!
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Balance of Power Questline",{
+author="support@zygorguides.com",
+startlevel=101.0,
+},[[
+step
+talk Image of Kalec##110768
+accept The Power Within##43496 |goto Mardum, the Shattered Abyss/2 60.27,28.84 |only DemonHunter
+accept The Power Within##43503 |goto Hall of the Guardian/2 56.35,38.32 |only Mage
+accept The Power Within##43501 |goto Broken Shore/1 44.18,45.54	|only DeathKnight
+accept The Power Within##43496 |goto The Dreamgrove/0 40.54,58.74 |only Druid
+accept The Power Within##43496 |goto Dalaran L/4 31.34,63.67 |only Rogue
+accept The Power Within##43496 |goto Skyhold/1 45.46,44.98 |only Warrior
+accept The Power Within##43496 |goto Eastern Plaguelands/20 37.66,54.78	|only Paladin
+accept The Power Within##43496 |goto Netherlight Temple/1 49.77,17.03 |only Priest
+accept The Power Within##43496 |goto The Maelstrom L/0 26.8,40.4 |only Shaman
+accept The Power Within##43496 |goto Dreadscar Rift/0 56.47,30.99 |only Warlock
+accept The Power Within##43496 |goto The Wandering Isle L/0 51.71,48.59 |only Monk
+accept The Power Within##43496 |goto Trueshot Lodge/0 48.63,49.89 |only Hunter
+step
+talk Archmage Kalec##110773
+turnin The Power Within##43501 |goto Azsuna/0 48.12,25.58 |only if havequest(43501)
+turnin The Power Within##43496 |goto Azsuna/0 48.12,25.58 |only if havequest(43496)
+turnin The Power Within##43505 |goto Azsuna/0 48.12,25.58 |only if havequest(43505)
+turnin The Power Within##43503 |goto Azsuna/0 48.12,25.58 |only if havequest(43503)
+|tip Kalec will appear when you get close.
+step
+talk Senegos##100482
+accept The Heart of Zin-Azshari##40668 |goto 48.04,25.83
+step
+Enter the Eye of Azshara dungeon |scenariostart |goto 61.15,41.15
+|tip This dungeon must be completed on Mythic +0 difficulty or higher.
+|tip Use the Premade Groups tool to form a group.
+|only if not completedq(40668)
+step
+collect 1 Heart of Zin-Azshari##132738 |q 40668/1
+|tip It's located on the rock next to the northern Channeler Varisz.
+step
+kill Wrath of Azshara##96028 |q 40668/2
+|tip Wrath of Azshara is the final boss of the instance.
+step
+talk Senegos##100482
+turnin The Heart of Zin-Azshari##40668 |goto 48.04,25.83
+accept Fallen Power##43517 |goto 48.04,25.83
+accept A Vainglorious Past##43514 |goto 48.04,25.83
+step
+talk Archmage Kalec##110773
+accept Tempering Darkness##43518 |goto 48.12,25.58
+stickystart "BoS"
+step
+Enter the Darkheart Thicket dungeon |scenariostart |goto Val'sharah/0 59.05,31.19
+|tip This dungeon must be completed on Mythic +0 difficulty or higher.
+|tip Use the Premade Groups tool to form a group.
+|only if not completedq(43517)
+step
+kill Oakheart##103344
+collect 1 Corrupted Essence##139633 |q 43517/1
+|tip Oakheart is the second boss in the dungeon.
+step
+kill Shade of Xavius##99192 |q 43517/2
+|tip Shade of Xavius is the second boss in the dungeon.
+step
+Follow the path |goto Azsuna/0 45.46,42.23 < 20 |only if walking
+Follow the path |goto 46.88,40.41 < 20 |only if walking
+talk Veridis Fallon##107376
+buy 1 Vainglorious Draught##139631 |n
+collect 1 Vainglorious Draught##139631 |q 43514/1 |goto 46.90,41.43
+|tip To purchase this item, you must be honored with the Court of Farondis.
+|tip This item costs 150 gold, modified by reputation.
+step
+label "BoS"
+collect 30 Blood of Sargeras##124124 |q 43518/1
+|tip Blood of Sargeras comes from gathering professions, world quests, and dungeon bosses.
+step
+talk Senegos##100482
+turnin Fallen Power##43517 |goto 48.04,25.83
+turnin A Vainglorious Past##43514 |goto 48.04,25.83
+step
+talk Archmage Kalec##110773
+turnin Tempering Darkness##43518 |goto 48.12,25.58
+accept Lucid Strength##43519 |goto 48.12,25.58
+step
+click Heart of Zin-Azshari##0
+|tip Stand still while you channel the spell.
+Absorb the power from the Corrupted Essence |q 43519/1 |goto 48.13,25.72
+step
+talk Archmage Kalec##110773
+turnin Lucid Strength##43519 |goto 48.12,25.58
+accept In Nightmares##43520 |goto 48.12,25.58
+step
+talk Senegos##100482
+accept Essence of Power##43521 |goto 48.04,25.83
+step
+Enter the Emerald Nightmare raid |scenariostart |goto Val'sharah/0 59.05,31.19
+|tip This raid must be completed on Normal difficulty or higher.
+|tip Use the Premade Groups tool to form a group.
+|only if not completedq(43520) and not completedq(43521)
+stickystart "Essence"
+step
+kill Il'gynoth##105393
+|tip Il'gynoth is the second boss of the Emerald Nightmare raid instance.
+collect 1 Deathglare Iris##139671 |q 43520/1
+step
+kill Xavius##103769
+|tip Xavius is the final boss of the Emerald Nightmare raid instance.
+collect 1 Horn of the Nightmare Lord##139672 |q 43520/2
+step
+label "Essence"
+collect 30 Corrupted Essence##139706 |q 43521/1
+|tip These have a chance to drop from each boss in Emerald Nightmare on normal difficulty or higher.
+|tip You can loot these from each difficulty every week.
+step
+talk Archmage Kalec##110773
+turnin In Nightmares##43520 |goto Azsuna/0 48.12,25.58
+step
+talk Senegos##100482
+turnin Essence of Power##43521 |goto 48.04,25.83
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Artifact Knowledge 1-25",{
 author="support@zygorguides.com",
 startlevel=110.0,
@@ -28910,6 +29029,19 @@ talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only DeathKnight
 step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only DeathKnight
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+|only DeathKnight
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only DeathKnight
+step
 More content coming soon!
 confirm
 |only DeathKnight
@@ -29100,6 +29232,19 @@ collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DemonHunter
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only DemonHunter
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+|only DemonHunter
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 |only DemonHunter
 step
 More content coming soon!
@@ -29501,6 +29646,19 @@ talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only Hunter
 step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Hunter
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+|only Hunter
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Hunter
+step
 More content coming soon!
 confirm
 |only Hunter
@@ -29692,6 +29850,18 @@ collect 100 Mark of the Sentinax##147582 |q 47139/1
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Mage
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Mage
+step
+Complete #12# World Quests on the Broken Shore |q 46248/1
+|tip Check out our "World Quests" guide to accomplish this.
+|only Mage
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
 |only Mage
 step
 More content coming soon!
@@ -29903,6 +30073,19 @@ Collect #100# mark of the Sentinax |q 47139/1
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.19
+|only Monk
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Monk
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+|only Monk
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 |only Monk
 step
 More coming soon!
@@ -30439,6 +30622,18 @@ talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
 |only Rogue
 step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Rogue
+step
+Complete #12# World Quests on the Broken Shore |q 46248/1
+|tip Check out our "World Quests" guide to accomplish this.
+|only Rogue
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Rogue
+step
 More content coming soon!
 confirm
 |only Rogue
@@ -30632,6 +30827,18 @@ talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
 |only Shaman
 step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Shaman
+step
+Complete #12# World Quests on the Broken Shore |q 46248/1
+|tip Check out our "World Quests" guide to accomplish this.
+|only Shaman
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.58,63.36
+|only Shaman
+step
 More content coming soon!
 confirm
 |only Shaman
@@ -30822,6 +31029,19 @@ collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Warlock
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Warlock
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Alliance Dailies Guides\\Legion\\World Quests" |or
+|only Warlock
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
 |only Warlock
 step
 More content coming soon!
@@ -33109,6 +33329,18 @@ Collect #100# Marks of the Sentinax |q 47139/1
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+|only Druid
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Druid
+step
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
+|only Druid
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Druid
 step
 More content coming soon!
@@ -36066,6 +36298,31 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Priest
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+|only Priest
+step
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
+|only Priest
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+|only Priest
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Priest
+step
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
+|only Priest
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Priest
+step
 More content coming soon!
 confirm
 |only Priest
@@ -38472,6 +38729,18 @@ Collect #100# Marks of the Sentinax |q 47139/1
 step
 talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
+|only Warrior
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Warrior
+step
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
+|only Warrior
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Warrior
 step
 More content coming soon!

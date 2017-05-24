@@ -17,6 +17,7 @@ Choose a World Quest to Complete |confirm
 |tip With the "World Quests" guide loaded, open your world map.
 |tip Left-click on a world quest icon to select that world quest.
 |tip The guide will automatically load the steps for that world quest.
+|tip Left-click on Broken Shore rares to load some helpful tips.
 step
 label quest-42119
 Follow the path |goto Azsuna/0 43.63,42.29 < 30 |only if walking
@@ -567,6 +568,13 @@ click Felsurge Eggs
 |tip They look like shaking white eggs on the ground around this area.
 kill Felsurge Broodmother##113987+
 collect 10 Felsurge Spider Egg##137335 |q 42276/2 |goto 33.86,42.95
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46169
+accept Dro'zek##46169 |goto Azsuna/0 56.60,56.19
+|tip You will accept this quest automatically.
+step
+kill 1 Dro'zek##117067 |q 46169/1 |goto 56.60,56.19
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43328
@@ -1345,6 +1353,20 @@ kill Equine Sunrunner##91308+
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45134
+Follow the path |goto Azsuna/0 42.65,41.13 < 25 |only if walking
+Follow the path up |goto 40.73,36.89 < 25 |only if walking
+accept The Soul Harvesters##45134 |goto Azsuna/0 38.41,34.48
+|tip You will accept this quest automatically.
+stickystart "Harvesters"
+step
+kill Doom Lord Kro'nak##116297 |q 45134/2 |goto 34.64,33.80
+step
+label "Harvesters"
+kill Doomsworn Harbinger##116281, Foul Soulkeeper##116219, Hellwing Doombringer##116205
+Repel the Legion forces |q 45134/1 |goto 38.41,34.48
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44847
 Follow the path |goto Azsuna/0 63.42,25.55 < 25 |only if walking
 Follow the path |goto 61.28,21.90 < 25 |only if walking
@@ -1373,6 +1395,13 @@ step
 label "Overseer"
 kill Nightfallen Overseer##90616 |q 44847/1 |goto 55.69,14.16
 |tip These can be difficult to find on busy days. Search around this area for them.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46162
+accept Subjugator Val'rek##46162 |goto Azsuna/0 41.89,11.67
+|tip You will accept this quest automatically.
+step
+kill 1 Subjugator Val'rek##118000 |q 46162/1 |goto 41.89,11.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41288

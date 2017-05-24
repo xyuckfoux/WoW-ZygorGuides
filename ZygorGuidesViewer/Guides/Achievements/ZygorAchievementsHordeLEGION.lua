@@ -2990,13 +2990,13 @@ Carefully walk along the wall |goto 43.67,32.90 < 20 |only if walking
 Follow the path |goto 45.31,33.23 < 35 |only if walking
 Follow the path |goto 46.46,32.07 < 35 |only if walking
 Follow the path |goto 48.34,32.75 < 35 |only if walking
-Enter the cave |goto 49.61,33.84 < 20 |only if walking
-Follow the path |goto 51.02,32.35 < 20 |only if walking
-Follow the path |goto 51.75,32.82 < 20 |only if walking
-Follow the path |goto 51.92,31.85 < 20 |only if walking
-Follow the path |goto 51.05,30.75 < 20 |only if walking
-Follow the path |goto 51.03,29.82 < 20 |only if walking
-Follow the path |goto 52.08,30.58 < 20 |only if walking
+Enter the cave |goto 49.61,33.84 < 20 |walk
+Follow the path |goto 51.02,32.35 < 20 |walk
+Follow the path |goto 51.75,32.82 < 20 |walk
+Follow the path |goto 51.92,31.85 < 20 |walk
+Follow the path |goto 51.05,30.75 < 20 |walk
+Follow the path |goto 51.03,29.82 < 20 |walk
+Follow the path |goto 52.08,30.58 < 20 |walk
 kill Garvrulg##99610 |achieve 11265/1 |goto 53.25,30.17
 step
 Follow the path |goto 36.17,51.66 < 35 |only if walking
@@ -3889,8 +3889,8 @@ accept Experimental Potion: Test Subjects Needed##43478 |goto Dalaran L/11 76.03
 |tip You will be able to do this daily.
 |tip It nets you 150 Sightless Eyes each time you complete it.
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3898,8 +3898,8 @@ If you would like to farm summoned mobs, click here |confirm |next "itemMobs" |o
 If you plan to wait for rare spawns, click here |confirm |next "rareMobs" |or
 If you would like to fish, click here |confirm |next "Fish" |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3909,8 +3909,8 @@ buy 1 Widowsister Contract##139426 |n
 |tip This costs 250 Sightless Eyes.
 collect 1 Widowsister Contract##139426 |goto 72.10,24.46 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3919,8 +3919,8 @@ kill Widowsister##110737+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3929,8 +3929,8 @@ buy 1 Imp-Binding Contract##139425 |n
 |tip This costs 225 Sightless Eyes.
 collect 1 Imp-Binding Contract##139425 |goto Dalaran L/11 46.70,56.10 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3939,8 +3939,8 @@ kill Unamused Imp##110721+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3949,8 +3949,8 @@ buy 1 Screecher's Whistle##139424 |n
 |tip This costs 175 Sightless Eyes.
 collect 1 Screecher's Whistle##139424 |goto 66.29,81.25 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3959,8 +3959,8 @@ kill Sewer Screecher##110729+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3969,8 +3969,8 @@ buy 1 Croc Mojo##139423 |n
 |tip This costs 175 Sightless Eyes.
 collect 1 Croc Mojo##139423 |goto 65.63,80.20 |or
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3979,8 +3979,8 @@ kill Underbelly Croc##110719+ |goto 55.23,63.48
 |tip These mobs will spawn around the area.
 When the mobs no longer spawn, click here |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -3995,8 +3995,8 @@ kill Thieving Scoundrel##97390 |goto Dalaran L/11 54.45,62.63
 kill Xullorax##97388 |goto 38.01,41.81
 Click here to return to the menu |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step
@@ -4005,8 +4005,8 @@ Fish from the Swirling Whorls |goto 69.55,21.31 |cast Fishing##131474
 |tip Fishing from Whorls is more efficient than buying Fel Chum.
 You are done fishing, click here |confirm |next "Menu"
 |tip
-You have an active bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"})
-WARNING: You have no active bodyguard! |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff="Interface\\Icons\\inv_offhand_dalaran_d_01"}) |or
+You have an active bodyguard |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if goaltype("havebuff",{buff=237433})
+WARNING: You have no active bodyguard! |havebuff 237433 |goto Dalaran L/11 68.67,58.88 |only if not goaltype("havebuff",{buff=237433}) |or
 |tip
 Earn the _Underbelly Tycoon_ achievement |achieve 11066 |next "congrats" |or
 step

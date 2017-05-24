@@ -4923,9 +4923,12 @@ step
 click Teleportation Crystal |goto 40.44,69.49 |n
 Click Here After You Teleport |confirm |q 38970
 step
+--@@BETASTART
 talk Leyweaver Tytallo##93969
 |tip Inside the building.
 turnin The Queen's Grace Loom##38970 |goto 40.33,69.49
+accept Return to Karazhan: The Big Bag Theory##44741 |goto 40.33,69.49
+--@@BETAEND
 step
 talk Leyweaver Mithrogane##93976
 |tip Inside the building.
@@ -5005,6 +5008,22 @@ talk Leyweaver Mithrogane##93976
 |tip Inside the building.
 turnin Inspire Me!##38975 |goto 40.19,69.55
 step
+kill Moroes##114312
+|tip Moroes is located in the Lower Return to Karazhan dungeon.
+|tip You can use the Looking for Group tool to complete this dungeon.
+collect 1 Bag of a Thousand Pockets##142122 |q 44741/1 |goto Deadwind Pass/0 46.68,70.22
+--@@BETASTART
+step
+kill Viz'aduum the Watcher##114790
+|tip Viz'aduum the Watcher is located in the Upper Return to Karazhan dungeon.
+|tip You can use the Looking for Group tool to complete this dungeon.
+collect 1 Fel Sinew Bag##143548 |q 44741/2 |goto Deadwind Pass/0 46.68,70.22
+step
+talk Leyweaver Tytallo##93969
+|tip Inside the building.
+turnin Return to Karazhan: The Big Bag Theory##44741 |goto Suramar/0 40.33,69.49
+--@@BETAEND
+step
 Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
 Follow the path down |goto Azsuna/0 69.07,26.09 < 20 |only if walking
 Follow the path up |goto Suramar/0 26.29,74.09 < 20 |only if walking
@@ -5058,6 +5077,100 @@ step
 _Congratulations!_
 You completed the Tailoring questline.
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Profession Guides\\Tailoring\\Legion\\Celumbra, the Night's Dichotomy",{
+author="support@zygorguides.com",
+startlevel=110.0,
+},[[
+step
+talk Commander Chambers##120183
+accept Boon of the Nether Disruptor##47015 |goto Broken Shore/0 44.55,63.15
+|tip You will need to wait until the construction of the Nether Disruptor is complete.
+step
+talk Eliezer Hammerbeard##120221
+Tell him: _"I've brought you this Armorcrafter's Commendation."_
+accept Fashion History and a Philosophy of Style##46804 |goto 41.14,59.33
+step
+talk Eliezer Hammerbeard##120221
+Tell him: _"Let me hear your philosophy of Style."_
+|tip Continue clicking through the dialogue options.
+Listen to Eliezer's manifesto on style |q 46804/1 |goto 41.14,59.33
+step
+talk Eliezer Hammerbeard##120221
+turnin Fashion History and a Philosophy of Style##46804 |goto 41.14,59.33
+accept The Legend of the Threads##46678 |goto 41.14,59.33
+step
+click Flight Master's Lost and Found##6478
+collect 1 Nights with the Nightborne##147281 |q 46678/1 |goto 45.29,63.66
+step
+talk Eliezer Hammerbeard##120221
+turnin The Legend of the Threads##46678 |goto 41.15,59.34
+accept The Thread of Shadow##46679 |goto 41.15,59.34
+accept The Thread of Starlight##46680 |goto 41.15,59.34
+accept The Thread of Souls##46681 |goto 41.15,59.34
+accept Drapings of the Ancients##46682 |goto 41.15,59.34
+stickystart "Silkweave"
+step
+kill Advisor Vandros##98208
+collect 1 Vandros' Shadoweave Robes##146678 |n
+Extract the Shadow Thread from Vandros' Shadoweave Robes |q 46679/1 |use Vandros' Shadoweave Robes##146678
+|tip You must complete The Arcway on Mythic difficulty to complete this objective.
+step
+kill Advisor Melandrus##104218
+collect 1 Melandrus' Star-Touched Bracers##146680 |n
+Extract the Starlight Thread from Melandrus' Star-Touched Bracers |q 46680/1 |use Melandrus' Star-Touched Bracers##146680
+|tip You may queue for the Court of Stars through the Looking for Group tool.
+step
+kill Elisane##106643
+collect 1 Suramari Soul-Wraps##146682 |n
+Extract the Soul Thread from Grand Magistrix Elisane' Suramari Soul-Wraps |q 46681/1 |use Suramari Soul-Wraps##146682
+|tip This objective can be completed on any difficulty.
+|tip In LFR, the Nightspire wing houses Elisane.
+step
+label "Silkweave"
+kill Deepsurge Tidesinger##118679+, Deepsurge Defender##118683
+collect Ancient Imbued Silkweave Armor##146684 |n
+Unstitch the Armor pieces |use Ancient Imbued Silkweave Armor##146684
+collect 100 Ancient Imbued Silkweave##146685 |q 46682/1 |goto Broken Shore/0 76.09,28.52
+step
+talk Eliezer Hammerbeard##120221
+turnin The Thread of Shadow##46679 |goto 41.15,59.34
+turnin The Thread of Starlight##46680 |goto 41.15,59.34
+turnin The Thread of Souls##46681 |goto 41.15,59.34
+turnin Drapings of the Ancients##46682 |goto 41.15,59.34
+accept Starweave and Shadowcloth##46683 |goto 41.15,59.34
+step
+Enter the building |goto Suramar/0 40.53,69.52 < 15 |walk
+click Teleportation Crystal
+|tip This will teleport you to the Queen's Grace Loom.
+Use the Legendary Tailor's Materials at the Queen's Grace Loom |use Legendary Tailor's Materials##146952
+Make a bolt of Starweave and a bolt of Shadowcloth |q 46683/1 |goto 40.33,69.58
+step
+talk Eliezer Hammerbeard##120221
+turnin Starweave and Shadowcloth##46683 |goto Broken Shore/0 41.15,59.34
+|next "End"
+step
+label "Nethershard"
+talk Warmage Kath'leen##120898
+buy 1 Nethershard Essence##146659 |n
+collect 1 Nethershard Essence##146659 |goto Broken Shore/0 44.39,62.24
+|next "End"
+step
+label "Celumbra"
+Enter the building |goto Stormwind City/0 54.19,81.59 < 5 |walk
+talk Georgio Bolero##1346
+Train the pattern for Celumbra, the Night's Dichotomy |learn Celumbra, the Night's Dichotomy##239412 |goto 53.08,81.35
+|next "End"
+step
+label "End"
+_Congratulations!_
+You completed the "Celumbra, the Night's Dichotomy" questline.
+|tip You must purchase a Nethershard Essence from a vendor to craft this legendary.
+|tip You must talk to Eliezer Hammerbeard after a new Nether Disrupter is built to obtain materials to make additional legendaries.
+Click here to purchase a Nethershard Essence |confirm |next "Nethershard"
+Click here to learn the "Celumbra, the Night's Dichotomy" pattern |confirm |next "Celumbra"
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Tailoring\\Legion\\Tailoring 700-800",{
 author="support@zygorguides.com",
 startlevel=100.0,

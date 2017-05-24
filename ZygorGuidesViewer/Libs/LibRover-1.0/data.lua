@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 26,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 29,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -411,9 +411,10 @@ data.basenodes.MapsWithExplicitFloors = {
 			"Elwynn Forest/1 55.4,36.3 -x- Elwynn Forest/2 56.3,26.0", --Fargomine Lower
 			"Elwynn Forest/0 38.5,81.5 -x- Elwynn Forest/2 35.2,68.4 {template:mine}", --Fargomine Lower
 		},
-		["Gilneas 3"] = {
-			"679/0 29.0,51.6 -x- 679/2 68.1,60.3 {template:building}", -- Greymane Manor Main Floor
-			"679/2 61.0,47.5 -x- 679/3 56.7,47.5 {template:custom} {atob:Go upstairs} {btoa:Go downstairs}", -- Greymane Manor Upper Floor
+		["Gilneas 2"] = {
+			"Gilneas 2/0 29.03,51.66 -x- Gilneas 2/2 66.89,58.26 {template:custom} {atob:Enter the building} {btoa:Leave the building}", -- Greymane Manor Main Floor
+			"Gilneas 2/2 61.0,47.5 -x- Gilneas 2/3 56.7,47.5 {template:custom} {atob:Run up the stairs} {btoa:Run down the stairs}", -- Greymane Manor Upper Floor
+			"Gilneas 2/0 76.08,31.63 -x- Gilneas 2/1 28.33,69.82 {template:custom} {atob:Enter the mine} {btoa:Leave the mine}", -- Emberstone Mine
 		},
 		["Ghostlands"] = {
 			"Ghostlands/0 66.4,28.5 -x- Ghostlands/1 94.0,35.6 {template:tunnel}", -- Amani Catacombs
@@ -1497,8 +1498,6 @@ data.basenodes.indoorzones = {
 				"Northern Stranglethorn/0 66.5,49.1 -x- Northern Stranglethorn/0 67.0,49.1 <indoors:Mosh'Ogg Ogre Mound> {template:cave}",
 			},
 			["Redridge Mountains"] = {
-				"Redridge Mountains/0 21.7,28.3 -x- Redridge Mountains/0 21.1,27.4 <indoors:Rethban Caverns> {template:cave}",
-				"Redridge Mountains/0 31.3,9.3 -x- Redridge Mountains/0 30.8,9.4 <indoors:Render's Rock> {template:cave}",
 			},
 			["Searing Gorge"] = {
 				"Searing Gorge/0 21.4,36.0 -x- Searing Gorge/0 20.7,36.0 <indoors:Firewatch Ridge> {template:mine}",
@@ -3489,9 +3488,9 @@ data.basenodes.inns = {
 	['Shadowglen']={
 		{name="Shadowglen",faction="A",npc="Ilthalaine",npcid=2079,x=45.5,y=74.7},
 	},
-	['Gilneas 3']={
+	['Gilneas 2']={
 		{name="Duskhaven",faction="A",npc="Willa Arnes",npcid=38791,x=36.8,y=65.6},
-		{name="Stormglen Village",faction="A",npc="Willa Arnes",npcid=38792,x=60.0,y=91.6},
+		{name="Stormglen Village",faction="A",npc="Willa Arnes",npcid=38792,x=60.06,y=91.67},
 	},
 	['Dun Morogh']={
 		--{name="Gnomeregan",faction="A",npc="Nevin Twistwrench",npcid=45966,x=25.7,y=31.9}, --This ports to a submap of DM. Kind of a mess, should never be used because it goes backwards.

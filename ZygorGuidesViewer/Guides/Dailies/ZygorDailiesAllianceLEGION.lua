@@ -79,6 +79,7 @@ Choose a World Quest to Complete |confirm
 |tip With the "World Quests" guide loaded, open your world map.
 |tip Left-click on a world quest icon to select that world quest.
 |tip The guide will automatically load the steps for that world quest.
+|tip Left-click on Broken Shore rares to load some helpful tips.
 step
 label quest-42119
 Follow the path |goto Azsuna/0 43.63,42.29 < 30 |only if walking
@@ -629,6 +630,13 @@ click Felsurge Eggs
 |tip They look like shaking white eggs on the ground around this area.
 kill Felsurge Broodmother##113987+
 collect 10 Felsurge Spider Egg##137335 |q 42276/2 |goto 33.86,42.95
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46169
+accept Dro'zek##46169 |goto Azsuna/0 56.60,56.19
+|tip You will accept this quest automatically.
+step
+kill 1 Dro'zek##117067 |q 46169/1 |goto 56.60,56.19
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43328
@@ -1407,6 +1415,20 @@ kill Equine Sunrunner##91308+
 collect 8 Smooth Sunrunner Hide##137628 |q 41582/1 |goto Azsuna/0 60.66,24.83
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45134
+Follow the path |goto Azsuna/0 42.65,41.13 < 25 |only if walking
+Follow the path up |goto 40.73,36.89 < 25 |only if walking
+accept The Soul Harvesters##45134 |goto Azsuna/0 38.41,34.48
+|tip You will accept this quest automatically.
+stickystart "Harvesters"
+step
+kill Doom Lord Kro'nak##116297 |q 45134/2 |goto 34.64,33.80
+step
+label "Harvesters"
+kill Doomsworn Harbinger##116281, Foul Soulkeeper##116219, Hellwing Doombringer##116205
+Repel the Legion forces |q 45134/1 |goto 38.41,34.48
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44847
 Follow the path |goto Azsuna/0 63.42,25.55 < 25 |only if walking
 Follow the path |goto 61.28,21.90 < 25 |only if walking
@@ -1435,6 +1457,13 @@ step
 label "Overseer"
 kill Nightfallen Overseer##90616 |q 44847/1 |goto 55.69,14.16
 |tip These can be difficult to find on busy days. Search around this area for them.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46162
+accept Subjugator Val'rek##46162 |goto Azsuna/0 41.89,11.67
+|tip You will accept this quest automatically.
+step
+kill 1 Subjugator Val'rek##118000 |q 46162/1 |goto 41.89,11.67
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41288
@@ -2878,6 +2907,15 @@ kill Vale Bear##106467+
 |tip Skin the corpses.
 |tip If you click the Needlers to knock them off the bears, you will be able to kill the bear they are riding.
 collect 12 Musky Bear Hide##134811 |q 41334/1 |goto 68.36,33.62
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45925
+Follow the path |goto Val'sharah/0 44.54,58.68 < 25 |only if walking
+Follow the path |goto Val'sharah/0 44.54,58.68 < 25 |only if walking
+accept Nez'val##45925 |goto Val'sharah/0 47.08,55.73
+|tip You will accept this quest automatically.
+step
+kill Nez'val##117069 |q 45925/1 |goto 47.08,55.73
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41862
@@ -4658,6 +4696,17 @@ click Arcane Artifact
 Find the Item |q 43766/1 |goto 45.20,51.21
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41433
+Follow the path down |goto Highmountain/0 29.68,41.00 < 25 |only if walking
+Follow the path |goto 27.41,42.49 < 20 |only if walking
+Drop down |goto 27.61,46.24 < 25 |only if walking
+accept Massive Leystone Deposits##41433 |goto Highmountain/0 27.38,48.07
+|tip You will accept this quest automatically.
+step
+click Massive Leystone Deposit##195122
+collect 10 Massive Leystone Ore##141232 |q 41433/1 |goto 27.38,48.07
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41253
 accept Migrating Highmountain Salmon##41253 |goto Highmountain/0 40.57,49.68
 |tip You will accept this quest automatically.
@@ -4905,7 +4954,7 @@ Follow the path |goto 56.82,71.66 < 25 |only if walking
 accept Rough Leystone Outcropping##41200 |goto 56.09,69.25
 |tip You will accept this quest automatically.
 step
-click Massive Leystone Deposit##195122
+click Rough Leystone Outcropping##247366
 collect 1 Rough Leystone Ore##141219 |q 41200/1 |goto 56.09,69.25
 |next "Court_Of_Farondis_WQ"
 step
@@ -8173,6 +8222,20 @@ click Felwort##0
 Felwort gathered |q 41522/1 |goto Suramar/0 33.26,33.34
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41523
+Follow the path |goto Suramar/0 33.10,52.95 < 20 |only if walking
+Follow the path down |goto 32.65,58.84 < 25 |only if walking
+Follow the path |goto 31.91,63.55 < 25 |only if walking
+Follow the path |goto 33.16,66.54
+Follow the path |goto 30.65,69.36
+Follow the path |goto 30.15,79.16
+accept Felwort##41523 |goto Suramar/0 32.66,81.31
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41523/1 |goto 32.66,81.31
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41524
 Follow the path |goto Suramar/0 63.58,43.03 < 20 |only if walking
 Follow the path |goto 59.79,41.76 < 30 |only if walking
@@ -9591,6 +9654,23 @@ kill Skittering Demon##117509+, Arachni Beast##117516+
 collect 30 Bolt of Felsilk##143856 |q 45694/4 |goto 39.09,27.91
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46750
+Swim across the water |goto Broken Shore/0 52.00,25.14 < 25 |only if walking
+Follow the path |goto 55.51,27.68 < 25 |only if walking
+Follow the path |goto 57.42,28.45 < 15 |only if walking
+accept Battery Backup##46750 |goto Broken Shore/0 63.28,22.10
+|tip You will accept this quest automatically.
+step
+Follow the path |goto 63.28,22.10 < 25 |only if walking
+kill Wrymtongue Engineer##118024+
+collect 3 Battleship Power Core##146892 |q 46750/1 |goto 65.68,22.79
+step
+Replenish the Power Core |q 46750/2 |goto 67.46,22.68
+|tip Step in Fel Fissures on the ground to be thrown in the air. |only if not achieved(11446)
+|tip Use the extra action button on-screen to glide through fel orbs. |only if not achieved(11446)
+|tip Fly through fel orbs in the air. |only if achieved(11446)
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45520
 Follow the path |goto Broken Shore/0 46.66,58.79 < 25 |only if walking
 accept Behind Enemy Portals##45520 |goto 49.13,55.50
@@ -9666,6 +9746,18 @@ Destroy #5# Fel Brew Spreader |q 46761/3 |goto 58.52,48.46
 |tip Use the first and second abilities on your bar to destroy Brew Spreaders.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46811
+accept Broodmother's Wrath##46811 |goto Broken Shore/0 57.66,38.19
+|tip You will accept this quest automatically.
+step
+click Daumyr##120492
+Mount Daumyr |q 46811/1 |goto 57.66,38.19
+step
+kill Wrathguard Soulbreaker##116138+, Chaosborn Champion##116276+, Chaosbolt Felweaver##116267+
+Kill #100# demons |q 46811/2 |goto 54.80,31.64
+|tip Use the first and second abilities on your bar to kill demons.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46947
 Follow the path |goto Broken Shore/0 66.33,43.20 < 25 |only if walking
 Follow the path up |goto 67.95,33.96 < 20 |only if walking
@@ -9728,6 +9820,29 @@ click Fel Crystal##120966
 Destroy #8# defenses |q 45035/2 |goto 66.65,43.88
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46814
+Cross the bridge |goto Broken Shore/0 50.99,25.16 < 25 |only if walking
+accept Call of the Frostwyrm##46814 |goto Broken Shore/0 54.61,32.94
+|tip You will accept this quest automatically.
+step
+kill Wrathguard Soulbreaker##116138+, Chaosborn Champion##116276+, Chaosbolt Felweaver##116267+
+Kill #25# demons |q 46814/1 |goto 54.61,32.94
+|tip Use the extra action button on screen to deal heavy frost damage in front of you..
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44846
+Swim across the water |goto Broken Shore/0 76.49,53.09 < 20 |only if walking
+accept Clearing the Path##44846 |goto Broken Shore/0 82.61,49.91
+|tip You will accept this quest automatically.
+stickystart "Corruptor"
+step
+Follow the path |goto 81.23,45.44 < 25 |only if walking
+kill Urthracx the Desecrator##117593 |q 44846/2 |goto 78.09,39.48
+step
+label "Corruptor"
+kill 8 Dark Corruptor##117611 |q 44846/1 |goto 78.09,39.48
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45178
 Follow the path |goto Broken Shore/0 40.61,61.75 < 20 |only if walking
 Follow the path |goto 39.80,67.21 < 25 |only if walking
@@ -9777,6 +9892,31 @@ label "Felsurge"
 kill Felsurge Tidesinger##120962+, Felsurge Defender##120952+, Harrowing Corruptor##120945+
 Kill #8# Felsurge Naga |q 46942/2 |goto 81.51,28.42
 Kill #3# Harrowing Corruptor |q 46942/1 |goto 81.51,28.42
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45837
+--@@BETASTART
+accept Creeping Fel##45837 |goto Broken Shore/0 54.60,64.80
+|tip You will accept this quest automatically.
+stickystart "Creep"
+step
+kill Morzuun the Plaguebringer##118134 |q 45837/2 |goto 57.80,59.00
+step
+label "Creep"
+Rakeeshi Sorcerer##117820+, Rakeeshi Honor Guard##118135+, Rakeeshi Demon##118142+, Rakeeshi Felhound##118133+
+Kill #15# Rakeeshi Demons |q 45837/1 |goto 54.60,64.80
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45531
+accept Creeping Fel##45531 |goto Broken Shore/0 54.60,64.80
+|tip You will accept this quest automatically.
+stickystart "Creep"
+step
+kill Morzuun the Plaguebringer##118134 |q 45531/2 |goto 57.80,59.00
+step
+label "Creep"
+Purge #10# Legion Creep |q 45531/1 |goto 54.60,64.80
+--@@BETAEND
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46821
@@ -10138,6 +10278,23 @@ kill Devoted Occultist##115875+
 Kill #10# Devoted Occultists |q 45792/1 |goto 82.17,47.81
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46752
+Swim across the water |goto Broken Shore/0 52.00,25.14 < 25 |only if walking
+Follow the path |goto 55.51,27.68 < 25 |only if walking
+Follow the path |goto 57.42,28.45 < 15 |only if walking
+accept On Borrowed Wings##46752 |goto Broken Shore/0 63.28,22.10
+|tip You will accept this quest automatically.
+step
+Follow the path |goto 63.28,22.10 < 25 |only if walking
+kill Wrymtongue Engineer##118024+
+collect 3 Battleship Power Core##146892 |q 46752/1 |goto 65.68,22.79
+step
+Replenish the Power Core |q 46752/2 |goto 67.46,22.68
+|tip Step in Fel Fissures on the ground to be thrown in the air. |only if not achieved(11446)
+|tip Use the extra action button on-screen to glide through fel orbs. |only if not achieved(11446)
+|tip Fly through fel orbs in the air. |only if achieved(11446)
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45797
 Follow the path |goto Broken Shore/0 74.92,51.19 < 25 |only if walking
 Follow the path |goto 80.66,51.26 < 25 |only if walking
@@ -10219,6 +10376,22 @@ kill 1 Wrathblade Honor Guard##118422
 Kill #8# Wrathblade Honor Guard |q 46001/1 |goto 66.56,30.13
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45550
+Cross the Bridge |goto Broken Shore/0 50.97,25.23 < 25 |only if walking
+accept Salving the Corruption##45550 |goto Broken Shore/0 52.66,32.84
+|tip You will accept this quest automatically.
+stickystart "Salving"
+step
+click Bloodbeak Owl##120237
+click Rockfang Howler##120239
+click Bristleback Boar##120238
+Apply #6# Manaroot to injured animals |q 45550/2|goto 52.66,32.84
+step
+label "Salving"
+kill Felborne Trapper##118676+, Felborne Magus##120205+
+Kill #12# Felborne |q 45550/1|goto 52.66,32.84
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46160
 Follow the path |goto Broken Shore/0 51.00,25.35 < 25 |only if walking
 Follow the path |goto 50.97,30.86 < 20 |only if walking
@@ -10234,6 +10407,23 @@ step
 label "void"
 kill Void Caller##118845+, Void Expulsion##118846+, Void Slave##118841
 Expunge the void |q 46160/2 |goto 42.92,37.14
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46945
+Follow the path |goto Broken Shore/0 69.23,47.10 < 25 |only if walking
+Follow the path |goto 66.50,42.48 < 25 |only if walking
+Follow the path |goto 69.80,35.88 < 25 |only if walking
+Follow the path |goto 74.17,28.62 < 25 |only if walking
+Follow the path |goto 79.81,28.91 < 25 |only if walking
+Follow the path |goto 84.02,26.63 < 25 |only if walking
+accept Si'vash##46945 |goto Broken Shore/0 89.77,33.10
+|tip You will accept this quest automatically.
+step
+kill Si'vash##117470 |q 46945/1 |goto 89.77,33.10
+|tip
+|tip Dodge Tidal Waves that come from the sea. |grouprole EVERYONE
+|tip Avoid Submerge bubbles, as they will stun you for 6 seconds and deal frost damage. |grouprole EVERYONE
+|tip Pick up Sivashi Honor Guard quickly to avoid group damage. |grouprole TANK
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46109
@@ -10356,6 +10546,21 @@ click Felslag##6478
 click Fel Crucible##6478
 kill Felforge Laborer##117718+
 collect 30 Felslag##143888 |q 45791/1 |goto 78.86,41.09
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45930
+Follow the path |goto Broken Shore/0 43.99,58.29 < 25 |only if walking
+Follow the path |goto 47.06,58.43 < 25 |only if walking
+accept We Didn't Start the Fire##45930 |goto Broken Shore/0 54.53,49.69
+|tip You will accept this quest automatically.
+stickystart "Cindern"
+step
+kill Cindern the Everburning##118323 |q 45930/2 |goto 54.77,47.24
+step
+label "Cindern"
+kill 10 Burning Felcinder##118281 |q 45930/1 |goto 54.53,49.69
+|tip Drag Felcinders near the shaman totems to kill them quickly.
+|tip Felcinders will curse you with a stacking curse that causes you to take increased fire damage.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-45977
@@ -10951,13 +11156,22 @@ step
 kill Cordana Felsong##95888 |q 42926/2
 |next "Court_Of_Farondis_WQ"
 step
+label rare-5301
+click Grapple Point |goto Broken Shore/0 44.20,66.96 < 5 |only if walking
+click Grapple Point |goto 44.48,67.56 < 5 |only if walking
+Follow the path |goto 50.03,72.51 < 30 |only if walking
+kill Aqueux##121016 |q 47133 |goto Broken Shore/0 53.93,78.80 |future
+|tip Thrash will knock back anyone within 20 yards.
+|tip Interrupt Salty Barrage and Spittle whenever possible.
+|next "Court_Of_Farondis_WQ"
+--@@BETASTART
+step
 label rare-5302
 Enter the cave |goto Broken Shore/0 39.72,29.16 < 20 |walk
 kill Brood Mother Nix##121029 |q 46965 |goto 39.55,33.00 |future
 |tip Caustic Webs will immobilize you and deal nature damage every second.
 |tip Inject Eggs will summon several small non-elite spiders.
 |next "Court_Of_Farondis_WQ"
---@@BETASTART
 step
 label rare-5308
 kill Brother Badatin##121046 |q 47001 |goto Broken Shore/0 78.09,39.49 |future
@@ -10978,6 +11192,13 @@ kill Doombringer Zar'thoz##117136 |q 46097 |goto 49.76,38.34 |future
 |tip Curse of Doom will deal shadow damage to you every 5 seconds.
 |tip Shadow Bolt Volley deals shadow damage to all nearby players.
 |tip War Stomp will stun anyone within a 10 yard radius.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5292
+kill Dreadblade Annihilator##117095 |q 47133 |goto Broken Shore/0 57.76,31.36 |future
+|tip Withering Roar will reduce your health by 10% per application, stacking up to 5 times.
+|tip Avoid standing infront of Dreadblade Annihilator during Dread Blades.
+|next "Court_Of_Farondis_WQ"
 step
 label rare-5297
 kill Dreadeye##118993 |q 46202 |goto Broken Shore/0 41.09,78.38 |future
@@ -10985,9 +11206,70 @@ kill Dreadeye##118993 |q 46202 |goto Broken Shore/0 41.09,78.38 |future
 |tip Stone Glare deals damage and reduces movement speed by 20% per application. At 5 stacks, it will stun for 8 seconds.
 |next "Court_Of_Farondis_WQ"
 step
+label rare-5306
+Follow the path |goto Broken Shore/0 68.77,46.83
+Follow the path |goto 66.32,42.34
+Follow the path |goto 69.90,35.71
+Follow the path |goto 74.43,28.40
+kill Duke Sithizi##121134 |q 47036 |goto Broken Shore/0 77.83,28.56 |future
+|tip Avoid standing in Rain of Felfire.
+|tip Avoid standing in front of Sithizi during Flurry.
+|tip Impale will hit a random person within 30 yards, dealing physical damage and stunning the target.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5287
+kill Emberfire##117086 |q 46093 |goto Broken Shore/0 52.15,43.53 |future
+|tip Move at least 15 yards away from Emberfire during Blazing Hellfire.
+|tip Felflame Aura has a chance to deal fire damage to you each time you attack Emberfire.
+|tip Move out of areas targeted for Molten Crash.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5307
+Enter the cave |goto Broken Shore/0 66.72,34.60 < 15 |walk
+kill Eye of Gurgh##116166 |q 47068 |goto 64.48,30.29 |future
+|tip Avoid standing in front of Eye of Gurgh during Chaos Glare.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5296
+kill Felcaller Zelthae##117103 |q 47133 |goto Broken Shore/0 89.56,30.83 |future
+|tip Interrupt Incinerating Blast whenever possible.
+|tip Avoid standing in areas targeted by Felshard Meteors.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5289
+Follow the path |goto Broken Shore/0 45.30,57.85 < 25 |only if walking
+Follow the path |goto 41.01,54.13 < 25 |only if walking
+Follow the path |goto 38.47,47.09 < 25 |only if walking
+kill Felmaw Emberfiend##117091 |q 46095 |goto Broken Shore/0 39.24,42.18 |future
+|tip Burning Breath will deal damage in a frontal cone.
+|tip Periodically, Felmaw Emberfiend will fear anyone within 20 yards for 4 seconds.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5300
+click Grapple Point |goto Broken Shore/0 39.98,58.51 < 5 |only if walking
+click Grapple Point |goto 39.42,59.59 < 5 |only if walking
+Enter the cave |goto 38.99,59.96 < 5 |walk
+kill Flllurlokkr##120998 |q 46068 |goto Broken Shore/0 40.36,59.74 |future
+|tip Avoid standing near other players (8 yards).
+|tip Fish Bomb will deal damage to anyone within 8 yards of the targeted player.
+|tip Hooked Net will deal physical damage to a player and immobilize them for 3 seconds.
+|tip Avoid standing in front of Flllurlokkr during Skewer.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5303
+kill Grossir##121037 |q 46995 |goto Broken Shore/0 77.71,23.58 |future
+|tip Avoid standing in front of Grossir during Caustic Burst.
+|tip Spread out to avoid excess damage from Molten Chaos.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5299
+kill Imp Mother Bruva##119718 |q 46313 |goto Broken Shore/0 60.43,45.04 |future
+|tip Interrupt Fel Blast whenever possible.
+|tip Imps! will summon a small swarm of imps to attack you.
+|next "Court_Of_Farondis_WQ"
+step
 label rare-5290
 kill Inquisitor Chillbane##117089 |q 47133 |goto Broken Shore/0 62.15,38.20 |future
-|tip Bonechill will deal frost damage and root anyone within 30 yards for 6 seconds.
 |tip Call of Ice deals heavy frost damage to a single target.
 |tip Avoid standing in groups of Debilitating Eyes.
 |next "Court_Of_Farondis_WQ"
@@ -10998,14 +11280,58 @@ Follow the path |goto 48.17,18.01 < 20 |only if walking
 Go down the steps |goto 45.86,16.55 < 20 |only if walking
 Follow the path |goto 45.86,16.55 < 20 |only if walking
 kill Lady Eldrathe##121107 |q 47026 |goto Broken Shore/0 41.33,16.66 |future
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5298
+Follow the path |goto Broken Shore/0 45.27,58.59 < 20 |only if walking
+Follow the path |goto 44.48,56.55 < 10 |only if walking
+click Grapple Point |goto 45.18,55.28 < 5 |only if walking
+click Grapple Point |goto 45.52,54.11 < 5 |only if walking
+kill Lord Hel'Nurath##119629 |q 47133 |goto Broken Shore/0 44.64,53.21 |future
+|next "Court_Of_Farondis_WQ"
 step
 label rare-5284
 Cross the water |goto Broken Shore/0 52.06,25.11 < 20 |only if walking
 Enter the cave |goto Broken Shore/0 56.19,27.24 < 20 |walk
 kill Malgrazoth##117141 |q 46090 |goto 59.64,27.34 |future
+|next "Court_Of_Farondis_WQ"
 step
 label rare-5286
+Follow the path |goto Broken Shore/0 43.94,58.26 < 25 |only if walking
+Follow the path |goto 46.89,58.60 < 25 |only if walking
+Follow the path |goto 48.98,56.38 < 25 |only if walking
+Follow the path |goto 49.25,53.02 < 25 |only if walking
+Follow the path |goto 45.62,48.43 < 25 |only if walking
+Follow the path |goto 44.42,42.27 < 25 |only if walking
 kill Malorus the Soulkeeper##117094 |q 46092 |goto Broken Shore/0 42.32,42.85 |future
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5288
+click Ladder |goto Broken Shore/0 55.53,56.65 < 8 |only if walking
+kill Potionmaster Gloop##117096 |q 46094 |goto 57.01,56.52 |future
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5285
+kill Salethan the Broodwalker##117140 |q 46091 |goto Broken Shore/0 67.79,29.77 |future
+|tip Interrupt Massive Screech whenever possible.
+|tip Don't stand in front of Salethan during Rotten Breath.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5305
+click Grapple Point |goto Broken Shore/0 32.62,58.80 < 5 |only if walking
+click Grapple Point |goto 39.42,59.59 < 5 |only if walking
+Follow the path |goto 35.51,58.90 < 25 |only if walking
+kill Somber Dawn##121112 |q 47028 |goto Broken Shore/0 32.62,58.80 |future
+|tip Somber Dawn will constantly knock you back, interrupting spellcasting in the process.
+|tip Somber Dawn patrolls in a circle around the island.
+|next "Court_Of_Farondis_WQ"
+step
+label rare-5294
+Follow the path |goto Broken Shore/0 45.21,58.48 < 25 |only if walking
+Follow the path |goto 46.97,58.49 < 25 |only if walking
+Follow the path |goto 50.70,55.02 < 25 |only if walking
+Follow the path |goto 50.22,50.55 < 25 |only if walking
+kill Xorogun the Flamecarver##117090 |q 46100 |goto Broken Shore/0 49.14,47.94 |future
 |next "Court_Of_Farondis_WQ"
 --@@BETAEND
 step

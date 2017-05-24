@@ -69,12 +69,11 @@ GuideMenu.Home={
 
 	{"section", text=[[ACHIEVEMENTS]]},
 	{"item", text=[[Added |cfffe6100Broken Isles Pathfinder, Part Two Achievement|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Broken Isles Pathfinder, Part Two"},
+	{"item", text=[[Added |cfffe6100Legendary Research|r.]], guide="ACHIEVEMENTS\\Class Order Hall\\Legion\\Legendary Research"},
+	{"item", text=[[Added |cfffe6100Power Ascended (BETA)|r.]], guide="ACHIEVEMENTS\\Artifacts\\Legion\\Power Ascended", beta=true},
+	{"item", text=[[Added |cfffe6100Power Unbound (BETA)|r.]], guide="ACHIEVEMENTS\\Artifacts\\Legion\\Power Unbound", beta=true},
 	{"item", text=[[Added |cfffe6100Power Unleashed Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Class Order Hall\\Legion\\Power Unleashed", beta=true},
 	{"item", text=[[Added |cfffe6100A Magic Contribution Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\A Magic Contribution", beta=true},
 	{"item", text=[[Added |cfffe6100A Magnificent Contribution Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\A Magnificent Contribution", beta=true},
 	{"item", text=[[Added |cfffe6100Assume Command Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Assume Command", beta=true},
-	{"item", text=[[Added |cfffe6100Take Command Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Take Command", beta=true},
-	{"item", text=[[Added |cfffe6100It'll Nether Happen Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\It'll Nether Happen", beta=true},
-	{"item", text=[[Added |cfffe6100Disrupting the Nether Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Quests\\Legion\\Disrupting the Nether", beta=true},
-	{"item", text=[[Added |cfffe6100Armies of Legionfall Achievement (BETA)|r.]], guide="ACHIEVEMENTS\\Reputation\\Legion\\Armies of Legionfall", beta=true},
 }

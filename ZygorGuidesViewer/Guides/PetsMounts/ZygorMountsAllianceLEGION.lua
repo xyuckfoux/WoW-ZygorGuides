@@ -1690,6 +1690,75 @@ Next to you
 talk Direbeak Hatchling##115785
 turnin The Unkindly Faction##44981
 step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Direbeak Bonding##44982
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter The Wonderworks |goto Dalaran L/10 42.40,45.14
+talk Clockwork Assistant##96484
+buy 1 Fake Teeth##142499 |q 44982/1 |goto 44.35,46.49
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Direbeak Bonding##44982
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Hunting Lesson: Golden Eaglet##44983
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Golden Eaglets using your Direbeak Hatchling and 2 Flying type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be flying type pets.
+Defeat 3 Golden Eaglets |q 44983/1 |goto Stormheim/0 63.34,54.39
+|tip These can be found all around this area.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Hunting Lesson: Golden Eaglet##44983
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Teamwork Lesson: Fenryr##44984
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Halls of Valor/2 47.6,8.6 < 100 |c
+step
+Make sure your Direbeak Hatchling is summoned before killing Fenryr
+kill Fenryr##99868 |q 44984/1
+|tip You can use our Halls of Valor dungeon guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Teamwork Lesson: Fenryr##44984
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Hunting Lesson: Stormstruck Beaver##44985
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Stormstruck Beaver using your Direbeak Hatchling and 2 Mechanical type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be mechanical type pets.
+Defeat 3 Stormstruck Beavers |q 44985/1 |goto Stormheim/0 34.11,53.30
+|tip These are considered rare and share spawn points with the Bucktooth Flappers and the critters.
+|tip If there are none here defeat/kill the Bucktooth Flappers to try to force a spawn of the Stormstruck Beaver.
+If the first spot does not pan out try finding them here |goto 42.00,60.99
+They can also be found around here |goto 47.03,61.09
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Hunting Lesson: Stormstruck Beaver##44985
+step
 More content coming soon!
 confirm
 ]])
@@ -1746,6 +1815,53 @@ Summon your Snowfeather Hatchling
 Next to you
 talk Snowfeather Hatchling##115784
 turnin Hunting Lesson: Northern Hawk Owls##44950
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Allies in Highmountain##44953
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Snowfeather Hatchling is summoned while you complete these World Quests
+Complete 5 World Quests in Highmountain |q 44953/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Allies in Highmountain##44953
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Snowfeather Team Up##44954
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Snowfeather Hatchling is summoned before starting each Pet Battle
+|tip Your Snowfeather Hatchling must be in the first battle slot.
+|tip Your Snowfeather Hatchling can not die.
+Defeat 3 Pet Battle world quests with your Snowfeather Hatchling |q 44954/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Snowfeather Team Up##44954
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Deadly Prey##44956
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Snowfeather Hatchling is summoned while you complete this World Quest
+Complete 1 Rare Elite World Quest with your Snowfeather Hatchling |q 44956/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Deadly Prey##44956
 step
 More content coming soon!
 confirm
@@ -1804,6 +1920,84 @@ Summon your Bloodgazer Hatchling
 Next to you
 talk Bloodgazer Hatchling##115787
 turnin Hunting Lesson: Erudite Manafiend##44996
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Allies in Azsuna##44998
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
+Complete 5 World Quests in Azsuna |q 44998/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Allies in Azsuna##44998
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Bloodgazer Team Up##45000
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Bloodgazer Hatchling is summoned before starting each Pet Battle
+|tip Your Bloodgazer Hatchling must be in the first battle slot.
+|tip Your Bloodgazer Hatchling can not die.
+Defeat 3 Pet Battle world quests with your Bloodgazer Hatchling |q 45000/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Bloodgazer Team Up##45000
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Dangerous Prey##45002
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Bloodgazer Hatchling is summoned while you complete this World Quest
+Complete 1 Rare Elite World Quest with your Bloodgazer Hatchling |q 45002/1
+|tip You can use our World Quest guide to accomplish this
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Dangerous Prey##45002
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Hunting Lesson: Fledgling Kingfeather##45004
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Fledgling Kingfeather using your Bloodgazer Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat 3 Fledgling Kingfeather |q 45004/1 |goto Azsuna/0 42.18,21.63
+|tip These can be found all around this area.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Fledgling Kingfeather##45004
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept The Unfavorable Faction##45006
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Bloodgazer Hatchling |q 45006/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin The Unfavorable Faction##45006
 step
 More content coming soon!
 confirm
@@ -1939,6 +2133,55 @@ Summon your Sharptalon Hatchling
 Next to you
 talk Sharptalon Hatchling##115786
 turnin The Uncongenial Faction##45005
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Sharptalon Bonding##45007
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter THe Legerdemain Lounge |goto Dalaran L/10 50.15,37.49
+talk Mel Lynchen##112007
+buy 1 Dirty Spoon##142500 |q 45007/1 |goto 48.79,38.07
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Sharptalon Bonding##45007
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Hunting Lesson: Auburn Ringtail##45009
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Auburn Ringtail using your Sharptalon Hatchling and 2 Flying type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be flying type pets.
+Defeat 3 Auburn Ringtail |q 45009/1 |goto Val'sharah/0 62.29,73.25
+|tip These can be found all around this area.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Hunting Lesson: Auburn Ringtail##45009
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Teamwork Lesson: Dresaron##45011
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
+step
+Make sure your Sharptalon Hatchling is summoned before killing Dresaron
+kill Dresaron##99200 |q 45011/1
+|tip You can look at our Darkheart Thicket dungeon guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Teamwork Lesson: Dresaron##45011
 step
 More content coming soon!
 confirm

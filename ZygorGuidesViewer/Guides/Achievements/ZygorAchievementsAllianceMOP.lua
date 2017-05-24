@@ -2987,7 +2987,7 @@ label "preq"
 step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
-Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
@@ -3038,7 +3038,7 @@ Routing to proper section |next "exalted" |only if default
 step
 label "clickroute"
 Click here to be taken to the Reputation guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |only if ZGV.guidesets['DailiesAMOP']
-Click here to be taken to the Dailies guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to be taken to the Dailies guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\Tiller's Union\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
 label "done"
@@ -3089,7 +3089,7 @@ description="This guide will walk you through obtaining the Amber is the Color o
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Klaxxi_ and completed all of the Dread Wastes Leveling/Loremaster quests.
-Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("The Klaxxi")<Revered
@@ -3465,7 +3465,7 @@ description="This guide will walk you through obtaining the Defender of Gods Ach
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
@@ -3515,7 +3515,7 @@ description="This guide will walk you through obtaining the Dog Pile Achievement
 },[[
 step
 For this achievement you must be at least _Honored_ with _The Golden Lotus_.
-Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Golden Lotus")<Honored
@@ -3614,7 +3614,7 @@ label rev
 This achievement is mostly luck based, as the quest hub may not always be available.
 Even when the quest hub is available, the NPCs you need may not be.
 Refer to our _August Celestial_ Daily guide and look for the _Temple of the White Tiger_ hub to be available.
-Click here to go to the Reputations guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The August Celestials" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The August Celestials" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
@@ -3797,7 +3797,7 @@ description="Complete 15 Shado-Pan daily quests with each of the Shadow-Pan Hero
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
@@ -3813,7 +3813,7 @@ Complete daily quests with Yalia Sagewhisper |achieve 7298/7
 Complete daily quests with Tenwu of the Red Smoke |achieve 7298/8
 Complete daily quests with Lao-Chin the Iron Belly |achieve 7298/9
 You will need to refer to our Shado-Pan Daily guide to gain rep with them.
-Click here to go to the Reputations guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 Note that when you turn in quests, be sure to dismount first.
 |achieve 7298
@@ -3833,7 +3833,7 @@ description="This guide will walk you through obtaining the How to Strain Your D
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
-Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
@@ -3871,7 +3871,7 @@ description="This guide will walk you through obtaining the In a Trail of Smoke 
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
-Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
@@ -4376,7 +4376,7 @@ label "preq"
 step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
-Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
@@ -4405,7 +4405,7 @@ In order to earn this achievement you will need to complete every set of Shado-P
 While going through the dailies guides to complete the requirements for this achievement be sure you _Do Not_ pick up a companion.
 confirm
 step
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
@@ -4597,7 +4597,7 @@ description="This guide will walk you through obtaining the Proven Strength Achi
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
-Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
@@ -4806,7 +4806,7 @@ label "dailies"
 This achievement requires you to be _Revered_ with _The Order of the Cloud Serpent_
 In order to become Revered with the Order of the Cloud Serpent, refer to the Zygor Guides Reputation section
 confirm |next |only if rep("Order of the Cloud Serpent")<Revered and not ZGV.guidesets['ReputationsAMOP']
-confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep("Order of the Cloud Serpent")<Revered and ZGV.guidesets['ReputationsAMOP']
+confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep("Order of the Cloud Serpent")<Revered and ZGV.guidesets['ReputationsAMOP']
 only if rep("Order of the Cloud Serpent")<Revered
 step
 talk Elder Anli##58564
@@ -4838,7 +4838,7 @@ _Fumigation_
 _Target of Opportunity: Sra'thik Swarmlord_
 _Friends, Not Food!_
 Once you complete the quest _REMEMBER TO DISMOUNT_ before turning either of the quests in.
-Click here to go to the Reputations guide to attempt this achievement. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to attempt this achievement. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Shado-Pan" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to attempt this achievement. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |achieve 7307
 step
@@ -4875,7 +4875,7 @@ label "golden2"
 step
 label "revered"
 For this achievement you must be at least _Revered_ with _The Golden Lotus_.
-Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Alliance Reputation Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _Golden Lotus_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
@@ -4923,7 +4923,7 @@ path	54.3,36.1	54.8,36.2	54.9,36.2
 path	54.6,36.0	54.4,35.8	54.4,36.2
 path	54.2,35.8	55.0,35.8
 Use the provided coordinates to find the cooresponding NPCs.
-Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
+Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
 Complete 5 dailies with one buff.
 step

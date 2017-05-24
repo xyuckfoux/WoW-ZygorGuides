@@ -1297,7 +1297,7 @@ kill Alani##64403
 collect 1 Reins of the Thundering Ruby Cloud Serpent##90655 |goto Vale of Eternal Blossoms 50.6,43.6
 step
 kill this point, you must be _Exalted_ with _Order of the Cloud Serpent_ and _The August Celestials_.
-Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsAMOP']
+Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsAMOP']
 Click here to be taken to the Order of the Cloud Serpent reputations guide to gain reputation with them. |confirm |next "Zygor's Allianct Reputations Guides\\Mists of Pandaria\\The August Celestials" |only if rep('The August Celestials')<Exalted and ZGV.guidesets['ReputationsAMOP']
 confirm
 only if rep('The August Celestials')<Exalted or rep('Order of the Cloud Serpent')<Exalted
@@ -1933,7 +1933,7 @@ This mount requires you to be _Exalted_ with _Operation: Shieldwall_.
 Use the daily guides to earn Reputation with the Operation: Shieldwall.
 Click here to be taken to the pre-quests for the Operation: Shieldwall. |confirm |next "pre" |only if not ZGV.guidesets["DailiesAMOP"] and not ZGV.guidesets["ReputationsAMOP"] and not completedq(32108)
 Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Alliance Dailies Guides\\Pandaria (85 - 90)\\Operation: Shieldwall Dailies" |confirm |only if ZGV.guidesets["DailiesAMOP"] and not ZGV.guidesets["ReputationsAMOP"]
-Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Operation:Shieldwall" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with the Operation: Shieldwall. |next "Zygor's Reputations Guides\\Mists of Pandaria\\Operation: Shieldwall" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
 Click here to be taken to the Operation: Shieldwall Quartermaster to purchase the mount. |next "buy" |only if rep("Operation: Shieldwall")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -2020,7 +2020,7 @@ description="This guide will help you acquire the Red Flying Cloud mount.",
 step
 This mount requires you to be _Exalted_ with _The Lorewalkers_.
 In order to become Exalted with the Lorewalkers, refer to the Zygor Guides Reputation section.
-Click here to access the Lorewalkers guide. |next "Zygor's Alliance Reputations Guides\\Mists of Pandaria\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
+Click here to access the Lorewalkers guide. |next "Zygor's Reputations Guides\\Mists of Pandaria\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsAMOP"]
 Exalted with the Lorewalkers |achieve 6548
 step
 talk Tan Shin Tiao##64605

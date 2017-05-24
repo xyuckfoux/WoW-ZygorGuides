@@ -24233,9 +24233,7 @@ stickystart "Sovereign_Souls_DemonHunter"
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.
-|tip You can also create you own by unlocking your Obliterum Forge, if you prefer.
-|tip Use the Obliterum Forge guide to accomplish this.
-|tip NOTE: The questline to unlock your Obliterum Forge is time consuming.
+|tip You can also create you own at your Obliterum Forge, if you prefer.
 |only DemonHunter
 step
 label "Sovereign_Souls_DemonHunter"
@@ -28980,6 +28978,20 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only DeathKnight
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only DeathKnight
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only DeathKnight
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only DeathKnight
+step
 More content coming soon!
 confirm
 |only DeathKnight
@@ -29199,6 +29211,20 @@ Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only DemonHunter
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
 |only DemonHunter
 step
 More content coming soon!
@@ -29432,6 +29458,19 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Druid
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Druid
+step
+Open #10# Hidden Wyrmtongue Caches in Broken Shore |q 46769/1
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only Druid
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Druid
+step
 More content coming soon!
 confirm
 |only Druid
@@ -29653,6 +29692,20 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Hunter
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Hunter
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only Hunter
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Hunter
+step
 More content coming soon!
 confirm
 |only Hunter
@@ -29871,6 +29924,20 @@ kill 100 Demons |q 46252/1 |goto Suramar/0 29.23,61.22
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
+|only Mage
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
+|only Mage
+step
+click Hidden Wyrmtongue Cache##6478+
+Find #10# Hidden Wyrmtongue Caches |q 46769/1
+|tip These spawn randomly at different locations all around the Broken Shore.
+|tip They will appear as a tiny chest icon on your mini map when you are close by to one.
+|only Mage
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
 |only Mage
 step
 More content coming soon!
@@ -30113,6 +30180,20 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Monk
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.72,63.29
+|only Monk
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+These are located in random spots inside of the Broken Isle
+|tip They will show up on your minimap as silver chests when you are near one.
+|only Monk
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Monk
+step
 More content coming soon!
 confirm
 |only Monk
@@ -30350,6 +30431,20 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
 |only Paladin
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.72,63.29
+|only Paladin
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+These are located in random spots inside of the Broken Isle
+|tip They will show up on your minimap as silver chests when you are near one.
+|only Paladin
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Paladin
+step
 More content coming soon!
 confirm
 |only Paladin
@@ -30567,6 +30662,19 @@ Slay #100# Demons |q 46252/1 |goto Azsuna/0 32.44,49.97
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Priest
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Priest
+step
+Open #10# Hidden Wyrmtongue Caches in Broken Shore |q 46769/1
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only Priest
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
 |only Priest
 step
 More content coming soon!
@@ -30789,6 +30897,20 @@ talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
 |only Rogue
 step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
+|only Rogue
+step
+click Hidden Wyrmtongue Cache##6478+
+Find #10# Hidden Wyrmtongue Caches |q 46769/1
+|tip These spawn randomly at different locations all around the Broken Shore.
+|tip They will appear as a tiny chest icon on your mini map when you are close by to one.
+|only Rogue
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
+|only Rogue
+step
 More content coming soon!
 confirm
 |only Rogue
@@ -31007,6 +31129,20 @@ kill 100 Demons |q 46252/1 |goto Suramar/0 29.23,61.22
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.55,63.50
+|only Shaman
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
+|only Shaman
+step
+click Hidden Wyrmtongue Cache##6478+
+Find #10# Hidden Wyrmtongue Caches |q 46769/1
+|tip These spawn randomly at different locations all around the Broken Shore.
+|tip They will appear as a tiny chest icon on your mini map when you are close by to one.
+|only Shaman
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.74,63.28
 |only Shaman
 step
 More content coming soon!
@@ -31228,6 +31364,20 @@ Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Warlock
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto 44.73,63.27
+|only Warlock
+step
+click Hidden Wyrmtongue Cache##6478
+Find #10# Hidden Wyrmonge Caches |q 46769/1 |goto 58.61,43.48
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only Warlock
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto 44.73,63.27
 |only Warlock
 step
 More content coming soon!
@@ -31479,6 +31629,19 @@ Slay #100# Demons |q 46252/1 |goto Azsuna/0 32.44,49.97
 step
 talk Maiev Shadowsong##116576
 turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Warrior
+step
+talk Archmage Khadgar##116302
+accept Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
+|only Warrior
+step
+Open #10# Hidden Wyrmtongue Caches in Broken Shore |q 46769/1
+|tip These caches are found scattered randomly around Broken Shore.
+|tip They will show on your minimap when you are near one.
+|only Warrior
+step
+talk Archmage Khadgar##116302
+turnin Relieved of Their Valuables##46769 |goto Broken Shore/0 44.72,63.27
 |only Warrior
 step
 More content coming soon!

@@ -4120,6 +4120,88 @@ label "congrats"
 _Congratulations!_
 You have completed the _Underbelly Tycoon_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Treasures of Azsuna",{
+condition_end="achieved(11256)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Azsuna\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Azsuna
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #35# Treasures in Aszuna |achieve 11256
+step
+_Congratulations!_
+You have completed the _Treasures of Azsuna_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
+condition_end="achieved(11258)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Val'sharah\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Val'sharah
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #40# Treasures in Val'sharah |achieve 11258
+step
+_Congratulations!_
+You have completed the _Treasures of Val'sharah_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Treasures of Highmountain",{
+condition_end="achieved(11257)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Highmountain\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Highmountain
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #40# Treasures in Highmountain |achieve 11257
+step
+_Congratulations!_
+You have completed the _Treasures of Highmountain_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Treasures of Stormheim",{
+condition_end="achieved(11259)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Stormheim\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Stormheim
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #60# Treasures in Stormheim |achieve 11259
+step
+_Congratulations!_
+You have completed the _Treasures of Stormheim_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Exploration\\Legion\\Treasures of Suramar",{
+condition_end="achieved(11260)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Suramar\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Suramar
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #45# Treasures in Suramar |achieve 11260
+step
+_Congratulations!_
+You have completed the _Treasures of Suramar_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\General\\Legion\\Brokenly Epic",{
 condition_end="achieved(10765)",
 author="support@zygorguides.com",
@@ -6324,7 +6406,7 @@ description="This guide will walk you through completing the \"Armies of Legionf
 step
 For this achievement, you will need to become _Exalted_ with the _Armies of Legionfall_
 |tip Refer to the Armies of Legionfall reputation guide and complete World Quests in Suramar to accomplish this.
-Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Alliance Reputations Guides\\Legion\\Armies of Legionfall"
+Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion\\Armies of Legionfall"
 Become _Exalted_ with the _Armies of Legionfall_ |achieve 11796
 step
 _Congratulations!_
@@ -6724,32 +6806,103 @@ step
 label "start"
 You will be collecting 5 pieces of any of the tier 4 armors, attainted form Karazhan, Gruul's Lair and Magtheridon's Lair
 _Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+|achieve 11746
 Click here to continue |confirm
+step
+kill Attumen the Huntsman##16152
+The Harbinger Bands drop here |only Mage
+Vambraces of Courage drops here |only Warrior
+Stalker's War Bands drop here|only Hunter
+Whirlwind Bracers drop here |only Shaman
+Bracers of the White Stag drop here |only Druid
+|achieve 11746
+|confirm
+step
+kill Moroes##15687
+The Nethershard Girdle drops here |only Mage
+Boots of Valiance drop here |only Paladin
+Belt of Gale Force |only Shaman
+|achieve 11746
+|confirm
+step
+kill Maiden of Virtue##16457
+The Bracers of Justice drop here |only Paladin
+The Bracers of Maliciousness drop here |only Rogue
+The Bands of Indwelling drops here |only Priest
+Bands of Nefarious Deeds drop here |only Warlock
+|achieve 11746
+|confirm
 step
 kill The Curator##15691
 The Token for the Gloves drop here
 Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+|achieve 11746
 Click here to continue |confirm
+step
+kill Terestian Illhoof
+The Cincture of Will drops here |only Priest
+The Terestian Illhoof drops here |only Druid
+The Malefic Girdle drops here |only Warlock
+|achieve 11746
+|confirm
+step
+kill Shade of Aran##16524
+The Rapscallion Boots drop here |only Rogue
+The Boots of the Incorrupt drop here |only Priest
+The Boots of the Infernal Coven drop here |only Warlock
+|achieve 11746
+|confirm
+step
+kill Netherspite##15689
+The Girdle of Truth drops here
+|achieve 11746
+|confirm
+|only Paladin
+step
+Defeat the Chess Event in Karazhan
+The Battlescar Boots drop here |only Warrior
+The Girdle of Treachery drops here |only Rogue
+The Fiend Slayer Boots drop here |only Hunter
+The Forestlord Striders drops here |only Druid
+|achieve 11746
+|confirm
 step
 kill Prince Malchezaar##15690
 The Token for the Headpiece drops here
 Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
+|achieve 11746
 Click here to continue |confirm
 step
 kill High King Maulgar##18831
 The Token for the Shoulders drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+|achieve 11746
 Click here to continue |confirm
 step
 kill Gruul the Dragonkiller##19044
 The Token for the Legs drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
+Windshear Boots also drop here |only Shaman
+|achieve 11746
 Click here to continue |confirm
 step
 kill Magtheridon##17257
 The Token for the Chest drops here
 Click here to load the Magtheridon's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Magtheridon's Lair"
+|achieve 11746
 Click here to continue |confirm
+step
+talk G'eras##18525
+buy Girdle of the Protector##33524 |goto Shattrath City/0 50.82,42.21 |condition itemcount(33524) >= 1 |only Warrior
+buy War-Feathered Loop##33280 |goto Shattrath City/0 50.82,42.21 |condition itemcount(33280) >= 1 |only Hunter
+|achieve 11746
+|confirm
+step
+talk Anwehu##27667
+buy Boots of Incantations##34919 |goto Shattrath City/0 48.17,42.95 |condition itemcount(34919) >= 1
+|achieve 11746
+|confirm
+|only Mage
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
@@ -7417,6 +7570,61 @@ startlevel=100,
 endlevel=110,
 keywords={"Extreme","Makeover","Fel","Edition","Hellfire","Citadel"},
 description="This guide will walk you through completing the \"Extreme Makeover: Fel Edition\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 18 armors, dropped from Hellfire Citadel
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Kormrok##90776
+The Class set helmet drops here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Gorefiend##91809
+The Class set legs drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Soulbound Construct##90296
+The Class set gloves drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Xhul'horac##93068
+The Token for the shoulders drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Mannoroth##91349
+The Token for the Chest drops here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Iron Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+_Congratulations!_
+You have earned the _Extreme Makeover: Fel Edition_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\That's So Last Mellenium",{
+condition_end="achieved(11631)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"That's","So","Last","Mellenium","Nighthold"},
+description="This guide will walk you through completing the \"That's So Last Mellenium\" Achievement.",
 },[[
 step
 label "start"

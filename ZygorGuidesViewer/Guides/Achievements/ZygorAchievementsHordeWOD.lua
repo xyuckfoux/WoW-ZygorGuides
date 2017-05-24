@@ -2602,7 +2602,7 @@ description="Earn Exalted status with the Arakkoa Outcasts.",
 },[[
 step
 This achievement _can be completed_ with the Arakkoa Outcasts Reputation Guide
-|confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Reputation Achievements\\Frostwolf Orcs",{
 condition_end="achieved(9471)",
@@ -2610,7 +2610,7 @@ description="Earn Exalted status with the Frostwolf Orcs.",
 },[[
 step
 This achievement _can be completed_ with the Frostwolf Orcs Reputation Guide
-|confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Frostwolf Orcs"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Reputation Achievements\\Laughing Skull Orcs",{
 condition_end="achieved(9475)",
@@ -2618,7 +2618,7 @@ description="Earn Exalted status with the Laughing Skull Orcs.",
 },[[
 step
 This achievement _can be completed_ with the Laughing Skull Orcs Reputation Guide
-|confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Laughing Skull Orcs"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Reputation Achievements\\Mantle of the Talon King",{
 condition_end="achieved(9072)",
@@ -2628,7 +2628,7 @@ step
 label "start"
 _Click here_ to complete the Terokk's Legacy storyline |confirm |next "terokk" |only if not completedq(35896)
 You have _completed_ the required Terokk's Legacy storyline |only if completedq(35896)
-_Click here_ to proceed to the reputation guide |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+_Click here_ to proceed to the reputation guide |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
 You have _reached_ Exalted with the Arakkoa Outcasts |only if rep('Arakkoa Outcasts')==Exalted
 step
 label "terokk"
@@ -2702,10 +2702,10 @@ description="Earn Exalted with 3 Draenor reputations.",
 },[[
 step
 _Earn Exalted_ with 3 Draenor reputations.
-To earn exalted with the Arakkoa Outcasts _click here_. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
-To earn exalted with the Frostwolf Orcs _click here_. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Frostwolf Orcs"
-To earn exalted with the Laughing Skull Orcs _click here_. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Laughing Skull Orcs"
-To earn exalted with the Steamwheedle Preservation Society _click here_. |confirm |next "Zygor's Horde Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+To earn exalted with the Arakkoa Outcasts _click here_. |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
+To earn exalted with the Frostwolf Orcs _click here_. |confirm |next "Zygor's Reputations Guides\\Draenor\\Frostwolf Orcs"
+To earn exalted with the Laughing Skull Orcs _click here_. |confirm |next "Zygor's Reputations Guides\\Draenor\\Laughing Skull Orcs"
+To earn exalted with the Steamwheedle Preservation Society _click here_. |confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
 achieve 9477
 step
 Congratulations, you have earned the _Savage Friends_ Achievement!
@@ -2716,7 +2716,7 @@ description="Earn Exalted status with the Steamwheedle Perservation Society.",
 },[[
 step
 This achievement _can be completed_ with the Steamwheedle Perservation Society Reputation Guide
-confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Draenor\\Exploration Achievements\\Explore Draenor",{
 condition_end="achieved(8935)",

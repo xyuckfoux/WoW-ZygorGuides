@@ -8303,7 +8303,7 @@ description="Earn Exalted status with the Arakkoa Outcasts.",
 },[[
 step
 This achievement _can be completed_ with the Arakkoa Outcasts Reputation Guide
-|confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Reputation\\Draenor\\Council of Exarchs", {
 condition_end="achieved(9470)",
@@ -8311,7 +8311,7 @@ description="Earn Exalted status with the Council of Exarchs.",
 },[[
 step
 This achievement _can be completed_ with the Council of Exarchs Reputation Guide
-|confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Council of Exarchs"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Council of Exarchs"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Reputation\\Draenor\\Mantle of the Talon King",{
 condition_end="achieved(9072)",
@@ -8321,7 +8321,7 @@ step
 label "start"
 _Click here_ to complete the Terokk's Legacy storyline |confirm |next "terokk" |only if not completedq(35896)
 You have _completed_ the required Terokk's Legacy storyline |only if completedq(35896)
-_Click here_ to proceed to the reputation guide |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
+_Click here_ to proceed to the reputation guide |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
 You have _reached_ Exalted with the Arakkoa Outcasts |only if rep('Arakkoa Outcasts')==Exalted
 step
 label "terokk"
@@ -8395,11 +8395,11 @@ description="Earn Exalted with 3 Draenor reputations.",
 },[[
 step
 _Earn_ Exalted with 3 Draenor reputations
-To earn exalted with the Arakkoa Outcasts _click here_ |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts"
-To earn exalted with the Council of Exarchs _click here_ |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Council of Exarchs"
-To earn exalted with the Sha'tari Defense _click here_ |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Sha'tari Defense"
-To earn exalted with the Steamwheedle Preservation Society _click here_ |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
-To earn exalted with the Wrynn's Vanguard _click here_ |confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard"
+To earn exalted with the Arakkoa Outcasts _click here_ |confirm |next "Zygor's Reputations Guides\\Draenor\\Arakkoa Outcasts"
+To earn exalted with the Council of Exarchs _click here_ |confirm |next "Zygor's Reputations Guides\\Draenor\\Council of Exarchs"
+To earn exalted with the Sha'tari Defense _click here_ |confirm |next "Zygor's Reputations Guides\\Draenor\\Sha'tari Defense"
+To earn exalted with the Steamwheedle Preservation Society _click here_ |confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
+To earn exalted with the Wrynn's Vanguard _click here_ |confirm |next "Zygor's Reputations Guides\\Draenor\\Wrynn's Vanguard"
 |achieve 9478
 step
 Congratulations, you have _earned_ the Savage Friends Achievement!
@@ -8410,7 +8410,7 @@ description="Earn Exalted status with Sha'tari Defense.",
 },[[
 step
 This achievement _can be completed_ with the Sha'tari Defense Reputation Guide
-|confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Sha'tari Defense"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Sha'tari Defense"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Reputation\\Draenor\\Steamwheedle Perservation Society",{
 condition_end="achieved(9472)",
@@ -8418,7 +8418,7 @@ description="Earn Exalted status with the Steamwheedle Perservation Society.",
 },[[
 step
 This achievement _can be completed_ with the Steamwheedle Perservation Society Reputation Guide
-|confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Steamwheedle Preservation Society"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Reputation\\Draenor\\Wrynn's Vanguard", {
 condition_end="achieved(9474)",
@@ -8426,7 +8426,7 @@ description="Earn Exalted status with the Wrynn's Vanguard.",
 },[[
 step
 This achievement _can be completed_ with the Wrynn's Vanguard Reputation Guide
-|confirm |next "Zygor's Alliance Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard"
+|confirm |next "Zygor's Reputations Guides\\Draenor\\Wrynn's Vanguard"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Garrisons\\Azeroth's Top Twenty Tunes",{
 condition_end="achieved(9912)",

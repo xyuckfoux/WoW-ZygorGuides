@@ -1264,8 +1264,8 @@ kill Alani##64403
 collect 1 Reins of the Thundering Ruby Cloud Serpent##90655 |goto Vale of Eternal Blossoms 50.6,43.6
 step
 kill this point, you must be _Exalted_ with _Order of the Cloud Serpent_ and _The August Celestials_.
-Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsHMOP']
-Click here to be taken to the Order of the Cloud Serpent reputations guide to gain reputation with them. |confirm |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\The August Celestials" |only if rep('The August Celestials')<Exalted and ZGV.guidesets['ReputationsHMOP']
+Click here to be taken to the August Celestials reputations guide to gain reputation with them. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The Order of the Cloud Serpent" |only if rep('Order of the Cloud Serpent')<Exalted and ZGV.guidesets['ReputationsHMOP']
+Click here to be taken to the Order of the Cloud Serpent reputations guide to gain reputation with them. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\The August Celestials" |only if rep('The August Celestials')<Exalted and ZGV.guidesets['ReputationsHMOP']
 confirm
 only if rep('The August Celestials')<Exalted or rep('Order of the Cloud Serpent')<Exalted
 step
@@ -1910,7 +1910,7 @@ You currently are _Revered_ with _Dominance Offensive_ |only if rep("Dominance O
 You currently are _Exalted_ with _Dominance Offensive_ |only if rep("Dominance Offensive")==Exalted
 _Click here_ to be taken to the pre-quests for the Dominance Offensive. |confirm |next "pre" |only if not ZGV.guidesets["DailiesHMOP"] and not ZGV.guidesets["ReputationsHMOP"] and not completedq(32108)
 _Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Horde Dailies Guides\\Pandaria (85 - 90)\\Dominance Offensive Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"] and not ZGV.guidesets["ReputationsHMOP"]
-_Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\Dominance Offensive" |confirm |only if ZGV.guidesets["ReputationsHMOP"]
+_Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria\\Dominance Offensive" |confirm |only if ZGV.guidesets["ReputationsHMOP"]
 _Click here_ to be taken to the Dominance Offensive Quartermaster to purchase the mount. |confirm |next "buy" |only if rep("Dominance Offensive")>=Exalted
 step
 label "pre"
@@ -1989,7 +1989,7 @@ description="This guide will help you acquire the Red Flying Cloud mount.",
 step
 This mount requires you to be _Exalted_ with _The Lorewalkers_.
 In order to become Exalted with the Lorewalkers, refer to the Zygor Guides Reputation section.
-Click here to access the Lorewalkers guide. |next "Zygor's Horde Reputations Guides\\Mists of Pandaria\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsHMOP"]
+Click here to access the Lorewalkers guide. |next "Zygor's Reputations Guides\\Mists of Pandaria\\Lorewalkers" |confirm |only if ZGV.guidesets["ReputationsHMOP"]
 Exalted with the Lorewalkers |achieve 6548
 step
 talk Tan Shin Tiao##64605

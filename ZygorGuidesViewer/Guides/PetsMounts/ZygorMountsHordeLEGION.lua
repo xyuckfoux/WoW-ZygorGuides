@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsMountsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Arcadian War Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Vendor Mounts\\Arcadian War Turtle",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcadian","war","turtle","quest","ground","mount"},
@@ -27,7 +27,7 @@ step
 _Congratulations!_
 You collected the _Arcadian War Turtle_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Bloodfang Widow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Vendor Mounts\\Bloodfang Widow",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"bloodfang","widow","ground","mount"},
@@ -46,7 +46,7 @@ step
 _Congratulations!_
 You collected the _Bloodfang Widow_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brawler's Burly Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Miscellaneous Mounts\\Brawler's Burly Basilisk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"guild","brawler","burly","ground","mount","basilisk"},
@@ -69,7 +69,7 @@ step
 _Congratulations!_
 You collected the _Brawler's Burly Basilisk_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brinedeep Bottom-Feeder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Brinedeep Bottom-Feeder",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brinedeep","bottom","feeder","quest","ground","mount"},
@@ -110,7 +110,7 @@ step
 _Congratulations!_
 You collected the _Brinedeep Bottom-Feeder_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Darkwater Skate",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Water Mounts\\Vendor Mounts\\Darkwater Skate",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"darkwater","darkmoon","faire","water","mount","skate"},
@@ -129,7 +129,7 @@ step
 _Congratulations!_
 You collected the _Darkwater Skate_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Fathom Dweller",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Miscellaneous Mounts\\Fathom Dweller",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fathom","dweller","ground","mount"},
@@ -277,7 +277,7 @@ step
 _Congratulations!_
 You collected the _Fathom Dweller_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Great Northern Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Great Northern Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"great","northern","elderhorn","leatherworking","ground","mount"},
@@ -322,7 +322,7 @@ step
 _Congratulations!_
 You collected the _Great Northern Elderhorn_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Llothien Prowler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Quest Mounts\\Llothien Prowler",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"llothian","prowler","world","quest","ground","mount"},
@@ -434,7 +434,7 @@ step
 _Congratulations!_
 You collected the _Llothian Prowler_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Long-Forgotten Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Miscellaneous Mounts\\Long-Forgotten Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"long","forgotten","ground","hippogryph","mount"},
@@ -1019,7 +1019,7 @@ step
 _Congratulations!_
 You collected the _Long-Forgotten Hippogryph_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ratstallion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Miscellaneous Mounts\\Ratstallion",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ratstallion","quest","ground","mount"},
@@ -1063,7 +1063,7 @@ step
 _Congratulations!_
 You collected the _Ratstallion_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Spirit of Eche'ro",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Spirit of Eche'ro",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"spirit","eche'ro","archaeology","ground","mount"},
@@ -1099,7 +1099,7 @@ step
 _Congratulations!_
 You collected the _Spirit of Eche'ro_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Steelbound Devourer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Profession Mounts\\Steelbound Devourer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"steelbound","devourer","ground","mount"},
@@ -1146,7 +1146,7 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Miscellaneous Mounts\\Riddler's Mind-Worm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"riddler","mind","flying","mount","worm"},
@@ -1211,7 +1211,7 @@ step
 _Congratulations!_
 You collected the _Riddler's Mind-Worm_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Highmountain Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Highmountain Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"highmountain","elderhorn","ground","mount"},
@@ -1246,7 +1246,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Highmountain Elderhorn.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Valarjar Stormwing",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Valarjar Stormwing",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"valarjar","stormwing","flying","mount"},
@@ -1281,7 +1281,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Valarjar Stormwing.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Cloudwing Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"cloudwing","hippogryph","flying","mount"},
@@ -1316,7 +1316,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Cloudwing Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Wild Dreamrunner",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"wild","dreamrunner","ground","mount"},
@@ -1351,7 +1351,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Wild Dreamrunner.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Leywoven Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Reputation Mounts\\Leywoven Flying Carpet",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leywoven","carpet","flying","mount"},
@@ -1386,7 +1386,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leywoven Flying Carpet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Reins of the Leyfeather Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Achievement Mounts\\Leyfeather Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leyfeather","hippogryph","flying","mount"},
@@ -1405,7 +1405,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leyfeather Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Defiled Reins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Achievement Mounts\\Defiled Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"defiled","reins","flying","mount"},
@@ -1424,7 +1424,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Defiled Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Living Infernal Core",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Dropped Mounts\\Living Infernal Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"living","infernal","core","flying","mount"},
@@ -1446,7 +1446,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Felblaze Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Fiendish Hellfire Core",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Dropped Mounts\\Fiendish Hellfire Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fiendish","hellfire","core","flying","mount"},
@@ -1468,7 +1468,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Hellfire Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Midnight's Eternal Reins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Dropped Mounts\\Midnight's Eternal Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"midnight","eternal","rein","ground","mount"},
@@ -1489,7 +1489,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Midnight's Eternal Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Smoldering Ember Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Dropped Mounts\\Smoldering Ember Wyrm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"smoldering","ember","wyrm","flying","mount"},
@@ -1511,7 +1511,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Smoldering Ember Wyrm.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Arcanist's Manasaber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Reputation Mounts\\Arcanist's Manasaber",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcanist","manasaber","flying","mount"},
@@ -1534,7 +1534,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Arcanist's Manasaber.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Yu'lei, Daughter of Jade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Vendor Mounts\\Yu'lei, Daughter of Jade",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"yu'lei","daughter","jade","flying","mount"},
@@ -1557,7 +1557,7 @@ _Congratulations!_
 You are now the proud owner of a Yu'lei, Daughter of Jade.
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Battle Pet Mounts\\Brilliant Direbeak",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brilliant","direbeak","ground","mount"},
@@ -1812,7 +1812,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Brilliant Direbeak.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"snowfeather","hunter","ground","mount"},
@@ -2065,7 +2065,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Snowfeather Hunter.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Predatory Bloodgazer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Battle Pet Mounts\\Predatory Bloodgazer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"predatoryt","bloodgazer","ground","mount"},
@@ -2299,7 +2299,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Predatory Bloodgazer.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Battle Pet Mounts\\Viridian Sharptalon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"viridian","sharptalon","ground","mount"},
@@ -2556,7 +2556,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Viridian Sharptalon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ivory Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Player vs. Player Mounts\\Ivory Hawkstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ivory","hawkstrider","ground","mount"},

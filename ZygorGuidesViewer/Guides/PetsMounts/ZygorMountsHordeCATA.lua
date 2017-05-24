@@ -786,7 +786,7 @@ description="This guide will help you acquire the White Polar Bear mount.",
 },[[
 step
 This mount _requires_ you to have _The Sons of Hodir_ pre-quests completed. |next
-Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Horde Reputations Guides\\Northrend\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here to be routed tot he Sons of Hodir Prequests and Dailies. |next "Zygor's Reputations Guides\\Northrend\\The Sons of Hodir" |confirm |only if ZGV.guidesets["DailiesACATA"]
 confirm
 step
 label "dailies"
@@ -2005,7 +2005,7 @@ description="This guide will help you acquire the Brown Riding Camel and Tan Rid
 step
 title +Camel Mounts
 #include main_rep_mount,rep="Ramkahen",tabard="RamkahenTabard"
-Click here to refer to the Ramkahen reputation guide. |next "Zygor's Horde Reputations Guides\\Cataclysm\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
+Click here to refer to the Ramkahen reputation guide. |next "Zygor's Reputations Guides\\Cataclysm\\Ramkahen" |only if ZGV.guidesets["ReputationsH"]
 |tip This will take you through the quests and any available daily.
 step
 talk Blacksmith Abasi##48617
@@ -3331,7 +3331,7 @@ label "Pre Quests"
 step
 You will need to be Revered with _The Oracles_ in order to obtain the Mysterious Egg.
 Refer to our Dailies and Reputation guides in order to earn rep.
-Click here for the Oracle Reputation section. |next "Zygor's Horde Reputations Guides\\Northrend\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here for the Oracle Reputation section. |next "Zygor's Reputations Guides\\Northrend\\The Oracles" |confirm |only if ZGV.guidesets["ReputationsH"]
 step
 label "Buy_it"
 talk Geen##31910
@@ -6990,7 +6990,7 @@ step
 This will require you to be _exalted_ with _The Wyrmrest Accord_
 #include "WATabard"
 The tabard will only give you reputation if the enemies in your current dungeon are high enough to give you experience.  |only if rep("The Wyrmrest Accord")<Exalted
-Click here to earn Reputation via quests and dailies. |next "Zygor's Horde Reputations Guides\\Northrend\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
+Click here to earn Reputation via quests and dailies. |next "Zygor's Reputations Guides\\Northrend\\The Wyrmrest Accord" |confirm |only if ZGV.guidesets["ReputationsH"]
 _Exalted_ with _The Wyrmrest Accord_ |condition rep("The Wyrmrest Accord")>=Exalted
 next |only if default
 next exalted |only if rep("The Wyrmrest Accord")>=Exalted

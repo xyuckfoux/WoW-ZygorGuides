@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Azeroth\\Timbermaw Hold Faction",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Azeroth\\Timbermaw Hold",{
 author="support@zygorguides.com",
 achieveid={944},
 },[[

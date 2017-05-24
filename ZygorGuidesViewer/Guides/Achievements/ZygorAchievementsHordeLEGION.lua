@@ -4119,6 +4119,88 @@ label "congrats"
 _Congratulations!_
 You have completed the _Underbelly Tycoon_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Azsuna",{
+condition_end="achieved(11256)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Azsuna\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Azsuna
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #35# Treasures in Aszuna |achieve 11256
+step
+_Congratulations!_
+You have completed the _Treasures of Azsuna_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Val'sharah",{
+condition_end="achieved(11258)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Val'sharah\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Val'sharah
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #40# Treasures in Val'sharah |achieve 11258
+step
+_Congratulations!_
+You have completed the _Treasures of Val'sharah_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Highmountain",{
+condition_end="achieved(11257)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Highmountain\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Highmountain
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #40# Treasures in Highmountain |achieve 11257
+step
+_Congratulations!_
+You have completed the _Treasures of Highmountain_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Stormheim",{
+condition_end="achieved(11259)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Stormheim\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Stormheim
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #60# Treasures in Stormheim |achieve 11259
+step
+_Congratulations!_
+You have completed the _Treasures of Stormheim_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Exploration\\Legion\\Treasures of Suramar",{
+condition_end="achieved(11260)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+description="This guide will walk you through completing the \"Treasures of Suramar\" Achievement.",
+},[[
+step
+For this achievement you will need to collect 35 Treasures in Suramar
+Enable our Points of Interest system to accomplish this
+|tip This will show all treasures in the area that you have not obtained yet.
+Discover #45# Treasures in Suramar |achieve 11260
+step
+_Congratulations!_
+You have completed the _Treasures of Suramar_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\General\\Legion\\Brokenly Epic",{
 condition_end="achieved(10765)",
 author="support@zygorguides.com",
@@ -6323,7 +6405,7 @@ description="This guide will walk you through completing the \"Armies of Legionf
 step
 For this achievement, you will need to become _Exalted_ with the _Armies of Legionfall_
 |tip Refer to the Armies of Legionfall reputation guide and complete World Quests in Suramar to accomplish this.
-Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Horde Reputations Guides\\Legion\\Armies of Legionfall"
+Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion\\Armies of Legionfall"
 Become _Exalted_ with the _Armies of Legionfall_ |achieve 11796
 step
 _Congratulations!_

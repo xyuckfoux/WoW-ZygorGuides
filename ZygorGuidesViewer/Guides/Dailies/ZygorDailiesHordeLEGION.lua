@@ -3421,7 +3421,7 @@ Follow the path |goto Val'sharah/0 53.43,74.05 < 30 |only if walking
 Follow the path |goto 51.49,75.69 < 30 |only if walking
 Follow the path |goto 49.31,80.37 < 30 |only if walking
 Enter the Sleeper's Barrow |goto Val'sharah/0 50.01,85.61 < 15 |walk
-accept Waking Nightmare##42077 |goto Val'sharah/0 61.44,47.31
+accept Waking Nightmare##42077 |goto Val'sharah/14 54.94,65.59
 |tip You will accept this quest automatically.
 stickystart "Slumbering_Nightmares"
 stickystart "Slay_Darkfiend_Invaders"
@@ -4658,6 +4658,16 @@ accept Ix'dreloth##46186 |goto Highmountain/0 37.29,40.85
 step
 kill Ix'dreloth##117059
 Defeat Ix'dreloth |q 46186/1 |goto 37.29,40.85
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46187
+Follow the path |goto Highmountain/0 29.99,40.78 < 25 |only if walking
+Follow the path |goto 27.35,42.53 < 15 |only if walking
+accept Larthogg##46187 |goto 25.57,44.76
+|tip You will accept this quest automatically.
+step
+kill Larthogg##103514
+Defeat Larthogg |q 46187/1 |goto 25.57,44.76
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43764
@@ -8526,6 +8536,38 @@ click Prison Shackles
 Free #8# Shackled Nightfallen |q 42169/1 |goto 28.90,81.69
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44813
+Follow the path |goto Suramar/0 63.43,43.51 < 25 |only if walking
+Follow the path |goto 58.39,48.03 < 20 |only if walking
+Follow the path |goto 54.70,46.05 < 25 |walk
+Follow the path |goto Suramar/22 40.73,74.72
+accept Ley Line Interference##44813 |goto Suramar/22 40.73,74.72
+|tip You will accept this quest automatically.
+step
+Use the Leysight Spectacles |use Leysight Spectacles##142446
+Gain the Leysight Spectacles buff |havebuff 133023
+step
+Follow the path |goto Suramar/22 40.73,74.72 < 15 |only if walking
+click Ley Line Siphon##116061
+Destroy the Southwest Syphon |q 44813/2 |goto 29.86,67.61
+step
+Follow the path down |goto 35.71,43.07 < 15 |only if walking
+click Ley Line Siphon##116061
+Destroy the Northwest Syphon |q 44813/4 |goto 45.22,21.22
+step
+Follow the path |goto 48.43,28.84 < 8 |only if walking
+click Ley Line Siphon##116061
+Destroy the Central Syphon |q 44813/5 |goto 53.74,23.67
+step
+click Ley Line Siphon##116061
+Destroy the Southwest Syphon |q 44813/3 |goto 59.35,38.03
+step
+Follow the path up |goto 62.52,42.99 < 8 |only if walking
+Follow the path |goto 62.00,56.66 < 15 |only if walking
+click Ley Line Siphon##116061
+Destroy the Southeast Syphon |q 44813/1 |goto 58.70,82.81
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43774
 accept Ley Race##43774 |goto Suramar/0 31.79,46.70
 |tip You will accept this quest automatically.
@@ -10384,6 +10426,31 @@ Pick #10# Cage Locks |q 45776/1 |goto 58.94,45.88
 |tip Use your stealth ability to get around the mobs while looking for these cages.
 |next "Court_Of_Farondis_WQ"
 |only Rogue
+step
+label quest-45653
+Cross the water |goto Broken Shore/0 45.60,23.28 < 25 |only if walking
+accept Kill it with Fire!##45653 |goto Broken Shore/0 44.33,27.35
+|tip You will accept this quest automatically.
+|only Mage
+step
+kill Vile Broodling##117354+, Brood Beast##117425+
+Burn all of the things |q 45653/1 |goto 41.74,29.09
+|tip Use the extra action button "Enhanced Dragonsbreath" to quickly kill the enemies.
+|next "Court_Of_Farondis_WQ"
+|only Mage
+step
+label quest-46046
+Follow the path |goto Broken Shore/0 43.80,58.35 < 25 |only if walking
+Follow the path |goto 50.77,55.03 < 25 |only if walking
+accept Life's a Lich##46046 |goto Broken Shore/0 52.35,48.38
+|tip You will accept this quest automatically.
+step
+kill Feltotem Necromancer##118472+, Tainted Walker##118454+, Soul Reaper##118459+
+collect 30 Fel-infused Remains##144241 |q 46046/1 |goto 52.07,44.31
+step
+talk Amal'thazad##118569
+Speak with Amal'thazad |q 46046/2 |goto 52.33,48.37
+|next "Court_Of_Farondis_WQ"
 step
 label quest-46754
 accept Magical Beasts##46754 |goto Broken Shore/0 48.13,17.85

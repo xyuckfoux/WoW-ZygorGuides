@@ -26994,4 +26994,11 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [108950]="Crimson Geode|",
 [102501]="Shardmaster Azurrogg|",
 [101630]="Amberstone Earthrender|",
+[113371]="Demonia Pickerin|",
+[115338]="Rebellious Citizen|",
+[116256]="Victoire|",
+[107600]="Shal'dorei Civilian|",
+[114998]="Aargoss|",
+[112757]="Magistrix Vilessa|",
+[117155]="Duskrider Silaryn|",
 } end)

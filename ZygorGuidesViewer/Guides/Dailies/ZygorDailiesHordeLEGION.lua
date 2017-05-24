@@ -950,6 +950,21 @@ Slay the spiders around this area
 Purge the Demonic Spiders |q 44049/1 |goto Azsuna/0 43.07,84.84
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43098
+accept DANGER: Marblub the Massive##43098 |goto Azsuna/0 33.86,28.84
+|tip You will accept this quest automatically.
+step
+kill Marblub the Massive##109653 |q 43098/1 |goto Azsuna/0 34.12,27.91
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44894
+accept Bloodgazer Swarm!##44894 |goto Azsuna/0 38.68,7.12
+|tip You will accept this quest automatically.
+step
+Slay the Bloodgazers around this area
+Cull the Bloodgazer Falcosaurs |q 44894/1 |goto Azsuna/0 36.60,6.31
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42742
 _Enter the Darkheart Thicket Dungeon:_
 |tip Use the Group Finder to enter the dungeon.
@@ -2200,7 +2215,18 @@ step
 kill Hill Prince Urgo##96070 |q 41090/2 |goto 43.49,75.02
 step
 label "Hill_Ettins"
-kill Hill Ettin##102886 |q 41090/1 |goto 43.85,73.14
+kill 5 Hill Ettin##102886 |q 41090/1 |goto 43.85,73.14
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41089
+accept Lords of the Hills##41089 |goto Highmountain/0 43.85,73.14
+|tip You will accept this quest automatically.
+stickystart "Hill_Ettins 2"
+step
+kill Hill Prince Urgo##96070 |q 41089/2 |goto 43.49,75.02
+step
+label "Hill_Ettins 2"
+kill 5 Hill Ettin##102886 |q 41089/1 |goto 43.85,73.14
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41428
@@ -2351,6 +2377,13 @@ accept WANTED: Sekhan##41844 |goto Thunder Totem/0 36.34,6.52
 |tip You will accept this quest automatically.
 step
 kill Sekhan##101077 |q 41844/1 |goto 36.34,6.52
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44294
+accept WANTED: Sekhan##44294 |goto Thunder Totem/0 36.34,6.52
+|tip You will accept this quest automatically.
+step
+kill Sekhan##101077 |q 44294/1 |goto 36.34,6.52
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41685
@@ -2600,6 +2633,20 @@ Grab a prototype from Razik's weapon rack |q 41077/2 |goto 57.64,56.43
 step
 Use the extra action button on the animals around this area
 Hunt 15 animals using Razik's prototype |q 41077/3 |goto 56.03,55.71
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41076
+accept Munitions Testing##41076 |goto Highmountain/0 57.47,56.57
+|tip You will accept this quest automatically.
+step
+talk Gertie##99468
+Speak to Gertie |q 41076/1 |goto Highmountain/0 57.65,56.56
+step
+click Razik's Weapon Rack
+Grab a prototype from Razik's weapon rack |q 41076/2 |goto 57.64,56.43
+step
+Use the extra action button on the animals around this area
+Hunt 10 animals using Razik's prototype |q 41076/3 |goto 56.03,55.71
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41026
@@ -3544,6 +3591,78 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41569/1 |goto Stormheim/0 63.33,74.82
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44943
+Jump down into the water here |goto Stormheim/0 54.81,27.62
+accept Now That's Just Clawful!##44943
+|tip You will accept this quest automatically.
+step
+Go up the path |goto Stormheim/0 55.01,24.73
+click Murky's Egg
+|tip Its on the end of the ship handing over the water
+Locate Murky's Egg |q 44943/1 |goto Stormheim/0 55.40,26.05
+stickystart "Clamcrusher"
+step
+kill Clawspishus##116039 |q 44943/3 |goto Stormheim/0 61.36,20.34
+step
+label "Clamcrusher"
+kill 10 Rockclaw Clamcrusher##116038 |q 44943/2 |goto Stormheim/0 58.21,20.92
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44157
+accept Withered Wrangling: Tel'anor##44157 |goto Suramar/0 42.13,35.37
+|tip You will accept this quest automatically.
+step
+Use the Branch of Arcan'dor ability on Feral enemies
+|tip It appears as a button on the screen.
+|tip They look like Withered enemies around this area.
+Send #10# Withered to Shal'Aran |q 44157/1 |goto 42.80,36.09
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44801
+accept Defending Shal'aran##44801 |goto Suramar/0 34.07,49.34
+|tip You will accept this quest automatically.
+stickystart "Slay_Duskwatch_Forces_Defend_ShalAran"
+step
+Follow the path up |goto 32.93,48.35 < 20 |only if walking
+kill Duskrider Silaryn##117155 |q 44801/2 |goto 30.88,53.56
+step
+label "Slay_Duskwatch_Forces_Defend_ShalAran"
+Kill Duskwatch enemies around this area
+|tip Starving Felstalkers will also give credit for the quest.
+Slay #12# Duskwatch Forces |q 44801/1 |goto 31.69,53.18
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44114
+Follow the path |goto Suramar/0 50.09,79.96 < 20 |only if walking
+Follow the path |goto Suramar/0 49.39,80.50 < 20 |only if walking
+Run up the stairs |goto Suramar/0 48.56,79.15 < 20 |only if walking
+Cross the water |goto Suramar/0 47.59,77.22 < 20 |only if walking
+Run up the stairs |goto Suramar/0 46.57,76.31 < 20 |c |q 44114 |future
+step
+Run up the stairs |goto 46.95,77.60 < 20 |only if walking
+Continue up the stairs |goto 46.60,78.04 < 20 |only if walking
+Cross the bridge |goto 46.32,76.60 < 20 |only if walking
+Follow the path |goto 47.42,76.38 < 20 |only if walking
+accept DANGER: Magistrix Vilessa##44114 |goto 48.30,77.53
+|tip You will accept this quest automatically.
+step
+kill Magistrix Vilessa##112757 |q 44114/1 |goto 49.65,79.48
+|tip She walks around on the roof of the building.
+|tip You may need help to kill her.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44769
+accept Arming the Populace##44769 |goto Suramar/0 52.07,79.12
+|tip You will accept this quest automatically.
+step
+click Nightborne Arms Caches
+|tip They look like chests made of wood and metal on the ground all around this area.
+collect Nightborne Armaments##142216 |n
+Use the Nightborne Armaments near Rebellious Citizens |use Nightborne Armaments##142216
+|tip They are all around this area.
+Arm #6# Rebellious Citizens |q 44769/1 |goto 51.25,78.79
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45307
 Follow the path down |goto Suramar/0 67.37,44.56 < 20 |only if walking
 Follow the path |goto Suramar/0 69.66,47.91 < 30 |only if walking
@@ -3644,6 +3763,7 @@ accept Withered Wrangling: Meredil and Ambervale##43807 |goto Suramar/0 34.97,51
 step
 Use the Spellstone of Kel'danath on Withered enemies
 |tip It appears as a button on the screen.
+|tip It could also be the Branch of Arcan'dor ability.
 Send #10# Withered to Shal'Aran |q 43807/1 |goto 35.18,51.91
 |next "Court_Of_Farondis_WQ"
 step
@@ -4077,6 +4197,16 @@ step
 kill Sanaar##105739 |q 42795/1 |goto 40.45,34.63
 |next "Court_Of_Farondis_WQ"
 step
+label quest-44185
+Carefully jump down into the water |goto Suramar/0 21.16,42.92 |n
+Enter the Falanaar Tunnels |goto Suramar/33 38.34,33.32 < 10000 |noway |c |q 44185 |future
+step
+accept WANTED: Sanaar##44185 |goto Suramar/33 43.43,36.80
+|tip You will accept this quest automatically.
+step
+kill Sanaar##105739 |q 44185/1 |goto 40.45,34.63
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42169
 accept Left for Dead##42169 |goto Suramar/0 28.90,81.69
 |tip You will accept this quest automatically.
@@ -4435,6 +4565,14 @@ step
 talk Amalia##107489
 Tell her "Let's do battle!"
 Defeat Amalia |q 42442/1 |goto Dalaran L/10 28.28,24.04
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41881
+accept Fight Night: Heliosus##41881 |goto Dalaran L/10 29.31,29.24
+|tip You will accept this quest automatically.
+step
+Click Heliosus
+Defeat Heliosus |q 41881/1 |goto Dalaran L/10 28.28,24.04
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43805

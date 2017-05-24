@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 13,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 14,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -1717,7 +1717,10 @@ data.basenodes.advanced = {
 		{"REGION",name="suramar_eluneeth",mapzone=1033,zonematch="*/*/*/Ruins of Elune'eth",nofly=1},
 
 	-- Suramar Sanctum of Order
-		{"REGION",name="suramar_sanctum_of_order",mapzone=1033,zonematch="*/*/*/Sanctum of Order",nofly=1},	
+		{"REGION",name="suramar_sanctum_of_order",mapzone=1033,zonematch="*/*/*/Sanctum of Order",nofly=1},
+		
+	-- Dalaran (Margoss's Retreat) - Fishing Reputation, Floating Island next to Dalaran
+		{"REGION",name="dalaran_margosss_retreat",mapzone=1014,zonematch="*/*/*/Margoss's Retreat",nofly=0},
 }
 
 -- different data layout, live with it
@@ -2023,6 +2026,11 @@ data.basenodes.travel = {
 	-- Portal to Karazhan
 		"Dalaran L/12 31.98,71.53 -to- Deadwind Pass/0 47.24,75.40 (B:PORTAL) {template:custom}"..
 			"{atob:Click the Portal to Karazhan} {cond:ZGV.IsLegionOn()}",
+
+	-- Margoss's Retreat (Fishing Reputation - Floating Island Next to Dalaran)
+		"Dalaran L/10 23.10,-11.40 <region:dalaran_margosss_retreat> -to- Dalaran L/10 60.92,44.72 (B:PORTAL) {template:custom}"..
+			"{atob:Talk to |cffaaffaaConjurer Margoss|r\n\nTell him |cfff0e081\"Please teleport me\nback to Dalaran.\"|r}"..
+			"{cond:ZGV.IsLegionOn()}",
 
 
 

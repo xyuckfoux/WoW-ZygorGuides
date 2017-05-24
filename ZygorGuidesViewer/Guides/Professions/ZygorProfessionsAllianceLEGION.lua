@@ -7468,6 +7468,203 @@ step
 _Congratulations!_
 You reached level 800 with the Jewelcrafting profession.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Fishing\\Legion\\Fishing Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Marcia Chase##95844
+Learn the Fishing Profession |condition skill("Fishing")>=1 |goto Dalaran L/10 52.82,65.60
+step
+Reach Level 675 Fishing |skill Fishing,675
+|tip Use the Fishing 1-700 guide to accomplish this.
+step
+talk Marcia Chase##95844
+Learn Legion Fishing |skillmax Fishing,800 |goto 52.82,65.60
+step
+collect Goblin Glider Kit##109076 |c |q 42911 |future
+|tip You can create these, if you have Engineering.
+|tip You can also buy them from the Auction House.
+step
+Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
+Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
+Jump off toward the floating island |goto Dalaran L/10 26.22,20.40 < 20 |only if walking
+|tip Use the Goblin Glider Kit immediately after jumping.
+talk Conjurer Margoss##108825
+accept Drowned Mana##42911 |goto Dalaran L/10 23.10,-11.40
+step
+Fish in the Water
+collect Drowned Mana##138777 |q 42911 |goto 22.99,-14.30
+step
+talk Conjurer Margoss##108825
+turnin Drowned Mana##42911 |goto 23.10,-11.40
+step
+_Congratulations!_
+You completed the Fishing questline.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Fishing\\Legion\\Fishing 700-800",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Fishing Quest Line" Guide
+Click Here to Continue |confirm
+step
+Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
+Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
+Jump off toward the floating island |goto Dalaran L/10 26.22,20.40 < 20 |only if walking
+|tip Use the Goblin Glider Kit immediately after jumping.
+talk Conjurer Margoss##108825
+accept Drowned Mana##42911 |goto Dalaran L/10 23.10,-11.40
+step
+Fish in the Water
+|tip Save the Drowned Mana you collect. Give it to Conjurer Margoss nearby for reputation.
+Reach Level 800 Fishing |skill Fishing,800 |goto 22.99,-14.30
+step
+_Congratulations!_
+You reached level 800 with the Fishing profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Cooking\\Legion\\Cooking Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Next to you
+talk Nomi##101846
+accept Too Many Cooks##40988
+|tip Nomi is said to appear anytime while getting Legion recipes.
+|tip These Legion recipes can come from quests, rares, or instances. To figure out where each one can be found simply open up your cook book and go to the "Unlearned" tab to figure out what recipes you are missing.
+step
+talk Nomi##101846
+turnin Too Many Cooks##40988 |goto Dalaran L/10 40.16,65.95
+accept A Good Recipe List##40990 |goto Dalaran L/10 40.16,65.95
+step
+learn Dried Mackerel Stripes##201512 |use Recipe: Dried Mackerel Strips##133826
+learn Salt and Pepper Shank##201413 |use Recipe: Salt and Pepper Shank##133810
+learn Deep-Fried Mossgill##201496 |use Recipe: Deep-Fried Mossgill##133812
+learn Fighter Chow##201514 |use Recipe: Fighter Chow##133828
+learn Faronaar Fizz##201498 |use Recipe: Faronaar Fizz##133814
+learn Barracuda Mrglgagh##201496 |use Recipe: Barracuda Mrglgagh##133818
+collect 6 Legion recipes |q 40990/1
+|tip These recipes are from questing in each of the 4 leveling zones so you should get them as you level to 110.
+step
+talk Nomi##101846
+turnin A Good Recipe List##40990 |goto Dalaran L/10 40.16,65.95
+accept Opening the Test Kitchen##40991 |goto Dalaran L/10 40.16,65.95
+step
+click Nomi's Silver Mackerel##6478
+collect 5 Nomi's Silver Mackerel##133912 |q 40991/1 |goto 39.38,66.66
+step
+talk Nomi##101846
+Return the Mackerel to Nomi |q 40991/2 |goto Dalaran L/10 40.16,65.95
+|tip This can be accomplished by starting the work orders.
+step
+click Test Kitchen Results
+Collect test kitchen results |q 40991/3 |goto 40.11,65.28
+step
+talk Nomi##101846
+turnin Opening the Test Kitchen##40991 |goto Dalaran L/10 40.16,65.95
+step
+_Congratulations_ you are now able to start work orders to get higher ranks and better rewards!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Cooking\\Legion\\Cooking 700-800",{
+author="support@zygorguides.com",
+startlevel=110.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Cooking Quest Line" Guide
+Click Here to Continue |confirm
+step
+All rank 2 and 3 patterns come from putting in work orders with Nomi.
+talk Nomi##101846
+Place Work Orders using Lean Shank |goto Dalaran L/10 40.13,65.95
+|tip These work orders take 4 hours each to complete.
+|tip The work orders do not always give patterns.
+confirm
+step
+click Test Kitchen Results
+|tip Getting this pattern may take awhile.
+collect Recipe: Salt and Pepper Shank##133831 |n |goto 40.14,65.42
+learn Salt and Pepper Shank##201524 |goto 40.14,65.42
+step
+talk Nomi##101846
+Place Work Orders using Lean Shank |goto Dalaran L/10 40.13,65.95
+|tip These work orders take 4 hours each to complete.
+|tip The work orders do not always give patterns.
+confirm
+step
+click Test Kitchen Results
+|tip Getting this pattern may take awhile.
+collect Recipe: Salt and Pepper Shank##133851 |n |goto 40.14,65.42
+learn Salt and Pepper Shank##201544 |goto 40.14,65.42
+step
+collect 275 Lean Shank##124117 |condition itemcount(124117) >= 275
+|tip These can be bought from the AH or farmed.
+step
+talk Bradford Duncan##93545
+buy 250 Flaked Sea Salt##133588 |condition itemcount(133588) >= 250 |goto 40.14,66.41
+buy 250 Dalape�o Pepper##133589 |condition itemcount(133589) >= 250 |goto 40.14,66.41
+step
+Open Your Cooking Crafting Panel:
+_<Create 50 Salt & Pepper Shank>_
+|tip You will get 500 Salt & Pepper Shanks.
+Reach level 750 Cooking |skill Cooking,750
+step
+From 750-800 you will need rank 3 of The Hungry Magister or any other top tier food.
+To do this simply keep putting in Work Orders with Nomi using either HighMountain Salmon or Fatty Bearsteak.
+To even start getting The Hungry Magister you must first get the recipe that is one tier below, this being "Leybeque Ribs"
+confirm
+step
+kill Myonix##110340
+collect Recipe: Leybeque Ribs##133816 |n |condition itemcount(133816) >= 1 |goto Suramar/0 40.85,32.71
+learn Leybeque Ribs##201500
+step
+talk Nomi##101846
+Place Work Orders using HighMountain Salmon or Fatty Bearsteak |goto Dalaran L/10 40.13,65.95
+|tip These work orders take 4 hours each to complete.
+|tip The work orders do not always give patterns.
+confirm
+step
+click Test Kitchens Results
+|tip Getting these pattern may take awhile.
+collect Recipe: The Hungry Magister##133821 |n |goto Dalaran L/10 40.14,65.42
+collect Recipe: The Hungry Magister##133841 |n |goto Dalaran L/10 40.14,65.42
+collect Recipe: The Hungry Magister##133861 |n |goto Dalaran L/10 40.14,65.42
+learn The Hungry Magister##201505
+learn The Hungry Magister##201534
+learn The Hungry Magister##201554
+step
+collect 40 Big Gamy Ribs##124119 |condition itemcount(124119) >= 40
+|tip These can be bought from the AH or farmed.
+collect 40 Leyblood##124120 |condition itemcount(124120) >= 40
+|tip These can be bought from the AH or farmed.
+step
+talk Bradford Duncan##93545
+buy 40 Dalape�o Pepper##133589 |condition itemcount(133589) >= 40 |goto 40.14,66.41
+step
+Open Your Cooking Crafting Panel:
+_<Create 8 Leybeque Ribs>_  |condition itemcount(133565) >= 80
+|tip You will get 80 Leybeque Ribs.
+step
+collect 400 Highmountain Salmon##124109 |condition itemcount(124109) >= 400
+|tip These can be bought from the AH or farmed.
+collect 400 Fatty Bearsteak##124118 |condition itemcount(124118) >= 400
+|tip These can be bought from the AH or farmed.
+step
+talk Bradford Duncan##93545
+buy 160 Flaked Sea Salt##133588 |condition itemcount(133588) >= 160 |goto 40.14,66.41
+buy 240 Dalape�o Pepper##133589 |condition itemcount(133589) >= 240 |goto 40.14,66.41
+|tip You will need all of the Leybeque Ribs you just made and also 400 of both Highmountain Salmon and Fatty Bearsteak.
+step
+Open Your Cooking Crafting Panel:
+_<Create 80 The Hungry Magister>_
+|tip You will get 800 The Hungry Magisters.
+Reach level 800 Cooking |skill Cooking,800
+step
+_Congratulations_ You are now 800 Cooking!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",
 startlevel=100.0,

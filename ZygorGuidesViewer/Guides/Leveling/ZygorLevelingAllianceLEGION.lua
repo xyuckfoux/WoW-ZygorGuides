@@ -3396,7 +3396,7 @@ Watch for the Portal to Open |q 40419/1 |goto 32.29,32.43
 |only Hunter
 step
 Enter the portal |goto 32.03,31.97 |n
-Travel to Niskara |goto Niskara/0 16.49,53.88 < 50 |noway |c |q 40419
+Travel to Niskara |goto Niskara B/0 16.49,53.88 < 50 |noway |c |q 40419
 |only Hunter
 step
 Travel through the Portal to Niskara |q 40419/2 |goto 16.45,52.53
@@ -15615,6 +15615,98 @@ Introduce Arluelle to Thalyssra |q 44955/2 |goto 36.50,46.73 |region suramar_sha
 step
 talk First Arcanist Thalyssra##115736
 turnin Visitor in Shal'Aran##44955 |goto 36.49,46.73 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+accept Continuing the Cure##45261 |goto 36.50,46.73 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45261/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin Continuing the Cure##45261 |goto 36.50,46.73 |region suramar_shalaran
+accept Disillusioned Defector##44722 |goto 36.50,46.73 |region suramar_shalaran
+step
+talk Silgryn##114948
+|tip At the top of the tower.
+turnin Disillusioned Defector##44722 |goto 52.11,79.15
+accept Missing Persons##44724 |goto 52.11,79.15
+step
+talk Victoire##116256
+|tip At the top of the tower.
+accept More Like Me##44723 |goto 52.07,79.20
+step
+Leave the water here |goto 52.80,74.33 < 20 |only if walking
+Kill Soul Engine enemies around this area
+collect Legion Communicator##142066 |q 44724/1 |goto 53.32,71.59
+step
+Use the Dusk Lily Sigil on Duskwatch Subjugators |use Dusk Lily Sigil##115720
+|tip They are all around this area.
+|tip Some of them will attack you.
+Identify #5# Deserters |q 44723/1 |goto 53.32,71.59
+step
+Leave the water here |goto 51.59,78.25 < 15 |only if walking
+Walk onto the teleport pad |goto 51.55,78.96 < 7 |only if walking
+talk Silgryn##114948
+|tip At the top of the tower.
+turnin Missing Persons##44724 |goto 52.11,79.15
+step
+talk Victoire##116256
+|tip At the top of the tower.
+turnin More Like Me##44723 |goto 52.07,79.20
+step
+talk Silgryn##114948
+|tip At the top of the tower.
+accept Hostage Situation##44725 |goto 52.11,79.15
+step
+Leave the water here |goto 51.59,78.25 < 15 |only if walking
+talk Shal'dorei Civilian##107600
+Join the Group of Captives |q 44725/1 |goto 52.62,74.60
+step
+Watch the dialogue
+Find the Staging Area |q 44725/2 |goto 52.62,74.60
+step
+talk Silgryn##114948
+turnin Hostage Situation##44725 |goto 24.76,88.82
+accept In the Business of Souls##44726 |goto 24.76,88.82
+step
+talk Maribeth##115002
+accept Smuggled!##44727 |goto 25.80,88.55
+step
+click Felsoul Cage
+Release Maribeth |q 44727/1 |goto 25.80,88.55
+step
+click Felsoul Cage
+Release the Citizen from the Cage |q 44727/2 |count 1 |goto 25.78,86.97
+step
+Follow the path |goto 25.05,86.57 < 20 |only if walking
+click Felsoul Cage
+Release the Citizen from the Cage |q 44727/2 |count 2 |goto 25.19,85.68
+step
+Follow the path up |goto 25.78,89.04 < 20 |only if walking
+click Felsoul Cage
+Release the Citizen from the Cage |q 44727/2 |count 3 |goto 26.53,88.63
+step
+click Felsoul Cage
+Release the Citizen from the Cage |q 44727/2 |count 4 |goto 26.29,90.01
+step
+click Felsoul Cage
+Release the Citizen from the Cage |q 44727/2 |count 5 |goto 26.97,89.79
+step
+kill Aargoss##114998 |q 44726/1 |goto 27.26,89.71
+step
+talk Maribeth##115002
+turnin Smuggled!##44727 |goto 24.70,88.91
+step
+talk Silgryn##114948
+turnin In the Business of Souls##44726 |goto 24.76,88.82
+accept Waning Refuge##44814 |goto 24.76,88.82
+step
+click Deline's Gondola
+Ride Deline's Gondola |q 44814/1 |goto 24.53,89.02
+step
+talk Silgryn##114948
+turnin Waning Refuge##44814 |goto 52.47,81.62
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -15916,11 +16008,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Warrior
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Warrior
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -15929,11 +16021,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Warrior
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Warrior
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Warrior"
 click Legion Portal
@@ -16469,6 +16561,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12
 |only Warrior
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 45.32,30.12
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Warrior
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Warrior
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Warrior
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Warrior
+step
 talk Haklang Ulfsson##110437
 |tip This quest will only be available if you chose to get the "Heavenly Forge" class hall upgrade.
 accept Champion Armaments##44221 |goto 62.29,26.09
@@ -16619,11 +16733,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Paladin
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Paladin
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -16632,11 +16746,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Paladin
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Paladin
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Paladin"
 click Legion Portal
@@ -17381,6 +17495,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37
 |only Paladin
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 52.31,69.37
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Paladin
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Paladin
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Paladin
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Paladin
+step
 Follow the path |goto 48.03,61.90 < 15 |walk
 talk Kristoff##110434
 |tip This quest will only be available if you chose to get the "Plowshares to Swords" class hall upgrade.
@@ -17728,11 +17864,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Hunter
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Hunter
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -17741,11 +17877,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Hunter
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Hunter
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Hunter"
 click Legion Portal
@@ -18392,6 +18528,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
 |only Hunter
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 34.44,51.14
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Hunter
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Hunter
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Hunter
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Hunter
+step
 talk Berger the Steadfast##110412
 |tip This quest will only be available if you chose to get the "Fletchery" class hall upgrade.
 accept Unseen Armaments##44211 |goto 35.70,51.73
@@ -18755,11 +18913,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Rogue
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Rogue
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -18768,11 +18926,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Rogue
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Rogue
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Rogue"
 click Legion Portal
@@ -19375,6 +19533,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82
 |only Rogue
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 40.79,54.82
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Rogue
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Rogue
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Rogue
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Rogue
+step
 talk Mal##110348
 |tip This quest will only be available if you chose to get the "Weapons Smuggler" class hall upgrade.
 accept Workorders for Armaments##44195 |goto 75.08,56.49
@@ -19613,11 +19793,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Priest
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Priest
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -19626,11 +19806,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Priest
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Priest
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Priest"
 click Legion Portal
@@ -20338,6 +20518,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Netherlight Temple/1 49.81,26.41
 |only Priest
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 49.81,26.41
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Priest
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Priest
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Priest
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Priest
+step
 talk Lilith##110595
 |tip This quest will only be available if you chose to get the "Armaments of Light" class hall upgrade.
 accept Champion Armaments##44229 |goto 45.49,26.63
@@ -20526,11 +20728,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Shaman
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Shaman
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -20539,11 +20741,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Shaman
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Shaman
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Shaman"
 click Legion Portal
@@ -21266,6 +21468,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
 |only Shaman
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 32.48,32.81
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Shaman
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Shaman
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Shaman
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Shaman
+step
 talk Meryl Felstorm##112688
 |tip He appears next to you in Dalaran.
 accept Growing Power##42175 |goto Dalaran L/10 58.29,45.73
@@ -21642,11 +21866,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Mage
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Mage
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -21655,11 +21879,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Mage
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Mage
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Mage"
 click Legion Portal
@@ -22234,6 +22458,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74
 |only Mage
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 83.83,32.74
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Mage
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Mage
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Mage
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Mage
+step
 talk Minuette##110427
 |tip This quest will only be available if you chose to get the "Arcane Armaments" class hall upgrade.
 accept Portal Full of Shiny Things##44207 |goto 82.87,56.70
@@ -22432,11 +22678,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only DemonHunter
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only DemonHunter
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -22445,11 +22691,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only DemonHunter
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only DemonHunter
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_DemonHunter"
 click Legion Portal
@@ -23466,6 +23712,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 58.65,43.40
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only DemonHunter
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only DemonHunter
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only DemonHunter
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only DemonHunter
+step
 talk Slitesh##110433
 |tip This quest will only be available if you chose to get the "Fel Armaments" class hall upgrade.
 accept Champion Armaments##44223 |goto Mardum, the Shattered Abyss/1 60.10,43.38
@@ -23607,11 +23875,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Warlock
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Warlock
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -23620,11 +23888,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Warlock
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Warlock
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Warlock"
 click Legion Portal
@@ -24295,6 +24563,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Warlock
 step
 Use the Call to Xe'ra ability
@@ -24334,6 +24603,28 @@ Experience True Betrayal |q 44496/1 |goto 52.70,71.25
 step
 click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63
+|only Warlock
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 53.17,32.63
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Warlock
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Warlock
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Warlock
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 |only Warlock
 step
 talk Murr##110408
@@ -24525,11 +24816,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Monk
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Monk
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -24538,11 +24829,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Monk
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Monk
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Monk"
 click Legion Portal
@@ -25296,6 +25587,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13
 |only Monk
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 51.78,48.13
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Monk
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Monk
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Monk
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Monk
+step
 talk Archdruid Hamuul Runetotem##112689
 accept Growing Power##42516 |goto Dalaran L/10 58.55,45.89
 |only Druid
@@ -25486,11 +25799,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Druid
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only Druid
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -25499,11 +25812,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only Druid
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only Druid
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Druid"
 click Legion Portal
@@ -26240,6 +26553,28 @@ click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14
 |only Druid
 step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 60.06,52.14
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only Druid
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only Druid
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only Druid
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
+|only Druid
+step
 talk Highlord Darion Mograine##93437
 accept Return of the Four Horsemen##42449 |goto Broken Shore/2 50.92,50.74
 |only DeathKnight
@@ -26370,11 +26705,11 @@ Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only DeathKnight
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only DeathKnight
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -26383,11 +26718,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only DeathKnight
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only DeathKnight
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_DeathKnight"
 click Legion Portal
@@ -27114,6 +27449,28 @@ Experience True Betrayal |q 44496/1 |goto 52.70,71.25
 step
 click Light's Heart
 turnin Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13
+|only DeathKnight
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept The Hunt for Illidan Stormrage##45174 |goto 54.24,74.13
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
+|only DeathKnight
+step
+talk Allari the Souleater##89398
+turnin The Hunt for Illidan Stormrage##45174 |goto Azsuna/0 43.29,43.16
+accept Soul Prism of the Illidari##45175 |goto Azsuna/0 43.29,43.16
+|only DeathKnight
+step
+Claim #80# Lingering Soul Fragments |q 45175/1
+|tip These have a chance to drop from the final boss of every dungeon.
+|tip Higher difficulty dungeons have a higher chance to drop them, as well as drop multiple at a time.
+|tip You can only get 10 per week, so this quest will take a minimum of 8 weeks to complete.
+|only DeathKnight
+step
+talk Allari the Souleater##89398
+turnin Soul Prism of the Illidari##45175 |goto 43.29,43.16
 |only DeathKnight
 step
 talk Dead Collector Bane##110410

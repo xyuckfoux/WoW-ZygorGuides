@@ -3882,7 +3882,7 @@ end
 
 local function move_point_to_global(point)
 	if not point then return end
-	local m = point.m	if not m then return end
+	local m = point.m	if not m or not point.x then point.gx,point.gy=nil,nil return end
 	local data = HBD.mapData[m]
 	local mastermap = HBD:GetMapContinent(m)
 	local masterfloor = ZGV:SanitizeMapFloor(mastermap,0) -- even if it's the same map, remap to be able to work with bare coords

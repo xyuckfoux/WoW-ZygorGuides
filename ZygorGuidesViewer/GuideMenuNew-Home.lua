@@ -5,9 +5,17 @@ local GuideMenu = ZGV.GuideMenu
 
 GuideMenu.HomeVersion = 1
 GuideMenu.Home={
-{"title", text=[[This Update:]]},
+	{"title", text=[[This Update:]]},
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
-	{"title", text=[[This Update]]},
+	{"section", text=[[EVENTS]]},
+	{"item", text=[[Updated |cfffe6100Noblegarden Quests and Dailies|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Quests and Dailies"},
+	{"item", text=[[Updated |cfffe6100Noblegarden Achievements|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Achievements"},
+
+
+	{"separator"},
+
+	{"title", text=[[Recent Updates]]},
+
 	{"section", text=[[BETA]], beta=true},
 	{"item", text=[[Added |cfffe6100Artifact Knowledge 1-25|r.]], guide="LEVELING\\Legion (100-110)\\Artifact Knowledge 1-25", beta=true},
 	{"item", text=[[Added |cfffe6100Patch 7.2 Content|r.]], guide="LEVELING\\Legion (100-110)\\7.2 New Content", beta=true},

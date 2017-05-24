@@ -464,6 +464,78 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Big Gamy Ribs",{
 		Click Here to Farm Big Gamy Ribs |confirm |next "Start_Farming_Big_Gamy_Ribs"
 ]])
 
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Lean Shank",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Lean_Shank"
+		kill Pinerock Prowler##94149+
+		kill Pinerock Stalker##99481+
+		goldcollect 200 Lean Shank##124117 |n |goto Highmountain/0 42.98,49.26
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Lean_Shank_Sell"
+	step
+	label "Lean_Shank_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Lean Shank |confirm |next "Start_Farming_Lean_Shank"
+]])
+
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Fatty Bearsteak",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Fatty_Bearsteak"
+		Follow the path down |goto Stormheim/0 69.53,52.04 < 20 |only if walking
+		Follow the road |goto Stormheim/0 64.40,54.90 < 30 |only if walking
+		Follow the path |goto Stormheim/0 68.54,53.59 < 30 |only if walking
+		Follow the path down |goto Stormheim/0 69.66,52.98 < 30 |only if walking
+		kill Voracious Bear##93095+
+		goldcollect 400 Fatty Bearsteak##124118 |n |goto Stormheim/0 72.49,49.96
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Fatty_Bearsteak_Sell"
+	step
+	label "Fatty_Bearsteak_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Lean Shank |confirm |next "Start_Farming_Fatty_Bearsteak"		
+]])
+
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leyblood",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Leyblood"
+		Enter the cave |goto Azsuna/0 49.35,25.97 < 20 |walk
+		kill Flashwyrm##107098+
+		goldcollect 300 Leyblood##124120 |n |goto Azsuna/0 49.72,25.41
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Leyblood_Sell"
+	step
+	label "Leyblood_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Leyblood |confirm |next "Start_Farming_Leyblood"		
+]])
+
 
 
 ----------------------

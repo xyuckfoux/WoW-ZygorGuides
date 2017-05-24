@@ -3414,6 +3414,7 @@ function ZGV:ThunderStageForceUpdate()
 
 	local lastmap,lastfloor
 
+	ZGV.WMU_Suspend()
 	if GetCurrentMapAreaID()~=928 then
 		lastmap,lastfloor = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
 		SetMapByID(928) --Thunder Isle
@@ -3437,7 +3438,7 @@ function ZGV:ThunderStageForceUpdate()
 	end
 
 	if lastmap then SetMapByID(lastmap) SetDungeonMapLevel(lastfloor) end
-
+	ZGV.WMU_Resume()
 	thunder_stack=nil
 end
 
@@ -3696,7 +3697,7 @@ function ZGV:WORLD_MAP_UPDATE()
 end
 
 function ZGV:NEW_WMO_CHUNK()
-	if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end  -- force map reset, otherwise floor numbers will still be wrong
+	if not WorldMapFrame:IsVisible() then ZGV.WMU_Suspend() SetMapToCurrentZone() ZGV.WMU_Resume() end  -- force map reset, otherwise floor numbers will still be wrong
 	self:CacheCurrentMapID()
 end
 
@@ -3707,7 +3708,7 @@ function ZGV:PLAYER_ENTERING_WORLD()
 end
 
 function ZGV:ZONE_CHANGED_INDOORS()
-	if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end
+	if not WorldMapFrame:IsVisible() then ZGV.WMU_Suspend() SetMapToCurrentZone() ZGV.WMU_Resume() end
 	self:CacheCurrentMapID()
 end
 
@@ -3716,7 +3717,7 @@ function ZGV:ZONE_CHANGED()
 end
 
 function ZGV:ZONE_CHANGED_NEW_AREA()
-	if not WorldMapFrame:IsVisible() then SetMapToCurrentZone() end
+	if not WorldMapFrame:IsVisible() then ZGV.WMU_Suspend() SetMapToCurrentZone() ZGV.WMU_Resume() end
 	self:CacheCurrentMapID()
 end
 

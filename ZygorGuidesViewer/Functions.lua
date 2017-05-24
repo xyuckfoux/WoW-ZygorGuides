@@ -1474,3 +1474,34 @@ function ZGV.Profiler:Enable(what)
 	self:SetEnabled(true,true)
 end
 
+
+local wmuRegistry
+function ZGV.WMU_Suspend()
+	-- unregister and store all WORLD_MAP_UPDATE registrants, to avoid excess processing when
+	-- retrieving info from stateful map APIs
+	wmuRegistry = {GetFramesRegisteredForEvent("WORLD_MAP_UPDATE")}
+	for _, frame in ipairs(wmuRegistry) do
+		frame:UnregisterEvent("WORLD_MAP_UPDATE")
+	end
+end
+-- restore WORLD_MAP_UPDATE to all frames in the registry
+function ZGV.WMU_Resume()
+	assert(wmuRegistry)
+	for _, frame in ipairs(wmuRegistry) do
+		frame:RegisterEvent("WORLD_MAP_UPDATE")
+	end
+	wmuRegistry = nil
+end
+
+function ZGV.softassert(cond,msg)
+	if not cond then geterrorhandler()(msg) end
+	return cond
+end
+
+function ZGV.IsSavedBossDead(instanceid,bossbit)
+	for i=1,GetNumSavedInstances() do
+		local link = GetSavedInstanceChatLink(i)
+		local instance,bits = link:match(":(%d+):%d+:(%d+)\124h")
+		if tonumber(instance)==instanceid and bit.band(tonumber(bits) or 0,bossbit)==bossbit then return true end
+	end
+end

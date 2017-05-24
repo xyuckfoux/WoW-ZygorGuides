@@ -15438,27 +15438,27 @@ step
 Watch the dialogue
 Begin the All In Scenario |scenariostart |q 43567
 step
-kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 1 |goto 1102 21.50,75.56
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 1 |goto 1102 21.50,75.56 |q 43567
 |tip He walks back and forth.
 step
-kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 2 |goto 20.86,66.84
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 2 |goto 20.86,66.84 |q 43567
 step
 Cross the bridge |goto 25.74,68.19 < 20 |walk
-kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 3 |goto 31.50,68.09
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 3 |goto 31.50,68.09 |q 43567
 step
 Follow the path |goto 32.93,62.46 < 15 |walk
-Reach the Door to the Nightflow Conduit |scenariostage 2 |goto 37.29,65.72
+Reach the Door to the Nightflow Conduit |scenariostage 2 |goto 37.29,65.72 |q 43567
 step
 Kill the enemies that attack in waves
-Defend Arluin While He Opens the  Door to the Nightflow Conduit |scenariostage 3 |goto 36.69,63.85
+Defend Arluin While He Opens the  Door to the Nightflow Conduit |scenariostage 3 |goto 36.69,63.85 |q 43567
 step
 Follow the path |goto 37.87,67.54 < 20 |walk
 click Place E.M.P.
-Place the E.M.P. |scenariostage 4 |goto 39.16,78.11
+Place the E.M.P. |scenariostage 4 |goto 39.16,78.11 |q 43567
 step
 Watch the dialogue
 Kill the enemies that attack in waves
-Survive the Manastorm |scenarioend |goto 40.19,74.44
+Survive the Manastorm |scenarioend |goto 40.19,74.44 |q 43567
 Sabotage the Nightflow Conduit |q 43567/1 |goto 40.19,74.44
 step
 clicknpc Arluin##113062
@@ -15659,16 +15659,16 @@ talk Silgryn##114948
 |tip At the top of the tower.
 accept Hostage Situation##44725 |goto 52.11,79.15
 step
-Leave the water here |goto 51.59,78.25 < 15 |only if walking
+Leave the water here |goto 52.80,74.33 < 20 |only if walking
 talk Shal'dorei Civilian##107600
 Join the Group of Captives |q 44725/1 |goto 52.62,74.60
 step
 Watch the dialogue
 Find the Staging Area |q 44725/2 |goto 52.62,74.60
 step
-talk Silgryn##114948
-turnin Hostage Situation##44725 |goto 24.76,88.82
-accept In the Business of Souls##44726 |goto 24.76,88.82
+talk Silgryn##115067
+turnin Hostage Situation##44725 |goto 24.86,88.70
+accept In the Business of Souls##44726 |goto 24.86,88.70
 step
 talk Maribeth##115002
 accept Smuggled!##44727 |goto 25.80,88.55
@@ -15695,18 +15695,18 @@ Release the Citizen from the Cage |q 44727/2 |count 5 |goto 26.97,89.79
 step
 kill Aargoss##114998 |q 44726/1 |goto 27.26,89.71
 step
-talk Maribeth##115002
-turnin Smuggled!##44727 |goto 24.70,88.91
+talk Maribeth##115376
+turnin Smuggled!##44727 |goto 24.75,88.89
 step
 talk Silgryn##114948
-turnin In the Business of Souls##44726 |goto 24.76,88.82
-accept Waning Refuge##44814 |goto 24.76,88.82
+turnin In the Business of Souls##44726 |goto 24.86,88.70
+accept Waning Refuge##44814 |goto 24.86,88.70
 step
 click Deline's Gondola
-Ride Deline's Gondola |q 44814/1 |goto 24.53,89.02
+Ride Deline's Gondola |q 44814/1 |goto 24.56,88.98
 step
 talk Silgryn##114948
-turnin Waning Refuge##44814 |goto 52.47,81.62
+turnin Waning Refuge##44814 |goto 52.38,80.18
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",

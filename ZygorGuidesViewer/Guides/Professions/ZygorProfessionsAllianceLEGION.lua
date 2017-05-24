@@ -35,14 +35,14 @@ kill Pinerock Stalker##99481+
 |tip Loot and skin them.
 collect Skinning Technique: Unbroken Tooth##139893 |n
 Use the Skinning Technique: Unbroken Tooth |use Skinning Technique: Unbroken Tooth##139893
-Learn to Gather Unbroken Teeth |learn Unbroken Tooth##194170
+Learn to Gather Unbroken Teeth |learn Unbroken Tooth##194170 |goto 42.98,49.26
 step
 kill Pinerock Prowler##94149+
 kill Pinerock Stalker##99481+
 |tip Loot and skin them.
 collect Skinning Technique: Unbroken Claw##139894 |n
 Use the Skinning Technique: Unbroken Claw |use Skinning Technique: Unbroken Claw##139894
-Learn to Gather Unbroken Claws |learn Unbroken Claw##194171
+Learn to Gather Unbroken Claws |learn Unbroken Claw##194171 |goto 42.98,49.26
 step
 talk Kondal Huntsworn##93541
 |tip Inside the building.
@@ -1974,7 +1974,7 @@ _Don't Have Skinning?_
 step
 collect 5 Stormscale##124115 |q 39958/2
 |tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Namha Moonwater##93523
 |tip Inside the building.
@@ -2626,7 +2626,7 @@ Open Your Leatherworking Crafting Panel:
 _<Create 15 Warhide Pants (Rank 3)>_
 |tip You will need 240 Stonehide Leather.
 |tip Use the "Stonehide Leather" farming guide to collect them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Reach Level 743 Leatherworking |skill Leatherworking,743
 step
 Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
@@ -2637,7 +2637,7 @@ talk Stalriss Dawnrunner##98969
 buy Recipe: Gravenscale Grips##140649 |n
 |tip It costs 20 Stormscale and 20 Stonehide Leather.
 |tip Use the "Stonehide Leather" and "Stormscale" farming guides to collect them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Use the Recipe: Gravenscale Grips |use Recipe: Gravenscale Grips##140649
 Learn the Rank 1 Recipe for Gravenscale Grips |learn Gravenscale Grips##194799 |goto Suramar/0 26.53,71.61
 step
@@ -2661,7 +2661,7 @@ Open Your Leatherworking Crafting Panel:
 _<Create 10 Gravenscale Grips (Rank 3)>_
 |tip You will need 1,100 Stormscale.
 |tip Use the "Stormscale" farming guide to collect them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Reach Level 783 Leatherworking |skill Leatherworking,783
 step
 Open Your Leatherworking Crafting Panel:
@@ -2670,7 +2670,7 @@ Open Your Leatherworking Crafting Panel:
 _<Create 40 Gravenscale Grips (Rank 3)>_
 |tip You will need 4,400 Stormscale.
 |tip Use the "Stormscale" farming guide to collect them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Reach Level 800 Leatherworking |skill Leatherworking,800
 step
 _Congratulations!_
@@ -2715,7 +2715,7 @@ step
 collect 9 Yseralline Seed##128304 |q 39325
 |tip You get these by gathering any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 click Dalaran Alchemy Station
 _<Create 1 Ancient Healing Potion>_
@@ -2863,7 +2863,7 @@ accept Flasking for a Favor##39430 |goto 41.32,33.41
 step
 collect 60 Foxflower##124103 |q 39430
 |tip Use the Foxflower farming guide to accomplish this, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path |goto Thunder Totem/0 50.81,45.57 < 30 |only if walking
 Follow the path |goto Highmountain/0 50.83,64.38 < 30 |only if walking
@@ -2947,7 +2947,7 @@ accept Forlorn Filter##39337 |goto 41.32,33.41
 step
 collect 5 Dreamleaf##124102 |q 39337
 |tip Use the Dreamleaf farming guide to accomplish this, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Run up the stairs |goto Val'sharah/0 55.25,55.26 < 20 |only if walking
 talk Temple Priestess##105760
@@ -3018,21 +3018,21 @@ step
 collect Felhide##124116 |q 39340/2
 |tip You can get these by completing "Felhide" Skinning world quests, if you have Skinning.
 |tip Use the "World Quests" guide to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 2 Felwort##124106 |q 39340/3
 |tip You can get these by completing "Felwort" Herbalism world quests, if you have Herbalism.
 |tip Use the "World Quests" guide to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 105 Yseralline Seed##128304 |q 39341 |future
 |tip You can also get them by gathering herbs, if you have Herbalism.
 |tip Use the Herbalism Farming guides to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 5 Fjarnskaggl##124104 |q 39341 |future
 |tip Use the farming guide for Fjarnskaggl to accomplish this, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Deucus Valdera##92458
 |tip Inside the building.
@@ -3104,11 +3104,11 @@ step
 collect 5 Yseralline Seed##128304 |q 39342
 |tip You can also get them by gathering herbs, if you have Herbalism.
 |tip Use the Herbalism Farming guides to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 5 Fjarnskaggl##124104 |q 39342
 |tip Use the farming guide for Fjarnskaggl to accomplish this, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Patricia Egan##92457
 |tip Inside the building.
@@ -3216,23 +3216,23 @@ collect 40 Crystal Vial##3371 |goto Dalaran L/10 42.18,32.31 |q 39346
 step
 collect 80 Aethril##124101 |q 39346
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 80 Dreamleaf##124102 |q 39346
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 80 Foxflower##124103 |q 39346
 |tip Use the Foxflower farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 80 Fjarnskaggl##124104 |q 39346
 |tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 80 Starlight Rose##124105 |q 39346
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 click Dalaran Alchemy Station
 _<Create 10 Potion of Deadly Grace>_
@@ -3287,23 +3287,23 @@ collect 3 Crystal Vial##3371 |goto 42.18,32.31 |q 39348
 step
 collect 20 Aethril##124101 |q 39348
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 10 Dreamleaf##124102 |q 39348
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Foxflower##124103 |q 39348
 |tip Use the Foxflower farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 10 Fjarnskaggl##124104 |q 39348
 |tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 21 Starlight Rose##124105 |q 39348
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 click Dalaran Alchemy Station
 _<Create 1 Flask of the Seventh Demon>_
@@ -3421,7 +3421,7 @@ step
 collect 80 Yseralline Seed##128304
 |tip You get these by gathering any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
 _<Create 20 Ancient Healing Potion>_
@@ -3433,7 +3433,7 @@ _<Create Ancient Healing Potion>_
 |tip The number you will need to create is random, since you will discover the recipe randomly while crafting.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to gather
 |tip Yseralline Seeds, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |tip A good method would be to make 100 potions at a time until you discover the Rank 3 recipe.
 collect Recipe: Ancient Healing Potion##127935 |n
 |tip This item will randomly be placed in your bags at some point while crafting Rank 2 Ancient Healing Potions.
@@ -3443,7 +3443,7 @@ step
 collect 80 Yseralline Seed##128304
 |tip You get these by gathering any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
 _<Create 20 Ancient Healing Potion>_
@@ -3451,15 +3451,15 @@ Reach Level 740 Alchemy |skill Alchemy,740
 step
 collect 70 Aethril##124101
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 70 Dreamleaf##124102
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 49 Starlight Rose##124105
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
 _<Create 7 Flask of Ten Thousand Scars>_
@@ -3470,7 +3470,7 @@ _<Create Ancient Healing Potion>_
 |tip You will need 7 Starlight Rose, 10 Aethril, and 10 Dreamleaf per potion.
 |tip The number you will need to create is random, since you will discover the recipe randomly while crafting.
 |tip Use the farming guides for Aethril, Dreamleaf, and Starlight Rose to gather them, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |tip A good method would be to make 100 potions at a time until you discover the Rank 3 recipe.
 collect Recipe: Flask of Ten Thousand Scars##127951 |n
 |tip This item will randomly be placed in your bags at some point while crafting Rank 2 Flasks of Ten Thousand Scars.
@@ -3479,15 +3479,15 @@ Learn the Rank 3 Recipe for Flask of Ten Thousand Scars |learn Flask of Ten Thou
 step
 collect 70 Aethril##124101
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 70 Dreamleaf##124102
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 49 Starlight Rose##124105
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
 _<Create 7 Flask of Ten Thousand Scars>_
@@ -3495,22 +3495,22 @@ Reach Level 782 Alchemy |skill Alchemy,782
 step
 collect 400 Aethril##124101
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 400 Dreamleaf##124102
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 280 Starlight Rose##124105
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Alchemy Crafting Panel:
 |tip You may have to make a few more or less, depending on your luck.
 |tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
 _<Create 40 Flask of Ten Thousand Scars>_
 |tip If you need more, use the farming guides for Aethril, Dreamleaf, and Starlight Rose to gather them, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Reach Level 800 Alchemy |skill Alchemy,800
 step
 _Congratulations!_
@@ -3531,7 +3531,7 @@ accept Strange New Ores##38499 |goto 44.15,28.71
 step
 collect 10 Leystone Ore##123918 |q 38499/1
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to accomplish this, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Alard Schmied##92183
 |tip Inside the building.
@@ -3598,7 +3598,7 @@ accept Nature Provides##38515 |goto 44.15,28.71
 step
 collect 10 Foxflower##124103 |q 38515
 |tip Use the Foxflower farming guide to accomplish this, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Alard Schmied##92183
 |tip Inside the building.
@@ -3664,7 +3664,7 @@ collect 3 Foxflower Flux##124436 |goto 46.56,26.83 |q 38519 |future
 step
 collect 24 Leystone Ore##123918 |q 38519 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather these, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path |goto Thunder Totem/0 50.81,45.57 < 30 |only if walking
 Follow the path |goto Highmountain/0 50.83,64.38 < 30 |only if walking
@@ -3947,12 +3947,12 @@ stickystart "Felslate_Blacksmithing_Nalryssas_Technique"
 step
 collect 60 Leystone Ore##123918 |q 38527 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 label "Felslate_Blacksmithing_Nalryssas_Technique"
 collect 60 Felslate##123919 |q 38527 |future
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path up |goto Suramar/0 32.96,48.34 < 20 |only if walking
 Follow the path |goto Suramar/0 30.88,53.21 < 30 |only if walking
@@ -4039,11 +4039,11 @@ accept Nal'ryssa's Technique##38527 |goto 29.99,53.33
 step
 collect 60 Leystone Ore##123918 |q 38527/1
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 60 Felslate##123919 |q 38527/2
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Felsmith Nal'ryssa##92264
 |tip She walks around this small camp.
@@ -4081,7 +4081,7 @@ accept The Firmament Stone##38530 |goto 29.99,53.33
 step
 collect 162 Leystone Ore##123918 |q 38532
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Barm Stonebreaker##92242
 turnin The Firmament Stone##38530 |goto Highmountain/0 55.18,84.19
@@ -4185,11 +4185,11 @@ Click Here to Continue |confirm
 step
 collect 39 Leystone Ore##123918 |c |skill Blacksmithing,739
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 78 Felslate##123919 |c |skill Blacksmithing,739
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path up |goto Highmountain/0 54.90,83.99 < 20 |only if walking
 click Firmament Stone
@@ -4199,11 +4199,11 @@ Reach Level 739 Blacksmithing |skill Blacksmithing,739 |goto Highmountain/0 54.5
 step
 collect 20 Felslate##123919 |c |learn Demonsteel Waistguard##182945
 |tip Use the "Leystone Ore & Felslate (Mining Route)" farming guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Unbroken Tooth##124439 |c |learn Demonsteel Waistguard##182945
 |tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path up |goto Suramar/0 32.96,48.33 < 20 |only if walking
 Follow the path |goto Suramar/0 30.94,53.17 < 30 |only if walking
@@ -4214,7 +4214,7 @@ Learn the Rank 1 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##
 step
 collect 20 Unbroken Tooth##124439 |c |skill Blacksmithing,743
 |tip Use the "Stonehide Leather" or "Stormscale" farming guides to gather them, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 3 Blood of Sargeras##124124 |c |skill Blacksmithing,743
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
@@ -4253,11 +4253,11 @@ Learn the Rank 3 Recipe for Demonsteel Waistguard |learn Demonsteel Waistguard##
 step
 collect 9 Leystone Ore##123918 |c |skill Blacksmithing,783
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 18 Felslate##123919 |c |skill Blacksmithing,783
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Blood of Sargeras##124124 |c |skill Blacksmithing,783
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
@@ -4277,11 +4277,11 @@ Reach Level 783 Blacksmithing |skill Blacksmithing,783 |goto 54.56,84.08
 step
 collect 180 Leystone Ore##123918 |c |skill Blacksmithing,800
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 360 Felslate##123919 |c |skill Blacksmithing,800
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 90 Blood of Sargeras##124124 |c |skill Blacksmithing,800
 |tip You can get these as rewards for certain world quests or killing dungeon bosses.
@@ -4319,7 +4319,7 @@ accept Sew It Begins##38944 |goto 34.99,34.61
 step
 collect 10 Shal'dorei Silk##124437 |q 38944/1
 |tip Use the "Shal'dorei Silk" farming guide to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 talk Tanithria##93542
 |tip Inside the building.
@@ -4611,7 +4611,7 @@ collect 5 Bear Fur##135538 |q 38963 |goto 35.45,33.70
 step
 collect 15 Shal'dorei Silk##124437 |q 38963
 |tip Use the "Shal'dorei Silk" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 click Tanithria's Finishing Table
 _<Create 1 Silkweave Hood: Outer Layer>_
@@ -4726,7 +4726,7 @@ collect 2 Bolt of Brimstone-Soaked Silkweave##127368 |q 38966 |goto 35.16,34.76
 step
 collect 10 Shal'dorei Silk##124437 |q 38966
 |tip Use the "Shal'dorei Silk" farming guide to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 click Tanithria's Finishing Table
 _<Create 2 Silkweave Bracer Lining>_
@@ -4802,27 +4802,27 @@ Learn the Spiritmend Robe Recipe |learn Spiritmend Robe##75267 |goto 34.99,34.59
 step
 collect 6 Linen Cloth##2589 |q 38975 |future
 |tip Use the "Linen Cloth" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 9 Wool Cloth##2592 |q 38975 |future
 |tip Use the "Wool Cloth" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 12 Mageweave Cloth##4338 |q 38975 |future
 |tip Use the "Mageweave Cloth" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Frostweave Cloth##33470 |q 38975 |future
 |tip Use the "Frostweave Cloth" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 30 Embersilk Cloth##53010 |q 38975 |future
 |tip Use the "Embersilk Cloth" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 157 Shal'dorei Silk##124437 |q 38975 |future
 |tip Use the "Shal'dorei Silk" farming guide to gather these.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path |goto Suramar/0 42.75,78.56 < 20 |only if walking
 Follow the road |goto Suramar/0 41.13,77.24 < 30 |only if walking
@@ -5060,11 +5060,11 @@ Click Here to Continue |confirm
 step
 collect 650 Shal'dorei Silk##124437 |c |skill Tailoring,800
 |tip Use the "Shal'dorei Silk" farming guide to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 165 Arkhana##124440 |c |skill Tailoring,800
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons, if you have Enchanting.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Tailoring Crafting Panel:
 _<Create 55 Imbued Silkweave>_
@@ -5112,7 +5112,7 @@ Open Your Tailoring Crafting Panel:
 |tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
 _<Create 60 Imbued Silkweave Cinch>_
 |tip If you need to make more, craft more Imbued Silkweave.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Reach Level 800 Tailoring |skill Tailoring,800
 step
 _Congratulations!_
@@ -5166,7 +5166,7 @@ collect 2 Enchanting Vellum##38682 |c |goto 38.23,41.77 |q 39875
 step
 collect 30 Arkhana##124440 |c |q 39875
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Enchanting Crafting Panel:
 _<Create 2 Word of Versatility>_
@@ -5369,11 +5369,11 @@ collect 3 Enchanting Vellum##38682 |goto 38.23,41.75 |q 39906 |future
 step
 collect 30 Arkhana##124440 |c |q 39906 |future
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Leylight Shard##124441 |c |q 39906 |future
 |tip You can get these by disenchanting Legion level Rare (blue) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path up |goto Azsuna/0 44.64,42.99 < 20 |only if walking
 Run up the rocks here |goto Azsuna/0 45.68,42.91 < 15 |only if walking
@@ -5659,7 +5659,7 @@ Learn the Rank 3 Formula for Enchant Ring - Word of Versatility |learn Enchant R
 step
 collect 400 Arkhana##124440 |c
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Enchanting") < 740
 step
 Open Your Enchanting Crafting Panel:
@@ -5684,12 +5684,12 @@ Learn the Rank 3 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring
 step
 collect 1400 Arkhana##124440 |c
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Enchanting") < 780
 step
 collect 160 Chaos Crystal##124442 |c
 |tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Enchanting") < 780
 step
 Open Your Enchanting Crafting Panel:
@@ -5699,12 +5699,12 @@ Reach Level 780 Enchanting |skill Enchanting,780
 step
 collect 1225 Arkhana##124440 |c
 |tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Enchanting") < 800
 step
 collect 140 Chaos Crystal##124442 |c
 |tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Enchanting") < 800
 step
 Open Your Enchanting Crafting Panel:
@@ -5855,23 +5855,23 @@ turnin In My Sights##40861 |goto 59.82,62.26
 step
 collect 80 Felslate##123919 |c |q 40864
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Wildfowl Egg##124121 |c |q 40864
 |tip Use the "Wildfowl Egg" farming guide to gather them.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Big Gamy Ribs##124119 |c |q 40864
 |tip Use the "Big Gamy Ribs" farming guide to gather them.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Highmountain Salmon##124109 |c |q 40864
 |tip Use the "Highmountain Salmon" farming guide to gather them, if you have Fishing.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 collect 20 Black Barracuda##124112 |c |q 40864
 |tip Use the "Black Barracuda" farming guide to gather them, if you have Fishing.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Engineering Crafting Panel:
 _<Create 1 Reaves Module: Snack Distribution Mode>_
@@ -6058,7 +6058,7 @@ collect 6 Chaos Blaster of the Harmonious##136632 |c |goto 38.35,24.53 |q 40878
 step
 collect 16 Felslate##123919 |c |q 40878
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Open Your Engineering Crafting Panel:
 _<Create 2 Failure Detection Pylon>_
@@ -6184,7 +6184,7 @@ Learn the Rank 3 Schematic for Gunpowder Charge |learn Gunpowder Charge##199014
 step
 collect 95 Leystone Ore##123918 |c
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Engineering") < 779
 step
 talk Hobart Grapplehammer##93539
@@ -6225,12 +6225,12 @@ Learn the Rank 3 Schematic for Double-Barreled Cranial Cannon |learn Double-Barr
 step
 collect 390 Stormscale##124115 |c
 |tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Engineering") < 800
 step
 collect 26 Felhide##124116 |c
 |tip Use the "World Quests" guide to complete Felhide world quests, if you have Skinning.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |only if skill("Engineering") < 800
 step
 collect 26 Blood of Sargeras##124124 |c
@@ -6287,7 +6287,7 @@ accept Smashing Herbs##39931 |goto 41.27,37.02
 step
 collect 50 Aethril##124101 |q 39931
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 50 Aethril>_
@@ -6621,7 +6621,7 @@ turnin Demon Ink##39957 |goto Dalaran L/10 41.27,37.02
 step
 collect 40 Aethril##124101 |q 39942 |future
 |tip Use the Aethril farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 40 Aethril>_
@@ -6635,7 +6635,7 @@ turnin Aethrem Crystal##39942 |goto 41.27,37.02
 step
 collect 40 Dreamleaf##124102 |q 40062 |future
 |tip Use the Dreamleaf farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 40 Dreamleaf>_
@@ -6649,7 +6649,7 @@ turnin Bulging Nightmare Pod##40062 |goto 41.27,37.02
 step
 collect 40 Foxflower##124103 |q 40064 |future
 |tip Use the Foxflower farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 40 Foxflower>_
@@ -6663,7 +6663,7 @@ turnin Woody Seed Cluster##40064 |goto 41.27,37.02
 step
 collect 40 Fjarnskaggl##124104 |q 40065 |future
 |tip Use the Fjarnskaggl farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 40 Fjarnskaggl>_
@@ -6677,7 +6677,7 @@ turnin Fjarnsk##40065 |goto 41.27,37.02
 step
 collect 40 Starlight Rose##124105 |q 39951 |future
 |tip Use the Starlight Rose farming guide to gather these, if you have Herbalism.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Milling Ability:
 _<Mill 40 Starlight Rose>_
@@ -6715,7 +6715,7 @@ collect 25 Sallow Pigment##129034 |c
 collect 250 Roseate Pigment##129032 |c
 |tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |tip Use your Milling ability on Legion herbs to accomplish this.
 |only if skill("Inscription") < 719
 step
@@ -6741,7 +6741,7 @@ collect 192 Sallow Pigment##129034 |c
 collect 1920 Roseate Pigment##129032 |c
 |tip You get these by gathering and milling any herb in Legion, if you have Herbalism.
 |tip Use the farming guides for Aethril, Dreamleaf, Foxflower, Fjarnskaggl, or Starlight Rose to accomplish this.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 |tip Use your Milling ability on Legion herbs to accomplish this.
 step
 Open Your Inscription Crafting Panel:
@@ -6787,7 +6787,7 @@ accept A Familiar Ring to It##40524 |goto 40.05,35.28
 step
 collect 15 Leystone Ore##123918 |c |q 40524
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Use Your Prospecting Ability:
 _<Prospect 15 Leystone Ore>_
@@ -7316,7 +7316,7 @@ step
 collect Leystone Ore##123918 |n
 collect Felslate##123919 |n
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Use Your Prospecting Ability:
 _<Prospect Leystone Ore & Felslate>_
 |tip They're in your bags.
@@ -7354,7 +7354,7 @@ step
 collect Leystone Ore##123918 |n
 collect Felslate##123919 |n
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Use Your Prospecting Ability:
 _<Prospect Leystone Ore & Felslate>_
 |tip They're in your bags.
@@ -7391,7 +7391,7 @@ step
 collect Leystone Ore##123918 |n
 collect Felslate##123919 |n
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Use Your Prospecting Ability:
 _<Prospect Leystone Ore & Felslate>_
 |tip They're in your bags.
@@ -7433,7 +7433,7 @@ step
 collect Leystone Ore##123918 |n
 collect Felslate##123919 |n
 |tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 Use Your Prospecting Ability:
 _<Prospect Leystone Ore & Felslate>_
 |tip They're in your bags.
@@ -7484,7 +7484,7 @@ Learn Legion Fishing |skillmax Fishing,800 |goto 52.82,65.60
 step
 collect Goblin Glider Kit##109076 |c |q 42911 |future
 |tip You can create these, if you have Engineering.
-|tip You can also buy them from the Auction House.
+|tip You can also purchase them from the Auction House.
 step
 Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
 Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
@@ -7530,43 +7530,134 @@ author="support@zygorguides.com",
 startlevel=100.0,
 },[[
 step
-Next to you
-talk Nomi##101846
-accept Too Many Cooks##40988
-|tip Nomi is said to appear anytime while getting Legion recipes.
-|tip These Legion recipes can come from quests, rares, or instances. To figure out where each one can be found simply open up your cook book and go to the "Unlearned" tab to figure out what recipes you are missing.
+talk Katherine Lee##93534
+|tip Inside the building.
+Learn the Cooking Profession |condition skill("Cooking")>=1 |goto Dalaran L/10 39.69,66.50
+|only Alliance
+step
+talk Awilo Lon'gomba##93536
+|tip Inside the building.
+Learn the Cooking Profession |condition skill("Cooking")>=1 |goto Dalaran L/10 69.98,38.95
+|only Horde
+step
+Follow the path down |goto Stormheim/0 69.53,52.04 < 20 |only if walking
+Follow the road |goto Stormheim/0 64.40,54.90 < 30 |only if walking
+Follow the path |goto Stormheim/0 68.54,53.59 < 30 |only if walking
+Follow the path down |goto Stormheim/0 69.66,52.98 < 30 |only if walking
+kill Mordvigbjorn##93371
+collect Recipe: Bear Tartare##133827 |n
+Use the Recipe: Bear Tartare |use Recipe: Bear Tartare##133827
+Learn the Recipe for Bear Tartare |learn Bear Tartare##201513 |goto Stormheim/0 72.49,49.96
+step
+_Next to you:_
+talk Nomi##102546
+|tip He appears next to you after you loot the recipe.
+|tip You will only be able to accept one of these quests.
+accept Too Many Cooks##40988 |or
+accept The Prodigal Sous Chef##40989 |or
 step
 talk Nomi##101846
-turnin Too Many Cooks##40988 |goto Dalaran L/10 40.16,65.95
+|tip Inside the building.
+turnin Too Many Cooks##40988 |goto Dalaran L/10 40.16,65.95 |only if havequest(40988) or completedq(40988)
+turnin The Prodigal Sous Chef##40989 |goto Dalaran L/10 40.16,65.95 |only if havequest(40989) or completedq(40989)
 accept A Good Recipe List##40990 |goto Dalaran L/10 40.16,65.95
-step
-learn Dried Mackerel Stripes##201512 |use Recipe: Dried Mackerel Strips##133826
-learn Salt and Pepper Shank##201413 |use Recipe: Salt and Pepper Shank##133810
-learn Deep-Fried Mossgill##201496 |use Recipe: Deep-Fried Mossgill##133812
-learn Fighter Chow##201514 |use Recipe: Fighter Chow##133828
-learn Faronaar Fizz##201498 |use Recipe: Faronaar Fizz##133814
-learn Barracuda Mrglgagh##201496 |use Recipe: Barracuda Mrglgagh##133818
-collect 6 Legion recipes |q 40990/1
-|tip These recipes are from questing in each of the 4 leveling zones so you should get them as you level to 110.
+|only Alliance
 step
 talk Nomi##101846
-turnin A Good Recipe List##40990 |goto Dalaran L/10 40.16,65.95
-accept Opening the Test Kitchen##40991 |goto Dalaran L/10 40.16,65.95
-step
-click Nomi's Silver Mackerel##6478
-collect 5 Nomi's Silver Mackerel##133912 |q 40991/1 |goto 39.38,66.66
+|tip Inside the building.
+turnin Too Many Cooks##40988 |goto Dalaran L/10 69.76,38.76 |only if havequest(40988) or completedq(40988)
+turnin The Prodigal Sous Chef##40989 |goto Dalaran L/10 69.76,38.76 |only if havequest(40989) or completedq(40989)
+accept A Good Recipe List##40990 |goto Dalaran L/10 69.76,38.76
+|only Horde
 step
 talk Nomi##101846
-Return the Mackerel to Nomi |q 40991/2 |goto Dalaran L/10 40.16,65.95
-|tip This can be accomplished by starting the work orders.
+|tip Inside the building.
+buy Recipe: Barracuda Mrglgagh##133818 |n
+Use the Recipe: Barracuda Mrglgagh |use Recipe: Barracuda Mrglgagh##133818
+Learn the Recipe for Barracuda Mrglgagh |learn Barracuda Mrglgagh##201496 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Barracuda Mrglgagh |learn Barracuda Mrglgagh##201496 |goto 69.76,38.76 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+buy Recipe: Deep-Fried Mossgill##133812 |n
+Use the Recipe: Deep-Fried Mossgill |use Recipe: Deep-Fried Mossgill##133812
+Learn the Recipe for Deep-Fried Mossgill |learn Deep-Fried Mossgill##201496 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Deep-Fried Mossgill |learn Deep-Fried Mossgill##201496 |goto 69.76,38.76 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+buy Recipe: Faronaar Fizz##133814 |n
+Use the Recipe: Faronaar Fizz |use Recipe: Faronaar Fizz##133814
+Learn the Recipe for Faronaar Fizz |learn Faronaar Fizz##201498 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Faronaar Fizz |learn Faronaar Fizz##201498 |goto 69.76,38.76 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+buy Recipe: Fighter Chow##133828 |n
+Use the Recipe: Fighter Chow |use Recipe: Fighter Chow##133828
+Learn the Recipe for Fighter Chow |learn Fighter Chow##201514 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Fighter Chow |learn Fighter Chow##201514 |goto 69.76,38.76 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+buy Recipe: Pickled Stormray##133813 |n
+Use the Recipe: Pickled Stormray |use Recipe: Pickled Stormray##133813
+Learn the Recipe for Pickled Stormray |learn Pickled Stormray##201497 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Pickled Stormray |learn Pickled Stormray##201497 |goto 69.76,38.76 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+buy Recipe: Salt and Pepper Shank##133810 |n
+Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133810
+Learn the Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201413 |goto 40.16,65.95 |only Alliance
+Learn the Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201413 |goto 69.76,38.76 |only Horde
+Learn #6# Legion Recipes |q 40990/1 |goto 40.16,65.95 |only Alliance
+Learn #6# Legion Recipes |q 40990/1 |goto 69.76,38.76 |only Horde
+step
+Use the Recipe: Dried Mackerel Strips |use Recipe: Dried Mackerel Strips##133826
+|tip You received this item as a quest reward for turning in "Too Many Cooks" or "The Prodigal Sous Chef" earlier.
+Learn the Recipe for Dried Mackerel Stripes |learn Dried Mackerel Stripes##201512
+step
+talk Nomi##101846
+|tip Inside the building.
+turnin A Good Recipe List##40990 |goto 40.16,65.95
+accept Opening the Test Kitchen##40991 |goto 40.16,65.95
+|only Alliance
+step
+talk Nomi##101846
+|tip Inside the building.
+turnin A Good Recipe List##40990 |goto 69.76,38.76
+accept Opening the Test Kitchen##40991 |goto 69.76,38.76
+|only Horde
+step
+click Nomi's Silver Mackerel
+collect 5 Nomi's Silver Mackerel##133912 |q 40991/1 |goto 39.38,66.66 |only Alliance
+collect 5 Nomi's Silver Mackerel##133912 |q 40991/1 |goto 69.84,39.97 |only Horde
+step
+talk Nomi##101846
+|tip Inside the building.
+Choose _"Research recipes using Silver Mackerel."_
+|tip Start a Work Order.
+Return the Mackerel to Nomi |q 40991/2 |goto 40.16,65.95 |only Alliance
+Return the Mackerel to Nomi |q 40991/2 |goto 69.76,38.76 |only Horde
 step
 click Test Kitchen Results
-Collect test kitchen results |q 40991/3 |goto 40.11,65.28
+|tip The Work Order will take 12 seconds to complete.
+Collect the Test Kitchen Results |q 40991/3 |goto 40.11,65.28 |only Alliance
+Collect the Test Kitchen Results |q 40991/3 |goto 69.72,38.38 |only Horde
 step
 talk Nomi##101846
-turnin Opening the Test Kitchen##40991 |goto Dalaran L/10 40.16,65.95
+|tip Inside the building.
+turnin Opening the Test Kitchen##40991 |goto 40.16,65.95
+|only Alliance
 step
-_Congratulations_ you are now able to start work orders to get higher ranks and better rewards!
+talk Nomi##101846
+|tip Inside the building.
+turnin Opening the Test Kitchen##40991 |goto 69.76,38.76
+|only Horde
+step
+_Congratulations!_
+You completed the Cooking questline.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Cooking\\Legion\\Cooking 700-800",{
 author="support@zygorguides.com",
@@ -7577,93 +7668,207 @@ _Before Starting This Guide:_
 Complete the "Cooking Quest Line" Guide
 Click Here to Continue |confirm
 step
-All rank 2 and 3 patterns come from putting in work orders with Nomi.
 talk Nomi##101846
-Place Work Orders using Lean Shank |goto Dalaran L/10 40.13,65.95
-|tip These work orders take 4 hours each to complete.
-|tip The work orders do not always give patterns.
-confirm
-step
+|tip Inside the building.
+Choose _"Research recipes using Lean Shanks."_
+|tip Use the "Lean Shank" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|tip Each work order takes 5 Lean Shanks.
 click Test Kitchen Results
-|tip Getting this pattern may take awhile.
-collect Recipe: Salt and Pepper Shank##133831 |n |goto 40.14,65.42
-learn Salt and Pepper Shank##201524 |goto 40.14,65.42
+|tip It appears nearby.
+|tip The work orders take 4 hours each.
+|tip It may take a while to get the recipe.
+collect Recipe: Salt and Pepper Shank##133831 |n
+Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133831
+Learn the Rank 2 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201524 |goto Dalaran L/10 40.16,65.95 |only Alliance
+Learn the Rank 2 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201524 |goto Dalaran L/10 69.76,38.76 |only Horde
 step
 talk Nomi##101846
-Place Work Orders using Lean Shank |goto Dalaran L/10 40.13,65.95
-|tip These work orders take 4 hours each to complete.
-|tip The work orders do not always give patterns.
-confirm
-step
+|tip Inside the building.
+Choose _"Research recipes using Lean Shanks."_
+|tip Use the "Lean Shank" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|tip Each work order takes 5 Lean Shanks.
 click Test Kitchen Results
-|tip Getting this pattern may take awhile.
-collect Recipe: Salt and Pepper Shank##133851 |n |goto 40.14,65.42
-learn Salt and Pepper Shank##201544 |goto 40.14,65.42
+|tip It appears nearby.
+|tip The work orders take 4 hours each.
+|tip It may take a while to get the recipe.
+collect Recipe: Salt and Pepper Shank##133851 |n
+Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133851
+Learn the Rank 3 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201544 |goto 40.16,65.95 |only Alliance
+Learn the Rank 3 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201544 |goto 69.76,38.76 |only Horde
 step
-collect 275 Lean Shank##124117 |condition itemcount(124117) >= 275
-|tip These can be bought from the AH or farmed.
+collect 275 Lean Shank##124117 |c
+|tip Use the "Lean Shank" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|only if skill("Cooking") < 750
 step
 talk Bradford Duncan##93545
-buy 250 Flaked Sea Salt##133588 |condition itemcount(133588) >= 250 |goto 40.14,66.41
-buy 250 Dalape�o Pepper##133589 |condition itemcount(133589) >= 250 |goto 40.14,66.41
+|tip Inside the building.
+buy 250 Flaked Sea Salt##133588 |n
+collect 250 Flaked Sea Salt##133588 |c |goto 40.15,66.46
+|only if skill("Cooking") < 750 and _G.UnitFactionGroup("player")=="Alliance"
+step
+talk Misensi##93537
+|tip Inside the building.
+buy 250 Flaked Sea Salt##133588 |n
+collect 250 Flaked Sea Salt##133588 |c |goto 69.74,39.24
+|only if skill("Cooking") < 750 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Bradford Duncan##93545
+|tip Inside the building.
+buy 250 Dalape�o Pepper##133589 |n
+collect 250 Dalape�o Pepper##133589 |c |goto 40.15,66.46
+|only if skill("Cooking") < 750 and _G.UnitFactionGroup("player")=="Alliance"
+step
+talk Misensi##93537
+|tip Inside the building.
+buy 250 Dalape�o Pepper##133589 |n
+collect 250 Dalape�o Pepper##133589 |c |goto 69.74,39.24
+|only if skill("Cooking") < 750 and _G.UnitFactionGroup("player")=="Horde"
 step
 Open Your Cooking Crafting Panel:
 _<Create 50 Salt & Pepper Shank>_
 |tip You will get 500 Salt & Pepper Shanks.
-Reach level 750 Cooking |skill Cooking,750
+Reach Level 750 Cooking |skill Cooking,750 |goto 40.16,65.95 |only Alliance
+Reach Level 750 Cooking |skill Cooking,750 |goto 69.76,38.76 |only Horde
 step
-From 750-800 you will need rank 3 of The Hungry Magister or any other top tier food.
-To do this simply keep putting in Work Orders with Nomi using either HighMountain Salmon or Fatty Bearsteak.
-To even start getting The Hungry Magister you must first get the recipe that is one tier below, this being "Leybeque Ribs"
-confirm
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
 step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+_Using the Suramar Questing Guide:_
+|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Survey Says...".
+|tip This is the quest when you unlock the Ruins of Elune'eth portal.
+Complete the "Survey Says..." Quest in Suramar |condition completedq(40956)
+step
+Follow the path up |goto Suramar/0 37.20,45.23 < 20 |region suramar_eluneeth |only if walking
+Follow the path down |goto Suramar/0 37.90,45.04 < 20 |only if walking
+Follow the path |goto Suramar/0 39.68,43.30 < 20 |only if walking
+Continue following the path |goto Suramar/0 41.02,41.23 < 20 |only if walking
+Follow the path |goto Suramar/0 40.51,36.02 < 20 |only if walking
 kill Myonix##110340
-collect Recipe: Leybeque Ribs##133816 |n |condition itemcount(133816) >= 1 |goto Suramar/0 40.85,32.71
-learn Leybeque Ribs##201500
+collect Recipe: Leybeque Ribs##133816 |n
+Use the Recipe: Leybeque Ribs |use Recipe: Leybeque Ribs##133816
+Learn the Rank 1 Recipe for Leybeque Ribs |learn Leybeque Ribs##201500 |goto Suramar/0 40.93,32.79
 step
 talk Nomi##101846
-Place Work Orders using HighMountain Salmon or Fatty Bearsteak |goto Dalaran L/10 40.13,65.95
-|tip These work orders take 4 hours each to complete.
-|tip The work orders do not always give patterns.
-confirm
+|tip Inside the building.
+Choose _"Research recipes using Fatty Bearsteaks."_
+|tip Use the "Fatty Bearsteak" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|tip Each work order takes 5 Fatty Bearsteaks.
+click Test Kitchen Results
+|tip It appears nearby.
+|tip The work orders take 4 hours each.
+|tip It may take a while to get the recipe.
+collect Recipe: The Hungry Magister##133821 |n
+Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133821
+Learn the Rank 1 Recipe for The Hungry Magister |learn The Hungry Magister##201505 |goto Dalaran L/10 40.16,65.95 |only Alliance
+Learn the Rank 1 Recipe for The Hungry Magister |learn The Hungry Magister##201505 |goto Dalaran L/10 69.76,38.76 |only Horde
 step
-click Test Kitchens Results
-|tip Getting these pattern may take awhile.
-collect Recipe: The Hungry Magister##133821 |n |goto Dalaran L/10 40.14,65.42
-collect Recipe: The Hungry Magister##133841 |n |goto Dalaran L/10 40.14,65.42
-collect Recipe: The Hungry Magister##133861 |n |goto Dalaran L/10 40.14,65.42
-learn The Hungry Magister##201505
-learn The Hungry Magister##201534
-learn The Hungry Magister##201554
+talk Nomi##101846
+|tip Inside the building.
+Choose _"Research recipes using Fatty Bearsteaks."_
+|tip Use the "Fatty Bearsteak" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|tip Each work order takes 5 Fatty Bearsteaks.
+click Test Kitchen Results
+|tip It appears nearby.
+|tip The work orders take 4 hours each.
+|tip It may take a while to get the recipe.
+collect Recipe: The Hungry Magister##133841 |n
+Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133841
+Learn the Rank 2 Recipe for The Hungry Magister |learn The Hungry Magister##201534 |goto 40.16,65.95 |only Alliance
+Learn the Rank 2 Recipe for The Hungry Magister |learn The Hungry Magister##201534 |goto 69.76,38.76 |only Horde
 step
-collect 40 Big Gamy Ribs##124119 |condition itemcount(124119) >= 40
-|tip These can be bought from the AH or farmed.
-collect 40 Leyblood##124120 |condition itemcount(124120) >= 40
-|tip These can be bought from the AH or farmed.
+talk Nomi##101846
+|tip Inside the building.
+Choose _"Research recipes using Fatty Bearsteaks."_
+|tip Use the "Fatty Bearsteak" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|tip Each work order takes 5 Fatty Bearsteaks.
+click Test Kitchen Results
+|tip It appears nearby.
+|tip The work orders take 4 hours each.
+|tip It may take a while to get the recipe.
+collect Recipe: The Hungry Magister##133861 |n
+Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133861
+Learn the Rank 3 Recipe for The Hungry Magister |learn The Hungry Magister##201554 |goto 40.16,65.95 |only Alliance
+Learn the Rank 3 Recipe for The Hungry Magister |learn The Hungry Magister##201554 |goto 69.76,38.76 |only Horde
+step
+collect 80 Big Gamy Ribs##124119 |c
+|tip Use the "Big Gamy Ribs" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|only if skill("Cooking") < 800
+step
+collect 80 Leyblood##124120 |c
+|tip Use the "Leyblood" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|only if skill("Cooking") < 800
 step
 talk Bradford Duncan##93545
-buy 40 Dalape�o Pepper##133589 |condition itemcount(133589) >= 40 |goto 40.14,66.41
+|tip Inside the building.
+buy 80 Dalape�o Pepper##133589 |n
+collect 80 Dalape�o Pepper##133589 |c |goto 40.15,66.46
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Alliance"
+step
+talk Misensi##93537
+|tip Inside the building.
+buy 80 Dalape�o Pepper##133589 |n
+collect 80 Dalape�o Pepper##133589 |c |goto 69.74,39.24
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Horde"
 step
 Open Your Cooking Crafting Panel:
-_<Create 8 Leybeque Ribs>_  |condition itemcount(133565) >= 80
-|tip You will get 80 Leybeque Ribs.
+_<Create 16 Leybeque Ribs>_
+|tip Save all of these to use later.
+collect 80 Leybeque Ribs##133565 |c |goto 40.15,66.46 |only Alliance
+collect 80 Leybeque Ribs##133565 |c |goto 69.74,39.24 |only Horde
+|only if skill("Cooking") < 800
 step
-collect 400 Highmountain Salmon##124109 |condition itemcount(124109) >= 400
-|tip These can be bought from the AH or farmed.
-collect 400 Fatty Bearsteak##124118 |condition itemcount(124118) >= 400
-|tip These can be bought from the AH or farmed.
+collect 400 Highmountain Salmon##124109 |c
+|tip Use the "Highmountain Salmon" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|only if skill("Cooking") < 800
+step
+collect 400 Fatty Bearsteak##124118 |c
+|tip Use the "Fatty Bearsteak" farming guide to gather these.
+|tip You can also purchase them from the Auction House.
+|only if skill("Cooking") < 800
 step
 talk Bradford Duncan##93545
-buy 160 Flaked Sea Salt##133588 |condition itemcount(133588) >= 160 |goto 40.14,66.41
-buy 240 Dalape�o Pepper##133589 |condition itemcount(133589) >= 240 |goto 40.14,66.41
-|tip You will need all of the Leybeque Ribs you just made and also 400 of both Highmountain Salmon and Fatty Bearsteak.
+|tip Inside the building.
+buy 160 Flaked Sea Salt##133588 |n
+collect 160 Flaked Sea Salt##133588 |c |goto 40.15,66.46
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Alliance"
+step
+talk Misensi##93537
+|tip Inside the building.
+buy 160 Flaked Sea Salt##133588 |n
+collect 160 Flaked Sea Salt##133588 |c |goto 69.74,39.24
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Bradford Duncan##93545
+|tip Inside the building.
+buy 240 Dalape�o Pepper##133589 |n
+collect 240 Dalape�o Pepper##133589 |c |goto 40.15,66.46
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Alliance"
+step
+talk Misensi##93537
+|tip Inside the building.
+buy 240 Dalape�o Pepper##133589 |n
+collect 240 Dalape�o Pepper##133589 |c |goto 69.74,39.24
+|only if skill("Cooking") < 800 and _G.UnitFactionGroup("player")=="Horde"
 step
 Open Your Cooking Crafting Panel:
 _<Create 80 The Hungry Magister>_
-|tip You will get 800 The Hungry Magisters.
-Reach level 800 Cooking |skill Cooking,800
+Reach Level 800 Cooking |skill Cooking,800 |goto 40.15,66.46 |only Alliance
+Reach Level 800 Cooking |skill Cooking,800 |goto 69.74,39.24 |only Horde
 step
-_Congratulations_ You are now 800 Cooking!
+_Congratulations!_
+You reached level 800 with the Cooking profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",
@@ -7919,6 +8124,36 @@ step
 kill Sated Hillstrider##98808+
 |tip Other mobs around this area drop Big Gamy Ribs too, but these respawn very quickly.
 collect Big Gamy Ribs##124119 |n |goto Highmountain/0 41.38,54.03
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Food\\Lean Shank",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+kill Pinerock Prowler##94149+
+kill Pinerock Stalker##99481+
+collect Lean Shank##124117 |n |goto Highmountain/0 42.98,49.26
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Food\\Fatty Bearsteak",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Follow the path down |goto Stormheim/0 69.53,52.04 < 20 |only if walking
+Follow the road |goto Stormheim/0 64.40,54.90 < 30 |only if walking
+Follow the path |goto Stormheim/0 68.54,53.59 < 30 |only if walking
+Follow the path down |goto Stormheim/0 69.66,52.98 < 30 |only if walking
+kill Voracious Bear##93095+
+collect Fatty Bearsteak##124118 |n |goto Stormheim/0 72.49,49.96
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Food\\Leyblood",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Enter the cave |goto Azsuna/0 49.35,25.97 < 20 |walk
+kill Flashwyrm##107098+
+collect Leyblood##124120 |n |goto Azsuna/0 49.72,25.41
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Fish\\Highmountain Salmon",{
 author="support@zygorguides.com",

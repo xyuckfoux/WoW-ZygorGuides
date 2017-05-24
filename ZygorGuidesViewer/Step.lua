@@ -582,7 +582,7 @@ function Step:GetNextValidStep()
 	local stepnum,guide
 	repeat
 		step, stepnum,guide = step:GetNextStep()
-		numskips=numskips+1  assert(numskips<2000,"2000 skips and no valid next step found!")
+		numskips=numskips+1  assert(numskips<5000,"5000 skips and no valid next step found!")
 	until not step or step:AreRequirementsMet() or ZGV.db.profile.showwrongsteps
 	return step,stepnum,guide -- or nil if none.
 end

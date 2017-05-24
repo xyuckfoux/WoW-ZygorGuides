@@ -786,6 +786,7 @@ function Pointer:MakeMarkerFrames(marker,markertype)
 	end
 	--print(markertype=="Ant" and ("MEDIUM" and WorldMapFrame:GetFrameStrata() ~= "HIGH") or "HIGH")
 	
+	--[[
 	local strataLayer = nil
 	if markertype == "Ant" and WorldMapFrame:GetFrameStrata() ~= "HIGH" then
 		strataLayer = "MEDIUM"
@@ -793,6 +794,7 @@ function Pointer:MakeMarkerFrames(marker,markertype)
 		strataLayer = "HIGH"
 	end
 	marker.frame_worldmap:SetFrameStrata(strataLayer or "HIGH")
+	--]]
 
 	marker.frame_worldmap:SetFrameLevel((markertype=="Ant" and 608 or 609)+WorldMapFrame:GetFrameLevel())  -- built-in POIs (taxis, pet trainers) are 500-ish, so 600 should suffice.
 
@@ -917,7 +919,6 @@ function markerproto:UpdateWorldMapIcon(m,f)
 
 	-- hide markers that are zone limited, and we are viewing something else
 	if (self.onworldmap=="zone" and m~=self.m) then self:Hide() return end	
-
 
 	HBDPins:AddWorldMapIconMF(Pointer, self.frame_worldmap, self.m, self_f, self.x, self.y)
 
@@ -2973,6 +2974,7 @@ function Pointer:FindCorpseArrow(reset)
 	local system=HBD:GetMapContinent(origm)
 	if not system then RestartCorpseSearch("HBD doesn't know the system you're in") return end
 
+	ZGV.WMU_Suspend()
 	SetMapByID(system)
 	--SetDungeonMapLevel(0) -- sanity
 	local sysx,sysy=GetCorpseMapPosition()
@@ -3046,6 +3048,7 @@ function Pointer:FindCorpseArrow(reset)
 
 	-- Clean up
 	SetMapToCurrentZone()
+	ZGV.WMU_Resume()
 end
 
 
@@ -3591,6 +3594,7 @@ local def_ant_icon = ZGV.Pointer.Icons.ant
 
 local widths_cache = {}
 setmetatable(widths_cache,{__index=function(t,mapid) 
+	if not mapid or not HBD.mapData[mapid] then return 1 end
 	local w=HBD.mapData[mapid][1]  
 	if w==0 then 
 		local nextf=next(HBD.mapData[mapid].floors)
@@ -3912,6 +3916,7 @@ end
 local mapsizeratio = {[-1]=10}
 
 setmetatable(mapsizeratio,{__index=function(t,mapid) 
+	if not mapid or not HBD.mapData[mapid] then return 1 end
 	local r=HBD.mapData[mapid][1]/2000
 	if r==0 then 
 		local nextf=next(HBD.mapData[mapid].floors)

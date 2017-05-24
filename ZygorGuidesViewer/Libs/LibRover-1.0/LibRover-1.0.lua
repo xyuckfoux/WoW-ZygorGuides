@@ -4033,25 +4033,28 @@ do
 
 		function Lib:IsWintergraspControlled()
 			if WorldMapFrame:IsVisible() then return false end  -- sinus: can't go changing the map when it's open!
+			ZGV.WMU_Suspend()
 			SetMapByID(501) --set map to Wintergrasp
+			local ret=false
 			for i=1,GetNumMapLandmarks() do
 				local name,_,textureIndex,_,_ = GetMapLandmarkInfo(i);
 				if ( name == "Wintergrasp Fortress") then
 					if ( textureIndex == 79 ) then   -- old trunk had 77
 						if UnitFactionGroup("player")=="Horde" then
-							SetMapToCurrentZone()
-							return true
+							ret=true
+							break
 						end
 					elseif ( textureIndex == 82 ) then   -- old trunk had 80
 						if UnitFactionGroup("player")=="Alliance" then
-							SetMapToCurrentZone()
-							return true
+							ret=true
+							break
 						end
 					end
 				end
 			end
 			SetMapToCurrentZone()
-			return false
+			ZGV.WMU_Resume()
+			return ret
 		end
 
 		function Lib.ShowDebugMenu(parent,but)

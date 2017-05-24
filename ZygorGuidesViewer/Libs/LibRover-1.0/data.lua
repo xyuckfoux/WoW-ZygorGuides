@@ -1714,7 +1714,7 @@ data.basenodes.advanced = {
 		{"REGION",name="suramar_shalaran",mapzone=1033,zonematch="*/*/*/Shal'Aran",nofly=1},
 
 	-- Suramar Ruins of Elune'eth
-		{"REGION",name="suramar_eluneeth",mapzone=1033,zonematch="*/*/*/Ruins of Elune'eth",nofly=1},
+		{"REGION",name="suramar_eluneeth",mapzone=1033,zonematch="*/*/*/Ruins of Elune'eth",nofly=0},
 
 	-- Suramar Sanctum of Order
 		{"REGION",name="suramar_sanctum_of_order",mapzone=1033,zonematch="*/*/*/Sanctum of Order",nofly=1},

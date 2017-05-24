@@ -805,13 +805,6 @@ click Felwort##195114
 collect Felwort |q 41513/1 |goto Azsuna/0 40.70,46.53
 |next "Court_Of_Farondis_WQ"
 step
-label quest-41516
-accept Felwort##41516
-step
-click Felwort##195114
-collect Blood of Sargeras##124124 |q 41516/1 |goto Val'sharah/0 30.00,71.16
-|next "Court_Of_Farondis_WQ"
-step
 label quest-43609
 Follow the path up |goto Azsuna/0 46.48,27.86
 accept WANTED: Doomlord Kazrok##43609 |goto Azsuna/0 44.22,28.20
@@ -963,6 +956,27 @@ accept Bloodgazer Swarm!##44894 |goto Azsuna/0 38.68,7.12
 step
 Slay the Bloodgazers around this area
 Cull the Bloodgazer Falcosaurs |q 44894/1 |goto Azsuna/0 36.60,6.31
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43063
+accept DANGER: Stormfeather##43063 |goto Azsuna/0 51.45,56.56
+|tip You will accept this quest automatically.
+step
+kill Stormfeather##109594 |q 43063/1 |goto Azsuna/0 51.20,57.87
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44048
+accept Nagana Happen##44048 |goto Azsuna/0 48.17,73.06
+|tip You will accept this quest automatically.
+stickystart "Ocean Guardian"
+step
+Follow the path down |goto Azsuna/0 43.62,78.94
+|tip This is an elite area you may need a group to complete this quest.
+kill Hatecoil Stormspeaker##111457+, Hatecoil Guardian##111481+, Hatecoil Ravager##111438+
+Slay #10# Naga |q 44048/1 |goto Azsuna/0 38.20,82.25
+step
+label "Ocean Guardian"
+kill 3 Ocean Guardian##102066 |q 44048/2 |goto Azsuna/0 40.14,84.37
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42742
@@ -1802,6 +1816,34 @@ Slay the Sharptalon all along these hills on the coast
 Cull Sharptalon Falcosaurs |q 44895/1 |goto Val'sharah/0 50.42,8.53
 |next "Court_Of_Farondis_WQ"
 step
+label quest-42190
+accept Wildlife Conservationist##42190 |goto Val'sharah/0 55.46,81.99
+|tip You will accept this quest automatically.
+step
+The _Shimmering Aquafly_ are level 25
+|tip It is a Dragon Fly found all around this area.
+Challenge one to a pet battle, capture it or defeat it |q 42190/1 |goto Val'sharah/0 54.48,82.34
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41516
+accept Felwort##41516 |goto Val'sharah/0 30.00,71.16
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+collect Felwort |q 41516/1 |goto Val'sharah/0 30.00,71.16
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41312
+accept Work Order: Leystone##41312 |
+|tip You will accept this quest automatically.
+step
+collect 40 Leystone Ore##123918 |q 41312/1
+|tip These can be either collected through the mining profession or bought from the Ah.
+step
+talk Sylvia Hartshorn##106901
+turnin Work Order: Leystone##41312 |goto Val'sharah/0 54.69,73.23
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41091
 Cross the bridge |goto Thunder Totem/0 41.85,64.96 < 15 |only if walking
 Follow the path |goto Thunder Totem/0 39.66,75.66 < 20 |only if walking
@@ -2514,6 +2556,15 @@ step
 kill Brimstone Destroyer##93237
 click Brimstone Destroyer Core##195122
 Brimstone Destroyer Core mined |q 41209/1 |goto 45.20,53.66
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41208
+accept Brimstone Destroyer##41208 |goto Highmountain/0 47.30,32.09
+|tip You will accept this quest automatically.
+step
+kill Brimstone Destroyer##93237
+click Brimstone Destroyer Core##195122
+Brimstone Destroyer Core mined |q 41208/1 |goto Highmountain/0 48.10,32.57
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41239
@@ -3608,6 +3659,32 @@ label "Clamcrusher"
 kill 10 Rockclaw Clamcrusher##116038 |q 44943/2 |goto Stormheim/0 58.21,20.92
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41555
+accept Slab of Bacon##41555 |goto Stormheim/0 52.31,58.88
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Musken##103786
+collect Thick Slab of Bacon##135511 |q 41555/1 |goto Stormheim/0 52.61,59.56
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41296
+accept Fjarnskaggl Cluster##41296 |goto Stormheim/0 54.35,31.34
+|tip You will accept this quest automatically.
+step
+click Fjarnskaggl Cluster
+Gather the Fjarnskaggl Cluster |q 41296/1 |goto Stormheim/0 55.29,31.08
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44815
+accept Sick of the Sycophants##44815 |goto Suramar/0 54.27,59.86
+|tip You will accept this quest automatically.
+step
+Run up the stairs |goto 57.89,61.47 < 15 |only if walking
+Use the Telemancy Orbs on groups of Loyalist Sycophants |use Telemancy Orbs##142401
+|tip They are all around this area.
+kill 20 Loyalist Sycophant##113705 |q 44815/1 |goto 58.55,62.75
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44157
 accept Withered Wrangling: Tel'anor##44157 |goto Suramar/0 42.13,35.37
 |tip You will accept this quest automatically.
@@ -4508,6 +4585,15 @@ accept Clear the Catacombs##41914 |goto Suramar/35 54.24,87.58
 step
 Click the Ancient Catacomb Eggs
 Defeat the Ancient Catacomb Egg |q 41914/1 |goto Suramar/35 54.24,87.58
+|next "Court_Of_Farondis_WQ"
+step
+label quest-42015
+accept Threads of Fate##42015 |goto Suramar/0 33.61,83.18
+|tip You will accept this quest automatically.
+step
+talk Felsoul Seer##105779
+Tell him "Let's do battle!"
+Defeat Felsoul Seer |q 42015/1 |goto 33.65,83.16
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40299

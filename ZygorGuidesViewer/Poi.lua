@@ -285,7 +285,7 @@ function Poi:RegisterWaypoints()
 	local collectedr = 0
 	Poi.DoneLoadingPoints = false
 
-	for i,poi in pairs(Poi.Points) do
+	for i,poi in pairs(Poi.Points) do  repeat
 		if (ZGV.db.profile.poitype==1 and poi.access=="Quick") or  -- quick mode
 		   (ZGV.db.profile.poitype==2)  -- complete mode, ignore access type
 		   then
@@ -295,6 +295,7 @@ function Poi:RegisterWaypoints()
 				newway.floor = poi.starts_f or 0
 				newway.x = poi.starts_x
 				newway.y = poi.starts_y
+				if not ZGV.softassert(newway.map and newway.x and newway.y,"No map/x/y in POI #"..i.." "..(poi.name or "unnamed")) then break end  --continue
 
 				newway.title = poi.name
 
@@ -315,13 +316,13 @@ function Poi:RegisterWaypoints()
 				newway.storedData = poi
 
 				newway.poiNum = i
-
+				
 				Poi.Waypoints[newway.map] = Poi.Waypoints[newway.map] or {}
 				table.insert(Poi.Waypoints[newway.map],newway)
 				--Poi.Waypoints[i] = newway
 			end --/quest
 		end --/type
-	end
+	until true  end
 
 	ZGV:SendMessage("ZYGOR_POI_REGISTERED_WAYS", "done")
 end
@@ -498,12 +499,11 @@ function Poi:ShowMapButtons()
 
 	--if not ZGV.DEV then return end  --devwall
 
-	Poi.MapButtonFrame = CHAIN(CreateFrame("FRAME","ZygorPoiMapButtonFrame",WorldMapScrollFrame))
+	Poi.MapButtonFrame = CHAIN(CreateFrame("FRAME","ZygorPoiMapButtonFrame",ZGV.Pointer.OverlayFrame))
 		:SetPoint("BOTTOMLEFT",WorldMapScrollFrame,"BOTTOMLEFT",5,-20)
 		:SetSize(50,50)
 		:SetBackdrop({bgFile="Interface\\Minimap\\MiniMap-TrackingBorder"})--,tile=true, tileSize=50})
-		:SetFrameStrata("HIGH")
-		:SetFrameLevel(75)
+		:SetFrameLevel(610)
 		:Show()
 	.__END
 
@@ -512,8 +512,7 @@ function Poi:ShowMapButtons()
 		:SetPoint("TOPLEFT", Poi.MapButtonFrame, "TOPLEFT", 5, -5)
 		:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\zglogo-back"})
 		:SetNormalTexture(ZGV.DIR.."\\Skins\\zglogo")
-		:SetFrameStrata("HIGH")
-		:SetFrameLevel(76)
+		:SetFrameLevel(611)
 		:SetScript("OnClick", function() Poi:ShowMapMenu() end)
 		:Show()
 	.__END

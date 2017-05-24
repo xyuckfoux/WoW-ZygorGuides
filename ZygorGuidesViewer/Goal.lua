@@ -1883,6 +1883,38 @@ GOALTYPES['havebuilding'] = {
 	end
 }
 
+local dungeons={['return to karazhan']=1651}
+local bosses={}
+
+--[[
+-- Return to Karazhan
+1=Maiden
+2=Opera
+4=Mana Devourer
+8=Attumen
+16=Moroes
+32=Curator
+64=Vizadoom
+128=Nightbane (bonus)
+256=Shade of Medivh
+--]]
+
+--- Kill a boss in a saved instance.
+GOALTYPES['killboss'] = {
+	parse = function(self,params,step)
+		self.dungeon,self.bossbit = strsplit("/",params)
+		if not tonumber(self.dungeon) then self.dungeon=dungeons[(self.dungeon or ""):lower()] end
+		if not tonumber(self.bossbit) then self.bossbit=bosses[(self.bossbit or ""):lower()] or 0 end
+		if not self.dungeon or not self.bossbit then return false,"killboss needs a dungeon and bossbit." end
+	end,
+	iscomplete = function(self)
+		return ZGV.IsSavedBossDead(self.dungeon,self.boss), true
+	end,
+	gettext = function(self)
+		return "** kill boss bit "..self.bossbit.." in instance "..self.dungeon
+	end
+}
+
 
 GOALTYPES['debugvar'] = { -- use for debugging step/goal completion. 
 	parse = function(self,params,step)

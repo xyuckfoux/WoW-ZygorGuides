@@ -1451,6 +1451,9 @@ GOALTYPES['goto'] = {
 		end
 		if ZGV.recentlyVisitedCoords[self] then return true, true end
 
+		-- don't complete anything while we are flying, to avoid completing a point we flew over
+		if UnitOnTaxi("Player") then return false,true end
+
 		if self.x then
 			local cx,cy,cm,cf=HBD:GetPlayerZonePosition(true)
 			local gx,gy,dist = self.x,self.y,self.dist or 30
@@ -3211,6 +3214,10 @@ function Goal:OnClick(button)
 			end
 		end
 		--]]
+	end
+
+	if self.loadguide then
+		ZGV:SetGuide(self.loadguide,self.loadguidestep)
 	end
 	
 	--[[

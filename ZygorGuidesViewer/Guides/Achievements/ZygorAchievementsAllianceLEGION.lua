@@ -599,7 +599,7 @@ Explore Sylvan Falls |achieve 10667/12 |goto 35.91,65.97
 step
 Explore Thunder Totem |achieve 10667/13 |goto Thunder Totem/0 45.69,38.89 |region thunder_totem_circle_platform
 step
-Follow the path up |goto 40.51,51.52 < 30 |only if walking
+Follow the path up |goto Highmountain/0 40.51,51.52 < 30 |only if walking
 Continue following the path up |goto 38.88,48.30 < 30 |only if walking
 Follow the path up |goto 37.87,48.14 < 20 |only if walking
 Follow the path |goto 36.93,45.85 < 20 |only if walking
@@ -2302,6 +2302,22 @@ step "book tip"
 The books will take 10 to 20 Minutes to respawn if they aren't currently present, so waiting will be required
 step
 Congratulations, you have earned the Higher Dimensional Learning Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Quests\\The Loremaster\\Loremaster of Legion",{
+condition_end="achieved(9923)",
+description="Complete all the storyline achievements in all the zones of the game.",
+},[[
+step
+Use the Legion Leveling Guides to complete Loremaster:
+|tip The Leveling guides cover all required questlines for Loremaster.
+|tip Click one of the lines below to load the Leveling guide for that zone.
+Azsuna Quests |achieve 10763 |loadguide "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Azsuna"
+Val'sharah Quests |achieve 10698 |loadguide "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Val'sharah"
+Stormheim Quests |achieve 10790 |loadguide "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Stormheim"
+Highmountain Quests |achieve 10059 |loadguide "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Highmountain"
+Suramar Quests |achieve 11124 |loadguide "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Suramar (110)"
+step
+Congratulations, you have _earned_ the _Loremaster of Legion_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\But you Say He's Just a Friend",{
 condition_end="achieved(10456)",

@@ -235,17 +235,15 @@ accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
 step
 kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
 |tip
-|tip DPS:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid other players when you get the Burning Bomb debuff.
-|tip
-|tip HEALER:
-|tip Dispel the Burning Bomb debuff from other players.
-|tip Avoid the Arcanopulse areas.
-|tip
-|tip TANK:
-|tip Run away when Calamir casts Howling Gale.
-|tip Avoid the Arcanopulse areas.
+_DAMAGE:_ |only if grouprole("DAMAGE")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("DAMAGE")
+|tip Avoid other players when you get the Burning Bomb debuff. |only if grouprole("DAMAGE")
+_HEALER:_ |only if grouprole("HEALER")
+|tip Dispel the Burning Bomb debuff from other players. |only if grouprole("HEALER")
+|tip Avoid the Arcanopulse areas. |only if grouprole("HEALER")
+_TANK:_ |only if grouprole("TANK")
+|tip Run away when Calamir casts Howling Gale. |only if grouprole("TANK")
+|tip Avoid the Arcanopulse areas. |only if grouprole("TANK")
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41438
@@ -292,6 +290,16 @@ accept DANGER: Chief Treasurer Jabrill##43121 |goto 59.29,77.04
 |tip You will accept this quest automatically.
 step
 kill Chief Treasurer Jabrill##109677 |q 43121/1 |goto 59.29,77.04
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43175
+Follow the path |goto Azsuna/0 55.85,60.01 < 25 |only if walking
+Drop down |goto 56.09,62.29 < 25 |only if walking
+accept DANGER: Deepclaw##43175 |goto 56.09,62.29
+|tip You will accept this quest automatically.
+step
+kill Deepclaw##109702 |q 43175/1 |goto 56.09,62.29
+|tip Deepclaw is inside the little cave.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43059
@@ -566,6 +574,16 @@ collect Fine Leystone Ore##141225 |q 41437/1 |goto 41.85,34.47
 |tip These are located all around the area.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41289
+Follow the path |goto Azsuna/0 45.43,42.38 < 25 |only if walking
+Follow the path |goto 46.52,40.45 < 25 |only if walking
+accept Flourishing Aethril##41289 |goto 46.69,36.72
+|tip You will accept this quest automatically.
+step
+click Flourishing Aethril##195114
+collect 10 Flourishing Aethril##140947 |q 41289/1 |goto 46.69,36.72
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41455
 Follow the path |goto Azsuna/0 57.20,59.04 < 25 |only if walking
 Follow the path |goto 58.95,60.11 < 25 |only if walking
@@ -576,6 +594,19 @@ step
 click Gleaming Leystone Outcropping##195122
 |tip It's underwater.
 collect 1 Gleaming Leystone Ore##141229 |q 41455/1 |goto 62.12,60.33
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41434
+Follow the path |goto Azsuna/0 53.86,58.73 < 25 |only if walking
+Follow the path |goto 52.00,59.91 < 25 |only if walking
+Follow the path |goto 51.28,56.16 < 25 |only if walking
+Follow the path |goto 49.42,55.46 < 25 |only if walking
+accept Glowing Leystone Deposits##41434 |goto Azsuna/18 70.94,71.58
+|tip You will accept this quest automatically.
+step
+click Glowing Leystone Deposit##195122
+|tip These can be found all around the cave.
+collect 10 Glowing Leystone Ore##141223 |q 41434/1 |goto 70.94,71.58
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43804
@@ -639,6 +670,29 @@ accept Huge Cursed Queenfish##41611 |goto 43.33,56.15
 step
 Fish from the Huge Cursed Queenfish School |cast Fishing##131474
 collect 10 Huge Cursed Queenfish##134565 |q 41611/1 |goto 43.57,56.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41610
+Follow the path |goto Azsuna/0 49.30,29.02 < 25 |only if walking
+Follow the path |goto 51.39,30.73 < 25 |only if walking
+Follow the path |goto 53.12,32.10 < 25 |only if walking
+accept Huge Cursed Queenfish##41610 |goto 54.87,37.76
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41610/1 |goto 54.87,37.76
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41265
+Follow the path |goto Azsuna/0 46.21,44.61 < 25 |only if walking
+Follow the path |goto 47.61,43.87 < 25 |only if walking
+Follow the path |goto 48.94,42.71 < 25 |only if walking
+Follow the path |goto 48.98,41.29 < 25 |only if walking
+accept Huge Cursed Queenfish##41265 |goto 50.98,42.05
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Cursed Queenfish School |cast Fishing##131474
+collect 10 Huge Cursed Queenfish##134565 |q 41265/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42277
@@ -757,6 +811,23 @@ collect Leystone-Encrusted Spike##134104 |q 41500/1 |goto 50.26,21.67
 |tip Mine the corpses.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45046
+Follow the path |goto Azsuna/0 55.90,60.10 < 25 |only if walking
+Follow the path |goto 56.36,65.74 < 25 |only if walking
+Follow the path |goto 55.23,69.08 < 25 |only if walking
+Follow the path |goto 56.04,71.63 < 25 |only if walking
+Follow the path |goto 57.27,72.13 < 10 |only if walking
+accept Like the Wind##45046 |goto 57.14,73.13
+|tip You will accept this quest automatically.
+step
+Goal Reached |q 45046/1 |goto 57.14,73.13
+|tip To reach the goal, you must use the crystals to increase your vertical elevation.
+|tip Purple orbs will instantly reset your dash cooldown.
+|tip Avoid orange orbs, as they will stun you.
+|tip Aim for the glowing blue platforms. These act as checkpoints.
+|tip Dropping a long distance without dashing will cause you to fail.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41527
 accept Lively Aethril##41527 |goto Azsuna/0 61.70,23.35
 |tip You will accept this quest automatically.
@@ -773,6 +844,29 @@ step
 Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
 |tip You will find these all around the water.
 collect 10 Lively Cursed Queenfish##134564 |q 41598/1 |goto 40.01,41.79
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41599
+Follow the path |goto Azsuna/0 55.38,59.90 < 25 |only if walking
+Follow the path |goto 54.11,61.28 < 25 |only if walking
+Follow the path |goto 53.02,61.04 < 15 |only if walking
+Follow the path |goto 50.65,62.75 < 25 |only if walking
+accept Lively Cursed Queenfish##41599 |goto 51.14,66.02
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##7620
+|tip You will find these all around the water.
+collect 10 Lively Cursed Queenfish##134564 |q 41599/1 |goto 51.14,66.02
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41264
+accept Lively Cursed Queenfish##41264 |goto Azsuna/0 63.01,26.88
+|tip You will accept this quest automatically.
+step
+Fish from Lively Cursed Queenfish Schools |cast Fishing##131474
+|tip You will find these all around the water.
+More schools can be found _here_ |goto 63.91,22.58
+collect 10 Lively Cursed Queenfish##134564 |q 41264/1 |goto 63.01,26.88
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41454
@@ -953,6 +1047,16 @@ label "Llothien_Prowlers"
 kill 10 Llothien Prowler##90313+ |q 42123/1 |goto 54.52,29.01
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41324
+Follow the path |goto Azsuna/0 50.36,30.27 < 25 |only if walking
+accept Silky Prowler Fur##41324 |goto 54.53,29.01
+|tip You will accept this quest automatically.
+step
+kill Llothien Prowler##90313+
+|tip Skin the corpses.
+collect 12 Silky Prowler Fur##134808 |q 41324/1
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42063
 Follow the path |goto Azsuna/0 63.38,30.69 < 25 |only if walking
 Follow the path |goto 63.84,34.56 < 25 |only if walking
@@ -1096,12 +1200,11 @@ accept Terror of the Deep##43192 |goto 43.39,66.65
 |tip You will accept this quest automatically.
 step
 kill Levantus##108829 |q 43192/1 |goto 43.39,66.65
-|tip ALL:
+_TANK:_ |only if grouprole("TANK")
+|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage. |only if grouprole("TANK")
+_EVERYONE:_
 |tip Move into the swirling tornados to gain the Waterwalking buff to move around easier.
 |tip Move around Levantus as she casts Massive Spout to avoid heavy damage.
-|tip
-|tip TANK:
-|tip Stay in melee range as much as possible or Levantus will use Rampaging Torrent, causing massive raid damage.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42018

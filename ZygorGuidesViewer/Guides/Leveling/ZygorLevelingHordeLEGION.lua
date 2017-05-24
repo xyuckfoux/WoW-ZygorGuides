@@ -16551,7 +16551,7 @@ talk Archmage Khadgar##115367
 turnin Breaching the Sanctum##44719 |goto 44.19,60.13 |region suramar_sanctum_depths
 accept Lord of the Shadow Council##45417 |goto 44.19,60.13 |region suramar_sanctum_depths
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
 startlevel=101.0,
 },[[
@@ -19034,7 +19034,7 @@ Complete #30# World Quests |q 44680/1
 |only Hunter
 step
 label "Arkhana_Hunter"
-collect 20 Arkhana##124440 |q 42408/1
+collect 20 Arkhana##124440 |q 42408/1 |goto Orgrimmar/1 53.99,73.26
 |tip Buy it from the auction house.
 |tip If you are an Enchanter, you can disenchant Uncommon (green) Legion gear items to get it.
 |only Hunter
@@ -19634,7 +19634,7 @@ Begin a "Throwing SI:7 Off the Trail" Mission
 Click Here After You Start the Mission |confirm |goto 37.46,44.21 |q 42684
 |only Rogue
 step
-collect 20 Aethril##124101 |q 42730/1 |goto Stormwind City/0 61.19,70.99
+collect 20 Aethril##124101 |q 42730/1 |goto Orgrimmar/1 53.99,73.26
 |tip Buy it from the auction house.
 |tip If you have the Herbalism profession, you can gather it in Azsuna.
 |only Rogue
@@ -21978,7 +21978,7 @@ accept Ma'haat the Indomitable##42989 |goto 29.43,77.88
 stickystart "World_Quests_Shaman"
 stickystart "Return_To_The_Firelands_Shaman"
 step
-collect 10 Blood of Sargeras##124124 |c |q 42989
+collect 5 Blood of Sargeras##124124 |c |q 42989
 |tip Complete world quests and kill bosses in dungeons.
 |tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
@@ -24132,6 +24132,7 @@ Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |wa
 talk Allari the Souleater##98648
 |tip She walks around.
 accept Deadlier Warglaives##42732 |goto 59.71,53.12
+|only DemonHunter
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.
@@ -25789,6 +25790,10 @@ talk Felguard Invader##104758
 turnin The Defense of Tian Monastery##41728 |goto 38.96,24.96
 accept Desperate Strike##41730 |goto 38.96,24.96
 accept Desperate Strike##41730 |goto 38.96,24.96
+|only Monk
+step
+talk Taran Zhu##104784
+accept Storm, Earth, and Fire##41731 |goto The Jade Forest/0 38.99,24.94
 |only Monk
 stickystart "Fel_Spikes_Monk"
 stickystart "Fel_Fires_Monk"

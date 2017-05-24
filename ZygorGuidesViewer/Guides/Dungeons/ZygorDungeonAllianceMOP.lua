@@ -11,8 +11,7 @@ description="This guide will walk you through the Ragefire Chasm dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Ragefire Chasm or enter the dungeon with your group |goto Ragefire Chasm/1 62.4,7.9 |c |or
-|confirm |or
+Press _I_ and queue for Ragefire Chasm or enter the dungeon with your group |goto Ragefire Chasm/1 62.4,7.9 |c
 step
 talk High Sorceress Aryna##61823
 accept A New Enemy##30998 |goto Ragefire Chasm/1 69.4,11.0
@@ -25,7 +24,9 @@ map Ragefire Chasm/1
 path follow loose; loop off; ants curved
 path	66.0,21.5	66.1,35.3	65.8,47.0
 path	66.2,57.1
-Follow this path down, but look out for rising lava. If you see lava rising up, wait for it to go back down before crossing |goto 66.2,57.1 < 8 |c |noway
+Follow this path down, but look out for rising lava. If you see lava rising up, wait for it to go back down before crossing |goto 66.2,57.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 stickystart "corruptinsig"
 step
 kill Mature Flame Hound##61658 |n
@@ -34,8 +35,8 @@ only if not completedq(30995)
 step
 kill Adarogg##61408 |n
 Avoid standing in the area targeted by Adarogg's _Inferno Charge_. It will deal physical damage to all nearby players
-_Healer:_
-|tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed
+_HEALER:_ |grouprole HEALER
+|tip Adarogg will periodically use Flame Breath on a random player dealing fire damage to them. This will need to be healed |grouprole HEALER
 Defeat Adarogg |scenariogoal 24759
 step
 talk Suspicious Rock##61780
@@ -54,17 +55,19 @@ step
 map Ragefire Chasm/1
 path follow loose; loop off; ants curved
 path	59.3,42.1	60.2,36.2	55.9,28.9
-Follow the path |goto 55.9,28.9 |c |noway
+Follow the path |goto 55.9,28.9
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Dark Shaman Koranthal##61412 |n |only if default
 kill Dark Shaman Koranthal##61412 |q The Dark Shaman##30996/1 |only if havequest(30996)
-|tip When Koranthal begins casts Shadow Storm, the dark impacts on the ground will deal damage to anyone within 2 yards. Avoid these areas.
-_Tank:_
-|tip Interrupt Twisted Elements.
-_DPS:_
-|tip Interrupt Twisted Elements.
-_Healers:_
-|tip Be prepared to heal targets of Twisted Elements and those taking damage during Shadow Storm.
+|tip When Koranthal begins casts _Shadow Storm_, the dark impacts on the ground will deal damage to anyone within 2 yards. Avoid these areas.
+_Tank:_ |grouprole TANK
+|tip Interrupt Twisted Elements. |grouprole TANK
+_DPS:_ |grouprole DPS
+|tip Interrupt Twisted Elements. |grouprole DPS
+_Healers:_ |grouprole HEALER
+|tip Be prepared to heal targets of Twisted Elements and those taking damage during Shadow Storm. |grouprole HEALER
 Defeat Dark Shaman Koranthal |scenariogoal 24761 |goto 51.8,31.7
 step
 talk Inconspicous Crate##61790
@@ -75,13 +78,15 @@ map Ragefire Chasm/1
 path follow loose; loop off; ants curved
 path	51.1,37.6	50.0,47.6	40.2,46.4
 path	41.2,57.0
-Follow the path |goto 41.2,57.0 |c |noway
+Follow the path |goto 41.2,57.0
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Slagmaw##61463 |n
 |tip Slagmaw will randomly Lava Spit at a player's location. Avoid standing within 3 yards of other players
 |tip Slagmaw will periodically Submerge, reappearing at a random location.
-_Healers:_
-|tip Be prepared to heal group members who are hit by Lava Spit, especially following Submerge.
+_HEALER:_ |grouprole HEALER
+|tip Be prepared to heal group members who are hit by Lava Spit, especially following Submerge. |grouprole HEALER
 Defeat Slagmaw |scenariogoal 24763
 step
 clicknpc SI:7 Ranger##61788
@@ -91,17 +96,20 @@ step
 map Ragefire Chasm/1
 path follow loose; loop off; ants curved
 path	39.5,68.1	32.4,68.3	31.3,74.0
-Follow the path |goto 31.3,74.0 |c |noway
+Follow the path |goto 31.3,74.0
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Lava Guard Gordoth##61528 |n |only if default
 kill Lava Guard Gordoth##61528 |q The Dark Shaman##30996/2 |only if havequest(30996)
 Gordoth will periodically cast _Seismic Slam_, dealing damage to all players within 25 yards and knocking them back
 Gordoth will target random players with _Ground Rupture_, dealing damage and knocking them back
 At 30%, Gordoth will _Enrage_. Save DPS cooldowns and finish him off quickly
-_Healers:_
-|tip Keep the party as close to full health as possible. Knockback may interrupt your cast
-Defeat Lava Guard Gordoth |scenariogoal 19213 |goto 33.7,81.4
-step "corruptinsig"
+_HEALER:_ |grouprole HEALER
+|tip Keep the party as close to full health as possible. Knockback may interrupt your cast |grouprole HEALER
+Defeat Lava Guard Gordoth |scenariogoal 1/34404 |goto 33.7,81.4
+step
+label "corruptinsig"
 _As you go through this Dungeon:_
 kill Corrupted Houndmaster##61666+, Corrupted Flamecaller##61705+, Dark Shaman Acolyte##61672+, Corrupted Reaver##61678+
 Collect 5 Corrupted Insignias |q A New Enemy##30998/1
@@ -122,8 +130,7 @@ description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Deadmines or enter the dungeon with your group |goto Westfall/17 25.80,50.93 |c |or
-|confirm |or
+Press _I_ and queue for Deadmines or enter the dungeon with your group |goto The Deadmines/1 26.5,13.4 |c
 step
 talk Lieutenant Horatio Laine##46612
 accept The Foreman##27756 |goto The Deadmines 30.3,28.6
@@ -134,6 +141,7 @@ path follow loose; loop off; ants curved
 path	27.8,24.6	24.8,35.0	29.6,43.3
 path	28.7,53.3	34.0,59.8
 Follow the path |goto The Deadmines/1 34.0,59.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Glubtok##47162 |n |goto 37.7,61.2
@@ -158,6 +166,7 @@ path follow loose; loop off; ants curved
 path	41.7,60.0	47.4,61.3	46.5,67.7
 path	43.9,72.7	43.8,79.7
 Follow the path |goto The Deadmines/1 43.8,79.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Heavy Door##400
@@ -190,6 +199,7 @@ path follow loose; loop off; ants curved
 path	53.7,87.3	59.1,87.9	63.5,91.5
 path	64.8,85.9	61.0,80.6
 Follow the path |goto 61.0,80.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Heavy Door##400
@@ -204,7 +214,8 @@ map The Deadmines/1
 path follow loose; loop off; ants curved
 path	59.6,71.4	56.5,65.1	58.5,59.1
 path	63.5,58.6	66.2,64.7	The Deadmines/2 14.6,89.8
-_Follow_ the winding ramp down |goto The Deadmines/2 14.6,89.8
+Follow the winding ramp down |goto The Deadmines/2 14.6,89.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Foe Reaper 5000##43778 |n |goto The Deadmines/2 10.4,82.8
@@ -213,10 +224,10 @@ If you're the _Prototype Reaper_ pilot, click here. |confirm |next "Proto_Reap" 
 |tip Foe Reaper 5000 will use Reaper Strike, cleaving anyone in front of it
 |tip When Overdrive is cast, run away and keep moving until it ends
 |tip Occasionally a party member will be targeted with Harvest. Avoid being in front of the Foe Reaper as he moves to the target
-_Tank:_ |only if heroic_dung()
-|tip Pull the Foe Reaper to the top of the ramp |only if heroic_dung()
-_Healer:_
-|tip Be prepared for party members to take damage during Overdrive
+_TANK:_ |only if heroic_dung() |grouprole TANK
+|tip Pull the Foe Reaper to the top of the ramp |only if heroic_dung() |grouprole TANK
+_HEALER:_ |grouprole HEALER
+|tip Be prepared for party members to take damage during Overdrive |grouprole HEALER
 Defeat the Foe Reaper 5000 |scenariogoal 24944 |goto The Deadmines/2 10.4,82.8
 next "canon_blast"
 step
@@ -238,6 +249,7 @@ path follow loose; loop off; ants curved
 path	12.6,70.3	13.1,60.4	22.9,58.0
 path	28.0,52.5	33.4,48.9
 Use the cannon to blow open the door and walk inside |goto The Deadmines/2 33.4,48.9 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 Click the Quest Acception box that pops up
@@ -250,6 +262,7 @@ path	34.3,48.8	41.1,47.8	41.7,30.3
 path	50.5,18.1	56.6,27.5	53.1,40.1
 path	54.9,55.5
 Proceed along the docks avoiding the cannonballs that are being shot at the ground. |goto 54.9,55.5 <8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map The Deadmines/2
@@ -258,6 +271,7 @@ path	54.2,54.7	51.9,45.7	53.6,46.4
 path	55.6,50.9	57.3,49.2	54.8,39.8
 path	56.3,32.2
 Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Admiral Ripsnarl##47626 |n |goto 63.9,39.5
@@ -268,8 +282,8 @@ kill 1 Admiral Ripsnarl##47626 |q 27785/1 |goto 63.9,39.5 |only if havequest(277
 |tip During the fog, he will Summon Vapors which need to be killed as soon as possible. They will grow larger before they explode, potentially killing anyone nearby
 |tip He will use Go For the Throat through the entire fight. It damages then stuns targets for 2 seconds. |only if heroic_dung()
 |tip When the fog ends, Ripsnarl will randomly target someone with Go for the Throat, stunning them and dealing damage
-_Healer:_ |only if heroic_dung()
-|tip Ripsnarl will use _Go for the Throat_ through the entire encounter. Prepare to heal accordingly |only if heroic_dung()
+_HEALER:_ |only if heroic_dung() |grouprole HEALER
+|tip Ripsnarl will use _Go for the Throat_ through the entire encounter. Prepare to heal accordingly |only if heroic_dung() |grouprole HEALER
 Defeat Admiral Ripsnarl |scenariogoal 24943 |goto 63.9,39.5
 step
 Click the Quest Completion Box that pops up.
@@ -299,14 +313,18 @@ path follow loose; loop off; ants curved
 path	57.9,70.3	55.7,65.6	57.6,61.8
 path	58.2,57.7	61.7,56.8	65.2,60.1
 path	64.8,64.0
-_Jump down_ at the end of the ramp, avoiding the fire and blizzard areas |goto The Deadmines/2 15.2,81.7 |c |noway
+Jump down at the end of the ramp, avoiding the fire and blizzard areas |goto The Deadmines/2 15.2,81.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 map The Deadmines/2
 path follow loose; loop off; ants curved
 path	14.0,89.9	10.9,89.9	6.9,81.1
 path	9.9,77.6
-_Follow_ the path, avoiding the fire and blizzard areas |goto The Deadmines/2 9.9,77.6 |c |noway
+Follow the path, avoiding the fire and blizzard areas |goto The Deadmines/2 9.9,77.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 kill 1 Glubtok##47162
@@ -320,7 +338,9 @@ step
 map The Deadmines/2
 path follow loose; loop off; ants curved
 path	12.0,60.7	23.3,57.5	26.5,51.3
-Follow the path |goto 26.5,51.3 < 8 |c |noway
+Follow the path |goto 26.5,51.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 kill Foe Reaper 5000##43778
@@ -335,7 +355,9 @@ path	54.9,55.5
 Follow the deck onto the ship
 |tip You will need to save Emma Harrington, Erik Harrington and Calissa Harrington from the worgen
 |tip Kill any packs of Worgen that you see
-Proceed along the docks, avoiding the sparks |goto 54.9,55.5 <8 |noway|c
+Proceed along the docks, avoiding the sparks |goto 54.9,55.5 <8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if heroic_dung()
 step
 map The Deadmines/2
@@ -346,7 +368,9 @@ path	56.3,32.2
 You will need to save _Emma Harrington_, _Erik Harrington_ and _Calissa Harrington_ from the worgen.
 |tip Kill any packs of Worgen that you see.
 |tip Once you're at Calissa Harrington, burn down Admiral Ripsnarl fast.
-Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5 |c |noway
+Follow the ramp up to the top of the ship. |goto 56.3,32.2 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 |only if heroic_dung()
 step
 kill 1 Vanessa VanCleef##49541
@@ -354,9 +378,9 @@ kill 1 Vanessa VanCleef##49541
 |tip She will use Deadly Blades, randomly attack party members
 |tip She will use Backslash dealing 9k to 10k damage
 |tip At 50%, she will use Fiery Blaze which deals 46k to 53k fire damage every second. When this happens, ropes will appear at the end of the deck. Click them to avoid the damage
-_Tank:_
-|tip VanCleef will summon Defias Shadowguard and Defias Blood Wizards. These need to be picked up quickly
-|tip When Vanessa is at 1% of her total health, she will use Powder Explosion, Move as far away from her as possible to avoid death
+_TANK:_ |grouprole TANK
+|tip VanCleef will summon Defias Shadowguard and Defias Blood Wizards. These need to be picked up quickly |grouprole TANK
+|tip When Vanessa is at 1% of her total health, she will use Powder Explosion, Move as far away from her as possible to avoid death |grouprole TANK
 Defeat Vanessa VanCleef |scenariogoal 24945
 only if heroic_dung()
 step
@@ -374,11 +398,10 @@ description="This guide will walk you through the Wailing Caverns dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Wailing Caverns or enter the dungeon with your group |goto Northern Barrens/20 54.91,66.26 |c |or
-confirm |or
+Press _I_ and queue for Wailing Caverns or enter the dungeon with your group |goto Wailing Caverns/1 45.9,59.7 |c
 step
 talk Ebru##5768
-accept Cleansing the Caverns##26870 |goto Wailing Caverns 46.6,59.2
+accept Cleansing the Caverns##26870 |goto Wailing Caverns/1 46.6,59.2
 only if not completedq(26870)
 step
 talk Nalpak##5767
@@ -393,6 +416,7 @@ path	45.6,53.0	41.4,51.6	35.0,51.5
 path	35.5,49.1	37.8,44.2	36.9,39.8
 path	32.9,40.3
 Follow the path |goto 32.9,40.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lady Anacondra##3671 |only if havequest(26870) |only if default
@@ -400,10 +424,10 @@ kill 1 Lady Anacondra##3671 |q Cleansing the Caverns##26870/2 |only if havequest
 |tip Lady Anacondra will cast Lightning Bolt on her current target
 |tip She will also put random players to sleep using Druid's Slumber
 |tip Anacondra will periodically attempt to heal herself or an ally with Healing Touch
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lady Anacondra |scenariogoal 24764 |goto 30.5,43.2
 step
 Jump down here |goto 30.3,40.1 < 5
@@ -416,6 +440,7 @@ path	14.4,43.6	8.9,33.6	11.4,29.3
 path	12.1,32.4	12.9,33.5	14.7,34.3
 path	15.8,39.0
 Jump in the water and follow this path |goto 15.8,39.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Pythas##3670 |only if default
@@ -424,10 +449,10 @@ kill 1 Lord Pythas##3670 |q Cleansing the Caverns##26870/3 |only if havequest(26
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Pythas will periodically attempt to heal himself or an ally with Healing Touch
 |tip Players within 10 yards will occasionally take nature damage and suffer reduced attack speed from Thunder Clap
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Pythas |scenariogoal 24769 |goto Wailing Caverns/1 20.1,41.6
 step
 map Wailing Caverns
@@ -436,6 +461,7 @@ path	18.6,35.6	17.3,27.2	16.1,24.4
 path	11.9,24.9	5.6,30.2	7.6,38.2
 path	8.3,44.3	12.7,52.4	15.7,53.7
 Follow the path |goto 15.7,53.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Cobrahn##3669 |only if default
@@ -444,10 +470,10 @@ kill 1 Lord Cobrahn##3669 |q Cleansing the Caverns##26870/1 |only if havequest(2
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Cobrahn will periodically attempt to heal himself or an ally with Healing Touch
 |tip At 45% health, Cobrahn will gain Serpent Form. He will begin using Poison on players. Dispel this when possible
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Cobrahn |scenariogoal 24770 |goto Wailing Caverns/1 15.6,58.5
 step
 Jump down here |goto 15.8,51.8 |n
@@ -465,6 +491,7 @@ kill Kresh##3653
 If you haven't already killed Kresh, then you will find him walking in this little river.
 Defeat Kresh |scenariogoal 24772
 Follow the path |goto 58.5,67.0 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill Skum##3674
@@ -481,6 +508,7 @@ path	55.9,56.8	64.4,59.7	68.6,62.2
 path	71.6,64.7	73.2,69.2	72.4,76.5
 path	68.2,84.2	62.5,82.8
 Follow this path |goto 62.5,82.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 Go to the ledge |goto 60.4,81.2
@@ -492,6 +520,7 @@ path follow loose; loop off; ants curved
 path	56.7,78.0	54.4,76.5	53.6,69.9
 path	53.0,63.8	54.4,60.6	58.4,56.7
 Follow the path |goto 58.4,56.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill Lord Serpentis##3673 |only if default
@@ -499,20 +528,20 @@ kill Lord Serpentis##3673 |q 26870/4 |only if havequest(26870)
 |tip Lord Serpentis will cast Lightning Bolt on his current target
 |tip He will also put random players to sleep using Druid's Slumber
 |tip Serpentis will periodically attempt to heal himself or an ally with Healing Touch
-_DPS/Tank:_
-|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible
-_Healer:_
-|tip Keep the tank topped off in case you get put to sleep
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Be sure to save an interrupt for Healing Touch. Interrupt Druid's Slumber whenever possible |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Keep the tank topped off in case you get put to sleep |grouprole HEALER
 Defeat Lord Serpentis |scenariogoal 1/24771 |goto 62.6,53.3
 step
 kill 1 Verdan the Everliving##5775 |goto 56.4,47.5
 |tip Verdan the Everliving has one ability, Grasping Vines
 _Grasping Vines_
 |tip This will periodically knock down players within 10 yards and immobilize them for 5 seconds
-_Tanks:_
-|tip Make use of defenisive cooldowns, especially during Grasping Vines
-_Healer:_
-|tip Be prepared, Verdan the Everliving may deal significant damage to undergeared tanks
+_TANK:_ |grouprole TANK
+|tip Make use of defenisive cooldowns, especially during Grasping Vines |grouprole TANK
+_HEALER:_ |grouprole HEALER
+|tip Be prepared, Verdan the Everliving may deal significant damage to undergeared tanks |grouprole HEALER
 Defeat Verdan the Everliving |scenariogoal 24787
 confirm
 step
@@ -527,6 +556,7 @@ path	41.0,37.8	38.1,38.3	37.6,44.9
 path	35.5,48.5	35.4,50.9	37.8,51.7
 path	44.2,52.5
 Follow the path |goto 44.2,52.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step "Quests"
 clicknpc Serpentbloom##13891
@@ -557,12 +587,13 @@ path	32.6,29.4	37.7,24.8	37.6,21.6
 path	34.5,15.9
 There will be 2 waves of mobs that attack him, then the boss will appear.
 Escort and Protect Muyoh until you get to the boss |scenariogoal 2/24776 |goto 34.5,15.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 kill 1 Mutanus the Devourer##3654
-_DPS/Tank:_
-|tip Interrupt Naralex's Nightmare. This will put players to sleep for 8 seconds
-|tip Mutanus will Terrify random players. Dispel this if possible
-|tip Occasionally, Mutanus will use Thundercrack, dealing damage to all players within 10 yards and stunning them
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Naralex's Nightmare. This will put players to sleep for 8 seconds |grouprole TANK or DAMAGE
+|tip Mutanus will Terrify random players. Dispel this if possible |grouprole TANK or DAMAGE
+|tip Occasionally, Mutanus will use Thundercrack, dealing damage to all players within 10 yards and stunning them |grouprole TANK or DAMAGE
 Defeat Mutanus the Devourer |scenariogoal 2/34405 |goto 34.0,15.6
 step
 Congratulations, you have completed Wailing Caverns!
@@ -575,8 +606,7 @@ description="This guide will walk you through the Shadowfang Keep dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Shadowfang Keep or enter the dungeon with your group |goto Shadowfang Keep/1 69.5,61.0 |c |or
-|confirm |or
+Press _I_ and queue for Shadowfang Keep or enter the dungeon with your group |goto Shadowfang Keep/1 69.5,61.0 |c
 step
 talk Packleader Ivar Bloodfang##47006
 accept Sniffing Them Out##27917 |goto Shadowfang Keep/1 62.2,57.3
@@ -587,6 +617,7 @@ path follow loose; loop off; ants curved
 path	63.9,57.6	70.0,58.1	72.8,50.5
 path	61.1,44.4	60.7,54.9	58.5,63.8
 Follow the path |goto Shadowfang Keep/1 58.5,63.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Baron Ashbury##46962
@@ -609,6 +640,7 @@ path follow loose; loop off; ants curved
 path	60.2,69.9	61.3,65.3	58.5,64.6
 path	56.0,66.5	49.3,62.5	38.3,39.0
 Follow the path |goto Shadowfang Keep/1 38.3,39.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/2
@@ -616,6 +648,7 @@ path follow loose; loop off; ants curved
 path	61.3,11.9	54.1,14.9	45.2,35.9
 path	38.8,54.7
 Follow the path |goto Shadowfang Keep/2 38.8,54.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Baron Silverlaine##3887
@@ -635,12 +668,14 @@ path follow loose; loop off; ants curved
 path	33.1,82.4	31.0,87.9	26.7,90.2
 path	Shadowfang Keep/1 14.4,89.2
 Run up the stairs  |goto Shadowfang Keep/1 14.4,89.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/1
 path follow loose; loop off; ants curved
 path	19.9,92.6	25.6,72.5	26.6,70.1
 Follow the path |goto 26.6,70.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Commander Springvale##4278
@@ -650,10 +685,10 @@ kill 1 Commander Springvale##4278
 |tip Occasionally he will Desecrate an area under a player, slowing their movement speed and dealing damage. Move out of this quickly
 |tip At 3 Unholy Power, Springvalve can use Word of Shame; this places a dot on a random player dealing 5% of max health every 3 seconds until the encounter ends |only if heroic_dung()
 |tip Periodically, Springvalve will summon adds. Casters should stay away from Guardsman to prevent being interrupted |only if heroic_dung()
-_DPS/Tank:_ |only if heroic_dung()
-|tip Interrupt Unholy Empowerment from Guardman and Officers and Forsaken Ability from Officers |only if heroic_dung()
-_Healer:_ |only if heroic_dung()
-|tip Guardsman will use Mortal Strike on the tank. Prepare for this reduction in healing |only if heroic_dung()
+_TANK/DAMAGE:_ |only if heroic_dung() |grouprole TANK or DAMAGE
+|tip Interrupt Unholy Empowerment from Guardman and Officers and Forsaken Ability from Officers |only if heroic_dung() |grouprole TANK or DAMAGE
+_HEALER:_ |only if heroic_dung() |grouprole HEALER
+|tip Guardsman will use Mortal Strike on the tank. Prepare for this reduction in healing |only if heroic_dung() |grouprole HEALER
 kill 1 Commander Springvale##4278 |q Armored to the Teeth##27920/2 |goto Shadowfang Keep 28.4,58.6 |only if havequest(27920)
 Defeat Commander Springvale |scenariogoal 24780 |goto Shadowfang Keep 28.4,58.6
 step
@@ -661,12 +696,14 @@ map Shadowfang Keep/1
 path follow loose; loop off; ants curved
 path	32.9,70.8	36.0,67.7	Shadowfang Keep/7 25.0,75.2
 Go down the steps |goto Shadowfang Keep/7 25.0,75.2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/7
 path follow loose; loop off; ants curved
 path	28.6,74.6	39.6,79.1
 Follow the path |goto 39.6,79.1
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 talk Packleader Ivar Bloodfang##47006
@@ -683,6 +720,7 @@ path	45.4,46.5	41.8,46.5	42.3,41.3
 path	45.4,41.0	49.3,22.1	46.4,21.2
 path	44.6,30.7
 Follow the path |goto 44.6,30.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/3
@@ -693,6 +731,7 @@ path	64.9,36.1	53.4,81.4	45.5,79.9
 path	43.6,89.7	51.6,91.1	50.5,79.3
 path	43.2,85.6	50.1,92.7	Shadowfang Keep/4 49.3,75.2
 Follow this path |goto Shadowfang Keep/4 49.3,75.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Walden##46963 |goto Shadowfang Keep/4 54.2,54.3
@@ -700,8 +739,8 @@ kill 1 Lord Walden##46963 |goto Shadowfang Keep/4 54.2,54.3
 |tip He will also Conjure Poisonous Mixture_. Stay away from the poison on the ground
 |tip Walden will use Conjure Mystery Toxin. If the result is Toxic Coagulant, keep moving to keep your stacks below 3 |only if heroic_dung()
 |tip If the conjured toxin is Toxic Catalyst, use any DPS cooldowns you have, as you will have 100% critical strike |only if heroic_dung()
-_Healer:_ |only if heroic_dung()
-|tip Pay special attention to party members afflicted with Toxic Coagulent and Toxic Catalyst |only if heroic_dung()
+_HEALER:_ |only if heroic_dung() |grouprole HEALER
+|tip Pay special attention to party members afflicted with Toxic Coagulent and Toxic Catalyst |only if heroic_dung() |grouprole HEALER
 kill 1 Lord Walden##46963 |q Fightning Tooth and Claw##27921/1 |goto Shadowfang Keep/4 54.2,54.3 |only if havequest(27921)
 Defeat Lord Walden |scenariogoal 24775 |goto Shadowfang Keep/4 54.2,54.3
 step
@@ -715,6 +754,7 @@ path follow loose; loop off; ants curved
 path	60.9,29.1	49.1,26.8	38.7,34.2
 path	34.4,51.2	Shadowfang Keep/5 39.0,70.6	Shadowfang Keep/5 48.8,75.6
 Go up the steps |goto Shadowfang Keep/5 48.8,75.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/5
@@ -724,12 +764,14 @@ path	59.5,35.2	59.8,28.4	49.3,26.0
 path	40.2,33.4	34.8,47.3	36.3,64.2
 path	Shadowfang Keep/6 48.9,90.6
 Follow the path and go up the steps |goto Shadowfang Keep/6 48.9,90.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Shadowfang Keep/6
 path follow loose; loop off; ants curved
 path	50.9,82.6	60.9,44.1
 Follow the path |goto Shadowfang Keep/6 60.9,44.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Godfrey##46964
@@ -755,8 +797,7 @@ description="This guide will walk you through the Blackfathom Deeps dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Blackfathom Deeps or enter the dungeon with your group |goto Ashenvale/0 44.8,10.6 |c |or
-confirm |or
+Press _I_ and queue for Blackfathom Deeps or enter the dungeon with your group |goto Blackfathom Deeps/1 45.0,10.6 |c
 step
 talk Sentinel Aluwyn##75606
 accept The Rise of Aku'mai##34672 |goto Blackfathom Deeps/1 48.45,12.03
@@ -768,6 +809,7 @@ path	50.0,15.3	52.5,21.4	54.3,33.4
 path	54.1,47.5	51.1,48.2	47.6,45.2
 path	46.0,44.7
 Follow the path and climb over the rocks here |goto 46.0,44.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Ghamoo-Ra##74446
@@ -780,14 +822,15 @@ path follow loose; loop off; ants curved
 path	29.3,54.6	23.9,46.0	19.0,42.9
 path	14.6,43.2
 Swim under the water and follow the path |goto Blackfathom Deeps 14.6,43.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Domina##74476
 click Altar of Blood
 |tip Domina will occasionally summon a Foul Tempest that will inflict shadow damage every second to random players
 |tip She will also use Maw of Death, which deals massive shadow damage to anyone in front of her over 2 seconds. Avoid standing in front of her
-_Healer:_
-|tip Pay attention to anyone standing in front of Domina during Maw of Death, as they will take significant damage
+_HEALER:_ |grouprole HEALER
+|tip Pay attention to anyone standing in front of Domina during Maw of Death, as they will take significant damage |grouprole HEALER
 Defeat Domina |scenariogoal 24414 |goto 11.7,41.3
 confirm
 step
@@ -799,13 +842,14 @@ path	35.7,90.1	39.9,93.2	46.4,92.4
 path	53.1,87.2	57.1,79.8	57.7,73.5
 path	57.6,68.4	55.8,63.2
 Swim under the water and follow the path |goto 55.8,63.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Subjugator Kor'ul##74565 |goto Blackfathom Deeps/1 54.3,57.0
 |tip Kor'ul will use Leviathan's Grip, crushing a random party member over 8 seconds
 |tip When he uses Darkness Calls, Kor'ul will summon Aku'mai tentacles. Kill these quickly and avoid the areas of ground they target
-_Healer:_
-|tip Heal the player targeted by Leviathan's Grip
+_HEALER:_ |grouprole HEALER
+|tip Heal the player targeted by Leviathan's Grip |grouprole HEALER
 Defeat Subjugator Kor'ul |scenariogoal 24415 |goto Blackfathom Deeps/1 54.3,57.0
 confirm
 step
@@ -815,6 +859,7 @@ path	58.8,71.1	Blackfathom Deeps/2 37.1,29.3	Blackfathom Deeps/2 39.3,34.2
 path	Blackfathom Deeps/2 38.8,42.1	Blackfathom Deeps/2 36.7,51.5	Blackfathom Deeps/2 34.8,55.0
 path	Blackfathom Deeps/2 31.5,58.3	Blackfathom Deeps/2 30.0,64.2
 Follow the path |goto 30.0,64.2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Thruk##74505 |goto Blackfathom Deeps/2 33.5,68.8
@@ -829,6 +874,7 @@ click Guardian Egg##76062
 |tip Clicking an underwater egg will give you a swim speed buff.
 Follow the path |goto Blackfathom Deeps/3 60.0,51.6
 |tip You will need to swim under the ruins to reach the Guardian.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Guardian of the Deep##74508
@@ -848,13 +894,14 @@ map Blackfathom Deeps/2
 path follow loose; loop off; ants curved
 path	33.9,65.0	40.8,64.9	40.9,68.8
 Follow the path |goto 40.9,68.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Executioner Gore##74518 |goto 40.8,73.2
 |tip Executioner Gore will use Devouring Blackness on a random player, draining life and dealing damage
 |tip Gore will also slam his axe down in an Executioner's Strike, dealing damage in a frontal cone area and leaving a vortex. Move out of the vortex
-_DPS/Tank:_
-|tip Interrupt Devouring Blackness
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Devouring Blackness |grouprole TANK or DAMAGE
 Defeat Executioner Gore |scenariogoal 24411 |goto 40.7,77.9
 step
 map Blackfathom Deeps/2
@@ -862,18 +909,19 @@ path follow loose; loop off; ants curved
 path	40.7,81.6	43.0,81.1	46.0,81.6
 path	47.2,84.4
 Follow the path |goto 47.2,84.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Twilight Lord Bathiel##74728 |goto 51.2,81.6
 |tip Bathiel will use Restorative Waters, spraying parts of himself across the room and summoning elementals
 |tip These elementals should be killed quickly, as some of them will explode and some will heal Bathiel
 |tip Piercing Rain will immediately follow Restorative Waters and deal AoE damage to the entire group
-_DPS:_
-|tip Kill elementals quickly
-_Tank:_
-|tip Don't worry about picking up adds
-_Healer:_
-|tip Prepare to heal the group during Piercing Rain
+_DAMAGE:_ |grouprole DAMAGE
+|tip Kill elementals quickly |grouprole DAMAGE
+_TANK:_ |grouprole TANK
+|tip Don't worry about picking up adds |grouprole TANK
+_HEALER:_ |grouprole HEALER
+|tip Prepare to heal the group during Piercing Rain |grouprole HEALER
 Defeat Twilight Lord Bathiel |scenariogoal 24412 |goto 51.2,81.6
 step
 click Fire of Aku'mai
@@ -883,6 +931,7 @@ path follow loose; loop off; ants curved
 path	55.3,81.6	60.8,81.9	64.1,85.4
 path	79.2,85.3
 Follow the path |goto 79.2,85.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Aku'mai the Devourer##75155 |goto 86.5,86.7
@@ -915,8 +964,7 @@ description="This guide will walk you through the Stockade dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for The Stockade or enter the dungeon with your group |goto Stormwind City/0 50.56,66.58 |c |or
-|confirm |or
+Press _I_ and queue for The Stockade or enter the dungeon with your group |goto The Stockade/1 50.1,68.2 |c
 step
 talk Rifle Commander Coe##46417
 accept The Good Ol' Switcheroo##27733 |goto The Stockade 50.0,58.5
@@ -934,13 +982,14 @@ map The Stockade/1
 path follow loose; loop off; ants curved
 path	50.0,45.5	50.0,29.8
 Follow the path |goto 50.0,29.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Randolph Moloch##46383 |goto 50.8,19.2
 |tip Randolph will start Wildly Stabbing occasionally, attacking significanly faster but at a reduced chance to hit
 |tip He will use Sweep, attacking both the tank and the closest additional party member
 |tip At around 65% and 35% health, Randolph will Vanish, reappearing behind a random player and attacking them
-kill 1 Randolph Moloch##46383 |q The Good Ol' Switcheroo##27733/1 |goto 50.8,19.2 |only if havequest(27733)
+kill 1 Randolph Moloch##46383 |q 27733/1 |goto 50.8,19.2 |only if havequest(27733)
 Defeat Randolph Moloch |scenariogoal 24762 |goto 50.8,19.2
 step
 map The Stockade/1
@@ -948,6 +997,7 @@ path follow loose; loop off; ants curved
 path	49.7,36.3	60.6,36.4	67.2,38.4
 path	74.3,42.7
 Follow the path |goto 74.3,42.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Lord Overheat##46264 |goto 81.0,48.0
@@ -962,14 +1012,15 @@ path follow loose; loop off; ants curved
 path	71.4,40.5	63.2,37.0	50.1,36.4
 path	35.0,35.1	25.4,29.7
 Follow the path |goto 25.4,29.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Hogger##46254 |goto 22.1,27.0
 |tip Hogger will use Vicious Slice, dealing damage instantly as well as 15% of the target's health over 6 seconds
 |tip He will also use Maddening Call, dealing damage to the party and reducing attack and cast speed by 60%
 |tip At 30%, Hogger will Enrage. This will dramatically increase his damage output
-_DPS/Tank:_
-|tip Interrupt Maddening Call as often as possible
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Maddening Call as often as possible |grouprole TANK or DAMAGE
 kill 1 Hogger##46254 |q 27739/1 |only if havequest(27739)
 Defeat Hogger |scenariogoal 1/34403 |goto 22.1,27.0
 step
@@ -996,9 +1047,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Gnomeregan dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Gnomeregan or enter the dungeon with your group |goto Dun Morogh/10 30.33,74.39 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Gnomeregan or enter the dungeon with your group |goto Gnomeregan/1 64.4,28.8 |c
 step
 talk Murd Doc##44556
 accept The G-Team##26939 |goto Gnomeregan 63.1,33.3
@@ -1009,6 +1059,7 @@ path	62.1,35.6	57.6,42.0	59.0,46.5
 path	58.7,55.2	56.7,59.6	62.5,68.4
 path	72.6,69.5
 Follow the path |goto 72.6,69.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 talk Blastmaster Emi Shortfuse##7998
@@ -1025,6 +1076,7 @@ path follow loose;loop off;ants curved
 path	76.1,67.3	71.3,69.3	63.2,68.7
 path	56.6,59.5	59.0,55.5
 Follow the path |goto 59.0,55.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 Walk to the ledge |goto Gnomeregan/1 57.6,51.4 |n
@@ -1053,14 +1105,15 @@ path	33.8,57.2	29.6,51.3	24.3,50.2
 path	18.8,51.4	15.0,56.8	13.0,64.4
 path	17.5,65.9
 Follow the path |goto 17.5,65.9
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Electrocutioner 6000##6235
 |tip Electrocutioner will use Megavolt, inflicting nature damage to all players in front of him
 |tip He will also use Shock on his current target, dealing heavy nature damage
 |tip Chain Bolt will strike a target and jump to 3 nearby targets, dealing nature damage to each. Stay spread out
-_DPS/Tank:_
-|tip Interrupt Megavolt and Chain Bolt whenever possible
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Megavolt and Chain Bolt whenever possible |grouprole TANK or DAMAGE
 kill 1 Electrocutioner 6000##6235 |q The G-Team##26941/1 |only if havequest(26941)
 Defeat Electrocutioner 6000 |scenariogoal 24960 |goto 23.7,68.3
 confirm
@@ -1078,6 +1131,7 @@ path	29.7,36.3	31.5,36.6	38.6,50.3
 path	33.6,56.0	38.0,64.5	37.1,67.3
 path	36.1,79.8	35.9,85.7	37.8,87.3
 Follow the path |goto 37.8,87.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Crowd Pummeler 9-60##6229
@@ -1092,6 +1146,7 @@ path follow loose;loop off;ants curved
 path	45.7,88.8	49.9,89.5	51.3,86.9
 path	52.8,68.8	52.3,67.4	48.3,72.0
 Follow the path and ride the elevator down |goto Gnomeregan/4 71.4,77.2 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Gnomeregan/4
@@ -1103,6 +1158,7 @@ path	41.1,71.4	28.3,66.6	26.2,63.9
 path	25.3,60.1	25.8,56.2	28.8,45.7
 click The Final Chamber
 Follow the path and open The Final Chamber door |goto 28.8,45.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Mekgineer Thermaplugg##7800
@@ -1111,8 +1167,8 @@ kill 1 Mekgineer Thermaplugg##7800
 |tip Thermaplugg will also use Welding Beam on his current target. This will deal nature damage over 5 seconds
 |tip Periodically, he will activate Walking Bombs. These bombs will keep spawning until the red button on the side of the tube is pressed
 |tip Walking Bombs will move towards players and Detonate, dealing fire damage in a 10 yard radius
-_DPS/Tank:_
-|tip Interrupt Steam Blast and Welding Beam as often as possible
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Steam Blast and Welding Beam as often as possible |grouprole TANK or DAMAGE
 kill 1 Mekgineer Thermaplugg##7800 |q The G-Team##26942/1 |only if havequest(26942)
 Defeat Mekgineer Thermaplugg |scenariostage 1 |goto 31.3,29.9
 step
@@ -1131,8 +1187,7 @@ description="This guide will walk you through the Scarlet Halls dungeon.",
 },[[
 step
 stickystart "RankFile"
-Press _I_ and queue for Scarlet Halls or enter the dungeon with your group |goto Tirisfal Glades/13 78.15,57.39 |c |or
-confirm |or
+Press _I_ and queue for Scarlet Halls or enter the dungeon with your group |goto Scarlet Halls/1 34.4,89.8 |c
 step
 talk Hooded Crusader##64738 |only if not completedq(31490) and not completedq(31493) and not heroic_dung()
 talk Hooded Crusader##64738 |only if not completedq(31495) and not completedq(31497) and heroic_dung()
@@ -1146,6 +1201,7 @@ path follow loose; loop off; ants curved
 path	37.7,84.8	44.1,85.0	44.2,80.4
 path	48.1,80.3
 Follow the path |goto 48.1,80.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 click Reinforced Archery Target
@@ -1158,6 +1214,7 @@ map Scarlet Halls/1
 path follow loose; loop off; ants curved
 path	49.8,45.3	49.8,36.5	53.8,36.5
 Follow the path |goto 53.8,36.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Houndmaster Braun##59303
@@ -1175,14 +1232,15 @@ path	52.2,80.0	57.3,80.0	57.1,71.7
 path	61.8,71.5	61.7,54.5
 You will need to avoid cannon fire from the cannoneers
 Allow the remaining dogs to kill the door guards and proceed along the path. |goto Scarlet Halls/2 61.7,54.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Armsmaster Harlan##58632 |goto Scarlet Halls/2 61.8,45.2
 |tip Dragon's Reach is a cleave ability, avoid being in front of this boss.
 |tip Harlan will periodically summon two Scarlet Defenders. You can either kill these adds or you can wait for them to be caught in Harlan's Blades of Light ability.
 |tip He will use Heroic Leap to the center of the pit and begin casting Blades of Light. This whirlwind quickly moves around the entire area and does massive damage to anybody caught within it. Jump between the different levels of this area to avoid this ability easily.
-_Healer_
-|tip Avoid standing near the door. The adds will spawn and immediately begin attacking you
+_Healer_ |grouprole HEALER
+|tip Avoid standing near the door. The adds will spawn and immediately begin attacking you |grouprole HEALER
 Defeat Armsmaster Harlan |scenariogoal 19268 |goto Scarlet Halls/2 61.8,45.2
 confirm
 step
@@ -1192,6 +1250,7 @@ path	61.7,57.8	56.2,57.7	48.6,57.7
 path	48.6,50.5	39.2,50.6	39.2,36.1
 path	39.2,25.4
 Follow the path |goto 39.2,25.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Flameweaver Koegler##59150 |goto 39.3,15.9
@@ -1226,8 +1285,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Scarlet Monastery dungeon.",
 },[[
 step
-Press _I_ and queue for Scarlet Monastery or enter the dungeon with your group |goto Tirisfal Glades/13 69.03,24.68 |c |or
-confirm |or
+Press _I_ and queue for Scarlet Monastery or enter the dungeon with your group |goto Scarlet Monastery/2 74.0,45.8 |c
 step
 talk Hooded Crusader##64827 |only if not completedq(31513) and not heroic_dung()
 talk Hooded Crusader##64827 |only if not completedq(31515) and heroic_dung()
@@ -1241,6 +1299,7 @@ path	69.9,53.2	55.0,54.2	43.5,53.7
 path	35.7,45.8
 You can avoid most of the trash here. Destroy the corpse pile first
 Follow the path |goto 35.7,45.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Thalnos the Soulrender##59789
@@ -1262,6 +1321,7 @@ path follow loose; loop off; ants curved
 path	35.0,52.4	34.9,78.3	39.3,78.3
 path	39.4,85.2	48.5,85.2	Scarlet Monastery/2 49.1,11.9
 Follow the path |goto Scarlet Monastery/2 49.1,11.9 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 talk Blade of the Anointed##64855 |only if not completedq(31514) and not heroic_dung()
@@ -1276,6 +1336,7 @@ map Scarlet Monastery/2
 path follow loose; loop off; ants curved
 path	45.7,31.9	43.9,36.3	49.2,43.3
 Follow the path |goto 49.2,43.3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Brother Korloff##59223
@@ -1320,8 +1381,7 @@ description="This guide will walk you through the Razorfen Kraul dungeon.",
 },[[
 step
 label "start"
-Press _I_ and queue for Razorfen Kraul or enter the dungeon with your group |goto Southern Barrens/0 40.75,94.45 |c |or
-confirm |or
+Press _I_ and queue for Razorfen Kraul or enter the dungeon with your group |goto Razorfen Kraul/1 70.0,83.0 |c
 step
 talk Auld Stonespire##44402
 accept Going, Going, Guano!##26901 |goto Razorfen Kraul 68.3,83.0
@@ -1337,6 +1397,7 @@ path	81.1,59.5	84.9,49.4	80.9,44.3
 path	79.5,40.2	75.6,39.6	72.2,31.8
 path	79.0,35.6	82.5,41.4
 Follow the path  |goto 82.5,41.4 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Roogug##74948 |goto Razorfen Kraul/1 87.2,41.6
@@ -1344,8 +1405,8 @@ kill 1 Roogug##74948 |goto Razorfen Kraul/1 87.2,41.6
 |tip Woven Elements will create a vortex of random elemental effects that deal damage
 |tip Crystalfire Discharge creates a totem that shoots energy at random players, knocking them back and dealing damage
 |tip Solarshard Beam will create a bright pillar of light, silencing anyone within. Move out of this
-_DPS/Tank:_
-|tip Interrupt Woven Elements
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Woven Elements |grouprole TANK or DAMAGE
 kill 1 Roogug##74948 |q Take Them Down!##26907/3 |goto Razorfen Kraul/1 87.2,41.6 |only if havequest(26907)
 Defeat Roogug |scenariogoal 24979 |goto Razorfen Kraul/1 87.2,41.6
 step
@@ -1354,13 +1415,14 @@ path follow loose; loop off; ants curved
 path	83.4,40.9	79.2,35.5	72.0,31.3
 path	71.6,39.1	74.7,43.4	77.5,45.4
 Follow the path |goto 77.5,45.4 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Hunter Bonetusk##75001 |goto Razorfen Kraul/1 81.9,50.5
 |tip At 50% health, Bonetusk will call a Stampede of boars. Avoid the boars to prevent taking damage
 |tip Dodge the incoming arrows from Volley
-_Tank:_
-|tip Be prepared for extra incoming damage during Barrage. Bonetusk will fire multiple arrows very rapidly for a short time
+_TANK:_ |grouprole TANK
+|tip Be prepared for extra incoming damage during Barrage. Bonetusk will fire multiple arrows very rapidly for a short time |grouprole TANK
 kill 1 Hunter Bonetusk##75001 |q Take Them Down!##26907/1 |goto Razorfen Kraul/1 81.9,50.5 |only if havequest(26907)
 Defeat Hunter Bonetusk |scenariogoal 24978 |goto Razorfen Kraul/1 81.9,50.5
 step
@@ -1369,6 +1431,7 @@ path follow loose; loop off; ants curved
 path	74.4,42.7	70.3,36.8	63.1,33.5
 path	60.6,27.8
 Follow the path |goto 60.6,27.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Warlord Ramtusk##74462 |goto Razorfen Kraul/1 57.0,30.1
@@ -1376,10 +1439,10 @@ kill 1 Warlord Ramtusk##74462 |goto Razorfen Kraul/1 57.0,30.1
 |tip Ramtusk will use Spirit Axe, throwing his axe to a location and dealing arcane damage to all nearby enemies
 |tip Jargba will use Spirit Bolt, causing a orb of energy to randomly move towards a party member
 |tip Aggem will occasionally Arcane Shot a random player, dealy heavy arcane damage
-_DPS/Tank:_
-|tip Interrupt Jargba's Spirit Bolt
-_Healer:_
-|tip Pay close attention to _rcane Shot targets, they will take significant damage
+_TANK/DAMAGE:_ |grouprole TANK or DAMAGE
+|tip Interrupt Jargba's Spirit Bolt |grouprole TANK or DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Pay close attention to _Arcane Shot targets, they will take significant damage |grouprole HEALER
 kill 1 Warlord Ramtusk##74462 |q Take Them Down!##26907/2 |goto Razorfen Kraul/1 57.0,30.1 |only if havequest(26907)
 Defeat Warlord Ramtusk |scenariogoal 24160 |goto Razorfen Kraul/1 57.0,30.1
 step
@@ -1390,6 +1453,7 @@ path	57.7,37.2	58.8,41.1	55.6,44.5
 path	50.6,45.6	47.5,47.6	42.0,54.0
 path	32.1,49.0	24.2,48.1
 Follow the path |goto 24.2,48.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 map Razorfen Kraul/1
@@ -1397,6 +1461,7 @@ path follow loose; loop off; ants curved
 path	21.4,47.5	20.1,51.6	17.6,54.7
 path	11.5,54.3
 Follow the path |goto 11.5,54.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 kill 1 Groyat, the Blind Hunter##75247 |goto Razorfen Kraul/1 7.5,53.8
@@ -1415,6 +1480,7 @@ path follow loose; loop off; ants curved
 path	7.3,49.1	7.6,46.6	10.7,44.0
 path	14.0,36.7	18.7,39.3	18.7,39.3
 Follow the path |goto 18.7,39.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
 talk Spirit of Agamaggan##44415
@@ -1448,8 +1514,7 @@ description="This guide will walk you through the Maraudon: The Wicked Grotto du
 },[[
 step
 label "start"
-Press _I_ and queue for Maraudon: The Wicked Grotto or enter the dungeon with your group |goto Maraudon/1 78.5,68.5 < 20 |c |or
-|confirm |or
+Press _I_ and queue for Maraudon: The Wicked Grotto or enter the dungeon with your group |goto Maraudon/1 78.1,68.8 |c
 step
 Click the Quest Accept box in the top right corner.
 accept Corruption in Maraudon##27697 |goto Maraudon 76.7,64.7
@@ -1460,7 +1525,9 @@ path follow loose; loop off; ants curved
 path	75.8,60.7	72.2,66.1	69.1,64.3
 path	65.1,59.7	61.3,56.5	58.0,49.9
 path	54.7,48.3	52.3,49.6
-_Follow_ the path |goto 52.3,49.6 < 15 |c |noway
+Follow the path |goto 52.3,49.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Tinkerer Gizlock##13601 |goto 48.7,56.2
 |tip Tinkerer Gizlock will occasionally throw a Bomb as someone, inflicting AoE damage. Stay at least 5 yards apart
@@ -1476,9 +1543,11 @@ path	49.9,70.0	48.4,76.1	48.7,81.8
 path	47.4,85.1	40.3,87.2	35.6,83.3
 path	36.4,79.8	41.0,79.9	42.5,78.4
 path	40.0,76.6
-_Follow_ the path |goto 40.0,76.6 < 15 |c |noway
+Follow the path |goto 40.0,76.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Lord Vyletongue##12236 |goto 37.6,69.5 |only if default
+kill 1 Lord Vyletongue##12236 |goto 37.6,69.5
 |tip Shoot will deal minor physical damage to random party members
 |tip Stay spread out so that Multi-Shot does not hit more than one party member at a time
 |tip Occasionally, Vyletongue will Blink 20 yards straight forward
@@ -1495,8 +1564,10 @@ path follow loose; loop off; ants curved
 path	36.9,76.5	31.0,80.8	31.1,88.6
 path	26.4,88.2	24.9,75.2	22.5,58.9
 path	Maraudon/2 26.5,6.2
-_Follow_ the path |goto Maraudon/2 26.5,6.2 < 30 |c |noway
+Follow the path |goto Maraudon/2 26.5,6.2 < 30
 |tip Celebras the Cursed is an optional boss.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Celebras the Cursed##12225
 |tip Celebras will summon three Forces of Nature.
@@ -1514,9 +1585,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Marudon: Foulspore Cavern dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Maraudon: Foulspire Caverns or enter the dungeon with your group |goto Maraudon/1 62.2,28.2 < 20 |c |or
-'| |confirm |or
+label "start"
+Press _I_ and queue for Maraudon: Foulspire Caverns or enter the dungeon with your group |goto Maraudon/1 62.2,28.2 |c
 step
 Click the Accept Quest box on the right side of your screen.
 accept Servants of Theradras##27698 |goto Maraudon 60.8,21.2
@@ -1530,7 +1600,9 @@ path	41.0,44.8	43.0,48.2	49.1,44.9
 path	53.6,37.3	52.8,33.2	48.9,31.9
 path	47.1,29.1	46.1,26.5	47.9,22.3
 path	47.1,19.9	40.9,14.4
-_Follow_ the path |goto 40.9,14.4 < 20 |c |noway
+Follow the path |goto 40.9,14.4 < 20
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Noxxion##13282 |goto 34.6,10.7 |only if default
 |tip Toxic Volley will poison all players within 45 yards for 15 seconds
@@ -1545,7 +1617,9 @@ path follow loose; loop off
 path	38.9,16.5	38.2,24.2	35.2,31.0
 path	33.7,35.7	32.9,39.9	30.8,39.9
 path	25.9,36.2	21.7,35.6
-_Follow_ the path |goto 21.7,35.6 < 12 |c |noway
+Follow the path |goto 21.7,35.6 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Razorlash##12258 |goto Maraudon/1 16.3,34.0 |only if default
 |tip Razorlash will Puncture the tank, causing them to bleed for 10 seconds
@@ -1567,11 +1641,11 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Maraudon: Earth Song Falls dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Maraudon: Earth Song Falls or enter the dungeon with your group |goto Maraudon/2 28.1,35.5 < 20 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Maraudon: Earth Song Falls or enter the dungeon with your group |goto Maraudon/2 28.2,35.2 |c
 step
 Jump down the waterfall here |goto 28.2,37.3 < 5
+confirm
 step
 Click the Quest Discovered box that displays on the right side of the screen under your minimap
 accept Princess Theradras##27692 |goto 29.9,50.0
@@ -1585,14 +1659,16 @@ path	41.1,61.3	44.6,60.0	45.8,57.9
 path	45.5,55.2	43.6,57.2	41.1,58.6
 path	40.8,62.9	38.3,63.4	36.0,59.6
 path	37.2,54.5	39.7,53.6
-_Follow_ the path |goto 39.7,53.6 < 8 |c |noway
+Follow the path |goto 39.7,53.6 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Landslide##12203 |goto Maraudon/2 40.6,48.3
 |tip Landslide will Knock Away the tank, causing physical damage and knocking them back
 |tip Periodically, Trample will deal physical damage to the entire party
 |tip During Landslide, all party members will be stunned while he summons 4 Theradrim Shardlings. Kill these and finish Landslide off
-_Healer:_
-|tip Be prepared to heal the group during _Trample_
+_HEALER:_ |grouprole HEALER
+|tip Be prepared to heal the group during _Trample_ |grouprole HEALER
 Defeat Landslide |scenariogoal 25056 |goto Maraudon/2 40.6,48.3
 step
 map Maraudon/2
@@ -1602,28 +1678,32 @@ path	38.2,63.4	41.4,65.5	43.5,67.5
 path	45.1,66.7	46.2,68.1	44.7,73.6
 path	41.7,75.2	38.8,78.7	36.1,79.6
 path	32.8,78.7
-_Follow_ the path |goto 32.8,78.7 < 8 |noway |c
+Follow the path |goto 32.8,78.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Princess Theradras##12201 |goto 26.6,78.8 |only if default
 |tip Theradras will Thrash, dealing 2 extra attacks to the tank
 |tip Repulsive Gaze will fear the tank and anyone standing near them for 6 seconds. Don't stand near the tank
 |tip Thrown Boulders will deal damage to random players, interrupt spellcasting, and stun them for 2 seconds
 |tip Dust Field will deal nature damage to anyone within 20 yards of Theradras and knock them back
-_Healer:_
-|tip Be prepared for the group to take heavy damage during _Dust Field_
+_HEALER:_ |grouprole HEALER
+|tip Be prepared for the group to take heavy damage during _Dust Field_ |grouprole HEALER
 kill 1 Princess Theradras##12201 |q Princess Theradras##27692/1 |goto 26.6,78.8 |only if havequest(27692)
-Defeat Princess Theradras |scenariogoal 18532 |goto 26.6,78.8
+Defeat Princess Theradras |scenariogoal 1/34447 |goto 26.6,78.8
 step
 Click the Quest Complete box in the top right corner
 turnin Princess Theradras##27692
 only if not completedq(27692)
 step
-Jump down the waterfall here |goto 31.3,75.6 < 5 |c
+Jump down the waterfall here |goto 31.3,75.6 < 5
+confirm
 step
 kill 1 Rotgrip##13596 |goto 41.6,79.5
 |tip Rotgrip will Puncture the tank for the entire fight, bleeding them for physical damage
 |tip Fatal Bite will damage the tank and heal Rotgrip for twice the amount of damage dealt
 Defeat Rotgrip |scenariogoal 25057 |goto 41.6,79.5
+confirm
 step
 Congratulations, you have completed Maraudon: Earth Song Falls!
 ]])
@@ -1635,8 +1715,7 @@ description="This guide will walk you through the Dire Maul: Warpwood Quarter du
 },[[
 step
 label "start"
-Press _I_ and queue for Dire Maul: Warpwood Quarter or enter the dungeon with your group |goto Dire Maul/5 6.7,38.3 < 100 |c |or
-|confirm |or
+Press _I_ and queue for Dire Maul: Warpwood Quarter or enter the dungeon with your group |goto Dire Maul/5 6.7,38.3 |c
 step
 talk "Ambassador" Dagg'thol##44971
 accept Pusillin The Thief##27107 |goto Dire Maul/5 7.1,36.3
@@ -1664,12 +1743,16 @@ path	55.6,30.6	55.9,34.3	57.5,37.4
 path	59.1,37.9	66.5,38.1	73.8,41.2
 path	74.8,46.7	71.6,46.8
 talk Pusillin##14354
-_Follow_ the path and _talk to Pusillin_ whenever he stops |goto 71.6,46.8 < 5 |c |noway
+Follow the path and talk to Pusillin whenever he stops |goto 71.6,46.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Pusillin##14354
 Tell him _"Prepare to meet your maker"_ |goto Dire Maul/5 75.8,45.2
-kill Pusillin
-Get the Book of Incantations |q Pusillin The Thief##27107/1 |goto 73.77,43.74 |only if havequest(27107)
+confirm
+step
+kill Pusillin##14354 |goto 73.77,43.74
+collect Book of Incantations##18261 |q 27107/1 |goto 73.77,43.74 |only if havequest(27107)
 confirm |only if not havequest(27107)
 step
 map Dire Maul/5
@@ -1679,7 +1762,9 @@ path	58.2,37.8	57.0,36.6	55.8,33.5
 path	55.6,29.1	54.7,26.6	52.0,26.2
 path	43.8,26.2	43.7,48.0	45.3,60.5
 path	44.4,67.1	43.8,64.6	43.8,58.9
-_Follow_ the path |goto 43.8,58.9 < 5 |c |noway
+Follow the path |goto 43.8,58.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Lethtendris##14327 |goto 42.8,49.1
 |tip Void Bolt deals shadow damage to her current target
@@ -1697,14 +1782,18 @@ map Dire Maul/5
 path follow loose; loop off; ants curved; dist 10
 path	43.8,57.2	43.8,66.7	44.8,66.5
 path	46.9,63.4	47.0,63.3
-_Follow_ the path |goto 47.0,63.3 < 5 |c |noway
+Follow the path |goto 47.0,63.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Dire Maul/6
 path follow loose; loop off; ants curved; dist 10
 path	60.5,82.6	63.2,84.8	63.0,90.3
 path	60.9,92.3	58.1,90.9	57.5,87.6
 path	58.1,80.3	58.3,76.2
-_Follow_ the path |goto Dire Maul/6 58.3,76.2 < 8 |c |noway
+Follow the path |goto Dire Maul/6 58.3,76.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Hydrospawn##13280 |goto Dire Maul/6,55.5,71.4
 |tip Submersion reduces the party's stamina by 10 per stack. Acts as a soft enrage
@@ -1719,13 +1808,15 @@ path follow loose; loop off; ants curved; dist 10
 path	58.2,66.5	57.7,54.9	58.5,52.6
 path	60.1,51.9	61.5,52.8	62.1,55.1
 path	62.1,69.3	60.0,69.5
-_Follow_ the path |goto Dire Maul/6 60.0,69.5 < 5 |c |noway
+Follow the path |goto Dire Maul/6 60.0,69.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Zevrim Thornhoof##11490 |goto 57.6,74.0 |only if default
+kill 1 Zevrim Thornhoof##11490 |goto 57.6,74.0
 |tip Players afflicted by Intense Pain will deal shadow damage to anyone standing nearby
 |tip Occasionally, Thornhoof will Sacrifice players on his altar. The sacrificed player will take heavy damage over 6 seconds
-_Healer:_
-|tip You must heal the Sacrifice target or they will die
+_HEALER:_ |grouprole HEALER
+|tip You must heal the Sacrifice target or they will die |grouprole HEALER
 kill 1 Zevrim Thornhoof##11490 |q Alzzin the Wildshaper##27104/1 |goto 57.6,74.0 |only if havequest(27104)
 Defeat Zevrim Thornhoof |scenariogoal 25060 |goto 57.6,74.0
 step
@@ -1733,7 +1824,9 @@ map Dire Maul/6
 path follow loose; loop off; ants curved; dist 10
 path	53.5,77.3	52.8,88.0	52.9,91.2
 path	48.8,90.9	40.7,80.5
-_Jump down_ and follow the path |goto 40.7,80.5 < 8 |c |noway
+Jump down and follow the path |goto 40.7,80.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Dire Maul/6
 path follow loose; loop off; ants curved; dist 10
@@ -1741,7 +1834,9 @@ path	39.6,78.4	40.4,71.4	41.0,66.6
 path	39.3,60.9	40.2,48.9
 talk Old Ironbark##11491
 |tip Tell him "Thank you, Ironbark. We are ready for you to open the door."
-_Follow him_ and go through the door he opens |goto 40.2,48.9 < 5 |c
+Follow him and go through the door he opens |goto 40.2,48.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Dire Maul/6
 path follow loose; loop off; ants curved; dist 10
@@ -1749,9 +1844,11 @@ path	40.2,45.0	40.2,33.1	41.0,30.1
 path	42.9,28.9	48.6,28.9	51.0,22.0
 path	55.8,16.9	59.8,16.6	64.5,19.0
 path	66.0,28.8
-_Follow_ the path |goto 66.0,28.8 < 9 |c |noway
+Follow the path |goto 66.0,28.8 < 9
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Alzzin the Wildshaper##11492 |goto Dire Maul/6,57.7,28.9 |only if default
+kill 1 Alzzin the Wildshaper##11492 |goto Dire Maul/6,57.7,28.9
 _Satyr Form:_
 |tip Alzzin will leech mana from random players using Enervate
 |tip Wither is a disease that deals nature damage and reduces strength by 50 for 21 seconds
@@ -1790,7 +1887,10 @@ path	Dire Maul/5 12.4,38.3	Dire Maul/5 8.1,36.6
 You can either run to the beginning of the dungeon to turn in your quests.
 Or
 You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-Return to the beginning of the dungeon |goto Dire Maul/5 8.1,36.6 < 20 |c |noway
+Return to the beginning of the dungeon |goto Dire Maul/5 8.1,36.6 < 20
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not completedq(27107) and not completedq(27108) and not completedq(27103) and not completedq(27104) and not completedq(27105)
 step
 talk "Ambassador" Dagg'thol##44971
 turnin Pusillin The Thief##27107 |goto Dire Maul/5 7.0,36.2
@@ -1845,19 +1945,23 @@ _Phase 2:_
 |tip Wander's Colossal Book of Shadow Puppets will cast Shadow Bolt at the party
 Defeat Instructor Chillheart |scenariogoal 19259 |goto Scholomance/1 65.5,60.6
 step
-click In the Shadow of the Light##6477 |tip You can find the tome near this area. It is usually sitting on one of the tables.
-Destroy the tome "In the Shadow of the Light" |q The Four Tomes##31440/1 |goto 72.15,64.41 |only if not heroic_dung()
-Destroy the tome "In the Shadow of the Light" |q The Four Tomes##31442/1 |goto 72.15,64.41 |only if heroic_dung()
+click In the Shadow of the Light##6477
+|tip You can find the tome near this area. It is usually sitting on one of the tables.
+Destroy the tome "In the Shadow of the Light" |q 31440/1 |goto 72.15,64.41 |only if not heroic_dung()
+Destroy the tome "In the Shadow of the Light" |q 31442/1 |goto 72.15,64.41 |only if heroic_dung()
 only if havequest(31440) or havequest(31442)
 step
 map Scholomance/1
 path follow loose; loop off; ants curved
 path	74.6,52.0	85.7,51.6	85.4,24.1
-_Follow_ the path |goto Scholomance/1 85.4,24.1 < 5 |noway |c
+Follow the path |goto Scholomance/1 85.4,24.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-click Kel'Thuzad's Deep Knowledge##6477 |tip You can find the tome near this area. It is usually sitting in one of the stone alcoves.
-Destroy Kel'Thuzad's Deep Knowledge |q The Four Tomes##31440/2 |goto Scholomance/2 73.9,8.6 |only if not heroic_dung()
-Destroy Kel'Thuzad's Deep Knowledge |q The Four Tomes##31442/2 |goto Scholomance/2 73.9,8.6 |only if heroic_dung()
+click Kel'Thuzad's Deep Knowledge##6477
+|tip You can find the tome near this area. It is usually sitting in one of the stone alcoves.
+Destroy Kel'Thuzad's Deep Knowledge |q 31440/2 |goto Scholomance/2 73.9,8.6 |only if not heroic_dung()
+Destroy Kel'Thuzad's Deep Knowledge |q 31442/2 |goto Scholomance/2 73.9,8.6 |only if heroic_dung()
 only if havequest(31440) or havequest(31442)
 step
 kill 1 Jandice Barov##59184 |goto Scholomance/2 58.8,18.3
@@ -1868,7 +1972,8 @@ kill 1 Jandice Barov##59184 |goto Scholomance/2 58.8,18.3
 |tip While the clones are alive they will cast Whirl of Illusion, this does AoE damage to everybody in the group every second.
 Defeat Jandice Barov |scenariogoal 19260 |goto Scholomance/2 58.8,18.3
 step
-kill Boneweaver##59193+, Rattlegore##59153 |goto Scholomance/2 48.6,26.7 |tip Clearing all of the Boneweavers in the room will begin the Rattlegore encounter.
+kill Boneweaver##59193+, Rattlegore##59153 |goto Scholomance/2 48.6,26.7
+|tip Clearing all of the Boneweavers in the room will begin the Rattlegore encounter.
 |tip With each successful attack Rattlegore will gain a stack of Rusting. This increases his attack damage but lowers his attack and movement speeds. If the tank is getting hit too hard, kite Rattlegore around the room
 |tip Bone Spike will target a random party member and do massive damage to them. This can be prevented if every party member keeps Bone Armor active
 |tip Bone Armor is granted by clicking on the Bone Piles around the room
@@ -1878,17 +1983,22 @@ step
 map Scholomance/2
 path follow loose; loop off; ants curved
 path	43.2,26.5	36.4,26.8	36.7,37.4
-_Follow_ the path |goto 36.7,37.4 < 10 |c |noway
+Follow the path |goto 36.7,37.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-click Forbidden Rites and other Rituals Necromantic##6477 |tip You can find the tome near this area. It is usually found on one of the tables or in a stone alcove.
-Destroy Forbidden Rites and other Rituals Necromantic |q The Four Tomes##31440/3 |goto 36.0,47.1 |only if not heroic_dung()
-Destroy Forbidden Rites and other Rituals Necromantic |q The Four Tomes##31442/3 |goto 36.0,47.1 |only if heroic_dung()
+click Forbidden Rites and other Rituals Necromantic##6477
+|tip You can find the tome near this area. It is usually found on one of the tables or in a stone alcove.
+Destroy Forbidden Rites and other Rituals Necromantic |q 31440/3 |goto 36.0,47.1 |only if not heroic_dung()
+Destroy Forbidden Rites and other Rituals Necromantic |q 31442/3 |goto 36.0,47.1 |only if heroic_dung()
 only if havequest(31440) or havequest(31442)
 step
 map Scholomance/2
 path follow loose; loop off; ants curved
 path	39.6,47.5	46.4,47.2
-_Follow_ the path |goto 46.4,47.2 < 10 |c |noway
+Follow the path |goto 46.4,47.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Lilian Voss##58722 |goto 51.4,47.1
 _Phase 1:_
@@ -1906,26 +2016,31 @@ step
 map Scholomance/2
 path follow loose; loop off; ants curved
 path	54.3,55.6	54.2,67.1
-_Follow_ the path |goto 54.2,67.1 < 12 |c |noway
+Follow the path |goto 54.2,67.1 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-click The Dark Grimoire##6477 |tip You can find the tome near this area. It is usually found on one of the tables.
-Destroy The Dark Grimoire |q The Four Tomes##31440/4 |goto Scholomance/2 47.1,73.1 |only if not heroic_dung()
-Destroy The Dark Grimoire |q The Four Tomes##31442/4 |goto Scholomance/2 47.1,73.1 |only if heroic_dung()
+click The Dark Grimoire##6477
+|tip You can find the tome near this area. It is usually found on one of the tables.
+Destroy The Dark Grimoire |q 31440/4 |goto Scholomance/2 47.1,73.1 |only if not heroic_dung()
+Destroy The Dark Grimoire |q 31442/4 |goto Scholomance/2 47.1,73.1 |only if heroic_dung()
 only if havequest(31440) or havequest(31442)
 step
 map Scholomance/2
 path follow loose; loop off; ants curved
 path	47.9,83.4	48.0,88.9	57.5,89.1
 path	Scholomance/3 49.9,20.8
-_Follow_ the path |goto Scholomance/3 49.9,20.8 < 5 |c |noway
+Follow the path |goto Scholomance/3 49.9,20.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Darkmaster Gandling##59080 |goto Scholomance/4 49.9,38.5 |only if default
+kill 1 Darkmaster Gandling##59080 |goto Scholomance/4 49.9,38.5
 |tip Immolate will be used on a random party member
 |tip Darkmaster Gandling will cast Rise!. This summons many Failed Students that need to be killed. During this cast Darkmaster Gandling takes reduced damage
 |tip Periodically a random party member will be teleported to one of Gandling's study rooms for a Harsh Lesson
 |tip This party member must kill the Expired Test Subjects and make their way back to the bosses room. If the healer gets trapped in one of these rooms, the Fresh Test Subjects around the room will serve as useful bombs. Dispel the _Explosive Pain_ off of them to deal AoE damage
-kill 1 Darkmaster Gandling##59080 |q An End to the Suffering##31447/1 |goto Scholomance/4 49.9,38.5 |only if havequest(31447)
-kill 1 Darkmaster Gandling##59080 |q An End to the Suffering##31448/1 |goto Scholomance/4 49.9,38.5 |only if havequest(31448)
+kill 1 Darkmaster Gandling##59080 |q 31447/1 |goto Scholomance/4 49.9,38.5 |only if havequest(31447)
+kill 1 Darkmaster Gandling##59080 |q 31448/1 |goto Scholomance/4 49.9,38.5 |only if havequest(31448)
 Defeat Darkmaster Gandling |scenariostage 1 |goto Scholomance/4 49.9,38.5
 step
 talk Talking Skull##64562
@@ -1954,9 +2069,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Uldaman dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Uldaman or enter the dungeon with your group |goto Uldaman/1 67.0,72.7 < 100 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Uldaman or enter the dungeon with your group |goto Uldaman/1 67.0,72.7 < 100 |c
 step
 talk Olga Runesworn##46233
 accept Behind Closed Doors##27676 |goto Uldaman,63.9,73.0
@@ -1975,7 +2089,9 @@ path follow loose; loop off; ants curved; dist 10
 path	65.4,75.9	65.3,81.4	62.0,81.1
 path	62.0,75.4	56.7,75.5	56.6,81.4
 path	53.3,81.4	53.3,78.6
-_Follow_ the path |goto 53.3,78.6 < 5 |c |noway
+Follow the path |goto 53.3,78.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Revelosh##6910 |goto Uldaman 52.7,72.2
 |tip Revelosh will use Chain Lightning, arcing to up to 2 additional targets. Interrupt this as often as possible
@@ -1985,7 +2101,9 @@ step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
 path	51.3,72.5	48.2,72.5
-_Follow_ the path |goto 48.2,72.5 < 5 |c |noway
+Follow the path |goto 48.2,72.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click the Keystone##1369 |goto 45.4,73.7 < 7
 kill 1 Ironaya##7228 |goto 45.4,73.7 |only if default
@@ -2005,7 +2123,9 @@ path follow loose; loop off; ants curved; dist 10
 path	43.6,69.3	41.7,66.4	38.9,65.0
 path	36.1,64.4	36.5,59.9	35.2,58.3
 path	34.9,56.0	32.4,54.5	31.1,56.9
-_Follow_ the path |goto 31.1,56.9 < 5 |c |noway
+Follow the path |goto 31.1,56.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Obsidian Sentinel##7023
 |tip Obsidian Reflection will give the Sentinel a 20% chance to reflect the next spell cast at him
@@ -2013,18 +2133,22 @@ kill 1 Obsidian Sentinel##7023
 |tip These Shards possess the same Obsidian Reflection as the Sentinel
 Obtain the Obsidian Power Core |q It's What's Inside That Counts##27673/1 |goto Uldaman/1 28.7,61.7 |only if havequest(27673)
 Defeat the Obsidian Sentinel |scenariogoal 24973 |goto Uldaman/1 28.7,61.7
+confirm
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
 path	29.3,58.3	31.5,56.4	32.7,54.3
 path	36.3,56.5	36.5,53.4	36.4,50.9
 path	39.3,49.2	45.5,49.2
-_Follow_ the path |goto 45.5,49.2 < 5 |c |noway
+Follow the path |goto 45.5,49.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Ancient Stone Keeper##7206 |goto Uldaman/1 47.5,42.5
 |tip Sand Storms will swirl towards random players, dealing physical damage and slowing them. Stay away from these
 Retrieve the Titan Power Core |q It's What's Inside That Counts##27673/2 |goto Uldaman/1 47.5,42.5 |only if havequest(27673)
 Defeat the Ancient Stone Keeper |scenariogoal 24974 |goto Uldaman/1 47.5,42.5
+confirm
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -2032,7 +2156,9 @@ path	45.5,41.2	41.5,41.2	41.1,36.8
 path	39.6,36.2	38.4,39.1	36.6,39.3
 path	36.3,36.0	34.8,35.8	33.2,36.2
 path	31.2,34.2	29.0,34.5
-_Follow_ the path |goto 29.0,34.5 < 6 |c |noway
+Follow the path |goto 29.0,34.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Galgann Firehammer##7291 |goto Uldaman/1 25.8,35.9 |only if default
 |tip Galgann will use Fire Nova, dealing fire damage to all players within 10 yards
@@ -2042,12 +2168,15 @@ kill 1 Galgann Firehammer##7291 |goto Uldaman/1 25.8,35.9 |only if default
 |tip Interrupt the Geologists as often as possible. Kill them first and then kill Galgann
 kill 1 Galgann Firehammer##7291 |q Behind Closed Doors##27676/1 |goto Uldaman/1 25.8,35.9 |only if havequest(27676)
 Defeat Galgann Firehammer |scenariogoal 24975 |goto Uldaman/1 25.8,35.9
+confirm
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
 path	28.2,33.7	30.1,34.8	31.5,33.1
 path	32.3,28.1	28.0,21.3	24.2,26.9
-_Follow_ the path |goto 24.2,26.9 < 6 |c |noway
+Follow the path |goto 24.2,26.9 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Grimlok##4854 |goto Uldaman/1 21.3,24.6
 |tip Chain Bolt will arc to up to 3 targets, dealing nature damage
@@ -2058,6 +2187,7 @@ kill 1 Grimlok##4854 |goto Uldaman/1 21.3,24.6
 |tip Crystalline Slumber will stun the Basilisk's target and deal arcane damage
 |tip Kill the adds and then kill Grimlok
 Defeat Grimlok |scenariogoal 24976 |goto Uldaman/1 21.3,24.6
+confirm
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -2065,11 +2195,14 @@ path	24.9,26.0	28.0,21.3	31.5,26.6
 path	35.8,29.7	39.2,30.1	40.9,33.7
 path	45.1,32.3	45.3,28.4	44.1,24.5
 click Temple Door##1370
-_Follow_ the path and open the Temple Door |goto 44.1,24.5 < 6 |c |noway
+Follow the path and open the Temple Door |goto 44.1,24.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Altar of Archaedas
 Defeat the 4 guardians that spawn
-Activate the Altar of Archaedas |goto Uldaman/1 41.7,16.7 < 5 |c
+Activate the Altar of Archaedas |goto Uldaman/1 41.7,16.7 < 5
+confirm
 step
 map Uldaman/1
 path follow loose; loop off; ants curved; dist 10
@@ -2077,17 +2210,19 @@ path	41.2,15.0	39.4,9.0	44.6,5.3
 path	Uldaman/2 65.1,43.9	Uldaman/2 69.3,57.7
 path	Uldaman/2 59.7,64.5	Uldaman/2 58.1,59.5
 click Temple Door##1370
-_Follow_ the path and open the Temple Door |goto Uldaman/2 58.1,59.5 < 6 |c |noway
+Follow the path and open the Temple Door |goto Uldaman/2 58.1,59.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Altar of Archaedas |goto Uldaman/2 56.0,53.0
-kill 1 Archaedas##2748 |goto Uldaman/2 55.4,50.7 |only if default
+kill 1 Archaedas##2748 |goto Uldaman/2 55.4,50.7
 |tip Archaedas calls an Earthen Custodian every 10 seconds to assist him
 |tip At 66% health, he will awaken 6 Earthen Guardians. These guardians will use Whirlwind, run away when they do this
 |tip At 33% health, he will awaken 2 Vault Warders. These warders will Trample anyone within 10 yards for physical damage. Run away when they do this
 |tip Archaedas will occasionally Ground Tremor, stunning anyone within 20 yards
 |tip Kill the adds when they spawn, then switch back to Archaedas
 kill 1 Archaedas##2748 |q Archaedas, The Ancient Stone Watcher##27677/1 |goto Uldaman/2 55.4,50.7 |only if havequest(27677)
-Defeat Archaedas |scenariogoal 18531 |goto Uldaman/2 55.4,50.7
+Defeat Archaedas |scenariogoal 1/34442 |goto Uldaman/2 55.4,50.7
 step
 Click the Quest Complete box in the top right corner.
 turnin Archaedas, The Ancient Stone Watcher##27677
@@ -2107,26 +2242,28 @@ turnin The Platinum Discs##2278 |goto 50.0,33.6
 accept The Platinum Discs##2280 |goto 50.0,33.6
 only if not completedq(2280)
 step
-map Uldaman/1
+map Uldaman/2
 path follow loose; loop off; ants curved; dist 10
-path	Uldaman/2 52.5,41.8	Uldaman/2 59.7,64.6
-path	Uldaman/2 69.5,57.6	Uldaman/2 65.7,45.3
-path	44.7,5.2	39.2,9.0	41.6,16.7
-path	43.6,23.2	45.4,28.9	44.5,32.9
-path	41.2,33.4	39.5,30.3	37.0,29.8
-path	32.6,28.0	31.3,34.1	33.5,36.3
-path	35.8,35.4	36.6,39.7	38.5,39.2
-path	39.9,35.9	41.2,37.8	41.6,41.2
-path	45.6,41.3	45.3,49.1	38.4,49.1
-path	36.4,51.1	36.6,54.7	36.2,58.0
-path	35.9,64.0	40.6,65.8	47.6,72.5
-path	53.3,72.6	53.2,81.4	56.7,81.0
-path	56.8,75.5	62.0,75.6	61.9,81.2
-path	65.5,81.0	65.5,72.4
+path	52.5,41.8	59.7,64.6
+path	69.5,57.6	65.7,45.3
+path	Uldaman/1 44.7,5.2	Uldaman/1 39.2,9.0	Uldaman/1 41.6,16.7
+path	Uldaman/1 43.6,23.2	Uldaman/1 45.4,28.9	Uldaman/1 44.5,32.9
+path	Uldaman/1 41.2,33.4	Uldaman/1 39.5,30.3	Uldaman/1 37.0,29.8
+path	Uldaman/1 32.6,28.0	Uldaman/1 31.3,34.1	Uldaman/1 33.5,36.3
+path	Uldaman/1 35.8,35.4	Uldaman/1 36.6,39.7	Uldaman/1 38.5,39.2
+path	Uldaman/1 39.9,35.9	Uldaman/1 41.2,37.8	Uldaman/1 41.6,41.2
+path	Uldaman/1 45.6,41.3	Uldaman/1 45.3,49.1	Uldaman/1 38.4,49.1
+path	Uldaman/1 36.4,51.1	Uldaman/1 36.6,54.7	Uldaman/1 36.2,58.0
+path	Uldaman/1 35.9,64.0	Uldaman/1 40.6,65.8	Uldaman/1 47.6,72.5
+path	Uldaman/1 53.3,72.6	Uldaman/1 53.2,81.4	Uldaman/1 56.7,81.0
+path	Uldaman/1 56.8,75.5	Uldaman/1 62.0,75.6	Uldaman/1 61.9,81.2
+path	Uldaman/1 65.5,81.0	Uldaman/1 65.5,72.4
 You can either run to the beginning of the dungeon to turn in your quests.
 Or
 You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-Return to the beginning of the instance |goto Uldaman/1 65.5,72.4 < 25 |c |noway
+Return to the beginning of the instance |goto Uldaman/1 65.5,72.4 < 25
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if havequest(27676) or havequest(2280) or havequest(27673)
 step
 talk Olga Runesworn##46233
@@ -2149,9 +2286,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Dire Maul: Capital Gardens dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Dire Maul: Capital Gardens or enter the dungeon with your group |goto Dire Maul/2 93.5,47.7 < 100 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Dire Maul: Capital Gardens or enter the dungeon with your group |goto Dire Maul/2 93.5,47.7 |c
 step
 talk Estulan##44991
 accept The Cursed Remains##27112 |goto 90.6,44.9
@@ -2170,9 +2306,11 @@ path follow loose; loop off; ants curved; dist 10
 path	68.6,56.3	61.6,55.4	50.6,43.6
 path	45.2,36.6	40.5,35.1	Dire Maul/3 51.7,21.6
 path	Dire Maul/3 38.5,23.4	Dire Maul/3 34.8,34.7
-_Follow_ the path |goto Dire Maul/3 34.8,34.7 < 15 |c |noway
+Follow the path |goto Dire Maul/3 34.8,34.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill Magister Kalendris##11487 |goto Dire Maul/3,30.6,45.8 |only if default
+kill Magister Kalendris##11487 |goto Dire Maul/3,30.6,45.8
 |tip Kalendris will randomly cast Shadow Word: Pain or party members. Dispel this or heal through it
 |tip Mind Flay will deal shadow damage to the target and reduce movement speed by 50%
 |tip Mind Blast deals shadow damage to his current target
@@ -2185,7 +2323,9 @@ path follow loose; loop off; ants curved; dist 10
 path	34.6,35.5	38.6,25.5	49.8,16.5
 path	46.4,13.5	Dire Maul/2 20.3,21.6
 path	Dire Maul/2 23.0,25.8	Dire Maul/2 34.1,23.7
-_Follow_ the path |goto Dire Maul/2 34.1,23.7 < 15 |c |noway
+Follow the path |goto Dire Maul/2 34.1,23.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mana Remnant##11483+, Arcane Aberration##11480+ |goto Dire Maul/2 42.0,22.4
 |tip Kill all the Remnants around the crystal to deactivate it.
@@ -2194,7 +2334,9 @@ step
 map Dire Maul/2
 path follow loose; loop off; ants curved; dist 10
 path	48.5,27.5	48.4,49.4
-_Follow_ the path |goto 48.4,49.4 < 8 |c |noway
+Follow the path |goto 48.4,49.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Shen'dralar Ancient##14358
 turnin The Shen'dralar Ancient##27113 |goto 48.4,53.8
@@ -2204,13 +2346,15 @@ step
 map Dire Maul/2
 path follow loose; loop off; ants curved; dist 10
 path	48.5,59.1	48.3,78.9
-_Follow_ the path |goto 48.3,78.9 < 8 |c |noway
+Follow the path |goto 48.3,78.9 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mana Remnant##11483+, Arcane Aberration##11480+ |goto 39.5,83.4
 |tip Kill all the Remnants around the crystal to deactivate it.
 confirm
 step
-kill Illyanna Ravenoak##11488 |goto 21.7,75.8 |only if default
+kill Illyanna Ravenoak##11488 |goto 21.7,75.8
 |tip Ferra will use Charge on random players, dealing damage and stunning them. This will be followed by Maul, dealing physical damage
 |tip Multi-Shot will hit players standing close to each other. Spread out
 |tip Areas targeted with Volley will deal arcane damage to anyone standing within. Move out of it
@@ -2223,9 +2367,11 @@ map Dire Maul/2
 path follow loose; loop off; ants curved; dist 10
 path	39.4,79.5	47.4,79.8	47.0,71.4
 path	45.9,60.1	44.3,58.0	41.5,53.2
-_Follow_ the path, jumping onto the ledge first and then jump down to the ramp |goto 41.5,53.2 < 10 |c |noway
+Follow the path, jumping onto the ledge first and then jump down to the ramp |goto 41.5,53.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Tendris Warpwood##11489 |goto Dire Maul/2 34.6,53.3 |only if default
+kill 1 Tendris Warpwood##11489 |goto Dire Maul/2 34.6,53.3
 |tip Intruder Alert! will summon any Ironbark Protectors left alive in the instance to Warpwood's side
 |tip Tendris will Trample anyone within 10 yards, dealing physical damage
 |tip Grasping Vines will deal damage to the party, knocking them down and preventing movement for 10 seconds. Dispel this if possible
@@ -2233,16 +2379,22 @@ kill 1 Tendris Warpwood##11489 |goto Dire Maul/2 34.6,53.3 |only if default
 kill 1 Tendris Warpwood##11489 |q The Warped Defender##27109/1 |goto Dire Maul/2 34.6,53.3 |only if havequest(27109)
 Defeat Tendris Warpwood |scenariogoal 25063 |goto Dire Maul/2 34.6,53.3
 step
+click the door and go into the next room |goto 29.8,42.2
+confirm
+step
 map Dire Maul/4
 path follow loose; loop off; ants curved; dist 10
 path	76.5,39.9	71.4,40.3	69.4,44.4
 path	69.1,52.7	66.7,57.4	60.9,57.7
-_Follow_ the path |goto Dire Maul/4 60.9,57.7 < 8 |c |noway
+Follow the path |goto Dire Maul/4 60.9,57.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Dire Maul/4
 path follow loose; loop off; ants curved; dist 10
 path	58.7,60.3	57.4,70.2	50.4,81.7
-_Follow_ the path |goto Dire Maul/4 50.4,81.7 < 10 |c |noway
+Follow the path |goto Dire Maul/4 50.4,81.7 < 10
+confirm
 step
 kill Mana Remnant##11483+, Arcane Aberration##11480+ |goto 46.5,81.6
 |tip Kill all the Remnants around the crystal to deactivate it.
@@ -2252,7 +2404,9 @@ map Dire Maul/4
 path follow loose; loop off; ants curved; dist 10
 path	53.5,76.1	58.0,66.2	58.5,52.9
 path	54.7,39.6	50.5,34.4
-_Follow_ the path |goto Dire Maul/4 50.5,34.4 < 10 |c |noway
+Follow the path |goto Dire Maul/4 50.5,34.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mana Remnant##11483+, Arcane Aberration##11480+ |goto 44.7,34.1
 |tip Kill all the Remnants around the crystal to deactivate it.
@@ -2261,9 +2415,11 @@ step
 map Dire Maul/4
 path follow loose; loop off; ants curved; dist 10
 path	46.8,35.8	41.0,41.9
-_Follow_ the path, _avoiding the elementals_ |goto Dire Maul/4 41.0,41.9 < 10 |c |noway
+Follow the path, avoiding the elementals |goto Dire Maul/4 41.0,41.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill Immol'thar##11496 |goto 35.5,57.0 |only if default
+kill Immol'thar##11496 |goto 35.5,57.0
 |tip Eyes of Immol'thar cannot be tanked. Kill them quickly
 |tip Portal of Immol'thar will teleport a random player and wipe their threat
 |tip Immol'thar will use Infected Bite on the tank, increasing damage taken by a small amount and dealing nature damage. Dispel this disease
@@ -2277,19 +2433,22 @@ path follow loose; loop off; ants curved; dist 10
 path	43.6,46.8	51.7,42.6	56.9,37.4
 path	59.3,33.4	60.2,27.3	67.2,24.2
 path	74.1,23.1	69.8,21.4
-_Follow_ the path |goto Dire Maul/4 69.8,21.4 < 8 |c |noway
+Follow the path |goto Dire Maul/4 69.8,21.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill Prince Tortheldrin##11486 |goto 60.4,23.5 |only if default
-_Healer:_
-|tip Price Tortheldrin attacks very quickly and is capable of dealing large amounts of burst damage
-_Tank:_
-|tip Save defensive cooldowns in case the healer gets hit with Counterspell
-|tip Periodically he will _hrash, gaining 2 extra attacks
-|tip Arcane Blast will deal damage to a random player and knock them back
-|tip Anyone within 8 yards of Tortheldrin will take damage from Whirlwind. Move away during this
-|tip He will also randomly Counterspell players. This spell can be very dangerous for healers, as it will prevent spellcasting for 15 seconds
-kill Prince Tortheldrin##11486 |q The Madness Within##27110/2 |goto 60.4,23.5 |only if havequest(27110)
+kill Prince Tortheldrin##11486 |goto 60.4,23.5
+_HEALER:_ |grouprole HEALER
+|tip Price Tortheldrin attacks very quickly and is capable of dealing large amounts of burst damage |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Save defensive cooldowns in case the healer gets hit with Counterspell |grouprole TANK
+|tip Periodically he will _hrash, gaining 2 extra attacks |grouprole TANK
+|tip Arcane Blast will deal damage to a random player and knock them back |grouprole TANK
+|tip Anyone within 8 yards of Tortheldrin will take damage from Whirlwind. Move away during this |grouprole TANK
+|tip He will also randomly Counterspell players. This spell can be very dangerous for healers, as it will prevent spellcasting for 15 seconds |grouprole TANK
+kill Prince Tortheldrin##11486 |q 27110/2 |goto 60.4,23.5 |only if havequest(27110)
 Defeat Prince Tortheldrin |scenariogoal 25065 |goto 60.4,23.5
+confirm
 step
 map Dire Maul/4
 path follow loose; loop off; ants curved; dist 10
@@ -2303,7 +2462,9 @@ path	Dire Maul/2 64.8,56.3	Dire Maul/2 78.8,50.5
 You can either run to the beginning of the dungeon to turn in your quests
 Or
 You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance
-Return to the beginning of the instance |goto Dire Maul/2 78.8,50.5 < 10 |c |noway
+Return to the beginning of the instance |goto Dire Maul/2 78.8,50.5 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(27109) and not completedq(27112) and not completedq(27110)
 step
 talk Shen'dralar Watcher##44999
@@ -2321,7 +2482,9 @@ path	54.8,47.2	45.1,36.6	40.8,34.8
 path	Dire Maul/3 50.0,12.7	Dire Maul/2 20.3,20.9
 path	22.7,26.2	35.6,25.7	48.4,26.1
 path	48.4,43.1
-_Follow_ the path |goto Dire Maul/2 48.4,43.1 < 5 |c |noway
+Follow the path |goto Dire Maul/2 48.4,43.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(27111)
 step
 talk Shen'dralar Ancient##14358
@@ -2338,7 +2501,9 @@ path	Dire Maul/4 65.7,57.4	Dire Maul/4 59.3,57.2
 path	Dire Maul/4 56.3,38.4	Dire Maul/4 59.6,32.8
 path	Dire Maul/4 60.6,26.4	Dire Maul/4 67.2,24.1
 path	Dire Maul/4 74.1,23.8	Dire Maul/4 72.6,21.7
-_Jump down_ and _follow_ the path |goto Dire Maul/4 72.6,21.7 < 5 |c |noway
+Jump down and follow the path |goto Dire Maul/4 72.6,21.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if not completedq(27111)
 step
 click Treasure of the Shen'dralar##1387
@@ -2354,9 +2519,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Razorfen Downs dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Razorfen Downs or enter the dungeon with your group |goto Razorfen Downs/1 23.8,18.8 < 100 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Razorfen Downs or enter the dungeon with your group |goto Razorfen Downs/1 23.8,18.8 < 100 |c
 step
 talk Koristrasza##74367
 accept Blackthorn's Lieutenants##33513 |goto Razorfen Downs/1 28.2,24.3
@@ -2368,23 +2532,27 @@ path	29.3,18.5	33.3,18.7	35.8,22.0
 path	38.8,23.1	41.8,18.2	45.2,19.4
 path	44.1,25.5	42.8,29.4	47.1,33.5
 path	50.9,33.3	54.2,28.3	56.6,30.3
-_Follow_ the path |goto 56.6,30.3 < 5 |c |noway
+Follow the path |goto 56.6,30.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Clear this room then click the Gong
-kill Aarux##74412 |goto Razorfen Downs/1 58.9,33.7 |only if default
+kill Aarux##74412 |goto Razorfen Downs/1 58.9,33.7
 |tip Aarux will use Web Strand, linking himself to a party member with sticky webbing. If he pulls the player close enough, he will use Plagued Bite. Run away from him
 |tip Plagued Bite deals heavy nature damage to the target over 10 seconds
 |tip Burning Pustule will deal nature damage to those close to Aarux
-kill Aarux##74412 |q Blackthorn's Lieutenants##33513/3 |goto Razorfen Downs/1 58.9,33.7 |only if havequest(33513)
+kill Aarux##74412 |q 33513/3 |goto Razorfen Downs/1 58.9,33.7 |only if havequest(33513)
 Defeat Aarux |scenariogoal 24954 |goto Razorfen Downs/1 58.9,33.7
 step
 map Razorfen Downs/1
 path follow loose; loop off; ants curved; dist 10
 path	60.5,37.3	63.9,41.7	67.9,40.9
 path	72.2,37.5	76.9,33.8	82.1,36.7
-_Follow_ the path |goto 82.1,36.7 < 5 |c |noway
+Follow the path |goto 82.1,36.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill Mordresh Fire Eye##74347 |goto 85.2,46.4 |only if default
+kill Mordresh Fire Eye##74347 |goto 85.2,46.4
 |tip Mordresh will use Lava Burst on the tank, dealing substantial fire damage. Interrupt this
 |tip Periodically, he will Summon Blazing Servitor. These need to be killed quickly so no more than 1 is up at a time
 |tip Servitors will use Inferno, spewing blobs of fire at random locations. Stay out of the impact points
@@ -2396,20 +2564,25 @@ map Razorfen Downs/1
 path follow loose; loop off; ants curved; dist 10
 path	77.9,42.2	73.0,44.9	68.8,50.5
 path	62.5,50.3	56.0,46.1	51.6,45.1
-_Follow_ the path |goto 51.6,45.1 < 5 |c |noway
+Follow the path |goto 51.6,45.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-kill 1 Mushlump##74435 |goto Razorfen Downs/1 41.9,43.4 |only if default
+kill 1 Mushlump##74435 |goto Razorfen Downs/1 41.9,43.4
 |tip Mushlump will use Smack Down on the tank, dealing increased physical damage over 3 seconds
 |tip Tummy Ache will deal heavy nature damage to anyone standing in a cone in front of him
 |tip Clouds of Putrid Funk will afflict a disease on anyone standing in them. Avoid coming in contact with these clouds
-kill 1 Mushlump##74435 |q Blackthorn's Lieutenants##33513/1 |goto Razorfen Downs/1 41.9,43.4 |only if havequest (33513)
-Defeat Mushlump |tip He patrols the ravine |scenariogoal 24956 |goto Razorfen Downs/1 41.9,43.4
+kill 1 Mushlump##74435 |q 33513/1 |goto Razorfen Downs/1 41.9,43.4 |only if havequest (33513)
+Defeat Mushlump |scenariogoal 1/24956 |goto Razorfen Downs/1 41.9,43.4
+|tip He patrols the ravine
 step
 map Razorfen Downs/1
 path follow loose; loop off; ants curved; dist 10
 path	41.9,43.4	34.9,49.4	33.4,54.3
 path	33.5,63.4	36.4,70.3
-_Follow_ the path |goto 36.4,70.3 < 12 |c |noway
+Follow the path |goto 36.4,70.3 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Koristrasza##74888
 turnin Blackthorn's Lieutenants##33513 |goto 37.84,71.74
@@ -2422,7 +2595,10 @@ path	42.2,48.7	38.7,50.2	36.7,54.6
 path	37.7,64.5	41.0,69.4	45.9,70.0
 path	49.2,64.2	49.5,56.9	40.9,53.9
 path	40.1,62.1
-_Follow_ the path |tip Koristrasza will lay patches of healing energy on the ground |goto 40.1,62.1 < 10 |c |noway
+Follow the path |goto 40.1,62.1 < 10
+|tip Koristrasza will lay patches of healing energy on the ground
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Death Speaker Blackthorn##74875 |goto Razorfen Downs/1 44.7,59.7
 |tip Summon Skeletons will animate 3 skeletons to assist Blackthorn
@@ -2430,14 +2606,14 @@ kill 1 Death Speaker Blackthorn##74875 |goto Razorfen Downs/1 44.7,59.7
 |tip Shockwave will deal massive damage to anyone standing in a narrow cone in front of Blackthorn. Avoid this
 |tip Searing Shadows will place a DoT on the tank, dealing shadow damage over 15 seconds. Interrupt or dispel this
 |tip Be sure to interrupt _Shadowmend_ to prevent Blackthorn from healing his skeletons
-Defeat Death Speaker Blackthorn |scenariogoal 24957 |goto Razorfen Downs/1 44.7,59.7
+Defeat Death Speaker Blackthorn |scenariogoal 2/24957 |goto Razorfen Downs/1 44.7,59.7
 step
-kill Amnennar the Coldbringer##7358 |goto 44.6,59.4 |only if default
+kill Amnennar the Coldbringer##7358 |goto 44.6,59.4
 |tip Frozen Bomb appears as a patch of frost on the ground. Anyone standing within will suffer frost damage
 |tip Throughout the fight, Koristrasza will place green patches of Redeemed Soil
 |tip When you are afflicted with Soul Leech, run into a patch of Redeemed Soil to remove the debuff and stun Amnennar for 6 seconds
-kill Amnennar the Coldbringer##7358 |q The Ritual##33514/1 |goto 44.6,59.4 |only if havequest(33514)
-Defeat Amnennar the Coldbringer |scenariogoal 24977 |goto Razorfen Downs/1 45.0,58.6
+kill Amnennar the Coldbringer##7358 |q 33514/1 |goto 44.6,59.4 |only if havequest(33514)
+Defeat Amnennar the Coldbringer |scenariogoal 3/24977 |goto Razorfen Downs/1 45.0,58.6
 step
 talk Koristrasza##74888
 turnin The Ritual##33514 |goto 44.73,59.21
@@ -2458,17 +2634,17 @@ Or
 Click here to do a tribute run |confirm |next "Tribute"
 step
 label "Normal"
-Press _I_ and queue for Dire Maul: Gordock Commons |confirm |or
-Or
-Enter the dungeon with your group |goto Dire Maul/1 71.1,93.5 < 100 |c |or
+Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5
 step
 talk Druid of the Talon##45040
-accept King of the Gordok##27128 |goto Dire Maul 71.7,92.2
+accept King of the Gordok##27125 |goto Dire Maul 71.7,92.2
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
 path	71.5,90.1	69.3,86.8	69.3,85.0
-_Follow_ the path |goto 69.3,85.0 < 6 |c |noway
+Follow the path |goto 69.3,85.0 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Guard Mol'dar##14326 |goto 69.8,75.5
 |tip Important: Clear the ogres and hounds in the courtyard before engaging Guard Mol'dar
@@ -2477,28 +2653,32 @@ kill 1 Guard Mol'dar##14326 |goto 69.8,75.5
 |tip Shield Bash will interrupt any spell currently being cast. Avoid casting while standing near him or when hit with Shield Charge.
 |tip At 50% health, Mol'dar will use Intruder Alert! - calling nearby mobs to assist him
 |tip He will call out for help, so you may need to clear some of the area around him first
-Defeat Guard Mol'dar |scenariogoal 25066 |or |goto 69.8,75.5
-Start the scenario |confirm |or
+Defeat Guard Mol'dar |scenariogoal 25066 |goto 69.8,75.5
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
 path	69.3,73.6	69.3,69.9	66.5,68.3
-_Follow_ the path |goto 66.5,68.3 < 8 |c |noway
+Follow the path |goto 66.5,68.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Stomper Kreeg##14322 |goto Dire Maul 62.2,66.0
 |tip Booze Spit is a frontal cone attack that will reduce chance to hit by 75% and make you drunk for 8 seconds. Avoid standing in front of Kreeg
 |tip War Stomp will knock back any player within 5 yards
 |tip Anyone within 8 yards is vulnerable to Whirlwind. Run away when he does this
 |tip At 50% health, Kreeg gains Frenzy and Drunken Rage. This will cause him to attack 60% faster and move 100% faster
-_Tank:_
-|tip Keep your back to a wall and save defensive cooldowns for the 50% enrage
+_TANK:_ |grouprole TANK
+|tip Keep your back to a wall and save defensive cooldowns for the 50% enrage |grouprole TANK
 Defeat Stomper Kreeg |scenariogoal 25070 |goto Dire Maul 62.2,66.0
+confirm
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
 path	61.1,68.3	59.1,71.1	57.4,70.6
 path	55.1,68.3	50.0,67.2	49.5,69.8
-_Follow_ the path |goto 49.5,69.8 < 8 |c |noway
+Follow the path |goto 49.5,69.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Guard Fengus##14321 |goto 49.4,78.7
 |tip Important: Clear the ogres and hounds in the courtyard before engaging Guard Fengus
@@ -2514,7 +2694,9 @@ path follow loose; loop off; ants curved; dist 10
 path	48.1,78.1	44.1,78.1	40.4,78.2
 path	36.5,78.2	31.8,78.1	29.4,77.1
 path	27.6,74.6	27.0,69.5	27.0,63.0
-_Follow_ the path |goto 27.0,63.0 < 10 |c |noway
+Follow the path |goto 27.0,63.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Guard Slip'kik##14323 |goto 26.5,57.8
 |tip Important: Clear the ogres nearby before engaging Guard Slip'kik
@@ -2532,7 +2714,9 @@ path	24.2,66.1	23.3,67.0	23.3,61.2
 path	23.9,56.9	25.6,54.5	27.6,54.5
 path	27.6,59.9	27.7,64.0	29.1,65.8
 path	31.8,65.5	31.8,61.5
-_Follow_ the path |goto 31.8,61.5 < 5 |c |noway
+Follow the path |goto 31.8,61.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Captain Kromcrush##14325 |goto 31.9,50.8
 |tip Keep Kromcrush away from the area in which he stands. He will use Frightening Shout, fearing anyone within 8 yards for 6 seconds
@@ -2540,10 +2724,10 @@ kill 1 Captain Kromcrush##14325 |goto 31.9,50.8
 |tip At 50% health, Kromcrush will use Intruder Alert!, calling 2 Gordok Reavers to aid him. CC or kill these first
 |tip These reavers will use Cleave, Sunder Armor, and Mortal Strike
 |tip At 25% health, Kromcrush will activate _Retaliation_ for 8 seconds, instantly striking anyone hitting him in melee combat
-_DPS:_
-|tip Do not attack Kromcrush during Retaliation
-_Healer:_
-|tip Be aware that the healing reducting effects on this fight will require to you heal more frequently
+_DAMAGE:_ |grouprole DAMAGE
+|tip Do not attack Kromcrush during Retaliation |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Be aware that the healing reducting effects on this fight will require to you heal more frequently |grouprole HEALER
 Defeat Captain Kromcrush |scenariogoal 25071 |goto 31.9,50.8
 step
 kill 1 Cho'Rush the Observer##14324 |goto 31.8,26.4
@@ -2557,15 +2741,15 @@ _King Gordok:_
 |tip The tank will take more damage as the fight progresses thanks to stacks of Sunder Armor
 |tip Mortal Strike will reduct healing on the tank by 50%
 |tip The King will use War Stomp on anyone within 5 yards, dealing damage and stunning for 4 seconds
-kill King Gordok##11501 |q King of the Gordok##27128/1 |goto 31.8,26.4 |only if havequest(27128)
-Defeat King Gordok |scenariogoal 18535 |goto 31.8,26.4
+kill King Gordok##11501 |q 27125/1 |goto 31.8,26.4 |only if havequest(27125)
+Defeat King Gordok |scenariogoal 1/27856 |goto 31.8,26.4
 step
 talk Mizzle the Crafty##14353 |goto 31.7,27.4
 Ask him: _"I'm the new king? What are you talking about?"_
 Talk to him a second time, about the Tribute, and he will spawn a Chest for you to loot as well
 click Gordok Tribute##3365
-confirm |only if not completedq(27128) |next "Return"
-confirm |only if completedq(27128) |next "end"
+confirm |only if not completedq(27125) |next "Return"
+confirm |only if completedq(27125) |next "end"
 step
 label "Return"
 map Dire Maul/1
@@ -2583,21 +2767,22 @@ path	71.7,90.5
 You can either run to the beginning of the dungeon to turn in your quests.
 Or
 You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-Return to the beginning of the instance |goto 71.7,90.5 < 12 |c |noway
+Return to the beginning of the instance |goto 71.7,90.5 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not completedq(27125)
 step
 talk Druid of the Talon##45040
-turnin King of the Gordok##27128 |goto Dire Maul 71.7,92.3
-only if not completedq(27128)
+turnin King of the Gordok##27125 |goto Dire Maul 71.7,92.3
+only if not completedq(27125)
 |next "end"
 step
 label "Tribute"
-Press _I_ and queue for Dire Maul: Gordock Commons |confirm |or
-Or
-Enter the dungeon with your group |goto Dire Maul/1 71.1,93.5 < 100 |c |or
+Press _I_ and queue for Dire Maul: Gordock Commons or enter the dungeon with your group |goto Dire Maul/1 71.1,93.5
 step
 talk Druid of the Talon##45040
-accept King of the Gordok##27128 |goto Dire Maul 71.7,92.2
-|only if not completedq(27128)
+accept King of the Gordok##27125 |goto Dire Maul 71.7,92.2
+|only if not completedq(27125)
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
@@ -2606,8 +2791,10 @@ path	60.8,86.9	57.0,84.0	55.9,78.1
 path	52.9,77.8	48.1,78.1	44.0,78.1
 path	35.1,78.1	30.4,77.8	28.0,75.5
 path	27.0,69.0	27.2,63.8
-_Follow_ the path. _Avoid Guard Fengus in the center courtyard!_ |goto 27.2,63.8 < 10 |c |noway
-|modelnpc DO NOT KILL Guard Fengus##14321
+Follow the path. Avoid Guard Fengus in the center courtyard! |goto 27.2,63.8 < 10
+_DO NOT KILL Guard Fengus_
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Broken Trap##27118
 Carefully activate the Broken Trap and wait for Guard Slip'kik to walk over it |accept A Broken Trap##27118 |instant |repeatable |goto 26.53,58.02
@@ -2620,20 +2807,23 @@ map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
 path	27.8,57.5	25.3,57.7	23.9,60.0
 path	24.2,66.1	23.3,67.0	23.3,61.2
-_Follow_ the path |goto 23.3,61.2 < 5 |c |noway
+Follow the path |goto 23.3,61.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Ogre Tannin Basket##6478
-Retrieve the Ogre Tannin |q The Gordok Ogre Suit##27119/1 |goto Dire Maul/1 23.7,55.4 |only if not completedq(27119) |goto Dire Maul/1 23.6,55.2
+Retrieve the Ogre Tannin |q 27119/1 |goto Dire Maul/1 23.7,55.4 |only if not completedq(27119)
 collect 1 Ogre Tannin##18240 |only if completedq(27119) |goto Dire Maul/1 23.6,55.2
 If someone else got the Ogre Tannin, click here |confirm |next "King"
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
 path	25.6,58.3	26.5,58.5	28.6,55.3
-_Jump down_ and return to Knot
+Jump down and return to Knot
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 talk Knot Thimblejack##14338
 turnin The Gordok Ogre Suit##27119 |only if havequest(27119) |or
-accept The Gordok Ogre Suit##27120 |or
+accept The Gordok Ogre Suit##27119 |or
 step
 label "King"
 map Dire Maul/1
@@ -2643,7 +2833,9 @@ path	24.2,66.1	23.3,67.0	23.3,61.2
 path	23.9,56.9	25.6,54.5	27.6,54.5
 path	27.6,59.9	27.7,64.0	29.1,65.8
 path	31.8,65.5	31.8,61.5
-_Follow_ the path |goto 31.8,61.5 < 5 |c |noway
+Follow the path |goto 31.8,61.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Before running down this hallway:
 Put on your ogre disguise |havebuff Interface\Icons\Ability_Rogue_Disguise |use Gordok Ogre Suit##18258
@@ -2652,7 +2844,6 @@ talk Captain Kromcrush##14325 |goto 31.8,50.1
 Tell him _"Um, I'm taking some prisoners we found outside before the king for punishment."_
 confirm
 step
-|modelnpc DO NOT KILL Cho'Rush##14324
 _DO NOT KILL CHO'RUSH!_
 _Cho'Rush the Observer:_
 |tip Cho'Rush can spawn as a Priest, Shaman, or Mage
@@ -2664,15 +2855,15 @@ _King Gordok:_
 |tip The tank will take more damage as the fight progresses thanks to stacks of Sunder Armor
 |tip Mortal Strike will reduct healing on the tank by 50%
 |tip The King will use War Stomp on anyone within 5 yards, dealing damage and stunning for 4 seconds
-kill King Gordok##11501 |q King of the Gordok##27128/1 |goto 31.8,26.4 |only if havequest(27128)
-Defeat King Gordok |scenariogoal 18535 |goto 31.8,26.4
+kill King Gordok##11501 |q 27125/1 |goto 31.8,26.4 |only if havequest(27125)
+Defeat King Gordok |scenariogoal 1/27856 |goto 31.8,26.4
 step
 talk Mizzle the Crafty##14353 |goto 31.7,27.4
 Ask him: _"I'm the new king? What are you talking about?"_
 _Talk to him a second time_, about the Tribute, and he will spawn a Chest for you to loot as well
 click Gordok Tribute##1387
-confirm |next "Return2" |only if not completedq(27128) and not completedq(27124) and not completedq(27114)
-confirm |next "end" |only if completedq(27124)
+confirm |only if not completedq(27125) and not completedq(27124) and not completedq(27114) |next "Return2"
+confirm |only if completedq(27124) |next "end"
 step
 label "Return2"
 map Dire Maul/1
@@ -2686,6 +2877,7 @@ path	33.3,78.2	38.7,78.2	44.0,78.1
 path	49.4,78.0
 talk Captain Kromcrush##14325
 accept Unfinished Gordok Business##27124
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
@@ -2693,6 +2885,7 @@ path	51.3,77.8	56.0,77.6	57.2,72.8
 path	62.0,65.7
 talk Stomper Kreeg##14322
 accept The Gordok Taste Test##27114
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 map Dire Maul/1
 path follow loose; loop off; ants curved; dist 10
@@ -2700,10 +2893,11 @@ path	63.1,66.5	66.8,68.1	69.3,69.9
 path	69.7,75.0
 talk Guard Mol'dar##14326
 turnin Unfinished Gordok Business##27124
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 step
 talk Druid of the Talon##45040
-turnin King of the Gordok##27128 |goto Dire Maul 71.7,92.3
-only if not completedq(27128)
+turnin King of the Gordok##27125 |goto Dire Maul 71.7,92.3
+only if not completedq(27125)
 step
 label "end"
 Congratulations, you have completed Dire Maul: Gordock Commons
@@ -2715,9 +2909,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Stratholme: Main Gate dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Stratholme: Main Gate or enter the dungeon with your group |goto Stratholme/1 68.0,88.5 < 100 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Stratholme: Main Gate or enter the dungeon with your group |goto Stratholme/1 68.0,88.5 |c
 step
 talk Packmaster Stonebruiser##45323
 accept The Great Fras Siabi##27192 |goto Stratholme 67.0,89.2
@@ -2737,13 +2930,15 @@ map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	66.3,84.9	66.2,72.6	67.2,61.7
 path	63.0,57.3	59.5,58.1	58.0,60.4
-Follow the path |goto 58.0,60.4 < 8 |c |noway
+Follow the path |goto 58.0,60.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Stratholme Courier##11082 |goto 54.5,70.8
+click Premium Siabi Tobacco##336
 kill 1 Fras Siabi##11058 |goto 54.5,70.8
 |tip He will show up after you click the box.
-click Premium Siabi Tobacco##336
-Retrieve Siabi's Premium Tobacco |q The Great Fras Siabi##27192/1 |goto 54.5,70.8
+collect Siabi's Premium Tobacco##13172 |q 27192/1 |goto 54.5,70.8
 only if havequest(27192)
 step
 modelnpc Undead Postman##11142
@@ -2754,7 +2949,9 @@ step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	57.9,61.4	59.8,52.3
-Follow the path |goto 59.8,52.3 < 8 |c |noway
+Follow the path |goto 59.8,52.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 modelnpc Undead Postman##11142
 click Postbox Parcel##6477 |goto Stratholme/1 62.5,52.0
@@ -2764,30 +2961,34 @@ step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	60.2,49.3	60.0,41.7	60.1,33.5
-Follow the path |goto 60.1,33.5 < 8 |c |noway
+Follow the path |goto 60.1,33.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Hearthsinger Forresten##10558
 |tip Occasionally, Forresten will put a player to sleep with Enchanting Lullaby. Interrupt him or dispel the debuff
 |tip Demoralizing Shout will reduce the melee attack power of anyone within 10 yards
 |tip Shoot will hit random party members for minor physical damage
 |tip Spread out to avoid excessive damage from _Multi-Shot_
-_DPS:_
-|tip Stay behind him while you DPS to avoid the 50% increased dodge chance he gains from Incorporeal Defense
-Defeat Hearthsinger Forresten |scenariogoal 24910 |or |goto 59.8,26.7
-Start the scenario |confirm |or
+_DAMAGE:_ |grouprole DAMAGE
+|tip Stay behind him while you DPS to avoid the 50% increased dodge chance he gains from Incorporeal Defense |grouprole DAMAGE
+Defeat Hearthsinger Forresten |scenariogoal 24910 |goto 59.8,26.7
+confirm
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	61.3,29.5	69.1,23.3
-Follow the path |goto 69.1,23.3 < 8 |c |noway
+Follow the path |goto 69.1,23.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Unforgiven##10516 |goto 73.6,20.4
 |tip Unrelenting Anguish is a channeled attack that deals heavy shadow damage over 5 seconds. Interrupt this
 |tip The Unforgiven is accompanied by 4 Vengeful Phantoms. These phantoms will use Frost Shock, dealing frost damage and slowing movement speed
 |tip Clean up the phantoms and kill The Unforgiven
-kill The Unforgiven##10516 |q Retribution##27223/1 |goto 73.6,20.4 |only if havequest(27223)
-Defeat The Unforgiven |scenariogoal 24909 |goto 73.6,20.4
-modelnpc Vengeful Phantom##10387
+kill The Unforgiven##10516 |q 27223/1 |goto 73.6,20.4 |only if havequest(27223)
+Defeat The Unforgiven |scenariogoal 1/24909 |goto 73.6,20.4
+confirm
 step
 modelnpc Postmaster Malown##11143
 modelnpc Undead Postman##11142
@@ -2796,22 +2997,26 @@ click Postbox Parcel##6477 |goto 69.9,25.3
 |tip Malown will Backhand the tank, stunning them for 2 seconds
 |tip Be sure to keep him away from any packs of mobs, as he will Fear a player occasionally
 |tip Curse of Tongues will slow spellcasting by 50% on any player afflicted. Dispel this when possible
-Defeat Postmaster Malown |scenariogoal 24914 |goto 69.9,25.3
+Defeat Postmaster Malown |scenariogoal 1/24914 |goto 69.9,25.3
+confirm
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	67.5,26.6	59.8,31.2	55.0,27.2
 path	49.7,23.3
-Follow the path |goto 49.7,23.3 < 8 |c |noway
+Follow the path |goto 49.7,23.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Timmy the Cruel##10808 |goto Stratholme 50.1,17.4
 |tip Timmy will gain extra attacks through Thrash
 |tip Ravenous Claw will heal Timmy for the damage he deals with it
 |tip At 50% health, timmy will Enrage. This will increase his damage dealt by 10% and his attack speed by 30%
-_Tank:_
-|tip Save defensive cooldowns for Enrage
-kill Timmy the Cruel##10808 |q Retribution##27223/2 |goto Stratholme 50.1,17.4 |only if havequest(27223)
+_TANK:_ |grouprole TANK
+|tip Save defensive cooldowns for Enrage |grouprole TANK
+kill Timmy the Cruel##10808 |q 27223/2 |goto Stratholme 50.1,17.4 |only if havequest(27223)
 Defeat Timmy the Cruel |scenariogoal 24912 |goto Stratholme 50.1,17.4
+confirm
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
@@ -2819,31 +3024,38 @@ path	48.9,23.4	42.7,27.8	39.4,28.9
 path	35.6,30.6	30.8,36.2	29.5,33.4
 path	27.6,35.4	26.4,32.8	23.8,35.7
 path	27.4,43.4
-Follow the path |goto 27.4,43.4 < 8 |c |noway
+Follow the path |goto 27.4,43.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Commander Malor##11032
 |tip Ground Smash will deal physical damage to anyone within 10 yards and stun them for 2 seconds
 |tip Head Crack will reduce the tank's stamina for 15 seconds
 |tip Interrupt Shadow Bolt Volley so it doesn't deal damage to the entire group
 Defeat Commander Malor |scenariogoal 24915 |goto 30.6,39.9
+confirm
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	27.4,43.3	20.6,50.5	15.4,56.0
 path	12.4,49.7
-Follow the path |goto 12.4,49.7 < 5 |c |noway
+Follow the path |goto 12.4,49.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Blacksmithing Plans##525
 |tip The Hammersmith has only one ability - Bone Smelt.
 |tip This will deal heavy fire damage to his current target and reduce their armor by 50% for 20 seconds
-kill Risen Hammersmith##11120 |q Cutting the Competition##27185/1 |goto 12.5,47.5
+kill Risen Hammersmith##11120 |q 27185/1 |goto 12.5,47.5
 only if havequest(27185)
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
 path	8.8,51.3	10.5,55.3	7.6,58.2
 path	5.9,54.8
-Follow the path |goto 5.9,54.8 < 5 |c |noway
+Follow the path |goto 5.9,54.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Willey Hopebreaker##10997
 click Scarlet Cannon##245
@@ -2852,6 +3064,7 @@ click Cannonball Stack##176215
 |tip Knock Away will deal damage to the tank and knock him back
 |tip He will occasionally Pummel anyone standing close, interrupting any spell being cast and dealing physical damage
 Defeat Willey Hopebreaker |scenariogoal 24916 |goto 3.6,50.2
+confirm
 step
 map Stratholme/1
 path follow loose; loop off; ants curved; dist 10
@@ -2859,24 +3072,28 @@ path	5.6,54.6	7.7,58.8	10.7,55.4
 path	8.7,51.5	11.6,48.3	15.3,56.2
 path	20.6,50.6	23.2,55.7	19.9,58.9
 path	23.8,67.1	21.1,69.8	24.6,77.4
-Follow the path |goto 24.6,77.4 < 5 |c |noway
+Follow the path |goto 24.6,77.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Instructor Galford##10811
-click Unfinished Painting##4733 |tip This is on the wall next to you.
+click Unfinished Painting##4733
+|tip This is on the wall next to you.
 |tip Fire Nova will deal damage to anyone within 10 yards
 |tip Galford will use Pyroblast on the tank, dealing heavy fire damage and ticking for additional damage over 12 seconds
 |tip Occasionally, the tank will be hit with Burning Winds. This will deal fire damage and stun for 5 seconds. Dispel
-collect Of Love and Family |q Of Love and Family##27305/1 |goto 27.4,76.2 |only if havequest(27305)
+collect Of Love and Family |q 27305/1 |goto 27.4,76.2 |only if havequest(27305)
 Defeat Instructor Galford |scenariogoal 24917 |goto 27.4,75.2
+confirm
 step
-kill 1 Balnazzar##10813 |only if default
+kill 1 Balnazzar##10813
 |tip Mind Blast will deal shadow damage to his current target
 |tip Shadow Shock will hit the entire group with shadow damage
 |tip Randomly, Balnazzar will use Domination on a player, mind controlling them for 8 seconds
 |tip He will also randomly Sleep players, lasting 6 seconds
 |tip Anyone within 8 yards is succeptible to Psychic Scream. This causes players to flee for 4 seconds
-kill 1 Balnazzar##10813 |q The Dreadlord Balnazzar##27208/1 |goto 19.3,83.1 |only if havequest(27208)
-Defeat Balnazzar |scenariostage 1 |goto 19.3,83.1
+kill 1 Balnazzar##10813 |q 27208/1 |goto 19.3,83.1 |only if havequest(27208)
+Defeat Balnazzar |scenariogoal 1/27861 |goto 19.3,83.1
 step
 talk Crusade Commander Eligor Dawnbringer##45200
 turnin The Dreadlord Balnazzar##27208 |goto 21.6,80.8
@@ -2906,8 +3123,7 @@ achieveid={639},
 },[[
 step
 label "start"
-Press _I_ and queue for Zul'Farrak or enter the dungeon with your group |goto Zul'Farrak/0 56.6,91.0 |c |or
-|confirm |or
+Press _I_ and queue for Zul'Farrak or enter the dungeon with your group |goto Zul'Farrak/0 56.6,91.0 |c
 step
 talk Mazoga's Spirit##40712
 accept Chief Ukorz Sandscalp##27068 |goto Zul'Farrak 56.7,89.2
@@ -2921,14 +3137,16 @@ accept Breaking and Entering##27076 |goto 58.3,88.7
 step
 map Zul'Farrak
 path follow strict; loop off
-path 57.5,79.9	59.1,68.2	57.3,55.7
-path 53.0,38.9	59.8,42.0	55.6,30.7
-Follow the path. |goto 55.5,30.7 < 5 |noway |c
+path	57.5,79.9	59.1,68.2	57.3,55.7
+path	53.0,38.9	59.8,42.0	55.6,30.7
+Follow the path. |goto 55.5,30.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Theka the Martyr##7272
 |tip Fevered Plague will deal nature damage every 3 seconds for 30 seconds to a player
 |tip At 30% health, Theka will Transform, becoming immune to shadow and physical damage for 15 seconds
-scenariogoal 24949 |goto 54.8,29.3
+Defeat Theka the Martyr |scenariogoal 1/24949 |goto 54.8,29.3
 step
 kill Antu'sul##8127
 |tip Moving to this location will cause the boss to chase your party until he aggros.
@@ -2936,26 +3154,30 @@ kill Servant of Antu'sul##8156+, Sul'lithuz Broodling##8138+
 |tip Interrupt Healing Wave whenever possible
 |tip Destroy Greater Healing Ward and Earthgrab totems
 |tip He will summon Sul'lithuz Broodlings to aid him in battle. Tanks try to pick them up quickly
-scenariogoal 24948 |goto Zul'Farrak 66.0,26.0
+Defeat Antu'sul |scenariogoal 24948 |goto Zul'Farrak 66.0,26.0
 step
 map Zul'Farrak/0
 path follow smart; loop off; ants curved; dist 12
 path	60.3,27.3	56.4,25.4	52.0,25.4
 path	46.2,19.7
-Follow the path |goto 46.2,19.7 |noway |c
+Follow the path |goto 46.2,19.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Witch Doctor Zum'rah will be friendly until you approach him.
 kill Witch Doctor Zum'rah##7271
 |tip Zum'rah will use Awaken Zul'farrak Zombie periodically, summoning zombies from the graves
 |tip Interrupt Healing Wave and Shadow Bolt Volley whenever possible
-scenariogoal 24950 |goto 44.1,15.8
+Defeat Witch Doctor Zum'rah |scenariogoal 24950 |goto 44.1,15.8
 step
 map Zul'Farrak/0
 path follow smart; loop off; ants curved; dist 12
 path	43.4,19.0	40.5,21.4	35.7,17.7
 path	31.6,17.1	27.0,17.8
-Follow the path |goto Zul'Farrak/0 27.0,17.8 < 10 |noway |c
+Follow the path |goto Zul'Farrak/0 27.0,17.8 < 10
 |tip Clear the trash around the area before starting the boss.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Sandfury Executioner##7274
 |tip Once you kill the Executioner, click the cages behind him.
@@ -2965,10 +3187,10 @@ kill Sandfury Drudge##7788+, Sandfury Slave##7787+, Sandfury Cretin##7789+
 |tip Defend Sergeant Bly from the attacking trolls.
 |tip Eventually Shadowpriest Sezz'zis will appear.
 kill Shadowpriest Sezz'ziz##7275
-kill Nekrum Gutchewer
+kill Nekrum Gutchewer##7796
 |tip Interrupt Heal cast by Sezz'ziz and be wary of Psychic Scream, as it will fear party members
-scenariogoal 24947 |goto 25.1,17.9
-scenariogoal 24946 |goto 25.1,17.9
+Defeat Shadowpriest Sezz'ziz |scenariogoal 24947 |goto 25.1,17.9
+Defeat Nekrum Gutchewer |scenariogoal 24946 |goto 25.1,17.9
 step
 talk Weegli Blastfuse##7607 |goto 30.1,16.9
 Ask him if he can blow up the door now
@@ -2982,37 +3204,56 @@ step
 map Zul'Farrak/0
 path follow smart; loop off; ants curved; dist 12
 path	33.6,19.4	40.4,30.9
-Follow the path |goto 40.4,30.9 < 5 |noway |c
+Follow the path |goto 40.4,30.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ruuzlu##7797
 kill Chief Ukorz Sandscalp##7267
 |tip Avoid standing in front of Sandscalp unless you are the tank, as he cleaves frequently
-scenariogoal 3265 |goto 43.5,34.6
+Defeat Chief Ukorz Sandscalp |scenariogoal 1/34439 |goto 43.5,34.6
 step
 map Zul'Farrak/0
 path follow smart; loop off; ants curved; dist 12
 path	40.5,31.1	34.4,20.5	31.6,23.7
 path	34.8,29.1	34.6,35.7	32.5,39.0
-Follow the path |goto 32.5,39.0 < 10 |noway |c
+Follow the path |goto 32.5,39.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hydromancer Velratha##7795
 |tip She patrols around the room a bit, but often stops here.
 |tip Interrupt Healing Wave whenever possible
 |tip Avoid being hit by Crashing Wave. It will deal damage and knock you back
 Loot Velratha for the Tiara of the Deep |q 27070/1 |only if havequest(27070)
-scenariogoal 24951 |goto 29.7,38.8
+Defeat Hydromancer Velratha |scenariogoal 24951 |goto 29.7,38.8
+confirm
 step
-Kill trash while making your way to the _Gong of Zul'Farrak_. |goto Zul'Farrak 32.9,43.6 <5 |c
+Kill trash while making your way to the _Gong of Zul'Farrak_. |goto Zul'Farrak 32.9,43.6 < 5
+confirm
 step
-click Gong of Zul'Farrak##1827 |tip This will cause Gahz'rilla to spawn.
+click Gong of Zul'Farrak##1827
+|tip This will cause Gahz'rilla to spawn.
 kill Gahz'rilla##7273
 |tip Dispel Freeze Solid whenever possible to lessen party damage
 Loot Gahz'rilla for Gahz'rilla's Electrified Scale |q 27070/2 |only if havequest(27070)
-scenariogoal 24952 |goto Zul'Farrak/0 29.4,38.6
+Defeat Gahz'rilla |scenariogoal 24952 |goto Zul'Farrak/0 29.4,38.6
+confirm
 step
-You can either run to the beginning of the dungeon to turn in your quests |goto Zul'Farrak/0 56.6,91.0 < 80 |noway |c
+map Zul'Farrak/0
+path follow smart; loop off; ants curved; dist 12
+path	32.5,39.0	34.6,35.7	34.8,29.1
+path	31.6,23.7	34.4,20.5	40.5,21.4
+path	52.0,25.4	55.6,30.7	59.8,42.0
+path	53.0,38.9	57.3,55.7	59.1,68.2
+path	57.5,79.9
+Follow the path |goto 57.5,79.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+You can either run to the beginning of the dungeon to turn in your quests |goto Zul'Farrak/0 56.6,91.0 < 80
 Or
-You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance |goto Zul'Farrak/0 56.6,91.0 < 80 |noway |c
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance
+confirm
+|only if not completedq(27068) or not completedq(27071) or not completedq(27076) or not completedq(27070)
 step
 talk Mazoga's Spirit##40712
 turnin Chief Ukorz Sandscalp##27068 |goto Zul'Farrak 56.7,89.2
@@ -3033,9 +3274,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Stratholme: Service Entrance dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Stratholme: Service Entrance or enter the dungeon with your group |goto Stratholme/2 67.7,86.3 |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Stratholme: Service Entrance or enter the dungeon with your group |goto Stratholme/2 67.7,86.3 |c
 step
 talk Packmaster Stonebruiser##45328
 accept Liquid Gold##27352 |goto Stratholme/2,67.7,82.2
@@ -3053,11 +3293,13 @@ talk Master Craftsman Wilhelm##45331
 accept Weapons for War##27230 |goto 68.6,73.1
 step
 click Gauntlet Gate##3614
-Go through this gate |goto 63.2,65.4 <5 |c
+Go through this gate |goto 63.2,65.4 < 5
+confirm
 step
-click Gauntlet Gate##3614
-Go through this gate |goto 62.9,57.5 <5 |c
 stickystart "Banshee"
+click Gauntlet Gate##3614
+Go through this gate |goto 62.9,57.5 < 5
+confirm
 step
 click Blacksmithing Plans##525
 kill Black Guard Swordsmith##11121 |q 27230/1 |goto 72.7,52.4
@@ -3068,42 +3310,50 @@ kill Baroness Anastari##10436
 |tip Dispel Silence and Banshee Curse whenever possible
 |tip After you kill this boss, make sure to go inside the doors and kill the Acolyte's.
 kill Thuzadin Acolyte##10399+
-scenariogoal 24919 |goto 74.8,46.8
+Defeat Baroness Anastari |scenariogoal 24919 |goto 74.8,46.8
 step
 map Stratholme/2
 path follow smart; loop off; ants curved; dist 15
 path	73.4,46.3	70.4,38.1	68.0,33.0
 path	67.1,26.4
-Finish killing the Thuzadin Acolytes and follow the path |goto 67.1,26.4 < 12 |noway |c
+Finish killing the Thuzadin Acolytes and follow the path |goto 67.1,26.4 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Maleki the Pallid##10438
 |tip Dispel Drain Life and Ice Tomb from players
 |tip When possible, dispel Frost Armor from Maleki
 |tip After you kill this boss, make sure to go inside the doors and kill the Acolyte's.
 kill Thuzadin Acolyte##10399+
-scenariogoal 24920 |goto 68.1,20.0
+Defeat Maleki the Pallid |scenariogoal 24920 |goto 68.1,20.0
 step
 map Stratholme/2
 path follow smart; loop off; ants curved; dist 15
 path	66.9,22.1	59.1,32.2	58.0,40.4
-Finish killing the Thuzadin Acolytes and follow the path |goto 58.0,40.4 |noway |c
+Finish killing the Thuzadin Acolytes and follow the path |goto 58.0,40.4
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Nerub'enkan##10437
 |tip After you kill this boss, make sure to go inside the doors and kill the Acolyte's.
 kill Thuzadin Acolyte##10399+
-scenariogoal 24921 |goto 56.5,46.8
+Defeat Nerub'enkan |scenariogoal 24921 |goto 56.5,46.8
 step
 map Stratholme/2
 path follow smart; loop off; ants curved; dist 15
 path	57.7,45.8	57.9,39.1	59.2,31.5
 path	57.3,19.4
-Finish killing the Thuzadin Acolytes and follow the path |goto 57.3,19.4 < 12 |noway |c
+Finish killing the Thuzadin Acolytes and follow the path |goto 57.3,19.4 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Magistrate Barthilas##10435
 |tip Casters should stay at least 10 yards away to avoid interruption caused by Crowd Pummel
 |tip Barthilas will gain increased damage as Furious Anger stacks. This is a soft enrage
-scenariogoal 24930 |goto 57.0,15.1
-step "Banshee"
+Defeat Magistrate Barthilas |scenariogoal 24930 |goto 57.0,15.1
+confirm
+step
+label "Banshee"
 kill Wailing Banshee##10464+ |only if havequest(27359)
 collect 4 Banshee Essence |q 27359/1 |goto 66.5,49.3 |only if havequest(27359)
 click Crate##336 |only if havequest(27352) and itemcount(13180) < 1
@@ -3112,22 +3362,26 @@ collect Stratholme Holy Water |q 27352/1 |only if havequest(27352) and itemcount
 step
 kill Venom Belcher##10417+, Bile Spewer##10416
 |tip Clear this room of Abominations.
-scenariogoal 24922 |goto 47.3,19.9
+Defeat Venom Belcher and Bile Spewer |scenariogoal 2/24922 |goto 47.3,19.9
 step
 kill Ramstein the Gorger##10439
 |tip Knockout will stuck and knock back the tank
 |tip Ranged should stay at least 10 yards away to avoid Trample damage
-scenariogoal 24923 |goto 47.3,19.9
+Defeat Ramstein the Gorger |scenariogoal 3/24923 |goto 47.3,19.9
 step
 Before you kill the next boss, you will have a wave a mobs come from the left gate.
-|tip You will have a wave of elite mobs come from the doorway.
-scenariogoal 24924
+Slay these little skeletons
+confirm
+step
+You will have a wave of elite mobs come from the doorway.
+kill Black Guard Sentry##10394+
+Defeat Black Guard Sentry |scenariogoal 4/24924 |goto 47.3,19.9
 step
 kill Lord Aurius Rivendare##45412
 |tip Kill Mindless Skeletons quickly so Rivendare cannot sacrifice them for health
 |tip Avoid standing in front of Rivendare as he cleaves
 |tip Unholy Aura will deal shadow damage to everyone within 30 yards every 2 seconds
-scenariogoal 27860 |goto 37.4,19.9
+Defeat Lord Aurius Rivendare |scenariogoal 4/27860 |goto 37.4,19.9
 step
 talk Crusade Commander Eligor Dawnbringer##45329
 turnin Lord Aurius Rivendare##27227 |goto 44.8,20.4
@@ -3151,9 +3405,8 @@ achieveid={641},
 description="This guide will walk you through the Sunken Temple dungeon.",
 },[[
 step
-label "finder"
-Press _I_ and queue for Sunken Temple or enter the dungeon with your group |goto The Temple of Atal'Hakkar/1 50.0,15.8 |noway |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Sunken Temple or enter the dungeon with your group |goto The Temple of Atal'Hakkar/1 50.0,15.8 |c
 step
 talk Lord Itharius##46077
 accept Jammal'an the Prophet##27604 |goto The Temple of Atal'Hakkar/1 50.0,17.3
@@ -3164,19 +3417,23 @@ map The Temple of Atal'Hakkar/1
 path follow smart; loop off; ants curved; dist 15
 path	50.0,26.4	52.5,35.7	59.2,53.7
 path	70.7,63.9	76.3,56.8
-Follow the path |goto 76.3,56.8 < 8 |noway |c
+Follow the path |goto 76.3,56.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Jammal'an the Prophet##5710
 |tip Clear the room before engaging the Prophet.
 |tip Interrupt Ogom the Wretched's Shadow Bolt
 |tip Kill the Earthgrab Totem and move out of Flamestrike
 Loot the Head of Jammal'an from Jammal'an the Prophet |q 27604/1 |goto 76.1,38.7 |only if havequest(27604)
-scenariogoal 24936 |goto 76.1,38.7
+Defeat Jammal'an the Prophet |scenariogoal 24936 |goto 76.1,38.7
 step
 map The Temple of Atal'Hakkar/1
 path follow smart; loop off; ants curved; dist 15
 path	75.9,53.9	73.4,63.9	58.8,53.3
-Follow the path |goto 58.8,53.3 < 10 |noway |c
+Follow the path |goto 58.8,53.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Dreamscythe##5721, Weaver##5720
 |tip Avoid standing in front of the dragons or they will knock you back.
@@ -3186,7 +3443,9 @@ step
 map The Temple of Atal'Hakkar/1
 path follow smart; loop off; ants curved; dist 15
 path	41.1,53.4	31.0,62.2	24.2,60.2
-Follow the path |goto 24.2,60.2 < 12 |noway |c
+Follow the path |goto 24.2,60.2 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Shrine of the Soulflayer##3365
 kill Avatar of Hakkar##8443
@@ -3198,18 +3457,31 @@ map The Temple of Atal'Hakkar/1
 path follow smart; loop off; ants curved; dist 15
 path	24.2,60.2	31.0,62.2	41.9,52.7
 path	49.9,60.9	49.9,71.8
-Follow the path |goto 49.9,71.8 < 12 |noway |c
+Follow the path |goto 49.9,71.8 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hazzas##5722, Morphaz##5719
 |tip Avoid standing in front of the dragons or they will knock you back.
-scenariogoal 24940 |goto 49.4,81.3
-scenariogoal 24939 |goto 49.4,81.3
+Defeat Hazzas |scenariogoal 24940 |goto 49.4,81.3
+Defeat Morphaz |scenariogoal 24939 |goto 49.4,81.3
 step
 kill Shade of Eranikus##5709
 |tip Note that you will not be able to attack him if you haven't defeated the other bosses.
 |tip Dispel players affected by Deep Slumber
 |tip War Stomp will stun anyone within 5 yards
-scenariogoal 18533 |goto 68.5,87.7
+Defeat Shade of Eranikus |scenariogoal 1/34436 |goto 68.5,87.7
+step
+map The Temple of Atal'Hakkar/1
+path follow smart; loop off; ants curved; dist 15
+path	49.4,81.3	49.9,71.8	49.9,60.9
+path	50.0,26.4	50.0,15.8
+Follow the path back to the entrance |goto 50.0,15.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+You can either run to the beginning of the dungeon to turn in your quests |goto 50.0,15.8 < 80
+Or
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance
+confirm
 step
 talk Lord Itharius##46077
 turnin Jammal'an the Prophet##27604 |goto The Temple of Atal'Hakkar 50.0,17.2
@@ -3225,8 +3497,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Depths: Detention Block dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Blackrock Depths: Detention Block or enter the dungeon with your group |goto Blackrock Depths/1 34.7,77.8 |noway |c
+label "start"
+Press _I_ and queue for Blackrock Depths: Detention Block or enter the dungeon with your group |goto Blackrock Depths/1 34.7,77.8 |c
 step
 Click here to proceed to the Detention Block section |confirm |or
 Click here to skip to the Upper City section |confirm |next "Prospect" |or
@@ -3250,10 +3522,12 @@ path follow smart; loop off; ants curved; dist 15
 path	39.3,75.6	42.6,72.1	46.5,61.9
 path	48.6,56.8	52.7,56.5	56.6,61.7
 path	56.1,66.7	53.8,70.7	48.2,72.5
-Follow the path |goto 53.6,60.3 < 10 |noway |c |next "DawsonsCreek" |or
+Follow the path |goto 53.6,60.3 < 10 |next "DawsonsCreek" |or
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 Click here to skip all optional bosses and kill High Interrogator Gerstahn |confirm |next "DawsonsCreek"
-Proceeding to Grebmar |goto Blackrock Depths/1 55.0,58.7 < 15 |noway |c |next "Grebmar" |or |'
-Proceeding to Ring of Law |goto Blackrock Depths/1 51.6,70.5 < 15 |noway |c |next "RoL" |or |'
+Proceeding to Grebmar |goto Blackrock Depths/1 55.0,58.7 < 15 |next "Grebmar" |or
+Proceeding to Ring of Law |goto Blackrock Depths/1 51.6,70.5 < 15 |next "RoL" |or
+confirm
 step
 label "Grebmar"
 kill Houndmaster Grebmar##9319 |goto Blackrock Depths/1 50.7,63.0
@@ -3263,17 +3537,6 @@ kill Houndmaster Grebmar##9319 |goto Blackrock Depths/1 50.7,63.0
 confirm |or
 Click here to skip Houndmaster Grebmar |confirm |next "NoGrembar" |or
 step
-label "NoGrembar"
-kill Lord Roccor##9025 |tip As you follow the path, keep an eye out for Roccor.
-map Blackrock Depths/1
-path follow smart; loop off; ants curved; dist 15
-path	39.3,75.6	42.6,72.1	46.5,61.9
-path	48.6,56.8	52.7,56.5	56.6,61.7
-path	56.1,66.7	53.8,70.7	48.2,72.5
-Follow the path |goto 48.2,72.5 < 10 |noway |c |next "DawsonsCreek" |or
-Click here to skip all optional bosses and kill High Interrogator Gerstahn |confirm |next "DawsonsCreek"
-Proceeding to Ring of Law |goto Blackrock Depths/1 51.6,70.5 < 15 |noway |c |next "RoL" |or |'
-step
 label "RoL"
 You will have to clear a few waves of trash and a minor mini-boss
 |tip Grizzle: Frenzy at 50% health, Cleave, and 20 yard AoE stun
@@ -3282,18 +3545,9 @@ You will have to clear a few waves of trash and a minor mini-boss
 |tip Ok'thor the Breaker: Arcane Explosion will deal damage to anyone within 30 yards and he will Polymorph random players
 |tip Hedrum the Creeper: Crazed will cause Hedrum to drop threat periodically
 |tip Gorosh the Dervish: Whirlwind will hit anyone within 8 yards. Dispel Bloodlust
-scenariogoal 25074 |goto Blackrock Depths/1 50.5,62.9 |or
+Defeat the Ring of Law |scenariogoal 25074 |goto Blackrock Depths/1 50.5,62.9 |or
 Click here to skip the Ring of Law |confirm |next "NoRoL" |or
-step
-label "NoRoL"
-kill Lord Roccor##9025 |tip As you follow the path, keep an eye out for Roccor.
-map Blackrock Depths/1
-path follow smart; loop off; ants curved; dist 15
-path	39.3,75.6	42.6,72.1	46.5,61.9
-path	48.6,56.8	52.7,56.5	56.6,61.7
-path	56.1,66.7	53.8,70.7	48.2,72.5
-Follow the path |goto 48.2,72.5 < 10 |noway |c |next "DawsonsCreek" |or
-Click here to skip all optional bosses and kill High Interrogator Gerstahn |confirm |next "DawsonsCreek"
+confirm
 step
 label "DawsonsCreek"
 talk Kevin Dawson##45898
@@ -3304,19 +3558,27 @@ step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	45.2,80.0	46.1,85.2	47.0,90.3
-Follow the path |goto 47.0,90.3 < 8 |noway |c
-tip Be careful, the side rooms are full of enemies and will most likely aggro.
+Follow the path |goto 47.0,90.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+|tip Be careful, the side rooms are full of enemies and will most likely aggro.
+confirm
 step
 kill High Interrogator Gerstahn##9018
 Interrupt _Mana Burn_
 Stay at distance to avoid being feared by _Psychic Scream_ (8 yards)
 Dispel _Shadow Word: Pain_ and _Shadow Shield_
-scenariogoal 25075 |goto Blackrock Depths/1 47.6,93.2
+Defeat High Interrogator Gerstahn |scenariogoal 1/25075 |goto Blackrock Depths/1 47.6,93.2
+confirm
+step
+Slay High Interrogator Gerstahn |q 27567/1 |goto Blackrock Depths/1 47.6,93.2
+only if not completedq(27567)
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	47.0,90.3	46.1,85.2	45.2,80.0
-Follow the path |goto 45.2,80.0 < 8 |noway |c
+Follow the path |goto 45.2,80.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Kevin Dawson##45898
 turnin Twilight?! No!##27567 |goto 44.42,77.75
@@ -3325,56 +3587,69 @@ step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	43.9,77.2	39.4,75.6
-Follow the path |goto 39.4,75.6 < 8 |noway |c
-step
-talk Tinkee Steamboil##45849
-turnin The Sealed Gate##27603 |goto 37.37,80.07
-only if not completedq(27603)
+Follow the path |goto 39.4,75.6 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	36.1,73.5	35.2,62.6	27.2,54.8
-Follow the path |goto 27.2,54.8 |noway |c |or
+Follow the path |goto 27.2,54.8 |or
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 Click here to skip Bael'Gar |confirm |next "SkipBG" |or
+confirm
 step
 kill Bael'Gar##9016
 |tip Players will take a good bit of AoE damage during this fight
 |tip The tank should pick up summoned Spawn of Bael'Gar quickly
-scenariogoal 25076 |goto Blackrock Depths/1 24.0,51.6 |or
+Defeat Bael'Gar |scenariogoal 25076 |goto Blackrock Depths/1 24.0,51.6 |or
+kill Bael'Gar##9016 |q 27603/1 |only if havequest(27603)
 Click here to skip Bael'Gar |confirm |or
+confirm
+step
+map Blackrock Depths/1
+path follow smart; loop off; ants curved; dist 15
+path	27.2,54.8	35.2,62.6	36.1,73.5
+Follow the path |goto 36.1,73.5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Tinkee Steamboil##45849
+turnin The Sealed Gate##27603 |goto 37.37,80.07
+only if not completedq(27603)
 step
 label "SkipBG"
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
-path	27.1,55.0	32.2,59.3	36.9,59.5
-path	40.9,54.4	44.7,49.6	49.0,42.5
-path	54.0,35.0
-Follow the path |goto Blackrock Depths/1 54.0,35.0 < 10 |noway |c
+path	36.9,59.5	40.9,54.4	44.7,49.6
+path	49.0,42.5	54.0,35.0
+Follow the path |goto Blackrock Depths/1 54.0,35.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Lord Incendius##9017
 |tip Move out of areas targeted by Fire Storm
 |tip The tank should position their back away from the edge of the bridge to avoid being knocked off the edge by Mighty Blow
 |tip Dispel Curse of the Elemental Lord as often as possible
-scenariogoal 25072 |goto Blackrock Depths/1 56.5,31.2
+Defeat Lord Incendius |scenariogoal 25072 |goto Blackrock Depths/1 56.5,31.2
 step
 kill Fineous Darkvire##9056
 |tip Interrupt Holy Light
 |tip Dispel Seal of Reckoning as often as possible
-scenariogoal 25073 |goto Blackrock Depths/1 61.5,23.9
+Defeat Fineous Darkvire |scenariogoal 25073 |goto Blackrock Depths/1 61.5,23.9
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	61.2,24.4	63.2,21.1	66.9,26.3
 path	Blackrock Depths/2 60.4,60.0
-Follow the path |goto Blackrock Depths/2 60.4,60.0 < 5 |noway |c
+Follow the path |goto Blackrock Depths/2 60.4,60.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
-path	59.5,30.8	58.5,34.2	54.8,36.0
-path	Blackrock Depths/2 52.6,69.7	Blackrock Depths/2 56.2,74.1
-path	57.3,57.5	Blackrock Depths/2 56.2,93.2
-Follow the path |goto Blackrock Depths/2 56.2,93.2 < 5 |noway |c |or
-Proceeding to Stilgiss |goto Blackrock Depths/1 58.5,34.2 |noway |c |or |'
+path	59.5,30.8	58.5,34.2
+Follow the path |goto Blackrock Depths/1 58.5,34.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Warder Stilgiss##9041, Verek##9042 |goto Blackrock Depths/2 60.5,67.4
 |tip Interrupt Frostbolt
@@ -3383,11 +3658,13 @@ Click here when you kill Stilgiss or to skip this boss |confirm
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
-path	59.5,30.8	58.5,34.2	54.8,36.0
+path	58.5,34.2	54.8,36.0
 path	Blackrock Depths/2 52.6,69.7	Blackrock Depths/2 56.2,74.1
-path	57.3,57.5	Blackrock Depths/2 56.2,93.2
-Follow the path |goto Blackrock Depths/2 56.2,93.2 < 5 |noway |c
+path	Blackrock Depths/2 57.3,57.5	Blackrock Depths/2 56.2,93.2
+Follow the path |goto Blackrock Depths/2 56.2,93.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 Click here to skip Pyromancer Loregrain |confirm |next "Skip"
+confirm
 step
 kill Pyromancer Loregrain##9024 |goto Blackrock Depths/2 54.3,96.3
 |tip Kill the Scorching Totem quickly
@@ -3399,20 +3676,26 @@ step
 label "Kill"
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
-path	Blackrock Depths/2 56.6,90.0	54.4,63.1
-path	52.5,66.9	49.4,67.5	46.7,63.0
-path	Blackrock Depths/2 42.1,90.0	40.9,66.6
-Follow the path |goto Blackrock Depths/1 40.9,66.6 |noway |c |next "Prospect"
+path	Blackrock Depths/2 56.6,90.0	Blackrock Depths/1 54.4,63.1
+path	Blackrock Depths/1 52.5,66.9	Blackrock Depths/1 49.4,67.5	Blackrock Depths/1 46.7,63.0
+path	Blackrock Depths/2 42.1,90.0	Blackrock Depths/1 40.9,66.6
+Follow the path |goto Blackrock Depths/1 40.9,66.6 |next "Prospect"
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label "Skip"
-Jump down to the lower level |goto Blackrock Depths/1 53.8,35.3 < 10 |c
+Jump down to the lower level |goto Blackrock Depths/1 53.8,35.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Blackrock Depths/1
 path follow smart; loop off; ants curved; dist 15
 path	53.4,35.6	48.7,42.8	44.6,49.5
 path	40.3,55.6	35.9,61.4	36.2,65.1
 path	39.5,66.8
-Follow the path |goto Blackrock Depths/1 39.5,66.8 |noway |c
+Follow the path |goto Blackrock Depths/1 39.5,66.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label "Prospect"
 talk Prospector Seymour##45894
@@ -3420,14 +3703,16 @@ turnin Infiltrating Shadowforge City##27568 |goto 40.95,67.21
 accept Dark Iron Tacticians##27569 |goto 40.95,67.21
 only if not completedq(27569)
 step
-Click the Shadowforge Lock |goto Blackrock Depths/2 41.4,88.3 |scenariogoal 25080
+Click the Shadowforge Lock |goto Blackrock Depths/1 40.7,61.9 |scenariogoal 25080
 step
 map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	42.1,90.0	43.8,89.8	45.8,86.1
 path	47.4,81.0	42.3,73.4	38.9,75.7
 path	36.5,81.1
-Follow the path |goto Blackrock Depths/2 36.5,81.1 < 8 |noway |c
+Follow the path |goto Blackrock Depths/2 36.5,81.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill General Angerforge##9033
 |tip Angerforge Enrages after being hit by any melee attack for 5 seconds
@@ -3437,33 +3722,40 @@ step
 map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	35.4,81.6	36.5,81.5	36.5,69.1
-Follow the path |goto 36.5,69.1 < 8 |noway |c
+Follow the path |goto 36.5,69.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Golem Lord Argelmach##8983
 |tip Dispel Lightning Shield as often as possible
-scenariogoal 25082 |goto Blackrock Depths/2 36.9,65.1
+Defeat Golem Lord Argelmach |scenariogoal 25082 |goto Blackrock Depths/2 36.9,65.1
 step
 map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	36.6,69.6	40.0,68.8	46.8,65.2
-Follow the path |goto Blackrock Depths/2 46.8,65.2 < 10 |noway |c
+Follow the path |goto Blackrock Depths/2 46.8,65.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Mayara Brightwing##45888
 turnin Dark Iron Tacticians##27569 |goto 46.88,66.11
 accept The Grim Guzzler##27571 |goto 46.88,66.12
 only if not completedq(27571)
 step
-click Thunderbrew Lager Keg##8386 |tip Destroy all 3 kegs.
+click Thunderbrew Lager Keg##8386
+|tip Destroy all 3 kegs.
 kill Hurley Blackbreath##9537
 |tip Avoid standing in front of him, he uses Flame Breath
 |tip Periodically, Hurley will enter a Drunken Rage, increasing his attack speed and damage by 50%
-scenariogoal 25084 |goto Blackrock Depths/2 47.9,58.3 |or
+Defeat Hurley Blackbreath |scenariogoal 25084 |goto Blackrock Depths/2 47.9,58.3 |or
+kill Hurley Blackbreath##9537 |q 27571/1 |only if havequest(27571)
 Click here to skip this boss |confirm |or
 step
 kill Ribbly Screwspigot##9543
 |tip Gouge will incapacitate anyone hit for 3 seconds
 |tip At 30% health, Ribbley will Run Away! Run Away!. Kill him before he can feel
-scenariogoal 25083 |goto Blackrock Depths/2 49.1,61.9 |or
+Defeat Ribbly Screwspigot |scenariogoal 25083 |goto Blackrock Depths/2 49.1,61.9 |or
+kill Ribbly Screwspigot##9543 |q 27571/3 |only if havequest(27571)
 |tip Clear the trash around Ribbly before engaging him.
 Click here to skip this boss |confirm |or
 step
@@ -3483,23 +3775,27 @@ label "Phalanx"
 kill Phalanx##9502
 |tip Mighty Blow will knock the tank back
 |tip Stay at least 10 yards away to avoid Thunder Clap
-scenariogoal 25086 |goto Blackrock Depths/2 53.1,62.6
+Defeat Phalanx |scenariogoal 25086 |goto Blackrock Depths/2 53.1,62.6
 |tip It will take a moment for Private Rocknot to get drunk enough to start a fight and activate Phalanx.
+confirm
 step
 label "Plugger"
 kill Plugger Spazzring##9499
 |tip This will cause the remaining bar patrons to become hostile
 |tip Dispel Immolate and Curse of Tongues from party members
 |tip Plugger will periodically Banish  a random party member
-scenariogoal 25085 |goto Blackrock Depths/2 49.7,61.3
+Defeat Plugger Spazzring |scenariogoal 25085 |goto Blackrock Depths/2 49.7,61.3
+kill Plugger Spazzring##9499 |q 27571/2 |only if havequest(27571)
 |tip You must use a special ability to attack Plugger for the first time.
 Click here to skip this boss |confirm
 step
 map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	53.4,62.4	Blackrock Depths/1 54.0,27.0
-path	51.7,53.5
-Follow the path |goto Blackrock Depths/2 51.7,53.5 < 8 |noway |c
+path	Blackrock Depths/2 51.7,53.5
+Follow the path |goto Blackrock Depths/2 51.7,53.5 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Mountaineer Orfus##45899
 turnin The Grim Guzzler##27571 |goto 50.76,52.64
@@ -3509,19 +3805,21 @@ step
 kill Ambassador Flamelash##9156
 |tip Flamelash will summon Burning Spirits from the runes around the room
 |tip If these elementals reach him, he will gain 5% damage and size for each elemental, to a maximum of 250%
-scenariogoal 25077 |goto Blackrock Depths/2 53.8,48.9
+Defeat Ambassador Flamelash |scenariogoal 25077 |goto Blackrock Depths/2 53.8,48.9
 step
-kill Panzor the Invincible##8923 |tip Panzor has a chance to spawn in the Mold Foundry.
+kill Panzor the Invincible##8923
+|tip Panzor has a chance to spawn in the Mold Foundry.
 map Blackrock Depths/2
 path follow smart; loop off; ants curved; dist 15
 path	52.0,45.5	48.9,41.0	51.5,35.4
 path	49.8,29.6	51.6,26.8
-Follow the path |goto Blackrock Depths/2 51.6,26.8 < 6 |noway |c
+Follow the path |goto Blackrock Depths/2 51.6,26.8 < 6
+confirm
 step
 talk Doom'rel##9039
 Tell him: "_Your bondage is at an end, Doom'rel. I challenge you!_"
 |tip One of the Seven will attack at a time until they are all dead
-scenariogoal 25078 |goto Blackrock Depths/2 56.7,21.8
+Defeat Doom'rel |scenariogoal 25078 |goto Blackrock Depths/2 56.7,21.8
 step
 talk Marshal Maxwell##45890
 turnin The Dark Iron Pact##27573 |goto 58.08,22.23
@@ -3539,14 +3837,14 @@ _Go through_ the door |goto Blackrock Depths/2 74.9,12.9
 kill Magmus##9938
 |tip War Stomp will deal damage, knock back, and stun anyone within 5 yards
 |tip Run out of areas targeted by Fiery Burst
-scenariogoal 25079 |goto Blackrock Depths/2 81.7,11.9
+Defeat Magmus |scenariogoal 25079 |goto Blackrock Depths/2 81.7,11.9
 |tip The golems in the side alcoves will shoot flames out. Avoid standing in the fire.
 step
 _Enter_ the Imperial Seat |goto Blackrock Depths/2 85.5,11.9
 kill Emperor Dagran Thaurissan##9019, High Priestess of Thaurissan##10076
 |tip Hand of Thaurissan will deal fire damage and stun random players for 5 seconds
 |tip Interrupt Princess Bronzebeard's Heal and Renew
-scenariogoal 3266 |goto Blackrock Depths/2 93.1,11.9
+Defeat Emperor Dagran Thaurissan |scenariogoal 1/34449 |goto Blackrock Depths/2 93.1,11.9
 |tip It is recommended to clear the trash on both sides of the throne at least.
 step
 map Blackrock Depths/2
@@ -3566,9 +3864,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Lower Blackrock Spire dungeon.",
 },[[
 step
-label	"start"
-Press _I_ and queue for Lower Blackrock Spire or enter the dungeon with your group |goto Blackrock Spire/4 37.9,43.3 |noway |c |or
-|confirm |or
+label "start"
+Press _I_ and queue for Lower Blackrock Spire or enter the dungeon with your group |goto Blackrock Spire/4 37.9,43.3 |c
 step
 talk Acride##10299
 accept Trolls, Ogres, and Orcs, Oh My!##27440 |goto Blackrock Spire/4 38.1,51.0
@@ -3582,13 +3879,16 @@ path	39.9,48.3	41.7,45.2	47.3,43.2
 path	Blackrock Spire/3 53.7,38.1	Blackrock Spire/3 59.4,43.0
 path	Blackrock Spire/3 66.5,43.1	Blackrock Spire/3 66.0,57.0
 path	Blackrock Spire/3 56.7,57.8	Blackrock Spire/3 46.0,57.8
-Follow the path |goto Blackrock Spire/3 46.0,57.8 < 5 |noway |c |or
-Proceeding to Pike |goto Blackrock Spire/3 66.6,55.4 < 10 |noway |c |next "Pike" |or |'
+Follow the path |goto Blackrock Spire/3 46.0,57.8 < 5 |or
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+Proceeding to Pike |goto Blackrock Spire/3 66.6,55.4 < 10 |next "Pike" |or
+confirm
 step
 label "Pike"
 If you wish to kill Urok Doomhowl, you will need to retrieve a Roughshod Pike
 collect 1 Roughshod Pike##12533 |goto Blackrock Spire/3 67.7,57.4 |or
 Click here if you wish to skip Urok Doomhowl |confirm |or
+confirm
 step
 kill Spirestone Butcher##9219
 |tip Keep an eye out for the rare spawn Spirestone Butcher with the ogres.
@@ -3598,12 +3898,15 @@ path	39.9,48.3	41.7,45.2	47.3,43.2
 path	Blackrock Spire/3 53.7,38.1	Blackrock Spire/3 59.4,43.0
 path	Blackrock Spire/3 66.5,43.1	Blackrock Spire/3 66.0,57.0
 path	Blackrock Spire/3 56.7,57.8	Blackrock Spire/3 46.0,57.8
-Follow the path |goto Blackrock Spire/3 46.0,57.8 < 5 |noway |c
+Follow the path |goto Blackrock Spire/3 46.0,57.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Highlord Omokk##9196
 |tip Knock Away will knock the tank back unless their back is against a wall
 |tip At 50% health, Omokk gains Frenzy, increasing his attack speed by 60%
-scenariogoal 25775 |goto 34.6,55.2
+Defeat Highlord Omokk |scenariogoal 25775 |goto 34.6,55.2
+kill Highlord Omokk##9196 |q 27440/2 |only if havequest(27440)
 |tip Be sure to loot Omokk for Omokk's Head if you want to kill Urok Doomhowl.
 step
 map Blackrock Spire/3
@@ -3611,24 +3914,29 @@ path follow smart; loop off; ants curved; dist 15
 path	46.1,57.8	57.5,57.8	57.4,51.1
 path	Blackrock Spire/2 53.2,51.1	Blackrock Spire/2 53.3,56.6
 path	Blackrock Spire/2 55.4,63.9
-Follow the path |goto Blackrock Spire/2 55.4,63.9 < 5 |noway |c
+Follow the path |goto Blackrock Spire/2 55.4,63.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shadow Hunter Vosh'gajin##9236
 |tip Hex makes this encounter slightly dangerous. Dispelling this debuff is critical!
-scenariogoal 25776 |goto 55.6,71.8
+Defeat Shadow Hunter Vosh'gajin |scenariogoal 25776 |goto 55.6,71.8
 step
 map Blackrock Spire/2
 path follow strict; loop off; ants curved; dist 15
 path	55.4,62.1	59.5,58.1	Blackrock Spire/1 59.5,64.2
 path	Blackrock Spire/1 53.1,61.1
-Follow the path |goto Blackrock Spire/1 53.1,61.1 < 5 |noway |c
+Follow the path |goto Blackrock Spire/1 53.1,61.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill War Master Voone##9237
 |tip Voone will use Throw Axe until 65% health, stunning a random player and dealing damage
 |tip At 65% health, Voone will use Cleave and Mortal Strike. Avoid standing in front of him
 |tip At 40% health, Voone will Snap Kick, stunning the tank, and Uppercut, knocking the tank back
 |tip In addition, random players will be Pummeled
-scenariogoal 25777 |goto Blackrock Spire/1 53.0,52.9
+kill War Master Voone##9237 |q 27440/1 |only if havequest(27440)
+Defeat War Master Voone |scenariogoal 25777 |goto Blackrock Spire/1 53.0,52.9
 step
 map Blackrock Spire/1
 path follow smart; loop off; ants curved; dist 15
@@ -3637,20 +3945,24 @@ path	Blackrock Spire/3 66.0,49.8	Blackrock Spire/3 62.9,45.9
 path	Blackrock Spire/3 58.9,47.5	Blackrock Spire/1 52.1,49.6
 path	48.5,54.0	48.6,63.8	53.5,70.0
 path	60.2,70.2
-Follow the path |goto Blackrock Spire/1 60.2,70.2 < 10 |noway |c
+Follow the path |goto Blackrock Spire/1 60.2,70.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mother Smolderweb##10596
 |tip Do not stand in front of Smolderweb unless tanking, as Crystallize will stun in a frontal cone
 |tip Mother's Milk will poison random players, causing them to root anyone within 8 yards periodically
 |tip Stay spread out
-scenariogoal 25778 |goto Blackrock Spire/1 62.5,76.3
+Defeat Mother Smolderweb |scenariogoal 25778 |goto Blackrock Spire/1 62.5,76.3
 step
 map Blackrock Spire/2
 path follow smart; loop off; ants curved; dist 15
 path	62.2,73.0	56.4,73.6	52.5,76.0
 path	Blackrock Spire/3 50.4,74.3	Blackrock Spire/3 47.1,70.4
 path	Blackrock Spire/4 45.3,62.0
-Follow the path |goto Blackrock Spire/4 45.3,62.0 < 12 |c |noway
+Follow the path |goto Blackrock Spire/4 45.3,62.0 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 next "Cont" |only if default
 next "Urok" |only if itemcount(12534) > 0 and itemcount(12533) > 0
 step
@@ -3659,39 +3971,54 @@ Impale Omokk's head on the roughshod pike atop the pile of skulls |use Omokk's H
 |tip Defend the pike. Once the initial mobs are dead, click it again to challenge Urok Doomhowl
 kill Urok Doomhowl##10584
 |tip Doomhowl will use Intimidating Roar, fearing anyone within 8 yards for 8 seconds. Stay at range if possible
-scenariogoal 25779 |goto Blackrock Spire/4 45.8,53.9 |or
+Defeat Urok Doomhowl |scenariogoal 25779 |goto Blackrock Spire/4 45.8,53.9 |or
 Click here if you would like to skip this boss |confirm |or
+confirm
 step
 label "Cont"
 map Blackrock Spire/4
 path follow smart; loop off; ants curved; dist 15
 path	42.5,61.2	42.7,68.2	Blackrock Spire/5 42.9,79.7
 path	Blackrock Spire/5 37.8,80.2
-Follow the path |goto Blackrock Spire/5 37.8,80.2 < 12 |c |noway
-tip Be wary of the bug swarms in the alcoves to the right.
+Follow the path |goto Blackrock Spire/5 37.8,80.2 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+|tip Be wary of the bug swarms in the alcoves to the right.
+confirm
 step
 kill Halycon##10220
-scenariogoal 25781 |goto Blackrock Spire/5 37.7,85.4
+Defeat Halycon |scenariogoal 25781 |goto Blackrock Spire/5 37.7,85.4
 |tip After killing Halycon, Gizrul will come running down the hallway. Be prepared
 step
 kill Gizrul the Slavener##10268
 |tip At 60% health, Gizrul will gain 60% increased attack speed through Frenzy
-scenariogoal 25782 |goto Blackrock Spire/5 37.7,85.4
+Defeat Gizrul the Slavener |scenariogoal 25782 |goto Blackrock Spire/5 37.7,85.4
 step
 map Blackrock Spire/5
 path follow smart; loop off; ants curved; dist 10
-path	40.0,78.3	39.9,74.0	35.7,70.6
-path	37.3,64.9	37.3,64.9	Blackrock Spire/6 41.0,60.4
-path	Blackrock Spire/6 51.2,60.4	Blackrock Spire/6 53.6,60.7
+path	40.0,78.3	52.8,79.7	53.8,84.8
+Follow the path |goto 53.8,84.8 < 5
+confirm
+step
+kill Quartermaster Zigris##9736
+Defeat Quartermaster Zigris |scenariogoal 1/25780 |goto 53.8,84.8
+step
+map Blackrock Spire/5
+path follow smart; loop off; ants curved; dist 10
+path	52.8,79.7	40.0,78.3	39.9,74.0
+path	35.7,70.6	37.3,64.9	37.3,64.9
+path	Blackrock Spire/6 41.0,60.4	Blackrock Spire/6 51.2,60.4	Blackrock Spire/6 53.6,60.7
 path	Blackrock Spire/6 60.1,64.7	Blackrock Spire/6 58.8,58.9
-Follow the path |goto Blackrock Spire/6 58.8,58.9 < 10 |noway |c
+Follow the path |goto Blackrock Spire/6 58.8,58.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Overlord Wyrmthalak##9568 |goto Blackrock Spire/6 56.1,55.6
 |tip Tank Wyrmthalak against a wall to avoid being knocked back
 |tip Sweeping Slam will deal damage and knock back anyone in front of him. Stay behind him unless tanking
 |tip At 50% health, he will summon a Spirestone Warlord, Smolderthorn Berserker, and Bloodaxe Veteran
 |tip If your group DPS is good, burn Wyrmthalak and then deal with the adds
-scenariogoal 18534
+kill Overlord Wyrmthalak##9568 |q 27440/3 |only if havequest(27440)
+Defeat Overlord Wyrmthalak |scenariogoal 1/34457
 step
 map Blackrock Spire/6
 path follow strict; loop off; ants curved; dist 12
@@ -3705,9 +4032,11 @@ path	Blackrock Spire/3 66.1,55.1	Blackrock Spire/3 66.1,42.8
 path	Blackrock Spire/3 58.9,42.8	Blackrock Spire/3 54.5,37.5
 path	Blackrock Spire/4 46.9,42.7	Blackrock Spire/4 40.6,45.8
 path	Blackrock Spire/4 39.4,48.3
-You can either run to the beginning of the dungeon to turn in your quests. |goto Blackrock Spire/4 39.4,48.3 < 5 |noway |c |or
+You can either run to the beginning of the dungeon to turn in your quests. |goto Blackrock Spire/4 39.4,48.3 < 5 |or
 Or
-You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance. |goto Blackrock Spire/4 37.9,43.3 < 8 |noway |c |or
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance. |goto Blackrock Spire/4 37.9,43.3 < 8 |or
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 only if havequest(27440)
 step
 talk Acride##10299
@@ -3715,6 +4044,5349 @@ turnin Trolls, Ogres, and Orcs, Oh My!##27440 |goto Blackrock Spire/4 38.1,51.0
 only if havequest(27440)
 step
 Congratulations, you have completed Lower Blackrock Spire!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Hellfire Ramparts (Ramps) 59-63",{
+mapid=797,
+achieveid={647},
+author="support@zygorguides.com",
+description="This guide will walk you through the Hellfire Citadel: Hellfire Ramparts dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Hellfire Ramparts or enter the dungeon with your group |goto Hellfire Ramparts/1 50.1,70.4 |c
+step
+talk Advance Scout Chadwick##54603
+accept War on the Ramparts##29528 |goto Hellfire Ramparts,48.5,68.1
+accept Demons in the Citadel##29529 |goto Hellfire Ramparts,48.5,68.1
+accept Hitting Them Where It Hurts##29594 |goto Hellfire Ramparts,48.5,68.1
+only if not completedq(29528) or not completedq(29528) or not completedq(29594)
+stickystart "crates"
+step
+map Hellfire Ramparts/1
+path follow smart; loop off; ants curved; dist 15
+path	47.0,64.9	45.5,55.3	51.7,46.9
+path	59.5,48.5	65.6,55.4	72.0,52.4
+path	75.9,43.7
+Follow the path |goto Hellfire Ramparts/1 75.9,43.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Hellfire Watcher##17309
+|tip Kill the Hellfire Watchers first. Interrupt their Heal spell.
+kill Watchkeeper Gargolmar##17306
+|tip Gargolamr will Surge at players. Stay spread out at least 10 yards to minimize damage.
+Loot Watchkeeper Gargolmar's Hand |q 29528/1 |goto Hellfire Ramparts 76.9,34.4 |only if havequest(29528)
+scenariogoal 24926 |goto Hellfire Ramparts 76.9,34.4
+step
+map Hellfire Ramparts/1
+path follow smart; loop off; ants curved; dist 15
+path	74.8,31.5	69.7,30.5	65.0,39.8
+path	69.7,41.7	68.4,48.1	65.1,45.2
+path	59.9,45.9	56.0,52.6	57.2,57.6
+path	54.3,61.2	51.5,56.9	47.0,43.7
+path	43.3,31.9
+Follow the path |goto Hellfire Ramparts/1 43.3,31.9 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Omor the Unscarred##17308
+|tip Treacherous Aura will do shadow damage to anyone within 15 yards every second. Periodically, Omor will summon a Fiendish Hound.
+Loot Omor's Hoof |q 29529/1 |goto 39.3,21.2 |only if havequest(29529)
+scenariogoal 18536 |goto 39.3,21.2
+step
+label "crates"
+click Hellfire Supplies##7001
+|tip These can be found all around Hellfire Ramparts.
+Gather 3 crates of Hellfire Supplies |q 29594/1
+only if havequest(29594)
+step
+map Hellfire Ramparts/1
+path follow smart; loop off; ants curved; dist 15
+path	40.9,25.0	45.7,39.5	51.9,56.4
+path	44.0,68.2
+Follow the path |goto Hellfire Ramparts/1 44.0,68.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Vazruden the Herald##17537
+|tip Players targeted by Vazruden's Mark should keep moving to avoid being hit by fireballs.
+kill Nazan##17536
+|tip When Vazruden dies, Nazan lands and attacks. Avoid standing in front of Nazan or you will be hit by Cone of Fire.
+Loot Nazan's Head |q 29528/2 |goto 36.2,79.3 |only if havequest(29528)
+Defeat Nazan |scenariogoal 1/34435 |goto 36.2,79.3
+step
+click Reinforced Fel Iron Chest##5744 |goto 31.3,86.4
+|tip Loot your items for clearing this dungeon.
+confirm
+step
+Jump down here to turn in your quests |goto 51.1,63.8 < 8
+talk Advance Scout Chadwick##54603
+turnin War on the Ramparts##29528 |goto 48.5,68.1
+turnin Demons in the Citadel##29529 |goto 48.5,68.1
+turnin Hitting Them Where It Hurts##29594 |goto 48.5,68.1
+only if not completedq(29528) or not completedq(29528) or not completedq(29594)
+step
+Congratulations! You have completed Hellfire Ramparts.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: The Blood Furnace (BF) 60-64",{
+mapid=725,
+achieveid={648},
+author="support@zygorguides.com",
+description="This guide will walk you through the Hellfire Citadel: The Blood Furnace dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for The Blood Furnace or enter the dungeon with your group |goto The Blood Furnace/1 47.8,90.6 |c
+step
+talk Gunny##54629
+accept Make Them Bleed##29538 |goto The Blood Furnace 51.4,90.0
+accept Heart of Rage##29539 |goto The Blood Furnace 51.4,90.0
+accept The Breaker##29540 |goto The Blood Furnace 51.4,90.0
+only if not completedq(29538) or not completedq(29539) or not completedq(29540)
+stickystart "felorcblood"
+step
+map The Blood Furnace/1
+path follow smart; loop off; ants curved; dist 15
+path	52.0,90.0	58.2,89.5	58.1,76.6
+path	58.1,66.4	58.1,56.1	53.1,53.0
+path	49.7,46.8	47.3,41.2	45.0,41.2
+Follow the path |goto The Blood Furnace/1 45.0,41.2 < 6
+|tip Be wary of stealthed Laughing Skull Rogues
+confirm
+step
+kill The Maker##17381
+_Domination_
+|tip This ability mind controls a party member for 10 seconds.
+_Exploding Breaker_
+|tip Deals nature damage to the player targeted and anyone within 8 yards. Stay spread out to minimize party damage.
+Loot the Fel Infusion Rod |q 29538/2 |goto The Blood Furnace 36.6,40.7 |only if havequest(29538)
+scenariogoal 24911 |goto The Blood Furnace 36.6,40.7
+step
+map The Blood Furnace/1
+path follow smart; loop off; ants curved; dist 15
+path	35.8,41.3	31.7,42.1	30.8,30.6
+path	31.9,21.1	35.5,22.0
+Follow the path |goto The Blood Furnace/1 35.5,22.0 < 5
+|tip Be wary of stealthed Laughing Skull Rogues
+confirm
+step
+click Cell Door Lever##6899
+|tip This will start the boss fight. You will have 4 cell doors open and have to fight Orcs until all 4 waves are complete.
+kill Broggok##17380
+_DPS_ |grouprole DAMAGE
+|tip Stay behind Broggok to avoid damage from Slime Spray. |grouprole DAMAGE
+scenariogoal 24913 |goto 43.4,21.9
+step
+map The Blood Furnace/1
+path follow smart; loop off; ants curved; dist 15
+path	44.7,22.0	58.1,21.4	58.6,27.5
+path	62.6,29.0	65.8,33.2	67.8,41.0
+path	65.4,41.2
+Follow the path |goto The Blood Furnace/1 65.4,41.2 < 5
+|tip Be wary of stealthed Laughing Skull Rogues
+confirm
+Investigate The Blood Furnace |q 29539/1 |only if havequest(29539)
+step
+kill Shadowmoon Channeler##17653
+|tip After the Channelers die, Keli'dan will activate.
+kill Keli'dan the Breaker##17377
+|tip Dispel Corruption whenever possible. When Keli'dan becomes immune, he will kneel down and cast Burning Nova. Run at least 20 yards away.
+scenariogoal 1/34434 |goto 59.2,42.5
+step "felorcblood"
+kill Laughing Skull Enforcer##17370+, Laughing Skull Rogue##17491+
+kill Shadowmoon Warlock##17371+, Shadowmoon Adept##17397+, Shadowmoon Summoner##17395+
+Loot 10 Fel Orc Blood Vials |q 29538/1
+only if havequest(29538)
+step
+map The Blood Furnace/1
+path follow smart; loop off; ants curved; dist 15
+path	62.3,47.2	63.4,63.4	63.5,78.4
+path	62.8,90.6	55.5,89.7
+Follow the path |goto The Blood Furnace/1 55.5,89.7 < 8
+confirm
+only if not completedq(29538) or not completedq(29539) or not completedq(29540)
+step
+talk Gunny##54629
+turnin Make Them Bleed##29538 |goto 51.4,90.1
+turnin Heart of Rage##29539 |goto 51.4,90.1
+turnin The Breaker##29540 |goto 51.4,90.1
+only if not completedq(29538) or not completedq(29539) or not completedq(29540)
+step
+Congratulations! You have completed The Blood Furnace
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens (SP) 61-65",{
+mapid=728,
+achieveid={649},
+author="support@zygorguides.com",
+description="This guide will walk you through the Coilfang Reservoir: Slave Pens dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for The Slave Pens or enter the dungeon with your group |goto The Slave Pens/1 20.0,13.4 |c
+step
+talk Watcher Jhang##54667
+accept Lost in Action##29563 |goto The Slave Pens 18.9,11.3
+accept The Heart of the Matter##29565 |goto The Slave Pens 18.9,11.3
+only if not completedq(29563) or not completedq(29565)
+step
+talk Nahuud##54668
+accept A Brother Betrayed##29564 |goto 17.9,12.1
+only if not completedq(29564)
+step
+map The Slave Pens/1
+path follow smart; loop off; ants curved; dist 15
+path	16.9,15.1	10.2,29.8	6.3,45.9
+path	8.7,53.2	13.9,51.8	23.8,50.3
+path	33.5,50.7	41.3,52.8	42.4,41.9
+path	40.3,34.8	42.8,21.3
+Follow the path |goto The Slave Pens/1 42.8,21.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Mennu the Betrayer##17941
+|tip Killing the Corrupted Nova Totem is top priority, followed by Mennu's Healing Ward.
+scenariogoal 24907 |goto 48.8,24.3
+Defeat Mennu the Betrayer |q 29564/1 |only if havequest(29564)
+step
+map The Slave Pens/1
+path follow smart; loop off; ants curved; dist 15
+path	48.8,23.6	48.8,13.0	45.5,22.1
+path	45.3,35.9	48.8,44.2	48.8,53.8
+Follow the path |goto The Slave Pens/1 48.8,53.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Jump down here |goto 52.2,65.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Weeder Greenthumb##17890
+Discover Weeder Greenthumb |q 29563/2 |goto 48.9,83.4
+only if havequest(29563)
+step
+map The Slave Pens/1
+path follow loose; loop off; ants curved; dist 15
+path	50.0,66.6	48.8,71.0	51.3,75.3
+path	55.1,74.2	57.2,61.2	58.9,53.2
+Follow the path |goto The Slave Pens/1 58.9,53.2 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Rokmar the Crackler##17991
+_Grievous Wound_
+|tip This will bleed all party members until they are healed to full health.
+_Frenzy_
+|tip Frenzy causes Rokmar to gain increased physical damage and 60% increased attack speed.
+Loot The Invader's Claw |q 29565/1 |only if havequest(29565)
+scenariogoal 24908 |goto 57.3,45.4
+step
+map The Slave Pens/1
+path follow smart; loop off; ants curved; dist 15
+path	59.4,48.6	67.5,45.5	74.7,51.0
+path	88.0,47.7	90.5,53.3
+Follow the path |goto The Slave Pens/1 90.5,53.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Naturalist Bite##17893
+Discover Naturalist Bite |q 29563/1 |goto 95.7,66.2
+only if havequest(29563)
+step
+talk Naturalist Bite##17893
+|tip Be ready to fight a couple mobs.
+kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
+Talk to Naturalist Bite
+Tell him: "_Naturalist, please grant me your boon_" |havebuff Interface\Icons\Ability_Druid_FerociousBite |goto 95.7,66.2
+step
+kill Quagmirran##17942
+|tip Avoid standing in front of Quagmirran or you will be hit with Acid Spray and Cleave.
+_Poison Bolt Volley_
+|tip Deals nature damage to all party members.
+_Uppercut_
+|tip This ability deals physical damage and knocked the affected player up in the air.
+Loot The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9 |only if havequest(29565)
+scenariogoal 1/34433 |goto The Slave Pens 86.2,67.9
+step
+map The Slave Pens/1
+path follow smart; loop off; ants curved; dist 15
+path	87.9,62.0	90.5,52.9	86.6,48.4
+path	77.0,50.4	67.7,47.7	59.1,49.3
+path	52.3,48.8	45.0,48.1	39.0,54.2
+path	29.3,50.2	17.6,50.8	7.5,52.8
+path	6.9,42.5	11.1,27.2	17.9,12.2
+Follow the path back to the beginning of the dungeon |goto The Slave Pens/1 17.9,12.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Nahuud##54668
+turnin A Brother Betrayed##29564 |goto The Slave Pens 17.9,12.2
+|tip You can also Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
+only if not completedq(29564)
+step
+talk Watcher Jhang##54667
+turnin Lost in Action##29563 |goto 18.8,11.3
+turnin The Heart of the Matter##29565 |goto 18.8,11.3
+only if not completedq(29563) or not completedq(29565)
+step
+Congratulations! You have completed The Slave Pens.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog (UB) 62-66",{
+mapid=726,
+achieveid={650},
+author="support@zygorguides.com",
+description="This guide will walk you through the Coilfang Reservoir: Underbog dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for the Underbog or enter the dungeon with your group |goto The Underbog/1 29.7,67.9 |c
+step
+talk Naturalist Bite##54678
+accept A Necessary Evil##29568 |goto The Underbog 29.5,64.7
+step
+talk Watcher Jhang##54675
+accept Rescuing the Expedition##29570 |goto 30.9,65.3
+step
+talk T'shu##54674
+accept Stalk the Stalker##29567 |goto 31.5,65.5
+accept Bring Me A Shrubbery!##29691 |goto 31.5,65.5
+stickystart "sanguinehibiscus"
+step
+map The Underbog/1
+path follow smart; loop off; ants curved; dist 15
+path	31.9,62.5	37.0,60.3	44.2,61.4
+path	51.5,69.2	56.9,82.0	59.1,87.8
+path	56.2,89.7
+Follow the path |goto The Underbog/1 56.2,89.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Hungarfen##17770
+|tip Stay away from Underbog Mushrooms. They explode after 20 seconds leaving a nasty DoT.
+_Foul Spores_
+|tip This is cast at 20% health, leeching health from anyone within 15 yards.
+scenariogoal 24904 |goto The Underbog/1 70.2,91.4
+step
+map The Underbog/1
+path follow smart; loop off; ants curved; dist 15
+path	70.3,87.7	70.2,76.5	61.4,68.1
+path	59.8,56.2	70.7,55.9	74.4,43.9
+path	68.5,36.6	69.1,30.7
+Follow the path |goto The Underbog/1 69.1,30.7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Ghaz'an##18105
+|tip Stand off to Ghaz'an's sides or you will be hit with Acid Breath or Tail Sweep.
+scenariogoal 24905 |goto The Underbog/1 78.3,28.0
+step
+Jump down in the water here  |goto 78.9,24.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Swim across the water and jump down here |goto 79.6,15.2 < 5
+confirm
+step
+talk Earthbinder Rayge##17885
+Discover Earthbinder Rayge |q 29570/1 |goto 67.4,21.3
+only if havequest(29570)
+step
+map The Underbog/1
+path follow smart; loop off; ants curved; dist 15
+path	79.7,11.6	71.6,14.1	62.0,20.0
+path	57.1,26.1	45.9,28.1
+Follow the path |goto The Underbog/1 45.9,28.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Swamplord Musel'ek##17826, Claw##17827
+|tip Spread out to minimize damage from Volley.
+_Knock Away_
+|tip This ability will knock the targeted player back and deal physical damage.
+scenariogoal 24906 |goto 41.5,25.4
+step
+Talk to Windcaller Claw
+Discover Windcaller Claw |q 29570/2 |goto The Underbog/1 40.7,21.6
+only if havequest(29570)
+step
+map The Underbog/1
+path follow smart; loop off; ants curved; dist 15
+path	41.5,28.3	40.6,42.5	35.8,43.1
+path	30.8,34.8	26.9,36.1
+Follow the path |goto The Underbog/1 26.9,36.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill The Black Stalker##17882
+|tip Stay spread out to minimize Chain Lightning damage.
+_Static Charge_
+|tip If you are affected by this debuff, move away from allies or they will take damage too.
+Loot the Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5 |only if havequest(29567)
+scenariogoal 1/34432 |goto The Underbog 25.9,45.5
+step "sanguinehibiscus"
+click Sanguine Hibiscus##5031
+|tip These can be found throughout the dungeon.
+collect 5 Sanguine Hibiscus##24246 |q 29691/1
+only if havequest(29691)
+step
+talk Naturalist Bite##54678
+turnin A Necessary Evil##29568 |goto The Underbog 29.5,64.5
+step
+talk Watcher Jhang##54675
+turnin Rescuing the Expedition##29570 |goto 30.8,65.3
+step
+talk T'shu##54674
+turnin Stalk the Stalker##29567 |goto 31.6,65.5
+turnin Bring Me A Shrubbery!##29691 |goto 31.6,65.5
+step
+Congratulations! You have completed The Underbog
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Mana-Tombs (MT) 63-67",{
+mapid=732,
+achieveid={651},
+author="support@zygorguides.com",
+description="This guide will walk you through the Auchindoun: Mana-Tombs dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Mana-Tombs/1 33.5,17.3 |c
+step
+talk Mamdy the "Ologist"##54694
+accept Intriguing Specimens##29574 |goto Mana-Tombs 32.7,19.4
+only if not completedq(29574)
+step
+talk Artificer Morphalius##54692
+accept Safety is Job One##29573 |goto 34.4,19.4
+accept Undercutting the Competition##29575 |goto 34.4,19.4
+only if not completedq(29573) or not completedq(29575)
+step
+kill Pandemonius##18341
+|tip Clear out this room before you pull the boss, they will aggro with him.
+_Dark Shell_
+|tip When this is cast, STOP ATTACKING. You will kill yourself if you don't.
+Loot Pandemonius' Essence |q 29574/1 |goto 48.2,27.7 |only if havequest(29574)
+scenariogoal 24894 |goto 48.2,27.7
+step
+map Mana-Tombs/1
+path follow smart; loop off; ants curved; dist 15
+path	47.0,28.7	55.8,28.8	60.0,33.5
+path	60.7,43.7	60.7,52.3	56.0,65.0
+Follow the path |goto Mana-Tombs/1 56.0,65.0 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Tavarok##18343
+_Crystal Prison_
+|tip This ability will trap a random player and deal 10% of the maximum health every second for 5 seconds.
+_Arcing Smash_
+|tip Arcing Smash will damage anyone standing in front of him.
+Loot Tavarok's Heart |q 29574/2 |goto Mana-Tombs/1 60.6,74.9 |only if havequest(29574)
+scenariogoal 24895 |goto 61.3,74.0
+step
+map Mana-Tombs/1
+path follow smart; loop off; ants curved; dist 15
+path	60.7,74.9	60.8,83.8	50.0,84.3
+path	39.2,84.3	32.6,84.0	32.6,74.0
+path	32.6,61.2
+Follow the path |goto Mana-Tombs/1 32.6,61.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Nexus-Prince Shaffar##18344
+Loot Shaffar's Wrappings |q 29575/1 |goto 32.4,50.7 |only if havequest(29575)
+scenariogoal 1/34431 |goto 32.4,50.7
+step
+map Mana-Tombs/1
+path follow smart; loop off; ants curved; dist 15
+path	32.5,46.5	32.6,34.6	41.4,34.1
+path	38.6,28.6	33.8,25.2
+Follow the path |goto Mana-Tombs/1 33.8,25.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not completedq(29573) or not completedq(29575) or not completedq(29574)
+step
+talk Artificer Morphalius##54692
+turnin Safety is Job One##29573 |goto Mana-Tombs 34.3,19.6
+turnin Undercutting the Competition##29575 |goto Mana-Tombs 34.3,19.6
+only if not completedq(29573) or not completedq(29575)
+step
+talk Mamdy the "Ologist"##54694
+turnin Intriguing Specimens##29574 |goto 32.8,19.4
+only if not completedq(29574)
+step
+Congratulations! You have completed Mana-Tombs
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Auchenai Crypts (AC) 64-68",{
+mapid=722,
+achieveid={666},
+author="support@zygorguides.com",
+description="This guide will walk you through the Auchindoun: Auchenai Crypts dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Auchenai Crypts/1 44.1,75.1 |c
+step
+talk Draenei Spirit##54725
+accept The Dead Watcher##29590 |goto Auchenai Crypts/1 44.3,72.6
+accept The End of the Exarch##29596 |goto Auchenai Crypts/1 44.3,72.6
+step
+map Auchenai Crypts/1
+path follow smart; loop off; ants curved; dist 15
+path	44.1,69.5	43.4,54.6	43.5,41.5
+path	44.1,27.6	44.5,17.3	Auchenai Crypts/2 22.4,11.9
+path	Auchenai Crypts/2 22.8,23.3	Auchenai Crypts/2 29.2,22.8
+path	Auchenai Crypts/2 31.6,17.5	Auchenai Crypts/2 41.8,17.6
+Follow the path |goto Auchenai Crypts/2 41.8,17.6 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Tormented Soulpriest##54698
+accept Raging Spirits##29591 |goto Auchenai Crypts/2 51.0,17.9
+step
+map Auchenai Crypts/2
+path follow smart; loop off; ants curved; dist 15
+path	46.2,23.0	46.2,41.3	46.2,56.9
+Follow the path |goto Auchenai Crypts/2 46.2,56.9 < 6
+|tip Beware of invisible Raging Souls on the bridge.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Shirrak the Dead Watcher##18371
+|tip Casters need to stay at max range to minimize casting speed reduction caused by Inhibit Magic.
+_Attract Magic_
+|tip This ability will Death Grip the party to Shirrak.
+scenariogoal 24893 |goto 46.2,68.7
+Defeat Shirrak the Dead Watcher |q 29590/1 |only if havequest(29590)
+stickystart "Spirits"
+step
+map Auchenai Crypts/2
+path follow smart; loop off; ants curved; dist 15
+path	46.2,77.6	46.9,88.0	52.8,88.0
+path	58.7,85.8	66.3,88.1	73.6,88.0
+path	73.7,78.3
+Follow the path |goto Auchenai Crypts/2 73.7,78.3 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Exarch Maladaar##18373
+_Soul Scream_
+|tip This will disorient anyone within 10 yards for 2 seconds.
+_Stolen Soul_
+|tip Stolen Soul makes a copy of a random player, lowering their damage and healing and attacking them for 2 minutes.
+_Summon Avatar_
+|tip This occurs at 25% health. This avatar needs to be picked up and deals heavy physical damage.
+scenariogoal 1/34430 |goto 74.2,49.9
+step "Spirits"
+kill 5 Angered Skeleton##18524+ |q 29591/1
+kill 5 Raging Skeleton##18524+ |q 29591/2
+kill 3 Auchenai Necromancer##18702+ |q 29591/3
+only if havequest(29591)
+step
+map Auchenai Crypts/2
+path follow smart; loop off; ants curved; dist 15
+path	73.6,54.1	73.7,71.2	73.5,87.8
+path	64.5,87.7	55.8,87.7	46.5,87.7
+path	46.2,71.2	46.2,51.2	46.2,34.7
+path	46.3,25.6
+Follow the path back to the quest giver |goto Auchenai Crypts/2 46.3,25.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Tormented Soulpriest##54698
+turnin Raging Spirits##29591
+|tip This quest requires you to run back to a previous area before you return to the beginning of the instance.
+only if havequest(29591)
+step
+map Auchenai Crypts/2
+path follow smart; loop off; ants curved; dist 15
+path	73.6,54.1	73.7,71.2	73.5,87.8
+path	64.5,87.7	55.8,87.7	46.5,87.7
+path	46.2,71.2	46.2,51.2	46.2,34.7
+path	46.3,25.6	42.1,17.6	30.4,17.6
+path	Auchenai Crypts/1 44.1,26.3	Auchenai Crypts/1 44.1,57.6
+Follow the path to the beginning of the dungeon |goto Auchenai Crypts/1 44.1,57.6 < 30
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not completedq(29590) or not completedq(29596)
+step
+talk Draenei Spirit##54725
+turnin The Dead Watcher##29590 |goto Auchenai Crypts 44.3,72.6
+turnin The End of the Exarch##29596 |goto Auchenai Crypts 44.3,72.6
+only if not completedq(29590) or not completedq(29596)
+step
+Congratulations! You have completed Auchenai Crypts.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Caverns of Time: Escape from Durnholde Keep (Durn) 65-69",{
+mapid=734,
+achieveid={652},
+author="support@zygorguides.com",
+description="This guide will walk you through the Caverns of Time: Escape from Durnholde Keep dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for the Escape from Durnholde Keep or enter the dungeon with your group |goto Old Hillsbrad Foothills/0 23.2,24.8 |c
+step
+map Old Hillsbrad Foothills/0
+path follow smart; loop off; ants curved; dist 15
+path	23.2,24.8	24.0,28.9	26.2,32.2
+path	26.7,38.7	25.8,43.9	27.5,47.0
+Follow the path |goto Old Hillsbrad Foothills/0 27.5,47.0 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Erozion##18723
+accept Taretha's Diversion##29598 |goto Old Hillsbrad Foothills 28.9,48.3 |only if not completedq(29598)
+collect Pack of Incendiary Bombs##25853 |goto Old Hillsbrad Foothills 28.9,48.3
+step
+talk Brazen##18725 |goto 29.2,47.9
+Tell him: "_I'm ready to go to Durnholde Keep._" |goto 69.3,71.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Old Hillsbrad Foothills/0
+path follow smart; loop off; ants curved; dist 15
+path	69.3,71.6	70.4,67.4	72.5,63.3
+path	74.3,63.2	76.3,61.8	78.0,62.2
+Follow the path |goto Old Hillsbrad Foothills/0 78.0,62.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+click Barrels##334+ |goto 67.9,59.7 < 10 |c |noway
+|tip You will need to set all 5 bombs inside the barrels.
+Location of Barrel 1 |goto 77.5,65.7 < 10
+Location of Barrel 2 |goto 76.2,68.1 < 10
+Location of Barrel 3 |goto 74.3,68.2 < 10
+Location of Barrel 4 |goto 68.9,62.1 < 10
+Location of Barrel 5 |goto 68.4,59.1 < 10
+Set 5 Internment Lodges on Fire |q 29598/1 |only if havequest(29598)
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm |only if not havequest(29598) or completedq(29598)
+step
+kill Lieutenant Drake##17848
+|tip Lieutenant Drake will come down these stairs when the building are on fire.
+scenariogoal 24891 |goto 75.7,64.8
+step
+map Old Hillsbrad Foothills/0
+path follow smart; loop off; ants curved; dist 10
+path	75.7,64.5	76.3,63.0	74.5,62.8
+path	73.2,61.3	74.0,59.1	75.0,59.5
+path	74.6,58.4	74.5,57.7
+Follow the path |goto Old Hillsbrad Foothills/0 74.5,57.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Thrall##17876
+|tip He is in the basement.
+turnin Taretha's Diversion##29598 |goto 74.5,57.7
+accept Escape from Durnholde##29599 |goto 74.5,57.7
+only if not completedq(29599)
+step
+talk Thrall##17876 |goto 74.5,57.7
+Tell him: "_We are ready to get you out of here Thrall. Let's go!_"
+|tip Make sure everyone has the quest. You cannot pick it up after starting the event.
+confirm
+step
+kill Captain Skarloc##17862
+|tip Follow Thrall, he will take you to Skarloc
+scenariogoal 24892 |goto 69.6,68.4
+step
+talk Thrall##17876
+|tip Talk to Thrall after killing the boss.
+Tell him: "_Taretha cannot see you, Thrall._"
+confirm
+step
+talk Thrall##17876 |goto 52.8,41.2
+|tip Follow Thrall until he stops near Tarren Mill, you will have to fight guards along the way.
+Tell him: "_We're ready, Thrall._"
+confirm
+step
+talk Taretha##18887 |goto 51.3,29.8
+|tip Follow Thrall until he comes upstairs here.
+Tell her: "_Strange wizard?_"
+confirm
+step
+kill Epoch Hunter##18096 |goto Old Hillsbrad Foothills/0 50.2,31.5
+|tip Follow Thrall outside and you will have to fight a few waves of dragonkin. The Boss will come down to fight once you have killed enough mobs.
+scenariogoal 1/34429
+Fulfill Thrall's Destiny |goto Old Hillsbrad Foothills/0 50.2,31.5 |q 29599/1 |only if havequest(29599)
+|tip You will have to wait a short time for the dialogue to complete
+step
+talk Erozion##18723
+turnin Escape from Durnholde##29599 |goto 50.3,30.9
+only if havequest(29599)
+step
+Congratulations! You have completed Escape from Durnholde Keep.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Sethekk Halls 67-69",{
+mapid=732,
+achieveid={653},
+author="support@zygorguides.com",
+description="This guide will walk you through the Auchindoun: Sethekk Halls dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for the Escape from Sethekk Halls or enter the dungeon with your group |goto Sethekk Halls/1 73.4,36.5 |c
+step
+talk Isfar##54840
+accept Brother Against Brother##29605 |goto Sethekk Halls 72.2,35.5
+accept Terokk's Legacy##29606 |goto Sethekk Halls 72.2,35.5
+only if not completedq(29605) or not completedq(29606)
+step
+map Sethekk Halls/1
+path follow smart; loop off; ants curved; dist 12
+path	73.3,34.8	73.1,28.0	63.4,27.8
+path	59.0,38.0	59.0,45.8	54.1,52.1
+path	48.7,53.8
+Follow the path |goto Sethekk Halls/1 48.7,53.8 < 10
+|tip Kill Time-Lost Controllers first. They drop totems that mind control.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Darkweaver Syth##18472
+|tip At 90%, 55%, and 15% health, Syth will summon four elementals. AoE these quickly.
+_Chain Lightning_
+|tip This deals AoE damage so try and spread out.
+Loot Terokk's Mask |q 29606/1 |goto 48.6,67.5 |only if havequest(29606)
+scenariogoal 24889 |goto 48.6,67.5
+step
+talk Dealer Vijaad##54847
+accept Eyes of Desire##29607 |goto Sethekk Halls 48.3,67.7
+only if not completedq(29607)
+step
+talk Lakka##18956
+Tell him: "_I'll have you out of there in just a moment._"
+Free Lakka |q 29605/1 |goto 50.8,70.8
+only if havequest(29605)
+stickystart "Serpent"
+step
+map Sethekk Halls/1
+path follow smart; loop off; ants curved; dist 12
+path	48.6,71.2	48.6,83.3	48.9,95.0
+path	Sethekk Halls/2 53.2,94.9	Sethekk Halls/2 53.1,82.5
+path	Sethekk Halls/2 44.0,82.4	Sethekk Halls/2 43.1,88.6
+path	Sethekk Halls/2 30.1,88.4	Sethekk Halls/2 27.2,80.9
+path	Sethekk Halls/2 32.6,71.2	Sethekk Halls/2 32.6,41.6
+Follow the path |goto Sethekk Halls/2 32.6,41.6 < 10
+|tip Kill Time-Lost Controllers first. They drop totems that mind control.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not heroic_dung()
+step
+map Sethekk Halls/1
+path follow smart; loop off; ants curved; dist 12
+path	48.6,71.2	48.6,83.3	48.9,95.0
+path	Sethekk Halls/2 53.2,94.9	Sethekk Halls/2 53.1,82.5
+path	Sethekk Halls/2 44.0,82.4	Sethekk Halls/2 43.1,88.6
+path	Sethekk Halls/2 30.1,88.4	Sethekk Halls/2 27.2,80.9
+path	Sethekk Halls/2 32.6,71.2
+Follow the path |goto Sethekk Halls/2 32.6,71.2 < 10
+|tip Kill Time-Lost Controllers first. They drop totems that mind control.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+kill Anzu##23035
+|tip At 75% and 35% health, Anzu will become immune and summon his brood. AoE the birds and continue with Anzu.
+_Paralyzing Screech_
+|tip This ability will stun everyone for 6 seconds.
+_Dive_
+|tip Causes Anzu to charge a player and knock them back.
+_Spell Bomb_
+|tip This should be dispelled whenever possible.
+scenariogoal 24890 |goto Sethekk Halls/2 32.4,56.0
+only if heroic_dung()
+step
+kill Talon King Ikiss##18473 |tip At 80%, 50%, and 25% health, Ikiss will used Arcane Explosion. Hide behind a pillar.
+_Arcane Explosion_
+|tip Just before this is cast, Ikiss will Slow the whole party. Stay close to a pillar. |only if heroic_dung()
+Loot Terokk's Quill |q 29606/2 |goto 32.2,29.5 |only if havequest(29606)
+scenariogoal 1/34428 |goto 32.2,29.5
+step "Serpent"
+kill Cobalt Serpent##19428+
+|tip Do this as you run through the next part of the dungeon.
+collect 3 Cobalt Eye |q 29607/1
+only if havequest(29607)
+step
+map Sethekk Halls/2
+path follow smart; loop off; ants curved; dist 12
+path	32.5,27.5	40.7,27.5
+path	Sethekk Halls/1 54.3,27.5	Sethekk Halls/1 64.3,27.8	Sethekk Halls/1 72.5,27.9
+Follow the path back to the quest giver |goto Sethekk Halls/1 72.5,27.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Isfar##54840
+turnin Brother Against Brother##29605 |goto 72.2,35.5 |noway
+turnin Terokk's Legacy##29606 |goto 72.2,35.5 |noway
+only if havequest(29605) or havequest(29606)
+step
+map Sethekk Halls/1
+path follow smart; loop off; ants curved; dist 12
+path	73.3,34.8	73.1,28.0	63.4,27.8
+path	59.0,38.0	59.0,45.8	54.1,52.1
+path	48.7,53.8
+Follow the path back to the quest giver |goto Sethekk Halls/1 48.7,53.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Dealer Vijaad##54847
+turnin Eyes of Desire##29607 |goto Sethekk Halls 48.1,67.7 |noway
+only if havequest(29607)
+step
+Congratulations! You have completed Sethekk Halls
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Shadow Labyrinth (SL or Slabs) 68-70",{
+mapid=732,
+achieveid={654},
+author="support@zygorguides.com",
+description="This guide will walk you through the Auchindoun: Shadow Labyrinth dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Shadow Labyrinth or enter the dungeon with your group |goto Shadow Labyrinth/1 22.0,12.4 |c
+step
+talk Spy Grik'tha##54891
+accept Find Spy To'gun##29640 |goto Shadow Labyrinth 22.6,12.5
+only if not completedq(29640)
+step
+talk Field Commander Mahfuun##54890
+accept The Codex of Blood##29643 |goto 21.3,13.1
+accept Ambassador Hellmaw##29645 |goto 21.3,13.1
+only if not completedq(29643) or not completedq(29645)
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 15
+path	21.9,14.9	28.2,20.3	35.4,22.6
+path	38.9,32.6	34.0,39.1
+Follow the path |goto Shadow Labyrinth/1 34.0,39.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill 12 Cabal Ritualist##18794+ |q 29645/1 |goto 29.5,39.1
+|tip Kill all the Ritualists in this room to activate the boss.
+kill Ambassador Hellmaw##18731
+|tip Stay behind Hellmaw to avoid damage from Corrosive Acid.
+_Fear_ |tip Fear will periodically be cast, Fearing the party for 6 seconds.
+scenariogoal 24863 |goto Shadow Labyrinth/1 21.4,39.1
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 12
+path	19.2,39.2	14.5,31.4	17.0,22.4
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Spy To'gun##18891
+turnin Find Spy To'gun##29640 |goto 17.0,22.4 |noway
+accept The Soul Devices##29641 |goto 17.0,22.4 |noway
+only if not completedq(29641)
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 12
+path	16.3,23.5	14.5,31.4	19.2,39.2
+path	26.6,45.6	26.5,51.3
+Follow the path |goto Shadow Labyrinth/1 26.5,51.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+stickystart "souldevice"
+step
+kill Blackheart the Inciter##18667
+|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
+_Incite Chaos_
+|tip This will cause all party members to attack each other for 30 seconds.
+_War Stomp_
+|tip This ability will deal damage and knock back anyone within 20 yards of Blackheart.
+scenariogoal 24868 |goto 26.2,68.2
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 12
+path	26.5,72.3	27.0,88.1	34.0,88.1
+path	46.0,88.1	53.0,87.9	53.4,78.8
+Follow the path |goto Shadow Labyrinth/1 53.4,78.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Grandmaster Vorpil##18732
+|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
+_Draw Shadows_
+|tip This ability will teleport everyone to Vorpil's platform into Rain of Fire, move out.
+_Void Travelers_
+|tip These adds will be summoned by portals, kill them before they reach Vorpil.
+_Banish_
+|tip Vorpil will cast this on a player randomly |only if heroic_dung()
+scenariogoal 24866 |goto 53.3,56.5
+step
+click Codex of Blood##6892
+turnin The Codex of Blood##29643 |goto 53.3,59.0
+accept Into the Heart of the Labyrinth##29644 |goto 53.3,59.0
+only if not completedq(29644)
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 12
+path	53.3,52.7	53.3,39.2	59.4,39.2
+Follow the path |goto Shadow Labyrinth/1 59.4,39.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Murmur##18708
+|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
+_Murmur's Touch_
+|tip This ability will deal damage to nearby party memebers, so stay spread out. |only if heroic_dung()
+_Thundering Storm_
+|tip Thundering Storm will hit all players if they are more than 25 yards away.
+scenariogoal 1/34420 |goto 80.8,39.1
+step "souldevice"
+click Soul Device##7010+ |tip Collect these as you traverse the Shadow Labyrinth.
+collect 5 Soul Devices |q 29641/1
+only if havequest(29641)
+step
+map Shadow Labyrinth/1
+path follow smart; loop off; ants curved; dist 12
+path	77.8,39.1	67.6,39.0	59.3,38.8
+path	53.3,39.2	53.3,57.7	53.3,68.2
+path	53.3,86.2	46.0,88.1	36.0,87.9
+path	27.8,87.9	26.6,68.3	26.6,45.3
+path	34.4,39.2	38.7,30.7	34.1,22.3
+path	23.3,17.8	22.0,13.9
+Follow the path back to the start of the dungeon |goto Shadow Labyrinth/1 22.0,13.9 < 40
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+|tip You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
+talk Field Commander Mahfuun##54890
+turnin Into the Heart of the Labyrinth##29644 |goto 21.3,13.1 |noway
+turnin Ambassador Hellmaw##29645 |goto 21.3,13.1 |noway
+only if havequest(29644) or havequest(29645)
+step
+talk Spy Grik'tha##54891
+turnin The Soul Devices##29641 |goto 22.6,12.5
+only if havequest(29641)
+step
+Congratulations! You have completed Shadow Labyrinth.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Mechanar (Mech) 68-70",{
+mapid=730,
+achieveid={658},
+author="support@zygorguides.com",
+description="This guide will walk you through the Tempest Keep: The Mechanar dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for The Mechanar or enter the dungeon with your group |goto The Mechanar/1 49.4,83.5 |c
+step
+Click the Accept Quest box on the right side of your screen
+accept With Great Power, Comes Great Responsibility##29657 |goto The Mechanar/1 49.4,83.5
+step
+Take the left passage |goto The Mechanar 43.5,70.6 < 5
+confirm
+step
+kill Gatewatcher Gyro-Kill##19218
+scenariogoal 24878 |goto 46.4,58.4
+step
+Click the Accept Quest box on the right side of your screen
+accept Lost Treasure##29659
+step
+map The Mechanar/1
+path follow strict; loop off; ants curved; dist 10
+path	37.8,51.3	39.1,36.4	42.4,44.2
+path	48.4,46.3
+Follow the path |goto The Mechanar/1 48.4,46.3 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Mechano-Lord Capacitus##19219 |only if not havequest(29657)
+kill Mechano-Lord Capacitus##19219 |q 29657/1 |only if havequest(29657)
+scenariogoal 24876 |goto The Mechanar 51.1,30.4
+step
+Click the Turnin Quest box on the right side of your screen
+turnin With Great Power, Comes Great Responsibility##29657
+step
+Click the Turnin Quest box on the right side of your screen
+accept The Calculator##29658
+step
+kill Gatewatcher Iron-Hand##19710
+scenariogoal 24877 |goto 60.2,36.8
+step
+map The Mechanar/1
+path follow loose; loop off; ants curved; dist 10
+path	51.4,36.4	47.1,47.2	42.2,43.0
+path	38.7,27.9
+Follow the path to the Cash of the Legion |goto The Mechanar/1 38.7,27.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+click Cache of the Legion##7216 |goto 39.4,28.3 < 5 |noway
+|tip Loot the items inside.
+collect Blinding Fury |q 29659/1 |goto 39.4,28.3 |noway |only if havequest(29659)
+confirm
+step
+Click the Quest Complete Box in the top right corner of your screen
+turnin Lost Treasure##29659
+step
+map The Mechanar/1
+path follow loose; loop off; ants curved; dist 10
+path	41.7,21.4	The Mechanar/2 41.7,33.6
+Ride the elevator up to the Calculation Chamber |goto The Mechanar/2 41.7,33.6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Nethermancer Sepethrea##19221
+|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
+_Raging Flames_
+|tip These will be summoned throughout the fight, try to avoid them and their AoE spells. They are not hard to avoid.
+scenariogoal 24882 |goto 47.6,20.8
+modelnpc Raging Flames##20481+
+step
+map The Mechanar/2
+path follow loose; loop off; ants curved; dist 10
+path	52.8,36.4	52.6,50.9	49.6,58.1
+path	38.5,60.9
+kill Bloodwarder Centurion##19510+, Sunseeker Astromage##19168+, Tempest-Forge Destroyer##19735+
+Follow the long hallway and kill the mobs that spawn in groups |goto 38.5,60.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Pathaleon the Calculator##19220 |only if not havequest(29658)
+kill Pathaleon the Calculator##19220 |q 29658/1 |only if havequest(29658)
+_Domination_
+|tip This ability will Mind Control a party member for 5 seconds.
+_Frenzy_
+|tip Frenzy increases Pathaleon's attack speed by 60% and physical damage by 75.
+scenariostage 1 |goto 27.8,61.4
+step
+Click the Quest Complete Box in the top right corner
+turnin The Calculator##29658 |only if havequest(29658)
+step
+Congratulations! You have completed The Mechanar
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: Botanica (Bot) 68-70",{
+mapid=729,
+achieveid={659},
+author="support@zygorguides.com",
+description="This guide will walk you through the Tempest Keep: Botanica dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Botanica or enter the dungeon with your group |goto The Botanica/1 89.6,41.1 |c
+step
+Click the Accept Quest box on the right side of your screen
+accept Saving the Botanica##29660 |goto The Botanica 85.5,47.3
+step
+map The Botanica
+path follow loose; loop off
+path	79.3,49.4	53.0,51.0	48.8,56.6
+path	47.8,43.3
+Follow the path through the halls |goto 47.7,43.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Commander Sarannis##17976 |only if not havequest(29660)
+kill Commander Sarannis##17976 |q 29660/1 |only if havequest(29660)
+_Summon Reinforcements_
+|tip Sarannis casts Summon Reinforcements at 55% health, summoning 3 Bloodwarder Reservists and a Bloodwarder Mender. Focus the Mender down first.
+scenariogoal 24871 |goto 47.4,18.2
+step
+map The Botanica
+path follow loose; loop off; dist 10
+path	25.6,16.8	20.5,15.2	22.1,19.7
+Follow the path |goto The Botanica 22.1,19.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill High Botanist Freywinn##17975 |only if not havequest(29660)
+kill High Botanist Freywinn##17975 |q 29660/2 |only if havequest(29660)
+_Nature's Will_
+|tip This ability causes Freywinn to turn into a tree, healing his nearby allies and summong 3 Frayer Protectors.
+scenariogoal 24872 |goto 25.9,25.5
+step
+map The Botanica
+path follow loose; loop off; dist 10
+path	19.6,22.5	 20.3,45.2	12.5,46.4
+Follow the path |goto The Botanica 12.5,46.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Thorngrin the Tender##17978 |only if not havequest(29660)
+kill Thorngrin the Tender##17978 |q 29660/3 |only if havequest(29660)
+_Sacrifice_
+|tip This ability teleports a player, stunning them and leeching health every second for 8 seconds.
+_Hellfire_
+|tip Hellfire deals area damage around Thorngrin, lasting 6 seconds. Move away from him.
+scenariogoal 24873 |goto 8.2,47.6
+step
+Click the Complete Quest Box in the top right corner
+turnin Saving the Botanica##29660
+accept Culling the Herd##29667
+step
+Continue towards the final room |goto The Botanica/1 14.8,72.5
+kill 6 Mutate Fleshlasher##19598 |q 29667/1 |goto 34.3,82.2
+kill 6 Mutate Fear-Shrieker##19513 |q 29667/2 |goto 34.3,82.2
+kill 6 Mutate Horror##19865 |q 29667/3 |goto 34.3,82.2
+|tip You may have to run the dungeon more than once to get all of them.
+step
+kill Laj##17980
+collect Rapidly Evolving Frond |q 29667/4 |only if havequest(29667)
+scenariogoal 24874 |goto 34.1,89.3
+step
+Click the Quest complete box at the top right of the screen
+turnin Culling the Herd##29667
+accept A Most Somber Task##29669
+step
+kill Warp Splinter##17977 |only if not havequest(29669)
+kill Warp Splinter##17977 |q 29669/1 |only if havequest(29669)
+_Summon Saplings_
+|tip This ability summons 6 Sapling adds. After 25 seconds they will sacrifice themselves and heal Warp Splinter equal to their remaining health. These should be killed off as fast as possible.
+scenariogoal 1/34423 |goto 34.1,35.8
+step
+Click the Complete Quest box at the top right of the screen
+turnin A Most Somber Task##29669
+step
+Congratulations! You have completed the Botanica
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: Arcatraz (Arca) 68-70",{
+mapid=731,
+achieveid={660},
+author="support@zygorguides.com",
+description="This guide will walk you through the Tempest Keep: Arcatraz dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Arcatraz or enter the dungeon with your group |goto The Arcatraz/1 41.3,81.7 |c
+step
+Click the Quest Accept Box that pops up
+accept Unbound Darkness##29674 |goto The Arcatraz/1 41.3,73.7
+step
+map The Arcatraz/1
+path follow loose; loop off; dist 10
+path	41.2,57.3	41.3,49.1	45.6,39.5
+path	57.3,39.6
+Follow the path |goto The Arcatraz/1 57.3,39.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Zereketh the Unbound##20870 |only if not havequest(29674)
+kill Zereketh the Unbound##20870  |q 29674/1 |only if havequest(29674)
+_Void Zone_
+|tip This ability summons an AoE that damages anyone standing in it.
+scenariogoal 24886 |goto 61.6,24.8
+step
+Click the Quest Accept Box that pops up
+turnin Unbound Darkness##29674
+accept Hey There Dalliah##29675
+step
+map The Arcatraz/1
+path follow loose; loop off; dist 10
+path	63.4,35.4	66.3,35.4	The Arcatraz/2 85.3,38.7
+path	The Arcatraz/2 61.4,38.6	The Arcatraz/2 41.1,29.3	The Arcatraz/2 28.1,40.3
+path	The Arcatraz/2 28.3,57.0
+Follow the path up the stairs and through the halls |goto The Arcatraz/2 28.3,57.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Wrath-Scryer Soccothrates##20886 |only if not havequest(29675)
+kill Wrath-Scryer Soccothrates##20886 |q 29675/1 |only if havequest(29675)
+_Fel Immolation_
+|tip This deals damage to players within 15 yards of Soccothrates.
+_Felfire_
+|tip Avoid the Felfire AoE left by this ability.
+scenariogoal 24888 |goto The Arcatraz/2 21.4,77.0
+step
+kill Dalliah the Doomsayer##20885 |only if not havequest(29675)
+kill Dalliah the Doomsayer##20885 |q 29675/2 |only if havequest(29675)
+_Whirlwind_
+|tip This ability deals damage to players within 8 yards. Move away when this is cast.
+_Gift of the Doomsayer_
+|tip This debuff causes heals cast on the affected player to heal Dalliah instead.
+scenariogoal 24887 |goto 35.7,78.4
+step
+Click the Quest Turnin Box that pops up
+turnin Hey There Dalliah##29675
+accept Maximum Security Breakout##29681
+step
+map The Arcatraz/2
+path follow loose; loop off; dist 10
+path	29.9,57.1	38.3,57.2
+Follow the path |goto The Arcatraz/2 38.3,57.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map The Arcatraz/3
+path follow loose; loop off; dist 10
+path	27.4,88.4	30.0,57.4	30.1,40.0
+path	40.1,30.6	51.3,31.6
+Follow the path |goto The Arcatraz/3 51.3,31.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Harbinger Skyriss##20912 |only if not havequest(29681)
+|tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
+kill Harbinger Skyriss##20912 |q 29681/1 |only if havequest(29681)
+|tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
+scenariogoal 1/34427 |goto The Arcatraz/3 58.2,30.5
+modelnpc Warden Mellichar##20904
+step
+Click the Quest Turnin Box that pops up
+turnin Maximum Security Breakout##29681
+step
+Congratulations! You have completed Arcatraz
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Caverns of Time: Opening the Dark Portal (CoT:Dark Portal or BM) 68-70",{
+mapid=733,
+achieveid={655},
+author="support@zygorguides.com",
+description="This guide will walk you through the Caverns of Time: Opening the Dark Portal dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Caverns of Time: Opening the Dark Portal or enter the dungeon with your group |goto The Black Morass/0 51.7,0.5 |c
+step
+talk Sa'at##20201
+accept The Opening of the Dark Portal##10297 |goto The Black Morass 49.3,6.4
+collect Chrono-Beacon##24289
+step
+Protect Medivh while he attempts to open the Dark Portal.
+|tip If his shield gets too low you will fail.
+|tip Monsters will appear randomly in the swamp out of yellow portals.
+|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
+kill Rift Lord##17839+
+|tip Every 6 waves a boss will spawn. Simply kill these like you did the Rift Lords.
+confirm
+step
+Wave 6
+kill Chrono Lord Deja##17879
+_Arcane Blast_:
+|tip Deals arcane damage and knocks a player back.
+_Time Lapse_:
+|tip Slows a players attack and movement speed, dispel.
+_Arcane Discharge_:
+|tip Deals arcane damage to everyone within 50 yards.
+_Attraction_:
+|tip Pulls all players within 50 yards to Deja.
+scenariogoal 24869 |goto The Black Morass/0 48.6,73.6
+step
+Continue to protect Medivh while he attempts to open the Dark Portal.
+|tip If his shield gets too low you will fail
+|tip Monsters will appear randomly in the swamp out of yellow portals.
+|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
+kill Rift Lord##17839+
+confirm
+step
+Wave 12
+kill Temporus##17880
+_Hasten_:
+|tip Increases Temporus' attack speed and movement speed, dispel quickly.
+_Wing Buffet_:
+|tip Deals damage and knocks back anyone within 15 yards.
+_Spell Reflection_:
+|tip Stop casting when this is active.
+scenariogoal 24870 |goto The Black Morass/0 48.6,73.6
+step
+Continue to protect Medivh while he attempts to open the Dark Portal.
+|tip If his shield gets too low you will fail,
+|tip Monsters will appear randomly in the swamp out of yellow portals.
+|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
+kill Rift Lord##17839+
+confirm
+step
+Wave 18
+kill Aeonus##17881+
+_Sand Breath_:
+|tip Deals damage and slows anyone in front of Aeonus.
+_Cleave_:
+|tip Deals damage to anyone in front of Aeonus.
+_Enrage_:
+|tip Increases Aeonus' attack speed. Save a cooldown for this.
+scenariogoal 1/34422 |goto The Black Morass/0 48.6,73.6
+Open the Dark Portal |q 10297/1 |only if havequest(10297) |goto 48.9,71.8
+step
+talk Sa'at##20201
+turnin The Opening of the Dark Portal##10297 |goto 49.3,6.5
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Shattered Halls (SH or Shatt Halls) 68-70",{
+mapid=710,
+achieveid={657},
+author="support@zygorguides.com",
+description="This guide will walk you through the Hellfire Citadel: Shattered Halls dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for Shattered Halls or enter the dungeon with your group |goto The Shattered Halls/1 61.1,92.8 |c
+step
+talk Gunny##54934
+accept One Last Favor##29652 |goto The Shattered Halls 58.6,88.5
+only if not completedq(29652)
+step
+talk Advance Scout Chadwick##54933
+accept How to Save a Life##29649 |goto 58.6,88.5
+accept O'mrogg's Warcloth##29656 |goto 58.6,88.5
+accept Turning the Tide##29654 |goto 58.6,88.5
+only if not completedq(29649) or not completedq(29656) or not completedq(29654)
+stickystart "Kills"
+step
+map The Shattered Halls/1
+path follow smart; loop off; ants curved; dist 15
+path	59.2,88.4	59.0,78.5	55.1,77.2
+path	46.9,77.1	34.6,77.2	34.4,69.7
+path	38.5,69.7	42.8,65.6	37.5,61.7
+Follow the path |goto The Shattered Halls/1 37.5,61.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Grand Warlock Nethekurse##16807
+_Shadow Cleave_:
+|tip Cleaves up to 3 nearby targets.
+_Death Coil_:
+|tip Fears a player for 4 seconds and deals shadow damage.
+_Lesser Shadow Fissure_:
+|tip Move out of these immediately, they deal shadow damage.
+_Dark Spin_:
+|tip At 25% health, Dark Spin deals physical damage to anyone within 5 yards and shadow damage to everyone. Kill him quickly.
+collect 1 Grand Warlock's Amulet##23735 |only if havequest(29649)
+scenariogoal 24864 |goto 34.6,62.1
+step
+Use your Grand Warlock's Amulet next to this fire |use Grand Warlock's Amulet##23735
+Create the Fel Ember |q 29649/1 |goto 31.9,60.6
+only if havequest(29649)
+step
+map The Shattered Halls/1
+path follow smart; loop off; ants curved; dist 15
+path	34.4,59.0	34.1,52.6	29.6,49.7
+path	29.6,37.0	29.6,18.7
+Follow the path |goto The Shattered Halls/1 29.6,18.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+kill Blood Guard Porung##20923
+_Cleave_:
+|tip Deals physical damage to anyone in front of Porung.
+scenariogoal 24867 |goto The Shattered Halls/1 29.7,14.7
+only if heroic_dung()
+step
+map The Shattered Halls/1
+path follow smart; loop off; ants curved; dist 15
+path	29.8,14.2	36.5,14.0	45.4,13.9
+path	53.6,14.6	53.9,24.6
+Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+map The Shattered Halls/1
+path follow smart; loop off; ants curved; dist 15
+path	34.4,59.0	34.1,52.6	29.6,49.7
+path	29.6,37.0	29.6,18.7	29.8,14.2
+path	36.5,14.0	45.4,13.9	53.6,14.6
+path	53.9,24.6
+Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not heroic_dung()
+step
+kill Warbringer O'mrogg##16809
+_Beatdown_:
+|tip O'mrogg chooses a random target and applies threat to them, dealing damage.
+_Fear_:
+|tip Fears all nearby players for 3 seconds.
+_Burning Maul_:
+|tip Adds fire damage to his attacks for 18 seconds. Save a cooldown for this.
+_Blast Wave_:
+|tip Deals fire damage to anyone nearby and slows movement speed.
+Loot O'mrogg's Warcloth |q 29656/1 |only if havequest(29656)
+scenariogoal 24865 |goto 53.9,34.1
+step
+map The Shattered Halls/1
+path follow smart; loop off; ants curved; dist 15
+path	56.6,34.3	59.0,34.4	66.7,34.9
+path	67.2,46.7
+Follow the path |goto The Shattered Halls/1 67.2,46.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Warchief Kargath Bladefist##16808
+_Sweeping Strikes_:
+|tip Causes the next 5 attacks to hit a nearby player.
+_Blade Dance_:
+|tip Deals physical damage to random players in the room. Spread out.
+_Charge_: |only if heroic_dung()
+|tip Charges a random player |only if heroic_dung()
+_The Warchief's Guard_:
+|tip Bladefist summons random reinforcements that need to be picked up by the tank and killed.
+Loot Warchief Kargath's Fist |q 29654/1 |only if havequest(29654)
+scenariogoal 1/34421 |goto 67.8,55.3
+step "Kills"
+kill 4 Shattered Hand Legionnaire##16700+ |q 29652/1
+kill 2 Shattered Hand Champion##17671+ |q 29652/3
+kill 2 Shattered Hand Centurion##17465+ |q 29652/2
+only if havequest(29652)
+step
+talk Advance Scout Chadwick##54933
+turnin One Last Favor##29652 |goto 67.2,51.8
+turnin How to Save a Life##29649 |goto 67.2,51.8
+turnin O'mrogg's Warcloth##29656 |goto 67.2,51.8
+turnin Turning the Tide##29654 |goto 67.2,51.8
+only if havequest(29652) or havequest(29649) or havequest(29656) or havequest(29654)
+step
+Congratulations! You have completed Shattered Halls
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault (SV) 68-70",{
+mapid=727,
+achieveid={656},
+author="support@zygorguides.com",
+description="This guide will walk you through the Coilfang Reservoir: The Steamvault dungeon.",
+},[[
+step
+label "start"
+Press _I_ and queue for The Steamvault or enter the dungeon with your group |goto The Steamvault/1 17.6,29.8 |c
+step
+talk Watcher Jhang##54848
+accept A Proper Fate##29613 |goto The Steamvault 17.9,27.3
+step
+talk Naturalist Bite##54849
+accept Containment is Key##29614 |goto 17.5,25.9
+step
+talk Windcaller Claw##54851
+accept Windcaller Claw and the Water Thief##29615 |goto 18.9,27.8
+stickystart "Kills"
+step
+map The Steamvault/1
+path follow smart; loop off; ants curved; dist 15
+path	20.1,28.0	25.2,27.6	30.8,29.4
+path	32.3,39.6	38.4,34.4	44.9,28.4
+path	49.4,23.7
+Follow the path |goto The Steamvault/1 49.4,23.7 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Hydromancer Thespia##17797
+_Enveloping Winds_:
+|tip Traps a player in a cyclone, stunning them for 6 seconds.
+_Lightning Cloud_:
+|tip Deals nature damage to anyone standing in the cloud. Move out.
+_Lung Burst_:
+|tip Deals nature damage every 2 seconds for 10 seconds. Dispel whenever possible.
+_Water Elementals_:
+|tip Interrupt Water Bolt Volley and kill them quickly.
+scenariogoal 24884 |goto The Steamvault 54.3,12.4
+step
+click Main Chambers Access Panel##7147 |goto 54.2,10.6
+You hear a faint echo...
+confirm
+step
+map The Steamvault/1
+path follow smart; loop off; ants curved; dist 15
+path	53.7,17.7	46.7,24.9	42.4,34.0
+path	44.9,40.4	56.0,45.8	50.6,55.1
+path	48.2,61.5	41.1,67.3
+Follow the path |goto The Steamvault/1 41.1,67.3 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Mekgineer Steamrigger##17796
+_Electrified Net_:
+|tip Immobilizes and deals nature damage over 6 seconds.
+_Super Shrink Ray_:
+|tip Frontal cone attack that reduces damage dealt by 35%. Avoid standing in front.
+_Saw Blade_:
+|tip Spread out to avoid multiple players being hit by the blade.
+_Mechanics_:
+|tip These spawn in 25% health intervals and heal the boss. Kill them quickly.
+Loot the Irradiated Gear |q 29614/3 |only if havequest(29614)
+scenariogoal 24885 |goto The Steamvault 33.6,81.2
+modelnpc Steamrigger Mechanic##17951
+step
+click Main Chambers Access Panel##7147 |goto 31.8,84.0
+You hear a faint echo... and You hear a loud rumble of metal grinding on stone....
+confirm
+step
+map The Steamvault/1
+path follow smart; loop off; ants curved; dist 15
+path	32.9,82.4	39.9,68.4	46.6,66.5
+path	49.5,56.8	56.7,43.5	68.6,43.4
+Follow the path |goto The Steamvault/1 68.6,43.4 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Warlord Kalithresh##17798
+_Naga Distiller_:
+|tip When Kalithresh channels on one of these, kill it within 12 seconds or he will Enrage.
+_Spell Reflection_:
+|tip Stop casting during this.
+_Impale_:
+|tip Bleeds a player over 12 seconds.
+scenariogoal 3248 |goto 78.7,43.3
+step
+map The Steamvault/1
+path follow smart; loop off; ants curved; dist 15
+path	76.5,43.5	67.1,43.5	48.0,42.6
+path	42.2,32.9	32.4,39.5	28.1,28.4
+path	23.2,28.1
+Follow the path |goto The Steamvault/1 23.2,28.1 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Kills"
+kill 3 Bog Overlord##21694+|q 29614/1
+kill 6 Coilfang Leper##21338+ |q 29614/2
+only if havequest(29614)
+step
+talk Windcaller Claw##54851
+turnin Windcaller Claw and the Water Thief##29615 |goto 18.8,27.6
+only if havequest(29615)
+step
+talk Watcher Jhang##54848
+turnin A Proper Fate##29613 |goto 18.0,27.2
+only if havequest(29613)
+step
+talk Naturalist Bite##54849
+turnin Containment is Key##29614 |goto 17.6,25.9
+only if havequest(29614)
+step
+Congratulations! You have completed The Steamvault
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Magister's Terrace (MT) 70",{
+mapid=798,
+achieveid={661},
+author="support@zygorguides.com",
+description="This guide will walk you through the Magisters' Terrace dungeon.",
+},[[
+step
+label start
+Press _I_ and queue for Magister's Terrace or enter the dungeon with your group |goto Magisters' Terrace/2 42.5,90.0 |c
+step
+talk Exarch Larethor##55007
+accept Severed Communications##29684 |goto Magisters' Terrace/2 42.6,87.2
+accept A Radical Notion##29686 |goto Magisters' Terrace/2 42.6,87.2
+accept Twisted Associations##29687 |goto Magisters' Terrace/2 42.6,87.2
+only if not completedq(29684) or not completedq(29686) or not completedq(29687)
+step
+map Magisters' Terrace/2
+path follow smart; loop off; ants curved; dist 15
+path	42.6,74.5	42.6,31.2	42.6,23.5
+Follow the path |goto Magisters' Terrace/2 42.6,23.5 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Selin Fireheart##24723
+_Drain Life_:
+|tip Fireheart will drain a player's health, restoring his own.
+_Drain Mana_: |only if heroic_dung()
+|tip Drains mana from a player. |only if heroic_dung()
+_Fel Explosion_:
+|tip Deals AoE fire damage and drains Selin's mana.
+_Fel Crystal_:
+|tip Restores his mana as long as it remains alive. Kill these quickly when they activate.
+scenariogoal 24879 |goto Magisters' Terrace/2 42.6,23.6
+step
+map Magisters' Terrace/2
+path follow smart; loop off; ants curved; dist 15
+path	42.6,23.6	49.2,20.1	56.9,20.3
+path	59.5,26.6
+Follow the path |goto Magisters' Terrace/2 59.5,26.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Tyrith##24822
+turnin Severed Communications##29684 |goto 60.8,23.7
+accept The Scryer's Scryer##11490 |goto 60.8,23.7
+only if not completedq(11490)
+step
+kill Vexallus##24744
+_Chain Lightning_:
+|tip Deals nature damage to up to 3 targets. Spread out.
+_Overload_:
+|tip At 20% health, Overload deals AoE damage and increases party damage taken.
+_Pure Energy_:
+|tip Every 15% health a Pure Energy is summoned. These will leave a DoT on all players upon death and increase damage by 50%.
+_Heroic_: |only if heroic_dung()
+|tip Two Pure Energies are summoned. |only if heroic_dung()
+Loot the Volatile Essence |q 29686/1 |only if havequest(29686)
+scenariogoal 24880 |goto 81.6,26.8
+step
+click Scrying Orb##4891
+Activate the Scrying Orb |q 11490/1 |goto 94.2,26.8
+only if havequest(11490)
+step
+talk Kalecgos##24848
+|tip It will take a moment for him to fly down.
+turnin The Scryer's Scryer##11490 |goto 94.1,35.9
+accept Hard to Kill##29685 |goto 94.1,35.9
+only if not completedq(29685)
+step
+map Magisters' Terrace/2
+path follow smart; loop off; ants curved; dist 15
+path	90.0,40.7	83.2,34.3
+path	Magisters' Terrace/1 82.9,56.3	Magisters' Terrace/1 58.8,56.3
+path	Magisters' Terrace/1 45.7,56.2
+Follow the path |goto Magisters' Terrace/1 45.7,56.2 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Priestess Delrissa##24560
+_Renew_, _Power Word: Shield_:
+|tip Dispel these from Delrissa.
+_Flash Heal_:
+|tip Interrupt this every time.
+_Psychic Scream_:
+|tip 5 second melee range fear.
+_Minions_:
+|tip Use CC, interrupt fears and heals. Dispel CC on party members. Focus 1 target at a time.
+scenariogoal 24881 |goto Magisters' Terrace/1 39.2,56.2
+modelnpc Kagani Nightstrike##24557
+modelnpc Ellrys Duskhallow##24558
+modelnpc Eramas Brightblaze##24554
+modelnpc Yazzai##24561
+modelnpc Warlord Salaris##24559
+modelnpc Apoko##24553
+modelnpc Zelfan##24556
+step
+map Magisters' Terrace
+path follow loose;loop off;ants straight
+path	31.0,56.1	19.2,49.7
+Follow the path |goto 19.2,49.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Kael'thas Sunstrider##24664
+_Fireball_:
+|tip Interrupt this.
+_Phoenix Egg_:
+|tip Spawns when a Phoenix dies. Kill these within 15 seconds.
+_Shock Barrier_:
+|tip Makes Kael'thas immune to interrupts while in effect. |only if heroic_dung()
+_Pyroblast_:
+|tip Deals massive damage and follows Shock Barrier. Burn through the barrier and interrupt this. |only if heroic_dung()
+_Gravity Lapse_:
+|tip At 50% health, this phase begins and everyone "swims" through the air.
+_Arcane Sphere_:
+|tip These spheres follow random players. Avoid them.
+_Power Feedback_:
+|tip Every 30 seconds, Kael'thas takes 50% more damage for 10 seconds.
+Loot the Head of Kael'thas |q 29685/1 |only if havequest(29685)
+scenariogoal 1/34424 |goto Magisters' Terrace/1 7.4,50.1
+step
+talk Exarch Larethor##55007
+turnin A Radical Notion##29686 |goto Magisters' Terrace/1 13.4,49.9
+turnin Twisted Associations##29687 |goto Magisters' Terrace/1 13.4,49.9
+turnin Hard to Kill##29685 |goto Magisters' Terrace/1 13.4,49.9
+only if havequest(29686) or havequest(29687) or havequest(29685)
+step
+Congratulations! You have completed Magister's Terrace
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Keep (UK) 69-72",{
+mapid=523,
+achieveid={477},
+description="This guide will walk you through the Utgarde Keep dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Utgarde Keep or enter the dungeon with your group |goto Utgarde Keep/1 69.3,73.0 |c
+step
+talk Defender Mordun##24111
+accept Stealing Their Thunder##29763 |goto Utgarde Keep 67.6,71.0
+accept Disarmament##29764 |goto Utgarde Keep 67.6,71.0
+accept Ears of the Lich King##29803 |goto Utgarde Keep 67.6,71.0
+only if not completedq(29763) or not completedq(29764) or not completedq(29803)
+stickystart "vrykulweapons"
+step
+map Utgarde Keep/1
+path follow smart; loop off; ants curved; dist 15
+path	68.3,68.6	65.7,56.3	62.8,38.9
+path	65.1,31.0	56.2,25.2	50.4,28.5
+path	43.9,28.4	38.5,34.1	31.6,37.6
+path	23.6,38.6	25.9,50.3
+Follow the path |goto Utgarde Keep/1 25.9,50.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Prince Keleseth##23953
+_Frost Tomb_:
+|tip Ice blocks a player, inflicting frost damage and stunning them for 20 seconds. Kill it to break them free.
+_Vrykul Skeleton_:
+|tip Skeletons attack when engaging Keleseth. After their death, they will resurrect in 20 seconds. Kill them quickly.
+scenariogoal 27889 |goto 29.5,67.0
+step
+map Utgarde Keep/1
+path follow smart; loop off; ants curved; dist 15
+path	25.4,68.2	21.7,74.7	25.5,86.2
+path	35.3,88.5	50.1,82.2	Utgarde Keep/2 28.1,67.9
+path	Utgarde Keep/2 26.6,60.1	Utgarde Keep/2 37.1,54.8
+path	Utgarde Keep/2 44.5,82.5	Utgarde Keep/2 55.3,79.7
+Follow the path |goto Utgarde Keep/2 55.3,79.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Dalronn##24201
+kill Skarvald the Constructor##24200
+_Skarvald:_
+|tip Kill him last.
+_Enrage_:
+|tip Increases his attack speed and damage for 10 seconds.
+_Dalronn_:
+|tip Kill him first.
+_Shadow Bolt_:
+|tip Interrupt this.
+_Debilitate_:
+|tip Inflicts shadow damage and reduces all speed by 50% for 8 seconds.
+_Summon Skeletons_:
+|tip Interrupt this to avoid the adds.
+_Ghosts_:
+|tip When one dies, it becomes an untargetable ghost. Dalronn is much easier to deal with as a ghost.
+scenariogoal 27890 |goto Utgarde Keep/2 58.3,60.7
+step
+map Utgarde Keep/2
+path follow smart; loop off; ants curved; dist 15
+path	58.6,60.5	55.3,45.8	53.8,25.8
+Follow the path |goto Utgarde Keep/2 53.8,25.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Utgarde Keep/3
+path follow smart; loop off; ants curved; dist 15
+path	Utgarde Keep/3 33.0,49.9	Utgarde Keep/3 28.9,37.8
+path	Utgarde Keep/3 39.8,32.3	Utgarde Keep/3 50.7,29.3
+path	Utgarde Keep/3 51.8,38.5	Utgarde Keep/3 54.8,52.8
+path	Utgarde Keep/3 67.7,41.9
+Follow the path |goto Utgarde Keep/3 67.7,41.9 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Ingvar the Plunderer##23954
+_Phase 1_:
+Smash, Cleave:
+|tip Frontal cone damage. Avoid standing in front.
+Staggering Roar:
+|tip Deals damage and locks out spells cast for 6 seconds.
+Enrage:
+|tip Stacks up to 50 times.
+_Phase 2_:
+|tip Hide behind a pillar until Dreadful Roar is over.
+Dark Smash:
+|tip Frontal cleave.
+Shadow Axe:
+|tip Leaves a spinning axe that deals damage. Move out.
+Dreadful Roar:
+|tip Deals shadow damage and locks out spells for 8 seconds.
+Loot Ingvar's Head |q 29763/1 |only if havequest(29763)
+scenariogoal 1/27891 |goto Utgarde Keep/3 72.7,38.8
+step "vrykulweapons"
+While going through the instance, look for _Vrykul Weapons_ along the walls
+click Vrykul Weapons##8388
+Loot 5 Vrykul Weapons |q 29764/1
+only if havequest(29764)
+step
+map Utgarde Keep/3
+path follow smart; loop off; ants curved; dist 15
+path	72.5,38.0	58.0,50.2	46.6,56.5
+path	Utgarde Keep/1 79.9,73.4	Utgarde Keep/1 73.6,66.4
+Follow the path |goto Utgarde Keep/1 73.6,66.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if havequest(29763) or havequest(29764) or havequest(29803)
+step
+talk Defender Mordun##24111
+turnin Stealing Their Thunder##29763 |goto Utgarde Keep 67.6,71.0
+turnin Disarmament##29764 |goto Utgarde Keep 67.6,71.0
+turnin Ears of the Lich King##29803 |goto Utgarde Keep 67.6,71.0
+only if havequest(29763) or havequest(29764) or havequest(29803)
+step
+Congratulations! You have completed Utgarde Keep
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Nexus (Nexus) 70-73",{
+mapid=520,
+achieveid={478},
+author="support@zygorguides.com",
+description="This guide will walk you through the The Nexus dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for The Nexus or enter the dungeon with your group |goto The Nexus/1 36.2,88.0 |c
+step
+talk Image of Warmage Kaitlyn##55537
+accept Have They No Shame?##13094 |goto The Nexus 36.2,83.0
+only if not completedq(13094)
+step
+talk Image of Warmage Kaitlyn##55536
+accept Quickening##11911 |goto 37.2,81.4
+only if not completedq(11911)
+step
+talk Warmage Kaitlyn##55531
+accept Prisoner of War##11973 |goto 36.2,81.4
+only if not completedq(11973)
+step
+talk Image of Warmage Kaitlyn##55535
+accept Postponing the Inevitable##11905 |goto 35.1,81.4
+only if not completedq(11905)
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	35.4,80.3	29.0,70.7	22.2,67.0
+path	21.9,58.0
+Follow the path |goto The Nexus/1 21.9,58.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+kill Commander Kolurg##26798
+_Whirlwind_:
+|tip Short distance AoE. Casters should stay at range.
+_Frightening Shout_:
+|tip Fears all players within 8 yards for 6 seconds.
+click Berinand's Research##8128 |only if havequest(13094)
+Loot Berinand's Research |q 13094/1 |goto The Nexus 19.0,51.8 |only if havequest(13094)
+confirm
+only if heroic_dung()
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	18.9,51.9	21.9,44.0	21.7,35.9
+path	27.6,36.1
+Follow the path |goto The Nexus/1 27.6,36.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	35.4,80.3	29.0,70.7	22.2,67.0
+path	21.9,58.0
+Follow the path |goto The Nexus/1 21.9,58.0 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not heroic_dung() and havequest(13094)
+step
+kill Horde Commander##27947
+click Berinand's Research##8128 |only if havequest(13094)
+collect Berinand's Research |q 13094/1 |goto The Nexus 19.0,51.8 |only if havequest(13094)
+only if havequest(13094) and not heroic_dung()
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	18.9,51.9	21.9,44.0	21.7,35.9
+path	27.6,36.1
+Follow the path |goto The Nexus/1 27.6,36.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not heroic_dung() and havequest(13094)
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	35.4,80.3	29.0,70.7	22.2,67.0
+path	21.9,58.0	18.9,51.9	21.9,44.0
+path	21.7,35.9	27.6,36.1
+Follow the path |goto The Nexus/1 27.6,36.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if not heroic_dung() and not havequest(13094)
+step
+kill Grand Magus Telestra##26731
+_Firebomb_:
+|tip Spread out to minimize group damage.
+_Ice Nova_:
+|tip Stuns for 3 seconds.
+_Mirror Images_:
+|tip Occurs at 50% health. Interrupt Time Stop and Critter as much as possible. Don't stand in blizzard. Kill the images quickly.
+scenariogoal 27892 |goto 27.6,38.6
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	27.6,38.6	27.1,31.0	26.9,25.0
+path	31.4,22.0	39.4,21.7	43.8,21.9
+path	49.1,21.5	52.4,15.4	54.0,19.3
+path	56.4,21.8
+Follow the path |goto The Nexus/1 56.4,21.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Anomalus##26763
+_Create Rift_:
+|tip Destroy the rift and the Wraiths that come forth. Expect heavy AoE damage.
+_Rift Shield_:
+|tip At 50% health, Anomalus becomes immune and charges nearby open rifts. This lasts 45 seconds.
+_Charge Rifts_:
+|tip Wraiths appear faster from rifts and the range of rift abilities is increased. Lasts 45 seconds.
+_Arcane Attraction_:
+|tip Increases a random players arcane damage taken. Dispel quickly! |only if heroic_dung()
+scenariogoal 27893 |goto The Nexus 61.5,21.9
+step
+Use your Interdimensional Refabricator here |use Interdimensional Refabricator##35479
+Stall the Interdimensional Rift |q 11905/1 |goto 65.1,21.8
+only if havequest(11905)
+stickystart "Splinter"
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	59.3,22.2	54.1,21.7	50.7,23.4
+path	53.9,35.8	54.1,42.9	56.7,52.6
+path	64.4,53.0	64.5,60.4	60.3,64.7
+Follow the path |goto The Nexus/1 60.3,64.7 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Splinter"
+kill Crystalline Protector##26792
+Loot 5 Arcane Splinters |q 11911/1 |goto 60.3,64.8
+only if havequest(11911)
+step
+kill Ormorok the Tree-Shaper##26794
+_Spell Reflection_:
+|tip Reflects the next 4 spells casts. Use low damage abilities.
+_Trample_:
+|tip Deals physical damage to everyone nearby.
+_Crystal Spikes_:
+|tip Patches of spikes appear on the ground. Move out or you will take damage and be knocked up in the air.
+_Frenzy_:
+|tip Occurs at 30% health. Save defensive and DPS cooldowns for this.
+_Summon Crystalline Tangler_:
+|tip Roots players that it hits. |only if heroic_dung()
+scenariogoal 27894 |goto 56.9,70.3
+step
+map The Nexus/1
+path follow smart; loop off; ants curved; dist 15
+path	56.2,72.8	52.4,69.1	52.7,60.8
+path	48.6,67.5	41.7,67.5
+Follow the path |goto The Nexus/1 41.7,67.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+click Telestra's Containment Sphere##7800
+|tip Keristrasza will engage after activating the spheres.
+kill Keristrasza##26723
+_Intense Cold_:
+|tip Stacks every second, slowing casting speed. Keep moving to avoid the stacks.
+_Crystalfire Breath_, _Tail Sweep_:
+|tip Avoid standing in front of behind Keristrasza.
+_Enrage_:
+|tip Occurs at 25% health, use DPS and defensive cooldowns for this.
+_Crystal Chains_:
+|tip Roots a player for 10 seconds. Dispel quickly. |only if not heroic_dung()
+_Crystallize_:
+|tip Deals frost damage and roots all players. Dispel quickly. |only if heroic_dung()
+scenariogoal 1/27895 |goto 38.3,67.2
+step
+talk Image of Warmage Kaitlyn##55537
+turnin Have They No Shame?##13094 |goto The Nexus 36.2,83.0
+only if havequest(13094)
+step
+talk Image of Warmage Kaitlyn##55536
+turnin Quickening##11911 |goto 37.2,81.4
+only if havequest(11911)
+step
+talk Warmage Kaitlyn##55531
+turnin Prisoner of War##11973 |goto 36.2,81.4
+only if havequest(11973)
+step
+talk Image of Warmage Kaitlyn##55535
+turnin Postponing the Inevitable##11905 |goto 35.1,81.4
+only if havequest(11905)
+step
+Congratulations! You have completed The Nexus
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub (AN) 71-74",{
+mapid=533,
+achieveid={480},
+description="This guide will walk you through the Azjol-Nerub dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Azjol-Nerub or enter the dungeon with your group |goto Azjol-Nerub/3 9.4,93.3 |c
+step
+talk Reclaimer A'zak##55564
+accept Death to the Traitor King##29807 |goto Azjol-Nerub/3,15.2,83.8
+accept Don't Forget the Eggs!##29808 |goto Azjol-Nerub/3,15.2,83.8
+accept The Gatewatcher's Talisman##29811 |goto Azjol-Nerub/3,15.2,83.8
+only if not completedq(29807) or not completedq(29808) or not completedq(29811)
+stickystart "Eggs"
+step
+map Azjol-Nerub/3
+path follow smart; loop off; ants curved; dist 12
+path	14.7,84.2	19.7,63.9	25.2,36.6
+path	34.4,40.0
+Follow the path |goto Azjol-Nerub/3 34.4,40.0 < 8
+|tip Kill Anub'ar Skirmishers first!
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Krik'thir the Gatewatcher##28684
+_Watchers_:
+|tip A watcher will attack a soon as the first one pulled dies. Krik'thir will engage when all watchers are dead.
+_Mind Flay_:
+|tip Reduces movement speed and deals shadow damage over 3 seconds.
+_Curse of Fatigue_:
+|tip Slows and deals damage to everyone within 5 yards of Krik'thir. Dispel this.
+_The Skittering Swarm_:
+|tip Summons a swarm of insects to attack random players. AoE these down.
+scenariogoal 27898 |goto 46.3,45.2
+step "Eggs"
+click Nerubian Scourge Egg##7803
+Destroy 6 Nerubian Scourge Eggs. |q Don't Forget the Eggs!##29808/1 |goto 34.6,48.7
+|tip All around this room.
+only if havequest(29808)
+step
+map Azjol-Nerub/3
+path follow smart; loop off; ants curved; dist 12
+path	48.8,44.7	64.3,44.7	85.2,44.9
+Follow the path |goto Azjol-Nerub/3 85.2,44.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Hadronox##28921
+|tip Killing the mobs in the room will cause Hadronox to come up and engage.
+_Leech Poison_:
+|tip Drains health from anyone within 25 yards. Players killed while poisoned heal him for 10% health.
+_Acid Cloud_:
+|tip Deals nature damage. Don't stand in it.
+_Web Grab_:
+|tip Deals physical damage and pulls players close. Run back out.
+scenariogoal 27899 |goto 87.4,53.5
+step
+map Azjol-Nerub/3
+path follow smart; loop off; ants curved; dist 12
+path	73.7,37.5	Azjol-Nerub/2 39.1,27.9
+path	Azjol-Nerub/2 52.7,10.9	Azjol-Nerub/2 62.1,23.1
+path	Azjol-Nerub/2 60.0,47.4	Azjol-Nerub/2 48.1,66.9
+Follow the path |goto Azjol-Nerub/2 48.1,66.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Azjol-Nerub/1
+path follow smart; loop off; ants curved; dist 12
+path	22.4,51.7	27.4,51.6	37.0,48.9
+path	44.8,48.9	58.9,48.4
+_Jump down_ the hole and follow the path |goto Azjol-Nerub/1 58.9,48.4 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Anub'arak##29120
+|tip Be sure your party is inside the platform or they will be locked out.
+_Impale_:
+|tip Fires a spike through the ground. Move away from this.
+_Pound_:
+|tip Deals massive damage and stuns anyone in front. Even the tank should move behind Anub'arak during this.
+_Submerge_:
+|tip Every 25% health, Anub'arak will burrow, summoning adds and spikes. Move away from ground spikes and kill the adds that spawn at the gate.
+Loot Anub'arak's Broken Husk |q 29807/1 |only if havequest(29807)
+scenariogoal 1/27900 |goto Azjol-Nerub/1 87.4,53.5
+step
+talk Reclaimer A'zak##55564
+turnin Death to the Traitor King##29807 |goto 62.2,48.5
+turnin Don't Forget the Eggs!##29808 |goto 62.2,48.5
+turnin The Gatewatcher's Talisman##29811 |goto 62.2,48.5
+only if havequest(29807) or havequest(29808) or havequest(29811)
+step
+Congratulations! You have completed Azjol-Nerub
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom (OK) 72-75",{
+mapid=522,
+achieveid={481},
+description="This guide will walk you through the Ahn'kahet: The Old Kingdom dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Ahn'kahet: The Old Kingdom or enter the dungeon with your group |goto Ahn'kahet: The Old Kingdom/1 90.0,79.1 |c
+step
+talk Seer Ixit##55658
+accept Pupil No More##29825 |goto Ahn'kahet: The Old Kingdom/1 87.2,72.6
+only if not completedq(29825)
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	86.6,71.3	83.9,64.6	80.1,54.7
+path	79.6,46.6	81.3,39.5	80.2,31.8
+path	74.4,30.6
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 74.4,30.6 < 6
+|tip Kill Ahn'kahar Spell Flingers first. Be sure to interrupt their Shadow Blast.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Elder Nadox##29309
+_Brood Plague_:
+|tip Disease that deals nature damage over 30 seconds. Dispel.
+_Brood Rage_:
+|tip Enrages nearby swarmers, increasing their health and damage.
+_Ahn'kahar Guardian_:
+|tip Destroy these to drop Nadox's immunity.
+_Ahn'kahar Swarmer_:
+|tip AoE these quickly to minimize the numbers affected by Brood Rage.
+scenariogoal 27901 |goto 70.4,28.6
+step
+Click the quest complete box in the top right corner
+turnin Pupil No More##29825
+accept Reclaiming Ahn'Kahet##29826
+only if not completedq(29826)
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	70.6,29.9	67.1,33.0	64.9,25.8
+path	61.5,28.1	61.7,34.4	57.2,34.0
+path	56.8,27.5
+click Ancient Nerubian Device##8393
+|tip You must activate these devices at each platform.
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 56.8,27.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	56.8,27.5	57.2,34.0	54.5,35.0
+path	50.1,29.9
+click Ancient Nerubian Device##8393
+|tip You must activate these devices at each platform.
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 50.1,29.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	51.1,31.1	54.8,35.4	56.1,46.4
+path	58.9,49.1
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 58.9,49.1 < 7
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Reclaiming"
+kill 3 Eye of Taldaram##30285 |q Reclaiming Ahn'Kahet##29826/1
+kill 1 Bonegrinder##30284 |q Reclaiming Ahn'Kahet##29826/2
+only if havequest(29826)
+step
+kill Prince Taldaram##29308
+_Conjure Flame Sphere_:
+|tip Sphere of fire that floats towards a player. Try not to come in contact with it.
+_Vanish_:
+|tip Disappears and reappears behind a random player, inflicting Embrace of the Vampyr.
+_Embrace of the Vampyr_: |only if not heroic_dung()
+|tip Stuns the player and deals shadow damage. Deal 20,000 damage to Taldaram to break it. |only if not heroic_dung()
+_Embrace of the Vampyr_: |only if heroic_dung()
+|tip Stuns the player and deals shadow damage. Deal 40,000 damage to Taldaram to break it. |only if heroic_dung()
+scenariogoal 27902 |goto 63.0,49.4
+step
+Click the Quest Complete box on the top right:
+turnin Reclaiming Ahn'Kahet##29826
+accept The Faceless Ones##13187
+only if not completedq(13187)
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	64.9,46.1	66.8,46.9	64.3,51.5
+path	60.4,51.9	58.3,56.1
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 58.3,56.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	57.8,57.3	58.9,62.4	65.4,58.6
+path	66.7,63.1	65.7,68.1
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 65.7,68.1 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+To skip the optional heroic boss Amanitar, click here |confirm |next "Jedoga"
+confirm
+only if heroic_dung()
+step
+kill Amanitar##30258 |goto Ahn'kahet: The Old Kingdom/1 66.3,78.3
+|tip Pull the Cave Beasts before Amanitar.
+_Mini_:
+|tip Shrinks all players, reducing damage by 75%. Kill a healthy mushroom while standing near it to cancel.
+_Entangling Roots_:
+|tip Deals nature damage and immobilizes over 10 seconds.
+_Healthy Mushroom_:
+|tip Upon death, cancels the effects of Mini and increases damage by 100%.
+_Poisonous Mushroom_:
+|tip Upon death, deals nature damage every 2 seconds.
+confirm
+only if heroic_dung()
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	65.7,68.1	66.7,63.1	65.4,58.6
+path	58.9,62.4	57.8,57.3
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 57.7,60.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+label "Jedoga"
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	56.9,59.1	51.5,58.0	49.1,64.0
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 49.1,64.0 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+To skip the optional boss Jedoga Shadowseeker, click here |confirm |next "Herald"
+confirm
+step
+kill Jedoga Shadowseeker##29310
+_Cyclone Strike_:
+|tip Deals damage and knocks back anyone close to Jedoga. Move away.
+_Thundershock_:
+|tip Creates a cloud of lightning. Move out or suffer heavy damage.
+_Twilight Ascendance_:
+|tip At 50% health, Jedoga calls a Twilight Volunteer. Don't let it reach her or she will gain 200% damage for 20 seconds.
+scenariogoal 27903 |goto 49.3,72.3
+step
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	47.9,68.1	50.1,61.2	52.3,51.6
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 52.3,51.6 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+label "Herald"
+map Ahn'kahet: The Old Kingdom/1
+path follow smart; loop off; ants curved; dist 15
+path	56.5,58.8	52.6,52.1	49.5,48.6
+path	41.1,49.4	37.6,49.8
+Follow the path |goto Ahn'kahet: The Old Kingdom/1 37.6,49.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill 3 Forgotten One##30414+ |q The Faceless Ones##13187/1 |goto 32.4,50.1
+|tip Avoid Shadow Crash, an AoE attack that targets the ground.
+only if havequest(13187)
+step
+kill Herald Volazj##29311
+_Shadow Bolt Volley_:
+|tip Deals shadow damage to all players.
+_Shiver_:
+|tip Curse that deals shadow damage whenever a player is hit and then jumps to another player within 20 yards. Stay spread out and decurse.
+_Insanity_:
+|tip Kill the twisted visions of your allies to be released. No effect solo.
+scenariogoal 1/27905 |goto Ahn'kahet: The Old Kingdom/1 22.8,50.7
+step
+talk Seer Ixit##55658
+turnin The Faceless Ones##13187 |goto 26.9,50.4
+only if havequest(13187)
+step
+Congratulations! You have completed Ahn'kahet: The Old Kingdom
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep (DTK) 73-76",{
+mapid=534,
+achieveid={482},
+description="This guide will walk you through the Drak'Tharon Keep dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Drak'Tharon Keep or enter the dungeon with your group |goto Drak'Tharon Keep/1 29.4,81.0 |c
+step
+talk Kurzel##55677
+accept Head Games##13129 |goto Drak'Tharon Keep 35.5,83.2
+accept What the Scourge Dred##29828 |goto Drak'Tharon Keep 35.5,83.2
+only if not completedq(13129) or not completedq(29828)
+step
+talk Image of Drakuru##58149
+accept Cleansing Drak'Tharon##30120 |goto 37.0,80.9
+only if not completedq(30120)
+stickystart "Mojo"
+step
+map Drak'Tharon Keep/1
+path follow smart; loop off; ants curved; dist 12
+path	36.0,82.3	42.6,87.1	47.4,81.7
+path	47.7,67.7	47.5,45.5	52.8,37.0
+Follow the path |goto Drak'Tharon Keep/1 52.8,37.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Trollgore##26630
+_Infected Wound_:
+|tip Increases physical damage taken by 15%. Dispel this disease.
+_Consume_: |only if not heroic_dung()
+|tip Deals shadow damage and increases Trollgore's damage by 2% for each enemy within 50 yards. |only if not heroic_dung()
+_Consume_: |only if heroic_dung()
+|tip Deals shadow damage and increases Trollgore's damage by 5% for each enemy within 50 yards. |only if heroic_dung()
+_Corpse Explode_:
+|tip Detonates a nearby Invader corpse, dealing nature damage.
+_Drakkari Invader_:
+|tip Fly in randomly and attack Trollgore and players.
+scenariogoal 27906 |goto Drak'Tharon Keep/1 56.8,19.3
+step
+map Drak'Tharon Keep/1
+path follow smart; loop off; ants curved; dist 12
+path	56.9,18.9	66.3,18.8	66.2,26.1
+path	65.8,36.1
+Follow the path |goto Drak'Tharon Keep/1 65.8,36.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Novos the Summoner##26631
+_Stairs_:
+|tip Kill the adds coming down the stairs.
+_Crystal Handler_:
+|tip Kill 4 of these to release Novos.
+_Blizzard_:
+|tip Move out of this or suffer frost damage.
+_Wrath of Misery_:
+|tip Curse that deals periodic shadow damage. Dispel if possible.
+_Summon Minions_:
+|tip Summons skeletons to attack the party.
+scenariogoal 27907 |goto Drak'Tharon Keep 73.3,47.6
+step
+Use Kurzel's Blouse Scrap on Novos the Summoner's corpse |use Kurzel's Blouse Scrap##43214 |only if havequest(13129)
+Collect the Ichor-Stained Cloth |q 13129/1 |goto Drak'Tharon Keep/1 69.5,47.5
+only if havequest(13129)
+step
+map Drak'Tharon Keep/1
+path follow smart; loop off; ants curved; dist 12
+path	69.5,47.6	67.1,56.5	62.3,58.1
+path	56.0,55.6	55.6,77.8	64.0,76.9
+Follow the path |goto Drak'Tharon Keep/1 64.0,76.9 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill King Dred##27483
+|tip Clear the raptors before pulling Dred.
+_Grievous Bite_:
+|tip Deals physical damage every 2 seconds until the player is fully healed.
+_Mangling Slash_:
+|tip Increases bleed damage by 75%.
+_Bellowing Roar_:
+|tip Fears all players within 35 yards for 4 seconds.
+_Piercing Slash_:
+|tip Reduces armor by 75% for 10 seconds. Use a cooldown for this.
+_Raptor Call_:
+|tip If raptors are alive, Dred summons them.
+Loot King Dred's Tooth |q 29828/1 |only if havequest(29828)
+scenariogoal 27908 |goto Drak'Tharon Keep 67.8,80.2
+step
+map Drak'Tharon Keep/1
+path follow smart; loop off; ants curved; dist 12
+path	63.7,85.6	67.9,79.4	64.5,71.7
+path	Drak'Tharon Keep/2 39.4,71.8	Drak'Tharon Keep/2 36.6,63.3
+path	Drak'Tharon Keep/2 37.7,28.6	Drak'Tharon Keep/2 47.2,28.5
+path	Drak'Tharon Keep/2 56.7,21.8	Drak'Tharon Keep/2 55.4,13.3
+Follow the path |goto Drak'Tharon Keep/2 55.4,13.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Mojo"
+kill Drakkari Commander##27431+, Drakkari Guardian##26620+, Drakkari Shaman##26639+
+collect 5 Enduring Mojo##38303 |q Cleansing Drak'Tharon##30120 |goto Drak'Tharon Keep/2,37.1,67.2
+only if havequest(30120)
+step
+kill The Prophet Tharon'ja##26632
+_Phase 1_:
+_Rain of Fire_:
+|tip Deals fire damage in the targeted area.
+_Curse of Life_:
+|tip Deals shadow damage for 9 seconds or until the target reaches 50% health.
+_Phase 2_:
+|tip Use Touch of Life and Slaying Strike on cooldown. Taunt immediately after using Bone Armor.
+_Poison Cloud_:
+|tip Deals nature damage every second. Move out of this.
+scenariogoal 1/27909 |goto 51.3,13.2
+step
+Use Drakuru's Elixer at the giant brazier here |use Drakuru's Elixir##35797 |goto 37.9,13.2
+talk Drakuru##28016 |tip Follow him back to the Prophet and wait for the dialogue to end.
+turnin Cleansing Drak'Tharon##30120
+only if havequest(30120)
+step
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance
+map Drak'Tharon Keep/2
+path follow strict; loop off; ants curved; dist 12
+path	46.1,13.4	38.3,13.2	38.2,20.1
+Follow the path back to the quest giver |goto Drak'Tharon Keep/2 38.2,20.1 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if havequest(13129) or havequest(29828)
+step
+map Drak'Tharon Keep/2
+path follow strict; loop off; ants curved; dist 12
+path	39.0,14.1	41.1,14.0	Drak'Tharon Keep/1 49.1,13.9
+Follow the path back to the quest giver |goto Drak'Tharon Keep/1 49.1,13.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if havequest(13129) or havequest(29828)
+step
+map Drak'Tharon Keep/1
+path follow strict; loop off; ants curved; dist 12
+path	Drak'Tharon Keep/1 44.0,13.3	Drak'Tharon Keep/1 43.9,30.0
+path	Drak'Tharon Keep/1 42.3,36.7	Drak'Tharon Keep/1 47.6,45.5
+path	Drak'Tharon Keep/1 47.6,83.0	Drak'Tharon Keep/1 35.9,82.1
+Follow the path back to the quest giver |goto Drak'Tharon Keep/1 35.9,82.1 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+talk Kurzel##55677
+turnin Head Games##13129 |goto Drak'Tharon Keep 35.5,83.2 |noway
+turnin What the Scourge Dred##29828 |goto Drak'Tharon Keep 35.5,83.2 |noway
+only if havequest(13129) or havequest(29828)
+step
+Congratulations! You have completed Drak'Tharon Keep
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Violet Hold (VH) 73-76",{
+mapid=536,
+achieveid={483},
+description="This guide will walk you through the The Violet Hold dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for The Violet Hold or enter the dungeon with your group |goto The Violet Hold/1 46.1,99.2 |c
+step
+talk Lieutenant Sinclari##30658
+accept Containment##29830 |goto The Violet Hold 47.7,89.7
+only if not completedq(29830)
+step
+In this instance, _Blue Portals_ will randomly pop up at each of the large pink shields in the room
+You will need to go to it and defeat the monsters that come out until it closes
+On waves 6, 12 and 18 bosses will spawn
+Tell Lieutenant Sinclari: "_Activate the crystals when we get in trouble, right._"
+confirm
+step
+label "the_list"
+Click here for Erekem |next "Erekem" |confirm
+Click here for Moragg |next "Moragg" |confirm
+Click here for Ichoron |next "Ichoron" |confirm
+Click here for Xevozz |next "Xevozz" |confirm
+Click here for Lavanthor |next "Lavanthor" |confirm
+Click here for Zuramat the Obliterator |next "Zuramat_the_Obliterator" |confirm
+step
+label "the_list2"
+Click here for Erekem |next "Erekem2" |confirm
+Click here for Moragg |next "Moragg2" |confirm
+Click here for Ichoron |next "Ichoron2" |confirm
+Click here for Xevozz |next "Xevozz2" |confirm
+Click here for Lavanthor |next "Lavanthor2" |confirm
+Click here for Zuramat the Obliterator |next "Zuramat_the_Obliterator2" |confirm
+step
+label "Erekem"
+kill Erekem##29315
+|tip Erekem should always die first.
+_Earth Shield_:
+|tip Heals the bearer each time they are hit. Dispel when possible.
+_Bloodlust_:
+|tip Increases all speeds by 35%. Dispel.
+_Chain Heal_:
+|tip Heals all 3 targets. Interrupting this is top priority.
+_Lightning Bolt_:
+|tip Deals nature damage. Interrupt only if a spare is available.
+scenariogoal 24858 |goto The Violet Hold/1 24.6,63.5
+next "the_list2"
+step
+label "Erekem2"
+kill Erekem##29315
+|tip Erekem should always die first.
+_Earth Shield_:
+|tip Heals the bearer each time they are hit. Dispel when possible.
+_Bloodlust_:
+|tip Increases all speeds by 35%. Dispel.
+_Chain Heal_:
+|tip Heals all 3 targets. Interrupting this is top priority.
+_Lightning Bolt_:
+|tip Deals nature damage. Interrupt only if a spare is available.
+scenariogoal 24859 |goto The Violet Hold/1 24.6,63.5
+next "final_boss"
+step
+label "Moragg"
+kill Moragg##29316
+_Optic Link_:
+|tip Deals damage to a player over 12 seconds, increases with each tick.
+_Corrosive Saliva_:
+|tip Stacks up to 20 times, decreases armor by 5% per stack.
+_Ray of Pain_:
+|tip Deals shadow damage to a random player and reduces healing received by 15% for 5 seconds.
+_Ray of Suffering_:
+|tip Deals shadow damage over 5 seconds to a random player.
+scenariogoal 24858 |goto The Violet Hold/1 67.1,54.5
+next "the_list2"
+step
+label "Moragg2"
+kill Moragg##29316
+_Optic Link_:
+|tip Deals damage to a player over 12 seconds, increases with each tick.
+_Corrosive Saliva_:
+|tip Stacks up to 20 times, decreases armor by 5% per stack.
+_Ray of Pain_:
+|tip Deals shadow damage to a random player and reduces healing received by 15% for 5 seconds.
+_Ray of Suffering_:
+|tip Deals shadow damage over 5 seconds to a random player.
+scenariogoal 24859 |goto The Violet Hold/1 67.1,54.5
+next "final_boss"
+step
+label "Ichoron"
+kill Ichoron##29313
+_Protective Bubble_:
+|tip Reduced damage taken by 99%. 35 successful attacks against Ichoron will cause her to Burst.
+_Burst_:
+|tip Deals frost damage to everyone with a knockback. Creates 10 Ichor Globules and reduces her health by 30%.
+_Ichor Globule_:
+|tip Each one heals Ichoron for 3% of her health. Kite Ichoron around and kill the Globules before they reach her.
+scenariogoal 24858 |goto The Violet Hold/1 53.9,42.9
+next "the_list2"
+step
+label "Ichoron2"
+kill Ichoron##29313
+_Protective Bubble_:
+|tip Reduced damage taken by 99%. 35 successful attacks against Ichoron will cause her to Burst.
+_Burst_:
+|tip Deals frost damage to everyone with a knockback. Creates 10 Ichor Globules and reduces her health by 30%.
+_Ichor Globule_:
+|tip Each one heals Ichoron for 3% of her health. Kite Ichoron around and kill the Globules before they reach her.
+scenariogoal 24859 |goto The Violet Hold/1 53.9,42.9
+next "final_boss"
+step
+label "Xevozz"
+kill Xevozz##29266 |tip Kite him around away from spheres.
+_Arcane Barrage Volley_:
+|tip Deals arcane damage to everyone within 45 yards.
+_Arcane Buffet_:
+|tip Deals arcane damage and increases arcane damage taken for 20 seconds. Stacks 10 times. Dispel when possible.
+_Ethereal Sphere_:
+|tip Spheres pulse, dealing arcane damage to anyone within 8 yards. Avoid them as much as possible.
+_Arcane Power_:
+|tip Spheres coming within 3 yards of Xevozz increase his damage and attack speed for 8 seconds.
+scenariogoal 24858 |goto The Violet Hold/1 33.9,48.1
+next "the_list2"
+step
+label "Xevozz2"
+kill Xevozz##29266
+|tip Kite him around away from spheres.
+_Arcane Barrage Volley_:
+|tip Deals arcane damage to everyone within 45 yards.
+_Arcane Buffet_:
+|tip Deals arcane damage and increases arcane damage taken for 20 seconds. Stacks 10 times. Dispel when possible.
+_Ethereal Sphere_:
+|tip Spheres pulse, dealing arcane damage to anyone within 8 yards. Avoid them as much as possible.
+_Arcane Power_:
+|tip Spheres coming within 3 yards of Xevozz increase his damage and attack speed for 8 seconds.
+scenariogoal 24859 |goto The Violet Hold/1 33.9,48.1
+next "final_boss"
+step
+label "Lavanthor"
+kill Lavanthor##29312
+_Flame Breath_:
+|tip Deals fire damage in a frontal cone. Don't stand in front of Lavanthor.
+_Lava Burn_:
+|tip A lava bomb hits the area where the targeted player stands and lasts for 8 seconds. Move out.
+_Cauterizing Flames_:
+|tip Deals fire damage to all players and increases fire damage taken by 35%.
+scenariogoal 24858 |goto The Violet Hold/1 59.8,72.5
+next "the_list2"
+step
+label "Lavanthor2"
+kill Lavanthor##29312
+_Flame Breath_:
+|tip Deals fire damage in a frontal cone. Don't stand in front of Lavanthor.
+_Lava Burn_:
+|tip A lava bomb hits the area where the targeted player stands and lasts for 8 seconds. Move out.
+_Cauterizing Flames_:
+|tip Deals fire damage to all players and increases fire damage taken by 35%.
+scenariogoal 24859 |goto The Violet Hold/1 59.8,72.5
+next "final_boss"
+step
+label "Zuramat_the_Obliterator"
+kill Zuramat the Obliterator##29314
+_Void Shift_:
+|tip Deals shadow damage and allows players to see Void Sentries.
+_Void Sentries_:
+|tip While shifted, kill these as quick as you can to stop the shadow bolt volley they cast.
+_Shroud of Darkness_:
+|tip While active, attacks against Zuramat reduce healing by 10%, stacking 5 times. Don't attack during the 10 second duration.
+scenariogoal 24858 |goto The Violet Hold/1 28.8,34.8
+next "the_list2"
+step
+label "Zuramat_the_Obliterator"
+kill Zuramat the Obliterator##29314
+_Void Shift_:
+|tip Deals shadow damage and allows players to see Void Sentries.
+_Void Sentries_:
+|tip While shifted, kill these as quick as you can to stop the shadow bolt volley they cast.
+_Shroud of Darkness_:
+|tip While active, attacks against Zuramat reduce healing by 10%, stacking 5 times. Don't attack during the 10 second duration.
+scenariogoal 24859 |goto The Violet Hold/1 28.8,34.8
+next "final_boss"
+step
+label "final_boss"
+kill Cyanigosa##31134
+|tip Stand to the side of her to avoid damage from breath and tail sweep.
+_Uncrontrollable Energy_:
+|tip Deals arcane damage to anyone in front of her and increases arcane damage taken.
+_Tail Sweep_:
+|tip Deals damage and interrupts spellcasting.
+_Blizzard_:
+|tip Deals frost damage and reduces movement speed. Move out of it.
+_Arcane Vacuum_:
+|tip Pulls all players to Cyanigosa.
+_Mana Destruction_:
+|tip Drains mana and deals arcane damage equal to the mana drained. Dispel this.
+scenariogoal 27910 |goto The Violet Hold/1 46.0,56.2
+step
+talk Lieutenant Sinclari##30658
+turnin Containment##29830 |goto The Violet Hold 45.9,91.2
+only if havequest(29830)
+step
+Congratulations! You have completed The Violet Hold
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Gundrak (GD) 75-78",{
+mapid=530,
+achieveid={484},
+description="This guide will walk you through the Gundrak dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Gundrak or enter the dungeon with your group |goto Gundrak/1 59.0,30.9 |c
+step
+talk Tol'mar##55738
+accept Gal'darah Must Pay##29834 |goto Gundrak,57.3,34.6
+accept One of a Kind##29839 |goto Gundrak,57.3,34.6
+accept For Posterity##29844 |goto Gundrak,57.3,34.6
+only if not completedq(29834) or not completedq(29839) or not completedq(29844)
+stickystart "drakhistory"
+step
+_Go down_ the ramp |goto Gundrak/1 58.7,40.0 |c
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Slad'ran##29304
+_Powerful Bite_:
+|tip Deals damage and reduces armor by 20% for 5 seconds.
+_Poison Nova_:
+|tip Deals nature damage to everyone within 15 yards and poisons them for 16 seconds.
+_Slad'ran Viper_:
+|tip Bites and leaves a poison DoT.
+_Slad'ran Constrictor_:
+|tip Encases a player in snakes. If Grip stacks up to 5, the player is stunned. Kill the snakes.
+scenariogoal 27911 |goto Gundrak/1 54.1,48.7
+step
+click Altar of Slad'ran##8278 |goto 53.8,48.7
+confirm
+step
+map Gundrak/1
+path follow smart; loop off; ants curved; dist 15
+path	57.0,48.7	58.8,54.8	58.9,66.4
+path	49.6,73.5
+Follow the path |goto Gundrak/1 49.6,73.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Drakkari Colossus##29307
+kill Drakkari Elemental##29573
+_Colossus Phase_:
+Mortal Strikes:
+|tip Reduces healing received by 50% for 3 seconds.
+Emerge:
+|tip At 50% health, the Drakkari Elemental emerges.
+_The Elemental_:
+Mojo Volley:
+|tip Deals nature damage to 2 random players.
+Surge:
+|tip The Elemental charges forward. Players in the path take nature damage over 45 seconds.
+Merge:
+|tip At 50% health, the Elemental merges and becomes the Colossus again.
+Loot the Drakkari Colossus Fragment |q 29839/1 |only if havequest(29839)
+scenariogoal 27912 |goto 46.9,66.3
+step
+click Altar of the Drakkari Colossus##8278 |goto 46.5,62.5
+confirm
+step
+map Gundrak/1
+path follow smart; loop off; ants curved; dist 15
+path	46.6,65.2	46.2,73.3	41.0,72.5
+path	37.7,60.4	34.6,59.4	33.5,54.0
+Follow the path |goto Gundrak/1 33.5,54.0 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Moorabi##29305
+_Prophet_:
+Ground Tremor:
+|tip Deals damage and stuns all players within 60 yards for 2 seconds.
+Numbing Shout:
+|tip Reduces casting speed by 25% for 5 seconds.
+Mojo Frenzy:
+|tip Increases casting speed and damage based upon remaining health.
+Transformation:
+|tip Transforms into the Avatar, increasing damage by 25%. Interrupt as much as possible.
+_Avatar_:
+Quake:
+|tip Same as Ground Tremor.
+Numbing Roar:
+|tip Reduces casting speed by 50% for 5 seconds.
+scenariogoal 27913 |goto 37.4,49.1
+step
+click Altar of Moorabi##8278 |goto 39.6,49.2
+confirm
+step
+map Gundrak/1
+path follow smart; loop off; ants curved; dist 15
+path	38.1,49.1	31.7,49.1	27.7,48.0
+path	23.3,53.0	25.0,64.5
+Follow the path |goto Gundrak/1 25.0,64.5 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+kill Eck the Ferocious##29932
+_Eck Spit_:
+|tip Deals nature damage and drains mana in a frontal cone. Stay behind Eck.
+_Eck Spring_:
+|tip Leaps on a distant player.
+_Eck Berserk_:
+|tip After 90 seconds, Eck gains 150% attack speed and 500% increased damage. Hard enrage timer.
+scenariogoal 5053 |goto Gundrak/1 25.3,70.2
+only if heroic_dung()
+step
+map Gundrak/1
+path follow smart; loop off; ants curved; dist 15
+path	25.0,64.5	23.3,53.0	27.7,48.0
+path	31.7,49.1	38.1,49.1
+Follow the path |goto Gundrak/1 38.1,49.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+only if heroic_dung()
+step
+map Gundrak/1
+path follow smart; loop off; ants curved; dist 15
+path	40.0,49.1	46.6,54.0	46.6,47.8
+path	46.5,37.4
+Follow the path |goto Gundrak/1 46.5,37.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Gal'darah##29306
+_Prophet_:
+Stampede:
+|tip Charges a player, dealing damage and knocking them in the air.
+Whirling Slash:
+|tip Gal'darah spins, dealing damage and leaving a bleed. Run away.
+Puncture:
+|tip Bleeds a player for 2 minutes.
+_Avatar_:
+Impaling Charge:
+|tip Charges a player, dealing damage and knocking them back.
+Enrage:
+|tip Increases attack speed by 100% for 8 seconds. Use a cooldown if tanking.
+Stomp:
+|tip Deals damage and knocks back all players within 10 yards.
+scenariogoal 1/27914 |goto Gundrak/1 46.6,25.7
+step "drakhistory"
+There will be Drakkari History Tablets throughout the dungeon. You will need to collect 6 to complete the quest
+click Drakkari History Tablet##7356
+collect 6 Drakkari History Tablet |q For Posterity##29844/1
+only if havequest(29844)
+step
+talk Tol'mar##55738
+turnin Gal'darah Must Pay##29834 |goto Gundrak 51.7,20.9
+turnin One of a Kind##29839 |goto Gundrak 51.7,20.9
+turnin For Posterity##29844 |goto Gundrak 51.7,20.9
+only if havequest(29834) or havequest(29839) or havequest(29844)
+step
+Congratulations! You have completed Gundrak
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Stone (HoS) 76-79",{
+mapid=526,
+achieveid={485},
+description="This guide will walk you through the Halls of Stone dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Halls of Stone or enter the dungeon with your group |goto Halls of Stone/1 34.4,36.2 |c
+step
+talk Kaldir Ironbane##55835
+accept The Forlorn Watcher##29848 |goto Halls of Stone 35.8,35.0
+accept Corrupt Constructs##29850 |goto Halls of Stone 35.8,35.0
+only if not completedq(29848) or not completedq(29850)
+stickystart "Giants"
+step
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	35.8,36.4	45.1,36.4	49.9,41.8
+path	50.0,53.4	40.7,54.1	32.3,51.2
+path	30.0,61.4	34.3,69.7	38.1,67.8
+Follow the path |goto Halls of Stone/1 38.1,67.8 < 12
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Krystallus##27977
+_Ground Slam_:
+|tip Knocks everyone back and slows speed by 20% every second.
+_Shatter_:
+|tip Shatters players turned to stone. Make sure you aren't near a party member after Ground Slam.
+_Boulder Toss_:
+|tip Tosses a boulder at a random player, dealing damage.
+_Stomp_:
+|tip Deals damage to anyone within 25 yards.
+_Ground Spike_:
+|tip Summons spikes under a random player, dealing heavy damage. Move out. |only if heroic_dung()
+scenariogoal 27922 |goto 39.6,61.8
+step
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	39.2,62.5	41.6,55.0	50.0,53.7
+path	50.0,65.9	50.0,77.2
+Follow the path |goto Halls of Stone/1 50.0,77.2 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Maiden of Grief##27975
+_Pillar of Woe_:
+|tip Deals shadow damage to a player, leaving a DoT for 10 seconds.
+_Shock of Sorrow_:
+|tip Deals damage to all players and stuns for 6 seconds. Breaks upon taking damage.
+_Storm of Grief_:
+|tip Deals shadow damage to anyone within the area every second. Move out of this.
+_Parting Sorrow_:
+|tip Mana burns a player, dealing 1 shadow damage for each point of mana drained. |only if heroic_dung()
+Loot the Crystal Tear of Grief |q 29848/1 |only if havequest(29848)
+scenariogoal 27923 |goto 50.0,85.4
+step
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	50.0,85.9	50.0,68.9	50.7,53.4
+path	58.9,53.3	67.2,53.5	70.9,48.7
+Follow the path |goto Halls of Stone/1 70.9,48.7 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Brann Bronzebeard##28070
+accept Halls of Stone##13207 |goto 70.9,48.6 |noway |only if not completedq(13207)
+Tell him: "_Brann, it would be our honor!_"
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	70.9,48.7	72.5,57.5	76.8,64.0
+path	81.9,71.4
+Then, follow the path |goto Halls of Stone/1 81.9,71.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Tell Brann: "_Let's move Brann..._"
+_Searing Gaze_:
+|tip Deals fire damage to anyone within 5 yards. Move away.
+_Dark Matter_:
+|tip An orb of shadow moves towards a player. Upon impact, deals shadow damage and increases damage taken by 50% and movement speed by 30% Move away. |only if not heroic_dung()
+_Dark Matter_:
+|tip An orb of shadow moves towards a player. Upon impact, deals shadow damage and increases damage taken by 100% and movement speed by 50% Move away. |only if heroic_dung()
+_Adds_:
+|tip Keep the adds under control. Interrupt and dispel to minimize outgoing damage.
+scenariogoal 27924 |goto 81.7,71.1
+step
+Tell Brann: "_There will be plenty of time..._"
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	84.2,74.7	76.7,63.5	69.5,53.5
+path	60.5,53.3	50.3,53.2	50.1,43.0
+path	53.6,36.1	49.9,28.8
+Then, follow the path |goto Halls of Stone/1 49.9,28.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Brann Bronzebeard##28070 |goto Halls of Stone/1 49.9,28.7
+Tell Brann: "_We're with you Brann! Open it!_"
+Then, walk inside |goto Halls of Stone/1 49.9,22.8 < 10 |noway |c
+step "Giants"
+kill 3 Dark Rune Giant##27969 |q 29850/1 |goto 46.0,36.0
+only if havequest(29850)
+step
+kill Sjonnir The Ironshaper##27978
+_Chain Lightning_:
+|tip Arcs to up to 3 targets, dealing more damage per jump. Spread out.
+_Static Charge_:
+|tip Deals damage to nearby allies. Stay away from other players. Dispel whenever possible.
+_Lightning Ring_:
+|tip Deals nature damage to anyone within 10 yards. Increases nature damage taken by 10% for 15 seconds.
+_Frenzy_:
+|tip At 20% health, Sjonnir gainsed 50% increased attack speed and 100% increased damage.
+_Adds_:
+|tip Kill the adds quickly. Some can combine to become more powerful. New types emerge every 25% health.
+scenariogoal 1/27925 |goto Halls of Stone/1 49.9,13.0
+step
+talk Brann Bronzebeard##28070
+turnin Halls of Stone##13207 |goto 49.9,11.6
+only if havequest(13207)
+step
+map Halls of Stone/1
+path follow smart; loop off; ants curved; dist 15
+path	49.9,12.5	49.8,28.6	45.0,36.2
+path	35.8,34.9
+talk Kaldir Ironbane##55835
+turnin The Forlorn Watcher##29848
+turnin Corrupt Constructs##29850
+only if havequest(29848) or havequest(29850)
+step
+Congratulations! You have completed Halls of Stone
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme (CoS) 79-80",{
+mapid=521,
+achieveid={479},
+description="This guide will walk you through the Caverns of Time: The Culling of Stratholme dungeon.",
+},[[
+step
+label  "start"
+Press _I_ and queue for The Culling of Stratholme or enter the dungeon with your group |goto The Culling of Stratholme/1 87.5,71.2 |c
+step
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	87.5,71.2	89.8,68.0	89.4,64.9
+path	86.4,61.5
+talk Chromie##26527
+accept Dispelling Illusions##13149 |goto The Culling of Stratholme/1 86.4,61.5 |noway |only if not completedq(13149)
+Tell her: "_Chromie, you and I both know what's going to happen in this time stream._" |only if completedq(13151) |goto The Culling of Stratholme/2 50.5,76.0
+confirm |next "Dungeon" |only if completedq(13151)
+step
+click Plagued Grain Crate##336
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	83.9,59.1	81.2,59.7	77.8,54.9
+path	73.4,55.0	70.1,51.2
+Use your Arcane Disruptor on the 5 Suspicious Grain Crates at the waypoints. |use Arcane Disruptor##37888
+Plague Grain Crates Dispelled |q 13149/1 |only if havequest(13149)
+Click here when you have all 5 Dispelled |confirm |only if not havequest(13149)
+step
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	69.4,51.7	65.1,49.2	61.4,51.0
+path	54.8,50.6	49.2,44.4	47.6,39.8
+talk Chromie##27915
+turnin Dispelling Illusions##13149
+only if havequest(13149)
+step
+talk Chromie##27915
+accept A Royal Escort##13151 |goto 47.6,39.8 |only if not havequest(13151)
+only if not completedq(13151)
+step
+talk Chromie##27915 |goto 47.6,39.8
+Ask her: "_What do you think they're up to?_"
+confirm
+step
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	47.9,39.8	47.4,31.6	The Culling of Stratholme/2 50.6,87.7
+path	The Culling of Stratholme/2 53.9,83.0	The Culling of Stratholme/2 50.5,79.2
+Follow the path |goto The Culling of Stratholme/2 50.5,79.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Arthas##26499 |goto The Culling of Stratholme/2,50.5,79.2
+Tell him: "_Yes, my Prince. We are ready._"
+|tip You may have to wait for the dialogue to end before he appears here.
+confirm
+step
+label "Dungeon"
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	45.1,64.9	46.6,58.5	53.1,62.4
+path	61.5,52.9	59.7,39.0
+Move between these waypoints in order to find the mobs that spawn
+|tip A white flag on the minimap shows the current spawn location.
+Click here when _Meathook_ spawns on Scourge Wave 5 |confirm
+step
+kill Meathook##26529
+_Constricting Chains_:
+|tip Stuns a player and deals damage over 5 seconds.
+_Disease Explusion_:
+|tip Deals nature damage and interrupts spellcasting in a 10 yard range.
+_Frenzy_:
+|tip Meathook increases his damage by 10% for 30 seconds. Stacks up to 10 times. |only if heroic_dung()
+scenariogoal 27930 |goto 52.9,62.4
+step
+map The Culling of Stratholme/1
+path follow smart; loop off; ants curved; dist 15
+path	45.1,64.9	46.6,58.5	53.1,62.4
+path	61.5,52.9	59.7,39.0
+Move between these waypoints in order to find the mobs that spawn
+|tip A white flag on the minimap shows the current spawn location.
+Click here when _Salramm the Fleshcrafter_ spawns on Scourge Wave 10 |confirm
+step
+kill Salramm the Fleshcrafter##26530
+_Steal Flesh_:
+|tip Reduces a random player's damage by 75% while increasing Salramm's damage by 75%.
+_Summon Ghouls_:
+|tip Summons 2 ghoul minions. Kill these quickly before they explode.
+_Explode Ghoul_:
+|tip Detonates a nearby ghoul, dealing fire damage in a 10 yard radius.
+_Curse of Twisted Flesh_:
+|tip Reduces a player's health by 25% and deals shadow damage over 30 seconds. Dispel quickly. |only if heroic_dung()
+scenariogoal 27931 |goto 52.9,62.4
+step
+talk Arthas##26499 |goto 58.8,36.7
+Tell him: "_We're only doing what is best for Lordaeron, your Highness._"
+confirm
+step
+map The Culling of Stratholme/2
+path follow smart; loop off; ants curved; dist 15
+path	58.1,32.7	59.0,27.0	61.7,31.4
+path	65.8,28.4
+Fight the mobs that spawn at these points
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Chrono-Lord Epoch##26532
+_Time Warp_:
+|tip Reduces melee, casting, and movement speed by 70% for 6 seconds.
+_Time Step_:
+|tip Randomly charges a player, dealing damage.
+_Wounding Strike_:
+|tip Deals damage and reduces healing by 25%. Leaves a bleed over 4 seconds.
+_Curse of Exertion_:
+|tip Increases ability resource cost by 100%. Dispel.
+_Time Stop_:
+|tip Stuns all players for 2 seconds. |only if heroic_dung()
+scenariogoal 27932 |goto 66.1,26.0
+step
+talk Arthas##26499 |goto 65.5,28.8
+Tell him: "_I'm Ready._"
+confirm
+step
+Follow Arthas down the steps |goto The Culling of Stratholme/2,64.9,14.2
+step
+talk Arthas##26499 |goto 64.9,14.2
+Tell him: "_For Lordaeron!_"
+confirm
+step
+map The Culling of Stratholme/2
+path follow smart; loop off; ants curved; dist 15
+path	64.9,14.2	62.2,9.9	56.6,11.4
+path	50.9,15.4	45.4,18.3	38.3,24.8
+path	40.1,37.2
+Follow Arthas |goto The Culling of Stratholme/2 40.1,37.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Infinite Corruptor##32273
+_Corrupting Blight_:
+|tip Deals 8% of the target's max health as damage every 3 seconds for 2 minutes. Stacks up to 5 times.
+_Void Strike_:
+|tip Deals damage, bypassing armor.
+scenariogoal 24857 |goto The Culling of Stratholme/2 51.9,41.4
+Click here if you didn't make the timer |confirm
+only if heroic_dung()
+step
+talk Arthas##26499 |goto 40.1,37.2
+Tell him: "_I'm ready to battle the dreadlord, sire._"
+confirm
+step
+kill Mal'Ganis##26533
+_Sleep_:
+|tip Puts a player to sleep for 10 seconds. Dispel this.
+_Mind Blast_:
+|tip Deals shadow damage to a random player.
+_Vampiric Touch_:
+|tip Heals Mal'Ganis for 50% of his damage dealt.
+_Carrion Swarm_:
+|tip Frontal cone attack that deals shadow damage and leaves a 15 second DoT. Don't stand in front of him.
+scenariogoal 1/27933 |goto 33.5,44.9
+step
+talk Chromie##30997
+|tip You may have to wait a few moments for him to appear.
+turnin A Royal Escort##13151 |goto 32.0,44.7
+only if havequest(13151)
+step
+Congratulations! You have completed The Culling of Stratholme
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Oculus (OC) 79-80",{
+mapid=528,
+achieveid={487},
+description="This guide will walk you through the The Oculus dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for The Oculus or enter the dungeon with your group |goto The Oculus/1 61.3,47.6 |c
+step
+accept The Struggle Persists##13124 |goto The Oculus 63.3,42.0
+only if not completedq(13124)
+step
+map The Oculus/1
+path follow smart; loop off; ants curved; dist 10
+path	61.3,47.6	64.3,30.8	61.0,17.2
+path	52.6,11.0	35.4,19.7	33.4,35.6
+path	38.4,50.9
+Follow the path and click the portal at the end |goto 47.9,69.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Drakos the Interrogator##27654
+scenariogoal 27926 |goto 48.9,76.1
+step
+talk Belgaristrasz##27658
+turnin The Struggle Persists##13124 |goto 50.1,81.2
+only if havequest(13124)
+step
+talk Belgaristrasz##27658
+accept A Unified Front##13126 |goto 50.1,81.2
+only if not completedq(13126)
+step
+Talk to either Verdisa, Belgaristrasz or Eternos and obtain a dragon.
+talk Belgaristrasz##27658
+collect Ruby Essence##37860 |or
+|tip Talk to Belgaristrasz for the Ruby Essence.
+talk Eternos##27659
+collect Amber Essence##37859 |or
+|tip Talk to Eternos for the Amber Essence.
+talk Verdisa##27657
+collect Emerald Essence##37815 |or
+|tip Talk to Verdisa for the Emerald Essence.
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+stickystart "Const"
+step
+map The Oculus/2
+path follow smart; loop off; ants curved; dist 12
+path	47.1,74.0	39.8,61.8	42.7,49.9
+path	55.2,49.4	58.4,60.5	57.7,66.3
+Follow the path |goto The Oculus/2 57.7,66.3 < 25
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+Clear this platform |goto The Oculus/2 73.2,75.3
+confirm
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+Clear this platform |goto The Oculus/2 26.4,79.6
+confirm
+step "Const"
+kill 10 Centrifuge Construct##27641 |q 13126/1 |goto 29.3,76.3
+only if havequest(13126)
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+kill Varos Cloudstrider##27447
+scenariogoal 27927 |goto The Oculus/2 46.2,19.2
+step
+talk Image of Belgaristrasz##28012
+turnin A Unified Front##13126 |goto The Oculus/2 45.7,18.8
+accept Mage-Lord Urom##13127 |goto The Oculus/2 45.7,18.8
+only if not completedq(13127)
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+Fly up to this platform with your drake |goto The Oculus/3 62.2,15.0 < 5 |c
+step
+Attack Mage-Lord Urom.  When he vanishes, kill the mobs he summons
+kill Mage-Lord Urom##27655 |goto The Oculus/3 70.7,27.0
+confirm
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+Attack Mage-Lord Urom.  When he vanishes, kill the mobs he summons
+kill Mage-Lord Urom##27655 |goto The Oculus/3 50.4,87.8
+confirm
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+Attack Mage-Lord Urom. When he vanishes, kill the mobs he summons
+kill Mage-Lord Urom##27655 |goto The Oculus/3 25.6,31.1
+confirm
+step
+Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
+Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
+Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
+Ride your dragon |invehicle
+step
+kill Mage-Lord Urom##27655
+scenariogoal 27928 |goto The Oculus/3 44.0,44.9
+step
+talk Raelorasz##26117
+turnin Mage-Lord Urom##13127 |goto The Oculus/3 44.5,44.4
+accept A Wing and a Prayer##13128 |goto The Oculus/3 44.5,44.4
+only if not completedq(13128)
+step
+Use your Ruby Essence |invehicle |use Ruby Essence##37860 |only if itemcount(37860) > 0 |next "ruby"
+Use your Amber Essence |invehicle |use Amber Essence##37859 |only if itemcount(37859) > 0 |next "amber"
+Use your Emerald Essence |invehicle |use Emerald Essence##37815 |only if itemcount(37815) > 0 |next "emerald"
+step
+label "emerald"
+kill Ley-Guardian Eregos
+|tip As the Emerald Drake, your job will be to heal your group.
+_Leeching Poison_:
+|tip Puts a DoT on your target, siphoning health from that target to you. It will be important that you keep 3 stacks up on the boss at all times at the very least.
+_Touch the Nightmare_:
+|tip Damages you in order to reduce your enemies damage output. It should be used on Ley-Guardian Eregos only, however DO NOT SPAM this ability.
+_Dream Funnel_:
+|tip Transfers 5% of your health to a friendly target. This along with Leeching Poison is what you should be using the most.
+scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+next "turnin"
+step
+label "ruby"
+kill Ley-Guardian Eregos##27656
+|tip As the Ruby Drake, your job will be to Tank the boss and the whelplings as best you can at all times.
+_Searing Wrath_:
+|tip Your only attack, and jumps to nearby opponents when used.
+_Evasive Aura_:
+|tip An ability that gives you a charge whenever you're damaged. The charge is used for your 3rd ability.
+_Evasive Maneuvers_:
+|tip An ability that allows you to dodge all incoming damage.
+scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+next "turnin"
+step
+label "amber"
+kill Ley-Guardian Eregos##27656
+|tip As the Amber Drake, your job will be to damage Ley-Guardian Eregos.
+_Shock Lance_:
+|tip Your primary attack.
+_Stop Time_:
+|tip An important ability, freezing all enemy targets when used. It is important to use this when Ley-Guardian Eregos uses Enraged Assault.
+_Temporal Rift_:
+|tip Channeled ability, which should be used until you have 10 Shock Charges, at which point you will want to use Shock Lance.
+scenariogoal 27929 |goto The Oculus/0 49.6,49.2
+next "turnin"
+step
+label "turnin"
+talk Belgaristrasz##27658
+turnin A Wing and a Prayer##13128 |goto The Oculus/4 47.6,83.7
+only if havequest(13128)
+step
+Congratulations! You have completed The Oculus
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Lightning (HoL) 79-80",{
+mapid=525,
+achieveid={486},
+description="This guide will walk you through the Halls of Lightning dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Halls of Lightning or enter the dungeon with your group |goto Halls of Lightning/1 7.4,53.8 |c
+step
+talk Stormherald Eljrrin##56027
+accept Diametrically Opposed##29860 |goto Halls of Lightning 11.9,53.8
+accept Whatever it Takes!##29861 |goto Halls of Lightning 11.9,53.8
+accept Clearing the Way##29862 |goto Halls of Lightning 11.9,53.8
+only if not completedq(29860) or not completedq(29861) or not completedq(29862)
+stickystart "Storm"
+step
+map Halls of Lightning/1
+path follow smart; loop off; ants curved; dist 15
+path	11.5,53.8	20.2,53.7	32.6,53.6
+path	44.8,39.1
+Follow the path |goto Halls of Lightning/1 44.8,39.1 < 15
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill General Bjarngrim##28586
+modelnpc Stormforged Lieutenant##29240+
+_Charge Up_:
+|tip This aura empowers any mobs nearby with 30% increased damage. Kill his adds first.
+_Battle Stance_:
+|tip 25% haste.
+_Mortal Strike_:
+|tip Reduces healing received by 50%.
+_Pummel_:
+|tip Interrupts spellcasting for 4 seconds.
+_Berserker Stance_:
+|tip 25% damage.
+_Whirlwind_:
+|tip Deals damage to anyone within 8 yards. Run away.
+_Cleave_:
+|tip Deals frontal damage. Stay behind him.
+_Defensive Stance_:
+|tip 25% damage reduction.
+_Knock Away_:
+|tip Knocks back anyone within 10 yards.
+_Spell Reflection_:
+|tip Reflects the next spell cast at Bjarngrim.
+scenariogoal 27918 |goto Halls of Lightning/1 47.2,42.3
+step
+map Halls of Lightning/1
+path follow smart; loop off; ants curved; dist 15
+path	44.8,39.1	54.8,53.6	67.0,53.6
+Follow the path |goto Halls of Lightning/1 67.0,53.6 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Storm"
+kill 3 Stormforged Tactician##28581+ |q 29862/2 |goto 58.1,53.7
+kill 3 Stormforged Mender##28582+ |q 29862/1 |goto 58.1,53.7
+only if havequest(29862)
+step
+map Halls of Lightning/1
+path follow smart; loop off; ants curved; dist 15
+path	67.0,53.6	78.8,55.8	Halls of Lightning/2 56.0,21.2
+kill Slag##28585+
+|tip Avoid standing near these when they die, as they will explode.
+Follow the path and _go up_ the steps |goto Halls of Lightning/2 56.0,21.2 < 8
+|tip Do not attack the slags or stop until you are up the stairs!
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Halls of Lightning/2
+path follow smart; loop off; ants curved; dist 15
+path	57.2,25.8	52.3,25.9	44.3,25.4
+Follow the path |goto Halls of Lightning/2 44.3,25.4 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Volkhan##28587
+|tip The best strategy is to ignore the golems and burn down Volkhan.
+_Heat_:
+|tip Heats a Molten Golem, healing it for 20%.
+_Temper_:
+|tip Creates 2 Molten Golems.
+_Shattering Stomp_:
+|tip At 25% health, Stomp does physical damage and shatters any brittle Molten Golems.
+_Molten Golem_:
+|tip Attack random players. At 1% health, they become inactive, waiting to be shattered.
+scenariogoal 27919 |goto Halls of Lightning/2,41.8,23.1
+step
+map Halls of Lightning/2
+path follow loose;loop off;ants straight
+path	47.0,44.1	47.0,52.3	51.4,54.2
+path	57.9,54.3
+kill Titanium Siegebreaker##28961
+Follow the path through the hallway, stopping at each waypoint |goto Halls of Lightning/2 57.9,54.3 < 10
+|tip At each of the waypoint, enemies will spawn. Kill the Titanium Siegebreakers first, they use a fear ability.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Ionar##28546
+_Static Overload_:
+|tip Zaps the player and nearby allies over 10 seconds. At the end, knocks back. Don't move near allies.
+_Disperse_:
+|tip At 50% health, Ionar becomes electricity that pursues players. Run away!
+_Spark of Ionar_:
+|tip These deal nature damage to anyone within 5 yards and cause players to take 2% increased damage. Effect stacks.
+scenariogoal 27920 |goto 61.1,75.0
+step
+kill Stormforged Runeshaper##28836
+|tip Kill these first, they use a massive damage AoE
+map Halls of Lightning/2
+path follow smart; loop off; ants curved; dist 15
+path	57.6,75.5	48.9,72.0	39.5,68.2
+path	29.5,75.8	20.4,82.8	22.6,73.1
+path	19.2,64.8
+Follow the path |goto Halls of Lightning/2 19.2,64.8 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Loken##28923
+_Pulsing Shockwave_:
+|tip Deals more damage the further players stand from Loken. Stay close.
+_Lightning Nova_:
+|tip Deals significant nature damage to players close to Liken. Run away.
+_Arc Lightning_:
+|tip Functions exactly like chain lightning. Stay spread out around him. |only if heroic_dung()
+Loot Loken's Tongue |q 29861/1 |goto Halls of Lightning/2 19.2,56.1 |only if havequest(29861)
+scenariogoal 1/27921 |goto Halls of Lightning/2 19.2,56.1
+step
+talk Stormherald Eljrrin##56027
+turnin Diametrically Opposed##29860 |goto 19.1,62.8
+turnin Whatever it Takes!##29861 |goto 19.1,62.8
+turnin Clearing the Way##29862 |goto 19.1,62.8
+only if havequest(29860) or havequest(29861) or havequest(29862)
+step
+Congratulations! You have completed Halls of Lightning
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle (UP) 79-80",{
+mapid=524,
+achieveid={488},
+description="This guide will walk you through the Utgarde Keep: Utgarde Pinnacle dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Utgarde Pinnacle or enter the dungeon with your group |goto Utgarde Pinnacle/2 44.5,16.1 |c
+step
+talk Image of Argent Confessor Paletress##56072
+accept Working at the Source##29864 |goto Utgarde Pinnacle/2,45.1,18.1
+only if not completedq(29864)
+step
+talk Brigg Smallshanks##30871
+accept Junk in My Trunk##13131 |goto 44.0,18.2
+accept Vengeance Be Mine!##13132 |goto 44.0,18.2
+only if not completedq(13131) or not completedq(13132)
+stickystart "Junk"
+step
+map Utgarde Pinnacle/2
+path follow smart; loop off; ants curved; dist 12
+path	44.4,18.7	44.3,34.0	40.6,35.9
+path	35.5,35.8	33.5,42.9	34.0,51.6
+path	33.3,59.9	35.1,69.0	39.6,69.1
+path	39.7,77.1	Utgarde Pinnacle/1 31.1,74.9
+Follow this path until you get downstairs. |goto Utgarde Pinnacle/1 31.1,74.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Svala Sorrowgrave##26668
+_Call Flames_:
+|tip Deals fire damage to random players.
+_Ritual of the Sword_:
+|tip A random player will be paralyzed by Channelers on the alter. Kill the channelers within 25 seconds to free the player.
+_Ritual Channeler_:
+|tip Surrounded by a shield that places a stacking DoT on attacking players. Each DPS should kill 1 Channeler.
+scenariogoal 27885 |goto Utgarde Pinnacle,33.8,74.2
+step
+map Utgarde Pinnacle/1
+path follow strict; loop off; ants curved; dist 12
+path	35.9,76.1	35.9,86.2	45.7,86.3
+path	Utgarde Pinnacle/2 52.7,75.5	Utgarde Pinnacle/2 52.2,84.4
+path	Utgarde Pinnacle/2 58.1,84.5
+Follow the path |goto Utgarde Pinnacle/2 58.1,84.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Gortok Palehoof##26687
+click Stasis Generator##7811
+|tip This will trigger an event where 3 out of 5 statues come to life, the third being the actual boss.
+_Jormunger_:
+|tip Leaves poison on the ground and summons non-elite adds.
+_Rhino_:
+|tip Has a heavy stomp damage and randomly charges victims, leaving a dot.
+_Furlbog_:
+|tip Casts Chain Lightning and randomly changes aggro, as well as an AoE Fear.
+_Worgen_:
+|tip  Uses Mortal Strike on the tank.
+_Gortok Palehoof_:
+_Arcing Smash_:
+|tip Does cone damage wherever he is facing.
+_Impale_:
+|tip Leaves a DoT on a random party member.
+_Withering Roar_:
+|tip Decreases your maximum health by 500 and stacks.  The longer the fight lasts the harder it will become to heal.
+scenariogoal 27886 |goto Utgarde Pinnacle/2,61.8,84.1
+modelnpc 26683
+modelnpc 26686
+modelnpc 26684
+modelnpc 26685
+step
+kill Skadi the Ruthless##26693
+|tip Aggroing the boss will trigger an event. Ymirjar mobs will come to fight you and you will have to battle them up the hall.
+_Freezing Cloud_:
+|tip Don't stand in this.
+_Harpoon Launcher_:
+|tip Ymirjar Harpooners drops ammo for the launchers. Click them to pick them up. When you get the message "Skadi the Ruthless is within range of the harpoon launchers!" click them to shoot him down.
+_Whirlwind_:
+|tip Kite Skadi around during this attack to minimize damage.
+_Poisoned Spear_:
+|tip Poisons a player, dealing nature damage. Dispel quickly.
+scenariogoal 27887 |goto 68.7,65.1
+step
+map Utgarde Pinnacle/2
+path follow smart; loop off; ants curved; dist 12
+path	68.3,36.7	62.8,37.0	55.5,37.4
+path	Utgarde Pinnacle/1 56.3,18.3	Utgarde Pinnacle/1 56.2,32.4
+path	Utgarde Pinnacle/1 49.7,44.4	Utgarde Pinnacle/2 48.9,53.7
+Follow the path |goto Utgarde Pinnacle/2 48.9,53.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill King Ymiron##26861
+_Gift of the Fallen Kings_: |only if not heroic_dung()
+|tip Used at 66% and 33% health. Grants a new ability. |only if not heroic_dung()
+_Gift of the Fallen Kings_: |only if heroic_dung()
+|tip Used every 20% health. Grants a new ability. |only if heroic_dung()
+_Spirit Burst_:
+|tip Deals shadow damage to all players. Lasts until the next Gift.
+_Summon Spirit Fount_:
+|tip Deals shadow damage to a random player every second. Lasts until the next Gift.
+_Spirit Strike_:
+|tip Increases physical damage taken, stacking up to 100 times. Lasts until the next Gift.
+_Summon Avenging Spirits_:
+|tip Summons 4 spirits to attack players. Lasts until the next Gift.
+_Screams of the Dead_: |only if not heroic_dung()
+|tip At 66% and 33%, King Ymiron will stun the entire party for 8 seconds. |only if not heroic_dung()
+_Screams of the Dead_: |only if heroic_dung()
+|tip Every 20% health, King Ymiron will stun the entire party for 8 seconds. |only if heroic_dung()
+_Dark Slash_:
+|tip Deals damage equal to 50% of the targets current health.
+_Bane_:
+|tip Deals AoE damage in a 10 yard radius whenever Ymiron is attacked. Dispel this.
+_Fetid Rot_:
+|tip Deals nature damage and reduces healing received by 25%. Dispel this.
+scenariogoal 1/27888 |goto Utgarde Pinnacle/2,42.6,53.5
+step "Junk"
+Loot Untarnished Silver Bar |q 13131/1
+Loot Shiny Bauble |q 13131/2
+Loot Golden Goblet |q 13131/3
+Loot Jade Statue |q 13131/4
+only if havequest(13131)
+step
+talk Image of Argent Confessor Paletress##56072
+turnin Working at the Source##29864 |goto 45.1,18.1
+only if havequest(29864)
+step
+talk Brigg Smallshanks##30871
+turnin Junk in My Trunk##13131 |goto 44.0,18.2
+turnin Vengeance Be Mine!##13132 |goto 44.0,18.2
+only if havequest(13131) or havequest(13132)
+step
+Congratulations! You have completed Utgarde Pinnacle.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Trial of The Champion (ToC) 80",{
+mapid=542,
+achieveid={4296},
+description="This guide will walk you through the Trial of the Champion dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Trial of the Champion or enter the dungeon with your group |goto Trial of the Champion/1 51.2,30.2 |c
+step
+Click the Quest Discovered box |only if not completedq(29851)
+accept Champion of the Tournament##29851 |goto Trial of the Champion 49.6,30.3 |only if not completedq(29851)
+click Lance Rack##130
+collect Argent Lance##46106
+step
+Go to the center to start the event. |goto Trial of the Champion 51.4,51.3 < 8 |c
+step
+Equip your _Argent Lance_. |equipped Argent Lance##46106 |use Argent Lance##46106
+clicknpc Argent Warhorse##36557
+Ride an Argent Warhorse. |invehicle |goto 57.9,33.6
+stickystart "Warhorse"
+step
+talk Arelas Brightstar##35005 |goto 51.0,53.1
+Tell him: "_I am ready._"
+|tip You will be confronted with several waves of enemies, 3 at a time. Focus on 1 enemy at a time.
+confirm
+step "Warhorse"
+_Thrust_:
+|tip Primary attack.
+_Shield Break_:
+|tip Used to remove an enemy's Defend buff.
+_Charge_:
+|tip Deals massive damage and removes 1 layer of Defend.
+_Defend_
+|tip Reduces damage you take by 30%, stacking 3 times. This should be maintained at 3 at all times.
+step
+The first boss encounter will consist of the last group of jousters you defeated.
+_Kill priority_:
+_Runok Wildmane_:
+|tip Has Healing Wave and Earth Shield. Interrupt Healing Wave at all costs.
+_Eressea Dawnsinger_:
+|tip She will Polymorph random party members, as well as use Blast Wave to AoE your group down.
+_Deathstalker Visceri_:
+|tip He will use Poison Bottle, leaving a green puddle on the ground that deals damage, and Fan of Knives.
+_Mokra the Skullcrusher_:
+|tip He will use Mortal Strike on the tank, reducing healing received by 50% as well as a Bladestorm.
+_Zul'tore_:
+|tip He will use Multishot and Lightning Arrow which can be dispelled.
+modelnpc Runok Wildmane##35571
+modelnpc Mokra the Skullcrusher##35572
+modelnpc Eressea Dawnsinger##35569
+modelnpc Zul'tore##35570
+modelnpc Deathstalker Visceri##35617
+scenariogoal 1/25098 |goto Trial of the Champion/1 51.1,52.5
+step
+talk Arelas Brightstar##35005 |goto Trial of the Champion/1 47.9,53.9
+Tell him: "_I am ready for the next challenge._"
+|tip There will be 3 groups of trash that come out
+kill Argent Priestess##35307
+|tip Always kill these first, interrupting heals and killing Fountains of Light.
+confirm
+modelnpc Argent Monk##35305
+modelnpc Argent Lightwielder##35309
+step
+There will be one of two bosses at this point:
+Click here for _Eadric_ |next "Eadric" |confirm
+Click here for _Argent Confessor Paletress_ |next "Paletress" |confirm
+modelnpc Eadric##35119
+modelnpc Argent Confessor Paletress##34928
+step
+label "Eadric"
+kill Eadric##35119
+_Hammer of Justice_:
+|tip Stuns a random party member for 6 seconds. Dispel this.
+_Radiance_:
+|tip Turn away from Eadric so you aren't blinded. It will render you unable to act for 2 seconds.
+_Hammer of the Righteous_
+|tip Thrown at a random party member. If not stunned, use your special action button to throw it back at Eadric.
+scenariogoal 2/25313 |goto Trial of the Champion/1 46.0,52.6 |next "Black_Knight"
+step
+label "Paletress"
+kill Argent Confessor Paletress##34928
+_Holy Fire_:
+|tip Deals fire damage and additional fire damage of 8 seconds.
+_Summon Memory_:
+|tip Used at 50% health. Kill the memory first, as it uses fear and places a shield on Paletress.
+_Reflective Shield_:
+|tip Active on Paletress while the Memory is alive. Absorbs all damage and reflects 25% of it back.
+scenariogoal 2/25313 |goto Trial of the Champion/1 46.0,52.6
+step
+label	"Black_Knight"
+talk Arelas Brightstar##35005 |goto 51.0,53.1
+Tell him: "_I am ready._"
+confirm
+step
+kill The Black Knight##35451
+There are 3 phases to this fight.
+_Phase 1_:
+Raise Argent Herald:
+|tip Summons ghouls which leap around and drop aggro.  They also Explode, dealing out AoE Damage.
+Death's Respite:
+|tip Stuns a player for 2 seconds and knocks them back, dealing massive damage.
+_Phase 2_:
+Army of the Dead:
+|tip Summons several ghouls that leap around and explode.
+Desecration:
+|tip Deals heavy damage to anyone standing in it. Move out.
+_Phase 3_:
+Death's Bite:
+|tip An aura which deals out shadowfrost damage and increases magic damage taken by 5% per stack, up to 100 stacks.
+Marked for Death:
+|tip Leaves a debuff that increases magic damage taken by 200% for 10 seconds.
+Defeat the Black Knight. |q 29851/1 |only if havequest(29851)
+scenariogoal 3/27934
+step
+Click the Complete Quest Box
+turnin Champion of the Tournament##29851
+only if havequest(29851)
+step
+Congratulations! You have completed Trial of the Champion.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Forge of Souls (FoS) 80",{
+mapid=601,
+achieveid={4516},
+description="This guide will walk you through the Forge of Souls dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Forge of Souls or enter the dungeon with your group |goto The Forge of Souls/1 66.1,88.9 |c
+step
+talk Lady Jaina Proudmoore##37597
+turnin Inside the Frozen Citadel##24510 |goto The Forge of Souls 64.0,91.2 |only if havequest(24510)
+accept Echoes of Tortured Souls##24499 |goto The Forge of Souls 64.0,91.2
+only if not completedq(24499)
+step
+kill Spiteful Apparition##36551 |modelnpc Spiteful Apparition##29147
+|tip Be wary of these ghostly skulls. They are invisible.
+map The Forge of Souls/1
+path follow smart; loop off; ants curved; dist 15
+path	63.9,90.1	61.7,83.9	67.3,79.3
+path	69.3,74.2	70.0,68.0	69.3,63.2
+path	66.7,58.4	59.4,60.5	58.5,65.3
+path	54.5,67.1	53.8,58.5	50.6,58.5
+path	46.7,54.0	43.6,54.0
+Follow the path |goto The Forge of Souls/1 43.6,54.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Bronjahm##36497
+_Corrupt Soul_:
+|tip If not dispelled before the debuff expires, stuns the player for 2 seconds.
+_Corrupted Soul Fragment_:
+|tip Moves towards Bronjahm. If it reaches him, it will heal him for a large amount of health.
+_Soulstorm_:
+|tip At 35% health, the storm begins. All players must be within 10 yards of him or suffer damage and reduced speed.
+_Fear_:
+|tip Random players are feared during Soulstorm.
+scenariogoal 27935 |goto The Forge of Souls/1 43.3,49.8
+step
+kill Spiteful Apparition##36551 |modelnpc Spiteful Apparition##29147
+|tip Be wary of these ghostly skulls. They are invisible.
+map The Forge of Souls/1
+path follow smart; loop off; ants curved; dist 15
+path	43.3,50.0	42.9,45.2	46.7,45.6
+path	48.1,40.7	46.3,35.6	44.1,30.3
+path	47.0,24.8	49.4,19.6	47.1,16.7
+Follow the path |goto The Forge of Souls/1 47.1,16.7 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Devourer of Souls##36502
+_Mirrored Soul_:
+|tip Damage taken by Devourer of Souls is split between the affected player. Stop attacking to avoid killing them.
+_Phantom Blast_:
+|tip Deals massive shadow damage to the targeted player. Interrupt this as often as possible.
+_Well of Souls_:
+|tip Jumps on a player and leaves a pool on the ground. Players standing in the pool take heavy damage.
+_Unleashed Souls_:
+|tip Cannot be attacked. Run away for the 15 second duration.
+_Wailing Souls_:
+|tip Deals damage and knocks back anyone in front of Devourer of Souls.
+scenariogoal 1/27936 |goto The Forge of Souls/1 45.6,14.9
+step
+talk Lady Jaina Proudmoore##38160
+turnin Echoes of Tortured Souls##24499 |goto The Forge of Souls/1 44.0,13.1
+accept The Pit of Saron##24683 |goto The Forge of Souls/1 44.0,13.1
+only if not completedq(24683)
+step
+Congratulations! You have completed The Forge of Souls.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Pit of Saron (PoS) 80",{
+mapid=602,
+achieveid={4517},
+description="This guide will walk you through the Pit of Saron dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for the Pit of Saron or enter the dungeon with your group |goto Pit of Saron/0 40.9,80.5 |c
+step
+talk Lady Jaina Proudmoore##38160
+|tip You may have to pull a mob to get her to run through the portal.
+turnin The Pit of Saron##24683 |goto Pit of Saron 40.8,79.7 |only if havequest(24683)
+accept The Path to the Citadel##24498 |goto Pit of Saron 40.8,79.7
+only if not completedq(24498)
+stickystart "Slaves"
+step
+map Pit of Saron/0
+path follow smart; loop off; ants curved; dist 15
+path	41.1,78.7	42.6,72.8	45.8,68.3
+path	49.4,68.5	52.8,64.9	55.7,62.1
+path	58.9,59.3	63.7,54.9
+Follow the path |goto Pit of Saron/0 63.7,54.9 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step "Slaves"
+click Ball and Chain##181
+15 Alliance Slaves Freed. |q 24498/1
+only if havequest(24498)
+step
+kill Forgemaster Garfrost##36494
+_Permafrost_:
+|tip Deals frost damage and increases damage taken by 20% for 3 seconds. Line of sight Garfrost using Saronite boulders to clear your stacks.
+_Throw Saronite_:
+|tip Chunks of saronite land on the ground. Don't stand near the impact area.
+_Thundering Stomp_:
+|tip Stuns all players for 2 secons.
+_Chilling Wave_:
+|tip Deals massive frost damage to anyone in front of Garfrost. Move behind him.
+_Deep Freeze_:
+|tip Slows movement speed and freezes the player after 14 seconds, dealing frost damage.
+scenariogoal 27937 |goto 66.4,55.5
+step
+talk Martin Victus##37591
+turnin The Path to the Citadel##24498 |goto 65.5,54.9
+accept Deliverance from the Pit##24710 |goto 65.5,54.9
+only if not completedq(24710)
+step
+map Pit of Saron/0
+path follow smart; loop off; ants curved; dist 15
+path	62.7,54.9	60.1,50.9	56.9,47.1
+path	54.7,43.1	51.0,42.6
+Follow the path |goto Pit of Saron/0 51.0,42.6 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Ick##36476
+|tip Kill the Plagueborn Horrors first.
+_Mighty Kick_:
+|tip Deals damage and knocks the player back.
+_Pursuit_:
+|tip Run away quickly if you are focused.
+_Poison Nova_:
+|tip Deals fatal nature damage in a 15 yard radius. Run away.
+_Explosive Barrage_:
+|tip Hurls missiles at all players, leaving Exploding Orbs. These detonate after 3 seconds. Run away.
+_Toxic Waste_:
+|tip Leaves a puddle of waste at a location, dealing nature damage. Move out.
+scenariogoal 27938 |goto 47.4,41.5
+step
+map Pit of Saron/0
+path follow smart; loop off; ants curved; dist 15
+path	47.1,41.4	49.5,43.2	52.3,40.3
+path	49.7,31.0	54.0,31.5	57.3,32.1
+Follow the path |goto Pit of Saron/0 57.3,32.1 < 10
+|tip Take it slow, mobs will run and take up position in front of you.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Pit of Saron/0
+path follow smart; loop off; ants curved; dist 15
+path	59.8,31.3	62.4,28.7	63.0,22.4
+path	63.0,22.4	60.8,19.8	56.3,18.1
+path	51.5,18.0	47.8,19.2
+Follow the path, stopping on the tile to kill the big elemental |goto Pit of Saron/0 47.8,19.2 < 10
+|tip Let the tank go first and avoid the falling ice on the ground.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Scourgelord Tyrannus##36658
+_Forceful Smash_:
+|tip Knocks a player back, dealing massive physical damage.
+_Unholy Power_:
+|tip Slows Tyrannus' speed and increases his damage. Kite him around during this.
+_Overlord's Brand_:
+|tip Redirects damage from the branded character to the tank. Stop attacking.
+_Mark of Rimefang_:
+|tip Rimefang will attack this player from the air. Run away from group members and keep moving.
+scenariogoal 1/27939 |goto Pit of Saron/0 44.5,23.1
+step
+talk Lady Jaina Proudmoore##38160
+|tip you will have to wait for her to show up.
+turnin Deliverance from the Pit##24710 |goto Pit of Saron/0 39.7,16.1
+accept Frostmourne##24711 |goto Pit of Saron/0 39.7,16.1
+only if not completedq(24711)
+step
+Congratulations! You have completed the Pit of Saron.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Reflection (HoR) 80",{
+mapid=603,
+achieveid={4518},
+description="This guide will walk you through the Halls of Reflection dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Halls of Reflection or enter the dungeon with your group |goto Halls of Reflection/1 47.3,80.8 |c
+step
+talk Lady Jaina Proudmoore##38160 |goto Halls of Reflection/1 45.0,76.3
+turnin Frostmourne##24711 |goto Halls of Reflection/1 45.0,76.3 |only if havequest(24711)
+Ask her: "_Can you remove the sword?_"
+|tip Watch the dialogue that follows.
+confirm
+only if not completedq(24500)
+step
+talk Lady Jaina Proudmoore##38160 |goto Halls of Reflection/1 45.0,76.3
+|tip When your group is ready, tell her that you think you hear Arthas coming
+confirm
+only if completedq(24500)
+step
+_Kill Priority_:
+kill Ghostly Priest##38175
+|tip Interrupt Dark Mending and Cower in fear as much as possible.
+kill Shadowy Mercenary##38177
+|tip Dispel Deadly Poison and be wary of Kidney Shot, a 3 second stun.
+kill Phantom Mage##38172
+|tip Interrupt Flamestrike every time. Copies of the mage will explode upon death, stay at range.
+kill Tortured Rifleman##38176
+|tip Dispel Cursed Arrow as much as possible. It increases magic damage taken by 50%.
+kill Spectral Footman##38173
+|tip Casters shouldn't stand near these, they use Shield Bash. This interrupts spellcasting.
+|tip Line of sight the trash and wait for them to come to you. Waves of 4-5 enemies will come at a time. |goto Halls of Reflection/1 41.3,61.9
+At wave 5, you will face _Falric_. Click here to move onto his strategy. |confirm
+step
+kill Falric##38112
+_Quivering Strike_:
+|tip Deals damage and reduces dodge chance by 20% for 5 seconds. Dispellable.
+_Impending Despair_:
+|tip If not dispelled within 6 seconds, stuns the target for 6 seconds.
+_Defiling Horror_:
+|tip Fears the party and deals shadow damage every second for 4 seconds.
+_Hopelessness_: |only if not heroic_dung()
+|tip Reduces damage and healing done by the entire party by 20% per cast. |only if not heroic_dung()
+_Hopelessness_: |only if heroic_dung()
+|tip Reduces damage and healing done by the entire party by 25% per cast. |only if heroic_dung()
+scenariogoal 27915
+step
+_Kill Priority_:
+kill Ghostly Priest##38175
+|tip Interrupt Dark Mending and Cower in fear as much as possible.
+kill Shadowy Mercenary##38177
+|tip Dispel Deadly Poison and be wary of Kidney Shot, a 3 second stun.
+kill Phantom Mage##38172
+|tip Interrupt Flamestrike every time. Copies of the mage will explode upon death, stay at range.
+kill Tortured Rifleman##38176
+|tip Dispel Cursed Arrow as much as possible. It increases magic damage taken by 50%.
+kill Spectral Footman##38173
+|tip Casters shouldn't stand near these, they use Shield Bash. This interrupts spellcasting.
+|tip Line of sight the trash and wait for them to come to you. Waves of 4-5 enemies will come at a time. |goto Halls of Reflection/1 34.4,72.7
+At wave 10, you will face _Marwyn_. Click here to move onto his strategy. |confirm
+step
+kill Marwyn##38113
+_Obliterate_:
+|tip Deals heavy damage to Marwyn's current target.
+_Well of Corruption_:
+|tip Increases shadow damage taken by 75%, stacking 4 times. Don't stand in this.
+_Corrupted Flesh_:
+|tip Reduces the maximum health of all nearby players by 50% for 8 seconds.
+_Shared Suffering_:
+|tip Deals damage over 12 seconds to a player, then splits damage to the party. Dispel this quickly.
+scenariogoal 27916
+step
+Click the Quest Discovered box
+accept Wrath of the Lich King##24500
+step
+kill Frostsworn General##36723
+|tip The General will spawn images of your group. They explode upon death, so try to kill them at range.
+map Halls of Reflection/1
+path follow smart; loop off; ants curved; dist 12
+path	36.2,64.9	31.0,57.5	26.3,50.8
+path	19.7,41.5	13.5,32.5	12.9,23.3
+Follow the path to Jaina, killing the General along the way |goto Halls of Reflection/1 12.9,23.3 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Lady Jaina Proudmoore##36955 |goto 12.9,23.2
+Find Lady Jaina Proudmoore |q 24500/1 |goto 12.9,23.2 |only if havequest(24500)
+Tell her: "_We're ready! Let's go!_"
+confirm always
+step
+_Kill Priority_:
+|tip Focus one target at a time, speed is important. You don't want to get caught by the Lich King.
+kill Risen Witch Doctor##36941
+|tip Interrupt Shadow Bolt Volley and dispel Curse of Doom.
+kill Lumbering Abomination##37069
+|tip Face these away from the group. They use Cleave and Vomit Spray. Vomit Spray increases damage taken by 20%.
+map Halls of Reflection/1
+path follow smart; loop off; ants curved; dist 15
+path	14.7,20.0	27.5,27.5	40.5,36.1
+path	51.1,44.9	66.6,65.0	77.3,77.6
+Follow the path, stopping at each point to kill the mobs the Lich King spawns
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+scenariogoal 1/27917
+step
+talk Lady Jaina Proudmoore##38160
+turnin Wrath of the Lich King##24500 |goto 75.9,76.4
+confirm
+only if not completedq(24500)
+step
+Congratulations! You have completed Halls of Reflection |tip Your loot is in the chest aboard the ship.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Abyssal Maw: Throne of the Tides (TotT) 80-82",{
+mapid=767,
+achieveid={4839},
+description="This guide will walk you through the Abyssal Maw: Throne of the Tides dungeon.",
+},[[
+step
+label "lfg"
+Press _I_ and queue for Throne of the Tides or enter the dungeon with your group |goto Throne of the Tides/1 49.9,88.2 |c
+step
+talk Captain Taylor##50270
+accept Rescue the Earthspeaker!##28834 |goto Throne of the Tides,49.9,90.6
+accept Sins of the Sea Witch##28836 |goto Throne of the Tides,49.9,90.6
+step
+map Throne of the Tides/1
+path follow smart; loop off; ants curved; dist 12
+path	49.9,88.2	50.2,74.8	50.5,64.7
+path	49.9,49.7	Throne of the Tides/2 50.1,84.5
+Follow the path |goto Throne of the Tides/2 50.1,84.5 < 12
+|tip Mobs will swim through the bubbles of water on the sides of the tunnel.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Ride the jellyvator to the top and get off |goto Throne of the Tides/2 50.6,77.6 < 8 |noway |c
+|tip You will need to jump to actually get on the jellyfish.
+step
+map Throne of the Tides/1
+path follow smart; loop off; ants curved; dist 12
+path	50.6,77.6	50.6,65.7	50.6,51.6
+path	50.5,33.4
+Follow the path |goto Throne of the Tides/2 50.5,33.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Lady Naz'jar##40586
+scenariogoal 24798 |goto 50.6,21.4
+step
+click Throne of Tides Defense System##7147 |goto Throne of the Tides/2 50.8,33.1
+confirm
+step
+_Commander Ulthok_
+He uses 4 main abilities.
+_Squeeze_
+|tip This will be used on a random party member, restricting them from any actions.
+|tip He will use _Dark Fissure_ where the tank is standing.  It's important to move away from him when he does this as this attack may one-shot you.
+|tip When he uses _Dark Fissure_ it leaves a circle of shadow on the ground that slowly expands the longer the fight carries on.
+|tip He casts _Curse of Fatigue_ at a random target, slowing their movement and haste by 50%
+|tip He will Enrage increasing all damage done by 50%.
+kill Commander Ulthok##40765 |goto 50.6,41.8
+confirm
+scenariogoal 24799
+step
+Click the Throne of the Tides Teleporter |goto 51.2,52.7
+confirm
+step
+map Throne of the Tides
+path follow strict;loop off;ants straight
+path	57.3,44.6	61.9,43.7	66.2,38.6
+path	67.2,30.4
+Kill the trash at these points above.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Mindbender Ghur'sha##40788
+_Erunak Stonespeaker & Mindbender Ghur'sha_
+_Phase 1:_
+|tip Erunak will cast Earth Shards at a random party member. It will cause damage in a line, so move out of it.
+|tip He will cast Lava Bolt at a random target.  This spell can be interrupted.
+|tip He will use Magma Splash in a cone in front of him.
+_Phase 2:_
+|tip Mindbender Ghur'sha will put Mind Fog on the ground, rendering you unable to cast or attack, as well as causing shadow damage.
+|tip He will randomly Enslave a party member. You will have to beat the member down until they reach 50% helath.
+|tip If you don't free the player, they will die. |only if heroic_dung()
+|tip The most important ability to watch out for is Absorb Magic. All spells cast at him while this ability is up will heal him.
+Rescue Erunak Stonespeaker |q 28834/1 |only if havequest(28834)
+confirm |only if not havequest(28834)
+scenariogoal 24804 |goto Throne of the Tides 67.2,20.4
+step
+talk Erunak Stonespeaker##36915
+turnin Rescue the Earthspeaker!##28834 |goto 67.2,20.4
+step
+talk Neptulon##40792 |goto 32.5,22.5
+Let him know you're ready.
+confirm
+step
+kill 3 Faceless Sapper##44752+, Vicious Mindlasher##44715+, Unyielding Behemoth##44648+
+kill Ozumat##44566
+_Phase 1:_
+|tip Deep Murloc Invaders will spawn in groups. Often, and should be AoE'd down.
+|tip There will be 3 Vicious Mindlashers that spawn, and need to be tanked.
+|tip There will be 1 Unyielding Behemoth that spawns and needs to be tanked.
+|tip After the 3 Vicious Mindlashers and Unyielding Behemoth are killed, 3 Faceless Sappers will spawn.
+_Phase 2:_
+|tip Kill the Faceless Sappers 1 at a time, focusing them down quickly.
+|tip The tank should look for Blight Beasts, kiting them around the room as they spawn.
+|tip Once the 3 Faceless Sappers are defeated, Ozumat will appear.
+scenariogoal 24801 |goto 36.4,17.4
+step
+talk Captain Taylor##50270
+turnin Sins of the Sea Witch##28836 |goto Throne of the Tides,49.9,90.6
+only if havequest(28836)
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Blackrock Caverns (BRC) 80-82",{
+mapid=753,
+achieveid={4833},
+description="This guide will walk you through the Blackrock Caverns dungeon.",
+},[[
+step
+label "lfg"
+talk Finkle Einhorn##49476
+accept To the Chamber of Incineration!##28735 |goto Blackrock Caverns,33.1,66.0
+step
+Clear the trash at these coordinates. |goto 49.3,74.1
+_Rom'ogg Bonecrusher_ patrols nearby, if you aggro him, he will do a shout attracting the nearby groups.
+modelnpc 39665
+Click here when you've cleared the groups. |goto 51.1,70.3 |confirm
+step
+Pull Rom'ogg Bonecrusher when he's at |goto 50.0,67.3
+|tip For this fight, he will use Call for Help when you engage him. Any mob nearby that you didnt kill will come to his aid.
+|tip At 66% and 33% he will use Chains of Woe followed by The Skullcracker.
+|tip Players will need to kill the Chains of Woe, then move away from the boss in order to avoid massive, and possibly fatal damage.
+|tip He will also use Wounding Strike on the tank, reducing healing received by 25%.
+kill Rom'ogg Bonecrusher##39665 |only if not havequest(28735)
+kill Rom'ogg Bonecrushe##39665 |q 28735/1 |only if havequest(28735)
+|confirm |only if not havequest(28735)
+|only if not heroic_dung()
+step
+kill Rom'ogg Bonecrusher##39665 |only if not havequest(28735)
+kill Rom'ogg Bonecrusher##39665 |q 28735/1 |only if havequest(28735)
+Pull _Rom'ogg Bonecrusher_ when he's at |goto 50.0,67.3
+|tip For this fight, he will use Call for Help when you engage him. Any mob nearby that you didnt kill will come to his aid.
+|tip He will often use Quake, which can be avoided by moving to the side when you see him casting it. This will also summon Angered Earths.
+|tip He will also summon Angered Earths each time he uses Quake, which need to be picked up by your tank. There will be one per ground crack.
+|tip At 66% and 33% he will use Chains of Woe followed by The Skullcracker, which needs to be avoided or it will kill you.
+|tip Players will need to kill the Chains of Woe, then move away from the boss in order to avoid massive, and possibly fatal damage.
+|tip He will also use Wounding Strike on the tank, reducing healing received by 25%.
+|confirm |only if not havequest(28735)
+|only if heroic_dung()
+step
+Click the Quest Completion Box that pops up.
+turnin To the Chamber of Incineration!##28735
+step
+map Blackrock Caverns
+path follow strict;loop off;ants straight
+path	50.1,55.2	50.1,39.2	53.9,21.5
+accept What Is This Place?##28737
+step
+There will be an Evolved Twilight Zealot patrolling here. |goto 54.0,20.4
+|tip Interrupt Shadow Stike whenever he uses it.
+kill Evolved Twilight Zealot##39987
+|confirm
+step
+Jump down the ledge here. |goto Blackrock Caverns/2 51.9,20.0 |noway|c
+step
+There will be a group of 5 patrolling the hallway here. |goto 30.3,16.6
+Once they are defeated, there will be another Evolved Twilight Zealot on the ramp at |goto 29.6,14
+|tip Interrupt Shadow Stike whenever he uses it.
+kill Evolved Twilight Zealot##39987
+|confirm
+step
+_Corla, Herald of Twilight_ |goto 27.4,16.6
+|tip You will see two beams on each side of Corla. You should have Ranged DPS or Healers step into the beams during the encounter.
+|tip This will give whoever interrupts the beams stacks of Evolution, when you reach 80, step out of the beams. You will need to move back in when your stack falls back off.
+|tip Failing to interrupt the beams, or to move out when you reach 80 will result in Twilight Evolution, which will enrage either a player or the minions into attacking your party members, and likely wipe you.
+|tip Corla, Herald of Twilight will cast Dark Command on a random party member. It will be important to interrupt this, as it can ruin the Evolution rotations.
+kill Corla, Herald of Twilight##39679 |only if not havequest(28737)
+kill Corla, Herald of Twilight##39679 |q 28737/1 |only if havequest(28737)
+|confirm |only if not havequest(28737)
+|only if not heroic_dung()
+step
+_Corla, Herald of Twilight_
+You will see three beams on each side of Corla. You should have _Ranged DPS_ or _Healers_ step into the beams during the encounter.
+This will give whoever interrupts the beams stacks of _Evolution_, when you reach 80, step out of the beams. You will need to move back in when your stack falls back off.
+Failing to interrupt the beams, or to move out when you reach 80 will result in _Twilight Evolution_, which will enrage either a player or the minions into attacking your party members, and likely wipe you.
+Corla, Herald of Twilight will cast _Dark Command_ on a random party member. It will be important to interrupt this, as it can ruin the _Evolution_ rotations.
+kill Corla, Herald of Twilight##39679 |only if not havequest(28737)
+kill Corla, Herald of Twilight##39679 |q 28737/1 |only if havequest(28737)
+|confirm |only if not havequest(28737)
+|only if heroic_dung()
+step
+Click the Quest Completion Box that pops up.
+turnin What Is This Place?##28737
+step
+map Blackrock Caverns/2
+path follow strict;loop off;ants straight
+path	34.2,13.3	37.5,13.2	39.2,16.0
+Hug the wall, following the way points.
+|tip There will be trash at the last waypoint.
+Follow the ramp down
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+accept The Twilight Forge##28738 |goto 43.5,57.7
+step
+There will be 2 fire elementals patrolling around the room with _Karsh Steelbender_.
+kill Conflagration##39994+
+Pull one at a time back to the ramp.
+|confirm
+step
+kill Karsh Steelbender##39698 |only if not havequest(28738)
+kill Karsh Steelbender##39698 |q 28738/1 |only if havequest(28738)
+_Karsh Steelbender_ |goto 45.6,65.6
+|tip For this fight, there will be a large pillar of flame at the center of the room.
+|tip The tank will need to run through the center, giving the boss a Superheated Quicksilver Armor debuff, increasing the damage the boss takes.
+|tip When the debuff has 5 seconds left, the tank will have to Run through the pillar of flame again, renewing and adding another debuff to the boss.
+|tip If you let Superheated Quicksilver Armor fall off the boss he will gain his Quicksilver Armor buff.
+|confirm |only if not havequest(28738)
+|only if not heroic_dung()
+step
+kill Karsh Steelbender##39698 |only if not havequest(28738)
+kill Karsh Steelbender##39698 |q 28738/1 |only if havequest(28738)
+_Karsh Steelbender_ |goto 45.6,65.6
+|tip For this fight, there will be a large pillar of flame at the center of the room.
+|tip The tank will need to run through the center, giving the boss a Superheated Quicksilver Armor debuff, increasing the damage the boss takes.
+|tip When the debuff has 5 seconds left, the tank will have to Run through the pillar of flame again, renewing and adding another debuff to the boss.
+|tip If you let Superheated Quicksilver Armor fall off the boss, he will spawn adds, and gain his Quicksilver Armor buff.
+|confirm |only if not havequest(28738)
+|only if heroic_dung()
+step
+Click the Quest Completion Box that pops up:
+turnin The Twilight Forge##28738
+step
+map Blackrock Caverns/2
+path follow strict;loop off;ants straight
+path	53.5,67.2	55.7,68.3	58.5,64.9
+path	61.6,71.8
+Kill trash at the waypoints.
+|tip The second group should be 2 Defiled Earth Ragers. Everyone in the group needs to stand close, as they do an AoE that does more damage the further away you are.
+|tip Be sure you hug the wall on the left up until the last waypoint.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+|modelnpc Defiled Earth Rager##40023+
+step
+Click the Quest Completion Box that pops up:
+accept Do My Eyes Deceive Me?##28740 |goto 66.1,71.6
+step
+There will be 3 Corehound Pups. You can pull them without pulling the boss behind them.
+kill Lucky##40008 |n
+kill Buster##40013 |n
+kill Spot##40011 |n |goto 66.3,77.5
+|confirm
+|only if not heroic_dung()
+step
+_Beauty_
+|tip She will randomly cast Terrifying Roar, fearing the entire party. Tremor Totem and Fear Ward can be used to avoid this.
+|tip She will Berserker Charge an enemy, knocking them back.
+|tip She will also use Flamebreak on melee knocking them back.
+|tip She casts Magma Spit on party members, causing AoE damage when it is dispelled.
+kill Beauty##39700 |only if not havequest(28740)
+kill Beauty##39700 |q 28740/1 |only if havequest(28740)
+|confirm |only if not havequest(28740)
+|only if not heroic_dung()
+step
+_Beauty_
+You will need to use crowd control on Lucky, Buster and Spot or kill them before engaging the boss.
+_DO NOT_ kill Runty, or the boss will enrage and deal incredible damage.
+She will randomly cast Terrifying Roar, fearing the entire party. Tremor Totem and Fear Ward can be used to avoid this.
+She will Berserker Charge an enemy, knocking them back.
+She will also use Flamebreak on melee knocking them back.
+She casts Magma Spit on party members, causing AoE damage when it is dispelled.
+kill Beauty##39700 |only if not havequest(28740)
+kill Beauty##39700 |q 28740/1 |only if havequest(28740)
+|confirm |only if not havequest(28740)
+|only if heroic_dung()
+step
+Click the Quest Completion Box that pops up:
+turnin Do My Eyes Deceive Me?##28740
+step
+Wait here for the elemental patrol. |goto 69.6,72.2
+|confirm
+step
+Click the Quest Completion Box that pops up.
+accept Ascendant Lord Obsidius##28741 |goto 70.0,63.4
+step
+_Ascendant Lord Obsidius_ |goto 68.8,56.0
+|tip When you get within aggro radius, he will be attacked. When Raz dies then it will be time to face the boss.
+|tip Ascendant Lord Obsidius will split into 3 forms.
+|tip During the fight, he will switch bodies with one of the other two clones and you will have to switch dps.
+kill Ascendant Lord Obsidius##39705 |only if not havequest(28741)
+kill Ascendant Lord Obsidius##39705 |q 28741/1 |only if havequest(28741)
+|only if not heroic_dung()
+step
+_Ascendant Lord Obsidius_  |goto 68.8,56.0
+|tip When you get within aggro radius, he will be attacked. When Raz dies then it will be time to face the boss.
+|tip Ascendant Lord Obsidius will split.
+|tip There will be 3 Shadows of Obsidius that need to be kited by a ranged DPS.
+|tip He will use Thunderclap, which will decrease allies movement speed by 50% if they are within 25 yards of it.
+|tip During the fight, he will switch bodies with one of the other two clones and you will have to switch dps.
+kill Ascendant Lord Obsidius##39705 |only if not havequest(28741)
+kill Ascendant Lord Obsidius##39705 |q 28741/1 |only if havequest(28741)
+|only if heroic_dung()
+step
+talk Finkle Einhorn##49476
+turnin Ascendant Lord Obsidius##28741 |goto 68.8,56.0
+|only if havequest(28741)
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\The Stonecore (SC) 82-84",{
+mapid=768,
+achieveid={4846},
+description="This guide will walk you through the The Stonecore dungeon.",
+},[[
+step
+label	"start"
+talk Earthwarden Yrsa##50048
+accept Twilight Documents##28815 |goto The Stonecore 53.7,94.9
+step
+kill Stonecore Earthshaper##43537+ |goto The Stonecore 54.6,88.4
+|tip Make sure to kill him first, if not killed fast enough, he will transform and do big group damage.
+|tip You will have to fight him in each group as you continue forward.
+|confirm
+step
+click Twilight Documents##183
+collect Twilight Documents |q 28815/1 |goto 63.5,65.2
+|only if havequest(28815)
+step
+Click the Quest Completion Box that pops up:
+turnin Twilight Documents##28815
+accept Followers and Leaders##28814
+step
+kill Corborus##43438 |goto The Stonecore 62.4,61.2
+Corborus has 2 phases to his fight.
+_Phase 1_
+|tip Corborus will attack the Tank and use Crystal Barrage. These crystals will do damage to anyone standing in them.
+_Phase 2_
+|tip Corborus will burrow. During this time avoid the areas with rubble when he is underground, he will jump out of these areas and hurt anyone standing in it.
+|tip Kill the adds he summons during this phase.
+|confirm
+|only if not heroic_dung()
+step
+kill Corborus##43438 |goto The Stonecore 62.4,61.2
+Corborus has 2 phases to his fight.
+_Phase 1_
+|tip Corborus will attack the Tank and use Crystal Barrage. These crystals will do damage to anyone standing in them.
+|tip In horoic mode, these will also spawn Crystal Shards to attack. Make sure to AoE these down quickly.
+|tip Crystal Barrage will spawn adds that need to be picked up quickly.
+|tip Additionally, he will randomly use Dampening Wave, which will reduce the healing the party takes, as well as dealing damage. Remove this from the tank as soon as possible. (Magic Effect)
+_Phase 2_
+|tip Corborus will burrow. During this time avoid the areas with rubble when he is underground, he will jump out of these areas and hurt anyone standing in it.
+|tip Kill the adds he summons during this phase.
+|confirm
+|only if heroic_dung()
+step
+kill Slabhide##43214 |goto 37.7,44.9
+|tip He will use Sand Blast which deals damage in a cone in front of him. Only the tank should be in front of him.
+|tip He will cast Lava Fissure under a random players feet. It will erupt after 5 seconds and create a lava pool that lasts for 10 seconds.
+|tip He will cast Stalactite often. When he does he'll move to the center of the room and cause spikes to rain from the ceiling. Avoid them, as they do massive damage. There will be a shadow where they drop.
+|confirm
+|only if not heroic_dung()
+step
+kill Slabhide##43214 |goto 37.7,44.9
+|tip He will use Sand Blast which deals damage in a cone in front of him. Only the tank should be in front of him.
+|tip He will cast Lava Fissure under a ranndom players feet. It will erupt after 3 seconds and create a lava pool that lasts for 30 seconds.
+|tip He will cast Stalactite often. When he does he'll move to the center of the room and cause spikes to rain from the ceiling. Avoid them, as they do massive damage. There will be a shadow where they drop.
+|tip After the Stalactite's, he will cast Crystal Storm, move behind the rocks out of his line of site to avoid damage.
+|confirm
+|only if heroic_dung()
+step
+As you run through this room, you will want to kill the Stonecore Sentries, they will aggro big groups if they are close enough. |goto 38.7,20.6
+|tip Stonecore Bruisers patrol this area. When you can, kill them away from groups.
+|tip If you stay to the right side, you will not have to kill groups on the left side.
+|modelnpc Stonecore Bruiser##42692+, Stonecore Sentry##42695+
+|confirm
+step
+kill Ozruk##42188 |goto 47.7,20.0
+|tip Face Ozruk away from the group. He will use Ground Slam that everyone, including the tank need to avoid. This causes massive damage
+|tip Ozruk will cast Shatter shortly after Ground Slam. Run 15 yards away from him or you will take up to 45k damage.
+|confirm
+|only if not heroic_dung()
+step
+kill Ozruk##42188 |goto 47.7,20.0
+|tip Face Ozruk away from the group. He will use Ground Slam that everyone, including the tank need to avoid. This causes massive damage
+|tip Ozruk will cast Shatter shortly after Ground Slam. Run 15 yards away from him or you will take damage up to 200k.
+|tip He will cast Paralyze, which needs to be dispelled. You can also cast a DoT when Ozruk has Elementium Bulwark up, or simply melee him keeping the Elementium Spike Shield debuff on you at all times to break the effect.
+|confirm
+|only if heroic_dung()
+step
+kill High Priestess Azil##42333 |only if not havequest(28814)
+kill High Priestess Azil##42333  |q 28814/1 |only if havequest(28814)
+kill 101 Devout Follower##42428 |q 28814/2 |only if havequest(28814)
+There are 2 stages to this fight. |goto 57.64,38.24
+_Phase One_
+|tip She will need to be tanked and moved when she creates a Gravity Well (purple circle with that deals shadow damage).
+|tip During this phase, boss will need to be tanked on the left of the Gravity Well, so the mobs will run in and die.
+_Phase Two_
+|tip She will float up to her altar and the Tank will need to get aggro on all the Devout Followers that run in.
+|confirm |only if not havequest(28814)
+|only if not heroic_dung()
+step
+kill High Priestess Azil##42333 |only if not havequest(28814)
+kill High Priestess Azil##42333  |q 28814/1 |only if havequest(28814)
+kill 101 Devout Follower##42428 |q 28814/2 |only if havequest(28814)
+There are 2 stages to this fight. |goto 57.64,38.24
+_Phase One_
+|tip She will need to be tanked and moved when she creates a _Gravity Well_ (purple circle with that deals shadow damage).
+|tip During this phase, boss will need to be tanked on the left of the Gravity Well, so the mobs will run in and die.
+|tip She will also use an ability called Force Grip which deals massive damage to the tank and should be interrupted each time it is used.
+_Phase Two_
+|tip She will float up to her altar and Tank will need to get aggro on all the Devout Followers that run in.
+|tip She will use Seismic Shard, which throws a huge rock at a random party member. More often than not it will kill that party member, so be on the look out for a shadow on the ground.
+|confirm |only if not havequest(28814)
+|only if heroic_dung()
+step
+You can either run to the beginning of the dungeon to turn in your quests.
+Or
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
+|confirm
+step
+talk Earthwarden Yrsa##50048
+turnin Followers and Leaders##28814 |goto 53.6,95.0
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\The Vortex Pinnacle (VP) 82-84",{
+mapid=769,
+achieveid={4847},
+description="This guide will walk you through the Vortex Pinnacle dungeon.",
+},[[
+step
+label "lfg"
+talk Itesh##49943
+accept A Long Way from Home##28779
+accept Vengeance for Orsis##28760 |goto The Vortex Pinnacle 54.4,16.6
+step
+map The Vortex Pinnacle
+path follow strict;loop off;ants straight
+path	59.1,24.3	62.0,28.7	65.4,29.7
+path	65.1,33.4	62.1,34.0
+|tip Fight near the wall so you don't get knocked off.
+Follow the path down the ramp.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Grand Vizier Ertan##43878 |goto 55,44.6
+|tip When engaged, she will summon whirlwinds at the outside of the room.
+|tip Move in towards her to avoid them for the duration of the fight.
+|tip As the fight progresses, Grand Vizier Ertan will pull the whirlwinds to form a wall around her. Move outward, away from her, avoiding the whirlwinds!
+|tip If you're hit by the whirlwinds you will receive a debuff, decreasing movement, casting and attack speed as well as take nature damage.
+collect Grand Vizier Etran's Heart##65660 |q 28779/1 |only if havequest(28779)
+scenariogoal 1/24810
+|only if not heroic_dung()
+step
+kill Grand Vizier Ertan##43878 |goto 55,44.6
+|tip When engaged, she will summon whirlwinds at the outside of the room.
+|tip Move in towards her to avoid them for the duration of the fight.
+|tip As the fight progresses, Grand Vizier Ertan will pull the whirlwinds to form a wall around her. Move outward, away from her, avoiding the whirlwinds!
+|tip If you're hit by the whirlwinds you will receive a debuff, decreasing movement, casting and attack speed as well as take nature damage.
+collect Grand Vizier Etran's Heart##65660 |q 28779/1 |only if havequest(28779)
+scenariogoal 1/24810
+|only if heroic_dung()
+step
+Start here |goto The Vortex Pinnacle 57.6,48.9
+Ride the Slipstream across the gap. |goto 63.6,59.1 < 5
+confirm
+step
+kill Young Storm Dragon##45919 |goto 60.6,65.3 |n
+|tip When you pull these, move it away from the circle or it will heal for all the damage you do.
+confirm
+step
+There will be Howling Gales that you will need to hit to cross the bridge. |goto 58.4,68.9 |n
+Cross the bridge. |goto 55.2,73.6 < 5
+confirm
+step
+kill Young Storm Dragon##45919 |goto 53.6,76.1 |n
+|tip When you pull these, move it away from the circle or it will heal for all the damage you do.
+confirm
+step
+kill Empyrean Assassin##45922
+kill Turbulent Squall##45924  |goto 53.0,77.7
+|tip For this trash, move out of Hurricane.
+|tip Interrupt Cloudburst when it's cast.
+|tip Kill Empyrean Assassins first.
+|confirm
+step
+kill Altairus##43873 |goto 52,80.6
+|tip When engaged, Altairus will summon a wind which will affect your haste.
+|tip Using the wind current to your advantage will be the deciding factor in this fight.
+|tip You will need to navigate around the boss. When you have the Upwind of Altairus buff, stop moving. You gain a 100% haste buff for spells and attacks.
+|tip If you have the Downwind of Altairus debuff, circle the boss until you have the Upwind buff.
+|tip Do not stand in front of Altairus. He uses a cone breath ability.
+scenariogoal 1/24811
+|only if not heroic_dung()
+step
+kill Altairus##43873 |goto 52,80.6
+|tip When engaged, Altairus will summon a wind which will affect your haste.
+|tip He will also summon Twisting Winds, which will toss you up in the air and deal damage if you're hit by them.
+|tip Using the wind current to your advantage will be the deciding factor in this fight.
+|tip You will need to navigate around the boss. When you have the Upwind of Altairus buff, stop moving. You gain a 100% haste buff for spells and attacks.
+|tip If you have the Downwind of Altairus debuff, circle the boss until you have the Upwind buff.
+|tip Do not stand in front of Altairus. He uses a cone breath ability.
+scenariogoal 1/24811
+|only if heroic_dung()
+step
+Start here |goto 49.4,80.7 |n
+Ride the Slipstream across the gap. |goto 31.4,80.4 < 8
+confirm
+step
+For these trash pulls, always kill or use crowd control for Temple Adepts. |goto 30.8,76.2
+|confirm
+|modelnpc Temple Adept##45935+
+step
+There will be an electric field in the area. Magic won't work on mobs in these fields. |goto 32.1,69.1
+|tip Use crowd control on Temple Adepts after they patrol out of the field.
+|confirm
+|modelnpc Temple Adept##45935+
+step
+kill Skyfall Star##52019 |goto 27.1,60.3
+|tip There will be no aggro for these mobs and they will spread further apart the longer the fight goes.
+|tip AoE them down.
+|confirm
+step
+kill Asaad##43875 |only if not havequest(28760)
+kill Asaad##43875 |q 28760/1 |only if havequest(28760) |goto 29.8,39
+|tip He will channel Supremacy of the Storm. When he does so he will start to create a triangle on the ground randomly in the room.
+|tip You will need to run inside of the triangle.
+|tip His primary attack is Chain Lightning so try to spread out of possible to reduce group damage.
+|confirm |only if not havequest(28760)
+scenariogoal 1/34415
+|only if not heroic_dung()
+step
+kill Asaad##43875 |only if not havequest(28760)
+kill Asaad##43875 |q 28760/1 |only if havequest(28760) |goto 29.8,39
+|tip He will channel Supremacy of the Storm. When he does so he will start to create a triangle on the ground randomly in the room.
+|tip You will need to run inside of the triangle.
+|tip His primary attack is Chain Lightning so try to spread out of possible to reduce group damage.
+|tip He will cast Static Cling which will root you to the ground and can be deadly. If you jump at the time it is cast you will not get rooted, but if not then it is a Magic effect and can be removed.
+|confirm |only if not havequest(28760)
+scenariogoal 1/34415
+|only if heroic_dung()
+step
+Start here |goto 29.2,46.4  |n
+Ride the Slipstream across the gap. |goto 54.1,16.8 < 8
+confirm
+step
+talk Itesh##49943
+turnin A Long Way from Home##28779
+turnin Vengeance for Orsis##28760 |goto 54.5,15.9
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Lost City of the Tol'vir (LCoT) 83-85",{
+dungeonn=747,
+achieveid={4848},
+author="support@zygorguides.com",
+description="This guide will walk you through the Lost City of the Tol'vir dungeon.",
+},[[
+step
+label "start"
+talk Captain Hadan##50038
+accept The Source of Their Power##28783
+accept Targets of Opportunity##28781 |goto Lost City of the Tol'vir 31.7,16.3
+step
+kill 1 Oathsworn Captain##45122 |q 28781/2 |goto 30.1,34.6
+|tip The Captain will cast an AoE spell on the ground. Make sure to move out of this fast, it will do lots of damage.
+|only if havequest(28781)
+step
+kill General Husam##44577 |only if not havequest(28781)
+kill General Husam##44577 |q 28781/1 |only if havequest(28781) |goto 36.5,43.2
+|tip He will use Shockwave. When he is beginning to cast, get out of the smoke on the ground. It will deal damage in each direction.
+|tip He will toss Mystic Traps all around him. Do not get near these, or they will detonate, causing 35k damage.
+|confirm |only if not havequest(28781)
+|only if not heroic_dung()
+step
+kill General Husam##44577 |only if not havequest(28781)
+kill General Husam##44577 |q 28781/1 |only if havequest(28781)|goto 36.5,43.2
+|tip He will use Shockwave. When he is beginning to cast, get out of the smoke on the ground. It will deal damage in each direction.
+|tip He will toss Mystic Traps all around him. Do not get near these, or they will detonate, causing 35k damage.
+|tip When he uses Mystic Trap, he will cast Detonate Traps soon after, causing them to glow followed by an explosion. Move away from them before the blow up
+|confirm |only if not havequest(28781)
+|only if heroic_dung()
+step
+kill 1 Oathsworn Captain##45122 |q 28781/2 |goto 30.1,34.6
+|only if havequest(28781)
+step
+map  Lost City of the Tol'vir
+path loop off
+path	42.7,41.4	50.9,43.6	51.0,57.3
+path	58.6,57.3	66.4,70.5
+Follow this path and kill the boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+|tip Lockmaw will use Dust Flail, which will affect anyone standing behind him.
+|tip Spread out so you don't hurt your group with Viscous Poison. It will damage anyone within 5 yards of you, as well as slow them by 30%
+|tip He will also cast Scent of Blood on a random party member, causing 4 adds to attack them. Kill them fast and have your tank taunt them whenever possible.
+|tip At 30% Health he will gain the ability Venomous Rage, which can be dispelled.
+kill Lockmaw##43614
+|confirm
+|only if not heroic_dung()
+step
+map  Lost City of the Tol'vir
+path loop off
+path	42.7,41.4	50.9,43.6	51.0,57.3
+path	58.6,57.3	66.4,70.5
+Follow this path and kill the boss.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Lockmaw##43614
+|tip Lockmaw will use Dust Flail, which will affect anyone standing behind him.
+|tip Spread out so you don't hurt your group with Viscous Poison. It will damage anyone within 5 yards of you, as well as slow them by 30%
+|tip He will also cast Scent of Blood on a random party member, causing 4 adds to attack them. Kill them fast and have your tank taunt them whenever possible.
+|tip At 30% Health he will gain the ability Venomous Rage, which can be dispelled.
+kill Augh##49045
+|tip Augh will appear after you defeat Lockmaw. Avoid his Whirlwind by kiting him around.
+|tip He will toss a poison on random party members called Paralytic Blow Dart, dispel it if you are able.
+|tip He will cast Dragon's Breath on your tank, disorienting him. At this time he will go after party members with high threat.
+|tip He will go into a frenzy which cannot be removed.
+|confirm
+|only if heroic_dung()
+step
+map  Lost City of the Tol'vir
+path loop off
+path	66.0,69.6	59.1,58.3	49.7,57.1
+path	47.1,68.1	49.0,76.4	42.0,81.6
+path	39.7,71.2	36.7,61.1	27.1,65.5
+Follow this path and kill the boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+|only if not heroic_dung()
+step
+kill High Prophet Barim##43612
+_Phase 1:_
+|tip He will use Fifty Lashings to increase his damage output. You may want to use cooldowns.
+|tip He will cast Plague of Ages, this will deal 4k damage every second for 9 second and can be dispelled.
+|tip Heaven's Fury. This will open up a portal of light that will deal large damage to anyone standing in the light.
+|tip At 50% he will use Repentance, pulling the entire group to him. It will also deal out damage and knock the players back at the end of it's duration.
+_Phase 2:_
+|tip He will place Hallowed Ground on the ground that deals massive damage. Move out of it as fast as possible.
+|tip He will summon a Harbinger of Darkness and start using Soul Sever. Soul Sever spawns a Soul Fragment which needs to be killed quickly and can be slowed, stunned and snared.
+|tip Players will randomly be hit for around 7,000 damage during this phase. Healers need to try and keep people topped off.
+|tip When the Harbinger of Darkness is dead, it will go back to phase one.
+|confirm
+|only if not heroic_dung()
+step
+map  Lost City of the Tol'vir
+path loop off
+path	66.0,69.6	59.1,58.3	49.7,57.1
+path	47.1,68.1	49.0,76.4	42.0,81.6
+path	39.7,71.2	36.7,61.1	27.1,65.5
+Follow this path and kill the boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+|only if heroic_dung()
+step
+kill High Prophet Barim##43612
+_Phase 1:_
+|tip He will cast Blaze of the Heavens, which spawns a bird that can be kited or nuked from afar. When you kill it it turns to an egg and heals.
+|tip He will use Fifty Lashings to increase his damage output. You may want to use cooldowns.
+|tip He will cast Plague of Ages, this will deal 4k damage every second for 9 second and can be dispelled.
+|tip Heaven's Fury. This will open up a portal of light that will deal large damage to anyone standing in the light.
+|tip At 50% he will use Repentance, pulling the entire group to him. It will also deal out damage and knock the players back at the end of it's duration.
+_Phase 2:_
+|tip He will place Hallowed Ground on the ground that deals massive damage. Move out of it as fast as possible.
+|tip He will summon a Harbinger of Darkness and start using Soul Sever. Soul Sever spawns a Soul Fragment which needs to be killed quickly and can be slowed, stunned and snared.
+|tip Players will randomly be hit for around 7,000 damage during this phase. Healers need to try and keep people topped off.
+|tip When the Harbinger of Darkness is dead, it will go back to phase one.
+|confirm
+|only if heroic_dung()
+step
+Start here |goto 36.0,62.8 |n
+Ride the Wind Tunnel |goto 35.7,53.9 < 5 |noway |c
+step
+kill Siamat##44819 |only if not havequest(28783)
+kill Siamat##44819w |q 28783/1 |only if havequest(28783)
+There are 2 phases to this fight with Siamat. |goto 40.8,55.3
+_Phase 1:_
+|tip He will spawn Minions of Siamat. Interrupt their spells and kill them as fast as you can. Kill them by the ledges, as they spawn whirlwinds when they die.
+|tip He will summon Servants of Siamat, which need to be Tanked and Killed. Only 3 will spawn during the fight. After the 3rd one, Siamat will become vulnerable. Move away from them as they are about to die to avoid AoE damage.
+|tip During the fight, Siamat will cast Storm Bolt.
+_Phase 2:_
+|tip He will use Wailing Winds when the shield goes down. Move away from the edges and top every one off health wise if you are the healer.
+|tip Minions of Siamat will continue to spawn, but you can ignore them and focus on the boss.
+|tip He will use Absorb Storms removing a minion and granting him a passive AoE.
+|confirm |only if not havequest(28783)
+|modelnpc Minion of Siamat##44704+
+|modelnpc Servant of Siamat##45259+
+|only if not heroic_dung()
+step
+kill Siamat##44819 |only if not havequest(28783)
+kill Siamat |q 28783/1 |only if havequest(28783)
+There are 2 phases to this fight with Siamat. |goto 40.8,55.3
+_Phase 1:_
+|tip He will spawn Minions of Siamat. Interrupt their spells and kill them as fast as you can. Kill them by the ledges, as they spawn whirlwinds when they die.
+|tip He will summon Servants of Siamat, which need to be Tanked and Killed. Only 3 will spawn during the fight. After the 3rd one, Siamat will become vulnerable. Move away from them as they are about to die to avoid AoE damage.
+|tip During the fight, Siamat will cast Storm Bolt.
+_Phase 2:_
+|tip He will use Wailing Winds when the shield goes down. Move away from the edges and top every one off health wise if you are the healer.
+|tip Minions of Siamat will continue to spawn, but you can ignore them and focus on the boss.
+|tip He will use Absorb Storms removing a minion and granting him a passive AoE.
+|confirm |only if not havequest(28783)
+|modelnpc Minion of Siamat##44704+
+|modelnpc Servant of Siamat##45259+
+|only if heroic_dung()
+step
+talk Captain Hadan##50038
+turnin The Source of Their Power##28783
+turnin Targets of Opportunity##28781 |goto Lost City of the Tol'vir 31.7,16.3
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Halls of Origination (HoO) 83-85",{
+mapid=759,
+achieveid={4841},
+author="support@zygorguides.com",
+description="This guide will walk you through the Halls of Origination dungeon.",
+},[[
+step
+label "start"
+kill Temple Guardian Anhuur##39425 |goto Halls of Origination 58.3,62.7
+You will have 2 phases when fighting this boss
+_Phase 1:_
+|tip Fight this boss until he becomes immune to damage. This happens at 66% and 33%.
+|tip He will cast Burning Light, which will cause a beam of light to shoot from the wall. Don't stand in the fire it creates on the ground.
+|tip He will cast Divine Reckoning at a random party member. After 8 seconds, the spell will erupt and damage you along with anyone within 7 yards of you. It is a Magic Debuff and can be dispelled.
+_Phase 2:_
+|tip When he casts Shield of Light he becomes immune to damage.
+|tip You will have to jump off the sides of the platform to the right or left, then click the switch to deactivate  shield of light and run back. |only if not heroic_dung()
+|tip You will have to jump off the sides of the platform to the right and left, then click the switch to deactivate  shield of light and run back. |only if heroic_dung()
+|tip Once he has shield of light, he will start channeling _Reverberating Hymn which deals 400 holy damage per stack. It stacks every 4 seconds and lasts until you click the left and right switches.
+|tip Immediately moving into phase 2, Pit Vipers will spawn on the ground near the levers. The tank should take care to pick them up so that a DPS can click the lever.
+|confirm
+step
+Start here |goto 71.3,49.8 |n
+Follow the Hallway. |goto 71.3,49.8 <5 |noway |c
+step
+Start here |goto 90.1,49.7 |n
+Follow the Hallway and go up these stairs. |goto Halls of Origination/2 |noway |c
+step
+Start here |goto Halls of Origination/2 32.7,48.7
+Kill all the mobs in this area, then click a Camel to continue. |invehicle |c
+step
+kill Earthrager Ptah##39428 |goto 49.8,49.3
+You will have 2 phases when fighting this boss
+_Phase 1:_
+|tip Look out for Earth Spike. The ground will rumble, then erupt a spike, move when you see dust.
+|tip He will use Flame Bolt, which is channeled and damages 2 random players. |only if not heroic_dung()
+|tip He will use Flame Bolt, which is channeled and damages 3 random players. |only if heroic_dung()
+|tip He will use Raging Smash which will damage the tank and 2 additional targets within melee range.
+_Phase 2:_
+|tip At 50% Ptah will burrow and you will have to fight some mobs.
+|tip He will summon a Sand Vortex that moves around the battlefield.
+|tip He will summon Dustbone Horrors and _Jeweled Scarabs_, which need to be killed before the boss returns.
+|tip Be aware of quicksand, this will slow your movement and cause damage while standing in it.
+|confirm
+step
+click Halls of Origination Transit Device##8632 |goto 66.7,48.5
+Teleport to The Maker's Rise. |goto Halls of Origination 67.5,52.8 <5 |noway |c
+step
+Start here |goto 63.6,49.8 |n
+Follow these stairs up and to the right. |goto 63.6,49.8 < 5 |noway |c
+step
+Kill each Elemental Warden on the platforms around this room
+[49.0,32.6]
+[63.3,32.6]
+[63.3,22.1]
+[49.2,22.0]
+|confirm
+step
+kill Anraphet##39788 |goto 56.2,19.3
+|tip This boss is more of a Healing intensive fight for the whole group.
+|tip Anraphet will cast Alpha Beams, this cause damage to a player and all players around them.
+|tip It will leave circle on the ground you need to avoid for 3 seconds. |only if not heroic_dung()
+|tip It will leave circle on the ground you need to avoid and lingers throughout the fight. |only if heroic_dung()
+|tip Anraphet will go into Omega Stance causing damage to the whole group for 8 seconds.
+|tip After Omega Stance or Alpha Beams, he will use Crumbling Ruin, decreasing the groups health by 8%. It stacks 10 times.
+|confirm
+step
+click Halls of Origination Transit Device##8632 |goto 56.2,27.2 |n
+Teleport to The Maker's Rise. |goto 67.5,52.8 < 5 |noway |c
+step
+click The Maker's Lift Controller##8504 |goto 66.4,48.3
+Bring Elevator to the 2nd floor |goto Halls of Origination/3 45.9,47.6 |noway |c
+step
+kill Ammunae##39731 |goto 47.1,78.8
+|tip He will cast Wither on a random party member. It reduces attack speed, casting speed and movement speed by 60%. It can be interrupted and dispelled (magic).
+|tip He will cast Consume Life Energy, which will deal nature damage and dimish a players 'resource'.
+|tip He will summon Seedling Pods. They will use _Energize_ on Ammunae, increasing his damage done by 5% and attack speed by 30% while alive. Kill them when they spawn.
+|tip It will also heal Ammunae for 1% of his max health every 3 seconds while alive. |only if heroic_dung()
+|tip He will use Rampant Growth, transforming all Seedling Pods into Bloodpetal Sprouts which will inflict massive damage to the party.
+|tip He will spawn a Spore. It moves slowly and when it dies, it leaves a spore cloud with a 6 yard radius that deals nature damage every 1.5 seconds.
+|tip The Noxious Spore cloud that spawn can also dish out major damage to any plant life, inflicting 12 to 18% of it's health.
+|confirm
+step
+kill Setesh##39732 |goto 67.1,49.5
+|tip He will cast Chaos Bolt at a random party member.
+|tip He will also place Seed of Chaos on a random party member. When it detonates, the group will take shadow damage.
+|tip Through the fight, he will Summon Chaos Portals. It will spawn monsters that the DPS need to kill, then despawn after around 25 seconds. |only if not heroic_dung()
+|tip Through the fight, he will Summon Chaos Portals. It will spawn monsters while it is up. The DPS will need to attack the portal to stop it from spawning adds. |only if heroic_dung()
+|confirm
+step
+kill Isiset##39587 |goto 26.7,49.8
+|tip She will cast Supernova through out the fight. You can turn away from her to avoid the disorienting effect right before she finishes her cast.
+|tip When she reaches 66 and 33% health, she will use her Mirror Images ability.
+|tip At 66% she will split into 3 forms. Kill the Veil of Sky Mirror Image.
+|tip At 33% she will split into 2 forms. Kill the Celestial Call Mirror Image.
+|modelnpc Veil of Sky##39722, Celestial Call##39721
+|confirm
+step
+kill Rajh##39378 |goto 47.2,19.7
+|tip Rajh will start with 100 energy and cast spells at 20 energy each.
+|tip Rajh's spells to avoid are: Summon Sun Orb. This is channeled above a players head, after 3 seconds it will drop and deal damage, knocking players nearby back. It can be interrupted.
+|tip He will cast Inferno Leap and it needs to be interrupted. If not, he will jump towards a targeted player, and deal large damage knocking away any nearby players.
+|tip This can kill the player he lands on if they do not move.
+|tip He will also cast Solar Winds which creates a fiery vortex in front of him that grows an dmoves around the room.
+|tip The Solar Wind will leave Solar Fire on the ground, which deal out massive damage. |only if heroic_dung
+|tip When he reaches 10 or less energy, he walks to the middle of the room and casts Blessing of the Sun.
+|tip He will become 100% more vulnerable to player attack, while regenerating his energy and causing AoE fire damage to your group.
+|confirm
+step
+Congratulations you have completed _Halls of Origination_!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Grim Batol (GB) 84-85",{
+mapid=757,
+achieveid={4840},
+description="This guide will walk you through the Grim Batol dungeon.",
+},[[
+step
+label "lfg"
+talk Farseer Tooranu##50385
+accept Kill the Courier##28853 |goto Grim Batol,18.4,55.2
+step
+talk Velastrasza##50390
+accept Soften them Up##28852 |goto 19,55
+step
+talk Baleflame##50387
+accept Closing a Dark Chapter##28854 |goto 19.4,53
+step
+map Grim Batol
+path follow strict;loop off;ants straight
+path	18.0,43.4	20.2,39.6	26.2,39.8
+path	27.9,27.1	31.8,26.2
+Follow the path, clearing the trash as you go.
+You will need to kill the nets that are holding the dragons down.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+clicknpc Battered Red Drake##42571
+You will end up flying through the instance, gaining the ability to attack groups of enemies.
+The damage that you do to them stays even after you land.
+Kill 15 Twilight's Hammer Minions |q 28852/1
+Kill 25 Trogg Dwellwers |q 28852/2
+Note that if you didn't get all of the Trogg Dwellers, you can fly back and get them at the end of the instance.
+Click here once you've landed. |confirm
+|only if havequest(28852)
+step
+kill General Umbriss##39625 |goto 40.4,68.4
+|tip He will randomly use Blitz towards a party member. You need to move out of his path to avoid damage.
+|tip He will also use Ground Siege in a random direction. It will also need to be avoided.
+|tip The tank will be hit with Bleeding Wound which does massive damage every 2 seconds until they are healed to 90% of their health.
+|tip At 30% he will get a Frenzy affect gaining 50% attack speed and damage.
+|tip Note that he also summons adds. If they reach him he will also gain the Frenzy effect.
+|confirm
+|only if not heroic_dung()
+step
+kill General Umbriss##39625 |goto 40.4,68.4
+|tip He will randomly use Blitz towards a party member. You need to move out of his path to avoid damage.
+|tip He will also use Ground Siege in a random direction. It will also need to be avoided.
+|tip The tank will be hit with Bleeding Wound which does massive damage every 2 seconds until they are healed to 90% of their health.
+|tip At 30% he will get a Frenzy affect gaining 50% attack speed and damage.
+|tip He will summon adds. Make sure to keep them more than 10 yards away from the boss. If close to the boss when they die, they will give the boss a 100% damage buff.
+|tip If the adds get near the boss, they will be buffed and deal significant more damage.
+|tip He will cast Modgud's Malady which needs to be dispelled. It is a Magic debuff and stacks up to 10 times.
+|confirm
+|only if heroic_dung()
+step
+Wait for a patrol to come here. |goto 46.3,48.5
+Watch for _Forgemaster Throngus_ who patrols through the room. Go back into the hallway if you haven't cleared the trash yet. |goto 48.7,47.1
+Once the trash is cleared, click here. |confirm |goto 45.7,43.6
+|modelnpc 40177
+step
+kill Forgemaster Throngus##40177
+|tip This boss cycles through weapons, which have different strategies depending on which he's holding:
+|tip While using a Mace his movement speed will be decreased by 70%, but his damage will be increased by 200%. The tank will need to kite him.
+|tip He will jump to random party members during Mace stance inflicting damage as a dot for 5 seconds.
+|tip While using Dual Blades he loses 20% damage, but uses the Thrash ability, causing him to attack an additional two times when he swings his weapons.
+|tip He will also use Disorienting Roar while in Dual Blade stance, reducing casting and attack speed by 50%. This effect can be removed by using an ability or spell.
+|tip While using his Phalanx He takes 99% reduced damage. Move behind him to bypass this mechanic.
+|tip While in Phalanx stance, there will also be archers constantly firing at your group.
+|confirm
+|only if not heroic_dung()
+step
+kill Forgemaster Throngus##40177
+|tip This boss cycles through weapons, which have different strategies depending on which he's holding:
+|tip While using a Mace his movement speed will be decreased by 70%, but his damage will be increased by 200%. The tank will need to kite him.
+|tip He will jump to random party members during Mace stance inflicting damage as a dot for 5 seconds.
+|tip He will leave a trail of Burning Flames behind him as he walks, avoid it at all cost.
+|tip While using Dual Blades he loses 20% damage, but uses the _Thrash_ ability, causing him to attack an additional two times when he swings his weapons.
+|tip He will also use Disorienting Roar while in Dual Blade stance, reducing casting and attack speed by 50%. This effect can be removed by using an ability or spell.
+|tip He will also leave Burning Flames on whoever he hits, which can be dispelled. This effect stack with each hit.
+|tip While using his Phalanx He takes 99% reduced damage. Move behind him to bypass this mechanic.
+|tip While in Phalanx stance, there will also be archers constantly firing at your group.
+|tip He will use the ability Flaming Shield which deals fire damage to anyone in front of his shield, so be quick to move behind him.
+|confirm
+|only if heroic_dung()
+step
+map Grim Batol
+path follow strict;loop off
+path	56.8,47.9	60.6,53.5	60.4,63.4
+path	63.8, 64.6	67.2,68.1	73.0,59.0
+path	68.5,54.7	70.7,41.7	69.8,30.2
+Kill trash and follow the path to Drahga Shadowburner. |goto 69.8,30.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Darhga Shadowburner##40319 |goto 70.3,20.7
+_Phase 1:_
+|tip He will use Invocation of Flame which will mark the ground at a random location. It will summon a fire elemental that targets a random player, shooting a red beam.
+|tip ALL DPS EXCEPT FOR THE TARGET need to kill it as soon as possible.
+|tip His basic attack is Burning Shadowbolt, which can be interrupted.
+_Phaste 2:_
+|tip At 25% he will retreat and the dragon Valiona will catch him. Tank her at the center of the room.
+|tip Invocation of Flame will still be used, so be aware of the spawn point and target.
+|tip She will use Devouring Flames which is a wide cone attack, so don't stand in front of her.
+|tip She will use Valiona's Flame which targets a random player and breathes a 40 yard long cone which stuns and damages all players within the cone.
+|tip She swipes, so don't stand in front of her.
+|tip She places Seeping Twilight on the ground, a large circular pool on the ground that deals out damage over time.
+|tip When her health is low she will drop Drahga Shadowburner.
+collect Missive to Cho'gall |q 28853/1 |only if havequest(28853)
+|confirm |only if not havequest(28853)
+|only if not heroic_dung()
+step
+kill Darhga Shadowburner##40319  |goto 70.3,20.7
+_Phase 1:_
+|tip He will use Invocation of Flame which will mark the ground at a random location. It will summon a fire elemental that targets a random player, shooting a red beam.
+|tip ALL DPS EXCEPT FOR THE TARGET need to kill it as soon as possible.
+|tip His basic attack is Burning Shadowbolt, which can be interrupted.
+_Phaste 2:_
+|tip At 25% he will retreat and the dragon Valiona will catch him. Tank her at the center of the room.
+|tip Invocation of Flame will still be used, so be aware of the spawn point and target.
+|tip She will use Devouring Flames which is a wide cone attack, so don't stand in front of her.
+|tip She will use Valiona's Flame which targets a random player and breathes a 40 yard long cone which stuns and damages all players within the cone.
+|tip She swipes, so don't stand in front of her.
+|tip She places Seeping Twilight on the ground, a large circular pool on the ground that deals out damage over time.
+|tip When her health is low she will drop Drahga Shadowburner.
+collect Missive to Cho'gall |q 28853/1 |only if havequest(28853)
+|confirm |only if not havequest(28853)
+|only if heroic_dung()
+step
+map Grim Batol
+path follow strict;loop off
+path	77.0,40.0	85.8,40.0	86.1,57.4
+Follow the path to Erudax, The Duke of Below. |goto 86.1,57.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Erudax##40484 |only if not havequest(28854) |goto 85.7,60.9
+kill Erudax |q 28854/1 |only if havequest(28854) |goto 85.7,60.9
+|tip The main mechanic for this fight is Shadow Gale, in which he will create a purple void zone circle on the ground.
+|tip The entire group needs to move into it as fast as they can so that they aren't killed by the AoE that effects players outside of the circle. He will take double damage during the duration of the spell.
+|tip Each time he uses Shadow Gale, he will summon a Faceless Corruptor. Use every ability you have to slow them down and kill them. ONLY SLOWING EFFECTS will work on them. If you don't kill them they will eventually heal the boss.
+|tip He will use Enfeebling Blow which will knock the tank back, giving him a debuff called Feeble Body, increasing the damage the tank will take by 100% for 3 seconds.
+|tip He will use Binding Shadows which is an AoE root that you can step out of before it hits the ground.
+|modelnpc 39392
+|only if not heroic_dung()
+step
+kill Erudax##40484 |only if not havequest(28854) |goto 85.7,60.9
+kill Erudax |q 28854/1 |only if havequest(28854) |goto 85.7,60.9
+|tip The main mechanic for this fight is Shadow Gale, in which he will create a purple void zone circle on the ground. The entire group needs to move into it as fast as they can so that they aren't killed by the AoE that effects players outside of the circle. He will take double damage during the duration of the spell.
+|tip Each time he uses Shadow Gale, he will summon 2 Faceless Corruptor. Use every ability you have to slow them down and kill them.
+|tip ONLY SLOWING EFFECTS will work on them. If you don't kill them they will eventually heal the boss.
+|tip He will use Enfeebling Blow which will knock the tank back, giving him a debuff called Feeble Body, increasing the damage the tank will take by 100% for 3 seconds.
+|tip He will use Binding Shadows which is an AoE root that you can step out of before it hits the ground.
+|tip If you don't kill the adds fast enough, they will be buffed with Shield of Nightmares, which will damage your group each time the add is hit.
+|modelnpc 39392
+|only if heroic_dung()
+step
+You can either run to the beginning of the dungeon to turn in your quests.
+Or
+You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
+|confirm
+step
+talk Farseer Tooranu##50385
+turnin Kill the Courier##28853 |goto Grim Batol,18.4,55.2
+step
+talk Velastrasza##50390
+turnin Soften them Up##28852 |goto 19,55
+step
+talk Baleflame##50387
+turnin Closing a Dark Chapter##28854 |goto 19.4,53
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub (ZG) 85",{
+mapid=793,
+achieveid={688},
+author="support@zygorguides.com",
+description="This guide will walk you through the Zul Gurub dungeon.",
+},[[
+step
+label "start"
+talk Overseer Blingbang##53151
+accept Booty Bay's Interests##29154 |goto Zul'Gurub 30.7,47.5
+step
+talk Bloodslayer Zala##53024
+accept Break the Godbreaker##29241 |goto 30.6,47.3
+step
+talk Briney Boltcutter##53043
+accept Putting a Price on Priceless##29242 |goto 30.5,51.0
+step
+talk Bloodslayer T'ara##53023 |goto Zul'Gurub/0 30.8,47.1
+accept The Beasts Within##29172 |or
+accept Break Their Spirits##29175 |or
+accept Secondary Targets##29173 |or
+|tip T'ara will only offer 1 or 2 of these quests at a time.
+step
+kill Venomancer Mauri##52380 |goto 33.4,46.7
+clicknpc Zanzil's Cauldron of Toxic Torment##52529
+Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+step
+Fight your way through this path.
+kill Venomtip Needler##52379+ |goto 37.2,46.4
+|tip If you need another nature buff, you can get one here.
+|confirm
+step
+kill Tiki Lord Mu'Loa##52340+ |goto 43.9,51.0
+|confirm
+step
+Fight your way to the next cauldron.
+clicknpc Zanzil's Cauldron of Toxic Torment##52529 |goto 48.5,52.1
+Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+step
+Pull the Venomguard Destroyers near the cauldron and kill them.
+kill Venomguard Destroyer##52311+
+|confirm
+step
+kill High Priest Venoxis##52155 |goto 50.8,55.1
+_Phase 1:_
+|tip He will cast, Toxic Link which attaches 2 party members. Run 25 yards away from each other to break this.
+|tip Whispers of Hethiss is a beam of poison that will damage a player while channeled. This needs to be _interrupted_.
+|tip During the fight he will use Venomous Effusion which creates a maze of poison on the ground. Avoid the wall at all cost.
+_Phase 2:_
+|tip Venoxis will Transform into a snake god. A poisonous cloud maze will appear on the ground, avoid walking in this.
+|tip He will continue to use Venomous Effusion.
+|tip His damage will be increased by 50% while in snake form.
+|tip He will cast a Pool of Acrid Tears on the player furthest away from him which deals nature damage. Avoid if you can.
+|tip He will use a cone attack, Breath of Hethiss, so melee should attack from the back if possible.
+_Phase 3:_
+|tip Players will be chased by Poison Tendrils, avoid these for 12 seconds. After this phase, Venoxis will take 100% more damage for 10 seconds. If  you do not kill him, phase 1 will repeat.
+|confirm
+step
+map Zul'Gurub
+path follow strict;loop off
+path	49.4,54.3	49.0,58.1	52.9,57.8
+Follow this path
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Once you get to this opening, avoid the rocks to make it up the hill. |goto 56.2,63.0 < 5 |c
+step
+kill Berserking Boulder Roller##52348 |goto 56.9,72.3
+|confirm
+step
+kill Bloodlord Mandokir##52151 |goto 60.1,80.2
+|tip He will randomly use Decapitate which will kill whoever he uses it on.
+|tip When the player is killed, a Chained Spirit will revive you, giving you Spirit's Vengeance, granting 25% Health, Damage, Healing and decreasing damage taken by 10%. This effect stacks.
+|tip He will gain a Level Up buff when he kills a player, increasing damage dealt by 20%, a stacking effect.
+|tip Mandokir will summon his raptor Ohgan. Kill the Raptor everytime it spawns or it will kill a Chained Spirit.
+|tip There are only 8 spirits, so kill Ohgan as fast as possible.
+|tip He will use Devastating Slam often during the fight, a 45 degree cone attack that will likely kill you. It marks the ground as to where it strikes, so avoid it.
+|tip He will toss the Bloodletting debuff on a random target, dealing 50% of their current health as shadow damage.
+|modelnpc Ohgan##52157
+|confirm
+step
+Go back down the hill |goto 56.6,63.3 <5 |c
+step
+kill Kaulema the Mover##52422 |q 29173/2 |goto 54.6,63.0
+|only if havequest(29173)
+step
+kill Mor'Lek the Dismantler##52405 |q 29173/1 |goto 54.9,55.5
+|only if havequest(29173)
+step
+kill Witch Doctor Qu'in##52322 |goto 54.5,52.7
+kill Chosen of Hethiss##52323+
+|confirm
+step
+kill Ritual Tiki Mask##52364+ |goto 59.5,46.1
+|confirm
+step
+If a party member has an Archaeology of 225 at least and wishes to fight the boss, click here. |confirm |next |goto 59.3,46.4
+If the party wishes to skip the Archaeology boss, click here. |next "end" |confirm |goto 59.3,46.4
+step
+The Edge of Madness event will summon 1 of 4 random bosses.
+If Hazza'rah spawns click here. |next "hazza" |confirm
+If Renataki spawns click here. |next "rena" |confirm
+If Wushoolay spawns click here. |next "wush" |confirm
+If Gri'lek spawns click here. |next "gri" |confirm
+step
+label hazza
+kill Hazza'rah##52271
+|tip Hazza'rah will use Nightmare and summon 4 adds. Each add will target a random party member and cast Waking Nightmare stunning them. The player who is not stunned must kill the adds before they reach the targetted player.
+collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label rena
+kill Renataki##52269
+|tip Renataki will use Deadly Poison throughout the fight. This effect stacks and can be cleansed.
+|tip He will periodically Vanish. When he does this make sure everybody in the party is at 100% health. He will Ambush a random target that deals 90% of the players health.
+|tip He will also cast Thousand Blades. This whirlwind is dangerous and needs to be avoided.
+collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label wush
+kill Wushoolay##52286
+|tip Wushoolay will summon Lightning Clouds periodically that should be avoided.
+|tip He will use Forked Lightning, so spread out.
+|tip Wushoolay will transform into a ball of lightning and charge at a random player. After he reaches them he begins to cast Lightning Rod. Everybody needs to run away from Wushoolay at this point, Lightning Rod does deadly amounts of damage and needs to be avoided
+collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label gri
+kill Gri'lek##52258
+|tip Gri'lek is a kiting encounter.
+|tip He will fixate on a random party member and gain the _Avatar_ buff, increasing his damage output by 500% and reducing his movement speed. If he fixates on you just run away until it is done.
+|tip He will cast Entangling Roots on the player he is chasing, this can and needs to be dispelled.
+|tip He constantly summons Rupture Lines. Avoid the rumbling dirt.
+collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
+|confirm |only if not havequest(29242) |next "end"
+step
+label "end"
+map Zul'Gurub
+path follow strict;loop off
+path	58.0,50.9	56.5,50.5	56.6,43.3
+path	58.5,34.9
+Follow this path
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Mortaxx##52438 |q 29173/3 |goto 62.4,33.8
+|only if havequest(29173)
+step
+Enter the building here |goto 57.9,29.8 < 5 |c
+|only if havequest(29175)
+step
+kill Gurubashi Master Chef##52392 |goto 57.7,27.3
+Destroy the Gurubashi Master Chef |q 29175/2
+|only if havequest(29172)
+step
+Follow this path. |goto 55.6,27.7 < 5 |c
+step
+Follow this path down towards the water. |goto 53.6,29.2 < 5 |c
+|only if havequest(29172)
+step
+kill Lost Offspring of Gahz'ranka##52418 |q 29172/1 |goto 55.1,33.5
+|only if havequest(29172)
+step
+Follow this path. |goto 47.9,27.6 < 5 |c
+step
+kill High Priestess Kilnara##52059 |goto 47.8,20.9
+_Phase 1_
+|tip The tank should pull the Pride of Bethekk and keep aggro on Kilnara.
+|tip The DPS should focus on killing the 16 Pride of Bethekk, pulling 4 at a time. (You can kill more if you've got great dps)
+|tip She will cast Tears of Blood on random party members. It deals massive damage and should be dispelled as soon as possible.
+|tip She will also cast Lash of Anguish on a random target, which should be dispelled.
+|tip She will cast Wave of Agony at a random player, attacking and knocking back anyone in front of her. Avoid it.
+_Phase 2_
+|tip Once she reaches 50% health she will enter phase 2, vanishing. When she reappears, she will be in cat form.
+|tip She will deal out more damage. DPS her down as fast as possible.
+|modelnpc Pride of Bethekk##52061+
+|confirm
+step
+map Zul'Gurub
+path follow strict;loop off
+path	47.6,23.6	44.9,28.1	42.2,29.1
+Go upstairs and leave the building. |goto 47.6,23.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+map Zul'Gurub
+path follow strict;loop off
+path	38.1,29.8	37.0,32.1	33.8,36.1
+path	33.0,38.4
+Follow this path |goto 33.0,38.4 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+|only if havequest(29172)
+step
+kill Florawing Hive Queen##52442 |q 29172/2
+|only if havequest(29172)
+step
+map Zul'Gurub
+path follow strict;loop off
+path	38.8,27.1	34.8,27.1	34.8,27.1
+Follow this path up to the next boss |goto 34.8,27.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Zanzil##52053 |goto 31.4,24.8
+|tip Zanzil will Drain 3 Cauldrons separately during this fight. You will use the buff of each Cauldron for the proper response to the boss.
+click  Zanzil's Cauldron of Toxis Torment |goto 30.6,23.9
+|tip Use the Green Cauldron at this location to get the buff. He will cast Graveyard Gas and put poison all over the ground.
+click Zanzil's Cauldron of Frostburn Formula |goto 31.6,27.3
+|tip Use the Blue Cauldron at this location to get the Forstburn Formula. He will resurrect a Berserker which you will have to kill.
+click Zanzil's Cauldron of Burning Blood |goto 33.0,24.3
+|tip Use the Red Cauldron at this location to get the Burning Blood. The Tank will use this to aggro and kill all the Zombies that resurrect.
+|confirm
+step
+map Zul'Gurub
+path follow strict;loop off
+path	37.7,27.5	42.7,30.2	41.1,37.0
+path	46.1,39.9	46.6,36.6
+Follow this path up and around |goto 46.6,36.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Jin'do the Godbreaker##52148 |only if not havequest(29252) |goto 48.7,39.9
+kill Jin'do the Godbreaker##52148 |q 29241/1 |only if havequest(29241) |goto 48.7,39.9
+This fight has 2 phases
+_Phase 1:_
+|tip Jin'do will cast an aura Shadows of Hakkar, which will do heavy damage to the group. Make sure to stand in the green bubbles while this aura is active.
+|tip Once his aura, Shadows of Hakkar is over, move out of the bubble.
+_Phase 2:_
+|tip Jin'do will go away and there will be 3 chains protected by a barrier on the ground. The tank will need to grab a Gurubashi Spirit and get near the chains.
+|tip The Gurubashi Spirit will use Body Slam on a player, if the player is near the chains, the barrier will break. Kill 3 chains by breaking the barrier and attacking them.
+collect Zul'Gurub Stone |q 29252/1 |only if havequest(29252)
+|confirm |only if not havequest(29252)
+step
+Go to this bridge |goto 42.5,42.4 <5 |c
+|only if havequest(29172)
+step
+kill Gub##52440 |q 29175/1 |goto 43.0,44.6
+|only if havequest(29175)
+step
+Follow this path |goto 43.6,47.9 <5 |c
+|only if havequest(29172)
+step
+Cross the bridge |goto 44.8,51.0 <5 |c
+|only if havequest(29172)
+step
+Follow this path |goto 47.8,53.0 <5 |c
+|only if havequest(29172)
+step
+Follow the path to the edge of the water |goto 46.7,54.3 <5 |c
+|only if havequest(29172)
+step
+kill Tor-Tun##52414 |q 29172/3 |goto 46.1,55.7
+|only if havequest(29172)
+step
+talk Overseer Blingbang##53151
+turnin Booty Bay's Interests##29154 |goto 30.7,47.5
+step
+talk Bloodslayer Zala##53024
+turnin Break the Godbreaker##29241 |goto 30.6,47.3
+step
+talk Bloodslayer T'ara##53023 |goto 30.8,47.1
+turnin The Beasts Within##29172 |or
+turnin Break Their Spirits##29175 |or
+turnin Secondary Targets##29173 |or
+|tip T'ara will only offer 1 or 2 of these quests at a time.
+step
+talk Briney Boltcutter##53043
+turnin Putting a Price on Priceless##29242 |goto 30.5,50.9
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul'Aman (ZA) 85",{
+mapid=781,
+achieveid={691},
+description="This guide will walk you through the Zul'Aman dungeon.",
+},[[
+step
+label "start"
+talk Witch Doctor T'wansi##52925
+accept The Hex Lord's Fetish##29186 |goto Zul'Aman 13.8,52.2
+step
+talk Vol'jin##52924
+accept Warlord of the Amani##11196 |goto 14.2,53.2
+step
+talk Vol'jin##52924 |goto 14.2,53.2
+Tell him you are ready to open the doors.
+|confirm
+step
+There will be a patrol walking at this point, wait for it to pass before moving to your left. |goto 34.4,48.7
+|confirm
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	31.8,43.8	29.7,41.3	33.0,40.0
+path	35.4,40.1	37.8,39.4	37.4,34.3
+path	36.0,28.5
+At this point, follow the path up the steps.
+|tip There will be mobs that come after you from behind as you go up the steps.
+|tip Kill Amani'shi Wind Walkers first, interrupting Chain Heal whenever they cast it.
+Follow the path up to Akil'zon's Altar. |goto 36.0,28.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Akil'zon##23574 |goto 35.1,22.9
+|tip For this encounter, you will want to spread out to avoid zapping party members with AoE attacks.
+|tip Amani Kidnappers will swoop down, picking up a random party member. You will have to kill the bird quickly.
+|tip He will cast Electrical Storm on a random party member. When this happens, all players will need to move underneath the party member who is affected.
+|tip Electrical Storm deals out massive damage that increases over time, so move quickly.
+|tip He will also put the Static Disruption debuff on a random target, dealing nature damage and increasing nature damage taken. It can be dispelled.
+|modelnpc 52638
+scenariogoal 1/24846
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	34.3,61.7	31.0,63.4	30.8,66.6
+path	33.9,70.4	34.1,75.8	37.5,76.5
+The patrol will still be there you can avoid it or kill them.
+|tip Follow the path up, fighting trash as you go along.
+|tip Kill Amani'shi Medicine Men first, followed by Amani'shi Casters.
+|tip If needed, you can also use crowd control on them when needed.
+|tip At the last pull, you will not be able to crowd control at first.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Nalorakk##23576 |goto 40.6,76.5
+_Phase 1(Troll Phase):_
+|tip He will deal massive damage to the tank with _Brutal Strike_.
+|tip He also uses an ability called Surge. It's important to know that he charges the player furthest from him, leaving a debuff that increases damage taken by 500%!
+|tip This means that you need to rotate who gets hit by it. Ranged DPS and Healers should be the ones to do this. However if you don't have enough ranged, have everyone stack close to the boss, and have a melee step out when it's their turn.
+|tip He will use Surge 3 times, so 3 people will need to take the hit!_
+_Phase 2(Bear Phase):_
+|tip He will put a massive bleed dot on the tank called Lacerating Slash.
+|tip He will also use Deafening Roar, which silences the party for 2 seconds. It will be important to keep the tank topped off on health during phase 2.
+|tip He will go back and forth between phases.
+scenariogoal 1/24847
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	34.3,76.8	33.9,90.6	37.5,91.4
+path	43.3,89.5	48.0,90.0	49.6,86.2
+path	52.2,84.2	55.9,84.2	59.8,83.6
+path	58.5,77.6	55.4,76.8	55.4,72.6
+Follow the path.
+|tip Use crowd control on Amani'shi Flame Casters when applicable.
+|tip Keep an eye out for Amani'shi Scouts, if they do not die instantly they will summon additional adds..
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Jan'alai##23578 |goto 55.4,71.0
+|tip For this fight, he will cast Flame Breath towards a random player. Step out of the way when he does so, it deals massive fire damage.
+|tip He will also Summon Amani'shi Hatchers, which hatch Amani Dragonhawk Hatchlings. ONLY KILL ONE of the Hatchers, and let the other destroy the eggs.
+|tip Use every AoE ability you have to kill the hatchlings as they come in waves.
+|tip He will also periodically use Fire Bomb, where he will teleport to the center of the room and throw fire orbs around randomly. DO NOT STAND ON THE FIRE ORBS.
+|tip DPS him down slowly until the Amani Dragonhawk Hatchlings are dead.
+scenariogoal 1/24848
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	55.6,62.9	59.1,56.1	59.1,50.8
+path	59.0,43.1	62.3,37.6	64.8,30.0
+path	71.3,23.4	76.4,21.7
+Follow the path. |goto 76.4,21.7 < 5
+|tip If you have any sort of water walk, you can reach the end waypoint without fighting much.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	75.1,14.9	70.4,14.1	68.3,19.2
+path	65.2,23.1
+There will be packs of Amani Lynx that are stealthed. Let your tank move ahead of the party.
+|tip At the last waypoint, use any crowd control you have available, and pull the group to the bottom of the stairs.
+|tip Kill the trolls first.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+kill Halazzi##23577 |goto 58.0,23.3
+|tip He will drop a Water Totem, which heals and restores mana to anyone standing in it's radius. Move Halazzi out of it, and have ranged party members stand in it.
+|tip At 66% and 33% he will summon a Spirit of the Lynx that has random threat no matter what. Halazzi's health will jump to 100% also. Burn him down.
+|tip Kill Corrupted Lightning Totems as they are summoned. He only casts this while in troll form.
+|tip Dispel Flame Shock if possible. He only casts this while in troll form.
+scenariogoal 1/24849
+step
+map Zul'Aman
+path follow strict;loop off;ants straight
+path	59.4,33.9	62.4,34.3	59.9,40.1
+path	58.8,45.8	58.1,53.9	64.9,53.2
+Follow the path up to Hex Lord Malacrass.
+|tip Use crowd control on Amani'shi Medicine Men.
+|tip When you fight Amani'shi Berserkers let your tank get threat before you attack, they cannot be taunted.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+label "hex"
+kill Hex Lord Malacrass##24239+ |goto 71.3,53.2
+|tip He will have two adds on both his sides. They can be crowd controlled and should be if possible.
+|tip If your group has no crowd control, then you will need to kill them before attacking the boss, as they do a lot of damage.
+|tip Hex Lord Malacrass will adopt the abilities from a random party member. Click below to see what he will do.
+collect The Hex Lord's Fetish |q 29186/1 |only if havequest(29186)
+Death Knight: |next "dk" |confirm
+Druid: |next "druid" |confirm
+Hunter: |next "hunt" |confirm
+Mage: |next "mage" |confirm
+Paladin: |next "pally" |confirm
+Priest: |next "priest" |confirm
+Rogue: |next "rogue" |confirm
+Shaman: |next "shaman" |confirm
+Warlock: |next "lock" |confirm
+Warrior: |next "war" |confirm
+Click here to continue. |next "daa" |confirm
+step
+label "dk"
+He will put Death and Decay on the ground. Stay out of it.
+|tip Kill Blood Worms if you see them.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "druid"
+He will use Lifebloom which should be dispelled.
+|tip He will also use Thorns which should be removed from him.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "hunt"
+He will use Explosive Trap.
+|tip He will use Freezing Trap.
+|tip He will use Snake Trap. AoE down the snakes.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "mage"
+He will root nearby players with Frost Nova.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "pally"
+He will use Consecration, which is an AoE Ground Type attack. Move out of it.
+|tip He will cast Holy Light which needs to be interrupted.
+|tip He will use Avenging Wrath which can be Purged, Dispelled or you can use Spell Steal.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "priest"
+He will use Mind Control.
+|tip He Will use Heal which needs to be interrupted.
+|tip He will use Psychic Scream which will fear you if you are close so stay away if you can.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "rogue"
+He will use Blind.
+|tip He will use Would Poison on the tank which needs to be dispelled (Poison).
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "shaman"
+He will use Fire Nova so stay away from him if you can.
+|tip He will use Healing Wave which needs to be interrupted.
+|tip He will use Chain Lightning so spread out.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "lock"
+He will cast Rain of Fire, simply move out of its radius.
+|tip He will cast Unstable Affliction, DO NOT dispel it.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "war"
+He will use Spell Reflect, be sure not to cast big spells when he's got it up.
+|tip He will use Whirlwind, so don't be within melee range.
+|tip He will use Mortal Strike on the tank.
+Click here to go back to the Hex Lord. |next "hex" |confirm
+step
+label "daa"
+Click the doors and fight the trolls that come out. |goto 73.8,53.2
+After you defeat the trolls, make your way to the steps.
+|confirm
+step
+label "final"
+kill Daakara##23863 |only if not havequest(11196) |goto 90.8,52.6
+This encounter has 3 phases:
+_Phase 1:_
+|tip He will use Whirlwind often. Melee should move away from him when he is casting it to avoid damage.
+|tip He will also also use Grievous Throw which leaves a bleed on a target. If you heal the afflicted target to full it will go away.
+_Phase 2:_
+|tip He will take on two of the forms of former bosses. If Lynx is first, he will choose Dragonhawk second. If Bear is first then Eagle will be second. Click to get a detailed explaination.
+|confirm |only if not havequest(11196) |next "turnin"
+kill Daakara##23863 |q 11196/1 |only if havequest(11196) |next "turnin"
+Click here for details on _Shape of the Eagle_.|next "eagle" |confirm
+Click here for details on _Shape of the Bear_.|next "bear" |confirm
+Click here for details on _Shape of the Dragonhawk_.|next "dragonhawk" |confirm
+Click here for details on _Shape of the Lynx_.|next "lynx" |confirm
+step
+label "eagle"
+He will use Energy Storm which will hit players whenever they cast a spell for 12,000 nature damage.
+|tip Kill Lightning Totems as he places them on the battle field.
+|tip He will cast Summoned Cyclone which needs to be avoided at all cost.
+Click here to go back to the boss. |next "final" |confirm
+step
+label "bear"
+His main ability will be Creeping Paralysis, this will stun the entire party after a few seconds but can be dispelled. Mass Dispell is extremely useful but if you do not have one then dispel priority targets (Healer, Tank, Highest DPS).
+|tip He will also use Surge, so you will all need to stack up on the boss, having 3 different ranged move out to take the surge.
+Click here to go back to the boss. |next "final" |confirm
+step
+label "dragonhawk"
+He will cast Flame Whirl which increases damage from fire, this is unavoidable.
+|tip He will cast Flame Breath at targets in front of him. Do not be in front of him.
+|tip He casts Column of Fire which deals out a lot of damage, move out of it.
+Click here to go back to the boss. |next "final" |confirm
+step
+label "lynx"
+He will use Claw Rage on a random party member. The tank will need to Taunt it IMMEDIATELY.
+|tip He will also spawn a Lynx during the fight.
+|tip He will also randomly use Lynx Rush dealling mass damage to the target.
+Click here to go back to the boss. |next "final" |confirm
+step
+label "turnin"
+talk Witch Doctor T'wansi##52925
+turnin The Hex Lord's Fetish##29186 |goto 91.6,54.8
+step
+talk Vol'jin##52924
+turnin Warlord of the Amani##11196 |goto 93.0,53.6
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\End Time (ET)\\End Time (ET) Tank Guide",{
 author="support@zygorguides.com",
@@ -3886,7 +9558,7 @@ kill 2 Echos in the End Time instance. |q 30097/1 |only if havequest(30097)
 Click here for more details of the boss fight. |confirm  |next "Muronzond" |or
 |confirm |next "next_5" |or
 step
-label	"Muronzond"
+label "Bronze"
 _Muronzond_
 As a tank you will need to face Boss aways from group. _Muronzond_ has _Tail Swipe_ so group cannot be directly behind boss.
 Tank and Melee cannot avoid _Temporal Blast_, a small AoE that deals 25k damage, this will need to be healed through.
@@ -4031,8 +9703,8 @@ When tanking, you will have to pay attention to _Distortion Bombs_, which will g
 You will see five hourglass symbols on your screen. By clicking the large hourglass in the middle of the room, you will use 1 hourglass, which will revive everyones health and clear the _Distortion Bombs_ on the ground.
 kill Murozond##54432 |only if not havequest(30096)
 |confirm |only if not havequest(30096)
-.kill 2 Echos in the End Time instance |q 30097/1 |only if havequest(30097)
-.kill Murozond##54432 |q 30096/1 |only if havequest(30096)
+kill 2 Echos in the End Time instance |q 30097/1 |only if havequest(30097)
+kill Murozond##54432 |q 30096/1 |only if havequest(30096)
 step
 After you kill Murozond wait for Alurmi
 talk Alurmi##57864
@@ -4203,7 +9875,7 @@ Click _Hourglass_ to reset fight.
 Click here for more details of the boss fight |confirm |next "Muronzond" |or
 |confirm |next "next_5" |or
 step
-label	"Muronzond"
+label "Bronze"
 _Muronzond_
 _Muronzond_ has _Tail Swipe_ so group cannot be directly behind boss.
 Tank and Melee cannot avoid _Temporal Blast_, a small AoE that deals 25k damage, this will need to be healed through.
@@ -4636,7 +10308,8 @@ path follow strict;loop off;ants straight
 path	50.9,20.3	52.3,21.6	53.9,23.1
 Follow this path and kill the groups.
 Talk to Thrall when you are ready to face the boss.
-|confirm always
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label	"pre_Arcurion"
 kill Arcurion##54590 |goto 56.7,27.4
@@ -4677,7 +10350,8 @@ kill Twilight Bruiser##55112+
 kill Twilight Ranger##55107+
 kill Twilight Shadow-Walker##55109+
 |modelnpc 55474
-|confirm always
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label	"pre_Asira"
 kill Asira Dawnslayer##54968 |goto Hour of Twilight,39.5,52.4
@@ -4716,7 +10390,9 @@ Kill the _Shadow Borer's first_, they interrupt and stop healing.
 kill Faceless Shadow Weaver##54633+
 kill Faceless Brute##54632+
 kill Shadow Borer##54686+
-Enter Wyrmrest Temple here. |goto Hour of Twilight 49.6,82.8 <5|noway |c
+Enter Wyrmrest Temple here. |goto Hour of Twilight 49.6,82.8 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label	"pre_Bishop"
 kill Archbishop Benedictus##54938 |goto Hour of Twilight/2 47.2,50.9
@@ -4763,7 +10439,8 @@ path follow strict;loop off;ants straight
 path	50.9,20.3	52.3,21.6	53.9,23.1
 Follow this path and kill the groups.
 Talk to Thrall when you are ready to face the boss.
-|confirm always
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Arcurion will cast _Chains of Frost_, freezing all targets in place and _dealing 10k damage_.
 You will see blue _circles mark the ground_ for a few seconds, do not stand in this. _Frozen Servitors_ on top of cliffs are _throwing boulders_ and you will freeze if caught in it.
@@ -4792,7 +10469,8 @@ kill Twilight Bruiser##55112+
 kill Twilight Ranger##55107+
 kill Twilight Shadow-Walker##55109+
 |modelnpc 55474
-|confirm always
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Asira will use _Mark of Silence_ on a random _spellcaster_ and if this spellcaster casts a spell, boss will throw a knife, hitting anyone between the player and the boss. This will silence whoever it hits.
 Boss will create _Choking Smoke Bomb_ which will not allow players to target while in this cloud. It will also inflict _5k Nature damage_ every .5 seconds.
@@ -4821,7 +10499,9 @@ As Damage you should kill the _Shadow Borer's first_, as they interrupt and stop
 kill Faceless Shadow Weaver##54633+
 kill Faceless Brute##54632+
 kill Shadow Borer##54686+
-Enter Wyrmrest Temple here |goto Hour of Twilight,49.6,82.8,1|noway |c
+Enter Wyrmrest Temple here |goto Hour of Twilight,49.6,82.8,1
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Archbishop has a lot of spells that will affect nearby players, _spread out_ before fight starts.
 _Wave of Virtue_ and _Wave of Twilight_ are waves of Holy or Shadow that will sweep across the stage. These _knock_ anyone _back_ and cause _100k damage_. Run over to Thrall's blue _Water shield_ when you see this coming.
@@ -4850,7 +10530,8 @@ path follow strict;loop off;ants straight
 path	50.9,20.3	52.3,21.6	53.9,23.1
 Follow this path and kill the groups.
 Talk to Thrall when you are ready to face the boss.
-|confirm always
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label	"pre_Arcurion"
 kill Arcurion##54590 |goto 56.7,27.4
@@ -4930,7 +10611,9 @@ Kill the _Shadow Borer's first_, they interrupt and stop healing.
 kill Faceless Shadow Weaver##54633+
 kill Faceless Brute##54632+
 kill Shadow Borer##54686+
-Enter Wyrmrest Temple here. |goto Hour of Twilight 49.6,82.8 |noway |c
+Enter Wyrmrest Temple here. |goto Hour of Twilight 49.6,82.8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label	"pre_Bishop"
 kill Archbishop Benedictus##54938 |goto Hour of Twilight/2,47.2,50.9
@@ -4962,5096 +10645,14 @@ talk Thrall##54971
 turnin To Wyrmrest!##30103 |goto 46.9,45.0
 turnin The Twilight Prophet##30105 |goto 46.9,45.0
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Hellfire Ramparts (Ramps) 59-63",{
-mapid=797,
-achieveid={647},
-author="support@zygorguides.com",
-description="This guide will walk you through the Hellfire Citadel: Hellfire Ramparts dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for Hellfire Ramparts or enter the dungeon with your group |goto Hellfire Ramparts/1 50.1,70.4 |c |or
-|confirm |or
-step
-talk Advance Scout Chadwick##54603
-accept War on the Ramparts##29528 |goto Hellfire Ramparts,48.5,68.1
-accept Demons in the Citadel##29529 |goto Hellfire Ramparts,48.5,68.1
-accept Hitting Them Where It Hurts##29594 |goto Hellfire Ramparts,48.5,68.1
-only if not completedq(29528) or not completedq(29528) or not completedq(29594)
-stickystart "crates"
-step
-map Hellfire Ramparts/1
-path follow smart; loop off; ants curved; dist 15
-path	47.0,64.9	45.5,55.3	51.7,46.9
-path	59.5,48.5	65.6,55.4	72.0,52.4
-path	75.9,43.7
-Follow the path |goto Hellfire Ramparts/1 75.9,43.7 |c |noway
-step
-kill Hellfire Watcher##17309
-|tip Kill the Hellfire Watchers first. Interrupt their Heal spell.
-kill Watchkeeper Gargolmar##17306
-|tip Gargolamr will Surge at players. Stay spread out at least 10 yards to minimize damage.
-Loot Watchkeeper Gargolmar's Hand |q 29528/1 |goto Hellfire Ramparts 76.9,34.4 |only if havequest(29528)
-scenariogoal 24926 |goto Hellfire Ramparts 76.9,34.4
-step
-map Hellfire Ramparts/1
-path follow smart; loop off; ants curved; dist 15
-path	74.8,31.5	69.7,30.5	65.0,39.8
-path	69.7,41.7	68.4,48.1	65.1,45.2
-path	59.9,45.9	56.0,52.6	57.2,57.6
-path	54.3,61.2	51.5,56.9	47.0,43.7
-path	43.3,31.9
-Follow the path |goto Hellfire Ramparts/1 43.3,31.9 < 7 |noway |c
-step
-kill Omor the Unscarred##17308
-|tip Treacherous Aura will do shadow damage to anyone within 15 yards every second. Periodically, Omor will summon a Fiendish Hound.
-Loot Omor's Hoof |q 29529/1 |goto 39.3,21.2 |only if havequest(29529)
-scenariogoal 18536 |goto 39.3,21.2
-step
-label "crates"
-click Hellfire Supplies##7001
-|tip These can be found all around Hellfire Ramparts.
-Gather 3 crates of Hellfire Supplies |q 29594/1
-only if havequest(29594)
-step
-map Hellfire Ramparts/1
-path follow smart; loop off; ants curved; dist 15
-path	40.9,25.0	45.7,39.5	51.9,56.4
-path	44.0,68.2
-Follow the path |goto Hellfire Ramparts/1 44.0,68.2 < 8 |noway |c
-step
-kill Vazruden the Herald##17537
-|tip Players targeted by Vazruden's Mark should keep moving to avoid being hit by fireballs.
-kill Nazan##17536
-|tip When Vazruden dies, Nazan lands and attacks. Avoid standing in front of Nazan or you will be hit by Cone of Fire.
-Loot Nazan's Head |q 29528/2 |goto 36.2,79.3 |only if havequest(29528)
-scenariogoal 24933 |goto 36.2,79.3
-step
-click Reinforced Fel Iron Chest##5744 |goto 31.3,86.4
-|tip Loot your items for clearing this dungeon.
-confirm
-step
-Jump down here to turn in your quests |goto 51.1,63.8 < 8
-talk Advance Scout Chadwick##54603
-turnin War on the Ramparts##29528 |goto 48.5,68.1
-turnin Demons in the Citadel##29529 |goto 48.5,68.1
-turnin Hitting Them Where It Hurts##29594 |goto 48.5,68.1
-only if not completedq(29528) or not completedq(29528) or not completedq(29594)
-step
-Congratulations! You have completed Hellfire Ramparts.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: The Blood Furnace (BF) 60-64",{
-mapid=725,
-achieveid={648},
-author="support@zygorguides.com",
-description="This guide will walk you through the Hellfire Citadel: The Blood Furnace dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for The Blood Furnace or enter the dungeon with your group |goto The Blood Furnace/1 47.8,90.6 |c |or
-|confirm |or
-step
-talk Gunny##54629
-accept Make Them Bleed##29538 |goto The Blood Furnace 51.4,90.0
-accept Heart of Rage##29539 |goto The Blood Furnace 51.4,90.0
-accept The Breaker##29540 |goto The Blood Furnace 51.4,90.0
-only if not completedq(29538) or not completedq(29539) or not completedq(29540)
-stickystart "felorcblood"
-step
-map The Blood Furnace/1
-path follow smart; loop off; ants curved; dist 15
-path	52.0,90.0	58.2,89.5	58.1,76.6
-path	58.1,66.4	58.1,56.1	53.1,53.0
-path	49.7,46.8	47.3,41.2	45.0,41.2
-Follow the path |goto The Blood Furnace/1 45.0,41.2 < 6 |noway |c
-|tip Be wary of stealthed Laughing Skull Rogues
-step
-kill The Maker##17381
-_Domination_
-|tip This ability mind controls a party member for 10 seconds.
-_Exploding Breaker_
-|tip Deals nature damage to the player targeted and anyone within 8 yards. Stay spread out to minimize party damage.
-Loot the Fel Infusion Rod |q 29538/2 |goto The Blood Furnace 36.6,40.7 |only if havequest(29538)
-scenariogoal 24911 |goto The Blood Furnace 36.6,40.7
-step
-map The Blood Furnace/1
-path follow smart; loop off; ants curved; dist 15
-path	35.8,41.3	31.7,42.1	30.8,30.6
-path	31.9,21.1	35.5,22.0
-Follow the path |goto The Blood Furnace/1 35.5,22.0 < 5 |noway |c
-|tip Be wary of stealthed Laughing Skull Rogues
-step
-click Cell Door Lever##6899
-|tip This will start the boss fight. You will have 4 cell doors open and have to fight Orcs until all 4 waves are complete.
-kill Broggok##17380
-|tip DPS should stay behind Broggok to avoid damage from Slime Spray.
-scenariogoal 24913 |goto 43.4,21.9
-step
-map The Blood Furnace/1
-path follow smart; loop off; ants curved; dist 15
-path	44.7,22.0	58.1,21.4	58.6,27.5
-path	62.6,29.0	65.8,33.2	67.8,41.0
-path	65.4,41.2
-Follow the path |goto The Blood Furnace/1 65.4,41.2 < 5 |noway |c
-|tip Be wary of stealthed Laughing Skull Rogues
-Investigate The Blood Furnace |q 29539/1 |only if havequest(29539)
-step
-kill Shadowmoon Channeler##17653
-|tip After the Channelers die, Keli'dan will activate.
-kill Keli'dan the Breaker##17377
-|tip Dispel Corruption whenever possible. When Keli'dan becomes immune, he will kneel down and cast Burning Nova. Run at least 20 yards away.
-scenariogoal 3239 |goto 59.2,42.5
-step "felorcblood"
-kill Laughing Skull Enforcer##17370+, Laughing Skull Rogue##17491+
-kill Shadowmoon Warlock##17371+, Shadowmoon Adept##17397+, Shadowmoon Summoner##17395+
-Loot 10 Fel Orc Blood Vials |q 29538/1
-only if havequest(29538)
-step
-map The Blood Furnace/1
-path follow smart; loop off; ants curved; dist 15
-path	62.3,47.2	63.4,63.4	63.5,78.4
-path	62.8,90.6	55.5,89.7
-Follow the path |goto The Blood Furnace/1 55.5,89.7 < 8 |noway |c
-|tip Be wary of stealthed Laughing Skull Rogues
-only if not completedq(29538) or not completedq(29539) or not completedq(29540)
-step
-talk Gunny##54629
-turnin Make Them Bleed##29538 |goto 51.4,90.1
-turnin Heart of Rage##29539 |goto 51.4,90.1
-turnin The Breaker##29540 |goto 51.4,90.1
-only if not completedq(29538) or not completedq(29539) or not completedq(29540)
-step
-Congratulations! You have completed The Blood Furnace
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Slave Pens (SP) 61-65",{
-mapid=728,
-achieveid={649},
-author="support@zygorguides.com",
-description="This guide will walk you through the Coilfang Reservoir: Slave Pens dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for The Slave Pens or enter the dungeon with your group |goto The Slave Pens/1 20.0,13.4 |c |or
-|confirm |or
-step
-talk Watcher Jhang##54667
-accept Lost in Action##29563 |goto The Slave Pens 18.9,11.3
-accept The Heart of the Matter##29565 |goto The Slave Pens 18.9,11.3
-only if not completedq(29563) or not completedq(29565)
-step
-talk Nahuud##54668
-accept A Brother Betrayed##29564 |goto 17.9,12.1
-only if not completedq(29564)
-step
-map The Slave Pens/1
-path follow smart; loop off; ants curved; dist 15
-path	16.9,15.1	10.2,29.8	6.3,45.9
-path	8.7,53.2	13.9,51.8	23.8,50.3
-path	33.5,50.7	41.3,52.8	42.4,41.9
-path	40.3,34.8	42.8,21.3
-Follow the path |goto The Slave Pens/1 42.8,21.3 < 6 |noway |c
-step
-kill Mennu the Betrayer##17941
-|tip Killing the Corrupted Nova Totem is top priority, followed by Mennu's Healing Ward.
-scenariogoal 24907 |goto 48.8,24.3
-step
-map The Slave Pens/1
-path follow smart; loop off; ants curved; dist 15
-path	48.8,23.6	48.8,13.0	45.5,22.1
-path	45.3,35.9	48.8,44.2	48.8,53.8
-Follow the path |goto The Slave Pens/1 48.8,53.8 < 8 |noway |c
-step
-Jump down here |goto 52.2,65.4 < 5 |c |or
-|confirm |or
-step
-talk Weeder Greenthumb##17890
-Discover Weeder Greenthumb |q 29563/2 |goto 48.9,83.4
-only if havequest(29563)
-step
-map The Slave Pens/1
-path follow loose; loop off; ants curved; dist 15
-path	50.0,66.6	48.8,71.0	51.3,75.3
-path	55.1,74.2	57.2,61.2	58.9,53.2
-Follow the path |goto The Slave Pens/1 58.9,53.2 < 6 |noway |c
-step
-kill Rokmar the Crackler##17991
-_Grievous Wound_
-|tip This will bleed all party members until they are healed to full health.
-_Frenzy_
-|tip Frenzy causes Rokmar to gain increased physical damage and 60% increased attack speed.
-Loot The Invader's Claw |q 29565/1 |only if havequest(29565)
-scenariogoal 24908 |goto 57.3,45.4
-step
-map The Slave Pens/1
-path follow smart; loop off; ants curved; dist 15
-path	59.4,48.6	67.5,45.5	74.7,51.0
-path	88.0,47.7	90.5,53.3
-Follow the path |goto The Slave Pens/1 90.5,53.3 < 6 |noway |c
-step
-talk Naturalist Bite##17893
-Discover Naturalist Bite |q 29563/1 |goto 95.7,66.2
-only if havequest(29563)
-step
-talk Naturalist Bite##17893
-|tip Be ready to fight a couple mobs.
-kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
-Talk to Naturalist Bite
-Tell him: "_Naturalist, please grant me your boon_" |havebuff Interface\Icons\Ability_Druid_FerociousBite |goto 95.7,66.2
-step
-kill Quagmirran##17942
-|tip Avoid standing in front of Quagmirran or you will be hit with Acid Spray and Cleave.
-_Poison Bolt Volley_
-|tip Deals nature damage to all party members.
-_Uppercut_
-|tip This ability deals physical damage and knocked the affected player up in the air.
-Loot The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9 |only if havequest(29565)
-scenariogoal 3240 |goto The Slave Pens 86.2,67.9
-step
-map The Slave Pens/1
-path follow smart; loop off; ants curved; dist 15
-path	87.9,62.0	90.5,52.9	86.6,48.4
-path	77.0,50.4	67.7,47.7	59.1,49.3
-path	52.3,48.8	45.0,48.1	39.0,54.2
-path	29.3,50.2	17.6,50.8	7.5,52.8
-path	6.9,42.5	11.1,27.2	17.9,12.2
-Follow the path back to the beginning of the dungeon |goto The Slave Pens/1 17.9,12.2 < 10 |noway |c
-talk Nahuud##54668
-turnin A Brother Betrayed##29564 |goto The Slave Pens 17.9,12.2
-|tip You can also Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-only if not completedq(29564)
-step
-talk Watcher Jhang##54667
-turnin Lost in Action##29563 |goto 18.8,11.3
-turnin The Heart of the Matter##29565 |goto 18.8,11.3
-only if not completedq(29563) or not completedq(29565)
-step
-Congratulations! You have completed The Slave Pens.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: Underbog (UB) 62-66",{
-mapid=726,
-achieveid={650},
-author="support@zygorguides.com",
-description="This guide will walk you through the Coilfang Reservoir: Underbog dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for the Underbog or enter the dungeon with your group |goto The Underbog/1 29.7,67.9 |c |or
-|confirm |or
-step
-talk Naturalist Bite##54678
-accept A Necessary Evil##29568 |goto The Underbog 29.5,64.7
-step
-talk Watcher Jhang##54675
-accept Rescuing the Expedition##29570 |goto 30.9,65.3
-step
-talk T'shu##54674
-accept Stalk the Stalker##29567 |goto 31.5,65.5
-accept Bring Me A Shrubbery!##29691 |goto 31.5,65.5
-stickystart "sanguinehibiscus"
-step
-map The Underbog/1
-path follow smart; loop off; ants curved; dist 15
-path	31.9,62.5	37.0,60.3	44.2,61.4
-path	51.5,69.2	56.9,82.0	59.1,87.8
-path	56.2,89.7
-Follow the path |goto The Underbog/1 56.2,89.7 |noway |c
-step
-kill Hungarfen##17770
-|tip Stay away from Underbog Mushrooms. They explode after 20 seconds leaving a nasty DoT.
-_Foul Spores_
-|tip This is cast at 20% health, leeching health from anyone within 15 yards.
-scenariogoal 24904 |goto The Underbog/1 70.2,91.4
-step
-map The Underbog/1
-path follow smart; loop off; ants curved; dist 15
-path	70.3,87.7	70.2,76.5	61.4,68.1
-path	59.8,56.2	70.7,55.9	74.4,43.9
-path	68.5,36.6	69.1,30.7
-Follow the path |goto The Underbog/1 69.1,30.7 |noway |c
-step
-kill Ghaz'an##18105
-|tip Stand off to Ghaz'an's sides or you will be hit with Acid Breath or Tail Sweep.
-scenariogoal 24905 |goto The Underbog/1 78.3,28.0
-step
-Jump down in the water here  |goto 78.9,24.5 < 5 |c
-step
-Swim across the water and jump down here |goto 79.6,15.2 < 5 |c
-step
-talk Earthbinder Rayge##17885
-Discover Earthbinder Rayge |q 29570/1 |goto 67.4,21.3
-only if havequest(29570)
-step
-map The Underbog/1
-path follow smart; loop off; ants curved; dist 15
-path	79.7,11.6	71.6,14.1	62.0,20.0
-path	57.1,26.1	45.9,28.1
-Follow the path |goto The Underbog/1 45.9,28.1 < 8 |noway |c
-step
-kill Swamplord Musel'ek##17826, Claw##17827
-|tip Spread out to minimize damage from Volley.
-_Knock Away_
-|tip This ability will knock the targeted player back and deal physical damage.
-scenariogoal 24906 |goto 41.5,25.4
-step
-Talk to Windcaller Claw
-Discover Windcaller Claw |q 29570/2 |goto The Underbog/1 40.7,21.6
-only if havequest(29570)
-step
-map The Underbog/1
-path follow smart; loop off; ants curved; dist 15
-path	41.5,28.3	40.6,42.5	35.8,43.1
-path	30.8,34.8	26.9,36.1
-Follow the path |goto The Underbog/1 26.9,36.1 < 10 |noway |c
-step
-kill The Black Stalker##17882
-|tip Stay spread out to minimize Chain Lightning damage.
-_Static Charge_
-|tip If you are affected by this debuff, move away from allies or they will take damage too.
-Loot the Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5 |only if havequest(29567)
-scenariogoal 3243 |goto The Underbog 25.9,45.5
-step "sanguinehibiscus"
-click Sanguine Hibiscus##5031
-|tip These can be found throughout the dungeon.
-collect 5 Sanguine Hibiscus##24246 |q 29691/1
-only if havequest(29691)
-step
-talk Naturalist Bite##54678
-turnin A Necessary Evil##29568 |goto The Underbog 29.5,64.5
-step
-talk Watcher Jhang##54675
-turnin Rescuing the Expedition##29570 |goto 30.8,65.3
-step
-talk T'shu##54674
-turnin Stalk the Stalker##29567 |goto 31.6,65.5
-turnin Bring Me A Shrubbery!##29691 |goto 31.6,65.5
-step
-Congratulations! You have completed The Underbog
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Mana-Tombs (MT) 63-67",{
-mapid=732,
-achieveid={651},
-author="support@zygorguides.com",
-description="This guide will walk you through the Auchindoun: Mana-Tombs dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Mana-Tombs/1 33.5,17.3 |c |or
-|confirm |or
-step
-talk Mamdy the "Ologist"##54694
-accept Intriguing Specimens##29574 |goto Mana-Tombs 32.7,19.4
-only if not completedq(29574)
-step
-talk Artificer Morphalius##54692
-accept Safety is Job One##29573 |goto 34.4,19.4
-accept Undercutting the Competition##29575 |goto 34.4,19.4
-only if not completedq(29573) or not completedq(29575)
-step
-kill Pandemonius##18341
-|tip Clear out this room before you pull the boss, they will aggro with him.
-_Dark Shell_
-|tip When this is cast, STOP ATTACKING. You will kill yourself if you don't.
-Loot Pandemonius' Essence |q 29574/1 |goto 48.2,27.7 |only if havequest(29574)
-scenariogoal 24894 |goto 48.2,27.7
-step
-map Mana-Tombs/1
-path follow smart; loop off; ants curved; dist 15
-path	47.0,28.7	55.8,28.8	60.0,33.5
-path	60.7,43.7	60.7,52.3	56.0,65.0
-Follow the path |goto Mana-Tombs/1 56.0,65.0 < 15 |noway |c
-step
-kill Tavarok##18343
-_Crystal Prison_
-|tip This ability will trap a random player and deal 10% of the maximum health every second for 5 seconds.
-_Arcing Smash_
-|tip Arcing Smash will damage anyone standing in front of him.
-Loot Tavarok's Heart |q 29574/2 |goto Mana-Tombs/1 60.6,74.9 |only if havequest(29574)
-scenariogoal 24895 |goto 61.3,74.0
-step
-map Mana-Tombs/1
-path follow smart; loop off; ants curved; dist 15
-path	60.7,74.9	60.8,83.8	50.0,84.3
-path	39.2,84.3	32.6,84.0	32.6,74.0
-path	32.6,61.2
-Follow the path |goto Mana-Tombs/1 32.6,61.2 < 10 |noway |c
-step
-kill Nexus-Prince Shaffar##18344
-Loot Shaffar's Wrappings |q 29575/1 |goto 32.4,50.7 |only if havequest(29575)
-scenariogoal 3241 |goto 32.4,50.7
-step
-map Mana-Tombs/1
-path follow smart; loop off; ants curved; dist 15
-path	32.5,46.5	32.6,34.6	41.4,34.1
-path	38.6,28.6	33.8,25.2
-Follow the path |goto Mana-Tombs/1 33.8,25.2 < 8 |noway |c
-only if not completedq(29573) or not completedq(29575) or not completedq(29574)
-step
-talk Artificer Morphalius##54692
-turnin Safety is Job One##29573 |goto Mana-Tombs 34.3,19.6
-turnin Undercutting the Competition##29575 |goto Mana-Tombs 34.3,19.6
-only if not completedq(29573) or not completedq(29575)
-step
-talk Mamdy the "Ologist"##54694
-turnin Intriguing Specimens##29574 |goto 32.8,19.4
-only if not completedq(29574)
-step
-Congratulations! You have completed Mana-Tombs
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Auchenai Crypts (AC) 64-68",{
-mapid=722,
-achieveid={666},
-author="support@zygorguides.com",
-description="This guide will walk you through the Auchindoun: Auchenai Crypts dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for the Mana-Tombs or enter the dungeon with your group |goto Auchenai Crypts/1 44.1,75.1 |c |or
-|confirm |or
-step
-talk Draenei Spirit##54725
-accept The Dead Watcher##29590 |goto Auchenai Crypts/1 44.3,72.6
-accept The End of the Exarch##29596 |goto Auchenai Crypts/1 44.3,72.6
-step
-map Auchenai Crypts/1
-path follow smart; loop off; ants curved; dist 15
-path	44.1,69.5	43.4,54.6	43.5,41.5
-path	44.1,27.6	44.5,17.3	Auchenai Crypts/2 22.4,11.9
-path	Auchenai Crypts/2 22.8,23.3	Auchenai Crypts/2 29.2,22.8
-path	Auchenai Crypts/2 31.6,17.5	Auchenai Crypts/2 41.8,17.6
-Follow the path |goto Auchenai Crypts/2 41.8,17.6 < 6 |noway |c
-step
-talk Tormented Soulpriest##54698
-accept Raging Spirits##29591 |goto Auchenai Crypts/2 51.0,17.9
-step
-map Auchenai Crypts/2
-path follow smart; loop off; ants curved; dist 15
-path	46.2,23.0	46.2,41.3	46.2,56.9
-Follow the path |goto Auchenai Crypts/2 46.2,56.9 < 6 |noway |c
-tip Beware of invisible Raging Souls on the bridge.
-step
-kill Shirrak the Dead Watcher##18371
-|tip Casters need to stay at max range to minimize casting speed reduction caused by Inhibit Magic.
-_Attract Magic_
-|tip This ability will Death Grip the party to Shirrak.
-scenariogoal 24893 |goto 46.2,68.7
-stickystart "Spirits"
-step
-map Auchenai Crypts/2
-path follow smart; loop off; ants curved; dist 15
-path	46.2,77.6	46.9,88.0	52.8,88.0
-path	58.7,85.8	66.3,88.1	73.6,88.0
-path	73.7,78.3
-Follow the path |goto Auchenai Crypts/2 73.7,78.3 < 6 |noway |c
-step
-kill Exarch Maladaar##18373
-_Soul Scream_
-|tip This will disorient anyone within 10 yards for 2 seconds.
-_Stolen Soul_
-|tip Stolen Soul makes a copy of a random player, lowering their damage and healing and attacking them for 2 minutes.
-_Summon Avatar_
-|tip This occurs at 25% health. This avatar needs to be picked up and deals heavy physical damage.
-scenariogoal 3244 |goto 74.2,49.9
-step "Spirits"
-kill 5 Angered Skeleton##18524+ |q 29591/1
-kill 5 Raging Skeleton##18524+ |q 29591/2
-kill 3 Auchenai Necromancer##18702+ |q 29591/3
-only if havequest(29591)
-step
-map Auchenai Crypts/2
-path follow smart; loop off; ants curved; dist 15
-path	73.6,54.1	73.7,71.2	73.5,87.8
-path	64.5,87.7	55.8,87.7	46.5,87.7
-path	46.2,71.2	46.2,51.2	46.2,34.7
-path	46.3,25.6
-Follow the path back to the quest giver |goto Auchenai Crypts/2 46.3,25.6 < 10 |c |noway
-talk Tormented Soulpriest##54698
-turnin Raging Spirits##29591
-|tip This quest requires you to run back to a previous area before you return to the beginning of the instance.
-only if havequest(29591)
-step
-map Auchenai Crypts/2
-path follow smart; loop off; ants curved; dist 15
-path	73.6,54.1	73.7,71.2	73.5,87.8
-path	64.5,87.7	55.8,87.7	46.5,87.7
-path	46.2,71.2	46.2,51.2	46.2,34.7
-path	46.3,25.6	42.1,17.6	30.4,17.6
-path	Auchenai Crypts/1 44.1,26.3	Auchenai Crypts/1 44.1,57.6
-Follow the path to the beginning of the dungeon |goto Auchenai Crypts/1 44.1,57.6 < 30 |noway |c
-only if not completedq(29590) or not completedq(29596)
-step
-talk Draenei Spirit##54725
-turnin The Dead Watcher##29590 |goto Auchenai Crypts 44.3,72.6
-turnin The End of the Exarch##29596 |goto Auchenai Crypts 44.3,72.6
-only if not completedq(29590) or not completedq(29596)
-step
-Congratulations! You have completed Auchenai Crypts.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Caverns of Time: Escape from Durnholde Keep (Durn) 65-69",{
-mapid=734,
-achieveid={652},
-author="support@zygorguides.com",
-description="This guide will walk you through the Caverns of Time: Escape from Durnholde Keep dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for the Escape from Durnholde Keep or enter the dungeon with your group |goto Old Hillsbrad Foothills/0 23.2,24.8 |c |or
-|confirm |or
-step
-map Old Hillsbrad Foothills/0
-path follow smart; loop off; ants curved; dist 15
-path	23.2,24.8	24.0,28.9	26.2,32.2
-path	26.7,38.7	25.8,43.9	27.5,47.0
-Follow the path |goto Old Hillsbrad Foothills/0 27.5,47.0 < 6 |noway |c
-step
-talk Erozion##18723
-accept Taretha's Diversion##29598 |goto Old Hillsbrad Foothills 28.9,48.3 |only if not completedq(29598)
-collect Pack of Incendiary Bombs##25853 |goto Old Hillsbrad Foothills 28.9,48.3
-step
-talk Brazen##18725 |goto 29.2,47.9
-Tell him: "_I'm ready to go to Durnholde Keep._" |goto 69.3,71.5 < 5 |noway |c
-step
-map Old Hillsbrad Foothills/0
-path follow smart; loop off; ants curved; dist 15
-path	69.3,71.6	70.4,67.4	72.5,63.3
-path	74.3,63.2	76.3,61.8	78.0,62.2
-Follow the path |goto Old Hillsbrad Foothills/0 78.0,62.2 < 10 |noway |c
-step
-click Barrels##334+ |goto 67.9,59.7 < 10 |c |noway
-|tip You will need to set all 5 bombs inside the barrels.
-Location of Barrel 1 |goto 77.5,65.7 < 10
-Location of Barrel 2 |goto 76.2,68.1 < 10
-Location of Barrel 3 |goto 74.3,68.2 < 10
-Location of Barrel 4 |goto 68.9,62.1 < 10
-Location of Barrel 5 |goto 68.4,59.1 < 10
-Set 5 Internment Lodges on Fire |q 29598/1 |only if havequest(29598)
-confirm |only if not havequest(29598) or completedq(29598)
-step
-kill Lieutenant Drake##17848
-|tip Lieutenant Drake will come down these stairs when the building are on fire.
-scenariogoal 24891 |goto 75.7,64.8
-step
-map Old Hillsbrad Foothills/0
-path follow smart; loop off; ants curved; dist 10
-path	75.7,64.5	76.3,63.0	74.5,62.8
-path	73.2,61.3	74.0,59.1	75.0,59.5
-path	74.6,58.4	74.5,57.7
-Follow the path |goto Old Hillsbrad Foothills/0 74.5,57.7 < 5 |noway |c
-step
-talk Thrall##17876
-|tip He is in the basement.
-turnin Taretha's Diversion##29598 |goto 74.5,57.7
-accept Escape from Durnholde##29599 |goto 74.5,57.7
-only if not completedq(29599)
-step
-talk Thrall##17876 |goto 74.5,57.7
-Tell him: "_We are ready to get you out of here Thrall. Let's go!_"
-|tip Make sure everyone has the quest. You cannot pick it up after starting the event.
-confirm
-step
-kill Captain Skarloc##17862
-|tip Follow Thrall, he will take you to Skarloc
-scenariogoal 24892 |goto 69.6,68.4
-step
-talk Thrall##17876
-|tip Talk to Thrall after killing the boss.
-Tell him: "_Taretha cannot see you, Thrall._"
-confirm
-step
-talk Thrall##17876 |goto 52.8,41.2
-|tip Follow Thrall until he stops near Tarren Mill, you will have to fight guards along the way.
-Tell him: "_We're ready, Thrall._"
-confirm
-step
-talk Taretha##18887 |goto 51.3,29.8
-|tip Follow Thrall until he comes upstairs here.
-Tell her: "_Strange wizard?_"
-confirm
-step
-kill Epoch Hunter##18096 |goto Old Hillsbrad Foothills/0 50.2,31.5
-|tip Follow Thrall outside and you will have to fight a few waves of dragonkin. The Boss will come down to fight once you have killed enough mobs.
-scenariogoal 3242
-Fulfill Thrall's Destiny |goto Old Hillsbrad Foothills/0 50.2,31.5 |q 29599/1 |only if havequest(29599)
-|tip You will have to wait a short time for the dialogue to complete
-step
-talk Erozion##18723
-turnin Escape from Durnholde##29599 |goto 50.3,30.9
-only if havequest(29599)
-step
-Congratulations! You have completed Escape from Durnholde Keep.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Sethekk Halls 67-69",{
-mapid=732,
-achieveid={653},
-author="support@zygorguides.com",
-description="This guide will walk you through the Auchindoun: Sethekk Halls dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for the Escape from Sethekk Halls or enter the dungeon with your group |goto Sethekk Halls/1 73.4,36.5 |c |or
-|confirm |or
-step
-talk Isfar##54840
-accept Brother Against Brother##29605 |goto Sethekk Halls 72.2,35.5
-accept Terokk's Legacy##29606 |goto Sethekk Halls 72.2,35.5
-only if not completedq(29605) or not completedq(29606)
-step
-map Sethekk Halls/1
-path follow smart; loop off; ants curved; dist 12
-path	73.3,34.8	73.1,28.0	63.4,27.8
-path	59.0,38.0	59.0,45.8	54.1,52.1
-path	48.7,53.8
-Follow the path |goto Sethekk Halls/1 48.7,53.8 < 10 |noway |c
-|tip Kill Time-Lost Controllers first. They drop totems that mind control.
-step
-kill Darkweaver Syth##18472
-|tip At 90%, 55%, and 15% health, Syth will summon four elementals. AoE these quickly.
-_Chain Lightning_
-|tip This deals AoE damage so try and spread out.
-Loot Terokk's Mask |q 29606/1 |goto 48.6,67.5 |only if havequest(29606)
-scenariogoal 24889 |goto 48.6,67.5
-step
-talk Dealer Vijaad##54847
-accept Eyes of Desire##29607 |goto Sethekk Halls 48.3,67.7
-only if not completedq(29607)
-step
-talk Lakka##18956
-Tell him: "_I'll have you out of there in just a moment._"
-Free Lakka |q 29605/1 |goto 50.8,70.8
-only if havequest(29605)
-stickystart "Serpent"
-step
-map Sethekk Halls/1
-path follow smart; loop off; ants curved; dist 12
-path	48.6,71.2	48.6,83.3	48.9,95.0
-path	Sethekk Halls/2 53.2,94.9	Sethekk Halls/2 53.1,82.5
-path	Sethekk Halls/2 44.0,82.4	Sethekk Halls/2 43.1,88.6
-path	Sethekk Halls/2 30.1,88.4	Sethekk Halls/2 27.2,80.9
-path	Sethekk Halls/2 32.6,71.2	Sethekk Halls/2 32.6,41.6
-Follow the path |goto Sethekk Halls/2 32.6,41.6 < 10 |noway |c
-|tip Kill Time-Lost Controllers first. They drop totems that mind control.
-only if not heroic_dung()
-step
-map Sethekk Halls/1
-path follow smart; loop off; ants curved; dist 12
-path	48.6,71.2	48.6,83.3	48.9,95.0
-path	Sethekk Halls/2 53.2,94.9	Sethekk Halls/2 53.1,82.5
-path	Sethekk Halls/2 44.0,82.4	Sethekk Halls/2 43.1,88.6
-path	Sethekk Halls/2 30.1,88.4	Sethekk Halls/2 27.2,80.9
-path	Sethekk Halls/2 32.6,71.2
-Follow the path |goto Sethekk Halls/2 32.6,71.2 < 10 |noway |c
-|tip Kill Time-Lost Controllers first. They drop totems that mind control.
-only if heroic_dung()
-step
-kill Anzu##23035
-|tip At 75% and 35% health, Anzu will become immune and summon his brood. AoE the birds and continue with Anzu.
-_Paralyzing Screech_
-|tip This ability will stun everyone for 6 seconds.
-_Dive_
-|tip Causes Anzu to charge a player and knock them back.
-_Spell Bomb_
-|tip This should be dispelled whenever possible.
-scenariogoal 24890 |goto Sethekk Halls/2 32.4,56.0
-only if heroic_dung()
-step
-kill Talon King Ikiss##18473 |tip At 80%, 50%, and 25% health, Ikiss will used Arcane Explosion. Hide behind a pillar.
-_Arcane Explosion_
-|tip Just before this is cast, Ikiss will Slow the whole party. Stay close to a pillar. |only if heroic_dung()
-Loot Terokk's Quill |q 29606/2 |goto 32.2,29.5 |only if havequest(29606)
-scenariogoal 3245 |goto 32.2,29.5
-step "Serpent"
-kill Cobalt Serpent##19428+
-|tip Do this as you run through the next part of the dungeon.
-collect 3 Cobalt Eye |q 29607/1
-only if havequest(29607)
-step
-map Sethekk Halls/1
-path follow smart; loop off; ants curved; dist 12
-path	Sethekk Halls/2 32.5,27.5	Sethekk Halls/2 40.7,27.5
-path	54.3,27.5	64.3,27.8	72.5,27.9
-Follow the path back to the quest giver |goto Sethekk Halls/1 72.5,27.9 < 10 |noway |c
-talk Isfar##54840
-turnin Brother Against Brother##29605 |goto 72.2,35.5 |noway
-turnin Terokk's Legacy##29606 |goto 72.2,35.5 |noway
-only if havequest(29605) or havequest(29606)
-step
-map Sethekk Halls/1
-path follow smart; loop off; ants curved; dist 12
-path	73.3,34.8	73.1,28.0	63.4,27.8
-path	59.0,38.0	59.0,45.8	54.1,52.1
-path	48.7,53.8
-Follow the path back to the quest giver |goto Sethekk Halls/1 48.7,53.8 < 10 |noway |c
-talk Dealer Vijaad##54847
-turnin Eyes of Desire##29607 |goto Sethekk Halls 48.1,67.7 |noway
-only if havequest(29607)
-step
-Congratulations! You have completed Sethekk Halls
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Auchindoun: Shadow Labyrinth (SL or Slabs) 68-70",{
-mapid=732,
-achieveid={654},
-author="support@zygorguides.com",
-description="This guide will walk you through the Auchindoun: Shadow Labyrinth dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for Shadow Labyrinth or enter the dungeon with your group |goto Shadow Labyrinth/1 22.0,12.4 |c |or
-|confirm |or
-step
-talk Spy Grik'tha##54891
-accept Find Spy To'gun##29640 |goto Shadow Labyrinth 22.6,12.5
-only if not completedq(29640)
-step
-talk Field Commander Mahfuun##54890
-accept The Codex of Blood##29643 |goto 21.3,13.1
-accept Ambassador Hellmaw##29645 |goto 21.3,13.1
-only if not completedq(29643) or not completedq(29645)
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 15
-path	21.9,14.9	28.2,20.3	35.4,22.6
-path	38.9,32.6	34.0,39.1
-Follow the path |goto Shadow Labyrinth/1 34.0,39.1 < 10 |noway |c
-step
-kill 12 Cabal Ritualist##18794+ |q 29645/1 |goto 29.5,39.1
-|tip Kill all the Ritualists in this room to activate the boss.
-kill Ambassador Hellmaw##18731
-|tip Stay behind Hellmaw to avoid damage from Corrosive Acid.
-_Fear_ |tip Fear will periodically be cast, Fearing the party for 6 seconds.
-scenariogoal 24863 |goto Shadow Labyrinth/1 21.4,39.1
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 12
-path	19.2,39.2	14.5,31.4	17.0,22.4
-talk Spy To'gun##18891
-turnin Find Spy To'gun##29640 |goto 17.0,22.4 |noway
-accept The Soul Devices##29641 |goto 17.0,22.4 |noway
-only if not completedq(29641)
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 12
-path	16.3,23.5	14.5,31.4	19.2,39.2
-path	26.6,45.6	26.5,51.3
-Follow the path |goto Shadow Labyrinth/1 26.5,51.3 < 10 |noway |c
-stickystart "souldevice"
-step
-kill Blackheart the Inciter##18667
-|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Incite Chaos_
-|tip This will cause all party members to attack each other for 30 seconds.
-_War Stomp_
-|tip This ability will deal damage and knock back anyone within 20 yards of Blackheart.
-scenariogoal 24868 |goto 26.2,68.2
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 12
-path	26.5,72.3	27.0,88.1	34.0,88.1
-path	46.0,88.1	53.0,87.9	53.4,78.8
-Follow the path |goto Shadow Labyrinth/1 53.4,78.8 < 10 |noway |c
-step
-kill Grandmaster Vorpil##18732
-|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Draw Shadows_
-|tip This ability will teleport everyone to Vorpil's platform into Rain of Fire, move out.
-_Void Travelers_
-|tip These adds will be summoned by portals, kill them before they reach Vorpil.
-_Banish_
-|tip Vorpil will cast this on a player randomly |only if heroic_dung()
-scenariogoal 24866 |goto 53.3,56.5
-step
-click Codex of Blood##6892
-turnin The Codex of Blood##29643 |goto 53.3,59.0
-accept Into the Heart of the Labyrinth##29644 |goto 53.3,59.0
-only if not completedq(29644)
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 12
-path	53.3,52.7	53.3,39.2	59.4,39.2
-Follow the path |goto Shadow Labyrinth/1 59.4,39.2 < 10 |noway |c
-step
-kill Murmur##18708
-|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Murmur's Touch_
-|tip This ability will deal damage to nearby party memebers, so stay spread out. |only if heroic_dung()
-_Thundering Storm_
-|tip Thundering Storm will hit all players if they are more than 25 yards away.
-scenariogoal 3246 |goto 80.8,39.1
-step "souldevice"
-click Soul Device##7010+ |tip Collect these as you traverse the Shadow Labyrinth.
-collect 5 Soul Devices |q 29641/1
-only if havequest(29641)
-step
-map Shadow Labyrinth/1
-path follow smart; loop off; ants curved; dist 12
-path	77.8,39.1	67.6,39.0	59.3,38.8
-path	53.3,39.2	53.3,57.7	53.3,68.2
-path	53.3,86.2	46.0,88.1	36.0,87.9
-path	27.8,87.9	26.6,68.3	26.6,45.3
-path	34.4,39.2	38.7,30.7	34.1,22.3
-path	23.3,17.8	22.0,13.9
-Follow the path back to the start of the dungeon |goto Shadow Labyrinth/1 22.0,13.9 < 40 |noway |c
-|tip You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-talk Field Commander Mahfuun##54890
-turnin Into the Heart of the Labyrinth##29644 |goto 21.3,13.1 |noway
-turnin Ambassador Hellmaw##29645 |goto 21.3,13.1 |noway
-only if havequest(29644) or havequest(29645)
-step
-talk Spy Grik'tha##54891
-turnin The Soul Devices##29641 |goto 22.6,12.5
-only if havequest(29641)
-step
-Congratulations! You have completed Shadow Labyrinth.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: The Mechanar (Mech) 68-70",{
-mapid=730,
-achieveid={658},
-author="support@zygorguides.com",
-description="This guide will walk you through the Tempest Keep: The Mechanar dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for The Mechanar or enter the dungeon with your group |goto The Mechanar/1 49.4,83.5 |c |or
-|confirm |or
-step
-Click the Accept Quest box on the right side of your screen
-accept With Great Power, Comes Great Responsibility##29657 |goto The Mechanar/1 49.4,83.5
-step
-Take the left passage |goto The Mechanar 43.5,70.6 < 5 |c
-step
-kill Gatewatcher Gyro-Kill##19218
-scenariogoal 24878 |goto 46.4,58.4
-step
-Click the Accept Quest box on the right side of your screen
-accept Lost Treasure##29659
-step
-map The Mechanar/1
-path follow strict; loop off; ants curved; dist 10
-path	37.8,51.3	39.1,36.4	42.4,44.2
-path	48.4,46.3
-Follow the path |goto The Mechanar/1 48.4,46.3 < 10 |c |noway
-step
-kill Mechano-Lord Capacitus##19219 |only if not havequest(29657)
-kill Mechano-Lord Capacitus##19219 |q 29657/1 |only if havequest(29657)
-scenariogoal 24876 |goto The Mechanar 51.1,30.4
-step
-Click the Turnin Quest box on the right side of your screen
-turnin With Great Power, Comes Great Responsibility##29657
-step
-Click the Turnin Quest box on the right side of your screen
-accept The Calculator##29658
-step
-kill Gatewatcher Iron-Hand##19710
-scenariogoal 24877 |goto 60.2,36.8
-step
-map The Mechanar/1
-path follow loose; loop off; ants curved; dist 10
-path	51.4,36.4	47.1,47.2	42.2,43.0
-path	38.7,27.9
-Follow the path to the Cash of the Legion |goto The Mechanar/1 38.7,27.9 < 5 |c |noway
-click Cache of the Legion##7216 |goto 39.4,28.3 < 5 |noway |tip Loot the items inside.
-collect Blinding Fury |q 29659/1 |goto 39.4,28.3 |noway |only if havequest(29659)
-step
-Click the Quest Complete Box in the top right corner of your screen
-turnin Lost Treasure##29659
-step
-map The Mechanar/1
-path follow loose; loop off; ants curved; dist 10
-path	41.7,21.4	The Mechanar/2 41.7,33.6
-Ride the elevator up to the Calculation Chamber |goto The Mechanar/2 41.7,33.6 |c |noway
-step
-kill Nethermancer Sepethrea##19221
-|tip If you do not clear the room first, all the mobs will attack you when you fight the boss.
-_Raging Flames_
-|tip These will be summoned throughout the fight, try to avoid them and their AoE spells. They are not hard to avoid.
-scenariogoal 24882 |goto 47.6,20.8
-modelnpc Raging Flames##20481+
-step
-map The Mechanar/2
-path follow loose; loop off; ants curved; dist 10
-path	52.8,36.4	52.6,50.9	49.6,58.1
-path	38.5,60.9
-kill Bloodwarder Centurion##19510+, Sunseeker Astromage##19168+, Tempest-Forge Destroyer##19735+
-Follow the long hallway and kill the mobs that spawn in groups |goto 38.5,60.9 < 10 |c
-step
-kill Pathaleon the Calculator##19220 |only if not havequest(29658)
-kill Pathaleon the Calculator##19220 |q 29658/1 |only if havequest(29658)
-_Domination_
-|tip This ability will Mind Control a party member for 5 seconds.
-_Frenzy_
-|tip Frenzy increases Pathaleon's attack speed by 60% and physical damage by 75.
-scenariostage 1 |goto 27.8,61.4
-step
-Click the Quest Complete Box in the top right corner
-turnin The Calculator##29658 |only if havequest(29658)
-step
-Congratulations! You have completed The Mechanar
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: Botanica (Bot) 68-70",{
-mapid=729,
-achieveid={659},
-author="support@zygorguides.com",
-description="This guide will walk you through the Tempest Keep: Botanica dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for Botanica or enter the dungeon with your group |goto The Botanica/1 89.6,41.1 |c |or
-|confirm |or
-step
-Click the Accept Quest box on the right side of your screen
-accept Saving the Botanica##29660 |goto The Botanica 85.5,47.3
-step
-map The Botanica
-path follow loose; loop off
-path	79.3,49.4	53.0,51.0	48.8,56.6
-path	47.8,43.3
-Follow the path through the halls |goto 47.7,43.4 < 5 |noway |c
-step
-kill Commander Sarannis##17976 |only if not havequest(29660)
-kill Commander Sarannis##17976 |q 29660/1 |only if havequest(29660)
-_Summon Reinforcements_
-|tip Sarannis casts Summon Reinforcements at 55% health, summoning 3 Bloodwarder Reservists and a Bloodwarder Mender. Focus the Mender down first.
-scenariogoal 24871 |goto 47.4,18.2
-step
-map The Botanica
-path follow loose; loop off; dist 10
-path	25.6,16.8	20.5,15.2	22.1,19.7
-Follow the path |goto The Botanica 22.1,19.7 < 10 |c |noway
-step
-kill High Botanist Freywinn##17975 |only if not havequest(29660)
-kill High Botanist Freywinn##17975 |q 29660/2 |only if havequest(29660)
-_Nature's Will_
-|tip This ability causes Freywinn to turn into a tree, healing his nearby allies and summong 3 Frayer Protectors.
-scenariogoal 24872 |goto 25.9,25.5
-step
-map The Botanica
-path follow loose; loop off; dist 10
-path	19.6,22.5	 20.3,45.2	12.5,46.4
-Follow the path |goto The Botanica 12.5,46.4 < 10 |c |noway
-step
-kill Thorngrin the Tender##17978 |only if not havequest(29660)
-kill Thorngrin the Tender##17978 |q 29660/3 |only if havequest(29660)
-_Sacrifice_
-|tip This ability teleports a player, stunning them and leeching health every second for 8 seconds.
-_Hellfire_
-|tip Hellfire deals area damage around Thorngrin, lasting 6 seconds. Move away from him.
-scenariogoal 24873 |goto 8.2,47.6
-step
-Click the Complete Quest Box in the top right corner
-turnin Saving the Botanica##29660
-accept Culling the Herd##29667
-step
-Continue towards the final room |goto The Botanica/1 14.8,72.5
-kill 6 Mutate Fleshlasher##19598 |q 29667/1 |goto 34.3,82.2
-kill 6 Mutate Fear-Shrieker##19513 |q 29667/2 |goto 34.3,82.2
-kill 6 Mutate Horror##19865 |q 29667/3 |goto 34.3,82.2
-|tip You may have to run the dungeon more than once to get all of them.
-step
-kill Laj##17980
-collect Rapidly Evolving Frond |q 29667/4 |only if havequest(29667)
-scenariogoal 24874 |goto 34.1,89.3
-step
-Click the Quest complete box at the top right of the screen
-turnin Culling the Herd##29667
-accept A Most Somber Task##29669
-step
-kill Warp Splinter##17977 |only if not havequest(29669)
-kill Warp Splinter##17977 |q 29669/1 |only if havequest(29669)
-_Summon Saplings_
-|tip This ability summons 6 Sapling adds. After 25 seconds they will sacrifice themselves and heal Warp Splinter equal to their remaining health. These should be killed off as fast as possible.
-scenariogoal 3251 |goto 34.1,35.8
-step
-Click the Complete Quest box at the top right of the screen
-turnin A Most Somber Task##29669
-step
-Congratulations! You have completed the Botanica
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Tempest Keep: Arcatraz (Arca) 68-70",{
-mapid=731,
-achieveid={660},
-author="support@zygorguides.com",
-description="This guide will walk you through the Tempest Keep: Arcatraz dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for Arcatraz or enter the dungeon with your group |goto The Arcatraz/1 41.3,81.7 |c |or
-|confirm |or
-step
-Click the Quest Accept Box that pops up
-accept Unbound Darkness##29674 |goto The Arcatraz/1 41.3,73.7
-step
-map The Arcatraz/1
-path follow loose; loop off; dist 10
-path	41.2,57.3	41.3,49.1	45.6,39.5
-path	57.3,39.6
-Follow the path |goto The Arcatraz/1 57.3,39.6 < 10 |c |noway
-step
-kill Zereketh the Unbound##20870 |only if not havequest(29674)
-kill Zereketh the Unbound##20870  |q 29674/1 |only if havequest(29674)
-_Void Zone_
-|tip This ability summons an AoE that damages anyone standing in it.
-scenariogoal 24886 |goto 61.6,24.8
-step
-Click the Quest Accept Box that pops up
-turnin Unbound Darkness##29674
-accept Hey There Dalliah##29675
-step
-map The Arcatraz/2
-path follow loose; loop off; dist 10
-path	 The Arcatraz/1 63.4,35.4	The Arcatraz/1 66.3,35.4	85.3,38.7
-path	61.4,38.6	41.1,29.3	28.1,40.3
-path	28.3,57.0
-Follow the path up the stairs and through the halls |goto The Arcatraz/2 28.3,57.0 < 10 |c |noway
-step
-kill Wrath-Scryer Soccothrates##20886 |only if not havequest(29675)
-kill Wrath-Scryer Soccothrates##20886 |q 29675/1 |only if havequest(29675)
-_Fel Immolation_
-|tip This deals damage to players within 15 yards of Soccothrates.
-_Felfire_
-|tip Avoid the Felfire AoE left by this ability.
-scenariogoal 24888 |goto The Arcatraz/2 21.4,77.0
-step
-kill Dalliah the Doomsayer##20885 |only if not havequest(29675)
-kill Dalliah the Doomsayer##20885 |q 29675/2 |only if havequest(29675)
-_Whirlwind_
-|tip This ability deals damage to players within 8 yards. Move away when this is cast.
-_Gift of the Doomsayer_
-|tip This debuff causes heals cast on the affected player to heal Dalliah instead.
-scenariogoal 24887 |goto 35.7,78.4
-step
-Click the Quest Turnin Box that pops up
-turnin Hey There Dalliah##29675
-accept Maximum Security Breakout##29681
-step
-map The Arcatraz/2
-path follow loose; loop off; dist 10
-path	29.9,57.1	38.3,57.2
-Follow the path |goto The Arcatraz/2 38.3,57.2 < 10 |c |noway
-step
-map The Arcatraz/3
-path follow loose; loop off; dist 10
-path	27.4,88.4	30.0,57.4	30.1,40.0
-path	40.1,30.6	51.3,31.6
-Follow the path |goto The Arcatraz/3 51.3,31.6 < 10 |c |noway
-step
-kill Harbinger Skyriss##20912 |only if not havequest(29681)
-|tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
-kill Harbinger Skyriss##20912 |q 29681/1 |only if havequest(29681)
-|tip Attack Warden Mellichar to get the fight stared. He will unleash several monsters and then Harbinger Skyriss.
-scenariogoal 3252 |goto The Arcatraz/3 58.2,30.5
-modelnpc Warden Mellichar##20904
-step
-Click the Quest Turnin Box that pops up
-turnin Maximum Security Breakout##29681
-step
-Congratulations! You have completed Arcatraz
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Caverns of Time: Opening the Dark Portal (CoT:Dark Portal or BM) 68-70",{
-mapid=733,
-achieveid={655},
-author="support@zygorguides.com",
-description="This guide will walk you through the Caverns of Time: Opening the Dark Portal dungeon.",
-},[[
-step
-label	"start"
-talk Sa'at##20201
-accept The Opening of the Dark Portal##10297 |goto The Black Morass 49.3,6.4
-collect Chrono-Beacon##24289
-step
-Protect Medivh while he attempts to open the Dark Portal.
-|tip If his shield gets too low you will fail.
-|tip Monsters will appear randomly in the swamp out of yellow portals.
-|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
-kill Rift Lord##17839+
-|tip Every 6 waves a boss will spawn. Simply kill these like you did the Rift Lords.
-step
-Wave 6
-kill Chrono Lord Deja##17879
-_Arcane Blast_:
-|tip Deals arcane damage and knocks a player back.
-_Time Lapse_:
-|tip Slows a players attack and movement speed, dispel.
-_Arcane Discharge_:
-|tip Deals arcane damage to everyone within 50 yards.
-_Attraction_:
-|tip Pulls all players within 50 yards to Deja.
-scenariogoal 24869 |goto The Black Morass/0 48.6,73.6
-step
-Continue to protect Medivh while he attempts to open the Dark Portal.
-|tip If his shield gets too low you will fail
-|tip Monsters will appear randomly in the swamp out of yellow portals.
-|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
-kill Rift Lord##17839+
-step
-Wave 12
-kill Temporus##17880
-_Hasten_:
-|tip Increases Temporus' attack speed and movement speed, dispel quickly.
-_Wing Buffet_:
-|tip Deals damage and knocks back anyone within 15 yards.
-_Spell Reflection_:
-|tip Stop casting when this is active.
-scenariogoal 24870 |goto The Black Morass/0 48.6,73.6
-step
-Continue to protect Medivh while he attempts to open the Dark Portal.
-|tip If his shield gets too low you will fail,
-|tip Monsters will appear randomly in the swamp out of yellow portals.
-|tip To stop the flow of monsters you have to kill the Rift Lords summmoning the portals.
-kill Rift Lord##17839+
-step
-Wave 18
-kill Aeonus##17881+
-_Sand Breath_:
-|tip Deals damage and slows anyone in front of Aeonus.
-_Cleave_:
-|tip Deals damage to anyone in front of Aeonus.
-_Enrage_:
-|tip Increases Aeonus' attack speed. Save a cooldown for this.
-scenariogoal 3247 |goto The Black Morass/0 48.6,73.6
-Open the Dark Portal |q 10297/1 |only if havequest(10297) |goto 48.9,71.8
-step
-talk Sa'at##20201
-turnin The Opening of the Dark Portal##10297 |goto 49.3,6.5
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Hellfire Citadel: Shattered Halls (SH or Shatt Halls) 68-70",{
-mapid=710,
-achieveid={657},
-author="support@zygorguides.com",
-description="This guide will walk you through the Hellfire Citadel: Shattered Halls dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for Shattered Halls or enter the dungeon with your group |goto The Shattered Halls/1 61.1,92.8 |c |or
-|confirm |or
-step
-talk Gunny##54934
-accept One Last Favor##29652 |goto The Shattered Halls 58.6,88.5
-only if not completedq(29652)
-step
-talk Advance Scout Chadwick##54933
-accept How to Save a Life##29649 |goto 58.6,88.5
-accept O'mrogg's Warcloth##29656 |goto 58.6,88.5
-accept Turning the Tide##29654 |goto 58.6,88.5
-only if not completedq(29649) or not completedq(29656) or not completedq(29654)
-stickystart "Kills"
-step
-map The Shattered Halls/1
-path follow smart; loop off; ants curved; dist 15
-path	59.2,88.4	59.0,78.5	55.1,77.2
-path	46.9,77.1	34.6,77.2	34.4,69.7
-path	38.5,69.7	42.8,65.6	37.5,61.7
-Follow the path |goto The Shattered Halls/1 37.5,61.7 < 15 |noway |c
-step
-kill Grand Warlock Nethekurse##16807
-_Shadow Cleave_:
-|tip Cleaves up to 3 nearby targets.
-_Death Coil_:
-|tip Fears a player for 4 seconds and deals shadow damage.
-_Lesser Shadow Fissure_:
-|tip Move out of these immediately, they deal shadow damage.
-_Dark Spin_:
-|tip At 25% health, Dark Spin deals physical damage to anyone within 5 yards and shadow damage to everyone. Kill him quickly.
-collect 1 Grand Warlock's Amulet##23735 |only if havequest(29649)
-scenariogoal 24864 |goto 34.6,62.1
-step
-Use your Grand Warlock's Amulet next to this fire |use Grand Warlock's Amulet##23735
-Create the Fel Ember |q 29649/1 |goto 31.9,60.6
-only if havequest(29649)
-step
-map The Shattered Halls/1
-path follow smart; loop off; ants curved; dist 15
-path	34.4,59.0	34.1,52.6	29.6,49.7
-path	29.6,37.0	29.6,18.7
-Follow the path |goto The Shattered Halls/1 29.6,18.7 < 15 |noway |c
-only if heroic_dung()
-step
-kill Blood Guard Porung##20923
-_Cleave_:
-|tip Deals physical damage to anyone in front of Porung.
-scenariogoal 24867 |goto The Shattered Halls/1 29.7,14.7
-only if heroic_dung()
-step
-map The Shattered Halls/1
-path follow smart; loop off; ants curved; dist 15
-path	29.8,14.2	36.5,14.0	45.4,13.9
-path	53.6,14.6	53.9,24.6
-Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15 |noway |c
-only if heroic_dung()
-step
-map The Shattered Halls/1
-path follow smart; loop off; ants curved; dist 15
-path	34.4,59.0	34.1,52.6	29.6,49.7
-path	29.6,37.0	29.6,18.7	29.8,14.2
-path	36.5,14.0	45.4,13.9	53.6,14.6
-path	53.9,24.6
-Follow the path |goto The Shattered Halls/1 53.9,24.6 < 15 |noway |c
-only if not heroic_dung()
-step
-kill Warbringer O'mrogg##16809
-_Beatdown_:
-|tip O'mrogg chooses a random target and applies threat to them, dealing damage.
-_Fear_:
-|tip Fears all nearby players for 3 seconds.
-_Burning Maul_:
-|tip Adds fire damage to his attacks for 18 seconds. Save a cooldown for this.
-_Blast Wave_:
-|tip Deals fire damage to anyone nearby and slows movement speed.
-Loot O'mrogg's Warcloth |q 29656/1 |only if havequest(29656)
-scenariogoal 24865 |goto 53.9,34.1
-step
-map The Shattered Halls/1
-path follow smart; loop off; ants curved; dist 15
-path	56.6,34.3	59.0,34.4	66.7,34.9
-path	67.2,46.7
-Follow the path |goto The Shattered Halls/1 67.2,46.7 < 15 |noway |c
-step
-kill Warchief Kargath Bladefist##16808
-_Sweeping Strikes_:
-|tip Causes the next 5 attacks to hit a nearby player.
-_Blade Dance_:
-|tip Deals physical damage to random players in the room. Spread out.
-_Charge_: |only if heroic_dung()
-|tip Charges a random player |only if heroic_dung()
-_The Warchief's Guard_:
-|tip Bladefist summons random reinforcements that need to be picked up by the tank and killed.
-Loot Warchief Kargath's Fist |q 29654/1 |only if havequest(29654)
-scenariogoal 3249 |goto 67.8,55.3
-step "Kills"
-kill 4 Shattered Hand Legionnaire##16700+ |q 29652/1
-kill 2 Shattered Hand Champion##17671+ |q 29652/3
-kill 2 Shattered Hand Centurion##17465+ |q 29652/2
-only if havequest(29652)
-step
-talk Advance Scout Chadwick##54933
-turnin One Last Favor##29652 |goto 67.2,51.8
-turnin How to Save a Life##29649 |goto 67.2,51.8
-turnin O'mrogg's Warcloth##29656 |goto 67.2,51.8
-turnin Turning the Tide##29654 |goto 67.2,51.8
-only if havequest(29652) or havequest(29649) or havequest(29656) or havequest(29654)
-step
-Congratulations! You have completed Shattered Halls
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Coilfang Reservoir: The Steamvault (SV) 68-70",{
-mapid=727,
-achieveid={656},
-author="support@zygorguides.com",
-description="This guide will walk you through the Coilfang Reservoir: The Steamvault dungeon.",
-},[[
-step
-label	"start"
-Press _I_ and queue for The Steamvault or enter the dungeon with your group |goto The Steamvault/1 17.6,29.8 |c |or
-|confirm |or
-step
-talk Watcher Jhang##54848
-accept A Proper Fate##29613 |goto The Steamvault 17.9,27.3
-step
-talk Naturalist Bite##54849
-accept Containment is Key##29614 |goto 17.5,25.9
-step
-talk Windcaller Claw##54851
-accept Windcaller Claw and the Water Thief##29615 |goto 18.9,27.8
-stickystart "Kills"
-step
-map The Steamvault/1
-path follow smart; loop off; ants curved; dist 15
-path	20.1,28.0	25.2,27.6	30.8,29.4
-path	32.3,39.6	38.4,34.4	44.9,28.4
-path	49.4,23.7
-Follow the path |goto The Steamvault/1 49.4,23.7 < 15 |noway |c
-step
-kill Hydromancer Thespia##17797
-_Enveloping Winds_:
-|tip Traps a player in a cyclone, stunning them for 6 seconds.
-_Lightning Cloud_:
-|tip Deals nature damage to anyone standing in the cloud. Move out.
-_Lung Burst_:
-|tip Deals nature damage every 2 seconds for 10 seconds. Dispel whenever possible.
-_Water Elementals_:
-|tip Interrupt Water Bolt Volley and kill them quickly.
-scenariogoal 24884 |goto The Steamvault 54.3,12.4
-step
-click Main Chambers Access Panel##7147 |goto 54.2,10.6
-You hear a faint echo...
-confirm
-step
-map The Steamvault/1
-path follow smart; loop off; ants curved; dist 15
-path	53.7,17.7	46.7,24.9	42.4,34.0
-path	44.9,40.4	56.0,45.8	50.6,55.1
-path	48.2,61.5	41.1,67.3
-Follow the path |goto The Steamvault/1 41.1,67.3 < 15 |noway |c
-step
-kill Mekgineer Steamrigger##17796
-_Electrified Net_:
-|tip Immobilizes and deals nature damage over 6 seconds.
-_Super Shrink Ray_:
-|tip Frontal cone attack that reduces damage dealt by 35%. Avoid standing in front.
-_Saw Blade_:
-|tip Spread out to avoid multiple players being hit by the blade.
-_Mechanics_:
-|tip These spawn in 25% health intervals and heal the boss. Kill them quickly.
-Loot the Irradiated Gear |q 29614/3 |only if havequest(29614)
-scenariogoal 24885 |goto The Steamvault 33.6,81.2
-modelnpc Steamrigger Mechanic##17951
-step
-click Main Chambers Access Panel##7147 |goto 31.8,84.0
-You hear a faint echo... and You hear a loud rumble of metal grinding on stone....
-confirm
-step
-map The Steamvault/1
-path follow smart; loop off; ants curved; dist 15
-path	32.9,82.4	39.9,68.4	46.6,66.5
-path	49.5,56.8	56.7,43.5	68.6,43.4
-Follow the path |goto The Steamvault/1 68.6,43.4 < 15 |noway |c
-step
-kill Warlord Kalithresh##17798
-_Naga Distiller_:
-|tip When Kalithresh channels on one of these, kill it within 12 seconds or he will Enrage.
-_Spell Reflection_:
-|tip Stop casting during this.
-_Impale_:
-|tip Bleeds a player over 12 seconds.
-scenariogoal 3248 |goto 78.7,43.3
-step
-map The Steamvault/1
-path follow smart; loop off; ants curved; dist 15
-path	76.5,43.5	67.1,43.5	48.0,42.6
-path	42.2,32.9	32.4,39.5	28.1,28.4
-path	23.2,28.1
-Follow the path |goto The Steamvault/1 23.2,28.1 < 15 |noway |c
-step "Kills"
-kill 3 Bog Overlord##21694+|q 29614/1
-kill 6 Coilfang Leper##21338+ |q 29614/2
-only if havequest(29614)
-step
-talk Windcaller Claw##54851
-turnin Windcaller Claw and the Water Thief##29615 |goto 18.8,27.6
-only if havequest(29615)
-step
-talk Watcher Jhang##54848
-turnin A Proper Fate##29613 |goto 18.0,27.2
-only if havequest(29613)
-step
-talk Naturalist Bite##54849
-turnin Containment is Key##29614 |goto 17.6,25.9
-only if havequest(29614)
-step
-Congratulations! You have completed The Steamvault
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Outland Dungeons\\Magister's Terrace (MT) 70",{
-mapid=798,
-achieveid={661},
-author="support@zygorguides.com",
-description="This guide will walk you through the Magisters' Terrace dungeon.",
-},[[
-step
-label start
-Press _I_ and queue for Magister's Terrace or enter the dungeon with your group |goto Magisters' Terrace/2 42.5,90.0 |c |or
-|confirm |or
-step
-talk Exarch Larethor##55007
-accept Severed Communications##29684 |goto Magisters' Terrace/2 42.6,87.2
-accept A Radical Notion##29686 |goto Magisters' Terrace/2 42.6,87.2
-accept Twisted Associations##29687 |goto Magisters' Terrace/2 42.6,87.2
-only if not completedq(29684) or not completedq(29686) or not completedq(29687)
-step
-map Magisters' Terrace/2
-path follow smart; loop off; ants curved; dist 15
-path	42.6,74.5	42.6,31.2	42.6,23.5
-Follow the path |goto Magisters' Terrace/2 42.6,23.5 < 10 |noway |c
-step
-kill Selin Fireheart##24723
-_Drain Life_:
-|tip Fireheart will drain a player's health, restoring his own.
-_Drain Mana_: |only if heroic_dung()
-|tip Drains mana from a player. |only if heroic_dung()
-_Fel Explosion_:
-|tip Deals AoE fire damage and drains Selin's mana.
-_Fel Crystal_:
-|tip Restores his mana as long as it remains alive. Kill these quickly when they activate.
-scenariogoal 24879 |goto Magisters' Terrace/2 42.6,23.6
-step
-map Magisters' Terrace/2
-path follow smart; loop off; ants curved; dist 15
-path	42.6,23.6	49.2,20.1	56.9,20.3
-path	59.5,26.6
-Follow the path |goto Magisters' Terrace/2 59.5,26.6 < 5 |noway |c
-step
-talk Tyrith##24822
-turnin Severed Communications##29684 |goto 60.8,23.7
-accept The Scryer's Scryer##11490 |goto 60.8,23.7
-only if not completedq(11490)
-step
-kill Vexallus##24744
-_Chain Lightning_:
-|tip Deals nature damage to up to 3 targets. Spread out.
-_Overload_:
-|tip At 20% health, Overload deals AoE damage and increases party damage taken.
-_Pure Energy_:
-|tip Every 15% health a Pure Energy is summoned. These will leave a DoT on all players upon death and increase damage by 50%.
-_Heroic_: |only if heroic_dung()
-|tip Two Pure Energies are summoned. |only if heroic_dung()
-Loot the Volatile Essence |q 29686/1 |only if havequest(29686)
-scenariogoal 24880 |goto 81.6,26.8
-step
-click Scrying Orb##4891
-Activate the Scrying Orb |q 11490/1 |goto 94.2,26.8
-only if havequest(11490)
-step
-talk Kalecgos##24848
-|tip It will take a moment for him to fly down.
-turnin The Scryer's Scryer##11490 |goto 94.1,35.9
-accept Hard to Kill##29685 |goto 94.1,35.9
-only if not completedq(29685)
-step
-map Magisters' Terrace/2
-path follow smart; loop off; ants curved; dist 15
-path	90.0,40.7	83.2,34.3
-path	Magisters' Terrace/1 82.9,56.3	Magisters' Terrace/1 58.8,56.3
-path	Magisters' Terrace/1 45.7,56.2
-Follow the path |goto Magisters' Terrace/1 45.7,56.2 < 10 |noway |c
-step
-kill Priestess Delrissa##24560
-_Renew_, _Power Word: Shield_:
-|tip Dispel these from Delrissa.
-_Flash Heal_:
-|tip Interrupt this every time.
-_Psychic Scream_:
-|tip 5 second melee range fear.
-_Minions_:
-|tip Use CC, interrupt fears and heals. Dispel CC on party members. Focus 1 target at a time.
-scenariogoal 24881 |goto Magisters' Terrace/1 39.2,56.2
-modelnpc Kagani Nightstrike##24557
-modelnpc Ellrys Duskhallow##24558
-modelnpc Eramas Brightblaze##24554
-modelnpc Yazzai##24561
-modelnpc Warlord Salaris##24559
-modelnpc Apoko##24553
-modelnpc Zelfan##24556
-step
-map Magisters' Terrace
-path follow loose;loop off;ants straight
-path	31.0,56.1	19.2,49.7
-Follow the path |goto 19.2,49.7 < 10 |noway |c
-step
-kill Kael'thas Sunstrider##24664
-_Fireball_:
-|tip Interrupt this.
-_Phoenix Egg_:
-|tip Spawns when a Phoenix dies. Kill these within 15 seconds.
-_Shock Barrier_:
-|tip Makes Kael'thas immune to interrupts while in effect. |only if heroic_dung()
-_Pyroblast_:
-|tip Deals massive damage and follows Shock Barrier. Burn through the barrier and interrupt this. |only if heroic_dung()
-_Gravity Lapse_:
-|tip At 50% health, this phase begins and everyone "swims" through the air.
-_Arcane Sphere_:
-|tip These spheres follow random players. Avoid them.
-_Power Feedback_:
-|tip Every 30 seconds, Kael'thas takes 50% more damage for 10 seconds.
-Loot the Head of Kael'thas |q 29685/1 |only if havequest(29685)
-scenariogoal 3253 |goto Magisters' Terrace/1 7.4,50.1
-step
-talk Exarch Larethor##55007
-turnin A Radical Notion##29686 |goto Magisters' Terrace/1 13.4,49.9
-turnin Twisted Associations##29687 |goto Magisters' Terrace/1 13.4,49.9
-turnin Hard to Kill##29685 |goto Magisters' Terrace/1 13.4,49.9
-only if havequest(29686) or havequest(29687) or havequest(29685)
-step
-Congratulations! You have completed Magister's Terrace
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Keep (UK) 69-72",{
-mapid=523,
-achieveid={477},
-description="This guide will walk you through the Utgarde Keep dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Utgarde Keep or enter the dungeon with your group |goto Utgarde Keep/1 69.3,73.0 |c |or
-|confirm |or
-step
-talk Defender Mordun##24111
-accept Stealing Their Thunder##29763 |goto Utgarde Keep 67.6,71.0
-accept Disarmament##29764 |goto Utgarde Keep 67.6,71.0
-accept Ears of the Lich King##29803 |goto Utgarde Keep 67.6,71.0
-only if not completedq(29763) or not completedq(29764) or not completedq(29803)
-stickystart "vrykulweapons"
-step
-map Utgarde Keep/1
-path follow smart; loop off; ants curved; dist 15
-path	68.3,68.6	65.7,56.3	62.8,38.9
-path	65.1,31.0	56.2,25.2	50.4,28.5
-path	43.9,28.4	38.5,34.1	31.6,37.6
-path	23.6,38.6	25.9,50.3
-Follow the path |goto Utgarde Keep/1 25.9,50.3 < 8 |noway |c
-step
-kill Prince Keleseth##23953
-_Frost Tomb_:
-|tip Ice blocks a player, inflicting frost damage and stunning them for 20 seconds. Kill it to break them free.
-_Vrykul Skeleton_:
-|tip Skeletons attack when engaging Keleseth. After their death, they will resurrect in 20 seconds. Kill them quickly.
-scenariogoal 27889 |goto 29.5,67.0
-step
-map Utgarde Keep/1
-path follow smart; loop off; ants curved; dist 15
-path	25.4,68.2	21.7,74.7	25.5,86.2
-path	35.3,88.5	50.1,82.2	Utgarde Keep/2 28.1,67.9
-path	Utgarde Keep/2 26.6,60.1	Utgarde Keep/2 37.1,54.8
-path	Utgarde Keep/2 44.5,82.5	Utgarde Keep/2 55.3,79.7
-Follow the path |goto Utgarde Keep/2 55.3,79.7 < 8 |noway |c
-step
-kill Dalronn##24201
-kill Skarvald the Constructor##24200
-_Skarvald:_
-|tip Kill him last.
-_Enrage_:
-|tip Increases his attack speed and damage for 10 seconds.
-_Dalronn_:
-|tip Kill him first.
-_Shadow Bolt_:
-|tip Interrupt this.
-_Debilitate_:
-|tip Inflicts shadow damage and reduces all speed by 50% for 8 seconds.
-_Summon Skeletons_:
-|tip Interrupt this to avoid the adds.
-_Ghosts_:
-|tip When one dies, it becomes an untargetable ghost. Dalronn is much easier to deal with as a ghost.
-scenariogoal 27890 |goto Utgarde Keep/2 58.3,60.7
-step
-map Utgarde Keep/2
-path follow smart; loop off; ants curved; dist 15
-path	58.6,60.5	55.3,45.8	53.8,25.8
-Follow the path |goto Utgarde Keep/2 53.8,25.8 < 8 |noway |c
-step
-map Utgarde Keep/3
-path follow smart; loop off; ants curved; dist 15
-path	Utgarde Keep/3 33.0,49.9	Utgarde Keep/3 28.9,37.8
-path	Utgarde Keep/3 39.8,32.3	Utgarde Keep/3 50.7,29.3
-path	Utgarde Keep/3 51.8,38.5	Utgarde Keep/3 54.8,52.8
-path	Utgarde Keep/3 67.7,41.9
-Follow the path |goto Utgarde Keep/3 67.7,41.9 < 8 |noway |c
-step
-kill Ingvar the Plunderer##23954
-_Phase 1_:
-Smash, Cleave:
-|tip Frontal cone damage. Avoid standing in front.
-Staggering Roar:
-|tip Deals damage and locks out spells cast for 6 seconds.
-Enrage:
-|tip Stacks up to 50 times.
-_Phase 2_:
-|tip Hide behind a pillar until Dreadful Roar is over.
-Dark Smash:
-|tip Frontal cleave.
-Shadow Axe:
-|tip Leaves a spinning axe that deals damage. Move out.
-Dreadful Roar:
-|tip Deals shadow damage and locks out spells for 8 seconds.
-Loot Ingvar's Head |q 29763/1 |only if havequest(29763)
-scenariogoal 27891 |goto Utgarde Keep/3 72.7,38.8
-step "vrykulweapons"
-|tip While going through the instance, look for _Vrykul Weapons_ along the walls
-click Vrykul Weapons##8388
-Loot 5 Vrykul Weapons |q 29764/1
-only if havequest(29764)
-step
-map Utgarde Keep/3
-path follow smart; loop off; ants curved; dist 15
-path	72.5,38.0	58.0,50.2	46.6,56.5
-path	Utgarde Keep/1 79.9,73.4	Utgarde Keep/1 73.6,66.4
-Follow the path |goto Utgarde Keep/1 73.6,66.4 < 10 |noway |c
-only if havequest(29763) or havequest(29764) or havequest(29803)
-step
-talk Defender Mordun##24111
-turnin Stealing Their Thunder##29763 |goto Utgarde Keep 67.6,71.0
-turnin Disarmament##29764 |goto Utgarde Keep 67.6,71.0
-turnin Ears of the Lich King##29803 |goto Utgarde Keep 67.6,71.0
-only if havequest(29763) or havequest(29764) or havequest(29803)
-step
-Congratulations! You have completed Utgarde Keep
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Nexus (Nexus) 70-73",{
-mapid=520,
-achieveid={478},
-author="support@zygorguides.com",
-description="This guide will walk you through the The Nexus dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for The Nexus or enter the dungeon with your group |goto The Nexus/1 36.2,88.0 |c |or
-|confirm |or
-step
-talk Image of Warmage Kaitlyn##55537
-accept Have They No Shame?##13094 |goto The Nexus 36.2,83.0
-only if not completedq(13094)
-step
-talk Image of Warmage Kaitlyn##55536
-accept Quickening##11911 |goto 37.2,81.4
-only if not completedq(11911)
-step
-talk Warmage Kaitlyn##55531
-accept Prisoner of War##11973 |goto 36.2,81.4
-only if not completedq(11973)
-step
-talk Image of Warmage Kaitlyn##55535
-accept Postponing the Inevitable##11905 |goto 35.1,81.4
-only if not completedq(11905)
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	35.4,80.3	29.0,70.7	22.2,67.0
-path	21.9,58.0
-Follow the path |goto The Nexus/1 21.9,58.0 < 8 |c |noway
-only if heroic_dung()
-step
-kill Commander Kolurg##26798
-_Whirlwind_:
-|tip Short distance AoE. Casters should stay at range.
-_Frightening Shout_:
-|tip Fears all players within 8 yards for 6 seconds.
-click Berinand's Research##8128 |only if havequest(13094)
-Loot Berinand's Research |q 13094/1 |goto The Nexus 19.0,51.8 |only if havequest(13094)
-scenariogoal 27897
-only if heroic_dung()
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	18.9,51.9	21.9,44.0	21.7,35.9
-path	27.6,36.1
-Follow the path |goto The Nexus/1 27.6,36.1 < 8 |c |noway
-only if heroic_dung()
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	35.4,80.3	29.0,70.7	22.2,67.0
-path	21.9,58.0
-Follow the path |goto The Nexus/1 21.9,58.0 < 8 |c |noway
-only if not heroic_dung() and havequest(13094)
-step
-kill Horde Commander##27947
-click Berinand's Research##8128 |only if havequest(13094)
-collect Berinand's Research |q 13094/1 |goto The Nexus 19.0,51.8 |only if havequest(13094)
-only if havequest(13094) and not heroic_dung()
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	18.9,51.9	21.9,44.0	21.7,35.9
-path	27.6,36.1
-Follow the path |goto The Nexus/1 27.6,36.1 < 8 |c |noway
-only if not heroic_dung() and havequest(13094)
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	35.4,80.3	29.0,70.7	22.2,67.0
-path	21.9,58.0	18.9,51.9	21.9,44.0
-path	21.7,35.9	27.6,36.1
-Follow the path |goto The Nexus/1 27.6,36.1 < 8 |c |noway
-only if not heroic_dung() and not havequest(13094)
-step
-kill Grand Magus Telestra##26731
-_Firebomb_:
-|tip Spread out to minimize group damage.
-_Ice Nova_:
-|tip Stuns for 3 seconds.
-_Mirror Images_:
-|tip Occurs at 50% health. Interrupt Time Stop and Critter as much as possible. Don't stand in blizzard. Kill the images quickly.
-scenariogoal 27892 |goto 27.6,38.6
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	27.6,38.6	27.1,31.0	26.9,25.0
-path	31.4,22.0	39.4,21.7	43.8,21.9
-path	49.1,21.5	52.4,15.4	54.0,19.3
-path	56.4,21.8
-Follow the path |goto The Nexus/1 56.4,21.8 < 5 |c |noway
-step
-kill Anomalus##26763
-_Create Rift_:
-|tip Destroy the rift and the Wraiths that come forth. Expect heavy AoE damage.
-_Rift Shield_:
-|tip At 50% health, Anomalus becomes immune and charges nearby open rifts. This lasts 45 seconds.
-_Charge Rifts_:
-|tip Wraiths appear faster from rifts and the range of rift abilities is increased. Lasts 45 seconds.
-_Arcane Attraction_:
-|tip Increases a random players arcane damage taken. Dispel quickly! |only if heroic_dung()
-scenariogoal 27893 |goto The Nexus 61.5,21.9
-step
-Use your Interdimensional Refabricator here |use Interdimensional Refabricator##35479
-Stall the Interdimensional Rift |q 11905/1 |goto 65.1,21.8
-only if havequest(11905)
-stickystart "Splinter"
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	59.3,22.2	54.1,21.7	50.7,23.4
-path	53.9,35.8	54.1,42.9	56.7,52.6
-path	64.4,53.0	64.5,60.4	60.3,64.7
-Follow the path |goto The Nexus/1 60.3,64.7 < 12 |noway |c
-step "Splinter"
-kill Crystalline Protector##26792
-Loot 5 Arcane Splinters |q 11911/1 |goto 60.3,64.8
-only if havequest(11911)
-step
-kill Ormorok the Tree-Shaper##26794
-_Spell Reflection_:
-|tip Reflects the next 4 spells casts. Use low damage abilities.
-_Trample_:
-|tip Deals physical damage to everyone nearby.
-_Crystal Spikes_:
-|tip Patches of spikes appear on the ground. Move out or you will take damage and be knocked up in the air.
-_Frenzy_:
-|tip Occurs at 30% health. Save defensive and DPS cooldowns for this.
-_Summon Crystalline Tangler_:
-|tip Roots players that it hits. |only if heroic_dung()
-scenariogoal 27894 |goto 56.9,70.3
-step
-map The Nexus/1
-path follow smart; loop off; ants curved; dist 15
-path	56.2,72.8	52.4,69.1	52.7,60.8
-path	48.6,67.5	41.7,67.5
-Follow the path |goto The Nexus/1 41.7,67.5 < 5 |noway |c
-step
-click Telestra's Containment Sphere##7800
-|tip Keristrasza will engage after activating the spheres.
-kill Keristrasza##26723
-_Intense Cold_:
-|tip Stacks every second, slowing casting speed. Keep moving to avoid the stacks.
-_Crystalfire Breath_, _Tail Sweep_:
-|tip Avoid standing in front of behind Keristrasza.
-_Enrage_:
-|tip Occurs at 25% health, use DPS and defensive cooldowns for this.
-_Crystal Chains_:
-|tip Roots a player for 10 seconds. Dispel quickly. |only if not heroic_dung()
-_Crystallize_:
-|tip Deals frost damage and roots all players. Dispel quickly. |only if heroic_dung()
-scenariogoal 27895 |goto 38.3,67.2
-step
-talk Image of Warmage Kaitlyn##55537
-turnin Have They No Shame?##13094 |goto The Nexus 36.2,83.0
-only if havequest(13094)
-step
-talk Image of Warmage Kaitlyn##55536
-turnin Quickening##11911 |goto 37.2,81.4
-only if havequest(11911)
-step
-talk Warmage Kaitlyn##55531
-turnin Prisoner of War##11973 |goto 36.2,81.4
-only if havequest(11973)
-step
-talk Image of Warmage Kaitlyn##55535
-turnin Postponing the Inevitable##11905 |goto 35.1,81.4
-only if havequest(11905)
-step
-Congratulations! You have completed The Nexus
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Azjol-Nerub (AN) 71-74",{
-mapid=533,
-achieveid={480},
-description="This guide will walk you through the Azjol-Nerub dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Azjol-Nerub or enter the dungeon with your group |goto Azjol-Nerub/3 9.4,93.3 |c |or
-|confirm |or
-step
-talk Reclaimer A'zak##55564
-accept Death to the Traitor King##29807 |goto Azjol-Nerub/3,15.2,83.8
-accept Don't Forget the Eggs!##29808 |goto Azjol-Nerub/3,15.2,83.8
-accept The Gatewatcher's Talisman##29811 |goto Azjol-Nerub/3,15.2,83.8
-only if not completedq(29807) or not completedq(29808) or not completedq(29811)
-stickystart "Eggs"
-step
-map Azjol-Nerub/3
-path follow smart; loop off; ants curved; dist 12
-path	14.7,84.2	19.7,63.9	25.2,36.6
-path	34.4,40.0
-Follow the path |goto Azjol-Nerub/3 34.4,40.0 < 8 |noway |c
-|tip Kill Anub'ar Skirmishers first!
-step
-kill Krik'thir the Gatewatcher##28684
-_Watchers_:
-|tip A watcher will attack a soon as the first one pulled dies. Krik'thir will engage when all watchers are dead.
-_Mind Flay_:
-|tip Reduces movement speed and deals shadow damage over 3 seconds.
-_Curse of Fatigue_:
-|tip Slows and deals damage to everyone within 5 yards of Krik'thir. Dispel this.
-_The Skittering Swarm_:
-|tip Summons a swarm of insects to attack random players. AoE these down.
-scenariogoal 27898 |goto 46.3,45.2
-step "Eggs"
-click Nerubian Scourge Egg##7803
-Destroy 6 Nerubian Scourge Eggs. |q Don't Forget the Eggs!##29808/1 |goto 34.6,48.7
-|tip All around this room.
-only if havequest(29808)
-step
-map Azjol-Nerub/3
-path follow smart; loop off; ants curved; dist 12
-path	48.8,44.7	64.3,44.7	85.2,44.9
-Follow the path |goto Azjol-Nerub/3 85.2,44.9 < 10 |noway |c
-step
-kill Hadronox##28921
-|tip Killing the mobs in the room will cause Hadronox to come up and engage.
-_Leech Poison_:
-|tip Drains health from anyone within 25 yards. Players killed while poisoned heal him for 10% health.
-_Acid Cloud_:
-|tip Deals nature damage. Don't stand in it.
-_Web Grab_:
-|tip Deals physical damage and pulls players close. Run back out.
-scenariogoal 27899 |goto 87.4,53.5
-step
-map Azjol-Nerub/3
-path follow smart; loop off; ants curved; dist 12
-path	73.7,37.5	Azjol-Nerub/2 39.1,27.9
-path	Azjol-Nerub/2 52.7,10.9	Azjol-Nerub/2 62.1,23.1
-path	Azjol-Nerub/2 60.0,47.4	Azjol-Nerub/2 48.1,66.9
-Follow the path |goto Azjol-Nerub/2 48.1,66.9 < 10 |noway |c
-step
-map Azjol-Nerub/1
-path follow smart; loop off; ants curved; dist 12
-path	22.4,51.7	27.4,51.6	37.0,48.9
-path	44.8,48.9	58.9,48.4
-_Jump down_ the hole and follow the path |goto Azjol-Nerub/1 58.9,48.4 < 6 |noway |c
-step
-kill Anub'arak##29120
-|tip Be sure your party is inside the platform or they will be locked out.
-_Impale_:
-|tip Fires a spike through the ground. Move away from this.
-_Pound_:
-|tip Deals massive damage and stuns anyone in front. Even the tank should move behind Anub'arak during this.
-_Submerge_:
-|tip Every 25% health, Anub'arak will burrow, summoning adds and spikes. Move away from ground spikes and kill the adds that spawn at the gate.
-Loot Anub'arak's Broken Husk |q 29807/1 |only if havequest(29807)
-scenariogoal 27900 |goto Azjol-Nerub/1 87.4,53.5
-step
-talk Reclaimer A'zak##55564
-turnin Death to the Traitor King##29807 |goto 62.2,48.5
-turnin Don't Forget the Eggs!##29808 |goto 62.2,48.5
-turnin The Gatewatcher's Talisman##29811 |goto 62.2,48.5
-only if havequest(29807) or havequest(29808) or havequest(29811)
-step
-Congratulations! You have completed Azjol-Nerub
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Ahn'kahet: The Old Kingdom (OK) 72-75",{
-mapid=522,
-achieveid={481},
-description="This guide will walk you through the Ahn'kahet: The Old Kingdom dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Ahn'kahet: The Old Kingdom or enter the dungeon with your group |goto Ahn'kahet: The Old Kingdom/1 90.0,79.1 |c |or
-|confirm |or
-step
-talk Seer Ixit##55658
-accept Pupil No More##29825 |goto Ahn'kahet: The Old Kingdom/1 87.2,72.6
-only if not completedq(29825)
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	86.6,71.3	83.9,64.6	80.1,54.7
-path	79.6,46.6	81.3,39.5	80.2,31.8
-path	74.4,30.6
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 74.4,30.6 < 6 |noway |c
-|tip Kill Ahn'kahar Spell Flingers first. Be sure to interrupt their Shadow Blast.
-step
-kill Elder Nadox##29309
-_Brood Plague_:
-|tip Disease that deals nature damage over 30 seconds. Dispel.
-_Brood Rage_:
-|tip Enrages nearby swarmers, increasing their health and damage.
-_Ahn'kahar Guardian_:
-|tip Destroy these to drop Nadox's immunity.
-_Ahn'kahar Swarmer_:
-|tip AoE these quickly to minimize the numbers affected by Brood Rage.
-scenariogoal 27901 |goto 70.4,28.6
-step
-Click the quest complete box in the top right corner
-turnin Pupil No More##29825
-accept Reclaiming Ahn'Kahet##29826
-only if not completedq(29826)
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	70.6,29.9	67.1,33.0	64.9,25.8
-path	61.5,28.1	61.7,34.4	57.2,34.0
-path	56.8,27.5
-click Ancient Nerubian Device##8393
-|tip You must activate these devices at each platform.
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 56.8,27.5 < 6 |noway |c
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	56.8,27.5	57.2,34.0	54.5,35.0
-path	50.1,29.9
-click Ancient Nerubian Device##8393
-|tip You must activate these devices at each platform.
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 50.1,29.9 < 5 |noway |c
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	51.1,31.1	54.8,35.4	56.1,46.4
-path	58.9,49.1
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 58.9,49.1 < 7 |noway |c
-step "Reclaiming"
-kill 3 Eye of Taldaram##30285 |q Reclaiming Ahn'Kahet##29826/1
-kill 1 Bonegrinder##30284 |q Reclaiming Ahn'Kahet##29826/2
-only if havequest(29826)
-step
-kill Prince Taldaram##29308
-_Conjure Flame Sphere_:
-|tip Sphere of fire that floats towards a player. Try not to come in contact with it.
-_Vanish_:
-|tip Disappears and reappears behind a random player, inflicting Embrace of the Vampyr.
-_Embrace of the Vampyr_: |only if not heroic_dung()
-|tip Stuns the player and deals shadow damage. Deal 20,000 damage to Taldaram to break it. |only if not heroic_dung()
-_Embrace of the Vampyr_: |only if heroic_dung()
-|tip Stuns the player and deals shadow damage. Deal 40,000 damage to Taldaram to break it. |only if heroic_dung()
-scenariogoal 27902 |goto 63.0,49.4
-step
-Click the Quest Complete box on the top right:
-turnin Reclaiming Ahn'Kahet##29826
-accept The Faceless Ones##13187
-only if not completedq(13187)
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	64.9,46.1	66.8,46.9	64.3,51.5
-path	60.4,51.9	58.3,56.1
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 58.3,56.1 < 10 |noway |c
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	57.8,57.3	58.9,62.4	65.4,58.6
-path	66.7,63.1	65.7,68.1
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 65.7,68.1 < 6 |noway |c
-To skip the optional heroic boss Amanitar, click here |confirm |next "Jedoga"
-only if heroic_dung()
-step
-kill Amanitar##30258
-|tip Pull the Cave Beasts before Amanitar.
-_Mini_:
-|tip Shrinks all players, reducing damage by 75%. Kill a healthy mushroom while standing near it to cancel.
-_Entangling Roots_:
-|tip Deals nature damage and immobilizes over 10 seconds.
-_Healthy Mushroom_:
-|tip Upon death, cancels the effects of Mini and increases damage by 100%.
-_Poisonous Mushroom_:
-|tip Upon death, deals nature damage every 2 seconds.
-scenariogoal 27904 |goto Ahn'kahet: The Old Kingdom/1 66.3,78.3
-only if heroic_dung()
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	65.7,68.1	66.7,63.1	65.4,58.6
-path	58.9,62.4	57.8,57.3
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 57.7,60.0 < 10 |noway |c
-only if heroic_dung()
-step
-label "Jedoga"
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	56.9,59.1	51.5,58.0	49.1,64.0
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 49.1,64.0 < 10 |noway |c
-To skip the optional boss Jedoga Shadowseeker, click here |confirm |next "Herald"
-step
-kill Jedoga Shadowseeker##29310
-_Cyclone Strike_:
-|tip Deals damage and knocks back anyone close to Jedoga. Move away.
-_Thundershock_:
-|tip Creates a cloud of lightning. Move out or suffer heavy damage.
-_Twilight Ascendance_:
-|tip At 50% health, Jedoga calls a Twilight Volunteer. Don't let it reach her or she will gain 200% damage for 20 seconds.
-scenariogoal 27903 |goto 49.3,72.3
-step
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	47.9,68.1	50.1,61.2	52.3,51.6
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 52.3,51.6 < 15 |noway |c
-step
-label "Herald"
-map Ahn'kahet: The Old Kingdom/1
-path follow smart; loop off; ants curved; dist 15
-path	56.5,58.8	52.6,52.1	49.5,48.6
-path	41.1,49.4	37.6,49.8
-Follow the path |goto Ahn'kahet: The Old Kingdom/1 37.6,49.8 < 5 |noway |c
-step
-kill 3 Forgotten One##30414+ |q The Faceless Ones##13187/1 |goto 32.4,50.1
-|tip Avoid Shadow Crash, an AoE attack that targets the ground.
-only if havequest(13187)
-step
-kill Herald Volazj##29311
-_Shadow Bolt Volley_:
-|tip Deals shadow damage to all players.
-_Shiver_:
-|tip Curse that deals shadow damage whenever a player is hit and then jumps to another player within 20 yards. Stay spread out and decurse.
-_Insanity_:
-|tip Kill the twisted visions of your allies to be released. No effect solo.
-scenariogoal 27905 |goto Ahn'kahet: The Old Kingdom/1 22.8,50.7
-step
-talk Seer Ixit##55658
-turnin The Faceless Ones##13187 |goto 26.9,50.4
-only if havequest(13187)
-step
-Congratulations! You have completed Ahn'kahet: The Old Kingdom
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Drak'Tharon Keep (DTK) 73-76",{
-mapid=534,
-achieveid={482},
-description="This guide will walk you through the Drak'Tharon Keep dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Drak'Tharon Keep or enter the dungeon with your group |goto Drak'Tharon Keep/1 29.4,81.0 |c |or
-|confirm |or
-step
-talk Kurzel##55677
-accept Head Games##13129 |goto Drak'Tharon Keep 35.5,83.2
-accept What the Scourge Dred##29828 |goto Drak'Tharon Keep 35.5,83.2
-only if not completedq(13129) or not completedq(29828)
-step
-talk Image of Drakuru##58149
-accept Cleansing Drak'Tharon##30120 |goto 37.0,80.9
-only if not completedq(30120)
-stickystart "Mojo"
-step
-map Drak'Tharon Keep/1
-path follow smart; loop off; ants curved; dist 12
-path	36.0,82.3	42.6,87.1	47.4,81.7
-path	47.7,67.7	47.5,45.5	52.8,37.0
-Follow the path |goto Drak'Tharon Keep/1 52.8,37.0 < 5 |noway |c
-step
-kill Trollgore##26630
-_Infected Wound_:
-|tip Increases physical damage taken by 15%. Dispel this disease.
-_Consume_: |only if not heroic_dung()
-|tip Deals shadow damage and increases Trollgore's damage by 2% for each enemy within 50 yards. |only if not heroic_dung()
-_Consume_: |only if heroic_dung()
-|tip Deals shadow damage and increases Trollgore's damage by 5% for each enemy within 50 yards. |only if heroic_dung()
-_Corpse Explode_:
-|tip Detonates a nearby Invader corpse, dealing nature damage.
-_Drakkari Invader_:
-|tip Fly in randomly and attack Trollgore and players.
-scenariogoal 27906 |goto Drak'Tharon Keep/1 56.8,19.3
-step
-map Drak'Tharon Keep/1
-path follow smart; loop off; ants curved; dist 12
-path	56.9,18.9	66.3,18.8	66.2,26.1
-path	65.8,36.1
-Follow the path |goto Drak'Tharon Keep/1 65.8,36.1 < 5 |noway |c
-step
-kill Novos the Summoner##26631
-_Stairs_:
-|tip Kill the adds coming down the stairs.
-_Crystal Handler_:
-|tip Kill 4 of these to release Novos.
-_Blizzard_:
-|tip Move out of this or suffer frost damage.
-_Wrath of Misery_:
-|tip Curse that deals periodic shadow damage. Dispel if possible.
-_Summon Minions_:
-|tip Summons skeletons to attack the party.
-scenariogoal 27907 |goto Drak'Tharon Keep 73.3,47.6
-step
-Use Kurzel's Blouse Scrap on Novos the Summoner's corpse |use Kurzel's Blouse Scrap##43214 |only if havequest(13129)
-Collect the Ichor-Stained Cloth |q 13129/1 |goto Drak'Tharon Keep/1 69.5,47.5
-only if havequest(13129)
-step
-map Drak'Tharon Keep/1
-path follow smart; loop off; ants curved; dist 12
-path	69.5,47.6	67.1,56.5	62.3,58.1
-path	56.0,55.6	55.6,77.8	64.0,76.9
-Follow the path |goto Drak'Tharon Keep/1 64.0,76.9 < 6 |noway |c
-step
-kill King Dred##27483
-|tip Clear the raptors before pulling Dred.
-_Grievous Bite_:
-|tip Deals physical damage every 2 seconds until the player is fully healed.
-_Mangling Slash_:
-|tip Increases bleed damage by 75%.
-_Bellowing Roar_:
-|tip Fears all players within 35 yards for 4 seconds.
-_Piercing Slash_:
-|tip Reduces armor by 75% for 10 seconds. Use a cooldown for this.
-_Raptor Call_:
-|tip If raptors are alive, Dred summons them.
-Loot King Dred's Tooth |q 29828/1 |only if havequest(29828)
-scenariogoal 27908 |goto Drak'Tharon Keep 67.8,80.2
-step
-map Drak'Tharon Keep/1
-path follow smart; loop off; ants curved; dist 12
-path	63.7,85.6	67.9,79.4	64.5,71.7
-path	Drak'Tharon Keep/2 39.4,71.8	Drak'Tharon Keep/2 36.6,63.3
-path	Drak'Tharon Keep/2 37.7,28.6	Drak'Tharon Keep/2 47.2,28.5
-path	Drak'Tharon Keep/2 56.7,21.8	Drak'Tharon Keep/2 55.4,13.3
-Follow the path |goto Drak'Tharon Keep/2 55.4,13.3 < 8 |noway |c
-step "Mojo"
-kill Drakkari Commander##27431+, Drakkari Guardian##26620+, Drakkari Shaman##26639+
-collect 5 Enduring Mojo##38303 |q Cleansing Drak'Tharon##30120 |goto Drak'Tharon Keep/2,37.1,67.2
-only if havequest(30120)
-step
-kill The Prophet Tharon'ja##26632
-_Phase 1_:
-_Rain of Fire_:
-|tip Deals fire damage in the targeted area.
-_Curse of Life_:
-|tip Deals shadow damage for 9 seconds or until the target reaches 50% health.
-_Phase 2_:
-|tip Use Touch of Life and Slaying Strike on cooldown. Taunt immediately after using Bone Armor.
-_Poison Cloud_:
-|tip Deals nature damage every second. Move out of this.
-scenariogoal 27909 |goto 51.3,13.2
-step
-Use Drakuru's Elixer at the giant brazier here |use Drakuru's Elixir##35797 |goto 37.9,13.2
-talk Drakuru##28016 |tip Follow him back to the Prophet and wait for the dialogue to end.
-turnin Cleansing Drak'Tharon##30120
-only if havequest(30120)
-step
-You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance
-map Drak'Tharon Keep/2
-path follow strict; loop off; ants curved; dist 12
-path	46.1,13.4	38.3,13.2	38.2,20.1
-Follow the path back to the quest giver |goto Drak'Tharon Keep/2 38.2,20.1 < 10 |noway |c
-only if havequest(13129) or havequest(29828)
-step
-map Drak'Tharon Keep/2
-path follow strict; loop off; ants curved; dist 12
-path	39.0,14.1	41.1,14.0	Drak'Tharon Keep/1 49.1,13.9
-Follow the path back to the quest giver |goto Drak'Tharon Keep/1 49.1,13.9 < 10 |noway |c
-only if havequest(13129) or havequest(29828)
-step
-map Drak'Tharon Keep/1
-path follow strict; loop off; ants curved; dist 12
-path	Drak'Tharon Keep/1 44.0,13.3	Drak'Tharon Keep/1 43.9,30.0
-path	Drak'Tharon Keep/1 42.3,36.7	Drak'Tharon Keep/1 47.6,45.5
-path	Drak'Tharon Keep/1 47.6,83.0	Drak'Tharon Keep/1 35.9,82.1
-Follow the path back to the quest giver |goto Drak'Tharon Keep/1 35.9,82.1 < 15 |noway |c
-talk Kurzel##55677
-turnin Head Games##13129 |goto Drak'Tharon Keep 35.5,83.2 |noway
-turnin What the Scourge Dred##29828 |goto Drak'Tharon Keep 35.5,83.2 |noway
-only if havequest(13129) or havequest(29828)
-step
-Congratulations! You have completed Drak'Tharon Keep
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Violet Hold (VH) 73-76",{
-mapid=536,
-achieveid={483},
-description="This guide will walk you through the The Violet Hold dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for The Violet Hold or enter the dungeon with your group |goto The Violet Hold/1 46.1,99.2 |c |or
-|confirm |or
-step
-talk Lieutenant Sinclari##30658
-accept Containment##29830 |goto The Violet Hold 47.7,89.7
-only if not completedq(29830)
-step
-In this instance, _Blue Portals_ will randomly pop up at each of the large pink shields in the room
-You will need to go to it and defeat the monsters that come out until it closes
-On waves 6, 12 and 18 bosses will spawn
-Tell Lieutenant Sinclari: "_Activate the crystals when we get in trouble, right._"
-confirm
-step
-label "the_list"
-Click here for Erekem |next "Erekem" |confirm
-Click here for Moragg |next "Moragg" |confirm
-Click here for Ichoron |next "Ichoron" |confirm
-Click here for Xevozz |next "Xevozz" |confirm
-Click here for Lavanthor |next "Lavanthor" |confirm
-Click here for Zuramat the Obliterator |next "Zuramat_the_Obliterator" |confirm
-step
-label "the_list2"
-Click here for Erekem |next "Erekem2" |confirm
-Click here for Moragg |next "Moragg2" |confirm
-Click here for Ichoron |next "Ichoron2" |confirm
-Click here for Xevozz |next "Xevozz2" |confirm
-Click here for Lavanthor |next "Lavanthor2" |confirm
-Click here for Zuramat the Obliterator |next "Zuramat_the_Obliterator2" |confirm
-step
-label "Erekem"
-kill Erekem##29315
-|tip Erekem should always die first.
-_Earth Shield_:
-|tip Heals the bearer each time they are hit. Dispel when possible.
-_Bloodlust_:
-|tip Increases all speeds by 35%. Dispel.
-_Chain Heal_:
-|tip Heals all 3 targets. Interrupting this is top priority.
-_Lightning Bolt_:
-|tip Deals nature damage. Interrupt only if a spare is available.
-scenariogoal 24858 |goto The Violet Hold/1 24.6,63.5
-next "the_list2"
-step
-label "Erekem2"
-kill Erekem##29315
-|tip Erekem should always die first.
-_Earth Shield_:
-|tip Heals the bearer each time they are hit. Dispel when possible.
-_Bloodlust_:
-|tip Increases all speeds by 35%. Dispel.
-_Chain Heal_:
-|tip Heals all 3 targets. Interrupting this is top priority.
-_Lightning Bolt_:
-|tip Deals nature damage. Interrupt only if a spare is available.
-scenariogoal 24859 |goto The Violet Hold/1 24.6,63.5
-next "final_boss"
-step
-label "Moragg"
-kill Moragg##29316
-_Optic Link_:
-|tip Deals damage to a player over 12 seconds, increases with each tick.
-_Corrosive Saliva_:
-|tip Stacks up to 20 times, decreases armor by 5% per stack.
-_Ray of Pain_:
-|tip Deals shadow damage to a random player and reduces healing received by 15% for 5 seconds.
-_Ray of Suffering_:
-|tip Deals shadow damage over 5 seconds to a random player.
-scenariogoal 24858 |goto The Violet Hold/1 67.1,54.5
-next "the_list2"
-step
-label "Moragg2"
-kill Moragg##29316
-_Optic Link_:
-|tip Deals damage to a player over 12 seconds, increases with each tick.
-_Corrosive Saliva_:
-|tip Stacks up to 20 times, decreases armor by 5% per stack.
-_Ray of Pain_:
-|tip Deals shadow damage to a random player and reduces healing received by 15% for 5 seconds.
-_Ray of Suffering_:
-|tip Deals shadow damage over 5 seconds to a random player.
-scenariogoal 24859 |goto The Violet Hold/1 67.1,54.5
-next "final_boss"
-step
-label "Ichoron"
-kill Ichoron##29313
-_Protective Bubble_:
-|tip Reduced damage taken by 99%. 35 successful attacks against Ichoron will cause her to Burst.
-_Burst_:
-|tip Deals frost damage to everyone with a knockback. Creates 10 Ichor Globules and reduces her health by 30%.
-_Ichor Globule_:
-|tip Each one heals Ichoron for 3% of her health. Kite Ichoron around and kill the Globules before they reach her.
-scenariogoal 24858 |goto The Violet Hold/1 53.9,42.9
-next "the_list2"
-step
-label "Ichoron2"
-kill Ichoron##29313
-_Protective Bubble_:
-|tip Reduced damage taken by 99%. 35 successful attacks against Ichoron will cause her to Burst.
-_Burst_:
-|tip Deals frost damage to everyone with a knockback. Creates 10 Ichor Globules and reduces her health by 30%.
-_Ichor Globule_:
-|tip Each one heals Ichoron for 3% of her health. Kite Ichoron around and kill the Globules before they reach her.
-scenariogoal 24859 |goto The Violet Hold/1 53.9,42.9
-next "final_boss"
-step
-label "Xevozz"
-kill Xevozz##29266 |tip Kite him around away from spheres.
-_Arcane Barrage Volley_:
-|tip Deals arcane damage to everyone within 45 yards.
-_Arcane Buffet_:
-|tip Deals arcane damage and increases arcane damage taken for 20 seconds. Stacks 10 times. Dispel when possible.
-_Ethereal Sphere_:
-|tip Spheres pulse, dealing arcane damage to anyone within 8 yards. Avoid them as much as possible.
-_Arcane Power_:
-|tip Spheres coming within 3 yards of Xevozz increase his damage and attack speed for 8 seconds.
-scenariogoal 24858 |goto The Violet Hold/1 33.9,48.1
-next "the_list2"
-step
-label "Xevozz2"
-kill Xevozz##29266
-|tip Kite him around away from spheres.
-_Arcane Barrage Volley_:
-|tip Deals arcane damage to everyone within 45 yards.
-_Arcane Buffet_:
-|tip Deals arcane damage and increases arcane damage taken for 20 seconds. Stacks 10 times. Dispel when possible.
-_Ethereal Sphere_:
-|tip Spheres pulse, dealing arcane damage to anyone within 8 yards. Avoid them as much as possible.
-_Arcane Power_:
-|tip Spheres coming within 3 yards of Xevozz increase his damage and attack speed for 8 seconds.
-scenariogoal 24859 |goto The Violet Hold/1 33.9,48.1
-next "final_boss"
-step
-label "Lavanthor"
-kill Lavanthor##29312
-_Flame Breath_:
-|tip Deals fire damage in a frontal cone. Don't stand in front of Lavanthor.
-_Lava Burn_:
-|tip A lava bomb hits the area where the targeted player stands and lasts for 8 seconds. Move out.
-_Cauterizing Flames_:
-|tip Deals fire damage to all players and increases fire damage taken by 35%.
-scenariogoal 24858 |goto The Violet Hold/1 59.8,72.5
-next "the_list2"
-step
-label "Lavanthor2"
-kill Lavanthor##29312
-_Flame Breath_:
-|tip Deals fire damage in a frontal cone. Don't stand in front of Lavanthor.
-_Lava Burn_:
-|tip A lava bomb hits the area where the targeted player stands and lasts for 8 seconds. Move out.
-_Cauterizing Flames_:
-|tip Deals fire damage to all players and increases fire damage taken by 35%.
-scenariogoal 24859 |goto The Violet Hold/1 59.8,72.5
-next "final_boss"
-step
-label "Zuramat_the_Obliterator"
-kill Zuramat the Obliterator##29314
-_Void Shift_:
-|tip Deals shadow damage and allows players to see Void Sentries.
-_Void Sentries_:
-|tip While shifted, kill these as quick as you can to stop the shadow bolt volley they cast.
-_Shroud of Darkness_:
-|tip While active, attacks against Zuramat reduce healing by 10%, stacking 5 times. Don't attack during the 10 second duration.
-scenariogoal 24858 |goto The Violet Hold/1 28.8,34.8
-next "the_list2"
-step
-label "Zuramat_the_Obliterator"
-kill Zuramat the Obliterator##29314
-_Void Shift_:
-|tip Deals shadow damage and allows players to see Void Sentries.
-_Void Sentries_:
-|tip While shifted, kill these as quick as you can to stop the shadow bolt volley they cast.
-_Shroud of Darkness_:
-|tip While active, attacks against Zuramat reduce healing by 10%, stacking 5 times. Don't attack during the 10 second duration.
-scenariogoal 24859 |goto The Violet Hold/1 28.8,34.8
-next "final_boss"
-step
-label "final_boss"
-kill Cyanigosa##31134
-|tip Stand to the side of her to avoid damage from breath and tail sweep.
-_Uncrontrollable Energy_:
-|tip Deals arcane damage to anyone in front of her and increases arcane damage taken.
-_Tail Sweep_:
-|tip Deals damage and interrupts spellcasting.
-_Blizzard_:
-|tip Deals frost damage and reduces movement speed. Move out of it.
-_Arcane Vacuum_:
-|tip Pulls all players to Cyanigosa.
-_Mana Destruction_:
-|tip Drains mana and deals arcane damage equal to the mana drained. Dispel this.
-scenariogoal 27910 |goto The Violet Hold/1 46.0,56.2
-step
-talk Lieutenant Sinclari##30658
-turnin Containment##29830 |goto The Violet Hold 45.9,91.2
-only if havequest(29830)
-step
-Congratulations! You have completed The Violet Hold
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Gundrak (GD) 75-78",{
-mapid=530,
-achieveid={484},
-description="This guide will walk you through the Gundrak dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Gundrak or enter the dungeon with your group |goto Gundrak/1 59.0,30.9 |c |or
-|confirm |or
-step
-talk Tol'mar##55738
-accept Gal'darah Must Pay##29834 |goto Gundrak,57.3,34.6
-accept One of a Kind##29839 |goto Gundrak,57.3,34.6
-accept For Posterity##29844 |goto Gundrak,57.3,34.6
-only if not completedq(29834) or not completedq(29839) or not completedq(29844)
-stickystart "drakhistory"
-step
-_Go down_ the ramp |goto Gundrak/1 58.7,40.0 |c
-step
-kill Slad'ran##29304
-_Powerful Bite_:
-|tip Deals damage and reduces armor by 20% for 5 seconds.
-_Poison Nova_:
-|tip Deals nature damage to everyone within 15 yards and poisons them for 16 seconds.
-_Slad'ran Viper_:
-|tip Bites and leaves a poison DoT.
-_Slad'ran Constrictor_:
-|tip Encases a player in snakes. If Grip stacks up to 5, the player is stunned. Kill the snakes.
-scenariogoal 27911 |goto Gundrak/1 54.1,48.7
-step
-click Altar of Slad'ran##8278 |goto 53.8,48.7
-confirm
-step
-map Gundrak/1
-path follow smart; loop off; ants curved; dist 15
-path	57.0,48.7	58.8,54.8	58.9,66.4
-path	49.6,73.5
-Follow the path |goto Gundrak/1 49.6,73.5 < 6 |noway |c
-step
-kill Drakkari Colossus##29307
-kill Drakkari Elemental##29573
-_Colossus Phase_:
-Mortal Strikes:
-|tip Reduces healing received by 50% for 3 seconds.
-Emerge:
-|tip At 50% health, the Drakkari Elemental emerges.
-_The Elemental_:
-Mojo Volley:
-|tip Deals nature damage to 2 random players.
-Surge:
-|tip The Elemental charges forward. Players in the path take nature damage over 45 seconds.
-Merge:
-|tip At 50% health, the Elemental merges and becomes the Colossus again.
-Loot the Drakkari Colossus Fragment |q 29839/1 |only if havequest(29839)
-scenariogoal 27912 |goto 46.9,66.3
-step
-click Altar of the Drakkari Colossus##8278 |goto 46.5,62.5
-confirm
-step
-map Gundrak/1
-path follow smart; loop off; ants curved; dist 15
-path	46.6,65.2	46.2,73.3	41.0,72.5
-path	37.7,60.4	34.6,59.4	33.5,54.0
-Follow the path |goto Gundrak/1 33.5,54.0 < 6 |noway |c
-step
-kill Moorabi##29305
-_Prophet_:
-Ground Tremor:
-|tip Deals damage and stuns all players within 60 yards for 2 seconds.
-Numbing Shout:
-|tip Reduces casting speed by 25% for 5 seconds.
-Mojo Frenzy:
-|tip Increases casting speed and damage based upon remaining health.
-Transformation:
-|tip Transforms into the Avatar, increasing damage by 25%. Interrupt as much as possible.
-_Avatar_:
-Quake:
-|tip Same as Ground Tremor.
-Numbing Roar:
-|tip Reduces casting speed by 50% for 5 seconds.
-scenariogoal 27913 |goto 37.4,49.1
-step
-click Altar of Moorabi##8278 |goto 39.6,49.2
-confirm
-step
-map Gundrak/1
-path follow smart; loop off; ants curved; dist 15
-path	38.1,49.1	31.7,49.1	27.7,48.0
-path	23.3,53.0	25.0,64.5
-Follow the path |goto Gundrak/1 25.0,64.5 < 6 |noway |c
-only if heroic_dung()
-step
-kill Eck the Ferocious##29932
-_Eck Spit_:
-|tip Deals nature damage and drains mana in a frontal cone. Stay behind Eck.
-_Eck Spring_:
-|tip Leaps on a distant player.
-_Eck Berserk_:
-|tip After 90 seconds, Eck gains 150% attack speed and 500% increased damage. Hard enrage timer.
-scenariogoal 5053 |goto Gundrak/1 25.3,70.2
-only if heroic_dung()
-step
-map Gundrak/1
-path follow smart; loop off; ants curved; dist 15
-path	25.0,64.5	23.3,53.0	27.7,48.0
-path	31.7,49.1	38.1,49.1
-Follow the path |goto Gundrak/1 38.1,49.1 < 8 |noway |c
-only if heroic_dung()
-step
-map Gundrak/1
-path follow smart; loop off; ants curved; dist 15
-path	40.0,49.1	46.6,54.0	46.6,47.8
-path	46.5,37.4
-Follow the path |goto Gundrak/1 46.5,37.4 < 8 |noway |c
-step
-kill Gal'darah##29306
-_Prophet_:
-Stampede:
-|tip Charges a player, dealing damage and knocking them in the air.
-Whirling Slash:
-|tip Gal'darah spins, dealing damage and leaving a bleed. Run away.
-Puncture:
-|tip Bleeds a player for 2 minutes.
-_Avatar_:
-Impaling Charge:
-|tip Charges a player, dealing damage and knocking them back.
-Enrage:
-|tip Increases attack speed by 100% for 8 seconds. Use a cooldown if tanking.
-Stomp:
-|tip Deals damage and knocks back all players within 10 yards.
-scenariogoal 27914 |goto Gundrak/1 46.6,25.7
-step "drakhistory"
-There will be Drakkari History Tablets throughout the dungeon. You will need to collect 6 to complete the quest
-click Drakkari History Tablet##7356
-collect 6 Drakkari History Tablet |q For Posterity##29844/1
-only if havequest(29844)
-step
-talk Tol'mar##55738
-turnin Gal'darah Must Pay##29834 |goto Gundrak 51.7,20.9
-turnin One of a Kind##29839 |goto Gundrak 51.7,20.9
-turnin For Posterity##29844 |goto Gundrak 51.7,20.9
-only if havequest(29834) or havequest(29839) or havequest(29844)
-step
-Congratulations! You have completed Gundrak
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Stone (HoS) 76-79",{
-mapid=526,
-achieveid={485},
-description="This guide will walk you through the Halls of Stone dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Halls of Stone or enter the dungeon with your group |goto Halls of Stone/1 34.4,36.2 |c |or
-|confirm |or
-step
-talk Kaldir Ironbane##55835
-accept The Forlorn Watcher##29848 |goto Halls of Stone 35.8,35.0
-accept Corrupt Constructs##29850 |goto Halls of Stone 35.8,35.0
-only if not completedq(29848) or not completedq(29850)
-stickystart "Giants"
-step
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	35.8,36.4	45.1,36.4	49.9,41.8
-path	50.0,53.4	40.7,54.1	32.3,51.2
-path	30.0,61.4	34.3,69.7	38.1,67.8
-Follow the path |goto Halls of Stone/1 38.1,67.8 < 12 |noway |c
-step
-kill Krystallus##27977
-_Ground Slam_:
-|tip Knocks everyone back and slows speed by 20% every second.
-_Shatter_:
-|tip Shatters players turned to stone. Make sure you aren't near a party member after Ground Slam.
-_Boulder Toss_:
-|tip Tosses a boulder at a random player, dealing damage.
-_Stomp_:
-|tip Deals damage to anyone within 25 yards.
-_Ground Spike_:
-|tip Summons spikes under a random player, dealing heavy damage. Move out. |only if heroic_dung()
-scenariogoal 27922 |goto 39.6,61.8
-step
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	39.2,62.5	41.6,55.0	50.0,53.7
-path	50.0,65.9	50.0,77.2
-Follow the path |goto Halls of Stone/1 50.0,77.2 < 8 |noway |c
-step
-kill Maiden of Grief##27975
-_Pillar of Woe_:
-|tip Deals shadow damage to a player, leaving a DoT for 10 seconds.
-_Shock of Sorrow_:
-|tip Deals damage to all players and stuns for 6 seconds. Breaks upon taking damage.
-_Storm of Grief_:
-|tip Deals shadow damage to anyone within the area every second. Move out of this.
-_Parting Sorrow_:
-|tip Mana burns a player, dealing 1 shadow damage for each point of mana drained. |only if heroic_dung()
-Loot the Crystal Tear of Grief |q 29848/1 |only if havequest(29848)
-scenariogoal 27923 |goto 50.0,85.4
-step
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	50.0,85.9	50.0,68.9	50.7,53.4
-path	58.9,53.3	67.2,53.5	70.9,48.7
-Follow the path |goto Halls of Stone/1 70.9,48.7 < 6 |noway |c
-step
-talk Brann Bronzebeard##28070
-accept Halls of Stone##13207 |goto 70.9,48.6 |noway |only if not completedq(13207)
-Tell him: "_Brann, it would be our honor!_"
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	70.9,48.7	72.5,57.5	76.8,64.0
-path	81.9,71.4
-Then, follow the path |goto Halls of Stone/1 81.9,71.4 < 10 |noway |c
-step
-Tell Brann: "_Let's move Brann..._"
-_Searing Gaze_:
-|tip Deals fire damage to anyone within 5 yards. Move away.
-_Dark Matter_:
-|tip An orb of shadow moves towards a player. Upon impact, deals shadow damage and increases damage taken by 50% and movement speed by 30% Move away. |only if not heroic_dung()
-_Dark Matter_:
-|tip An orb of shadow moves towards a player. Upon impact, deals shadow damage and increases damage taken by 100% and movement speed by 50% Move away. |only if heroic_dung()
-_Adds_:
-|tip Keep the adds under control. Interrupt and dispel to minimize outgoing damage.
-scenariogoal 27924 |goto 81.7,71.1
-step
-Tell Brann: "_There will be plenty of time..._"
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	84.2,74.7	76.7,63.5	69.5,53.5
-path	60.5,53.3	50.3,53.2	50.1,43.0
-path	53.6,36.1	49.9,28.8
-Then, follow the path |goto Halls of Stone/1 49.9,28.8 < 10 |noway |c
-step
-talk Brann Bronzebeard##28070 |goto Halls of Stone/1 49.9,28.7
-Tell Brann: "_We're with you Brann! Open it!_"
-Then, walk inside |goto Halls of Stone/1 49.9,22.8 < 10 |noway |c
-step "Giants"
-kill 3 Dark Rune Giant##27969 |q 29850/1 |goto 46.0,36.0
-only if havequest(29850)
-step
-kill Sjonnir The Ironshaper##27978
-_Chain Lightning_:
-|tip Arcs to up to 3 targets, dealing more damage per jump. Spread out.
-_Static Charge_:
-|tip Deals damage to nearby allies. Stay away from other players. Dispel whenever possible.
-_Lightning Ring_:
-|tip Deals nature damage to anyone within 10 yards. Increases nature damage taken by 10% for 15 seconds.
-_Frenzy_:
-|tip At 20% health, Sjonnir gainsed 50% increased attack speed and 100% increased damage.
-_Adds_:
-|tip Kill the adds quickly. Some can combine to become more powerful. New types emerge every 25% health.
-scenariogoal 27925 |goto Halls of Stone/1 49.9,13.0
-step
-talk Brann Bronzebeard##28070
-turnin Halls of Stone##13207 |goto 49.9,11.6
-only if havequest(13207)
-step
-map Halls of Stone/1
-path follow smart; loop off; ants curved; dist 15
-path	49.9,12.5	49.8,28.6	45.0,36.2
-path	35.8,34.9
-talk Kaldir Ironbane##55835
-turnin The Forlorn Watcher##29848
-turnin Corrupt Constructs##29850
-only if havequest(29848) or havequest(29850)
-step
-Congratulations! You have completed Halls of Stone
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme (CoS) 79-80",{
-mapid=521,
-achieveid={479},
-description="This guide will walk you through the Caverns of Time: The Culling of Stratholme dungeon.",
-},[[
-step
-label  "start"
-Press _I_ and queue for The Culling of Stratholme or enter the dungeon with your group |goto The Culling of Stratholme/1 87.5,71.2 |c |or
-|confirm |or
-step
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	87.5,71.2	89.8,68.0	89.4,64.9
-path	86.4,61.5
-talk Chromie##26527
-accept Dispelling Illusions##13149 |goto The Culling of Stratholme/1 86.4,61.5 |noway |only if not completedq(13149)
-Tell her: "_Chromie, you and I both know what's going to happen in this time stream._" |only if completedq(13151) |goto The Culling of Stratholme/2 50.5,76.0
-confirm |next "Dungeon" |only if completedq(13151)
-step
-click Plagued Grain Crate##336
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	83.9,59.1	81.2,59.7	77.8,54.9
-path	73.4,55.0	70.1,51.2
-Use your Arcane Disruptor on the 5 Suspicious Grain Crates at the waypoints. |use Arcane Disruptor##37888
-Plague Grain Crates Dispelled |q 13149/1 |only if havequest(13149)
-Click here when you have all 5 Dispelled |confirm |only if not havequest(13149)
-step
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	69.4,51.7	65.1,49.2	61.4,51.0
-path	54.8,50.6	49.2,44.4	47.6,39.8
-talk Chromie##27915
-turnin Dispelling Illusions##13149
-only if havequest(13149)
-step
-talk Chromie##27915
-accept A Royal Escort##13151 |goto 47.6,39.8 |only if not havequest(13151)
-only if not completedq(13151)
-step
-talk Chromie##27915 |goto 47.6,39.8
-Ask her: "_What do you think they're up to?_"
-confirm
-step
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	47.9,39.8	47.4,31.6	The Culling of Stratholme/2 50.6,87.7
-path	The Culling of Stratholme/2 53.9,83.0	The Culling of Stratholme/2 50.5,79.2
-Follow the path |goto The Culling of Stratholme/2 50.5,79.2 < 5 |noway |c
-step
-talk Arthas##26499 |goto The Culling of Stratholme/2,50.5,79.2
-Tell him: "_Yes, my Prince. We are ready._"
-|tip You may have to wait for the dialogue to end before he appears here.
-confirm
-step
-label "Dungeon"
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	45.1,64.9	46.6,58.5	53.1,62.4
-path	61.5,52.9	59.7,39.0
-Move between these waypoints in order to find the mobs that spawn
-|tip A white flag on the minimap shows the current spawn location.
-Click here when _Meathook_ spawns on Scourge Wave 5 |confirm
-step
-kill Meathook##26529
-_Constricting Chains_:
-|tip Stuns a player and deals damage over 5 seconds.
-_Disease Explusion_:
-|tip Deals nature damage and interrupts spellcasting in a 10 yard range.
-_Frenzy_:
-|tip Meathook increases his damage by 10% for 30 seconds. Stacks up to 10 times. |only if heroic_dung()
-scenariogoal 27930 |goto 52.9,62.4
-step
-map The Culling of Stratholme/1
-path follow smart; loop off; ants curved; dist 15
-path	45.1,64.9	46.6,58.5	53.1,62.4
-path	61.5,52.9	59.7,39.0
-Move between these waypoints in order to find the mobs that spawn
-|tip A white flag on the minimap shows the current spawn location.
-Click here when _Salramm the Fleshcrafter_ spawns on Scourge Wave 10 |confirm
-step
-kill Salramm the Fleshcrafter##26530
-_Steal Flesh_:
-|tip Reduces a random player's damage by 75% while increasing Salramm's damage by 75%.
-_Summon Ghouls_:
-|tip Summons 2 ghoul minions. Kill these quickly before they explode.
-_Explode Ghoul_:
-|tip Detonates a nearby ghoul, dealing fire damage in a 10 yard radius.
-_Curse of Twisted Flesh_:
-|tip Reduces a player's health by 25% and deals shadow damage over 30 seconds. Dispel quickly. |only if heroic_dung()
-scenariogoal 27931 |goto 52.9,62.4
-step
-talk Arthas##26499 |goto 58.8,36.7
-Tell him: "_We're only doing what is best for Lordaeron, your Highness._"
-confirm
-step
-map The Culling of Stratholme/2
-path follow smart; loop off; ants curved; dist 15
-path	58.1,32.7	59.0,27.0	61.7,31.4
-path	65.8,28.4
-Fight the mobs that spawn at these points
-confirm
-step
-kill Chrono-Lord Epoch##26532
-_Time Warp_:
-|tip Reduces melee, casting, and movement speed by 70% for 6 seconds.
-_Time Step_:
-|tip Randomly charges a player, dealing damage.
-_Wounding Strike_:
-|tip Deals damage and reduces healing by 25%. Leaves a bleed over 4 seconds.
-_Curse of Exertion_:
-|tip Increases ability resource cost by 100%. Dispel.
-_Time Stop_:
-|tip Stuns all players for 2 seconds. |only if heroic_dung()
-scenariogoal 27932 |goto 66.1,26.0
-step
-talk Arthas##26499 |goto 65.5,28.8
-Tell him: "_I'm Ready._"
-confirm
-step
-Follow Arthas down the steps |goto The Culling of Stratholme/2,64.9,14.2
-step
-talk Arthas##26499 |goto 64.9,14.2
-Tell him: "_For Lordaeron!_"
-confirm
-step
-map The Culling of Stratholme/2
-path follow smart; loop off; ants curved; dist 15
-path	64.9,14.2	62.2,9.9	56.6,11.4
-path	50.9,15.4	45.4,18.3	38.3,24.8
-path	40.1,37.2
-Follow Arthas |goto The Culling of Stratholme/2 40.1,37.2 < 5 |noway |c
-step
-kill Infinite Corruptor##32273
-_Corrupting Blight_:
-|tip Deals 8% of the target's max health as damage every 3 seconds for 2 minutes. Stacks up to 5 times.
-_Void Strike_:
-|tip Deals damage, bypassing armor.
-scenariogoal 24857 |goto The Culling of Stratholme/2 51.9,41.4
-Click here if you didn't make the timer |confirm
-only if heroic_dung()
-step
-talk Arthas##26499 |goto 40.1,37.2
-Tell him: "_I'm ready to battle the dreadlord, sire._"
-confirm
-step
-kill Mal'Ganis##26533
-_Sleep_:
-|tip Puts a player to sleep for 10 seconds. Dispel this.
-_Mind Blast_:
-|tip Deals shadow damage to a random player.
-_Vampiric Touch_:
-|tip Heals Mal'Ganis for 50% of his damage dealt.
-_Carrion Swarm_:
-|tip Frontal cone attack that deals shadow damage and leaves a 15 second DoT. Don't stand in front of him.
-scenariogoal 27933 |goto 33.5,44.9
-step
-talk Chromie##30997
-|tip You may have to wait a few moments for him to appear.
-turnin A Royal Escort##13151 |goto 32.0,44.7
-only if havequest(13151)
-step
-Congratulations! You have completed The Culling of Stratholme
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\The Oculus (OC) 79-80",{
-mapid=528,
-achieveid={487},
-description="This guide will walk you through the The Oculus dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for The Oculus or enter the dungeon with your group |goto The Oculus/1 61.3,47.6 |c |or
-|confirm |or
-step
-accept The Struggle Persists##13124 |goto The Oculus 63.3,42.0
-only if not completedq(13124)
-step
-map The Oculus/1
-path follow smart; loop off; ants curved; dist 10
-path	61.3,47.6	64.3,30.8	61.0,17.2
-path	52.6,11.0	35.4,19.7	33.4,35.6
-path	38.4,50.9
-Follow the path and click the portal at the end |goto 47.9,69.4 < 5 |noway |c
-step
-kill Drakos the Interrogator##27654
-scenariogoal 27926 |goto 48.9,76.1
-step
-talk Belgaristrasz##27658
-turnin The Struggle Persists##13124 |goto 50.1,81.2
-only if havequest(13124)
-step
-talk Belgaristrasz##27658
-accept A Unified Front##13126 |goto 50.1,81.2
-only if not completedq(13126)
-step
-Talk to either Verdisa, Belgaristrasz or Eternos and obtain a dragon.
-talk Belgaristrasz##27658
-collect Ruby Essence##37860 |or
-|tip Talk to Belgaristrasz for the Ruby Essence.
-talk Eternos##27659
-collect Amber Essence##37859 |or
-|tip Talk to Eternos for the Amber Essence.
-talk Verdisa##27657
-collect Emerald Essence##37815 |or
-|tip Talk to Verdisa for the Emerald Essence.
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-stickystart "Const"
-step
-map The Oculus/2
-path follow smart; loop off; ants curved; dist 12
-path	47.1,74.0	39.8,61.8	42.7,49.9
-path	55.2,49.4	58.4,60.5	57.7,66.3
-Follow the path |goto The Oculus/2 57.7,66.3 < 25 |noway |c |or
-|confirm |or
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-Clear this platform |goto The Oculus/2 73.2,75.3
-confirm
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-Clear this platform |goto The Oculus/2 26.4,79.6
-confirm
-step "Const"
-kill 10 Centrifuge Construct##27641 |q 13126/1 |goto 29.3,76.3
-only if havequest(13126)
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-kill Varos Cloudstrider##27447
-scenariogoal 27927 |goto The Oculus/2 46.2,19.2
-step
-talk Image of Belgaristrasz##28012
-turnin A Unified Front##13126 |goto The Oculus/2 45.7,18.8
-accept Mage-Lord Urom##13127 |goto The Oculus/2 45.7,18.8
-only if not completedq(13127)
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-Fly up to this platform with your drake |goto The Oculus/3 62.2,15.0 < 5 |c
-step
-Attack Mage-Lord Urom.  When he vanishes, kill the mobs he summons
-kill Mage-Lord Urom##27655 |goto The Oculus/3 70.7,27.0
-confirm
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-Attack Mage-Lord Urom.  When he vanishes, kill the mobs he summons
-kill Mage-Lord Urom##27655 |goto The Oculus/3 50.4,87.8
-confirm
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-Attack Mage-Lord Urom. When he vanishes, kill the mobs he summons
-kill Mage-Lord Urom##27655 |goto The Oculus/3 25.6,31.1
-confirm
-step
-Use your Ruby Essence |use Ruby Essence##37860 |only if itemcount(37860) > 0
-Use your Amber Essence |use Amber Essence##37859 |only if itemcount(37859) > 0
-Use your Emerald Essence |use Emerald Essence##37815 |only if itemcount(37815) > 0
-Ride your dragon |invehicle
-step
-kill Mage-Lord Urom##27655
-scenariogoal 27928 |goto The Oculus/3 44.0,44.9
-step
-talk Raelorasz##26117
-turnin Mage-Lord Urom##13127 |goto The Oculus/3 44.5,44.4
-accept A Wing and a Prayer##13128 |goto The Oculus/3 44.5,44.4
-only if not completedq(13128)
-step
-Use your Ruby Essence |invehicle |use Ruby Essence##37860 |only if itemcount(37860) > 0 |next "ruby"
-Use your Amber Essence |invehicle |use Amber Essence##37859 |only if itemcount(37859) > 0 |next "amber"
-Use your Emerald Essence |invehicle |use Emerald Essence##37815 |only if itemcount(37815) > 0 |next "emerald"
-step
-label "emerald"
-kill Ley-Guardian Eregos
-|tip As the Emerald Drake, your job will be to heal your group.
-_Leeching Poison_:
-|tip Puts a DoT on your target, siphoning health from that target to you. It will be important that you keep 3 stacks up on the boss at all times at the very least.
-_Touch the Nightmare_:
-|tip Damages you in order to reduce your enemies damage output. It should be used on Ley-Guardian Eregos only, however DO NOT SPAM this ability.
-_Dream Funnel_:
-|tip Transfers 5% of your health to a friendly target. This along with Leeching Poison is what you should be using the most.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
-next "turnin"
-step
-label "ruby"
-kill Ley-Guardian Eregos##27656
-|tip As the Ruby Drake, your job will be to Tank the boss and the whelplings as best you can at all times.
-_Searing Wrath_:
-|tip Your only attack, and jumps to nearby opponents when used.
-_Evasive Aura_:
-|tip An ability that gives you a charge whenever you're damaged. The charge is used for your 3rd ability.
-_Evasive Maneuvers_:
-|tip An ability that allows you to dodge all incoming damage.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
-next "turnin"
-step
-label "amber"
-kill Ley-Guardian Eregos##27656
-|tip As the Amber Drake, your job will be to damage Ley-Guardian Eregos.
-_Shock Lance_:
-|tip Your primary attack.
-_Stop Time_:
-|tip An important ability, freezing all enemy targets when used. It is important to use this when Ley-Guardian Eregos uses Enraged Assault.
-_Temporal Rift_:
-|tip Channeled ability, which should be used until you have 10 Shock Charges, at which point you will want to use Shock Lance.
-scenariogoal 27929 |goto The Oculus/0 49.6,49.2
-next "turnin"
-step
-label "turnin"
-talk Belgaristrasz##27658
-turnin A Wing and a Prayer##13128 |goto The Oculus/4 47.6,83.7
-only if havequest(13128)
-step
-Congratulations! You have completed The Oculus
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Lightning (HoL) 79-80",{
-mapid=525,
-achieveid={486},
-description="This guide will walk you through the Halls of Lightning dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Halls of Lightning or enter the dungeon with your group |goto Halls of Lightning/1 7.4,53.8 |c |or
-|confirm |or
-step
-talk Stormherald Eljrrin##56027
-accept Diametrically Opposed##29860 |goto Halls of Lightning 11.9,53.8
-accept Whatever it Takes!##29861 |goto Halls of Lightning 11.9,53.8
-accept Clearing the Way##29862 |goto Halls of Lightning 11.9,53.8
-only if not completedq(29860) or not completedq(29861) or not completedq(29862)
-stickystart "Storm"
-step
-map Halls of Lightning/1
-path follow smart; loop off; ants curved; dist 15
-path	11.5,53.8	20.2,53.7	32.6,53.6
-path	44.8,39.1
-Follow the path |goto Halls of Lightning/1 44.8,39.1 < 15 |noway |c
-step
-kill General Bjarngrim##28586
-modelnpc Stormforged Lieutenant##29240+
-_Charge Up_:
-|tip This aura empowers any mobs nearby with 30% increased damage. Kill his adds first.
-_Battle Stance_:
-|tip 25% haste.
-_Mortal Strike_:
-|tip Reduces healing received by 50%.
-_Pummel_:
-|tip Interrupts spellcasting for 4 seconds.
-_Berserker Stance_:
-|tip 25% damage.
-_Whirlwind_:
-|tip Deals damage to anyone within 8 yards. Run away.
-_Cleave_:
-|tip Deals frontal damage. Stay behind him.
-_Defensive Stance_:
-|tip 25% damage reduction.
-_Knock Away_:
-|tip Knocks back anyone within 10 yards.
-_Spell Reflection_:
-|tip Reflects the next spell cast at Bjarngrim.
-scenariogoal 27918 |goto Halls of Lightning/1 47.2,42.3
-step
-map Halls of Lightning/1
-path follow smart; loop off; ants curved; dist 15
-path	44.8,39.1	54.8,53.6	67.0,53.6
-Follow the path |goto Halls of Lightning/1 67.0,53.6 < 8 |noway |c
-step "Storm"
-kill 3 Stormforged Tactician##28581+ |q 29862/2 |goto 58.1,53.7
-kill 3 Stormforged Mender##28582+ |q 29862/1 |goto 58.1,53.7
-only if havequest(29862)
-step
-map Halls of Lightning/1
-path follow smart; loop off; ants curved; dist 15
-path	67.0,53.6	78.8,55.8	Halls of Lightning/2 56.0,21.2
-kill Slag##28585+
-|tip Avoid standing near these when they die, as they will explode.
-Follow the path and _go up_ the steps |goto Halls of Lightning/2 56.0,21.2 < 8 |noway |c
-|tip Do not attack the slags or stop until you are up the stairs!
-step
-map Halls of Lightning/2
-path follow smart; loop off; ants curved; dist 15
-path	57.2,25.8	52.3,25.9	44.3,25.4
-Follow the path |goto Halls of Lightning/2 44.3,25.4 < 8 |noway |c
-step
-kill Volkhan##28587
-|tip The best strategy is to ignore the golems and burn down Volkhan.
-_Heat_:
-|tip Heats a Molten Golem, healing it for 20%.
-_Temper_:
-|tip Creates 2 Molten Golems.
-_Shattering Stomp_:
-|tip At 25% health, Stomp does physical damage and shatters any brittle Molten Golems.
-_Molten Golem_:
-|tip Attack random players. At 1% health, they become inactive, waiting to be shattered.
-scenariogoal 27919 |goto Halls of Lightning/2,41.8,23.1
-step
-map Halls of Lightning/2
-path follow loose;loop off;ants straight
-path	47.0,44.1	47.0,52.3	51.4,54.2
-path	57.9,54.3
-kill Titanium Siegebreaker##28961
-Follow the path through the hallway, stopping at each waypoint |goto Halls of Lightning/2 57.9,54.3 < 10 |noway |c
-|tip At each of the waypoint, enemies will spawn. Kill the Titanium Siegebreakers first, they use a fear ability.
-step
-kill Ionar##28546
-_Static Overload_:
-|tip Zaps the player and nearby allies over 10 seconds. At the end, knocks back. Don't move near allies.
-_Disperse_:
-|tip At 50% health, Ionar becomes electricity that pursues players. Run away!
-_Spark of Ionar_:
-|tip These deal nature damage to anyone within 5 yards and cause players to take 2% increased damage. Effect stacks.
-scenariogoal 27920 |goto 61.1,75.0
-step
-kill Stormforged Runeshaper##28836
-|tip Kill these first, they use a massive damage AoE
-map Halls of Lightning/2
-path follow smart; loop off; ants curved; dist 15
-path	57.6,75.5	48.9,72.0	39.5,68.2
-path	29.5,75.8	20.4,82.8	22.6,73.1
-path	19.2,64.8
-Follow the path |goto Halls of Lightning/2 19.2,64.8 < 8 |noway |c
-step
-kill Loken##28923
-_Pulsing Shockwave_:
-|tip Deals more damage the further players stand from Loken. Stay close.
-_Lightning Nova_:
-|tip Deals significant nature damage to players close to Liken. Run away.
-_Arc Lightning_:
-|tip Functions exactly like chain lightning. Stay spread out around him. |only if heroic_dung()
-Loot Loken's Tongue |q 29861/1 |goto Halls of Lightning/2 19.2,56.1 |only if havequest(29861)
-scenariogoal 27921 |goto Halls of Lightning/2 19.2,56.1
-step
-talk Stormherald Eljrrin##56027
-turnin Diametrically Opposed##29860 |goto 19.1,62.8
-turnin Whatever it Takes!##29861 |goto 19.1,62.8
-turnin Clearing the Way##29862 |goto 19.1,62.8
-only if havequest(29860) or havequest(29861) or havequest(29862)
-step
-Congratulations! You have completed Halls of Lightning
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Utgarde Keep: Utgarde Pinnacle (UP) 79-80",{
-mapid=524,
-achieveid={488},
-description="This guide will walk you through the Utgarde Keep: Utgarde Pinnacle dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Utgarde Pinnacle or enter the dungeon with your group |goto Utgarde Pinnacle/2 44.5,16.1 |c |or
-|confirm |or
-step
-talk Image of Argent Confessor Paletress##56072
-accept Working at the Source##29864 |goto Utgarde Pinnacle/2,45.1,18.1
-only if not completedq(29864)
-step
-talk Brigg Smallshanks##30871
-accept Junk in My Trunk##13131 |goto 44.0,18.2
-accept Vengeance Be Mine!##13132 |goto 44.0,18.2
-only if not completedq(13131) or not completedq(13132)
-stickystart "Junk"
-step
-map Utgarde Pinnacle/2
-path follow smart; loop off; ants curved; dist 12
-path	44.4,18.7	44.3,34.0	40.6,35.9
-path	35.5,35.8	33.5,42.9	34.0,51.6
-path	33.3,59.9	35.1,69.0	39.6,69.1
-path	39.7,77.1	Utgarde Pinnacle/1 31.1,74.9
-Follow this path until you get downstairs. |goto Utgarde Pinnacle/1 31.1,74.9 < 5 |noway |c
-step
-kill Svala Sorrowgrave##26668
-_Call Flames_:
-|tip Deals fire damage to random players.
-_Ritual of the Sword_:
-|tip A random player will be paralyzed by Channelers on the alter. Kill the channelers within 25 seconds to free the player.
-_Ritual Channeler_:
-|tip Surrounded by a shield that places a stacking DoT on attacking players. Each DPS should kill 1 Channeler.
-scenariogoal 27885 |goto Utgarde Pinnacle,33.8,74.2
-step
-map Utgarde Pinnacle/1
-path follow strict; loop off; ants curved; dist 12
-path	35.9,76.1	35.9,86.2	45.7,86.3
-path	Utgarde Pinnacle/2 52.7,75.5	Utgarde Pinnacle/2 52.2,84.4
-path	Utgarde Pinnacle/2 58.1,84.5
-Follow the path |goto Utgarde Pinnacle/2 58.1,84.5 < 5 |noway |c
-step
-kill Gortok Palehoof##26687
-click Stasis Generator##7811
-|tip This will trigger an event where 3 out of 5 statues come to life, the third being the actual boss.
-_Jormunger_:
-tip Leaves poison on the ground and summons non-elite adds.
-_Rhino_:
-|tip Has a heavy stomp damage and randomly charges victims, leaving a dot.
-_Furlbog_:
-|tip Casts Chain Lightning and randomly changes aggro, as well as an AoE Fear.
-_Worgen_:
-|tip  Uses Mortal Strike on the tank.
-_Gortok Palehoof_:
-_Arcing Smash_:
-|tip Does cone damage wherever he is facing.
-_Impale_:
-|tip Leaves a DoT on a random party member.
-_Withering Roar_:
-|tip Decreases your maximum health by 500 and stacks.  The longer the fight lasts the harder it will become to heal.
-scenariogoal 27886 |goto Utgarde Pinnacle/2,61.8,84.1
-modelnpc 26683
-modelnpc 26686
-modelnpc 26684
-modelnpc 26685
-step
-kill Skadi the Ruthless##26693
-|tip Aggroing the boss will trigger an event. Ymirjar mobs will come to fight you and you will have to battle them up the hall.
-_Freezing Cloud_:
-|tip Don't stand in this.
-_Harpoon Launcher_:
-|tip Ymirjar Harpooners drops ammo for the launchers. Click them to pick them up. When you get the message "Skadi the Ruthless is within range of the harpoon launchers!" click them to shoot him down.
-_Whirlwind_:
-|tip Kite Skadi around during this attack to minimize damage.
-_Poisoned Spear_:
-|tip Poisons a player, dealing nature damage. Dispel quickly.
-scenariogoal 27887 |goto 68.7,65.1
-step
-map Utgarde Pinnacle/2
-path follow smart; loop off; ants curved; dist 12
-path	68.3,36.7	62.8,37.0	55.5,37.4
-path	Utgarde Pinnacle/1 56.3,18.3	Utgarde Pinnacle/1 56.2,32.4
-path	Utgarde Pinnacle/1 49.7,44.4	Utgarde Pinnacle/2 48.9,53.7
-Follow the path |goto Utgarde Pinnacle/2 48.9,53.7 < 8 |noway |c
-step
-kill King Ymiron##26861
-_Gift of the Fallen Kings_: |only if not heroic_dung()
-|tip Used at 66% and 33% health. Grants a new ability. |only if not heroic_dung()
-_Gift of the Fallen Kings_: |only if heroic_dung()
-|tip Used every 20% health. Grants a new ability. |only if heroic_dung()
-_Spirit Burst_:
-|tip Deals shadow damage to all players. Lasts until the next Gift.
-_Summon Spirit Fount_:
-|tip Deals shadow damage to a random player every second. Lasts until the next Gift.
-_Spirit Strike_:
-|tip Increases physical damage taken, stacking up to 100 times. Lasts until the next Gift.
-_Summon Avenging Spirits_:
-|tip Summons 4 spirits to attack players. Lasts until the next Gift.
-_Screams of the Dead_: |only if not heroic_dung()
-|tip At 66% and 33%, King Ymiron will stun the entire party for 8 seconds. |only if not heroic_dung()
-_Screams of the Dead_: |only if heroic_dung()
-|tip Every 20% health, King Ymiron will stun the entire party for 8 seconds. |only if heroic_dung()
-_Dark Slash_:
-|tip Deals damage equal to 50% of the targets current health.
-_Bane_:
-|tip Deals AoE damage in a 10 yard radius whenever Ymiron is attacked. Dispel this.
-_Fetid Rot_:
-|tip Deals nature damage and reduces healing received by 25%. Dispel this.
-scenariogoal 27888 |goto Utgarde Pinnacle/2,42.6,53.5
-step "Junk"
-Loot Untarnished Silver Bar |q 13131/1
-Loot Shiny Bauble |q 13131/2
-Loot Golden Goblet |q 13131/3
-Loot Jade Statue |q 13131/4
-only if havequest(13131)
-step
-talk Image of Argent Confessor Paletress##56072
-turnin Working at the Source##29864 |goto 45.1,18.1
-only if havequest(29864)
-step
-talk Brigg Smallshanks##30871
-turnin Junk in My Trunk##13131 |goto 44.0,18.2
-turnin Vengeance Be Mine!##13132 |goto 44.0,18.2
-only if havequest(13131) or havequest(13132)
-step
-Congratulations! You have completed Utgarde Pinnacle.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Trial of The Champion (ToC) 80",{
-mapid=542,
-achieveid={4296},
-description="This guide will walk you through the Trial of the Champion dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Trial of the Champion or enter the dungeon with your group |goto Trial of the Champion/1 51.2,30.2 |c |or
-|confirm |or
-step
-Click the Quest Discovered box |only if not completedq(29851)
-accept Champion of the Tournament##29851 |goto Trial of the Champion 49.6,30.3 |only if not completedq(29851)
-click Lance Rack##130
-collect Argent Lance##46106
-step
-Go to the center to start the event. |goto Trial of the Champion 51.4,51.3 < 8 |c
-step
-Equip your _Argent Lance_. |equipped Argent Lance##46106 |use Argent Lance##46106
-clicknpc Argent Warhorse##36557
-Ride an Argent Warhorse. |invehicle |goto 57.9,33.6
-stickystart "Warhorse"
-step
-talk Arelas Brightstar##35005 |goto 51.0,53.1
-Tell him: "_I am ready._"
-|tip You will be confronted with several waves of enemies, 3 at a time. Focus on 1 enemy at a time.
-confirm
-step "Warhorse"
-_Thrust_:
-|tip Primary attack.
-_Shield Break_:
-|tip Used to remove an enemy's Defend buff.
-_Charge_:
-|tip Deals massive damage and removes 1 layer of Defend.
-_Defend_
-|tip Reduces damage you take by 30%, stacking 3 times. This should be maintained at 3 at all times.
-step
-The first boss encounter will consist of the last group of jousters you defeated.
-_Kill priority_:
-_Runok Wildmane_:
-|tip Has Healing Wave and Earth Shield. Interrupt Healing Wave at all costs.
-_Eressea Dawnsinger_:
-|tip She will Polymorph random party members, as well as use Blast Wave to AoE your group down.
-_Deathstalker Visceri_:
-|tip He will use Poison Bottle, leaving a green puddle on the ground that deals damage, and Fan of Knives.
-_Mokra the Skullcrusher_:
-|tip He will use Mortal Strike on the tank, reducing healing received by 50% as well as a Bladestorm.
-_Zul'tore_:
-|tip He will use Multishot and Lightning Arrow which can be dispelled.
-modelnpc Runok Wildmane##35571
-modelnpc Mokra the Skullcrusher##35572
-modelnpc Eressea Dawnsinger##35569
-modelnpc Zul'tore##35570
-modelnpc Deathstalker Visceri##35617
-scenariogoal 25098 |goto Trial of the Champion/1 51.1,52.5
-step
-talk Arelas Brightstar##35005 |goto Trial of the Champion/1 47.9,53.9
-Tell him: "_I am ready for the next challenge._"
-|tip There will be 3 groups of trash that come out
-kill Argent Priestess##35307
-|tip Always kill these first, interrupting heals and killing Fountains of Light.
-confirm
-modelnpc Argent Monk##35305
-modelnpc Argent Lightwielder##35309
-step
-There will be one of two bosses at this point:
-Click here for _Eadric_ |next "Eadric" |confirm
-Click here for _Argent Confessor Paletress_ |next "Paletress" |confirm
-modelnpc Eadric##35119
-modelnpc Argent Confessor Paletress##34928
-step
-label "Eadric"
-kill Eadric##35119
-_Hammer of Justice_:
-|tip Stuns a random party member for 6 seconds. Dispel this.
-_Radiance_:
-|tip Turn away from Eadric so you aren't blinded. It will render you unable to act for 2 seconds.
-_Hammer of the Righteous_
-|tip Thrown at a random party member. If not stunned, use your special action button to throw it back at Eadric.
-scenariogoal 25313 |goto Trial of the Champion/1 46.0,52.6 |next "Black_Knight"
-step
-label "Paletress"
-kill Argent Confessor Paletress##34928
-_Holy Fire_:
-|tip Deals fire damage and additional fire damage of 8 seconds.
-_Summon Memory_:
-|tip Used at 50% health. Kill the memory first, as it uses fear and places a shield on Paletress.
-_Reflective Shield_:
-|tip Active on Paletress while the Memory is alive. Absorbs all damage and reflects 25% of it back.
-scenariogoal 25313 |goto Trial of the Champion/1 46.0,52.6
-step
-label	"Black_Knight"
-talk Arelas Brightstar##35005 |goto 51.0,53.1
-Tell him: "_I am ready._"
-confirm
-step
-kill The Black Knight##35451
-There are 3 phases to this fight.
-_Phase 1_:
-Raise Argent Herald:
-|tip Summons ghouls which leap around and drop aggro.  They also Explode, dealing out AoE Damage.
-Death's Respite:
-|tip Stuns a player for 2 seconds and knocks them back, dealing massive damage.
-_Phase 2_:
-Army of the Dead:
-|tip Summons several ghouls that leap around and explode.
-Desecration:
-|tip Deals heavy damage to anyone standing in it. Move out.
-_Phase 3_:
-Death's Bite:
-|tip An aura which deals out shadowfrost damage and increases magic damage taken by 5% per stack, up to 100 stacks.
-Marked for Death:
-|tip Leaves a debuff that increases magic damage taken by 200% for 10 seconds.
-Defeat the Black Knight. |q 29851/1 |only if havequest(29851)
-scenariogoal 27934
-step
-Click the Complete Quest Box
-turnin Champion of the Tournament##29851
-only if havequest(29851)
-step
-Congratulations! You have completed Trial of the Champion.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Forge of Souls (FoS) 80",{
-mapid=601,
-achieveid={4516},
-description="This guide will walk you through the Forge of Souls dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Forge of Souls or enter the dungeon with your group |goto The Forge of Souls/1 66.1,88.9 |c |or
-|confirm |or
-step
-talk Lady Jaina Proudmoore##37597
-turnin Inside the Frozen Citadel##24510 |goto The Forge of Souls 64.0,91.2 |only if havequest(24510)
-accept Echoes of Tortured Souls##24499 |goto The Forge of Souls 64.0,91.2
-only if not completedq(24499)
-step
-kill Spiteful Apparition##36551 |modelnpc Spiteful Apparition##29147
-|tip Be wary of these ghostly skulls. They are invisible.
-map The Forge of Souls/1
-path follow smart; loop off; ants curved; dist 15
-path	63.9,90.1	61.7,83.9	67.3,79.3
-path	69.3,74.2	70.0,68.0	69.3,63.2
-path	66.7,58.4	59.4,60.5	58.5,65.3
-path	54.5,67.1	53.8,58.5	50.6,58.5
-path	46.7,54.0	43.6,54.0
-Follow the path |goto The Forge of Souls/1 43.6,54.0 < 5 |noway |c
-step
-kill Bronjahm##36497
-_Corrupt Soul_:
-|tip If not dispelled before the debuff expires, stuns the player for 2 seconds.
-_Corrupted Soul Fragment_:
-|tip Moves towards Bronjahm. If it reaches him, it will heal him for a large amount of health.
-_Soulstorm_:
-|tip At 35% health, the storm begins. All players must be within 10 yards of him or suffer damage and reduced speed.
-_Fear_:
-|tip Random players are feared during Soulstorm.
-scenariogoal 27935 |goto The Forge of Souls/1 43.3,49.8
-step
-kill Spiteful Apparition##36551 |modelnpc Spiteful Apparition##29147
-|tip Be wary of these ghostly skulls. They are invisible.
-map The Forge of Souls/1
-path follow smart; loop off; ants curved; dist 15
-path	43.3,50.0	42.9,45.2	46.7,45.6
-path	48.1,40.7	46.3,35.6	44.1,30.3
-path	47.0,24.8	49.4,19.6	47.1,16.7
-Follow the path |goto The Forge of Souls/1 47.1,16.7 < 6 |noway |c
-step
-kill Devourer of Souls##36502
-_Mirrored Soul_:
-|tip Damage taken by Devourer of Souls is split between the affected player. Stop attacking to avoid killing them.
-_Phantom Blast_:
-|tip Deals massive shadow damage to the targeted player. Interrupt this as often as possible.
-_Well of Souls_:
-|tip Jumps on a player and leaves a pool on the ground. Players standing in the pool take heavy damage.
-_Unleashed Souls_:
-|tip Cannot be attacked. Run away for the 15 second duration.
-_Wailing Souls_:
-|tip Deals damage and knocks back anyone in front of Devourer of Souls.
-scenariogoal 27936 |goto The Forge of Souls/1 45.6,14.9
-step
-talk Lady Jaina Proudmoore##38160
-turnin Echoes of Tortured Souls##24499 |goto The Forge of Souls/1 44.0,13.1
-accept The Pit of Saron##24683 |goto The Forge of Souls/1 44.0,13.1
-only if not completedq(24683)
-step
-Congratulations! You have completed The Forge of Souls.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Pit of Saron (PoS) 80",{
-mapid=602,
-achieveid={4517},
-description="This guide will walk you through the Pit of Saron dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for the Pit of Saron or enter the dungeon with your group |goto Pit of Saron/0 40.9,80.5 |c |or
-|confirm |or
-step
-talk Lady Jaina Proudmoore##38160
-|tip You may have to pull a mob to get her to run through the portal.
-turnin The Pit of Saron##24683 |goto Pit of Saron 40.8,79.7 |only if havequest(24683)
-accept The Path to the Citadel##24498 |goto Pit of Saron 40.8,79.7
-only if not completedq(24498)
-stickystart "Slaves"
-step
-map Pit of Saron/0
-path follow smart; loop off; ants curved; dist 15
-path	41.1,78.7	42.6,72.8	45.8,68.3
-path	49.4,68.5	52.8,64.9	55.7,62.1
-path	58.9,59.3	63.7,54.9
-Follow the path |goto Pit of Saron/0 63.7,54.9 < 10 |noway |c
-step "Slaves"
-click Ball and Chain##181
-15 Alliance Slaves Freed. |q 24498/1
-only if havequest(24498)
-step
-kill Forgemaster Garfrost##36494
-_Permafrost_:
-|tip Deals frost damage and increases damage taken by 20% for 3 seconds. Line of sight Garfrost using Saronite boulders to clear your stacks.
-_Throw Saronite_:
-|tip Chunks of saronite land on the ground. Don't stand near the impact area.
-_Thundering Stomp_:
-|tip Stuns all players for 2 secons.
-_Chilling Wave_:
-|tip Deals massive frost damage to anyone in front of Garfrost. Move behind him.
-_Deep Freeze_:
-|tip Slows movement speed and freezes the player after 14 seconds, dealing frost damage.
-scenariogoal 27937 |goto 66.4,55.5
-step
-talk Martin Victus##37591
-turnin The Path to the Citadel##24498 |goto 65.5,54.9
-accept Deliverance from the Pit##24710 |goto 65.5,54.9
-only if not completedq(24710)
-step
-map Pit of Saron/0
-path follow smart; loop off; ants curved; dist 15
-path	62.7,54.9	60.1,50.9	56.9,47.1
-path	54.7,43.1	51.0,42.6
-Follow the path |goto Pit of Saron/0 51.0,42.6 < 10 |noway |c
-step
-kill Ick##36476
-|tip Kill the Plagueborn Horrors first.
-_Mighty Kick_:
-|tip Deals damage and knocks the player back.
-_Pursuit_:
-|tip Run away quickly if you are focused.
-_Poison Nova_:
-|tip Deals fatal nature damage in a 15 yard radius. Run away.
-_Explosive Barrage_:
-|tip Hurls missiles at all players, leaving Exploding Orbs. These detonate after 3 seconds. Run away.
-_Toxic Waste_:
-|tip Leaves a puddle of waste at a location, dealing nature damage. Move out.
-scenariogoal 27938 |goto 47.4,41.5
-step
-map Pit of Saron/0
-path follow smart; loop off; ants curved; dist 15
-path	47.1,41.4	49.5,43.2	52.3,40.3
-path	49.7,31.0	54.0,31.5	57.3,32.1
-Follow the path |goto Pit of Saron/0 57.3,32.1 < 10 |noway |c
-|tip Take it slow, mobs will run and take up position in front of you.
-step
-map Pit of Saron/0
-path follow smart; loop off; ants curved; dist 15
-path	59.8,31.3	62.4,28.7	63.0,22.4
-path	63.0,22.4	60.8,19.8	56.3,18.1
-path	51.5,18.0	47.8,19.2
-Follow the path, stopping on the tile to kill the big elemental |goto Pit of Saron/0 47.8,19.2 < 10 |noway |c
-|tip Let the tank go first and avoid the falling ice on the ground.
-step
-kill Scourgelord Tyrannus##36658
-_Forceful Smash_:
-|tip Knocks a player back, dealing massive physical damage.
-_Unholy Power_:
-|tip Slows Tyrannus' speed and increases his damage. Kite him around during this.
-_Overlord's Brand_:
-|tip Redirects damage from the branded character to the tank. Stop attacking.
-_Mark of Rimefang_:
-|tip Rimefang will attack this player from the air. Run away from group members and keep moving.
-scenariogoal 27939 |goto Pit of Saron/0 44.5,23.1
-step
-talk Lady Jaina Proudmoore##38160
-|tip you will have to wait for her to show up.
-turnin Deliverance from the Pit##24710 |goto Pit of Saron/0 39.7,16.1
-accept Frostmourne##24711 |goto Pit of Saron/0 39.7,16.1
-only if not completedq(24711)
-step
-Congratulations! You have completed the Pit of Saron.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Northrend Dungeons\\Halls of Reflection (HoR) 80",{
-mapid=603,
-achieveid={4518},
-description="This guide will walk you through the Halls of Reflection dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Halls of Reflection or enter the dungeon with your group |goto Halls of Reflection/1 47.3,80.8 |c |or
-|confirm |or
-step
-talk Lady Jaina Proudmoore##38160 |goto Halls of Reflection/1 45.0,76.3
-turnin Frostmourne##24711 |goto Halls of Reflection/1 45.0,76.3 |only if havequest(24711)
-Ask her: "_Can you remove the sword?_"
-|tip Watch the dialogue that follows.
-confirm
-only if not completedq(24500)
-step
-talk Lady Jaina Proudmoore##38160 |goto Halls of Reflection/1 45.0,76.3
-|tip When your group is ready, tell her that you think you hear Arthas coming
-confirm
-only if completedq(24500)
-step
-_Kill Priority_:
-kill Ghostly Priest##38175
-|tip Interrupt Dark Mending and Cower in fear as much as possible.
-kill Shadowy Mercenary##38177
-|tip Dispel Deadly Poison and be wary of Kidney Shot, a 3 second stun.
-kill Phantom Mage##38172
-|tip Interrupt Flamestrike every time. Copies of the mage will explode upon death, stay at range.
-kill Tortured Rifleman##38176
-|tip Dispel Cursed Arrow as much as possible. It increases magic damage taken by 50%.
-kill Spectral Footman##38173
-|tip Casters shouldn't stand near these, they use Shield Bash. This interrupts spellcasting.
-|tip Line of sight the trash and wait for them to come to you. Waves of 4-5 enemies will come at a time. |goto Halls of Reflection/1 41.3,61.9
-At wave 5, you will face _Falric_. Click here to move onto his strategy. |confirm
-step
-kill Falric##38112
-_Quivering Strike_:
-|tip Deals damage and reduces dodge chance by 20% for 5 seconds. Dispellable.
-_Impending Despair_:
-|tip If not dispelled within 6 seconds, stuns the target for 6 seconds.
-_Defiling Horror_:
-|tip Fears the party and deals shadow damage every second for 4 seconds.
-_Hopelessness_: |only if not heroic_dung()
-|tip Reduces damage and healing done by the entire party by 20% per cast. |only if not heroic_dung()
-_Hopelessness_: |only if heroic_dung()
-|tip Reduces damage and healing done by the entire party by 25% per cast. |only if heroic_dung()
-scenariogoal 27915
-step
-_Kill Priority_:
-kill Ghostly Priest##38175
-|tip Interrupt Dark Mending and Cower in fear as much as possible.
-kill Shadowy Mercenary##38177
-|tip Dispel Deadly Poison and be wary of Kidney Shot, a 3 second stun.
-kill Phantom Mage##38172
-|tip Interrupt Flamestrike every time. Copies of the mage will explode upon death, stay at range.
-kill Tortured Rifleman##38176
-|tip Dispel Cursed Arrow as much as possible. It increases magic damage taken by 50%.
-kill Spectral Footman##38173
-|tip Casters shouldn't stand near these, they use Shield Bash. This interrupts spellcasting.
-|tip Line of sight the trash and wait for them to come to you. Waves of 4-5 enemies will come at a time. |goto Halls of Reflection/1 34.4,72.7
-At wave 10, you will face _Marwyn_. Click here to move onto his strategy. |confirm
-step
-kill Marwyn##38113
-_Obliterate_:
-|tip Deals heavy damage to Marwyn's current target.
-_Well of Corruption_:
-|tip Increases shadow damage taken by 75%, stacking 4 times. Don't stand in this.
-_Corrupted Flesh_:
-|tip Reduces the maximum health of all nearby players by 50% for 8 seconds.
-_Shared Suffering_:
-|tip Deals damage over 12 seconds to a player, then splits damage to the party. Dispel this quickly.
-scenariogoal 27916
-step
-Click the Quest Discovered box
-accept Wrath of the Lich King##24500
-step
-kill Frostsworn General##36723
-|tip The General will spawn images of your group. They explode upon death, so try to kill them at range.
-map Halls of Reflection/1
-path follow smart; loop off; ants curved; dist 12
-path	36.2,64.9	31.0,57.5	26.3,50.8
-path	19.7,41.5	13.5,32.5	12.9,23.3
-Follow the path to Jaina, killing the General along the way |goto Halls of Reflection/1 12.9,23.3 < 8 |noway |c
-step
-talk Lady Jaina Proudmoore##36955 |goto 12.9,23.2
-Find Lady Jaina Proudmoore |q 24500/1 |goto 12.9,23.2 |only if havequest(24500)
-Tell her: "_We're ready! Let's go!_"
-confirm always
-step
-_Kill Priority_:
-|tip Focus one target at a time, speed is important. You don't want to get caught by the Lich King.
-kill Risen Witch Doctor##36941
-|tip Interrupt Shadow Bolt Volley and dispel Curse of Doom.
-kill Lumbering Abomination##37069
-|tip Face these away from the group. They use Cleave and Vomit Spray. Vomit Spray increases damage taken by 20%.
-map Halls of Reflection/1
-path follow smart; loop off; ants curved; dist 15
-path	14.7,20.0	27.5,27.5	40.5,36.1
-path	51.1,44.9	66.6,65.0	77.3,77.6
-Follow the path, stopping at each point to kill the mobs the Lich King spawns
-scenariogoal 27917
-step
-talk Lady Jaina Proudmoore##38160
-turnin Wrath of the Lich King##24500 |goto 75.9,76.4
-confirm
-only if not completedq(24500)
-step
-Congratulations! You have completed Halls of Reflection |tip Your loot is in the chest aboard the ship.
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Abyssal Maw: Throne of the Tides (TotT) 80-82",{
-mapid=767,
-achieveid={4839},
-description="This guide will walk you through the Abyssal Maw: Throne of the Tides dungeon.",
-},[[
-step
-label "lfg"
-Press _I_ and queue for Throne of the Tides or enter the dungeon with your group |goto Throne of the Tides/1 49.9,88.2 |c |or
-|confirm |or
-step
-talk Captain Taylor##50270
-accept Rescue the Earthspeaker!##28834 |goto Throne of the Tides,49.9,90.6
-accept Sins of the Sea Witch##28836 |goto Throne of the Tides,49.9,90.6
-step
-map Throne of the Tides/1
-path follow smart; loop off; ants curved; dist 12
-path	49.9,88.2	50.2,74.8	50.5,64.7
-path	49.9,49.7	Throne of the Tides/2 50.1,84.5
-Follow the path |goto Throne of the Tides/2 50.1,84.5 < 12 |noway |c
-|tip Mobs will swim through the bubbles of water on the sides of the tunnel.
-step
-Ride the jellyvator to the top and get off |goto Throne of the Tides/2 50.6,77.6 < 8 |noway |c
-|tip You will need to jump to actually get on the jellyfish.
-step
-map Throne of the Tides/1
-path follow smart; loop off; ants curved; dist 12
-path	50.6,77.6	50.6,65.7	50.6,51.6
-path	50.5,33.4
-Follow the path |goto Throne of the Tides/2 50.5,33.4 < 5 |noway |c
-step
-kill Lady Naz'jar##40586
-scenariogoal 24798 |goto 50.6,21.4
-step
-click Throne of Tides Defense System##7147 |goto Throne of the Tides/2 50.8,33.1
-confirm
-step
-_Commander Ulthok_
-He uses 4 main abilities.
-_Squeeze_
-|tip This will be used on a random party member, restricting them from any actions.
-|tip He will use _Dark Fissure_ where the tank is standing.  It's important to move away from him when he does this as this attack may one-shot you.
-|tip When he uses _Dark Fissure_ it leaves a circle of shadow on the ground that slowly expands the longer the fight carries on.
-|tip He casts _Curse of Fatigue_ at a random target, slowing their movement and haste by 50%
-|tip He will Enrage increasing all damage done by 50%.
-kill Commander Ulthok##40765 |goto 50.6,41.8
-confirm
-scenariogoal 24799
-step
-Click the Throne of the Tides Teleporter |goto 51.2,52.7
-confirm
-step
-map Throne of the Tides
-path follow strict;loop off;ants straight
-path	57.3,44.6	61.9,43.7	66.2,38.6
-path	67.2,30.4
-Kill the trash at these points above.
-confirm
-step
-kill Mindbender Ghur'sha##40788
-_Erunak Stonespeaker & Mindbender Ghur'sha_
-_Phase 1:_
-|tip Erunak will cast Earth Shards at a random party member. It will cause damage in a line, so move out of it.
-|tip He will cast Lava Bolt at a random target.  This spell can be interrupted.
-|tip He will use Magma Splash in a cone in front of him.
-_Phase 2:_
-|tip Mindbender Ghur'sha will put Mind Fog on the ground, rendering you unable to cast or attack, as well as causing shadow damage.
-|tip He will randomly Enslave a party member. You will have to beat the member down until they reach 50% helath.
-|tip If you don't free the player, they will die. |only if heroic_dung()
-|tip The most important ability to watch out for is Absorb Magic. All spells cast at him while this ability is up will heal him.
-Rescue Erunak Stonespeaker |q 28834/1 |only if havequest(28834)
-confirm |only if not havequest(28834)
-scenariogoal 24804 |goto Throne of the Tides 67.2,20.4
-step
-talk Erunak Stonespeaker##36915
-turnin Rescue the Earthspeaker!##28834 |goto 67.2,20.4
-step
-talk Neptulon##40792 |goto 32.5,22.5
-Let him know you're ready.
-confirm
-step
-kill 3 Faceless Sapper##44752+, Vicious Mindlasher##44715+, Unyielding Behemoth##44648+
-kill Ozumat##44566
-_Phase 1:_
-|tip Deep Murloc Invaders will spawn in groups. Often, and should be AoE'd down.
-|tip There will be 3 Vicious Mindlashers that spawn, and need to be tanked.
-|tip There will be 1 Unyielding Behemoth that spawns and needs to be tanked.
-|tip After the 3 Vicious Mindlashers and Unyielding Behemoth are killed, 3 Faceless Sappers will spawn.
-_Phase 2:_
-|tip Kill the Faceless Sappers 1 at a time, focusing them down quickly.
-|tip The tank should look for Blight Beasts, kiting them around the room as they spawn.
-|tip Once the 3 Faceless Sappers are defeated, Ozumat will appear.
-scenariogoal 24801 |goto 36.4,17.4
-step
-talk Captain Taylor##50270
-turnin Sins of the Sea Witch##28836 |goto Throne of the Tides,49.9,90.6
-only if havequest(28836)
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Blackrock Caverns (BRC) 80-82",{
-mapid=753,
-achieveid={4833},
-description="This guide will walk you through the Blackrock Caverns dungeon.",
-},[[
-step
-label "lfg"
-talk Finkle Einhorn##49476
-accept To the Chamber of Incineration!##28735 |goto Blackrock Caverns,33.1,66.0
-step
-Clear the trash at these coordinates. |goto 49.3,74.1
-_Rom'ogg Bonecrusher_ patrols nearby, if you aggro him, he will do a shout attracting the nearby groups.
-modelnpc 39665
-Click here when you've cleared the groups. |goto 51.1,70.3 |confirm
-step
-Pull Rom'ogg Bonecrusher when he's at |goto 50.0,67.3
-|tip For this fight, he will use Call for Help when you engage him. Any mob nearby that you didnt kill will come to his aid.
-|tip At 66% and 33% he will use Chains of Woe followed by The Skullcracker.
-|tip Players will need to kill the Chains of Woe, then move away from the boss in order to avoid massive, and possibly fatal damage.
-|tip He will also use Wounding Strike on the tank, reducing healing received by 25%.
-kill Rom'ogg Bonecrusher##39665 |only if not havequest(28735)
-kill Rom'ogg Bonecrushe##39665 |q 28735/1 |only if havequest(28735)
-|confirm |only if not havequest(28735)
-|only if not heroic_dung()
-step
-kill Rom'ogg Bonecrusher##39665 |only if not havequest(28735)
-kill Rom'ogg Bonecrusher##39665 |q 28735/1 |only if havequest(28735)
-Pull _Rom'ogg Bonecrusher_ when he's at |goto 50.0,67.3
-|tip For this fight, he will use Call for Help when you engage him. Any mob nearby that you didnt kill will come to his aid.
-|tip He will often use Quake, which can be avoided by moving to the side when you see him casting it. This will also summon Angered Earths.
-|tip He will also summon Angered Earths each time he uses Quake, which need to be picked up by your tank. There will be one per ground crack.
-|tip At 66% and 33% he will use Chains of Woe followed by The Skullcracker, which needs to be avoided or it will kill you.
-|tip Players will need to kill the Chains of Woe, then move away from the boss in order to avoid massive, and possibly fatal damage.
-|tip He will also use Wounding Strike on the tank, reducing healing received by 25%.
-|confirm |only if not havequest(28735)
-|only if heroic_dung()
-step
-Click the Quest Completion Box that pops up.
-turnin To the Chamber of Incineration!##28735
-step
-map Blackrock Caverns
-path follow strict;loop off;ants straight
-path	50.1,55.2	50.1,39.2	53.9,21.5
-accept What Is This Place?##28737
-step
-There will be an Evolved Twilight Zealot patrolling here. |goto 54.0,20.4
-|tip Interrupt Shadow Stike whenever he uses it.
-kill Evolved Twilight Zealot##39987
-|confirm
-step
-Jump down the ledge here. |goto Blackrock Caverns/2 51.9,20.0 |noway|c
-step
-There will be a group of 5 patrolling the hallway here. |goto 30.3,16.6
-Once they are defeated, there will be another Evolved Twilight Zealot on the ramp at |goto 29.6,14
-|tip Interrupt Shadow Stike whenever he uses it.
-kill Evolved Twilight Zealot##39987
-|confirm
-step
-_Corla, Herald of Twilight_ |goto 27.4,16.6
-|tip You will see two beams on each side of Corla. You should have Ranged DPS or Healers step into the beams during the encounter.
-|tip This will give whoever interrupts the beams stacks of Evolution, when you reach 80, step out of the beams. You will need to move back in when your stack falls back off.
-|tip Failing to interrupt the beams, or to move out when you reach 80 will result in Twilight Evolution, which will enrage either a player or the minions into attacking your party members, and likely wipe you.
-|tip Corla, Herald of Twilight will cast Dark Command on a random party member. It will be important to interrupt this, as it can ruin the Evolution rotations.
-kill Corla, Herald of Twilight##39679 |only if not havequest(28737)
-kill Corla, Herald of Twilight##39679 |q 28737/1 |only if havequest(28737)
-|confirm |only if not havequest(28737)
-|only if not heroic_dung()
-step
-_Corla, Herald of Twilight_
-You will see three beams on each side of Corla. You should have _Ranged DPS_ or _Healers_ step into the beams during the encounter.
-This will give whoever interrupts the beams stacks of _Evolution_, when you reach 80, step out of the beams. You will need to move back in when your stack falls back off.
-Failing to interrupt the beams, or to move out when you reach 80 will result in _Twilight Evolution_, which will enrage either a player or the minions into attacking your party members, and likely wipe you.
-Corla, Herald of Twilight will cast _Dark Command_ on a random party member. It will be important to interrupt this, as it can ruin the _Evolution_ rotations.
-kill Corla, Herald of Twilight##39679 |only if not havequest(28737)
-kill Corla, Herald of Twilight##39679 |q 28737/1 |only if havequest(28737)
-|confirm |only if not havequest(28737)
-|only if heroic_dung()
-step
-Click the Quest Completion Box that pops up.
-turnin What Is This Place?##28737
-step
-map Blackrock Caverns/2
-path follow strict;loop off;ants straight
-path	34.2,13.3	37.5,13.2	39.2,16.0
-Hug the wall, following the way points.
-|tip There will be trash at the last waypoint.
-Follow the ramp down and click here to proceed. |confirm
-step
-accept The Twilight Forge##28738 |goto 43.5,57.7
-step
-There will be 2 fire elementals patrolling around the room with _Karsh Steelbender_.
-kill Conflagration##39994+
-Pull one at a time back to the ramp.
-|confirm
-step
-kill Karsh Steelbender##39698 |only if not havequest(28738)
-kill Karsh Steelbender##39698 |q 28738/1 |only if havequest(28738)
-_Karsh Steelbender_ |goto 45.6,65.6
-|tip For this fight, there will be a large pillar of flame at the center of the room.
-|tip The tank will need to run through the center, giving the boss a Superheated Quicksilver Armor debuff, increasing the damage the boss takes.
-|tip When the debuff has 5 seconds left, the tank will have to Run through the pillar of flame again, renewing and adding another debuff to the boss.
-|tip If you let Superheated Quicksilver Armor fall off the boss he will gain his Quicksilver Armor buff.
-|confirm |only if not havequest(28738)
-|only if not heroic_dung()
-step
-kill Karsh Steelbender##39698 |only if not havequest(28738)
-kill Karsh Steelbender##39698 |q 28738/1 |only if havequest(28738)
-_Karsh Steelbender_ |goto 45.6,65.6
-|tip For this fight, there will be a large pillar of flame at the center of the room.
-|tip The tank will need to run through the center, giving the boss a Superheated Quicksilver Armor debuff, increasing the damage the boss takes.
-|tip When the debuff has 5 seconds left, the tank will have to Run through the pillar of flame again, renewing and adding another debuff to the boss.
-|tip If you let Superheated Quicksilver Armor fall off the boss, he will spawn adds, and gain his Quicksilver Armor buff.
-|confirm |only if not havequest(28738)
-|only if heroic_dung()
-step
-Click the Quest Completion Box that pops up:
-turnin The Twilight Forge##28738
-step
-map Blackrock Caverns/2
-path follow strict;loop off;ants straight
-path	53.5,67.2	55.7,68.3	58.5,64.9
-path	61.6,71.8
-Kill trash at the waypoints.
-|tip The second group should be 2 Defiled Earth Ragers. Everyone in the group needs to stand close, as they do an AoE that does more damage the further away you are.
-|tip Be sure you hug the wall on the left up until the last waypoint.
-|confirm
-|modelnpc Defiled Earth Rager##40023+
-step
-Click the Quest Completion Box that pops up:
-accept Do My Eyes Deceive Me?##28740 |goto 66.1,71.6
-step
-There will be 3 Corehound Pups. You can pull them without pulling the boss behind them.
-kill Lucky##40008 |n
-kill Buster##40013 |n
-kill Spot##40011 |n |goto 66.3,77.5
-|confirm
-|only if not heroic_dung()
-step
-_Beauty_
-|tip She will randomly cast Terrifying Roar, fearing the entire party. Tremor Totem and Fear Ward can be used to avoid this.
-|tip She will Berserker Charge an enemy, knocking them back.
-|tip She will also use Flamebreak on melee knocking them back.
-|tip She casts Magma Spit on party members, causing AoE damage when it is dispelled.
-kill Beauty##39700 |only if not havequest(28740)
-kill Beauty##39700 |q 28740/1 |only if havequest(28740)
-|confirm |only if not havequest(28740)
-|only if not heroic_dung()
-step
-_Beauty_
-You will need to use crowd control on Lucky, Buster and Spot or kill them before engaging the boss.
-_DO NOT_ kill Runty, or the boss will enrage and deal incredible damage.
-She will randomly cast Terrifying Roar, fearing the entire party. Tremor Totem and Fear Ward can be used to avoid this.
-She will Berserker Charge an enemy, knocking them back.
-She will also use Flamebreak on melee knocking them back.
-She casts Magma Spit on party members, causing AoE damage when it is dispelled.
-kill Beauty##39700 |only if not havequest(28740)
-kill Beauty##39700 |q 28740/1 |only if havequest(28740)
-|confirm |only if not havequest(28740)
-|only if heroic_dung()
-step
-Click the Quest Completion Box that pops up:
-turnin Do My Eyes Deceive Me?##28740
-step
-Wait here for the elemental patrol. |goto 69.6,72.2
-|confirm
-step
-Click the Quest Completion Box that pops up.
-accept Ascendant Lord Obsidius##28741 |goto 70.0,63.4
-step
-_Ascendant Lord Obsidius_ |goto 68.8,56.0
-|tip When you get within aggro radius, he will be attacked. When Raz dies then it will be time to face the boss.
-|tip Ascendant Lord Obsidius will split into 3 forms.
-|tip During the fight, he will switch bodies with one of the other two clones and you will have to switch dps.
-kill Ascendant Lord Obsidius##39705 |only if not havequest(28741)
-kill Ascendant Lord Obsidius##39705 |q 28741/1 |only if havequest(28741)
-|only if not heroic_dung()
-step
-_Ascendant Lord Obsidius_  |goto 68.8,56.0
-|tip When you get within aggro radius, he will be attacked. When Raz dies then it will be time to face the boss.
-|tip Ascendant Lord Obsidius will split.
-|tip There will be 3 Shadows of Obsidius that need to be kited by a ranged DPS.
-|tip He will use Thunderclap, which will decrease allies movement speed by 50% if they are within 25 yards of it.
-|tip During the fight, he will switch bodies with one of the other two clones and you will have to switch dps.
-kill Ascendant Lord Obsidius##39705 |only if not havequest(28741)
-kill Ascendant Lord Obsidius##39705 |q 28741/1 |only if havequest(28741)
-|only if heroic_dung()
-step
-talk Finkle Einhorn##49476
-turnin Ascendant Lord Obsidius##28741 |goto 68.8,56.0
-|only if havequest(28741)
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\The Stonecore (SC) 82-84",{
-mapid=768,
-achieveid={4846},
-description="This guide will walk you through the The Stonecore dungeon.",
-},[[
-step
-label	"start"
-talk Earthwarden Yrsa##50048
-accept Twilight Documents##28815 |goto The Stonecore 53.7,94.9
-step
-kill Stonecore Earthshaper##43537+ |goto The Stonecore 54.6,88.4
-|tip Make sure to kill him first, if not killed fast enough, he will transform and do big group damage.
-|tip You will have to fight him in each group as you continue forward.
-|confirm
-step
-click Twilight Documents##183
-collect Twilight Documents |q 28815/1 |goto 63.5,65.2
-|only if havequest(28815)
-step
-Click the Quest Completion Box that pops up:
-turnin Twilight Documents##28815
-accept Followers and Leaders##28814
-step
-kill Corborus##43438 |goto The Stonecore 62.4,61.2
-Corborus has 2 phases to his fight.
-_Phase 1_
-|tip Corborus will attack the Tank and use Crystal Barrage. These crystals will do damage to anyone standing in them.
-_Phase 2_
-|tip Corborus will burrow. During this time avoid the areas with rubble when he is underground, he will jump out of these areas and hurt anyone standing in it.
-|tip Kill the adds he summons during this phase.
-|confirm
-|only if not heroic_dung()
-step
-kill Corborus##43438 |goto The Stonecore 62.4,61.2
-Corborus has 2 phases to his fight.
-_Phase 1_
-|tip Corborus will attack the Tank and use Crystal Barrage. These crystals will do damage to anyone standing in them.
-|tip In horoic mode, these will also spawn Crystal Shards to attack. Make sure to AoE these down quickly.
-|tip Crystal Barrage will spawn adds that need to be picked up quickly.
-|tip Additionally, he will randomly use Dampening Wave, which will reduce the healing the party takes, as well as dealing damage. Remove this from the tank as soon as possible. (Magic Effect)
-_Phase 2_
-|tip Corborus will burrow. During this time avoid the areas with rubble when he is underground, he will jump out of these areas and hurt anyone standing in it.
-|tip Kill the adds he summons during this phase.
-|confirm
-|only if heroic_dung()
-step
-kill Slabhide##43214 |goto 37.7,44.9
-|tip He will use Sand Blast which deals damage in a cone in front of him. Only the tank should be in front of him.
-|tip He will cast Lava Fissure under a random players feet. It will erupt after 5 seconds and create a lava pool that lasts for 10 seconds.
-|tip He will cast Stalactite often. When he does he'll move to the center of the room and cause spikes to rain from the ceiling. Avoid them, as they do massive damage. There will be a shadow where they drop.
-|confirm
-|only if not heroic_dung()
-step
-kill Slabhide##43214 |goto 37.7,44.9
-|tip He will use Sand Blast which deals damage in a cone in front of him. Only the tank should be in front of him.
-|tip He will cast Lava Fissure under a ranndom players feet. It will erupt after 3 seconds and create a lava pool that lasts for 30 seconds.
-|tip He will cast Stalactite often. When he does he'll move to the center of the room and cause spikes to rain from the ceiling. Avoid them, as they do massive damage. There will be a shadow where they drop.
-|tip After the Stalactite's, he will cast Crystal Storm, move behind the rocks out of his line of site to avoid damage.
-|confirm
-|only if heroic_dung()
-step
-As you run through this room, you will want to kill the Stonecore Sentries, they will aggro big groups if they are close enough. |goto 38.7,20.6
-|tip Stonecore Bruisers patrol this area. When you can, kill them away from groups.
-|tip If you stay to the right side, you will not have to kill groups on the left side.
-|modelnpc Stonecore Bruiser##42692+, Stonecore Sentry##42695+
-|confirm
-step
-kill Ozruk##42188 |goto 47.7,20.0
-|tip Face Ozruk away from the group. He will use Ground Slam that everyone, including the tank need to avoid. This causes massive damage
-|tip Ozruk will cast Shatter shortly after Ground Slam. Run 15 yards away from him or you will take up to 45k damage.
-|confirm
-|only if not heroic_dung()
-step
-kill Ozruk##42188 |goto 47.7,20.0
-|tip Face Ozruk away from the group. He will use Ground Slam that everyone, including the tank need to avoid. This causes massive damage
-|tip Ozruk will cast Shatter shortly after Ground Slam. Run 15 yards away from him or you will take damage up to 200k.
-|tip He will cast Paralyze, which needs to be dispelled. You can also cast a DoT when Ozruk has Elementium Bulwark up, or simply melee him keeping the Elementium Spike Shield debuff on you at all times to break the effect.
-|confirm
-|only if heroic_dung()
-step
-kill High Priestess Azil##42333 |only if not havequest(28814)
-kill High Priestess Azil##42333  |q 28814/1 |only if havequest(28814)
-kill 101 Devout Follower##42428 |q 28814/2 |only if havequest(28814)
-There are 2 stages to this fight. |goto 57.64,38.24
-_Phase One_
-|tip She will need to be tanked and moved when she creates a Gravity Well (purple circle with that deals shadow damage).
-|tip During this phase, boss will need to be tanked on the left of the Gravity Well, so the mobs will run in and die.
-_Phase Two_
-|tip She will float up to her altar and the Tank will need to get aggro on all the Devout Followers that run in.
-|confirm |only if not havequest(28814)
-|only if not heroic_dung()
-step
-kill High Priestess Azil##42333 |only if not havequest(28814)
-kill High Priestess Azil##42333  |q 28814/1 |only if havequest(28814)
-kill 101 Devout Follower##42428 |q 28814/2 |only if havequest(28814)
-There are 2 stages to this fight. |goto 57.64,38.24
-_Phase One_
-|tip She will need to be tanked and moved when she creates a _Gravity Well_ (purple circle with that deals shadow damage).
-|tip During this phase, boss will need to be tanked on the left of the Gravity Well, so the mobs will run in and die.
-|tip She will also use an ability called Force Grip which deals massive damage to the tank and should be interrupted each time it is used.
-_Phase Two_
-|tip She will float up to her altar and Tank will need to get aggro on all the Devout Followers that run in.
-|tip She will use Seismic Shard, which throws a huge rock at a random party member. More often than not it will kill that party member, so be on the look out for a shadow on the ground.
-|confirm |only if not havequest(28814)
-|only if heroic_dung()
-step
-You can either run to the beginning of the dungeon to turn in your quests.
-Or
-You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-|confirm
-step
-talk Earthwarden Yrsa##50048
-turnin Followers and Leaders##28814 |goto 53.6,95.0
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\The Vortex Pinnacle (VP) 82-84",{
-mapid=769,
-achieveid={4847},
-description="This guide will walk you through the Vortex Pinnacle dungeon.",
-},[[
-step
-label "lfg"
-talk Itesh##49943
-accept A Long Way from Home##28779
-accept Vengeance for Orsis##28760 |goto The Vortex Pinnacle 54.4,16.6
-step
-map The Vortex Pinnacle
-path follow strict;loop off;ants straight
-path	59.1,24.3	62.0,28.7	65.4,29.7
-path	65.1,33.4	62.1,34.0
-|tip Fight near the wall so you don't get knocked off.
-Follow the path down the ramp.
-|confirm
-step
-kill Grand Vizier Ertan##43878 |goto 55,44.6
-|tip When engaged, she will summon whirlwinds at the outside of the room.
-|tip Move in towards her to avoid them for the duration of the fight.
-|tip As the fight progresses, Grand Vizier Ertan will pull the whirlwinds to form a wall around her. Move outward, away from her, avoiding the whirlwinds!
-|tip If you're hit by the whirlwinds you will receive a debuff, decreasing movement, casting and attack speed as well as take nature damage.
-collect Grand Vizier Etran's Heart##65660 |q 28779/1 |only if havequest(28779)
-|confirm |only if not havequest(28779)
-|only if not heroic_dung()
-step
-kill Grand Vizier Ertan##43878 |goto 55,44.6
-|tip When engaged, she will summon whirlwinds at the outside of the room.
-|tip Move in towards her to avoid them for the duration of the fight.
-|tip As the fight progresses, Grand Vizier Ertan will pull the whirlwinds to form a wall around her. Move outward, away from her, avoiding the whirlwinds!
-|tip If you're hit by the whirlwinds you will receive a debuff, decreasing movement, casting and attack speed as well as take nature damage.
-collect Grand Vizier Etran's Heart##65660 |q 28779/1 |only if havequest(28779)
-|confirm |only if not havequest(28779)
-|only if heroic_dung()
-step
-Start here |goto The Vortex Pinnacle 57.6,48.9  |n
-Ride the Slipstream across the gap. |goto 63.6,59.1 <5 |noway |c
-step
-kill Young Storm Dragon##45919 |goto 60.6,65.3 |n
-|tip When you pull these, move it away from the circle or it will heal for all the damage you do.
-|confirm
-step
-There will be Howling Gales that you will need to hit to cross the bridge. |goto 58.4,68.9 |n
-Cross the bridge. |goto 55.2,73.6 <5 |noway|c
-step
-kill Young Storm Dragon##45919 |goto 53.6,76.1 |n
-|tip When you pull these, move it away from the circle or it will heal for all the damage you do.
-|confirm
-step
-kill Empyrean Assassin##45922
-kill Turbulent Squall##45924  |goto 53.0,77.7
-|tip For this trash, move out of Hurricane.
-|tip Interrupt Cloudburst when it's cast.
-|tip Kill Empyrean Assassins first.
-|confirm
-step
-kill Altairus##43873 |goto 52,80.6
-|tip When engaged, Altairus will summon a wind which will affect your haste.
-|tip Using the wind current to your advantage will be the deciding factor in this fight.
-|tip You will need to navigate around the boss. When you have the Upwind of Altairus buff, stop moving. You gain a 100% haste buff for spells and attacks.
-|tip If you have the Downwind of Altairus debuff, circle the boss until you have the Upwind buff.
-|tip Do not stand in front of Altairus. He uses a cone breath ability.
-|confirm
-|only if not heroic_dung()
-step
-kill Altairus##43873 |goto 52,80.6
-|tip When engaged, Altairus will summon a wind which will affect your haste.
-|tip He will also summon Twisting Winds, which will toss you up in the air and deal damage if you're hit by them.
-|tip Using the wind current to your advantage will be the deciding factor in this fight.
-|tip You will need to navigate around the boss. When you have the Upwind of Altairus buff, stop moving. You gain a 100% haste buff for spells and attacks.
-|tip If you have the Downwind of Altairus debuff, circle the boss until you have the Upwind buff.
-|tip Do not stand in front of Altairus. He uses a cone breath ability.
-|confirm
-|only if heroic_dung()
-step
-Start here |goto 49.4,80.7 |n
-Ride the Slipstream across the gap. |goto 31.4,80.4 < 8 |noway |c
-step
-For these trash pulls, always kill or use crowd control for Temple Adepts. |goto 30.8,76.2
-|confirm
-|modelnpc Temple Adept##45935+
-step
-There will be an electric field in the area. Magic won't work on mobs in these fields. |goto 32.1,69.1
-|tip Use crowd control on Temple Adepts after they patrol out of the field.
-|confirm
-|modelnpc Temple Adept##45935+
-step
-kill Skyfall Star##52019 |goto 27.1,60.3
-|tip There will be no aggro for these mobs and they will spread further apart the longer the fight goes.
-|tip AoE them down.
-|confirm
-step
-kill Asaad##43875 |only if not havequest(28760)
-kill Asaad##43875 |q 28760/1 |only if havequest(28760) |goto 29.8,39
-|tip He will channel Supremacy of the Storm. When he does so he will start to create a triangle on the ground randomly in the room.
-|tip You will need to run inside of the triangle.
-|tip His primary attack is Chain Lightning so try to spread out of possible to reduce group damage.
-|confirm |only if not havequest(28760)
-|only if not heroic_dung()
-step
-kill Asaad##43875 |only if not havequest(28760)
-kill Asaad##43875 |q 28760/1 |only if havequest(28760) |goto 29.8,39
-|tip He will channel Supremacy of the Storm. When he does so he will start to create a triangle on the ground randomly in the room.
-|tip You will need to run inside of the triangle.
-|tip His primary attack is Chain Lightning so try to spread out of possible to reduce group damage.
-|tip He will cast Static Cling which will root you to the ground and can be deadly. If you jump at the time it is cast you will not get rooted, but if not then it is a Magic effect and can be removed.
-|confirm |only if not havequest(28760)
-|only if heroic_dung()
-step
-Start here |goto 29.2,46.4  |n
-Ride the Slipstream across the gap. |goto 54.1,16.8 < 8 |noway |c
-step
-talk Itesh##49943
-turnin A Long Way from Home##28779
-turnin Vengeance for Orsis##28760 |goto 54.5,15.9
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Lost City of the Tol'vir (LCoT) 83-85",{
-dungeonn=747,
-achieveid={4848},
-author="support@zygorguides.com",
-description="This guide will walk you through the Lost City of the Tol'vir dungeon.",
-},[[
-step
-label	"start"
-talk Captain Hadan##50038
-accept The Source of Their Power##28783
-accept Targets of Opportunity##28781 |goto Lost City of the Tol'vir 31.7,16.3
-step
-kill 1 Oathsworn Captain##45122 |q 28781/2 |goto 30.1,34.6
-|tip The Captain will cast an AoE spell on the ground. Make sure to move out of this fast, it will do lots of damage.
-|only if havequest(28781)
-step
-kill General Husam##44577 |only if not havequest(28781)
-kill General Husam##44577 |q 28781/1 |only if havequest(28781) |goto 36.5,43.2
-|tip He will use Shockwave. When he is beginning to cast, get out of the smoke on the ground. It will deal damage in each direction.
-|tip He will toss Mystic Traps all around him. Do not get near these, or they will detonate, causing 35k damage.
-|confirm |only if not havequest(28781)
-|only if not heroic_dung()
-step
-kill General Husam##44577 |only if not havequest(28781)
-kill General Husam##44577 |q 28781/1 |only if havequest(28781)|goto 36.5,43.2
-|tip He will use Shockwave. When he is beginning to cast, get out of the smoke on the ground. It will deal damage in each direction.
-|tip He will toss Mystic Traps all around him. Do not get near these, or they will detonate, causing 35k damage.
-|tip When he uses Mystic Trap, he will cast Detonate Traps soon after, causing them to glow followed by an explosion. Move away from them before the blow up
-|confirm |only if not havequest(28781)
-|only if heroic_dung()
-step
-kill 1 Oathsworn Captain##45122 |q 28781/2 |goto 30.1,34.6
-|only if havequest(28781)
-step
-map  Lost City of the Tol'vir
-path loop off
-path	42.7,41.4	50.9,43.6	51.0,57.3
-path	58.6,57.3	66.4,70.5
-Follow this path and kill the boss
-|tip Lockmaw will use Dust Flail, which will affect anyone standing behind him.
-|tip Spread out so you don't hurt your group with Viscous Poison. It will damage anyone within 5 yards of you, as well as slow them by 30%
-|tip He will also cast Scent of Blood on a random party member, causing 4 adds to attack them. Kill them fast and have your tank taunt them whenever possible.
-|tip At 30% Health he will gain the ability Venomous Rage, which can be dispelled.
-kill Lockmaw##43614
-|confirm
-|only if not heroic_dung()
-step
-map  Lost City of the Tol'vir
-path loop off
-path	42.7,41.4	50.9,43.6	51.0,57.3
-path	58.6,57.3	66.4,70.5
-Follow this path and kill the boss.
-kill Lockmaw##43614
-|tip Lockmaw will use Dust Flail, which will affect anyone standing behind him.
-|tip Spread out so you don't hurt your group with Viscous Poison. It will damage anyone within 5 yards of you, as well as slow them by 30%
-|tip He will also cast Scent of Blood on a random party member, causing 4 adds to attack them. Kill them fast and have your tank taunt them whenever possible.
-|tip At 30% Health he will gain the ability Venomous Rage, which can be dispelled.
-kill Augh##49045
-|tip Augh will appear after you defeat Lockmaw. Avoid his Whirlwind by kiting him around.
-|tip He will toss a poison on random party members called Paralytic Blow Dart, dispel it if you are able.
-|tip He will cast Dragon's Breath on your tank, disorienting him. At this time he will go after party members with high threat.
-|tip He will go into a frenzy which cannot be removed.
-|confirm
-|only if heroic_dung()
-step
-map  Lost City of the Tol'vir
-path loop off
-path	66.0,69.6	59.1,58.3	49.7,57.1
-path	47.1,68.1	49.0,76.4	42.0,81.6
-path	39.7,71.2	36.7,61.1	27.1,65.5
-Follow this path and kill the boss
-kill High Prophet Barim##43612
-_Phase 1:_
-|tip He will use Fifty Lashings to increase his damage output. You may want to use cooldowns.
-|tip He will cast Plague of Ages, this will deal 4k damage every second for 9 second and can be dispelled.
-|tip Heaven's Fury. This will open up a portal of light that will deal large damage to anyone standing in the light.
-|tip At 50% he will use Repentance, pulling the entire group to him. It will also deal out damage and knock the players back at the end of it's duration.
-_Phase 2:_
-|tip He will place Hallowed Ground on the ground that deals massive damage. Move out of it as fast as possible.
-|tip He will summon a Harbinger of Darkness and start using Soul Sever. Soul Sever spawns a Soul Fragment which needs to be killed quickly and can be slowed, stunned and snared.
-|tip Players will randomly be hit for around 7,000 damage during this phase. Healers need to try and keep people topped off.
-|tip When the Harbinger of Darkness is dead, it will go back to phase one.
-|confirm
-|only if not heroic_dung()
-step
-map  Lost City of the Tol'vir
-path loop off
-path	66.0,69.6	59.1,58.3	49.7,57.1
-path	47.1,68.1	49.0,76.4	42.0,81.6
-path	39.7,71.2	36.7,61.1	27.1,65.5
-Follow this path and kill the boss
-kill High Prophet Barim##43612
-_Phase 1:_
-|tip He will cast Blaze of the Heavens, which spawns a bird that can be kited or nuked from afar. When you kill it it turns to an egg and heals.
-|tip He will use Fifty Lashings to increase his damage output. You may want to use cooldowns.
-|tip He will cast Plague of Ages, this will deal 4k damage every second for 9 second and can be dispelled.
-|tip Heaven's Fury. This will open up a portal of light that will deal large damage to anyone standing in the light.
-|tip At 50% he will use Repentance, pulling the entire group to him. It will also deal out damage and knock the players back at the end of it's duration.
-_Phase 2:_
-|tip He will place Hallowed Ground on the ground that deals massive damage. Move out of it as fast as possible.
-|tip He will summon a Harbinger of Darkness and start using Soul Sever. Soul Sever spawns a Soul Fragment which needs to be killed quickly and can be slowed, stunned and snared.
-|tip Players will randomly be hit for around 7,000 damage during this phase. Healers need to try and keep people topped off.
-|tip When the Harbinger of Darkness is dead, it will go back to phase one.
-|confirm
-|only if heroic_dung()
-step
-Start here |goto 36.0,62.8 |n
-Ride the Wind Tunnel |goto 35.7,53.9 < 5 |noway |c
-step
-kill Siamat##44819 |only if not havequest(28783)
-kill Siamat##44819w |q 28783/1 |only if havequest(28783)
-There are 2 phases to this fight with Siamat. |goto 40.8,55.3
-_Phase 1:_
-|tip He will spawn Minions of Siamat. Interrupt their spells and kill them as fast as you can. Kill them by the ledges, as they spawn whirlwinds when they die.
-|tip He will summon Servants of Siamat, which need to be Tanked and Killed. Only 3 will spawn during the fight. After the 3rd one, Siamat will become vulnerable. Move away from them as they are about to die to avoid AoE damage.
-|tip During the fight, Siamat will cast Storm Bolt.
-_Phase 2:_
-|tip He will use Wailing Winds when the shield goes down. Move away from the edges and top every one off health wise if you are the healer.
-|tip Minions of Siamat will continue to spawn, but you can ignore them and focus on the boss.
-|tip He will use Absorb Storms removing a minion and granting him a passive AoE.
-|confirm |only if not havequest(28783)
-|modelnpc Minion of Siamat##44704+
-|modelnpc Servant of Siamat##45259+
-|only if not heroic_dung()
-step
-kill Siamat##44819 |only if not havequest(28783)
-kill Siamat |q 28783/1 |only if havequest(28783)
-There are 2 phases to this fight with Siamat. |goto 40.8,55.3
-_Phase 1:_
-|tip He will spawn Minions of Siamat. Interrupt their spells and kill them as fast as you can. Kill them by the ledges, as they spawn whirlwinds when they die.
-|tip He will summon Servants of Siamat, which need to be Tanked and Killed. Only 3 will spawn during the fight. After the 3rd one, Siamat will become vulnerable. Move away from them as they are about to die to avoid AoE damage.
-|tip During the fight, Siamat will cast Storm Bolt.
-_Phase 2:_
-|tip He will use Wailing Winds when the shield goes down. Move away from the edges and top every one off health wise if you are the healer.
-|tip Minions of Siamat will continue to spawn, but you can ignore them and focus on the boss.
-|tip He will use Absorb Storms removing a minion and granting him a passive AoE.
-|confirm |only if not havequest(28783)
-|modelnpc Minion of Siamat##44704+
-|modelnpc Servant of Siamat##45259+
-|only if heroic_dung()
-step
-talk Captain Hadan##50038
-turnin The Source of Their Power##28783
-turnin Targets of Opportunity##28781 |goto Lost City of the Tol'vir 31.7,16.3
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Halls of Origination (HoO) 83-85",{
-mapid=759,
-achieveid={4841},
-author="support@zygorguides.com",
-description="This guide will walk you through the Halls of Origination dungeon.",
-},[[
-step
-label	"start"
-kill Temple Guardian Anhuur##39425 |goto Halls of Origination 58.3,62.7
-You will have 2 phases when fighting this boss
-_Phase 1:_
-|tip Fight this boss until he becomes immune to damage. This happens at 66% and 33%.
-|tip He will cast Burning Light, which will cause a beam of light to shoot from the wall. Don't stand in the fire it creates on the ground.
-|tip He will cast Divine Reckoning at a random party member. After 8 seconds, the spell will erupt and damage you along with anyone within 7 yards of you. It is a Magic Debuff and can be dispelled.
-_Phase 2:_
-|tip When he casts Shield of Light he becomes immune to damage.
-|tip You will have to jump off the sides of the platform to the right or left, then click the switch to deactivate  shield of light and run back. |only if not heroic_dung()
-|tip You will have to jump off the sides of the platform to the right and left, then click the switch to deactivate  shield of light and run back. |only if heroic_dung()
-|tip Once he has shield of light, he will start channeling _Reverberating Hymn which deals 400 holy damage per stack. It stacks every 4 seconds and lasts until you click the left and right switches.
-|tip Immediately moving into phase 2, Pit Vipers will spawn on the ground near the levers. The tank should take care to pick them up so that a DPS can click the lever.
-|confirm
-step
-Start here |goto 71.3,49.8 |n
-Follow the Hallway. |goto 71.3,49.8 <5 |noway |c
-step
-Start here |goto 90.1,49.7 |n
-Follow the Hallway and go up these stairs. |goto Halls of Origination/2 |noway |c
-step
-Start here |goto Halls of Origination/2 32.7,48.7
-Kill all the mobs in this area, then click a Camel to continue. |invehicle |c
-step
-kill Earthrager Ptah##39428 |goto 49.8,49.3
-You will have 2 phases when fighting this boss
-_Phase 1:_
-|tip Look out for Earth Spike. The ground will rumble, then erupt a spike, move when you see dust.
-|tip He will use Flame Bolt, which is channeled and damages 2 random players. |only if not heroic_dung()
-|tip He will use Flame Bolt, which is channeled and damages 3 random players. |only if heroic_dung()
-|tip He will use Raging Smash which will damage the tank and 2 additional targets within melee range.
-_Phase 2:_
-|tip At 50% Ptah will burrow and you will have to fight some mobs.
-|tip He will summon a Sand Vortex that moves around the battlefield.
-|tip He will summon Dustbone Horrors and _Jeweled Scarabs_, which need to be killed before the boss returns.
-|tip Be aware of quicksand, this will slow your movement and cause damage while standing in it.
-|confirm
-step
-click Halls of Origination Transit Device##8632 |goto 66.7,48.5
-Teleport to The Maker's Rise. |goto Halls of Origination 67.5,52.8 <5 |noway |c
-step
-Start here |goto 63.6,49.8 |n
-Follow these stairs up and to the right. |goto 63.6,49.8 < 5 |noway |c
-step
-Kill each Elemental Warden on the platforms around this room
-[49.0,32.6]
-[63.3,32.6]
-[63.3,22.1]
-[49.2,22.0]
-|confirm
-step
-kill Anraphet##39788 |goto 56.2,19.3
-|tip This boss is more of a Healing intensive fight for the whole group.
-|tip Anraphet will cast Alpha Beams, this cause damage to a player and all players around them.
-|tip It will leave circle on the ground you need to avoid for 3 seconds. |only if not heroic_dung()
-|tip It will leave circle on the ground you need to avoid and lingers throughout the fight. |only if heroic_dung()
-|tip Anraphet will go into Omega Stance causing damage to the whole group for 8 seconds.
-|tip After Omega Stance or Alpha Beams, he will use Crumbling Ruin, decreasing the groups health by 8%. It stacks 10 times.
-|confirm
-step
-click Halls of Origination Transit Device##8632 |goto 56.2,27.2 |n
-Teleport to The Maker's Rise. |goto 67.5,52.8 < 5 |noway |c
-step
-click The Maker's Lift Controller##8504 |goto 66.4,48.3
-Bring Elevator to the 2nd floor |goto Halls of Origination/3 45.9,47.6 |noway |c
-step
-kill Ammunae##39731 |goto 47.1,78.8
-|tip He will cast Wither on a random party member. It reduces attack speed, casting speed and movement speed by 60%. It can be interrupted and dispelled (magic).
-|tip He will cast Consume Life Energy, which will deal nature damage and dimish a players 'resource'.
-|tip He will summon Seedling Pods. They will use _Energize_ on Ammunae, increasing his damage done by 5% and attack speed by 30% while alive. Kill them when they spawn.
-|tip It will also heal Ammunae for 1% of his max health every 3 seconds while alive. |only if heroic_dung()
-|tip He will use Rampant Growth, transforming all Seedling Pods into Bloodpetal Sprouts which will inflict massive damage to the party.
-|tip He will spawn a Spore. It moves slowly and when it dies, it leaves a spore cloud with a 6 yard radius that deals nature damage every 1.5 seconds.
-|tip The Noxious Spore cloud that spawn can also dish out major damage to any plant life, inflicting 12 to 18% of it's health.
-|confirm
-step
-kill Setesh##39732 |goto 67.1,49.5
-|tip He will cast Chaos Bolt at a random party member.
-|tip He will also place Seed of Chaos on a random party member. When it detonates, the group will take shadow damage.
-|tip Through the fight, he will Summon Chaos Portals. It will spawn monsters that the DPS need to kill, then despawn after around 25 seconds. |only if not heroic_dung()
-|tip Through the fight, he will Summon Chaos Portals. It will spawn monsters while it is up. The DPS will need to attack the portal to stop it from spawning adds. |only if heroic_dung()
-|confirm
-step
-kill Isiset##39587 |goto 26.7,49.8
-|tip She will cast Supernova through out the fight. You can turn away from her to avoid the disorienting effect right before she finishes her cast.
-|tip When she reaches 66 and 33% health, she will use her Mirror Images ability.
-|tip At 66% she will split into 3 forms. Kill the Veil of Sky Mirror Image.
-|tip At 33% she will split into 2 forms. Kill the Celestial Call Mirror Image.
-|modelnpc Veil of Sky##39722, Celestial Call##39721
-|confirm
-step
-kill Rajh##39378 |goto 47.2,19.7
-|tip Rajh will start with 100 energy and cast spells at 20 energy each.
-|tip Rajh's spells to avoid are: Summon Sun Orb. This is channeled above a players head, after 3 seconds it will drop and deal damage, knocking players nearby back. It can be interrupted.
-|tip He will cast Inferno Leap and it needs to be interrupted. If not, he will jump towards a targeted player, and deal large damage knocking away any nearby players.
-|tip This can kill the player he lands on if they do not move.
-|tip He will also cast Solar Winds which creates a fiery vortex in front of him that grows an dmoves around the room.
-|tip The Solar Wind will leave Solar Fire on the ground, which deal out massive damage. |only if heroic_dung
-|tip When he reaches 10 or less energy, he walks to the middle of the room and casts Blessing of the Sun.
-|tip He will become 100% more vulnerable to player attack, while regenerating his energy and causing AoE fire damage to your group.
-|confirm
-step
-Congratulations you have completed _Halls of Origination_!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Grim Batol (GB) 84-85",{
-mapid=757,
-achieveid={4840},
-description="This guide will walk you through the Grim Batol dungeon.",
-},[[
-step
-label "lfg"
-talk Farseer Tooranu##50385
-accept Kill the Courier##28853 |goto Grim Batol,18.4,55.2
-step
-talk Velastrasza##50390
-accept Soften them Up##28852 |goto 19,55
-step
-talk Baleflame##50387
-accept Closing a Dark Chapter##28854 |goto 19.4,53
-step
-map Grim Batol
-path follow strict;loop off;ants straight
-path	18.0,43.4	20.2,39.6	26.2,39.8
-path	27.9,27.1	31.8,26.2
-Follow the path, clearing the trash as you go.
-You will need to kill the nets that are holding the dragons down.
-|confirm
-step
-clicknpc Battered Red Drake##42571
-You will end up flying through the instance, gaining the ability to attack groups of enemies.
-The damage that you do to them stays even after you land.
-Kill 15 Twilight's Hammer Minions |q 28852/1
-Kill 25 Trogg Dwellwers |q 28852/2
-Note that if you didn't get all of the Trogg Dwellers, you can fly back and get them at the end of the instance.
-Click here once you've landed. |confirm
-|only if havequest(28852)
-step
-kill General Umbriss##39625 |goto 40.4,68.4
-|tip He will randomly use Blitz towards a party member. You need to move out of his path to avoid damage.
-|tip He will also use Ground Siege in a random direction. It will also need to be avoided.
-|tip The tank will be hit with Bleeding Wound which does massive damage every 2 seconds until they are healed to 90% of their health.
-|tip At 30% he will get a Frenzy affect gaining 50% attack speed and damage.
-|tip Note that he also summons adds. If they reach him he will also gain the Frenzy effect.
-|confirm
-|only if not heroic_dung()
-step
-kill General Umbriss##39625 |goto 40.4,68.4
-|tip He will randomly use Blitz towards a party member. You need to move out of his path to avoid damage.
-|tip He will also use Ground Siege in a random direction. It will also need to be avoided.
-|tip The tank will be hit with Bleeding Wound which does massive damage every 2 seconds until they are healed to 90% of their health.
-|tip At 30% he will get a Frenzy affect gaining 50% attack speed and damage.
-|tip He will summon adds. Make sure to keep them more than 10 yards away from the boss. If close to the boss when they die, they will give the boss a 100% damage buff.
-|tip If the adds get near the boss, they will be buffed and deal significant more damage.
-|tip He will cast Modgud's Malady which needs to be dispelled. It is a Magic debuff and stacks up to 10 times.
-|confirm
-|only if heroic_dung()
-step
-Wait for a patrol to come here. |goto 46.3,48.5
-Watch for _Forgemaster Throngus_ who patrols through the room. Go back into the hallway if you haven't cleared the trash yet. |goto 48.7,47.1
-Once the trash is cleared, click here. |confirm |goto 45.7,43.6
-|modelnpc 40177
-step
-kill Forgemaster Throngus##40177
-|tip This boss cycles through weapons, which have different strategies depending on which he's holding:
-|tip While using a Mace his movement speed will be decreased by 70%, but his damage will be increased by 200%. The tank will need to kite him.
-|tip He will jump to random party members during Mace stance inflicting damage as a dot for 5 seconds.
-|tip While using Dual Blades he loses 20% damage, but uses the Thrash ability, causing him to attack an additional two times when he swings his weapons.
-|tip He will also use Disorienting Roar while in Dual Blade stance, reducing casting and attack speed by 50%. This effect can be removed by using an ability or spell.
-|tip While using his Phalanx He takes 99% reduced damage. Move behind him to bypass this mechanic.
-|tip While in Phalanx stance, there will also be archers constantly firing at your group.
-|confirm
-|only if not heroic_dung()
-step
-kill Forgemaster Throngus##40177
-|tip This boss cycles through weapons, which have different strategies depending on which he's holding:
-|tip While using a Mace his movement speed will be decreased by 70%, but his damage will be increased by 200%. The tank will need to kite him.
-|tip He will jump to random party members during Mace stance inflicting damage as a dot for 5 seconds.
-|tip He will leave a trail of Burning Flames behind him as he walks, avoid it at all cost.
-|tip While using Dual Blades he loses 20% damage, but uses the _Thrash_ ability, causing him to attack an additional two times when he swings his weapons.
-|tip He will also use Disorienting Roar while in Dual Blade stance, reducing casting and attack speed by 50%. This effect can be removed by using an ability or spell.
-|tip He will also leave Burning Flames on whoever he hits, which can be dispelled. This effect stack with each hit.
-|tip While using his Phalanx He takes 99% reduced damage. Move behind him to bypass this mechanic.
-|tip While in Phalanx stance, there will also be archers constantly firing at your group.
-|tip He will use the ability Flaming Shield which deals fire damage to anyone in front of his shield, so be quick to move behind him.
-|confirm
-|only if heroic_dung()
-step
-map Grim Batol
-path follow strict;loop off
-path	56.8,47.9	60.6,53.5	60.4,63.4
-path	63.8, 64.6	67.2,68.1	73.0,59.0
-path	68.5,54.7	70.7,41.7	69.8,30.2
-Kill trash and follow the path to Drahga Shadowburner. |goto 69.8,30.2 < 5 |noway |c
-step
-kill Darhga Shadowburner##40319 |goto 70.3,20.7
-_Phase 1:_
-|tip He will use Invocation of Flame which will mark the ground at a random location. It will summon a fire elemental that targets a random player, shooting a red beam.
-|tip ALL DPS EXCEPT FOR THE TARGET need to kill it as soon as possible.
-|tip His basic attack is Burning Shadowbolt, which can be interrupted.
-_Phaste 2:_
-|tip At 25% he will retreat and the dragon Valiona will catch him. Tank her at the center of the room.
-|tip Invocation of Flame will still be used, so be aware of the spawn point and target.
-|tip She will use Devouring Flames which is a wide cone attack, so don't stand in front of her.
-|tip She will use Valiona's Flame which targets a random player and breathes a 40 yard long cone which stuns and damages all players within the cone.
-|tip She swipes, so don't stand in front of her.
-|tip She places Seeping Twilight on the ground, a large circular pool on the ground that deals out damage over time.
-|tip When her health is low she will drop Drahga Shadowburner.
-collect Missive to Cho'gall |q 28853/1 |only if havequest(28853)
-|confirm |only if not havequest(28853)
-|only if not heroic_dung()
-step
-kill Darhga Shadowburner##40319  |goto 70.3,20.7
-_Phase 1:_
-|tip He will use Invocation of Flame which will mark the ground at a random location. It will summon a fire elemental that targets a random player, shooting a red beam.
-|tip ALL DPS EXCEPT FOR THE TARGET need to kill it as soon as possible.
-|tip His basic attack is Burning Shadowbolt, which can be interrupted.
-_Phaste 2:_
-|tip At 25% he will retreat and the dragon Valiona will catch him. Tank her at the center of the room.
-|tip Invocation of Flame will still be used, so be aware of the spawn point and target.
-|tip She will use Devouring Flames which is a wide cone attack, so don't stand in front of her.
-|tip She will use Valiona's Flame which targets a random player and breathes a 40 yard long cone which stuns and damages all players within the cone.
-|tip She swipes, so don't stand in front of her.
-|tip She places Seeping Twilight on the ground, a large circular pool on the ground that deals out damage over time.
-|tip When her health is low she will drop Drahga Shadowburner.
-collect Missive to Cho'gall |q 28853/1 |only if havequest(28853)
-|confirm |only if not havequest(28853)
-|only if heroic_dung()
-step
-map Grim Batol
-path follow strict;loop off
-path	77.0,40.0	85.8,40.0	86.1,57.4
-Follow the path to _Erudax, The Duke of Below_. |goto 86.1,57.4 <5 |noway|c
-step
-kill Erudax##40484 |only if not havequest(28854) |goto 85.7,60.9
-kill Erudax |q 28854/1 |only if havequest(28854) |goto 85.7,60.9
-|tip The main mechanic for this fight is Shadow Gale, in which he will create a purple void zone circle on the ground.
-|tip The entire group needs to move into it as fast as they can so that they aren't killed by the AoE that effects players outside of the circle. He will take double damage during the duration of the spell.
-|tip Each time he uses Shadow Gale, he will summon a Faceless Corruptor. Use every ability you have to slow them down and kill them. ONLY SLOWING EFFECTS will work on them. If you don't kill them they will eventually heal the boss.
-|tip He will use Enfeebling Blow which will knock the tank back, giving him a debuff called Feeble Body, increasing the damage the tank will take by 100% for 3 seconds.
-|tip He will use Binding Shadows which is an AoE root that you can step out of before it hits the ground.
-|modelnpc 39392
-|only if not heroic_dung()
-step
-kill Erudax##40484 |only if not havequest(28854) |goto 85.7,60.9
-kill Erudax |q 28854/1 |only if havequest(28854) |goto 85.7,60.9
-|tip The main mechanic for this fight is Shadow Gale, in which he will create a purple void zone circle on the ground. The entire group needs to move into it as fast as they can so that they aren't killed by the AoE that effects players outside of the circle. He will take double damage during the duration of the spell.
-|tip Each time he uses Shadow Gale, he will summon 2 Faceless Corruptor. Use every ability you have to slow them down and kill them.
-|tip ONLY SLOWING EFFECTS will work on them. If you don't kill them they will eventually heal the boss.
-|tip He will use Enfeebling Blow which will knock the tank back, giving him a debuff called Feeble Body, increasing the damage the tank will take by 100% for 3 seconds.
-|tip He will use Binding Shadows which is an AoE root that you can step out of before it hits the ground.
-|tip If you don't kill the adds fast enough, they will be buffed with Shield of Nightmares, which will damage your group each time the add is hit.
-|modelnpc 39392
-|only if heroic_dung()
-step
-You can either run to the beginning of the dungeon to turn in your quests.
-Or
-You can Right Click the dungeon finder icon on your mini map, teleport out of the dungeon, then teleport back in to the entrance.
-|confirm
-step
-talk Farseer Tooranu##50385
-turnin Kill the Courier##28853 |goto Grim Batol,18.4,55.2
-step
-talk Velastrasza##50390
-turnin Soften them Up##28852 |goto 19,55
-step
-talk Baleflame##50387
-turnin Closing a Dark Chapter##28854 |goto 19.4,53
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul Gurub (ZG) 85",{
-mapid=793,
-achieveid={688},
-author="support@zygorguides.com",
-description="This guide will walk you through the Zul Gurub dungeon.",
-},[[
-step
-label	"start"
-talk Overseer Blingbang##53151
-accept Booty Bay's Interests##29252 |goto Zul'Gurub 30.7,47.5
-step
-talk Bloodslayer Zala##53024
-accept Break the Godbreaker##29241 |goto 30.6,47.3
-step
-talk Briney Boltcutter##53043
-accept Putting a Price on Priceless##29242 |goto 30.5,51.0
-step
-talk Bloodslayer T'ara##53023 |goto Zul'Gurub/0 30.8,47.1
-accept The Beasts Within##29172 |or
-accept Break Their Spirits##29175 |or
-accept Secondary Targets##29173 |or
-|tip T'ara will only offer 1 or 2 of these quests at a time.
-step
-kill Venomancer Mauri##52380 |goto 33.4,46.7
-clicknpc Zanzil's Cauldron of Toxic Torment##52529
-Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
-step
-Fight your way through this path.
-kill Venomtip Needler##52379+ |goto 37.2,46.4
-|tip If you need another nature buff, you can get one here.
-|confirm
-step
-kill Tiki Lord Mu'Loa##52340+ |goto 43.9,51.0
-|confirm
-step
-Fight your way to the next cauldron.
-clicknpc Zanzil's Cauldron of Toxic Torment##52529 |goto 48.5,52.1
-Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
-step
-Pull the Venomguard Destroyers near the cauldron and kill them.
-kill Venomguard Destroyer##52311+
-|confirm
-step
-kill High Priest Venoxis##52155 |goto 50.8,55.1
-_Phase 1:_
-|tip He will cast, Toxic Link which attaches 2 party members. Run 25 yards away from each other to break this.
-|tip Whispers of Hethiss is a beam of poison that will damage a player while channeled. This needs to be _interrupted_.
-|tip During the fight he will use Venomous Effusion which creates a maze of poison on the ground. Avoid the wall at all cost.
-_Phase 2:_
-|tip Venoxis will Transform into a snake god. A poisonous cloud maze will appear on the ground, avoid walking in this.
-|tip He will continue to use Venomous Effusion.
-|tip His damage will be increased by 50% while in snake form.
-|tip He will cast a Pool of Acrid Tears on the player furthest away from him which deals nature damage. Avoid if you can.
-|tip He will use a cone attack, Breath of Hethiss, so melee should attack from the back if possible.
-_Phase 3:_
-|tip Players will be chased by Poison Tendrils, avoid these for 12 seconds. After this phase, Venoxis will take 100% more damage for 10 seconds. If  you do not kill him, phase 1 will repeat.
-|confirm
-step
-Follow this path |goto 49.4,54.3 <5 |c
-step
-Follow this path |goto 49.0,58.1 <5 |c
-step
-Follow this path |goto 52.9,57.8 <5 |c
-step
-Once you get to this opening, avoid the rocks to make it up the hill. |goto 56.2,63.0 < 5 |c
-step
-kill Berserking Boulder Roller##52348 |goto 56.9,72.3
-|confirm
-step
-kill Bloodlord Mandokir##52151 |goto 60.1,80.2
-|tip He will randomly use Decapitate which will kill whoever he uses it on.
-|tip When the player is killed, a Chained Spirit will revive you, giving you Spirit's Vengeance, granting 25% Health, Damage, Healing and decreasing damage taken by 10%. This effect stacks.
-|tip He will gain a Level Up buff when he kills a player, increasing damage dealt by 20%, a stacking effect.
-|tip Mandokir will summon his raptor Ohgan. Kill the Raptor everytime it spawns or it will kill a Chained Spirit.
-|tip There are only 8 spirits, so kill Ohgan as fast as possible.
-|tip He will use Devastating Slam often during the fight, a 45 degree cone attack that will likely kill you. It marks the ground as to where it strikes, so avoid it.
-|tip He will toss the Bloodletting debuff on a random target, dealing 50% of their current health as shadow damage.
-|modelnpc Ohgan##52157
-|confirm
-step
-Go back down the hill |goto 56.6,63.3 <5 |c
-step
-kill Kaulema the Mover##52422 |q 29173/2 |goto 54.6,63.0
-|only if havequest(29173)
-step
-kill Mor'Lek the Dismantler##52405 |q 29173/1 |goto 54.9,55.5
-|only if havequest(29173)
-step
-kill Witch Doctor Qu'in##52322 |goto 54.5,52.7
-kill Chosen of Hethiss##52323+
-|confirm
-step
-kill Ritual Tiki Mask##52364+ |goto 59.5,46.1
-|confirm
-step
-If a party member has an Archaeology of 225 at least and wishes to fight the boss, click here. |confirm |next |goto 59.3,46.4
-If the party wishes to skip the Archaeology boss, click here. |next "end" |confirm |goto 59.3,46.4
-step
-The Edge of Madness event will summon 1 of 4 random bosses.
-If Hazza'rah spawns click here. |next "hazza" |confirm
-If Renataki spawns click here. |next "rena" |confirm
-If Wushoolay spawns click here. |next "wush" |confirm
-If Gri'lek spawns click here. |next "gri" |confirm
-step
-label hazza
-kill Hazza'rah##52271
-|tip Hazza'rah will use Nightmare and summon 4 adds. Each add will target a random party member and cast Waking Nightmare stunning them. The player who is not stunned must kill the adds before they reach the targetted player.
-collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label rena
-kill Renataki##52269
-|tip Renataki will use Deadly Poison throughout the fight. This effect stacks and can be cleansed.
-|tip He will periodically Vanish. When he does this make sure everybody in the party is at 100% health. He will Ambush a random target that deals 90% of the players health.
-|tip He will also cast Thousand Blades. This whirlwind is dangerous and needs to be avoided.
-collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label wush
-kill Wushoolay##52286
-|tip Wushoolay will summon Lightning Clouds periodically that should be avoided.
-|tip He will use Forked Lightning, so spread out.
-|tip Wushoolay will transform into a ball of lightning and charge at a random player. After he reaches them he begins to cast Lightning Rod. Everybody needs to run away from Wushoolay at this point, Lightning Rod does deadly amounts of damage and needs to be avoided
-collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label gri
-kill Gri'lek##52258
-|tip Gri'lek is a kiting encounter.
-|tip He will fixate on a random party member and gain the _Avatar_ buff, increasing his damage output by 500% and reducing his movement speed. If he fixates on you just run away until it is done.
-|tip He will cast Entangling Roots on the player he is chasing, this can and needs to be dispelled.
-|tip He constantly summons Rupture Lines. Avoid the rumbling dirt.
-collect Mysterious Gurubashi Bijou##69647 |q 29242/1 |only if havequest(29242)
-|confirm |only if not havequest(29242) |next "end"
-step
-label "end"
-Follow this path. |goto 58.0,50.9 <5 |c
-step
-Follow this path. |goto 56.5,50.5 <5 |c
-step
-Follow this path. |goto 56.6,43.3 <5 |c
-step
-Follow this path. |goto 58.5,34.9 <5 |c
-step
-kill Mortaxx##52438 |q 29173/3 |goto 62.4,33.8
-|only if havequest(29173)
-step
-Enter the building here |goto 57.9,29.8 < 5 |c
-|only if havequest(29175)
-step
-kill Gurubashi Master Chef##52392 |goto 57.7,27.3
-Destroy the Gurubashi Master Chef |q 29175/2
-|only if havequest(29172)
-step
-Follow this path. |goto 55.6,27.7 < 5 |c
-step
-Follow this path down towards the water. |goto 53.6,29.2 < 5 |c
-|only if havequest(29172)
-step
-kill Lost Offspring of Gahz'ranka##52418 |q 29172/1 |goto 55.1,33.5
-|only if havequest(29172)
-step
-Follow this path. |goto 47.9,27.6 < 5 |c
-step
-kill High Priestess Kilnara##52059 |goto 47.8,20.9
-_Phase 1_
-|tip The tank should pull the Pride of Bethekk and keep aggro on Kilnara.
-|tip The DPS should focus on killing the 16 Pride of Bethekk, pulling 4 at a time. (You can kill more if you've got great dps)
-|tip She will cast Tears of Blood on random party members. It deals massive damage and should be dispelled as soon as possible.
-|tip She will also cast Lash of Anguish on a random target, which should be dispelled.
-|tip She will cast Wave of Agony at a random player, attacking and knocking back anyone in front of her. Avoid it.
-_Phase 2_
-|tip Once she reaches 50% health she will enter phase 2, vanishing. When she reappears, she will be in cat form.
-|tip She will deal out more damage. DPS her down as fast as possible.
-|modelnpc Pride of Bethekk##52061+
-|confirm
-step
-Go upstairs and leave the building. |goto 47.6,23.6 <5 |noway |c
-step
-Follow this path |goto 44.9,28.1 < 10 |c
-step
-Follow this path |goto 42.2,29.1 < 10 |c
-step
-Follow this path |goto 38.1,29.8 < 10 |c
-|only if havequest(29172)
-step
-Follow this path |goto 37.0,32.1 <5 |c
-|only if havequest(29172)
-step
-Follow this path |goto 33.8,36.1 <5 |c
-|only if havequest(29172)
-step
-Follow this path |goto 33.0,38.4 <5 |c
-|only if havequest(29172)
-step
-kill Florawing Hive Queen##52442 |q 29172/2
-|only if havequest(29172)
-step
-Follow this path |goto 38.8,27.1 <5 |c
-step
-Follow this path |goto 34.8,27.1 <5 |c
-step
-Follow this path up to the next boss |goto 34.8,27.1 <5 |c
-step
-kill Zanzil##52053 |goto 31.4,24.8
-|tip Zanzil will Drain 3 Cauldrons separately during this fight. You will use the buff of each Cauldron for the proper response to the boss.
-click  Zanzil's Cauldron of Toxis Torment |goto 30.6,23.9
-|tip Use the Green Cauldron at this location to get the buff. He will cast Graveyard Gas and put poison all over the ground.
-click Zanzil's Cauldron of Frostburn Formula |goto 31.6,27.3
-|tip Use the Blue Cauldron at this location to get the Forstburn Formula. He will resurrect a Berserker which you will have to kill.
-click Zanzil's Cauldron of Burning Blood |goto 33.0,24.3
-|tip Use the Red Cauldron at this location to get the Burning Blood. The Tank will use this to aggro and kill all the Zombies that resurrect.
-|confirm
-step
-Follow this path |goto 37.7,27.5 < 5 |c
-step
-Follow this path |goto 42.7,30.2 < 5 |c
-step
-Follow this path |goto 41.1,37.0 < 5 |c
-step
-Follow this path |goto 46.1,39.9 < 5 |c
-step
-Follow this path up and around |goto 46.6,36.6 < 5 |c
-step
-kill Jin'do the Godbreaker##52148 |only if not havequest(29252) |goto 48.7,39.9
-kill Jin'do the Godbreaker##52148 |q 29241/1 |only if havequest(29241) |goto 48.7,39.9
-This fight has 2 phases
-_Phase 1:_
-|tip Jin'do will cast an aura Shadows of Hakkar, which will do heavy damage to the group. Make sure to stand in the green bubbles while this aura is active.
-|tip Once his aura, Shadows of Hakkar is over, move out of the bubble.
-_Phase 2:_
-|tip Jin'do will go away and there will be 3 chains protected by a barrier on the ground. The tank will need to grab a Gurubashi Spirit and get near the chains.
-|tip The Gurubashi Spirit will use Body Slam on a player, if the player is near the chains, the barrier will break. Kill 3 chains by breaking the barrier and attacking them.
-collect Zul'Gurub Stone |q 29252/1 |only if havequest(29252)
-|confirm |only if not havequest(29252)
-step
-Go to this bridge |goto 42.5,42.4 <5 |c
-|only if havequest(29172)
-step
-kill Gub##52440 |q 29175/1 |goto 43.0,44.6
-|only if havequest(29175)
-step
-Follow this path |goto 43.6,47.9 <5 |c
-|only if havequest(29172)
-step
-Cross the bridge |goto 44.8,51.0 <5 |c
-|only if havequest(29172)
-step
-Follow this path |goto 47.8,53.0 <5 |c
-|only if havequest(29172)
-step
-Follow the path to the edge of the water |goto 46.7,54.3 <5 |c
-|only if havequest(29172)
-step
-kill Tor-Tun##52414 |q 29172/3 |goto 46.1,55.7
-|only if havequest(29172)
-step
-talk Overseer Blingbang##53151
-turnin Booty Bay's Interests##29252 |goto 30.7,47.5
-step
-talk Bloodslayer Zala##53024
-turnin Break the Godbreaker##29241 |goto 30.6,47.3
-step
-talk Bloodslayer T'ara##53023 |goto 30.8,47.1
-turnin The Beasts Within##29172 |or
-turnin Break Their Spirits##29175 |or
-turnin Secondary Targets##29173 |or
-|tip T'ara will only offer 1 or 2 of these quests at a time.
-step
-talk Briney Boltcutter##53043
-turnin Putting a Price on Priceless##29242 |goto 30.5,50.9
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Cataclysm Dungeons\\Zul'Aman (ZA) 85",{
-mapid=781,
-achieveid={691},
-description="This guide will walk you through the Zul'Aman dungeon.",
-},[[
-step
-label "start"
-talk Witch Doctor T'wansi##52925
-accept The Hex Lord's Fetish##29186 |goto Zul'Aman 13.8,52.2
-step
-talk Vol'jin##52924
-accept Warlord of the Amani##11196 |goto 14.2,53.2
-step
-talk Vol'jin##52924 |goto 14.2,53.2
-Tell him you are ready to open the doors.
-|confirm
-step
-There will be a patrol walking at this point, wait for it to pass before moving to your left. |goto 34.4,48.7
-|confirm
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	31.8,43.8	29.7,41.3	33.0,40.0
-path	35.4,40.1	37.8,39.4	37.4,34.3
-path	36.0,28.5
-At this point, follow the path up the steps.
-|tip There will be mobs that come after you from behind as you go up the steps.
-|tip Kill Amani'shi Wind Walkers first, interrupting Chain Heal whenever they cast it.
-Follow the path up to Akil'zon's Altar. |goto 36.0,28.5 < 5 |noway|c
-|modelnpc 24179
-step
-kill Akil'zon##23574 |goto 35.1,22.9
-|tip For this encounter, you will want to spread out to avoid zapping party members with AoE attacks.
-|tip Amani Kidnappers will swoop down, picking up a random party member. You will have to kill the bird quickly.
-|tip He will cast Electrical Storm on a random party member. When this happens, all players will need to move underneath the party member who is affected.
-|tip Electrical Storm deals out massive damage that increases over time, so move quickly.
-|tip He will also put the Static Disruption debuff on a random target, dealing nature damage and increasing nature damage taken. It can be dispelled.
-|modelnpc 52638
-|confirm
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	34.3,61.7	31.0,63.4	30.8,66.6
-path	33.9,70.4	34.1,75.8	37.5,76.5
-The patrol will still be there you can avoid it or kill them.
-|tip Follow the path up, fighting trash as you go along.
-|tip Kill Amani'shi Medicine Men first, followed by Amani'shi Casters.
-|tip If needed, you can also use crowd control on them when needed.
-|tip At the last pull, you will not be able to crowd control at first.
-|confirm
-step
-kill Nalorakk##23576 |goto 40.6,76.5
-_Phase 1(Troll Phase):_
-|tip He will deal massive damage to the tank with _Brutal Strike_.
-|tip He also uses an ability called Surge. It's important to know that he charges the player furthest from him, leaving a debuff that increases damage taken by 500%!
-|tip This means that you need to rotate who gets hit by it. Ranged DPS and Healers should be the ones to do this. However if you don't have enough ranged, have everyone stack close to the boss, and have a melee step out when it's their turn.
-|tip He will use Surge 3 times, so 3 people will need to take the hit!_
-_Phase 2(Bear Phase):_
-|tip He will put a massive bleed dot on the tank called Lacerating Slash.
-|tip He will also use Deafening Roar, which silences the party for 2 seconds. It will be important to keep the tank topped off on health during phase 2.
-|tip He will go back and forth between phases.
-|confirm
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	34.3,76.8	33.9,90.6	37.5,91.4
-path	43.3,89.5	48.0,90.0	49.6,86.2
-path	52.2,84.2	55.9,84.2	59.8,83.6
-path	58.5,77.6	55.4,76.8	55.4,72.6
-Follow the path.
-|tip Use crowd control on Amani'shi Flame Casters when applicable.
-|tip Keep an eye out for Amani'shi Scouts, if they do not die instantly they will summon additional adds..
-|confirm
-|modelnpc 23586
-|modelnpc 23596
-step
-kill Jan'alai##23578 |goto 55.4,71.0
-|tip For this fight, he will cast Flame Breath towards a random player. Step out of the way when he does so, it deals massive fire damage.
-|tip He will also Summon Amani'shi Hatchers, which hatch Amani Dragonhawk Hatchlings. ONLY KILL ONE of the Hatchers, and let the other destroy the eggs.
-|tip Use every AoE ability you have to kill the hatchlings as they come in waves.
-|tip He will also periodically use Fire Bomb, where he will teleport to the center of the room and throw fire orbs around randomly. DO NOT STAND ON THE FIRE ORBS.
-|tip DPS him down slowly until the Amani Dragonhawk Hatchlings are dead.
-|confirm
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	55.6,62.9	59.1,56.1	59.1,50.8
-path	59.0,43.1	62.3,37.6	64.8,30.0
-path	71.3,23.4	76.4,21.7
-Follow the path. |goto 76.4,21.7,0.5 |noway|c
-|tip If you have any sort of water walk, you can reach the end waypoint without fighting much.
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	75.1,14.9	70.4,14.1	68.3,19.2
-path	65.2,23.1
-|tip There will be packs of Amani Lynx that are stealthed. Let your tank move ahead of the party.
-|tip At the last waypoint, use any crowd control you have available, and pull the group to the bottom of the stairs.
-|tip Kill the trolls first.
-|confirm
-|modelnpc 24043
-step
-kill Halazzi##23577 |goto 58.0,23.3
-|tip He will drop a Water Totem, which heals and restores mana to anyone standing in it's radius. Move Halazzi out of it, and have ranged party members stand in it.
-|tip At 66% and 33% he will summon a Spirit of the Lynx that has random threat no matter what. Halazzi's health will jump to 100% also. Burn him down.
-|tip Kill Corrupted Lightning Totems as they are summoned. He only casts this while in troll form.
-|tip Dispel Flame Shock if possible. He only casts this while in troll form.
-|confirm
-step
-map Zul'Aman
-path follow strict;loop off;ants straight
-path	59.4,33.9	62.4,34.3	59.9,40.1
-path	58.8,45.8	58.1,53.9	64.9,53.2
-Follow the path up to Hex Lord Malacrass.
-|tip Use crowd control on Amani'shi Medicine Men.
-|tip When you fight Amani'shi Berserkers let your tank get threat before you attack, they cannot be taunted.
-|confirm
-|modelnpc 23581
-|modelnpc 24374
-step
-label "hex"
-kill Hex Lord Malacrass##24239+ |goto 71.3,53.2
-|tip He will have two adds on both his sides. They can be crowd controlled and should be if possible.
-|tip If your group has no crowd control, then you will need to kill them before attacking the boss, as they do a lot of damage.
-|tip Hex Lord Malacrass will adopt the abilities from a random party member. Click below to see what he will do.
-collect The Hex Lord's Fetish |q 29186/1 |only if havequest(29186)
-Death Knight: |next "dk" |confirm
-Druid: |next "druid" |confirm
-Hunter: |next "hunt" |confirm
-Mage: |next "mage" |confirm
-Paladin: |next "pally" |confirm
-Priest: |next "priest" |confirm
-Rogue: |next "rogue" |confirm
-Shaman: |next "shaman" |confirm
-Warlock: |next "lock" |confirm
-Warrior: |next "war" |confirm
-Click here to continue. |next "daa" |confirm
-step
-label "dk"
-He will put Death and Decay on the ground. Stay out of it.
-|tip Kill Blood Worms if you see them.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "druid"
-He will use Lifebloom which should be dispelled.
-|tip He will also use Thorns which should be removed from him.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "hunt"
-He will use Explosive Trap.
-|tip He will use Freezing Trap.
-|tip He will use Snake Trap. AoE down the snakes.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "mage"
-He will root nearby players with Frost Nova.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "pally"
-He will use Consecration, which is an AoE Ground Type attack. Move out of it.
-|tip He will cast Holy Light which needs to be interrupted.
-|tip He will use Avenging Wrath which can be Purged, Dispelled or you can use Spell Steal.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "priest"
-He will use Mind Control.
-|tip He Will use Heal which needs to be interrupted.
-|tip He will use Psychic Scream which will fear you if you are close so stay away if you can.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "rogue"
-He will use Blind.
-|tip He will use Would Poison on the tank which needs to be dispelled (Poison).
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "shaman"
-He will use Fire Nova so stay away from him if you can.
-|tip He will use Healing Wave which needs to be interrupted.
-|tip He will use Chain Lightning so spread out.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "lock"
-He will cast Rain of Fire, simply move out of its radius.
-|tip He will cast Unstable Affliction, DO NOT dispel it.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "war"
-He will use Spell Reflect, be sure not to cast big spells when he's got it up.
-|tip He will use Whirlwind, so don't be within melee range.
-|tip He will use Mortal Strike on the tank.
-Click here to go back to the Hex Lord. |next "hex" |confirm
-step
-label "daa"
-Click the doors and fight the trolls that come out. |goto 73.8,53.2
-After you defeat the trolls, make your way to the steps.
-|confirm
-step
-label "final"
-kill Daakara##23863 |only if not havequest(11196) |goto 90.8,52.6
-This encounter has 3 phases:
-_Phase 1:_
-|tip He will use Whirlwind often. Melee should move away from him when he is casting it to avoid damage.
-|tip He will also also use Grievous Throw which leaves a bleed on a target. If you heal the afflicted target to full it will go away.
-_Phase 2:_
-|tip He will take on two of the forms of former bosses. If Lynx is first, he will choose Dragonhawk second. If Bear is first then Eagle will be second. Click to get a detailed explaination.
-|confirm |only if not havequest(11196) |next "turnin"
-kill Daakara##23863 |q 11196/1 |only if havequest(11196) |next "turnin"
-Click here for details on _Shape of the Eagle_.|next "eagle" |confirm
-Click here for details on _Shape of the Bear_.|next "bear" |confirm
-Click here for details on _Shape of the Dragonhawk_.|next "dragonhawk" |confirm
-Click here for details on _Shape of the Lynx_.|next "lynx" |confirm
-step
-label "eagle"
-He will use Energy Storm which will hit players whenever they cast a spell for 12,000 nature damage.
-|tip Kill Lightning Totems as he places them on the battle field.
-|tip He will cast Summoned Cyclone which needs to be avoided at all cost.
-Click here to go back to the boss. |next "final" |confirm
-step
-label "bear"
-His main ability will be Creeping Paralysis, this will stun the entire party after a few seconds but can be dispelled. Mass Dispell is extremely useful but if you do not have one then dispel priority targets (Healer, Tank, Highest DPS).
-|tip He will also use Surge, so you will all need to stack up on the boss, having 3 different ranged move out to take the surge.
-Click here to go back to the boss. |next "final" |confirm
-step
-label "dragonhawk"
-He will cast Flame Whirl which increases damage from fire, this is unavoidable.
-|tip He will cast Flame Breath at targets in front of him. Do not be in front of him.
-|tip He casts Column of Fire which deals out a lot of damage, move out of it.
-Click here to go back to the boss. |next "final" |confirm
-step
-label "lynx"
-He will use Claw Rage on a random party member. The tank will need to Taunt it IMMEDIATELY.
-|tip He will also spawn a Lynx during the fight.
-|tip He will also randomly use Lynx Rush dealling mass damage to the target.
-Click here to go back to the boss. |next "final" |confirm
-step
-label "turnin"
-talk Witch Doctor T'wansi##52925
-turnin The Hex Lord's Fetish##29186 |goto 91.6,54.8
-step
-talk Vol'jin##52924
-turnin Warlord of the Amani##11196 |goto 93.0,53.6
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Pandaria Dungeons\\Temple of the Jade Serpent 85-87",{
 mapid=867,
 achieveid={6757},
 author="support@zygorguides.com",
 description="This guide will walk you through the Siege of Niuzao Temple dungeon.",
 },[[
+step
+Press _I_ and queue for Temple of the Jade Serpent or enter the dungeon with your group |goto Temple of the Jade Serpent/1 31.3,45.0
 step
 talk Priestess Summerpetal##60578
 accept Restoring Jade's Purity##31355 |goto Temple of the Jade Serpent/1 36.0,44.4
@@ -10062,7 +10663,9 @@ step
 map Temple of the Jade Serpent/1
 path follow strict;loop off;ants straight
 path	36.3,34.9	31.4,26.6	37.4,15.9
-Follow this path to the first boss. |goto 37.4,15.9 <5 |noway |c
+Follow this path to the first boss. |goto 37.4,15.9 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Wise Mari##56448
 _Phase 1_
@@ -10072,20 +10675,24 @@ _Phase 1_
 |tip After four adds die, Wise Mari will burst his bubble and begin Phase 2.
 _Phase 2_
 |tip The only mechanic in this phase is Wash Away. Mari will spin in a circle and shoot out a water spout, move around him to avoid being hit.
-|tip Wise Mari assisted |q 31355/1 |only if havequest(31355)
-|confirm |only if not havequest(31355)
+Assist Wise Mari |q 31355/1 |only if havequest(31355)
+scenariogoal 1/19230
 step
 map Temple of the Jade Serpent/1
 path follow strict;loop off;ants straight
 path	37.4,15.9	31.4,26.6	36.3,34.9
 path	31.4,57.6	27.7,62.8
-Follow the path back to The Scrollkeeper's Sanctum. |goto Temple of the Jade Serpent/2 |noway |c
+Follow the path back to The Scrollkeeper's Sanctum. |goto Temple of the Jade Serpent/2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Temple of the Jade Serpent/2
 path follow strict;loop off;ants straight
 path	34.9,21.5	26.4,68.0	58.3,82.5
 path	65.3,50.2	46.1,41.9
-Kill all of the mini bosses along this platform as you follow the path. |goto Temple of the Jade Serpent/1 |noway |c
+Kill all of the mini bosses along this platform as you follow the path. |goto Temple of the Jade Serpent/1
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 When you are ready to face the boss kill the Corrupted Scroll.
 kill Corrupted Scroll##57080
@@ -10104,7 +10711,7 @@ kill Peril##59726
 |tip The boss that you are not focusing will begin to starve. Dissipation reduces the Insanity stacks.
 |tip While you are juggling the bosses they will cast Agony on random party members. This does a decent amount of damage that must be healed.
 Lorewalker Stonestep assisted |q 31355/3 |only if havequest(31355) |next "done"
-|confirm |next "done" |only if not havequest(31355)
+scenariogoal 1/24785 |next "done"
 step
 label "sun"
 _Champion of the Five Suns_
@@ -10114,13 +10721,15 @@ kill Zao Sunseeker##58826
 |tip When all four Haunting Sha are dead, Zao Sunseeker will become possessed.
 |tip He will shoot Hellfire Arrows at random party members, kill him before your healer becomes overwhelmed.
 Lorewalker Stonestep assisted |q 31355/3 |only if havequest(31355) |next "done"
-|confirm |next "done" |only if not havequest(31355)
+scenariogoal 1/24785 |next "done"
 step
-label done
+label "done"
 map Temple of the Jade Serpent/1
 path follow strict;loop off;ants straight
 path	38.6,80.7	53.5,85.4	46.5,64.9
-Follow this path to the next boss. |goto 46.5,64.9 <5 |c
+Follow this path to the next boss. |goto 46.5,64.9 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Kill all the enemies on the Terrace of the Twin Dragons to face Liu Flameheart.
 |confirm
@@ -10140,7 +10749,7 @@ kill Yu'lon##56762
 |tip At 30% life, Yu'lon spawns.
 |tip Yu'lon will breathe balls of fire that create a pool of Jade Fire where they land. Step out of this pool to avoid taking damage.
 Liu Flameheart assisted |q 31355/2 |only if havequest(31355)
-|confirm |only if not havequest(31355)
+scenariogoal 1/19235
 step
 Perpare to face the Sha of Doubt. |goto 56.1,57.0
 |confirm
@@ -10150,7 +10759,7 @@ kill Sha of Doubt##56439 |q 31356/1 |only if havequest(31356)
 |tip The Sha of Doubt will cast Wither Will at two random party members, dealing damage to both of them.
 |tip Touch of Nothingness is a dispellable effect that will be put on a random player. This does damage to all surrounding players so spread out.
 |tip Periodically the Sha of Doubt will become invulnerable and summon as many adds are there are players. Stack these adds up and kill all of them, if you do not kill them before their energy bar is full, they will heal the boss 10% life and explode dealing significant damage for each add left alive.
-|confirm |only if not havequest(31356)
+scenariogoal 1/34412
 step
 talk Priestess Summerpetal##60578
 turnin Restoring Jade's Purity##31355 |goto 36.0,44.4
@@ -10165,24 +10774,29 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Siege of Niuzao Temple dungeon.",
 },[[
 step
+Press _I_ and queue for Stormstout Brewery or enter the dungeon with your group |goto Stormstout Brewery/1 79.7,39.7 |c
+step
 talk Auntie Stormstout##59822
 accept Family Secrets##31324 |goto Stormstout Brewery/1 76.9,35.4
 step
 talk Chen Stormstout##59704
 accept Trouble Brewing##31327 |goto 75.1,36.2
-step
-As you follow the next path make sure you loot the Hozen you kill for Stormstout Secrets and click the tomes along the floor.
-kill Sodden Hozen Brawler##59605+, Inflamed Hozen Brawler##56924+, Sleepy Hozen Brawler##56863+, Drunken Hozen Brawler##56862+
-click Stormstout Secrets
-collect 5 Stormstout Secrets |q 31324/1
-|confirm
-|only if havequest(31324)
+stickystart "Stormstout"
 step
 map Stormstout Brewery/1
 path follow strict;loop off;ants straight
 path	54.0,50.3	44.0,65.1	30.7,84.3
 path	21.5,76.5	23.9,63.1
-Clear the trash along this path. |goto 23.9,63.1 <5 |noway |c
+Clear the trash along this path. |goto 23.9,63.1 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+label "Stormstout"
+As you follow the next path make sure you loot the Hozen you kill for Stormstout Secrets and click the tomes along the floor.
+kill Sodden Hozen Brawler##59605+, Inflamed Hozen Brawler##56924+, Sleepy Hozen Brawler##56863+, Drunken Hozen Brawler##56862+
+click Stormstout Secrets
+collect 5 Stormstout Secrets |q 31324/1
+|only if havequest(31324)
 step
 You will need to kill 40 Hozen to summon the first boss. |goto Stormstout Brewery/2 53.4,50.1
 Click here once Ook-Ook has spawned |confirm
@@ -10191,29 +10805,32 @@ kill Ook-Ook##56637
 |tip Ook-Ook will Ground Pound which is a frontal shockwave, do not stand in it.
 |tip At 90%, 60%, and 30% Ook-Ook will _Go Bananas_. This increases his attack speed and damage dealt each time. This buff stacks. He will also summon Rolling Barrels when he does this.
 |tip DPS should click on Rolling Barrels and ride them into Ook-Ook. This will increase his damage taken as well as do a lot of damage. This effect stacks
-|confirm
+scenariogoal 1/19236
 step
-map Stormstout Brewery/3
+map Stormstout Brewery/2
 path follow strict;loop off;ants straight
-path	32.2,88.9	37.2,93.5	43.2,85.8
-path	35.9,77.0	20.5,68.7	29.5,49.9
-path	38.0,46.3
+path	74.6,75.1	80.9,81.4	89.8,71.8
+path	81.8,58.3	Stormstout Brewery/3 20.5,68.7	Stormstout Brewery/3 29.5,49.9
+path	Stormstout Brewery/3 38.0,46.3
 This is a gauntlet event. Kill the virmen as you run through the path.
 |tip Boppers are the most important type of virmen. Upon death they drop a Big Ol' Hammer. When you pick this up you will gain a new button on your screen, Smash!. Click it to clear many virmen at a time.
-Finish the gauntlet event. |goto 38.0,46.3 <5 |noway |c
-|modelnpc Bopper##59426+
+Finish the gauntlet event. |goto 38.0,46.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hoptallus##56717
 |tip Hoptallus will constantly use Furlwind. this whirlwind will do large amounts of damage, so kite him around.
 |tip He will also summon virmen. These are the same types of adds that you cleared in the last path. Aim down the Boppers first and use their Big Ol' Hammer to Smash! all of the other adds.
 |tip Carrot Breath will deal large damage to anybody standing within the cone, avoid this.
-|confirm
+scenariogoal 1/19237
 step
 map Stormstout Brewery/3
 path follow strict;loop off;ants straight
 path	39.7,38.9	43.3,26.7	58.9,29.7
 path	75.3,56.5	89.9,44.2	73.6,34.2
-Kill the Alementals as you follow this path. |goto 73.6,34.2 <5 |noway |c
+Kill the Alementals as you follow this path. |goto 73.6,34.2 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Uncle Gao will summon 3 waves of Alementals before Yan-Zhu. |goto Stormstout Brewery/4 49.6,51.1
 kill Yeasty Brew Alemental##66413+
@@ -10226,8 +10843,8 @@ kill Yan-Zhu the Uncasked##59479 |only if not havequest(31327)
 |tip Yan-Zhu will constantly through Blackout Brew, counter this by moving around until the debuff is off of you.
 |tip When Yan-Zhu casts Carbonation click on the Fizzy Bubbles around the room, this will grant you a buff that allows you to fly above the cloud.
 |tip Bubble Shields will need to be killed very quickly, they reduce the amount of damage that the boss takes.
-|confirm |only if not havequest(31327)
 |tip Keep moving to remove the Blackout Brew, click Fizzy Bubbles to gain the ability to fly above Carbonation
+scenariogoal 1/34411
 step
 talk Uncle Gao##59074
 turnin Family Secrets##31324 |goto Stormstout Brewery/4 39.0,56.0
@@ -10242,10 +10859,13 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Siege of Niuzao Temple dungeon.",
 },[[
 step
-talk Ban Bearheart##62236
-accept Lord of the Shado-Pan##30757 |goto Shado-Pan Monastery/1 83.4,56.1
+Press _I_ and queue for Shado-Pan Monastery or enter the dungeon with your group |goto Shado-Pan Monastery/2 85.0,56.5 |c
 step
-Fight your way through this room |goto 60.2,43.8 <5 |c
+talk Ban Bearheart##62236
+accept Lord of the Shado-Pan##30757 |goto Shado-Pan Monastery/2 83.4,56.1
+step
+Fight your way through this room |goto 60.2,43.8 < 5
+confirm
 step
 kill Gu Cloudstrike##56747
 _Phase 1_
@@ -10257,48 +10877,50 @@ _Phase 2_
 |tip Lightning Breath is a frontal cone, do not stand in front of the boss.
 _Phase 3_
 |tip Gu Cloudstrike will use Overcharged Soul which deals damage to the entire party until he is defeated.
-|confirm
+scenariogoal 1/19239
 step
-Follow the path to this point and defeat the Shado-Pan Disciples who attack you. |goto 23.6,83.6 <5 |c
+Follow the path to this point and defeat the Shado-Pan Disciples who attack you. |goto 23.6,83.6 < 5
+confirm
 step
-Follow this ramp up and be careful not to be hit by the freezing arrows. |goto 54.0,75.2 <5 |c
-step
-Cross the bridge and enter Snowdrift Dojo |goto Shado-Pan Monastery/2 |c
+Follow this ramp up and be careful not to be hit by the freezing arrows. |goto Shado-Pan Monastery/1 54.0,75.2 < 5
+Cross the bridge and enter Snowdrift Dojo |goto Shado-Pan Monastery/1 36.1,81.2 < 5
+confirm
 step
 kill Fragrant Lotus##56472
 kill Flying Snow##56473 |goto Shado-Pan Monastery/2 60.5,64.8
 Fight off the waves of Shado-Pan Novices and finally defeat Fragrant Lotus and Flying Snow.
 |confirm
 step
-Prepare to fight Master Snowdrift. |goto 36.6,39.2 <5 |c
-step
 kill Master Snowdrift##56541
 |tip Fists of Fury is a frontal attack that does massive damage, the tank needs to back out of this.
 |tip Tornado Kick is a strong whirlwind attack that should be avoided.
 |tip Master Snowdrift will teleport around the room and make two clones of himself. You can tell the boss from his clones by looking at the debuffs on the boss. Step behind him and avoid the projectiles being cast around the room.
-|tip While Master Snowdrift is in _Parry Stance_ refrain from hitting him, or find a way to hit him from behind. He will retaliate to any attack that is made.
-|confirm
+|tip While Master Snowdrift is in Parry Stance refrain from hitting him, or find a way to hit him from behind. He will retaliate to any attack that is made.
+scenariogoal 1/19244
 step
 talk Master Snowdrift##56541
 accept The Path to Respect Lies in Violence##31342 |goto 30.3,35.4
 step
-Go outside and cross this bridge. |goto Shado-Pan Monastery/0 24.9,41.3 <5 |c
+Go outside and cross this bridge. |goto Shado-Pan Monastery/0 24.9,41.3 < 5
+confirm
 step
-Enter the Sealed Chambers |goto Shado-Pan Monastery/3 |c
+Enter the Sealed Chambers |goto Shado-Pan Monastery/1 31.1,34.0
+confirm
 step
 kill Sha of Violence##56719 |only if not havequest(31342)
 kill Sha of Violence##56719 |q 31342/1 |only if havequest(31342)
-|tip The Sha of Violence will use _Disorientating Smash_ on its target, this will deal a large amount of damage and cause the target to be blinded for four seconds.
-|tip Smoke Blades is a whirlwind attack that will leave a debuff on anybody it hits that reduces critical strike chance to 0. If you attack with this debuff it will clear it faster. After the debuff is gone you will gain _Parting Smoke_ for three seconds, this causes your next hit to critically strike for 100% more damage than it normally would.
+|tip The Sha of Violence will use Disorientating Smash on its target, this will deal a large amount of damage and cause the target to be blinded for four seconds.
+|tip Smoke Blades is a whirlwind attack that will leave a debuff on anybody it hits that reduces critical strike chance to 0. If you attack with this debuff it will clear it faster. After the debuff is gone you will gain Parting Smoke for three seconds, this causes your next hit to critically strike for 100% more damage than it normally would.
 |tip Sha Spike will be cast at a random player knocking them up.
 |tip When the Sha of Violence is weak, it will Enrage gaining 50% attack speed.
-|confirm |only if not havequest(31342)
+scenariogoal 1/19240
 step
 The following trash can be very tough to beat.
 |tip You will have to release the spirits of the dead Pandaren before killing any of the hostile adds. If you kill the adds they will simply respawn.
 |confirm
 step
-Follow the path to the final boss. |goto Shado-Pan Monastery/0 69.9,49.5 <5 |c
+Follow the path to the final boss. |goto Shado-Pan Monastery/0 69.9,49.5 < 5
+confirm
 step
 _Taran Zhu_
 |tip The biggest mechanic in this fight is Hatred meter. If this reaches 100% you will receive the debuff Haze of Hate this reduces your accuracy by 90%.
@@ -10308,7 +10930,7 @@ _Taran Zhu_
 |tip He will periodically Summon Gripping Hatred. This shadow balls will grab players and pull them into Pools of Shadows. Kill these if you can.
 kill Taran Zhu##56884
 Rid Taran Zhu of his possession. |q 30757 |only if havequest(30757)
-|confirm |only if not havequest(30757)
+scenariogoal 1/34410
 step
 talk Taran Zhu##56884
 turnin Lord of the Shado-Pan##30757 |goto 69.3,49.7
@@ -10325,6 +10947,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Mogu'shan Palace dungeon.",
 },[[
 step
+Press _I_ and queue for Mogu'shan Palace or enter the dungeon with your group |goto Mogu'shan Palace/1 30.5,20.5 |c
+step
 talk Sinan the Dreamer##64432
 accept Relics of the Four Kings##31357
 accept A New Lesson for the Master##31360 |goto Mogu'shan Palace/1 30.3,19.2
@@ -10332,7 +10956,9 @@ step
 map Mogu'shan Palace/1
 path follow strict;loop off;ants straight
 path	40.2,26.1	40.3,57.6
-Clear the trash and follow this path to the boss. |goto 40.3,57.6 <5 |noway |c
+Clear the trash and follow this path to the boss. |goto 40.3,57.6 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Trial of the King_
 The Trial of the King consists of three minibosses.
@@ -10366,11 +10992,15 @@ Click here for Kuai the Brute's strategy. |next "kuai" |confirm
 Click here to move on with the dungeon. |next "end" |confirm
 step
 label end
-Loot the chest and follow these stairs down. |goto 48.8,74.9 <5 |c
+Loot the chest and follow these stairs down. |goto 48.8,74.9 < 5
+confirm
 step
-Make your way here. |goto Mogu'shan Palace/2 28.6,32.6 <5 |c
-step
-Clear trash to this point. |goto 30.9,75.7 <5 |c
+map Mogu'shan Palace/2
+path follow strict;loop off;ants straight
+path	28.6,32.6	30.9,75.7
+Follow the path |goto Mogu'shan Palace/2 28.6,32.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Ancient Mogu Chest |goto 37.4,64.5
 collect Lantern of the Sorcerer King |q 31357/1
@@ -10391,14 +11021,16 @@ step
 kill Gekkan##61243 |goto 44.9,75.8
 |tip Gekkan has 4 adds with him. The Protector will shield all of the other adds so he must die first. The Oracle is the healer so he needs to be interrupted and killed second.
 |tip Crowd Control is suggested in this fight but don't count on it. Gekkan will use Reckless Inspiration on a random add. This makes them immune to crowd control and increases their attack speed for a period of time.
-|confirm
+scenariogoal 1/19256
 step
 Ride the elevator up |goto Mogu'shan Palace/3 |noway |c |goto 71.5,76.1
 step
 map Mogu'shan Palace/3
 path follow strict;loop off;ants straight
 path	45.0,24.3	40.4,36.1	40.3,75.2
-Clear the trash and make your way to the final boss. |goto 40.3,75.2 <5 |c
+Clear the trash and make your way to the final boss. |goto 40.3,75.2 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Xin the Weaponmaster##61398 |only if not havequest(31360)
 kill Xin the Weaponmaster##61398 |q 31360/1 |only if havequest(31360)
@@ -10407,7 +11039,7 @@ kill Xin the Weaponmaster##61398 |q 31360/1 |only if havequest(31360)
 |tip Whirlwinding Axes will be summoned almost immediately. Avoid standing in their spin.
 |tip Blade Trap will activate at 66% health. This is a linear stream of swords. Avoid them.
 |tip At 33% Xin will activate Death from Above!. This will cause crossbows to fire from his walls, this damage is unavoidable.
-|confirm |only if not havequest(31360)
+scenariogoal 1/34409
 step
 talk Sinan the Dreamer##64432
 turnin Relics of the Four Kings##31357
@@ -10421,11 +11053,14 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Scholomance dungeon.",
 },[[
 step
+Press _I_ and queue for Scholomance or enter the dungeon with your group |goto Scholomance/1 18.2,61.1 |c
+step
 talk Talking Skull##64563
 accept The Four Tomes##31442
 accept An End to the Suffering##31448 |goto Scholomance/1 27.0,58.8
 step
-Go through the gate and down these steps |goto 48.6,43.2 <5 |c
+Go through the gate and down these steps |goto 48.6,43.2 < 5
+confirm
 step
 Clear this room of trash and be careful not to aggro Instructor Chillheart.
 |confirm
@@ -10442,7 +11077,7 @@ _Phase 2_
 |tip The Anarchist Arcanist will float around creating Arcane Bombs. These explode on impact so avoid them.
 |tip Antonidas' Self Help Guide to Standing in Fire will cast Burn. This does a small AoE of fire damage around the book.
 |tip Wander's Colossal Book of Shadow Puppets will cast Shadow Bolt at the party.
-|confirm
+scenariogoal 1/19259
 step
 click In the Shadow of the Light
 Destroy In the Shadow of the Light |q 31442/1  |goto Scholomance/1 74.7,57.5
@@ -10451,7 +11086,9 @@ step
 map Scholomance/1
 path follow strict;loop off;ants straight
 path	79.3,52.0	80.6,23.8
-Follow the path downstairs. |goto Scholomance/2 77.0,26.5 <5 |c
+Follow the path downstairs. |goto Scholomance/2 77.0,26.5 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Kel'Thuzad's Deep Knowledge
 Destroy Kel'Thuzad's Deep Knowledge |q 31442/2 |goto Scholomance/2 73.9,8.6
@@ -10465,9 +11102,10 @@ kill Jandice Barov##59184 |goto 59.9,18.5
 |tip Gravity Flux will create a gravity distortion field on the ground. If you step into this ability you will be knocked back as well as damaged heavily.
 |tip At 66% and 33% Jandice will cast Phantasmal Images. She will clone herself throughout the room, destroy the clones until she returns to battle.
 |tip While the clones are alice they will cast Whirl of Illusion, this does AoE damage to everybody in the group every second.
-|confirm
+scenariogoal 1/19260
 step
-Enter the Chamber of Summoning |goto 56.4,26.8 <5 |c
+Enter the Chamber of Summoning |goto 56.4,26.8 < 5
+confirm
 step
 kill Boneweaver##59193
 |tip Go around the perimeter of this room and kill the Boneweavers. When all of them are dead, the boss wil initiate you.
@@ -10478,9 +11116,10 @@ kill Rattlegore##59153
 |tip Bone Spike will target a random party member and do massive damage to them. This can be prevented if every party member keeps Bone Armor active.
 |tip Bone Armor is granted by clicking on the Bone Piles around the room.
 |tip Periodically a section of the room will be engulfed in Soulflame. Avoid the fire and be wary because it grows over time.
-|confirm
+scenariogoal 1/19261
 step
-Enter the Chamber of Summoning |goto 40.3,26.6 <5 |c
+Enter the Chamber of Summoning |goto 40.3,26.6 < 5
+confirm
 step
 kill Flesh Horror##59359+
 kill Meat Graft##59982+ |goto 42.0,46.8
@@ -10491,7 +11130,8 @@ click Forbidden Rites and other Rituals Necromantic
 Destroy Forbidden Rites and other Rituals Necromantic |q 31442/3  |goto 42.5,51.6
 |only if havequest(31442)
 step
-Go down the steps and prepare to fight Lilian Voss. |goto 47.0,47.2 <5 |c
+Go down the steps and prepare to fight Lilian Voss. |goto 47.0,47.2 < 5
+confirm
 step
 kill Lilian Voss##58722
 _Phase 1_
@@ -10507,13 +11147,14 @@ _Phase 3_
 |tip Phase 3 is a combination of Phases 1 and 2.
 |tip Be watchful of who Lilian's Soul is Fixating on, this is the highest source of damage during the fight.
 |tip You will continued to get pulled in by Death's Grasp, be extra careful not to put a path of Dark Blaze in somebodies way if they need to kite the Soul.
-|confirm
+scenariogoal 1/19262
 step
 click The Dark Grimoire
 Destroy The Dark Grimoire |q 31442/4 |goto Scholomance/2 47.1,73.1
 |only if havequest(31442)
 step
-Go through this doorway and follow the stairs down. |goto Scholomance/3 |c |goto 47.8,84.8 |n
+Go through this doorway and follow the stairs down. |goto Scholomance/3 47.8,84.8
+confirm
 step
 kill Darkmaster Gandling##59080 |q 31448/1 |only if havequest(31448)
 kill Darkmaster Gandling##59080 |only if not havequest(31448)
@@ -10521,9 +11162,10 @@ kill Darkmaster Gandling##59080 |only if not havequest(31448)
 |tip Darkmaster Gandling will cast Rise!. This summons many Failed Students that need to be killed. During this cast Darkmaster Gandling takes reduced damage.
 |tip Periodically a random party member will be teleported to one of Gandling's study rooms for a Harsh Lesson.
 |tip This party member must kill the Expired Test Subjects and make their way back to the bosses room. If the healer gets trapped in one of these rooms, the Fresh Test Subjects around the room will serve as useful bombs. Dispel the _Explosive Pain_ off of them to deal AoE damage to the Expired Test Subjects.
-|confirm |only if not havequest(31448)
+scenariogoal 1/34440
 step
-Go back up the stairs. |goto Scholomance/4 49.1,21.5 <5 |c
+Go back up the stairs. |goto Scholomance/4 49.1,21.5 < 5
+confirm
 step
 talk Talking Skull##64563
 turnin The Four Tomes##31442
@@ -10537,21 +11179,22 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Scarlet Monastery dungeon.",
 },[[
 step
+Press _I_ and queue for Scarlet Halls or enter the dungeon with your group |goto Scarlet Halls/1 34.2,90.0 |c
+step
 talk Hooded Crusader##64764
 accept Rank and File##31495
 accept Just for Safekeeping, Of Course##31497 |goto Scarlet Halls/1 31.9,84.4
+stickystart "Scarlet Crusade"
 step
-kill Vigilant Watchman##58898+, Master Archer##59175+, Scarlet Evangelist##58685+, Scarlet Myrmidon##58683+, Scarlet Cannoneer##59293+, Scarlet Scourge Hewer##58684+, Scarlet Defender##58676+, Scarlet Evoker##58756+, Scarlet Defender##58998+, Scarlet Treasurer##59241+, Scarlet Hall Guardian##59240+, Scarlet Pupil##59373+, Scarlet Scholar##59372+
-Kill 50 Scarlet Crusaders. |q 31495/1
-|only if havequest(31495)
-step
-Prepare to cross the training ground. |goto 48.2,78.8 <5 |c
+Prepare to cross the training ground. |goto 48.2,78.8 < 5
+confirm
 step
 kill Commander Lindon##59191
 |tip In order to cross the training ground you must click on an archery target and use it as a shield. Avoid the fire arrows that leave patches of flame on the ground.
 |confirm
 step
-Go through the tunnel |goto 49.8,36.9 <5 |c
+Go through the tunnel |goto 49.8,36.9 < 5
+confirm
 step
 kill Houndmaster Braun##59303
 |tip Houndmaster Braun will use Piercing Throw. This will target a player and deal damage to every player in between Braun and his target.
@@ -10559,15 +11202,18 @@ kill Houndmaster Braun##59303
 |tip Both of these abilities will cause Bloody Mess. This is DoT can stack and become deadly.
 |tip At 90%, 80%, 70%, and 60% Braun will summon an Obedient Hound to his side. You can either kill them or just have the tank hold onto them.
 |tip If the hounds remain alive at 50% Braun will begin to lose control of them and the will aid you in battle. When this happens, Braun will enter a Bloody Rage, gaining 25% increased damage and 50% increased attack speed.
-|confirm
+scenariogoal 1/19266
 step
-Allow the remaining dogs to kill the door guards and procede to the Athenaeum. |goto Scarlet Halls/2 55.3,21.1 |noway |c
+Allow the remaining dogs to kill the door guards and procede to the Athenaeum. |goto Scarlet Halls/2 55.3,21.1
+confirm
 step
 map Scarlet Halls/2
 path follow strict;loop off;ants straight
 path	47.6,88.3	56.8,79.4	61.7,69.5
 path	61.7,55.5
 While following this path keep an eye out for Scarlet Cannoneers. They will spawn randomly and attack using the cannons along this path.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 |modelnpc Scarlet Cannoneer##59293
 step
 kill Armsmaster Harlan##58632
@@ -10581,16 +11227,23 @@ path follow strict;loop off;ants straight
 path	48.6,58.1	48.7,50.5	39.1,46.8
 path	39.1,23.2
 Follow the path to the final boss.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+label "Scarlet Crusade"
+kill Vigilant Watchman##58898+, Master Archer##59175+, Scarlet Evangelist##58685+, Scarlet Myrmidon##58683+, Scarlet Cannoneer##59293+, Scarlet Scourge Hewer##58684+, Scarlet Defender##58676+, Scarlet Evoker##58756+, Scarlet Defender##58998+, Scarlet Treasurer##59241+, Scarlet Hall Guardian##59240+, Scarlet Pupil##59373+, Scarlet Scholar##59372+
+Kill 50 Scarlet Crusaders. |q 31495/1
+|only if havequest(31495)
 step
 kill Flameweaver Koegler##59150
 |tip Koegler will try to light the book cases around the room on fire with Book Burner. You can avoid this mechanic by staying on the red carpet circle inside this room.
 |tip He will move to the center of the room and begin using Greater Dragon's Breath. Watch where he is facing and move around the room clockwise to avoid being hit.
 |tip Quickened Mind will cause Koegler's next three spells to be cast nearly instantly. This can be dispelled off of him.
 collect Codex of the Crusade |q 31497/1 |only if havequest(31497)
-|confirm |only if not havequest(31497)
+scenariogoal 1/34441 |only if not havequest(31497)
 step
 talk Hooded Crusader##64764
-turnin Rank and File##31495
+turnin Rank and File##31495 |goto 39.3,17.0
 turnin Just for Safekeeping, Of Course##31497 |goto 39.3,17.0
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Pandaria Dungeons\\Scarlet Monastery (SM) 90",{
@@ -10600,6 +11253,8 @@ achieveid={6761},
 author="support@zygorguides.com",
 description="This guide will walk you through the Scarlet Monastery dungeon.",
 },[[
+step
+Press _I_ and queue for Scarlet Monastery or enter the dungeon with your group |goto Scarlet Monastery/1 74.2,46.2 |c
 step
 talk Hooded Crusader##64838
 accept Blades of the Anointed##31515 |goto Scarlet Monastery/1 72.7,47.0
@@ -10614,7 +11269,7 @@ kill Thalnos the Soulrender##59789
 |tip Evict Soul is a debuff that Thalnos throws on a random party member. This DoT needs to be dispelled as quickly as possible.
 |tip He will also use Summon Empowering Spirit. This ability will summon an add that DPS should kill as quickly as they can. If this add reaches a Fallen Crusader's corpse, it will spawn an Empowered Zombie.
 |tip Empowered Zombies are large zombies which need to be tanked. They cannot be killed without great focus.
-|confirm
+scenariogoal 1/19270
 step
 click Blade of the Anointed
 collect Blade of the Anointed |q 31515/1 |goto 20.6,45.9
@@ -10623,7 +11278,9 @@ map Scarlet Monastery/1
 path follow strict;loop off;ants straight
 path	34.5,52.5	34.8,78.2	39.4,81.7
 path	48.5,90.3
-Follow the path. |goto Scarlet Monastery/2 |noway |c
+Follow the path. |goto Scarlet Monastery/2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Blade of the Anointed##64855
 turnin Blades of the Anointed##31515
@@ -10632,6 +11289,10 @@ step
 map Scarlet Monastery/2
 path follow strict;loop off;ants straight
 path	45.7,31.9	43.9,36.3	49.2,43.3
+Follow the path. |goto Scarlet Monastery/2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Brother Korloff##59223
 Brother Korloff loves to play with fire.
 |tip Flying Kick will hit a random party member knocking them back, make sure they aren't knocked into any uncleared trash.
@@ -10640,9 +11301,10 @@ Brother Korloff loves to play with fire.
 |tip Scorched Earth is a fire trail that Korloff leaves behind him, do not stand in it.
 |tip Every 10%, Korloff wil gain a stack of Rising Flame. These increase his fire damage done by 10% per stack.
 |tip The boss will patrol between two groups. Pull each group carefully, keeping in mind the boss' patrol.
-|confirm
+scenariogoal 1/19271
 step
-Enter the cathedral here |goto 49.1,57.1 <5 |c
+Enter the cathedral here |goto 49.1,57.1 < 5
+confirm
 step
 Before encountering the boss, make sure you kill the trash within the cathedral.
 |tip This includes the main room and both wings.
@@ -10665,7 +11327,7 @@ _Phase 3_
 |tip Stay spread out for Durand.
 Use the Blades of the Anointed on High Inquisitor Whitemane's corpse. |use Blades of the Anointed##87390 |only if havequest(31516)
 Blades of the Anointed thrust into Whitemane's corpse. |q 31516/1 |only if havequest(31516)
-|confirm |only if not havequest(31516)
+scenariogoal 1/34443
 step
 talk Hooded Crusader##64842
 turnin Unto Dust Thou Shalt Return##31516
@@ -10676,6 +11338,8 @@ achieveid={6763},
 author="support@zygorguides.com",
 description="This guide will walk you through the Siege of Niuzao Temple dungeon.",
 },[[
+step
+Press _I_ and queue for Siege of Niuzao Temple or enter the dungeon with your group |goto Siege of Niuzao Temple/2 65.4,87.3 |c
 step
 talk Shado-Master Chum Kiu##64517
 accept Somewhere Inside##31365
@@ -10688,18 +11352,15 @@ kill Vizier Jin'bak##61567
 |tip In the middle of this room is a puddle of resin. The tank should periodically walk through this puddle to shrink it.
 |tip Vizier Jin'bak will summon three adds, kill them before they reach the resin puddle.
 |tip Shortly after summoning adds, he will cast _Detonate_, this does damage to the entire group. The smaller the puddle is, the less damage the group will take.
-|confirm
+scenariogoal 1/19249
 step
 map Siege of Niuzao Temple/2
 path follow strict;loop off;ants straight
 path	37.4,65.4	53.4,81.8	31.6,38.4
-path	21.7,53.9
-Clear the trash and follow this path. |goto Siege of Niuzao Temple/3 |noway |c
-step
-map Siege of Niuzao Temple/2
-path follow strict;loop off;ants straight
-path	67.1,55.6	52.3,23.3
-Clear the trash and follow this path. |goto Siege of Niuzao Temple/1 |noway |c
+path	Siege of Niuzao Temple/3 21.7,53.9
+Clear the trash and follow this path. |goto Siege of Niuzao Temple/3
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Yang Ironclaw##61620
 We're ready to defend! |goto Siege of Niuzao Temple/1 44.5,74.3
@@ -10714,14 +11375,16 @@ kill Commander Vo'jak##61634
 |tip While you fight Commander Vo'jak have a ranged dps continue to throw and Mantid Tar Kegs on the boss. Be careful not to hit the tank.
 |tip The boss will counter this by using Thousand Blades, clearing his debuffs. Have the tank kite him into the puddles to reapply the debuff.
 |tip While the boss is using Thousand Blades run away! This whirlwind will deal massive, potentially fatal, damage.
-|confirm
+scenariogoal 1/19250
 stickystart "freeshado"
 step
 map Siege of Niuzao Temple/1
 path follow strict;loop off;ants straight
 path	37.8,76.5	35.4,59.8	39.1,42.7
 path	46.3,43.2
-Follow the ramp and then follow this path. |goto 46.3,43.2 < 5 |noway |c
+Follow the ramp and then follow this path. |goto 46.3,43.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 The next boss patrols this area, be careful to pull the trash groups without also gaining his attention.
 |confirm
@@ -10730,7 +11393,7 @@ kill General Pa'valak##61485
 |tip General Pa'valak's two main abilities are Blade Rush and Tempest. Tempest negates healing but is nothing too significant. When he begins casting Blade Rush he will mark a spot on the ground with a circle, move out of it. He throws his weapon and then charges to it.
 |tip He will also cast Bulwark. This shield will absorb one million damage while adds run in to reinforce the boss. Kill the shield and AoE down the adds.
 |tip Siege Explosives will spawn around the area. To make this fight go quicker use these explosives on the boss to increase his damage taken. It is also suggested you save a bomb for each wave of adds.
-|confirm
+scenariogoal 1/19251
 step "freeshado"
 clicknpc Shado-Pan Prisoner##64520+
 Free 12 Shado-Pan Prisoners |q 31365/1
@@ -10748,7 +11411,7 @@ kill Wing Leader Ner'onok##62205 |only if not havequest(31366)
 |tip He will constantly throw down pools of Caustic Pitch. These damage and slow you if you run through them.
 |tip Periodically throughout the fight Wing Leader Ner'onok will fly to the opposite end of the bridge and begin casting Gusting Winds. Navigate to the other side of the bridge by having your back against the pod-like structures that are all along the bridge, they allow you to move forward without being pushed back.
 |tip When you make it to the other end of the bridge interrupt Gusting Winds. A ranged interrupt comes in great handy here.
-|confirm |only if not havequest(31366)
+scenariogoal 1/34407
 step
 talk Shado-Master Chum Kiu##64517
 turnin Somewhere Inside##31365
@@ -10761,24 +11424,29 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Siege of Niuzao Temple dungeon.",
 },[[
 step
+Press _I_ and queue for Gate of the Setting Sun or enter the dungeon with your group |goto Gate of the Setting Sun/1 61.3,88.0 |c
+step
 talk Bowmistress Li##64467
 accept Lighting the Way##31363
 accept That's a Big Bug!##31364 |goto Gate of the Setting Sun/1 60.9,88.6
 step
-While clearing trash avoid the Volatile Munitions that drop, they deal out massive fire damage around them. |goto 49.4,87.9 <5 |c
+While clearing trash avoid the Volatile Munitions that drop, they deal out massive fire damage around them. |goto 49.4,87.9 < 5
+confirm
 step
 kill Saboteur Kip'tilak##56906
 |tip This fight is all about the positioning of the group and the boss.
 |tip Saboteur Kip'tilak will throw munitions around the room at random. These will not explode unless touched by another player.
 |tip At 60% and 30%, he will use World in Flames. He will throw 5 munitions are the room at random and then explode them all at the same time.
 |tip He will pick a player at random and Sabotage them. After 4 seconds the bombs attached to that player will explode in all 4 directions, similarly to the other bombs.
-|confirm
+scenariogoal 1/19245
 step
 map Gate of the Setting Sun/1
 path follow strict;loop off;ants straight
 path	46.2,75.4	41.4,71.4	41.4,64.4
 path	41.5,53.5	46.3,33.3
-Click the lever once the group is on the elevator. |goto Gate of the Setting Sun/2 |noway |c
+Click the lever once the group is on the elevator. |goto Gate of the Setting Sun/2
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Striker Ga'dok##56589
 |tip Prey Time will target a random party member and deal damage to them over 5 seconds.
@@ -10787,9 +11455,9 @@ kill Striker Ga'dok##56589
 |tip At both 70% and 30% Ga'dok will use Strafing Run. This ability will cause him to light the platform on fire. You can avoid the fire by standing on the sides to the left or right of wherever the boss starts his run.
 |tip The Strafing Runs will also summon Mantid Strikers. These adds need to be picked up by the tank.
 |tip Watch where he flies during Strafing Run. Do not be on that side.
-|confirm
+scenariogoal 1/19246
 step
-click Flak Cannon |goto Gate of the Setting Sun/2 33.4,56.9
+click Flak Cannon |goto Gate of the Setting Sun/2 45.8,26.9
 |tip Click the Flak Cannon and kill all of the mantid before going back down the elevator.
 |confirm
 step
@@ -10809,13 +11477,14 @@ kill Commander Ri'mok##56636
 |tip A Mantid Saboteur will be summoned every 45 seconds. Depending on your group you may want to kill these as they spawn. Normally the tank should hold onto these adds until the boss is dead.
 |tip Frenzied Assault will deal massive damage in a cone in front of the boss. Do not stand in front of him while he uses this.
 |tip Viscous Fluid is a green slime pool that Ri'mok will throw on the ground. Players lose 10% damage dealt per second in this green slime while the boss gets 10% damage per second.
-|confirm
+scenariogoal 1/19247
 step
-Start here |goto 46.1,43.5 |n
-Jump down into the broken building and follow the path down. |goto 49.3,45.1 <5 |noway |c
+Start here |goto 46.1,43.5
+Jump down into the broken building and follow the path down. |goto 49.3,45.1 < 5
+confirm
 step
-Exit the building and prepare to fight Raidgonn. |goto 52.7,50.6 <5 |c
-|confirm
+Exit the building and prepare to fight Raidgonn. |goto 52.7,50.6 < 5
+confirm
 step
 kill Raigonn##56877 |only if not havequest(31364)
 kill Raigonn##56877 |q 31364/1 |only if havequest(31364)
@@ -10831,7 +11500,7 @@ _Phase 2_
 |tip He will take 300% increased damage during this phase.
 |tip Stomp will deal damage to everybody near the boss. It will also increase his damage dealt by 25% every time he uses it.
 |tip Fixate will cause Raigonn to drop aggro and lock his attention onto a random party member. Their movement speed will be increased by 75% while he is fixating them.
-|confirm |only if not havequest(31364)
+scenariogoal 1/34408
 |modelnpc Artillery##59819
 step
 talk Bowmistress Li##64467
@@ -10956,7 +11625,9 @@ map  Ruins of Ahn'Qiraj
 path loop off
 path	60.8,17.4	62.5,19.7	62.9,23.5
 path	58.7,27.9	56.9,31.6
-Follow the path, clearing trash as you go until you get to the first boss, Kurannaxx. |goto 56.9,31.6 <5 |c |noway
+Follow the path, clearing trash as you go until you get to the first boss, Kurannaxx. |goto 56.9,31.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kurinnaxx##15348 |goto 56.5,34.4
 _Phase 1_
@@ -11020,7 +11691,9 @@ map  Ruins of Ahn'Qiraj
 path loop off
 path	54.9,50.0	52.5,47.3	52.3,41.5
 path	45.2,34.2	36.1,33.3
-Follow the path, clearing trash as you go until you get to the next boss, Moam. |goto 36.1,33.3 <5 |c |noway
+Follow the path, clearing trash as you go until you get to the next boss, Moam. |goto 36.1,33.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Moam##15340 |goto Ruins of Ahn'Qiraj/0 30.7,37.4
 |tip Trample AoE melee attack, melee classes should be wary of this.
@@ -11035,7 +11708,9 @@ map  Ruins of Ahn'Qiraj
 path loop off
 path	31.1,41.8	33.9,45.5	34.0,50.4
 path	39.9,58.9	42.9,69.9
-Follow the path, clearing trash as you go until you get to the next boss, Ossirian The Unscarred. |goto 42.9,69.9 <5 |c |noway
+Follow the path, clearing trash as you go until you get to the next boss, Ossirian The Unscarred. |goto 42.9,69.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ossirian The Unscarred##15339 |goto 40.5,74.4
 |tip Strength of Ossirian Ossirian starts the fight with this buff, dealing massive melee damage. Ccounter this by kiting him to the crystals that spawn around the area. They greatly reduce his damage dealth and makes him vulnerable to a school of magic. Typically a specific raid member will be assigned to run around and scout out the crystal locations for the rest of the raid.
@@ -11048,7 +11723,9 @@ step
 map  Ruins of Ahn'Qiraj
 path loop off
 path	50.1,74.1	55.1,81.3
-Follow the path, clearing trash as you go until you get to the next boss, Ayamiss The Hunter. |goto 55.1,81.3 <5 |c |noway
+Follow the path, clearing trash as you go until you get to the next boss, Ayamiss The Hunter. |goto 55.1,81.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ayamiss The Hunter##15369 |goto 58.3,85.7
 _Phase 1_
@@ -11065,7 +11742,9 @@ map  Ruins of Ahn'Qiraj
 path loop off
 path	59.1,80.3	63.9,80.9	67.8,74.6
 path	69.6,68.9
-Follow the path, killing trash until you get to the last boss, Buru the Gorger. |goto 69.6,68.9 <5 |c |noway
+Follow the path, killing trash until you get to the last boss, Buru the Gorger. |goto 69.6,68.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Buru the Gorger##15370 |goto 70.6,63.7
 |tip Eggs deal 100-500 damage to players based on their proximity to the egg. They deal 45000 damage to Buru and is the only way to damage him.
@@ -11230,7 +11909,9 @@ step
 map Ahn'Qiraj/2
 path loop off
 path	41.8,19.8	39.1,26.2
-Follow the path, clearing trash as you go until you get to the first boss, The Prophet Skeram. |goto 39.1,26.2 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the first boss, The Prophet Skeram. |goto 39.1,26.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Prophet Skeram##15263 |goto 43.5,41.3
 |tip True Fulfillment mind controls a target, giving them increased damage, higher resistances, increased movement speed, and instant-cast spells. The target grows in size, and can be sheeped, feared, stunned, or put to sleep.
@@ -11375,7 +12056,9 @@ path loop off
 path	Ahn'Qiraj/2 49.5,65.5	Ahn'Qiraj/3 46.1,24.3	Ahn'Qiraj/3 42.9,30.2
 path	Ahn'Qiraj/3 47.8,67.9	Ahn'Qiraj/1 33.3,51.3	Ahn'Qiraj/1 35.0,49.5
 path	Ahn'Qiraj/1 31.8,49.7	Ahn'Qiraj/1 29.5,49.4
-Follow the path, clearing trash as you go until you get to the next boss, the Bug Trio. |goto 29.5,49.4 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the next boss, the Bug Trio. |goto 29.5,49.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Bug Trio_ |goto 27.9,49.6
 kill Lord Kri##15511
@@ -11397,7 +12080,9 @@ path follow loose;loop off;ants straight
 path	30.5,50.3	35.0,49.7	33.1,46.8
 path	31.8,41.2	34.3,40.6	37.9,38.9
 path	40.9,36.7
-Follow the path, clearing trash as you go until you get to the next boss, Battleguard Sartura. |goto 40.9,36.7 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the next boss, Battleguard Sartura. |goto 40.9,36.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Battleguard Sartura##15516 |goto 43.1,35.2
 |tip Whirlwind makes Sartura immune to stun. While using this spell, she has increased movement speed and deals AoE damage. Avoid her and her guards when they are using this.
@@ -11411,7 +12096,9 @@ map Ahn'Qiraj/1
 path follow loose;loop off;ants straight
 path	44.6,29.2	47.4,18.5	56.2,14.6
 path	60.1,19.3
-Follow the path, clearing trash as you go until you get to the next boss, Fankriss the Unyielding. |goto 60.1,19.3 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the next boss, Fankriss the Unyielding. |goto 60.1,19.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Fankriss the Unyielding##15510 |goto 61.6,22.8
 |tip Mortal Wounds is a stackable debuff on the main tank that reduces healing by 10%. This is a cleave, so make sure that the main tank is the only one that is in front of the boss when this occurs.
@@ -11430,7 +12117,9 @@ map Ahn'Qiraj/1
 path follow loose;loop off;ants straight
 path	65.1,22.3	66.1,19.4	66.3,17.6
 path	68.8,18.2
-Follow the path up the brown pipe until you get to the next boss, Viscidus. |goto 68.8,18.2 <5 |noway |c
+Follow the path up the brown pipe until you get to the next boss, Viscidus. |goto 68.8,18.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Viscidus##15299 |goto 70.7,18.4
 |tip Poison Shock is a 15 yard AoE that deals 1200 Nature damage every 10 seconds.
@@ -11452,7 +12141,9 @@ map Ahn'Qiraj/1
 path follow loose;loop off;ants straight
 path	60.8,27.5	56.3,34.1	55.7,43.5
 path	54.2,49.9	50.4,51.8	47.3,50.9
-Follow the path, clearing trash as you go until you get to the next boss, Princess Huhuran. |goto 47.3,50.9 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the next boss, Princess Huhuran. |goto 47.3,50.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Princess Huhuran##15509 |goto 44.3,47.3
 |tip Frenzy Huhuran's damage is greatly increased while she is in this form. A Hunter can remove it with Tranquilizing Shot.
@@ -11467,7 +12158,9 @@ step
 map Ahn'Qiraj/1
 path follow loose;loop off;ants straight
 path	44.6,54.6	47.4,61.5	56.1,68.3
-Follow the path, clearing trash as you go until you get to the next boss, the Twin Emperors. |goto 56.1,68.3 <5 |noway |c
+Follow the path, clearing trash as you go until you get to the next boss, the Twin Emperors. |goto 56.1,68.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _The Twin Emperors_ |goto 57.7,70.7
 |tip Both share the following abilities:
@@ -11501,7 +12194,9 @@ path follow loose;loop off;ants straight
 path	57.1,73.3	53.9,77.2	50.0,80.8
 path	45.6,82.3	42.2,80.2	37.9,75.6
 path	33.8,76.1
-Follow the path, clearing trash as you go until you get to Ouro. |goto 33.8,76.1 <5 |noway |c
+Follow the path, clearing trash as you go until you get to Ouro. |goto 33.8,76.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ouro##15517 |goto 30.6,79.3
 |tip Sweep deals 1000-2500 Physical damage to his target, alonog with an AoE knockback. This usually drops the current tank's aggro and Ouro will need to be picked up by another tank.
@@ -11519,7 +12214,9 @@ path follow loose;loop off;ants straight
 path	57.1,73.3	53.9,77.2	50.0,80.8
 path	45.6,82.3	42.2,80.2	37.9,75.6
 path	37.6,70.3
-Follow the path, clearing trash as you go |goto 37.6,70.3 <5 |noway |next "finalstart" |c
+Follow the path, clearing trash as you go |goto 37.6,70.3 <5 |next "finalstart"
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label "finalstart"
 map Ahn'Qiraj
@@ -11527,7 +12224,9 @@ path follow loose;loop off;ants straight
 path	Ahn'Qiraj/1 37.9,67.8	Ahn'Qiraj/1 32.1,56.1	Ahn'Qiraj/1 35.5,50.0
 path	Ahn'Qiraj/1 34.0,45.2	Ahn'Qiraj/3 67.9,53.3	Ahn'Qiraj/3 71.4,75.8
 path	Ahn'Qiraj/3 62.2,85.1
-Follow the path through the final area as you make your way to the last boss, C'Thun. |goto Ahn'Qiraj/3 62.4,86.0 <5 |noway |c
+Follow the path through the final area as you make your way to the last boss, C'Thun. |goto Ahn'Qiraj/3 62.4,86.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill C'Thun##15727 |goto 58.4,67.2
 _Phase 1_
@@ -11700,14 +12399,18 @@ description="This guide will walk you through the Molten Core Raid.",
 },[[
 step
 talk Lothos Riftwaker##14387 |goto Burning Steppes/16 54.3,83.4
-Tell him "Transport me to the Molten Core." |goto Molten Core/1 27.9,26.5 <5 |noway |c
+Tell him "Transport me to the Molten Core." |goto Molten Core/1 27.9,26.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Molten Core/1
 path follow loose;loop off;ants straight
 path	31.2,22.8	36.2,17.3	43.8,15.8
 path	47.3,20.4	49.1,29.2	53.1,30.1
 path	56.5,32.4	62.5,40.2
-Follow the path, clearing trash as you make your way to the first boss, Lucifron. |goto 62.5,40.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Lucifron. |goto 62.5,40.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Lucifron##12118 |goto 66.3,35.6
 |tip Impending Doom inflicts 2000 Shadow damage to nearby raid members after 10 seconds.
@@ -11733,7 +12436,9 @@ path loop off
 path	62.5,40.1	59.7,35.9	55.0,31.9
 path	50.4,32.9	44.6,30.7	40.9,38.6
 path	36.8,51.1
-Follow the path, clearing trash as you make your way to the next boss, Gehennas. |goto 36.8,51.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Gehennas. |goto 36.8,51.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gehennas##12259 |goto 32,48
 |tip Shadow Bolt deals 2000-2500 Shadow damage to a non-tank raid member.
@@ -11747,7 +12452,9 @@ step
 map Molten Core/1
 path loop off
 path	34.1,51.8	34.0,61.3	32.6,66.2
-Follow the path, clearing trash as you make your way to the next boss, Garr. |goto 32.6,66.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Garr. |goto 32.6,66.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Garr##12057 |goto 30,70
 |tip Antimagic Pulse is an AoE dispell, removing 1 beneficial spell effect from nearby raid members.
@@ -11760,7 +12467,9 @@ step
 map Molten Core/1
 path loop off
 path	37.0,70.6	46.0,70.8
-Follow the path, clearing trash as you make your way to the next boss, Baron Geddon. |goto 46.0,70.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Baron Geddon. |goto 46.0,70.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Baron Geddon##12056 |goto 50.6,75.5
 |tip He is on a small patrol route, you may have to wait a few seconds for him to appear here.
@@ -11782,7 +12491,9 @@ map Molten Core/1
 path loop off
 path	57.6,74.1	66.1,65.8	72.6,73.5
 path	76.0,79.5
-Follow the path, clearing trash as you make your way to the next boss, Sulfuron Harbinger. |goto 76.0,79.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Sulfuron Harbinger. |goto 76.0,79.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Sulfuron Harbinger##12098 |goto 83,83.2
 |tip Demoralizing Shout reduces all nearby raid members' attack power by 300 for 30 seconds.
@@ -11798,7 +12509,9 @@ step
 map Molten Core/1
 path loop off
 path	74.9,71.5	78.6,56.8	72.9,50.1
-Follow the path, clearing trash as you make your way to the next boss, Golemagg the Incinerator. |goto 72.9,50.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Golemagg the Incinerator. |goto 72.9,50.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Golemagg the Incinerator##11988 |goto 68.7,59.4
 _Phase 1_
@@ -11818,7 +12531,9 @@ map Molten Core/1
 path loop off
 path	77.1,52.5	79.8,60.2	78.0,68.7
 path	83.2,74.2
-Follow the path, clearing trash as you make your way to the next boss, Majordomo Executus. |goto 83.2,74.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Majordomo Executus. |goto 83.2,74.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Majordomo Executus##12018 |goto 82.7,65.4
 |tip The goal of this fight is to kill all of Majordomo's guards.
@@ -11843,7 +12558,9 @@ path	78.4,58.7	74.7,71.8	70.5,66.4
 path	63.9,67.7	46.9,71.7	36.4,69.9
 path	39.1,57.1	53.2,67.1	62.1,61.1
 path	58.8,45.8	49.7,52.0	54.6,53.9
-Follow the path, clearing trash as you make your way to the final boss, Ragnaros. |goto 54.6,53.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Ragnaros. |goto 54.6,53.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Majordomo Executus##54404 |goto 54.6,53.9
 Tell him "Tell me more.", and click through the dialogue.
@@ -11894,7 +12611,9 @@ path loop off
 path	Blackwing Lair/1 41.1,28.4	Blackwing Lair/1 44.9,28.3	Blackwing Lair/2 41.6,44.0
 path	Blackwing Lair/2 25.0,61.1	Blackwing Lair/2 33.5,62.7	Blackwing Lair/2 49.3,80.3
 path	Blackwing Lair/3 53.1,67.9
-Follow the path, clearing trash and clicking Supression Devices as you make your way to the next boss, Broodlord Lashlayer |goto Blackwing Lair/3 53.1,67.9 <5 |noway |c
+Follow the path, clearing trash and clicking Supression Devices as you make your way to the next boss, Broodlord Lashlayer |goto Blackwing Lair/3 53.1,67.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Broodlord Lashlayer##12017 |goto 48,57
 |tip Blase Wave deals Fire damage to nearby enemies and reducing their movement speed for 8 seconds.
@@ -11914,7 +12633,9 @@ step
 path loop off
 path	Blackwing Lair/3 41.7,35.4	Blackwing Lair/3 32.0,39.1	Blackwing Lair/4 22.1,56.9
 path	Blackwing Lair/4 28.3,48.4
-Follow the path, clearing trash as you make your way to the next boss, Ebonroc. |goto Blackwing Lair/4 28.3,48.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Ebonroc. |goto Blackwing Lair/4 28.3,48.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ebonroc##14601 |goto 35,37
 |tip Flame Buffet inflicts 140-150 Fire damage to the target and increases the Fire damage they take by 150 for 20 seconds.
@@ -11954,7 +12675,9 @@ step
 map Blackwing Lair/4
 path loop off
 path	54.5,57.6	65.4,69.3	75.4,88.0
-Follow this path to the final boss, Nefarian. |goto 75.4,88.0 <5 |noway |c
+Follow this path to the final boss, Nefarian. |goto 75.4,88.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Lord Victor Nefarius##10162 |goto 75.4,88.0
 Click through the dialogue, ending with the final statement, "Please do."
@@ -12033,13 +12756,14 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Karazhan Raid.",
 },[[
 step
-Enter Karazhan |goto Deadwind Pass/0 46.97,74.91 < 5
-confirm
+Enter Karazhan |goto Deadwind Pass/0 46.97,74.91 < 5 |c
 step
 map Karazhan/1
 path loop off
 path	50.0,72.3	49.1,84.9	42.3,86.2
-Follow the path, clearing trash as you make your way to the first boss, Attumen the Huntsman. |goto 42.3,86.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Attumen the Huntsman. |goto 42.3,86.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Attumen the Huntsman##16152 |goto 45.5,82.6
 |tip He spawns here after Midnight reaches 95% health. They both are immune to taunts.
@@ -12053,7 +12777,9 @@ map Karazhan/1
 path loop off
 path	44.8,88.8	49.2,75.6	53.0,64.1
 path	Karazhan/3 54.5,65.9	Karazhan/3 45.2,54.5	Karazhan/3 36.8,65.4
-Follow the path, clearing trash as you make your way to the next boss, Moroes. |goto Karazhan/3 36.8,65.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Moroes. |goto Karazhan/3 36.8,65.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Moroes##15687 |goto 28.2,64.2
 |tip This boss is immune to taunts.
@@ -12067,7 +12793,9 @@ step
 path loop off
 path	Karazhan/3 46.4,55	66.6,49.8	71.2,42.8
 path	Karazhan/4 63.4,42.1	Karazhan/4 66.2,33.1	Karazhan/4 76.6,41.5
-Follow the path, clearing trash as you make your way to the next boss, the Maiden of Virtue. |goto Karazhan/4 76.6,41.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Maiden of Virtue. |goto Karazhan/4 76.6,41.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Maiden of Virtue##16457 |goto 82.5,48.5
 |tip This boss is immune to taunts.
@@ -12084,7 +12812,9 @@ path	77.1,42.1	65.9,32.5	56.2,37.1
 path	48.6,39.7	41.1,38.5	28.0,23.1
 path	24.2,24.5	19.9,40.3	11.0,41.3
 path	12.3,25.3
-Follow the path, clearing trash as you make your way to the next boss, the Opera Event. |goto 12.3,25.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Opera Event. |goto 12.3,25.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Barnes##16812 |goto 20.8,27.0
 Tell him "I'm not an actor." and "Ok, I'll give it a try."
@@ -12145,7 +12875,9 @@ path	Karazhan/7 51.0,67.9	Karazhan/8 60.5,51.9	Karazhan/8 44.2,39.9
 path	Karazhan/8 29.8,57.7	Karazhan/8 45.7,74.5	Karazhan/9 61.1,21.3
 path	Karazhan/9 59.9,17.6	Karazhan/9 56.0,14.5	Karazhan/9 45.6,14.1
 path	Karazhan/9 40.5,19.9
-Follow the path, clearing trash as you make your way to the next boss, The Curator. |goto Karazhan/9 40.5,19.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, The Curator. |goto Karazhan/9 40.5,19.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill The Curator##15691 |goto 46.8,31.9
 |tip Summon Astral Flare spawns an Astral Flare every 10 seconds (10 Flares total). The Flare spawns with threat from a non-tank raid member and immediately moves in their direction, hitting nearby raid members with Arcing Sear.
@@ -12163,7 +12895,9 @@ path	40.9,59.2	33.8,62.2	41.9,67.4
 path	44.4,79.7	40.0,83.0	32.1,68.2
 path	Karazhan/10 28.7,55.9	Karazhan/10 27.7,43.5	Karazhan/10 36.5,33.3
 path	Karazhan/10 36.8,22.3
-Follow the path, clearing trash as you make your way to the next boss, Terestian Illhoof. |goto Karazhan/10 36.8,22.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Terestian Illhoof. |goto Karazhan/10 36.8,22.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click the Perplexing Bookshelf to gain access to the secret room.
 |confirm
@@ -12181,7 +12915,9 @@ map Karazhan/10
 path loop off
 path	38.3,25.6	48.3,45.2	58.1,42.4
 path	63.6,35.8
-Follow the path, clearing trash as you make your way to the next boss, the Shade of Aran |goto 63.6,35.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Shade of Aran |goto 63.6,35.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click the Private Library Door
 |confirm
@@ -12205,7 +12941,9 @@ path	Karazhan/10 55.2,46.8	 Karazhan/10 60.2,58.5	Karazhan/12 48.4,57.2
 path	54.6,49.6	52.8,70.9	44.5,80.8
 path	36.3,78.0	25.3,60.7	Karazhan/13 53.8,78.1
 path	Karazhan/13 44.1,57.1
-Follow the path, clearing trash as you make your way to the next boss, Netherspite |goto Karazhan/13 44.1,57.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Netherspite |goto Karazhan/13 44.1,57.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Netherspite##15689 |goto 36.6,43.6
 |tip Nether Burn deals 1200 Shadow damage every 5 seconds. Only active during Portal Phase.
@@ -12231,7 +12969,9 @@ path loop off
 path	Karazhan/13 49.5,67.2	Karazhan/13 56.4,83.0	27.1,61.5
 path	27.0,57.6	21.3,47.6	23.8,41.6
 path	30.1,33.9	34.4,26.7	39.9,18.6
-Follow the path, clearing trash as you make your way to the next boss, the Chess event. |goto 39.9,18.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Chess event. |goto 39.9,18.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click the Gamesman's Hall Door to enter the Gamesman's Hall
 |confirm
@@ -12275,12 +13015,16 @@ map Karazhan/14
 path loop off
 path	52.0,61.6	56.0,56.8	50.1,46.2
 path	50.1,46.2	68.3,46.2	77.2,58.0
-Follow the path, clearing trash as you go. Climb these stairs all the way to the top. |goto Karazhan/17 48.2,85.7 <5 |noway |c
+Follow the path, clearing trash as you go. Climb these stairs all the way to the top. |goto Karazhan/17 48.2,85.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Karazhan/17
 path loop off
 path	40.9,81.6	39.7,72.3	44.7,64.1
-Follow this path to the final boss, Prince Malchezaar. |goto 44.7,64.1 <5 |noway |c
+Follow this path to the final boss, Prince Malchezaar. |goto 44.7,64.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Prince Malchezaar##15690 |goto 53.9,42.0
 |tip Phase 1 starts immediately after Malchezaar is engaged in combat.
@@ -12312,7 +13056,9 @@ path	Karazhan/10 28.4,43.9	Karazhan/10 29.1,56.4	Karazhan/9 40.1,83.0
 path	Karazhan/9 43.5,66.7	Karazhan/9 49.6,58.9	Karazhan/9 48.5,47.7
 path	Karazhan/9 51.3,40.3	Karazhan/9 42.6,19.1	Karazhan/9 49.1,14.7
 path	Karazhan/9 54.3,14.8
-Follow the long path back to Nightbane. |goto Karazhan/9 54.3,14.8 <5 |noway |c
+Follow the long path back to Nightbane. |goto Karazhan/9 54.3,14.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Jump off here |goto Karazhan/9 60.6,20.0 <5 |c
 step
@@ -12322,7 +13068,9 @@ map Karazhan/6
 path loop off
 path	59.8,64.6	61.8,70.6	55.8,73.3
 path	52.4,71.6	46.8,77.0	43.0,83.5
-Follow the path to Nightbane. |goto Karazhan/6 43.0,83.5 <5 |noway |c
+Follow the path to Nightbane. |goto Karazhan/6 43.0,83.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click the Urn to summon Nightbane. This will start the boss fight, make sure you are ready. |goto Karazhan/6 43.0,83.6
 |confirm
@@ -12363,7 +13111,9 @@ path	25.1,59.8	17.6,55.5	16.9,45.7
 path	23.6,39.7	31.5,33.8	40.0,35.3
 path	40.5,65.3	21.3,66.5	15.6,66.0
 path	12.2,54.0	21.3,50.8
-Follow the path, clearing trash as you make your way to the first boss, Kalecgos. |goto 21.3,50.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Kalecgos. |goto 21.3,50.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 label "dragon"
 kill Kalecgos##24850 |goto 29,50
@@ -12411,7 +13161,9 @@ map Sunwell Plateau/1
 path loop off
 path	50.4,51.5	51.9,60.3	59.5,71.1
 path	62.4,73.7
-Follow the path, clearing trash as you make your way to the next boss, Brutallus. |goto 62.4,73.7 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Brutallus. |goto 62.4,73.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Brutallus##24882 |goto 65,84
 |tip Meteor Slash deals 20,000 Fire damage split between enemy targets in a cone in front of Brutallus. Also increases Fire damage taken by 75%. Stacks up to 100 and lasts 40 seconds.
@@ -12436,7 +13188,9 @@ path loop off
 path	76.8,69.8	69.4,74.6	76.6,57.9
 path	67.5,68.2	73.5,54.8	74.9,50.2
 path	78.1,38.0	68.6,35.0
-Follow the path, clearing trash as you make your way to the next boss, the Eredar Twins. |goto 68.6,35.0 < 5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Eredar Twins. |goto 68.6,35.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Eredar Twins |goto 64,32
 kill Lady Sacrolash##25165
@@ -12459,7 +13213,9 @@ map Sunwell Plateau/1
 path loop off
 path	58.3,29.5	66.9,22.6	71.6,27.2
 path	79.9,20.8	72.8,16.8	67.3,26.7
-Follow the path, clearing trash as you make your way to the next boss, M'uru. |goto 67.3,26.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, M'uru. |goto 67.3,26.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill M'uru##25741 |goto Sunwell Plateau/2 46,24
 |tip Negative Energy hits 4-5 random raid members, dealing 1000 Shadow damage. This lasts the entire fight.
@@ -12479,7 +13235,9 @@ map Sunwell Plateau/2
 path loop off
 path	32.4,41.5	27.9,60.9	36.7,83.6
 path	48.2,87.0	60.3,66.5
-Follow the path, clearing trash as you make your way to the last boss, Kil'jaeden. |goto 60.3,66.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the last boss, Kil'jaeden. |goto 60.3,66.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Kil'jaeden_ |goto 46,61
 |tip This fight consists of 5 phases.
@@ -12600,7 +13358,8 @@ path	33.2,62.8	35.5,59.0	35.6,55.6
 path	32.2,48.3	32.6,41.4	37.6,36.4
 path	41.1,35.6
 Follow this road east to the Horde Camp.
-|confirm
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Thrall##17852 |goto 48.0,41.5
 Tell him "I am with you."
@@ -12690,7 +13449,8 @@ path	56.2,45.6	60.3,53.5	67.2,48.3
 path	73.4,44.4	75.2,46.3	74.4,50.1
 path	74.5,56.6
 Follow the road east to Nordrassil.
-|confirm
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Tyrande Whisperwind##17948 |goto 74.3,57.6
 Tell her "I would be grateful to any aid you can provide."
@@ -12749,7 +13509,9 @@ step
 map Gruul's Lair
 path loop off
 path	43.9,69.0	33.2,65.4	20.9,52.7
-Follow this short path, clearing trash as you make your way to the second and final boss, Gruul the Dragonkiller. |goto 20.9,52.7 <5 |noway |c
+Follow this short path, clearing trash as you make your way to the second and final boss, Gruul the Dragonkiller. |goto 20.9,52.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gruul the Dragonkiller## |goto 21,27
 |tip Growth is a buff that increases Gruul's damage by 15% and size by 10% every 15 seconds, stacking up to 30 times. Lasts for 5 minutes.
@@ -12777,7 +13539,9 @@ map Magtheridon's Lair
 path loop off
 path	68.4,25.6	68.6,48.0	63.6,59.3
 path	57.5,68.7	65.0,93.4
-Follow the path, clearing trash as you make your way to Magtheridon. |goto 65.0,93.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to Magtheridon. |goto 65.0,93.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Magtheridon##17257 |goto 68,78
 _Phase 1_
@@ -12816,13 +13580,17 @@ map Serpentshrine Cavern
 path loop off
 path	15.4,58.0	17.3,66.4	19.0,69.2
 path	19.7,68.0
-Follow the path to the second elevator, and then take it up. |goto 19.7,68.0 < 5 |noway |c
+Follow the path to the second elevator, and then take it up. |goto 19.7,68.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Serpentshrine Cavern
 path loop off
 path	21.4,72.9	25.8,73.7	28.1,80.1
 path	32.2,82.6
-Follow this path, clearing trash as you make your way to the first boss, Hydross the Unstable. |goto 32.2,82.6 <5 |noway |c
+Follow this path, clearing trash as you make your way to the first boss, Hydross the Unstable. |goto 32.2,82.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hydross the Unstable##21216 |goto 36.8,84.8
 |tip Summon Elementals Hydross summons 4 elementals whenever he switches between forms.
@@ -12840,7 +13608,9 @@ step
 map Serpentshrine Cavern
 path loop off
 path	35.9,75.9	36.4,69.6	35.5,64.4
-Clear the trash as you make your way to this spot. |goto 35.5,64.4 <5 |noway |c
+Clear the trash as you make your way to this spot. |goto 35.5,64.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Jump off the pipe here and swim to the large circular platform below. |goto 36.3,61.9 <5 |c
 step
@@ -12862,7 +13632,9 @@ path loop off
 path	37.1,51.7	40.6,49.5	41.0,42.7
 path	40.0,40.1	33.5,41.9	30.0,39.1
 path	30.6,29.6	36.1,25.0
-Follow the path, clearing trash as you make your way to the next boss, Leotheras the Blind. |goto 36.1,25.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Leotheras the Blind. |goto 36.1,25.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Leotheras the Blind##21215 |goto 41.3,26.2
 |tip He switches between human and demon forms, wiping aggro each time this happens.
@@ -12882,7 +13654,9 @@ map Serpentshrine Cavern
 path loop off
 path	43.1,30.7	45.3,23.3	39.5,20.6
 path	42.3,14.2	44.8,14.1
-Follow the path, clearing trash as you make your way to the next boss, Fathom-Lord Karathress. |goto 44.8,14.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Fathom-Lord Karathress. |goto 44.8,14.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Fathom-Lord Karathress##21214 |goto 48,17
 |tip Cataclysmic Bolt affects a random raid member, dealing 50% of the their maximum health as Shadow damage, knocking them down and stunning them.
@@ -12909,7 +13683,9 @@ step
 map Serpentshrine Cavern
 path loop off
 path	51.4,14.3	58.1,11.4	59.4,19.1
-Follow the path, clearing trash as you make your way to the next boss, Morogrim Tidewalker. |goto 59.4,19.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Morogrim Tidewalker. |goto 59.4,19.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Morogrim Tidewalker##21213 |goto 59.4,25.1
 |tip Tidal Wave deals 4000-5000 Frost damage to the target and reduces their attack speed by 400% for 15 seconds.
@@ -12924,7 +13700,9 @@ path loop off
 path	59.5,32.9	52.9,41.7	47.0,41.7
 path	41.3,41.6	40.9,48.0	46.9,51.0
 path	50.5,58.3
-Follow the path, clearing trash as you make your way to the last boss, Lady Vashj. |goto 50.5,58.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the last boss, Lady Vashj. |goto 50.5,58.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click Lady Vashj's Bridge Console to bring up the bridge. |goto 50.5,58.3
 |confirm
@@ -12962,7 +13740,9 @@ map Tempest Keep
 path loop off
 path	50.0,87.6	50.1,75.6	50.1,65.5
 path	50.0,62.7	47.7,64.4
-Follow the path, clearing trash as you make your way to the first boss, Al'ar. |goto 47.7,64.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Al'ar. |goto 47.7,64.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Al'ar##19514 |goto 45.4,59.2
 |tip When pulled, he flies to the spot first. Have a tank here to pick him up.
@@ -12983,7 +13763,9 @@ map Tempest Keep
 path loop off
 path	45.1,58.8	47.1,51.0	40.5,41.5
 path	31.8,44.6
-Follow the path, clearing trash as you make your way to the next boss, the Void Reaver. |goto 31.8,44.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Void Reaver. |goto 31.8,44.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Void Reaver##19516 |goto 25.4,49.6
 |tip Void Reaver is immune to taunts.
@@ -12997,7 +13779,9 @@ map Tempest Keep
 path loop off
 path	32.1,44.4	40.5,41.5	46.9,50.8
 path	53.0,51.1	59.6,41.6	68.2,44.5
-Follow the path, clearing trash as you make your way to the next boss, High Astromancer Solarian. |goto 68.2,44.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, High Astromancer Solarian. |goto 68.2,44.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill High Astromancer Solarian## |goto 73.8,49.2
 |tip Wrath of the Astromancer is a debuff placed on a random raid member. After 6 seconds they explode, dealing 5400-6600 Arcane damage to all nearby allies.
@@ -13011,7 +13795,9 @@ map Tempest Keep
 path loop off
 path	68.2,44.5	59.6,41.6	57.7,33.4
 path	53.9,27.2
-Follow the path, clearing trash as you make your way to the final boss, Kael'thas Sunstrider. |goto 53.9,27.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Kael'thas Sunstrider. |goto 53.9,27.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kael'thas Sunstrider##19622 |goto 50.0,15.0
 |tip Kael'thas and his advisors are immune to taunts.
@@ -13060,14 +13846,15 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Black Temple Raid.",
 },[[
 step
-Enter Black Temple |goto Shadowmoon Valley/0 71.03,46.36 < 5
-confirm
+Enter Black Temple |goto Shadowmoon Valley/0 71.03,46.36 < 5 |c
 step
 map Black Temple/2
 path loop off; dist 15
 path	23.0,46.7	24.8,41.1	32.7,41.4
 path	37.1,38.4	37.4,21.7
-Follow the path, clearing trash as you make your way to the first boss, High Warlord Naj'entus. |goto 37.4,21.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, High Warlord Naj'entus. |goto 37.4,21.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill High Warlord Naj'entus##22887 |goto 43.6,19.4
 |tip Needle Spine deals 2900-3900 damage and an additional 2500 Frost damage to 3 random targets.
@@ -13080,12 +13867,16 @@ map Black Temple/2
 path loop off; dist 15
 path	33.4,19.2	29.2,19.7	27.4,14.7
 path	27.5,6.6
-Follow the path, clearing trash as you make your way to the next boss, Supremus. |goto 27.5,6.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Supremus. |goto 27.5,6.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Black Temple/1
 path loop off; dist 15
 path	28.1,67.8	31.9,51.9	42.1,50.0
-Follow the path, clearing trash as you make your way to the next boss, Supremus. |goto 42.1,50.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Supremus. |goto 42.1,50.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Supremus##22898 |goto 61.1,47.6
 _Phase 1_
@@ -13101,7 +13892,9 @@ path loop off; dist 15
 path	Black Temple/1 64.0,47.6	Black Temple/3 17.2,50.6	Black Temple/3 24.9,51.2
 path	Black Temple/3 29.5,56.6	Black Temple/1 83.5,53.6	Black Temple/3 33.7,51.4
 path	Black Temple/3 39.7,59.9	Black Temple/3 40.8,67.8	Black Temple/3 40.8,79.8
-Follow the path, clearing trash as you make your way to the next boss, the Shade of Akama. |goto Black Temple/3 40.8,79.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Shade of Akama. |goto Black Temple/3 40.8,79.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Akama##23191 |goto Black Temple/3 40.9,74.5
 Tell him "I'm with you, Akama."
@@ -13125,7 +13918,9 @@ path	Black Temple/3 40.9,80.1	Black Temple/3 40.9,67.6	Black Temple/3 53.0,66.1
 path	Black Temple/3 60.3,66.3	Black Temple/3 67.9,66.6	Black Temple/3 70.1,75.9
 path	Black Temple/3 57.9,91.4	Black Temple/5 75.5,67.5	Black Temple/5 55.2,68.5
 path	Black Temple/5 34.6,56.5
-Follow the path, clearing trash as  you make your way to the next boss, Teron Gorefiend. |goto Black Temple/5 34.6,56.5 <5 |noway |c
+Follow the path, clearing trash as  you make your way to the next boss, Teron Gorefiend. |goto Black Temple/5 34.6,56.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Teron Gorefiend##22871 |goto Black Temple/5 39,19
 |tip Incinerate is cast on a random raid member, dealing 3000 Fire damage and applying a debuff which does an additional 8000 Fire damage over 3 seconds.
@@ -13144,7 +13939,9 @@ path	Black Temple/3 59.5,66.2	Black Temple/3 52.7,62.8	Black Temple/3 54.2,50.0
 path	Black Temple/3 52.8,37.8	Black Temple/3 59.6,35.1	Black Temple/3 62.6,34.7
 path	Black Temple/4 73.4,35.4	Black Temple/4 72.7,21.6	Black Temple/4 65.7,21.3
 path	Black Temple/4 53.2,30.1	Black Temple/4 53.4,39.1
-Follow the path, clearing trash as you make your way to the next boss, Gurtogg Bloodboil. |goto Black Temple/4 53.4,39.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Gurtogg Bloodboil. |goto Black Temple/4 53.4,39.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Gurtogg Bloodboil##22948 |goto 53,46
 |tip Fel Acid Breath is a 10 yard AoE, hitting in a frontal cleave and applying a DoT that deals 2750 Nature damage every 5 seconds for 20 seconds. Make sure the tank is the only one in front of him when this occrs.
@@ -13168,7 +13965,9 @@ map Black Temple/4
 path loop off; dist 15
 path	58.4,47.5	65.1,47.4	74.2,53.3
 path	73.7,69.8	73.3,84.8	70.6,85.8
-Follow the path, clearing trash as you make your way to the next boss, the Reliquary of Souls. |goto 70.6,85.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Reliquary of Souls. |goto 70.6,85.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Reliquary of Souls##22856 |goto 65,85
 _Essence of Suffering_
@@ -13194,7 +13993,9 @@ path	Black Temple/4 66.7,39.5	Black Temple/4 63.1,39.3	Black Temple/3 41.6,34.1
 path	Black Temple/3 41.6,24.7	Black Temple/3 34.3,17.1	Black Temple/3 26.2,21.3
 path	Black Temple/6 12.7,66.6	Black Temple/6 26.9,53.8	Black Temple/6 32.3,36.7
 path	Black Temple/6 56.5,37.1
-Follow the path, clearing trash as you make your way to the next boss, Mother Shahraz. |goto Black Temple/6 56.5,37.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Mother Shahraz. |goto Black Temple/6 56.5,37.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Mother Shahraz##22947 |goto 66.6,37
 |tip Saber Lash is a frontal cleave dealing 30,000 damage divided up among 3 targets. Make sure the tanks are the only ones in front of her when this occurs.
@@ -13224,7 +14025,9 @@ path loop off; dist 15
 path	Black Temple/6 67.2,45.9	Black Temple/6 67.3,55.2	Black Temple/7 69.2,14.1
 path	65.9,24.9	69.1,36.6	65.8,48.3
 path	65.8,60.1	63.1,79.0	47.0,73.9
-Follow the path, clearing trash as you make your way to the next boss, The Illidari Council. |goto 47.0,73.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, The Illidari Council. |goto 47.0,73.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _The Illidari Council_ |goto 47.3,47.9
 kill Lady Malande##22951
@@ -13262,7 +14065,9 @@ step
 path loop off; dist 15
 path	36.9,48.0	47.6,34.9	47.5,30.2
 path	Black Temple/8 67.9,20.4	Black Temple/8 71.7,38.4
-Follow Akama up to Illidan. |goto Black Temple/8 71.7,38.4 <5 |noway |c
+Follow Akama up to Illidan. |goto Black Temple/8 71.7,38.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Akama##23089 |goto Black Temple/8 72.0,38.5
 Tell him "We're ready to face Illidan."
@@ -13309,7 +14114,9 @@ label "arachnidstart"
 map Naxxramas/2
 path loop off
 path	33.2,74.6	33.1,65.1	30.7,56.7
-Follow the path, clearing trash as you make your way to the first arachnid boss, Anub'Rekhan. |goto 30.7,56.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first arachnid boss, Anub'Rekhan. |goto 30.7,56.7 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Anub'Rekhan_ |goto 30.7,43.9
 Click here for 10 man abilities |next "anub10" |confirm
@@ -13335,7 +14142,9 @@ map Naxxramas/2
 path loop off
 path	32.6,64.0	39.2,65.1	44.9,56.8
 path	50.0,50.4	52.2,40.9	49.0,36.4
-Follow the path, clearing trash as you make your way to the next boss, Grand Widow Faerlina. |goto 49.0,36.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Grand Widow Faerlina. |goto 49.0,36.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Grand Widow Faerlina_ |goto 44.5,36.0
 Click here for 10 man abilities. |next "widow10" |confirm
@@ -13362,7 +14171,9 @@ path	52.1,41.7	53.7,50.0	59.3,54.8
 path	59.5,67.2	64.3,70.6	67.7,60.6
 path	67.9,51.9	64.0,35.9	62.7,29.5
 path	64.7,25.1
-Follow the path, clearing trash as you make your way to the next boss, Maexxna. |goto 64.7,25.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Maexxna. |goto 64.7,25.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Maexxna_ |goto 69.8,16.2
 Click here for 10 man abilities. |next "maexxna10" |confirm
@@ -13399,7 +14210,9 @@ map Naxxramas/4
 path loop off
 path	33.0,22.8	35.6,28.6	33.5,37.6
 path	33.5,50.0
-Follow the path, clearing trash as you make your way to the first boss, Noth the Plaguebringer. |goto 33.5,50.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Noth the Plaguebringer. |goto 33.5,50.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Noth the Plaguebringer_ |goto 34,54
 Click here for 10 man abilities. |next "noth10" |confirm
@@ -13438,7 +14251,9 @@ label "nothcomplete"
 map Naxxramas/4
 path loop off
 path	39.3,56.8	43.6,35.7	50.0,35.6
-Follow the path, clearing trash as you make your way to the next boss, Heigan the Unclean. |goto 50.0,35.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Heigan the Unclean. |goto 50.0,35.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Heigan the Unclean_ |goto 51.1,43.2
 Click here for 10 man abilities. |next "heigan10" |confirm
@@ -13471,7 +14286,9 @@ label "heigancomplete"
 map Naxxramas/4
 path loop off
 path	53.9,45.9	58.7,28.5	71.2,28.4
-Follow the path, clearing trash as you make your way to the last plague boss, Loatheb. |goto 71.2,28.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the last plague boss, Loatheb. |goto 71.2,28.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Loatheb_ |goto 75.0,28.5
 Click here for 10 man abilities. |next "loa10" |confirm
@@ -13506,7 +14323,9 @@ map Naxxramas/3
 path loop off
 path	64.6,25.1	55.1,32.4	49.7,44.8
 path	52.8,44.1	42.7,39.3
-Follow the path, clearing trash as you make your way to the first boss, Instructor Razuvious. |goto 42.7,39.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Instructor Razuvious. |goto 42.7,39.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Instructor Razuvious_ |goto 42.7,44
 Click here for 10 man abilities. |next "raz10" |confirm
@@ -13532,7 +14351,9 @@ map Naxxramas/3
 path loop off
 path	42.5,51.6	54.2,50.1	57.1,43.6
 path	66.4,44.7
-Follow the path, clearing trash as you make your way to the next boss, Gothik the Harvester. |goto 66.4,44.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Gothik the Harvester. |goto 66.4,44.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Gothik the Harvester_ |goto 66.9,58.2
 Click here for 10 man abilities. |next "got10" |confirm
@@ -13563,7 +14384,9 @@ map Naxxramas/3
 path loop off
 path	62.4,62.3	58.5,72.3	50.2,72.4
 path	41.9,67.2	36.0,68.1
-Follow the path, clearing trash as you make your way to the last boss,the Four Horsemen. |goto 36.0,68.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the last boss,the Four Horsemen. |goto 36.0,68.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _The Four Horseman_ |goto 30,75
 Click here for 10 man abilities. |next "four10" |confirm
@@ -13621,7 +14444,9 @@ map Naxxramas/1
 path loop off
 path	68.2,77.0	63.8,70.3	56.8,66.3
 path	52.6,70.5	49.5,73.3	47.3,61.3
-Follow the path, clearing trash as you make your way to the first boss, Patchwerk. |goto 47.3,61.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Patchwerk. |goto 47.3,61.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Patchwerk_ |goto 50.9,54.6
 Click here for 10 man abilities. |next "werk10" |confirm
@@ -13645,7 +14470,9 @@ label "werkcomplete"
 map Naxxramas/1
 path loop off
 path	55.0,40.7	59.7,46.5
-Follow the path, clearing trash as you make your way to the next boss,. |goto 59.7,46.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss,. |goto 59.7,46.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Grobbulus_ |goto 63.5,52.7
 |tip He walks up and down this ramp, you may have to wait for him.
@@ -13673,7 +14500,9 @@ map Naxxramas/1
 path loop off
 path	66.9,53.0	60.9,57.5	60.0,60.8
 path	58.0,61.4	55.2,57.1	50.3,49.8
-Follow the path, clearing trash as you make your way to the next boss, Gluth. He will aggro as soon as you enter the room. |goto 50.3,49.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Gluth. He will aggro as soon as you enter the room. |goto 50.3,49.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Gluth_ |goto 48.1,46.8
 Click here for 10 man abilities. |next "gluth10" |confirm
@@ -13702,7 +14531,9 @@ label "gluthcomplete"
 map Naxxramas/1
 path loop off
 path	42.5,38.6	34.9,27.2
-Follow the path, clearing trash as you make your way to the next boss, Thaddius. |goto 34.9,27.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Thaddius. |goto 34.9,27.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Thaddius_ |goto 29,19
 Click here for 10 man abilities. |next "thaddius10" |confirm
@@ -13794,7 +14625,9 @@ label "sappcomplete"
 map Naxxramas/6
 path loop off
 path	45.0,64.0	35.7,55.0	34.2,41.0
-Follow the path to the last boss, Kel'Thuzad. |goto 34.2,41.0 <5 |noway |c
+Follow the path to the last boss, Kel'Thuzad. |goto 34.2,41.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Kel'Thuzad_ |goto 36,25
 Click here for 10 man abilities. |next "kel10" |confirm
@@ -13870,7 +14703,9 @@ step
 map Vault of Archavon/1
 path loop off
 path	46.5,55.5	39.9,55.4
-Follow the path, clearing trash as you make your way to the first boss, Koralon the Flame Watcher. |goto 39.9,55.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Koralon the Flame Watcher. |goto 39.9,55.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Koralon the Flame Watcher_ |goto 35.3,55.4
 Click here for 10 man abilities |next "kor10" |confirm
@@ -13899,7 +14734,9 @@ label "korcomplete"
 map Vault of Archavon/1
 path loop off
 path	52.0,55.4	58.7,55.5
-Follow the path, clearing trash as you make your way to the next boss, Emalon the Storm Watcher. |goto 58.7,55.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Emalon the Storm Watcher. |goto 58.7,55.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Emalon the Storm Watcher_ |goto 62,55
 Click here for 10 man abilities |next "emalon10" |confirm
@@ -13926,7 +14763,9 @@ label "emaloncomplete"
 map Vault of Archavon/1
 path loop off
 path	49.3,40.5	49.3,32.9	49.2,22.8
-Follow the path, clearing trash as you make your way to the next boss, Archavon the Stone Watcher. |goto 49.2,22.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Archavon the Stone Watcher. |goto 49.2,22.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Archavon the Stone Watcher_ |goto 49,16
 Click here for 10 man abilities |next "arch10" |confirm
@@ -13954,7 +14793,9 @@ label "archcomplete"
 map Vault of Archavon/1
 path loop off
 path	52.2,36.6	58.7,36.6
-Follow the path, clearing trash as you make your way to the last boss, Toravon the Ice Watcher. |goto 58.7,36.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the last boss, Toravon the Ice Watcher. |goto 58.7,36.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Toravon the Ice Watcher_ |goto 62,36
 Click here for 10 man abilities |next "tor10" |confirm
@@ -14061,7 +14902,9 @@ map Onyxia's Lair/1
 path follow smart; loop off; ants curved; dist 15
 path	39.7,23.8	41.3,32.9	43.9,56.8
 path	54.0,76.6	65.9,81.8	67.5,59.7
-Follow the path, killing the Onyxian Warders as you go |goto 67.5,59.7 < 8 |noway |c
+Follow the path, killing the Onyxian Warders as you go |goto 67.5,59.7 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill 1 Onyxia##10184
 modelnpc Onyxian Whelp##11262
@@ -14225,7 +15068,9 @@ step
 map Ulduar/1
 path loop off
 path	48.5,35.1	48.6,26.5	40.6,26.5
-Follow the path, clearing trash as you make your way to the next boss, Ignis the Furnace Master. |goto 40.6,26.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Ignis the Furnace Master. |goto 40.6,26.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Ignis the Furnace Master_ |goto 37.5,26.5
 Click here for 10 man abilities. |next "ignis10" |confirm
@@ -14255,7 +15100,9 @@ label "igniscomplete"
 map Ulduar/1
 path loop off
 path	49.1,26.6	51.3,26.6
-Follow the path to the next boss, Razorscale. |goto 51.3,26.6 <5 |noway |c
+Follow the path to the next boss, Razorscale. |goto 51.3,26.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Expedition Commander##33210 |goto Ulduar/1 51.3,26.6
 Tell him "We are ready to help!"
@@ -14298,7 +15145,9 @@ label "rzrcomplete"
 map Ulduar/1
 path loop off
 path	48.6,25.3	48.6,19.0	48.5,17.3
-Follow the path, clearing trash as you make your way to the next boss, XT-002 Deconstructor. |goto 48.5,17.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, XT-002 Deconstructor. |goto 48.5,17.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _XT-002 Deconstructor_ |goto 48.5,13.9
 Click here for 10 man abilities. |next "xt10" |confirm
@@ -14326,13 +15175,15 @@ _Enrage_ occurs after 10 minutes of combat. It increases his damage by 500% and 
 step
 label "xtcomplete"
 |goto 48.5,11.1 |n
-Click the Ulduar Teleporter and teleport to the Antechamber of Ulduar. |goto Ulduar/2 37.1,75.3 <10 |noway |c
+Click the Ulduar Teleporter and teleport to the Antechamber of Ulduar. |goto Ulduar/2 37.1,75.3 < 10 |noway |c
 step
 map Ulduar/2
 path loop off
 path	37.2,70.6	37.1,47.6	28.9,30.2
 path	15.3,36.7
-Follow the path, clearing trash as you make your way to the next boss, the Assembly of Iron. |goto 15.3,36.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Assembly of Iron. |goto 15.3,36.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Assembly of Iron_ |goto 15,56
 Click here for 10 man abilities. |next "iron10" |confirm
@@ -14377,7 +15228,9 @@ map Ulduar/2
 path loop off
 path	15.4,37.1	26.8,30.5	35.7,36.5
 path	36.1,25.0	37.2,21.8
-Follow the path, clearing trash as you make your way to the next boss, Kologarn. |goto 37.2,21.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Kologarn. |goto 37.2,21.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Kologarn_ |goto 37.3,14.0
 Click here for 10 man abilities. |next "kolo10" |confirm
@@ -14409,7 +15262,7 @@ _Stone Grip_ grabs a random raid member and stuns them, dealing 5300-5600 damage
 step
 label "kolocomplete"
 |goto Ulduar/2 38.6,0.1 |n
-Loot the chest and go down the stairs here. |goto Ulduar/3 53.7,77.0 <10 |noway |c
+Loot the chest and go down the stairs here. |goto Ulduar/3 53.7,77.0 < 10 |noway |c
 step
 _Auriaya_ |goto 56.7,65.5
 |tip She walks back and forth along the northern part of this balcony, you may have to wait a minute for her to come back.
@@ -14438,7 +15291,9 @@ label "aurcomplete"
 map Ulduar/3
 path loop off
 path	51.0,55.9	51.3,43.2	52.1,33.4
-Follow the path, clearing trash on your way to the next boss, Freya. |goto 52.1,33.4 <5 |noway |c
+Follow the path, clearing trash on your way to the next boss, Freya. |goto 52.1,33.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 The next boss fight has 10 and 25 man versions. The abilities used and strategies are very similar, the differences being the mobs' increased health and damage in 25 man.
 |confirm
@@ -14487,7 +15342,9 @@ map Ulduar/3
 path loop off
 path	51.1,51.3	52.2,57.7	56.3,56.9
 path	60.6,49.3	65.8,48.6
-Follow the path, clearing trash as you make your way to the next boss, Thorim. |goto 65.8,48.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Thorim. |goto 65.8,48.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Thorim_ |goto 67.6,48.7
 Click here for 10 man abilities. |next "thor10" |confirm
@@ -14529,7 +15386,9 @@ path loop off
 path	56.4,56.8	56.5,64.4	57.8,72.4
 path	64.3,77.6	72.8,79.1	75.9,74.7
 path	73.6,64.4	71.8,63.9
-Follow the path, clearing trash as you make your way to the next boss, Hodir. |goto 71.8,63.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Hodir. |goto 71.8,63.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Hodir_ |goto 66.0,63.7
 Click here for 10 man abilities. |next "hodir10" |confirm
@@ -14559,10 +15418,12 @@ label "hodircomplete"
 map Ulduar/3
 path loop off
 path	59.5,64.1	56.2,62.4	51.0,54.5
-Follow the path to the Ulduar Teleporter |goto 51.0,54.5 <5 |noway |c
+Follow the path to the Ulduar Teleporter |goto 51.0,54.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 |goto 51.0,54.5 |n
-Click the Ulduar Teleporter and teleport to the Spark of Imagination. |goto Ulduar/5 43.6,61.9 <10 |noway |c
+Click the Ulduar Teleporter and teleport to the Spark of Imagination. |goto Ulduar/5 43.6,61.9 < 10 |noway |c
 step
 _Mimiron_ |goto Ulduar/3 43.6,41.1
 This fight consists of 4 phases, each of which Mimiron is in a different mechanical vehicle or device.
@@ -14674,13 +15535,17 @@ step
 map Ulduar/3
 path loop off
 path	43.9,72.4	38.0,74.6	30.0,74.6
-Follow the path, clearing trash as you make your way to the next boss, General Vezax. |goto 30.0,74.6 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, General Vezax. |goto 30.0,74.6 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Ulduar/4
 path loop off
 path	31.4,51.5	27.9,56.7	30.1,63.5
 path	34.9,68.4	42.8,65.5
-Follow the path as you make your way to the next boss, General Vezax. |goto 42.8,65.5 <5 |noway |c
+Follow the path as you make your way to the next boss, General Vezax. |goto 42.8,65.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _General Vezax_ |goto 52.6,57.1
 Click here for 10 man abilities. |next "vez10" |confirm
@@ -14716,7 +15581,9 @@ label "vezcomplete"
 map Ulduar/4
 path loop off
 path	62.0,60.2	68.0,56.5
-Follow the path to the final boss, Yogg-Saron. |goto 68.0,56.5 <5 |noway |c
+Follow the path to the final boss, Yogg-Saron. |goto 68.0,56.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Yogg-Saron_ |goto Ulduar/4 68,40.8
 Click here for 10 man abilities. |next "yogg10" |confirm
@@ -14833,13 +15700,15 @@ Click here to skip Algalon! |next "raidcomplete" |confirm
 step
 label "alstart"
 |goto Ulduar/4 52.6,57.1 |n
-Click the Ulduar Teleporter and teleport to the Antechamber of Ulduar. |goto Ulduar/2 37.1,75.7 <10 |noway |c
+Click the Ulduar Teleporter and teleport to the Antechamber of Ulduar. |goto Ulduar/2 37.1,75.7 < 10 |noway |c
 step
 map Ulduar/2
 path loop off
 path	37.0,70.4	37.2,47.2	46.5,30.6
 path	58.0,36.9	59.2,43.1
-Follow the path, clearing any trash as you make your way to the bonus boss, Algalon the Observer. |goto 59.2,43.1 <5 |noway |c
+Follow the path, clearing any trash as you make your way to the bonus boss, Algalon the Observer. |goto 59.2,43.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Click the Celestial Planetarium Access panel. |goto 59.2,43.1
 This will start the fight, make sure you are ready.
@@ -15436,7 +16305,9 @@ step
 map Icecrown Citadel/1
 path loop off
 path	38.9,29.2	38.9,36.3	39.0,52.4
-Follow the path, clearing trash as you make your way to the first boss, Lord Marrowgar. |goto 39.0,52.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Lord Marrowgar. |goto 39.0,52.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Lord Marrowgar_ |goto Icecrown Citadel 38.9,59.8
 Click here for 10 man abilities. |next "marr10" |confirm
@@ -15467,7 +16338,9 @@ map Icecrown Citadel/1
 path loop off
 path	34.2,58.8	34.3,66.7	38.9,72.4
 path	39.0,80.5
-Follow the path, clearing trash as you make your way to the next boss, Lady Deathwhisper. |goto 39.0,80.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Lady Deathwhisper. |goto 39.0,80.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Lady Deathwhisper_ |goto 39.1,86.7
 Click here for 10 man abilities. |next "death10" |confirm
@@ -15518,7 +16391,9 @@ map Icecrown Citadel/2
 path loop off
 path	45.6,77.4	39.4,71.3	31.8,55.4
 path	24.1,55.3
-Follow the path towards the next boss encounter, the Gunship Battle. |goto 24.1,55.3 <5 |noway |c
+Follow the path towards the next boss encounter, the Gunship Battle. |goto 24.1,55.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Zafod Boombox##37184 |goto 22.6,60.9
 Tell him to give you a jetpack!
@@ -15596,14 +16471,16 @@ _Rune of Blood_ is a debuff used on a raid member. Saurfang's attacks leech 5100
 step
 label "saurcomplete"
 |goto Icecrown Citadel/3 51.5,16.5 |n
-Go through the doorway here to go up to the next level of Icecrown. |goto Icecrown Citadel/5 51.8,83.4 <10 |noway |c
+Go through the doorway here to go up to the next level of Icecrown. |goto Icecrown Citadel/5 51.8,83.4 < 10 |noway |c
 step
 map Icecrown Citadel/5
 path loop off
 path	51.8,80.5	47.7,76.8	51.9,71.4
 path	45.8,62.9	41.7,53.7	38.1,58.6
 path	32.7,53.7	28.8,65.4	24.5,65.4
-Follow the path, clearing trash as you make your way to the next boss, Festergut. |goto 24.5,65.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Festergut. |goto 24.5,65.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Festergut_ |goto 19.8,65.4
 Click here for 10 man abilities. |next "gut10" |confirm
@@ -15638,7 +16515,9 @@ step
 map Icecrown Citadel/5
 path loop off
 path	29.6,54.1	29.2,42.3	24.7,42.1
-Follow the path, clearing trash as you make your way to the next boss, Rotface. |goto 24.7,42.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Rotface. |goto 24.7,42.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Rotface_ |goto 19.8,41.9
 Click here for 10 man abilities. |next "rot10" |confirm
@@ -15682,7 +16561,9 @@ step
 map Icecrown Citadel/5
 path loop off
 path	24.4,53.4	18.4,53.7	17.3,53.7
-Kill the Flesh-eating Insects in this hallway until the door opens to the next boss, Professor Putricide. |goto 17.3,53.7 <5 |noway |c
+Kill the Flesh-eating Insects in this hallway until the door opens to the next boss, Professor Putricide. |goto 17.3,53.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Professor Putricide_ |goto 13.3,53.7
 Click here for 10 man abilities. |next "prof10" |confirm
@@ -15713,7 +16594,9 @@ map Icecrown Citadel/5
 path loop off
 path	32.5,53.7	37.5,58.6	41.7,53.8
 path	51.9,38.5	51.8,20.0
-Follow the path, clearing trash as you make your way to the next boss, the Blood Prince Council. |goto 51.8,20.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Blood Prince Council. |goto 51.8,20.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Blood Prince Council_ |goto 51.8,14.5
 Click here for 10 man abilities. |next "council10" |confirm
@@ -15762,7 +16645,9 @@ map Icecrown Citadel/6
 path loop off
 path	Icecrown Citadel/5 46.7,14.1	Icecrown Citadel/5 42.7,17.0	Icecrown Citadel/6 30.7,59.8
 path	51.1,73.6	51.1,59.8
-Follow the path, clearing trash as you make your way to the next boss, Blood-Queen Lana'thel. |goto 51.1,59.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Blood-Queen Lana'thel. |goto 51.1,59.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Blood-Queen Lana'thel_ |goto 51.1,43.8
 Click here for 10 man abilities. |next "lana10" |confirm
@@ -15804,13 +16689,15 @@ _Bloodbolt Whirl_ summons a maelstrom of Bloodbolts every 2 seconds for 6 second
 step
 label "lanacomplete"
 |goto 51.1,69.7 |n
-Jump down the hole here |goto Icecrown Citadel/5 51.9,33.6 <10 |noway |c
+Jump down the hole here |goto Icecrown Citadel/5 51.9,33.6 < 10 |noway |c
 step
 map Icecrown Citadel/5
 path loop off
 path	51.8,38.5	61.7,53.8	69.3,53.8
 path	74.4,53.7	76.6,58.4	76.6,62.7
-Follow the path, clearing trash as you make your way to the next boss, Valithria Dreamwalker. |goto 76.6,62.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Valithria Dreamwalker. |goto 76.6,62.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Valithria Dreamwalker_ |goto 76.6,73.7
 This fight ends after Valithria is healed back to 100% health.
@@ -15918,13 +16805,17 @@ label "sincomplete"
 map Icecrown Citadel/4
 path loop off
 path	39.4,44.1	46.9,33.4	51.7,33.3
-Follow this path to the elevator and take it up to the next level. |goto Icecrown Citadel/5 86.0,53.8 <10 |noway |c
+Follow this path to the elevator and take it up to the next level. |goto Icecrown Citadel/5 86.0,53.8 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Icecrown Citadel/5
 path loop off
 path	80.7,53.8	67.7,53.7	59.2,53.7
 path	52.0,53.7
-Follow the path to the teleporter and step through it, taking you to the final boss, the Lich King. |goto Icecrown Citadel/7 49.4,39.4 <5 |noway |c
+Follow the path to the teleporter and step through it, taking you to the final boss, the Lich King. |goto Icecrown Citadel/7 49.4,39.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 talk Highlord Tirion Fordring##38995 |goto 49.8,50.4
 Tell him "We are prepared, Highlord..."
@@ -16010,7 +16901,9 @@ step
 map Baradin Hold/1
 path loop off
 path	48.0,72.5	54.6,62.9	70.8,62.9
-Follow the path, clearing trash as you make your way to the first boss, Argaloth. |goto 70.8,62.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Argaloth. |goto 70.8,62.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Argaloth_ |goto 80.4,63.4
 _Meteor Slash_ deals 200,000 Fire damage, split between players within 65 yards in front of Argaloth, also increasing their fire damage taken by 100%.
@@ -16050,7 +16943,9 @@ step
 map Blackwing Descent/1
 path loop off
 path	42.6,59.9	36.1,59.7	31.5,56.9
-Follow the path, clearing trash as you make your way to the first boss, Magmaw. |goto 31.5,56.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Magmaw. |goto 31.5,56.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Magmaw_ |goto Blackwing Descent/1 27.5,53.1
 _Mangle_ deals 110,000-128,400 damage every 5 seconds. Usually used on tanks.
@@ -16069,7 +16964,9 @@ step
 map Blackwing Descent/1
 path loop off
 path	51.2,59.9	58.3,59.7	61.0,57.3
-Follow the path, clearing trash as you make your way to the next boss, the Omnotron Defense System. |goto 61.0,57.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Omnotron Defense System. |goto 61.0,57.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Omnotron Defense System_ |goto Blackwing Descent/1 65.4,57.4
 _Arcanotron_
@@ -16100,7 +16997,9 @@ path loop off
 path	58.8,54.7	47.1,53.3
 map Blackwing Descent/2
 path	47.4,88.1	57.6,69.5	65.5,69.7
-Follow the path, clearing trash as you make your way to the next boss, Maloriak. |goto Blackwing Descent/2 65.5,69.7 <10 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Maloriak. |goto Blackwing Descent/2 65.5,69.7 < 10
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Maloriak_ |goto Blackwing Descent/2 71.4,70.2
 _All Phases_
@@ -16127,7 +17026,9 @@ map Blackwing Descent/2
 path loop off
 path	65.5,69.7	57.6,69.5	47.4,53.0
 path	47.5,40.9
-Follow the path, clearing trash as you make your way to the next boss, Atramedes. |goto Blackwing Descent/2 47.5,40.9 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Atramedes. |goto Blackwing Descent/2 47.5,40.9 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Atramedes_ |goto Blackwing Descent/2 47.5,32.7
 This fight has a Sound Bar. If it gets to 100 Atramedes will aggro and kill you. Clicking one of the Ancient Dwarven Shields around the room to reset the raid's sound to 0.
@@ -16150,7 +17051,9 @@ map Blackwing Descent/2
 path loop off
 path	47.5,40.9	47.4,53.0	36.7,69.5
 path	28.8,69.7
-Follow the path, clearing trash as you make your way to the next boss, Chimaeron. |goto Blackwing Descent/2 28.8,69.7 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Chimaeron. |goto Blackwing Descent/2 28.8,69.7 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Chimaeron_ |goto Blackwing Descent/2 24.5,70.2
 _Phase 1_
@@ -16168,7 +17071,9 @@ step
 map Blackwing Descent/2
 path loop off
 path	28.8,69.7	36.7,69.5
-Follow the path, clearing trash as you make your way to the final boss, Nefarian. |goto Blackwing Descent/2 36.7,69.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Nefarian. |goto Blackwing Descent/2 36.7,69.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Nefarian_ |goto Blackwing Descent/2 48,70.2
 _Phase 1_
@@ -16220,7 +17125,9 @@ step
 map The Bastion of Twilight/1
 path loop off
 path	39.6,42.7	39.6,19.8	46.6,19.4
-Follow the path, clearing trash as you make your way to the first boss, Halfus Wyrmbreaker. |goto The Bastion of Twilight/1 46.6,19.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Halfus Wyrmbreaker. |goto The Bastion of Twilight/1 46.6,19.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Halfus Wyrmbreaker_ |goto The Bastion of Twilight/1 53.4,19.3
 _Furious Roar_ occurs after Halfus reaches 50% health. It deals 10,000 Physical damage and knocks the raid down.
@@ -16239,7 +17146,9 @@ step
 map The Bastion of Twilight/1
 path loop off
 path	53.7,29.1	53.7,48.9	53.7,68.3
-Follow the path, clearing trash as you make your way to the next boss, Valiona and Theralion. |goto The Bastion of Twilight/1 53.7,68.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Valiona and Theralion. |goto The Bastion of Twilight/1 53.7,68.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Valiona & Theralion_ |goto The Bastion of Twilight/1 53.9,78.4
 _Valiona_
@@ -16265,7 +17174,9 @@ path loop off
 path	53.6,86.7	47.1,92.8
 map The Bastion of Twilight/2
 path	42.4,18.2
-Follow the path, clearing trash as you make your way to the next boss, the Twilight Ascendant Council. |goto  The Bastion of Twilight/2 42.4,18.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, the Twilight Ascendant Council. |goto  The Bastion of Twilight/2 42.4,18.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Twilight Ascendant Council_ |goto The Bastion of Twilight/2 42.5,45.5
 _Phase 1_
@@ -16319,7 +17230,9 @@ step
 map The Bastion of Twilight/2
 path loop off
 path	43.9,75.3	56.6,75.1
-Follow the path, clearing trash as you make your way to the next boss, Cho'gall. |goto The Bastion of Twilight/2 56.6,75.1 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Cho'gall. |goto The Bastion of Twilight/2 56.6,75.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Cho'gall_ |goto The Bastion of Twilight/2 73.4,75.4
 _Phase 1_
@@ -16375,7 +17288,9 @@ map Firelands/1
 path loop off
 path	33.2,77.0	41.7,70.4	32.9,52.8
 path	33.1,29.3
-Follow the path, clearing trash as you make your way to the first boss, _Beth'tilac_. |goto Firelands/1 33.1,29.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, _Beth'tilac_. |goto Firelands/1 33.1,29.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Beth'tilac_ |goto Firelands/1 20.8,32
 _Phase 1_
@@ -16395,7 +17310,9 @@ map Firelands/1
 path loop off
 path	33.1,29.3	32.9,52.8	41.7,70.4
 path	56.7,62.5
-Follow the path, clearing trash as you make your way to the next boss, _Shannox_. |goto Firelands/1 56.7,62.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, _Shannox_. |goto Firelands/1 56.7,62.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Shannox_ |goto Firelands/1 49.2,46
 _Immolation Trap_ Fire trap similar to a Hunter's trap. Deals Fire damage to the player that walks over it and all nearby players.
@@ -16409,7 +17326,9 @@ step
 map Firelands/1
 path loop off
 path	64.7,56.6	71.6,71.0
-Follow the path, clearing trash as you make your way to the next boss, _Lord Rhyolith_. |goto Firelands/1 71.6,71.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, _Lord Rhyolith_. |goto Firelands/1 71.6,71.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Lord Rhyolith_ |goto Firelands/1 65.6,75.6
 _Concussive Stomp_ deals 32,000-38,000 Fire damage to players near Ryolith.
@@ -16424,7 +17343,9 @@ step
 map Firelands/1
 path loop off
 path	71.6,71.0	64.7,56.6	57.9,51.2
-Follow the path, clearing trash as you make your way to the next boss, _Alysrazor_. |goto Firelands/1 57.9,51.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, _Alysrazor_. |goto Firelands/1 57.9,51.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Alysrazor_ |goto Firelands/1 64,39
 _Phase 1_
@@ -16469,7 +17390,9 @@ path loop off
 path	49.3,17.2
 map Firelands/2
 path	51.0,90.0
-Follow the path, clearing trash as you make your way to the next boss, _Majordomo Staghelm_. |goto Firelands/2 51.0,90.0 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, _Majordomo Staghelm_. |goto Firelands/2 51.0,90.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Majordomo Staghelm_ |goto Firelands/2 50.9,72.4
 _Fury_ increases Staghelm's damage by 8% per stack. He gains a stack of this every time he switches between scorpion and cat forms.
@@ -16485,7 +17408,9 @@ step
 map Firelands/2
 path loop off
 path	51.0,90.0	50.6,30.2
-Follow the path, clearing trash as you make your way to the next boss, _Ragnaros_. |goto Firelands/2 50.6,30.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, _Ragnaros_. |goto Firelands/2 50.6,30.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Ragnaros_ |goto Firelands/2 50.7,15.3
 _Sulfuras Smash_ Ragnaros strikes the ground, sending out waves of lava from the impact point.
@@ -16731,7 +17656,9 @@ label "First Wing MSV"
 map Mogu'shan Vaults/1
 path loop off
 path	68.4,64.2	54.8,64.2	50.4,64.3
-Follow the path, clearing trash as you make your way to the Stone Guard. |goto 50.4,64.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the Stone Guard. |goto 50.4,64.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Stone Guard_ |goto 45.6,64.5
 _Amethyst Guardian_
@@ -16758,7 +17685,9 @@ map Mogu'shan Vaults/1
 path loop off
 path	38.0,64.4	32.8,64.3	32.1,52.1
 path	32.1,42.4
-Follow the path, clearing trash as you make your way to the first boss, Feng the Accursed. |goto 32.1,42.4 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Feng the Accursed. |goto 32.1,42.4 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Feng the Accursed_ |goto 32.1,33.2
 _Arcane Resonance_ charges random players with Arcane Resonance, which deals 30,000 Arcane damage to all other players within 6 yards, amplfying the damage by 30,000.
@@ -16774,7 +17703,9 @@ map Mogu'shan Vaults/1
 path loop off
 path	32.2,23.2	32.2,13.2	Mogu'shan Vaults/2 77.6,67.1
 path	Mogu'shan Vaults/2 77.7,47.3
-Follow the path, clearing trash as you make your way to the second boss, Gara'jal the Spiritbinder. |goto Mogu'shan Vaults/2 77.7,47.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the second boss, Gara'jal the Spiritbinder. |goto Mogu'shan Vaults/2 77.7,47.3 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Gara'jal the Spiritbinder_ |goto 77.0,35.9
 _Banishment_ banishes the target to the spirit world.
@@ -16789,12 +17720,16 @@ label "Second Wing MSV"
 map Mogu'shan Vaults/2
 path loop off
 path	45.3,34.5	33.8,29.9	33.9,43.0
-Follow the path as you make your way towards the next boss. |goto 33.9,43.0 <5 |noway |c
+Follow the path as you make your way towards the next boss. |goto 33.9,43.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Mogu'shan Vaults/2
 path loop off
 path 31.7,69.3	24.2,66.5
-Follow this path, clearing trash to the next boss, the Spirit Kings. |goto 24.2,66.5 <5 |noway |c
+Follow this path, clearing trash to the next boss, the Spirit Kings. |goto 24.2,66.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _The Spirit Kings_ |goto 18.3,52.0
 _Qiang the Merciless_
@@ -16829,7 +17764,9 @@ path	24.7,69.6	33.3,69.7	27.1,51.6
 path	Mogu'shan Vaults/3 61.0,12.4	Mogu'shan Vaults/3 62.0,21.7	Mogu'shan Vaults/3 68.7,26.8
 path	Mogu'shan Vaults/3 66.0,41.4	Mogu'shan Vaults/3 57.7,41.4	Mogu'shan Vaults/3 49.2,43.6
 path	Mogu'shan Vaults/3 44.5,51.3	Mogu'shan Vaults/3 30.0,51.3
-Follow the path, clearing trash as you make your way to the next boss, Elegon. |goto 30.0,51.3 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Elegon. |goto 30.0,51.3 <5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Elegon_ |goto Mogu'shan Vaults/3 22.7,51.7
 _Catastrophic Anomaly_ causes the Engine of Nalak'sha to explode and deal 90,200-100,000 Arcane damage to the raid.
@@ -16843,7 +17780,9 @@ step
 map Mogu'shan Vaults/3
 path loop off
 path	45.4,51.5	65.3,41.4	68.7,56.2
-Follow the path towards the final boss, the Will of the Emperor. |goto 68.7,56.2 <5 |noway |c
+Follow the path towards the final boss, the Will of the Emperor. |goto 68.7,56.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 Take these stairs down to the lower platform. |goto Mogu'shan Vaults/3 72.0,66.8 <5 |c
 step
@@ -16882,7 +17821,9 @@ map Heart of Fear/1
 path loop off
 path	34.3,76.4	41.3,61.5	50.6,61.4
 path	54.6,54.0	61.4,62.5
-Follow the path, clearing trash as you make your way to the first boss, Imperial Vizier Zor'lok. |goto 61.4,62.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the first boss, Imperial Vizier Zor'lok. |goto 61.4,62.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Imperial Vizier Zor'lok_ |goto 62.8,66.3
 _Phase 1_
@@ -16902,7 +17843,9 @@ map Heart of Fear/1
 path loop off
 path	57.8,58.2	55.4,52.4	59.9,43.8
 path	68.0,34.6	51.9,35.9	59.8,28.8
-Follow the path, clearing trash as you make your way to the next boss, Blade Lord Ta'yak. |goto 59.8,28.8 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss, Blade Lord Ta'yak. |goto 59.8,28.8 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Blade Lord Ta'yak_ |goto 59.8,22.3
 _Phase 1_
@@ -16922,7 +17865,9 @@ map Heart of Fear/1
 path loop off
 path	44.9,32.7	35.6,32.7	32.2,15.2
 path	Heart of Fear/2 66.2,20.2
-Follow the path, clearing trash as you make your way to the final boss, Garalon. |goto Heart of Fear/2 66.2,20.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Garalon. |goto Heart of Fear/2 66.2,20.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Garalon_ |goto Heart of Fear/2 66.3,16.7
 Killing Garalon's legs takes priority, as killing them slows Garalon by 15% and reduces his health by 3%. _Mend Leg_ causes a random leg to respawn.
@@ -16938,7 +17883,9 @@ label "Second_Wing_HoF"
 map Heart of Fear/2
 path loop off
 path	68.3,26.3	69.2,37.8	66.8,38.0
-Follow the path to the next boss, Wind Lord Mel'jarak. |goto 66.8,38.0 <5 |noway |c
+Follow the path to the next boss, Wind Lord Mel'jarak. |goto 66.8,38.0 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 3 different types of adds spawn throughout this fight.
 _Priests:_ heal and buff their damage.
@@ -16956,7 +17903,9 @@ path loop off
 path	66.2,40.3	66.2,47.1	66.0,52.5
 path	66.2,64.6	60.2,73.8	55.1,73.7
 path	50.7,74.0	47.6,78.9	47.4,68.5
-Follow the path, clearing trash as you make your way to the next boss,  Amber-Shaper Un'sok. |goto 47.4,68.5 <5 |noway |c
+Follow the path, clearing trash as you make your way to the next boss,  Amber-Shaper Un'sok. |goto 47.4,68.5 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Amber-Shaper Un'sok_ |goto 45.5,73.8
 _Amber Scalpel_ targets a random player with a beam that deals large damage and leaves a trail of amber that forms Living Amber adds.
@@ -16973,7 +17922,9 @@ step
 map Heart of Fear/2
 path loop off
 path	42.1,73.8	34.8,77.8	30.9,75.2
-Follow the path, clearing trash as you make your way to the final boss, Grand Empress Shek'zeer. |goto 30.9,75.2 <5 |noway |c
+Follow the path, clearing trash as you make your way to the final boss, Grand Empress Shek'zeer. |goto 30.9,75.2 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 _Grand Empress Shek'zeer_ |goto 28.9,73.9
 _Dissonance Field_ creates 2 vortexes which explode after 60 seconds, dealing 200,000 damage to the entire raid. Players standing in a vortex cannot receive healing and casting spells inside it reduces the explosion timer.
@@ -17340,6 +18291,8 @@ _Thunderstruck_ is an AoE that deals 1,000,000 damage to all players in the targ
 |modelnpc Lei Shen##68397
 |tip If you are doing this on LFR this is the end of wing 4.
 |confirm
+step
+Congratulations, you have finished the Throne of Thunder raid!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Raids\\Pandaria\\Siege of Orgrimmar",{
 author="support@zygorguides.com",

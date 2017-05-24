@@ -22026,7 +22026,7 @@ accept Ma'haat the Indomitable##42989 |goto 29.43,77.88
 stickystart "World_Quests_Shaman"
 stickystart "Return_To_The_Firelands_Shaman"
 step
-collect 10 Blood of Sargeras##124124 |c |q 42989
+collect 5 Blood of Sargeras##124124 |c |q 42989
 |tip Complete world quests and kill bosses in dungeons.
 |tip Use the "World Quests" guide to complete world quests.
 |tip Use the Dungeon guides to complete dungeons.
@@ -24180,6 +24180,7 @@ Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |wa
 talk Allari the Souleater##98648
 |tip She walks around.
 accept Deadlier Warglaives##42732 |goto 59.71,53.12
+|only DemonHunter
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.

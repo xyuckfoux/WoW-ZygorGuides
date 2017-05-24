@@ -30,7 +30,7 @@ ZGV.Vars={}
 
 --if addonName:find("DEV") then ZGV.DEV=true end
 if addonName:find("BETA") then ZGV.BETA=true end
-if addonName:find("BETA") then ZGV.DEV=true end
+--if addonName:find("BETA") then ZGV.DEV=true end
 
 -- Time to add some testing. ~~ Jeremiah
 ZGV.TestFramework = {}
@@ -194,6 +194,8 @@ function ZGV:OnInitialize()
 	
 	ZGV.db.global.gii_cache=ZGV.db.global.gii_cache or {}
 	gii_cache=ZGV.db.global.gii_cache
+
+	ZGV.db.global.sv_version = tonumber(ZGV.db.global.sv_version) or 1  + 1
 
 	self:WarnAboutDebugSettings()
 
@@ -409,14 +411,12 @@ function ZGV:OnEnable()
 
 	self:Hook_QuestChoice()
 
+	if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+
 	if WorldQuestTrackerAddon then
-		if WorldQuestTrackerAddon.db.profile.use_tracker then
-			local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
-			ZGV:Hook(WQT,"OnQuestClicked", ZGV.WQTwrapper)
-			self:AddEvent("SUPER_TRACKED_QUEST_CHANGED") -- legion popups
-		end
-	else
-		if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+		local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
+		ZGV:Hook(WQT,"OnQuestClicked", ZGV.WQTwrapper)
+		self:AddEvent("SUPER_TRACKED_QUEST_CHANGED") -- legion popups
 	end
 
 	--self.Localizers:PruneNPCs()  -- off until we start doing it by data, not by name. ~sinus 2013-04-09
@@ -994,6 +994,9 @@ end
 
 function ZGV:SetGuide(name,step,hack) --hack used for testing
 	if not name then return end
+	-- record if previous active guide had any points of interest
+	local was_poi = self.CurrentGuide and self.CurrentGuide.poi
+
 	step=step or 1
 	--self:Debug("SetGuide "..name.." ("..tostring(step)..")")
 
@@ -1059,7 +1062,8 @@ function ZGV:SetGuide(name,step,hack) --hack used for testing
 			return "BAD"
 		end
 
-		if self.CurrentGuide then self.CurrentGuide:Unload() end
+		-- unload guides, unless they have points of interest
+		if self.CurrentGuide and not self.CurrentGuide.poi then self.CurrentGuide:Unload() end
 
 		guide:Parse(true)
 
@@ -1130,6 +1134,11 @@ function ZGV:SetGuide(name,step,hack) --hack used for testing
 	--ZGV.Pointer:SetWaypointToFirst()
 	ZGV.Pointer:SetArrowToFirstCompletableGoal()
 
+	--If needed, refresh POIs to show/hide guide specific points
+	if ZGV.Poi.Ready and (was_poi or self.CurrentGuide.poi) then
+		ZGV.Poi:RegisterPoints()
+	end
+
 	ZygorGuidesViewer_ProgressBar_Update()
 end
 
@@ -1196,6 +1205,7 @@ function ZGV:ClearRecentActivities()
 		wipe(self.recentKills)
 		-- self.completedQuestTitles = {} -- let's not use this anymore, with GetQuestID available
 	end
+	self.step_share_onceflag = nil
 end
 
 function ZGV:FocusStep(num,forcefocus)
@@ -1320,6 +1330,11 @@ function ZGV:FocusStep(num,forcefocus)
 	--Hide goal image popup if it exists
 	if ZGV.GoalPopupImageFrame then
 		ZGV.GoalPopupImageFrame:Hide()
+	end
+
+	--Maybe show map preview
+	if (not GetPlayerFacing() or ZGV.db.char.fakeinstance) and ZGV.db.profile.preview_control=="step" then
+		ZGV.PointerMap:ShowPreview()
 	end
 
 	--self:AnimateGears()
@@ -1997,6 +2012,7 @@ local actionicon={
 	["next"]=14,
 	["poi_treasure"]=15,
 	["poi_rare"]=16,
+	["poi_questobjective"]=8,
 	["poiannounce"]=0,
 	["poiaccess"]=0,
 	["poicurrency"]=0,
@@ -2004,7 +2020,7 @@ local actionicon={
 }
 setmetatable(actionicon,{__index=function() return 2 end})
 
-local poi_actions = {poi_treasure=1, poi_rare=1, poiannounce=1, poiaccess=1, poicurrency=1}
+local poi_actions = {poi_treasure=1, poi_rare=1, poi_questobjective=1, poiannounce=1, poiaccess=1, poicurrency=1}
 
 local goals_temp = {}
 
@@ -2385,6 +2401,7 @@ function ZGV:UpdateFrame(full,onupdate)
 								frame.lines[line].label:SetText(indent.."|cffeeeecc".. goal.tooltip.."|r")
 								--frame.lines[line].label:SetMultilineIndent(1)
 								frame.lines[line].goal = nil
+								frame.lines[line].tipgoal = goal
 								frame.lines[line].briefhidden = true
 								frame.lines[line].special = (goal.parentStep.is_sticky and goal.parentStep~=ZGV.CurrentStep and "stickyline")
 									 or (goal.parentStep.is_poi and goal.parentStep~=ZGV.CurrentStep and "poiline")
@@ -3983,7 +4000,7 @@ function ZGV:GoalOnClick(goalframe,button)
 	self.GoalClickedTime = curTime
 	goalframe = goalframe:GetParent()
 	local stepframe = goalframe:GetParent()
-	local goal = goalframe.goal
+	local goal = goalframe.goal or goalframe.tipgoal
 
 	if not goal then return end
 
@@ -4011,7 +4028,7 @@ function ZGV:GoalOnClick(goalframe,button)
 end
 
 function ZGV:GoalOnEnter(goalframe)
-	local goal = goalframe:GetParent().goal
+	local goal = goalframe:GetParent().goal or goalframe:GetParent().tipgoal
 	if not goal then return end
 
 	local step = goal.parentStep
@@ -4316,7 +4333,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 	ZGVFMenu.goalframe=goalframe
 
 	local step = stepframe.step
-	local goal = goalframe.goal
+	local goal = goalframe.goal or goalframe.tipgoal
 
 	local menu = {
 		{
@@ -4370,26 +4387,26 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 		})
 	end
 
-	local id = goal.npcid or (goal.mobs and goal.mobs[1] and goal.mobs[1].id) or (goal.action=="kill" and goal.targetid)
 	--[[ CreatureViewer removal, 7.0
-	if id then
-		local name = self.Localizers:GetTranslatedNPC(id) or "(creature)"
-		tinsert(menu,{
-			text = L['qmenu_goal_creature_data']:format(name),
-			tooltipTitle = L['qmenu_goal_creature'],
-			tooltipTitleText = L['qmenu_goal_creature_desc']:format(name),
-			tooltipOnButton = true,
-			func = function()
-				self.db.profile.viewcreature=true
-				self.CreatureViewer:ShowCreature(id,name)
-				if self.CreatureViewer.failed then
-					self:Print("Creature is not yet available - too far.")
-				end
-			end,
-			--Try both and hopefully one works.
-			isNotRadio=true,
-		})
-	end
+		local id = goal.npcid or (goal.mobs and goal.mobs[1] and goal.mobs[1].id) or (goal.action=="kill" and goal.targetid)
+		if id then
+			local name = self.Localizers:GetTranslatedNPC(id) or "(creature)"
+			tinsert(menu,{
+				text = L['qmenu_goal_creature_data']:format(name),
+				tooltipTitle = L['qmenu_goal_creature'],
+				tooltipTitleText = L['qmenu_goal_creature_desc']:format(name),
+				tooltipOnButton = true,
+				func = function()
+					self.db.profile.viewcreature=true
+					self.CreatureViewer:ShowCreature(id,name)
+					if self.CreatureViewer.failed then
+						self:Print("Creature is not yet available - too far.")
+					end
+				end,
+				--Try both and hopefully one works.
+				isNotRadio=true,
+			})
+		end
 	--]]
 
 	if goal:IsCompleteable() then
@@ -4518,6 +4535,26 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			isNotRadio=true,
 		})
 	end
+
+	tinsert(menu,{
+		text = L['qmenu_shareto'],
+		hasArrow = true,
+		menuList = {
+			{ text = L['qmenu_shareto_party'], checked = function() return self.db.profile.share_target=="PARTY" end, func = function() self.db.profile.share_target="PARTY"  CloseDropDownForks() end },
+			{ text = L['qmenu_shareto_raid'], checked = function() return self.db.profile.share_target=="RAID" end, func = function() self.db.profile.share_target="RAID" CloseDropDownForks() end },
+			{ text = L['qmenu_shareto_say'], checked = function() return self.db.profile.share_target=="SAY" end, func = function() self.db.profile.share_target="SAY" CloseDropDownForks() end },
+		}
+	})
+
+	local rolegoals
+	for i,g in ipairs(step.goals) do  if g.grouprole then   rolegoals=true  break  end end
+	if rolegoals then
+		tinsert(menu,{
+			text = L['qmenu_share_allgrouproles'],
+			func = function() step:ShareToChat(self.db.profile.share_target or "SAY","rolegoals","brand") end,
+		})
+	end
+
 	--[[
 		{
 			text = L['opt_miniresizeup'],
@@ -4554,7 +4591,14 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			func = function() ZGV:SearchForCompleteableGoal() end
 		}
 	--]]
-	EasyFork(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)
+
+	tinsert(menu,{
+		text = L['qmenu_close'],
+		hasArrow = false,
+		func = function()  CloseDropDownForks() end,
+	})
+
+	EasyFork(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)  -- replacement for EasyMenu, just not as insecure.
 end
 
 --[[
@@ -5779,10 +5823,15 @@ function ZGV:PLAYER_LEVEL_UP(event,level)
 end
 
 function ZGV:SUPER_TRACKED_QUEST_CHANGED()
+	if not WorldQuestTrackerAddon then return end
+	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
+	if not WorldQuestTrackerAddon.IsQuestBeingTracked(GetSuperTrackedQuestID()) then return end
 	ZGV:SuggestWorldQuestGuide(nil,GetSuperTrackedQuestID(),"force")
 end
 
 function ZGV.WQTwrapper(object)
+	if not WorldQuestTrackerAddon.db.profile.use_tracker then return end
+	
 	if not WorldQuestTrackerAddon.IsQuestBeingTracked(object.questID) then
 		ZGV:SuggestWorldQuestGuide(nil,object.questID,"force")
 	end
@@ -5847,7 +5896,7 @@ local function SimpleThreadFrame_OnUpdate(frame,elapsed)
 	for thread,tparm in pairs(frame.threads) do
 		if coroutine.status(thread)~="dead" then
 			local ok,err = coroutine.resume(thread,unpack(tparm))
-			if not ok then self:Error("Timerize error: "..tostring(err)) end
+			if not ok then ZGV:Error("Timerize error: "..tostring(err)) end
 		else
 			frame.threads[thread]=nil
 			if next(frame.threads)==nil then SimpleThreadFrame:SetScript("OnUpdate",nil) end

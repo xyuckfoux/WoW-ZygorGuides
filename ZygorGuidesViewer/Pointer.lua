@@ -50,8 +50,8 @@ local zone_aliases = {
 	[720]=720,
 	[748]=720,
 	-- Zul'Gurub
-	[697]=697,
-	[793]=697,
+	--[697]=697,
+	--[793]=697,
 }
 
 
@@ -215,16 +215,16 @@ Pointer.Icons = {
 	ant_flying = { tex=ZGV.DIR.."\\Skins\\minimaparrow-ant", r=1,   g=0.8, b=0, alpha=0.8, size=30, minisize=20, rotates=false, edgetex=nil, edgesize=1 },
 
 	-- Dynamic values are handled in RefreshDynamicValues()
-	treasure    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,			coords={0,1/4,0,1/2} },
-	treasure_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,			coords={0,1/4,1/2,1} },
-	rare    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={1/4,2/4,0,1/2} },
-	rare_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={1/4,2/4,1/2,1} },
-	battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={2/4,3/4,0,1/2} },
-	battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={2/4,3/4,1/2,1} },
-	achievement    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={3/4,1,0,1/2} },
-	achievement_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={3/4,1,1/2,1} },
-	--battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={0,1/2,0,1/2} },
-	--battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1, coords={0,1/2,1/2,1} },
+	treasure    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={0,   1/8, 0,   1/2} },
+	treasure_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={0,   1/8, 1/2, 1  } },
+	rare    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={1/8, 2/8, 0,   1/2} },
+	rare_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={1/8, 2/8, 1/2, 1  } },
+	battlepet    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={2/8, 3/8, 0,   1/2} },
+	battlepet_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,				coords={2/8, 3/8, 1/2, 1  } },
+	achievement    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={3/8, 4/8, 0,   1/2} },
+	achievement_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,		coords={3/8, 4/8, 1/2, 1  } },
+	questobjective    = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={4/8, 5/8, 0,   1/2} },
+	questobjective_on = { tex=ZGV.DIR.."\\Skins\\poi_icons", alpha=1, minimap_alpha=0.5, size=20, minisize=20, rotates=false, edgetex=nil, edgesize=1,	coords={4/8, 5/8, 1/2, 1  } },
 
 	none = { tex="", alpha=0.0, size=1, minisize=1, rotates=false, edgetex=nil, edgesize=1 },
 
@@ -335,8 +335,8 @@ local phasedMaps = {
 	[770]=3,
 	[720]=4, -- Uldum
 	[748]=4,
-	[697]=5, -- Zul'Gurub
-	[793]=5,
+	--[697]=5, -- Zul'Gurub
+	--[793]=5,
 } -- TODO expand as per need
 setmetatable(phasedMaps,{__index=function(t,map) return map and type(map)=="number" and 10000+map or 0 end})
 for id,group in pairs(phasedMaps) do phasedBases[group]=phasedBases[group] or id end
@@ -1403,7 +1403,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 
 			local rotate_minimap = GetCVar("rotateMinimap")=="1"
 			if rotate_minimap then
-				angle = angle - GetPlayerFacing()
+				angle = angle - (GetPlayerFacing() or 0)
 			end
 
 			--local sin,cos = math.sin(angle)*0.71, math.cos(angle) * 0.71
@@ -1417,7 +1417,7 @@ function Pointer.frame_minimap_functions.OnUpdate(self,elapsed)
 		self.icon:Show()
 		self.arrow:Hide()
 		if self.waypoint.angle and self.waypoint.icon.rotates then
-			local facing = GetPlayerFacing()
+			local facing = GetPlayerFacing() or 0
 			local rotate_minimap = GetCVar("rotateMinimap")=="1"
 			self.icon:SetRotation(self.waypoint.angle - (rotate_minimap and facing or 0))
 		end
@@ -1929,8 +1929,14 @@ local idle_dots = {".","..","...","....","....."}
 local ARROW_FPS=1/30
 local arrow_elapse_sum=0
 function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
-	if not GetPlayerFacing() then self:Hide() return end
+	-- player in dungeon, but we are on combat lockdown
+	--if not GetPlayerFacing() then self:Hide() return end
 
+	-- our preview got closed by something unexpected, and we did not clean up.
+	if ZGV.PointerMap.PreviewVisible and not WorldMapFrame:IsVisible() then
+		ZGV.PointerMap:RestoreMapSettings()
+	end
+	
 	arrow_elapse_sum=arrow_elapse_sum+elapsed
 	if arrow_elapse_sum<ARROW_FPS then return end
 	elapsed=arrow_elapse_sum
@@ -2013,7 +2019,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	end
 
 
-	if were_in_unknown_location then
+	if were_in_unknown_location and GetPlayerFacing() then
 		dist=nil
 		if WorldMapFrame:IsVisible() then
 			errortxt = L['pointer_close_map']
@@ -2075,7 +2081,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 	if safe then ArrowFrame:Show() end
 
-	local playerangle = GetPlayerFacing()
+	local playerangle = GetPlayerFacing() or 0
 	local angle=0
 
 	local going_up
@@ -2204,6 +2210,20 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 			ArrowFrame:Hide()
 
+		elseif ZGV.db.char.fakeinstance or not GetPlayerFacing() then
+			if not ZGV.PointerMap.PreviewVisible then
+				ArrowFrame:ShowInstance()
+				if ZGV.db.profile.preview_control=="manual" and not ZGV.db.char.previewhidden then
+					ZGV.PointerMap:ShowPreview()
+				end
+			else
+				ArrowFrame:HideInstance()
+				local _,_,m,f = ZGV.HBD:GetPlayerZonePosition()
+				local cm = GetCurrentMapAreaID()
+				local cf = GetCurrentMapDungeonLevel()
+				if m~=cm then SetMapByID(m) end
+				if f~=cf then SetDungeonMapLevel(f) end
+			end
 		elseif waypoint.actionicon then
 
 			if waypoint.actionicon=="upstairs" then ArrowFrame:ShowStairs(true)
@@ -2456,6 +2476,14 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 			)
 	end
 
+	if ZGV.db.char.fakeinstance or not GetPlayerFacing() then
+		if ZGV.PointerMap.PreviewVisible then
+			errortxt=(errortxt and errortxt.."\n" or "").."Click to hide Map Preview"
+		else
+			errortxt=(errortxt and errortxt.."\n" or "").."Click to show Map Preview"
+		end
+	end
+
 	-- spew it out.
 	ArrowFrame:ShowText(
 		text,
@@ -2519,8 +2547,16 @@ function Pointer.ArrowFrame_OnClick(frame,button)
 
 	if button=="LeftButton" then
 		if not frame.dragging then -- and ZGV.db.profile.pathfinding and self.waypoint.pathfollow=="pathfind" then
-			--LibRover:UpdateNow()
-			ZGV:ShowWaypoints()
+			if ZGV.db.char.fakeinstance or not GetPlayerFacing() then
+				if not ZGV.PointerMap.PreviewVisible then
+					ZGV.PointerMap:ShowPreview()
+				else
+					ZGV.PointerMap:HidePreview("manual")
+				end
+			else
+				--LibRover:UpdateNow()
+				ZGV:ShowWaypoints()
+			end
 		end
 	elseif button=="RightButton" then
 		Pointer.ArrowFrame_ShowMenu()
@@ -2711,7 +2747,7 @@ function Pointer.ArrowFrame_ShowMenu()
 			tooltipTitle = L['pointer_arrowmenu_hide'],
 			tooltipText = L['pointer_arrowmenu_hide_desc'],
 			tooltipOnButton=1,
-			func = function() ZGV:SetOption("Arrow","arrowshow off") end,
+			func = function() ZGV:SetOption("Navi","arrowshow off") end,
 			notCheckable=1,
 		})
 	tinsert(arrowoptions,{
@@ -2720,7 +2756,7 @@ function Pointer.ArrowFrame_ShowMenu()
 			tooltipText = L['pointer_arrowmenu_freeze_desc'],
 			tooltipOnButton=1,
 			checked = function() return ZGV.db.profile.arrowfreeze end,
-			func = function()  ZGV:SetOption("Arrow","arrowfreeze "..(ZGV.db.profile.arrowfreeze and "off" or "on"))  end,
+			func = function()  ZGV:SetOption("Navi","arrowfreeze "..(ZGV.db.profile.arrowfreeze and "off" or "on"))  end,
 			notCheckable=1,
 		})
 
@@ -4239,7 +4275,7 @@ function Pointer:FindTravelPath(way)
 		ZGV:Debug("&pointer FindTravelPath to %s",waypoint_tostring(way))
 		LibRover:Abort("before QFP","quiet")
 		LibRover:QueueFindPath(0,0,0,0,way.m,way.f,way.x,way.y, PathFoundHandler,
-			{title=way.title .. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding,
+			{title=way.title .. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding or (way.goal and way.goal.waypoint_notravel),
 			waypoint_zone=way.waypoint_zone, waypoint_realzone=way.waypoint_realzone, waypoint_subzone=way.waypoint_subzone, waypoint_minizone=way.waypoint_minizone,
 			waypoint_region=way.waypoint_region, waypoint_indoors = way.waypoint_indoors
 			}

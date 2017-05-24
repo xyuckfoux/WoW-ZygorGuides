@@ -3278,8 +3278,6 @@ function ZGV:Options_RegisterDefaults()
 
 	self.db.profile.auction_autoshow_tab = true
 
-	self.db.profile.debug_display = false   -- 2017-04-22: clear the misassigned default of true
-
 	--self.db.profile.waypointaddon = "internal"
 	--self.db.profile.minicons = true
 

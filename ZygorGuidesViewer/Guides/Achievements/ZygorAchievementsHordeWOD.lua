@@ -5993,7 +5993,7 @@ condition_end="achieved(9070)",
 description="Raise an Elekk Plushie to level 25.",
 },[[
 step
-_Click here_ to obtain an Elekk Plushie |confirm |next "Zygor's Alliance Pets & Mounts Guide\\Pets\\Elekk Plushie"
+_Click here_ to obtain an Elekk Plushie |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Elekk Plushie"
 _Raise an Elekk Plushie_ to level 25 |achieve 9070
 step
 Congratulations, you have earned the _Overstuffed_ Achievement!
@@ -10039,15 +10039,15 @@ description="Collect the drake mounts.",
 },[[
 step
 _Collect the following drake mounts_ listed below:
-_Click here_ for Azure Drake |achieve 9713/5 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake"
-_Click here_ for Bronze Drake |achieve 9713/1 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake"
-_Click here_ for Black Drake |achieve 9713/4 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake"
-_Click here_ for Blazing Drake |achieve 9713/6 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake"
-_Click here_ for Blue Drake |achieve 9713/2 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake"
-_Click here_ for Onyxian Drake |achieve 9713/9 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake"
-_Click here_ for Purple Netherwing Drake |achieve 9713/7 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies"
-_Click here_ for Red Drake |achieve 9713/3 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake"
-_Click here_ for Twilight Drake |achieve 9713/8 |confirm |next "Zygor's Horde Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake"
+_Click here_ for Azure Drake |achieve 9713/5 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake"
+_Click here_ for Bronze Drake |achieve 9713/1 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Bronze Drake"
+_Click here_ for Black Drake |achieve 9713/4 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake"
+_Click here_ for Blazing Drake |achieve 9713/6 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Blazing Drake"
+_Click here_ for Blue Drake |achieve 9713/2 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Dungeon Mounts\\Blue Drake"
+_Click here_ for Onyxian Drake |achieve 9713/9 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Onyxian Drake"
+_Click here_ for Purple Netherwing Drake |achieve 9713/7 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Quests & Dailies"
+_Click here_ for Red Drake |achieve 9713/3 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Reputation Mounts\\Red Drake"
+_Click here_ for Twilight Drake |achieve 9713/8 |confirm |next "Zygor's Pets & Mounts Guide\\Mounts\\Flying Mounts\\Raid Mounts\\Twilight Drake"
 step
 .' Congratulations, you have earned the _Awake the Drakes_ Achievement!
 ]])

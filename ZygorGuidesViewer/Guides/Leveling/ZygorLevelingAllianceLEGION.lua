@@ -24285,36 +24285,10 @@ talk Allari the Souleater##98648
 |tip She walks around.
 turnin Preparations for Invasion##42669 |goto Mardum, the Shattered Abyss/2 56.46,60.39
 turnin One Battle at a Time##44694 |goto Mardum, the Shattered Abyss/2 56.46,60.39
-accept We'll Need Some Obliterum##44616 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 accept A Very Special Kind of Fuel##42733 |goto Mardum, the Shattered Abyss/2 59.71,53.12
+accept Deadlier Warglaives##42732 |goto Mardum, the Shattered Abyss/2 59.71,53.12
 |only DemonHunter
 stickystart "Sovereign_Souls_DemonHunter"
-step
-talk Camille Kleister##97429
-turnin We'll Need Some Obliterum##44616 |goto Dalaran L/10 39.64,30.80
-accept Fire!##39838 |goto 39.64,30.80
-|only DemonHunter
-step
-click Water Bucket##97430
-Extinguish #8# fires |q 39838/1 |goto 38.30,29.89
-|tip Use the water buckets to put out the wagon fire.
-|only DemonHunter
-step
-click Water Bucket##97430
-Extinguish #10# fel fires |q 39838/2 |goto 38.30,29.89
-|tip Use the water buckets to put out the fires on the wagon and buildings.
-|only DemonHunter
-step
-talk Camille Kleister##97429
-turnin Fire!##39838 |goto 39.64,30.80
-|only DemonHunter
-step
-Follow the path down |goto Mardum, the Shattered Abyss/1 68.46,66.55 < 15 |walk
-Follow the path down |goto Mardum, the Shattered Abyss/2 68.35,53.61 > 10000 |walk
-talk Allari the Souleater##98648
-|tip She walks around.
-accept Deadlier Warglaives##42732 |goto 59.71,53.12
-|only DemonHunter
 step
 collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.
@@ -30344,6 +30318,69 @@ talk Commander Chambers##120183
 turnin Begin Construction##46245 |goto 44.54,63.15
 |only Paladin
 step
+talk Commander Chambers##120183
+accept The Nether Disruptor##46774 |goto 44.54,63.16
+|only Paladin
+step
+talk Archmage Khadgar##116302
+accept Shard Times##46251 |goto 44.74,63.27
+|tip If you have the quest Altar of the Aegis, you will not be able to accept this quest.
+|only Paladin
+step
+Collect #2500# Nethershards |q 46251/1 |goto 44.74,63.27
+|tip Nethershards can be obtained by looting rares, treasures, and completing world quests.
+|only Paladin
+step
+talk Archmage Khadgar##116302
+turnin Shard Times##46251 |goto 44.74,63.27
+|only Paladin
+step
+talk Lord Illidan Stormrage##117873 |only if achieved(11846)
+accept Mark of the Sentinax##47139 |goto 44.79,63.17 |only if achieved(11846)
+|achieve 11846 |only if not achieved(11846)
+|tip You must earn the "Champions of Legionfall" achievement to progress further. |only if not achieved(11846)
+Click here to load the "7.2 Order Hall Quests" guide and accomplish this |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests" |only if not achieved(11846)
+|only Paladin
+step
+Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
+|tip It will be a large green icon on the World Map.
+Collect #100# mark of the Sentinax |q 47139/1
+|only Paladin
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.19
+|only Paladin
+step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Paladin
+step
+Complete #12# world quests on Broken Shore |q 46248/1 |goto 44.57,63.39 |or
+|tip Use our World Quest guide to accomplish this.
+To load the World Quest guide, click here |confirm |next "Zygor's Horde Dailies Guides\\Legion\\World Quests" |or
+|only Paladin
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto 44.57,63.39
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+accept Intolerable Infestation##46252 |goto 44.54,63.52
+|only Paladin
+step
+kill Infernal Brutalizer##93619, Vile Stalker##90241, Felguard Shocktrooper##101943
+Kill #100# Demons |q 46252/1 |goto Azsuna/0 42.60,44.19
+|tip Drag them near the purple orbs to kill them faster.
+|only Paladin
+step
+talk Maiev Shadowsong##116576
+turnin Intolerable Infestation##46252 |goto Broken Shore/0 44.54,63.52
+|only Paladin
+step
+More content coming soon!
+confirm
+|only Paladin
+step
 accept Armies of Legionfall##46730
 |only Priest
 step
@@ -33487,6 +33524,18 @@ Recruit a Legionfall Champion |q 47137/1
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
+|only Druid
+step
+talk Skylord Omnuron##98002
+accept Further Advancement##46786 |goto The Dreamgrove/0 52.60,51.42
+|only Druid
+step
+talk Leafbeard the Storied##97989
+Talk to Leafbeard the Storied |q 46786/1 |goto The Dreamgrove/0 33.2,29.0
+|only Druid
+step
+talk Skylord Omnuron##98002
+turnin Further Advancement##46786 |goto The Dreamgrove/0 52.60,51.42
 |only Druid
 step
 talk Archmage Khadgar##116302
@@ -38837,6 +38886,18 @@ Recruit a Legionfall Champion |q 47137/1
 step
 talk Maiev Shadowsong##116576
 turnin Champions of Legionfall##47137 |goto Broken Shore/0 44.54,63.52
+|only Warrior
+step
+talk Skyseer Ghrent##100635
+accept Further Advancement##46778 |goto Skyhold/1 59.71,13.44
+|only Warrior
+step
+talk Einar the Runecaster##107994
+Talk to Einar the Runecaster |q 46778/1 |goto Skyhold/1 46.6,29.6
+|only Warrior
+step
+talk Skyseer Ghrent##100635
+turnin Further Advancement##46778 |goto Skyhold/1 59.71,13.44
 |only Warrior
 step
 talk Archmage Khadgar##116302

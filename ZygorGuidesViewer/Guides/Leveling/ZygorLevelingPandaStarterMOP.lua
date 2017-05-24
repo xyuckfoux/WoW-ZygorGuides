@@ -774,6 +774,6 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Your guides wi
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Gear Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Professions Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Your guides will load after you choose a faction.",{},[[]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guides\\Your guides will load after you choose a faction.",{},[[]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guides\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Titles\\Your guides will load after you choose a faction.",{},[[]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Reputations Guides\\Your guides will load after you choose a faction.",{},[[]])

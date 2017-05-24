@@ -748,6 +748,15 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41562
+Follow the path |goto Azsuna/0 30.52,46.52 < 25 |only if walking
+accept Felhide##41562 |goto 29.72,57.18
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41562/1 |goto Azsuna/0 29.83,57.97
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44044
 accept Felled Experiment##44044 |goto 43.30,72.05
 |tip You will accept this quest automatically.
@@ -2929,6 +2938,14 @@ talk Archmage Kesalon##110915
 click Arcane Artifact
 |tip Stay inside the bubbles as they float to reach the Arcane Artifact under the bridge.
 Find the Item |q 43755/1 |goto 46.31,50.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41440
+accept Magnificent Leystone Deposits##41440 |goto Val'sharah/0 42.18,63.21
+|tip You will accept this quest automatically.
+step
+click Magnificent Leystone Deposit##195122
+collect 10 Magnificent Leystone Ore##141234 |q 41440/1 |goto 42.18,63.21
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41861
@@ -6534,6 +6551,14 @@ click Flourishing Fjarnskaggl##195114
 collect 10 Flourishing Fjarnskaggl##140958 |q 41299/1 |goto 46.57,67.25
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46014
+Follow the path down |goto Stormheim/0 39.25,31.94 < 25 |only if walking
+accept Gelthrog##46014 |goto Stormheim/0 39.83,28.13
+|tip You will accept this quest automatically.
+step
+kill Gelthrog##117048 |q 46014/1 |goto 39.83,28.13
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41427
 Follow the path |goto Stormheim/0 72.17,59.32 < 20 |only if walking
 Follow the path |goto 74.17,56.72 < 30 |only if walking
@@ -7282,6 +7307,15 @@ click Legion Portal
 Disable #3# Legion portals |q 46264/1 |goto 45.58,58.03
 click Observation Notes
 Burn #3# observation notes |q 46264/2 |goto 45.58,58.03
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46021
+Follow the path |goto Stormheim/0 62.65,51.77 < 25 |only if walking
+Follow the path |goto 64.10,48.41 < 20 |only if walking
+accept Thel'draz##46021 |goto Stormheim/0 66.05,43.82
+|tip You will accept this quest automatically.
+step
+kill Thel'draz##118002 |q 46021/1 |goto 66.05,43.82
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41342
@@ -8407,6 +8441,18 @@ click Containment Fields
 Free #4# Prisoners |q 42209/1 |goto 47.91,65.39
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41448
+Follow the path |goto Suramar/0 34.14,54.10 < 25 |only if walking
+Follow the path |goto 33.13,56.57 < 25 |only if walking
+Follow the path down |goto 32.46,59.13 < 25 |only if walking
+Follow the path |goto 32.08,63.67 < 25 |only if walking
+accept Heavy Felslate Deposits##41448 |goto Suramar/0 31.13,65.97
+|tip You will accept this quest automatically.
+step
+click Heavy Felslate Deposit##195122
+collect 10 Heavy Felslate##141251 |q 41448/1 |goto 31.13,65.97
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44811
 accept Help on the Way##44811 |goto Suramar/0 49.26,77.22
 |tip You will accept this quest automatically.
@@ -8436,6 +8482,14 @@ accept Huge Runescale Koi##41617 |goto 34.41,25.60
 step
 Fish from the Huge Runescale Koi School |cast Fishing##131474
 collect 10 Huge Runescale Koi##134574 |q 41617/1 |goto 34.41,25.60
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41616
+accept Huge Runescale Koi##41616 |goto Suramar/0 22.54,33.01
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Runescale Koi School |cast Fishing##131474
+collect 10 Huge Runescale Koi##134574 |q 41616/1 |goto 22.54,33.01
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44805
@@ -10557,6 +10611,22 @@ kill Felborne Trapper##118676+, Felborne Magus##120205+
 Kill #12# Felborne |q 45550/1|goto 52.66,32.84
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45549
+Cross the Bridge |goto Broken Shore/0 50.97,25.23 < 25 |only if walking
+accept Salving the Corruption##45549 |goto Broken Shore/0 52.66,32.84
+|tip You will accept this quest automatically.
+stickystart "Salving2"
+step
+click Bloodbeak Owl##120237
+click Rockfang Howler##120239
+click Bristleback Boar##120238
+Apply #6# Manaroot to injured animals |q 45549/2|goto 52.66,32.84
+step
+label "Salving2"
+kill Felborne Trapper##118676+, Felborne Magus##120205+
+Kill #8# Felborne |q 45549/1|goto 52.66,32.84
+|next "Court_Of_Farondis_WQ"
+step
 label quest-45626
 Cross the water |goto Broken Shore/0 45.60,23.28 < 25 |only if walking
 accept Set You Up the Bomb!##45626 |goto Broken Shore/0 44.33,27.35
@@ -11404,6 +11474,7 @@ Enter the cave |goto Broken Shore/0 66.72,34.60 < 15 |walk
 kill Eye of Gurgh##116166 |q 47068 |goto 64.48,30.29 |future
 |tip Avoid standing in front of Eye of Gurgh during Chaos Glare.
 |next "Court_Of_Farondis_WQ"
+step
 label rare-5293
 kill Felbringer Xar'thok##117093 |q 47133 |goto Broken Shore/0 58.88,46.08 |future
 |tip Avoid standing in areas targeted during Chaotic Felburst.

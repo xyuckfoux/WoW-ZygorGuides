@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsMountsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Arcadian War Turtle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Arcadian War Turtle",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcadian","war","turtle","quest","ground","mount"},
@@ -27,7 +27,7 @@ step
 _Congratulations!_
 You collected the _Arcadian War Turtle_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Bloodfang Widow",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Bloodfang Widow",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"bloodfang","widow","ground","mount"},
@@ -46,7 +46,7 @@ step
 _Congratulations!_
 You collected the _Bloodfang Widow_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Brawler's Burly Basilisk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brawler's Burly Basilisk",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"guild","brawler","burly","ground","mount","basilisk"},
@@ -69,7 +69,7 @@ step
 _Congratulations!_
 You collected the _Brawler's Burly Basilisk_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Brinedeep Bottom-Feeder",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brinedeep Bottom-Feeder",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brinedeep","bottom","feeder","quest","ground","mount"},
@@ -110,7 +110,7 @@ step
 _Congratulations!_
 You collected the _Brinedeep Bottom-Feeder_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Darkwater Skate",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Darkwater Skate",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"darkwater","darkmoon","faire","water","mount","skate"},
@@ -129,7 +129,7 @@ step
 _Congratulations!_
 You collected the _Darkwater Skate_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Fathom Dweller",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Fathom Dweller",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fathom","dweller","ground","mount"},
@@ -277,7 +277,7 @@ step
 _Congratulations!_
 You collected the _Fathom Dweller_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Great Northern Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Great Northern Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"great","northern","elderhorn","leatherworking","ground","mount"},
@@ -322,7 +322,7 @@ step
 _Congratulations!_
 You collected the _Great Northern Elderhorn_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Llothien Prowler",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Llothien Prowler",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"llothian","prowler","world","quest","ground","mount"},
@@ -434,7 +434,7 @@ step
 _Congratulations!_
 You collected the _Llothian Prowler_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Long-Forgotten Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Long-Forgotten Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"long","forgotten","ground","hippogryph","mount"},
@@ -1019,7 +1019,7 @@ step
 _Congratulations!_
 You collected the _Long-Forgotten Hippogryph_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Ratstallion",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ratstallion",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ratstallion","quest","ground","mount"},
@@ -1063,7 +1063,7 @@ step
 _Congratulations!_
 You collected the _Ratstallion_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Spirit of Eche'ro",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Spirit of Eche'ro",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"spirit","eche'ro","archaeology","ground","mount"},
@@ -1099,7 +1099,7 @@ step
 _Congratulations!_
 You collected the _Spirit of Eche'ro_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Steelbound Devourer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Steelbound Devourer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"steelbound","devourer","ground","mount"},
@@ -1146,7 +1146,7 @@ label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Riddler's Mind-Worm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"riddler","mind","flying","mount","worm"},
@@ -1211,7 +1211,7 @@ step
 _Congratulations!_
 You collected the _Riddler's Mind-Worm_ mount
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Highmountain Elderhorn",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Highmountain Elderhorn",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"highmountain","elderhorn","ground","mount"},
@@ -1246,7 +1246,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Highmountain Elderhorn.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Valarjar Stormwing",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Valarjar Stormwing",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"valarjar","stormwing","flying","mount"},
@@ -1281,7 +1281,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Valarjar Stormwing.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Cloudwing Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Cloudwing Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"cloudwing","hippogryph","flying","mount"},
@@ -1316,7 +1316,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Cloudwing Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"wild","dreamrunner","ground","mount"},
@@ -1351,7 +1351,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Wild Dreamrunner.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Leywoven Flying Carpet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Leywoven Flying Carpet",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leywoven","carpet","flying","mount"},
@@ -1386,7 +1386,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leywoven Flying Carpet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Reins of the Leyfeather Hippogryph",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Reins of the Leyfeather Hippogryph",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"leyfeather","hippogryph","flying","mount"},
@@ -1405,7 +1405,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Leyfeather Hippogryph.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Defiled Reins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Defiled Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"defiled","reins","flying","mount"},
@@ -1424,7 +1424,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Defiled Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Living Infernal Core",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Living Infernal Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"living","infernal","core","flying","mount"},
@@ -1446,7 +1446,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Felblaze Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Fiendish Hellfire Core",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Fiendish Hellfire Core",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"fiendish","hellfire","core","flying","mount"},
@@ -1468,7 +1468,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Hellfire Infernal.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Midnight's Eternal Reins",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Midnight's Eternal Reins",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"midnight","eternal","rein","ground","mount"},
@@ -1489,7 +1489,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Midnight's Eternal Reins.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Smoldering Ember Wyrm",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Smoldering Ember Wyrm",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"smoldering","ember","wyrm","flying","mount"},
@@ -1511,7 +1511,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Smoldering Ember Wyrm.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Arcanist's Manasaber",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Arcanist's Manasaber",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"arcanist","manasaber","flying","mount"},
@@ -1534,7 +1534,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Arcanist's Manasaber.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Yu'lei, Daughter of Jade",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Yu'lei, Daughter of Jade",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"yu'lei","daughter","jade","flying","mount"},
@@ -1557,7 +1557,7 @@ _Congratulations!_
 You are now the proud owner of a Yu'lei, Daughter of Jade.
 ]])
 ZGV.BETASTART()
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"brilliant","direbeak","ground","mount"},
@@ -1813,7 +1813,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Brilliant Direbeak.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Snowfeather Hunter",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"snowfeather","hunter","ground","mount"},
@@ -1995,10 +1995,78 @@ Next to you
 talk Snowfeather Hatchling##115784
 turnin Teamwork Lesson: Naraxas##44961
 step
-More content coming soon!
-confirm
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Hunting Lesson: Coralback Fiddler##44962
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Coralback Fiddlers using your Snowfeather Hatchling and 2 Elemental type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be Elemental type pets.
+Defeat #3# Coralback Fiddlers |q 44962/1 |goto Highmountain/0 46.73,9.77
+|tip These can be found all around this area.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Hunting Lesson: Coralback Fiddler##44962
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Teamwork Lesson: Ursoc##44967
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for the Emerald Nightmare or enter the raid your group |goto The Emerald Nightmare/1 38.0,66.6 < 100 |c |q 44967
+step
+Make sure your Snowfeather Hatchling is summoned while you kill Ursoc
+kill Ursoc##100497 |q 44967/1 |goto The Emerald Nightmare/10 48.1,30.0
+|tip Check out our Emerald Nightmare guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Teamwork Lesson: Ursoc##44967
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Snowfeather Team Rumble##44968
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Snowfeather Hatchling is summoned before starting each Pet Battle
+|tip Your Sharptalon Hatchling must be in the first battle slot.
+|tip Your other 2 pets must be Undead type pets.
+|tip Your Snowfeather Hatchling can not die.
+Defeat #3# Pet Battle world quests with your Snowfeather Hatchling |q 44968/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Snowfeather Team Rumble##44968
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Snowfeather Reunion##44969
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Return your Snowfeather to the Misty Coast |q 44969/1 |goto Highmountain/0 32.51,28.22
+step
+click Injured Snowfeather Matriarch##116139
+_"Bandage the Injured Matriarch"_ |q 44969/2 |goto Highmountain/0 32.51,28.22
+step
+click the Quest completion box
+turnin Snowfeather Reunion##44969
+collect Snowfeather Hunter##137578 |n |use Snowfeather Hunter##137578
+learnmount Snowfeather Hunter##213163
+step
+_Congratulations!_
+You are now the proud owner of a Snowfeather Hunter.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Predatory Bloodgazer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Predatory Bloodgazer",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"predatoryt","bloodgazer","ground","mount"},
@@ -2250,7 +2318,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Predatory Bloodgazer.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Viridian Sharptalon",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"viridian","sharptalon","ground","mount"},
@@ -2507,7 +2575,7 @@ step
 _Congratulations!_
 You are now the proud owner of a Viridian Sharptalon.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Ivory Hawkstrider",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ivory Hawkstrider",{
 author="support@zygorguides.com",
 startlevel=110.0,
 keywords={"ivory","hawkstrider","ground","mount"},

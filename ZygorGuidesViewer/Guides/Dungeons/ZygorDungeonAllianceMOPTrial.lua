@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Deadm
 mapid=756,
 achieveid={628},
 condition_suggested="level>=15 and level<=21",
-keywords={"Westfall, Defias"},
+keywords={"Westfall, Defias, DM"},
 description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step

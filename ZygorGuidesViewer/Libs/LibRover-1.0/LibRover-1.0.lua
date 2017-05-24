@@ -456,38 +456,26 @@ do
 			local data
 
 			deftype=deftype or "misc"
+			local ntype
 
 			local origtext = text
 
 			-- by default, nodes are "misc" and connect as "walk".
 
-			-- Extract the (A:TYPE) faction+type marker. Ugly, but there it is.
-			local text1,faction,ntype,text2 = text:match("^(.-)%((.):(.-)%)(.-)$")
-			text=text1 and text1..text2 or text
-			-- faction check
-			if faction==enemyfac then return end
-			-- type default: border
-			if ntype=="_" then ntype=nil end
-			ntype=ntype and ntype:lower()
-
-
 			-- Powerhorse: extract all {data:blablabla} tags.
 
-			local data={mode=ntype or "walk"}
+			local data={mode="walk"}
 			repeat
 				local text1,key,val,text2 = text:match("^(.-){(.-):(.-)}(.-)$")
 				if key then
+					if key=="fac" and val==enemyfac then return end  -- quick exit if faction is wrong
+					if key=="mode" then val=val and val:lower() ntype=val end  -- ZEPPELIN->zeppelin. Gets copied to node.type too!
 					local num = tonumber(val)
 					if num then val=num end
 					data[key]=val
 					text=text1..text2
 				end
 			until not key
-
-			if data.style=="portal_dungeon" then
-				ntype="portal"
-				data.mode="portal"
-			end
 
 			text=text:gsub("\\>","%%GT%%")
 
@@ -513,7 +501,7 @@ do
 			local n1 = x1 and LibRover_Node:New({m=m1,f=f1,x=x1,y=y1,id=id1,type=ntype or deftype}) or (id1=="+" and LAST_NODE) or Lib.nodes.id[id1]
 			local n2 = x2 and LibRover_Node:New({m=m2,f=f2,x=x2,y=y2,id=id2,type=ntype or deftype}) or Lib.nodes.id[id2]
 
-			LAST_NODE = n2 or n1
+			LAST_NODE = n2 or n1  -- for reference using @+
 
 			if id1 and not m1 and not n1 then return AddError("Node id @%s not found : %s",id1,origtext) end
 			if id2 and not m2 and not n2 then return AddError("Node id @%s not found : %s",id2,origtext) end
@@ -524,12 +512,12 @@ do
 			-- parse condition, if any
 			ParseDataCond(data)
 
-			if n1 and n2 and data.override then -- don't make a new connection! Just modify an existing one (if any)
+			if n1 and n2 and data.replace then -- don't make a new connection! Just modify an existing one (if any)
 				for i,nodemeta in ipairs(n1.n) do if nodemeta[1]==n2 then for k,v in pairs(data) do nodemeta[2][k]=v end end end
 				if twoway then
 					for i,nodemeta in ipairs(n2.n) do if nodemeta[1]==n1 then for k,v in pairs(data) do nodemeta[2][k]=v end end end
 				end
-				return -- that's it, this was just an override.
+				return -- that's it, this was just a replacement for an existing (automatic?) connection.
 			end
 
 			if dat1 then for k,v in pairs(dat1) do n1[k]=v end end
@@ -585,9 +573,13 @@ do
 				for k,v in pairs(data) do n1[k]=v end
 			end
 
-			if data.style=="portal_dungeon" then
-				link12.template = link12.template or "portalDungeonEnter" -- note: these are TRAVEL MODES, so they're verbs.
-				link21.template = link21.template or "portalDungeonExit"
+			if data.autotype=="portal_dungeon" then
+				n1.type="portal"
+				n2.type="portal"
+				link12.mode="portal"
+				link12.template = "portalDungeonEnter" -- note: these are TRAVEL MODES, so they're verbs.
+				link21.mode="portal"
+				link21.template = "portalDungeonExit"
 			end
 
 			-- Spells and items are silly. We add them like node attributes, but they really become link attributes eventually.
@@ -714,61 +706,28 @@ do
 			n1.btoa=atob
 		--]]
 
-		local actiontitle_funcs = {
-			['building'] = {
-				['text_a_to_b'] = "Enter building",
-				['text_b_to_a'] = "Exit building",
-			},
-			['cave'] = {
-				['text_a_to_b'] = "Enter cave",
-				['text_b_to_a'] = "Exit cave",
-			},
-			['mine'] = {
-				['text_a_to_b'] = "Enter mine",
-				['text_b_to_a'] = "Exit mine",
-			},
-			['tunnel'] = {
-				['text_a_to_b'] = "Enter tunnel",
-				['text_b_to_a'] = "Exit tunnel",
-			},
-			['longtunnel'] = {
-				['text_a_to_b'] = "Enter tunnel",
-				['text_b_to_a'] = "Go through tunnel",
-			},
-			['barrow'] = {
-				['text_a_to_b'] = "Enter barrow",
-				['text_b_to_a'] = "Exit barrow",
-			},
-			['tomb'] = {
-				['text_a_to_b'] = "Enter tomb",
-				['text_b_to_a'] = "Exit tomb",
-			},
-			['pathup'] = {
-				['text_a_to_b'] = "Go up the path",
-				['text_b_to_a'] = "Go down the path",
-			},
-			['custom'] = {
-				['a_to_b'] = function(self,fromnode,tonode) 
-					if tonode==self.border then 
-						return (self.bordermeta and self.bordermeta.atob) or ""
-					end  
-					if fromnode==self.border then 
-						return (self.bordermeta and self.bordermeta.btoa) or "" 
-					end
-				end,
-				['b_to_a'] = function(self,fromnode,tonode) 
-					if tonode==self.border then 
-						return (self.bordermeta and self.bordermeta.btoa) or "" 
-					end  
-					if fromnode==self.border then 
-						return (self.bordermeta and self.bordermeta.atob) or ""
-					end 
-				end,
-			},
-			['custom2'] = {
-				['a_to_b'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.atob1 end  if fromnode==self.border then return self.bordermeta.btoa2 end end,
-				['b_to_a'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.btoa1 end  if fromnode==self.border then return self.bordermeta.atob2 end end,
-			},
+		local actiontitle_funcs = Lib.data.connection_templates
+		actiontitle_funcs['atob'] = {
+			['a_to_b'] = function(self,fromnode,tonode)  -- shown on both nodes when going from A to B
+				if tonode==self.border then 
+					return (self.bordermeta and self.bordermeta.atob) or ""
+				end  
+				if fromnode==self.border then 
+					return (self.bordermeta and self.bordermeta.btoa) or "" 
+				end
+			end,
+			['b_to_a'] = function(self,fromnode,tonode)  -- shown on both nodes when going from B to A
+				if tonode==self.border then 
+					return (self.bordermeta and self.bordermeta.btoa) or "" 
+				end  
+				if fromnode==self.border then 
+					return (self.bordermeta and self.bordermeta.atob) or ""
+				end 
+			end,
+		}
+		actiontitle_funcs['atob12'] = { -- don't touch: magic.
+			['a_to_b'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.atob1 end  if fromnode==self.border then return self.bordermeta.btoa2 end end,
+			['b_to_a'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.btoa1 end  if fromnode==self.border then return self.bordermeta.atob2 end end,
 		}
 
 		local function SmartAddNode(data,deftype,dontlink)
@@ -794,20 +753,21 @@ do
 			if n1 and n2 and n1.bordermeta then
 				local template = actiontitle_funcs[n1.bordermeta.template]
 				if template then
-					if template.text_a_to_b then
-						n1.actiontitle=actiontitle_funcs['custom'].a_to_b
-						n2.actiontitle=actiontitle_funcs['custom'].b_to_a
-						n1.actiontitle_func_name=n1.bordermeta.template
-						n2.actiontitle_func_name=n1.bordermeta.template
+					if template.text_a_to_b then  -- simple text pair: use the "custom" function.
+						n1.actiontitle=actiontitle_funcs['atob'].a_to_b
+						n2.actiontitle=actiontitle_funcs['atob'].b_to_a
+						-- set parameters for the 'custom' function
 						n1.bordermeta.atob = template.text_a_to_b
 						n1.bordermeta.btoa = template.text_b_to_a
 						n2.bordermeta.atob = template.text_a_to_b
 						n2.bordermeta.btoa = template.text_b_to_a
+						n1.actiontitle_template_name=n1.bordermeta.template -- for debugging
+						n2.actiontitle_template_name=n1.bordermeta.template -- for debugging
 					elseif template.a_to_b and template.b_to_a then
 						n1.actiontitle=actiontitle_funcs[n1.bordermeta.template].a_to_b
-						n1.actiontitle_func_name=n1.bordermeta.template.."/a_to_b"
 						n2.actiontitle=actiontitle_funcs[n1.bordermeta.template].b_to_a
-						n2.actiontitle_func_name=n1.bordermeta.template.."/b_to_a"
+						n1.actiontitle_template_name=n1.bordermeta.template.."/a_to_b" -- for debugging
+						n2.actiontitle_template_name=n1.bordermeta.template.."/b_to_a" -- for debugging
 					end
 					n1.bordermeta.template=nil
 					if n2.bordermeta then n2.bordermeta.template=nil end
@@ -1660,12 +1620,12 @@ do
 						end
 						--ax,ay,am,af = HBD:GetPlayerZonePosition(true)
 						if valid_spell then current:AddNeigh(node,meta) end
-						if node.spell==50977 then node.template="deathgate" end
+						if node.spell==50977 then node.subtype="deathgate" end
 						if node.spell==3561 then meta.cost = MAGE_TELEPORT_COST_STORMWIND end  -- Stormwind Mage Tower is a bitch to get out of.
 					elseif Lib.cfg.use_last_resort then
 						if node.faction and (node.faction=="B" or node.faction~=enemyfac) then
 							current:AddNeigh(node,{mode="courtesy",cost=20000}) --Crazy cost to not use it unless this is only way to get to this continent.
-							node.template="courtesymage"
+							node.subtype="courtesymage"
 						end
 					end
 				end
@@ -2086,7 +2046,7 @@ do
 					for i,node in ipairs(Lib.nodes.temp) do
 						if node.warlocksummon then
 							self.startnode:AddNeigh(node,{mode="courtesy",cost=30000}) --Don't use this unless there is no other possible path.
-							node.template="courtesywarlock"
+							node.subtype="courtesywarlock"
 						end
 					end
 				end
@@ -2409,7 +2369,7 @@ do
 						for i,node in ipairs(Lib.nodes.temp) do
 							if node.warlocksummon then
 								tinsert(neighs,{node,{mode="courtesy",cost=30000}}) --Don't use this unless there is not other possible path.
-								node.template="courtesywarlock"
+								node.subtype="courtesywarlock"
 							end
 						end
 					end
@@ -2944,80 +2904,11 @@ do
 			--self.force_next=nil
 		end
 
-		-- This is a kind of a nightmare data set, but it has to be traveled in the written order - plain pairs(travel_locale) would screw the order.
-
-		-- These tags have to    -- what? ~sinus
-		local travel_locale = {
-			{'walk_start',"You are here"},
-
-			{'whistle',"Use Flight Master's Whistle"},
-			{'taxi_taxi__taxi_taxi',"passfp"},
-			{'forced_taxi__taxi_taxi',"Arrive at {name}, {map}\nFly again to {next_name}, {next_map}"},
-			--{'taxi_taxi__taxi_taxi',"arrive"},
-
-			{'*_taxi__taxi_taxi',"taxi"}, {'taxi_taxi',"arrivefp"},
-			{'taxi',"Talk to {npc}\nFly to {next_name}, {next_map}"},
-			{'taxidumb',"Arrive at your destination"},
-
-			{'*_ship__ship_ship',"Ride the boat to {next_port}"}, {'ship_ship',"arrive"},
-			{'*_zeppelin__zeppelin_zeppelin',"Ride the zeppelin to {next_port}"}, {'zeppelin_zeppelin',"arrive"},
-
-			{'*_*__pandarope_*',"Click the rope on the ground\nto swing to {next_map}"},
-
-			{'*_portal__portal_*',"portalclick"}, {'portal*_*',"arrive"},
-			{'*_portal__portalauto_*',"portalauto"},-- {'portalauto_X',"arrive"},
-			{'*_portal__portalDungeonEnter_*',"portalauto"},-- {'portaldungeon_X',"arrive"},
-			{'*_portal__portalDungeonExit_*',"Use the portal to exit {map}"},-- {'portaldungeon_X',"arrive"},
-			{'portalauto',"Enter portal to {next_map}"},
-			{'portaldungeon',"Enter portal to {next_map}"},
-			{'portalclick',"Click portal to {next_map}"},
-			{'*_teleportnamed',"Teleport to {next_name}"},
-			--{'portal',"Click portal to {next_map}\nTeleport to {next_map}"},
-			{'*_pinkportal',"Go through the pink portal to {next_map}"},
-			{'*_*__pinkportal_*',"Go through the pink portal to {next_map}"},
-			{'*_*__darkportal_*',"Enter the huge green portal\nTeleport to {next_map}"},
-			{'*_darkportal',"Enter the huge green portal\nTeleport to {next_map}"},
-			{'*_*__cityportal_*',"Enter the circular portal\nTeleport to {next_map}"},
-			{'*_cityportal',"Enter the circular portal\nTeleport to {next_map}"},
-			{'*_blackcat',"Talk to the Nightsaber Rider\nto travel {next_name}"},
-			{'*_moltentele',"Talk to Lothos Riftwaker\n Teleport to {next_map}"},
-			{'*_orbofcommand',"Click on Orb of Command\n Teleport to {next_map}"},
-			{'*_dragonrider',"Talk to the dragon\n Arrive at {next_map}"},
-			{'*__transporter_*',"Enter the transporter"},
-			{'transporter_*',"Exit the transporter"},
-
-			{'walk_border',"walk_map"}, {'border_border',"walk_map"},
-
-			{'arrive',"Arrive at {map}"},
-			{'arrivefp',"Arrive at {name}, {map}"},
-			{'passfp',"Pass {name}, {map}"},
-
-			{'*_tram__tram_tram',"tram"}, {'tram_tram',"arrive"},
-			{'tram',"Ride the tram to {next_map}"},
-
-			{'deathgate',"Cast Death Gate to Acherus"},
-			{'teleport',"Cast teleport to {map}"},
-
-			{'courtesymage',"Find a Mage to teleport you to {map}\nThere is no direct path"},
-			{'courtesywarlock',"There is no path to {map} for you."},
-			{'courtesy',"Use a Courtesy!"},
-
-			{'teleport_ask',"Use a Mage Portal to {map}"},
-			{'useitem',"Use {item}"},
-
-			{'hearth',"Hearth to {name}"},
-			{'ghearth',"Hearth to your Garrison"},
-			{'astralrecall',"Cast Astral Recall to {name}"},
-
-			{'*_door',"Click to open the door"},
-			{'walk',"Go to {node}"},
-			{'swim',"Swim to {node}"},
-			{'walk_map',"Go to {bordermap}"},
-			{'fly',"Go to {node}"},
-			{'travel','walk'},
-		}
+		
+		
+		local point_templates = Lib.data.point_context_templates
 		-- And, this is for fast lookups.
-		local travel_locale_keys={}  for i,pair in ipairs(travel_locale) do travel_locale_keys[pair[1]]=pair[2] end
+		local point_templates_keys={}  for i,pair in ipairs(point_templates) do point_templates_keys[pair[1]]=pair[2] end
 
 		local math_abs = math.abs
 		local function AngleBetween(n1,n2,n3)
@@ -3142,7 +3033,7 @@ do
 					--if not node.link then break end --continue
 
 					local travelmode = node.link and (node.link.template or node.link.mode) or "walk"  -- how we get to this point
-					local nodetype = node.template or node.type or (node.type=="start" and "start") or "*"  -- this point type
+					local nodetype = node.subtype or node.type or (node.type=="start" and "start") or "*"  -- this point type
 
 					--[[
 					if self.cfg.use_mage_teleport==true and travelmode=="teleport" and not IsSpellKnown(node.spell) then
@@ -3161,7 +3052,7 @@ do
 					local a_b__c_d = ""
 					if nextnode then
 						if self.zone_is_vash[node.m] and self.zone_is_vash[nextnode.m] and travelmode=="walk" then travelmode="swim" end
-						a_b__c_d = travelmode .. "_" .. nodetype .. "__" .. (nextnode.link and (nextnode.link.template or nextnode.link.mode) or "walk") .. "_" .. (nextnode.template or nextnode.type or "*")
+						a_b__c_d = travelmode .. "_" .. nodetype .. "__" .. (nextnode.link and (nextnode.link.template or nextnode.link.mode) or "walk") .. "_" .. (nextnode.subtype or nextnode.type or "*")
 					end
 
 					node.a_b = a_b
@@ -3169,13 +3060,13 @@ do
 
 					if not text then
 						-- Try for a fast match first
-						--text = travel_locale[a_b__c_d] or travel_locale[a_b] or travel_locale[travelmode] or travel_locale[nodetype] or "walk"
+						--text = point_templates[a_b__c_d] or point_templates[a_b] or point_templates[travelmode] or point_templates[nodetype] or "walk"
 
 						-- Okay, wildcards it is, then.
 						-- First, try to match full current and next node types and travel modes.
 						-- For example, fly_ship__ship_ship means this node has us flying to the pier, while the next is a ship connection to the destination port.
 						if DEBUG_MATCHING then Lib:Debug("%d. [%d] trying to match, in order: |cffaadd55%s , %s , %s , %s",n,node.num,a_b__c_d,a_b,travelmode,nodetype) end
-						for i,patpair in ipairs(travel_locale) do
+						for i,patpair in ipairs(point_templates) do
 							local pat=patpair[1] :gsub("%*","%%w*")
 							if a_b__c_d:match("^"..pat.."$") then text=patpair[2]   if DEBUG_MATCHING then Lib:Debug("- matched |cffaaff00%s",pat) end   break end
 							if a_b:match("^"..pat.."$") then text=patpair[2]   if DEBUG_MATCHING then Lib:Debug("- matched |cff77ff00%s",pat) end   break end
@@ -3198,7 +3089,7 @@ do
 
 					if DEBUG_MATCHING then Lib:Debug("-- finally matched: |cff00ff88%s",text) end
 
-					while (travel_locale_keys[text]) do text=travel_locale_keys[text] end   -- do redirects
+					while (point_templates_keys[text]) do text=point_templates_keys[text] end   -- do redirects
 
 					local nextmap = GetMapNameByID(nextnode and (nextnode.taxiDestination and nextnode.taxiDestination.m or nextnode.m) or 0)
 

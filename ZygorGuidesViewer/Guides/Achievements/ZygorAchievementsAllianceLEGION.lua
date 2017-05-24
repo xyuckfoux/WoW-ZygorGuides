@@ -2127,6 +2127,105 @@ step
 _Congratulations!_
 You have earned the _You're just Making It WORSE!_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Boom Boom",{
+condition_end="achieved(11768)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Boom"},
+description="This guide will walk you through completing the \"Boom Boom\" Achievement.",
+},[[
+step
+To achieve this you will need to go in the Cathedral of Eternal Night dungeon on Mythic difficulty
+Engage the boss _Agronox_
+During the fight random players will get fixed by Fulminating Lashers
+These players will need to kit these lashers to Budding Seeds.
+|tip These Budding Seeds can be found on the edges of this room along the walls.
+Once on top of these seeds these players must allow the lashers to explode
+|tip Once 4 of these Budding Seeds are destroyed you may defeat the boss.
+Earn the _Boom Boom_ achievement |achieve 11768
+step
+_Congratulations!_
+You have earned the _Boom Boom_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\A Steamy Romance Saga",{
+condition_end="achieved(11769)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"A","Steamy","Romance","Saga"},
+description="This guide will walk you through completing the \"A Steamy Romance Saga\" Achievement.",
+},[[
+step
+To achieve this you will need to go in the Cathedral of Eternal Night dungeon on Mythic difficulty
+Engage the boss _Thrashbite the Scornful_
+When the boss casts Scorbful Gaze on a player, they will need to run behind a bookshelf so that the boss break it.
+You will need to break all 4 bookshelves, each one drops a book
+Once all 4 bookshelves are broken all players in the group will need to click all 4 of the books that have fallen.
+|tip You will gain a buff for each book you read.
+Once all players have received all 4 buffs indicating that they have read all 4 books you may kill the boss
+|tip Try to get the boss low while waiting for all the bookshelves to be destroyed, one they are you will no longer have anything to protect you from the Scornful Gaze ability.
+Earn the _A Steamy Romance Saga_ achievement |achieve 11769
+step
+_Congratulations!_
+You have earned the _A Steamy Romance Saga_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Master of Shadows",{
+condition_end="achieved(11703)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Master","of","Shadows"},
+description="This guide will walk you through completing the \"Master of Shadows\" Achievement.",
+},[[
+step
+To achieve this you will need to go in the Cathedral of Eternal Night dungeon on Mythic difficulty
+Engage the boss _Mephistroth_
+The person, most likely the tank, holding the Aegis of Aggramar will need to soak as many Shadow Blasts as they can
+This player will need to stand in the middle of the room, on top of Illidan, and activate the Aegis of Aggramar
+|tip Do this during the Fades to Shadow phases of the fight.
+Soak 20 Shadow Blasts with the Aegis of Aggramar
+|tip You do not have to soak all 20 orbs during one Fades To Shadow phase.
+Earn the _Master of Shadows_ achievement |achieve 11703
+step
+_Congratulations!_
+You have earned the _Master of Shadows_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Mythic: Cathedral of Eternal Night",{
+condition_end="achieved(11702)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Mythic","Cathedral","Eternal","Night"},
+description="This guide will walk you through completing the \"Mythic: Cathedral of Eternal Night\" Achievement.",
+},[[
+step
+For this achievement, complete Cathedral of Eternal Night on Mythic
+|tip You will need to form your own group, rather than use the group finder.
+Click here to load the "Cathedral of Eternal Night" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Cathedral of Eternal Night"
+Defeat Mephistroth in Cathedral of Eternal Night on Mythic difficulty |achieve 11702
+step
+_Congratulations!_
+You have earned the _Mythic: Cathedral of Eternal Night_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Dungeons\\Legion\\Wailing Caverns",{
+condition_end="achieved(11765)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Pet","Battle","Wailing","Caverns"},
+description="This guide will walk you through completing the \"Pet Battle Challenge: Wailing Caverns\" Achievement.",
+},[[
+step
+For this achievement, complete Pet Battle Challenge: Wailing Caverns
+Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Wailing Caverns"
+Complete the Pet Battle Dungeon in the Wailing Caverns |achieve 11765
+step
+_Congratulations!_
+You have earned the _Pet Battle Challenge: Wailing Caverns_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Events\\Legion Brawler's Guild\\Educated Guesser",{
 author="support@zygorguides.com",
 condition_end="achieved(11570)",
@@ -5266,6 +5365,61 @@ step
 _Congratulations!_
 You have earned the _Why Can't I Hold All This Mana?_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Crate Expectations",{
+condition_end="achieved(11681)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Crate","Expectations"},
+description="This guide will walk you through completing the \"Crate Expectations\" Achievement.",
+},[[
+step
+For this achievement, the World Quest _Behind Enemy Portals_ must be up on the Broken Shore
+confirm
+step
+Follow the path |goto Broken Shore/0 46.66,58.79 < 25 |only if walking
+accept Behind Enemy Portals##45542 |goto 49.13,55.50
+|tip You will accept this quest automatically.
+step
+Enter the portal |q 45542/1 |goto 49.13,55.50
+step
+talk Tehd Shoemaker##119184
+Tell him: _"Transform?"_
+Speak with Tehd for a disguise |q 45542/2 |goto 48.19,56.91
+step
+click Vital Supplies
+|tip These chests can be found randomly throughout the ship.
+|tip More can be found upstairs.
+Rob stuff |q 45542/3 |goto 49.21,55.30
+|tip Avoid the eyes, as they will dispel your disguise.
+step
+Once you have completed the world quest _DO NOT_ press the extra action button
+Go to the top deck of the ship and go through the portal there while still in the disguise
+Reach the final portal of the Dreadex without losing your Wyrmtongue Transformation |achieve 11681 |goto Broken Shore/0 44.57,63.07
+step
+_Congratulations!_
+You have earned the _Crate Expectations_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Defender of the Broken Isles",{
+condition_end="achieved(11544)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Defender","of","the","Broken","Isles"},
+description="This guide will walk you through completing the \"Defender of the Broken Isles\" Achievement.",
+},[[
+step
+For this achievement you must complete an invasion in each of the 4 leveling zones
+|tip These invasions will appear one at a time in a random zone every 18 hours and last for 6 hours.
+|tip Check out our Legion Invasions guide to help you defeat each invasion.
+Battle for Azsuna |achieve 11544/1
+Battle for Highmountain |achieve 11544/2
+Battle for Stormheim |achieve 11544/3
+Battle for Val'Sharah |achieve 11544/4
+step
+_Congratulations!_
+You have earned the _Defender of the Broken Isles_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Raid\\Legion\\A Change In Scenery",{
 condition_end="achieved(10742)",
 author="support@zygorguides.com",
@@ -5566,7 +5720,7 @@ description="This guide will walk you through completing the \"Burning Bridges\"
 },[[
 step
 You will need the _Infinite Whelpling Battle Pet_ in order to achieve this
-Click here to load the "Infinite Whelpling" Battle Pet guide |confirm |next "Zygor's Alliance Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Infinite Whelpling"
+Click here to load the "Infinite Whelpling" Battle Pet guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Infinite Whelpling"
 Click here to continue |confirm
 step
 First, summon your Infinite Whelpling battle pet
@@ -6266,6 +6420,41 @@ step
 _Congratulations!_
 You have earned _The Nightfallen_ achievement
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\The Reputable",{
+condition_end="achieved(11652)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"The","Reputable"},
+description="This guide will walk you through completing the \"The Reputable\" Achievement.",
+},[[
+step
+For this achievement you will need to first get exalted with one of the 7 Legion factions
+Once exalted you will need to obtain 10,000 more reputation with that faction
+Once this happens you will get a quest to go to that factions quartermaster, turning in this quest will provide you with this achievement
+Earn the _The Reputable_ achievement |achieve 11652
+step
+_Congratulations!_
+You have earned the _The Reputable_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievement Guides\\Reputation\\Legion\\Paragon of the Broken Isles",{
+condition_end="achieved(11653)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Paragon","of","the","Broken","Isles"},
+description="This guide will walk you through completing the \"Paragon of the Broken Isles\" Achievement.",
+},[[
+step
+For this achievement you will need to first get exalted with one of the 7 Legion factions
+Once exalted you will need to obtain 10,000 more reputation with that faction
+Once this happens you will get a quest to go to that factions quartermaster
+|tip You will need to do this 10 times.
+Earn the _Paragon of the Broken Isles_ achievement |achieve 11653
+step
+_Congratulations!_
+You have earned the _Paragon of the Broken Isles_ achievement
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",
 author="support@zygorguides.com",
@@ -6397,7 +6586,7 @@ condition_end="achieved(11741)",
 author="support@zygorguides.com",
 startlevel=60,
 endlevel=60,
-keywords={"So","Hot","Right","Now"},
+keywords={"So","Hot","Right","Now","Molten","Core"},
 description="This guide will walk you through completing the \"So Hot Right Now\" Achievement.",
 },[[
 step
@@ -6412,41 +6601,41 @@ _Boots:_ Arcanist, Earthfury, Lawbringer, Cenarion
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
-Magmadar drops legs for each class except for Death Knight, Monk and Demon Hunter
+Magmadar drops the legs
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
 Gehennas drops 6 different pieces of gear that are required for the achievement
-_Gloves:_ Earthfury, Prophecy, Lawbringer, Nightslayer
-_Boots:_ Giantstalker's, Might
+_Gloves:_ Shaman, Priest, Paladin, Rogue
+_Boots:_ Hunter, Warrior
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
-Garr drops helmets for each class except for Death Knight, Monk and Demon Hunter
+Garr drops the helmet
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
 Baron Geddon drops 5 different pieces of gear that are required for the achievement
-_Shoulders:_ Arcanist, Felheart, Earthfury, Lawbringer, Cenarion
+_Shoulders:_ Mage, Warlock, Shaman, Paladin, Druid
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
 Shazzrah drops 6 different pieces of gear that are required for the achievement
-_Gloves:_ Arcanist, Cenarion, Giantstalker's
-_Boots:_ Felheart, Prophecy, Nightslayer
+_Gloves:_ Mage, Druid, Hunter
+_Boots:_ Warlock, Priest, Rogue
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
 Sulfuron Harbinger drops 4 different pieces of gear that are required for the achievement
-_Shoulders:_ Might, Prophecy, Giantstalker's, Nightslayer
+_Shoulders:_ Warrior, Priest, Hunter, Rogue
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
-Golemagg the Incinerator drops chest pieces for each class except for Death Knight, Monk and Demon Hunter
+Golemagg the Incinerator drops the chest piece
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
-Ragnaros drops legs for each class except for Death Knight, Monk and Demon Hunter
+Ragnaros drops the legs
 Click here to load the Molten Core guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Molten Core"
 Click here to continue |confirm
 step
@@ -6466,7 +6655,7 @@ condition_end="achieved(11742)",
 author="support@zygorguides.com",
 startlevel=60,
 endlevel=60,
-keywords={"Dress","in","Lairs"},
+keywords={"Dress","in","Lairs","Blackwing","Lair"},
 description="This guide will walk you through completing the \"Dress in Lairs\" Achievement.",
 },[[
 step
@@ -6476,42 +6665,42 @@ _Important:_ You will be unable to earn this achievement if you are a Death Knig
 Click here to continue |confirm
 step
 kill Razorgore the Untamed##12435
-The set Bracers drop from this boss
+The set Bracers drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Vaelastrasz the Corrupt##13020
-The set Belt drops from this boss
+The set Belt drops here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Broodlord Lashlayer##12017
-The set Boots drop from this boss
+The set Boots drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Firemaw##11983
-The set Gloves drop from this boss
+The set Gloves drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Ebonroc##14601
-Additional set Gloves drop from this encounter
+Additional set Gloves drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Flamegor##11981
-Additional set Gloves drop from this boss
+Additional set Gloves drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Chromaggus##14020
-The set Shoulders drop from this boss
+The set Shoulders drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
 kill Nefarian##11583
-The set Chest and Helmet drop from this boss
+The set Chest and Helmet drop here
 Click here to load the Blackwing Lair Guide |confirm |next "Zygor's Dungeon Guides\\Classic Raids\\Blackwing Lair"
 Click here to continue |confirm
 step
@@ -6528,7 +6717,7 @@ condition_end="achieved(11746)",
 author="support@zygorguides.com",
 startlevel=70,
 endlevel=70,
-keywords={"Outlandish","Style"},
+keywords={"Outlandish","Style","Karazhan"},
 description="This guide will walk you through completing the \"Outlandish Style\" Achievement.",
 },[[
 step
@@ -6538,7 +6727,7 @@ _Important:_ You will be unable to earn this achievement if you are a Death Knig
 Click here to continue |confirm
 step
 kill The Curator##15691
-The Token for the Gloves drops here
+The Token for the Gloves drop here
 Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Karazhan"
 Click here to continue |confirm
 step
@@ -6548,12 +6737,12 @@ Click here to load the Karazhan Guide |confirm |next "Zygor's Dungeon Guides\\Ou
 Click here to continue |confirm
 step
 kill High King Maulgar##18831
-The Token for the Shoulders drops here
+The Token for the Shoulders drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
 Click here to continue |confirm
 step
 kill Gruul the Dragonkiller##19044
-The Token for the Legs drops here
+The Token for the Legs drop here
 Click here to load the Gruul's Lair Guide |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Gruul's Lair"
 Click here to continue |confirm
 step
@@ -6564,6 +6753,7 @@ Click here to continue |confirm
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
+Use your _Fallen Token_ to redeem a tier 4 set piece for your class
 Click here to go back to the start of the guide |confirm |next "start"
 Earn the Outlandish Style Achievement |achieve 11746
 step
@@ -6575,7 +6765,7 @@ condition_end="achieved(11747)",
 author="support@zygorguides.com",
 startlevel=70,
 endlevel=70,
-keywords={"Merely","a","Set"},
+keywords={"Merely","a","Set","Serpentshrine","Cavern"},
 description="This guide will walk you through completing the \"Merely a Set\" Achievement.",
 },[[
 step
@@ -6615,12 +6805,9 @@ Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\O
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11747
 step
-talk Veynna Dawnstar##21905 |only if rep ('The Scryers') >= Neutral
-Collect your tier pieces |goto Shattrath City 44.8,91.6 |only if rep ('The Scryers') >= Neutral
-talk Kelara##21906 |only if rep ('The Aldor') >= Neutral
-Collect your tier pieces |goto Shattrath City 24.8,27.0 |only if rep ('The Aldor') >= Neutral
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
+Use your _Vanquished Token_ to redeem a tier 5 set piece for your class
 Alternatively, you can attempt to collect the set on an alternate character
 Click here to go back to the start of the guide |confirm |next "start"
 Earn the Merely a Set Achievement |achieve 11747
@@ -6633,7 +6820,7 @@ condition_end="achieved(11748)",
 author="support@zygorguides.com",
 startlevel=70,
 endlevel=70,
-keywords={"Black","is","the","New","Black"},
+keywords={"Black","is","the","New","Black","Black","Temple"},
 description="This guide will walk you through completing the \"Black is the New Black\" Achievement.",
 },[[
 step
@@ -6644,12 +6831,7 @@ Hyjal Summit
 Black Temple
 Sunwell Plateau
 Click here to continue |confirm
-step
-You will need to collect tokens to trade for set pieces
-_Token of the Forgotten Conqueror:_ Paladin, Priest and Warlock
-_Token of the Forgotten Protector:_ Hunter, Shaman and Warrior
-_Token of the Forgotten Vanquisher:_ Druid, Mage and Rogue
-Click here to continue |confirm
+Earn the Black is the New Black achievement |achieve 11748
 step
 From Hyjal Summit:
 Azgalor drops the Token for the Gloves
@@ -6657,6 +6839,7 @@ Archimonde drops the Token for the Helmets
 |tip Refer to the Hyjal Summit Raid guide to accomplish this.
 Click here to load the Hyjal Summit guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Hyjal Summit (Battle for Mount Hyjal)"
 Click here to continue |confirm
+Earn the Black is the New Black achievement |achieve 11748
 step
 From Black Temple:
 Mother Shahraz drops the Token for the Shoulders
@@ -6664,6 +6847,7 @@ The Illidari Council drops the Token for the Legs
 Illidan Stormrage drops the Token for the Chest
 Refer to the Black Temple guide for more information |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Black Temple"
 Click here to continue |confirm
+Earn the Black is the New Black achievement |achieve 11748
 step
 From Sunwell Plateau:
 Kalecgos drops the token for Bracers
@@ -6672,9 +6856,11 @@ Felmyst drops the token for Boots
 The Eredar Twins drop tokens for Bracers, Belts and Boots
 Refer to the Sunwell Plateau guide for more informatio |confirm |next "Zygor's Dungeon Guides\\Outland Raids\\Sunwell Plateau"
 Click here to continue |confirm
+Earn the Black is the New Black achievement |achieve 11748
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
+Use your _Forgotten Token_ to redeem a tier 6 set piece for your class
 Click here to go back to the start of the guide |confirm |next "start"
 Earn the Black is the new Black Achievement |achieve 11748
 step
@@ -6698,14 +6884,14 @@ Earn the Merely a Set Achievement |achieve 11749
 step
 kill Felmyst##25038
 The Token for Boots drop from Felmyst as well as the Eradar Twins
-Click here to load the  |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step
 kill Grand Warlock Alythess##25166
 kill Lady Sacrolash##25165
 The Eradar Twins can drop Tokens for Bracers, Belts or Boots
-Click here to load the  |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
+Click here to load the |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 Earn the Merely a Set Achievement |achieve 11749
 step
@@ -6725,7 +6911,7 @@ _Congratulations!_
 You have earned the _Suns Out, Thori'dals Out_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Undying Aesthetic",{
-condition_end="achieved(11749)",
+condition_end="achieved(11750)",
 author="support@zygorguides.com",
 startlevel=80,
 endlevel=80,
@@ -6734,37 +6920,549 @@ description="This guide will walk you through completing the \"Undying Aesthetic
 },[[
 step
 label "start"
-You will be collecting 5 pieces of any of the tier 7 armors, attainted form Sunwell Plateau
-_Important:_ You will be unable to earn this achievement if you are a Death Knight, Monk or Demon Hunter
+You will be collecting 5 pieces of any of the tier 7 armors, attainted form Naxxramas and The Obsidian Sanctum
+_Important:_ You will be unable to earn this achievement if you are a Monk or Demon Hunter
 Click here to continue |confirm
-Earn the Merely a Set Achievement |achieve 11749
+Earn the Undying Aesthetic Achievement |achieve 11750
 step
-kill
+kill Thaddius##15928
+The Token for Legs drops here
 The Token for Boots drop from Felmyst as well as the Eradar Twins
-Click here to load the  |confirm |next
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
-Earn the Merely a Set Achievement |achieve 11749
+Earn the Undying Aesthetic Achievement |achieve 11750
 step
-kill Grand Warlock Alythess##25166
-kill Lady Sacrolash##25165
-The Eradar Twins can drop Tokens for Bracers, Belts or Boots
-Click here to load the  |confirm |next
+kill Gluth##15932
+The token for Legs, Shoulders and Chest can drop here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
-Earn the Merely a Set Achievement |achieve 11749
+Earn the Undying Aesthetic Achievement |achieve 11750
 step
-kill Brutallus##24882
-The Token for Belt can drop from Brutallus as well as The Eradar Twins
-Click here to load the |confirm |next
+Defeat the 4 Horsemen
+The token for the Chest drops here
+Click here to load the Naxxramas guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
 Click here to continue |confirm
-Earn the Merely a Set Achievement |achieve 11749
+Earn the Undying Aesthetic Achievement |achieve 11750
+step
+kill Kel'Thuzad##15990
+The Token for the Headpiece drop here
+Click here to load the Naxxramas Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Naxxramas"
+Click here to continue |confirm
+Earn the Undying Aesthetic Achievement |achieve 11750
+step
+kill Sartharion##28860
+The Token for the gloves drops here
+Click here to load The Obsidian Sanctum Guide|confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\The Obsidian Sanctum"
+Click here to continue |confirm
+Earn the Undying Aesthetic Achievement |achieve 11750
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Use your _Of the Lost Token_ to redeem a tier 7 set piece for your class
+Alternatively, you can attempt to collect the set on an different character
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Undying Aesthetic Achievement |achieve 11750
+step
+_Congratulations!_
+You have earned the _Undying Aesthetic_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Mogg-Saron",{
+condition_end="achieved(11751)",
+author="support@zygorguides.com",
+startlevel=80,
+endlevel=80,
+keywords={"Mogg","Saron","Ulduar"},
+description="This guide will walk you through completing the \"Mogg-Saron\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 8 armors, attainted form Ulduar
+_Important:_ You will be unable to earn this achievement if you are a Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+kill Thorim##32865
+10-Man: Shoulder token drops here
+25-Man: Headpiece token drops here
+Click here to load the  |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+kill Hodir##32845
+10-Man: Leg token drops here
+25-Man: Chest token drops here
+Click here to load the  |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+kill Freya##32906
+10-Man: Glove token drops here
+25-Man: Leg token drops here
+Click here to load the Naxxramas guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+kill Mimiron##33350
+10-Man: Headpiece token drops here
+25-Man: Glove token drops here
+Click here to load the Naxxramas Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+kill Yogg-Saron##33288
+10-Man: Chest token drops here
+25-Man: Shoulder token drops here
+Click here to load The Obsidian Sanctum Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Use your _Wayward Token_ to redeem a tier 8 set piece for your class
+Alternatively, you can attempt to collect the set on an different character
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Mogg-Saron Achievement |achieve 11751
+step
+_Congratulations!_
+You have earned the _Mogg-Saron_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Style of the Crusader",{
+condition_end="achieved(11752)",
+author="support@zygorguides.com",
+startlevel=80,
+endlevel=80,
+keywords={"Style","of","the","Crusader","Trial","of","the","Crusader"},
+description="This guide will walk you through completing the \"Style of the Crusader\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 9 armors, purchased from The Argent Tournament Grounds in Icecrown
+talk Aspirant Forudir##35579
+Collect any class armor set from Trial of the Crusader |achieve 11752 |goto Icecrown/0 75.54,21.56
+step
+_Congratulations!_
+You have earned the _Style of the Crusader_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Winter Catalog",{
+condition_end="achieved(11753)",
+author="support@zygorguides.com",
+startlevel=80,
+endlevel=80,
+keywords={"Winter","Catalog","Icecrown","Citadel"},
+description="This guide will walk you through completing the \"Winter Catalog\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 10 armors, purchased from Icecrown Citadel
+Enter Icecrown Citadel |goto Icecrown/0 53.79,87.04 < 5
+confirm
+step
+talk Horace Hunderland##35498
+Purchase a tier 10 set of armor |goto Dalaran/1 46.93,26.71
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Paladin, DeathKnight, Warrior
+step
+talk Gerardo the Suave##37993
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Hunter
+step
+talk Vol'guk
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Shaman
+step
+talk Tortunok
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Druid
+step
+talk Ikfirus the Vile
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Rogue
+step
+talk Uvlus Banefire
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Mage
+step
+talk Scott the Merciful
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Priest
+step
+talk Haragg the Unseen
+Purchase a tier 10 set of armor
+Collect any class armor set from Icecrown Citadel |achieve 11753
+|only Warlock
+step
+_Congratulations!_
+You have earned the _Winter Catalog_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Glamour of Twilight",{
+condition_end="achieved(11754)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=110,
+keywords={"Glamour","of","Twilight","Bastion","of","Twilight"},
+description="This guide will walk you through completing the \"Glamour of Twilight\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier armors, purchased from the vendor here
+talk Rugok##58155
+Collect any class armor set from Bastion of Twilight |achieve 11754 |goto Orgrimmar/1 48.19,71.73
+step
+_Congratulations!_
+You have earned the _Glamour of Twilight_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Hot Couture",{
+condition_end="achieved(11755)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=110,
+keywords={"Hot","Couture","The","Firelands",},
+description="This guide will walk you through completing the \"Hot Couture\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 12 armors, purchased from the vendor here
+talk Magatha Silverton##44246
+Collect any class armor set from The Firelands |achieve 11755 |goto Stormwind City/0 79.0,69.6
+step
+_Congratulations!_
+You have earned the _Hot Couture_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Wardrobe of the Old Gods",{
+condition_end="achieved(11756)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=110,
+keywords={"Wardrobe","of","the","Old","Gods","Dragonsoul",},
+description="This guide will walk you through completing the \"Wardrobe of the Old Gods\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 13 armors, purchased from the vendor here
+_Important:_ You will be unable to earn this achievement if you are a Monk or Demon Hunter
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Set Achievement |achieve 11756
+step
+kill Warlord Zon'ozz##55308
+The Token for gloves drop here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
+step
+kill Yor'sahj##55312
+The Token for legs drop here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
+step
+kill Hagara the Stormbinder##55689
+The Token for shoulders drop here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
+step
+kill Ultraxion##55294
+The Token for the chest drop here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
+step
+kill Warmaster Blackhorn##56427
+The Token for the helmet drops here
+Click here to load the |confirm |next "Zygor's Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+Click here to continue |confirm
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
 step
 If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
 |tip Use the calender to check out your lockout status.
 Alternatively, you can attempt to collect the set on an different character
+Use the _Corrupted Tokens_ you have collected to redeem a tier piece of armor
 Click here to go back to the start of the guide |confirm |next "start"
-Earn the Merely a Set Achievement |achieve 11749
+Earn the Wardrobe of the Old Gods Achievement |achieve 11756
 step
 _Congratulations!_
-You have earned the _Suns Out, Thori'dals Out_ achievement
+You have earned the _Wardrobe of the Old Gods_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Sha of Fabulous",{
+condition_end="achieved(11757)",
+author="support@zygorguides.com",
+startlevel=90,
+endlevel=110,
+keywords={"Sha","of","Fabulous","Heart","of","Fear","Endless","Spring"},
+description="This guide will walk you through completing the \"Sha of Fabulous\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 14 armors, purchased from the vendor here
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Sha of Fabulous Set Achievement |achieve 11757
+step
+kill Lei Shi##62983
+The Token for shoulders drop here
+Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to continue |confirm
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+kill Sha of Fear##60999
+The Token for the helmet drops here
+Click here to load the Terrace of Endless Spring guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring"
+Click here to continue |confirm
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+kill Wind Lord Mel'jarak##62397
+The Token for gloves drop here
+Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to continue |confirm
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+kill Amber-Shaper un'sok##62511
+The Token for legs drop here
+Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to continue |confirm
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+kill Grand Empress Shek'zeer##62837
+The Token for the chest drops here
+Click here to load the Heart of Fear guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Heart of Fear"
+Click here to continue |confirm
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Shadowy Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Sha of Fabulous Achievement |achieve 11757
+step
+_Congratulations!_
+You have earned the _Sha of Fabulous_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Thunderwear",{
+condition_end="achieved(11758)",
+author="support@zygorguides.com",
+startlevel=90,
+endlevel=110,
+keywords={"Thunderwear","Throne","of","Thunder"},
+description="This guide will walk you through completing the \"Thunderwear\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 15 armors, purchased from the vendor here
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Thunderwear Set Achievement |achieve 11758
+step
+kill Kazra'jin##69134, Sul the Sandcrawler##69078, Frost King Malaak##69131, High Priestess Mar'li##69132
+|tip This is the Council of Elders encounter.
+The Token for gloves drop here
+Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to continue |confirm
+Earn the Thunderwear Achievement |achieve 11758
+step
+kill Ji-Kun##69712
+The Token for legs drop here
+Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to continue |confirm
+Earn the Thunderwear Achievement |achieve 11758
+step
+kill Dark Animus##69427
+The Token for the chest drops here
+Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to continue |confirm
+Earn the Thunderwear Achievement |achieve 11758
+step
+kill Iron Qon##68078
+The Token for the shoulders drop here
+Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to continue |confirm
+Earn the Thunderwear Achievement |achieve 11758
+step
+kill Lu'lin##68905, Suen##68904
+The Token for the helmet drops here
+Click here to load the Throne of Thunder guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder"
+Click here to continue |confirm
+Earn the Thunderwear Achievement |achieve 11758
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Crackling Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Thunderwear Achievement |achieve 11758
+step
+_Congratulations!_
+You have earned the _Thunderwear_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Yaass'shaarj",{
+condition_end="achieved(11759)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+keywords={"Yaass","shaarj","Siege","of","Orgrimmar"},
+description="This guide will walk you through completing the \"Yaass'shaarj\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 16 armors, dropped from Siege of Orgrimmar
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Yaass'shaarj Set Achievement |achieve 11759
+step
+kill Sha of Pride##71734
+The Token for the chest drops here
+Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to continue |confirm
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+kill General Nazgrim##71515
+The Token for gloves drop here
+Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to continue |confirm
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+kill Thok the Bloodthirsty##71529
+The Token for the helmet drops here
+Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to continue |confirm
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+kill Siegecrafter Blackfuse##71504
+The Token for the shoulders drop here
+Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to continue |confirm
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+Kill the Paragons of the Klaxxi
+The Token for the legs drop here
+Click here to load the Siege of Orgrimmar guide |confirm |next "Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar"
+Click here to continue |confirm
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Cursed Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Yaass'shaarj Achievement |achieve 11759
+step
+_Congratulations!_
+You have earned the _Yaass'shaarj_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Make it W-orc W-orc",{
+condition_end="achieved(11740)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+keywords={"Make","it","W-orc","W-orc","Blackrock","Foundry"},
+description="This guide will walk you through completing the \"Make it W-orc W-orc\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 17 armors, dropped from Blackrock Foundry
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Set Achievement |achieve 11740
+step
+kill Heart of the Mountain##76806
+The Token for the legs drop here
+Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+kill Flamebender Ka'graz##76814
+The Token for the chest drops here
+Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+kill Kromog##77692
+The Token for the helmet drops here
+Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+kill Operator Thogar##76906
+The Token for the shoulders drop here
+Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+kill Admiral Gar'an##77557, Enforcer Sorka##77231, Marak the Blooded##77477
+The Token for the gloves drop here
+Click here to load the Blackrock Foundry guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic"
+Click here to continue |confirm
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Iron Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Make it W-orc W-orc Achievement |achieve 11740
+step
+_Congratulations!_
+You have earned the _Make it W-orc W-orc_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievement Guides\\Appearances\\Legion\\Extreme Makeover: Fel Edition",{
+condition_end="achieved(11631)",
+author="support@zygorguides.com",
+startlevel=100,
+endlevel=110,
+keywords={"Extreme","Makeover","Fel","Edition","Hellfire","Citadel"},
+description="This guide will walk you through completing the \"Extreme Makeover: Fel Edition\" Achievement.",
+},[[
+step
+label "start"
+You will be collecting 5 pieces of any of the tier 18 armors, dropped from Hellfire Citadel
+_Important:_ You will be unable to earn this achievement if you are a Demon Hunter
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Kormrok##90776
+The Class set helmet drops here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Gorefiend##91809
+The Class set legs drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Soulbound Construct##90296
+The Class set gloves drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Xhul'horac##93068
+The Token for the shoulders drop here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+kill Mannoroth##91349
+The Token for the Chest drops here
+Click here to load the Hellfire Citadel guide |confirm |next "Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic"
+Click here to continue |confirm
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
+|tip Use the calender to check out your lockout status.
+Alternatively, you can attempt to collect the set on an different character
+Use the _Iron Tokens_ you have collected to redeem a tier piece of armor
+Click here to go back to the start of the guide |confirm |next "start"
+Earn the Extreme Makeover: Fel Edition Achievement |achieve 11631
+step
+_Congratulations!_
+You have earned the _Extreme Makeover: Fel Edition_ achievement
 ]])
 ZGV.BETAEND()

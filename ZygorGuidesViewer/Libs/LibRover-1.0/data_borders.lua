@@ -40,7 +40,7 @@ data.basenodes.borders = {
 		"Tanaris,25.9,66.3 -x- Uldum,70.6,22.5",
 		"Tanaris,28.0,51.3 -x- Un'Goro Crater,70.8,91.9",
 
-		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 (B:PORTAL) {template:portalauto} {cond:IsQuestFlaggedCompleted(12613)}",
+		"Un'Goro Crater,50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin,40.4,83.0 {mode:PORTAL} {template:portalauto} {cond:IsQuestFlaggedCompleted(12613)}",
 
 		"Ammen Vale,23.1,53.5 -x- Azuremyst Isle,67.1,53.8",
 		"Valley of Trials,73.4,67.11 -x- Durotar,50.6,68.4",
@@ -85,7 +85,7 @@ data.basenodes.borders = {
 		"Western Plaguelands 69.1,50.2 -x- Eastern Plaguelands 9.3,66.1",
 		"Ghostlands 47.8,13.9 -x- Eversong Woods 48.5,90.4",
 		"Eversong Woods 56.4,52.0 -x- Silvermoon City 72.7,86.0",
-		"Dun Morogh 60.46,33.35 <border_in_flight:true> -x- Ironforge 18.02,82.20 <border_in_flight:true> {template:custom} {atob:Enter Ironforge through the gate} {btoa:Leave Ironforge through the gate}",
+		"Dun Morogh 60.46,33.35 <border_in_flight:true> -x- Ironforge 18.02,82.20 <border_in_flight:true> {template:atob} {atob:Enter Ironforge through the gate} {btoa:Leave Ironforge through the gate}",
 		"Tirisfal Glades 61.9,65.0 -x- Undercity 66.3,6.8",
 		"Silverpine Forest 45.3,85.7 -x- Ruins of Gilneas 60.2,9.6",
 		"Twilight Highlands,24.0,37.3 -x- Wetlands,80.0,47.9",
@@ -98,21 +98,21 @@ data.basenodes.borders = {
 		"Northshire,23.8,76.7 -x- Elwynn Forest,45.5,48.7",
 		"Sunstrider Isle,64.8,74.9 -x- Eversong Woods,39.3,30.8",
 
-		"Dun Morogh 02.0,28.0 -x- Kelp'thar Forest 71.0,63.0 (B:FLY) {cond:LibRover.HasAchievement(890)}", -- anyone can fly this one, really
-		"Eastern Kingdoms 40.34,69.07 @sw_lighthouse -x- Stormwind City (B:WALK)",
-		"@sw_lighthouse -x- Shimmering Expanse 70.0,74.0 (B:FLY) {cond:LibRover.HasAchievement(5180)}", -- only for epic flyers!
-		"Ruins of Gilneas 72.77,99.94 -x- Dun Morogh 35.08,2.95 (B:FLY) {cond:LibRover.HasAchievement(890)}", -- TODO: try on a normal flyer
+		"Dun Morogh 02.0,28.0 -x- Kelp'thar Forest 71.0,63.0 {mode:FLY} {cond:LibRover.HasAchievement(890)}", -- anyone can fly this one, really
+		"Eastern Kingdoms 40.34,69.07 @sw_lighthouse -x- Stormwind City 0,0",
+		"@sw_lighthouse -x- Shimmering Expanse 70.0,74.0 {mode:FLY} {cond:LibRover.HasAchievement(5180)}", -- only for epic flyers!
+		"Ruins of Gilneas 72.77,99.94 -x- Dun Morogh 35.08,2.95 {mode:FLY} {cond:LibRover.HasAchievement(890)}", -- TODO: try on a normal flyer
 		"Gilneas 3/0 67.61,42.38 -x- Gilneas City 66.26,20.93",
 		--"Gilneas City 7.7,71.5 -x- 679/0 49.87,57.17", -- rat filled tunnel
 
 		-- some extra points to help mounted flight over bays - note: not all zones on Eastern see each other!! Fatigue prevention!
-		"Arathi Highlands 86,74 (B:FLY) {cond:LibRover.HasAchievement(890)} @arathi001",  -- skip a Twilight-Arathi flyaround
-		"Arathi Highlands 20,90 (B:FLY) {cond:LibRover.HasAchievement(890)} @arathi002",  -- skip a Arathi-Wetlands flyaround
+		"Arathi Highlands 86,74 {mode:FLY} {cond:LibRover.HasAchievement(890)} @arathi001",  -- skip a Twilight-Arathi flyaround
+		"Arathi Highlands 20,90 {mode:FLY} {cond:LibRover.HasAchievement(890)} @arathi002",  -- skip a Arathi-Wetlands flyaround
 
 	-- Outlands
 
-		"Blade's Edge Mountains,28.5,93.9 -x- Zangarmarsh,43.3,27.5 (A:_)",
-		"Blade's Edge Mountains,52.0,98.8 -x- Zangarmarsh,68.7,32.9 (H:_)",
+		"Blade's Edge Mountains,28.5,93.9 -x- Zangarmarsh,43.3,27.5 {fac:A}",
+		"Blade's Edge Mountains,52.0,98.8 -x- Zangarmarsh,68.7,32.9 {fac:H}",
 		"Blade's Edge Mountains,82.5,28.7 -x- Netherstorm,20.0,56.1",
 		"Hellfire Peninsula,31.1,92.2 -x- Terokkar Forest,58.3,19.3",
 		"Hellfire Peninsula,4.7,50.6 -x- Zangarmarsh,83.0,65.5",
@@ -160,8 +160,8 @@ data.basenodes.borders = {
 		"The Jade Forest,33.6,64.7 -x- Valley of the Four Winds 90.6,17.7",
 		"Townlong Steppes,71.0,42.8 -x- Kun-Lai Summit,29.5,64.4", -- Ox Gate
 
-		"Kun-Lai Summit 45.05,99.98 <template:door> <radius:2> -x- Kun-Lai Summit 44.8,90.0 <template:door> <radius:15> <region:totopofwallKLS> <title:Go down the stairs>",
-		"Kun-Lai Summit 44.50,89.06 <template:door> <radius:2> -x- Kun-Lai Summit 44.50,89.15 <template:door> <radius:20> <region:totopofwallKLS> <title:Go down the stairs>",
+		"Kun-Lai Summit 45.05,99.98 <subtype:door> <radius:2> -x- Kun-Lai Summit 44.8,90.0 <subtype:door> <radius:15> <region:totopofwallKLS> <title:Go down the stairs>",
+		"Kun-Lai Summit 44.50,89.06 <subtype:door> <radius:2> -x- Kun-Lai Summit 44.50,89.15 <subtype:door> <radius:20> <region:totopofwallKLS> <title:Go down the stairs>",
 		"Kun-Lai Summit 44.3,89.9 <radius:20> <region:totopofwallKLS> <title:Go up the stairs> -x- Kun-Lai Summit 44.1,89.9 <radius:5> <region:topofthewallKLS>",
 		"Kun-Lai Summit 44.5,90.3 <radius:20> <region:totopofwallKLS> <title:Go up the stairs> -x- Kun-Lai Summit 44.5,90.6 <radius:5> <region:topofthewallKLS>",
 
@@ -191,16 +191,16 @@ data.basenodes.borders = {
 		"Spires of Arak 65.2,18.6 -x- Shadowmoon Valley D 23.0,45.4",
 		"Gorgrond 35.9,78.3 -x- Frostfire Ridge 87.9,72.4",
 		"Warspear 48.3,80.9 -x- Ashran 42.0,23.4",
-		--"Frostfire Ridge/0 44.15,68.52 <radius:20> -x- Frostwall/0 16.21,73.99 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison}", -- 941 is initial Frostfire map
-		--"Frostfire Ridge/0 49.63,60.27 <radius:20> -x- Frostwall/0 57.18,06.60 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison}", -- 941 is initial Frostfire map
+		--"Frostfire Ridge/0 44.15,68.52 <radius:20> -x- Frostwall/0 16.21,73.99 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}", -- 941 is initial Frostfire map
+		--"Frostfire Ridge/0 49.63,60.27 <radius:20> -x- Frostwall/0 57.18,06.60 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}", -- 941 is initial Frostfire map
 		
-		--"Frostfire Ridge/0 44.25,68.73 <radius:20> -x- Frostwall/0 32.18,53.49 {template:custom} {atob:Go up the ramp to the Garrison} {btoa:Leave Garrison following ramp down}",
-		"Frostfire Ridge/0 44.25,68.73 <radius:20> -x- Frostwall/0 32.18,53.49 {template:custom2} {atob1:Go uphill towards the Garrison} {atob2:Enter the Garrison} {btoa1:Leave Garrison following ramp up} {btoa2:Leave Garrison following ramp down}",
-		"Frostfire Ridge/0 49.68,60.39 <radius:20> -x- Frostwall/0 57.26,07.74 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison}",
+		--"Frostfire Ridge/0 44.25,68.73 <radius:20> -x- Frostwall/0 32.18,53.49 {template:atob} {atob:Go up the ramp to the Garrison} {btoa:Leave Garrison following ramp down}",
+		"Frostfire Ridge/0 44.25,68.73 <radius:20> -x- Frostwall/0 32.18,53.49 {template:atob12} {atob1:Go uphill towards the Garrison} {atob2:Enter the Garrison} {btoa1:Leave Garrison following ramp up} {btoa2:Leave Garrison following ramp down}",
+		"Frostfire Ridge/0 49.68,60.39 <radius:20> -x- Frostwall/0 57.26,07.74 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}",
 
-		"Shadowmoon Valley D/0 27.2,15.0 <radius:30> -x- Lunarfall/0 16.0,30.0 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==1}",
-		"Shadowmoon Valley D/0 32.4,23.5 <radius:30> -x- Lunarfall/0 63.3,91.3 {template:custom} {atob:Enter Garrison} {btoa:Leave Garrison}",
-		"Shadowmoon Valley D/0 27.4,13.8 <radius:30> -x- Lunarfall/0 23.3,48.3 {template:custom} {atob:Walk up the path to enter your garrison} {btoa:Walk down the path to leave your garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}",
+		"Shadowmoon Valley D/0 27.2,15.0 <radius:30> -x- Lunarfall/0 16.0,30.0 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==1}",
+		"Shadowmoon Valley D/0 32.4,23.5 <radius:30> -x- Lunarfall/0 63.3,91.3 {template:atob} {atob:Enter Garrison} {btoa:Leave Garrison}",
+		"Shadowmoon Valley D/0 27.4,13.8 <radius:30> -x- Lunarfall/0 23.3,48.3 {template:atob} {atob:Walk up the path to enter your garrison} {btoa:Walk down the path to leave your garrison} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}",
 
 	----------------
 	---  LEGION  ---

@@ -6,34 +6,34 @@ local data=addon.LibRoverData
 data.basenodes.transit = {
 	-- == SHIPS/ZEPPELINS == --
 
-		"Orgrimmar,43.0,64.9 -x- Thunder Bluff,15.2,25.8 (H:ZEPPELIN)",
-		"Orgrimmar,52.5,53.1 -x- Northern Stranglethorn,37.2,52.4 (H:ZEPPELIN)",
-		"Orgrimmar,50.8,55.9 -x- Tirisfal Glades,60.7,58.8 (H:ZEPPELIN)",
+		"Orgrimmar,43.0,64.9 -x- Thunder Bluff,15.2,25.8 {fac:H} {mode:ZEPPELIN}",
+		"Orgrimmar,52.5,53.1 -x- Northern Stranglethorn,37.2,52.4 {fac:H} {mode:ZEPPELIN}",
+		"Orgrimmar,50.8,55.9 -x- Tirisfal Glades,60.7,58.8 {fac:H} {mode:ZEPPELIN}",
 		{"Orgrimmar,44.7,62.3","Borean Tundra,41.4,53.6",faction="H",mode="zeppelin"},--,cost=7*60+30},
 
-		"Tirisfal Glades,59.1,59.0 <port:Undercity> -x- Howling Fjord,77.7,28.3 (H:ZEPPELIN)",
-		"Tirisfal Glades,61.9,59.1 <port:Undercity> -x- Northern Stranglethorn,37.5,50.9 (H:ZEPPELIN)",
+		"Tirisfal Glades,59.1,59.0 <port:Undercity> -x- Howling Fjord,77.7,28.3 {fac:H} {mode:ZEPPELIN}",
+		"Tirisfal Glades,61.9,59.1 <port:Undercity> -x- Northern Stranglethorn,37.5,50.9 {fac:H} {mode:ZEPPELIN}",
 
-		"Stormwind City,18.0,25.8 -x- Borean Tundra 59.7,69.4 (A:SHIP) {cost:177}  {cond:not ZGV.IsLegionBoatLock()}", -- ship turnaround = 275, ~40s waiting; 275/2+40 = 177.5
-		"Stormwind City,22.5,55.8 -x- Teldrassil 55.0,93.7 <port:Darnassus> (A:SHIP)  {cond:not ZGV.IsLegionBoatLock()}",
-		"Teldrassil 52.3,89.5 <port:Darnassus> -x-  Azuremyst Isle 21.3,54.0 (A:SHIP)  {cond:not ZGV.IsLegionBoatLock()}", --TODO the map is a little strange between Azuremyst and the actual ship.
+		"Stormwind City,18.0,25.8 -x- Borean Tundra 59.7,69.4 {fac:A} {mode:SHIP} {cost:177}  {cond:not ZGV.IsLegionBoatLock()}", -- ship turnaround = 275, ~40s waiting; 275/2+40 = 177.5
+		"Stormwind City,22.5,55.8 -x- Teldrassil 55.0,93.7 <port:Darnassus> {fac:A} {mode:SHIP}  {cond:not ZGV.IsLegionBoatLock()}",
+		"Teldrassil 52.3,89.5 <port:Darnassus> -x-  Azuremyst Isle 21.3,54.0 {fac:A} {mode:SHIP}  {cond:not ZGV.IsLegionBoatLock()}", --TODO the map is a little strange between Azuremyst and the actual ship.
 
-		--"Stormwind City,70.5,30.0 @tramsw <dark:1> -x- Deeprun Tram/1 99,45 (A:TRAM)",   "Stormwind City,66.4,35.0 -x- @tramsw (A:WALK) {dontsetborder:1}",
-		"Stormwind City 69.44,31.29 -x- Deeprun Tram/1 42.8,19.5 @deeprun_sw (B:PORTAL) {template:custom} {atob:Enter Stormwind Deeprun Tram portal\nTake tram to Ironforge} {btoa:Exit Stormwind Deeprun Tram through portal}", -- SW entry
-		"Ironforge 76.43,51.08 -x- Deeprun Tram/1 98,45 @deeprun_if (B:PORTAL) {template:custom} {atob:Enter Ironforge Deeprun Tram portal\nTake tram to Stormwind} {btoa:Take tram to Ironforge\nExit Ironforge Deeprun Tram through portal}", -- IF entry
-		"@deeprun_sw -x- @deeprun_if <cost:30> (B:TRAM) {dontsetborder:1}", -- TRAM
-		--"Deeprun Tram/1 88,45 @deeprun_sw_track -x- Deeprun Tram/1 99,45 @deeprun_if_track (B:TRAM)", -- IF entry
+		--"Stormwind City,70.5,30.0 @tramsw <dark:1> -x- Deeprun Tram/1 99,45 {fac:A} {mode:TRAM}",   "Stormwind City,66.4,35.0 -x- @tramsw {fac:A} {dontsetborder:1}",
+		"Stormwind City 69.44,31.29 -x- Deeprun Tram/1 42.8,19.5 @deeprun_sw {mode:PORTAL} {template:atob} {atob:Enter Stormwind Deeprun Tram portal\nTake tram to Ironforge} {btoa:Exit Stormwind Deeprun Tram through portal}", -- SW entry
+		"Ironforge 76.43,51.08 -x- Deeprun Tram/1 98,45 @deeprun_if {mode:PORTAL} {template:atob} {atob:Enter Ironforge Deeprun Tram portal\nTake tram to Stormwind} {btoa:Take tram to Ironforge\nExit Ironforge Deeprun Tram through portal}", -- IF entry
+		"@deeprun_sw -x- @deeprun_if {mode:TRAM} {cost:30} {dontsetborder:1}", -- TRAM
+		--"Deeprun Tram/1 88,45 @deeprun_sw_track -x- Deeprun Tram/1 99,45 @deeprun_if_track {mode:TRAM}", -- IF entry
 
 		{"Wetlands,6.4,62.2 <port:Menethil Harbor>","Dustwallow Marsh,71.5,56.3",faction="A",mode="ship"},
 		{"Wetlands,5.1,55.7 <port:Menethil Harbor>","Howling Fjord,61.3,62.6 <port:Valgarde>",faction="A",mode="ship"},--,cost=300}, --ship turnaround is 450, but takes forever to depart/arrive
 
 		-- NEUTRAL SHIPS
-		"The Cape of Stranglethorn,39.0,67.0 <port:Booty Bay> -x- Northern Barrens,70.2,73.3 <port:Ratchet> (B:SHIP)", -- booty-ratchet
-		"Borean Tundra 78.9,53.6 <port:Unu'pe> -x- Dragonblight 48.0,78.8 <port:Moa'ki Harbor> (B:SHIP) {template:turtle}", -- unu'pe-moa'ki
-		"Dragonblight 49.6,78.4 -x- Howling Fjord 23.5,57.8 <port:Kamagua> (B:SHIP) {template:turtle}", -- moa'ki-kamagua
+		"The Cape of Stranglethorn,39.0,67.0 <port:Booty Bay> -x- Northern Barrens,70.2,73.3 <port:Ratchet> {mode:SHIP}", -- booty-ratchet
+		"Borean Tundra 78.9,53.6 <port:Unu'pe> -x- Dragonblight 48.0,78.8 <port:Moa'ki Harbor> {mode:SHIP} {template:turtle}", -- unu'pe-moa'ki
+		"Dragonblight 49.6,78.4 -x- Howling Fjord 23.5,57.8 <port:Kamagua> {mode:SHIP} {template:turtle}", -- moa'ki-kamagua
 
 
-	"Eastern Plaguelands 54.5,8.4 <template:darkportal> -x- Ghostlands 52.1,97.6 <template:darkportal> (B:PORTAL)",
+	"Eastern Plaguelands 54.5,8.4 <subtype:darkportal> -x- Ghostlands 52.1,97.6 <subtype:darkportal> {mode:PORTAL}",
 
 	-- Stormwind teleport target
 	"Stormwind City 49.6,86.5 @sw_tp_dst",
@@ -55,48 +55,48 @@ data.basenodes.transit = {
     ---  DALARAN  ---
     -----------------
 	-- Chamber of the Guardian Entrance
-		"Dalaran L/10 49.31,47.60 -to- Dalaran L/12 63.38,23.87 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 49.31,47.60 -to- Dalaran L/12 63.38,23.87 {mode:PORTAL} {template:atob}"..
 			"{atob:Enter the Chamber of the Guardian} {cond:ZGV.IsLegionOn()}",
 
 	-- Chamber of the Guardian Exit
-		"Dalaran L/12 64.92,21.07 -to- Dalaran L/10 49.04,48.04 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 64.92,21.07 -to- Dalaran L/10 49.04,48.04 {mode:PORTAL} {template:atob}"..
 			"{atob:Leave the Chamber of the Guardian} {cond:ZGV.IsLegionOn()}",
 
 	-- The Violet Hold Entrance
-		"Dalaran L/10 67.76,70.29 -to- Violet Hold/1 50.95,69.90 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 67.76,70.29 -to- Violet Hold/1 50.95,69.90 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Violet Hold Gate and Walk into the Swirling Portal to the Violet Hold}"..
 			"{cond:ZGV.IsLegionOn()}",
 
 	-- The Violet Hold Exit
-		"Violet Hold/1 50.98,83.81 -to- Dalaran L/10 65.57,67.39 (B:PORTAL) {template:custom}"..
+		"Violet Hold/1 50.98,83.81 -to- Dalaran L/10 65.57,67.39 {mode:PORTAL} {template:atob}"..
 			"{atob:Walk into the Swirling Portal to Dalaran} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Caverns of Time
-		"Dalaran L/12 38.67,79.72 -to- Tanaris/17 54.60,28.30 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 38.67,79.72 -to- Tanaris/17 54.60,28.30 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Caverns of Time} {cond:ZGV.IsLegionOn()}",
 
 	-- DRAENOR
-		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 (A:PORTAL) {cond:IsQuestFlaggedCompleted(38445)}",
-		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 (A:PORTAL) {cond:IsQuestFlaggedCompleted(38445)}",
+		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 {fac:A} {mode:PORTAL} {cond:IsQuestFlaggedCompleted(38445)}",
+		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 {fac:A} {mode:PORTAL} {cond:IsQuestFlaggedCompleted(38445)}",
 		
 	-- Portal to Shattrath
-		"Dalaran L/12 35.57,85.44 -to- Shattrath City/0 54.97,40.23 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 35.57,85.44 -to- Shattrath City/0 54.97,40.23 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Shattrath} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Wyrmrest Temple
-		"Dalaran L/12 30.71,84.32 -to- Dragonblight/0 59.72,52.87 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 30.71,84.32 -to- Dragonblight/0 59.72,52.87 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Wyrmrest Temple} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Dalaran Crater
-		"Dalaran L/12 28.73,77.36 -to- Hillsbrad Foothills/0 30.91,36.34 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 28.73,77.36 -to- Hillsbrad Foothills/0 30.91,36.34 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran Crater} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Karazhan
-		"Dalaran L/12 31.98,71.53 -to- Deadwind Pass/0 47.24,75.40 (B:PORTAL) {template:custom}"..
+		"Dalaran L/12 31.98,71.53 -to- Deadwind Pass/0 47.24,75.40 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Karazhan} {cond:ZGV.IsLegionOn()}",
 
 	-- Margoss's Retreat (Fishing Reputation - Floating Island Next to Dalaran)
-		"Dalaran L/10 23.10,-11.40 <region:dalaran_margosss_retreat> -to- Dalaran L/10 60.92,44.72 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 23.10,-11.40 <region:dalaran_margosss_retreat> -to- Dalaran L/10 60.92,44.72 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to |cffaaffaaConjurer Margoss|r\n\nTell him |cfff0e081\"Please teleport me\nback to Dalaran.\"|r}"..
 			"{cond:ZGV.IsLegionOn()}",
 
@@ -106,23 +106,23 @@ data.basenodes.transit = {
 	---  DALARAN (ALLIANCE ONLY)  ---
 	---------------------------------
 	-- Portal to Stormwind (Alliance)
-		"Dalaran L/10 39.55,63.22 -to- Stormwind City/0 49.59,86.53 (A:PORTAL) {template:custom}"..
+		"Dalaran L/10 39.55,63.22 -to- Stormwind City/0 49.59,86.53 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Stormwind inside Greyfang Enclave} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Ironforge (Alliance)
-		"Dalaran L/10 38.91,64.42 -to- Ironforge/0 25.51,8.43 (A:PORTAL) {template:custom}"..
+		"Dalaran L/10 38.91,64.42 -to- Ironforge/0 25.51,8.43 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Ironforge inside Greyfang Enclave} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Darnassus (Alliance)
-		"Dalaran L/10 38.29,65.57 -to- Darnassus/0 43.47,78.68 (A:PORTAL) {template:custom}"..
+		"Dalaran L/10 38.29,65.57 -to- Darnassus/0 43.47,78.68 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Darnassus inside Greyfang Enclave} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Exodar (Alliance)
-		"Dalaran L/10 37.63,66.79 -to- The Exodar/0 47.62,59.82 (A:PORTAL) {template:custom}"..
+		"Dalaran L/10 37.63,66.79 -to- The Exodar/0 47.62,59.82 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Exodar inside Greyfang Enclave} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Vale of Eternal Blossoms (Alliance)
-		"Dalaran L/10 36.53,67.04 -to- Vale of Eternal Blossoms/0 86.30,61.06 (A:PORTAL) {template:custom}"..
+		"Dalaran L/10 36.53,67.04 -to- Vale of Eternal Blossoms/0 86.30,61.06 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Vale of Eternal Blossoms inside Greyfang Enclave} {cond:ZGV.IsLegionOn()}",		
 		
 		
@@ -131,26 +131,26 @@ data.basenodes.transit = {
 	---  DALARAN (HORDE ONLY)  ---
 	---------------------------------
 	-- Portal to Vale of Eternal Blossoms (Horde)
-		"Dalaran L/10 54.98,25.59 -to- Vale of Eternal Blossoms/0 62.50,21.82 (H:PORTAL) {template:custom}"..
+		"Dalaran L/10 54.98,25.59 -to- Vale of Eternal Blossoms/0 62.50,21.82 {fac:H} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Vale of Eternal Blossoms inside Windrunner's Sanctuary}"..
 			"{cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Orgrimmar (Horde)
-		"Dalaran L/10 55.25,23.93 -to- Orgrimmar/2 48.28,64.53 (H:PORTAL) {template:custom}"..
+		"Dalaran L/10 55.25,23.93 -to- Orgrimmar/2 48.28,64.53 {fac:H} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Orgrimmar inside Windrunner's Sanctuary} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Undercity (Horde)
-		"Dalaran L/10 55.92,22.71 -to- Undercity/0 84.59,16.33 (H:PORTAL) {template:custom}"..
+		"Dalaran L/10 55.92,22.71 -to- Undercity/0 84.59,16.33 {fac:H} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Undercity inside Windrunner's Sanctuary} {cond:ZGV.IsLegionOn()}",
-		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 (A:PORTAL) {cond:IsQuestFlaggedCompleted(34575)}",
-		--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 (H:PORTAL) {cond:UnitLevel('player')>=90}",
+		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 {fac:A} {mode:PORTAL} {cond:IsQuestFlaggedCompleted(34575)}",
+		--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90}",
 
 	-- Portal to Thunder Bluff (Horde)
-		"Dalaran L/10 56.90,21.95 -to- Thunder Bluff/0 22.21,16.87 (H:PORTAL) {template:custom}"..
+		"Dalaran L/10 56.90,21.95 -to- Thunder Bluff/0 22.21,16.87 {fac:H} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Thunder Bluff inside Windrunner's Sanctuary} {cond:ZGV.IsLegionOn()}",
 
 	-- Portal to Silvermoon (Horde)
-		"Dalaran L/10 57.94,21.73 -to- Silvermoon City/0 58.26,19.24 (H:PORTAL) {template:custom}"..
+		"Dalaran L/10 57.94,21.73 -to- Silvermoon City/0 58.26,19.24 {fac:H} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Silvermoon inside Windrunner's Sanctuary} {cond:ZGV.IsLegionOn()}",
 
 
@@ -160,7 +160,7 @@ data.basenodes.transit = {
     ---------------------------------
 	-- Teleport pads moved to FloorCrossings
 	-- Portal to Dalaran
-		"Broken Shore/2 24.78,33.70 -to- Dalaran L/10 60.92,44.72 (B:PORTAL) {template:custom}"..
+		"Broken Shore/2 24.78,33.70 -to- Dalaran L/10 60.92,44.72 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(39757)}",
 
 
@@ -169,7 +169,7 @@ data.basenodes.transit = {
     ---  MAGE ORDER HALL  ---
     -------------------------
 	-- Portal to Dalaran
-		"Hall of the Guardian/1 57.32,90.51 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+		"Hall of the Guardian/1 57.32,90.51 -to- Dalaran L/10 67.52,46.47 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(41036)}",
 
 
@@ -178,51 +178,51 @@ data.basenodes.transit = {
     ---  WARRIOR ORDER HALL  ---
     ----------------------------
 	-- Dalaran: Jump to Skyhold
-		"Dalaran L/10 75.23,47.22 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 75.23,47.22 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(42815) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Stormheim: Jump to Skyhold
-		"Stormheim/0 60.18,52.23 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Stormheim/0 60.18,52.23 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(39803) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Azsuna: Jump to Skyhold
-		"Azsuna/0 47.58,28.08 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Azsuna/0 47.58,28.08 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38443) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Val'sharah: Jump to Skyhold
-		"Val'sharah/0 54.71,74.89 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Val'sharah/0 54.71,74.89 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38384) and select(2,UnitClass('player'))=='WARRIOR'}",
 		
 	-- Highmountain: Jump to Skyhold
-		"Thunder Totem/0 39.73,42.11 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Thunder Totem/0 39.73,42.11 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(38907) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Suramar: Jump to Skyhold
-		"Suramar/0 33.08,48.20 -to- Skyhold/1 58.92,36.29 (B:PORTAL) {template:custom}"..
+		"Suramar/0 33.08,48.20 -to- Skyhold/1 58.92,36.29 {mode:PORTAL} {template:atob}"..
 			"{atob:Use the Jump to Skyhold ability} {cond:PlayerCompletedQuest(42229) and select(2,UnitClass('player'))=='WARRIOR'}",	
 	
 	-- Skyhold: Jump to Dalaran
-		"Skyhold/1 58.34,24.98 -to- Dalaran L/10 72.42,46.00 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Dalaran L/10 72.42,46.00 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Dalaran} {cond:PlayerCompletedQuest(42815) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Skyhold: Jump to Stormheim
-		"Skyhold/1 58.34,24.98 -to- Stormheim/0 60.42,51.05 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Stormheim/0 60.42,51.05 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Stormheim} {cond:PlayerCompletedQuest(39803) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Skyhold: Jump to Azsuna
-		"Skyhold/1 58.34,24.98 -to- Azsuna/0 47.55,27.87 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Azsuna/0 47.55,27.87 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Azsuna} {cond:PlayerCompletedQuest(38443) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Skyhold: Jump to Val'sharah
-		"Skyhold/1 58.34,24.98 -to- Val'sharah/0 55.01,72.49 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Val'sharah/0 55.01,72.49 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Val'sharah} {cond:PlayerCompletedQuest(38384) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Skyhold: Jump to Highmountain
-		"Skyhold/1 58.34,24.98 -to- Thunder Totem/0 41.57,44.02 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Thunder Totem/0 41.57,44.02 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Highmountain} {cond:PlayerCompletedQuest(38907) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 	-- Skyhold: Jump to Suramar
-		"Skyhold/1 58.34,24.98 -to- Suramar/0 33.82,49.38 (B:PORTAL) {template:custom}"..
+		"Skyhold/1 58.34,24.98 -to- Suramar/0 33.82,49.38 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Aerylia and Choose Suramar} {cond:PlayerCompletedQuest(42229) and select(2,UnitClass('player'))=='WARRIOR'}",
 
 
@@ -231,27 +231,27 @@ data.basenodes.transit = {
     ---  SHAMAN ORDER HALL  ---
     ---------------------------
 	-- Dalaran Portal to the Maelstrom
-		"Dalaran L/10 67.03,48.18 -to- The Maelstrom L/0 30.75,53.07 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 67.03,48.18 -to- The Maelstrom L/0 30.75,53.07 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to the Maelstrom} {cond:PlayerCompletedQuest(39746)}",
 
 	-- Portal to Dalaran
-		"The Maelstrom L/0 29.78,51.98 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+		"The Maelstrom L/0 29.78,51.98 -to- Dalaran L/10 67.52,46.47 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(39746)}",
 
 	-- Portal to Vortex Pinnacle
-		"The Maelstrom L/0 26.71,41.32 -to- The Vortex Pinnacle L/1 54.14,16.85 (B:PORTAL) {template:custom}"..
+		"The Maelstrom L/0 26.71,41.32 -to- The Vortex Pinnacle L/1 54.14,16.85 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Vortex Pinnacle Portal} {cond:PlayerCompletedQuest(43002)}",
 
 	-- Vortex Pinnacle Portal to the Maelstrom
-		"The Vortex Pinnacle L/1 53.59,16.00 -to- The Maelstrom L/0 26.79,41.48 (B:PORTAL) {template:custom}"..
+		"The Vortex Pinnacle L/1 53.59,16.00 -to- The Maelstrom L/0 26.79,41.48 {mode:PORTAL} {template:atob}"..
 			"{atob:Walk into the Swirling Portal to the Maelstrom} {cond:PlayerCompletedQuest(43002)}",
 
 	-- Portal to the Firelands
-		"The Maelstrom L/0 31.08,61.02 -to- Firelands L/0 25.79,89.25 (B:PORTAL) {template:custom}"..
+		"The Maelstrom L/0 31.08,61.02 -to- Firelands L/0 25.79,89.25 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Firelands Portal} {cond:PlayerCompletedQuest(42208)}",
 
 	-- Firelands Portal to the Maelstrom
-		"Firelands L/0 25.02,92.64 -to- The Maelstrom L/0 30.54,59.78 (B:PORTAL) {template:custom}"..
+		"Firelands L/0 25.02,92.64 -to- The Maelstrom L/0 30.54,59.78 {mode:PORTAL} {template:atob}"..
 			"{atob:Walk into the Swirling Portal to the Maelstrom} {cond:PlayerCompletedQuest(42208)}",
 
 
@@ -260,11 +260,11 @@ data.basenodes.transit = {
     ---  HUNTER ORDER HALL  ---
     ---------------------------
 	-- Dalaran Flight to Trueshot Lodge
-		"Dalaran L/10 72.85,41.21 -to- Trueshot Lodge/0 33.25,49.43 (B:PORTAL) {template:custom}"..
+		"Dalaran L/10 72.85,41.21 -to- Trueshot Lodge/0 33.25,49.43 {mode:PORTAL} {template:atob}"..
 			"{atob:Talk to Talua and Fly to Trueshot Lodge} {cond:PlayerCompletedQuest(40953)}",
 
 	-- Trueshot Lodge Portal to Dalaran
-		"Trueshot Lodge/0 48.63,43.50 -to- Dalaran L/10 67.52,46.47 (B:PORTAL) {template:custom}"..
+		"Trueshot Lodge/0 48.63,43.50 -to- Dalaran L/10 67.52,46.47 {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran Upstairs Inside the Building} {cond:PlayerCompletedQuest(40953)}",
 
 
@@ -273,12 +273,12 @@ data.basenodes.transit = {
     ---  WARLOCK ORDER HALL  ---
     ----------------------------
 	-- Portal from Dalaran to Dreadscar Rift
-		"Dalaran L/11 27.85,44.50 -to- Dreadscar Rift/0 72.52,37.47 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dreadscar Rift} {cond:PlayerCompletedQuest(40729)}",
+		"Dalaran L/11 27.85,44.50 -to- Dreadscar Rift/0 72.52,37.47 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dreadscar Rift} {cond:PlayerCompletedQuest(40729)}",
 
 	-- Portal from Dreadscar Rift to Dalaran
-		"Dreadscar Rift/0 74.16,38.35 -to- Dalaran L/11 29.20,43.97 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Portal to Dalaran} {cond:PlayerCompletedQuest(40729)}",
+		"Dreadscar Rift/0 74.16,38.35 -to- Dalaran L/11 29.20,43.97 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Portal to Dalaran} {cond:PlayerCompletedQuest(40729)}",
 
 
 
@@ -286,22 +286,22 @@ data.basenodes.transit = {
     ---  PALADIN ORDER HALL  ---
     ----------------------------
 	-- Portal from Dalaran to Sanctum of Light (ALLIANCE)
-		"Dalaran L/10 32.59,69.96 -to- Eastern Plaguelands/20 39.42,61.46 (A:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Sanctum of Light inside Greyfang Enclave}"..
+		"Dalaran L/10 32.59,69.96 -to- Eastern Plaguelands/20 39.42,61.46 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Sanctum of Light inside Greyfang Enclave}"..
 			"{cond:PlayerCompletedQuest(38566)}",
 
 	-- Portal from Sanctum of Light to Dalaran (ALLIANCE)
-		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 33.69,68.01 (A:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
+		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 33.69,68.01 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
 
 	-- Portal from Dalaran to Sanctum of Light (HORDE)
-		"Dalaran L/10 61.92,13.49 -to- Eastern Plaguelands/20 39.42,61.46 (H:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Sanctum of Light inside Windrunner's Sanctuary}"..
+		"Dalaran L/10 61.92,13.49 -to- Eastern Plaguelands/20 39.42,61.46 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Sanctum of Light inside Windrunner's Sanctuary}"..
 			"{cond:PlayerCompletedQuest(38566)}",
 
 	-- Portal from Sanctum of Light to Dalaran (HORDE)
-		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 61.27,14.82 (H:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
+		"Eastern Plaguelands/20 37.57,64.10 -to- Dalaran L/10 61.27,14.82 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(38566)}",
 
 
 
@@ -309,13 +309,13 @@ data.basenodes.transit = {
     ---  DEMON HUNTER ORDER HALL  ---
     ---------------------------------
 	-- Portal from Dalaran to the Fel Hammer
-		"Dalaran L/10 98.02,69.27 -to- Mardum, the Shattered Abyss/1 59.18,85.75 (B:PORTAL)"..
-			"{template:custom} {atob:Glide to the Floating Island and Click the Illidari Gateway}"..
+		"Dalaran L/10 98.02,69.27 -to- Mardum, the Shattered Abyss/1 59.18,85.75 {mode:PORTAL}"..
+			"{template:atob} {atob:Glide to the Floating Island and Click the Illidari Gateway}"..
 			"{cond:PlayerCompletedQuest(42872)}",
 
 	-- Portal from the Fel Hammer to Dalaran
-		"Mardum, the Shattered Abyss/1 59.23,91.93 -to- Dalaran L/10 77.11,49.61 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Illidari Gateway} {cond:PlayerCompletedQuest(42872)}",
+		"Mardum, the Shattered Abyss/1 59.23,91.93 -to- Dalaran L/10 77.11,49.61 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Illidari Gateway} {cond:PlayerCompletedQuest(42872)}",
 
 
 
@@ -323,12 +323,12 @@ data.basenodes.transit = {
     ---  ROGUE ORDER HALL  ---
     --------------------------
 	-- Kocker to Dalaran #1
-		"Dalaran L/4 39.67,21.52 -to- Dalaran L/10 54.20,32.68 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+		"Dalaran L/4 39.67,21.52 -to- Dalaran L/10 54.20,32.68 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
 
 	-- Kocker to Dalaran #2
-		"Dalaran L/4 29.48,22.02 -to- Dalaran L/10 46.44,26.01 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
+		"Dalaran L/4 29.48,22.02 -to- Dalaran L/10 46.44,26.01 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Kocker} {cond:PlayerHaveQuest(40832) or PlayerCompletedQuest(40832)}",
 
 
 
@@ -336,22 +336,22 @@ data.basenodes.transit = {
     ---  PRIEST ORDER HALL  ---
     ---------------------------
 	-- Portal from Dalaran to Netherlight Temple (ALLIANCE)
-		"Dalaran L/10 39.61,57.24 -to- Netherlight Temple/1 49.64,75.50 (A:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Netherlight Temple upstairs inside Greyfang Enclave}"..
+		"Dalaran L/10 39.61,57.24 -to- Netherlight Temple/1 49.64,75.50 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Netherlight Temple upstairs inside Greyfang Enclave}"..
 			"{cond:PlayerCompletedQuest(40938)}",
 
 	-- Portal from Netherlight Temple to Dalaran (ALLIANCE)
-		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 38.73,57.39 (A:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
+		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 38.73,57.39 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
 
 	-- Portal from Dalaran to Netherlight Temple (HORDE)
-		"Dalaran L/10 63.00,17.70 -to- Netherlight Temple/1 49.64,75.50 (H:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Netherlight Temple inside Windrunner's Sanctuary}"..
+		"Dalaran L/10 63.00,17.70 -to- Netherlight Temple/1 49.64,75.50 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Netherlight Temple inside Windrunner's Sanctuary}"..
 			"{cond:PlayerCompletedQuest(40938)}",
 
 	-- Portal from Netherlight Temple to Dalaran (HORDE)
-		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 61.65,17.39 (H:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
+		"Netherlight Temple/1 49.75,80.72 -to- Dalaran L/10 61.65,17.39 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40938)}",
 
 
 
@@ -359,12 +359,12 @@ data.basenodes.transit = {
     ---  MONK ORDER HALL  ---
     -------------------------
 	-- Portal from the Wandering Isle to Peak of Serenity
-		"The Wandering Isle L/0 50.05,54.41 -to- Kun-Lai Summit/0 48.69,43.12 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Peak of Serenity} {cond:PlayerCompletedQuest(40236)}",
+		"The Wandering Isle L/0 50.05,54.41 -to- Kun-Lai Summit/0 48.69,43.12 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Peak of Serenity} {cond:PlayerCompletedQuest(40236)}",
 
 	-- Portal from the Wandering Isle to Dalaran
-		"The Wandering Isle L/0 52.39,57.15 -to- Dalaran L/10 67.52,46.47 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40236)}",
+		"The Wandering Isle L/0 52.39,57.15 -to- Dalaran L/10 67.52,46.47 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40236)}",
 
 
 
@@ -372,66 +372,66 @@ data.basenodes.transit = {
     ---  DRUID ORDER HALL  ---
     --------------------------
 	-- Portal from the The Dreamgrove to Dalaran
-		"The Dreamgrove/0 56.51,43.10 -to- Dalaran L/10 67.52,46.47 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40645)}",
+		"The Dreamgrove/0 56.51,43.10 -to- Dalaran L/10 67.52,46.47 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Dalaran} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from the The Dreamgrove to Emerald Dreamway
-		--"The Dreamgrove/0 41.89,22.34 -to- Emerald Dreamway/0 45.10,26.49 (B:PORTAL)"..
-		"The Dreamgrove/0 55.66,22.09 -to- Emerald Dreamway/0 45.10,26.49 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		--"The Dreamgrove/0 41.89,22.34 -to- Emerald Dreamway/0 45.10,26.49 {mode:PORTAL}"..
+		"The Dreamgrove/0 55.66,22.09 -to- Emerald Dreamway/0 45.10,26.49 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Emerald Dreamway to The Dreamgrove
-		--"Emerald Dreamway/0 45.68,23.52 -to- The Dreamgrove/0 41.69,22.77 (B:PORTAL)"..
-		"Emerald Dreamway/0 45.68,23.52 -to- The Dreamgrove/0 54.30,24.97 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to The Dreamgrove} {cond:PlayerCompletedQuest(40645)}",
+		--"Emerald Dreamway/0 45.68,23.52 -to- The Dreamgrove/0 41.69,22.77 {mode:PORTAL}"..
+		"Emerald Dreamway/0 45.68,23.52 -to- The Dreamgrove/0 54.30,24.97 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to The Dreamgrove} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Emerald Dreamway to Mount Hyjal
-		"Emerald Dreamway/0 53.87,53.17 -to- Mount Hyjal/0 59.29,25.83 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to Mount Hyjal} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 53.87,53.17 -to- Mount Hyjal/0 59.29,25.83 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to Mount Hyjal} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Mount Hyjal to the Emerald Dreamway
-		"Mount Hyjal/0 59.09,26.09 -to- Emerald Dreamway/0 51.59,51.89 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"Mount Hyjal/0 59.09,26.09 -to- Emerald Dreamway/0 51.59,51.89 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 	
 	-- Portal from Emerald Dreamway to the Hinterlands
-		"Emerald Dreamway/0 50.91,66.51 -to- The Hinterlands/0 62.49,23.50 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Hinterlands} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 50.91,66.51 -to- The Hinterlands/0 62.49,23.50 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Hinterlands} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from the Hinterlands to the Emerald Dreamway
-		"The Hinterlands/0 62.30,22.62 -to- Emerald Dreamway/0 49.42,62.50 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"The Hinterlands/0 62.30,22.62 -to- Emerald Dreamway/0 49.42,62.50 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Emerald Dreamway to Duskwood
-		"Emerald Dreamway/0 40.02,70.02 -to- Duskwood/0 46.59,37.06 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to Duskwood} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 40.02,70.02 -to- Duskwood/0 46.59,37.06 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to Duskwood} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Duskwood to the Emerald Dreamway
-		"Duskwood/0 46.57,35.64 -to- Emerald Dreamway/0 38.85,65.99 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"Duskwood/0 46.57,35.64 -to- Emerald Dreamway/0 38.85,65.99 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Emerald Dreamway to Moonglade
-		"Emerald Dreamway/0 25.71,80.55 -to- Moonglade/0 67.59,60.19 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to Moonglade} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 25.71,80.55 -to- Moonglade/0 67.59,60.19 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to Moonglade} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Moonglade to the Emerald Dreamway
-		"Moonglade/0 68.14,60.28 -to- Emerald Dreamway/0 26.31,77.76 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"Moonglade/0 68.14,60.28 -to- Emerald Dreamway/0 26.31,77.76 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 	
 	-- Portal from Emerald Dreamway to Feralas
-		"Emerald Dreamway/0 22.73,38.50 -to- Feralas/0 51.20,11.03 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to Feralas} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 22.73,38.50 -to- Feralas/0 51.20,11.03 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to Feralas} {cond:PlayerCompletedQuest(40645)}",
 	
 	-- Portal from Feralas to the Emerald Dreamway
-		"Feralas/0 51.34,10.59 -to- Emerald Dreamway/0 27.64,40.69 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"Feralas/0 51.34,10.59 -to- Emerald Dreamway/0 27.64,40.69 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Emerald Dreamway to Grizzly Hills
-		"Emerald Dreamway/0 31.60,25.91 -to- Grizzly Hills/0 50.43,29.75 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to Grizzly Hills} {cond:PlayerCompletedQuest(40645)}",
+		"Emerald Dreamway/0 31.60,25.91 -to- Grizzly Hills/0 50.43,29.75 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to Grizzly Hills} {cond:PlayerCompletedQuest(40645)}",
 
 	-- Portal from Grizzly Hills to the Emerald Dreamway
-		"Grizzly Hills/0 50.32,29.18 -to- Emerald Dreamway/0 32.40,29.53 (B:PORTAL)"..
-			"{template:custom} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
+		"Grizzly Hills/0 50.32,29.18 -to- Emerald Dreamway/0 32.40,29.53 {mode:PORTAL}"..
+			"{template:atob} {atob:Walk into the Swirling Portal to the Emerald Dreamway} {cond:PlayerCompletedQuest(40645)}",
 
 
 
@@ -440,123 +440,123 @@ data.basenodes.transit = {
     -----------------
 	-- Shal'Aran Cave Entrance
 		"Suramar/0 34.93,47.82 -x- Suramar/0 36.19,47.09 <region:suramar_shalaran>"..
-			"{template:custom} {atob:Enter the cave} {btoa:Leave the cave}",
+			"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
 
 	-- Portal from Shal'Aran to Felsoul Hold
-		"Suramar/0 36.10,45.75 <region:suramar_shalaran> -to- Suramar/23 52.35,36.75 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Felsoul Hold\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(41575)} {cost:13}",
+		"Suramar/0 36.10,45.75 <region:suramar_shalaran> -to- Suramar/23 52.35,36.75 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Felsoul Hold\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(41575)} {cost:13}",
 
 	-- Portal from Felsoul Hold to Shal'Aran
-		"Suramar/23 53.60,36.80 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(41575)} {cost:13}",
+		"Suramar/23 53.60,36.80 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(41575)} {cost:13}",
 
 	-- Portal from Shal'Aran to Falanaar
-		"Suramar/0 35.89,45.56 <region:suramar_shalaran> -to- Suramar/32 41.38,15.05 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Falanaar\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(42230)} {cost:30}",
+		"Suramar/0 35.89,45.56 <region:suramar_shalaran> -to- Suramar/32 41.38,15.05 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Falanaar\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(42230)} {cost:30}",
 
 	-- Portal from Falanaar to Shal'Aran
-		"Suramar/32 40.91,13.70 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(42230)} {cost:30}",
+		"Suramar/32 40.91,13.70 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(42230)} {cost:30}",
 
 	-- Portal from Shal'Aran to Moon Guard Stronghold
-		"Suramar/0 36.01,45.25 <region:suramar_shalaran> -to- Suramar/0 30.79,10.87 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Moon Guard Stronghold\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.01,45.25 <region:suramar_shalaran> -to- Suramar/0 30.79,10.87 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Moon Guard Stronghold\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43808)}",
 
 	-- Portal from Moon Guard Stronghold to Shal'Aran
-		"Suramar/0 30.83,11.02 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43808)}",
+		"Suramar/0 30.83,11.02 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43808)}",
 
 	-- Portal from Shal'Aran to Lunastre Estate
-		"Suramar/0 36.17,45.02 <region:suramar_shalaran> -to- Suramar/0 43.61,79.10 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Lunastre Estate\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.17,45.02 <region:suramar_shalaran> -to- Suramar/0 43.61,79.10 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Lunastre Estate\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43811)}",
 
 	-- Portal from Lunastre Estate to Shal'Aran
-		"Suramar/0 43.68,79.25 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43811)}",
+		"Suramar/0 43.68,79.25 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43811)}",
 
 	-- Portal from Shal'Aran to Ruins of Elune'eth
-		"Suramar/0 36.34,44.91 <region:suramar_shalaran> -to- Suramar/0 36.31,46.89 <region:suramar_eluneeth> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Ruins of Elune'eth\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.34,44.91 <region:suramar_shalaran> -to- Suramar/0 36.31,46.89 <region:suramar_eluneeth> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Ruins of Elune'eth\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(40956)} {cost:2}",
 
 	-- Portal from Ruins of Elune'eth to Shal'Aran
-		"Suramar/0 36.10,47.23 <region:suramar_eluneeth> -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(40956)} {cost:2}",
+		"Suramar/0 36.10,47.23 <region:suramar_eluneeth> -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(40956)} {cost:2}",
 
 	-- Ruins of Elune'eth Road Connection #1
-		"Suramar/0 37.35,46.38 -x- Suramar/0 38.19,47.63 <region:suramar_eluneeth> {template:custom}"..
+		"Suramar/0 37.35,46.38 -x- Suramar/0 38.19,47.63 <region:suramar_eluneeth> {template:atob}"..
 			"{atob:Follow the road} {btoa:Follow the road}",
 
 	-- Ruins of Elune'eth Road Connection #2
-		"Suramar/0 35.86,44.39 -x- Suramar/0 36.51,45.27 <region:suramar_eluneeth> {template:custom}"..
+		"Suramar/0 35.86,44.39 -x- Suramar/0 36.51,45.27 <region:suramar_eluneeth> {template:atob}"..
 		"{atob:Follow the road} {btoa:Follow the road}",
 
 	-- Ruins of Elune'eth Road Connection #3
-		"Suramar/0 37.04,45.27 <region:suramar_eluneeth> -x- Suramar/0 37.69,45.22 {template:custom}"..
+		"Suramar/0 37.04,45.27 <region:suramar_eluneeth> -x- Suramar/0 37.69,45.22 {template:atob}"..
 		"{atob:Follow the path up} {btoa:Follow the path down}",	
 	
 	-- Portal from Shal'Aran to Sanctum of Order
-		"Suramar/0 36.70,44.64 <region:suramar_shalaran> -to- Suramar/0 43.40,60.72 <region:suramar_sanctum_of_order> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Sanctum of Order\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.70,44.64 <region:suramar_shalaran> -to- Suramar/0 43.40,60.72 <region:suramar_sanctum_of_order> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Sanctum of Order\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43813)}",
 
 	-- Portal from Sanctum of Order to Shal'Aran
-		"Suramar/0 43.41,60.56 <region:suramar_sanctum_of_order> -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran\nDownstairs in the Sanctum of Order}"..
+		"Suramar/0 43.41,60.56 <region:suramar_sanctum_of_order> -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran\nDownstairs in the Sanctum of Order}"..
 			"{cond:PlayerCompletedQuest(43813)}",
 
 	-- Portal from Shal'Aran to Tel'anor
-		"Suramar/0 36.92,44.66 <region:suramar_shalaran> -to- Suramar/0 42.17,35.38 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Tel'anor\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.92,44.66 <region:suramar_shalaran> -to- Suramar/0 42.17,35.38 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Tel'anor\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43809)}",
 
 	-- Portal from Tel'anor to Shal'Aran
-		"Suramar/0 42.03,35.24 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43809)}",
+		"Suramar/0 42.03,35.24 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(43809)}",
 
 	-- Portal from Shal'Aran to Twilight Vineyards
-		"Suramar/0 36.95,45.00 <region:suramar_shalaran> -to- Suramar/0 64.09,60.80 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Twilight Vineyards\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.95,45.00 <region:suramar_shalaran> -to- Suramar/0 64.09,60.80 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Twilight Vineyards\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(44084)}",
 
 	-- Portal from Twilight Vineyards to Shal'Aran
-		"Suramar/0 64.00,60.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(44084)}",
+		"Suramar/0 64.00,60.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(44084)}",
 
 	-- Portal from Shal'Aran to The Waning Crescent
-		"Suramar/0 36.48,44.75 <region:suramar_shalaran> -to- Suramar/0 47.45,81.97 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to The Waning Crescent\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.48,44.75 <region:suramar_shalaran> -to- Suramar/0 47.45,81.97 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to The Waning Crescent\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(42487) and not PlayerCompletedQuest(38649)}",
 
 	-- Portal from The Waning Crescent to Shal'Aran
-		"Suramar/0 47.73,81.38 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran}"..
+		"Suramar/0 47.73,81.38 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran}"..
 			"{cond:PlayerCompletedQuest(42487) and not PlayerCompletedQuest(38649)}",
 
 	-- Portal from Shal'Aran to Evermoon Terrace
-		"Suramar/0 36.49,44.75 <region:suramar_shalaran> -to- Suramar/0 52.04,78.87 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Evermoon Terrace\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.49,44.75 <region:suramar_shalaran> -to- Suramar/0 52.04,78.87 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Evermoon Terrace\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(42889)}",
 
 	-- Portal from Evermoon Terrace to Shal'Aran
-		"Suramar/0 51.98,78.75 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran\nat the Top of the Tower}"..
+		"Suramar/0 51.98,78.75 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran\nat the Top of the Tower}"..
 			"{cond:PlayerCompletedQuest(42889)}",	
 	
 	-- Portal from Shal'Aran to Astravar Harbor
-		"Suramar/0 36.77,45.04 <region:suramar_shalaran> -to- Suramar/0 54.41,69.53 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Astravar Harbor\ninside the Shal'Aran Cave}"..
+		"Suramar/0 36.77,45.04 <region:suramar_shalaran> -to- Suramar/0 54.41,69.53 {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Astravar Harbor\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(45317)}",	
 	
 	-- Portal from Evermoon Terrace to Shal'Aran
-		"Suramar/0 54.48,69.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran\nupstairs inside the building}"..
+		"Suramar/0 54.48,69.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> {mode:PORTAL}"..
+			"{template:atob} {atob:Click the Portal to Shal'Aran\nupstairs inside the building}"..
 			"{cond:PlayerCompletedQuest(45317)}",
 
 	-- Sanctum of Order (region) to Sactum Depths (region)
-		"Suramar/0 42.06,60.85 <region:suramar_sanctum_depths> -x- Suramar/0 42.72,61.13 <region:suramar_sanctum_of_order> {template:custom}"..
+		"Suramar/0 42.06,60.85 <region:suramar_sanctum_depths> -x- Suramar/0 42.72,61.13 <region:suramar_sanctum_of_order> {template:atob}"..
 			"{atob:Follow the path} {btoa:Follow the path}",
 
 
@@ -566,43 +566,43 @@ data.basenodes.transit = {
     -------------------
     -- NEUTRAL
 	-- Portal from Stormheim to Helheim
-		"Stormheim/0 73.70,39.29 -to- Helheim/0 66.25,47.63 (A:PORTAL)"..
-			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+		"Stormheim/0 73.70,39.29 -to- Helheim/0 66.25,47.63 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
 
 	-- Portal from Helheim to Stormheim
-		"Helheim/0 66.83,48.14 -to- Stormheim/0 73.54,39.51 (A:PORTAL)"..
-			"{template:custom} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
+		"Helheim/0 66.83,48.14 -to- Stormheim/0 73.54,39.51 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Enter the Swirling Portal} {cond:PlayerCompletedQuest(39855)}",
 
     -- ALLIANCE
 	-- Vethir Flight to Top of Galebroken Path
-		"Stormheim/0 37.48,64.23 -to- Stormheim/0 44.83,77.39 (A:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to the top of the Galebroken Path.\"}"..
+		"Stormheim/0 37.48,64.23 -to- Stormheim/0 44.83,77.39 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to the top of the Galebroken Path.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
 	-- Vethir Flight to Thorim's Peak Outside the Thorignir Refuge
-		"Stormheim/0 37.48,64.23 -to- Stormheim/0 42.79,82.67 (A:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to Thorim's Peak outside the Thorignir Refuge.\"}"..
+		"Stormheim/0 37.48,64.23 -to- Stormheim/0 42.79,82.67 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to Thorim's Peak outside the Thorignir Refuge.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
 	-- Vethir Flight to Top of Thorim's Peak
-		"Stormheim/0 37.48,64.23 -to- Stormheim/0 41.30,80.10 (A:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to the top of Thorim's Peak.\"}"..
+		"Stormheim/0 37.48,64.23 -to- Stormheim/0 41.30,80.10 {fac:A} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to the top of Thorim's Peak.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
     -- HORDE
     -- Vethir Flight to Top of Galebroken Path
-		"Stormheim/0 44.66,59.51 -to- Stormheim/0 44.83,77.39 (H:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to the top of the Galebroken Path.\"}"..
+		"Stormheim/0 44.66,59.51 -to- Stormheim/0 44.83,77.39 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to the top of the Galebroken Path.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
 	-- Vethir Flight to Thorim's Peak Outside the Thorignir Refuge
-		"Stormheim/0 44.66,59.51 -to- Stormheim/0 42.79,82.67 (H:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to Thorim's Peak outside the Thorignir Refuge.\"}"..
+		"Stormheim/0 44.66,59.51 -to- Stormheim/0 42.79,82.67 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to Thorim's Peak outside the Thorignir Refuge.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
 	-- Vethir Flight to Top of Thorim's Peak
-		"Stormheim/0 44.66,59.51 -to- Stormheim/0 41.30,80.10 (H:PORTAL)"..
-			"{template:custom} {atob:Talk to Vethir and tell him \"Take me to the top of Thorim's Peak.\"}"..
+		"Stormheim/0 44.66,59.51 -to- Stormheim/0 41.30,80.10 {fac:H} {mode:PORTAL}"..
+			"{template:atob} {atob:Talk to Vethir and tell him \"Take me to the top of Thorim's Peak.\"}"..
 			"{cond:PlayerCompletedQuest(38624)}",
 
 
@@ -610,21 +610,21 @@ data.basenodes.transit = {
     -------------------------		
     ---  DALARAN (WOTLK)  ---
     -------------------------
-		"Dalaran 55.4,25.4 -to- Orgrimmar/2 <region:cleftofshadow> 48.3,64.5 (H:PORTAL)",
-		"Dalaran 33.6,68.6 -to- Wintergrasp,50.0,16.7 (A:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
-		"Dalaran 58.1,25.8 -to- Wintergrasp,50.0,16.7 (H:PORTAL) {cond:LibRover:IsWintergraspControlled()}",
-		"Dalaran 56.0,46.8 -x- Crystalsong Forest 15.8,42.5 (B:PORTAL)",
+		"Dalaran 55.4,25.4 -to- Orgrimmar/2 <region:cleftofshadow> 48.3,64.5 {fac:H} {mode:PORTAL}",
+		"Dalaran 33.6,68.6 -to- Wintergrasp,50.0,16.7 {fac:A} {mode:PORTAL} {cond:LibRover:IsWintergraspControlled()}",
+		"Dalaran 58.1,25.8 -to- Wintergrasp,50.0,16.7 {fac:H} {mode:PORTAL} {cond:LibRover:IsWintergraspControlled()}",
+		"Dalaran 56.0,46.8 -x- Crystalsong Forest 15.8,42.5 {mode:PORTAL}",
 
-		"Dalaran 25.5,51.4 -to- Tanaris/17 54.6,28.3 <title:Caverns of Time> @cot_from_dala (B:PORTAL) {cond:LibRover.cfg.use_cot or (ZGV and ZGV:GetReputation('Keepers of Time').standing>=5)}",
-		--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 (A:PORTAL)", --portal to upper level in Dalaran. The Purple Parlor
-		"Dalaran 40.1,62.8 -to- @sw_tp_dst (A:PORTAL)", --COORDS BAD
+		"Dalaran 25.5,51.4 -to- Tanaris/17 54.6,28.3 <title:Caverns of Time> @cot_from_dala {mode:PORTAL} {cond:LibRover.cfg.use_cot or (ZGV and ZGV:GetReputation('Keepers of Time').standing>=5)}",
+		--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 {fac:A} {mode:PORTAL}", --portal to upper level in Dalaran. The Purple Parlor
+		"Dalaran 40.1,62.8 -to- @sw_tp_dst {fac:A} {mode:PORTAL}", --COORDS BAD
 
-		--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 (A:PORTAL)", --portal to upper level in Dalaran. The Purple Parlor
+		--"Dalaran/1 25.9,44.2 -x- Dalaran/1 22.3,39.7 {fac:A} {mode:PORTAL}", --portal to upper level in Dalaran. The Purple Parlor
 	-- DALARAN - ENDS		
 
 	
 	-- STORMWIND CITY - STARTS
-		"Stormwind City/0 80.26,34.85 -to- Dalaran L/10 60.92,44.72 (A:PORTAL) {template:custom}"..
+		"Stormwind City/0 80.26,34.85 -to- Dalaran L/10 60.92,44.72 {fac:A} {mode:PORTAL} {template:atob}"..
 			"{atob:Click the Portal to Dalaran\ninside Stormwind Keep} {cond:ZGV.IsLegionOn()}",
 	-- STORMWIND CITY - ENDS
 	
@@ -635,154 +635,154 @@ data.basenodes.transit = {
 	
 
 	-- DRAENOR
-		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
-		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 (A:PORTAL) {cond:PlayerCompletedQuest(38445)}",
+		"Stormshield/0 36.4,41.1 -to- Tanaan Jungle/0 57.5,60.3 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(38445)}",
+		"Tanaan Jungle/0 57.4,60.5 -to- Stormshield/0 31.7,52.5 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(38445)}",
 		
-		"Tanaan Jungle/0 61.0,47.3 -to- Warspear/0 44.4,35.5 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
-		"Warspear/0 53.2,43.9 -to- Tanaan Jungle/0 60.9,47.3 (H:PORTAL) {cond:PlayerCompletedQuest(37935)}",
+		"Tanaan Jungle/0 61.0,47.3 -to- Warspear/0 44.4,35.5 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(37935)}",
+		"Warspear/0 53.2,43.9 -to- Tanaan Jungle/0 60.9,47.3 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(37935)}",
 		
 		
-		"Warspear/0 60.7,51.6 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
-		"Warspear/0 50.0,24.4 -to- Thunder Bluff/0 22.2,16.9 (H:PORTAL)",
-		"Warspear/0 63.2,24.1 -to- Undercity/0 84.6,16.3 (H:PORTAL)",
+		"Warspear/0 60.7,51.6 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> {fac:H} {mode:PORTAL}",
+		"Warspear/0 50.0,24.4 -to- Thunder Bluff/0 22.2,16.9 {fac:H} {mode:PORTAL}",
+		"Warspear/0 63.2,24.1 -to- Undercity/0 84.6,16.3 {fac:H} {mode:PORTAL}",
 
-		"Stormshield/0 60.8,37.8 -to- @sw_tp_dst (A:PORTAL)",
-		"Stormshield/0 51.5,50.8 -to- Ironforge/0 25.5,8.4 (A:PORTAL)",
+		"Stormshield/0 60.8,37.8 -to- @sw_tp_dst {fac:A} {mode:PORTAL}",
+		"Stormshield/0 51.5,50.8 -to- Ironforge/0 25.5,8.4 {fac:A} {mode:PORTAL}",
 
-		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 (A:PORTAL) {cond:PlayerCompletedQuest(34575)}",
-		--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 (H:PORTAL) {cond:UnitLevel('player')>=90}",
+		--"Stormwind City 75.2,18.8 -to- Shadowmoon Valley D 27.0,8.0 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(34575)}",
+		--"Orgrimmar 51.1,36.8 -to- Frostfire Ridge 40.6,67.2 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90}",
 
-		"Talador 80.6,26.1 -x-  Talador 83.6,31.0 (B:PORTAL) {template:custom} {atob:Use Khadgar's portal} {btoa:Use Khadgar's portal} {cond:UnitLevel('player')>=98}", -- legendary ring questline portal
+		"Talador 80.6,26.1 -x-  Talador 83.6,31.0 {mode:PORTAL} {template:atob} {atob:Use Khadgar's portal} {btoa:Use Khadgar's portal} {cond:UnitLevel('player')>=98}", -- legendary ring questline portal
 
-		"Tanaan Jungle/0 57.7,58.7 <title:Gnomish Flying Machine> <noskip:1> -to- Tanaan Jungle/0 55.5,27.3 (A:_) {cond:PlayerCompletedQuest(38603)} {template:custom} {atob:Take the Gnomish Flying Machine\nto Throne of Kil'Jaeden} {cost:30}",
-		"Tanaan Jungle/0 60.0,47.4 <title:B-2 Personnel Relocator> <noskip:1> -to- Tanaan Jungle/0 55.6,27.2 (H:_) {cond:PlayerCompletedQuest(38599)} {template:custom} {atob:Take the B-2 Personnel Relocator\nto Throne of Kil'Jaeden} {cost:23}",
+		"Tanaan Jungle/0 57.7,58.7 <title:Gnomish Flying Machine> <noskip:1> -to- Tanaan Jungle/0 55.5,27.3 {fac:A} {mode:_} {cond:PlayerCompletedQuest(38603)} {template:atob} {atob:Take the Gnomish Flying Machine\nto Throne of Kil'Jaeden} {cost:30}",
+		"Tanaan Jungle/0 60.0,47.4 <title:B-2 Personnel Relocator> <noskip:1> -to- Tanaan Jungle/0 55.6,27.2 {fac:H} {mode:_} {cond:PlayerCompletedQuest(38599)} {template:atob} {atob:Take the B-2 Personnel Relocator\nto Throne of Kil'Jaeden} {cost:23}",
 
 	-- PANDARIA
-		"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 <title:Paw'don Village> (A:PORTAL) {cond:PlayerCompletedQuest(29548)}",
-		"Eastern Kingdoms/0 41.47,70.19 <title:Skyfire Airship> -to- The Jade Forest,46.23,85.17   (A:PORTAL)	{cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(29548)}", -- airship for the initial quest
-		"Eastern Kingdoms/0 41.47,70.19 <title:The Skyfire Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,46.23,85.17   (A:PORTAL) {cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
-		"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0  <title:Honeydew Village> (H:PORTAL) {cond:PlayerCompletedQuest(31769)}",
-		"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest,28.5,14.0   (H:PORTAL) {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769)}", -- airship		for the initial quest
-		"Durotar 66,1 <title:Hellscream's Fist Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,28.5,14.0   (H:PORTAL)		{cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
+		"Stormwind City,68.8,17.1 -x- The Jade Forest,46.23,85.17 <title:Paw'don Village> {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(29548)}",
+		"Eastern Kingdoms/0 41.47,70.19 <title:Skyfire Airship> -to- The Jade Forest,46.23,85.17   {fac:A} {mode:PORTAL}	{cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(29548)}", -- airship for the initial quest
+		"Eastern Kingdoms/0 41.47,70.19 <title:The Skyfire Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,46.23,85.17   {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
+		"Orgrimmar 68.7,40.7 -x-  The Jade Forest,28.5,14.0  <title:Honeydew Village> {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(31769)}",
+		"Durotar 66,1 <title:Hellscream's Fist Airship> -to- The Jade Forest,28.5,14.0   {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=85 and not PlayerCompletedQuest(31769)}", -- airship		for the initial quest
+		"Durotar 66,1 <title:Hellscream's Fist Airship> <override_text:You must be at least 85 to enter Pandaria.> <override_icon:error> -to- The Jade Forest,28.5,14.0   {fac:H} {mode:PORTAL}		{cond:UnitLevel('player')<85} {cost:999}", -- airship for the initial quest
 
-		"Vale of Eternal Blossoms/4,61.6,39.6 -to- Dalaran,55.86,46.81 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,68.5,52.8 -to- Shattrath City,54.97,40.23 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,70.8,30.6 -to- The Exodar,47.62,59.82 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,77.2,43.5 -to- Darnassus,43.47,78.67 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,74.0,40.8 -to- Ironforge,25.51,08.43 (A:PORTAL)",
-		"Vale of Eternal Blossoms/4,71.6,35.8 -to- @sw_tp_dst (A:PORTAL)",
+		"Vale of Eternal Blossoms/4,61.6,39.6 -to- Dalaran,55.86,46.81 {fac:A} {mode:PORTAL}",
+		"Vale of Eternal Blossoms/4,68.5,52.8 -to- Shattrath City,54.97,40.23 {fac:A} {mode:PORTAL}",
+		"Vale of Eternal Blossoms/4,70.8,30.6 -to- The Exodar,47.62,59.82 {fac:A} {mode:PORTAL}",
+		"Vale of Eternal Blossoms/4,77.2,43.5 -to- Darnassus,43.47,78.67 {fac:A} {mode:PORTAL}",
+		"Vale of Eternal Blossoms/4,74.0,40.8 -to- Ironforge,25.51,08.43 {fac:A} {mode:PORTAL}",
+		"Vale of Eternal Blossoms/4,71.6,35.8 -to- @sw_tp_dst {fac:A} {mode:PORTAL}",
 
-		"Shrine of Two Moons/2,73.5,42.8 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> (H:PORTAL)",
-		"Shrine of Two Moons/2,75.6,52.6 -to- Silvermoon City,58.3,19.2 (H:PORTAL)",
-		"Shrine of Two Moons/2,73.5,36.5 -to- Thunder Bluff,22.2,16.9 (H:PORTAL)",
-		"Shrine of Two Moons/2,74.0,48.1 -to- Undercity,84.6,16.3 (H:PORTAL)",
-		"Shrine of Two Moons/2,63.5,57.3 -to- Shattrath City,53.0,49.2 (H:PORTAL)",
-		"Shrine of Two Moons/2,61.5,36.5 -to- Dalaran,55.86,46.81 (H:PORTAL)",
+		"Shrine of Two Moons/2,73.5,42.8 -to- Orgrimmar/2 48.3,64.5 <region:cleftofshadow> {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2,75.6,52.6 -to- Silvermoon City,58.3,19.2 {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2,73.5,36.5 -to- Thunder Bluff,22.2,16.9 {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2,74.0,48.1 -to- Undercity,84.6,16.3 {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2,63.5,57.3 -to- Shattrath City,53.0,49.2 {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2,61.5,36.5 -to- Dalaran,55.86,46.81 {fac:H} {mode:PORTAL}",
 
-		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 35.3,90.6 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32681) and not PlayerCompletedQuest(32644)} {template:portal}",
+		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 35.3,90.6 <title:Portal to Shado-Pan Garrison> {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(32681) and not PlayerCompletedQuest(32644)} {template:portal}",
 		--{{"Townlong Steppes 49.7,68.7",faction="A",type="portal"},{"Isle of Thunder/0 64.7,73.5",faction="A",type="portal",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Click Portal to Shado-Pan Garrison" end end,cond=function() PlayerCompletedQuest(32644) end}},
-		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 64.7,73.5 <title:Portal to Shado-Pan Garrison> (A:PORTAL) {cond:PlayerCompletedQuest(32644)} {template:portal}",
-		"Isle of Thunder/0 34.84,89.48 -to- Isle of Thunder/0 31.7,83.6 (A:PORTAL) {cond:not PlayerCompletedQuest(32644)} {template:portal}",
-		"Isle of Thunder/0 31.7,83.6 -to- Isle of Thunder/0 34.8,89.5 (A:PORTAL) {cond:not PlayerCompletedQuest(32644) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
-		"Isle of Thunder/0 52.02,45.04 -x- Isle of Thunder/0 62.86,32.36 (B:PORTAL)",
+		"Townlong Steppes 49.7,68.7 -x- Isle of Thunder/0 64.7,73.5 <title:Portal to Shado-Pan Garrison> {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(32644)} {template:portal}",
+		"Isle of Thunder/0 34.84,89.48 -to- Isle of Thunder/0 31.7,83.6 {fac:A} {mode:PORTAL} {cond:not PlayerCompletedQuest(32644)} {template:portal}",
+		"Isle of Thunder/0 31.7,83.6 -to- Isle of Thunder/0 34.8,89.5 {fac:A} {mode:PORTAL} {cond:not PlayerCompletedQuest(32644) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
+		"Isle of Thunder/0 52.02,45.04 -x- Isle of Thunder/0 62.86,32.36 {mode:PORTAL}",
 
-		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 28.4,53.0 (H:PORTAL) {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
-		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 33.2,32.7 (H:PORTAL) {cond:PlayerCompletedQuest(32212)} {template:portal}",
+		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 28.4,53.0 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(32680) and not PlayerCompletedQuest(32212)} {template:portal}",
+		"Townlong Steppes 50.66,73.41 <title:Shado-Pan Garrison> -x- Isle of Thunder/0 33.2,32.7 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(32212)} {template:portal}",
 
-		"Isle of Thunder/0 28.6,52.8 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
-		"Isle of Thunder/0 28.5,51.7 -to- Isle of Thunder/0 33.1,52.8 (H:PORTAL) {cond:not PlayerCompletedQuest(32212)} {template:portal}",
-		"Isle of Thunder/0 33.1,52.8 -to- Isle of Thunder/0 28.5,51.5 (H:PORTAL) {cond:not PlayerCompletedQuest(32212) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
+		"Isle of Thunder/0 28.6,52.8 -to- Isle of Thunder/0 33.1,52.8 {fac:H} {mode:PORTAL} {cond:not PlayerCompletedQuest(32212)} {template:portal}",
+		"Isle of Thunder/0 28.5,51.7 -to- Isle of Thunder/0 33.1,52.8 {fac:H} {mode:PORTAL} {cond:not PlayerCompletedQuest(32212)} {template:portal}",
+		"Isle of Thunder/0 33.1,52.8 -to- Isle of Thunder/0 28.5,51.5 {fac:H} {mode:PORTAL} {cond:not PlayerCompletedQuest(32212) and (ZGV:GetThunderStage()==1 or ZGV:GetThunderStage()==6)} {template:portal}",
 
 		--There are portals here... No idea when/how they appear...
 		-- They're purchased from Proveditor Grantley ##2345 at Krasarang Wilds /0 89.52,33.47 using 5 Domination Point Commission ##91877 each.
 		-- They can lead to SW, the Skyfire airship, or to Shrine of Seven Stars.
-		--"Krasarang Wilds 89.0,33.9 -to- Stormwind City 74.2,92.2 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}",
-		--"Krasarang Wilds 89.2,33.9 -x- Krasarang Wilds 18.1,79.6 (A:PORTAL) {cond:PlayerCompletedQuest(32109)}", --To the ship
+		--"Krasarang Wilds 89.0,33.9 -to- Stormwind City 74.2,92.2 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(32109)}",
+		--"Krasarang Wilds 89.2,33.9 -x- Krasarang Wilds 18.1,79.6 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(32109)}", --To the ship
 
-		--"Krasarang Wilds 9.9,54.9 -to- Durotar 45.6,13.2 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}", --To orgrim
-		--"Krasarang Wilds 10.2,54.8 -x- Krasarang Wilds 76.1,34.5 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
-		--"Krasarang Wilds 76.2,34.0 -x- Krasarang Wilds/3 37.4,46.4 (H:PORTAL) {cond:PlayerCompletedQuest(32108)}",
+		--"Krasarang Wilds 9.9,54.9 -to- Durotar 45.6,13.2 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(32108)}", --To orgrim
+		--"Krasarang Wilds 10.2,54.8 -x- Krasarang Wilds 76.1,34.5 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(32108)}",
+		--"Krasarang Wilds 76.2,34.0 -x- Krasarang Wilds/3 37.4,46.4 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(32108)}",
 
-		"Townlong Steppes, 29.0,22.1 <title:Portal to Shado-Pan Garrison> -x- Townlong Steppes, 48.5,69.9 (B:PORTAL) {cond:PlayerCompletedQuest(31110)}",
-		"Dread Wastes,75.09,21.25 -x- Vale of Eternal Blossoms,14.21,76.79 <region:topofthewallVEB> (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff)
-		"Krasarang Wilds,48.6,27.1 -x- Valley of the Four Winds,51.2,77.5 (B:PORTAL) {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff). Might need quest
+		"Townlong Steppes, 29.0,22.1 <title:Portal to Shado-Pan Garrison> -x- Townlong Steppes, 48.5,69.9 {mode:PORTAL} {cond:PlayerCompletedQuest(31110)}",
+		"Dread Wastes,75.09,21.25 -x- Vale of Eternal Blossoms,14.21,76.79 <region:topofthewallVEB> {mode:PORTAL} {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff)
+		"Krasarang Wilds,48.6,27.1 -x- Valley of the Four Winds,51.2,77.5 {mode:PORTAL} {template:pandarope}", -- (click the Climbing Rope to either climb up or jump down the cliff). Might need quest
 
 	-- ORGRIMMAR PORTALS:
-		"Orgrimmar/1 49.2,36.5 -to- Kelp'thar Forest 44,28 (H:PORTAL) {cond:PlayerCompletedQuest(26784) and not PlayerCompletedQuest(25222)}",
-		"Orgrimmar/1 49.2,36.5 -to- Shimmering Expanse 49.5,40.5 (H:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
-		"Orgrimmar/1 49.2,36.5 -to- Abyssal Depths 51.4,61.0 (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
-		"Orgrimmar/1 48.9,38.5 -to- Uldum 54.9,34.3 (H:PORTAL) {cond:PlayerCompletedQuest(28112)}",
-		"Orgrimmar/1 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Orgrimmar/1 50.8,36.4 -to- Deepholm 50.6,52.9 (H:PORTAL) {cond:not PlayerCompletedQuest(27123)} {template:custom} {atob:You can't get to Deepholm yet.\nPlease complete quests to unlock this portal.}",
-		"Deepholm 50.9,53.1 -to- Orgrimmar/1 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Orgrimmar/1 51.1,38.3 -to- Mount Hyjal 63.5,23.4 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Mount Hyjal 63.5,24.4 -to- Orgrimmar/1 50.0,37.7 (H:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Orgrimmar/1 47.4,39.3 -to- Tol Barad Peninsula 55.8,80.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Tol Barad Peninsula 56.3,79.7 -to- Orgrimmar/1 47.6,39.1 (H:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Orgrimmar/1 50.2,39.4 -x- Twilight Highlands 73.57,53.53 <template:cityportal> (H:PORTAL) {cond:PlayerCompletedQuest(26784)}",
-		"Orgrimmar/1 70.6,30.9 -x- Brawl'gar Arena/1 55.8,17.0 (H:PORTAL) {template:pinkportal}",
+		"Orgrimmar/1 49.2,36.5 -to- Kelp'thar Forest 44,28 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(26784) and not PlayerCompletedQuest(25222)}",
+		"Orgrimmar/1 49.2,36.5 -to- Shimmering Expanse 49.5,40.5 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
+		"Orgrimmar/1 49.2,36.5 -to- Abyssal Depths 51.4,61.0 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(26784)}",
+		"Orgrimmar/1 48.9,38.5 -to- Uldum 54.9,34.3 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(28112)}",
+		"Orgrimmar/1 50.8,36.4 -to- Deepholm 50.6,52.9 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(27123)}",
+		"Orgrimmar/1 50.8,36.4 -to- Deepholm 50.6,52.9 {fac:H} {mode:PORTAL} {cond:not PlayerCompletedQuest(27123)} {template:atob} {atob:You can't get to Deepholm yet.\nPlease complete quests to unlock this portal.}",
+		"Deepholm 50.9,53.1 -to- Orgrimmar/1 50.0,37.7 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(27123)}",
+		"Orgrimmar/1 51.1,38.3 -to- Mount Hyjal 63.5,23.4 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(25316)}",
+		"Mount Hyjal 63.5,24.4 -to- Orgrimmar/1 50.0,37.7 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(25316)}",
+		"Orgrimmar/1 47.4,39.3 -to- Tol Barad Peninsula 55.8,80.1 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=85}",
+		"Tol Barad Peninsula 56.3,79.7 -to- Orgrimmar/1 47.6,39.1 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=85}",
+		"Orgrimmar/1 50.2,39.4 -x- Twilight Highlands 73.57,53.53 <subtype:cityportal> {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(26784)}",
+		"Orgrimmar/1 70.6,30.9 -x- Brawl'gar Arena/1 55.8,17.0 {fac:H} {mode:PORTAL} {template:pinkportal}",
 
 
 	-- STORMWIND PORTALS
-		"Stormwind City/0 73.2,16.9 -to- Kelp'thar Forest 44,28 (A:PORTAL) {cond:PlayerCompletedQuest(14482) and not PlayerCompletedQuest(25222)}",
-		"Stormwind City/0 73.2,16.9 -to- Shimmering Expanse 47.2,57.5 (A:PORTAL) {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
-		"Stormwind City/0 73.2,16.9 -to- Abyssal Depths 55.7,72.8 (A:PORTAL) {cond:PlayerCompletedQuest(14482)}",
-		"Stormwind City/0 75.3,20.5 -to- Uldum,54.9,34.3 (A:PORTAL) {cond:PlayerCompletedQuest(28112)}",
-		"Stormwind City/0 73.2,19.6 -to- Deepholm,48.7,53.6 @deepholm_tp_dst (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Deepholm,48.5,53.8 -to- Stormwind City/0 74.5,18.3 (A:PORTAL) {cond:PlayerCompletedQuest(27123)}",
-		"Stormwind City/0 76.2,18.7 -x- Mount Hyjal,62.6,23.1 (A:PORTAL) {cond:PlayerCompletedQuest(25316)}",
-		"Stormwind City/0 73.2,18.4 -to- Tol Barad Peninsula,73.7,60.9 (A:PORTAL) {cond:UnitLevel('player')>=85}", 
-		"Tol Barad Peninsula,75.2,58.9 -to- Stormwind City/0 73.4,18.3 (A:PORTAL) {cond:UnitLevel('player')>=85}",
-		"Stormwind City/0 75.2,16.8 -x- Twilight Highlands,79.5,77.8 <template:cityportal> (A:PORTAL) {cond:PlayerCompletedQuest(27537)}",
+		"Stormwind City/0 73.2,16.9 -to- Kelp'thar Forest 44,28 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(14482) and not PlayerCompletedQuest(25222)}",
+		"Stormwind City/0 73.2,16.9 -to- Shimmering Expanse 47.2,57.5 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(25222) and not PlayerCompletedQuest(99999)}",
+		"Stormwind City/0 73.2,16.9 -to- Abyssal Depths 55.7,72.8 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(14482)}",
+		"Stormwind City/0 75.3,20.5 -to- Uldum,54.9,34.3 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(28112)}",
+		"Stormwind City/0 73.2,19.6 -to- Deepholm,48.7,53.6 @deepholm_tp_dst {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(27123)}",
+		"Deepholm,48.5,53.8 -to- Stormwind City/0 74.5,18.3 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(27123)}",
+		"Stormwind City/0 76.2,18.7 -x- Mount Hyjal,62.6,23.1 {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(25316)}",
+		"Stormwind City/0 73.2,18.4 -to- Tol Barad Peninsula,73.7,60.9 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=85}", 
+		"Tol Barad Peninsula,75.2,58.9 -to- Stormwind City/0 73.4,18.3 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=85}",
+		"Stormwind City/0 75.2,16.8 -x- Twilight Highlands,79.5,77.8 <subtype:cityportal> {fac:A} {mode:PORTAL} {cond:PlayerCompletedQuest(27537)}",
 
 	-- GARRISON PORTALS
-		"Frostwall 75.1,48.7 -to- Warspear 44.4,35.5 (H:PORTAL) {template:custom} {atob:Click the portal to Ashran} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Horde Garrison 3 to Ashran
-		"Lunarfall 70.2,27.5 -to- Stormshield 31.7,52.5 (A:PORTAL) {template:custom} {atob:Click the portal to Ashran}  {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Ally Garrison 3 to Ashran
+		"Frostwall 75.1,48.7 -to- Warspear 44.4,35.5 {fac:H} {mode:PORTAL} {template:atob} {atob:Click the portal to Ashran} {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Horde Garrison 3 to Ashran
+		"Lunarfall 70.2,27.5 -to- Stormshield 31.7,52.5 {fac:A} {mode:PORTAL} {template:atob} {atob:Click the portal to Ashran}  {cond:C_Garrison.GetGarrisonInfo("..(LE_GARRISON_TYPE_6_0 or 2)..")==3}", -- Ally Garrison 3 to Ashran
 
 	-- Capital portals
-		"The Exodar,47.6,62.2 -x- Darnassus,44.3,78.7 (A:PORTAL)",
-		"Darnassus,37.3,50.5 -x- Teldrassil,55.1,88.4 <port:Rut'theran Village> (B:PORTAL) {template:pinkportal}",  -- Teldrassil,55.1,88.4  NO  Teldrassil,38.1,47.5
-		"Silvermoon City 49.4,14.8 -x- Undercity  54.9,11.2 (H:PORTAL)",
+		"The Exodar,47.6,62.2 -x- Darnassus,44.3,78.7 {fac:A} {mode:PORTAL}",
+		"Darnassus,37.3,50.5 -x- Teldrassil,55.1,88.4 <port:Rut'theran Village> {mode:PORTAL} {template:pinkportal}",  -- Teldrassil,55.1,88.4  NO  Teldrassil,38.1,47.5
+		"Silvermoon City 49.4,14.8 -x- Undercity  54.9,11.2 {fac:H} {mode:PORTAL}",
 
 	-- portals -to- Blasted Lands
 		"Hellfire Peninsula,89.2,49.6 @hfp_port_dst",
 		"Hellfire Peninsula,89.2,49.6 @hfp_port_dst_h",
 		"Hellfire Peninsula,89.2,50.9 @hfp_port_dst_a",
 
-		"Orgrimmar/2 44.7,68.0 <region:cleftofshadow> -x- Blasted Lands  72.7,49.4 (H:PORTAL) {cond:UnitLevel('player')>=90}", -- it seems the portal was changed to only show for 90+ chars, not 58
-		"Stormwind City 48.96,87.32 -to- Blasted Lands 53.9,46.1 (A:PORTAL) {cond:UnitLevel('player')>=90}"..
-			"{template:custom} {atob:Click the Portal to Blasted Lands\ninside the Mage Tower}",
+		"Orgrimmar/2 44.7,68.0 <region:cleftofshadow> -x- Blasted Lands  72.7,49.4 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90}", -- it seems the portal was changed to only show for 90+ chars, not 58
+		"Stormwind City 48.96,87.32 -to- Blasted Lands 53.9,46.1 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=90}"..
+			"{template:atob} {atob:Click the Portal to Blasted Lands\ninside the Mage Tower}",
 
 	-- 6.0.2 portals to and from Outland
-		-- "Blasted Lands,55.0,54.2 -x- Hellfire Peninsula,89.4,50.2 (B:PORTAL) {cond:UnitLevel('player')>=58} {template:darkportal}", -- Dark Portal to Outlands removed in 6.0.2
+		-- "Blasted Lands,55.0,54.2 -x- Hellfire Peninsula,89.4,50.2 {mode:PORTAL} {cond:UnitLevel('player')>=58} {template:darkportal}", -- Dark Portal to Outlands removed in 6.0.2
 		-- Horde
-		"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Silvermoon City 58.4,20.9 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Silvermoon City 58.4,20.9 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		-- "Undercity 85.2,17.1 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}", -- Portal removed in WoD
-		"Thunder Bluff 23.2,13.5 -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Thunder Bluff 23.2,13.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Hellfire Peninsula 89.2,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Hellfire Peninsula 89.2,49.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Blasted Lands,55.0,54.2 -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
-		"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Warspear,44,35 (H:PORTAL) {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
+		"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Orgrimmar/2 30.49,58.18 <region:cleftofshadow> <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Silvermoon City 58.4,20.9 -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Silvermoon City 58.4,20.9 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		-- "Undercity 85.2,17.1 -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=58}", -- Portal removed in WoD
+		"Thunder Bluff 23.2,13.5 -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Thunder Bluff 23.2,13.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_h {fac:H} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Hellfire Peninsula 89.2,49.5 -to- Orgrimmar 48.3,64.5 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Hellfire Peninsula 89.2,49.5 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Orgrimmar 48.3,64.5 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Blasted Lands,55.0,54.2 -to- Warspear,44,35 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+		"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Warspear,44,35 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
 
 		-- Ally
-		-- "Stormwind City 49.94,87.03 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58} {template:custom}"..
+		-- "Stormwind City 49.94,87.03 -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=58} {template:atob}"..
 		--	"{atob:Click the Portal to Hellfire Peninsula\nupstairs inside the Mage Tower}", -- This doesn't exist.
 
-		"Stormwind City 49.94,87.03 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Ironforge,27.2,7.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Ironforge,27.2,7.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"The Exodar,48.2,63.0 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"The Exodar,48.2,63.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Darnassus,44.1,78.2 -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Darnassus,44.1,78.2 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Hellfire Peninsula 89.2,51.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=58}",
-		"Hellfire Peninsula 89.2,51.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')<58} {cost:999}",
-		"Blasted Lands,55.0,54.2 -to- Stormshield,31,52 (A:PORTAL) {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
-		"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Stormshield,31,52 (A:PORTAL) {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
+		"Stormwind City 49.94,87.03 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Ironforge,27.2,7.0 -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Ironforge,27.2,7.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"The Exodar,48.2,63.0 -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"The Exodar,48.2,63.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Darnassus,44.1,78.2 -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Darnassus,44.1,78.2 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- @hfp_port_dst_a {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Hellfire Peninsula 89.2,51.0 -to- Stormwind City 49.6,86.5 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=58}",
+		"Hellfire Peninsula 89.2,51.0 <override_text:You must be at least 58 to enter Outland.> <override_icon:error> -to- Stormwind City 49.6,86.5 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<58} {cost:999}",
+		"Blasted Lands,55.0,54.2 -to- Stormshield,31,52 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=90} {template:darkportal}", -- Dark Portal now leads to Ashran
+		"Blasted Lands,55.0,54.2 <override_text:You must be at least 90 to enter Draenor.> <override_icon:error> -to- Stormshield,31,52 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')<90} {template:darkportal} {cost:999}", -- Dark Portal now leads to Ashran
 
 
 
@@ -794,43 +794,18 @@ data.basenodes.transit = {
 		-- Orc -> Mulgore portal -> Darkmoon portal -> Mulgore
 
 		--You can enter anywhere, but only exit at one place
-		"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
-		"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 <title:Darkmoon Faire> (B:PORTAL) {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+		"Elwynn Forest 41.8,69.5 -to- Darkmoon Island 51.2,23.1 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
+		"Mulgore 36.9,35.9 -to- Darkmoon Island 51.2,23.2 <title:Darkmoon Faire> {mode:PORTAL} {cond:ZGV:FindEvent('DARKMOON FAIRE')}",
 
-		"Darkmoon Island 51.2,23.1 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
-		"Darkmoon Island 50.6,90.6 -to- Elwynn Forest 41.8,69.5 (A:PORTAL)",
+		"Darkmoon Island 51.2,23.1 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
+		"Darkmoon Island 50.6,90.6 -to- Elwynn Forest 41.8,69.5 {fac:A} {mode:PORTAL}",
 
-		"Darkmoon Island 51.2,23.1 -to- Mulgore 36.9,35.9 (H:PORTAL)",
-		"Darkmoon Island 50.6,90.6 -to- Mulgore 36.9,35.9 (H:PORTAL)",
-
-	-- Ulduar teleporters
-		"Ulduar/1 50.98,85.54 <name:Expedition Base Camp>	<template:teleportnamed>	@uld10",
-		"Ulduar/1 49.24,47.34 <name:Formation Grounds>		<template:teleportnamed>	@uld11",
-		"Ulduar/1 48.54,28.08 <name:Colossal Forge>		<template:teleportnamed>	@uld12",
-		"Ulduar/1 48.51,11.06 <name:Scrapyard>			<template:teleportnamed>	@uld13",
-		"Ulduar/2 37.32,00.52 <name:Antechamber of Ulduar>	<template:teleportnamed>	@uld20",
-		"Ulduar/2 37.10,76.41 <name:Shattered Walkway>		<template:teleportnamed>	@uld21",
-		"Ulduar/3 51.02,54.02 <name:Conservatory of Life>	<template:teleportnamed>	@uld30",
-		"Ulduar/4 66.60,59.98 <name:Prison of Yogg-Saron>	<template:teleportnamed>	@uld40",
-		"Ulduar/5 43.65,62.19 <name:Spark of Imagination>	<template:teleportnamed>	@uld50",
-	-- ICC teleporters
-		"Icecrown Citadel/1 38.98,17.17   <name:Light's Hammer>		<template:teleportnamed>	@icc10",
-		"Icecrown Citadel/1 38.98,71.11   <name:Oratory of the Damned>	<template:teleportnamed>	@icc11",
-		"Icecrown Citadel/2 45.60,80.43   <name:Rampart of Skulls>	<template:teleportnamed>	@icc20",
-		"Icecrown Citadel/3 51.50,76.26   <name:Deathbringer's Rise>	<template:teleportnamed>	@icc30",
-		"Icecrown Citadel/4 26.11,33.30   <name:Sindragosa's Lair>	<template:teleportnamed>	@icc40",
-		"Icecrown Citadel/5 51.87,74.32   <name:Upper Spire>		<template:teleportnamed>	@icc50",
-	-- End Time teleporters
-		"End Time/1 79.76,45.52		<name:Entryway of Time>		<template:teleportnamed>	@et1",
-		"End Time/2 41.88,80.19		<name:Azure Dragonshrine>	<template:teleportnamed>	@et2",
-		"End Time/3 34.34,43.19		<name:Ruby Dragonshrine>	<template:teleportnamed>	@et3",
-		"End Time/4 75.23,62.82		<name:Obsidium Dragonshrine>	<template:teleportnamed>	@et4",
-		"End Time/5 46.10,21.40		<name:Emerald Dragonshrine>	<template:teleportnamed>	@et5",
-		"End Time/6 35.40,79.14		<name:Bronze Dragonshrine>	<template:teleportnamed>	@et6",
+		"Darkmoon Island 51.2,23.1 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
+		"Darkmoon Island 50.6,90.6 -to- Mulgore 36.9,35.9 {fac:H} {mode:PORTAL}",
 
 	-- Iron Horde event portals
-		"Blasted Lands 72.7,49.5 -to- Orgrimmar 48.3,64.5 (H:PORTAL) {cond:UnitLevel('player')>=90}",
-		"Blasted Lands 66.4,28.0 -to- Stormwind City 49.6,86.5 (A:PORTAL) {cond:UnitLevel('player')>=90}",
+		"Blasted Lands 72.7,49.5 -to- Orgrimmar 48.3,64.5 {fac:H} {mode:PORTAL} {cond:UnitLevel('player')>=90}",
+		"Blasted Lands 66.4,28.0 -to- Stormwind City 49.6,86.5 {fac:A} {mode:PORTAL} {cond:UnitLevel('player')>=90}",
 
 
 	-- CLASS TELEPORTS:
@@ -947,73 +922,73 @@ data.basenodes.transit = {
 			--]]
 
 	-- SHATTRATH PORTALS:
-		"Shattrath City 57.2,48.3 -to- @sw_tp_dst (A:PORTAL) {cost:15}", -- stormwind mage tower sucks
-		"Shattrath City 56.8,48.9 -to- @org_tp_dst (H:PORTAL)",
-		"Shattrath City 48.6,42.0 -to- Isle of Quel'Danas 48.3,34.5 (B:PORTAL)",
+		"Shattrath City 57.2,48.3 -to- @sw_tp_dst {fac:A} {mode:PORTAL} {cost:15}", -- stormwind mage tower sucks
+		"Shattrath City 56.8,48.9 -to- @org_tp_dst {fac:H} {mode:PORTAL}",
+		"Shattrath City 48.6,42.0 -to- Isle of Quel'Danas 48.3,34.5 {mode:PORTAL}",
 
 		-- Badlands details
 		-- Fuselight-by-the-sea teleport
-		"Badlands 72.1,31.6 -x- Badlands 75.6,33.2 (B:WALK)", --access
-		"Badlands 82.8078,33.9781 -x- Badlands 88.0642,32.4937 (A:PORTAL) {template:transporter}",
+		"Badlands 72.1,31.6 -x- Badlands 75.6,33.2", --access
+		"Badlands 82.8078,33.9781 -x- Badlands 88.0642,32.4937 {fac:A} {mode:PORTAL} {template:transporter}",
 		-- Fuselight entrances
-		"Badlands 60.7,28.3 -x- Badlands 62.8,35.7 <region:fuselight> (B:WALK)",
-		"Badlands 68.7,30.9 -x- Badlands 66.7,36.3 <region:fuselight> (B:WALK)",
+		"Badlands 60.7,28.3 -x- Badlands 62.8,35.7 <region:fuselight>",
+		"Badlands 68.7,30.9 -x- Badlands 66.7,36.3 <region:fuselight>",
 
 		--Booty Bay tunnel
 		"The Cape of Stranglethorn 42.5,67.1 <region:booty_bay> <radius:5> -x- The Cape of Stranglethorn 44.9,66.0 <radius:5> {template:longtunnel}",
 
 		-- Firelands portal
-		"Mount Hyjal 27.5,56.3 -x- Molten Front 52.9,83.9 (B:PORTAL)",
+		"Mount Hyjal 27.5,56.3 -x- Molten Front 52.9,83.9 {mode:PORTAL}",
 
 		-- MISCELLANEAEOAOUS
 		--[[
-		"Badlands 45.8,7.3 -x- Loch Modan 48.13,79.19 @lochbad01 <radius:10> <dark:1> (B:WALK)",
-		"@lochbad01 -x- Loch Modan 48.21,77.16 @lochbad02 <radius:10> <dark:1> (B:WALK)",
-		"@lochbad02 -x- Loch Modan 47.21,73.40 <radius:10> (B:WALK)",
+		"Badlands 45.8,7.3 -x- Loch Modan 48.13,79.19 @lochbad01 <radius:10> <dark:1>",
+		"@lochbad01 -x- Loch Modan 48.21,77.16 @lochbad02 <radius:10> <dark:1>",
+		"@lochbad02 -x- Loch Modan 47.21,73.40 <radius:10>",
 		--]]
 
 		--Lock Modan / Wetlands cross
 
 		"Loch Modan 25.6,10.5",
-		"@+ -x- Loch Modan 25.3,0.2 <radius:5> <dark:1> (B:WALK)",
-		"@+ -x- Wetlands 55.1,83.5 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 50.7,82.6 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 50.2,78.3 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 50.1,71.6 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 50.1,71.6 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 49.3,70.6 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 53.9,70.3 <radius:5> <dark:1> <cost:0> (B:WALK)",
-		"@+ -x- Wetlands 54.4,70.3 <radius:15> (B:WALK)",
+		"@+ -x- Loch Modan 25.3,0.2 <radius:5> <dark:1>",
+		"@+ -x- Wetlands 55.1,83.5 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 50.7,82.6 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 50.2,78.3 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 50.1,71.6 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 50.1,71.6 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 49.3,70.6 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 53.9,70.3 <radius:5> <dark:1> <cost:0>",
+		"@+ -x- Wetlands 54.4,70.3 <radius:15>",
 
 		-- Loch Modan / Badlands cross
 		"Badlands 45.8,7.3",
-		"@+ -x- Loch Modan 48.13,79.19 <radius:10> <dark:1> (B:WALK)",  -- @+ means "last one added", it's a nightmare, I know.
-		--"@+ -x- Loch Modan 47.15,78.55 <radius:5> <dark:1> (B:WALK)",
-		--"@+ -x- Loch Modan 48.22,78.08 <radius:5> <dark:1> (B:WALK)",
-		"@+ -x- Loch Modan 48.21,77.16 <radius:5> <dark:1> (B:WALK)",
-		"@+ -x- Loch Modan 47.28,76.00 <radius:5> <dark:1> (B:WALK)",
-		--"@+ -x- Loch Modan 48.32,76.41 <radius:5> <dark:1> (B:WALK)",
-		--"@+ -x- Loch Modan 46.96,73.77 <radius:5> <dark:1> (B:WALK)",
-		"@+ -x- Loch Modan 47.21,73.40 <radius:5> (B:WALK)",
+		"@+ -x- Loch Modan 48.13,79.19 <radius:10> <dark:1>",  -- @+ means "last one added", it's a nightmare, I know.
+		--"@+ -x- Loch Modan 47.15,78.55 <radius:5> <dark:1>",
+		--"@+ -x- Loch Modan 48.22,78.08 <radius:5> <dark:1>",
+		"@+ -x- Loch Modan 48.21,77.16 <radius:5> <dark:1>",
+		"@+ -x- Loch Modan 47.28,76.00 <radius:5> <dark:1>",
+		--"@+ -x- Loch Modan 48.32,76.41 <radius:5> <dark:1>",
+		--"@+ -x- Loch Modan 46.96,73.77 <radius:5> <dark:1>",
+		"@+ -x- Loch Modan 47.21,73.40 <radius:5>",
 
 		-- Ironforge experiment
 		--[[
-		 "Ironforge 53,82 @if01 <costmod:0.7> (B:WALK)",
-		 "Ironforge 60,70 @ifmw01 -x- Ironforge 50,58 @ifmw02 (B:WALK)",
-		 "Ironforge 69,59 @iftt01 -x- Ironforge 71,39 @iftt02 (B:WALK)",
-		 "Ironforge 61,27 @ifhe01 -x- Ironforge 56,34 @ifhe02 (B:WALK)",
-		 "Ironforge 58,12 @iffc01 -x- Ironforge 39,11 @iffc02 (B:WALK)",
-		 "Ironforge 33,23 @ifyw01 -x- Ironforge 38,38 @ifyw02 (B:WALK)",
-		 "Ironforge 25,28 @if02 <costmod:0.7> (B:WALK)",
-		 "Ironforge 28,55 @ift11 -x- Ironforge 39,46 @ift12 (B:WALK)",
-		 "Ironforge 38,72 @ift21 -x- Ironforge 44,58 @ift22 (B:WALK)",
-		 "@ifmw02 -x- @iftt02 (B:WALK)",
-		 "@iftt02 -x- @ifhe02 (B:WALK)",
-		 "@ifhe02 -x- @iffc02 (B:WALK)",
-		 "@iffc02 -x- @ifmw02 (B:WALK)",
-		 "@ifyw02 -x- @ifyw02 (B:WALK)",
-		 "@ifyw02 -x- @ifyw02 (B:WALK)",
-		 "@ifyw02 -x- @ifmw02 (B:WALK)",
+		 "Ironforge 53,82 @if01 <costmod:0.7>",
+		 "Ironforge 60,70 @ifmw01 -x- Ironforge 50,58 @ifmw02",
+		 "Ironforge 69,59 @iftt01 -x- Ironforge 71,39 @iftt02",
+		 "Ironforge 61,27 @ifhe01 -x- Ironforge 56,34 @ifhe02",
+		 "Ironforge 58,12 @iffc01 -x- Ironforge 39,11 @iffc02",
+		 "Ironforge 33,23 @ifyw01 -x- Ironforge 38,38 @ifyw02",
+		 "Ironforge 25,28 @if02 <costmod:0.7>",
+		 "Ironforge 28,55 @ift11 -x- Ironforge 39,46 @ift12",
+		 "Ironforge 38,72 @ift21 -x- Ironforge 44,58 @ift22",
+		 "@ifmw02 -x- @iftt02",
+		 "@iftt02 -x- @ifhe02",
+		 "@ifhe02 -x- @iffc02",
+		 "@iffc02 -x- @ifmw02",
+		 "@ifyw02 -x- @ifyw02",
+		 "@ifyw02 -x- @ifyw02",
+		 "@ifyw02 -x- @ifmw02",
 		--]]
 
 		--"Ironforge 50,50 @honeypot <costmod:0.7>",

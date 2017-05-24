@@ -686,6 +686,15 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41564/1 |goto Azsuna/0 29.83,57.97
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41562
+Follow the path |goto Azsuna/0 30.52,46.52 < 25 |only if walking
+accept Felhide##41562 |goto 29.72,57.18
+|tip You will accept this quest automatically.
+step
+kill Felhide Gargantuan##103675
+Skin the Felhide Gargantuan |q 41562/1 |goto Azsuna/0 29.83,57.97
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44044
 accept Felled Experiment##44044 |goto 43.30,72.05
 |tip You will accept this quest automatically.

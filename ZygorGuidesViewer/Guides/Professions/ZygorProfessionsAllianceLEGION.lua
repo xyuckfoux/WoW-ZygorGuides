@@ -901,6 +901,7 @@ accept Fel Fragments##41167 |or |only if not completedq(41167) |next "Fel_Fragme
 accept History of Highmountain##41186 |or |only if not completedq(41186) |next "History_of_Highmountain" |goto 40.85,26.28
 accept The Reliquary Calls##41171 |or |only if not completedq(41171) |next "The_Reliquary_Calls" |goto 40.85,26.28
 accept Worth Its Weight##41174 |or |only if not completedq(41174) |next "Worth_Its_Weight" |goto 40.85,26.28
+accept Goblin Archaeology##41177 |or |only if not completedq(41177) |next "Goblin_Archaeology" |goto 40.85,26.28
 accept The Right Path##41192 |or |only if not completedq(41192) |next "The Right Path" |goto 40.85,26.28
 |next "Archaeology_Quests_Finished"
 step
@@ -1160,6 +1161,46 @@ Follow the path |goto 36.73,90.02 < 30 |only if walking
 Enter the cave |goto 38.14,90.64 < 15 |walk
 talk Tae'thelan Bloodwatcher##103482
 turnin Sifting Through the Rubble##41176 |goto 38.20,90.08
+|next "Accept_Archaeology_Quest"
+step
+label "Goblin_Archaeology"
+Follow the path |goto Val'sharah/0 53.76,73.68 < 15 |only if walking
+Follow the path |goto 51.10,76.26 , 15 |only if walking
+Follow the path |goto 49.80,78.74 < 15 |only if walking
+Follow the path up |goto 48.04,77.74 < 15 |only if walking
+Continue following the path |goto 45.51,80.87 < 15 |only if walking
+Follow the path down |goto 42.20,80.89 < 15 |only if walking
+Follow the path down |goto 39.81,82.19 < 15 |only if walking
+talk Tae'thelan Bloodwatcher##103482
+turnin Goblin Archaeology##41177 |goto 38.92,81.64
+accept Explosive Results##41178 |goto 38.92,81.64
+step
+click Archaeology Dig Site##6478+
+|tip These look like piles of rocks around this area.
+click Highborne Archaeology Fragment##6478+
+|tip When clicking these Disturbed Fragment Eater will periodically spawn, these can also drop the Freed Artifact Fragment needed for this quest.
+collect 500 Freed Artifact Fragment##134115 |q 41178/1 |goto 50.23,73.16
+step
+Follow the path |goto 49.80,78.74 < 15 |only if walking
+Follow the path up |goto 48.04,77.74 < 15 |only if walking
+Continue following the path |goto 45.51,80.87 < 15 |only if walking
+Follow the path down |goto 42.20,80.89 < 15 |only if walking
+Follow the path down |goto 39.81,82.19 < 15 |only if walking
+talk Tae'thelan Bloodwatcher##103482
+turnin Explosive Results##41178 |goto 38.92,81.64
+accept What Once Was Lost##41179 |goto 38.92,81.64
+step
+Follow the path |goto 42.94,59.04 < 15 |only if walking
+Continue following the path |goto 45.37,57.55 < 15 |only if walking
+Follow the path |goto 51.57,50.62 < 15 |only if walking
+Follow the path down |goto 50.73,49.75 < 15 |only if walking
+Continue following the path down |goto 49.65,47.01 < 15 |only if walking
+Enter the cave |goto 49.11,47.29 < 10 |walk
+Click the Encased Artifacts around the cave
+Find the Lost Artiact |q 41179/1 |goto 49.26,49.05
+step
+Click the Black Rook Chest that appears
+turnin What Once Was Lost##41179
 |next "Accept_Archaeology_Quest"
 step
 label "The Right Path"
@@ -5746,7 +5787,7 @@ Use Your Prospecting Ability:
 _<Prospect Leystone Ore & Felslate>_
 |tip They're in your bags.
 |tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
-collect 125 Skystone##130176 |c
+collect 125 Azsunite##130174 |c
 collect 25 Sangrite##130172 |c
 |tip You can also purchase them from the Auction House.
 |only if skill("Jewelcrafting") < 764

@@ -135,7 +135,7 @@ data.basenodes.inns = {
 		{name="Camp Oneqwah",faction="H",npc="Aiyan Coldwind",npcid=26680,x=65.4,y=47.0},
 	},
 	['Dalaran']={
-		{name="Dalaran",faction="B",npc="Amisi Azuregaze",npcid=28687,x=51.0,y=40.0}, -- this is the universal innkeeper in Dalaran for our purpose. GetBindLocation() returns Dalaran so needed a way to find it.
+		{name="Dalaran",faction="B",npc="Amisi Azuregaze",npcid=28687,x=51.0,y=40.0,legion=false}, -- this is the universal innkeeper in Dalaran for our purpose. GetBindLocation() returns Dalaran so needed a way to find it.
 		{name="The Silver Enclave",faction="A",npc="Isirami Fairwind",npcid=32413,x=44.6,y=63.0},
 		{name="Sunreaver's Sanctuary",faction="H",npc="Uda the Beast",npcid=31557,x=65.6,y=32.6},
 		{name="Sunreaver's Sanctuary",faction="H",npc="Abohba",npcid=32418,x=69.0,y=33.4},
@@ -482,10 +482,10 @@ data.basenodes.inns = {
 		{name="Vol'jin's Pride",faction="H",npc="Paoni Softhoof",npcid=81359,x=72.0,y=30.0},
 	},
 	['Stormshield']={
-		{name="Stormshield",not_name="Hero's Rest Inn",faction="A",npc="Jaesia Rosecheer",npcid=85956,x=35.7,y=77.9},
+		{name="Stormshield",_old_name="Hero's Rest Inn",faction="A",npc="Jaesia Rosecheer",npcid=85956,x=35.7,y=77.9},
 	},
 	['Warspear']={
-		{name="Warspear",not_name="Brokenspear Tavern",faction="H",npc="Narnin Dawnglow",npcid=86307,x=45.0,y=43.2},
+		{name="Warspear",_old_name="Brokenspear Tavern",faction="H",npc="Narnin Dawnglow",npcid=86307,x=45.0,y=43.2},
 	},
 	['Frostfire Ridge']={
 		{name="Stonefang Outpost",faction="H",npc="Dorg",npcid=72382,x=40.7,y=51.7},

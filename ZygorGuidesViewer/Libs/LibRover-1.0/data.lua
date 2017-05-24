@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 37,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 38,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 
@@ -277,6 +277,138 @@ data.zoneflags = {
 	["Razorfen Kraul"]={dark=1},
 }
 
+
+--[[
+	These lines define how each point's text displays, depending on their "situation".
+	The keys of this dictionary adhere to a quirky, but logical pattern of "a_b__c_d", which means:
+		a = "this type of connection"
+		_ = "to"
+		b = "this type of point"
+		_ = "and"
+		_ = "then"
+		c = "that type of connection"
+		_ = "to"
+		d = "that type of point".
+	So, a "start" point that you "walk" to (all paths start like that), after which you'll "fly" to a "border" point, is in a situation of "walk_start__fly_border" ("walk to start, and then fly to border").
+	You can supply just "a_b", or just "b".
+	A point attribute <template:nameoftemplate> overrides the point's basic type for the purpose of this list. Thus, a point can stay a "portal", but have the flavour of "portalclick" if it has a <template:portalclick> attribute and have a special display of "Click portal", matching a "portalclick" type.
+	A connection attribute {template:nameoftemplate} overrides the mode of transport for the purpose of this list. Thus, if a connection has {template:portalauto} one can match for "portalauto_*" to show descriptions for that connection, or match for "*_*__portalauto_*" to match for NEXT connection's type and perhaps show an appropriate text on the previous node before a portal.
+	A connection attribute that is not found in this list, is looked up in the list above, for easy two-way descriptions.
+	Asterisks denote wildcards.
+	One can also use the text part of the dictionary to refer to other entries in the list.
+	Entries are checked in the file's order. First match gets the cake.
+
+	So, for example: 
+		"taxi" - matches points of type "taxi", to display them as "Talk to {npc}\nFly to {next_name}, {next_map}".
+		"portalauto" - matches points of template "portalauto", to display them as "Enter portal to {next_map}".
+		"*_*__pinkportal" - matches any point AFTER which there's a pinkportal connection.
+--]]
+
+data.point_context_templates = {
+	{'walk_start',"You are here"},
+
+	{'whistle',"Use Flight Master's Whistle"},
+	{'taxi_taxi__taxi_taxi',"passfp"},
+	{'forced_taxi__taxi_taxi',"Arrive at {name}, {map}\nFly again to {next_name}, {next_map}"},
+	--{'taxi_taxi__taxi_taxi',"arrive"},
+
+	{'*_taxi__taxi_taxi',"taxi"}, {'taxi_taxi',"arrivefp"},
+	{'taxi',"Talk to {npc}\nFly to {next_name}, {next_map}"},
+	{'taxidumb',"Arrive at your destination"},
+
+	{'*_ship__ship_ship',"Ride the boat to {next_port}"}, {'ship_ship',"arrive"},
+	{'*_zeppelin__zeppelin_zeppelin',"Ride the zeppelin to {next_port}"}, {'zeppelin_zeppelin',"arrive"},
+
+	{'*_*__pandarope_*',"Click the rope on the ground\nto swing to {next_map}"},
+
+	{'*_portal__portal_*',"portalclick"}, {'portal*_*',"arrive"},
+	{'*_portal__portalauto_*',"portalauto"},-- {'portalauto_X',"arrive"},
+	{'*_portal__portalDungeonEnter_*',"portalauto"},-- {'portaldungeon_X',"arrive"},
+	{'*_portal__portalDungeonExit_*',"Use the portal to exit {map}"},-- {'portaldungeon_X',"arrive"},
+	{'portalauto',"Enter portal to {next_map}"},
+	{'portaldungeon',"Enter portal to {next_map}"},
+	{'portalclick',"Click portal to {next_map}"},
+	{'*_teleportnamed',"Teleport to {next_name}"},
+	--{'portal',"Click portal to {next_map}\nTeleport to {next_map}"},
+	{'pinkportal',"Go through the pink portal to {next_map}"},
+	{'*_*__pinkportal_*',"Go through the pink portal to {next_map}"},
+	{'*_*__darkportal_*',"Enter the huge green portal\nTeleport to {next_map}"},
+	{'darkportal',"Enter the huge green portal\nTeleport to {next_map}"},
+	{'*_*__cityportal_*',"Enter the circular portal\nTeleport to {next_map}"},
+	{'cityportal',"Enter the circular portal\nTeleport to {next_map}"},
+	{'blackcat',"Talk to the Nightsaber Rider\nto travel {next_name}"},
+	{'moltentele',"Talk to Lothos Riftwaker\n Teleport to {next_map}"},
+	{'orbofcommand',"Click on Orb of Command\n Teleport to {next_map}"},
+	{'dragonrider',"Talk to the dragon\n Arrive at {next_map}"},
+	{'*_*__transporter_*',"Enter the transporter"},
+	{'transporter_*',"Exit the transporter"},
+
+	{'walk_border',"walk_map"}, {'border_border',"walk_map"},
+
+	{'arrive',"Arrive at {map}"},
+	{'arrivefp',"Arrive at {name}, {map}"},
+	{'passfp',"Pass {name}, {map}"},
+
+	{'*_tram__tram_tram',"tram"}, {'tram_tram',"arrive"},
+	{'tram',"Ride the tram to {next_map}"},
+
+	{'deathgate',"Cast Death Gate to Acherus"},
+	{'teleport',"Cast teleport to {map}"},
+
+	{'courtesymage',"Find a Mage to teleport you to {map}\nThere is no direct path"},
+	{'courtesywarlock',"There is no path to {map} for you."},
+	{'courtesy',"Use a Courtesy!"},
+
+	{'teleport_ask',"Use a Mage Portal to {map}"},
+	{'useitem',"Use {item}"},
+
+	{'hearth',"Hearth to {name}"},
+	{'ghearth',"Hearth to your Garrison"},
+	{'astralrecall',"Cast Astral Recall to {name}"},
+
+	{'*_door',"Click to open the door"},
+	{'walk',"Go to {node}"},
+	{'swim',"Swim to {node}"},
+	{'walk_map',"Go to {bordermap}"},
+	{'fly',"Go to {node}"},
+	{'travel','walk'},
+}
+
+
+data.connection_templates = {
+	['building'] = {
+		['text_a_to_b'] = "Enter building",
+		['text_b_to_a'] = "Exit building",
+	},
+	['cave'] = {
+		['text_a_to_b'] = "Enter cave",
+		['text_b_to_a'] = "Exit cave",
+	},
+	['mine'] = {
+		['text_a_to_b'] = "Enter mine",
+		['text_b_to_a'] = "Exit mine",
+	},
+	['tunnel'] = {
+		['text_a_to_b'] = "Enter tunnel",
+		['text_b_to_a'] = "Exit tunnel",
+	},
+	['longtunnel'] = {
+		['text_a_to_b'] = "Enter tunnel",
+		['text_b_to_a'] = "Go through tunnel",
+	},
+	['barrow'] = {
+		['text_a_to_b'] = "Enter barrow",
+		['text_b_to_a'] = "Exit barrow",
+	},
+	['tomb'] = {
+		['text_a_to_b'] = "Enter tomb",
+		['text_b_to_a'] = "Exit tomb",
+	},
+	['pathup'] = {
+		['text_a_to_b'] = "Go up the path",
+		['text_b_to_a'] = "Go down the path",
+	},
+}
 
 
 

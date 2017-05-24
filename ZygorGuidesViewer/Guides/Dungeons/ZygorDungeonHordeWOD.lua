@@ -6,7 +6,8 @@ ZygorGuidesViewer.GuideMenuTier = "WOD"
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Auchindoun",{
 mapid=984,
 achieveid={9049},
-condition_suggested="level>=94 and _G.GetAverageItemLevel()>540",
+condition_suggested="level>=94 and level<=100 and _G.GetAverageItemLevel()>540",
+keywords={"Talador, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Auchindoun dungeon.",
 },[[
@@ -161,8 +162,8 @@ Congratulations, you have completed _Auchindoun_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Bloodmaul Slag Mines",{
 mapid=964,
 achieveid={9046},
-condition_suggested="level>=90 and _G.GetAverageItemLevel()>500",
-keywords={"BSM"},
+condition_suggested="level>=90 and level<=100 and _G.GetAverageItemLevel()>500",
+keywords={"BSM, Frostfire, Ridge, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Bloodmaul Slag Mines dungeon.",
 },[[
@@ -364,8 +365,8 @@ Congratulations, you have completed the _Bloodmaul Slag Mines_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\The Everbloom",{
 mapid=1008,
 achieveid={9053},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>595",
-keywords={"TEB"},
+condition_suggested="level>=100 and level<=100 and _G.GetAverageItemLevel()>595",
+keywords={"TEB, Gorgrond, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through The Everbloom dungeon.",
 },[[
@@ -523,8 +524,8 @@ Congratulations, you have completed the _Everbloom_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Grimrail Depot",{
 mapid=993,
 achieveid={9052},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>540",
-keywords={"GRD"},
+condition_suggested="level>=100 and level<=100 and _G.GetAverageItemLevel()>595",
+keywords={"GRD, Gorgrond, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Grimrail Depot dungeon.",
 },[[
@@ -636,8 +637,8 @@ Congratulations, you have completed the _Grimrail Depot_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Iron Docks",{
 mapid=987,
 achieveid={9047},
-condition_suggested="level>=92 and _G.GetAverageItemLevel()>520",
-keywords={"ID"},
+condition_suggested="level>=92 and level<=100 and _G.GetAverageItemLevel()>520",
+keywords={"ID, Gorgrond, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Iron Docks dungeon.",
 },[[
@@ -757,8 +758,8 @@ Congratulations, you have completed the _Iron Docks_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Shadowmoon Burial Grounds",{
 mapid=969,
 achieveid={9054},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>595",
-keywords={"SBG"},
+condition_suggested="level>=100 and level<=100 and _G.GetAverageItemLevel()>595",
+keywords={"SBG, Valley, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Shadowmoon Burial Grounds dungeon.",
 },[[
@@ -900,8 +901,8 @@ Congratulations, you have completed the _Shadowmoon Burial Grounds_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Skyreach",{
 mapid=989,
 achieveid={8844},
-condition_suggested="level>=97 and _G.GetAverageItemLevel()>560",
-keywords={"Sky"},
+condition_suggested="level>=96 and level<=100 and _G.GetAverageItemLevel()>560",
+keywords={"SR, Spires, of, Arak, Draenor, SoA"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Skyreach dungeon.",
 },[[
@@ -1038,8 +1039,8 @@ Congratulations, you have completed _Skyreach_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Dungeons\\Upper Blackrock Spire",{
 mapid=995,
 achieveid={9055},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>595",
-keywords={"UBRS"},
+condition_suggested="level>=100 and level<=100 and _G.GetAverageItemLevel()>595",
+keywords={"UBRS, Mountain, BRM, Searing, Gorge, Burning, Steppes, Draenor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Upper Blackkrock Spire dungeon.",
 },[[
@@ -1213,12 +1214,13 @@ step
 Congratulations, you have completed _Upper Blackrock Spire_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - The Black Forge (LFR)",{
+mapid=988,
+lfgid=846,
 achieveid={8988},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
-keywords={"BRF","TBF","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, BF, LFR, Draenor, Gorgrond"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - The Black Forge raid.",
-lfgid=846,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1234,7 +1236,9 @@ Follow the path, riding the elevator to the bottom floor |goto Blackrock Foundry
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-Go through the door |goto Blackrock Foundry/1 47.5,67.1 < 8 |noway |c
+Go through the door |goto Blackrock Foundry/1 47.5,67.1 < 8
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hans'gar##76973 |goto Blackrock Foundry/1 47.5,76.4
 kill Franzok##76974 |goto Blackrock Foundry/1 47.5,76.4
@@ -1331,12 +1335,13 @@ step
 Congratulations! You have completed _Blackrock Foundry - The Black Forge_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Blackhand's Crucible (LFR)",{
+mapid=988,
+lfgid=823,
 achieveid={8988},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
-keywords={"BRF","BC","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, BC, LFR, Draenor, Gorgrond"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Blackhand's Crucible raid.",
-lfgid=823,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1394,12 +1399,13 @@ step
 Congratulations! You have completed _Blackrock Foundry - Blackhand's Crucible_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Iron Assembly (LFR)",{
+mapid=988,
+lfgid=848,
 achieveid={8988},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
-keywords={"BRF","IA","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, IA, LFR, Draenor, Gorgrond"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Iron Assembly raid.",
-lfgid=848,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1526,12 +1532,13 @@ step
 Congratulation! You have completed _Blackrock Foundry - Iron Assembly_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Slagworks (LFR)",{
+mapid=988,
+lfgid=847,
 achieveid={8988},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>635",
-keywords={"BRF","SW","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, SW, LFR, Draenor, Gorgrond"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Blackrock Foundry - Slagworks raid.",
-lfgid=847,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1646,12 +1653,13 @@ step
 Congratulations! You have completed _Blackrock Foundry - Slagworks_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Bastion of Shadows (LFR)",{
+mapid=1026,
+lfgid=984,
 achieveid={10025},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
-keywords={"HFC","LFR"},
+keywords={"HFC, LFR, Draenor, BoS, Tanaan, Jungle"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Bastion of Shadows raid.",
-lfgid=984,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1736,10 +1744,11 @@ step
 Congratulations! You have completed _Hellfire Citadel - Bastion of Shadows_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - The Black Gate (LFR)",{
+mapid=1026,
 lfgid=986,
 achieveid={10019},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
-keywords={"HFC","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, LFR, Draenor, TBG, Tanaan, Jungle"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - The Black Gate raid.",
 },[[
@@ -1829,12 +1838,13 @@ step
 Congratulations! You have completed _Hellfire Citadel - The Black Gate_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Destructor's Rise (LFR)",{
+mapid=1026,
+lfgid=985,
 achieveid={10020},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
-keywords={"DR","HFC","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, DR, LFR, DR, Draenor, Tanaan, Jungle"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Destructor's Rise raid.",
-lfgid=985,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -1937,12 +1947,13 @@ step
 Congratulations! You have completed _Hellfire Citadel - Destructor's Rise_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Halls of Blood (LFR)",{
+mapid=1026,
+lfgid=983,
 achieveid={10024},
-keywords={"HFC","LFR"},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, LFR, Draenor, HoB, Tanaan, Jungle"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Halls of Blood raid.",
-lfgid=983,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -2065,12 +2076,13 @@ step
 Congratulations! You have completed _Hellfire Citadel - Halls of Blood_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Hellbreach (LFR)",{
+mapid=1026,
+lfgid=982,
 achieveid={10023},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>650",
-keywords={"HFC","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, LFR, Draenor, Tanaan, Jungle"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Hellfire Citadel - Hellbreach raid.",
-lfgid=982,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -2160,12 +2172,13 @@ step
 Congratulations! You have completed _Hellfire Citadel - Hellbreach_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Arcane Sanctum (LFR)",{
+mapid=994,
+lfgid=850,
 achieveid={8987},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
-keywords={"HM","AS","High","Maul","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>615",
+keywords={"HM, AS, High, Maul, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Arcane Sanctum raid.",
-lfgid=850,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -2276,12 +2289,13 @@ step
 Congratulations! You have completed _Highmaul - Arcane Sanctum_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Imperator's Rise (LFR)",{
+mapid=994,
+lfgid=851,
 achieveid={8988},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
-keywords={"HM","IR","High","Maul","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>615",
+keywords={"HM, IR, High, Maul, LFR, Draenor, Nagrand"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Imperator's Rise raid.",
-lfgid=851,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -2290,6 +2304,8 @@ Enter the Third wing of Highmaul - Imperator's Rise |goto Highmaul/6 47.1,29.5 |
 confirm
 step
 Go through the doors |goto Highmaul/6 45.8,60.6 < 12 |noway |c
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Imperator Mar'gok##77428 |goto Highmaul/6 45.3,75.0
 _TANK:_ |grouprole TANK
@@ -2318,12 +2334,13 @@ step
 Congratulations! You have completed _Highmaul - Imperator's Rise_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Walled City (LFR)",{
+mapid=994,
+lfgid=849,
 achieveid={8986},
-condition_suggested="level>=100 and _G.GetAverageItemLevel()>615",
-keywords={"HM","WC","High","Maul","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>615",
+keywords={"HM, WC, High, Maul, LFR, Draenor, Nagrand"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Highmaul - Walled City raid.",
-lfgid=849,
 },[[
 step
 talk Seer Kazal##94870 |goto Frostwall/0 41.44,47.10
@@ -2423,7 +2440,8 @@ Congratulations! You have completed _Highmaul - Walled City_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Normal/Heroic",{
 mapid=988,
-keywords={"BRF","BC","Normal","Heroic","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, BF, Draenor, Gorgrond"},
 description="This guide will walk you through the Normal and Heroic versions of the Blackrock Foundry raid.",
 },[[
 step
@@ -2832,7 +2850,8 @@ Congratulations! You have completed _Blackrock Foundry_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Blackrock Foundry - Mythic",{
 lfgid=900,
-keywords={"BRF","BC","Mythic"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>635",
+keywords={"BRF, BF, Draenor, Gorgrond, Mythic"},
 description="This guide will walk you through the Mythic version of the Blackrock Foundry raid.",
 },[[
 step
@@ -3338,7 +3357,8 @@ Congratulations! You have completed _Blackrock Foundry Mythic_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Normal/Heroic",{
 mapid=1026,
-keywords={"HFC","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, Normal, Heroic, Draenor, Tanaan, Jungle"},
 description="This guide will walk you through the Normal and Heroic versions of the Hellfire Citadel raid.",
 },[[
 step
@@ -3864,7 +3884,8 @@ Congratulations on completeing _Hellfire Citadel_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Hellfire Citadel - Mythic",{
 lfgid=989,
-keywords={"HFC","Mythic"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>650",
+keywords={"HFC, Mythic, Draenor, Tanaan, Jungle"},
 description="This guide will walk you through the Mythic version of the Hellfire Citadel raid.",
 },[[
 step
@@ -3883,11 +3904,11 @@ _TANK:_ |grouprole TANK
 |tip Move adds away from bombs to lower the damage melee DPS take. |grouprole TANK
 |tip Use a cooldown if Slam stacks get too high. |grouprole TANK
 |tip Move out of Shockwave from the Felfire Crusher. |grouprole TANK
-__DAMAGE:__ |grouprole DAMAGE
+_DAMAGE:_ |grouprole DAMAGE
 |tip Burn down Siege Weapons quickly these are the priority, then focus dps on berserkers as they will do a large amount of damage to the tank the longer they are alive. |grouprole DAMAGE
 |tip Also be sure to hard switch to the Gorebound Felcasters when they get low enough they will transform and deal raid wide aoe damage until they die.|grouprole DAMAGE
 |tip Stay spread out to minimize damage from Howling Axe and Conducted Shock Pulse. |grouprole DAMAGE
-__HEALER:__ |grouprole HEALER
+_HEALER:_ |grouprole HEALER
 |tip Hulking Berserkers will deal heavy damage to the tank. |grouprole HEALER
 |tip Extra healing will be needed on players affected by Howling Axe. |grouprole HEALER
 |tip High raid damage will come from gorebound felcasters transforming and felfire demolishers be sure to watch out the raid while these are up. |grouprole HEALER
@@ -4454,7 +4475,8 @@ Congratulations on completeing _Hellfire Citadel Mythic_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Normal/Heroic",{
 mapid=994,
-keywords={"HM","IR","High","Maul","LFR"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>615",
+keywords={"HM, Normal, Maul, High, Heroic, Draenor, Nagrand"},
 description="This guide will walk you through the Normal and Heroic versions of the Highmaul raid.",
 },[[
 step
@@ -4698,7 +4720,8 @@ Congratulations! You have completed _Highmaul_!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Draenor Raids\\Highmaul - Mythic",{
 lfgid=897,
-keywords={"HM","IR","High","Maul","Mythic"},
+condition_suggested="level>=100 and level<=105 and _G.GetAverageItemLevel()>615",
+keywords={"HM, Mythic, Maul, High, Draenor, Nagrand"},
 description="This guide will walk you through the Mythic version of the Highmaul raid.",
 },[[
 step

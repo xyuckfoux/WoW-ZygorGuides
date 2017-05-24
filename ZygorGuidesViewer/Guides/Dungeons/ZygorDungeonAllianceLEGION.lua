@@ -6,8 +6,8 @@ ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\The Arcway",{
 mapid=1045,
 achieveid={10813},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>830",
-keywords={"Arcway"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>830",
+keywords={"Legion, Suramar, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Arcway dungeon in Suramar.",
 },[[
@@ -133,8 +133,8 @@ You completed The Arcway dungeon!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Assault on Violet Hold",{
 mapid=1066,
 achieveid={10798},
-condition_suggested="level>=105 and _G.GetAverageItemLevel()>500",
-keywords={"Violet Hold VH AoVH"},
+condition_suggested="level>=105 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Dalaran, AoVH, VH, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Assault on Violet Hold dungeon.",
 },[[
@@ -271,8 +271,8 @@ You completed the Assault on Violet Hold dungeon.
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Black Rook Hold",{
 mapid=1081,
 achieveid={10804},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>500",
-keywords={"Black Rook Hold BRH"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, BRH, Val'sharah, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Black Rook Hold dungeon.",
 },[[
@@ -405,8 +405,9 @@ You completed the Black Rook Hold dungeon.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Cathedral of Eternal Night",{
 mapid=1146,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
-keywords={"cathedral, eternal, night"},
+achieveid={11700},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>855",
+keywords={"Legion, Shore, CoEN, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Cathedral of Eternal Night dungeon.",
 },[[
@@ -513,8 +514,8 @@ Congratulations you have completed the Cathedral of Eternal Night!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Court of Stars",{
 mapid=1045,
 achieveid={10816},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>830",
-keywords={"Court of Stars CoS"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>830",
+keywords={"Legion, Suramar, Broken, Isles, CoS"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Court of Stars dungeon in Suramar.",
 },[[
@@ -656,8 +657,8 @@ You completed the Court of Stars dungeon!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Darkheart Thicket",{
 mapid=1067,
 achieveid={10783},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Darkheart Thicket DT"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Val'sharah, DHT, DT, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
@@ -744,8 +745,8 @@ You completed the Darkheart Thicket dungeon.
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Eye of Azshara",{
 mapid=1046,
 achieveid={10780},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Eye of Azshara EoA"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, EoA, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
@@ -861,8 +862,8 @@ You completed the Eye of Azshara dungeon.
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Halls of Valor",{
 mapid=1041,
 achieveid={10786},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Halls of Valor HoV"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Stormheim, HoV, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Halls of Valor dungeon.",
 },[[
@@ -1000,8 +1001,8 @@ You completed the Halls of Valor dungeon.
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Maw of Souls",{
 mapid=1042,
 achieveid={10807},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>500",
-keywords={"Maw of Souls MoS"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Stormheim, MoS, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Maw of Souls dungeon.",
 },[[
@@ -1065,8 +1066,8 @@ You completed the Maw of Souls dungeon.
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Neltharion's Lair",{
 mapid=1065,
 achieveid={10795},
-condition_suggested="level>=98 and _G.GetAverageItemLevel()>500",
-keywords={"Neltharion's Lair NL"},
+condition_suggested="level>=98 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Highmountain, NL, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Neltharion's Lair dungeon.",
 },[[
@@ -1163,8 +1164,8 @@ You completed the Neltharion's Lair dungeon!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Vault of the Wardens",{
 mapid=1045,
 achieveid={10801},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>500",
-keywords={"Vault of the Wardens VotW"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>500",
+keywords={"Legion, Watchers, VotW, VoW, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Vault of the Wardens dungeon.",
 },[[
@@ -1316,8 +1317,8 @@ _Congratulations!_
 You completed the Vault of the Wardens dungeon!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Attunement",{
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
-keywords={"Karazhan Kara"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>840",
+keywords={"Legion, Deadwind, Pass, DWP, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Attunement for the Karazhan dungeon.",
 },[[
@@ -1465,8 +1466,8 @@ accept Fragments of the Past##44734 |goto Deadwind Pass/0 47.03,75.28
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan",{
 mapid=1115,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
-keywords={"Karazhan Kara"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>855",
+keywords={"Legion, Deadwind, Pass, DWP, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Return to Karazhan dungeon.",
 },[[
@@ -2009,8 +2010,8 @@ turnin Fragments of the Past##44734 |goto Karazhan L/14 41.4,81.2
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan - Lower",{
 mapid=1115,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
-keywords={"Karazhan, Kara, lower"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>855",
+keywords={"Legion, Deadwind, Pass, DWP, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Return to Karazhan dungeon.",
 },[[
@@ -2190,8 +2191,8 @@ Congratulations you have completed the Return to Karazhan - Lower!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan - Upper",{
 mapid=1115,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
-keywords={"Karazhan, Kara, lower"},
+condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>855",
+keywords={"Legion, Deadwind, Pass, DWP, Broken, Isles"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Return to Karazhan dungeon.",
 },[[
@@ -2317,7 +2318,7 @@ Congratulations you have completed the Return to Karazhan - Upper!
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Wailing Caverns",{
 mapid=1127,
 condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
-keywords={"pet, battle, dungeon, wailing, caverns"},
+keywords={"Pet, Battle, WC, Barrens, Deviate, Kalimdor"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Pet Battle Wailing Caverns dungeon.",
 },[[
@@ -2430,8 +2431,8 @@ Congratulations you have compelted the Pet Dungeon Wailing Caverns!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Darkbough (LFR)",{
 mapid=1094,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>825",
-keywords={"emerald, nightmare, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>825",
+keywords={"Legion, EN, Broken, Isles, Val'sharah, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Emerald Nightmare - Darkbough.",
 },[[
@@ -2556,8 +2557,8 @@ Congratulations you have completed the Emerald Nightmare - Darkbough!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Rift of Ain (LFR)",{
 mapid=1094,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>825",
-keywords={"emerald, nightmare, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>825",
+keywords={"Legion, EN, Broken, Isles, Val'sharah, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Emerald Nightmare - Rift of Ain.",
 },[[
@@ -2636,8 +2637,8 @@ Congratulations you have completed the Emerald Nightmare - Rift of Ain!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Tormented Guardians (LFR)",{
 mapid=1094,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>825",
-keywords={"emerald, nightmare, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>825",
+keywords={"Legion, EN, Broken, Isles, Val'sharah, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Emerald Nightmare - Tormented Guardians",
 },[[
@@ -2786,8 +2787,8 @@ Congratulations you have completed the Emerald Nightmare - Tormented Guaridians!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Arcing Aquaducts (LFR)",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>835",
-keywords={"nighthold, arcing, aquaducts, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>835",
+keywords={"Legion, NH, Broken, Isles, Suramar, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Nighthold - Arcing Aquaducts.",
 },[[
@@ -2889,8 +2890,8 @@ Congratulations you have completed the Nighthold - Arcing Aquaducts!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Betrayer's Rise (LFR)",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>835",
-keywords={"nighthold, betrayer, rise, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>835",
+keywords={"Legion, NH, Broken, Isles, Suramar, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Nighthold - Betrayer's Rise.",
 },[[
@@ -2981,8 +2982,8 @@ Congratulations you have completed Nighthold - Betrayer's Rise!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Nightspire (LFR)",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>835",
-keywords={"nighthold, nightspire, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>835",
+keywords={"Legion, NH, Broken, Isles, Suramar, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Nighthold - Nightspire.",
 },[[
@@ -3111,8 +3112,8 @@ Congratulations you have completed Nighthold - Nightspire!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Royal Athenaeum (LFR)",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>835",
-keywords={"nighthold, royal, athenaeum, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>835",
+keywords={"Legion, NH, Broken, Isles, Suramar, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Nighthold - Royal Athenaeum.",
 },[[
@@ -3242,8 +3243,8 @@ Congratulations you have completed the Nighthold - Royal Athenaeum!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - (LFR)",{
 mapid=1114,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>830",
-keywords={"trial, valor, lfr"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>830",
+keywords={"Legion, ToV, Broken, Isles, Stormheim, LFR"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Trial of Valor(LFR).",
 },[[
@@ -3394,8 +3395,8 @@ Congratulations you have completed Trial of Valor - (LFR)!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Normal/Heroic",{
 mapid=1094,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
-keywords={"emerald, nightmare, normal, heroic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>840",
+keywords={"Legion, EN, Broken, Isles, Val'sharah, Normal, Heroic"},
 author="support@zygorguides.com",
 description="This guide will walk you through Emerald Nightmare - Normal/Heroic.",
 },[[
@@ -3734,8 +3735,8 @@ Congratulations you have completed The Emerald Nigthmare!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Mythic",{
 mapid=1094,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>870",
-keywords={"emerald, nightmare, mythic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>870",
+keywords={"Legion, EN, Broken, Isles, Val'sharah, Mythic"},
 author="support@zygorguides.com",
 description="This guide will walk you through Emerald Nightmare - Mythic.",
 },[[
@@ -4093,8 +4094,8 @@ Congratulations you have completed The Emerald Nigthmare!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>870",
-keywords={"nighthold, normal, heroic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>870",
+keywords={"Legion, NH, Broken, Isles, Suramar, Normal, Heroic"},
 author="support@zygorguides.com",
 description="This guide will walk you through Nighthold - Normal/Heroic.",
 },[[
@@ -4528,8 +4529,8 @@ Congratulations you have completed The Nighthold!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Nighthold - Mythic",{
 mapid=1088,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>890",
-keywords={"nighthold, mythic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>890",
+keywords={"Legion, NH, Broken, Isles, Suramar, Mythic"},
 author="support@zygorguides.com",
 description="This guide will walk you through Nighthold - Mythic.",
 },[[
@@ -5005,8 +5006,8 @@ Congratulations you have completed The Nighthold!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Normal/Heroic",{
 mapid=1114,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>850",
-keywords={"trial, valor, normal, heroic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>850",
+keywords={"Legion, ToV, Broken, Isles, Stormheim, Normal, Heroic"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Trial of Valor - Normal/Heroic.",
 },[[
@@ -5160,8 +5161,8 @@ Congratulations you have completed Trial of Valor!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Trial of Valor - Mythic",{
 mapid=1114,
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>880",
-keywords={"trial, valor, mythic"},
+condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>880",
+keywords={"Legion, ToV, Broken, Isles, Stormheim, Mythic"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Trial of Valor - Mythic.",
 },[[

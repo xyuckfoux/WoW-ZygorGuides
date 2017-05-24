@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Aquatic Pets\\Lagan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Lagan",{
 model={71980},
 pet=1930,
 description="This guide will walk you through obtaining the Aquatic pet: Lagan",
@@ -20,7 +20,7 @@ step
 _Congratulations!_
 You have collected the _Lagan_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Ridgeback Piglet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ridgeback Piglet",{
 model={65667},
 pet=1756,
 description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet",
@@ -70,7 +70,7 @@ step
 _Congratulations!_
 You have collected the _Ridgeback Piglet_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Beast Pets\\Thaumaturgical Piglet",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Thaumaturgical Piglet",{
 model={65671},
 pet=1759,
 description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet",
@@ -120,7 +120,7 @@ step
 _Congratulations!_
 You have collected the _Thaumaturgical Piglet_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Critter Pets\\Noblegarden Bunny",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Noblegarden Bunny",{
 model={28726},
 pet=1943,
 description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny",
@@ -138,7 +138,7 @@ step
 _Congratulations!_
 You have collected the _Noblegarden Bunny_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Dragonkin Pets\\Emmigosa",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Emmigosa",{
 model={65120},
 pet=1720,
 description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa",
@@ -152,7 +152,7 @@ step
 _Congratulations!_
 You have collected the _Emmigosa_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Elemental Pets\\Igneous Flameling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Igneous Flameling",{
 model={73308},
 pet=1949,
 description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling",
@@ -172,7 +172,7 @@ step
 _Congratulations!_
 You have collected the _Igneous Flameling_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Alliance Enthusiast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Alliance Enthusiast",{
 model={71002},
 pet=1918,
 description="This guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast",
@@ -181,7 +181,7 @@ step
 This pet is a reward for obtaining honor level 50 for the first time
 You must complete this on an Alliance character
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Gruntling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Gruntling",{
 model={73245},
 description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling",
 },[[
@@ -194,7 +194,7 @@ step
 _Congratulations!_
 You have collected the _Dutiful Gruntling_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Dutiful Squire",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Squire",{
 model={73244},
 description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire",
 },[[
@@ -202,7 +202,7 @@ step
 This pet is a reward for reaching PvP Prestige level 7 for the first time
 |tip You must complete this on an _Alliance_ character.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Horde Fanatic",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Horde Fanatic",{
 model={71003},
 pet=1919,
 description="This guide will walk you through obtaining the Humanoid pet: Horde Fanatic",
@@ -217,7 +217,7 @@ step
 _Congratulations!_
 You have collected the _Horde Fanatic_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Knight-Captain Murky",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Knight-Captain Murky",{
 model={73351},
 pet=1940,
 description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky",
@@ -227,7 +227,7 @@ This pet was a reward for attending US or EU BlizzCon 2016 event
 |tip This pet can no longer be obtained.
 |tip This is the Alliance-only version of the reward.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Legionnaire Murky",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Legionnaire Murky",{
 model={73352},
 pet=1939,
 description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky",
@@ -236,7 +236,7 @@ step
 This pet was a reward for attending US or EU BlizzCon 2016 event
 |tip This pet can no longer be obtained.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Humanoid Pets\\Tylarr Gronnden",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Tylarr Gronnden",{
 author="support@zygorguides.com",
 model={59026},
 pet=2022,
@@ -256,7 +256,7 @@ step
 _Congratulations!_
 You have collected the _Tylarr Gronnden_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Cauldron",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Cauldron",{
 model={69490},
 pet=1699,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Cauldron",
@@ -293,7 +293,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Cauldron_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Pen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Pen",{
 model={69488},
 pet=1701,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Pen",
@@ -330,7 +330,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Pen_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Enchanted Torch",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Torch",{
 model={69489},
 pet=1700,
 description="This guide will walk you through obtaining the Magic pet: Enchanted Torch",
@@ -367,7 +367,7 @@ step
 _Congratulations!_
 You have collected the _Enchanted Torch_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Transmutant",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Transmutant",{
 model={71828},
 pet=1920,
 description="This guide will walk you through obtaining the Magic pet: Transmutant",
@@ -418,7 +418,7 @@ step
 _Congratulations!_
 You have collected the _Transmutant_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Magic Pets\\Untethered Wyrmling",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Untethered Wyrmling",{
 model={71827},
 pet=1921,
 description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling",
@@ -434,7 +434,7 @@ step
 _Congratulations!_
 You have collected the _Untethered Wyrmling_ battle pet
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Pets\\Mechanical Pets\\Trigger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Trigger",{
 model={68666},
 pet=1886,
 description="This guide will walk you through obtaining the Mechanical pet: Trigger",

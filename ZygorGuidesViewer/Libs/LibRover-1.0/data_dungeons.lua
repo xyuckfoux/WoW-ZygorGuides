@@ -5,75 +5,75 @@ local data=addon.LibRoverData
 
 data.basenodes.DungeonEntrances = {
 	-- DUNGEON ENTRANCE/EXITS
-		-- {style:portal_dungeon} gives the nice "enter dungeon"/"exit dungeon" mechanics.
+		-- {autotype:portal_dungeon} gives the nice "enter dungeon"/"exit dungeon" mechanics.
 
 		--Kalimdor
 			-- RAGEFIRE CHASM
-			"Orgrimmar/2 70.10,48.95 <region:cleftofshadow> -x- Ragefire Chasm 62.41,7.88 {style:portal_dungeon}",
+			"Orgrimmar/2 70.10,48.95 <region:cleftofshadow> -x- Ragefire Chasm 62.41,7.88 {autotype:portal_dungeon}",
 
 			-- WAILING CAVERNS
 			"Northern Barrens/20 33.8,22.7",
 			"@+ -x- Northern Barrens/20 55.3,65.4 <dark:1> <nofly:1>",
-			"@+ -x- Wailing Caverns 45.8,59.7 {style:portal_dungeon}",
+			"@+ -x- Wailing Caverns 45.8,59.7 {autotype:portal_dungeon}",
 
 			-- BLACKFATHOM DEEPS
 			"Ashenvale 14.2,13.9",
 			"@+ -x- Ashenvale 13.76,9.24 <dark:1>  <radius:5> <nofly:1>",
 			"@+ -x- Ashenvale 16.52,11.03 <dark:1> <nofly:1>",
-			"@+ -x- Blackfathom Deeps 44.29,10.66 {style:portal_dungeon}",
+			"@+ -x- Blackfathom Deeps 44.29,10.66 {autotype:portal_dungeon}",
 
 			-- ZUL'FARRAK
-			"Tanaris 39.22,21.27 -x- Zul'Farrak 56.60,90.95 {style:portal_dungeon}",
+			"Tanaris 39.22,21.27 -x- Zul'Farrak 56.60,90.95 {autotype:portal_dungeon}",
 
 			-- RAZORFEN DOWNS
-			"Thousand Needles 47.65,23.65 -x- Razorfen Downs 23.79,18.80 {style:portal_dungeon}",
+			"Thousand Needles 47.65,23.65 -x- Razorfen Downs 23.79,18.80 {autotype:portal_dungeon}",
 			-- RAZORFEN KRAUL
-			"Southern Barrens 40.72,94.39 -x- Razorfen Kraul 69.89,82.97 {style:portal_dungeon}",
+			"Southern Barrens 40.72,94.39 -x- Razorfen Kraul 69.89,82.97 {autotype:portal_dungeon}",
 
 			-- MARAUDON: EARTHSONG FALLS
 			"Desolace/22 44.3,76.7 -to- Maraudon 28.1,35.5 {template:cityportal}",
 			-- MARAUDON: THE WICKED GROTTO
-			"Desolace/22 52.4,23.8 -x- Maraudon 78.48,68.45 {style:portal_dungeon}",
+			"Desolace/22 52.4,23.8 -x- Maraudon 78.48,68.45 {autotype:portal_dungeon}",
 			-- MARAUDON: FOULSPORE CAVERN
-			"Desolace/21 78.4,55.3 -x- Maraudon 62.16,28.18 {style:portal_dungeon}",
+			"Desolace/21 78.4,55.3 -x- Maraudon 62.16,28.18 {autotype:portal_dungeon}",
 
 			-- DIRE MAUL: WARPWOOD QUARTER
-			"Feralas/0 64.8,30.2 -x- Dire Maul/5 6.71,38.29 {style:portal_dungeon}",
-			"Feralas/0 66.77,34.84 -x- Dire Maul/5 28.22,84.76 {style:portal_dungeon}",
-			"Feralas/0 76.45,35.90 -x- Dire Maul/5 92.12,45.20 {style:portal_dungeon}",
-			"Dire Maul/6 36.74,38.45 -to- Feralas/0 66.11,26.31 <style:portal_dungeon>",
+			"Feralas/0 64.8,30.2 -x- Dire Maul/5 6.71,38.29 {autotype:portal_dungeon}",
+			"Feralas/0 66.77,34.84 -x- Dire Maul/5 28.22,84.76 {autotype:portal_dungeon}",
+			"Feralas/0 76.45,35.90 -x- Dire Maul/5 92.12,45.20 {autotype:portal_dungeon}",
+			"Dire Maul/6 36.74,38.45 -to- Feralas/0 66.11,26.31 {template:portalDungeonExit}",
 			-- DIRE MAUL: CAPITAL GARDENS
-			"Feralas/0 60.31,31.30 -x- Dire Maul/2 93.42,75.90 {style:portal_dungeon}",
-			"Feralas/0 60.32,30.12 -x- Dire Maul/2 93.53,47.68 {style:portal_dungeon}",
+			"Feralas/0 60.31,31.30 -x- Dire Maul/2 93.42,75.90 {autotype:portal_dungeon}",
+			"Feralas/0 60.32,30.12 -x- Dire Maul/2 93.53,47.68 {autotype:portal_dungeon}",
 			-- DIRE MAUL: GORDOK COMMONS
-			"Feralas 62.51,24.89 -x- Dire Maul/1 71.13,93.54 {style:portal_dungeon}",
+			"Feralas 62.51,24.89 -x- Dire Maul/1 71.13,93.54 {autotype:portal_dungeon}",
 
 			-- THE BLACK MORASS
-			"Tanaris/18 36.3,83.2 -x- The Black Morass 52.06,0.15 {style:portal_dungeon}",
+			"Tanaris/18 36.3,83.2 -x- The Black Morass 52.06,0.15 {autotype:portal_dungeon}",
 			-- CULLING OF STRATHOLME
-			"Tanaris/18 57.4,82.6  -x- The Culling of Stratholme 87.51,71.21 {style:portal_dungeon}",
+			"Tanaris/18 57.4,82.6  -x- The Culling of Stratholme 87.51,71.21 {autotype:portal_dungeon}",
 			-- END TIME
-			"Tanaris/18 57.6,29.6 -x- End Time 80.73,44.20 {style:portal_dungeon}",
+			"Tanaris/18 57.6,29.6 -x- End Time 80.73,44.20 {autotype:portal_dungeon}",
 			-- WELL OF ETERNITY
-			"Tanaris/18 22.5,64.4 -x- Well of Eternity 27.82,63.37 {style:portal_dungeon}",
+			"Tanaris/18 22.5,64.4 -x- Well of Eternity 27.82,63.37 {autotype:portal_dungeon}",
 			-- HOUR OF TWILIGHT
-			"Tanaris/18 67.2,29.4 -x- Hour of Twilight 48.51,19.72 {style:portal_dungeon}",
+			"Tanaris/18 67.2,29.4 -x- Hour of Twilight 48.51,19.72 {autotype:portal_dungeon}",
 
 			-- THE VORTEX PINNACLE
-			"Uldum 76.81,84.55 -x- The Vortex Pinnacle 54.12,16.81 {style:portal_dungeon}",
+			"Uldum 76.81,84.55 -x- The Vortex Pinnacle 54.12,16.81 {autotype:portal_dungeon}",
 			-- HALLS OF ORIGINATION
-			"Uldum 69.09,52.97 -x- Halls of Origination/1 49.91,93.73 {style:portal_dungeon}",
+			"Uldum 69.09,52.97 -x- Halls of Origination/1 49.91,93.73 {autotype:portal_dungeon}",
 			-- LOST CITY OF THE TOL'VIR
-			"Uldum 60.55,64.32 -x- Lost City of the Tol'vir 31.78,16.78 {style:portal_dungeon}",
+			"Uldum 60.55,64.32 -x- Lost City of the Tol'vir 31.78,16.78 {autotype:portal_dungeon}",
 
 		--Eastern Kingdom
 			--Scholomance
-			"Western Plaguelands 69.1,72.9 -x- Scholomance/1 18.1,60.9 {style:portal_dungeon}",
+			"Western Plaguelands 69.1,72.9 -x- Scholomance/1 18.1,60.9 {autotype:portal_dungeon}",
 			-- STRATHOLME: MAIN GATE
-			"Eastern Plaguelands/0 27.61,11.63 -x- Stratholme/1 68.02,88.46 {style:portal_dungeon}",
-			"Eastern Plaguelands/0 26.51,11.67 -x- Stratholme/1 64.46,88.52 {style:portal_dungeon}",
+			"Eastern Plaguelands/0 27.61,11.63 -x- Stratholme/1 68.02,88.46 {autotype:portal_dungeon}",
+			"Eastern Plaguelands/0 26.51,11.67 -x- Stratholme/1 64.46,88.52 {autotype:portal_dungeon}",
 			-- STRATHOLME: SERVICE ENTRACE
-			"Eastern Plaguelands/0 43.82,17.42 -x- Stratholme/2 67.74,86.29 {style:portal_dungeon}",
+			"Eastern Plaguelands/0 43.82,17.42 -x- Stratholme/2 67.74,86.29 {autotype:portal_dungeon}",
 			--SUNKEN TEMPLE
 			"Swamp of Sorrows/0 69.33,55.62 <title:Enter the building>",
 			"@+ -x- Swamp of Sorrows/0 70.10,51.03 <dark:1> <onlyhardwire:1> <title:Run down the stairs>",
@@ -87,241 +87,241 @@ data.basenodes.DungeonEntrances = {
 			"@+ -x- The Temple of Atal'Hakkar/1 50.0,15.8 <title:You're inside>",
 
 			--Scarlet Halls
-			"Tirisfal Glades/13 78.5,58.2 -x- Scarlet Halls/1 34.3,90.1 {style:portal_dungeon}",
+			"Tirisfal Glades/13 78.5,58.2 -x- Scarlet Halls/1 34.3,90.1 {autotype:portal_dungeon}",
 			--Scarlet Monastery
-			"Tirisfal Glades/13 69.4,25.1 -x- Scarlet Monastery/1 75.7,45.8 {style:portal_dungeon}",
+			"Tirisfal Glades/13 69.4,25.1 -x- Scarlet Monastery/1 75.7,45.8 {autotype:portal_dungeon}",
 
 			-- ZUL'GURUB
-			"Northern Stranglethorn 72.18,32.91 -x- Zul'Gurub 30.23,48.85 {style:portal_dungeon}",
+			"Northern Stranglethorn 72.18,32.91 -x- Zul'Gurub 30.23,48.85 {autotype:portal_dungeon}",
 			-- ZUL'AMAN
-			"Ghostlands 82.28,64.3 -x- Zul'Aman 7.32,52.97 {style:portal_dungeon}",
+			"Ghostlands 82.28,64.3 -x- Zul'Aman 7.32,52.97 {autotype:portal_dungeon}",
 
 			-- DEADMINES
 			"Westfall/17 50.94,64.98",
 			"@+ -x- Westfall/17 25.8,51.1 <dark:1> <nofly:1> <radius:10> ",
-			"@+ -x- The Deadmines/1 26.5,13.4 {style:portal_dungeon}",
+			"@+ -x- The Deadmines/1 26.5,13.4 {autotype:portal_dungeon}",
 			"The Deadmines/2 96.17,51.66 -to- Westfall/0 41.15,83.19 <style:portal_dungeon>",
 			-- SHADOWFANG KEEP
-			"Silverpine Forest 44.75,67.79 -x- Shadowfang Keep 69.46,60.97 {style:portal_dungeon}",
+			"Silverpine Forest 44.75,67.79 -x- Shadowfang Keep 69.46,60.97 {autotype:portal_dungeon}",
 			-- THE STOCKADE
-			"Stormwind City 50.42,66.31 -x- The Stockade 50.07,68.09 {style:portal_dungeon}",
+			"Stormwind City 50.42,66.31 -x- The Stockade 50.07,68.09 {autotype:portal_dungeon}",
 
 			-- GNOMEREGAN
-			"Dun Morogh/10 30.0,74.7 -x- Gnomeregan 64.33,28.96 {style:portal_dungeon}",
+			"Dun Morogh/10 30.0,74.7 -x- Gnomeregan 64.33,28.96 {autotype:portal_dungeon}",
 			-- ULDAMAN
-			"Badlands/18 36.7,30.1 -x- Uldaman 67.03,72.71 {style:portal_dungeon}",
+			"Badlands/18 36.7,30.1 -x- Uldaman 67.03,72.71 {autotype:portal_dungeon}",
 
 			-- BLACKROCK DEPTHS
-			"Searing Gorge/16 40,17 -x- Blackrock Depths 34.70,77.80 {style:portal_dungeon}",
+			"Searing Gorge/16 40,17 -x- Blackrock Depths 34.70,77.80 {autotype:portal_dungeon}",
 			-- BLACKROCK CAVERNS
-			"Burning Steppes/15 70.0,53.3 -x- Blackrock Caverns 32.02,70.10 {style:portal_dungeon}",
+			"Burning Steppes/15 70.0,53.3 -x- Blackrock Caverns 32.02,70.10 {autotype:portal_dungeon}",
 			
 			-- LOWER BLACKROCK SPIRE
-			"Burning Steppes/14 80.4,41.3 -x- Blackrock Spire/4 37.9,43.3 {style:portal_dungeon}",
+			"Burning Steppes/14 80.4,41.3 -x- Blackrock Spire/4 37.9,43.3 {autotype:portal_dungeon}",
 			-- UPPER BLACKROCK SPIRE
-			"Burning Steppes/14 79.0,34.0 -x- Upper Blackrock Spire 2/1 37.2,32.5 {style:portal_dungeon}",
+			"Burning Steppes/14 79.0,34.0 -x- Upper Blackrock Spire 2/1 37.2,32.5 {autotype:portal_dungeon}",
 
 
 			-- MAGISTERS' TERRACE
-			"Isle of Quel'Danas 61.28,30.92 -x- Magisters' Terrace/2 42.53,90.01 {style:portal_dungeon}",
-			"Magisters' Terrace/1 4.63,50.20 -to- Isle of Quel'Danas/0 47.10,30.69 (B:PORTAL)",
+			"Isle of Quel'Danas 61.28,30.92 -x- Magisters' Terrace/2 42.53,90.01 {autotype:portal_dungeon}",
+			"Magisters' Terrace/1 4.63,50.20 -to- Isle of Quel'Danas/0 47.10,30.69 {mode:PORTAL}",
 			-- GRIM BATOL
-			"Twilight Highlands 19.14,53.84 -x- Grim Batol 12.15,55.67 {style:portal_dungeon}",
+			"Twilight Highlands 19.14,53.84 -x- Grim Batol 12.15,55.67 {autotype:portal_dungeon}",
 
 		--Outlands
 			-- HELLFIRE RAMPARTS
-			"Hellfire Peninsula 47.59,53.59 -x- Hellfire Ramparts/1 50.06,70.37 {style:portal_dungeon}",
+			"Hellfire Peninsula 47.59,53.59 -x- Hellfire Ramparts/1 50.06,70.37 {autotype:portal_dungeon}",
 			-- THE BLOOD FURNACE
-			"Hellfire Peninsula 45.95,51.87 -x- The Blood Furnace/1 47.75,90.56 {style:portal_dungeon}",
+			"Hellfire Peninsula 45.95,51.87 -x- The Blood Furnace/1 47.75,90.56 {autotype:portal_dungeon}",
 			-- THE SHATTERED HALLS
-			"Hellfire Peninsula 47.48,52.02 -x- The Shattered Halls/1 61.14,92.81 {style:portal_dungeon}",
+			"Hellfire Peninsula 47.48,52.02 -x- The Shattered Halls/1 61.14,92.81 {autotype:portal_dungeon}",
 
 			{{"Zangarmarsh 50.36,40.85",region="coilfang1",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Dive between pipes" else return "Swim to surface" end end},
 			 {"Zangarmarsh 50.67,40.07",region="coilfangpipe",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Swim through pipe" else return "Dive deep down pipe" end end}},
 			{{"Zangarmarsh 51.84,38.85",region="coilfangpipe",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Swim through pipe" else return "Swim into pipe" end end},
 			 {"Zangarmarsh 51.91,37.93",region="coilfang2",actiontitle=function(self,fromnode,tonode) if tonode==self.border then return "Dive into pipe" else return "Swim to surface" end end}},
 			-- THE STEAMVAULT
-			"Zangarmarsh 50.29,33.33 <region:coilfang2> -x- The Steamvault 17.59,29.76 {style:portal_dungeon}",
+			"Zangarmarsh 50.29,33.33 <region:coilfang2> -x- The Steamvault 17.59,29.76 {autotype:portal_dungeon}",
 			-- THE SLAVE PENS
-			"Zangarmarsh 48.95,35.70 <region:coilfang2> -x- The Slave Pens 19.95,13.37 {style:portal_dungeon}",
+			"Zangarmarsh 48.95,35.70 <region:coilfang2> -x- The Slave Pens 19.95,13.37 {autotype:portal_dungeon}",
 			-- THE UNDERBOG
-			"Zangarmarsh 54.28,34.40 <region:coilfang2> -x- The Underbog 29.68,67.88 {style:portal_dungeon}",
+			"Zangarmarsh 54.28,34.40 <region:coilfang2> -x- The Underbog 29.68,67.88 {autotype:portal_dungeon}",
 
 			-- MANA-TOMBS
-			"Terokkar Forest 39.64,57.63 -x- Mana-Tombs 33.52,17.29 {style:portal_dungeon}",
+			"Terokkar Forest 39.64,57.63 -x- Mana-Tombs 33.52,17.29 {autotype:portal_dungeon}",
 			-- AUCHENAI CRYPTS
-			"Terokkar Forest 34.30,65.61 -x- Auchenai Crypts/1 44.12,75.10 {style:portal_dungeon}",
+			"Terokkar Forest 34.30,65.61 -x- Auchenai Crypts/1 44.12,75.10 {autotype:portal_dungeon}",
 			-- SETHEKK HALLS
-			"Terokkar Forest 44.95,65.61 -x- Sethekk Halls 73.35,36.47 {style:portal_dungeon}",
+			"Terokkar Forest 44.95,65.61 -x- Sethekk Halls 73.35,36.47 {autotype:portal_dungeon}",
 			-- SHADOW LABYRINTH
-			"Terokkar Forest 39.63,73.60 -x- Shadow Labyrinth 22.01,12.45 {style:portal_dungeon}",
+			"Terokkar Forest 39.63,73.60 -x- Shadow Labyrinth 22.01,12.45 {autotype:portal_dungeon}",
 
 			-- OLD HILLSBRAD FOOTHILLS
-			"Tanaris/18 26.9,35.9 -x- Old Hillsbrad Foothills 23.23,24.80 {style:portal_dungeon}",
+			"Tanaris/18 26.9,35.9 -x- Old Hillsbrad Foothills 23.23,24.80 {autotype:portal_dungeon}",
 
 			-- THE BOTANICA
-			"Netherstorm 71.76,54.93 -x- The Botanica/1 89.59,41.09 {style:portal_dungeon}",
+			"Netherstorm 71.76,54.93 -x- The Botanica/1 89.59,41.09 {autotype:portal_dungeon}",
 			-- THE MECHANAR
-			"Netherstorm 70.62,69.78 -x- The Mechanar/1 49.41,83.51 {style:portal_dungeon}",
+			"Netherstorm 70.62,69.78 -x- The Mechanar/1 49.41,83.51 {autotype:portal_dungeon}",
 			"The Mechanar/2 27.34,73.16 -to- Netherstorm/0 70.54,69.64 <style:portal_dungeon>",
 			-- THE ARCATRAZ
-			"Netherstorm 74.49,57.68 -x- The Arcatraz/1 41.26,81.70 {style:portal_dungeon}",
+			"Netherstorm 74.49,57.68 -x- The Arcatraz/1 41.26,81.70 {autotype:portal_dungeon}",
 
 		--Northrend
 			-- UTGARDE KEEP
-			"Howling Fjord 57.28,46.73 -x- Utgarde Keep 69.27,73.00 {style:portal_dungeon}",
+			"Howling Fjord 57.28,46.73 -x- Utgarde Keep 69.27,73.00 {autotype:portal_dungeon}",
 			-- UTGARDE PINNACLE
-			"Howling Fjord 57.26,46.66 -x- Utgarde Pinnacle 44.49,16.12 {style:portal_dungeon}",
+			"Howling Fjord 57.26,46.66 -x- Utgarde Pinnacle 44.49,16.12 {autotype:portal_dungeon}",
 
 			-- THE NEXUS
-			"Borean Tundra 27.50,25.98 -x- The Nexus 36.20,88.0 {style:portal_dungeon}",
+			"Borean Tundra 27.50,25.98 -x- The Nexus 36.20,88.0 {autotype:portal_dungeon}",
 			-- THE OCULUS
-			"Borean Tundra 27.50,25.98 -x- The Oculus 61.30,47.58 {style:portal_dungeon}",
+			"Borean Tundra 27.50,25.98 -x- The Oculus 61.30,47.58 {autotype:portal_dungeon}",
 
 			-- AZJOL NERUB
-			"Dragonblight 25.96,50.90 -x- Azjol-Nerub/3 9.44,93.32 {style:portal_dungeon}",
+			"Dragonblight 25.96,50.90 -x- Azjol-Nerub/3 9.44,93.32 {autotype:portal_dungeon}",
 			"Azjol-Nerub/1 88.47,76.32 -to- Dragonblight 28.43,47.00 <style:portal_dungeon>",
 			-- THE OLD KINGDOM
-			"Dragonblight 28.47,51.72 -x- Ahn'kahet: The Old Kingdom 88.99,79.12 {style:portal_dungeon}",
+			"Dragonblight 28.47,51.72 -x- Ahn'kahet: The Old Kingdom 88.99,79.12 {autotype:portal_dungeon}",
 
 			-- DRAK'THARON KEEP
-			"Zul'Drak 28.52,86.93 -x- Drak'Tharon Keep 29.38,80.96 {style:portal_dungeon}",
+			"Zul'Drak 28.52,86.93 -x- Drak'Tharon Keep 29.38,80.96 {autotype:portal_dungeon}",
 			-- VIOLET HOLD
-			"Dalaran 68.60,70.39 -x- The Violet Hold 46.15,98.03 {style:portal_dungeon}",
+			"Dalaran 68.60,70.39 -x- The Violet Hold 46.15,98.03 {autotype:portal_dungeon}",
 			-- GUNDRAK
-			"Zul'Drak 76.12,20.95 -x- Gundrak 58.99,30.92 {style:portal_dungeon}",
+			"Zul'Drak 76.12,20.95 -x- Gundrak 58.99,30.92 {autotype:portal_dungeon}",
 
 			-- HALLS OF STONE
-			"The Storm Peaks 39.50,26.92 -x- Halls of Stone 34.4,36.2 {style:portal_dungeon}",
+			"The Storm Peaks 39.50,26.92 -x- Halls of Stone 34.4,36.2 {autotype:portal_dungeon}",
 			-- HALLS OF LIGHTNING
-			"The Storm Peaks 45.38,21.37 -x- Halls of Lightning 7.38,53.81 {style:portal_dungeon}",
+			"The Storm Peaks 45.38,21.37 -x- Halls of Lightning 7.38,53.81 {autotype:portal_dungeon}",
 
 			-- TRIAL OF THE CHAMPION
-			"Icecrown 74.17,20.52 -x- Trial of the Champion 51.18,30.24 {style:portal_dungeon}",
+			"Icecrown 74.17,20.52 -x- Trial of the Champion 51.18,30.24 {autotype:portal_dungeon}",
 			-- FORGE OF SOULS
-			"Icecrown 54.92,89.76 -x- The Forge of Souls 66.05,88.89 {style:portal_dungeon}",
+			"Icecrown 54.92,89.76 -x- The Forge of Souls 66.05,88.89 {autotype:portal_dungeon}",
 			-- PIT OF SARON
-			"Icecrown 54.78,91.80 -x- Pit of Saron 40.91,80.52 {style:portal_dungeon}",
+			"Icecrown 54.78,91.80 -x- Pit of Saron 40.91,80.52 {autotype:portal_dungeon}",
 			-- HALLS OF REFLECTION
-			"Icecrown 55.46,90.88 -x- Halls of Reflection 47.33,80.81 {style:portal_dungeon}",
-			"Pit of Saron 32.30,6.81 -x- Halls of Reflection 47.33,80.81 {style:portal_dungeon}",
+			"Icecrown 55.46,90.88 -x- Halls of Reflection 47.33,80.81 {autotype:portal_dungeon}",
+			"Pit of Saron 32.30,6.81 -x- Halls of Reflection 47.33,80.81 {autotype:portal_dungeon}",
 
 		--Maelstrom
 			-- THRONE OF THE TIDES
-			"Abyssal Depths 69.49,24.99 -x- Throne of the Tides/1 49.85,88.23 {style:portal_dungeon}",
+			"Abyssal Depths 69.49,24.99 -x- Throne of the Tides/1 49.85,88.23 {autotype:portal_dungeon}",
 
 			-- THE STONECORE
-			"Deepholm 47.70,51.98 -x- The Stonecore 54.27,93.90 {style:portal_dungeon}",
+			"Deepholm 47.70,51.98 -x- The Stonecore 54.27,93.90 {autotype:portal_dungeon}",
 
 		--Pandaria
 			-- Siege of Niuzao Temple
-			"Townlong Steppes 34.7,81.4 -x- Siege of Niuzao Temple/2 64.9,86.9 {style:portal_dungeon}",
+			"Townlong Steppes 34.7,81.4 -x- Siege of Niuzao Temple/2 64.9,86.9 {autotype:portal_dungeon}",
 
 			--Shado-Pan Monastery
-			"Kun-Lai Summit 36.7,47.5 -x- Shado-Pan Monastery/1 84.9,56.1 {style:portal_dungeon}",
+			"Kun-Lai Summit 36.7,47.5 -x- Shado-Pan Monastery/1 84.9,56.1 {autotype:portal_dungeon}",
 
 			--Stormstout Brewery
-			"Valley of the Four Winds 36.0,69.1 -x- Stormstout Brewery 79.4,39.7 {style:portal_dungeon}",
+			"Valley of the Four Winds 36.0,69.1 -x- Stormstout Brewery 79.4,39.7 {autotype:portal_dungeon}",
 
 			--Mogu'shan Palace
-			"Vale of Eternal Blossoms 80.9,32.6 -x- Mogu'shan Palace 28.6,20.3 {style:portal_dungeon}",
+			"Vale of Eternal Blossoms 80.9,32.6 -x- Mogu'shan Palace 28.6,20.3 {autotype:portal_dungeon}",
 
 			--Shado-Pan Monastery
-			"Kun-Lai Summit 36.7,47.5 -x- Shado-Pan Monastery/1 84.9,56.1 {style:portal_dungeon}",
+			"Kun-Lai Summit 36.7,47.5 -x- Shado-Pan Monastery/1 84.9,56.1 {autotype:portal_dungeon}",
 
 			--Temple of the Jade Serpant
-			"The Jade Forest 56.2,57.9 -x- Temple of the Jade Serpent 31.4,45.0 {style:portal_dungeon}",
+			"The Jade Forest 56.2,57.9 -x- Temple of the Jade Serpent 31.4,45.0 {autotype:portal_dungeon}",
 
 			--Gate of the Setting Sun
-			"Vale of Eternal Blossoms 15.9,74.3 <region:topofthewallVEB> -x- Gate of the Setting Sun/1 61.3,87.8 {style:portal_dungeon}",
+			"Vale of Eternal Blossoms 15.9,74.3 <region:topofthewallVEB> -x- Gate of the Setting Sun/1 61.3,87.8 {autotype:portal_dungeon}",
 
 		--Draenor
 			-- Auchindoun
-			"Talador/0 46.4,73.8 -x- Auchindoun/1 49.7,90.2 {style:portal_dungeon}",
+			"Talador/0 46.4,73.8 -x- Auchindoun/1 49.7,90.2 {autotype:portal_dungeon}",
 			-- Bloodmaul Slag Mines
-			"Frostfire Ridge/0 49.8,24.7 -x- Bloodmaul Slag Mines/1 51.5,83.3 {style:portal_dungeon}",
+			"Frostfire Ridge/0 49.8,24.7 -x- Bloodmaul Slag Mines/1 51.5,83.3 {autotype:portal_dungeon}",
 			-- Everbloom
-			"Gorgrond 59.6,45.6 -x- The Everbloom 72.4,55.7 {style:portal_dungeon}",
+			"Gorgrond 59.6,45.6 -x- The Everbloom 72.4,55.7 {autotype:portal_dungeon}",
 			-- Grimrail Depot
-			"Gorgrond 55.0,31.3 -x- Grimrail Depot/1 32.4,31.9 {style:portal_dungeon}",
+			"Gorgrond 55.0,31.3 -x- Grimrail Depot/1 32.4,31.9 {autotype:portal_dungeon}",
 			-- Iron Docks
-			"Gorgrond/0 45.4,13.5 -x- Iron Docks/1 30.6,44.5 {style:portal_dungeon}",
+			"Gorgrond/0 45.4,13.5 -x- Iron Docks/1 30.6,44.5 {autotype:portal_dungeon}",
 			-- Shadowmoon Burial Grounds
-			"Shadowmoon Valley D/0 31.9,42.5 -x- Shadowmoon Burial Grounds/1 12.0,68.4 {style:portal_dungeon}",
+			"Shadowmoon Valley D/0 31.9,42.5 -x- Shadowmoon Burial Grounds/1 12.0,68.4 {autotype:portal_dungeon}",
 			-- Skyreach
-			"Spires of Arak/0 35.6,33.7 -x- Skyreach/1 60.5,25.9 {style:portal_dungeon}",
+			"Spires of Arak/0 35.6,33.7 -x- Skyreach/1 60.5,25.9 {autotype:portal_dungeon}",
 			-- Upper Blackrock Spire
 			-- Data already exists, from Eastern Kingdoms
 		--Legion
 			--The Arcway
 			--Assault on Violet Hold
-			"Dalaran L/10 66.94,69.16 -x- Violet Hold/1 50.95,69.91 {style:portal_dungeon}",
+			"Dalaran L/10 66.94,69.16 -x- Violet Hold/1 50.95,69.91 {autotype:portal_dungeon}",
 			--Black Rook Hold
-			"Val'sharah/0 37.15,50.20 -x- Black Rook Hold/1 29.63,10.30 {style:portal_dungeon}",
+			"Val'sharah/0 37.15,50.20 -x- Black Rook Hold/1 29.63,10.30 {autotype:portal_dungeon}",
 			--Court of Stars
-			"Suramar/0 41.08,61.75 -x- The Arcway/1 47.99,21.47 {style:portal_dungeon}",
+			"Suramar/0 41.08,61.75 -x- The Arcway/1 47.99,21.47 {autotype:portal_dungeon}",
 			--Darkheart Thicket
-			"Val'sharah/0 59.06,31.21 -x- Darkheart Thicket/0 36.71,14.16 {style:portal_dungeon}",
+			"Val'sharah/0 59.06,31.21 -x- Darkheart Thicket/0 36.71,14.16 {autotype:portal_dungeon}",
 			--Eye of Azshara
-			"Azsuna/0 61.12,41.11 -x- Eye of Azshara/1 47.59,87.41 {style:portal_dungeon}",
+			"Azsuna/0 61.12,41.11 -x- Eye of Azshara/1 47.59,87.41 {autotype:portal_dungeon}",
 			--Halls of Valor
-			"Stormheim/0 72.65,70.52 -x- Halls of Valor/2 47.72,8.68 {style:portal_dungeon}",
+			"Stormheim/0 72.65,70.52 -x- Halls of Valor/2 47.72,8.68 {autotype:portal_dungeon}",
 			--Maw of Souls
-			"Stormheim/0 52.49,45.26 -x- Helmouth Cliffs/1 46.77,78.55 {style:portal_dungeon}",
+			"Stormheim/0 52.49,45.26 -x- Helmouth Cliffs/1 46.77,78.55 {autotype:portal_dungeon}",
 			--Neltharion's Lair
-			"Highmountain/0 49.56,68.66 -x- Neltharion's Lair/0 96.35,40.19 {style:portal_dungeon}",
+			"Highmountain/0 49.56,68.66 -x- Neltharion's Lair/0 96.35,40.19 {autotype:portal_dungeon}",
 			--Vault of the Wardens
-			"Azsuna/0 48.30,80.23 -x- Vault of the Wardens/1 70.28,77.60 {style:portal_dungeon}",
-			"Azsuna/0 48.30,80.23 -x- 1045/1 70.28,77.60 {style:portal_dungeon}",
+			"Azsuna/0 48.30,80.23 -x- Vault of the Wardens/1 70.28,77.60 {autotype:portal_dungeon}",
+			"Azsuna/0 48.30,80.23 -x- 1045/1 70.28,77.60 {autotype:portal_dungeon}",
 			--Cathedral of Eternal Night
-			"Broken Shore/0 64.70,16.59 -x- Cathedral of Eternal Night/1 46.8,90.2 {style:portal_dungeon}",
+			"Broken Shore/0 64.70,16.59 -x- Cathedral of Eternal Night/1 46.8,90.2 {autotype:portal_dungeon}",
 	-- RAID ENTRANCE/EXITS
 		--Molten Core
-		"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <template:portaldungeon>",
-		"Molten Core/1 26.5,24.3 -to- Burning Steppes/16 54.1,83.1 <template:portaldungeon>",
-		"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <template:moltentele> {cond:IsQuestFlaggedCompleted(7848)}",
+		"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <subtype:portaldungeon>",
+		"Molten Core/1 26.5,24.3 -to- Burning Steppes/16 54.1,83.1 <subtype:portaldungeon>",
+		"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <subtype:moltentele> {cond:IsQuestFlaggedCompleted(7848)}",
 		-- Temple of Ahn'Qiraj
-		"Ahn'Qiraj: The Fallen Kingdom/0 46.78,7.45 -x- Ahn'Qiraj/2 52.00,26.92 {style:portal_dungeon}",
+		"Ahn'Qiraj: The Fallen Kingdom/0 46.78,7.45 -x- Ahn'Qiraj/2 52.00,26.92 {autotype:portal_dungeon}",
 		-- Ruins of Ahn'Qiraj
-		"Ahn'Qiraj: The Fallen Kingdom/0 58.92,14.29 -x- Ruins of Ahn'Qiraj/0 60.51,11.70 {style:portal_dungeon}",
+		"Ahn'Qiraj: The Fallen Kingdom/0 58.92,14.29 -x- Ruins of Ahn'Qiraj/0 60.51,11.70 {autotype:portal_dungeon}",
 		--Blackwing Lair
-		"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <template:portaldungeon>",
-		"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <template:portaldungeon>",
-		"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <template:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
+		"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <subtype:portaldungeon>",
+		"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <subtype:portaldungeon>",
+		"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <subtype:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
 
 		--[[
 		-- Karazhan
-		"Karazhan/1 59.82,78.27 -to- Deadwind Pass/0 46.93,74.81 <template:portaldungeon>",
-		"Deadwind Pass/0 46.81,74.60 -to- Karazhan/1 58.76,76.11 <template:portaldungeon>",
+		"Karazhan/1 59.82,78.27 -to- Deadwind Pass/0 46.93,74.81 <subtype:portaldungeon>",
+		"Deadwind Pass/0 46.81,74.60 -to- Karazhan/1 58.76,76.11 <subtype:portaldungeon>",
 
 		-- Sunwell Plateau
-		"Isle of Quel'Danas/0 44.25,45.75 -to- Sunwell Plateau/1 30.94,36.41 <template:portalDungeon>",
-		"Sunwell Plateau/1 30.94,36.12 -to- Isle of Quel'Danas/0 44.27,45.62 <template:portalDungeon>",
+		"Isle of Quel'Danas/0 44.25,45.75 -to- Sunwell Plateau/1 30.94,36.41 <subtype:portalDungeon>",
+		"Sunwell Plateau/1 30.94,36.12 -to- Isle of Quel'Danas/0 44.27,45.62 <subtype:portalDungeon>",
 
 		-- Hyjal Summit
-		"Tanaris/18 35.09,15.22 -x- Hyjal Summit/0 108.00,113.50 <template:portalDungeon>",
+		"Tanaris/18 35.09,15.22 -x- Hyjal Summit/0 108.00,113.50 <subtype:portalDungeon>",
 			-- hyjal lobby to first zone
-			"Hyjal Summit/0 108.00,118.50 -to- Hyjal Summit/0 10.68,64.74 <template:portalDungeon>",
+			"Hyjal Summit/0 108.00,118.50 -to- Hyjal Summit/0 10.68,64.74 <subtype:portalDungeon>",
 
 		-- Gruul's Lair
-		"Blade's Edge Mountains/0 69.35,23.62 -to- Gruul's Lair/1 81.87,78.11 <template:portaldungeon>",
-		"Gruul's Lair/1 84.36,79.06 -to- Blade's Edge Mountains/0 69.19,24.00 <template:portaldungeon>",
+		"Blade's Edge Mountains/0 69.35,23.62 -to- Gruul's Lair/1 81.87,78.11 <subtype:portaldungeon>",
+		"Gruul's Lair/1 84.36,79.06 -to- Blade's Edge Mountains/0 69.19,24.00 <subtype:portaldungeon>",
 
 		-- Magtheridon's Lair
-		"Hellfire Peninsula/0 47.54,52.05 -to- Magtheridon's Lair/1 62.72,18.03 <template:portaldungeon>",
-		"Magtheridon's Lair/1 61.40,18.06 -to- Hellfire Peninsula/0 47.50,52.08 <template:portaldungeon>",
+		"Hellfire Peninsula/0 47.54,52.05 -to- Magtheridon's Lair/1 62.72,18.03 <subtype:portaldungeon>",
+		"Magtheridon's Lair/1 61.40,18.06 -to- Hellfire Peninsula/0 47.50,52.08 <subtype:portaldungeon>",
 
 		-- Serpentshrine Cavern
-		"Zangarmarsh/0 51.90,32.78 -to- Serpentshrine Cavern/1 13.49,61.14 <template:portaldungeon>",
-		"Serpentshrine Cavern/1 13.57,62.04 -to- Zangarmarsh/0 51.90,33.03 <template:portaldungeon>",
+		"Zangarmarsh/0 51.90,32.78 -to- Serpentshrine Cavern/1 13.49,61.14 <subtype:portaldungeon>",
+		"Serpentshrine Cavern/1 13.57,62.04 -to- Zangarmarsh/0 51.90,33.03 <subtype:portaldungeon>",
 
 		-- Tempest Keep
-		"Tempest Keep/1 50.06,91.93 -to- Netherstorm/0 73.56,63.71 <template:portaldungeon>",
-		"Netherstorm/0 73.77,63.73 -to- Tempest Keep/1 50.05,90.56 <template:portaldungeon>",
+		"Tempest Keep/1 50.06,91.93 -to- Netherstorm/0 73.56,63.71 <subtype:portaldungeon>",
+		"Netherstorm/0 73.77,63.73 -to- Tempest Keep/1 50.05,90.56 <subtype:portaldungeon>",
 
 		-- Black Temple
-		"Shadowmoon Valley/0 71.03,46.65 -to- Black Temple/2 21.89,59.54 <template:portaldungeon>",
-		"Black Temple/2 21.95,60.99 -to- Shadowmoon Valley/0 71.06,46.45 <template:portaldungeon>",
+		"Shadowmoon Valley/0 71.03,46.65 -to- Black Temple/2 21.89,59.54 <subtype:portaldungeon>",
+		"Black Temple/2 21.95,60.99 -to- Shadowmoon Valley/0 71.06,46.45 <subtype:portaldungeon>",
 		--]]
 }
 
@@ -344,11 +344,19 @@ data.basenodes.DungeonFloors = {
 				"Dire Maul/5 46.43,63.58 -x- Dire Maul/6 61.27,82.67",
 			},
 			["End Time"] = { -- End Time
-				"@et1 -x- @et2 (B:PORTAL)",
-				"@et1 -x- @et3 (B:PORTAL)", "@et2 -x- @et3 (B:PORTAL)",
-				"@et1 -x- @et4 (B:PORTAL)", "@et2 -x- @et4 (B:PORTAL)", "@et3 -x- @et4 (B:PORTAL)",
-				"@et1 -x- @et5 (B:PORTAL)", "@et2 -x- @et5 (B:PORTAL)", "@et3 -x- @et5 (B:PORTAL)", "@et4 -x- @et5 (B:PORTAL)",
-				"@et1 -x- @et6 (B:PORTAL)", "@et2 -x- @et6 (B:PORTAL)", "@et3 -x- @et6 (B:PORTAL)", "@et4 -x- @et6 (B:PORTAL)", "@et5 -x- @et6 (B:PORTAL)",
+			-- End Time teleporters
+				"End Time/1 79.76,45.52		<name:Entryway of Time>		<subtype:teleportnamed>	@et1",
+				"End Time/2 41.88,80.19		<name:Azure Dragonshrine>	<subtype:teleportnamed>	@et2",
+				"End Time/3 34.34,43.19		<name:Ruby Dragonshrine>	<subtype:teleportnamed>	@et3",
+				"End Time/4 75.23,62.82		<name:Obsidium Dragonshrine>	<subtype:teleportnamed>	@et4",
+				"End Time/5 46.10,21.40		<name:Emerald Dragonshrine>	<subtype:teleportnamed>	@et5",
+				"End Time/6 35.40,79.14		<name:Bronze Dragonshrine>	<subtype:teleportnamed>	@et6",
+
+				"@et1 -x- @et2 {mode:PORTAL}",
+				"@et1 -x- @et3 {mode:PORTAL}", "@et2 -x- @et3 {mode:PORTAL}",
+				"@et1 -x- @et4 {mode:PORTAL}", "@et2 -x- @et4 {mode:PORTAL}", "@et3 -x- @et4 {mode:PORTAL}",
+				"@et1 -x- @et5 {mode:PORTAL}", "@et2 -x- @et5 {mode:PORTAL}", "@et3 -x- @et5 {mode:PORTAL}", "@et4 -x- @et5 {mode:PORTAL}",
+				"@et1 -x- @et6 {mode:PORTAL}", "@et2 -x- @et6 {mode:PORTAL}", "@et3 -x- @et6 {mode:PORTAL}", "@et4 -x- @et6 {mode:PORTAL}", "@et5 -x- @et6 {mode:PORTAL}",
 
 			},
 			["Halls of Origination"] = {
@@ -365,12 +373,12 @@ data.basenodes.DungeonFloors = {
 				"Ahn'Qiraj/2 49.2,63.3 -x- Ahn'Qiraj/3 47.5,29.3",
 			},
 			["Dragon Soul"] = {
-				"Dragon Soul/1 49.16,59.04 <template:dragonrider> -to- Dragon Soul/2 32.66,45.49 (B:PORTAL)",
-				"Dragon Soul/2 22.98,40.36 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
-				"Dragon Soul/1 51.29,59.31 <template:dragonrider> -to- Dragon Soul/3 55.38,79.72 (B:PORTAL)",
-				"Dragon Soul/3 57.76,88.77 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
-				"Dragon Soul/1 50.70,60.63 -x- Dragon Soul/4 52.42,14.22 (B:PORTAL)", --portal from top
-				"Dragon Soul/7 31.93,82.91 -to- Dragon Soul/1 50.25,59.76 (B:PORTAL)",
+				"Dragon Soul/1 49.16,59.04 <subtype:dragonrider> -to- Dragon Soul/2 32.66,45.49 {mode:PORTAL}",
+				"Dragon Soul/2 22.98,40.36 -to- Dragon Soul/1 50.25,59.76 {mode:PORTAL}",
+				"Dragon Soul/1 51.29,59.31 <subtype:dragonrider> -to- Dragon Soul/3 55.38,79.72 {mode:PORTAL}",
+				"Dragon Soul/3 57.76,88.77 -to- Dragon Soul/1 50.25,59.76 {mode:PORTAL}",
+				"Dragon Soul/1 50.70,60.63 -x- Dragon Soul/4 52.42,14.22 {mode:PORTAL}", --portal from top
+				"Dragon Soul/7 31.93,82.91 -to- Dragon Soul/1 50.25,59.76 {mode:PORTAL}",
 			},
 
 		--Eastern Kingdom
@@ -528,7 +536,7 @@ data.basenodes.DungeonFloors = {
 
 		--Northrend
 			["The Oculus"] = {
-				"The Oculus/1 38.45,50.96 -x- The Oculus/1 47.89,69.3 <template:portalclick> (B:PORTAL)",
+				"The Oculus/1 38.45,50.96 -x- The Oculus/1 47.89,69.3 <subtype:portalclick> {mode:PORTAL}",
 			},
 			["Utgarde Keep"] = {
 				"Utgarde Keep/1 48.5,84.7 -x- Utgarde Keep/2 34.8,64.5",
@@ -555,14 +563,25 @@ data.basenodes.DungeonFloors = {
 				"Ulduar/2 36.72,0.61 -x- Ulduar/3 48.21,77.34",
 				"Ulduar/3 30.33,74.84 -x- Ulduar/4 35.36,52.21",
 
-				"@uld10 -x- @uld11 (B:PORTAL)",
-				"@uld10 -x- @uld12 (B:PORTAL)", "@uld11 -x- @uld12 (B:PORTAL)",
-				"@uld10 -x- @uld13 (B:PORTAL)", "@uld11 -x- @uld13 (B:PORTAL)", "@uld12 -x- @uld13 (B:PORTAL)",
-				"@uld10 -x- @uld20 (B:PORTAL)", "@uld11 -x- @uld20 (B:PORTAL)", "@uld12 -x- @uld20 (B:PORTAL)", "@uld13 -x- @uld20 (B:PORTAL)",
-				"@uld10 -x- @uld21 (B:PORTAL)", "@uld11 -x- @uld21 (B:PORTAL)", "@uld12 -x- @uld21 (B:PORTAL)", "@uld13 -x- @uld21 (B:PORTAL)", "@uld20 -x- @uld21 (B:PORTAL)",
-				"@uld10 -x- @uld30 (B:PORTAL)", "@uld11 -x- @uld30 (B:PORTAL)", "@uld12 -x- @uld30 (B:PORTAL)", "@uld13 -x- @uld30 (B:PORTAL)", "@uld20 -x- @uld30 (B:PORTAL)", "@uld21 -x- @uld30 (B:PORTAL)",
-				"@uld10 -x- @uld40 (B:PORTAL)", "@uld11 -x- @uld40 (B:PORTAL)", "@uld12 -x- @uld40 (B:PORTAL)", "@uld13 -x- @uld40 (B:PORTAL)", "@uld20 -x- @uld40 (B:PORTAL)", "@uld21 -x- @uld40 (B:PORTAL)", "@uld30 -x- @uld40 (B:PORTAL)",
-				"@uld10 -x- @uld50 (B:PORTAL)", "@uld11 -x- @uld50 (B:PORTAL)", "@uld12 -x- @uld50 (B:PORTAL)", "@uld13 -x- @uld50 (B:PORTAL)", "@uld20 -x- @uld50 (B:PORTAL)", "@uld21 -x- @uld50 (B:PORTAL)", "@uld30 -x- @uld50 (B:PORTAL)", "@uld40 -x- @uld50 (B:PORTAL)",
+				-- Ulduar teleporters
+					"Ulduar/1 50.98,85.54 <name:Expedition Base Camp>	<subtype:teleportnamed>	@uld10",
+					"Ulduar/1 49.24,47.34 <name:Formation Grounds>		<subtype:teleportnamed>	@uld11",
+					"Ulduar/1 48.54,28.08 <name:Colossal Forge>		<subtype:teleportnamed>	@uld12",
+					"Ulduar/1 48.51,11.06 <name:Scrapyard>			<subtype:teleportnamed>	@uld13",
+					"Ulduar/2 37.32,00.52 <name:Antechamber of Ulduar>	<subtype:teleportnamed>	@uld20",
+					"Ulduar/2 37.10,76.41 <name:Shattered Walkway>		<subtype:teleportnamed>	@uld21",
+					"Ulduar/3 51.02,54.02 <name:Conservatory of Life>	<subtype:teleportnamed>	@uld30",
+					"Ulduar/4 66.60,59.98 <name:Prison of Yogg-Saron>	<subtype:teleportnamed>	@uld40",
+					"Ulduar/5 43.65,62.19 <name:Spark of Imagination>	<subtype:teleportnamed>	@uld50",
+
+				"@uld10 -x- @uld11 {mode:PORTAL}",
+				"@uld10 -x- @uld12 {mode:PORTAL}", "@uld11 -x- @uld12 {mode:PORTAL}",
+				"@uld10 -x- @uld13 {mode:PORTAL}", "@uld11 -x- @uld13 {mode:PORTAL}", "@uld12 -x- @uld13 {mode:PORTAL}",
+				"@uld10 -x- @uld20 {mode:PORTAL}", "@uld11 -x- @uld20 {mode:PORTAL}", "@uld12 -x- @uld20 {mode:PORTAL}", "@uld13 -x- @uld20 {mode:PORTAL}",
+				"@uld10 -x- @uld21 {mode:PORTAL}", "@uld11 -x- @uld21 {mode:PORTAL}", "@uld12 -x- @uld21 {mode:PORTAL}", "@uld13 -x- @uld21 {mode:PORTAL}", "@uld20 -x- @uld21 {mode:PORTAL}",
+				"@uld10 -x- @uld30 {mode:PORTAL}", "@uld11 -x- @uld30 {mode:PORTAL}", "@uld12 -x- @uld30 {mode:PORTAL}", "@uld13 -x- @uld30 {mode:PORTAL}", "@uld20 -x- @uld30 {mode:PORTAL}", "@uld21 -x- @uld30 {mode:PORTAL}",
+				"@uld10 -x- @uld40 {mode:PORTAL}", "@uld11 -x- @uld40 {mode:PORTAL}", "@uld12 -x- @uld40 {mode:PORTAL}", "@uld13 -x- @uld40 {mode:PORTAL}", "@uld20 -x- @uld40 {mode:PORTAL}", "@uld21 -x- @uld40 {mode:PORTAL}", "@uld30 -x- @uld40 {mode:PORTAL}",
+				"@uld10 -x- @uld50 {mode:PORTAL}", "@uld11 -x- @uld50 {mode:PORTAL}", "@uld12 -x- @uld50 {mode:PORTAL}", "@uld13 -x- @uld50 {mode:PORTAL}", "@uld20 -x- @uld50 {mode:PORTAL}", "@uld21 -x- @uld50 {mode:PORTAL}", "@uld30 -x- @uld50 {mode:PORTAL}", "@uld40 -x- @uld50 {mode:PORTAL}",
 			},
 			["Trial of the Crusader"] = {
 				"Trial of the Crusader/1 51.4,52.4 -to- Trial of the Crusader/2 52.5,73.5",
@@ -578,11 +597,19 @@ data.basenodes.DungeonFloors = {
 				"Icecrown Citadel/5 52.35,53.69 -x- Icecrown Citadel/7 49.85,39.13",
 				"Icecrown Citadel/6 50.65,69.26 -to- Icecrown Citadel/5 51.82,32.29",
 
-				"@icc10 -x- @icc11 (B:PORTAL)",
-				"@icc10 -x- @icc20 (B:PORTAL)", "@icc11 -x- @icc20 (B:PORTAL)",
-				"@icc10 -x- @icc30 (B:PORTAL)", "@icc11 -x- @icc30 (B:PORTAL)", "@icc20 -x- @icc30 (B:PORTAL)",
-				"@icc10 -x- @icc40 (B:PORTAL)", "@icc11 -x- @icc40 (B:PORTAL)", "@icc20 -x- @icc40 (B:PORTAL)", "@icc30 -x- @icc40 (B:PORTAL)",
-				"@icc10 -x- @icc50 (B:PORTAL)", "@icc11 -x- @icc50 (B:PORTAL)", "@icc20 -x- @icc50 (B:PORTAL)", "@icc30 -x- @icc50 (B:PORTAL)", "@icc40 -x- @icc50 (B:PORTAL)",
+				-- ICC teleporters
+					"Icecrown Citadel/1 38.98,17.17   <name:Light's Hammer>		<subtype:teleportnamed>	@icc10",
+					"Icecrown Citadel/1 38.98,71.11   <name:Oratory of the Damned>	<subtype:teleportnamed>	@icc11",
+					"Icecrown Citadel/2 45.60,80.43   <name:Rampart of Skulls>	<subtype:teleportnamed>	@icc20",
+					"Icecrown Citadel/3 51.50,76.26   <name:Deathbringer's Rise>	<subtype:teleportnamed>	@icc30",
+					"Icecrown Citadel/4 26.11,33.30   <name:Sindragosa's Lair>	<subtype:teleportnamed>	@icc40",
+					"Icecrown Citadel/5 51.87,74.32   <name:Upper Spire>		<subtype:teleportnamed>	@icc50",
+
+				"@icc10 -x- @icc11 {mode:PORTAL}",
+				"@icc10 -x- @icc20 {mode:PORTAL}", "@icc11 -x- @icc20 {mode:PORTAL}",
+				"@icc10 -x- @icc30 {mode:PORTAL}", "@icc11 -x- @icc30 {mode:PORTAL}", "@icc20 -x- @icc30 {mode:PORTAL}",
+				"@icc10 -x- @icc40 {mode:PORTAL}", "@icc11 -x- @icc40 {mode:PORTAL}", "@icc20 -x- @icc40 {mode:PORTAL}", "@icc30 -x- @icc40 {mode:PORTAL}",
+				"@icc10 -x- @icc50 {mode:PORTAL}", "@icc11 -x- @icc50 {mode:PORTAL}", "@icc20 -x- @icc50 {mode:PORTAL}", "@icc30 -x- @icc50 {mode:PORTAL}", "@icc40 -x- @icc50 {mode:PORTAL}",
 			},
 
 		--Maelstrom
@@ -664,6 +691,35 @@ data.basenodes.DungeonFloors = {
 
 			-- Draenor raids go here
 
+		--------------------------------
+		---  COURT OF STARS DUNGEON  ---
+		--------------------------------
+		["Court of Stars"] = {
+			"Court of Stars/1 63.36,65.91 <radius:15> -x- Court of Stars/2 38.42,40.67 <radius:15>"..
+				"{template:atob} {atob:Enter the building} {btoa:Leave the building}",
+
+			"Court of Stars/2 47.80,39.54 <radius:15> -x- Court of Stars/3 54.76,53.74 <radius:15>"..
+				"{template:atob} {atob:Run up the stairs} {btoa:Run down the stairs}",
+
+
+
+		},
+
+		----------------------------
+		---  STORMHEIM INVASION  ---
+		----------------------------
+		["Stormheim Invasion"] = {
+			"Stormheim Invasion/1 40.73,43.58 <radius:10> -x- Stormheim Invasion/2 44.02,34.65 <radius:15>"..
+			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}",
+		},
+
+		----------------------------
+		---  HIGHMOUNTAIN INVASION  ---
+		----------------------------
+		["Highmountain Invasion"] = {
+			"Highmountain Invasion/1 33.73,36.75 <radius:10> -x- Highmountain Invasion/2 38.80,28.00 <radius:15>"..
+			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}",
+		},		
 }
 
 -- translate the flooring zone-folders from names to numbers

@@ -302,6 +302,8 @@ function Node:tostring(withneighs)
 	if self.region then  ret = ret .. (" (REG:|cff0088ff%s|r)"):format(self.region)  end
 	if self.type=="taxi" then  ret = ret .. (" |cff8899aa(taxi %s|cff8899aa)"):format((self.known==true and "|cff00ff00known") or (self.known==false and "|cffff0000unknown") or "|cffffaa00?")  end
 	if self.parentlink then  ret = ret .. (" |cff8899aa(mode:|cffffffff%s|cff8899aa from [|cffffffff%d|cff8899aa])"):format(self.parentlink.mode,self.parent.num)  end
+	if (self.a_b__c_d and self.a_b__c_d~="") then ret = ret .. (" |cff888888(context:|cff00aa55%s|cff888888)"):format(self.a_b__c_d)
+	elseif (self.a_b and self.a_b~="") then ret = ret .. (" |cff888888(context:|cff00aa55%s|cff888888)"):format(self.a_b) end
 	if self.mytime then ret = ret .. (" |cff888888[my t=|cff55aa00%.1f|cff888888/|cff77ee00%.1f|cff888888]"):format(self.mytime or -1,self.mycost or -1) end
 	if self.time then ret = ret .. (" |cff888888(t=|cff00aa55%.1f|cff888888/|cff00ee77%.1f|cff888888"):format(self.time or -1,self.cost or -1) end
 	if self.score and self.score~=self.cost then  -- heuristics get detailed displays

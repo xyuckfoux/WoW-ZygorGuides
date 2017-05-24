@@ -547,7 +547,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Deadm
 mapid=756,
 achieveid={628},
 condition_suggested="level>=15 and level<=21",
-keywords={"Westfall, Defias"},
+keywords={"Westfall, Defias, DM"},
 description="This guide will walk you through the Deadmines dungeon.",
 },[[
 step
@@ -1689,7 +1689,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Classic Dungeons\\Lower
 mapid=721,
 achieveid={643},
 condition_suggested="level>=55 and level<=65",
-keywords={"BRM, Burning, Steppes, Searing, Gorge"},
+keywords={"BRM, Burning, Steppes, Searing, Gorge, LBRS"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Lower Blackrock Spire dungeon.",
 },[[
@@ -14705,6 +14705,7 @@ Congratulations! You have completed Zul'Gurub
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Cataclysm Raids\\Baradin Hold",{
 mapid=752,
 condition_suggested="level>=85 and level<=90",
+keywords={"BH, TB, Tol, Barad"},
 author="support@zygorguides.com",
 description="This guide will walk you through the Baradin Hold Raid.",
 },[[
@@ -16492,11 +16493,11 @@ step
 Congratulations, you have finished Heart of Fear!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Mogu'shan Vaults",{
-mapid=897,
-achieveid={6845, 6718},
+mapid=896,
+achieveid={6458, 6844},
 condition_suggested="level>=90 and level<=95",
 author="support@zygorguides.com",
-description="This guide will walk you through the Mogu'shan Vaults Raid.",
+description="This guide will walk you through the Mogu'shan Vaults raid.",
 },[[
 step
 Click here if you are doing a normal clear of the instance |next "Normal MSV"
@@ -16660,8 +16661,11 @@ step
 Congratulations, you have finished the Mogu'shan Vaults raid guide!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Siege of Orgrimmar",{
+mapid=953,
+achieveid={8458, 8461, 8459, 8462},
+condition_suggested="level>=90 and level<=95",
 author="support@zygorguides.com",
-description="This guide will walk you through the Siege of Orgrimmar Raid.",
+description="This guide will walk you through the Siege of Orgrimmar raid.",
 },[[
 step
 Click here if you are doing a normal clear of the instance |next "Normal SoO"
@@ -17005,8 +17009,10 @@ Congratulations, you have finished the Siege of Orgrimmar raid and witnessed the
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Terrace of Endless Spring",{
 mapid=886,
+achieveid={6689},
+condition_suggested="level>=90 and level<=95",
 author="support@zygorguides.com",
-description="This guide will walk you through the Terrace of Endless Spring Raid.",
+description="This guide will walk you through the Terrace of Endless Spring raid.",
 },[[
 step
 Click here if you are doing a normal clear of Terrace of Endless Spring |next "Normal ToES"
@@ -17085,8 +17091,11 @@ step
 Congratulations, you have finished the Terrace of Endless Spring raid!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Pandaria Raids\\Throne of Thunder",{
+mapid=930,
+achieveid={8070, 8071, 8072},
+condition_suggested="level>=90 and level<=95",
 author="support@zygorguides.com",
-description="This guide will walk you through the Throne of Thunder Raid.",
+description="This guide will walk you through the Throne of Thunder raid.",
 },[[
 step
 Click here if you are doing a normal clear of the instance |next "Normal ToT"

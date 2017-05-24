@@ -661,7 +661,7 @@ data.taxipoints = {
 		['Dalaran L']={
 			{name="Dalaran",faction="B",npc="Aludane Whitecloud",npcid=96813,x=69.83,y=51.11},
 		},
-		['Eye of Azshara']={
+		['Eye of Azshara Map']={
 			{name="Eye of Azshara",faction="B",npc="Razen Swingblade",npdid=112926,x=38.28,y=46.07},
 		},
 		['Highmountain']={

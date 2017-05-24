@@ -831,7 +831,7 @@ accept Down to Azsuna##41220 |goto Dalaran L/10 72.49,45.67
 |only if havequest(39718) or completedq(39718)
 step
 talk Archmage Khadgar##86563
-Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna (100-)
+Fly Down with Khadgar |q 41220/1 |goto 72.49,45.67 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna
 |only if havequest(41220) and not completedq(41220)
 step
 click Illidari Gateway
@@ -845,7 +845,7 @@ accept Tying Up Loose Ends##39861 |goto Dalaran L/10 72.49,45.67
 step
 talk Aludane Whitecloud##96813
 Tell him _"Aludance, I have urgent business in Val'sharah. Can you secure a flight for me?"
-Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah (100-)
+Take a Flight to Val'sharah |q 39861/1 |goto 69.83,51.16 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah
 |only if havequest(39861) and not completedq(39861)
 step
 click Illidari Gateway |goto Mardum, the Shattered Abyss/1 59.31,91.97 > 100
@@ -855,7 +855,7 @@ accept Keepers of the Hammer##38907 |goto Dalaran L/10 70.58,44.47
 |only if havequest(39733) or completedq(39733)
 step
 talk Aludane Whitecloud##96813
-Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain (100-)
+Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain
 |only if havequest(38907) and not completedq(38907)
 step
 talk Nathanos Blightcaller##96683

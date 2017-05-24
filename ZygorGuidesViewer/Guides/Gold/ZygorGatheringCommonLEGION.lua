@@ -134,7 +134,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Dreamleaf",{
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Aethril |confirm |next "Start_Farming_Aethril"
+		Click Here to Farm Dreamleaf |confirm |next "Start_Farming_Aethril"
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Foxflower",{
@@ -177,7 +177,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Foxflower",{
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Aethril |confirm |next "Start_Farming_Foxflower"
+		Click Here to Farm Foxflower |confirm |next "Start_Farming_Foxflower"
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Fjarnskaggl",{
@@ -217,7 +217,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Fjarnskaggl",{
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Aethril |confirm |next "Start_Farming_Fjarnskaggl"
+		Click Here to Farm Fjarnskaggl |confirm |next "Start_Farming_Fjarnskaggl"
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Starlight Rose",{
@@ -262,7 +262,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Starlight Rose",{
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Aethril |confirm |next "Start_Farming_Starlight_Rose"
+		Click Here to Farm Starlight Rose |confirm |next "Start_Farming_Starlight_Rose"
 ]])
 
 
@@ -276,7 +276,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leystone Ore & Felslate (Mining 
 	maps={"Val'sharah"},
 	},[[
 	step
-	label "Start_Farming_Leystone_Ore"
+	label "Start_Farming_Leystone_Ore_&_Felslate"
 		map Val'sharah/0
 		path	follow smart; loop on; ants curved; dist 30
 		path	55.74,56.76	54.98,53.52	53.82,50.33
@@ -321,7 +321,7 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Leystone Ore & Felslate (Mining 
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Aethril |confirm |next "Start_Farming_Leystone_Ore"
+		Click Here to Farm Leystone Ore & Felslate |confirm |next "Start_Farming_Leystone_Ore_&_Felslate"
 ]])
 
 ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Felslate (Killing & Mining Enemies)",{
@@ -401,5 +401,123 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Shal'dorei Silk",{
 		|tip List the items you want to sell on the Auction House.
 		|tip
 		_Want to Farm More?_
-		Click Here to Farm Felslate |confirm |next "Start_Farming_Shaldorei_Silk"
+		Click Here to Farm Shal'dorei Silk |confirm |next "Start_Farming_Shaldorei_Silk"
+]])
+
+
+
+----------------------
+-----    FOOD    -----
+----------------------
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Wildfowl Egg",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Wildfowl_Egg"
+		Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+		Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+		Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+		Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+		Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+		Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
+		Follow the beach |goto Stormheim/0 79.51,57.09 < 30 |only if walking
+		Follow the water |goto Stormheim/0 82.65,67.39 < 30 |only if walking
+		kill Coastal Seagull##97809+
+		|tip They are flying around and perched up on the rocks along the coast around this area.
+		|tip If you kill them up on the rocks and can't reach them to loot them, kill a crab on the ground nearby to AoE loot them.
+		goldcollect 400 Wildfowl Egg##124121 |n |goto Stormheim/0 80.57,69.32
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Wildfowl_Egg_Sell"
+	step
+	label "Wildfowl_Egg_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Wildfowl Eggs |confirm |next "Start_Farming_Wildfowl_Egg"
+]])
+
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Big Gamy Ribs",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Big_Gamy_Ribs"
+		kill Sated Hillstrider##98808+
+		|tip Other mobs around this area drop Big Gamy Ribs too, but these respawn very quickly.
+		goldcollect 400 Big Gamy Ribs##124119 |n |goto Highmountain/0 41.38,54.03
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Big_Gamy_Ribs_Sell"
+	step
+	label "Big_Gamy_Ribs_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Big Gamy Ribs |confirm |next "Start_Farming_Big_Gamy_Ribs"
+]])
+
+
+
+----------------------
+-----    FISH    -----
+----------------------
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Highmountain Salmon",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Highmountain_Salmon"
+		Fish in the Rapid-Moving River
+		|tip Highmountain Salmon seems to be pretty rare to catch, so it may take a while.
+		goldcollect 60 Highmountain Salmon##124109 |n |goto Highmountain/0 41.84,51.65
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Highmountain_Salmon_Sell"
+	step
+	label "Highmountain_Salmon_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Highmountain Salmon |confirm |next "Start_Farming_Highmountain_Salmon"
+]])
+
+ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Black Barracuda",{
+	author="support@zygorguides.com",
+	startlevel=100.0,
+	},[[
+	step
+	label "Start_Farming_Black_Barracuda"
+		Follow the path down |goto Suramar/0 64.28,43.04 < 30 |only if walking
+		Follow the path down |goto Suramar/0 67.43,44.64 < 20 |only if walking
+		Continue down the path |goto Suramar/0 68.43,45.91 < 20 |only if walking
+		Follow the path down |goto Suramar/0 68.16,48.54 < 30 |only if walking
+		Follow the path |goto Suramar/0 69.70,47.92 < 30 |only if walking
+		Follow the path down |goto Suramar/0 71.37,47.01 < 30 |only if walking		
+		Fish in Black Barracuda Schools
+		|tip They look like small circular swirling spots in the water along the coast.
+		|tip Follow the beach east from this spot.
+		goldcollect 200 Black Barracuda##124112 |n |goto Suramar/0 74.20,49.90
+		goldtracker
+		|tip
+		_Ready to Sell?_
+		Click Here to Sell Your Items on the Auction House |confirm |next "Black_Barracuda_Sell"
+	step
+	label "Black_Barracuda_Sell"
+		talk Auctioneer Fitch##8719 |goto Stormwind City/0 61.1,70.6 |n |only Alliance
+		talk Auctioneer Drezmit##44866 |goto Orgrimmar/1 54.08,73.36 |n |only Horde
+		|tip List the items you want to sell on the Auction House.
+		|tip
+		_Want to Farm More?_
+		Click Here to Farm Black Barracuda |confirm |next "Start_Farming_Black_Barracuda"
 ]])

@@ -1973,11 +1973,8 @@ _Don't Have Skinning?_
 |tip Buy these from the Auction House in Orgrimmar. |only if _G.UnitFactionGroup("player")=="Horde"
 step
 collect 5 Stormscale##124115 |q 39958/2
-_Have Skinning?_
-|tip Use the Stormscale farming guide to get these.
-_Don't Have Skinning?_
-|tip Buy these from the Auction House in Stormwind City. |only if _G.UnitFactionGroup("player")=="Alliance"
-|tip Buy these from the Auction House in Orgrimmar. |only if _G.UnitFactionGroup("player")=="Horde"
+|tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
+|tip You can also buy them from the Auction House.
 step
 talk Namha Moonwater##93523
 |tip Inside the building.
@@ -5707,6 +5704,553 @@ step
 _Congratulations!_
 You reached level 800 with the Enchanting profession.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Engineering\\Legion\\Engineering Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Timofey Oshenko##92194
+|tip Inside the building.
+Learn the Engineering Profession |condition skill("Engineering")>=1 |goto Dalaran L/10 37.89,26.10
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Aww Scrap!##40545 |goto Dalaran L/10 38.35,24.53
+step
+talk Filgo Scrapbottom##102193
+turnin Aww Scrap!##40545 |goto Dalaran L/11 65.96,52.82
+accept Endless Possibilities##40854 |goto Dalaran L/11 65.96,52.82
+step
+click Fel Reaver Husk
+collect Fel Reaver Husk##133752 |q 40854/1 |goto 66.36,51.98
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Endless Possibilities##40854 |goto Dalaran L/10 38.83,24.70
+accept Our Man in Azsuna##40855 |goto Dalaran L/10 38.83,24.70
+step
+talk Fargo Flintlocke##102195
+turnin Our Man in Azsuna##40855 |goto Azsuna/0 65.22,24.91
+accept It'll Cost You##40856 |goto Azsuna/0 65.22,24.91
+accept The Latest Fashion: Headguns!##40859 |goto Azsuna/0 65.22,24.91
+stickystart "Test_Headgun_On_Fel_Critters_Engineering"
+step
+click Fel Reaver Arm
+collect Fel Reaver Arm##133753 |q 40856/1 |goto 66.87,27.02
+step
+click Fel Reaver Leg
+collect Fel Reaver Leg##133754 |q 40856/2 |goto 68.35,25.81
+step
+label "Test_Headgun_On_Fel_Critters_Engineering"
+Use Flinlocke's Headgun Prototype on Felspiders and Fel-Tainted Squirrels |use Flintlocke's Headgun Prototype##133761
+|tip They look like small spiders and squirrels running around on the ground around this area.
+Test the Headgun on #10# Fel Critters |q 40859/1 |goto 66.87,25.83
+step
+Follow the path up |goto 65.80,25.43 < 20 |only if walking
+talk Fargo Flintlocke##102195
+turnin It'll Cost You##40856 |goto 65.22,24.91
+accept The Missing Pieces##40858 |goto 65.22,24.91
+turnin The Latest Fashion: Headguns!##40859 |goto 65.22,24.91
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin The Missing Pieces##40858 |goto Dalaran L/10 38.83,24.70
+step
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+accept Always the Last Thing##40863 |goto Dalaran L/10 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Resupplying the Line##40860 |goto 38.35,24.53
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Tell her _"Didi sent me to retrieve a Prismatic Felslate Diamond."_
+Watch the dialogue
+Get the Prismatic Felslate Diamond |q 40863/1 |goto 40.27,34.68
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Watch the dialogue
+Have Didi Test the Diamond |q 40863/2 |goto 38.83,24.70
+step
+talk Deucus Valdera##92458
+|tip Inside the building.
+Tell him _"Didi sent me to retrieve a Volatile Leytorrent Potion."_
+Watch the dialogue
+Get the Volatile Leytorrent Potion |q 40863/3 |goto 41.33,33.41
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Watch the dialogue
+Have Didi Test the Potion |q 40863/4 |goto 38.83,24.70
+step
+talk Bonegrim##97863
+|tip Inside the building.
+Watch the dialogue
+Find a Fel-Infused Core |q 40863/5 |goto 47.96,38.49
+step
+click Catriona's Jewel
+|tip Upstairs inside the building.
+|tip Talk to Catriona Macrae nearby to get her to leave the room.
+collect Catriona's Jewel##133895 |q 40863/6 |goto 49.51,38.18
+step
+talk Bonegrim##97863
+|tip Downstairs inside the building.
+collect Fel-Infused Core##133881 |q 40863/7 |goto 47.96,38.49
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+Watch the dialogue
+Have Didi Test the Core |q 40863/8 |goto 38.83,24.70
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Always the Last Thing##40863 |goto 38.83,24.70
+accept Modular Modifications##40864 |goto 38.83,24.70
+step
+Follow the road |goto Val'sharah/0 59.12,59.65 < 30 |only if walking
+talk Fargo Flintlocke##102197
+turnin Resupplying the Line##40860 |goto Val'sharah/0 59.82,62.26
+accept All Charged Up##40862 |goto Val'sharah/0 59.82,62.26
+accept In My Sights##40861 |goto Val'sharah/0 59.82,62.26
+stickystart "Deployable_Bullet_Dispenser_Parts_Engineering"
+step
+Cross the bridge |goto 61.56,61.61 < 20 |only if walking
+Follow the path |goto 63.32,61.09 < 30 |only if walking
+Follow the path |goto 63.78,59.64 < 30 |only if walking
+Follow the path up |goto 63.14,58.36 < 30 |only if walking
+Use the Gunpowder Charges on Shimmering Oleanders |use Gunpowder Charges##133775
+|tip They look like wilted red-glowing plants around this area.
+Explode #15# Shimmering Oleanders |q 40862/1 |goto 62.99,56.01
+step
+label "Deployable_Bullet_Dispenser_Parts_Engineering"
+click Destroyed Deployable Bullet Dispensers
+|tip They look like large metal objects on the ground around this area.
+collect 10 Deployable Bullet Dispenser Parts##133978 |q 40861/1 |goto 62.99,56.01
+step
+Follow the path down |goto 62.90,57.66 < 20 |only if walking
+Follow the path up |goto 63.64,59.67 < 30 |only if walking
+Cross the bridge |goto 62.33,61.64 < 20 |only if walking
+talk Fargo Flintlocke##102197
+turnin All Charged Up##40862 |goto 59.82,62.26
+turnin In My Sights##40861 |goto 59.82,62.26
+step
+collect 80 Felslate##123919 |c |q 40864
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Wildfowl Egg##124121 |c |q 40864
+|tip Use the "Wildfowl Egg" farming guide to gather them.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Big Gamy Ribs##124119 |c |q 40864
+|tip Use the "Big Gamy Ribs" farming guide to gather them.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Highmountain Salmon##124109 |c |q 40864
+|tip Use the "Highmountain Salmon" farming guide to gather them, if you have Fishing.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Black Barracuda##124112 |c |q 40864
+|tip Use the "Black Barracuda" farming guide to gather them, if you have Fishing.
+|tip You can also buy them from the Auction House.
+step
+Open Your Engineering Crafting Panel:
+_<Create 1 Reaves Module: Snack Distribution Mode>_
+Create a Reaves Module: Snack Distribution Mode |q 40864/1
+step
+Use the Reaves Battery |use Reaves Battery##132523
+Use the Reaves Module: Snack Distribution Mode |use Reaves Module: Snack Distribution Mode##132529
+Summon Reaves and Apply the Module |q 40864/2
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Modular Modifications##40864 |goto Dalaran L/10 38.83,24.70
+step
+Reach Level 104 |ding 104
+|tip Use the Leveling guides to accomplish this.
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+accept Here Comes the BOOM!##40870 |goto 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Fire and Forget##40869 |goto 38.35,24.53
+accept It's Not Rocket Science##40865 |goto 38.35,24.53
+stickystart "Bandage_Wounded_Guards_Engineering_1"
+step
+click Barrel of Red Fireworks
+collect Didi's Red Fireworks##133934 |q 40870/4 |goto 48.93,21.20
+step
+label "Bandage_Wounded_Guards_Engineering_1"
+Use the Prototype Pump-Action Bandage Gun on Wounded Kirin Tor Guardians |use Prototype Pump-Action Bandage Gun##133928
+|tip They look like npc's kneeling on the ground all around this area.
+Bandage #3# Wounded Guards |q 40869/1 |goto 48.94,29.82
+step
+Use the Prototype Pump-Action Bandage Gun |use Prototype Pump-Action Bandage Gun##133928
+Use the Gun to Calibrate It |q 40869/2
+stickystart "Bandage_Wounded_Guards_Engineering_2"
+step
+click Barrel of Blue Fireworks
+collect Didi's Blue Fireworks##133935 |q 40870/2 |goto 58.33,42.17
+step
+click Barrel of Purple Fireworks
+collect Didi's Purple Fireworks##133936 |q 40870/3 |goto 48.91,70.58
+step
+Run up the stairs |goto 37.27,50.12 < 20 |only if walking
+click Barrel of Green Fireworks
+collect Didi's Green Fireworks##133794 |q 40870/1 |goto 31.11,43.63
+step
+label "Bandage_Wounded_Guards_Engineering_2"
+Use the Prototype Pump-Action Bandage Gun on Wounded Kirin Tor Guardians |use Prototype Pump-Action Bandage Gun##133928
+|tip They look like npc's kneeling on the ground all around this area.
+Bandage #3# Wounded Guards |q 40869/3 |goto 48.94,29.82
+step
+Use the Prototype Pump-Action Bandage Gun |use Prototype Pump-Action Bandage Gun##133928
+Use the Gun Again to Calibrate It Once More |q 40869/4
+step
+Use the Prototype Pump-Action Bandage Gun on Wounded Kirin Tor Guardians |use Prototype Pump-Action Bandage Gun##133928
+|tip They look like npc's kneeling on the ground all around this area.
+Bandage #3# Wounded Guards |q 40869/5 |goto 48.94,29.82
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Here Comes the BOOM!##40870 |goto 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+turnin Fire and Forget##40869 |goto 38.35,24.53
+step
+Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
+talk Fargo Flintlocke##102198
+turnin It's Not Rocket Science##40865 |goto Stormheim/0 78.29,57.25
+accept Bubble Baubles##40867 |goto Stormheim/0 78.29,57.25
+accept The Shell, You Say?##40866 |goto Stormheim/0 78.29,57.25
+stickystart "Stormheim_Cerith_Shells_Engineering"
+step
+click Murloc Trinkets
+|tip They look like small blue circular objects on the ground and in the murloc huts around this area.
+|tip You can find more to the east across the water.
+collect 12 Murloc Trinket##133791 |q 40867/1 |goto 80.28,58.97
+step
+label "Stormheim_Cerith_Shells_Engineering"
+Kill enemies around this area
+collect 10 Stormheim Cerith Shell##133782 |q 40866/1 |goto 80.28,58.97
+step
+talk Fargo Flintlocke##102198
+turnin Bubble Baubles##40867 |goto 78.29,57.25
+turnin The Shell, You Say?##40866 |goto 78.29,57.25
+accept Wibbly-Wobbly, Timey-Wimey##40868 |goto 78.29,57.25
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+turnin Wibbly-Wobbly, Timey-Wimey##40868 |goto Dalaran L/10 38.35,24.53
+step
+Reach Level 106 |ding 106
+|tip Use the Leveling guides to accomplish this.
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept 'Locke and Load##40871 |goto 38.35,24.53
+step
+Cross the bridge |goto Azsuna/0 43.06,45.38 < 30 |only if walking
+Follow the road |goto Azsuna/0 40.63,48.63 < 30 |only if walking
+Continue following the road |goto Azsuna/0 39.32,51.64 |only if walking
+Follow the path |goto Azsuna/0 38.79,55.36 < 30 |only if walking
+Continue following the path |goto Azsuna/0 38.99,57.96 |only if walking
+Follow the path |goto Azsuna/0 40.11,58.80 < 30 |only if walking
+Cross the water |goto Azsuna/0 41.60,60.71 < 30 |only if walking
+talk Fargo Flintlocke##102196
+turnin 'Locke and Load##40871 |goto Azsuna/0 42.99,62.84
+accept Going Out With a Bang##40872 |goto Azsuna/0 42.99,62.84
+step
+Use Hobart's Prototype Gunshoes |use Hobart's Prototype Gunshoes##133941
+|tip Run on the water run over the Gunpack Debris floating on the water.
+Collect #15# Gunpack Debris |q 40872/1 |goto 43.97,66.59
+step
+talk Fargo Flintlocke##102196
+turnin Going Out With a Bang##40872 |goto 42.99,62.84
+accept Keep Yer Powder Dry##40873 |goto 42.99,62.84
+accept Going to Waste##40875 |goto 42.99,62.84
+accept I'd Do It Myself, But...##40874 |goto 42.99,62.84
+stickystart "Hatecoil_Slavemasters_Engineering"
+stickystart "Barrels_Of_Gunpowder_Engineering"
+step
+Follow the path |goto 44.32,60.52 < 20 |only if walking
+Follow the path |goto Azsuna/18 39.54,35.61 < 30 |walk
+Follow the path |goto Azsuna/18 54.31,51.23 < 30 |walk
+talk Lowping##102673
+Find Lowping and Shave His Head |q 40875/1 |goto Azsuna/18 47.91,71.26
+step
+talk Lowping##102673
+Make a Copy of the Schematic |q 40875/2 |goto 48.15,71.17
+step
+label "Hatecoil_Slavemasters_Engineering"
+kill 10 Hatecoil Slavemaster##90109+ |q 40874/1 |goto 54.31,51.23
+step
+label "Barrels_Of_Gunpowder_Engineering"
+click Gunpowder Kegs
+|tip They look like wooden barrels on the ground around this area.
+collect 8 Barrel of Gunpowder##133798 |q 40873/1 |goto 54.31,51.23
+step
+Follow the path |goto 54.54,55.50 < 30 |walk
+Follow the path |goto 42.69,34.41 < 30 |walk
+Follow the path |goto Azsuna/0 45.84,57.37 < 30 |only if walking
+Follow the path up |goto Azsuna/0 45.26,58.84 < 30 |only if walking
+Cross the water |goto Azsuna/0 44.30,60.57 < 30 |only if walking
+talk Fargo Flintlocke##102196
+turnin Keep Yer Powder Dry##40873 |goto Azsuna/0 42.99,62.84
+turnin Going to Waste##40875 |goto Azsuna/0 42.99,62.84
+turnin I'd Do It Myself, But...##40874 |goto Azsuna/0 42.99,62.84
+accept 'Locke, Stock and Barrel##40876 |goto Azsuna/0 42.99,62.84
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+turnin 'Locke, Stock and Barrel##40876 |goto Dalaran L/10 38.35,24.53
+step
+Reach Level 108 |ding 108
+|tip Use the Leveling guides to accomplish this.
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Trigger Happy##40877 |goto 38.35,24.53
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+accept Cheating Death##40878 |goto 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+buy Schematic: Failure Detection Pylon##137710 |n
+collect Schematic: Failure Detection Pylon##137710 |c |goto 38.35,24.53 |q 40878
+step
+Use the Schematic: Failure Detection Pylon |use Schematic: Failure Detection Pylon##137710
+Learn the Rank 2 Schematic for Failure Detection Pylon |learn Failure Detection Pylon##199004
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+buy 6 Chaos Blaster of the Harmonious##136632 |n
+collect 6 Chaos Blaster of the Harmonious##136632 |c |goto 38.35,24.53 |q 40878
+step
+collect 16 Felslate##123919 |c |q 40878
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+step
+Open Your Engineering Crafting Panel:
+_<Create 2 Failure Detection Pylon>_
+collect 2 Failure Detection Pylon##132515 |q 40878/1
+step
+Enter the Assault on Violet Hold Dungeon |goto Violet Hold/1 50.95,69.91 < 10000 |noway |c |q 40878
+|tip Use the Group Finder to enter the dungeon.
+step
+click Plasmatic Laser Bolt
+collect Plasmatic Laser Bolt##133946 |q 40878/2 |goto Violet Hold/1 38.12,39.66
+step
+Complete the Assault on Violet Hold Dungeon
+|tip Use the "Assault on Violet Hold" dungeon guide to accomplish this.
+Defeat the Third Escaped Prisoner |q 40878/3
+step
+Enter the Halls of Valor Dungeon
+|tip Use the Group Finder to enter the dungeon.
+kill Odyn##95676
+|tip Use the "Halls of Valor" dungeon guide to accomplish this.
+click Spoils of the Worthy
+|tip It appears after you kill Odyn.
+collect Runestone of Vitality##133802 |q 40877/1
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Cheating Death##40878 |goto Dalaran L/10 38.83,24.70
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+turnin Trigger Happy##40877 |goto 38.35,24.53
+step
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
+step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+accept Revamping the Recoil##40882 |goto 38.35,24.53
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+accept Short Circuit##40880 |goto 38.83,24.70
+step
+talk Rocket-Chief Fuselage##19570
+Talk to Rocket-Chief Fuselage in Area 52 |q 40880/1 |goto Netherstorm/0 32.73,64.96
+step
+talk Ricket##29428
+Talk to Ricket in K3 |q 40880/2 |goto The Storm Peaks/0 40.92,85.30
+step
+talk Chief Engineer Foote##34754
+|tip Inside the building.
+Talk to Chief Engineer Foote in Ratchet |q 40880/3 |goto Northern Barrens/0 66.97,74.69
+step
+talk Nixx Sprocketspring##98838
+|tip Inside the building.
+Talk to Nixx Sprocketspring in Gadgetzan |q 40880/4 |goto Tanaris/0 52.37,28.31
+step
+talk Winkey##7770
+Talk to Winkey in Eastern Tanaris |q 40880/5 |goto 65.05,63.56
+step
+Find Gnopetto's Workshop |q 40880/6 |goto 69.55,68.46
+|tip Swim into the underwater building.
+|tip The Fatigue bar will go away when you enter the building.
+step
+click Blingtron Circuit Design
+|tip Inside the underwater building.
+turnin Short Circuit##40880 |goto 69.55,68.46
+accept Oil Rags to Riches##40881 |goto 69.55,68.46
+step
+talk Didi the Wrench##93520
+|tip She walks around inside the building.
+turnin Oil Rags to Riches##40881 |goto Dalaran L/10 38.83,24.70
+step
+_Using the Suramar Questing Guide:_
+|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Friends With Benefits".
+|tip This is the quest when you unlock the Arcway and Court of Stars dungeons.
+Complete the "Friends With Benefits" Quest in Suramar |condition completedq(44053)
+step
+kill Advisor Melandrus##104218 |q 40882/1
+|tip He's inside the Court of Stars dungeon.
+|tip Use the "Court of Stars" dungeon guide to accomplish this.
+collect Arcanic Compressor##133806 |q 40882/2
+step
+talk Hobart Grapplehammer##93539
+|tip Inside the building.
+turnin Revamping the Recoil##40882 |goto Dalaran L/10 38.35,24.53
+step
+_Congratulations!_
+You completed the Engineering questline.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Engineering\\Legion\\Engineering 700-800",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Engineering Quest Line" Guide
+Click Here to Continue |confirm
+step
+talk Raethan##97359
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking, or being attacked by, other players.
+|tip The bodyguard lasts for 5 minutes.
+Kill enemies around this area
+|tip Named enemies will appear throughtout the Underbelly.
+|tip You can see them on your minimap as gold star icons.
+|tip You can also kill other players, if you enjoy PvP.
+|tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
+|tip When the guards are present, the named PvE enemies will appear.
+collect 750 Sightless Eye |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
+step
+Follow the path |goto 59.77,39.31 < 20 |walk
+talk The Widow##97366
+buy Schematic: Gunpowder Charge##137706 |n
+Use the Schematic: Gunpowder Charge |use Schematic: Gunpowder Charge##137706
+Learn the Rank 2 Schematic for Gunpowder Charge |learn Gunpowder Charge##199000
+step
+talk The Widow##97366
+buy Schematic: Gunpowder Charge##137720 |n
+Use the Schematic: Gunpowder Charge |use Schematic: Gunpowder Charge##137720
+Learn the Rank 3 Schematic for Gunpowder Charge |learn Gunpowder Charge##199014
+step
+collect 95 Leystone Ore##123918 |c
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+|only if skill("Engineering") < 779
+step
+talk Hobart Grapplehammer##93539
+buy 400 Oversized Blasting Cap##136637 |n
+collect 1900 Oversized Blasting Cap##136637 |c
+|only if skill("Engineering") < 779
+step
+Open Your Engineering Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 95 Gunpowder Charge>_
+|tip NOTE: Make sure to stop crafting when you reach level 779 Engineering.
+|tip This will save you a lot of gold later.
+Reach Level 779 Engineering |skill Engineering,779
+step
+Cross the bridge |goto Azsuna/0 43.06,45.38 < 30 |only if walking
+Follow the road |goto Azsuna/0 40.63,48.63 < 30 |only if walking
+Continue following the road |goto Azsuna/0 39.32,51.64 |only if walking
+Follow the path |goto Azsuna/0 38.79,55.36 < 30 |only if walking
+Continue following the path |goto Azsuna/0 38.99,57.96 |only if walking
+Follow the path |goto Azsuna/0 40.11,58.80 < 30 |only if walking
+Cross the water |goto Azsuna/0 41.60,60.71 < 30 |only if walking
+talk Fargo Flintlocke##102196
+buy 1 Schematic: Double-Barreled Cranial Cannon##137703 |n
+Use the Schematic: Double-Barreled Cranial Cannon |use Schematic: Double-Barreled Cranial Cannon##137703
+Learn the Rank 2 Schematic for Double-Barreled Cranial Cannon |learn Double-Barreled Cranial Cannon##198997 |goto Azsuna/0 42.99,62.84
+step
+Enter the Halls of Valor Dungeon:
+|tip Use the Group Finder to enter the dungeon.
+Kill enemies inside the Halls of Valor Dungeon
+|tip Use the "Halls of Valor" dungeon guide to accomplish this.
+collect Schematic: Double-Barreled Cranial Cannon##137717 |n
+|tip This recipe seems to drop most commonly from trash mobs inside the Halls of Valor dungeon.
+|tip Run the dungeon repeatedly until the schematic drops for you.
+|tip This may take a while.
+Use the Schematic: Double-Barreled Cranial Cannon |use Schematic: Double-Barreled Cranial Cannon##137717
+Learn the Rank 3 Schematic for Double-Barreled Cranial Cannon |learn Double-Barreled Cranial Cannon##199011
+step
+collect 390 Stormscale##124115 |c
+|tip Use the "Stormscale" farming guide to gather these, if you have Skinning.
+|tip You can also buy them from the Auction House.
+|only if skill("Engineering") < 800
+step
+collect 26 Felhide##124116 |c
+|tip Use the "World Quests" guide to complete Felhide world quests, if you have Skinning.
+|tip You can also buy them from the Auction House.
+|only if skill("Engineering") < 800
+step
+collect 26 Blood of Sargeras##124124 |c
+|tip You can get these as rewards for certain world quests or killing dungeon bosses.
+|tip Use the "World Quests" guide and dungeon guides to accomplish this.
+|tip You can also get them by gathering with gathering professions at rank 2 or higher.
+|tip Use the Farming guides for to accomplish this.
+|only if skill("Engineering") < 800
+step
+talk Hobart Grapplehammer##93539
+buy 26 Sniping Scope##136636 |n
+collect 26 Sniping Scope##136636 |c
+|only if skill("Engineering") < 800
+step
+talk Hobart Grapplehammer##93539
+buy 26 Loose Trigger##136633 |n
+collect 26 Loose Trigger##136633 |c
+|only if skill("Engineering") < 800
+step
+talk Hobart Grapplehammer##93539
+buy 13 Surface-to-Infernal Rocket Launcher##136631 |n
+collect 13 Surface-to-Infernal Rocket Launcher##136631 |c
+|only if skill("Engineering") < 800
+step
+Open Your Engineering Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 13 Double-Barreled Cranial Cannon>_
+Reach Level 800 Engineering |skill Engineering,800
+step
+_Congratulations!_
+You reached level 800 with the Engineering profession.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",
 startlevel=100.0,
@@ -5925,7 +6469,6 @@ author="support@zygorguides.com",
 startlevel=100.0,
 },[[
 step
-label "Start_Farming_Shaldorei_Silk"
 Follow the path down |goto Highmountain/0 39.83,37.65 < 30 |only if walking
 Follow the path |goto Highmountain/0 42.02,35.37 < 30 |only if walking
 Continue following the path |goto Highmountain/0 42.50,32.05 < 30 |only if walking
@@ -5935,4 +6478,56 @@ Follow the path down |goto Highmountain/31 37.41,46.67 < 20 |walk
 Follow the path down |goto Highmountain/31 58.46,41.58 < 30 |walk
 kill Deepcavern Murloc##95753+
 collect Shal'dorei Silk##124437 |n |goto Highmountain/31 68.83,47.36
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Food\\Wildfowl Egg",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Follow the path |goto Stormheim/0 61.67,55.08 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 69.66,52.75 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path down |goto Stormheim/0 72.07,51.87 < 15 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 71.42,55.36 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 72.18,59.28 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto Stormheim/0 73.40,57.03 < 30 |only if walking
+Follow the beach |goto Stormheim/0 79.51,57.09 < 30 |only if walking
+Follow the water |goto Stormheim/0 82.65,67.39 < 30 |only if walking
+kill Coastal Seagull##97809+
+|tip They are flying around and perched up on the rocks along the coast around this area.
+|tip If you kill them up on the rocks and can't reach them to loot them, kill a crab on the ground nearby to AoE loot them.
+collect Wildfowl Egg##124121 |n |goto Stormheim/0 80.57,69.32
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Food\\Big Gamy Ribs",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+kill Sated Hillstrider##98808+
+|tip Other mobs around this area drop Big Gamy Ribs too, but these respawn very quickly.
+collect Big Gamy Ribs##124119 |n |goto Highmountain/0 41.38,54.03
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Fish\\Highmountain Salmon",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Fish in the Rapid-Moving River
+|tip Highmountain Salmon seems to be pretty rare to catch, so it may take a while.
+collect Highmountain Salmon##124109 |n |goto Highmountain/0 41.84,51.65
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Fish\\Black Barracuda",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+Follow the path down |goto Suramar/0 64.28,43.04 < 30 |only if walking
+Follow the path down |goto Suramar/0 67.43,44.64 < 20 |only if walking
+Continue down the path |goto Suramar/0 68.43,45.91 < 20 |only if walking
+Follow the path down |goto Suramar/0 68.16,48.54 < 30 |only if walking
+Follow the path |goto Suramar/0 69.70,47.92 < 30 |only if walking
+Follow the path down |goto Suramar/0 71.37,47.01 < 30 |only if walking
+Fish in Black Barracuda Schools
+|tip They look like small circular swirling spots in the water along the coast.
+|tip Follow the beach east from this spot.
+collect Black Barracuda##124112 |n |goto Suramar/0 74.20,49.90
 ]])

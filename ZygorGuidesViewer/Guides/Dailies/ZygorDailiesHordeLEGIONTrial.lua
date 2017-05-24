@@ -633,6 +633,22 @@ step
 kill Immolian##109630 |q 43079/1 |goto 28.71,49.46
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43606
+accept WANTED: Arcavellus##43606 |goto Azsuna/0 59.15,13.00
+|tip You will accept this quest automatically.
+step
+Defeat the waves of enemies that come out of this portal
+kill Arcavellus##90244 |q 43606/1 |goto Azsuna/0 59.82,12.09
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44194
+accept DANGER: Torrentius##44194 |goto Azsuna/0 37.39,82.32
+|tip You will accept this quest automatically.
+step
+kill Torrentius##102064 |q 44194/1 |goto Azsuna/0 37.26,83.41
+|tip This is an elite enemy you will need a group to kill him.
+|next "Court_Of_Farondis_WQ"
+step
 label "Court_Of_Farondis_WQ"
 talk Veridis Fallon##107376 |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete
 |tip Inside the building. |only if ZGV.questsbyid[42420] and ZGV.questsbyid[42420].complete

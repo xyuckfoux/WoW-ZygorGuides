@@ -849,12 +849,28 @@ kill 6 Cove Skrog##89097 |q 42024/3
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41563
-accept Felhide##41563
+accept Felhide##41563 |goto Azsuna/0 41.44,71.3
 |tip You will accept this quest automatically.
 step
 This is an elite area, be wary of the enemies here.
 kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41563/1 |goto Azsuna/0 41.44,71.3
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43606
+accept WANTED: Arcavellus##43606 |goto Azsuna/0 59.15,13.00
+|tip You will accept this quest automatically.
+step
+Defeat the waves of enemies that come out of this portal
+kill Arcavellus##90244 |q 43606/1 |goto Azsuna/0 59.82,12.09
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44194
+accept DANGER: Torrentius##44194 |goto Azsuna/0 37.39,82.32
+|tip You will accept this quest automatically.
+step
+kill Torrentius##102064 |q 44194/1 |goto Azsuna/0 37.26,83.41
+|tip This is an elite enemy you will need a group to kill him.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42742
@@ -1601,6 +1617,22 @@ step
 kill Gleamhoof Doe##93314+, Gleamhoof Stag##93313+
 |tip Loot and Skin these.
 collect 8 Pristine Stag Hide##134813 |q 41337/1 |goto Val'sharah/0 56.32,66.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41862
+accept Only Pets Can Prevent Forest Fires##41862 |goto Val'sharah/0 56.30,65.30
+|tip You will accept this quest automatically.
+step
+talk Fragment of Fire##105093
+Tell him "Let's do battle!"
+Defeat Fragment of Fire |q 41862/1 |goto Val'sharah/0 56.30,65.30
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44301
+accept WANTED: Bahagar##44301 |goto Val'sharah/0 45.12,87.68
+|tip You will accept this quest automatically.
+step
+kill Bahagar##110562 |q 44301/1 |goto Val'sharah/0 45.60,88.78
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41091
@@ -2451,10 +2483,27 @@ step
 label quest-41687
 Enter the cave |goto Highmountain/0 42.59,25.38
 accept Snail Fight!##41687 |goto Highmountain/31 49.27,43.55
+|tip You will accept this quest automatically.
 step
 talk Odrogg##104553
 Tell him "Let's do battle!"
 Defeat Odrogg |q 41687/1 |goto Highmountain/31 49.27,43.55
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41818
+accept WANTED: Majestic Elderhorn##41818 |goto Highmountain/0 47.40,32.57
+|tip You will accept this quest automatically.
+step
+kill Majestic Elderhorn##96410 |q 41818/1 |goto Highmountain/0 47.40,32.57
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41122
+Enter the cave |goto Highmountain/0 52.11,79.64
+accept Mists Take You##41122 |goto Highmountain/0 52.34,80.07
+|tip You will accept this quest automatically.
+step
+Kill the enemies around this cave
+Cleanse the Echoing Halls |q 41122/1
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42798
@@ -3187,6 +3236,24 @@ click Lil'idan##105841
 Defeat Lil'idan |q 42064/1 |goto Highmountain/0 43.22,7.57
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43721
+accept The Helarjar Have Surfaced##43721 |goto Stormheim/0 86.87,15.01
+|tip You will accept this quest automatically.
+step
+kill Helarjar Mystcaller##111325+, Helarjar Berserker##111332+, Hellarjar Soulhunter##111328+
+|tip They can be found all around this area.
+Slay 15 Helarjar Kvaldirs |q 43721/1 |goto Stormheim/0 85.09,10.89
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41944
+accept Jarrun's Ladder##41944 |goto Stormheim/0 56.93,46.29
+|tip You will accept this quest automatically.
+step
+talk Trapper Jarrun##105455
+Tell him "Let's do battle!"
+Defeat Trapper Jarrun |q 41944/1 |goto Stormheim/0 56.93,46.29
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42796
 accept WANTED: Broodmother Shu'malis##42796 |goto Suramar/0 22.96,42.03
 |tip You will accept this quest automatically.
@@ -3904,6 +3971,32 @@ step
 kill Hertha Grimdottir##103223 |q 44029/1 |goto Suramar/0 61.30,39.63
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41990
+accept Chopped##41990 |goto Suramar/0 62.96,60.73
+|tip You will accept this quest automatically.
+step
+talk Varenne##105674
+Tell him "Let's do battle!"
+Defeat Varenne |q 41990/1 |goto Suramar/0 62.96,60.73
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44030
+accept WANTED: Guardian Thor'el##44030 |goto Suramar/0 57.06,49.63
+|tip You will accept this quest automatically.
+step
+kill Guardian Thor'el##110944 |q 44030/1 |goto Suramar/0 56.91,50.60
+|tip He pats around this area.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41895
+accept The Master of Pets##41895 |goto Suramar/0 51.99,54.89
+|tip You will accept this quest automatically.
+step
+talk Aulier##105250
+Tell him "Let's do battle!"
+Defeat Aulier |q 41895/1 |goto Suramar/0 51.99,54.89
+|next "Court_Of_Farondis_WQ"
+step
 label quest-40299
 accept Fight Night: Bodhi Sunwayver##40299 |goto Dalaran L/10 29.31,29.24
 |tip You will accept this quest automatically.
@@ -3962,15 +4055,15 @@ Defeat Amalia |q 42442/1 |goto Dalaran L/10 28.28,24.04
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43805
-accept Aquatic Assassination##43805 |goto Eye of Azshara/0 38.25,45.91
+accept Aquatic Assassination##43805 |goto Eye of Azshara Map/0 38.25,45.91
 |tip You will accept this quest automatically.
 stickystart "Shellback turtles"
 step
 kill Hatecoil Oracle##111636+, Hatecoil Warrior##111637, Hatecoil Wrangler##111635
-Slay 6 Hatecoil Naga |q 43805/1 |goto Eye of Azshara/0 50.51,68.58
+Slay 6 Hatecoil Naga |q 43805/1 |goto Eye of Azshara Map/0 50.51,68.58
 step
 label "Shellback turtles"
-kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara/0 52.18,63.34
+kill 6 Wandering Shellback##111633 |q 43805/2 |goto Eye of Azshara Map/0 52.18,63.34
 |next "Court_Of_Farondis_WQ"
 step
 label "Court_Of_Farondis_WQ"

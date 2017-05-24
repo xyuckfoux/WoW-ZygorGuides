@@ -15260,7 +15260,20 @@ step
 talk First Arcanist Thalyssra##97140
 turnin Branch of the Arcan'dor##40125 |goto 36.51,46.75 |region suramar_shalaran
 step
-|confirm
+Enter the Emerald Nightmare Raid |goto The Emerald Nightmare/12 36.52,78.53 < 10000 |noway |c |q 43362
+|tip Use the Group Finder to enter the raid.
+|tip Choose the "Rift of Aln" in the Raid Finder section.
+step
+Kill the enemies that attack in waves
+kill Xavius##30108 |q 43362/1
+step
+Enter the Emerald Dream |goto The Emerald Nightmare/13 -124.00,649.80 < 10000 |noway |c |q 43362
+step
+clicknpc Purified Life Essence##111298
+Collect the Purified Life Essence |q 43362/2 |goto The Emerald Nightmare/13 -129.74,674.12
+step
+talk Valewalker Farodin##107126
+turnin The Stuff of Dreams##43362 |goto Suramar/0 36.53,46.81 |region suramar_shalaran
 step
 Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Exalted
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
@@ -15268,97 +15281,6 @@ Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightf
 step
 talk Valewalker Farodin##107126
 turnin Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalaran
-step
-talk First Arcanist Thalyssra##115736
-accept One Day at a Time##45260 |goto Suramar/0 36.49,46.73
-step
-Feed the Fruit of the Arcan'dor to the refugees |use Fruit of the Arcan'dor##143597
-Cure the Suramar Refugees |q 45260/1 |goto Suramar/0 37.31,47.38
-step
-talk First Arcanist Thalyssra##115736
-turnin One Day at a Time##45260 |goto Suramar/0 36.49,46.73
-accept Silence in the City##38649 |goto Suramar/0 36.49,46.73
-step
-talk Chief Telemancer Oculeth##115710
-turnin Silence in the City##38649 |goto Suramar/0 36.62,45.07
-accept Crackdown##38695 |goto Suramar/0 36.62,45.07
-step
-Allow Oculeth to teleport you |q 38695/1 |goto Suramar/0 36.49,44.76
-step
-click Broken Telemancy Beacon##3365
-Examine the Broken Telemancy Beacon |q 38695/2 |goto Suramar/0 47.71,81.33
-step
-Search the Waning Crescent |q 38695/3 |goto Suramar/0 48.29,83.53
-step
-Enter the building |goto Suramar/0 48.10,83.24
-Reunite with Silgryn |q 38695/4 |goto Suramar/0 47.85,82.94
-step
-talk Silgryn##114948
-turnin Crackdown##38695 |goto Suramar/0 47.85,82.94
-accept Answering Aggression##38692 |goto Suramar/0 47.85,82.94
-accept No Reason to Stay##38720 |goto Suramar/0 47.85,82.94
-stickystart "Elisande Forces"
-step
-talk Scarleth##114985
-Evacuate the Scarleth's Girls |q 38720/3 |goto Suramar/0 47.96,80.28
-|tip Inside the building.
-step
-talk Thorvos##114983
-|tip Inside the building.
-Slay the enemy that comes in
-Evacuate Thorvos and Valanth |q 38720/2 |goto Suramar/0 48.94,81.69
-step
-talk Eneas##116001 |goto Suramar/0 49.10,83.82
-|tip Inside the building.
-Go up the stairs |goto 49.28,83.87
-talk Brigitte##115992 |goto 49.11,83.79
-talk Emille##115991 |goto 49.30,83.92
-talk Eneas##116001 |goto Suramar/0 49.10,83.82
-Evacuate Eneas' Family |q 38720/1
-step
-click the Masters Vase
-|tip Inside the building.
-Evacuate Master Devlyn |q 38720/4 |goto 50.53,85.01
-step
-label "Elisande Forces"
-Slay #12# Elisande's Forces |q 38692/1 |goto Suramar/0 47.77,81.28
-step
-talk Silgryn##115018
-|tip Inside the building.
-turnin Answering Aggression##38692 |goto Suramar/0 49.71,85.40
-turnin No Reason to Stay##38720 |goto Suramar/0 49.71,85.40
-accept Regroup##38694 |goto Suramar/0 49.71,85.40
-step
-Follow Silgryn |q 38694/1 |goto Suramar/0 51.02,86.88
-step
-click Donline's Gondola |goto Suramar/0 51.00,87.05
-Ride on Deline's Gondola |q 38694/2 |goto Suramar/0 52.40,80.39
-step
-Teleport to the top of the terrace |q 38694/3 |goto Suramar/0 51.49,78.95
-step
-talk Silgryn##114948
-|tip He is on the top of the Terrace
-turnin Regroup##38694 |goto Suramar/0 52.09,79.15
-step
-click Telemancy Beacon
-accept The Way Back Home##42889 |goto Suramar/0 51.99,78.77
-step
-Activate the Beacon |q 42889/1 |goto Suramar/0 51.99,78.77
-step
-click the Portal to Shal'Aran |goto Suramar/0 51.99,78.77
-talk First Arcanist Thalyssra##115736
-turnin The Way Back Home##42889 |goto Suramar/0 36.49,46.73
-accept Visitor in Shal'Aran##44955 |goto Suramar/0 36.49,46.73
-step
-click Arluelle##116085
-Meet the Stranger |q 44955/1 |goto Suramar/0 34.60,47.93
-step
-talk Arluelle##116085
-Tell her "Right this way Arluelle"
-Introduce Arluelle to Thalyssra |q 44955/2 |goto Suramar/0 36.48,46.75
-step
-talk First Arcanist Thalyssra##115736
-turnin Visitor in Shal'Aran##44955 |goto Suramar/0 36.49,46.73
 step
 |confirm
 ]])

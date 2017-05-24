@@ -11277,12 +11277,12 @@ step
 _Follow this path_ north |goto 31.3,46.1 < 10 |only if walking
 _Follow the path_ up |goto 37.1,32.9 < 10 |only if walking
 _Enter_ the cave |goto 38.3,30.6 < 10 |walk
-click Troll Chests##2450
+click Troll Chests##2450 |indoors Thistlefur Hold
 |tip They look like small wooden chests on the ground inside the cave.
-collect 8 Troll Charm##16602 |q 6462/1 |goto Ashenvale 40.0,32.4
+collect 8 Troll Charm##16602 |q 6462/1 |goto 40.0,32.4 |indoors Thistlefur Hold
 step
-talk Ruul Snowhoof##12818
-accept Freedom to Ruul##6482 |goto Ashenvale/0 41.5,34.5
+talk Ruul Snowhoof##12818 |indoors Thistlefur Hold
+accept Freedom to Ruul##6482 |goto Ashenvale/0 41.5,34.5 |indoors Thistlefur Hold
 step
 Escort Ruul From the Thistlefurs |q 6482/1 |goto Ashenvale/0 38.6,37.7
 |tip Protect him as he leaves the cave.

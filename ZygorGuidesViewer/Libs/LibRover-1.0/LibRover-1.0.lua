@@ -83,7 +83,7 @@ do
 		Lib.L=L
 
 
-		Lib.do_border_opti = true
+		Lib.do_border_opti = false
 
 
 		Lib.data = Lib.data or addon.LibRoverData     addon.LibRoverData = nil
@@ -2452,6 +2452,7 @@ do
 					))
 
 					if border_opt_reject then Lib.border_opti_gain = (Lib.border_opti_gain or 0) + 1 end
+
 				end
 
 				

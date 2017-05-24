@@ -8775,10 +8775,10 @@ ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent_Pre",[[
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Cloud_Serpent",[[
---	step
---	label	start
---		Proceeding to Order of the Cloud Serpent Dailies |condition completedq(30142) |next "dailies" |only if completedq(30142)
---		Moving to the Order of the Cloud Serpent prequests. |next |condition not completedq(30142) |only if not completedq(30142)
+	step
+	label	start
+		Proceeding to Order of the Cloud Serpent Dailies |condition completedq(30142) |next "dailies" |only if completedq(30142)
+		Moving to the Order of the Cloud Serpent prequests. |next |condition not completedq(30142) |only if not completedq(30142)
 	step
 		#include "H_Cloud_Serpent_Pre"
 	step

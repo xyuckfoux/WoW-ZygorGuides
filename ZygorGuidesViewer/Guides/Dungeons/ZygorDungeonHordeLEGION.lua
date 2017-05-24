@@ -153,16 +153,19 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Black Rook Hold dungeon.",
 },[[
 step
-Enter the Black Rook Hold Dungeon |goto Black Rook Hold/1 29.63,10.30 < 1000 |noway |c
+Enter the Black Rook Hold Dungeon
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 Begin the Black Rook Hold Scenario |scenariostart
 step
 map Black Rook Hold/1
 path follow loose; loop off; ants curved; dist 20
 path	40.28,24.06	52.26,37.13	41.66,56.98
-Follow the path |goto 41.66,56.98 < 20 |noway |c
+Go through whichever gate is open and follow the corridor to the first boss
 |tip The gate on the other side may be open, it gives a straight shot path to the boss.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Amalgam of Souls##98542
 _EVERYONE:_
@@ -176,7 +179,7 @@ _HEALER:_
 |tip Be prepared for big heals when the boss uses Reap Soul.
 _TANK:_
 |tip Try to use cooldowns to decrease incoming damage of Reap Soul, it deals massive damage.
-Defeat the Amalgam of Souls |scenariogoal 1/29464 |goto 39.1,61.4
+Defeat the Amalgam of Souls |scenariogoal 1/29464
 step
 Go up the stairs |goto 49.71,73.86 < 20
 click The Fel Tome of Vorgalus Dor##3365
@@ -185,14 +188,22 @@ collect The Fel Tome of Vorgalus Dor |q 43823/3 |goto 56.57,75.03
 step
 map Black Rook Hold/1
 path follow loose; loop off; ants curved; dist 20
+path	45.9,69.6	52.7,76.9	59.1,84.0
 path	61.82,87.99	65.32,87.29	64.43,86.74
-Run up the stairs |goto 64.43,86.74 > 10000 |noway |c
+Follow the Hidden Passageway and go through the Chamber of War
+|tip There will be a war table in the center.
+Go up the spiraling stairs to The Grand Hall
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Black Rook Hold/2
 path follow loose; loop off; ants curved; dist 20
 path	19.07,41.10	26.22,30.36	41.58,44.21
 path	37.00,52.45	45.12,72.17	67.72,75.41
-Follow the path to Illysanna Ravencrest |goto 67.72,75.41 < 20 |noway |c
+Follow the carpet on the ground and kill the two waves of mobs at the end
+Go through the gate on the right and to the top of the stairs
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Illysanna Ravencrest##98696
 _EVERYONE:_
@@ -205,21 +216,30 @@ _HEALER:_
 _TANK:_
 |tip Gain threat on the Risen Vanguards that spawn.
 |tip Use cooldowns to mitigate damage from Illysanna uses Vengeful Shear.
-Defeat Illysanna Ravencrest |scenariogoal 1/29465 |goto Black Rook Hold/2 58.50,57.35
+Defeat Illysanna Ravencrest |scenariogoal 1/29465
 step
-Follow the path |goto 48.37,29.37 > 10000 |noway |c
-step
-map Black Rook Hold/3
+map Black Rook Hold/2
 path follow loose; loop off; ants curved; dist 20
+path	48.0,29.8
+map Black Rook Hold/3
 path	78.09,58.38	58.44,52.09	34.66,44.32
 path	41.89,71.31	47.69,54.89	38.98,59.34
-Run up the stairs |goto 38.98,59.34 > 10000 |noway |c
+Follow the balcony around the right side and go through the door
+Go up the spiraling stairs to Ravenshold
+Follow the corridor right and go up the second set of spiraling stairs to Rook's Rise
+|tip Avoid the boulders that roll down the steps.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Black Rook Hold/4
 path follow loose; loop off; ants curved; dist 20
 path	43.99,77.86	41.02,88.34	51.70,59.41
 path	62.07,43.86
-Follow the path |goto 62.07,43.86 < 20 |noway |c
+Follow the stairs to the top
+|tip Bats will continually spawn until you reach Smashspite's room.
+Go through the first room on the right to Rook's Roost
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Smashspite the Hateful##98949
 _EVERYONE:_
@@ -229,18 +249,22 @@ _HEALER:_
 |tip Tank will need heavy healing after he uses Brutal Haymaker.
 _TANK:_
 |tip Use cooldowns if Smashspite is allowed to gain Brutality and use Brutal Haymaker.
-Defeat Smashspite the Hateful |scenariogoal 1/29466 |goto Black Rook Hold/4 76.33,23.29
+Defeat Smashspite the Hateful |scenariogoal 1/29466
 step
 map Black Rook Hold/4
 path follow loose; loop off; ants curved; dist 20
 path	58.69,44.14	47.11,65.90
-Follow the path |goto 47.11,65.90 > 10000 |noway |c
+Leave Rook's Roost the same way you came in and cross the hall
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Black Rook Hold/5
 path follow loose; loop off; ants curved; dist 20
 path	36.89,46.36	25.58,64.17	44.89,85.85
 path	57.22,65.07
-Run up the stairs |goto 57.22,65.07 > 10000 |noway |c
+Go through the open gates and run to the top of the stairs into Lord Ravencrest's Chamber
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Kur'talos Ravencrest##113046
 kill Dantalionax##99611
@@ -254,7 +278,7 @@ _HEALER:_
 _TANK:_
 |tip Use cooldowns to mitigate damage from Unerring Shear.
 |tip Kill Stinging Swarms as they spawn.
-Redeem Lord Ravencrest |scenarioend |goto Black Rook Hold/6 37.4,45.3
+Redeem Lord Ravencrest |scenarioend
 step
 _Congratulations!_
 You completed the Black Rook Hold dungeon.
@@ -775,14 +799,18 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Vault of the Wardens dungeon.",
 },[[
 step
-Enter the Vault of the Wardens Dungeon |goto Vault of the Wardens/1 70.28,77.60 < 10000 |noway |c
+Enter the Vault of the Wardens Dungeon
 |tip Use the Group Finder to enter the dungeon.
+confirm
 step
 map 1045/1
 path follow loose; loop off; ants curved; dist 20
 path	63.23,77.25	37.20,77.54	27.10,77.78
 path	24.29,70.81
-Follow the path |goto 24.29,70.81 < 20 |noway |c
+Go through the first large room and down the following hallway
+Enter the Warden's Court
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Tirathon Saltheril##99198
 _EVERYONE:_
@@ -795,13 +823,15 @@ _HEALER:_
 |tip If Metamorphoses isn't interrupted, be prepared to use AoE heals.
 _TANK:_
 |tip Use damage mitigation abilities when he activates Darkstrikes.
-Defeat Tirathon Saltheril |scenariogoal 1/29369 |goto 24.35,55.84
+Defeat Tirathon Saltheril |scenariogoal 1/29369
 step
 map 1045/1
 path follow loose; loop off; ants curved; dist 20
 path	20.68,46.42	24.39,26.95	24.35,18.73
-Ride the elevator down |goto 24.35,18.73 |n
-Enter the Vault of the Wardens |goto 1045/2 46.69,54.67 < 10000 |noway |c
+Exit the Warden's Court through one of the north doors
+Enter The Demon Ward and ride the elevator to the bottom
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Inquisitor Tormentorum##96015
 |tip He may be in a different spot in this room.
@@ -815,7 +845,7 @@ _HEALER:_
 _TANK:_
 |tip Interrupt Sap Soul.
 |tip Gain threat on the enemies he releases when he is at 70% and 40% health.
-Defeat Inquisitor Tormentorum |scenariogoal 1/29528 |goto 1045/2 41.22,48.44
+Defeat Inquisitor Tormentorum |scenariogoal 1/29528
 step
 label "Vault_Of_Wardens_Router"
 What Is Your Group Doing Right Now?
@@ -828,7 +858,9 @@ label "Glazer"
 map 1045/2
 path follow loose; loop off; ants curved; dist 20
 path	57.01,48.54	62.64,48.59
-Enter the Vault of Mirrors |goto 62.64,48.59 < 20 |noway |c
+Enter the Vault of Mirrors to the east
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Glazer##99865
 _DAMAGE:_
@@ -839,14 +871,16 @@ _HEALER:_
 |tip The group will take damage from Radiation as long as Glazer is focusing his beam.
 _TANK:_
 |tip Help direct the mirrors when he focuses his beam.
-Defeat Glazer |scenariogoal 1/29371 |goto 68.28,48.42
+Defeat Glazer |scenariogoal 1/29371
 |next "Vault_Of_Wardens_Router"
 step
 label "Ash'Golm"
 map 1045/2
 path follow loose; loop off; ants curved; dist 20
 path	46.73,58.98	46.72,66.75
-Enter the Vault of Ice |goto 46.72,66.75 < 20 |noway |c
+Enter the Vault of Ice to the south
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ash'Golm##95886
 _EVERYONE:_
@@ -868,21 +902,27 @@ label "Vault_Of_Wardens_End"
 map 1045/2
 path follow loose; loop off; ants curved; dist 20
 path	40.10,48.44	34.14,48.41
-Ride the elevator down |goto 34.14,48.41 |n
-Enter the Vault of the Betrayer Level |goto 1045/3 53.29,13.84 < 10000 |noway |c
+Enter the Fallen Passage to the west
+Ride the elevator down
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map 1045/3
 path follow loose; loop off; ants curved; dist 20
 path	53.29,13.84	51.96,22.62	47.23,28.16
 path	44.69,34.66
 click Elune's Light
-|tip Only one person can carry the Elune's Light.  Usually the Tank carries it.
-Follow the path |goto 44.69,34.66 < 20 |c
+|tip Only one person can carry the Elune's Light. Usually the Tank carries it.
+Follow the path occasionally covered with webs
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 click Fel-Ravaged Tome##143394
 accept Fel-Ravaged Tome##44486 |goto 54.75,35.85
 step
-Enter the Vault of the Betrayer |goto 49.93,53.39 < 15 |c
+Enter the Vault of the Betrayer to the south
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Cordana Felsong##95888
 _EVERYONE:_
@@ -897,7 +937,7 @@ _HEALER:_
 _TANK:_
 |tip Avoid the green spinning projectiles she throws.
 |tip Gain threat on the Avatars of Vengeance once they are revealed with Elune's Light.
-Defeat Cordana |scenarioend |goto 50.4,77.6
+Defeat Cordana |scenarioend
 step
 talk Robert Newhearth##112441
 |tip Upstairs inside the building.
@@ -1125,8 +1165,6 @@ _Congratulations!_
 You completed the Court of Stars dungeon!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Attunment",{
-mapid=1045,
-achieveid={10816},
 condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
 keywords={"Karazhan Kara"},
 author="support@zygorguides.com",
@@ -1137,16 +1175,140 @@ talk Archmage Khadgar##90417
 accept Edict of the God-King##45422 |goto Dalaran L/10 28.59,48.39
 step
 Enter the Halls of Valor on Mythic difficulty
-kill God-King Skovald##95675 |q 45422 /1 |goto Halls of Valor/3 51.44,88.83
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Karazhan\\Karazhan Dungeon",{
-mapid=1045,
-achieveid={10816},
-condition_suggested="level>=110 and _G.GetAverageItemLevel()>840",
-keywords={"Karazhan Kara"},
-author="support@zygorguides.com",
-description="This guide will walk you through the Karazhan dungeon.",
-},[[
+kill God-King Skovald##95675 |q 45422/1 |goto Halls of Valor/3 51.44,88.83
 step
-placeholder
+click the Quest Completion box
+turnin Edict of the God-King##45422
+accept Unwanted Evidence##44886
+step
+talk Archmage Khadgar##90417
+turnin Unwanted Evidence##44886 |goto Dalaran L/10 28.59,48.39
+accept Uncovering Orders##44887 |goto Dalaran L/10 28.59,48.39
+step
+Enter the Vault of the Wardens on Mythic difficulty
+kill Inquisitor Tormentorum##96015
+|tip This is the 2nd boss in the instance.
+collect Fragment of Torment |q 44887/3
+step
+Enter the Violet Hold on Mythic difficulty
+Kill the first boss in this instance it can be one of 6 different bosses
+collect Fragment of Power |q 44887/2
+step
+Enter the Black Rook Hold on Mythic difficulty
+kill Smashspite the Hateful
+|tip This is the 3rd boss in this instance.
+collect Fragment of Spite |q 44887/1
+step
+talk Archmage Khadgar##90417
+turnin Uncovering Orders##44887 |goto Dalaran L/10 28.59,48.39
+accept Aura of Uncertainty##44944 |goto Dalaran L/10 28.59,48.39
+step
+talk Archmage Khadgar##90417
+Tell him "Let's us begin." |goto Dalaran L/10 28.59,48.39
+Watch the Dialogue
+Unravel the Mystery |q 44944/1 |goto Dalaran L/10 28.59,48.39
+step
+talk Archmage Khadgar##90417
+turnin Aura of Uncertainty##44944 |goto Dalaran L/10 28.59,48.39
+accept Return to Karazhan##44556 |goto Dalaran L/10 28.59,48.39
+step
+click Portal to Karazhan |goto Dalaran L/10 29.51,46.87
+Take the Portal to Karazhan |q 44556/1
+step
+talk Archmage Khadgar##114310
+turnin Return to Karazhan##44556 |goto Deadwind Pass/0 47.03,75.28
+accept Finite Numbers##44557 |goto Deadwind Pass/0 47.03,75.28
+accept Holding the Lines##44683 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+accept Corruption Runs Deep##44684 |goto Deadwind Pass/0 46.95,75.40
+stickystart "Demons!"
+step
+Enter the Eastern Caverns beneath Deadwind Pass |goto Deadwind Pass/0 48.62,78.85
+click the Fel Spreader
+Secure the Eastern Ley Line |q 44683/1 |goto Deadwind Pass/22 57.81,38.59
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 1 |goto Deadwind Pass/22 58.60,23.16
+step
+Use your Arcane-Infused Vial to get a sample of the soil |use Arcane-infused Vial##141878
+Collect a Corrupted Essence of Soil |q 44684/1 |goto Deadwind Pass/22 59.88,13.72
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 2 |goto Deadwind Pass/22 63.43,31.56
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 3 |goto Deadwind Pass/22 64.02,45.88
+step
+click Legion Portal
+Disable the Legion Portal |q 44557/1 |count 4 |goto Deadwind Pass/22 55.81,88.83
+step
+Exit the Masters Cellar |goto Deadwind Pass/22 36.90,35.82
+Enter the Weastern Caverns beneath Deadwind Pass |goto Deadwind Pass/0 47.80,78.25
+click the Fel Spreader
+Secure the Western Ley Line |q 44683/2 |goto Deadwind Pass/24 54.69,87.29
+step
+Use your Arcane-Infused Vial to get a sample of the water |use Arcane-infused Vial##141878
+Collect a Corrupted Essence of Water |q 44684/2 |goto Deadwind Pass/24 53.76,81.35
+step
+label "Demons!"
+Slay 20 Legion Forces |q 44557/2
+step
+Exit the Masters Cellar |goto Deadwind Pass/23 73.79,80.09
+talk Archmage Khadgar##114310
+turnin Finite Numbers##44557 |goto Deadwind Pass/0 47.03,75.28
+turnin Holding the Lines##44683 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+turnin Corruption Runs Deep##44684 |goto Deadwind Pass/0 46.95,75.40
+accept Thought Collection##44686 |goto Deadwind Pass/0 46.95,75.40
+step
+talk Archmage Khadgar##114310
+accept Reclaiming the Ramparts##44685 |goto Deadwind Pass/0 47.03,75.28
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Southern Ward |q 44685/2 |goto Deadwind Pass/0 44.62,76.79
+|tip It's up on top of the building you have to fly up to it.
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Northern Ward |q 44685/1 |goto Deadwind Pass/0 47.26,69.52
+|tip It's on the bridge, you will need to fly up to it.
+step
+talk Captured Wyrmtongue##114822
+Interrogate the captured Wyrmtongue |q 44686/1 |goto Deadwind Pass/0 48.70,69.54
+|tip Keep going through the speech suggestions until this is completed.
+|tip He is on top of this building you can fly to him.
+step
+Stand in the Blue Arcane Circle on the ground
+Place the Empowered arcane ward |use Empowered Arcane Ward##142213
+Plant the Eastern Ward |q 44685/3 |goto Deadwind Pass/0 47.34,71.79
+|tip It's at the top of this building, you will need to fly up to it.
+step
+talk Archmage Khadgar##114310
+turnin Reclaiming the Ramparts##44685 |goto Deadwind Pass/0 47.03,75.28
+step
+talk Archmage Karlain##114631
+turnin Thought Collection##44686 |goto Deadwind Pass/0 46.95,75.40
+accept Demon in Disguise##44764 |goto Deadwind Pass/0 46.95,75.40
+step
+talk Archmage Khadgar##114310
+turnin Demon in Disguise##44764 |goto Deadwind Pass/0 47.03,75.28
+accept The Power of Corruption##44733 |goto Deadwind Pass/0 47.03,75.28
+step
+Use your Essence of the Wyrmtongue |use Essence of Wyrmtongue##142208
+Enter the Masters Cellar |goto Deadwind Pass/0 47.76,78.28
+Stand on this green platform |goto Deadwind Pass/24 45.47,51.53
+Obtain Chamber Access |q 44733/1
+step
+_REMOVE YOUR DISGUISE_ once inside
+kill Thar'zul##115172 |q 44733/2 |goto Deadwind Pass/24 41.22,17.09
+kill Elux'ara Darkscorn##115179 |q 44733/3 |goto Deadwind Pass/24 45.14,11.15
+step
+Exit the Masters Cellar |goto Deadwind Pass/23 73.79,80.09
+talk Archmage Khadgar##114310
+turnin The Power of Corruption##44733 |goto Deadwind Pass/0 47.03,75.28
+accept In the Eye of the Beholder##44735 |goto Deadwind Pass/0 47.03,75.28
+accept Fragments of the Past##44734 |goto Deadwind Pass/0 47.03,75.28
 ]])

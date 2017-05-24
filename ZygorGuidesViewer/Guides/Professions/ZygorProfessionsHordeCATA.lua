@@ -3236,10 +3236,6 @@ step
 create Adamantite Bar##29358,Mining,10 total |n
 collect 10 Adamantite Bar##23446 |condition skill("Jewelcrafting")>=350
 step
-Prospect all of your Adamantite Ore |cast Prospecting##31252
-collect 40 Adamantite Powder##24243 |condition skill("Jewelcrafting")>=350
-|tip Save EVERY extra gem you receive for later use.
-step
 #include "trainer_Jewelcrafting"
 learn Delicate Blood Garnet##34590 |condition skill("Jewelcrafting")>=350
 step
@@ -3259,6 +3255,10 @@ learn Glinting Shadow Draenite##28914 |condition skill("Jewelcrafting")>=350
 step
 Make as many as it takes of these gems to get to 320 Jewelcrafting
 create Glinting Shadow Draenite##28914,Jewelcrafting,325
+step
+Prospect all of your Adamantite Ore |cast Prospecting##31252
+collect 40 Adamantite Powder##24243 |condition skill("Jewelcrafting")>=350
+|tip Save EVERY extra gem you receive for later use.
 step
 #include "trainer_Jewelcrafting"
 learn Mercurial Adamantite##38068 |condition skill("Jewelcrafting")>=350

@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 11,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 12,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -139,24 +139,22 @@ data.basenodes.MapsWithExplicitFloors = {
 		"@cleft_sw_en",
 		"@+ -x- @cleft_sw_ex",
 		"@+ -x- @cleft_w_tun",
-		"@+ -x- Orgrimmar/2 41.8,66.1 <radius:25>",
+		"@+ -x- Orgrimmar/2 41.8,66.1 <radius:25> <region:cleftofshadow>",
 
 		"@cleft_nw_en",
 		"@+ -x- @cleft_nw_ex",
 		"@+ -x- @cleft_w_tun",
-		-- "@+ -x- Orgrimmar/2 41.8,66.1 <radius:25> <region:cleftofshadow>", gathered from above... This is to a node within the region.
 
 
 		-- Exit to the right
 		"Orgrimmar/1 54.98,51.28 @cleft_e_en <title:Cleft of Shadow entrance>",
 		"Orgrimmar/2 80.5,16.3 @cleft_e_ex <title:Cleft of Shadow exit> <radius:10> <dark:1> <onlyhardwire:1>",
-
 		"Orgrimmar/2 72.6,15.7 @cleft_e_tun <title:Cleft of Shadow tunnel> <radius:10> <dark:1> <onlyhardwire:1>",
 
 		"@cleft_e_en",
 		"@+ -x- @cleft_e_ex",
 		"@+ -x- @cleft_e_tun",
-		"@+ -x- Orgrimmar/2 65.61,37.98 <radius:25>",
+		"@+ -x- Orgrimmar/2 65.61,37.98 <radius:25> <region:cleftofshadow>",
 	},
 	["Dalaran"] = {
 		 --Underbelly, a few entries. Cost to adjust which gets used for each part of the city.
@@ -1579,7 +1577,8 @@ data.basenodes.advanced = {
 	--		Swamp of Sorrows 74.3,44.5 (5 yds Entering Hall of Masks (exiting stairs hallway))
 	--
 	--		Swamp of Sorrows 76.0,45.3 (Portal to Dungeon (in hall of masks))
-	
+
+	{"REGION",name="cleftofshadow",center="Orgrimmar/2 50,51.34",radius=80},
 	
 	{"REGION",name="booty_bay",center="The Cape of Stranglethorn 41,70",radius=127},
 

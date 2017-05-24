@@ -2658,6 +2658,9 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Horde",[[
 		talk Edgar Goodwin##54141
 		turnin A Friend in Need##29431 |goto Orgrimmar/0 54.4,77.6
 		accept Missing Heirlooms##29415 |goto Orgrimmar/0 54.4,77.6
+	step
+		Find the Courier |q 29415/1 |goto Durotar/0 57.41,9.02
+		|tip He's inside of the ship.
 	step 
 		talk Hired Courier##54142
 		turnin Missing Heirlooms##29415 |goto Durotar/0 57.4,9.0
@@ -2707,9 +2710,8 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Horde",[[
 	step
 		Click the Water Barrel
 		|tip It looks like a huge bucket of water.
-		collect Water Bucket##32971 |q 11361 |goto 52.5,41.3
-	step
-		use Water Bucket##32971
+		collect Water Bucket##32971 |goto Durotar/0 49.16,44.48 |n
+		Click the Ability Bar icon that appears at the middle of your screen
 		|tip Use your Water Bucket on the burning scarecrows.
 		Fight #5# Fires |q 11361/1 |goto 49.3,43.5
 		Collect more Water Buckets from the Water Barrel at |goto 49.2,44.5
@@ -2740,7 +2742,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Horde",[[
 		turnin What Now?##29428 |goto Orgrimmar/0 54.4,77.6
 	step
 		click Edgar's Crate##335
-		turnin The Creepy Crate##29429 |goto 54.5,77.5
+		accept The Creepy Crate##29429 |instant |goto 54.5,77.5
 	step
 		collect 1 Creepy Crate##71076 |n
 		use Creepy Crate##71076
@@ -2750,27 +2752,23 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Horde",[[
 ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 	step
 		talk Masked Orphan Matron##23973
-		accept Stop the Fires!##11219 |goto Durotar/0 52.6,41.2 |or
-		accept "Let the Fires Come!"##12139 |goto Durotar/0 52.6,41.2 |or
+		accept Stop the Fires!##11219 |goto Tirisfal Glades/0 60.91,53.58 |or
+		accept "Let the Fires Come!"##12139 |goto Tirisfal Glades/0 60.91,53.58 |or
 	step
 		Click the Water Barrel 
 		|tip It looks like a huge bucket of water.
-		collect Water Bucket##32971 |q 11219 |goto 52.5,41.3
-	step
+		collect Water Bucket##32971 |goto 61.02,53.64 |n
 		Use your Water Bucket on the fires all around this area |use Water Bucket##32971
-		Put Out the Fires |q 11219/1 |goto 52.2,42.6 
-		|tip You will need a group of people to complete this quest. It is best to do this quest at peak hours.
+		Put Out the Fires |q 11219/1 |goto 60.73,52.42
 		Collect more Water Buckets from the Water Barrel here |goto 52.5,41.3
 	step
 		Click the Water Barrel 
 		|tip It looks like a huge bucket of water.
-		collect Water Bucket##32971 |q 12139 |goto 52.5,41.3
-	step
+		collect Water Bucket##32971 |goto 61.02,53.64 |n
 		Wait until the fires appear on the buildings in Razor Hill
 		Use your Water Bucket on the fires all around this area |use Water Bucket##32971
-		Put Out the Fires |q 12139/1 |goto 52.2,42.6 
-		|tip You will need a group of people to complete this quest. It is best to do this quest at peak hours.
-		Collect more Water Buckets from the Water Barrel here |goto 52.5,41.3
+		Put Out the Fires |q 12139/1 |goto 60.73,52.42
+		Collect more Water Buckets from the Water Barrel here |goto 60.73,52.42
 	step
 		Click the Large Jack-o'-Lantern 
 		|tip It's a burning pumpkin laying in the road.
@@ -2778,9 +2776,9 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 	step
 		talk Masked Orphan Matron##23973
 		You will only be able to accept 1 of the 2 daily quests
-		turnin Stop the Fires!##11219 |goto 52.6,41.2
-		turnin "Let the Fires Come!"##12139 |goto 52.6,41.2
-		turnin Smash the Pumpkin##12155 |goto 52.6,41.2
+		turnin Stop the Fires!##11219 |goto 60.92,53.57
+		turnin "Let the Fires Come!"##12139 |goto 60.92,53.57
+		turnin Smash the Pumpkin##12155 |goto 60.92,53.57
 	step
 		talk Darkcaller Yanka##15197
 		accept A Time to Build Up##29376 |goto Undercity,67.4,13.0
@@ -2820,8 +2818,25 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 	step
 		talk Darkcaller Yanka##15197
 		turnin A Time to Break Down##29377 |goto Undercity,67.4,13.0
+	--New Legion Daily
 	step
-		Congratulations,  you have earned the Achievement _Rotten Hollow_ |achieve 1041
+		For the next part of the dailies you will need to have the new Legion Dalaran unlocked.
+		confirm
+	step
+		talk Duroc Ironjaw##109854
+		|tip He's inside of the inn.
+		accept Beware of the Crooked Tree##43259 |goto Dalaran L/10 47.40,40.55
+	step
+		talk Hag of the Crooked Tree##109734
+		turnin Beware of the Crooked Tree##43259 |goto Val'sharah/0 35.01,56.08
+		accept Under the Crooked Tree##43162 |goto Val'sharah/0 35.01,56.08
+	step
+		click Crocked Tree Cauldron |goto Val'sharah/0 35.01,56.08
+		kill Aria Sorrowheart##109825 |q 43162/1 |goto Val'sharah/0 34.80,55.46
+		|tip This is an elite enemy you may need a group to kill it.
+	step
+		talk Hag of the Crooked Tree##109734
+		turnin Under the Crooked Tree##43162 |goto Val'sharah/0 35.01,56.08
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Hallows_End_WoD_Dailies_Horde",[[

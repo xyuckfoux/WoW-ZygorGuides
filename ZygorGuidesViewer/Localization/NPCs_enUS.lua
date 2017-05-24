@@ -26869,4 +26869,6 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [97118]="Long-Eared Owl|",
 [97743]="Mist Fox Kit|",
 [98446]="Mudshell Conch|",
+[109734]="Hag of the Crooked Tree|",
+[109854]="Duroc Ironjaw|",
 } end)

@@ -1075,10 +1075,8 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Alliance",[[
 		turnin Costumed Orphan Matron##11356 |goto Elwynn Forest 42.6,64.4
 		accept Fire Brigade Practice##11360 |goto Elwynn Forest 42.6,64.4
 	step
-		Click the Water Barrel
+		Click the Water Barrel |goto 42.7,62.0
 		|tip It looks like a huge bucket of water.
-		collect Water Bucket##32971 |q 11360 |goto 42.5,64.5
-	step
 		use Water Bucket##32971
 		|tip Use your Water Bucket on the burning scarecrows.
 		Fight #5# Fires |q 11360/1 |goto 42.6,60.2
@@ -1166,7 +1164,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Alliance",[[
 		_Enter_ the Cathedral of Light |goto Stormwind City 52.7,50.5 < 5 |walk
 		_Go into_ the catacombs |goto 51.3,44.2 < 5 |only if walking
 		kill Unleashed Void##54114+
-		Durupt the Meeting |q 29403/1 |goto 55.3,43.5
+		Disrupt the Meeting |q 29403/1 |goto 55.3,43.5
 	step
 		click Stolen Crate##335
 		turnin The Collector's Agent##29403 |goto 55.3,43.5
@@ -1240,8 +1238,6 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Alliance",[[
 	step
 		Click the Water Barrel
 		|tip It looks like a huge bucket of water.
-		collect Water Bucket##32971 |q 11131 |goto 42.5,64.5
-	step
 		use Water Bucket##32971
 		|tip Use your Water Bucket on the fires all around this area.
 		Put Out the Fires |q 11131/1 |goto 42.4,65.6
@@ -1275,6 +1271,24 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Alliance",[[
 	step
 		talk Keira##52064
 		turnin A Time to Lose##29371 |goto Elwynn Forest 32.1,50.6
+	--New Legion Daily
+	step
+		For the next part of the dailies you will need to have the new Legion Dalaran unlocked.
+		confirm
+	step
+		talk Duroc Ironjaw##109854
+		accept Beware of the Crooked Tree##43259 |goto Dalaran L/10 47.40,40.55
+	step
+		talk Hag of the Crooked Tree##109734
+		turnin Beware of the Crooked Tree##43259 |goto Val'sharah/0 35.01,56.08
+		accept Under the Crooked Tree##43162 |goto Val'sharah/0 35.01,56.08
+	step
+		click Crocked Tree Cauldron |goto Val'sharah/0 35.01,56.08
+		kill Aria Sorrowheart##109825 |q 43162/1 |goto Val'sharah/0 34.80,55.46
+		|tip This is an elite enemy you may need a group to kill it.
+	step
+		talk Hag of the Crooked Tree##109734
+		turnin Under the Crooked Tree##43162 |goto Val'sharah/0 35.01,56.08
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Hallows_End_WoD_Dailies_Alliance",[[
@@ -1306,7 +1320,6 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_WoD_Dailies_Alliance",[[
 		turnin Mutiny on the Boneship##39719 |goto Lunarfall/0 44.0,51.4
 		turnin Culling the Crew##39721 |goto Lunarfall/0 44.0,51.4
 ]])
-
 ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Alliance",[[
 // Eastern Kingdoms
 	step
@@ -1967,7 +1980,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Alliance",[[
 		Visit the Candy Bucket in Uldum, Oasis of Vir'sar |achieve 5837/1 |goto Uldum/0 26.6,7.2
 // End of Candy Bucket Achievements
 	step
-		You must be at least level 90 to complete this step:
+		You must be at least level 100 to complete this step:
 		Press _I_ and queue for The Headless Horseman
 		kill Headless Horseman##23682
 		Complete the Bring Me The Head of... Oh Wait achievement |achieve 255

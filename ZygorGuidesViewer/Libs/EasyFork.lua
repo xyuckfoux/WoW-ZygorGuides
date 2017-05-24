@@ -14,15 +14,8 @@
 --		autoHideDelay - how long until the menu disappears
 --
 --
-function EasyFork(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay )
-	if ( displayMode == "MENU" ) then
-		menuFrame.displayMode = displayMode;
-	end
-	UIDropDownFork_Initialize(menuFrame, EasyFork_Initialize, displayMode, nil, menuList);
-	ToggleDropDownFork(1, nil, menuFrame, anchor, x, y, menuList, nil, autoHideDelay);
-end
 
-function EasyFork_Initialize( frame, level, menuList )
+local function EasyFork_Initialize( frame, level, menuList )
 	for index = 1, #menuList do
 		local value = menuList[index]
 		if (value.text) then
@@ -32,3 +25,10 @@ function EasyFork_Initialize( frame, level, menuList )
 	end
 end
 
+function EasyFork(menuList, menuFrame, anchor, x, y, displayMode, autoHideDelay )
+	if ( displayMode == "MENU" ) then
+		menuFrame.displayMode = displayMode;
+	end
+	UIDropDownFork_Initialize(menuFrame, EasyFork_Initialize, displayMode, nil, menuList);
+	ToggleDropDownFork(1, nil, menuFrame, anchor, x, y, menuList, nil, autoHideDelay);
+end

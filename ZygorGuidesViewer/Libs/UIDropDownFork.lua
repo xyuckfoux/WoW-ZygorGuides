@@ -32,7 +32,8 @@ end
 
 UIDropDownForkDelegate:SetScript("OnAttributeChanged", UIDropDownForkDelegate_OnAttributeChanged);
 
-local function UIDropDownFork_InitializeHelper (frame)
+-- This is called via securecall. NEEDS to be global :(
+function UIDropDownFork_InitializeHelper (frame)
 	-- This deals with the potentially tainted stuff!
 	if ( frame ~= UIDROPDOWNFORK_OPEN_MENU ) then
 		UIDROPDOWNFORK_MENU_LEVEL = 1;
@@ -47,7 +48,6 @@ local function UIDropDownFork_InitializeHelper (frame)
 		dropDownList = _G["DropDownForkList"..i];
 		if ( i >= UIDROPDOWNFORK_MENU_LEVEL or frame ~= UIDROPDOWNFORK_OPEN_MENU ) then
 			dropDownList.numButtons = 0;
-			print("hiding in ",dropDownList:GetName())
 			dropDownList.maxWidth = 0;
 			for j=1, UIDROPDOWNFORK_MAXBUTTONS, 1 do
 				button = _G["DropDownForkList"..i.."Button"..j];

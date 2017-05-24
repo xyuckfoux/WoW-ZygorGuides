@@ -1061,7 +1061,7 @@
             </Animations>
           </Frame>
 
-          <Frame name="ZGVF_Default_Menu" inherits="UIDropDownMenuTemplate" hidden="true"/>
+          <Frame name="ZGVF_Default_Menu" inherits="UIDropDownForkTemplate" hidden="true"/>
 
           <Frame name="$parent_ResizerLeft" parentKey="ResizerLeft">
             <Size x="10" y="10"/>

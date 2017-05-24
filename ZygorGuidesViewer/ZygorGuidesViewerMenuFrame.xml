@@ -243,27 +243,6 @@
 				</Scripts>
 			</Button>
 
-			<Frame name="$parent_SectionDropDown" inherits="UIDropDownMenuTemplate">
-				<Anchors>
-					<Anchor point="TOPLEFT">
-						<Offset x="3" y="-67"/>
-					</Anchor>
-					<Anchor point="RIGHT">
-						<Offset x="-5" y="0"/>
-					</Anchor>
-				</Anchors>
-				<Scripts>
-					<OnLoad>
-						UIDropDownMenu_SetWidth(self, 305);
-						UIDropDownMenu_Initialize(self, ZGVFSectionDropDown_Initialize);
-						UIDropDownMenu_JustifyText(self, "LEFT");
-					</OnLoad>
-					<OnShow>
-						UIDropDownMenu_Initialize(self, ZGVFSectionDropDown_Initialize);
-					</OnShow>
-				</Scripts>
-			</Frame>
-
 		</Frames>
 
 	</Frame>  

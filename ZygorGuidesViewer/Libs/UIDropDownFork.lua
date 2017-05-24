@@ -47,6 +47,7 @@ local function UIDropDownFork_InitializeHelper (frame)
 		dropDownList = _G["DropDownForkList"..i];
 		if ( i >= UIDROPDOWNFORK_MENU_LEVEL or frame ~= UIDROPDOWNFORK_OPEN_MENU ) then
 			dropDownList.numButtons = 0;
+			print("hiding in ",dropDownList:GetName())
 			dropDownList.maxWidth = 0;
 			for j=1, UIDROPDOWNFORK_MAXBUTTONS, 1 do
 				button = _G["DropDownForkList"..i.."Button"..j];

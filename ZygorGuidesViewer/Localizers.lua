@@ -19,7 +19,7 @@ do
 		return s:find'^%s*$' and '' or s:match'^(.*%S)'
 	end
 
-	function GetNPCNameFromCache(NPCid)  --39199 = unit:0xF530991F00000000
+	local function GetNPCNameFromCache(NPCid)  --39199 = unit:0xF530991F00000000
 
 		if NPCCache[NPCid] then return NPCCache[NPCid] end
 		Tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")

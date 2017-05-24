@@ -42,6 +42,8 @@ local startupSuppress = 100 -- Suppress showing popups on start
 
 ZGV.IM=IM
 
+local lastPosition
+
 -------------------------------------------------------------------------------
 -- CreateFrames is where all of the frames are created for all of the various
 -- parts of IM. No return value.

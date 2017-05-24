@@ -4,6 +4,8 @@ local ui = ZGV.UI
 local SkinData = ui.SkinData
 local CHAIN = ZGV.ChainCall
 
+local HTMLColor=ZGV.HTMLColor
+
 local FARM_INFO_SUMMARY = "Make gold by farming and selling valuable items that drop off mobs (cloth, elementals, food, ect.). This is the best method for beginners without any profession skills."
 local FARM_INFO_PROS = {
 	"No profession skills required.",

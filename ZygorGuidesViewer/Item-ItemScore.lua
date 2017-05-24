@@ -1023,6 +1023,7 @@ function ItemScore:ScoreGem(gemdata)
 	return score
 end   
 
+local returntable
 function ItemScore:GetBestGemPerIlvl()
 	if not returntable then returntable = {} end
 	wipe(returntable)

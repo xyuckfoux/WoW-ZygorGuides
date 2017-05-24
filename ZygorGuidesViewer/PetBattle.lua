@@ -812,6 +812,10 @@ function PetBattle:MakeEditBox(frame,name,text,point,labelpoint,x,y,label)
 	end
 end
 
+local function SetHeightAllFrames(y)
+	PetBattle.BattleFrame:SetHeight(y)
+end
+
 local function PetBattle_ToggleFrames(button)
 	for name,data in pairs(PetBattle.BattleFrame) do
 		if type(data)=="table" then
@@ -823,10 +827,6 @@ local function PetBattle_ToggleFrames(button)
 			end
 		end
 	end
-end
-
-function SetHeightAllFrames(y)
-	PetBattle.BattleFrame:SetHeight(y)
 end
 
 local function CreateMainFrames(self)
@@ -2454,7 +2454,7 @@ PetBattle.BreedName = {
 
 PetBattle.IdByName = {}
 for i,v in pairs(PetBattle.BasePetStats) do
-	name = C_PetJournal.GetPetInfoBySpeciesID(i)
+	local name = C_PetJournal.GetPetInfoBySpeciesID(i)
 	if name then
 		PetBattle.IdByName[name] = i
 	end
@@ -2462,7 +2462,7 @@ end
 
 PetBattle.SpeciesByDisplayId = {}
 for i=1,2000 do
-	name, _, _, companionID, _, _, _, _, _, _, _, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(i)
+	local name, _, _, companionID, _, _, _, _, _, _, _, creatureDisplayID = C_PetJournal.GetPetInfoBySpeciesID(i)
 	if companionID then
 		PetBattle.SpeciesByDisplayId[companionID] = i
 	end

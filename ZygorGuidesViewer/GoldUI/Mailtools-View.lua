@@ -7,6 +7,8 @@ local FONTSTATUS="Fonts\\ARIALN.TTF"
 local L = ZGV.L
 local CHAIN = ZGV.ChainCall
 
+local HTMLColor=ZGV.HTMLColor
+
 local DROPDOWN_STYLE=2
 
 if not ZGV.Mailtools then ZGV.Mailtools = {} end

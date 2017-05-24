@@ -12,8 +12,8 @@ arrow.features={colordist=true,smooth=false}
 local sprite_angles_base = {[0]=0,0.5,1.1,2.6,4.5,6.9,9.7,13.0,16.7,20.8,25.3,30.1,35.3,40.7,46.4,52.4,58.7,65.2,71.9,78.8,85.9,93.1,100.5,108.1,115.7,123.5,131.4,139.4,147.4,155.5,163.6,168,173,180}
 local sprite_angles={}
 
-DEBUGSPRITE1= sprite_angles_base
-DEBUGSPRITE2= sprite_angles
+--DEBUGSPRITE1= sprite_angles_base
+--DEBUGSPRITE2= sprite_angles
 function arrow:CreateFrame()
 	if not self.frame then
 		self.frame = CreateFrame("BUTTON","ZygorGuidesViewerPointerArrow_".. arrowskindir,ZGV.Pointer.ArrowFrameCtrl,"ZygorGuidesViewerFrame_Arrow_template_".. arrowskinlc)

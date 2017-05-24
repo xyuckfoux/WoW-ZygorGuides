@@ -11,6 +11,8 @@ else
 	SKINSDIR=ZGV.DIR.."\\Skins\\"
 end
 
+local HTMLColor=ZGV.HTMLColor
+
 -- Basics
 -- Black frame with a lightborder
 STYLE.MainBackdrop={bgFile=SKINSDIR.."white",edgeFile=SKINSDIR.."white",tile = true, edgeSize=1, tileSize = 20, insets = { left = 0, right = 0, top = 0, bottom = 0 }}

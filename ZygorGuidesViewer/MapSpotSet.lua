@@ -218,7 +218,7 @@ function MapSpotSet:ParseRaw()
 		end
 
 		--[[
-		if #TableKeys(node)>0 then
+		if #ZGV.TableKeys(node)>0 then
 			if not node then return nil,"What? Unknown data before first node, or what?",linecount,line end
 			-- so there's something to record? go ahead.
 		end

@@ -1873,7 +1873,7 @@ function ZGV:UpdateCooldowns()
 					if type(goal.petaction)=="number" then
 						num = goal.petaction
 					else
-						num,name,x,tex = FindPetActionInfo(goal.petaction)
+						num,name,x,tex = ZGV.FindPetActionInfo(goal.petaction)
 					end
 					local start,dur,en = GetPetActionCooldown(num)
 					CooldownFrame_Set(cooldown, start, dur, en)
@@ -1935,7 +1935,7 @@ local function GetCardinalDirName(angle)
 		if Tpi*((i*2)-1)/16>angle then return cardinals[i] end
 	end
 end
-function GetCardinalDirNum(angle)
+local function GetCardinalDirNum(angle)
 	while angle<0 do angle=angle+Tpi end
 	while angle>Tpi do angle=angle-Tpi end
 	local ret=1
@@ -4730,7 +4730,7 @@ function ZGV:UnregisterGuide(name)
 end
 --]]
 
-function coroutine_safe_pcall(f,arg)
+function ZGV.coroutine_safe_pcall(f,arg)
 	local co = coroutine.create(f)
 	while true do
 		local status, a,b,c,d,e = coroutine.resume(co,arg)
@@ -5481,15 +5481,13 @@ function ZGV:ZYGOR__QUEST_CHOICE_SENT(event,id,choice)
 end
 
 function ZGV:Hook_QuestChoice()
-	ZGV.Original_SendQuestChoiceResponse = SendQuestChoiceResponse
-	SendQuestChoiceResponse = ZGV.Surrogate_SendQuestChoiceResponse
+	hooksecurefunc("SendQuestChoiceResponse",function(...) ZGV.Surrogate_SendQuestChoiceResponse(...) end)
 	ZGV:AddMessage("ZYGOR__QUEST_CHOICE_SENT")
 end
 
 function ZGV.Surrogate_SendQuestChoiceResponse(choice)
 	local id = GetQuestChoiceInfo()
 	ZGV:SendMessage("ZYGOR__QUEST_CHOICE_SENT",id,choice)
-	ZGV.Original_SendQuestChoiceResponse(choice)
 end
 
 function ZGV:QuestRewardSelect(choice)

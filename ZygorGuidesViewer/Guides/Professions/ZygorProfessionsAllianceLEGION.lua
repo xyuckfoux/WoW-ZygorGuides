@@ -884,7 +884,7 @@ Run down the stairs |goto 70.10,44.35 < 20 |only if walking
 Run up the stairs |goto 72.23,41.11 < 20 |only if walking
 Run up the ramp |goto 72.41,39.04 < 20 |only if walking
 Enter the building |goto 71.35,38.96 < 15 |walk
-click Herblore of the Ancients##6478
+click Herblore of the Ancients
 collect Herblore of the Ancients##129202 |q 40031/3 |goto 70.66,38.76
 step
 talk Kuhuine Tenderstride##92464
@@ -929,7 +929,7 @@ Follow the path |goto Suramar/0 35.03,23.11 < 20 |only if walking
 kill Herbalist Tharillon##98213
 |tip There are many enemies around this area. Try not to pull too many at once.
 |tip You may need help.
-click Tharillon's Stash##6478
+click Tharillon's Stash
 collect Broken Herbalist's Blade##129155 |q 40037/1 |goto Suramar/0 34.49,22.95
 step
 talk Kuhuine Tenderstride##92464
@@ -2295,7 +2295,7 @@ Follow the path |goto Highmountain/20 67.16,43.85 < 15 |walk
 Follow the path up |goto Highmountain/20 57.67,36.72 < 15 |walk
 Follow the path up |goto Highmountain/20 47.71,53.32 < 15 |walk
 Follow the path up |goto Highmountain/21 48.19,39.24 < 20 |walk
-click Drogbar Stash##6478
+click Drogbar Stash
 collect Lohrumn's Shoulderguard##129976 |q 40185/1 |goto Highmountain/21 44.86,21.67
 step
 label "Slay_Drogbars_In_Whitewater_Wash_Leatherworking"
@@ -2516,7 +2516,7 @@ Follow the path up |goto Highmountain/0 57.82,93.12 < 20 |only if walking
 click Wisdom of Lohfal##6477
 Receive the Wisdom of Lohfal |q 40205/1 |goto Highmountain/0 58.04,95.70
 step
-click Scale of Deathwing##6478
+click Scale of Deathwing
 collect Scale of Deathwing##130098 |q 40203/1 |goto Highmountain/29 42.38,62.93
 step
 Follow the path |goto Highmountain/30 52.90,65.01 < 20 |walk
@@ -2558,7 +2558,7 @@ step
 Leave the cave |goto 27.11,72.41 < 15 |walk
 Follow the path down |goto 28.29,73.12 < 20 |only if walking
 Follow the path down |goto 30.03,72.68 < 30 |only if walking
-Cross the Bridge |goto 30.31,79.52 < 20 |only if walking
+Cross the bridge |goto 30.31,79.52 < 20 |only if walking
 Jump down carefully here |goto 32.24,81.15 < 15 |only if walking
 kill Felsoul Ravener##108314+
 collect 5 Fel Hound Corpse##130129 |q 40213/1 |goto 32.75,76.98
@@ -2965,7 +2965,7 @@ accept Trading for Dreams##44112 |goto 70.46,46.40
 step
 Cross the bridge |goto 73.17,42.67 < 20 |only if walking
 Run up the stairs |goto 73.73,40.94 < 20 |only if walking
-click Dreamer's Tear##6478
+click Dreamer's Tear
 collect Dreamer's Tear Leaves##136835 |q 44112 |goto 73.44,38.63
 step
 Use the Nightborne Flask |use Nightborne Flask##136836
@@ -4293,6 +4293,820 @@ Reach Level 800 Blacksmithing |skill Blacksmithing,800 |goto 54.56,84.08
 step
 _Congratulations!_
 You reached level 800 with the Blacksmithing profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Tailoring\\Legion\\Tailoring Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Tailoring Profession |condition skill("Tailoring")>=1 |goto Dalaran L/10 34.97,34.63
+step
+talk Tanithria##93542
+|tip Inside the building.
+accept Sew It Begins##38944 |goto 34.99,34.61
+step
+collect 10 Shal'dorei Silk##124437 |q 38944/1
+|tip Use the "Shal'dorei Silk" farming guide to accomplish this.
+|tip You can also buy them from the Auction House.
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin Sew It Begins##38944 |goto 34.99,34.61
+accept This Should Be Simple... Right?##38945 |goto 34.99,34.61
+step
+click Tanithria's Red Dye
+|tip It looks like a small glass bottle with red liquid in it on the shelf.
+collect Tanithria's Red Dye##127291 |goto 35.39,34.96 |q 38945
+step
+click Tanithria's Purple Dye
+|tip It looks like a small glass bottle with purple liquid in it on the shelf.
+collect Tanithria's Purple Dye##127289 |goto 35.56,34.90 |q 38945
+step
+click Tanithria's Thread
+|tip It looks like a spool of thread sitting on a box.
+collect Tanithria's Thread##127287 |goto 35.75,34.74 |q 38945
+step
+click Tanithria's Silkweave
+|tip It looks like a green rectangle board leaning against the table.
+collect 20 Tanithria's Silkweave##127286 |goto 35.39,33.81 |q 38945
+step
+click Tanithria's Finishing Table
+_<Create 1 Handcrafted Silkweave Robe>_
+Craft a Silkweave Robe at Tanithria's Finishing Table |q 38945/1 |goto 35.13,33.86
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin This Should Be Simple... Right?##38945 |goto 35.00,34.57
+accept Consult the Locals##38946 |goto 35.00,34.57
+step
+Follow the road |goto Azsuna/0 63.29,33.86 < 30 |only if walking
+talk Lyndras##93967
+|tip He walks around.
+turnin Consult the Locals##38946 |goto Azsuna/0 59.99,34.49
+accept Runic Catgut##38947 |goto Azsuna/0 59.99,34.49
+accept Hard Times##38948 |goto Azsuna/0 59.99,34.49
+step
+Kill Hatecoil enemies around this area
+|tip Avoid the Hatecoil Skrog giants that patrol around.
+|tip They will not drop the quest item.
+collect Hatecoil Wristwraps##127039 |q 38948/2 |goto 62.53,37.42
+step
+Follow the path up |goto 61.74,35.40 < 30 |only if walking
+Follow the road |goto 62.98,34.32 < 30 |only if walking
+Follow the road |goto 63.48,31.79 < 30 |only if walking
+Follow the path |goto 64.00,26.60 < 30 |only if walking
+Continue following the road |goto 60.25,20.58 < 30 |only if walking
+Follow the path |goto 56.90,18.64 < 30 |only if walking
+Kill enemies around this area
+collect Stained Silken Robe##127038 |q 38948/1 |goto 55.73,17.29
+step
+Follow the path up |goto 54.76,16.44 < 30 |only if walking
+Follow the road |goto 51.71,17.11 < 30 |only if walking
+Continue following the road |goto 50.76,19.42 < 30 |only if walking
+Follow the road |goto 50.35,24.62 < 30 |only if walking
+Follow the path |goto 50.94,27.44 < 30 |only if walking
+kill Llothien Prowler##90313+
+collect 3 Runic Catgut##127037 |q 38947/1 |goto 53.81,28.52
+step
+Follow the path |goto 55.15,28.94 < 40 |only if walking
+Follow the path up |goto 55.93,27.79 < 30 |only if walking
+Follow the road |goto 57.89,27.39 < 30 |only if walking
+Continue following the road |goto 58.66,31.13 < 30 |only if walking
+talk Lyndras##93967
+|tip He walks around.
+turnin Runic Catgut##38947 |goto 60.07,34.85
+turnin Hard Times##38948 |goto 60.07,34.90
+accept So You Think You Can Sew##38949 |goto 60.07,34.90
+step
+click Lyndras' Runic Catgut
+|tip It looks like a spool of red thread on the table.
+collect Lyndras' Runic Catgut##127343 |goto 60.05,34.64 |q 38949
+step
+click Lyndras' Finishing Table
+_<Create 1 Rune-Threaded Silkweave Robe>_
+collect Rune-Threaded Silkweave Robe##127344 |q 38949/1 |goto 60.04,34.66
+step
+click Lyndras' Finishing Table
+_<Create 1 Rune-Threaded Silkweave Bracers>_
+collect Rune-Threaded Silkweave Bracers##127345 |q 38949/2 |goto 60.04,34.66
+step
+talk Lyndras##93967
+|tip He walks around.
+turnin So You Think You Can Sew##38949 |goto 60.08,34.87
+accept The Wayward Tailor##38950 |goto 60.08,34.87
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+Speak with Lalla Brightweave |q 38950/1 |goto Dalaran L/10 36.07,32.92
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin The Wayward Tailor##38950 |goto 35.00,34.59
+step
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Lyndras##93967
+|tip Inside the building.
+accept A Needle Need##38951 |goto 36.12,33.90
+step
+Follow the path |goto Val'sharah/0 54.83,75.14 < 30 |only if walking
+Follow the path |goto Val'sharah/0 54.33,78.97 < 30 |only if walking
+Kill enemies around this area
+collect 150 Spritethorn##127042 |q 38951/1 |goto Val'sharah/0 53.66,82.22
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin A Needle Need##38951 |goto Dalaran L/10 35.00,34.59
+accept Meticulous Precision##38952 |goto Dalaran L/10 35.00,34.59
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Watch the dialogue
+collect Sharpened Spritethorn##127043 |q 38952/1 |goto 40.27,34.68
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Meticulous Precision##38952 |goto 36.13,33.94
+accept Advanced Needlework##38953 |goto 36.13,33.94
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+buy 2 Runic Catgut##127037 |n
+collect 2 Runic Catgut##127037 |goto 36.07,32.93 |q 38953
+step
+click Tanithria's Sharpened Spritethorns
+|tip It looks like a small brown wooden crate on the floor.
+collect Tanithria's Sharpened Spritethorn##127382 |goto 35.67,34.59 |q 38953
+step
+click Tanithria's Blue Dye
+|tip It looks like a small glass bottle with blue liquid in it on the shelf.
+collect Tanithria's Blue Dye##127290 |goto 35.46,34.94 |q 38953
+step
+click Tanithria's Green Dye
+|tip It looks like a small glass bottle with green liquid in it on the shelf.
+collect Tanithria's Green Dye##127292 |goto 35.30,34.99 |q 38953
+step
+click Tanithria's Finishing Table
+_<Create 1 Basic Silkweave Robe>_
+collect Basic Silkweave Robe##127359 |goto 35.11,33.79 |q 38953
+step
+click Tanithria's Finishing Table
+_<Create 1 Embroidered Silkweave Robe>_
+collect Embroidered Silkweave Robe##127360 |q 38953/1 |goto 35.11,33.79
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Advanced Needlework##38953 |goto 36.12,33.94
+step
+Reach Level 104 |ding 104
+|tip Use the Leveling guides to accomplish this.
+step
+talk Tanithria##93542
+|tip Inside the building.
+accept Where's Lyndras?##38954 |goto 34.97,34.59
+step
+talk Raethan##97359
+Tell him _"I want to hire a personal bodyguard."_
+|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+Click Here After Hiring a Bodyguard |confirm |goto Dalaran L/11 68.99,58.38 |q 38954
+step
+Follow the path down |goto 64.50,58.65 < 15 |walk
+Run up the stairs |goto 59.30,76.35 < 15 |walk
+Run down the stairs |goto 68.61,80.17 < 15 |walk
+talk Lyndras##93967
+Find Lyndras |q 38954/1 |goto Dalaran L/11 78.02,88.62
+step
+Run up the stairs |goto 73.02,82.95 < 15 |walk
+Follow the path |goto 46.40,47.08 < 20 |walk
+Follow the path |goto 34.58,43.57 < 15 |walk
+Follow the path |goto 29.44,49.33 < 15 |walk
+talk Lyndras##93967
+|tip Inside the building.
+turnin Where's Lyndras?##38954 |goto Dalaran L/10 36.12,33.94
+accept Sew Far, Sew Good##38955 |goto Dalaran L/10 36.12,33.94
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+buy 1 Runic Catgut##127037 |n
+collect Runic Catgut##127037 |goto 36.07,32.93 |q 38955
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+buy 1 Sharp Spritethorn##127681 |n
+collect Sharp Spritethorn##127681 |goto 36.07,32.93 |q 38955
+step
+click Tanithria's Blue Dye
+|tip It looks like a small glass bottle with blue liquid in it on the shelf.
+collect Tanithria's Blue Dye##127290 |goto 35.46,34.94 |q 38955
+step
+click Tanithria's Finishing Table
+_<Create 1 Handcrafted Silkweave Bag>_
+collect Handcrafted Silkweave Bag##127361 |q 38955/1 |goto 35.11,33.79
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Sew Far, Sew Good##38955 |goto 36.13,33.94
+step
+Reach Level 106 |ding 106
+|tip Use the Leveling guides to accomplish this.
+step
+talk Tanithria##93542
+|tip Inside the building.
+accept Where's Lyndras Again?##38956 |goto 35.01,34.59
+step
+talk Lyndras##93967
+|tip Upstairs inside the building.
+Find Lyndras Again |q 38956/1 |goto 49.99,39.46
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Where's Lyndras Again?##38956 |goto 36.12,33.92
+accept Taking Inspiration##38957 |goto 36.12,33.92
+step
+talk Ainderu Summerleaf##93525
+accept The Right Color##38958 |goto 36.48,34.36
+step
+Follow the path down |goto Stormheim/0 60.46,52.05 < 20 |only if walking
+Jump down here |goto Stormheim/0 63.99,53.10 < 20 |only if walking
+Kill Bonespeaker enemies around this area
+|tip You can find more to the southeast.
+collect 6 Runed Breeches##127044 |q 38957/1 |goto Stormheim/0 64.42,51.44
+step
+Follow the path down |goto 63.33,48.89 < 30 |only if walking
+Carefully jump down here |goto 62.08,48.02 < 20 |only if walking
+Follow the path down |goto 61.16,48.33 < 30 |only if walking
+Follow the path |goto 59.49,46.58 < 30 |only if walking
+Jump down here |goto 58.53,45.27 < 20 |only if walking
+kill Fleshripper Helsquid##110981+
+|tip They are spread out underwater around this area.
+collect 10 Helsquid Ink##127046 |q 38958/1 |goto 57.72,41.84
+step
+talk Ainderu Summerleaf##93525
+|tip Inside the building.
+turnin The Right Color##38958 |goto Dalaran L/10 36.49,34.36
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Taking Inspiration##38957 |goto 36.13,33.94
+step
+Reach Level 108 |ding 108
+|tip Use the Leveling guides to accomplish this.
+step
+talk Lyndras##93967
+|tip Inside the building.
+accept Left Behind##38959 |goto 36.13,33.94
+accept Lining Them Up##38960 |goto 36.13,33.94
+step
+Jump down here |goto Azsuna/0 61.99,32.35 < 20 |only if walking
+kill Llothien Grizzly##90134+
+|tip Curiously, it seems most of these bears do not have fur.
+|tip /cry
+collect 15 Bear Fur##127047 |q 38960/1 |goto Azsuna/0 59.73,32.03
+step
+click Box of Measuring Tools
+collect Box of Measuring Tools##135526 |q 38959/2 |goto 59.93,34.50
+step
+click Lyndras' Threading Needles
+collect Lyndras' Threading Needles##135527 |q 38959/3 |goto 59.93,34.73
+step
+click Lyndras' Shears
+collect Lyndras' Pinking Shears##135525 |q 38959/1 |goto 60.10,34.88
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin Left Behind##38959 |goto Dalaran L/10 36.12,33.95
+turnin Lining Them Up##38960 |goto Dalaran L/10 36.12,33.95
+accept The Final Lesson?##38963 |goto Dalaran L/10 36.12,33.95
+step
+click Tanithria's Blue Dye
+|tip It looks like a small glass bottle with blue liquid in it on the shelf.
+collect Tanithria's Blue Dye##127290 |goto 35.45,34.96 |q 38963
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+buy 3 Runic Catgut##127037 |n
+collect 3 Runic Catgut##127037 |goto 36.07,32.93 |q 38963
+step
+talk Lalla Brightweave##93524
+|tip Inside the building.
+buy 1 Sharp Spritethorn##127681 |n
+collect Sharp Spritethorn##127681 |goto 36.07,32.93 |q 38963
+step
+click Box of Bear Fur
+|tip It looks like a red crate on the floor.
+collect 5 Bear Fur##135538 |q 38963 |goto 35.45,33.70
+step
+collect 15 Shal'dorei Silk##124437 |q 38963
+|tip Use the "Shal'dorei Silk" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+click Tanithria's Finishing Table
+_<Create 1 Silkweave Hood: Outer Layer>_
+collect Silkweave Hood: Outer Layer##127363 |goto 35.11,33.79 |q 38963
+step
+click Tanithria's Finishing Table
+_<Create 1 Silkweave Hood Lining>_
+collect Silkweave Hood Lining##127364 |goto 35.11,33.79 |q 38963
+step
+click Tanithria's Finishing Table
+_<Create 1 Handcrafted Silkweave Hood>_
+collect Handcrafted Silkweave Hood##127367 |q 38963/1 |goto 35.11,33.79
+step
+talk Lyndras##93967
+|tip Inside the building.
+turnin The Final Lesson?##38963 |goto 36.10,33.92
+accept The Depraved Nightfallen##38961 |goto 36.10,33.92
+step
+_Enter the Eye of Azshara Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+kill Wrath of Azshara##96028
+|tip Use the Eye of Azshara dungeon guide to accomplish this.
+collect Heart of the Storm##127048 |q 38961/1
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin The Depraved Nightfallen##38961 |goto 35.00,34.57
+step
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
+step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+talk Tanithria##93542
+|tip Inside the building.
+accept Where's Lyndras Now?##38964 |goto 35.00,34.57
+step
+talk Linzy Blackbolt##92456
+|tip Inside the building.
+Tell her _"I heard you may have seen Lyndras?"_
+Talk to Linzy |q 38964/1 |goto 42.02,31.79
+step
+_Click the Quest Complete Box:_
+turnin Where's Lyndras Now?##38964
+accept Where's Lyndras: Sewer Sleuthing##39602
+step
+talk Raethan##97359
+Tell him _"I want to hire a personal bodyguard."_
+|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+Click Here After Hiring a Bodyguard |confirm |goto Dalaran L/11 68.99,58.38 |q 39602
+step
+Follow the path down |goto 64.48,58.65 < 15 |walk
+talk Flitz##96347
+|tip Under the wooden stairs and platform.
+Track Down Lyndras |q 39602/1 |goto 67.23,67.80
+step
+_Click the Quest Complete Box:_
+turnin Where's Lyndras: Sewer Sleuthing##39602
+accept Where's Lyndras: Downward Spiral##39605
+step
+Follow the path |goto Dalaran L/10 56.85,56.91 < 20 |only if walking
+click Broken Ley Flame Burner
+turnin Where's Lyndras: Downward Spiral##39605 |goto Dalaran L/10 55.82,68.45
+accept Where's Lyndras: Leyflame Larceny##39667 |goto Dalaran L/10 55.82,68.45
+step
+talk Violet Hold Guard##96444
+Ask About Lyndras |q 39667/1 |goto 65.28,67.99
+step
+talk Violet Hold Guard##96444
+turnin Where's Lyndras: Leyflame Larceny##39667 |goto 65.28,67.99
+accept Into the Hold##38965 |goto 65.28,67.99
+step
+_Enter the Assault on Violet Hold Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+Kill the Final Boss in the Dungeon
+|tip Use the Assault on Violet Hold dungeon guide to accomplish this.
+collect Violet Hold Prison Key##135556 |q 38965/1
+|tip WARNING: Don't leave the dungeon after looting the prison key, there's more to do for the quest.
+step
+click Prison Barrier
+Open Lyndras' Cell |q 38965/2 |goto Violet Hold/1 42.29,36.18
+step
+kill Lyndras##104529
+End Lyndras' Misery |q 38965/3 |goto 41.93,35.27
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin Into the Hold##38965 |goto Dalaran L/10 35.01,34.57
+accept Secret Silkweaving Methods##38966 |goto Dalaran L/10 35.01,34.57
+step
+click Tanithria's Green Dye
+|tip It looks like a small glass bottle with green liquid in it on the shelf.
+collect Tanithria's Green Dye##127292 |goto 35.31,34.96 |q 38966
+step
+click Tanithria's Sharpened Spritethorns
+|tip It looks like a small brown wooden crate on the floor.
+collect Tanithria's Sharpened Spritethorn##127382 |goto 35.67,34.61 |q 38966
+step
+talk Alard Schmied##92183
+|tip Inside the building.
+collect Alard's Brimstone Shavings##127680 |goto 44.17,28.71 |q 38966
+step
+talk Lalla Brightweave##93524
+buy 5 Runic Catgut##127037 |n
+collect 5 Runic Catgut##127037 |goto 36.07,32.93 |q 38966
+step
+click Tanithria's Dyeing Tub
+|tip Click the dialogue options.
+|tip Do this twice.
+collect 2 Bolt of Brimstone-Soaked Silkweave##127368 |q 38966 |goto 35.16,34.76
+step
+collect 10 Shal'dorei Silk##124437 |q 38966
+|tip Use the "Shal'dorei Silk" farming guide to accomplish this.
+|tip You can also buy them from the Auction House.
+step
+click Tanithria's Finishing Table
+_<Create 2 Silkweave Bracer Lining>_
+collect 2 Silkweave Bracer Lining##127372 |goto 35.13,33.81 |q 38966
+step
+click Tanithria's Finishing Table
+_<Create 1 Silkweave Bracer: Outer Layer>_
+collect Silkweave Bracer: Outer Layer##127370 |goto 35.13,33.81 |q 38966
+step
+click Tanithria's Finishing Table
+_<Create 1 Masterwork Silkweave Bracers>_
+collect Masterwork Silkweave Bracers##127373 |q 38966/1 |goto 35.13,33.81
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin Secret Silkweaving Methods##38966 |goto 35.00,34.59
+accept The Path to Suramar City##38962 |goto 35.00,34.59
+step
+_Using the Suramar Questing Guide:_
+|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
+|tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
+Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
+step
+Find a Safe Way to Move within Suramar City |q 38962/1
+step
+talk Tanithria##93542
+|tip Inside the building.
+turnin The Path to Suramar City##38962 |goto 34.99,34.59
+accept The Nightborne Connection##38967 |goto 34.99,34.59
+step
+Reach Level 485 Tailoring |skill Tailoring,485
+|tip Use the "Tailoring 1-600" profession guide to accomplish this.
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Bolt of Linen Cloth Recipe |learn Bolt of Linen Cloth##2963 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Brown Linen Robe Recipe |learn Brown Linen Robe##7623 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Bolt of Woolen Cloth Recipe |learn Bolt of Woolen Cloth##2964 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the White Woolen Dress Recipe |learn White Woolen Dress##8467 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Bolt of Mageweave Recipe |learn Bolt of Mageweave##3865 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Simple Black Dress Recipe |learn Simple Black Dress##12077 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Bolt of Frostweave Recipe |learn Bolt of Frostweave##55899 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Frostwoven Robe Recipe |learn Frostwoven Robe##55903 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Bolt of Embersilk Cloth Recipe |learn Bolt of Embersilk Cloth##74964 |goto 34.99,34.59
+step
+talk Tanithria##93542
+|tip Inside the building.
+Learn the Spiritmend Robe Recipe |learn Spiritmend Robe##75267 |goto 34.99,34.59
+step
+collect 6 Linen Cloth##2589 |q 38975 |future
+|tip Use the "Linen Cloth" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+collect 9 Wool Cloth##2592 |q 38975 |future
+|tip Use the "Wool Cloth" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+collect 12 Mageweave Cloth##4338 |q 38975 |future
+|tip Use the "Mageweave Cloth" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Frostweave Cloth##33470 |q 38975 |future
+|tip Use the "Frostweave Cloth" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+collect 30 Embersilk Cloth##53010 |q 38975 |future
+|tip Use the "Embersilk Cloth" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+collect 157 Shal'dorei Silk##124437 |q 38975 |future
+|tip Use the "Shal'dorei Silk" farming guide to gather these.
+|tip You can also buy them from the Auction House.
+step
+Follow the path |goto Suramar/0 42.75,78.56 < 20 |only if walking
+Follow the road |goto Suramar/0 41.13,77.24 < 30 |only if walking
+Follow the path down |goto Suramar/0 39.75,72.32 < 20 |only if walking
+Follow the path |goto Suramar/0 41.11,71.13 < 20 |only if walking
+Follow the path |goto Suramar/0 40.88,70.26 < 20 |only if walking
+talk Leyweaver Tytallo##93969
+|tip Inside the building.
+turnin The Nightborne Connection##38967 |goto Suramar/0 40.33,69.49
+accept Proof of Loyalty##38968 |goto Suramar/0 40.33,69.49
+step
+talk Leyweaver Inondra##93971
+|tip Inside the building.
+accept Master of Silkweave##38969 |goto 40.32,69.73
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 1 Shal'dorei Mannequin##127266 |n
+collect Shal'dorei Mannequin##127266 |goto 40.20,69.55 |q 38969
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 10 Runic Catgut##127037 |n
+collect 10 Runic Catgut##127037 |goto 40.20,69.55 |q 38969
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 2 Sharp Spitethorn##127681 |n
+collect 2 Sharp Spitethorn##127681 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Gloves>_
+collect Silkweave Gloves##126989 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Hood>_
+collect Silkweave Hood##126990 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Pantaloons>_
+collect Silkweave Pantaloons##126991 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Slippers>_
+collect Silkweave Slippers##126988 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Bracers>_
+collect Silkweave Bracers##126994 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Robe>_
+collect Silkweave Robe##126987 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Cinch>_
+collect Silkweave Cinch##126993 |goto 40.20,69.55 |q 38969
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Silkweave Epaulets>_
+collect Silkweave Epaulets##126992 |goto 40.20,69.55 |q 38969
+step
+Use the Shal'dorei Mannequin |use Shal'dorei Mannequin##127266
+Assemble the Silkweave Set |q 38969/1 |goto 40.20,69.55
+step
+talk Leyweaver Inondra##93971
+turnin Master of Silkweave##38969 |goto 40.32,69.73
+step
+kill Withered Shambler##98555+
+Slay #25# Suramar Withered |q 38968/1 |goto 34.78,51.96
+step
+Follow the path |goto Suramar/0 42.75,78.56 < 20 |only if walking
+Follow the road |goto Suramar/0 41.13,77.24 < 30 |only if walking
+Follow the path down |goto Suramar/0 39.75,72.32 < 20 |only if walking
+Follow the path |goto Suramar/0 41.11,71.13 < 20 |only if walking
+Follow the path |goto Suramar/0 40.88,70.26 < 20 |only if walking
+talk Leyweaver Tytallo##93969
+|tip Inside the building.
+turnin Proof of Loyalty##38968 |goto 40.33,69.49
+accept The Queen's Grace Loom##38970 |goto 40.33,69.48
+step
+click Teleportation Crystal |goto 40.24,69.73 |n
+Click Here After You Teleport |confirm |q 38970
+step
+talk Leyweaver Azayna##94242
+|tip Upstairs inside the building.
+Learn About the Queen's Grace Loom |q 38970/1 |goto 40.37,69.65
+step
+click Teleportation Crystal |goto 40.44,69.49 |n
+Click Here After You Teleport |confirm |q 38970
+step
+talk Leyweaver Tytallo##93969
+|tip Inside the building.
+turnin The Queen's Grace Loom##38970 |goto 40.33,69.49
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+accept Inspire Me!##38975 |goto 40.19,69.55
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 1 Coarse Thread##2320 |n
+collect Coarse Thread##2320 |goto 40.19,69.55 |q 38975
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 1 Fine Thread##2321 |n
+collect Fine Thread##2321 |goto 40.19,69.55 |q 38975
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 1 Heavy Silken Thread##8343 |n
+collect Heavy Silken Thread##8343 |goto 40.19,69.55 |q 38975
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 3 Eternium Thread##38426 |n
+collect 3 Eternium Thread##38426 |goto 40.19,69.55 |q 38975
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 5 Bleach##2324 |n
+collect 5 Bleach##2324 |goto 40.19,69.55 |q 38975
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+buy 1 Black Dye##2325 |n
+collect Black Dye##2325 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 3 Bolt of Linen Cloth>_
+collect 3 Bolt of Linen Cloth##2996 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 3 Bolt of Woolen Cloth>_
+collect 3 Bolt of Woolen Cloth##2997 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 3 Bolt of Mageweave>_
+collect 3 Bolt of Mageweave##4339 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 4 Bolt of Frostweave>_
+collect 4 Bolt of Frostweave##41510 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 6 Bolt of Embersilk Cloth>_
+collect 6 Bolt of Embersilk Cloth##53643 |goto 40.19,69.55 |q 38975
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Brown Linen Robe>_
+Craft a Brown Linen Robe Near Leyweaver Mithrogane |q 38975/1 |goto 40.19,69.55
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 White Woolen Dress>_
+Craft a White Woolen Dress Near Leyweaver Mithrogane |q 38975/2 |goto 40.19,69.55
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Simple Black Dress>_
+Craft a Simple Black Dress Near Leyweaver Mithrogane |q 38975/3 |goto 40.19,69.55
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Frostwoven Robe>_
+Craft a Frostwoven Robe Near Leyweaver Mithrogane |q 38975/4 |goto 40.19,69.55
+step
+Open Your Tailoring Crafting Panel:
+_<Create 1 Spiritmend Robe>_
+Craft a Spiritmend Robe Near Leyweaver Mithrogane |q 38975/5 |goto 40.19,69.55
+step
+talk Leyweaver Mithrogane##93976
+|tip Inside the building.
+turnin Inspire Me!##38975 |goto 40.19,69.55
+step
+Follow the path |goto Azsuna/0 66.99,26.52 < 50 |only if walking
+Follow the path down |goto Azsuna/0 69.07,26.09 < 20 |only if walking
+Follow the path up |goto Suramar/0 26.29,74.09 < 20 |only if walking
+Enter the cave |goto Suramar/0 27.31,72.95 < 15 |walk
+talk Leyweaver Athystro##93978
+accept Exotic Textiles##38971 |goto Suramar/0 26.63,71.40
+step
+Leave the cave |goto 27.11,72.41 < 15 |walk
+Follow the path down |goto 28.29,73.12 < 20 |only if walking
+Follow the path down |goto 30.03,72.68 < 30 |only if walking
+Cross the bridge |goto 30.31,79.52 < 20 |only if walking
+Follow the path |goto Suramar/23 36.46,87.73 < 20 |walk
+Follow the path |goto Suramar/23 59.75,78.14 < 20 |walk
+Follow the path |goto Suramar/23 51.59,72.60 < 20 |walk
+Follow the path |goto Suramar/23 42.00,67.76 < 20 |walk
+kill Djin'zal##94282
+collect Fel Inscribed Shroud##127281 |q 38971/1 |goto Suramar/23 35.46,40.17
+step
+Follow the path |goto 40.47,52.99 < 20 |walk
+Follow the path |goto 46.08,73.01 < 20 |walk
+Follow the path |goto 59.78,78.19 < 20 |walk
+Follow the path |goto 53.15,85.04 < 20 |walk
+Follow the path up |goto Suramar/0 33.98,81.62 < 30 |only if walking
+Cross the bridge |goto Suramar/0 31.81,81.58 < 20 |only if walking
+Follow the path up |goto 30.03,78.58 < 20 |only if walking
+Follow the path up |goto 29.30,71.88 < 20 |only if walking
+Enter the cave |goto 27.31,72.95 < 15 |walk
+talk Leyweaver Athystro##93978
+turnin Exotic Textiles##38971 |goto Suramar/0 26.63,71.40
+step
+Follow the road |goto Stormheim/0 60.39,53.98 < 30 |only if walking
+Follow the road |goto Stormheim/0 61.60,55.11 < 30 |only if walking
+Follow the road |goto Stormheim/0 65.43,54.73 < 30 |only if walking
+talk Leyweaver Tellumi##93977
+accept The Right Question##38974 |goto Stormheim/0 65.59,56.30
+step
+Enter the Halls of Valor Dungeon |goto Halls of Valor/2 47.72,8.68 < 10000 |noway |c |q 38974
+|tip Use the Group Finder to enter the dungeon.
+step
+kill Hymdall##107987
+|tip Use the Halls of Valor dungeon guide to accomplish this.
+collect Hymdall's Loincloth##135575 |q 38974/1 |goto Halls of Valor/2 47.73,43.41
+step
+kill Odyn##95676
+|tip Use the Halls of Valor dungeon guide to accomplish this.
+Defeat Odyn |q 38974/2
+step
+talk Leyweaver Tellumi##93977
+turnin The Right Question##38974 |goto Stormheim/0 65.59,56.30
+step
+_Congratulations!_
+You completed the Tailoring questline.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Tailoring\\Legion\\Tailoring 700-800",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Tailoring Quest Line" Guide
+Click Here to Continue |confirm
+step
+collect 650 Shal'dorei Silk##124437 |c |skill Tailoring,800
+|tip Use the "Shal'dorei Silk" farming guide to accomplish this.
+|tip You can also buy them from the Auction House.
+step
+collect 165 Arkhana##124440 |c |skill Tailoring,800
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons, if you have Enchanting.
+|tip You can also buy them from the Auction House.
+step
+Open Your Tailoring Crafting Panel:
+_<Create 55 Imbued Silkweave>_
+Reach Level 755 Tailoring |skill Tailoring,755
+collect 550 Imbued Silkweave##127004 |c |skill Tailoring,800
+step
+Follow the path up |goto Val'sharah/0 68.45,48.55 < 20 |only if walking
+talk Leyweaver Erenyi##93974
+buy 1 Pattern: Imbued Silkweave Cinch##127022 |n
+|tip This pattern costs 100 Shal'dorei Silk.
+Use the Pattern: Imbued Silkweave Cinch |use Pattern: Imbued Silkweave Cinch##127022
+Learn the Rank 1 Pattern for Imbued Silkweave Cinch |learn Imbued Silkweave Cinch##185927 |goto Val'sharah/0 70.45,46.40
+step
+talk Raethan##97359
+|tip For 5 gold, you can hire a bodyguard that will prevent you from attacking, or being attacked by, other players.
+|tip The bodyguard lasts for 5 minutes.
+Kill enemies around this area
+|tip Named enemies will appear throughtout the Underbelly.
+|tip You can see them on your minimap as gold star icons.
+|tip You can also kill other players, if you enjoy PvP.
+|tip If you have the "No Guards" debuff, this means the area is currently free-for-all PvP.
+|tip When the guards are present, the named PvE enemies will appear.
+collect 750 Sightless Eye |condition curcount(1149) >= 750 |goto Dalaran L/11 68.95,58.41
+step
+Follow the path down |goto 64.41,58.55 < 15 |walk
+Run up the stairs |goto 59.34,76.48 < 15 |walk
+talk Strap Bucklebolt##107760
+buy Pattern: Imbued Silkweave Cinch##137966 |n
+Use the Pattern: Imbued Silkweave Cinch |use Pattern: Imbued Silkweave Cinch##137966
+Learn the Rank 2 Pattern for Imbued Silkweave Cinch |learn Imbued Silkweave Cinch##185947 |goto 66.42,81.48
+step
+talk Strap Bucklebolt##107760
+buy Pattern: Imbued Silkweave Cinch##137974 |n
+Use the Pattern: Imbued Silkweave Cinch |use Pattern: Imbued Silkweave Cinch##137974
+Learn the Rank 3 Pattern for Imbued Silkweave Cinch |learn Imbued Silkweave Cinch##185955 |goto 66.42,81.48
+step
+collect 120 Blood of Sargeras##124124 |c |skill Tailoring,800
+|tip You can get these as rewards for certain world quests or killing dungeon bosses.
+|tip Use the "World Quests" guide and dungeon guides to accomplish this.
+|tip You can also get them by gathering with gathering professions at rank 2 or higher.
+|tip Use the Farming guides to accomplish this.
+step
+Open Your Tailoring Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 60 Imbued Silkweave Cinch>_
+|tip If you need to make more, craft more Imbued Silkweave.
+|tip You can also buy them from the Auction House.
+Reach Level 800 Tailoring |skill Tailoring,800
+step
+_Congratulations!_
+You reached level 800 with the Tailoring profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",

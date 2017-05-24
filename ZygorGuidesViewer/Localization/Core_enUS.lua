@@ -2235,7 +2235,7 @@ ZygorGuidesViewer_L("Specials", "enUS", function() return {
 	['contract_mobs_end'] = function(s) return ZygorGuidesViewer_L("Specials")['plural'](s) end,
 
 	['plural_unittest'] = function()
-		function test(s,p)
+		local function test(s,p)
 			local sp = ZygorGuidesViewer_L("Specials").plural(s)
 			if sp~=p then print("Pluralization failed: '"..s.."' -> '"..sp.."', should be '"..p.."'") end
 		end

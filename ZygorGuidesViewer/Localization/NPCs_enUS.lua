@@ -26778,4 +26778,9 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [92264]="Felsmith Nal'ryssa|",
 [107760]="Strap Bucklebolt|",
 [92265]="Urael|",
+[104529]="Lyndras|",
+[98555]="Withered Shambler|",
+[93978]="Leyweaver Athystro|",
+[94282]="Djin'zal|",
+[93977]="Leyweaver Tellumi|",
 } end)

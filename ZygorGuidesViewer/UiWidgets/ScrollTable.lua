@@ -16,6 +16,8 @@ ui:RegisterWidget("ScrollTable",ScrollTable)
 
 local SkinData = ZGV.UI.SkinData
 
+local HTMLColor=ZGV.HTMLColor
+
 local SCROLL_WIDTH=15		-- read only
 
 local ARROW_SPACE="      " -- sorting spacer

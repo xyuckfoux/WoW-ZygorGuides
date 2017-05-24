@@ -191,7 +191,7 @@ function Appraiser:Update()
 			if IA_RowNum>0 and IA_RowNum<INVENTORY_AUCTION_ROW_COUNT+1 then 
 				local row, color, own, desc, unitcolor, stackcolor, unitcolormode, stackcolormode
 				row = InventoryAuctionList.rows[IA_RowNum]
-				color = ArrayToStringColor(aucItem.stack_price > 0 and ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).sellcolor or ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).stagcolor)
+				color = ZGV.ArrayToStringColor(aucItem.stack_price > 0 and ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).sellcolor or ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).stagcolor)
 				unitcolor,unitcolormode = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "stack" and 5 -- mode for GetMoneyString
 				stackcolor,stackcolormode = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "unit" and 5 -- mode for GetMoneyString
 				own = (aucItem.own_auction==1 and "your ") or ""
@@ -283,7 +283,7 @@ function Appraiser:Update()
 			if SA_RowNum>0 and SA_RowNum<SHOPPING_AUCTION_ROW_COUNT+1 then 
 				local row, color, own, desc, unitcolor, stackcolor, unitcolormode, stackcolormode
 				row = ShoppingAuctionList.rows[SA_RowNum]
-				color = ArrayToStringColor(aucItem.stack_price > 0 and ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).buycolor or ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).stagcolor)
+				color = ZGV.ArrayToStringColor(aucItem.stack_price > 0 and ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).buycolor or ZGVG:GetPriceStatus(aucItem.itemid,aucItem.unit_price).stagcolor)
 				unitcolor,unitcolormode = (ZGV.db.profile.aucmode == "stack" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "stack" and 5
 				stackcolor,stackcolormode = (ZGV.db.profile.aucmode == "unit" and "|cff7f7f7f") or "", ZGV.db.profile.aucmode == "unit" and 5
 				own = (aucItem.own_auction==1 and "your ") or ""
@@ -646,7 +646,7 @@ local function Appraiser_SetTooltipData(tooltip, itemLink)
 
 		tooltip:AddDoubleLine("  |cffeeeeeeDemand (est. sold):|r ",trends_known and demand or "n/a")
 
-		tooltip:AddDoubleLine("  |cffeeeeeeStatus:|r ",ArrayToStringColor(statusColor)..statusText)
+		tooltip:AddDoubleLine("  |cffeeeeeeStatus:|r ",ZGV.ArrayToStringColor(statusColor)..statusText)
 
 		if ZGV.Gold.Scan and ZGV.db.realm.LastScan then
 			tooltip:AddDoubleLine("  |cffeeeeeeLast updated:|r ",("|c%s%s|r"):format(OldColor(ZGV.db.realm.LastScan,3600*2,60*10), ZGV.UI.GetTimeStamp(ZGV.db.realm.LastScan)))

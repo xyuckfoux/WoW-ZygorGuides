@@ -337,7 +337,7 @@ local function ViewList_Create()
 	 .__END
 end
 
-function ViewList_Show(path,flatgroup)
+local function ViewList_Show(path,flatgroup)
 	local VIEWLIST = FR.ViewList
 
 	if not path then path=Menu.path end

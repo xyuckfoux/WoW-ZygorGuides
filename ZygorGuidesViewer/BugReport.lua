@@ -689,7 +689,7 @@ function ZGV:GetBugReport(maint)
 
 	s = s .. "-- Flight Paths --\n"
 	if self.LibTaxi then
-		s = s .. table.concat(TableKeys(self.db.char.taxis)," , ")
+		s = s .. table.concat(ZGV.TableKeys(self.db.char.taxis)," , ")
 	end
 	s = s .. "\n\n"
 

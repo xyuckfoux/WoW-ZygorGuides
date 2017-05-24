@@ -3,7 +3,7 @@ if not ZGV then return end
 
 local _G=_G
 
-function ZGV_DeclineQuest()
+function ZGV.DeclineQuest()
 	ZGV.tmp_no_autoquest=time()
 end
 
@@ -50,7 +50,7 @@ function QuestFrameDetailPanel_OnShow_after()
 end
 --]]
 
-function QuestFrameDetailPanel_fixAutoQuest()
+local function QuestFrameDetailPanel_fixAutoQuest() -- deprecated anyway
 	if ZGV.db.profile.fixblizzardautoaccept and QuestFrame:IsVisible() and QuestFrame.autoQuest then
 		-- purely cosmetic approach
 		local q = ZGV:FindData(ZGV.quests,"title",GetTitleText())
@@ -78,7 +78,7 @@ tinsert(ZGV.startups,{"QAA setup",function(self)
 	self:AddEvent("QUEST_ACCEPTED")
 	self:AddEvent("QUEST_LOG_UPDATE",QuestFrameDetailPanel_fixAutoQuest)
 	--hooksecurefunc("QuestRewardCancelButton_OnClick",ZGV_QuestRewardCancelButton_OnClick)
-	hooksecurefunc("DeclineQuest",ZGV_DeclineQuest)
+	hooksecurefunc("DeclineQuest",ZGV.DeclineQuest)
 	--hooksecurefunc("QuestFrameDetailPanel_OnShow",QuestFrameDetailPanel_OnShow_after)
 	QuestFrameDetailPanel:HookScript("OnShow",QuestFrameDetailPanel_fixAutoQuest)
 end})

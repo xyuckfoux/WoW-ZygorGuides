@@ -191,7 +191,6 @@ local function ParseMapXYDist(text,insanefloor,returnmany)
 		return map,flr,x,y,dist, err
 	end
 end
-_G['ParseMapXYDist']=ParseMapXYDist
 Parser.ParseMapXYDist=ParseMapXYDist
 
 

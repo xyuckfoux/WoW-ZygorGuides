@@ -419,7 +419,7 @@ function Appraiser:SetBuyoutHistoricalData()
 
 	local selling_price, unit_price, empty = ZGVG:GetSellPrice(itemid,countForSellCalc)
 	local priceStatus = ZGVG:GetPriceStatus(itemid,empty and 0 or unit_price)
-	local statusColor = ArrayToStringColor(priceStatus.stagnant and priceStatus.stagcolor or priceStatus.buycolor)
+	local statusColor = ZGV.ArrayToStringColor(priceStatus.stagnant and priceStatus.stagcolor or priceStatus.buycolor)
 	local statusText = priceStatus.name..(priceStatus.stagnant and ", item stagnant" or "")
 	if priceStatus.stagnant then
 		Appraiser.Buy_Frame.activeStatus:SetFont(FONT,11)

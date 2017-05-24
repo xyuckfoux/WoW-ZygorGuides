@@ -116,10 +116,10 @@ function Skin:UpdateSkin()
 	ZygorGuidesViewerFrame_ScrollScrollBarScrollDownButton:SetSize(unpack(SkinData("ScrollBarButtonSize")))
 
 
-	SetNPHtx(ZygorGuidesViewerMapIcon,ZGV.DIR.."\\Skins\\zglogo")
+	ZGV.SetNPHtx(ZygorGuidesViewerMapIcon,ZGV.DIR.."\\Skins\\zglogo")
 	ZygorGuidesViewerMapIcon.back:SetTexture(ZGV.DIR.."\\Skins\\zglogo-back")
 
-	--SetNPHtx(ZygorGuidesViewerFrame_Border_Guides_GuideButton,SKINDIR.."\\leavesofsteel_dropdown_up",SKINDIR.."\\leavesofsteel_dropdown_down",SKINDIR.."\\leavesofsteel_dropdown_hi")
+	--ZGV.SetNPHtx(ZygorGuidesViewerFrame_Border_Guides_GuideButton,SKINDIR.."\\leavesofsteel_dropdown_up",SKINDIR.."\\leavesofsteel_dropdown_down",SKINDIR.."\\leavesofsteel_dropdown_hi")
 
 	--ZygorGuidesViewerFrame_Border_Top:SetTexture(SKINDIR.."\\leavesofsteel_top")
 

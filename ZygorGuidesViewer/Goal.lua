@@ -1868,7 +1868,7 @@ function Goal:IsDynamic()
 	return not not self.dynamicwaypoint
 end
 
-function FindPetActionInfo(action)
+function ZGV.FindPetActionInfo(action)
 	if type(action)=="number" then return action,GetPetActionInfo(action) end
 	for i=1,12 do
 		local name,x,tex = GetPetActionInfo(i)
@@ -1879,7 +1879,7 @@ end
 function Goal:IsActionable()
 	return (self.itemid and (GetItemCount(self.itemid)>0 or not self.itemuse))
 	    or (self.castspellid and IsUsableSpell(self.castspellid))
-	    or (self.petaction and FindPetActionInfo(self.petaction))
+	    or (self.petaction and ZGV.FindPetActionInfo(self.petaction))
 	    or ((self.script or self.macrosrc) and (self.action~="confirm")
 	    or (self.action=="poiannounce") or (self.action=="poi_treasure") or (self.action=="poi_rare")
 	    )
@@ -2084,7 +2084,7 @@ local function picktext(goal,goaltext)
 end
 -- This is a HUGE mess.
 
-function get_recipe(skill,spellid)
+local function get_recipe(skill,spellid)
 	if not skill or not spellid then return nil,"no_data" end
 	local skillid = ZGV.skillIDs[skill]
 	if not ZGV.db.char.RecipesKnown[skillid] then return nil,"no_prof" end

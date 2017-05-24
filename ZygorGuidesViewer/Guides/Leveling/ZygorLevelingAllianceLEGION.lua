@@ -24026,6 +24026,35 @@ talk Murr##110408
 turnin Champion Armaments##44228 |goto 57.29,52.50
 |only Warlock
 step
+talk Demonia Pickerin##113371
+|tip This quest will only be available if you chose to get the "Unleash Infernal" class hall upgrade.
+accept Unleashing our Wrath##44227 |goto 49.47,24.90
+|only Warlock
+step
+talk Demonia Pickerin##113371
+|tip The ritual will take 10 minutes to complete.
+Begin the Ritual |q 44227/1 |goto 49.47,24.90
+|only Warlock
+step
+click Enslaving Infernal
+|tip The ritual will take 10 minutes to complete.
+Collect the Demonic Phylactery |q 44227/2 |goto 49.82,24.41
+|only Warlock
+step
+_Open Your World Map:_
+|tip Open the map to any Legion zone that has world quests available.
+Use the Unleash Infernal ability
+|tip It appears as a button in the corner of maps that have world quests available.
+Complete a World Quest
+|tip Click any world quest you want to complete instantly.
+|tip You can only instantly complete the world quests that are highlighted after clicking the ability button.
+Use the "Unleash Infernal" Ability on Your Map |q 44227/3
+|only Warlock
+step
+talk Demonia Pickerin##113371
+turnin Unleashing our Wrath##44227 |goto 49.47,24.90
+|only Warlock
+step
 talk Initiate Da-Nel##112696
 |tip He appears next to you in Dalaran.
 accept Growing Power##42186 |goto Dalaran L/10 58.45,45.58

@@ -3892,7 +3892,6 @@ local function move_point_to_global(point)
 		point.gx,point.gy=point.x,point.y
 	end
 end
-_G['move_point_to_global']=move_point_to_global
 
 
 function Pointer:SetAntSpacing(spacing)

@@ -4,7 +4,7 @@
 
 local ZGV = ZygorGuidesViewer
 if not ZGV then return end
-Loot = ZGV.Loot 
+local Loot = ZGV.Loot 
 local CHAIN = ZGV.ChainCall
 
 Loot.SellItemsPopup = {}

@@ -2033,7 +2033,7 @@ function Foglight:PlaceHooks()
 		if not mapfile then return PreZygor_GetNumMapOverlays() end
 		if microName then mapfile=microName end
 		if not ZGV.Foglight.data[mapfile] then return PreZygor_GetNumMapOverlays() end
-		return #TableKeys(ZGV.Foglight.data[mapfile])
+		return #ZGV.TableKeys(ZGV.Foglight.data[mapfile])
 	end
 
 

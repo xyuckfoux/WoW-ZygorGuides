@@ -651,7 +651,7 @@ function Appraiser:SetSellHistoricalData()
 
 	local selling_price, unit_price, empty = ZGVG:GetSellPrice(itemid,countForSellCalc)
 	local priceStatus = ZGVG:GetPriceStatus(itemid,empty and 0 or unit_price,1,false,true) -- not using faked, include deals
-	local statusColor = ArrayToStringColor(priceStatus.stagnant and priceStatus.stagcolor or priceStatus.sellcolor)
+	local statusColor = ZGV.ArrayToStringColor(priceStatus.stagnant and priceStatus.stagcolor or priceStatus.sellcolor)
 	local statusText = priceStatus.name..(priceStatus.stagnant and ", item stagnant" or "")
 	if priceStatus.stagnant then
 		Appraiser.Inventory_Frame.activeStatus:SetFont(FONT,11)

@@ -10,6 +10,7 @@ local CHAIN = ZGV.ChainCall
 local ZGVG=ZGV.Gold
 local TRENDS_OLD = 24 * 4 --h
 
+local HTMLColor=ZGV.HTMLColor
 
 if not ZGV.Goldguide then ZGV.Goldguide = {} end
 local Goldguide = ZGV.Goldguide
@@ -213,7 +214,7 @@ local function MakeImgButton(name,texture,x,w,y,h,caption)
 		:SetTexture(texture)
 	.__END
 
-	BetterTexCoord(but.texture,x,w,y,h)
+	ZGV.BetterTexCoord(but.texture,x,w,y,h)
 	
 	but.caption = CHAIN(but:CreateFontString(but:GetName().."_c","LOW")) 
 		--:SetSize(200,20) 

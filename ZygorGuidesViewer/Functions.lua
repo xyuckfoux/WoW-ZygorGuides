@@ -3,7 +3,7 @@ if not ZGV then return end
 
 local tinsert,twipe,tsort=tinsert,table.wipe,table.sort
 
-function TableKeys (tab)
+function ZGV.TableKeys (tab)
 	local t={},k,v
 	for k,v in pairs(tab) do table.insert(t,k) end
 	return t
@@ -24,7 +24,7 @@ function ZGV.MergeTable (subj,into)
 	return into
 end
 
-function MOVE(frame)
+function ZGV.MOVE(frame)
 	if not frame then
 		frame = GetMouseFocus()
 		print("Moving: "..(frame:GetName() or tostring(frame)))
@@ -41,14 +41,14 @@ function MOVE(frame)
 	end
 end
 
-function RotatePair(x,y,ox,oy,a,asp)
+function ZGV.RotatePair(x,y,ox,oy,a,asp)
 	y=y/asp
 	oy=oy/asp
 	return ox + (x-ox)*math.cos(a) - (y-oy)*math.sin(a),
 	      (oy + (y-oy)*math.cos(a) + (x-ox)*math.sin(a))*asp
 end
 
-function RotateTex(self, angle)
+function ZGV.RotateTex(self, angle)
 	local s,c
 	s = sin(angle-225)
 	c = cos(angle-225)
@@ -58,17 +58,17 @@ function RotateTex(self, angle)
 			 0.5+s*0.7, 0.5-c*0.7)
 end
 
-function AnimRotOnUpdate(self,step)
+function ZGV.AnimRotOnUpdate(self,step)
 	if not self:GetParent():GetParent().angle then self:GetParent():GetParent().angle=0 end
 	self.step=step
-	RotateTex(self:GetParent():GetParent(),self:GetParent():GetParent().angle+self:GetSmoothProgress()*self.step)
+	ZGV.RotateTex(self:GetParent():GetParent(),self:GetParent():GetParent().angle+self:GetSmoothProgress()*self.step)
 end
 
-function AnimRotOnUpdate2(self)
+function ZGV.AnimRotOnUpdate2(self)
 	local tex = self.tex
 	if not tex.angle then tex.angle=0 end
 	tex.curangle = tex.angle+self:GetSmoothProgress()*(tex.targetangle-tex.angle)
-	RotateTex(tex,tex.curangle)
+	ZGV.RotateTex(tex,tex.curangle)
 end
 
 local function CreateTextureWithCoords(parent,texture,l,r,u,d,blend,flip)
@@ -86,14 +86,14 @@ end
 
 -- Ported from Skins.lua
 -- set textures in a button that has its normal/pushed/hilite textures named ntx,ptx,htx  - this was more useful some time ago...
-function SetNPHtx(but,n,p,h)
+function ZGV.SetNPHtx(but,n,p,h)
 	assert(but,"How am I to set textures in a nil!?")
 	but.ntx:SetTexture(n)
 	but.ptx:SetTexture(p or n)
 	but.htx:SetTexture(h or n)
 end
 
-function BetterTexCoord(obj,x,w,y,h)
+function ZGV.BetterTexCoord(obj,x,w,y,h)
 	obj:SetTexCoord((x-1)/w,x/w,(y-1)/h,y/h)
 end
 
@@ -136,7 +136,7 @@ function FixDropDownMenuFrameLevelBug_List_OnShow(self)
 end
 --]]
 
-function BigFixDropDownMenuFrameLevelBug()
+local function BigFixDropDownMenuFrameLevelBug()
 	for g=1,4 do
 		local list = _G['DropDownList'..g]
 		if list then
@@ -252,7 +252,7 @@ end
 
 -- HAR HAR we can into hexaccurate colors não
 -- at least we're as precise as WoW lua allows us to
-function HTMLColor(code)
+function ZGV.HTMLColor(code)
 	assert(code:match("#[0-9A-Fa-f]+$") and (#code==7 or #code==9),"Bogus code given: \""..code.."\")")
 	local r,g,b,a=tonumber("0x"..code:sub(2,3))/0xff,
 				  tonumber("0x"..code:sub(4,5))/0xff,
@@ -261,11 +261,11 @@ function HTMLColor(code)
 	return r,g,b,a
 end
 
-function ArrayToStringColor(array)
+function ZGV.ArrayToStringColor(array)
 	return string.format("|c%02x%02x%02x%02x", array[4]*0xff,array[1]*0xff,array[2]*0xff,array[3]*0xff)
 end
 
-function dig_in(data,...)
+function ZGV.dig_in(data,...)
 	for i=1,select("#",...) do
 		data = data[select(i,...)]
 		if not data then return end

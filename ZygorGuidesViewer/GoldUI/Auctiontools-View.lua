@@ -122,7 +122,7 @@ function Appraiser:CreateMainFrame()
 		:SetFrameStrata("HIGH")
 		:SetFrameLevel(AuctionFrame:GetFrameLevel()+1)
 		:SetToplevel(enable)
-		:SetBackdropColor(HTMLColor("#222222ff"))
+		:SetBackdropColor(ZGV.HTMLColor("#222222ff"))
 		.__END
 
 

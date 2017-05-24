@@ -224,7 +224,7 @@ function Guide:GetCompletionText()
 		-- Old equation: (self.endlevel-math.floor(self.endlevel))*20
 		-- New equation: floor((self.endlevel-math.floor(self.endlevel))*20+0.05)
 		-- ~~ Jeremiah
-		return math.floor(comp*100).."%", ("Level %3d (+%d bars) reached: %d%%"):format(self.endlevel,floor((self.endlevel-math.floor(self.endlevel))*20+0.05),math.floor(comp*100)) --- 2015-01-14 21:26:00
+		return math.floor(comp*100).."%", ("Level %3d (+%d bars) reached: %d%%"):format(self.endlevel,floor((self.endlevel-math.floor(self.endlevel))*20+0.05),math.floor(comp*100)) --- 2015-03-29
 	elseif self.completionmode=="steps" then
 		return math.floor(comp*100).."%", ("Steps completed: %d/%d"):format(a,b)
 	elseif self.completionmode=="macro" then
@@ -256,7 +256,7 @@ function Guide:Parse(fully)
 		local t1=debugprofilestop()
 
 		local lastparsed = {linenum=-2,linedata="-?-"}
-		local success,parsed,err,line,stepnum,linedata = coroutine_safe_pcall(function() return ZGV.Parser:ParseEntry(self,fully,lastparsed) end)
+		local success,parsed,err,line,stepnum,linedata = ZGV.coroutine_safe_pcall(function() return ZGV.Parser:ParseEntry(self,fully,lastparsed) end)
 
 		if fully then ZGV:Debug("&startup_parse Parsing guide: %s = %dms",self.title,debugprofilestop()-t1) end
 

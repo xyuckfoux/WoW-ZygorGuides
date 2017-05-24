@@ -42,7 +42,7 @@ turnin A Call to Action##44720 |goto Stormheim/0 60.14,50.74
 accept A Threat Rises##44771 |goto Stormheim/0 60.14,50.74
 step
 click Keg of Grog##229547
-Pour the Grog |havebuff Interface\Icons\INV_Drink_05 |goto 60.51,51.44 |q 44771
+Pour the Grog |havebuff 132792 |goto 60.51,51.44 |q 44771
 step
 Bring the Grog to Havi |q 44771/1 |goto 60.14,50.74
 step
@@ -2341,8 +2341,17 @@ kill Gloomscale Egg##111384+
 Destroy #24# Gloomscale Eggs |q 43738/2 |goto 33.58,60.31
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43344
+Follow the path |goto Val'sharah/0 55.49,55.06 < 30 |only if walking
+Follow the path |goto 57.51,52.25 < 15 |only if walking
+accept DANGER: Aodh Witherpetal##43344 |goto Val'sharah/0 59.66,50.56
+|tip You will accept this quest automatically.
+step
+kill Aodh Witherpetal##110346 |q 43344/1 |goto Val'sharah/0 59.66,50.56
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43346
-Follow the path |goto 68.15,48.48 < 30 |only if walking
+Follow the path |goto Val'sharah/0 68.15,48.48 < 30 |only if walking
 Cross the bridge |goto 66.69,45.83 < 30 |only if walking
 Follow the path |goto 65.01,43.39 < 30 |only if walking
 accept DANGER: Ealdis##43346 |goto Val'sharah/0 63.31,42.35
@@ -2525,6 +2534,15 @@ click Dreamleaf Bloom##0
 |tip The Owlbeasts will attack and kill the ancient, so you may have to wait for it to respawn.
 |tip There is a bloom inside the Ancient's mouth. Zoom in, it can be difficult to click.
 Dreamleaf Bloom gathered |q 41295/1 |goto 61.77,82.78
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46763
+Follow the path up |goto Val'sharah/0 70.58,51.54 < 25 |only if walking
+Follow the path |goto 72.57,51.77 < 25 |only if walking
+accept Drol'maz##46763 |goto Val'sharah/0 73.60,54.25
+|tip You will accept this quest automatically.
+step
+kill Drol'maz##120304 |q 46763/1 |goto 73.60,54.25
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43756
@@ -3289,6 +3307,14 @@ kill 3 Terrorfiend Bat##92794+ |q 41980/2 |goto 55.66,54.62
 step
 label "Ancient_Annihilator"
 kill Ancient Annihilator##110896 |q 41980/3 |goto 56.08,53.93
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45921
+Follow the path |goto Val'sharah/0 53.42,74.12 < 20 |only if walking
+accept Thal'xur##45921 |goto Val'sharah/0 57.15,54.02
+|tip You will accept this quest automatically.
+step
+kill Thal'xur##118016 |q 45921/1 |goto 50.65,73.95
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40279
@@ -4190,6 +4216,18 @@ label "Diseased_Grubs"
 kill 10 Diseased Grub##94688 |q 41095/3 |goto 43.33,58.74
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41202
+Follow the path |goto Highmountain/0 56.12,85.99 < 15 |only if walking
+Follow the path up |goto 54.63,89.59 < 20 |only if walking
+Enter the cave |goto 55.02,90.42 < 15 |walk
+accept Crude Leystone Seams##41202 |goto Highmountain/0 56.69,90.14
+|tip You will accept this quest automatically.
+step
+Follow the path |goto 56.69,90.14 < 20 |walk
+click Crude Leystone Seam##195122
+collect 6 Crude Leystone Ore##141221 |q 41202/1 |goto 57.63,92.08
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41685
 Cross the bridge |goto Highmountain/0 35.90,65.12 < 15 |only if walking
 Follow the path |goto 35.49,63.46 < 30 |only if walking
@@ -4270,7 +4308,7 @@ Cross the bridge |goto 51.28,76.07 < 20 |walk
 Follow the path |goto 51.19,78.33 < 30 |walk
 Face the slide and drop down to the ledge below |goto 50.29,78.06 < 15 |walk
 click Featherstone |goto 50.09,77.83
-Gain the Featherstone buff |havebuff Interface\Icons\ability_priest_angelicfeather
+Gain the Featherstone buff |havebuff 642580
 |tip Jump off the ledge and fall all the way down into the arena.
 |tip You won't take much fall damage because of the Featherstone.
 accept Darkbrul Arena##41013 |goto Highmountain/0 50.29,75.90
@@ -6797,6 +6835,16 @@ step
 click Powder Keg##6477
 |tip Jump off the ship after you click it.
 Ignite the Powder Kegs |q 43752/3 |goto 44.19,15.72
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41340
+Follow the path |goto Stormheim/0 49.14,35.93 < 25 |only if walking
+accept Perfect Storm Drake Scale##41340 |goto Stormheim/0 46.11,36.42
+|tip You will accept this quest automatically.
+step
+kill Adult Squallhunter##99223, Juvenile Squallhunter##107258
+|tip Skin the corpses.
+collect 12 Perfect Storm Drake Scale##134814 |q 41340/1 |goto 46.11,36.42
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43786
@@ -9787,6 +9835,19 @@ kill Deepsurge Defender##118683+, Deepsurge Tidesinger##118679+, Deepsurge Punis
 Kill #25# Deepsurge Naga |q 46068/2 |goto 75.65,27.66
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45805
+Follow the path |goto Broken Shore/0 44.03,58.27 < 25 |only if walking
+Follow the path |goto 46.94,58.48 < 20 |only if walking
+Follow the path |goto 51.85,52.53 < 25 |only if walking
+accept The Burning Keys##45805 |goto Broken Shore/0 58.80,46.70
+|tip You will accept this quest automatically.
+step
+kill Vile Keykeeper##118046, Dread Interrogator##118059
+collect Burning Key##143924 |n
+click Legion Cage##234410
+Rescue #10# prisoners |q 45805/1 |goto 58.80,46.70
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46201
 Follow the path |goto Broken Shore/0 68.64,47.35 < 25 |only if walking
 Follow the path |goto 64.85,50.25 < 25 |only if walking
@@ -10184,6 +10245,18 @@ kill Kraken Egg##118184+
 Break #6# Kraken Eggs |q 45472/2 |goto 54.86,76.51
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45776
+accept Keys are a Crutch##45776 |goto Broken Shore/0 51.69,52.65
+|tip You will accept this quest automatically.
+|only Rogue
+step
+click Legion Cage##1804
+Pick #10# Cage Locks |q 45776/1 |goto 58.94,45.88
+|tip These cages can be found all around this area.
+|tip Use your stealth ability to get around the mobs while looking for these cages.
+|next "Court_Of_Farondis_WQ"
+|only Rogue
+step
 label quest-46754
 accept Magical Beasts##46754 |goto Broken Shore/0 48.13,17.85
 |tip You will accept this quest automatically.
@@ -10390,6 +10463,16 @@ step
 label "Salving"
 kill Felborne Trapper##118676+, Felborne Magus##120205+
 Kill #12# Felborne |q 45550/1|goto 52.66,32.84
+|next "Court_Of_Farondis_WQ"
+step
+label quest-45626
+Cross the water |goto Broken Shore/0 45.60,23.28 < 25 |only if walking
+accept Set You Up the Bomb!##45626 |goto Broken Shore/0 44.33,27.35
+|tip You will accept this quest automatically.
+step
+kill Vile Broodling##117354+, Brood Beast##117425+
+Burn all of the things |q 45626/1 |goto 41.74,29.09
+|tip Stand near Tirisgarde Pyromancers to gain a stacking buff that deals fire damage.
 |next "Court_Of_Farondis_WQ"
 step
 label quest-46160
@@ -11228,6 +11311,11 @@ label rare-5307
 Enter the cave |goto Broken Shore/0 66.72,34.60 < 15 |walk
 kill Eye of Gurgh##116166 |q 47068 |goto 64.48,30.29 |future
 |tip Avoid standing in front of Eye of Gurgh during Chaos Glare.
+|next "Court_Of_Farondis_WQ"
+label rare-5293
+kill Felbringer Xar'thok##117093 |q 47133 |goto Broken Shore/0 58.88,46.08 |future
+|tip Avoid standing in areas targeted during Chaotic Felburst.
+|tip Don't stand in front of Xar'thok during Scorching Swipe.
 |next "Court_Of_Farondis_WQ"
 step
 label rare-5296

@@ -1102,7 +1102,7 @@ turnin The Eye Of Acherus##12636 |goto 51.3,35.2
 accept Death Comes From On High##12641 |goto 51.3,35.2
 step
 click Eye of Acherus Control Mechanism##8123 |goto Plaguelands: The Scarlet Enclave 51.0,36.3
-Take Control Over the Eye of Acherus |havebuff Spell_Shadow_UnholyFrenzy |q 12641
+Take Control Over the Eye of Acherus |havebuff 136224 |q 12641
 step
 Your World Map will NOT show your current position anymore!
 If you stay floating high enough the soldiers will not attack you
@@ -2179,7 +2179,7 @@ talk Apothecary Wormcrud##44912
 turnin It's Only Poisonous if You Ingest It##27088 |goto 44.8,20.9
 step
 talk Admiral Hatchet##44916
-Tell her _"I seem to have misplaced my Sea Pup."_ |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 27069 |goto 44.0,21.4
+Tell her _"I seem to have misplaced my Sea Pup."_ |havebuff 236452 |q 27069 |goto 44.0,21.4
 stickystart "seadogcrates"
 step
 kill 10 Bloodfang Scavenger##44549 |q 27073/1 |goto 40.0,26.9
@@ -2489,7 +2489,7 @@ accept Transdimensional Warfare: Chapter II##27513 |goto 58.1,69.9
 step
 clicknpc Ambermill Dimensional Portal##45752
 Select "_<Use the Ambermill Dimensional Portal.>_"
-Enter the Transdimensional Shift |havebuff INTERFACE\ICONS\spell_arcane_rune |q 27513 |goto 58.1,69.9
+Enter the Transdimensional Shift |havebuff 252267 |q 27513 |goto 58.1,69.9
 step
 kill Ambermill Watcher##1888+, Ambermill Magister##1914+, Ambermill Warder##1913+, Ambermill Miner##3578+, Ambermill Brewmaster##3577+, Ambermill Witchalok##1889+
 Kill #20# Ambermill Mages |q 27513/1 |goto 62.5,64.1
@@ -3528,7 +3528,7 @@ step
 Stay away from the trolls as you walk, or you will have to start over
 clicknpc Gurubashi Soldier##42871
 |tip It's sleeping on the ground, inside the tent.
-Steal Raptor Food |havebuff Interface\Icons\INV_Misc_Bag_10_Blue |q 26362 |goto 86.9,50.0
+Steal Raptor Food |havebuff 133641 |q 26362 |goto 86.9,50.0
 step
 Stay away from the trolls as you walk, or you will have to start over
 talk Tenjiyu##42882
@@ -5380,9 +5380,9 @@ step
 clicknpc Fiona's Caravan##45400 |goto 8.8,66.6
 Choose 1 of the 3 buffs you can choose from
 |tip All of the buffs only work while you're in Eastern Plaguelands. Fiona's Lucky Charm gives you a chance to loot extra gold or items from enemies. Gidwin's Weapon Oil gives you a chance to do extra Holy damage on melee and ranged attacks. Tarenar's Talisman gives you a chance to do extra Holy damage on successful spell attacks.
-Choose a Buff |havebuff INTERFACE\ICONS\inv_gauntlets_02 |or
-'| havebuff Interface\Icons\INV_Potion_101 |or
-'| havebuff Interface\Icons\INV_Jewelry_Necklace_16 |or
+Choose a Buff |havebuff 132936 |or
+'| havebuff 134723 |or
+'| havebuff 133303 |or
 step
 clicknpc Fiona's Caravan##45400
 Select "_Ride Fiona's Caravan to its next destination._"
@@ -5570,7 +5570,7 @@ step
 clicknpc Fiona's Caravan##45400
 Choose the _Argus' Journal_ quest
 |tip This will give you a 2% experience bonus while in Eastern Plaguelands, so will allow you to level faster.
-Get the XP Buff |havebuff INTERFACE\ICONS\inv_misc_book_17 |goto 53.0,53.1
+Get the XP Buff |havebuff 354719 |goto 53.0,53.1
 step
 talk Betina Bigglezink##11035
 accept To Kill With Purpose##27451 |goto 53.2,54.6
@@ -5634,7 +5634,7 @@ turnin Catalysm##27453
 accept Just a Drop in the Bucket##27454
 step
 use Death Cultist Disguise##61283
-Wear Your Death Cultist Disguise |havebuff INTERFACE\ICONS\inv_helmet_152 |q 27454 |goto 61.7,75.5
+Wear Your Death Cultist Disguise |havebuff 340019 |q 27454 |goto 61.7,75.5
 step
 click Mereldar Plague Cauldron##4331
 Select "_Throw in an entire flask._"
@@ -7575,7 +7575,7 @@ dynamic=true,
 step
 talk Zidormi##88206
 |tip In order to complete the Blasted Lands questline for Loremaster of Eastern Kingdoms you will need to speak with Zidormi to change the zone back to normal.
-Tell her _"Show me the Blasted Lands before the invasion."_ |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands/0 48.1,7.3
+Tell her _"Show me the Blasted Lands before the invasion."_ |havebuff 609811 |goto Blasted Lands/0 48.1,7.3
 only if havequest(34398) or completedq(34398)
 step
 talk Preda##43121
@@ -8773,7 +8773,7 @@ talk Shin Stonepillar##39380
 accept The Wolf and The Kodo##25205 |goto Durotar 44.9,14.8
 step
 talk Shin Stonepillar##39380
-Ask him _"Can you tell me your fable, Shin?"_ |havebuff Interface\Icons\Ability_Mount_Kodo_03 |q 25205 |goto Durotar 44.9,14.8
+Ask him _"Can you tell me your fable, Shin?"_ |havebuff 132245 |q 25205 |goto Durotar 44.9,14.8
 step
 As the wolf, run to this spot
 |tip If you don't see 2 kodos fighting, look around this area to find some, then go stand next to them.
@@ -9309,7 +9309,7 @@ use Grol'dom Net##46722
 |tip Use your Grol'dom Net on a Razormane Pillager.
 talk Razormane Pillager##34503
 Select _<Pound this chump.>_
-Drag a Razormane |havebuff Interface\Icons\INV_Misc_Head_Quillboar_01 |c |q 13961 |goto 56.1,43.4
+Drag a Razormane |havebuff 134172 |c |q 13961 |goto 56.1,43.4
 step
 Deliver the Razormane Prisoner |q 13961/1 |goto 56.6,40.3
 step
@@ -10101,7 +10101,7 @@ collect 20 Mountainfoot Iron##48128 |q 14197/1 |goto 26.7,70.1
 step
 clicknpc Mountainfoot Miner##35257
 |tip You only need one. They look like darker goblins standing in place around this area. Not all of them are clickable, so just search around until you find one you can click.
-Carry the Mountainfoot Miner |havebuff Interface\Icons\Ability_Warrior_IntensifyRage |q 14165 |goto 26.7,70.1
+Carry the Mountainfoot Miner |havebuff 236310 |q 14165 |goto 26.7,70.1
 step
 _Follow the path_ up and out |goto Azshara 25.8,68.6 < 10 |only if walking
 Deliver the Stonified Miner |q 14165/1 |goto 29.1,66.2
@@ -10253,7 +10253,7 @@ accept Need More Science##14424 |goto 29.6,66.9
 step
 talk Spirit of Kalytha##35567
 Select "_<Merge with the spirit.>_"
-Explore the Memories of Kalytha |havebuff Interface\Icons\Spell_Shadow_Twilight |q 14215 |goto Azshara 36.4,72.4
+Explore the Memories of Kalytha |havebuff 136223 |q 14215 |goto Azshara 36.4,72.4
 step
 talk Archmage Selwyn##35595
 Tell her _"Yes Archmage. I will hide the stone."_
@@ -10437,7 +10437,7 @@ accept Azsharite Experiment Number Two##14388 |goto Azshara 50.4,74.3
 step
 talk Assistant Greely##39199
 Tell her "_I'm ready. Shrink me!"_
-Become Mouse-sized! |havebuff Interface\Icons\Spell_Fire_ElementalDevastation |q 14388 |goto Azshara 50.4,74.3
+Become Mouse-sized! |havebuff 135791 |q 14388 |goto Azshara 50.4,74.3
 step
 clicknpc Rocketway Rat##36437
 Ride a Rat |invehicle |q 14388 |goto Azshara 50.3,74.4
@@ -10681,7 +10681,7 @@ accept Diplomacy by Another Means##14433 |goto 42.4,23.6
 step
 use Dingy Wizard Hat##49201
 equipped Dingy Wizard Hat##49201
-Convey the Appearance of Quite a Convincing Mage |havebuff INTERFACE\ICONS\inv_helmet_29 |q 14340 |goto 47.7,18.6
+Convey the Appearance of Quite a Convincing Mage |havebuff 133131 |q 14340 |goto 47.7,18.6
 step
 Approach Archmage Xylem While Wearing Your Wizard Hat |q 14340/1 |goto Azshara 47.2,20.9
 step
@@ -14062,7 +14062,7 @@ talk Griznak##40727
 accept Special Delivery for Brivelthwerp##28042 |goto 78.3,73.6
 step
 Jump into the water and use your River Boat |use River Boat##55121
-Ride Your Boat |havebuff Interface\Icons\INV_Helmet_66 |q 28042
+Ride Your Boat |havebuff 133168 |q 28042
 step
 talk Brivelthwerp##47383
 turnin Special Delivery for Brivelthwerp##28042 |goto 69.9,85.2
@@ -14112,7 +14112,7 @@ turnin Freezing the Pipes##28047 |goto 69.9,85.2
 turnin That Smart One's Gotta Go##28048 |goto 69.9,85.2
 step
 Jump into the water and use your River Boat |use River Boat##55121
-Ride Your Boat |havebuff Interface\Icons\INV_Helmet_66 |q 25596
+Ride Your Boat |havebuff 133168 |q 25596
 step
 _Follow_ the path up |goto 89.3,72.8 < 10 |only if walking
 talk Synge##40888
@@ -14128,7 +14128,7 @@ clicknpc Holdfast Cannon##40869+
 Destroy #8# Holdfast Cannons |q 25586/1 |goto 90.8,77.9
 step
 Jump into the water and use your River Boat |use River Boat##55121
-Ride Your Boat |havebuff Interface\Icons\INV_Helmet_66 |q 25589
+Ride Your Boat |havebuff 133168 |q 25589
 step
 talk Rugfizzle##40595
 turnin A Little Payback##25589 |goto 78.2,73.6
@@ -14293,7 +14293,7 @@ turnin Deliver the Goods##25826 |goto 75.9,74.7
 accept Free Freewind Post##25836 |goto 75.9,74.7
 step
 Jump into the water and use your River Boat |use River Boat##55121
-Ride Your Boat |havebuff Interface\Icons\INV_Helmet_66 |q 25836
+Ride Your Boat |havebuff 133168 |q 25836
 step
 talk Thalia Amberhide##41446
 turnin Free Freewind Post##25836 |goto 46.4,57.8
@@ -14408,7 +14408,7 @@ turnin Invoking the Serpent##27330 |goto 39.1,25.7
 accept Trouble at Highperch##28085 |goto 39.1,25.7
 step
 Jump into the water and use your River Boat |use River Boat##55121
-Ride Your Boat |havebuff Interface\Icons\INV_Helmet_66 |q 28085
+Ride Your Boat |havebuff 133168 |q 28085
 step
 _Follow_ the path |goto 13.8,33.8 < 10 |only if walking
 talk Pao'ka Swiftmountain##47471
@@ -14470,7 +14470,7 @@ accept Codemaster's Code##28139 |goto 30.5,49.3
 accept Behind You!##28136 |goto 30.5,49.3
 step
 Use your Bulwark Disguise |use Bulwark Disguise##63071
-Wear the Bulwark Disguise |havebuff INTERFACE\ICONS\inv_helm_plate_twilighthammer_c_01 |q 28136
+Wear the Bulwark Disguise |havebuff 391130 |q 28136
 step
 talk Commander Fastfuse##47620
 |tip He's at the top of the tower.
@@ -14495,7 +14495,7 @@ turnin Behind You!##28136 |goto 30.5,49.3
 accept The Elder Crone##28140 |goto 30.5,49.3
 step
 Use your Bulwark Disguise |use Bulwark Disguise##63071
-Wear the Bulwark Disguise |havebuff INTERFACE\ICONS\inv_helm_plate_twilighthammer_c_01 |q 28140
+Wear the Bulwark Disguise |havebuff 391130 |q 28140
 step
 click Magatha's Bonds Controller##9849
 Disable the Controller |q 28140/1 |goto 35.9,60.6
@@ -14769,7 +14769,7 @@ accept A Great Idea##24951 |goto 55.6,60.9
 step
 use Bootlegger Bug Bait##52031
 |tip Use your Bootlegger Bug Bait on a Hazzali Swarmer.
-Take control of a Hazzali Swarmer |havebuff Interface\Icons\Ability_Hunter_Pet_Silithid |q 24951 |goto 53.4,62.7
+Take control of a Hazzali Swarmer |havebuff 236195 |q 24951 |goto 53.4,62.7
 modelnpc Hazzali Swarmer##5451
 step
 Stand next to Zeke Bootscuff
@@ -14797,7 +14797,7 @@ turnin Returning a Favor##24905 |goto 44.6,52.7
 accept Un-Chartered##24955 |goto 44.6,52.7
 step
 use Refurbished Ogre Suit##52038
-Become an Ogre |havebuff Interface\Icons\achievement_reputation_ogre |q 24955 |goto 43.7,52.9
+Become an Ogre |havebuff 236695 |q 24955 |goto 43.7,52.9
 step
 talk Dunemaul Enforcer##5472
 Tell them _"You sign charter! Is good!"_
@@ -14978,7 +14978,7 @@ step
 Stand on the Mark of Tichondrius
 |tip It's a green glowing symbol on the ground.
 use Phaseblood Potion##62920
-Shift Into the Nether |havebuff Interface\Icons\Spell_Shadow_ImpPhaseShift |q 28044 |goto 40.95,75.75
+Shift Into the Nether |havebuff 136164 |q 28044 |goto 40.95,75.75
 step
 kill Vorlus##47398
 collect Claw of Tichondrius##62919 |q 28044/1 |goto 42.3,79.9
@@ -15323,7 +15323,7 @@ accept Deceivers In Our Midst##28261 |goto 45.6,20.1
 step
 _Follow the path_ up |goto 47.9,18.1 < 10 |only if walking
 use Sindweller Blindfold##63419
-Wear the Sindweller Blindfold |havebuff INTERFACE\ICONS\inv_misc_bandana_01 |q 28261 |goto 46.2,16.4
+Wear the Sindweller Blindfold |havebuff 133693 |q 28261 |goto 46.2,16.4
 step
 kill 12 Jadefire Shifter##48154 |q 28261/1 |goto 43.8,16.2
 step
@@ -16453,7 +16453,7 @@ accept Scouring the Desert##9422 |goto 54.5,62.9
 step
 click Silithyst Geyser##6862
 |tip They look like small pink rocks with holes in the top of them. They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally. You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |q 9422 |goto 50.0,49.9
+Surround yourself in Silithyst Dust |havebuff 135867 |q 9422 |goto 50.0,49.9
 They spawn in various locations, you find more at:
 Location 1 |goto 53.2,41.6
 Location 2 |goto 57.1,47.2
@@ -17015,21 +17015,21 @@ turnin The Shaper's Terrace##24694 |goto Un'Goro Crater 83.5,46.0
 accept Ever Watching From Above##24695 |goto Un'Goro Crater 83.5,46.0
 step
 click Bloodpetal Observation Lever##295
-Become a Bloodpetal |havebuff Interface\Icons\INV_Misc_Herb_Nightmarevine |q 24695 |goto Un'Goro Crater 83.5,45.3
+Become a Bloodpetal |havebuff 134218 |q 24695 |goto Un'Goro Crater 83.5,45.3
 step
 Use the abilities on your hotbar
 kill Bloodpetal Flayer##6510+
 Complete the Bloodpetal Observation |q 24695/1 |goto Un'Goro Crater 66.8,30.6
 step
 click Pterrordax Observation Lever##295
-Become a Pterrordax |havebuff Interface\Icons\INV_Misc_LeatherScrap_13 |q 24695 |goto Un'Goro Crater 84.0,45.6
+Become a Pterrordax |havebuff 134262 |q 24695 |goto Un'Goro Crater 84.0,45.6
 step
 Use the Pterrordash ability on your hotbar
 Fly upward
 Complete the Pterrordax Observation |q 24695/4 |goto Un'Goro Crater 37.8,33.5
 step
 click Gorilla Observation Lever##295
-Become a Gorilla |havebuff Interface\Icons\Ability_Hunter_Pet_Gorilla |q 24695 |goto Un'Goro Crater 84.0,46.4
+Become a Gorilla |havebuff 132189 |q 24695 |goto Un'Goro Crater 84.0,46.4
 step
 talk Un'Goro Stomper##6513, Un'Goro Gorilla##6514, Un'Goro Thunderer##6516
 |tip They can only be found inside the cave.
@@ -17037,7 +17037,7 @@ Ask them, _"What can you teach me?"_
 Complete the Gorilla Observation |q 24695/3 |goto Un'Goro Crater 63.2,17.0
 step
 click Diemetradon Observation Lever##295
-Become a Diemetradon |havebuff Interface\Icons\INV_Misc_MonsterScales_12 |q 24695 |goto Un'Goro Crater 83.5,46.7
+Become a Diemetradon |havebuff 134314 |q 24695 |goto Un'Goro Crater 83.5,46.7
 step
 Use your Bite ability on your hotbar on any Humanoid in the Marshal's Stand camp
 Bite 5 Humanoids
@@ -17308,7 +17308,7 @@ clicknpc Eye of Grillok##19440+
 use Zezzak's Shard##31463
 |tip Use Zezzak's Shard on an Eye of Grillok.
 |tip It has to channel for 3 seconds and turn your character green. They look like a floating green eye
-Absorb an Eye of Grillok |havebuff Interface\Icons\Spell_Nature_ElementalShields |q 10813 |goto 66.4,74
+Absorb an Eye of Grillok |havebuff 136030 |q 10813 |goto 66.4,74
 step
 Return the Eye of Grillok |q 10813/1 |goto 61.7,81.9
 step
@@ -18807,7 +18807,7 @@ accept Who Are They?##10041 |goto 39,43.7
 step
 talk Scout Neftis##18714
 Tell her _"Scout Neftis, I need another disguise."_
-Let Scout Neftis put an Orc disguise on you |havebuff Interface\Icons\Spell_Shadow_NetherCloak |q 10041 |goto 39,43.7
+Let Scout Neftis put an Orc disguise on you |havebuff 136177 |q 10041 |goto 39,43.7
 step
 _Careful!_ Mounting will cause the disguise to come off
 talk Shadowy Advisor##18719
@@ -20530,7 +20530,7 @@ confirm |q 10819
 step
 use Felsworn Gas Mask##31366
 |tip Use your Felsworn Gas Mask to equip it.
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |q 10894
+Wear the Felsworn Gas Mask |havebuff 133133 |q 10894
 click Legion Communicator##7091
 |tip It is between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator.
 turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
@@ -20540,7 +20540,7 @@ kill 4 Doomforge Attendant##19961 |q 10820/1 |goto 74.9,39.9
 kill 4 Doomforge Engineer##19960 |q 10820/2 |goto 74.9,39.9
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |q 10894
+Wear the Felsworn Gas Mask |havebuff 133133 |q 10894
 click Legion Communicator##7091
 turnin Deceive thy Enemy##10820 |goto 73.3,40.1
 |tip Between 2 big green floating crystals. Click the Legion Communicator. You must be wearing the Felsworn Gas Mask to use the Legion Communicator.
@@ -20589,7 +20589,7 @@ kill 10 Bloodmaul Mauler##19993 |q 10784/1 |goto 56.2,26.7
 kill 5 Bloodmaul Warlock##19994 |q 10784/2 |goto 56.2,26.7
 step
 use Kodohide Drum##31141 |goto 56.4,29.2
-Coax a Marmot |havebuff Interface\Icons\INV_Misc_Drum_01 |q 10720
+Coax a Marmot |havebuff 133841 |q 10720
 step
 Use the _Poison Keg_ ability on your action bar
 Poison the Keg of Ripe Moonshine |q 10720/2 |goto 55.4,28.2
@@ -20644,7 +20644,7 @@ accept Meeting at the Blackwing Coven##10722 |goto 50.2,36.1
 step
 _Go northwest_ through the tunnel |goto Blade's Edge Mountains 43.1,29.9 < 10 |only if walking
 kill Grishna Harbinger##19989+, Grishna Falconwing##19988+ |goto 40.9,20.4
-Get the Understanding Ravenspeech Buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk |q 10607
+Get the Understanding Ravenspeech Buff |havebuff 132188 |q 10607
 |tip You must deliver the killing blow (not your pet) to receive the buff. |only if Hunter
 |tip The buff lasts for 2 minutes. Anytime the buff wears off, kill arakkoas again to get it back.
 step
@@ -20682,7 +20682,7 @@ kill Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |goto 31.9,37.4 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |goto 31.9,37.4 |use Overseer Disguise##31122
 step
 talk Kolphis Darkscale##22019
 Tell him _"I'm fine, thank you. You asked for me?"_
@@ -20787,7 +20787,7 @@ Ask him if he has another Felsworn Gas Mask
 collect Felsworn Gas Mask##31366 |future |q 10821 |goto 62.2,40.1
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |future |q 10821 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |future |q 10821 |goto 73.3,40.1
 step
 click the Legion Communicator
 |tip It looks like a metal altar sitting on the ground.
@@ -21421,7 +21421,7 @@ turnin A Convincing Disguise##10197 |goto 48.2,86.6
 accept Information Gathering##10198 |goto 48.2,86.6
 only if rep ('The Scryers') >= Neutral
 step
-use Sunfury Disguise##28607 |havebuff Sunfury Disguise
+use Sunfury Disguise##28607 |havebuff 133564
 only if rep ('The Scryers') >= Neutral
 step
 _Enter_ the manaforge |goto 47.1,80.8 < 10 |walk
@@ -22131,7 +22131,7 @@ kill Warden Icoshock##20770+
 collect The Warden's Key##29742 |goto 54.4,40.1 |q 10422
 step
 use Navuud's Concoction##29737
-Gain the Electro-Shock Therapy buff |havebuff Interface\Icons\Spell_Lightning_LightningBolt01 |q 10411
+Gain the Electro-Shock Therapy buff |havebuff 135990 |q 10411
 |tip This buff lasts for 60 minutes. High levels will need to use melee since the effect only works by random chance.
 kill Void Waste##20778+
 kill 30 Void Waste Globule##20805 |q 10411/2 |goto 55.2,42.8
@@ -22149,7 +22149,7 @@ step
 kill Ethereum Shocktrooper##20453+, Ethereum Assassin##20452+
 collect Ethereum Essence##29482 |n
 use Ethereum Essence##29482
-Gain the Brain Damage buff |havebuff Interface\Icons\INV_Misc_Organ_03 |q 10385
+Gain the Brain Damage buff |havebuff 134340 |q 10385
 |tip If the buff wears off, kill more Ethereum mobs to get another Ethereum Essence.
 kill Ethereum Relay##20619+
 collect 15 Ethereum Relay Data##29459 |q 10385/1 |goto 56.5,38.6
@@ -22195,7 +22195,7 @@ kill Voidshrieker##18870+, Unstable Voidwraith##18869+
 collect 8 Fragment of Dimensius##29822 |q 10437/1 |goto 62.5,34.7
 step
 use Navuud's Concoction##29737
-Gain the Electro-Shock Therapy buff |havebuff Interface\Icons\Spell_Lightning_LightningBolt01 |q 10411
+Gain the Electro-Shock Therapy buff |havebuff 135990 |q 10411
 |tip This buff lasts for 60 minutes. High levels will need to use melee since the effect only works by random chance.
 kill Seeping Sludge##20501+
 kill 30 Seeping Sludge Globule##20806 |q 10411/1 |goto 59.5,39.9
@@ -23082,7 +23082,7 @@ turnin The Shadowmoon Shuffle##10576 |goto 47.6,57.2
 accept What Illidan Wants, Illidan Gets...##10577 |goto 47.6,57.2
 step
 use Blood Elf Disguise##30639
-Gain the Blood Elf Disguise |havebuff Interface\Icons\INV_Mask_01 |goto 45.3,68.2 |q 10577
+Gain the Blood Elf Disguise |havebuff 133564 |goto 45.3,68.2 |q 10577
 step
 talk Grand Commander Ruusk##20563
 Tell him _"I bring word from Lord Illidan."_
@@ -24217,7 +24217,7 @@ use Raelorasz's Spear##35506
 |tip Use your Raelorasz's Spear on a Nexus Drake Hatchling.
 |tip They are flying above you in the sky.
 Do not kill it, let it hit you until it becomes friendly
-Gain the Drake Hatchling Buff |havebuff Drake Hatchling Subdued |goto 24.6,27.1 |q 11919
+Gain the Drake Hatchling Buff |havebuff 134155 |goto 24.6,27.1 |q 11919
 step
 Capture the Nexus Drake |q 11919/1 |goto 33.3,34.5
 step
@@ -24501,7 +24501,7 @@ talk Chieftain Wintergale##24703
 turnin The Bad Earth##11630 |goto 75.9,37.2
 accept Blending In##11633 |goto 75.9,37.2
 step
-Equip the Imbued Scourge Shroud in your bags |havebuff Shroud of the Scourge |use Imbued Scourge Shroud##34782 |goto 84.1,31.1,1 |q 11633
+Equip the Imbued Scourge Shroud in your bags |havebuff 135894 |use Imbued Scourge Shroud##34782 |goto 84.1,31.1,1 |q 11633
 step
 Scout the Spire of Pain |q 11633/3 |goto 88.9,28.6
 |tip Go up the staircase into this room to Scout the Spire of Pain.
@@ -24747,7 +24747,7 @@ talk King Mrgl-Mrgl##25197
 turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620 |goto 41.3,15.8 |q 11566
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |goto 41.3,15.8 |q 11566
 step
 _Enter_ the cave |goto 40.2,19.7 < 10 |walk
 talk Glrglrglr##28375
@@ -26218,14 +26218,14 @@ _Go up_ the stairs |goto 73.1,73.7 < 5 |walk
 click Abbey Bell Rope##7717
 |tip It's in the attic of the cathedral building.
 Ring the Abbey Bell |q 12274/1 |goto 72.9,73.5
-Maintain the _Scarlet Raven Priest Image_ buff! Talk to to Agent Skully to get it again |havebuff Interface\Icons\Spell_Shadow_NetherCloak |q 12274
+Maintain the _Scarlet Raven Priest Image_ buff! Talk to to Agent Skully to get it again |havebuff 136177 |q 12274
 step
 talk High Abbot Landgren##27245
 |tip He is downstairs.
 Tell him _"Your eminence, may I have a word in private?"_ |goto 73.5,74.3 < 5 |walk
 _Meet High Abbot Landgren_ at the Abbey entrance |goto 72.1,73.4 < 10 |walk
 Speak with High Abbot Landgren |q 12274/2 |goto 74.0,75.9
-Maintain the _Scarlet Raven Priest Image_ buff! Talk to to Agent Skully to get it again |havebuff Interface\Icons\Spell_Shadow_NetherCloak |q 12274
+Maintain the _Scarlet Raven Priest Image_ buff! Talk to to Agent Skully to get it again |havebuff 136177 |q 12274
 step
 talk Agent Skully##27350
 turnin A Fall From Grace##12274 |goto 73.6,73.5
@@ -27340,7 +27340,7 @@ turnin Good Troll Hunting##12208 |goto 16.2,47.6
 accept Filling the Cages##11984 |goto 16.2,47.6
 step
 talk Budd##26422
-Tell him _"Come on, Budd. Time to play with the ice trolls!"_ |havebuff INV_Misc_Head_Troll_01 |q 11984 |goto 16.4,48.3
+Tell him _"Come on, Budd. Time to play with the ice trolls!"_ |havebuff 134177 |q 11984 |goto 16.4,48.3
 step
 Use Budd's pet bar skill _Tag Troll_ to have him stun a troll |petaction Tag Troll
 Use your _Bounty Hunter's Cage_ on the stunned troll |use Bounty Hunter's Cage##35736
@@ -27736,7 +27736,7 @@ step
 use Charged Drakil'jin Mallet##36834
 |tip Use your Charged Drakil'jin Mallet next to a gong. They are 3 gongs sitting close together here.
 Get killed by Warlord Jin'arrak |q 12121/1 |goto 71.5,24.7
-STAY DEAD |havebuff On the Other Side
+STAY DEAD |havebuff 132094
 step
 _Follow_ the path down |goto 71.5,23.8 < 10 |only if walking
 talk Gan'jo##26924
@@ -31478,7 +31478,7 @@ use Dr. Terrible's "Building a Better Flesh Giant"##42772
 accept The Sum is Greater than the Parts##13043 |goto 34.0,36.3
 step
 clicknpc Nergeld##30403
-Take Control of Nergeld |havebuff Interface\Icons\Spell_Shadow_Possession |goto 33.4,33.2 < 10 |q 13043
+Take Control of Nergeld |havebuff 136183 |goto 33.4,33.2 < 10 |q 13043
 step
 Use Nergeld's abilities to kill Dr. Terrible
 |tip He's a big undead monster.
@@ -31495,7 +31495,7 @@ turnin The Sum is Greater than the Parts##13043 |goto 32.5,42.9
 accept The Art of Being a Water Terror##13091 |goto 32.5,42.9
 step
 click Lock Gate##7482
-Control a Water Terror |havebuff Interface\Icons\Spell_Frost_SummonWaterElemental_2 |goto 31.4,41.2 |q 13091
+Control a Water Terror |havebuff 135862 |goto 31.4,41.2 |q 13091
 step
 kill Jotunheim Warrior##29880+, Mjordin Water Magus##30632+, Njorndar Spear-Sister##30243+
 Slay #10# Jotunheim Vrykul |q 13091/1 |goto 32.1,41.2
@@ -32128,7 +32128,7 @@ step
 kill Cultist Acolyte##32507+
 collect 1 Cultist Acolyte's Hood##44784 |n
 use Cultist Acolyte's Hood##44784
-Become Disguised as a Cultist |havebuff Ability_Rogue_MasterOfSubtlety |q 13364 |goto 45.2,77.0
+Become Disguised as a Cultist |havebuff 132299 |q 13364 |goto 45.2,77.0
 step
 talk Highlord Tirion Fordring##32239
 Tell him _"I'm ready, Highlord."_ |goto 44.4,76.2 < 6
@@ -32834,7 +32834,7 @@ turnin The Vicious Vale##14235 |goto 35.43,75.71
 accept Weed Whacker##14236 |goto 35.43,75.71
 step
 Use the Weed Whacker |use Weed Whacker##49108
-Become a Weed Whacker |havebuff Weed Whacker |c |q 14236
+Become a Weed Whacker |havebuff 132369 |c |q 14236
 step
 Mow Down #100# Deadly Jungle Plants |q 14236/1 |goto 35.3,75.1
 |tip Spin around next to the plants all around this area.
@@ -32858,7 +32858,7 @@ turnin Forward Movement##14237 |goto 34.62,66.85
 accept Infrared = Infradead##14238 |goto 34.62,66.85
 step
 Use the Infrared Heat Focals |use Infrared Heat Focals##49611
-Wear the Infrared Heat Focals |havebuff Infrared Heat Focals |q 14238
+Wear the Infrared Heat Focals |havebuff 133149 |q 14238
 step
 kill 10 SI:7 Assassin##36092 |q 14238/1 |goto 31.2,65.6
 |tip They are also marked on your minimap.
@@ -33014,7 +33014,7 @@ accept Irresistible Pool Pony##24864 |goto 52.20,73.14
 step
 Follow the path |goto 54.98,76.64 < 20 |only if walking
 Use the Irresistible Pool Pony in the Water |use Irresistible Pool Pony##50602
-Ride the Irresistible Pool Pony |havebuff Irresistible Pool Pony |q 24864 |goto 58.1,80.3
+Ride the Irresistible Pool Pony |havebuff 132261 |q 24864 |goto 58.1,80.3
 step
 talk Naga Hatchling##44589
 |tip They look like tiny naga swimming underwater around this area.
@@ -33105,7 +33105,7 @@ talk Assistant Greely##39199
 accept Rockin' Powder##24946 |goto 51.72,47.39
 step
 Use the Super Booster Rocket Boots |use Super Booster Rocket Boot##52013
-Wear the Super Booster Rocket Boots |havebuff Super Booster Rocket Boots |q 24946
+Wear the Super Booster Rocket Boots |havebuff 133029 |q 24946
 stickystart "Rockin_Powder"
 stickystart "Goblin_Zombies"
 step
@@ -34425,7 +34425,7 @@ kill Spinescale Matriarch##40403
 collect Spiked Basilisk Hide##54610 |q 25494/1 |goto 84.7,46.8
 step
 Use your Ogre Disguise next to the Ogre Outhouse |use Ogre Disguise##55137
-Put on your Ogre Disguise |havebuff Interface\Icons\inv_misc_ogrepinata |goto 77.6,48.1 |q 25308
+Put on your Ogre Disguise |havebuff 306868 |goto 77.6,48.1 |q 25308
 step
 _Enter_ the building |goto Mount Hyjal/0 77.3,49.6 < 10 |walk
 talk Karr'gonn##40489
@@ -35328,7 +35328,7 @@ accept Visions of the Past: The Invasion of Vashj'ir##25957 |goto 51.6,62.8
 step
 use Blade of the Naz'jar Battlemaiden##55171
 |tip Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden. It's a bright flashing light on the ground in the ruins.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |goto 40.5,75.6 |q 25957
+Become the Naz'jar Battlemaiden |havebuff 236422 |goto 40.5,75.6 |q 25957
 step
 talk Fathom-Stalker Azjentus##40978
 accept Reoccupation##25619 |goto 40.6,75.3
@@ -35446,7 +35446,7 @@ step
 use Blade of the Naz'jar Battlemaiden##55171
 |tip Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden.
 |tip It's a bright flashing light on the ground on the stone terrace.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |q 25966 |goto 28.9,78.6
+Become the Naz'jar Battlemaiden |havebuff 236422 |q 25966 |goto 28.9,78.6
 step
 talk Lady Naz'jar##42076
 accept By Her Lady's Word##25858 |goto 29.0,78.5
@@ -35560,7 +35560,7 @@ Infiltrate the Quel'Dormir Temple |q 26135/1 |goto 33.2,77.8
 step
 use Blade of the Naz'jar Battlemaiden##55171
 |tip Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden. It looks like a bright flashing light inside the temple.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |goto 33.1,77.8 |q 26135
+Become the Naz'jar Battlemaiden |havebuff 236422 |goto 33.1,77.8 |q 26135
 step
 talk Lady Sira'kess##41456
 accept Devout Assembly##25896 |goto 33.1,77.9
@@ -35698,7 +35698,7 @@ accept Here Fishie Fishie##26088 |goto 42.9,51.0
 accept Die Fishman Die##26089 |goto 42.9,51.0
 step
 use Fish Hat##56813
-Get the Lure buff |havebuff Interface\Icons\Ability_Vehicle_ElectroCharge |q 26088
+Get the Lure buff |havebuff 252174 |q 26088
 stickystart "allthecoldlightkills"
 step
 Go near Coldlight Nibblers
@@ -36369,7 +36369,7 @@ accept Close Escort##26632 |goto 20.7,61.6
 step
 talk Peak Grindstone##45043
 Tell him _"Peak, I'm ready to escort the catapult."_
-Begin the Escort |havebuff Interface\Icons\ability_vehicle_playerloaded |q 26632
+Begin the Escort |havebuff 252180 |q 26632
 step
 kill Stone Trogg Rockmagus##43652+, Needlerock Pummeller##43847+
 |tip Stay with the catapult and defend it as it moves.
@@ -37599,7 +37599,7 @@ talk Commander Schnottz##47159
 accept Make Yourself Useful##27969 |goto 24.4,64.1
 step
 use Refurbished Trooper Uniform##62813
-Wear the Uniform |havebuff INTERFACE\ICONS\inv_chest_leather_08 |q 27969
+Wear the Uniform |havebuff 132723 |q 27969
 step
 talk Slacking Laborer##47292
 Tell them _"Enough slacking! You're behind schedule."_
@@ -38403,7 +38403,7 @@ step
 _Enter_ the cave |goto 36.0,37.9 < 10 |walk
 talk Uchek##47826
 Tell him _"I am ready, Uchek!"_
-Enter the Spirit Realm |havebuff Interface\Icons\Achievement_Halloween_Ghost_01 |q 28170 |goto 35.0,36.6 |indoors The Gullet
+Enter the Spirit Realm |havebuff 236548 |q 28170 |goto 35.0,36.6 |indoors The Gullet
 step
 _Follow_ the path |goto 35.1,35.9 < 10 |walk |indoors The Gullet
 use The Light of Souls##67537

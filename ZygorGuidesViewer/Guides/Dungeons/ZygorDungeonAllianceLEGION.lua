@@ -1169,7 +1169,7 @@ _TANK:_ |grouprole TANK
 Defeat Talixae Flamewreath |scenariogoal 1/29613 |goto 34.28,28.10
 step
 talk Ly'leth Lunastre##106468
-Gain the Masquerade Disguise |havebuff Interface\Icons\inv_helm_mask_fittedalpha_b_01_nightborne_02 |goto 60.46,61.74
+Gain the Masquerade Disguise |havebuff 1354190 |goto 60.46,61.74
 step
 Enter the Jeweled Estate behind Ly'leth Lunastre
 talk Chatty Rumormonger##107486+

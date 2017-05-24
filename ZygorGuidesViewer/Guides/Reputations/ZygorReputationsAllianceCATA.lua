@@ -1381,7 +1381,7 @@ talk Sky Commander Adaris##23038
 accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446 |goto 69.7,74.7
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility |q 11005
+You will get a buff Elixir of Shadows |havebuff 136152 |q 11005
 step
 kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
 step
@@ -1414,7 +1414,7 @@ turnin Hazzik's Bargain##11056 |goto 64.3,66.9
 accept A Shabby Disguise##11029 |goto 64.3,66.9
 step
 Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741 |goto 66.2,77.5
-Wear the Shabby Arakkoa Disguise |havebuff Interface\Icons\INV_Misc_Birdbeck_01
+Wear the Shabby Arakkoa Disguise |havebuff 133707
 step
 talk Sahaak##23363
 buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
@@ -1436,7 +1436,7 @@ accept More Shadow Dust##11006 |instant |goto 64.0,66.9
 collect 2 Elixir of Shadows##32446+ |q 11885 |future |goto 64.0,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -1535,7 +1535,7 @@ accept More Shadow Dust##11006 |instant |n |goto 64.0,66.9
 collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -4629,7 +4629,7 @@ These quests will require that you do Heroic Shattered Halls, Shadow Labyrinth, 
 step
 Before you enter The Shattered Halls, set your Dungeon Difficulty to _Heroic 5 Man_ |only if not heroic_dung() |confirm
 kill Grand Warlock Nethekurse##16807 |goto The Shattered Halls 34.2,55.3
-After you Kill Grand Warlock Nethekurse run through this doorway to gain _Korgath's Executioner Buff_ |havebuff Interface\Icons\Ability_Warrior_Cleave
+After you Kill Grand Warlock Nethekurse run through this doorway to gain _Korgath's Executioner Buff_ |havebuff 132338
 |only if not completedq(10884)
 step
 Kill your way to the end of the instance
@@ -5419,7 +5419,7 @@ talk Caledis Brightdawn##19840
 turnin A Convincing Disguise##10197 |goto 48.2,86.6
 accept Information Gathering##10198 |goto 48.2,86.6
 step
-Use the Sunfury Disguise in your bags |havebuff Sunfury Disguise |use Sunfury Disguise##28607
+Use the Sunfury Disguise in your bags |havebuff 133564 |use Sunfury Disguise##28607
 step
 _Enter_ Manaforge Coruu
 Be careful to avoid the Arcane Annihilator, he can see through the disguise and will attack you
@@ -7661,7 +7661,7 @@ turnin The Cell##11943 |goto 33.3,34.5
 step
 Use your Raelorasz's Spear on a Nexus Drake Hatchling |use Raelorasz's Spear##35506
 |tip They are flying above you in the sky. |modelnpc Nexus Drake Hatchling##26127
-Do not kill it, let it hit you until it becomes friendly |havebuff Drake Hatchling Subdued |q 11919 |goto 24.6,27.1 |c
+Do not kill it, let it hit you until it becomes friendly |havebuff 134155 |q 11919 |goto 24.6,27.1 |c
 step
 Capture the Nexus Drake |q 11919/1 |goto 33.3,34.5
 talk Raelorasz##26117
@@ -9962,7 +9962,7 @@ kill Spinescale Matriarch##40403
 collect Spiked Basilisk Hide |q 25494/1 |goto 84.9,47.0
 step
 Use your Ogre Disguise next to the Ogre Outhouse |use Ogre Disguise##55137
-Put on your Ogre Disguise |havebuff Interface\Icons\inv_misc_ogrepinata |q 25308 |goto 77.5,48.1
+Put on your Ogre Disguise |havebuff 306868 |q 25308 |goto 77.5,48.1
 |model Ogre Outhouse##3332
 step
 talk Karr'gonn##40489

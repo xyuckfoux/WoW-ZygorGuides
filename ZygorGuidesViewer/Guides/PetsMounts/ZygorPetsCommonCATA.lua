@@ -3088,7 +3088,7 @@ talk Sky Commander Adaris##23038
 accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
 step
 Use the Elixir of Shadows in your bags |use Elixir of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility |goto 69.7,74.7
+You will get a buff Elixir of Shadows |havebuff 136152 |goto 69.7,74.7
 step
 kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
 step
@@ -3121,7 +3121,7 @@ turnin Hazzik's Bargain##11056 |goto 64.3,66.9
 accept A Shabby Disguise##11029 |goto 64.3,66.9
 step
 Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741
-Wear the Shabby Arakkoa Disguise |havebuff Interface\Icons\INV_Misc_Birdbeck_01 |goto 66.2,77.5
+Wear the Shabby Arakkoa Disguise |havebuff 133707 |goto 66.2,77.5
 step
 talk Sahaak##23363
 buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
@@ -3145,7 +3145,7 @@ This next quest is meant to be a _3 person_ quest. Make sure that you are either
 confirm always
 step
 Use the Elixir of Shadows in your bags |use Elixir of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -3239,7 +3239,7 @@ accept More Shadow Dust##11006 |instant |n
 collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
 step
 Use the Elixir of Shadows in your bags |use Elixir of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+

@@ -281,9 +281,9 @@ step
 _Enter_ Shaz'gul through the wooden gates |goto Shadowmoon Valley D 38.6,60.5 < 20 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -292,9 +292,9 @@ step
 _Enter_ the building |goto Shadowmoon Valley D 36.7,61.3 < 10 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -302,9 +302,9 @@ Plant Explosives at the Main Lodge |q Going Undercover##33080/3 |goto Shadowmoon
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 _Head_ through the gates to the Chieftains' seat |goto Shadowmoon Valley D 37.8,62.6 < 20 |walk
 clicknpc Explosives##74811
@@ -313,9 +313,9 @@ Plant Explosives at the Chieftain's Seat |q Going Undercover##33080/4 |goto Shad
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use Sylene's Amulet if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |or
 |tip You will only complete this goal if you're a male character.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |or
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |or
 |tip You will only complete this goal if you're a female character.
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -2407,7 +2407,7 @@ accept Requisition a Riverbeast##36918
 step
 click Shadow Lily##77271
 |tip They look like white glowing flowers on the ground right next to the water.
-Obtain the _Glowstep_ Buff |havebuff Interface\Icons\Spell_DeathKnight_PathOfFrost |goto Talador/0 64.4,56.3 |q 36918
+Obtain the _Glowstep_ Buff |havebuff 237528 |goto Talador/0 64.4,56.3 |q 36918
 |tip This buff will allow you to walk on water for 10 minutes, and will not be cancelled when you take damage.
 step
 click Young Riverwallow##86848

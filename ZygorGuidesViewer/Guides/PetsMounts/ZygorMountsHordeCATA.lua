@@ -5429,7 +5429,7 @@ turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
 kill arakkoas |goto 40.9,20.4 |n
-Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk
+Get the Understanding Ravenspeech buff |havebuff 132188
 Must be within melee range to receive the buff
 The buff lasts for 2 minutes
 Anytime the buff wears off, kill arakkoas again to get it back
@@ -5455,7 +5455,7 @@ from Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |use Overseer Disguise##31122
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -5518,7 +5518,7 @@ If you need another one, talk to Wildlord Antelarion at [62.6,39.6]
 Click here to continue. |confirm
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 |goto 73.3,40.1
 Click the Legion Communicator |tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
 turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
 accept Deceive thy Enemy##10820 |goto 73.3,40.1
@@ -5527,7 +5527,7 @@ kill 4 Doomforge Attendant |q 10820/1 |goto 74.9,39.9
 kill 4 Doomforge Engineer |q 10820/2 |goto 74.9,39.9
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 |goto 73.3,40.1
 Click the Legion Communicator
 turnin Deceive thy Enemy##10820 |goto 73.3,40.1
 |tip Between 2 big green floating crystals. Click the Legion Communicator. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
@@ -5773,7 +5773,7 @@ turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
 Go southwest to Winterfin Village |n
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620
 step
 Go inside the cave
 talk Glrglrglr##28375
@@ -8551,7 +8551,7 @@ talk Shin Stonepillar##39380
 accept The Wolf and The Kodo##25205 |goto Durotar,44.9,14.8
 step
 talk Shin Stonepillar##39380
-Ask him to tell you his fable |havebuff Interface\Icons\Ability_Mount_Kodo_03 |q 25205 |goto Durotar,44.9,14.8
+Ask him to tell you his fable |havebuff 132245 |q 25205 |goto Durotar,44.9,14.8
 step
 As the wolf, run to this spot
 |tip If you don't see 2 kodos fighting, look around this area to find some, then go stand next to them.
@@ -9869,7 +9869,7 @@ talk Apothecary Wormcrud##44912
 turnin It's Only Poisonous if You Ingest It##27088 |goto 44.8,20.9
 step
 talk Admiral Hatchet##44916
-Tell her that you seem to have misplaced your Sea Pup |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 27069 |goto 44.0,21.4
+Tell her that you seem to have misplaced your Sea Pup |havebuff 236452 |q 27069 |goto 44.0,21.4
 step
 kill 10 Bloodfang Scavenger |q 27073/1 |goto 40.0,26.9
 Click Sea Dog Crates
@@ -10160,7 +10160,7 @@ step
 Click the Ambermill Dimensional Portal
 |tip It's a green portal in the very back of the cave you come to.
 <Use the Ambermill Dimensional Portal.>
-Enter the Transdimensional Shift |havebuff INTERFACE\ICONS\spell_arcane_rune |q 27513 |goto 58.1,69.9
+Enter the Transdimensional Shift |havebuff 252267 |q 27513 |goto 58.1,69.9
 step
 All around the Ambermill town:
 kill Ambermill Watcher##1888+, Ambermill Magister##1914+, Ambermill Warder##1913+, Ambermill Miner##3578+, Ambermill Brewmaster##3577+, Ambermill Witchalok##1889+

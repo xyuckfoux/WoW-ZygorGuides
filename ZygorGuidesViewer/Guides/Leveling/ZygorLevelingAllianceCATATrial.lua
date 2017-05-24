@@ -726,7 +726,7 @@ turnin The Eye Of Acherus##12636 |goto 51.3,35.2
 accept Death Comes From On High##12641 |goto 51.3,35.2
 step
 click Eye of Acherus Control Mechanism##8123
-You will take control over the Eye of Acherus |havebuff Spell_Shadow_UnholyFrenzy |q 12641
+You will take control over the Eye of Acherus |havebuff 136224 |q 12641
 Your World Map will NOT show your current position anymore!
 If you stay floating high enough, the soldiers will not attack you.
 Once the Eye stops moving, go immediately northeast to the blacksmith building.
@@ -1694,7 +1694,7 @@ Enter the tower |goto 69.96,74.06 < 10 |walk
 Use the Potion of Shrouding |use Potion of Shrouding##58112
 |tip Use it inside the tower.
 |tip You can safely attack the elite mobs, Agent Kearnen will kill them for you.
-Become Invisible |havebuff Potion of Shrouding |goto 70.5,74.5 |q 26290
+Become Invisible |havebuff 132220 |goto 70.5,74.5 |q 26290
 step
 Watch the dialogue
 |tip At the top of the tower.
@@ -2523,7 +2523,7 @@ talk Mountaineer Kadrell##1340
 turnin Buzz Off##26932 |goto 35.1,46.6
 step
 Use your Clever Plant Disguise Kit |use Clever Plant Disguise Kit##60502
-Wear your Clever Plant Disguise |havebuff Interface\Icons\Ability_Stealth |c |q 26868 |goto 49.9,57.7
+Wear your Clever Plant Disguise |havebuff 132320 |c |q 26868 |goto 49.9,57.7
 step
 While disgued as the plant:
 Use your Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503
@@ -3305,9 +3305,9 @@ talk John J. Keeshan##43458
 accept Prisoners of War##26646 |goto 52.53,55.42
 step
 Use the Bravo Company Field Kit |use Bravo Company Field Kit##60384
-Activate the Bravo Company Field Kit |havebuff Bravo Company Field Kit |goto 53.9,57.7 |q 26646
+Activate the Bravo Company Field Kit |havebuff 133878 |goto 53.9,57.7 |q 26646
 step
-Stealth Your Party |havebuff Camouflage |goto 53.9,57.7 |q 26646
+Stealth Your Party |havebuff 461113 |goto 53.9,57.7 |q 26646
 |tip Use the Camouflage ability on your action bar.
 stickystart "To_Win_A_War_You_Gotta_Become_War_Quest_Tips"
 step
@@ -4236,7 +4236,7 @@ accept Totem of Tikti##9540
 modelnpc Stillpine Ancestor Akida##17379
 step
 Follow Stillpine Ancestor Coo to the edge of the cliff
-He will give you wings |havebuff Interface\Icons\Spell_Holy_DivineSpirit |q 9540 |goto 55.6,41.6
+He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 modelnpc Stillpine Ancestor Coo##17391
 step
 clicknpc Totem of Tikti##17362 |goto 64.5,39.8
@@ -4244,7 +4244,7 @@ turnin Totem of Tikti##9540
 accept Totem of Yor##9541
 step
 Follow Stillpine Ancestor Tikti to the river
-He will give you a swim speed buff |havebuff Interface\Icons\Ability_Creature_Poison_05 |q 9541 |goto 63.8,40.2
+He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 modelnpc Stillpine Ancestor Tikti##17392
 step
 clicknpc Totem of Yor##17363 |goto 63,67.9
@@ -4253,7 +4253,7 @@ turnin Totem of Yor##9541
 accept Totem of Vark##9542
 step
 Follow Stillpine Ancestor Yor out of the water
-He will turn you into a ghost panther |havebuff Interface\Icons\Ability_Druid_SupriseAttack |q 9542 |goto 61.0,69.5
+He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 modelnpc Stillpine Ancestor Yor##17393
 step
 Follow Stillpine Ancestor Yor as he runs
@@ -4961,7 +4961,7 @@ accept Totem of Tikti##9540 |goto 55.2,41.7
 modelnpc Stillpine Ancestor Akida##17379
 step
 Follow Stillpine Ancestor Coo to the edge of the cliff
-He will give you wings |havebuff Interface\Icons\Spell_Holy_DivineSpirit |q 9540 |goto 55.6,41.6
+He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 modelnpc Stillpine Ancestor Coo##17391
 step
 clicknpc Totem of Tikti##17362
@@ -4969,7 +4969,7 @@ turnin Totem of Tikti##9540 |goto Azuremyst Isle,64.5,39.8
 accept Totem of Yor##9541 |goto Azuremyst Isle,64.5,39.8
 step
 Follow Stillpine Ancestor Tikti to the river
-He will give you a swim speed buff |havebuff Interface\Icons\Ability_Creature_Poison_05 |q 9541 |goto 63.8,40.2
+He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 modelnpc Stillpine Ancestor Tikti##17392
 step
 clicknpc Totem of Yor##17363 |tip It is underwater.
@@ -4977,7 +4977,7 @@ turnin Totem of Yor##9541 |goto Azuremyst Isle,63,67.9
 accept Totem of Vark##9542 |goto Azuremyst Isle,63,67.9
 step
 Follow Stillpine Ancestor Yor out of the water
-He will turn you into a ghost panther |havebuff Interface\Icons\Ability_Druid_SupriseAttack |q 9542 |goto 61.0,69.5
+He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 modelnpc Stillpine Ancestor Yor##17393
 step
 Follow Stillpine Ancestor Yor as he runs
@@ -5708,7 +5708,7 @@ talk Keeper Karithus##33048
 accept The Ritual Bond##13569 |goto 43.0,39.0
 step
 click Grovekeeper's Incense##8683
-Breathe in the smoke to entice visions of the great animal spirits |havebuff Interface\Icons\Spell_Nature_Sleep |q 13569 |goto 42.9,39.0
+Breathe in the smoke to entice visions of the great animal spirits |havebuff 136090 |q 13569 |goto 42.9,39.0
 step
 talk Great Stag Spirit##33133
 |tip You can also talk to the Great Moonstalker Spirit or the Great Thistle Bear Spirit.  We recommend talking to the Great Stag Spirit because it gives you a 10% increased run speed buff.  If you would like to talk to the other spirits, the Great Moonstalker Spirit gives a 10% haste buff and the Great Thistle Bear Spirit gives a 10% damage reduction buff.  You can only choose one, so pick whichever one you'd like.
@@ -6073,7 +6073,7 @@ Follow the path up |goto 46.5,54.3 |only if walking
 Enter the cave |goto 47.2,56.0 |walk
 Follow the path to the end of the cave
 clicknpc Nightmare Portal##38430 |indoors Earthshatter Cavern
-Enter the Nightmare World |havebuff Interface\Icons\INV_Misc_Herb_Nightmarevine |q 13586 |goto 49.0,57.1 |indoors Earthshatter Cavern
+Enter the Nightmare World |havebuff 134218 |q 13586 |goto 49.0,57.1 |indoors Earthshatter Cavern
 step
 talk Thessera##33166 |indoors Earthshatter Cavern
 turnin The Emerald Dream##13586 |goto 49.2,56.9 |indoors Earthshatter Cavern
@@ -6193,7 +6193,7 @@ turnin The Defiler##13546 |goto 43.5,81.0
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13892 |goto 42.4,82.3
+Transform into a panther |havebuff 132115 |q 13892 |goto 42.4,82.3
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth
 Stand in this spot and listen to Foreman Balsoth
@@ -6208,7 +6208,7 @@ collect Seed of the Sea |q 13882/2 |goto 38.6,78.2
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13948 |goto 39.2,85.1
+Transform into a panther |havebuff 132115 |q 13948 |goto 39.2,85.1
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth |goto 39.8,86.4
 Follow the path up |goto 39.8,86.4 < 5
@@ -7066,7 +7066,7 @@ step
 Cross the bridge |goto 73.33,79.50 < 15 |only if walking
 Follow the path up |goto 75.18,76.67 < 20 |only if walking
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |goto 76.6,75.5 |q 24592
+Become Stealthed |havebuff 132320 |c |goto 76.6,75.5 |q 24592
 step
 Follow the path down |goto 79.22,72.05 < 20 |only if walking
 Continue on the path |goto 80.53,69.72 < 20 |only if walking
@@ -7079,7 +7079,7 @@ kill Baron Ashbury##37735 |q 24592/1 |goto 85.29,74.27
 |tip Use Krennan's Potion of Stealth again, if you accidentally lose stealth.
 step
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |q 24592
+Become Stealthed |havebuff 132320 |c |q 24592
 step
 Follow the path down |goto 85.62,73.11 < 15 |only if walking
 Cross the bridge |goto 84.11,72.74 < 15 |only if walking
@@ -7092,7 +7092,7 @@ kill Lord Walden##37733 |q 24592/2 |goto 78.16,66.03
 |tip Use Krennan's Potion of Stealth again, if you accidentally lose stealth.
 step
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |q 24592
+Become Stealthed |havebuff 132320 |c |q 24592
 step
 Jump down here |goto 79.78,68.28 < 15 |only if walking
 Follow the path up |goto 79.58,70.61 < 20 |only if walking

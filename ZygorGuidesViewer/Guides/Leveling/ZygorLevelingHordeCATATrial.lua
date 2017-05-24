@@ -1102,7 +1102,7 @@ turnin The Eye Of Acherus##12636 |goto 51.3,35.2
 accept Death Comes From On High##12641 |goto 51.3,35.2
 step
 click Eye of Acherus Control Mechanism##8123 |goto Plaguelands: The Scarlet Enclave 51.0,36.3
-Take Control Over the Eye of Acherus |havebuff Spell_Shadow_UnholyFrenzy |q 12641
+Take Control Over the Eye of Acherus |havebuff 136224 |q 12641
 step
 Your World Map will NOT show your current position anymore!
 If you stay floating high enough the soldiers will not attack you
@@ -2179,7 +2179,7 @@ talk Apothecary Wormcrud##44912
 turnin It's Only Poisonous if You Ingest It##27088 |goto 44.8,20.9
 step
 talk Admiral Hatchet##44916
-Tell her _"I seem to have misplaced my Sea Pup."_ |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 27069 |goto 44.0,21.4
+Tell her _"I seem to have misplaced my Sea Pup."_ |havebuff 236452 |q 27069 |goto 44.0,21.4
 stickystart "seadogcrates"
 step
 kill 10 Bloodfang Scavenger##44549 |q 27073/1 |goto 40.0,26.9
@@ -2489,7 +2489,7 @@ accept Transdimensional Warfare: Chapter II##27513 |goto 58.1,69.9
 step
 clicknpc Ambermill Dimensional Portal##45752
 Select "_<Use the Ambermill Dimensional Portal.>_"
-Enter the Transdimensional Shift |havebuff INTERFACE\ICONS\spell_arcane_rune |q 27513 |goto 58.1,69.9
+Enter the Transdimensional Shift |havebuff 252267 |q 27513 |goto 58.1,69.9
 step
 kill Ambermill Watcher##1888+, Ambermill Magister##1914+, Ambermill Warder##1913+, Ambermill Miner##3578+, Ambermill Brewmaster##3577+, Ambermill Witchalok##1889+
 Kill #20# Ambermill Mages |q 27513/1 |goto 62.5,64.1
@@ -2604,7 +2604,7 @@ dynamic=true,
 step
 talk Zidormi##88206
 |tip In order to complete the Blasted Lands questline for Loremaster of Eastern Kingdoms you will need to speak with Zidormi to change the zone back to normal.
-Tell her _"Show me the Blasted Lands before the invasion."_ |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands/0 48.1,7.3
+Tell her _"Show me the Blasted Lands before the invasion."_ |havebuff 609811 |goto Blasted Lands/0 48.1,7.3
 only if havequest(34398) or completedq(34398)
 step
 talk Preda##43121
@@ -3802,7 +3802,7 @@ talk Shin Stonepillar##39380
 accept The Wolf and The Kodo##25205 |goto Durotar 44.9,14.8
 step
 talk Shin Stonepillar##39380
-Ask him _"Can you tell me your fable, Shin?"_ |havebuff Interface\Icons\Ability_Mount_Kodo_03 |q 25205 |goto Durotar 44.9,14.8
+Ask him _"Can you tell me your fable, Shin?"_ |havebuff 132245 |q 25205 |goto Durotar 44.9,14.8
 step
 As the wolf, run to this spot
 |tip If you don't see 2 kodos fighting, look around this area to find some, then go stand next to them.
@@ -4338,7 +4338,7 @@ use Grol'dom Net##46722
 |tip Use your Grol'dom Net on a Razormane Pillager.
 talk Razormane Pillager##34503
 Select _<Pound this chump.>_
-Drag a Razormane |havebuff Interface\Icons\INV_Misc_Head_Quillboar_01 |c |q 13961 |goto 56.1,43.4
+Drag a Razormane |havebuff 134172 |c |q 13961 |goto 56.1,43.4
 step
 Deliver the Razormane Prisoner |q 13961/1 |goto 56.6,40.3
 step
@@ -5130,7 +5130,7 @@ collect 20 Mountainfoot Iron##48128 |q 14197/1 |goto 26.7,70.1
 step
 clicknpc Mountainfoot Miner##35257
 |tip You only need one. They look like darker goblins standing in place around this area. Not all of them are clickable, so just search around until you find one you can click.
-Carry the Mountainfoot Miner |havebuff Interface\Icons\Ability_Warrior_IntensifyRage |q 14165 |goto 26.7,70.1
+Carry the Mountainfoot Miner |havebuff 236310 |q 14165 |goto 26.7,70.1
 step
 _Follow the path_ up and out |goto Azshara 25.8,68.6 < 10 |only if walking
 Deliver the Stonified Miner |q 14165/1 |goto 29.1,66.2
@@ -5282,7 +5282,7 @@ accept Need More Science##14424 |goto 29.6,66.9
 step
 talk Spirit of Kalytha##35567
 Select "_<Merge with the spirit.>_"
-Explore the Memories of Kalytha |havebuff Interface\Icons\Spell_Shadow_Twilight |q 14215 |goto Azshara 36.4,72.4
+Explore the Memories of Kalytha |havebuff 136223 |q 14215 |goto Azshara 36.4,72.4
 step
 talk Archmage Selwyn##35595
 Tell her _"Yes Archmage. I will hide the stone."_
@@ -5466,7 +5466,7 @@ accept Azsharite Experiment Number Two##14388 |goto Azshara 50.4,74.3
 step
 talk Assistant Greely##39199
 Tell her "_I'm ready. Shrink me!"_
-Become Mouse-sized! |havebuff Interface\Icons\Spell_Fire_ElementalDevastation |q 14388 |goto Azshara 50.4,74.3
+Become Mouse-sized! |havebuff 135791 |q 14388 |goto Azshara 50.4,74.3
 step
 clicknpc Rocketway Rat##36437
 Ride a Rat |invehicle |q 14388 |goto Azshara 50.3,74.4
@@ -5710,7 +5710,7 @@ accept Diplomacy by Another Means##14433 |goto 42.4,23.6
 step
 use Dingy Wizard Hat##49201
 equipped Dingy Wizard Hat##49201
-Convey the Appearance of Quite a Convincing Mage |havebuff INTERFACE\ICONS\inv_helmet_29 |q 14340 |goto 47.7,18.6
+Convey the Appearance of Quite a Convincing Mage |havebuff 133131 |q 14340 |goto 47.7,18.6
 step
 Approach Archmage Xylem While Wearing Your Wizard Hat |q 14340/1 |goto Azshara 47.2,20.9
 step
@@ -6601,7 +6601,7 @@ turnin The Vicious Vale##14235 |goto 35.43,75.71
 accept Weed Whacker##14236 |goto 35.43,75.71
 step
 Use the Weed Whacker |use Weed Whacker##49108
-Become a Weed Whacker |havebuff Weed Whacker |c |q 14236
+Become a Weed Whacker |havebuff 132369 |c |q 14236
 step
 Mow Down #100# Deadly Jungle Plants |q 14236/1 |goto 35.3,75.1
 |tip Spin around next to the plants all around this area.
@@ -6625,7 +6625,7 @@ turnin Forward Movement##14237 |goto 34.62,66.85
 accept Infrared = Infradead##14238 |goto 34.62,66.85
 step
 Use the Infrared Heat Focals |use Infrared Heat Focals##49611
-Wear the Infrared Heat Focals |havebuff Infrared Heat Focals |q 14238
+Wear the Infrared Heat Focals |havebuff 133149 |q 14238
 step
 kill 10 SI:7 Assassin##36092 |q 14238/1 |goto 31.2,65.6
 |tip They are also marked on your minimap.
@@ -6781,7 +6781,7 @@ accept Irresistible Pool Pony##24864 |goto 52.20,73.14
 step
 Follow the path |goto 54.98,76.64 < 20 |only if walking
 Use the Irresistible Pool Pony in the Water |use Irresistible Pool Pony##50602
-Ride the Irresistible Pool Pony |havebuff Irresistible Pool Pony |q 24864 |goto 58.1,80.3
+Ride the Irresistible Pool Pony |havebuff 132261 |q 24864 |goto 58.1,80.3
 step
 talk Naga Hatchling##44589
 |tip They look like tiny naga swimming underwater around this area.
@@ -6872,7 +6872,7 @@ talk Assistant Greely##39199
 accept Rockin' Powder##24946 |goto 51.72,47.39
 step
 Use the Super Booster Rocket Boots |use Super Booster Rocket Boot##52013
-Wear the Super Booster Rocket Boots |havebuff Super Booster Rocket Boots |q 24946
+Wear the Super Booster Rocket Boots |havebuff 133029 |q 24946
 stickystart "Rockin_Powder"
 stickystart "Goblin_Zombies"
 step

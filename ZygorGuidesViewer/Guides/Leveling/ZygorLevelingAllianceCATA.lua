@@ -726,7 +726,7 @@ turnin The Eye Of Acherus##12636 |goto 51.3,35.2
 accept Death Comes From On High##12641 |goto 51.3,35.2
 step
 click Eye of Acherus Control Mechanism##8123
-You will take control over the Eye of Acherus |havebuff Spell_Shadow_UnholyFrenzy |q 12641
+You will take control over the Eye of Acherus |havebuff 136224 |q 12641
 Your World Map will NOT show your current position anymore!
 If you stay floating high enough, the soldiers will not attack you.
 Once the Eye stops moving, go immediately northeast to the blacksmith building.
@@ -1694,7 +1694,7 @@ Enter the tower |goto 69.96,74.06 < 10 |walk
 Use the Potion of Shrouding |use Potion of Shrouding##58112
 |tip Use it inside the tower.
 |tip You can safely attack the elite mobs, Agent Kearnen will kill them for you.
-Become Invisible |havebuff Potion of Shrouding |goto 70.5,74.5 |q 26290
+Become Invisible |havebuff 132220 |goto 70.5,74.5 |q 26290
 step
 Watch the dialogue
 |tip At the top of the tower.
@@ -2523,7 +2523,7 @@ talk Mountaineer Kadrell##1340
 turnin Buzz Off##26932 |goto 35.1,46.6
 step
 Use your Clever Plant Disguise Kit |use Clever Plant Disguise Kit##60502
-Wear your Clever Plant Disguise |havebuff Interface\Icons\Ability_Stealth |c |q 26868 |goto 49.9,57.7
+Wear your Clever Plant Disguise |havebuff 132320 |c |q 26868 |goto 49.9,57.7
 step
 While disgued as the plant:
 Use your Potent Murloc Pheromones on the Mosshide Representative |use Potent Murloc Pheromones##60503
@@ -4161,9 +4161,9 @@ talk John J. Keeshan##43458
 accept Prisoners of War##26646 |goto 52.53,55.42
 step
 Use the Bravo Company Field Kit |use Bravo Company Field Kit##60384
-Activate the Bravo Company Field Kit |havebuff Bravo Company Field Kit |goto 53.9,57.7 |q 26646
+Activate the Bravo Company Field Kit |havebuff 133878 |goto 53.9,57.7 |q 26646
 step
-Stealth Your Party |havebuff Camouflage |goto 53.9,57.7 |q 26646
+Stealth Your Party |havebuff 461113 |goto 53.9,57.7 |q 26646
 |tip Use the Camouflage ability on your action bar.
 stickystart "To_Win_A_War_You_Gotta_Become_War_Quest_Tips"
 step
@@ -5102,7 +5102,7 @@ confirm
 step
 clicknpc Gurubashi Soldier##42871
 |tip Sleeping on the ground, inside the tent
-Steal Raptor Food |havebuff Interface\Icons\INV_Misc_Bag_10_Blue |q 26775 |goto 86.9,50.0
+Steal Raptor Food |havebuff 133641 |q 26775 |goto 86.9,50.0
 |tip Stay away from the trolls as you walk, or you will have to start over
 step
 talk Tenjiyu##42882
@@ -6485,7 +6485,7 @@ turnin Catalysm##27453
 accept Just a Drop in the Bucket##27454
 step
 Use your Death Cultist Disguise |use Death Cultist Disguise##61283
-Wear your Death Cultist Disguise |havebuff INTERFACE\ICONS\inv_helmet_152 |q 27454 |goto 61.7,75.5
+Wear your Death Cultist Disguise |havebuff 340019 |q 27454 |goto 61.7,75.5
 step
 click Mereldar Plague Cauldron##4331
 Choose to throw in an entire flask
@@ -7769,7 +7769,7 @@ turnin A Perfect Costume##28203 |goto 46.4,46.0 |only if havequest(28203)
 turnin A Perfect Costume##28204 |goto 46.4,46.0 |only if havequest(28204)
 turnin A Perfect Costume##28205 |goto 46.4,46.0 |only if havequest(28205)
 accept Into the Black Tooth Hovel##28239
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7782,7 +7782,7 @@ talk Quartermaster Kaoshin##48085
 |tip You must have your Blackrock disguise on or he will attack you
 turnin Into the Black Tooth Hovel##28239 |goto 45.3,51.7
 accept Grunt Work##28245 |goto 45.3,51.7
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7794,7 +7794,7 @@ step
 Click the Quest Accept box that displays on the right side of the screen under your minimap
 accept Strategic Cuts##28246
 You can also accept this from Colonel Troteman |goto Burning Steppes,46.2,45.8
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7806,7 +7806,7 @@ step
 Use your Razor-Sharp Scorpid Barb on Voodooist Timan |use Razor-Sharp Scorpid Barb##63350
 |tip Go to the very top of the tower
 kill Voodooist Timan##48100 |q 28246/3 |goto 45.0,52.5
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7817,7 +7817,7 @@ You no longer have a Blackrock Disguise in your inventory, click here to make an
 step
 Use your Razor-Sharp Scorpid Barb on Worgmistress Othana |use Razor-Sharp Scorpid Barb##63350
 kill Worgmistress Othana##48099 |q 28246/2 |goto 39.2,56.1
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7831,7 +7831,7 @@ kill Gorlop##9176 |q 28246/1 |goto 42.1,60.1
 |tip He's an ogre that runs back and forth between the two lava pools here, so you may need to search for him.
 Click the Quest Complete box that displays on the right side of the screen under your minimap
 turnin Strategic Cuts##28246
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -7843,7 +7843,7 @@ step
 click Blackrock Boot##10182+
 |tip They look like brown pairs of boots sitting on the outside of the huts and buildings all around this area.
 Polish 7 Pairs of Blackrock Boots |q 28245/1 |goto 39.7,55.7
-You have no disguise! Use your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
+You have no disguise! Use your Blackrock Disguise |havebuff 236455 |use Blackrock Disguise##63357 |only if itemcount(63357) > 0
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Hooman" |only if itemcount(63357) < 1 |only Human
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Stubby" |only if itemcount(63357) < 1 |only Dwarf
 You no longer have a Blackrock Disguise in your inventory, click here to make another |confirm |next "Shortstuff" |only if itemcount(63357) < 1 |only Gnome
@@ -9541,7 +9541,7 @@ accept Totem of Tikti##9540
 modelnpc Stillpine Ancestor Akida##17379
 step
 Follow Stillpine Ancestor Coo to the edge of the cliff
-He will give you wings |havebuff Interface\Icons\Spell_Holy_DivineSpirit |q 9540 |goto 55.6,41.6
+He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 modelnpc Stillpine Ancestor Coo##17391
 step
 clicknpc Totem of Tikti##17362 |goto 64.5,39.8
@@ -9549,7 +9549,7 @@ turnin Totem of Tikti##9540
 accept Totem of Yor##9541
 step
 Follow Stillpine Ancestor Tikti to the river
-He will give you a swim speed buff |havebuff Interface\Icons\Ability_Creature_Poison_05 |q 9541 |goto 63.8,40.2
+He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 modelnpc Stillpine Ancestor Tikti##17392
 step
 clicknpc Totem of Yor##17363 |goto 63,67.9
@@ -9558,7 +9558,7 @@ turnin Totem of Yor##9541
 accept Totem of Vark##9542
 step
 Follow Stillpine Ancestor Yor out of the water
-He will turn you into a ghost panther |havebuff Interface\Icons\Ability_Druid_SupriseAttack |q 9542 |goto 61.0,69.5
+He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 modelnpc Stillpine Ancestor Yor##17393
 step
 Follow Stillpine Ancestor Yor as he runs
@@ -10266,7 +10266,7 @@ accept Totem of Tikti##9540 |goto 55.2,41.7
 modelnpc Stillpine Ancestor Akida##17379
 step
 Follow Stillpine Ancestor Coo to the edge of the cliff
-He will give you wings |havebuff Interface\Icons\Spell_Holy_DivineSpirit |q 9540 |goto 55.6,41.6
+He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 modelnpc Stillpine Ancestor Coo##17391
 step
 clicknpc Totem of Tikti##17362
@@ -10274,7 +10274,7 @@ turnin Totem of Tikti##9540 |goto Azuremyst Isle,64.5,39.8
 accept Totem of Yor##9541 |goto Azuremyst Isle,64.5,39.8
 step
 Follow Stillpine Ancestor Tikti to the river
-He will give you a swim speed buff |havebuff Interface\Icons\Ability_Creature_Poison_05 |q 9541 |goto 63.8,40.2
+He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 modelnpc Stillpine Ancestor Tikti##17392
 step
 clicknpc Totem of Yor##17363 |tip It is underwater.
@@ -10282,7 +10282,7 @@ turnin Totem of Yor##9541 |goto Azuremyst Isle,63,67.9
 accept Totem of Vark##9542 |goto Azuremyst Isle,63,67.9
 step
 Follow Stillpine Ancestor Yor out of the water
-He will turn you into a ghost panther |havebuff Interface\Icons\Ability_Druid_SupriseAttack |q 9542 |goto 61.0,69.5
+He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 modelnpc Stillpine Ancestor Yor##17393
 step
 Follow Stillpine Ancestor Yor as he runs
@@ -11013,7 +11013,7 @@ talk Keeper Karithus##33048
 accept The Ritual Bond##13569 |goto 43.0,39.0
 step
 click Grovekeeper's Incense##8683
-Breathe in the smoke to entice visions of the great animal spirits |havebuff Interface\Icons\Spell_Nature_Sleep |q 13569 |goto 42.9,39.0
+Breathe in the smoke to entice visions of the great animal spirits |havebuff 136090 |q 13569 |goto 42.9,39.0
 step
 talk Great Stag Spirit##33133
 |tip You can also talk to the Great Moonstalker Spirit or the Great Thistle Bear Spirit.  We recommend talking to the Great Stag Spirit because it gives you a 10% increased run speed buff.  If you would like to talk to the other spirits, the Great Moonstalker Spirit gives a 10% haste buff and the Great Thistle Bear Spirit gives a 10% damage reduction buff.  You can only choose one, so pick whichever one you'd like.
@@ -11378,7 +11378,7 @@ Follow the path up |goto 46.5,54.3 |only if walking
 Enter the cave |goto 47.2,56.0 |walk
 Follow the path to the end of the cave
 clicknpc Nightmare Portal##38430 |indoors Earthshatter Cavern
-Enter the Nightmare World |havebuff Interface\Icons\INV_Misc_Herb_Nightmarevine |q 13586 |goto 49.0,57.1 |indoors Earthshatter Cavern
+Enter the Nightmare World |havebuff 134218 |q 13586 |goto 49.0,57.1 |indoors Earthshatter Cavern
 step
 talk Thessera##33166 |indoors Earthshatter Cavern
 turnin The Emerald Dream##13586 |goto 49.2,56.9 |indoors Earthshatter Cavern
@@ -11498,7 +11498,7 @@ turnin The Defiler##13546 |goto 43.5,81.0
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13892 |goto 42.4,82.3
+Transform into a panther |havebuff 132115 |q 13892 |goto 42.4,82.3
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth
 Stand in this spot and listen to Foreman Balsoth
@@ -11513,7 +11513,7 @@ collect Seed of the Sea |q 13882/2 |goto 38.6,78.2
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13948 |goto 39.2,85.1
+Transform into a panther |havebuff 132115 |q 13948 |goto 39.2,85.1
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth |goto 39.8,86.4
 Follow the path up |goto 39.8,86.4 < 5
@@ -11770,7 +11770,7 @@ step
 If you have a pet, dismiss it
 Equip your Cloak of Cenarius
 Use your Cloak of Cenarius |use Cloak of Cenarius##45044
-Wear the Cloak of Cenarius |havebuff Interface\Icons\INV_Misc_Cape_Naxxramas_02 |q 13626 |goto 26.3,37.7
+Wear the Cloak of Cenarius |havebuff 133776 |q 13626 |goto 26.3,37.7
 step
 clicknpc Feero Ironhand##33348
 collect Feero's Holy Hammer |q 13626/1 |goto 26.3,38.4
@@ -11782,7 +11782,7 @@ collect The Purifier's Prayer Book |q 13626/2 |goto 27.0,40.8
 step
 If you have a pet, dismiss it
 Use your Cloak of Cenarius |use Cloak of Cenarius##45044
-Wear the Cloak of Cenarius |havebuff Interface\Icons\INV_Misc_Cape_Naxxramas_02 |q 13626
+Wear the Cloak of Cenarius |havebuff 133776 |q 13626
 step
 talk Sentinel Onaeya##11806
 turnin Respect for the Fallen##13626 |goto 26.7,36.9
@@ -12338,7 +12338,7 @@ Get out of the water here |goto 53.1,71.4 |only if walking
 Follow the path up |goto 54.1,72.9 |only if walking
 Go to this spot
 Use Dartol's Rod |use Dartol's Rod##46739
-Transform into a furbolg |havebuff Interface\Icons\INV_Misc_MonsterClaw_04 |q 26480 |goto 51.4,75.1
+Transform into a furbolg |havebuff 134297 |q 26480 |goto 51.4,75.1
 step
 talk Krolg##3897
 turnin Dartol's Rod##26480 |goto 50.9,75.1
@@ -12379,7 +12379,7 @@ Jump down into the water |goto 52.1,74.1 |only if walking
 Swim across the lake to the other side |goto 51.4,67.8 |only if walking
 Go to this spot and kill the Horde enemy guarding the furbolg cage
 Use Dartol's Rod |use Dartol's Rod##46781
-Transform into a furbolg |havebuff Interface\Icons\INV_Misc_MonsterClaw_04 |q 26482 |goto 50.2,60.6
+Transform into a furbolg |havebuff 134297 |q 26482 |goto 50.2,60.6
 step
 talk Ota Wen##34618
 Tell him rise up against the orcs!
@@ -12795,7 +12795,7 @@ talk Lieutenant Paulson##41277 |indoors The Deep Reaches
 accept They Put the Assass in... Never Mind##25806 |goto 72.1,76.0 |indoors The Deep Reaches
 step
 Use your Infrared Heat Detection Device |use Infrared Heat Detection Device##56014 |indoors The Deep Reaches
-Gain Infrared Vision |havebuff INTERFACE\ICONS\inv_helmet_47 |q 25806 |indoors The Deep Reaches
+Gain Infrared Vision |havebuff 133149 |q 25806 |indoors The Deep Reaches
 step
 Talk to Frightened Miners to rescue them as you walk |indoors The Deep Reaches |indoors The Deep Reaches
 Go to this spot |indoors The Deep Reaches |indoors The Deep Reaches
@@ -14721,7 +14721,7 @@ turnin Is it Real?##27219 |goto 58.8,60.2
 accept Nat's Bargain##27220 |goto 58.8,60.2
 step
 Use Pagle's Fish Paste, Extra Strength |use Pagle's Fish Paste, Extra Strength##33166
-Wear Pagle's Fish Paste |havebuff Interface\Icons\Spell_Nature_ElementalAbsorption |q 27220
+Wear Pagle's Fish Paste |havebuff 136027 |q 27220
 step
 kill Lurking Shark##23928
 Test the Fish Paste |q 27220/1 |goto 56.6,62.4
@@ -15396,7 +15396,7 @@ accept Codemaster's Code##28139 |goto 30.5,49.3
 accept Behind You!##28136 |goto 30.5,49.3
 step
 Use your Bulwark Disguise |use Bulwark Disguise##63071
-Wear the Bulwark Disguise |havebuff INTERFACE\ICONS\inv_helm_plate_twilighthammer_c_01 |q 28136
+Wear the Bulwark Disguise |havebuff 391130 |q 28136
 step
 talk Commander Fastfuse##47620
 |tip He's at the top of the tower.
@@ -15421,7 +15421,7 @@ turnin Behind You!##28136 |goto 30.5,49.3
 accept The Elder Crone##28140 |goto 30.5,49.3
 step
 Use your Bulwark Disguise |use Bulwark Disguise##63071
-Wear the Bulwark Disguise |havebuff INTERFACE\ICONS\inv_helm_plate_twilighthammer_c_01 |q 28140
+Wear the Bulwark Disguise |havebuff 391130 |q 28140
 step
 Click Magatha's Bonds Controller
 |tip It looks like a metal container with a ring on top of it.
@@ -15692,7 +15692,7 @@ turnin Chicken of the Desert##24933 |goto 55.6,60.9
 accept A Great Idea##24951 |goto 55.6,60.9
 step
 Use your Bootlegger Bug Bait on a Hazzali Swarmer |use Bootlegger Bug Bait##52031
-Take control of a Hazzali Swarmer |havebuff Interface\Icons\Ability_Hunter_Pet_Silithid |q 24951 |goto 53.4,62.7
+Take control of a Hazzali Swarmer |havebuff 236195 |q 24951 |goto 53.4,62.7
 step
 Stand next to Zeke Bootscuff
 |tip Don't mount while running back to Zeke Bootscuff, or you will lose your Hazzali Swarmer and not get credit.
@@ -15894,7 +15894,7 @@ step
 Stand on the Mark of Tichondrius
 |tip It's a green glowing symbol on the ground.
 Use your Phaseblood Potion |use Phaseblood Potion##62920
-Shift into the Nether |havebuff Interface\Icons\Spell_Shadow_ImpPhaseShift |q 28044 |goto 41.0,75.8
+Shift into the Nether |havebuff 136164 |q 28044 |goto 41.0,75.8
 step
 kill Vorlus##47398
 collect Claw of Tichondrius |q 28044/1 |goto 42.3,79.9
@@ -16236,7 +16236,7 @@ accept Deceivers In Our Midst##28261 |goto 45.6,20.1
 step
 Follow the path up |goto 47.9,18.1 |only if walking
 Use your Sindweller Blindfold |use Sindweller Blindfold##63419
-Wear the Sindweller Blindfold |havebuff INTERFACE\ICONS\inv_misc_bandana_01 |q 28261 |goto 46.2,16.4
+Wear the Sindweller Blindfold |havebuff 133693 |q 28261 |goto 46.2,16.4
 step
 kill 12 Jadefire Shifter##48154+ |q 28261/1 |goto 43.8,16.2
 Click the Quest Complete box that displays on the right side of the screen under your minimap
@@ -16894,7 +16894,7 @@ accept Scouring the Desert##9419 |goto 39.6,47.0
 step
 Click the Silithyst Geyser |goto 50.0,49.9
 |tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |c |q 9419
+Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9419
 They spawn in various locations, you find more at:
 [53.2,41.6]
 [57.1,47.2]
@@ -17463,7 +17463,7 @@ accept Ever Watching From Above##24695 |goto 83.5,46.0
 step
 Click the Bloodpetal Observation Lever
 |tip It's a metal handle on the floor.
-Become a Bloodpetal |havebuff Interface\Icons\INV_Misc_Herb_Nightmarevine |q 24695 |goto 83.5,45.3
+Become a Bloodpetal |havebuff 134218 |q 24695 |goto 83.5,45.3
 step
 Use the abilities on your hotbar
 kill Bloodpetal Flayer##6510
@@ -17471,7 +17471,7 @@ Complete the Bloodpetal Observation |q 24695/1 |goto 66.8,30.6
 step
 Click the Pterrordax Observation Lever
 |tip It's a metal handle on the floor.
-Become a Pterrordax |havebuff Interface\Icons\INV_Misc_LeatherScrap_13 |q 24695 |goto 84.0,45.6
+Become a Pterrordax |havebuff 134262 |q 24695 |goto 84.0,45.6
 step
 Use the Pterrordash ability on your hotbar
 Fly upward
@@ -17479,7 +17479,7 @@ Complete the Pterrordax Observation |q 24695/4 |goto 37.8,33.5
 step
 Click the Gorilla Observation Lever
 |tip It's a metal handle on the floor.
-Become a Gorilla |havebuff Interface\Icons\Ability_Hunter_Pet_Gorilla |q 24695 |goto 84.0,46.4
+Become a Gorilla |havebuff 132189 |q 24695 |goto 84.0,46.4
 step
 talk Un'Goro Stomper##6513
 talk Un'Goro Gorilla##6514
@@ -17489,7 +17489,7 @@ Complete the Gorilla Observation |q 24695/3 |goto 63.2,17.0
 step
 Click the Diemetradon Observation Lever
 |tip It's a metal handle on the floor.
-Become a Diemetradon |havebuff Interface\Icons\INV_Misc_MonsterScales_12 |q 24695 |goto 83.5,46.7
+Become a Diemetradon |havebuff 134314 |q 24695 |goto 83.5,46.7
 step
 Use your Bit ability on your hotbar on any Humanoid in the Marshal's Stand camp
 Bite 5 Humanoids
@@ -19082,7 +19082,7 @@ step
 talk Private Weeks##18715
 turnin Speak with Private Weeks##10038 |goto 40.5,36.2
 accept Who Are They?##10040 |goto 40.5,36.2
-He puts an orc disguise on you |havebuff Shadowy Disguise |q 10040 |goto 40.5,36.2
+He puts an orc disguise on you |havebuff 32756 |q 10040 |goto 40.5,36.2
 |tip You cannot get the disguise if you are mounted.
 step
 talk Shadowy Advisor##18719
@@ -20337,7 +20337,7 @@ step
 Walk inside the Lashh'an Summoning Circle
 |tip It's a circle with the purple hologram on the ground.
 Use the Fistful of Feathers in your bag |use Fistful of Feathers##30530
-Get the Kaliri aura cast on you |havebuff Ability_Hunter_Pet_DragonHawk |q 10556 |goto 35.2,77.3
+Get the Kaliri aura cast on you |havebuff 132188 |q 10556 |goto 35.2,77.3
 Allow the newly spawned Kaliri to follow you
 |tip Once you have the blessing, mounting will cause you to lose it.
 modelnpc Kaliri Aura##21767
@@ -20762,7 +20762,7 @@ turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
 kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+ |goto 42.2,25.1
-Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk |q 10747 |future
+Get the Understanding Ravenspeech buff |havebuff 132188 |q 10747 |future
 |tip Must be within melee range to receive the buff
 Anytime the buff wears off, kill Grishna mobs again to get it back
 step
@@ -20796,7 +20796,7 @@ kill Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121|q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |goto 32.6,37.5 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |goto 32.6,37.5 |use Overseer Disguise##31122
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -20887,7 +20887,7 @@ Ask him if he has another Felsworn Gas Mask
 collect Felsworn Gas Mask##31366 |future |q 10821 |goto 62.2,40.1
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |future |q 10821 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |future |q 10821 |goto 73.3,40.1
 step
 Click the Legion Communicator
 |tip It looks like a metal altar sitting on the ground.
@@ -21520,7 +21520,7 @@ turnin A Convincing Disguise##10197 |goto 48.2,86.6
 accept Information Gathering##10198 |goto 48.2,86.6
 only if rep ('The Scryers') >= Neutral
 step
-Use the Sunfury Disguise in your bags |havebuff Sunfury Disguise |use Sunfury Disguise##28607
+Use the Sunfury Disguise in your bags |havebuff 133564 |use Sunfury Disguise##28607
 only if rep ('The Scryers') >= Neutral
 step
 Go inside Manaforge Coruu |goto 48.2,84.1 |walk
@@ -24157,7 +24157,7 @@ turnin Keep the Secret Safe##11914 |goto 33.5,34.4
 step
 Use your Raelorasz's Spear on a Nexus Drake Hatchling |use Raelorasz's Spear##35506
 |tip They are flying above you in the sky. |modelnpc Nexus Drake Hatchling##26127
-Do not kill it, let it hit you until it becomes friendly |havebuff Drake Hatchling Subdued |c |q 11919 |goto 24.6,27.1
+Do not kill it, let it hit you until it becomes friendly |havebuff 134155 |c |q 11919 |goto 24.6,27.1
 step
 Capture the Nexus Drake |q 11919/1
 talk Raelorasz##26117
@@ -24557,7 +24557,7 @@ talk King Mrgl-Mrgl##25197
 turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566 |goto 40.0,20.2
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566 |goto 40.0,20.2
 step
 Go inside the cave |goto 37.8,23.2 |walk
 talk Glrglrglr##28375
@@ -24568,13 +24568,13 @@ kill Keymaster Urmgrgl##25210
 |tip You will have to take off your murloc suit by right-clicking the buff you have.
 collect Urmgrgl's Key |q 11569/1
 step
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566
 step
 Follow the path up and to the back of the cave |goto 37.6,27.4 |walk
 kill Claximus##25209
 collect Claw of Claximus |q 11566/1
 step
-Use King Mrgl-Mrgl's Spare Suit |havebuff INV_Misc_Head_Murloc_01 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566
 step
 Go back up the path |goto 37.8,23.2 |walk
 talk Glrglrglr##28375
@@ -27141,7 +27141,7 @@ turnin Troll Season!##12210 |goto 16.2,47.6
 accept Filling the Cages##11984 |goto 16.2,47.6
 step
 talk Budd##26422
-Tell him it's time to play with the ice trolls |goto 16.4,48.3 |havebuff Budd's Attention Span |c
+Tell him it's time to play with the ice trolls |goto 16.4,48.3 |havebuff 134177 |c
 confirm
 step
 Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
@@ -27724,7 +27724,7 @@ step
 Use your Charged Drakil'jin Mallet next to a gong |use Charged Drakil'jin Mallet##36834
 |tip They are 3 gongs sitting close together here.
 Get killed by Warlord Jin'arrak |q 12121/1 |goto 71.5,24.7
-STAY DEAD |havebuff On the Other Side |q 12121/1 |goto 71.5,24.7
+STAY DEAD |havebuff 132094 |q 12121/1 |goto 71.5,24.7
 step
 While dead, go inside the crypt |goto 69.4,19.5 |walk
 talk Gan'jo##26924
@@ -31914,7 +31914,7 @@ step
 kill Cultist Acolyte##32507+
 collect 1 Cultist Acolyte's Hood##44784 |q 13403 |goto 46.1,76.6
 Use your Cultist Acolyte's Hood |use Cultist Acolyte's Hood##44784
-Become disguised as a cultist |havebuff Ability_Rogue_MasterOfSubtlety |q 13403 |goto 46.1,76.6
+Become disguised as a cultist |havebuff 132299 |q 13403 |goto 46.1,76.6
 step
 talk Highlord Tirion Fordring##32239
 Tell him you're ready and follow him into the cathedral
@@ -32835,7 +32835,7 @@ step
 Cross the bridge |goto 73.33,79.50 < 15 |only if walking
 Follow the path up |goto 75.18,76.67 < 20 |only if walking
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |goto 76.6,75.5 |q 24592
+Become Stealthed |havebuff 132320 |c |goto 76.6,75.5 |q 24592
 step
 Follow the path down |goto 79.22,72.05 < 20 |only if walking
 Continue on the path |goto 80.53,69.72 < 20 |only if walking
@@ -32848,7 +32848,7 @@ kill Baron Ashbury##37735 |q 24592/1 |goto 85.29,74.27
 |tip Use Krennan's Potion of Stealth again, if you accidentally lose stealth.
 step
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |q 24592
+Become Stealthed |havebuff 132320 |c |q 24592
 step
 Follow the path down |goto 85.62,73.11 < 15 |only if walking
 Cross the bridge |goto 84.11,72.74 < 15 |only if walking
@@ -32861,7 +32861,7 @@ kill Lord Walden##37733 |q 24592/2 |goto 78.16,66.03
 |tip Use Krennan's Potion of Stealth again, if you accidentally lose stealth.
 step
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
-Become Stealthed |havebuff Stealth |c |q 24592
+Become Stealthed |havebuff 132320 |c |q 24592
 step
 Jump down here |goto 79.78,68.28 < 15 |only if walking
 Follow the path up |goto 79.58,70.61 < 20 |only if walking
@@ -34014,7 +34014,7 @@ kill Spinescale Matriarch##40403
 collect Spiked Basilisk Hide |q 25494/1 |goto 84.9,47.0
 step
 Use your Ogre Disguise next to the Ogre Outhouse |use Ogre Disguise##55137
-Put on your Ogre Disguise |havebuff Interface\Icons\inv_misc_ogrepinata |q 25308 |goto 77.5,48.1
+Put on your Ogre Disguise |havebuff 306868 |q 25308 |goto 77.5,48.1
 model Ogre Outhouse##3332
 step
 talk Karr'gonn##40489

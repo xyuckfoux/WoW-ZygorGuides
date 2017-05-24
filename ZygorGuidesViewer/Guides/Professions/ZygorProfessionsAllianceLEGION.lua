@@ -2057,7 +2057,7 @@ collect 100 Tanned Stonehide Leather##136539 |goto 35.31,28.49 |q 41889
 step
 click Namaha's Workbench
 _<Create 5 Stonehide Leather Strips>_
-collect 5 Stonehide Leather Strip##130875 |goto 34.66,28.94 |q 41889
+collect 10 Stonehide Leather Strip##130875 |goto 34.66,28.94 |q 41889
 step
 click Namaha's Workbench
 _<Create 1 Stonehide Caparison>_
@@ -6619,7 +6619,7 @@ step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
 |tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
-Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto 68.99,58.38 |q 39949
+Hire a Bodyguard |havebuff 237433 |goto 68.99,58.38 |q 39949
 step
 Follow the path down |goto 64.35,58.85 < 20 |walk
 talk Inkrot##97756
@@ -6957,7 +6957,7 @@ step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
 |tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
-Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 40531
+Hire a Bodyguard |havebuff 237433 |goto Dalaran L/11 68.99,58.38 |q 40531
 step
 Follow the path down |goto 64.30,58.65 < 15 |walk
 talk Harold Winston##100671
@@ -7155,7 +7155,7 @@ step
 talk Raethan##97359
 Tell him _"I want to hire a personal bodyguard."_
 |tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
-Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 40539
+Hire a Bodyguard |havebuff 237433 |goto Dalaran L/11 68.99,58.38 |q 40539
 step
 Follow the path |goto 59.77,39.48 < 15 |walk
 talk Ms. Xiulan##101492

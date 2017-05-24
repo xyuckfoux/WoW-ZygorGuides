@@ -529,7 +529,7 @@ collect 5 Prickly Puffer Spine##80529 |q 30658/1 |goto 51.4,62.2
 only if havequest(30658)
 step
 click Goblin Fishing Raft
-Ride a Goblin Fishing Raft |havebuff Rafting |goto 57.5,53.5
+Ride a Goblin Fishing Raft |havebuff 534592 |goto 57.5,53.5
 only if havequest(30698)
 step
 Use you fishing skill in the Shipwreck Debris pools to fish up 15 Rusty Shipwreck Debris.

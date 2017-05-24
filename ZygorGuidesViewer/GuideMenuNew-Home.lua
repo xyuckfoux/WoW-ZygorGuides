@@ -5,8 +5,17 @@ local GuideMenu = ZGV.GuideMenu
 
 GuideMenu.HomeVersion = 1
 GuideMenu.Home={
-	{"title", text=[[Recent Content:]]},
+	{"title", text=[[This Update:]]},
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
+
+	{"section", text=[[EVENTS]]},
+	{"item", text=[[Updated |cfffe6100Children's Week Stormwind Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Stormwind Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Shattrath Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Shattrath Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Oracles Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Oracles Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Dalaran Wolvar Quests|r.]], guide="EVENTS\\Children's Week\\Children's Week Dalaran Wolvar Quests"},
+	{"item", text=[[Updated |cfffe6100Children's Week Achievements|r.]], guide="EVENTS\\Children's Week\\Children's Week Achievements"},
+
+	{"title", text=[[Recent Content:]]},
 
 	{"section", text=[[LEVELING]]},
 	{"item", text=[[Added |cfffe6100Balance of Power Questline|r.]], guide="LEVELING\\Legion (100-110)\\Balance of Power Questline"},
@@ -24,11 +33,6 @@ GuideMenu.Home={
 
 	{"section", text=[[DAILIES]]},
 	{"item", text=[[Added |cfffe6100Patch 7.2 World Quests|r.]], guide="DAILIES\\Legion\\World Quests"},
-
-	{"section", text=[[EVENTS]]},
-	{"item", text=[[Updated |cfffe6100Legion Brawler's Guild|r.]], guide="EVENTS\\Brawler's Guild\\Legion Brawler's Guild"},
-	{"item", text=[[Updated |cfffe6100Noblegarden Quests and Dailies|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Quests and Dailies"},
-	{"item", text=[[Updated |cfffe6100Noblegarden Achievements|r.]], guide="EVENTS\\Noblegarden\\Noblegarden Achievements"},
 
 	{"section", text=[[REPUTATIONS]], beta=true},
 	{"item", text=[[Added |cfffe6100Armies of Legionfall Reputation (BETA)|r.]], guide="REPUTATIONS\\Legion\\Armies of Legionfall", beta=true},

@@ -2436,7 +2436,7 @@ ZygorGuidesViewer:RegisterInclude("A_Ironforge_Cooking_Dailies",[[
 	step
 		click Cask of Drugan's IPA##7414
 		|tip This is a timed quest. You will be forced to run automatically and have 3 mins to run the IPA back to the quest giver.
-		Pick up the Cask of Drugan's IPA |havebuff Interface\Icons\INV_Cask_01 |goto Dun Morogh 53.9,50.7
+		Pick up the Cask of Drugan's IPA |havebuff 132620 |goto Dun Morogh 53.9,50.7 --INV_Cask_01
 		only if havequest(29356)
 	step
 		Deliver the Cask of Drugan's IPA |q 29356/2 |goto Ironforge 60.1,36.5

@@ -1385,7 +1385,7 @@ Be ready to fight a couple mobs
 kill Coilfang Champion##17957+, Coilfang Enchantress##17961+ |goto 95.7,66.2
 talk Naturalist Bite##17893
 Tell him
-<Naturalist, please grant me your boon |havebuff Interface\Icons\Ability_Druid_FerociousBite
+<Naturalist, please grant me your boon |havebuff 132127
 step
 kill Quagmirran##17942+
 collect The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9
@@ -1681,7 +1681,7 @@ turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
 kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+ |goto 42.2,25.1
-Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk
+Get the Understanding Ravenspeech buff |havebuff 132188
 |tip Must be within melee range to receive the buff
 Anytime the buff wears off, kill Grishna mobs again to get it back
 step
@@ -1710,7 +1710,7 @@ kill Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |use Overseer Disguise##31122
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -1780,7 +1780,7 @@ click Legion Communicator##7091
 turnin Deceive thy Enemy##10820 |goto 73.2,40
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819 |goto 73.3,40.1
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 |goto 73.3,40.1
 click Legion Communicator##7091
 accept You're Fired!##10821 |goto 73.3,40.1
 step
@@ -2024,7 +2024,7 @@ turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
 Go southwest to Winterfin Village|n
-Use King Mrgl-Mrgl's Spare Suit|havebuff INV_Misc_Head_Murloc_01|use King Mrgl-Mrgl's Spare Suit##34620
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620
 step
 Go inside the cave |goto 37.8,23.2
 talk Glrglrglr##28375
@@ -2161,7 +2161,7 @@ turnin Report to Marshal Bluewall##9415 |goto 39.6,47.0
 accept Scouring the Desert##9422 |goto 39.6,47.0
 step
 click Silithyst Geyser##6862
-Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |c |q 9422 |goto 50.0,49.9
+Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9422 |goto 50.0,49.9
 They spawn in various locations, you find more at:
 [53.2,41.6]
 [57.1,47.2]
@@ -4538,7 +4538,7 @@ turnin A New Supplier of Souvenirs##29396 |or |goto 40.3,17.9
 turnin Another Year, Another Souvenir.##13931 |or |goto 40.3,17.9
 step
 Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11431
+Equip the Synthebrew Goggles |havebuff 135977 |q 11431
 step
 Use your Wolpertinger Net on Wild Wolpertingers |use Wolpertinger Net##32907
 |tip They look like rabbits with antlers and wings running around on the ground around this area.

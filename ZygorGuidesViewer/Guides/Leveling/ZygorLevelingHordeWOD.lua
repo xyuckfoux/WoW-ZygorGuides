@@ -4333,7 +4333,7 @@ turnin Cure of Aruunem##33873 |goto Talador 65.4,50.7
 accept Aruumel's Rest##33874 |goto Talador 65.4,50.7
 step
 use Elixir of Memories##108749
-Enter the Spirit Realm |havebuff Interface\Icons\ability_warlock_soulswap |q Aruumel's Rest##33874 |c |goto Talador/0 65.4,50.7
+Enter the Spirit Realm |havebuff 460857 |q Aruumel's Rest##33874 |c |goto Talador/0 65.4,50.7
 |only if havequest(33874)
 step
 kill Aruumel##76824 |q Aruumel's Rest##33874/1 |goto Talador 68.9,55.0

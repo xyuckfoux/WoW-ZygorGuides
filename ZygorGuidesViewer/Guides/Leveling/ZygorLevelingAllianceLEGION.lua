@@ -9110,7 +9110,7 @@ talk Adept Sunwing##111624
 fpath Felblaze Ingress |goto 63.83,28.47
 step
 clicknpc Eye of Kilrogg##107252
-Control the Eye of Kilrogg |havebuff Interface\Icons\Spell_Shadow_EvilEye |q 42375 |goto 63.85,28.99
+Control the Eye of Kilrogg |havebuff 136155 |q 42375 |goto 63.85,28.99
 step
 _Go East as the Eye of Kilrogg:_
 |tip Go to the big green swirling portal.
@@ -12310,7 +12310,7 @@ turnin Paid in Lifeblood##39855 |goto Stormheim/0 60.14,50.74
 accept A Heavy Burden##40078 |goto Stormheim/0 60.14,50.74
 step
 click Fish Barrel
-Collect the Fish |havebuff Interface\Icons\INV_Misc_Fish_04 |q 40078 |goto 59.96,50.62
+Collect the Fish |havebuff 133890 |q 40078 |goto 59.96,50.62
 step
 click Spear
 Carry Havi's Fish to the Fire |q 40078/1 |goto 60.54,51.24
@@ -13284,7 +13284,7 @@ accept First Contact##42147 |goto 43.38,78.74
 step
 Use the Masquerade ability
 |tip It appears as a button on the screen.
-Gain the Masquerade Disguise |havebuff Interface\Icons\inv_helm_mask_fittedalpha_b_01_nightborne_02 |goto 43.38,78.74 |q 42147
+Gain the Masquerade Disguise |havebuff 1354190 |goto 43.38,78.74 |q 42147
 step
 Follow the path |goto 42.75,78.61 < 15 |only if walking
 Follow the path |goto 42.91,76.78 < 15 |only if walking
@@ -29438,20 +29438,29 @@ turnin The Command Center##46773 |goto Broken Shore/0 44.54,63.15
 turnin The Nether Disruptor##46774 |goto Broken Shore/0 44.54,63.15
 |only Druid
 step
-talk War Councilor Victoria##117871
-accept An Impossible Foe##46065 |goto Broken Shore/0 45.68,62.07
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-talk War Councilor Victoria##117871
-Tell her _"Take me to Agatha..."_ |goto Broken Shore/0 45.69,62.06
-|confirm |q 46065
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Druid
 step
-kill Agatha##115638 |q 46065/1 |goto Broken Shore/0 -70.10,13.66
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-talk War Councilor Victoria##117871
-turnin An Impossible Foe##46065 |goto Broken Shore/0 45.68,62.07
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Druid
+step
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
+|only Druid
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Druid
 step
 More content coming soon!
@@ -30429,6 +30438,18 @@ talk Lord Illidan Stormrage##117873
 turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only Priest
 step
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Priest
+step
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
+|only Priest
+step
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
+|only Priest
+step
 More content coming soon!
 confirm
 |only Priest
@@ -31255,36 +31276,29 @@ turnin The Command Center##46773 |goto Broken Shore/0 44.54,63.15
 turnin The Nether Disruptor##46774 |goto Broken Shore/0 44.54,63.15
 |only Warrior
 step
-talk War Councilor Victoria##117871
-accept An Impossible Foe##46065 |goto Broken Shore/0 45.68,62.07
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-talk War Councilor Victoria##117871
-Tell her _"Take me to Agatha..."_ |goto Broken Shore/0 45.69,62.06
-|confirm |q 46065
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Warrior
 step
-kill Agatha##115638 |q 46065/1 |goto Broken Shore/0 -70.10,13.66
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-talk War Councilor Victoria##117871
-turnin An Impossible Foe##46065 |goto Broken Shore/0 45.68,62.07
+talk Prophet Velen##120372
+accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Warrior
 step
-talk War Councilor Victoria##117871
-accept The Highlord's Return##45416 |goto Broken Shore/0 45.69,62.06
+Complete #12# World Quests in the Broken Shore |q 46248/1
+|tip Use the World Quests guide to complete this.
 |only Warrior
 step
-talk War Councilor Victoria##117871
-Tell her _"I'm ready to face Kruul."_ |goto Broken Shore/0 45.69,62.06
-|confirm |q 45416
-|only Warrior
-step
-kill Highlord Kruul##117198 |q 45416/1
-|only Warrior
-step
-talk War Councilor Victoria##117871
-turnin The Highlord's Return##45416 |goto Broken Shore/0 45.68,62.07
+talk Prophet Velen##120372
+turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Warrior
 step
 More content coming soon!
@@ -33316,31 +33330,6 @@ Collect 2500 Nethershards |q 46251/1
 step
 talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
-|only Druid
-step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Druid
-step
-Collect #100# Marks of the Sentinax |q 47139/1
-|tip Do this by killing empowered portal Rares and elite enemies.
-|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
-|only Druid
-step
-talk Lord Illidan Stormrage##117873
-turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Druid
-step
-talk Prophet Velen##120372
-accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
-|only Druid
-step
-Complete #12# World Quests in the Broken Shore |q 46248/1
-|tip Use the World Quests guide to complete this.
-|only Druid
-step
-talk Prophet Velen##120372
-turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Druid
 step
 More content coming soon!
@@ -36298,31 +36287,6 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Priest
 step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Priest
-step
-Collect #100# Marks of the Sentinax |q 47139/1
-|tip Do this by killing empowered portal Rares and elite enemies.
-|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
-|only Priest
-step
-talk Lord Illidan Stormrage##117873
-turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Priest
-step
-talk Prophet Velen##120372
-accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
-|only Priest
-step
-Complete #12# World Quests in the Broken Shore |q 46248/1
-|tip Use the World Quests guide to complete this.
-|only Priest
-step
-talk Prophet Velen##120372
-turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
-|only Priest
-step
 More content coming soon!
 confirm
 |only Priest
@@ -38716,31 +38680,6 @@ Collect 2500 Nethershards |q 46251/1
 step
 talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
-|only Warrior
-step
-talk Lord Illidan Stormrage##117873
-accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Warrior
-step
-Collect #100# Marks of the Sentinax |q 47139/1
-|tip Do this by killing empowered portal Rares and elite enemies.
-|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
-|only Warrior
-step
-talk Lord Illidan Stormrage##117873
-turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
-|only Warrior
-step
-talk Prophet Velen##120372
-accept Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
-|only Warrior
-step
-Complete #12# World Quests in the Broken Shore |q 46248/1
-|tip Use the World Quests guide to complete this.
-|only Warrior
-step
-talk Prophet Velen##120372
-turnin Self-Fulfilling Prophecy##46248 |goto Broken Shore/0 44.56,63.39
 |only Warrior
 step
 More content coming soon!

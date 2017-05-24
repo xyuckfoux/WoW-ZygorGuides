@@ -7679,7 +7679,7 @@ accept Disarmed!##13836 |or |goto Dalaran 53.1,64.9
 accept The Ghostfish##13830 |or |goto Dalaran 53.1,64.9
 step
 kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
-_Get_ the Animal Blood buff |havebuff Ability_Seal |q Blood Is Thicker##13833 |goto Borean Tundra 54.6,41.8
+_Get_ the Animal Blood buff |havebuff 132311 |q Blood Is Thicker##13833 |goto Borean Tundra 54.6,41.8
 only if havequest (13833)
 step
 _Walk into_ the water here to create a pool of blood
@@ -12604,7 +12604,7 @@ accept Disarmed!##13836 |or |goto Dalaran 53.1,64.9
 accept The Ghostfish##13830 |or |goto Dalaran 53.1,64.9
 step
 kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
-Get the Animal Blood buff |havebuff Ability_Seal |q 13833 |goto Borean Tundra 54.6,41.8
+Get the Animal Blood buff |havebuff 132311 |q 13833 |goto Borean Tundra 54.6,41.8
 step
 Walk into the water here to create a pool of blood
 Fish in the pool of blood

@@ -706,7 +706,7 @@ accept Scouring the Desert##9422 |goto 54.5,62.9
 step
 click the Silithyst Geyser
 |tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff Interface\Icons\Spell_Holiday_ToW_SpiceCloud |c |q 9422 |goto 50.0,49.9
+Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9422 |goto 50.0,49.9
 They spawn in various locations, you find more at:
 [53.2,41.6]
 [57.1,47.2]
@@ -3284,7 +3284,7 @@ Be ready to fight a couple mobs
 kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
 talk Naturalist Bite##17893 |goto 95.7,66.2
 Tell him
-<Naturalist, please grant me your boon |havebuff Interface\Icons\Ability_Druid_FerociousBite |q 29565
+<Naturalist, please grant me your boon |havebuff 132127 |q 29565
 step
 kill Quagmirran##17942+
 collect The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9
@@ -3564,8 +3564,8 @@ turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
 kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+ |goto 42.2,25.1
-Get the Understanding Ravenspeech buff |havebuff Interface\Icons\Ability_Hunter_Pet_DragonHawk
-|tip Must be within melee range to receive the buff
+Get the Understanding Ravenspeech buff |havebuff 132188
+|tip Must be within melee range to receive the buff.
 Anytime the buff wears off, kill Grishna mobs again to get it back
 step
 Stand next to the wooden totem with the Understanding Ravenspeech buff on you
@@ -3593,7 +3593,7 @@ kill Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff Interface\Icons\INV_Chest_Wolf |q 10722 |use Overseer Disguise##31122
+Put on the Overseer Disguise |havebuff 132760 |q 10722 |use Overseer Disguise##31122
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -3652,7 +3652,7 @@ If you need another one, talk to Wildlord Antelarion |goto 62.6,39.6
 Click here to continue. |confirm always
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819
 Click the Legion Communicator
 |tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
 turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
@@ -3662,7 +3662,7 @@ kill 4 Doomforge Attendant##19961+ |q 10820/1 |goto 74.9,39.9
 kill 4 Doomforge Engineer##19960+ |q 10820/2 |goto 74.9,39.9
 step
 Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
-Wear the Felsworn Gas Mask |havebuff Interface\Icons\INV_Helmet_31 |c |q 10819
+Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819
 Click the Legion Communicator
 turnin Deceive thy Enemy##10820 |goto 73.3,40.1
 |tip Between 2 big green floating crystals. Click the Legion Communicator. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
@@ -3916,8 +3916,8 @@ talk King Mrgl-Mrgl##25197
 turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
-Go southwest to Winterfin Village|n
-Use King Mrgl-Mrgl's Spare Suit|havebuff INV_Misc_Head_Murloc_01|use King Mrgl-Mrgl's Spare Suit##34620
+Go southwest to Winterfin Village |n
+Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620
 step
 Go inside the cave |goto 37.8,23.2
 talk Glrglrglr##28375
@@ -4015,7 +4015,7 @@ talk Sky Commander Adaris##23038
 accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446 |goto 69.7,74.7
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
 step
@@ -4048,7 +4048,7 @@ turnin Hazzik's Bargain##11056 |goto 64.3,66.9
 accept A Shabby Disguise##11029 |goto 64.3,66.9
 step
 Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741 |goto 66.2,77.5
-Wear the Shabby Arakkoa Disguise |havebuff Interface\Icons\INV_Misc_Birdbeck_01
+Wear the Shabby Arakkoa Disguise |havebuff 133707
 step
 talk Sahaak##23363
 buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
@@ -4072,7 +4072,7 @@ This next quest is meant to be a _3 person_ quest. Make sure that you are either
 |confirm always
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -4167,7 +4167,7 @@ accept More Shadow Dust##11006 |instant |n |goto 64.0,66.9
 collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -6295,7 +6295,7 @@ accept The Eyes of Grillok##10813 |goto 61.7,81.9
 step
 Use Zezzak's Shard on an Eye of Grillok |use Zezzak's Shard##31463
 |tip They look like floating green eyes around this area. It has to channel for 3 seconds and turn your character green.
-Absorb an Eye of Grillok |havebuff Interface\Icons\Spell_Nature_ElementalShields |q 10813 |goto 66.4,74
+Absorb an Eye of Grillok |havebuff 136030 |q 10813 |goto 66.4,74
 step
 Stand next to the cauldron
 Return the Eye of Grillok |q 10813/1 |goto 61.7,81.9
@@ -7602,7 +7602,7 @@ These quests will require that you do Heroic Shattered Halls, Shadow Labyrinth, 
 step
 Before you enter The Shattered Halls, set your Dungeon Difficulty to _Heroic 5 Man_. |only if not heroic_dung() |confirm
 kill Grand Warlock Nethekurse##16807 |goto The Shattered Halls 34.2,55.3
-After you Kill Grand Warlock Nethekurse run through this doorway to gain _Korgath's Executioner Buff_ |havebuff Interface\Icons\Ability_Warrior_Cleave
+After you Kill Grand Warlock Nethekurse run through this doorway to gain _Korgath's Executioner Buff_ |havebuff 132338
 |only if not completedq(10884)
 step
 Kill your way to the end of the instance.
@@ -8394,7 +8394,7 @@ talk Caledis Brightdawn##19840
 turnin A Convincing Disguise##10197 |goto 48.2,86.6
 accept Information Gathering##10198 |goto 48.2,86.6
 step
-Use the Sunfury Disguise in your bags |havebuff Sunfury Disguise |use Sunfury Disguise##28607 |q 10198
+Use the Sunfury Disguise in your bags |havebuff 133564 |use Sunfury Disguise##28607 |q 10198
 step
 Go inside Manaforge Coruu
 Be careful to avoid the Arcane Annihilator, he can see through the disguise and will attack you
@@ -8816,8 +8816,8 @@ accept Drake Hunt##11919 |goto 33.3,34.5
 turnin The Cell##11943 |goto 33.3,34.5
 step
 Use your Raelorasz's Spear on a Nexus Drake Hatchling |use Raelorasz's Spear##35506
-|tip They are flying above you in the sky. |modelnpc Nexus Drake Hatchling##26127
-Do not kill it, let it hit you until it becomes friendly |havebuff Drake Hatchling Subdued |c |q 11919 |goto 24.6,27.1|n
+|tip They are flying above you in the sky.
+Do not kill it, let it hit you until it becomes friendly |havebuff 134155 |c |q 11919 |goto 24.6,27.1 |n
 step
 Capture the Nexus Drake |q 11919/1 |goto 33.3,34.5
 talk Raelorasz##26117
@@ -10887,7 +10887,7 @@ kill Spinescale Matriarch##40403
 collect Spiked Basilisk Hide |q 25494/1 |goto 84.7,46.8
 step
 Use your Ogre Disguise next to the Ogre Outhouse |use Ogre Disguise##55137
-Put on your Ogre Disguise |havebuff Interface\Icons\inv_misc_ogrepinata |q 25308 |goto 77.6,48.1
+Put on your Ogre Disguise |havebuff 306868 |q 25308 |goto 77.6,48.1
 step
 talk Karr'gonn##40489
 Tell him one of the boys is causing some trouble outside
@@ -11583,7 +11583,7 @@ step
 Enter the cave |goto 36.0,37.9 < 5 |q 28170 |walk
 talk Uchek##47826
 Tell him you are ready
-Enter the Spirit Realm |havebuff Interface\Icons\Achievement_Halloween_Ghost_01 |q 28170 |goto 35.0,36.6
+Enter the Spirit Realm |havebuff 236548 |q 28170 |goto 35.0,36.6
 step
 Follow this path |goto 35.1,35.9 < 5 |q 28170 |walk
 Use The Light of Souls to kill enemies when they attack you |use The Light of Souls##67537
@@ -12837,7 +12837,7 @@ talk Commander Schnottz##47159
 accept Make Yourself Useful##27969 |goto 24.4,64.1
 step
 Use your Refurbished Trooper Uniform |use Refurbished Trooper Uniform##62813
-Wear the Uniform |havebuff INTERFACE\ICONS\inv_chest_leather_08 |q 27969
+Wear the Uniform |havebuff 132723 |q 27969
 step
 talk Slacking Laborer##47292
 Tell them they're behind schedule
@@ -13803,7 +13803,7 @@ accept Visions of the Past: The Invasion of Vashj'ir##25957 |goto 51.6,62.8
 step
 Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden |use Blade of the Naz'jar Battlemaiden##55171
 |tip It's a bright flashing light on the ground in the ruins.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |q 25957 |goto 40.5,75.6
+Become the Naz'jar Battlemaiden |havebuff 236422 |q 25957 |goto 40.5,75.6
 step
 talk Fathom-Stalker Azjentus##40978
 accept Reoccupation##25619 |goto 40.6,75.3
@@ -13914,7 +13914,7 @@ accept Visions of the Past: The Slaughter of Biel'aran Ridge##25966 |goto 39.1,7
 step
 Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden |use Blade of the Naz'jar Battlemaiden##55171
 |tip It's a bright flashing light on the ground on the stone terrace.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |q 25966 |goto 28.9,78.6
+Become the Naz'jar Battlemaiden |havebuff 236422 |q 25966 |goto 28.9,78.6
 step
 talk Lady Naz'jar##42076
 accept By Her Lady's Word##25858 |goto 29.0,78.5
@@ -14023,7 +14023,7 @@ step
 Swim up a bit inside the temple
 Use your Blade of the Naz'jar Battlemaiden next to the Vision of the Battlemaiden |use Blade of the Naz'jar Battlemaiden##55171
 |tip It looks like a bright flashing light inside the temple.
-Become the Naz'jar Battlemaiden |havebuff Interface\Icons\Achievement_Boss_LadyVashj |q 26135 |goto 33.1,77.8
+Become the Naz'jar Battlemaiden |havebuff 236422 |q 26135 |goto 33.1,77.8
 step
 talk Lady Sira'kess##41456
 accept Devout Assembly##25896 |goto 33.1,77.9
@@ -14149,7 +14149,7 @@ accept Here Fishie Fishie##26088 |goto 42.9,51.0
 accept Die Fishman Die##26089 |goto 42.9,51.0
 step
 Use your Fish Hat |use Fish Hat##56813
-Get the Lure buff |havebuff Interface\Icons\Ability_Vehicle_ElectroCharge |q 26088
+Get the Lure buff |havebuff 252174 |q 26088
 step
 kill 4 Coldlight Hunter##41925+ |q 26089/1 |goto 46.4,54.9
 kill 4 Coldlight Oracle##41926+ |q 26089/2 |goto 46.4,54.9

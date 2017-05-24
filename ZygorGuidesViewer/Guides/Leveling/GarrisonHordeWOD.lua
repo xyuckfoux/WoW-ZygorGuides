@@ -2046,7 +2046,7 @@ accept Requisition a Riverbeast##36945
 step
 click Shadow Lily##77271
 |tip They look like white glowing flowers on the ground right next to the water.
-Obtain the _Glowstep_ Buff |havebuff Interface\Icons\Spell_DeathKnight_PathOfFrost |goto Talador/0 64.4,56.3 |q 36945
+Obtain the _Glowstep_ Buff |havebuff 237528 |goto Talador/0 64.4,56.3 |q 36945
 |tip This buff will allow you to walk on water for 10 minutes, and will not be cancelled when you take damage.
 step
 clicknpc Young Riverwallow##86848

@@ -38,7 +38,7 @@ description="This guide will walk you through obtaining a Yellow Core Hound pet.
 },[[
 step
 talk Zidormi##88206
-Tell her: _"Show me the Blasted Lands before the invasion."_ |havebuff Interface\Icons\spell_mage_altertime |goto Blasted Lands/0 48.16,7.28
+Tell her: _"Show me the Blasted Lands before the invasion."_ |havebuff 609811 |goto Blasted Lands/0 48.16,7.28
 step
 Search for _Gomegaz_
 |tip Gomegaz is a level 57 mob.

@@ -2808,7 +2808,7 @@ Follow the path |goto 31.8,61.5 < 5
 confirm
 step
 Before running down this hallway:
-Put on your ogre disguise |havebuff Interface\Icons\Ability_Rogue_Disguise |use Gordok Ogre Suit##18258
+Put on your ogre disguise |havebuff 132288 |use Gordok Ogre Suit##18258
 step
 talk Captain Kromcrush##14325 |goto 31.8,50.1
 Tell him _"Um, I'm taking some prisoners we found outside before the king for punishment."_
@@ -4229,7 +4229,7 @@ talk Naturalist Bite##17893
 |tip Be ready to fight a couple mobs.
 kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
 Talk to Naturalist Bite
-Tell him: "_Naturalist, please grant me your boon_" |havebuff Interface\Icons\Ability_Druid_FerociousBite |goto 95.7,66.2
+Tell him: "_Naturalist, please grant me your boon_" |havebuff 132127 |goto 95.7,66.2
 step
 kill Quagmirran##17942
 |tip Avoid standing in front of Quagmirran or you will be hit with Acid Spray and Cleave.
@@ -8300,7 +8300,7 @@ accept Secondary Targets##29173 |or
 step
 kill Venomancer Mauri##52380 |goto 33.4,46.7
 clicknpc Zanzil's Cauldron of Toxic Torment##52529
-Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+Get the Toxic Torment Buff. |havebuff 133781
 step
 Fight your way through this path.
 kill Venomtip Needler##52379+ |goto 37.2,46.4
@@ -8312,7 +8312,7 @@ kill Tiki Lord Mu'Loa##52340+ |goto 43.9,51.0
 step
 Fight your way to the next cauldron.
 clicknpc Zanzil's Cauldron of Toxic Torment##52529 |goto 48.5,52.1
-Get the Toxic Torment Buff. |havebuff Interface\Icons\INV_Misc_Cauldron_Nature
+Get the Toxic Torment Buff. |havebuff 133781
 step
 Pull the Venomguard Destroyers near the cauldron and kill them.
 kill Venomguard Destroyer##52311+

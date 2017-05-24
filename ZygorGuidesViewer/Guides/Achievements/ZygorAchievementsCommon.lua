@@ -636,7 +636,7 @@ ZygorGuidesViewer:RegisterInclude("CleansingDrakTharon",[[
 		accept Filling the Cages##11984 |goto Grizzly Hills 16.2,47.6
 	step
 		talk Budd##26429
-		Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |c |goto 16.4,48.3
+		Tell him it's time to play with the ice trolls |havebuff 134177 |c |goto 16.4,48.3
 	step
 		Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 		Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736

@@ -4640,13 +4640,11 @@ accept Into the Black Tooth Hovel##28432 |goto 44.5,44.4
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28432 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28432 |or
-Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236452 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236451 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236456 |q 28432 |or
+Wear your Blackrock Orc Disguise |havebuff 236455 |q 28432 |or
+Wear your Blackrock Ogre Disguise |havebuff 236695 |q 28432 |or
 step
 talk Quartermaster Kaoshin##48085
 turnin Into the Black Tooth Hovel##28432 |goto 45.3,51.7
@@ -4713,13 +4711,11 @@ accept General Thorg'izog##28437 |goto 44.5,44.4
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28437 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28437 |or
-Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236452 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236451 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236456 |q 28437 |or
+Wear your Blackrock Orc Disguise |havebuff 236455 |q 28437 |or
+Wear your Blackrock Ogre Disguise |havebuff 236695 |q 28437 |or
 step
 talk General Thorg'izog##48133
 turnin General Thorg'izog##28437 |goto 30.7,33.7

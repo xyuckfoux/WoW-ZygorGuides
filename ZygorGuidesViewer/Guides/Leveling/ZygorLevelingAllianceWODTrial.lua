@@ -861,19 +861,19 @@ accept Invisible Ramparts##34780 |goto 56.24,32.62
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Tertiary Pylon |q Invisible Ramparts##34780/3 |goto 56.18,33.44
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Secondary Pylon |q Invisible Ramparts##34780/2 |goto 56.62,33.13
 step
 click Charged Resonance Crystal
 |tip They look like pink crystals on pedastals.
-Get a Crystal |havebuff Interface\Icons\INV_Enchant_VoidCrystal |q 34780 |goto Shadowmoon Valley D 56.8,34.3
+Get a Crystal |havebuff 132885 |q 34780 |goto Shadowmoon Valley D 56.8,34.3
 step
 Carry a Crystal to the Primary Pylon |q Invisible Ramparts##34780/1 |goto 56.25,32.76
 step
@@ -950,7 +950,7 @@ stickystart "stinger"
 step
 click Shimmershroom
 |tip They look like orange glowing mushrooms on the ground all around this area. Continue clicking Shimmershrooms to maintain the Shimmershroom Aura.
-Gain the Shimmershroom Aura |havebuff INTERFACE\ICONS\druid_ability_wildmushroom_a |q 34784
+Gain the Shimmershroom Aura |havebuff 464341 |q 34784
 While you have the buff:
 clicknpc Volatile Spore##82328
 Collect the Volatile Spores |q Fun with Fungus##34784/1 |goto 53.82,21.81
@@ -1175,8 +1175,8 @@ step
 _Enter_ Shaz'gul through the wooden gates |goto Shadowmoon Valley D 38.6,60.5 < 20 |only if walking
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Supply Hut |q Going Undercover##33080/2 |goto Shadowmoon Valley D 37.17,59.25
@@ -1184,16 +1184,16 @@ step
 _Enter_ the building |goto Shadowmoon Valley D 36.7,61.3 < 10 |walk
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Main Lodge |q Going Undercover##33080/3 |goto Shadowmoon Valley D 36.37,61.44
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 _Head_ through the gates to the Chieftains' seat |goto Shadowmoon Valley D 37.8,62.6 < 20
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground behind a huge stone.
@@ -1201,8 +1201,8 @@ Plant Explosives at the Chieftain's Seat |q Going Undercover##33080/4 |goto Shad
 step
 use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise. Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080 |only if _G.UnitSex("player")==2
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080 |only if _G.UnitSex("player")==3
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080 |only if _G.UnitSex("player")==2
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080 |only if _G.UnitSex("player")==3
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
 Plant Explosives at the Training Pit |q Going Undercover##33080/5 |goto Shadowmoon Valley D 36.5,65.5

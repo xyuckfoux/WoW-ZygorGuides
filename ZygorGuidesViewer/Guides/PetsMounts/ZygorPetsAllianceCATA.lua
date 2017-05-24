@@ -2776,7 +2776,7 @@ step
 Stay away from the trolls as you walk, or you will have to start over
 clicknpc Gurubashi Soldier##42871
 |tip It's a sleeping troll inside this tent.
-Steal Raptor Food |havebuff Interface\Icons\INV_Misc_Bag_10_Blue |q 26775 |goto 86.9,50.0
+Steal Raptor Food |havebuff 133641 |q 26775 |goto 86.9,50.0
 step
 Stay away from the trolls as you walk, or you will have to start over
 talk Tenjiyu##42882
@@ -4550,7 +4550,7 @@ accept Disarmed!##13836 |goto Dalaran,53.1,64.9 |or
 accept The Ghostfish##13830 |goto Dalaran,53.1,64.9 |or
 step
 kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
-Get the Animal Blood buff|havebuff Ability_Seal |q 13833 |goto Borean Tundra,54.6,41.8
+Get the Animal Blood buff |havebuff 132311 |q 13833 |goto Borean Tundra,54.6,41.8
 only if havequest (13833)
 step
 Walk into the water here to create a pool of blood
@@ -4973,14 +4973,12 @@ accept Into the Black Tooth Hovel##28239 |goto 46.4,46.0
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28239 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Boss_Mekgineer_Thermaplugg |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236452 |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236451 |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236456 |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236455 |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236695 |q 28239 |or
+Wear your Blackrock Disguise |havebuff 236424 |q 28239 |or
 step
 talk Quartermaster Kaoshin##48085
 turnin Into the Black Tooth Hovel##28239 |goto 45.3,51.7
@@ -5049,14 +5047,12 @@ accept General Thorg'izog##28265 |goto 46.4,46.0
 step
 Use your Blackrock Disguise |use Blackrock Disguise##63357
 You will get a different disguise, depending on the costume you had to make:
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Male |q 28265 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 28265 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Male |q 28265 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Troll_Female |q 28265 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Male |q 28265 |or
-Wear your Blackrock Orc Disguise |havebuff Interface\Icons\Achievement_Character_Goblin_Female |q 28265 |or
-Wear your Blackrock Ogre Disguise |havebuff Interface\Icons\Achievement_Reputation_Ogre |q 28265 |or
-Wear your Blackrock Disguise |havebuff Interface\Icons\Achievement_Boss_Mekgineer_Thermaplugg |q 28239 |or
+Wear your Blackrock Orc Disguise |havebuff 236452 |q 28265 |or
+Wear your Blackrock Orc Disguise |havebuff 236451 |q 28265 |or
+Wear your Blackrock Orc Disguise |havebuff 236456 |q 28265 |or
+Wear your Blackrock Orc Disguise |havebuff 236455 |q 28265 |or
+Wear your Blackrock Ogre Disguise |havebuff 236695 |q 28265 |or
+Wear your Blackrock Disguise |havebuff 236424 |q 28239 |or
 step
 talk General Thorg'izog##48133
 turnin General Thorg'izog##28265 |goto 30.7,33.7
@@ -5434,7 +5430,7 @@ talk Keeper Karithus##33048
 accept The Ritual Bond##13569 |goto 43.0,39.0
 step
 Click the Grovekeeper's Incense##8683
-Breathe in the smoke to entice visions of the great animal spirits |havebuff Interface\Icons\Spell_Nature_Sleep |q 13569 |goto 42.9,39.0
+Breathe in the smoke to entice visions of the great animal spirits |havebuff 136090 |q 13569 |goto 42.9,39.0
 step
 talk Great Stag Spirit##33133
 |tip You can also talk to the Great Moonstalker Spirit or the Great Thistle Bear Spirit.

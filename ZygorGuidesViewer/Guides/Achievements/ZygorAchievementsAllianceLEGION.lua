@@ -6462,15 +6462,33 @@ description="This guide will walk you through completing the \"Black is the New 
 step
 This achievement requires that you collect 8 pieces of Tier 6 armors
 The pieces are located throughout 3 different raids, listed as follows:
-_Hyjal Summit (2)_
-_Black Temple (3)_
-_Sunwell Plateau (4)_
+Hyjal Summit (2)
+Black Temple (3)
+Sunwell Plateau (4)
 Click here to continue |confirm
 step
 You will need to collect tokens to trade for set pieces
 _Token of the Forgotten Conqueror:_ Paladin, Priest and Warlock
 _Token of the Forgotten Protector:_ Hunter, Shaman and Warrior
 _Token of the Forgotten Vanquisher:_ Druid, Mage and Rogue
+Click here to continue |confirm
+step
+From Hyjal Summit:
+Azgalor drops the Token for the Gloves
+Archimonde drops the Token for the Helmets
+|tip Refer to the Hyjal Summit Raid guide to accomplish this.
+Click here to load the Hyjal Summit guide for more information |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Hyjal Summit (Battle for Mount Hyjal)"
+Click here to continue |confirm
+step
+From Black Temple:
+Mother Shahraz drops the Token for the Shoulders
+The Illidari Council drops the Token for the Legs
+Illidan Stormrage drops the Token for the Chest
+Refer to the Black Temple guide for more information |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Black Temple"
+Click here to continue |confirm
+step
+Sunwell Plateau (4)
+Refer to the Sunwell Plateau guide for more informatio |confirm |next "Zygor's Alliance Dungeon Guides\\Raids\\Outland\\Sunwell Plateau"
 Click here to continue |confirm
 step
 _Congratulations!_

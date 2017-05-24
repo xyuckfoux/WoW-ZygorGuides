@@ -6713,7 +6713,7 @@ Defeat Rukhmar with Pepe |achieve 9838/28 |goto Spires of Arak 35.6,38.0
 step "pepe"
 click Pepe##86470 |goto Lunarfall/0 49.1,45.5 |only if garrisonlvl(3)
 |tip Pepe is in the small tree next to the flight master and monument in your garrison. You will have to jump to click on him. |only if garrisonlvl(3)
-Acquire the Pepe buff |havebuff Interface\Icons\ability_garrison_orangebird
+Acquire the Pepe buff |havebuff 1044996
 step
 Congratulations, you have earned the _What A Strange, Interdimensional Trip It's Been_ achievement!
 ]])
@@ -8834,9 +8834,9 @@ step
 _Enter_ Shaz'gul through the wooden gates |goto Shadowmoon Valley D 38.6,60.5 < 20 |walk
 Use Sylene's Amulet of Illusion in your bags |use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise.  Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080
 |tip You will only complete this goal if you're a male character. |or
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080
 |tip You will only complete this goal if you're a female character. |or
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -8845,9 +8845,9 @@ step
 _Enter_ the building |goto Shadowmoon Valley D 36.7,61.3 < 10 |walk
 Use Sylene's Amulet of Illusion in your bags |use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise.  Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080
 |tip You will only complete this goal if you're a male character. |or
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080
 |tip You will only complete this goal if you're a female character. |or
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -8855,9 +8855,9 @@ Plant Explosives at the Main Lodge |q Going Undercover##33080/3 |goto Shadowmoon
 step
 Use Sylene's Amulet of Illusion in your bags |use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise.  Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080
 |tip You will only complete this goal if you're a male character. |or
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080
 |tip You will only complete this goal if you're a female character. |or
 _Head_ through the gates to the Chieftains' seat |goto Shadowmoon Valley D 37.8,62.6 < 20
 clicknpc Explosives##74811
@@ -8866,9 +8866,9 @@ Plant Explosives at the Chieftain's Seat |q Going Undercover##33080/4 |goto Shad
 step
 Use Sylene's Amulet of Illusion in your bags |use Sylene's Amulet of Illusion##107076
 |tip Use this if you lose your disguise.  Also, Void Wolves can see through your disguise, so be careful around them.
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\achievement_character_orc_male |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236452 |q 33080
 |tip You will only complete this goal if you're a male character. |or
-Gain the _Shadowmoon Orc Disguise_ |havebuff Interface\Icons\Achievement_Character_Orc_Female |q 33080
+Gain the _Shadowmoon Orc Disguise_ |havebuff 236451 |q 33080
 |tip You will only complete this goal if you're a female character. |or
 clicknpc Explosives##74811
 |tip It looks like a yellow bomb with bumps all over it, sitting on the ground.
@@ -12380,7 +12380,7 @@ collect 1 Podling Camouflage##127394 |use Podling Camouflage##127394 |n
 Learn the _Podling Camouflage_ toy |toy Podling Camouflage##127394
 confirm
 step
-Get the Pollen Protection buff |havebuff Interface\Icons\Spell_Nature_ProtectionformNature |only if not completedq(38639)
+Get the Pollen Protection buff |havebuff 136074 |only if not completedq(38639)
 |tip Click Mysterious Fruit around the area until you receive the buff.
 click The Perfect Blossom##241522 |goto Tanaan Jungle 40.80,75.50
 |tip It's hidden under the giant tree.

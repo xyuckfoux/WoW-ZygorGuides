@@ -2968,7 +2968,7 @@ turnin Unusual Activity##11886 |goto Ashenvale,15.7,20.3
 accept An Innocent Disguise##11891 |goto Ashenvale,15.7,20.3
 step
 Use your Orb of the Crawler in this spot |use Orb of the Crawler##35237
-Get the Crab Disguise |havebuff Interface\Icons\Ability_Hunter_Pet_Crab |goto Ashenvale,9.6,13.2
+Get the Crab Disguise |havebuff 132186 |goto Ashenvale,9.6,13.2
 step
 While in the crab disguise, go to 9.2,12.6 |goto Ashenvale,9.2,12.6
 Listen to the plan of the Twilight Cultists |q 11891/1
@@ -3444,7 +3444,7 @@ or
 accept A New Supplier of Souvenirs##29397 |goto 53.5,38.6 |or
 step
 Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11117
+Equip the Synthebrew Goggles |havebuff 135977 |q 11117
 step
 Use your Wolpertinger Net on Wild Wolpertingers |use Wolpertinger Net##32907
 |tip They look like rabbits with antlers and wings running around on the ground around this area.
@@ -3462,17 +3462,17 @@ or
 turnin A New Supplier of Souvenirs##29397 |goto 56.4,37.8 |or
 step
 Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto Elwynn Forest,33.5,50.7
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Elwynn Forest,33.5,50.7
 Use your Elekk Dispersion Ray on Elwynn Pink Elekks |use Elekk Dispersion Ray##32960
 kill 3 Elwynn Pink Elekk |q 11118/2
 step
 Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto Darnassus 67.3,46.1
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto Darnassus 67.3,46.1
 Use your Elekk Dispersion Ray on Azuremyst Pink Elekks |use Elekk Dispersion Ray##32960
 kill 3 Azuremyst Pink Elekk |q 11118/3
 step
 Use your Synthebrew Goggles |use Synthebrew Goggles##46735
-Equip the Synthebrew Goggles |havebuff Interface\Icons\Spell_Holy_SpiritualGuidence |q 11118 |goto The Exodar,78.4,57.4
+Equip the Synthebrew Goggles |havebuff 135977 |q 11118 |goto The Exodar,78.4,57.4
 Use your Elekk Dispersion Ray on Teldrassil Pink Elekks |use Elekk Dispersion Ray##32960
 kill 3 Teldrassil Pink Elekk |q 11118/1 |goto The Exodar,78.4,57.4
 step

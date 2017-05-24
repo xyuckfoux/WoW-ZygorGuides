@@ -5985,7 +5985,7 @@ talk Sky Commander Adaris##23038
 accept Secrets of the Talonpriests##11005 |goto 64.1,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |goto 69.7,74.7 |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |goto 69.7,74.7 |havebuff 136152
 step
 kill Talonpriest Zellek##23068 |q 11005/3 |goto 70.1,74.5
 step
@@ -6018,7 +6018,7 @@ turnin Hazzik's Bargain##11056 |goto 64.3,66.9
 accept A Shabby Disguise##11029 |goto 64.3,66.9
 step
 Use the Shabby Arakkoa Disguise in your bags |use Shabby Arakkoa Disguise##32741
-Wear the Shabby Arakkoa Disguise |goto 66.2,77.5 |havebuff Interface\Icons\INV_Misc_Birdbeck_01
+Wear the Shabby Arakkoa Disguise |goto 66.2,77.5 |havebuff 133707
 step
 talk Sahaak##23363
 buy Adversarial Bloodlines##32742 |q 11029 |goto 67.0,79.7
@@ -6042,7 +6042,7 @@ This next quest is meant to be a _3 person_ quest. Make sure that you are either
 confirm always
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -6136,7 +6136,7 @@ accept More Shadow Dust##11006 |goto 64.0,66.9 |instant |n
 collect 2 Elixir of Shadows##32446 |goto 64.0,66.9
 step
 Use the Elixer of Shadows in your bags |use Elixer of Shadows##32446
-You will get a buff Elixir of Shadows |havebuff Interface\Icons\Spell_Shadow_DetectInvisibility
+You will get a buff Elixir of Shadows |havebuff 136152
 step
 kill Time-Lost Skettis High Priest##21787+
 kill Time-Lost Skettis Reaver##21651+
@@ -7597,21 +7597,21 @@ turnin Totem of Coo##9539 |goto 55.2,41.7
 accept Totem of Tikti##9540 |goto 55.2,41.7
 step
 Follow the ghost furbolg to the edge of the cliff
-He will give you wings |havebuff Interface\Icons\Spell_Holy_DivineSpirit |q 9540 |goto 55.6,41.6
+He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 step
 Click the Totem of Tikti
 turnin Totem of Tikti##9540 |goto Azuremyst Isle,64.5,39.8
 accept Totem of Yor##9541 |goto Azuremyst Isle,64.5,39.8
 step
 Follow the ghost furbolg to the river
-He will give you a swim speed buff |havebuff Interface\Icons\Ability_Creature_Poison_05 |q 9541 |goto 63.8,40.2
+He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 step
 Click the Totem of Yor underwater
 turnin Totem of Yor##9541 |goto Azuremyst Isle,63,67.9
 accept Totem of Vark##9542 |goto Azuremyst Isle,63,67.9
 step
 Follow the ghost furbolg out of the water
-He will turn you into a ghost panther |havebuff Interface\Icons\Ability_Druid_SupriseAttack |q 9542 |goto 61.0,69.5
+He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 step
 Follow the panther as he runs
 Click the Totem of Vark
@@ -9946,7 +9946,7 @@ accept Secrets of the Tower##26290 |goto 68.3,70.4
 step
 You can safely attack the elite mobs, Agent Kearnen will kill them for you.
 Use your Potion of Shrouding inside the tower |use Potion of Shrouding##58112
-Become Invisible |havebuff Interface\Icons\Ability_Mage_Invisibility |q 26290 |goto 70.5,74.5
+Become Invisible |havebuff 132220 |q 26290 |goto 70.5,74.5
 step
 Go to the top of the tower
 Reveal Helix's Secret |q 26290/1 |goto 70.6,74.1
@@ -10396,10 +10396,10 @@ talk John J. Keeshan##43458
 accept Prisoners of War##26646 |goto 52.5,55.4
 step
 Use your Bravo Company Field Kit |use Bravo Company Field Kit##60384
-Activate your Bravo Company Field Kit |havebuff Interface\Icons\INV_Misc_EngGizmos_20 |q 26646 |goto 53.9,57.7
+Activate your Bravo Company Field Kit |havebuff 133878 |q 26646 |goto 53.9,57.7
 step
 Use the Camouflage ability on your hotbar
-Hide your party from sight |havebuff Interface\Icons\Spell_Nature_ProtectionformNature |q 26646
+Hide your party from sight |havebuff 136074 |q 26646
 step
 Use your Camouflage ability on your hotbar every few minutes to make sure you stay camouflaged
 Use your Distraction ability on your hotbar to distract orcs as you walk, so you can travel unnoticed
@@ -11147,7 +11147,7 @@ accept The Ritual Bond##13569 |goto 43.0,39.0
 step
 Click the Grovekeeper's Incense
 |tip It's a small bowl on the ground in front of Keeper Karithus with red smoke coming out of it.
-Breathe in the smoke to entice visions of the great animal spirits |havebuff Interface\Icons\Spell_Nature_Sleep |q 13569 |goto 42.9,39.0
+Breathe in the smoke to entice visions of the great animal spirits |havebuff 136090 |q 13569 |goto 42.9,39.0
 step
 talk Great Stag Spirit##33133
 |tip You can also talk to the Great Moonstalker Spirit or the Great Thistle Bear Spirit.  We recommend talking to the Great Stag Spirit because it gives you a 10% increased run speed buff.  If you would like to talk to the other spirits, the Great Moonstalker Spirit gives a 10% haste buff and the Great Thistle Bear Spirit gives a 10% damage reduction buff.  You can only choose one, so pick whichever one you'd like.
@@ -11487,7 +11487,7 @@ Enter the cave |goto 47.2,56.0 < 5 |walk
 Follow the path to the end of the cave
 Click the Nightmare Portal
 |tip It's a swirling purple, green and black portal in the cave.
-Enter the Nightmare World |havebuff Interface\Icons\INV_Misc_Herb_Nightmarevine |q 13586 |goto 49.0,57.1
+Enter the Nightmare World |havebuff 134218 |q 13586 |goto 49.0,57.1
 step
 talk Thessera##33166
 turnin The Emerald Dream##13586 |goto 49.2,56.9
@@ -11600,7 +11600,7 @@ turnin The Defiler##13546 |goto 43.5,81.0
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13892 |goto 42.4,82.3
+Transform into a panther |havebuff 132115 |q 13892 |goto 42.4,82.3
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth
 Stand in this spot and listen to Foreman Balsoth
@@ -11615,7 +11615,7 @@ collect Seed of the Sea |q 13882/2 |goto 38.6,78.2
 step
 Use your Panther Figurine in this spot |use Panther Figurine##46696
 |tip If you have a pet, dismiss it.
-Transform into a panther |havebuff Interface\Icons\Ability_Druid_CatForm |q 13948 |goto 39.2,85.1
+Transform into a panther |havebuff 132115 |q 13948 |goto 39.2,85.1
 step
 Avoid the Faceless Ones, they can see through your panther disguise stealth |goto 39.8,86.4
 Follow the path up |goto 39.8,86.4,0.5 |noway |c

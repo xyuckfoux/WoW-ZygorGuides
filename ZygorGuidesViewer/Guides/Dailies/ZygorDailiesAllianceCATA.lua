@@ -172,7 +172,7 @@ accept Drake Hunt##11919 |goto 33.3,34.5
 step
 Use your Raelorasz's Spear on a Nexus Drake Hatchling |use Raelorasz's Spear##35506
 |tip They are flying above you in the sky.
-Do not kill it, let it hit you until it becomes friendly |havebuff INV_Misc_Head_Dragon_Blue |q 11919 |goto 24.6,27.1
+Do not kill it, let it hit you until it becomes friendly |havebuff 134155 |q 11919 |goto 24.6,27.1
 step
 Stand here until it says Captured Nexus Drake |q 11940/1 |goto 33.3,34.5
 talk Raelorasz##26117
@@ -203,7 +203,7 @@ accept Drake Hunt##11940 |goto Borean Tundra 33.3,34.5
 step
 Use your Raelorasz's Spear on a Nexus Drake Hatchling |use Raelorasz's Spear##35506 |goto 24.6,27.1
 |tip They are flying above you in the sky.
-Do not kill it, let it hit you until it becomes friendly |havebuff INV_Misc_Head_Dragon_Blue
+Do not kill it, let it hit you until it becomes friendly |havebuff 134155
 step
 Stand here until it says Captured Nexus Drake |q 11940/1 |goto 33.3,34.5
 talk Raelorasz##26117
@@ -364,7 +364,7 @@ accept Disarmed!##13836 |goto Dalaran 53.1,64.9 |or
 accept The Ghostfish##13830 |goto Dalaran 53.1,64.9 |or
 step
 kill Wooly Mammoth##24614, Mammoth Calf##24613, Wooly Mammoth Bull##25743
-Get the Animal Blood buff |havebuff Ability_Seal |q 13833 |goto Borean Tundra 54.6,41.8
+Get the Animal Blood buff |havebuff 132311 |q 13833 |goto Borean Tundra 54.6,41.8
 step
 Walk into the water here to create a pool of blood
 Fish in the pool of blood
@@ -563,7 +563,7 @@ talk Samir##26424
 accept Filling the Cages##11984 |goto Grizzly Hills,16.2,47.6
 step
 talk Budd##26429
-Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |q 11984 |goto 16.4,48.3
+Tell him it's time to play with the ice trolls |havebuff 134177 |q 11984 |goto 16.4,48.3
 step
 Use Budd's pet bar skill Tag Troll to have him stun a troll|petaction Tag Troll
 Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736
@@ -648,7 +648,7 @@ talk Samir##26424
 accept Filling the Cages##11984 |goto Grizzly Hills,16.2,47.6
 step
 talk Budd##26429
-Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |q 11984 |goto 16.4,48.3
+Tell him it's time to play with the ice trolls |havebuff 134177 |q 11984 |goto 16.4,48.3
 step
 Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736
@@ -764,7 +764,7 @@ talk Samir##26424
 accept Filling the Cages##11984 |goto Grizzly Hills,16.2,47.6
 step
 talk Budd##26429
-Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |q 11984 |goto 16.4,48.3
+Tell him it's time to play with the ice trolls |havebuff 134177 |q 11984 |goto 16.4,48.3
 step
 Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736
@@ -851,7 +851,7 @@ talk Samir##26424
 accept Filling the Cages##11984 |goto Grizzly Hills,16.2,47.6
 step
 talk Budd##26429
-Tell him it's time to play with the ice trolls |havebuff Budd's Attention Span |q 11984 |goto 16.4,48.3
+Tell him it's time to play with the ice trolls |havebuff 134177 |q 11984 |goto 16.4,48.3
 step
 Use Budd's pet bar skill Tag Troll to have him stun a troll |petaction Tag Troll
 Use your Bounty Hunter's Cage on the stunned troll |use Bounty Hunter's Cage##35736
@@ -6145,7 +6145,7 @@ You can check [Nagrand,50.0,56.6] for more Mining Nodes
 only if skill("Mining")>=300
 step
 Click the Multiphase Spectographic Goggles to wear them |use Multiphase Spectrographic Goggles##35233
-Get the Multiphase Goggles buff |havebuff Interface\Icons\Spell_Magic_LesserInvisibilty |goto Nagrand 38.3,65.3
+Get the Multiphase Goggles buff |havebuff 135994 |goto Nagrand 38.3,65.3
 tip You have to be in the Nagrand zone to correctly get the buff.
 only if havequest(11880)
 step

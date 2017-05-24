@@ -1319,7 +1319,7 @@ You are now the proud owner of a Cloudwing Hippogryph.
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Pets & Mounts Guide\\Mounts\\Legion\\Wild Dreamrunner",{
 author="support@zygorguides.com",
 startlevel=110.0,
-keywords={"wild","dreamrunner","flying","mount"},
+keywords={"wild","dreamrunner","ground","mount"},
 condition_end="hasmount(242875)",
 model={76424},
 description="This guide will help you acquire the Wild Dreamrunner.",
@@ -1604,7 +1604,7 @@ accept Hunting Lesson: Rose Taipan##44976
 step
 Challenge and defeat 3 Rose Taipans using your Direbeak Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Rose Taipan |q 44976/1 |goto Stormheim/0 63.24,56.54
+Defeat #3# Rose Taipan |q 44976/1 |goto Stormheim/0 63.24,56.54
 |tip These can be found all around this area.
 step
 Summon your Direbeak Hatchling
@@ -1619,7 +1619,7 @@ accept Allies in Stormheim##44977
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure you Direbeak Hatchling is summoned while you complete these World Quests
-Complete 5 World Quests in Stormheim |q 44977/1
+Complete #5# World Quests in Stormheim |q 44977/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Direbeak Hatchling
@@ -1636,7 +1636,7 @@ step
 Make sure your Direbeak Hatchling is summoned before starting each Pet Battle
 |tip Your Direbeak Hatchling must be in the first battle slot.
 |tip Your Direbeak Hatchling can not die.
-Defeat 3 Pet Battle world quests with your Direbeak Hatchling |q 44978/1
+Defeat #3# Pet Battle world quests with your Direbeak Hatchling |q 44978/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Direbeak Hatchling
@@ -1667,7 +1667,7 @@ accept Hunting Lesson: Tiny Apparition##44980
 step
 Challenge and defeat 3 Tiny Apparition using your Direbeak Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Tiny Apparition |q 44980/1 |goto Stormheim/0 55.42,42.38
+Defeat #3# Tiny Apparition |q 44980/1 |goto Stormheim/0 55.42,42.38
 |tip These can be found all around this area.
 step
 Summon your Direbeak Hatchling
@@ -1682,7 +1682,7 @@ accept The Unkindly Faction##44981
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Direbeak Hatchling is summoned while you complete these World Quests
-Complete 3 PvP World Quests with your Direbeak Hatchling |q 44981/1
+Complete #3# PvP World Quests with your Direbeak Hatchling |q 44981/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Direbeak Hatchling
@@ -1714,7 +1714,7 @@ step
 Challenge and defeat 3 Golden Eaglets using your Direbeak Hatchling and 2 Flying type pets
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
 |tip Your other 2 pets need to be flying type pets.
-Defeat 3 Golden Eaglets |q 44983/1 |goto Stormheim/0 63.34,54.39
+Defeat #3# Golden Eaglets |q 44983/1 |goto Stormheim/0 63.34,54.39
 |tip These can be found all around this area.
 step
 Summon your Direbeak Hatchling
@@ -1728,7 +1728,7 @@ talk Direbeak Hatchling##115785
 accept Teamwork Lesson: Fenryr##44984
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
-Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Halls of Valor/2 47.6,8.6 < 100 |c
+Press _I_ and queue for Halls of Valor or enter the dungeon with your group |goto Halls of Valor/2 47.6,8.6 < 100 |c |q 44984
 step
 Make sure your Direbeak Hatchling is summoned before killing Fenryr
 kill Fenryr##99868 |q 44984/1
@@ -1748,7 +1748,7 @@ step
 Challenge and defeat 3 Stormstruck Beaver using your Direbeak Hatchling and 2 Mechanical type pets
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
 |tip Your other 2 pets need to be mechanical type pets.
-Defeat 3 Stormstruck Beavers |q 44985/1 |goto Stormheim/0 34.11,53.30
+Defeat #3# Stormstruck Beavers |q 44985/1 |goto Stormheim/0 34.11,53.30
 |tip These are considered rare and share spawn points with the Bucktooth Flappers and the critters.
 |tip If there are none here defeat/kill the Bucktooth Flappers to try to force a spawn of the Stormstruck Beaver.
 If the first spot does not pan out try finding them here |goto 42.00,60.99
@@ -1758,6 +1758,41 @@ Summon your Direbeak Hatchling
 Next to you
 talk Direbeak Hatchling##115785
 turnin Hunting Lesson: Stormstruck Beaver##44985
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Teamwork Lesson: Krosus##44986
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for The Nighthold or enter the raid with your group |goto The Nighthold/1 24.0,91.1 |c |q 44986
+step
+Make sure your Direbeak Hatchling is summoned before killing Krosus
+kill Krosus##101002 |q 44986/1 |goto The Nighthold/3 73.9,92.1
+|tip Check out our Nighthold guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Teamwork Lesson: Krosus##44986
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept Direbeak Team Rumble##44987
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned before starting each Pet Battle
+|tip Your Direbeak Hatchling must be in the first battle slot.
+|tip Your other 2 pets must be Humanoid type pets.
+|tip Your Direbeak Hatchling can not die.
+Defeat #3# Pet Battle world quests with your Direbeak Hatchling |q 44987/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin Direbeak Team Rumble##44987
 step
 More content coming soon!
 confirm
@@ -1808,7 +1843,7 @@ accept Hunting Lesson: Northern Hawk Owls##44950
 step
 Challenge and defeat 3 Northern Hawk Owls using your Snowfeather Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Northern Hawk Owls |q 44950/1 |goto Highmountain/0 58.51,72.72
+Defeat #3# Northern Hawk Owls |q 44950/1 |goto Highmountain/0 58.51,72.72
 |tip These can be found all around this area.
 step
 Summon your Snowfeather Hatchling
@@ -1823,7 +1858,7 @@ accept Allies in Highmountain##44953
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Snowfeather Hatchling is summoned while you complete these World Quests
-Complete 5 World Quests in Highmountain |q 44953/1
+Complete #5# World Quests in Highmountain |q 44953/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Snowfeather Hatchling
@@ -1840,7 +1875,7 @@ step
 Make sure your Snowfeather Hatchling is summoned before starting each Pet Battle
 |tip Your Snowfeather Hatchling must be in the first battle slot.
 |tip Your Snowfeather Hatchling can not die.
-Defeat 3 Pet Battle world quests with your Snowfeather Hatchling |q 44954/1
+Defeat #3# Pet Battle world quests with your Snowfeather Hatchling |q 44954/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Snowfeather Hatchling
@@ -1862,6 +1897,53 @@ Summon your Snowfeather Hatchling
 Next to you
 talk Snowfeather Hatchling##115784
 turnin Deadly Prey##44956
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Hunting Lesson: Spiketail Beaver##44957
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Spiketail Beavers using your Snowfeather Hatchling
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+Defeat #3# Spiketail Beavers |q 44957/1 |goto Highmountain/0 41.82,53.17
+|tip These can be found all along this river.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Hunting Lesson: Spiketail Beaver##44957
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept The Unfriendly Faction##44958
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Snowfeather Hatchling is summoned while you complete these World Quests
+Complete #3# PvP World Quests with your Snowfeather Hatchling |q 44958/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin The Unfriendly Faction##44958
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+accept Snowfeather Bonding##44959
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Enter the Glorious Goods building |goto Dalaran L/10 51.54,68.61
+talk Susana Averoy##96999
+|tip She is up the stairs.
+buy Tiny Pack##142501 |q 44959/1 |goto 53.17,72.64
+step
+Summon your Snowfeather Hatchling
+Next to you
+talk Snowfeather Hatchling##115784
+turnin Snowfeather Bonding##44959
 step
 More content coming soon!
 confirm
@@ -1913,7 +1995,7 @@ accept Hunting Lesson: Erudite Manafiend##44996
 step
 Challenge and defeat 3 Erudite Manafiends using your Bloodgazer Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00
+Defeat #3# Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00
 |tip These can be found all around these Ley-Ruins.
 step
 Summon your Bloodgazer Hatchling
@@ -1928,7 +2010,7 @@ accept Allies in Azsuna##44998
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
-Complete 5 World Quests in Azsuna |q 44998/1
+Complete #5# World Quests in Azsuna |q 44998/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Bloodgazer Hatchling
@@ -1945,7 +2027,7 @@ step
 Make sure your Bloodgazer Hatchling is summoned before starting each Pet Battle
 |tip Your Bloodgazer Hatchling must be in the first battle slot.
 |tip Your Bloodgazer Hatchling can not die.
-Defeat 3 Pet Battle world quests with your Bloodgazer Hatchling |q 45000/1
+Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45000/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Bloodgazer Hatchling
@@ -1976,7 +2058,7 @@ accept Hunting Lesson: Fledgling Kingfeather##45004
 step
 Challenge and defeat 3 Fledgling Kingfeather using your Bloodgazer Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Fledgling Kingfeather |q 45004/1 |goto Azsuna/0 42.18,21.63
+Defeat #3# Fledgling Kingfeather |q 45004/1 |goto Azsuna/0 42.18,21.63
 |tip These can be found all around this area.
 step
 Summon your Bloodgazer Hatchling
@@ -1991,13 +2073,44 @@ accept The Unfavorable Faction##45006
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
-Complete 3 PvP World Quests with your Bloodgazer Hatchling |q 45006/1
+Complete #3# PvP World Quests with your Bloodgazer Hatchling |q 45006/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Bloodgazer Hatchling
 Next to you
 talk Bloodgazer Hatchling##115787
 turnin The Unfavorable Faction##45006
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Bloodgazer Bonding##45008
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+talk Aerith Primrose##96780
+buy 1 Purple Blossom##142498 |q 45008/1 |goto Dalaran L/10 56.83,53.54
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Bloodgazer Bonding##45008
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+accept Hunting Lesson: Juvenile Scuttleback##45010
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Juvenile Scuttlebacks using your Bloodgazer Hatchling and 2 Flying type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be flying type pets.
+Defeat #3# Juvenile Scuttlebacks |q 45010/1 |goto Azsuna/0 58.48,58.15
+|tip These can be found all around this area.
+step
+Summon your Bloodgazer Hatchling
+Next to you
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Juvenile Scuttleback##45010
 step
 More content coming soon!
 confirm
@@ -2048,7 +2161,7 @@ accept Hunting Lesson: Spring Strider##44995
 step
 Challenge and defeat 3 Spring Striders using your Sharptalon Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Spring Striders |q 44995/1 |goto Val'sharah/0 48.65,69.36
+Defeat #3# Spring Striders |q 44995/1 |goto Val'sharah/0 48.65,69.36
 |tip These can be found all around this area.
 step
 Summon your Sharptalon Hatchling
@@ -2063,7 +2176,7 @@ accept Allies in Val'sharah##44997
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
-Complete 5 World Quests in Val'sharah |q 44997/1
+Complete #5# World Quests in Val'sharah |q 44997/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Sharptalon Hatchling
@@ -2080,7 +2193,7 @@ step
 Make sure your Sharptalon Hatchling is summoned before starting each Pet Battle
 |tip Your Sharptalon Hatchling must be in the first battle slot.
 |tip Your Sharptalon Hatchling can not die.
-Defeat 3 Pet Battle world quests with your Sharptalon Hatchling |q 44999/1
+Defeat #3# Pet Battle world quests with your Sharptalon Hatchling |q 44999/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Sharptalon Hatchling
@@ -2111,7 +2224,7 @@ accept Hunting Lesson: Terror Larva##45003
 step
 Challenge and defeat 3 Terror Larva using your Sharptalon Hatchling
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
-Defeat 3 Terror Larva |q 45003/1 |goto Val'sharah/0 59.21,44.21
+Defeat #3# Terror Larva |q 45003/1 |goto Val'sharah/0 59.21,44.21
 |tip These can be found all around this area.
 step
 Summon your Sharptalon Hatchling
@@ -2126,7 +2239,7 @@ accept The Uncongenial Faction##45005
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
 Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
-Complete 3 PvP World Quests with your Sharptalon Hatchling |q 45005/1
+Complete #3# PvP World Quests with your Sharptalon Hatchling |q 45005/1
 |tip You can use our World Quest guide to accomplish this.
 step
 Summon your Sharptalon Hatchling
@@ -2140,7 +2253,7 @@ talk Sharptalon Hatchling##115786
 accept Sharptalon Bonding##45007
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
-Enter THe Legerdemain Lounge |goto Dalaran L/10 50.15,37.49
+Enter The Legerdemain Lounge |goto Dalaran L/10 50.15,37.49
 talk Mel Lynchen##112007
 buy 1 Dirty Spoon##142500 |q 45007/1 |goto 48.79,38.07
 step
@@ -2158,7 +2271,7 @@ step
 Challenge and defeat 3 Auburn Ringtail using your Sharptalon Hatchling and 2 Flying type pets
 |tip Your Hatchling must be in the first pet battle slot to recieve credit.
 |tip Your other 2 pets need to be flying type pets.
-Defeat 3 Auburn Ringtail |q 45009/1 |goto Val'sharah/0 62.29,73.25
+Defeat #3# Auburn Ringtail |q 45009/1 |goto Val'sharah/0 62.29,73.25
 |tip These can be found all around this area.
 step
 Summon your Sharptalon Hatchling
@@ -2172,7 +2285,7 @@ talk Sharptalon Hatchling##115786
 accept Teamwork Lesson: Dresaron##45011
 |tip To Start the next quest you will have to wait for dailies to reset.
 step
-Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
+Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c |q 45011
 step
 Make sure your Sharptalon Hatchling is summoned before killing Dresaron
 kill Dresaron##99200 |q 45011/1
@@ -2182,6 +2295,39 @@ Summon your Sharptalon Hatchling
 Next to you
 talk Sharptalon Hatchling##115786
 turnin Teamwork Lesson: Dresaron##45011
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Hunting Lesson: Vale Flitter##45013
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Challenge and defeat 3 Vale Flitter using your Sharptalon Hatchling and 2 Aquatic type pets
+|tip Your Hatchling must be in the first pet battle slot to recieve credit.
+|tip Your other 2 pets need to be Aquatic type pets.
+Defeat #3# Vale Flitter |q 45013/1 |goto Val'sharah/0 71.05,45.10
+|tip These can be found all around this area.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Hunting Lesson: Vale Flitter##45013
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept Teamwork Lesson: Xavius##45015
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Press _I_ and queue for The Emerald Nightmare or enter the raid with your group
+Make sure your Sharptalon Hatchling is summoned before killing Xavius
+kill Xavius##103769 |q 45015/1 |goto The Emerald Nightmare/12 36.5,78.0
+|tip Check out our Emerald Nightmare raid guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin Teamwork Lesson: Xavius##45015
 step
 More content coming soon!
 confirm

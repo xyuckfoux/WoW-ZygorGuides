@@ -26868,8 +26868,6 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [97118]="Long-Eared Owl|",
 [97743]="Mist Fox Kit|",
 [98446]="Mudshell Conch|",
-[109734]="Hag of the Crooked Tree|",
-[109854]="Duroc Ironjaw|",
 [105093]="Fragment of Fire|",
 [210675]="Nightmare Whelpling|",
 [224786]="Nightmare Treant|",

@@ -533,8 +533,6 @@ end
 Parser.MakeCondition=MakeCondition
 --local yield=coroutine.yield
 
-local ZGV_IS_BETA = ZGV.DIR:find("-BETA")
-
 --- parse ONE guide section into usable arrays.
 function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local text = guide.rawdata
@@ -575,8 +573,6 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	--if text:find("goto The Exodar,44.9,24.2") then debug=true end
 
 	local last5lines = {}
-
-	if ZGV.db.profile.debug_beta then ZGV_IS_BETA=true end
 
 	local function parseerror(msg)
 		local chunk = ""

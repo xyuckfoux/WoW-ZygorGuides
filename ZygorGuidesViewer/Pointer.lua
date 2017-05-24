@@ -2813,7 +2813,7 @@ function Pointer.Overlay_OnUpdate(frame,but,...)
 		local m,f = GetCurrentMapAreaID(),GetCurrentMapDungeonLevel()
 		local px, py, pm, pf = HBD:GetPlayerZonePosition(true)
 		px, py, pm, pf, m, f = (px or 0), (py or 0), (pm or 0), (pf or 0), (m or 0), (f or 0)
-		frame.ZygorCoordsDEV:SetText(("Zone: \"%s\" %d / %d\n Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(ZGV.Pointer.GetMapNameByID2(m),m,f,px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))	
+		frame.ZygorCoordsDEV:SetText(("Zone: \"%s\" %d / %d\n Player: %.1f,%.1f\nCursor: %.1f,%.1f\nDistance: %.1f yd"):format(ZGV.Pointer.GetMapNameByID2(m),m,f,px*100,py*100,mx*100,my*100,HBD:GetZoneDistance(pm, pf,px, py,m,f,mx,my) or 0))
 	end
 
 	if IsMouseButtonDown("LeftButton") and (IsShiftKeyDown() and not IsControlKeyDown() and not IsAltKeyDown() or ZGV.db.profile.no_shift_for_waypoints) then

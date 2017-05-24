@@ -1193,7 +1193,7 @@ step
 Congratulations, you have completed the Hatchling of the Talon Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Quests\\Legion\\Lock, Stock and Two Smoking Goblins",{
-condition_end="achieved(10774)",
+condition_end="achieved(11232)",
 author="support@zygorguides.com",
 startlevel=100,
 endlevel=100,

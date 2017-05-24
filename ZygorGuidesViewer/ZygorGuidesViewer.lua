@@ -5868,6 +5868,10 @@ function ZGV.IsLegionOn()
 	return PlayerCompletedQuest(44663) or ZGV:GetPlayerPreciseLevel()>=101
 end
 
+function ZGV:IsBoostedChar()
+	return IsQuestFlaggedCompleted(34398)
+end
+
 
 -- Prevent Blizzard world map taint errors
 function WorldMapFrame.UIElementsFrame.ActionButton.GetDisplayLocation(self, useAlternateLocation)

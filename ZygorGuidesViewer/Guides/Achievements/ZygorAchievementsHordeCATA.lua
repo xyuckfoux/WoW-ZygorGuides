@@ -17,6 +17,460 @@ learn Expert Riding##34090 |achieve 5180 |goto Orgrimmar 49.0,59.6
 step
 Congratulations, you have _earned_ the _Breaking The Sound Barrier_ achievement!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Cataclysmically Delicious", {
+condition_end="achieved(5753)",
+description="Sample Cataclysm delicacies.",
+},[[
+step
+In order to get this achievement, it is suggested that you have a _Cooking_ skill of at least 500, and a _Fishing_ skill of at least 500.
+If you don't have _Cooking_, you may be able to buy all of the items needed from the _Auction House_.
+|tip You will need at least 79 Epicurean's Awards to complete this achievement.
+confirm
+step
+talk Lenedil Moonwing##43411
+buy 1 Tasty Puffball##58279 |condition itemcount(58279) >= 1 |achieve 5753 |goto Mount Hyjal/0 62.84,23.73
+step
+Sample a Tasty Puffball |use Tasty Puffball##58279 |achieve 5753/19
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in the waters of Nordrassil |cast Fishing##7620
+collect 1 Mountain Trout##53063 |achieve 5753 |goto 61.56,23.90
+collect 2 Striped Lurker##53067 |achieve 5753 |goto 61.56,23.90
+step
+Enter the inn |goto Uldum/0 54.91,33.51
+talk Kazemde##48886
+buy 1 Hardtack##58275 |condition itemcount(58275) >= 1 |achieve 5753 |goto 54.68,32.94
+buy 1 Pine Nut Bread##58260 |condition itemcount(58260) >= 1 |achieve 5753 |goto 54.68,32.94
+buy 1 Simmered Squid##58277 |condition itemcount(58277) >= 1 |achieve 5753 |goto 54.68,32.94
+buy 1 Sliced Raw Billfish##58262 |condition itemcount(58262) >= 1 |achieve 5753 |goto 54.68,32.94
+buy 1 Grilled Shark##58263 |condition itemcount(58263) >= 1 |achieve 5753 |goto 54.68,32.94
+step
+Sample a Grilled Shark |use Grilled Shark##58263 |achieve 5753/8
+Sample a Simmered Squid |use Simmered Squid##58277 |achieve 5753/32
+Sample a Sliced Raw Billfish |use Sliced Raw Billfish##58262 |achieve 5753/17
+Sample a piece of Hardtack |use Hardtack##58275 |achieve 5753/4
+Sample a Pine Nut Bread |use Pine Nut Bread##58260 |achieve 5753/42
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in the waters of Ramkahen |cast Fishing##7620
+collect 2 Lavascale Catfish##53068 |achieve 5753 |goto 54.36,37.75
+collect 3 Sharptooth##53062 |achieve 5753 |goto 54.36,37.75
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in Blackbelly Mudfish Schools around Ramkahen |cast Fishing##7620
+|tip These can be found all around the lake.
+collect 2 Blackbelly Mudfish##53066 |achieve 5753 |goto 54.36,37.75
+step
+kill Riverbed Crocolisk##45321+
+collect 2 Crocolisk Tail##62784 |achieve 5753 |goto 56.04,46.20
+step
+kill Marsh Serpent##51676+
+collect 1 Toughened Flesh##62778 |achieve 5753 |goto 62.82,79.47
+|tip Serpents can be found on land around this area.
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in Fathom Eel Swarms |cast Fishing##7620
+|tip These can be found all along the coast.
+collect 1 Fathom Eel##53070 |achieve 5753 |goto 64.76,79.61
+step
+kill Green Sand Crab##39418+
+collect 1 Monstrous Claw##62779 |achieve 5753 |goto Shimmering Expanse/0 42.72,34.48
+step
+kill Speckled Sea Turtle##40223+
+collect 1 Giant Turtle Tongue##62781 |achieve 5753 |goto Kelp'thar Forest/0 52.60,45.01
+step
+kill Brinescale Serpent##39948+
+collect 1 Snake Eye##62780 |achieve 5753 |goto 56.50,38.51
+step
+talk Lizzy "Lemons"##49519
+buy 1 Highland Sheep Cheese##58259 |condition itemcount(58259) >= 1 |achieve 5753 |goto Twilight Highlands/0 76.27,52.64
+buy 1 Highland Pomegranate##58265 |condition itemcount(58265) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Stewed Rabbit##58280 |condition itemcount(58280) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Roasted Beef##58268 |condition itemcount(58268) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Massive Turkey Leg##58269 |condition itemcount(58269) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Tropical Sunfruit##58278 |condition itemcount(58278) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Sour Green Apple##58264 |condition itemcount(58264) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Gilnean White##58276 |condition itemcount(58276) >= 1 |achieve 5753 |goto 76.27,52.64
+buy 1 Smoked String Cheese##58258 |condition itemcount(58258) >= 1 |achieve 5753 |goto 76.27,52.64
+step
+Sample a Stewed Rabbit |use Stewed Rabbit##58280 |achieve 5753/44
+Sample a Roasted Beef |use Roasted Beef##58268 |achieve 5753/12
+Sample a Massive Turkey Leg |use Massive Turkey Leg##58269 |achieve 5753/22
+Sample a Tropical Sunfruit |use Tropical Sunfruit##58278 |achieve 5753/20
+Sample a Sour Green Apple |use Sour Green Apple##58264 |achieve 5753/18
+Sample a Highland Pomegranate |use Highland Pomegranate##58265 |achieve 5753/21
+Sample a Highland Sheep Cheese |use Highland Sheep Cheese##58259 |achieve 5753/9
+Sample a Gilnean White |use Gilnean White##58276 |achieve 5753/34
+Sample a Smoked String Cheese |use Smoked String Cheese##58258 |achieve 5753/27
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Stand on the rock
+Fish in the waters off Highbank |cast Fishing##7620
+collect 1 Algaefin Rockfish##53071 |goto 72.39,53.74
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in Deepsea Sagefish Schools |cast Fishing##7620
+|tip These can be found all along the coast.
+collect 2 Deepsea Sagefish##53072 |achieve 5753 |goto 72.39,53.74
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in open water |cast Fishing##7620
+collect 1 Murglesnout##53069 |achieve 5753 |goto 72.39,53.74
+step
+kill Obsidian Viletongue##47796+, Obsidian Pyrewing##46141+, Obsidian Charscale##47797+
+collect 1 Dragon Flank##62782 |achieve 5753 |goto 65.2,79.0
+step
+talk Gronk Hamcheeks##57262
+buy 1 Oily Giblets##59231 |condition itemcount(59231) >= 1 |achieve 5753 |goto 50.46,58.47
+buy 1 Unidentifiable Meat Dish##59232 |condition itemcount(59232) >= 1 |achieve 5753 |goto 50.46,58.47
+buy 1 Rock-Hard Biscuit##59227 |condition itemcount(59227) >= 1 |achieve 5753 |goto 50.46,58.47
+buy 1 Vile Purple Fungus##59228 |condition itemcount(59228) >= 1 |achieve 5753 |goto 50.46,58.47
+step
+Sample some Oily Giblets |use Oily Giblets##59231 |achieve 5753/11
+Sample an Unidentifiable Meat Dish |use Unidentifiable Meat Dish##59232 |achieve 5753/23
+Sample a Rock-Hard Biscuit |use Rock-Hard Biscuit##59227 |achieve 5753/36
+Sample a Vile Purple Fungus |use Vile Purple Fungus##59228 |achieve 5753/45
+step
+Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
+Fish in Highland Guppy Schools |cast Fishing##7620
+|tip These can be found in the river also.
+collect 1 Highland Guppy##53064 |achieve 5753 |goto 39.53,56.43
+step
+kill Shalehide Basilisk##43181+
+collect 1 Basilisk "Liver"##62783 |achieve 5753 |goto Deepholm/0 41.12,32.78
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Broiled Mountain Trout##65411 |condition itemcount(65411) >= 1 |achieve 5753 |goto Orgrimmar/1 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Broiled Mountain Trout from the Auction House.
+step
+learn Broiled Mountain Trout##88012 |use Recipe: Broiled Mountain Trout##65411 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Broiled Mountain Trout##88012,Cooking,1 total |achieve 5753
+step
+Sample a Broiled Mountain Trout |use Broiled Mountain Trout##62655 |achieve 5753/33
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Lavascale Fillet##65407 |condition itemcount(65407) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Lavascale Fillet from the Auction House.
+step
+learn Lavascale Fillet##88024 |use Recipe: Lavascale Fillet##65407 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Lavascale Fillet##88024,Cooking,1 total |achieve 5753
+step
+Sample a Lavascale Fillet |use Lavascale Fillet##62654 |achieve 5753/26
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Lightly Fried Lurker##65412 |condition itemcount(65412) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Lightly Fried Lurker from the Auction House.
+step
+learn Lightly Fried Lurker##88028 |use Recipe: Lightly Fried Lurker##65412 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Lightly Fried Lurker##88028,Cooking,1 total |achieve 5753
+step
+Sample a Lightly Fried Lurker |use Lightly Fried Lurker##62651 |achieve 5753/41
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Lurker Lunch##65416 |condition itemcount(65416) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Lurker Lunch from the Auction House.
+step
+learn Lurker Lunch##88030 |use Recipe: Lurker Lunch##65416 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Lurker Lunch##88030,Cooking,1 total |achieve 5753
+step
+Sample a Lurker Lunch |use Lurker Lunch##62657 |achieve 5753/37
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Salted Eye##65410 |condition itemcount(65410) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Salted Eye from the Auction House.
+step
+learn Salted Eye##88035 |use Recipe: Salted Eye##65410 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Salted Eye##88035,Cooking,1 total |achieve 5753
+step
+Sample a Salted Eye |use Salted Eye##62653 |achieve 5753/13
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Seasoned Crab##65413 |condition itemcount(65413) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Seasoned Crab from the Auction House.
+step
+learn Seasoned Crab##88037 |use Recipe: Seasoned Crab##65413 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Seasoned Crab##88037,Cooking,1 total |achieve 5753
+step
+Sample a Seasoned Crab |use Seasoned Crab##62652 |achieve 5753/43
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Whitecrest Gumbo##65406 |condition itemcount(65406) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Whitecrest Gumbo from the Auction House.
+step
+talk Shazdar##49737
+buy 1 Crate of Tasty Meat##65513 |n
+|tip These cost 2 Epicurean's Awards each. They have a chance to contain Blood Shrimp.
+collect 1 Blood Shrimp##62791 |achieve 5753 |goto 56.80,62.35
+step
+learn Whitecrest Gumbo##88047 |use Recipe: Whitecrest Gumbo##65406 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Whitecrest Gumbo##88047,Cooking,1 total |achieve 5753
+step
+Sample a Whitecrest Gumbo |use Whitecrest Gumbo##62656 |achieve 5753/25
+step
+talk Shazdar##49737 |only if skill("Cooking")>=450
+buy 1 Recipe: Tender Baked Turtle##65419 |condition itemcount(65419) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=450
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=450
+Your cooking skill is not high enough (450) to use this recipe. Reach at least 450 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 449
+|tip You can also buy Tender Baked Turtle from the Auction House.
+step
+learn Tender Baked Turtle##88046 |use Recipe: Tender Baked Turtle##65419 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Tender Baked Turtle##88046,Cooking,1 total |achieve 5753
+step
+Sample a Tender Baked Turtle |use Tender Baked Turtle##62658 |achieve 5753/30
+step
+talk Shazdar##49737 |only if skill("Cooking")>=475
+buy 1 Recipe: Fish Fry##65423 |condition itemcount(65423) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=475
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=475
+Your cooking skill is not high enough (475) to use this recipe. Reach at least 475 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 474
+|tip You can also buy Fish Fry from the Auction House.
+step
+learn Fish Fry##88018 |use Recipe: Fish Fry##65423 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Fish Fry##88018,Cooking,1 total |achieve 5753
+step
+Sample a Fish Fry |use Fish Fry##62677 |achieve 5753/5
+step
+talk Shazdar##49737 |only if skill("Cooking")>=475
+buy 1 Recipe: Hearty Seafood Soup##65418 |condition itemcount(65418) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=475
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=475
+Your cooking skill is not high enough (475) to use this recipe. Reach at least 475 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 474
+|tip You can also buy Hearty Seafood Soup from the Auction House.
+step
+talk Shazdar##49737
+buy 1 Crate of Tasty Meat##65513 |n
+|tip These cost 2 Epicurean's Awards each. They have a chance to contain Blood Shrimp.
+collect 1 Blood Shrimp##62791 |achieve 5753 |goto 56.80,62.35
+step
+learn Hearty Seafood Soup##88021 |use Recipe: Hearty Seafood Soup##65418 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Hearty Seafood Soup##88021,Cooking,1 total |achieve 5753
+step
+Sample a Hearty Seafood Soup |use Hearty Seafood Soup##62659 |achieve 5753/40
+step
+talk Shazdar##49737 |only if skill("Cooking")>=475
+buy 1 Recipe: Pickled Guppy##65417 |condition itemcount(65417) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=475
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=475
+Your cooking skill is not high enough (475) to use this recipe. Reach at least 475 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 474
+|tip You can also buy Pickled Guppy from the Auction House.
+step
+learn Pickled Guppy##88033 |use Recipe: Pickled Guppy##65417 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Pickled Guppy##88033,Cooking,1 total |achieve 5753
+step
+Sample a Pickled Guppy |use Pickled Guppy##62660 |achieve 5753/31
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Baked Rockfish##65426 |condition itemcount(65426) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Baked Rockfish##88003 |use Recipe: Baked Rockfish##65426 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Baked Rockfish##88003,Cooking,1 total |achieve 5753
+step
+Sample a Baked Rockfish |use Baked Rockfish##62661 |achieve 5753/1
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Basilisk Liverdog##65427 |condition itemcount(65427) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Basilisk Liverdog##88004 |use Recipe: Basilisk Liverdog##65427 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Basilisk Liverdog##88004,Cooking,1 total |achieve 5753
+step
+Sample a Basilisk Liverdog |use Basilisk Liverdog##62665 |achieve 5753/38
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Beer-Basted Crocolisk##65429 |condition itemcount(65429) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Beer-Basted Crocolisk##88005 |use Recipe: Beer-Basted Crocolisk##65429 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Beer-Basted Crocolisk##88005,Cooking,1 total |achieve 5753
+step
+Sample a Beer-Basted Crocolisk |use Beer-Basted Crocolisk##62670 |achieve 5753/46
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Blackbelly Sushi##65424 |condition itemcount(65424) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Blackbelly Sushi##88034 |use Recipe: Blackbelly Sushi##65424 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Blackbelly Sushi##88034,Cooking,1 total |achieve 5753
+step
+Sample a Blackbelly Sushi |use Blackbelly Sushi##62670 |achieve 5753/47
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Crocolisk Au Gratin##65430 |condition itemcount(65430) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Crocolisk Au Gratin##88014 |use Recipe: Crocolisk Au Gratin##65430 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Crocolisk Au Gratin##88014,Cooking,1 total |achieve 5753
+step
+Sample a Crocolisk Au Gratin |use Crocolisk Au Gratin##62664 |achieve 5753/28
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Delicious Sagefish Tail##65422 |condition itemcount(65422) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Delicious Sagefish Tail##88016 |use Recipe: Delicious Sagefish Tail##65422 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Delicious Sagefish Tail##88016,Cooking,1 total |achieve 5753
+step
+Sample a Delicious Sagefish Tail |use Delicious Sagefish Tail##62666 |achieve 5753/39
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Grilled Dragon##65428 |condition itemcount(65428) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Grilled Dragon##88020 |use Recipe: Grilled Dragon##65428 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Grilled Dragon##88020,Cooking,1 total |achieve 5753
+step
+Sample a Grilled Dragon |use Grilled Dragon##62662 |achieve 5753/7
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Lavascale Minestrone##65409 |condition itemcount(65409) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Lavascale Minestrone##88025 |use Recipe: Lavascale Minestrone##65409 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Lavascale Minestrone##88025,Cooking,1 total |achieve 5753
+step
+Sample a Lavascale Minestrone |use Lavascale Minestrone##62662 |achieve 5753/10
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Mushroom Sauce Mudfish##65420 |condition itemcount(65420) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Mushroom Sauce Mudfish##88031 |use Recipe: Mushroom Sauce Mudfish##65420 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Mushroom Sauce Mudfish##88031,Cooking,1 total |achieve 5753
+step
+Sample a Mushroom Sauce Mudfish |use Mushroom Sauce Mudfish##62667 |achieve 5753/35
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Scalding Murglesnout##68688 |condition itemcount(68688) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Scalding Murglesnout##96133 |use Recipe: Scalding Murglesnout##68688 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Scalding Murglesnout##96133,Cooking,1 total |achieve 5753
+step
+Sample a Scalding Murglesnout |use Scalding Murglesnout##68687 |achieve 5753/14
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Severed Sagefish Head##65421 |condition itemcount(65421) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Severed Sagefish Head##88039 |use Recipe: Severed Sagefish Head##65421 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Severed Sagefish Head##88039,Cooking,1 total |achieve 5753
+step
+Sample a Severed Sagefish Head |use Severed Sagefish Head##62671 |achieve 5753/29
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Skewered Eel##65425 |condition itemcount(65425) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=500
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=500
+Your cooking skill is not high enough (500) to use this recipe. Reach at least 500 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 499
+step
+learn Skewered Eel##88042 |use Recipe: Skewered Eel##65425 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Skewered Eel##88042,Cooking,1 total |achieve 5753
+step
+Sample a Skewered Eel |use Skewered Eel##62669 |achieve 5753/16
+step
+talk Shazdar##49737 |only if skill("Cooking")>=500
+buy 1 Recipe: Chocolate Cookie##65431 |condition itemcount(65431) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=505
+|tip This recipe costs 3 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=505
+buy 1 Imported Supplies##68689 |condition itemcount(68689) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=505
+|tip One bag of Imported Supplies costs a single Epicurean's Award. These are obtained by doing cooking dailies. |only if skill("Cooking")>=505
+Your cooking skill is not high enough (505) to use this recipe. Reach at least 505 cooking |achieve 5753 |confirm |only if skill("Cooking") <= 504
+step
+Open the bag of supplies |use Imported Supplies##68689
+collect 1 Cocoa Beans##62786 |achieve 5753
+|tip You may also purchase Cocoa Beans from the Auction House.
+step
+talk Borstan##3368
+buy 1 Buttery Wheat Roll##58261 |achieve 5753 |goto 56.58,61.50
+step
+Sample a Buttery Wheat Roll |use Buttery Wheat Roll##58261 |achieve 5753/2
+step
+talk Suja##46708
+buy 2 Simple Flour##30817 |condition itemcount(30817) >= 1 |achieve 5753 |goto 56.43,61.00
+|tip The extra Flour will be used to make a Fortune Cookie.
+step
+learn Chocolate Cookie##88013 |use Recipe: Chocolate Cookie##65431 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Chocolate Cookie##88013,Cooking,1 total |achieve 5753
+step
+Sample a Chocolate Cookie |use Chocolate Cookie##62680 |achieve 5753/3
+step
+talk Arugi##46709
+learn Blackened Surprise##88006 |achieve 5753 |goto 56.15,61.66
+step
+Create a cooking fire |cast Cooking Fire##818
+create Blackened Surprise##88006,Cooking,1 total |achieve 5753
+step
+Sample a Blackened Surprise |use Blackened Surprise##62676 |achieve 5753/48
+step
+talk Shazdar##49737 |only if skill("Cooking")>=525
+buy 1 Recipe: Fortune Cookie##65432 |condition itemcount(65432) >= 1 |achieve 5753 |goto 56.80,62.35 |only if skill("Cooking")>=525
+|tip This recipe costs 5 Epicurean's Awards. These are obtained by doing cooking dailies. |only if skill("Cooking")>=525
+Your cooking skill is not high enough (525) to use this recipe. Reach at least 525 cooking |confirm |only if skill("Cooking") <= 524
+step
+#include "auctioneer"
+buy 1 Mysterious Fortune Card##60838 |condition itemcount(60838) >= 1 |achieve 5753
+|tip These are made with the Inscription profession. You can purchase them from the Auction House.
+step
+learn Fortune Cookie##88019 |use Recipe: Fortune Cookie##65432 |achieve 5753
+Create a cooking fire |cast Cooking Fire##818
+create Fortune Cookie##88019,Cooking,1 total |achieve 5753
+step
+Sample a Fortune Cookie |use Fortune Cookie##62649 |achieve 5753/6
+step
+talk Kor'jus##3329
+buy 1 Scarlet Polypore##58267 |goto Orgrimmar/2 56.54,67.53
+buy 1 Violet Morel##58266 |goto 56.54,67.53
+step
+Sample a Scarlet Polypore |use Scarlet Polypore##58267 |achieve 5753/15
+Sample a Violet Morel |use Violet Morel##58266 |achieve 5753/24
+step
+Congratulations! You have completed the _Cataclysmically Delicious_ achievement.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Cataclysmically Epic",{
 condition_end="achieved(5372)",
 description="Equip items in each slot that have at least an item level of 359",
@@ -9534,14 +9988,6 @@ Littlest Pet Shop Achievement
 Going to Need More Leashes Achievement
 That's a Lot of Pet Food Achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Cataclysmically Delicious",{
-condition_end="achieved(5753)",
-description="Sample Cataclysm delicacies.",
-},[[
-step
-This guide can be completed with the Cataclysmic Gourmet achievement
-confirm |next Zygor's Horde Achievements Guides\\Profession Achievements\\Cooking\\The Cataclysmic Gourmet
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\General Achievements\\Vial of the Sands",{
 condition_end="achieved(5749)",
 description="Learn how to transform into a dragon and carry an ally.",
@@ -12420,4 +12866,2186 @@ Click here to use the First Aid Guide |confirm |next "Profession Guides\\First A
 step
 label	end
 Congratulations! You have earned the Achievement Zen Master Medic_!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Parasite Evening",{
+condition_end="achieved(5306)",
+description="Defeat Magmaw in Blackwing Descent without anyone in the raid becoming infected with a parasite.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	42.6,59.9	31.5,56.9
+Follow the path to Magmaw |goto 31.5,56.9 < 10 |noway |c
+step
+The best way to earn this achievement will be to DPS it down quickly
+Magmaw uses _Pillar of Flame_ which spawns the parasites, if you can't kill it fast enough, you will need to avoid them and DPS them down at range
+Earn the Parasite Evening Achievement |achieve 5306 |goto Blackwing Descent/1 27.5,53.1
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Magmaw Achievement as well.
+step
+Congratulations, you have earned the Parasite Evening Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Achieve-a-tron",{
+condition_end="achieved(5307)",
+description="Defeat the Omnotron Defense System in Blackwing Descent while neutralizing the following attacks.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	51.2,59.9	58.3,59.7	61.0,57.3
+Follow the path, clearing trash as you make your way to the next boss, the Omnotron Defense System |goto 61.0,57.3 < 5 |noway |c
+step
+You will be able to earn this achievement over the course of multiple lock outs
+To earn the portion of the achievement needed, you will need to engage the boss that uses the ability that you are to avoid
+_Be sure not to kill them before you fight each of them_
+No player hit by Static Shock (Electron) |achieve 5307/1
+No player hit by Arcane Annihilator (Arcanotron) |achieve 5307/2
+No player hit by Poison Bomb (Toxitron) |achieve 5307/3
+No more than one player hit by each Flamthrower (Magmatron) |achieve 5307/4
+Earn the Achieve-a-Tron Achievement |achieve 5307 |goto Blackwing Descent/1 65.4,57.4
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Omnotron Defense System Achievement as well.
+step
+Congratulations, you have earned the Achieve-a-tron Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Silence is Golden",{
+condition_end="achieved(5308)",
+description="Defeat Atramedes in Blackwing Descent without any raid member's sound bar going over 50%.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	47.03,44.38
+map Blackwing Descent/2
+path	47.44,84.71	57.6,69.5	47.4,53.0
+path	47.5,40.9
+Follow the path to Atramedes |goto Blackwing Descent/2 47.5,40.9 < 15 |noway |c
+Note that you will have had to kill Magmaw and the Omnotron Defense System to reach this boss
+step
+The best way to earn this achievement will be to DPS it down quickly
+You can avoid getting sound by avoiding Atramedes' Area of Effect Abilities
+There are Gongs on the side of the room that serve to reset your "Sound" bar, as well as interrupt powerful AoE abilitis from the boss
+Use it as needed
+If you need more DPS, bring a friend to help
+Earn the Silence is Golden Achievement |achieve 5308 |goto Blackwing Descent/2 47.5,32.7
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Atramedes Achievement as well.
+step
+Congratulations, you  have earned the Silence is Golden Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Aberrant Behavior",{
+condition_end="achieved(5310)",
+description="Kill 12 Aberrations within 10 seconds on the Maloriak encounter in Blackwing Descent and then defeat Maloriak.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	47.03,44.38
+map Blackwing Descent/2
+path	47.4,88.1	57.6,69.5	65.5,69.7
+Follow the path to Maloriak |goto Blackwing Descent/2 65.5,69.7 < 20 |noway |c
+Note that you will have had to kill Magmaw and the Omnotron Defense System to reach this boss
+step
+For this achievement, you will need to DPS Maloriak down to 25% health
+Once you do that, enough Aberrations will should spawn to earn the acheivement
+Gather all that have spawned, and AoE them down in _under 10 seconds_
+Earn the Aberrant Behavior Achievement |achieve 5310 |goto Blackwing Descent/2 71.4,70.2
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Maloriak Achievement as well.
+step
+Congratulations, you have earned the Aberrant Behavior Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Full of Sound and Fury",{
+condition_end="achieved(5309)",
+description="Defeat Chimaeron in Blackwing Descent with no more than 2 raid member deaths.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	47.03,44.38
+map Blackwing Descent/2
+path	43.30,83.39	36.7,69.5	28.8,69.7
+Follow the path to Chimaeron |goto Blackwing Descent/2 28.8,69.7 < 15 |noway |c
+Note that you will have had to kill Magmaw and the Omnotron Defense System to reach this boss
+step
+For this achievement, you will want to DPS Chimaeron as fast as possible
+Having an item level of 580 or high will make you able to easily solo this acheivement
+If you  have a pet of any type, you _MUST_ resurrect it before defeating Chimaeron or you won't earn the achievement
+Earn the Full of Sound and Fury Achievement |achieve 5309 |goto Blackwing Descent/2 24.5,70.2
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Chimaeron Achievement as well.
+step
+Congratulations, you have earned the Full of Sound and Fury Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Keeping it in the Family",{
+condition_end="achieved(4849)",
+description="Damage Nefarian below 50% health before he lands for the final confrontation and then defeat Nefarian in Blackwing Descent.",
+},[[
+step
+map Blackwing Descent/1
+path loop off
+path	47.03,44.38
+map Blackwing Descent/2
+path	36.7,69.5	47.39,57.67
+click Orb of Culmination
+Follow the path to Nefarian |goto Blackwing Descent/2 47.39,57.67 < 20 |noway |c
+Note that you will have to kill the other bosses before you can activate the Nefarian encounter
+step
+For the first part of this achievement, enter the arena and ignore Onyxia
+Next, damage Nefarion to 60% of his health then stop DPS
+Then, kill Onyxia
+When the magma rises, jump onto a column and kill the add that is there
+After that, attack Nefarian, bringing his health to 49% to 25%, but _DO NOT_ kill him or damage him further than 25% health
+Allow  him to finish his speech and land, then kill him
+Earn the Keeping it in the Family Achievement |achieve 4849 |goto Blackwing Descent/2 48,70.2
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Nefarian Achievement as well.
+step
+Congratulations, you have earned the Keeping it in the Family Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\The Only Escape",{
+condition_end="achieved(5300)",
+description="Defeat Halfus Wyrmbreaker after defeating two drakes within 10 seconds of each other. The Emerald Whelp pack counts as one drake for this purpose.",
+},[[
+step
+map The Bastion of Twilight/1
+path loop off
+path	39.6,42.7	39.6,19.8	46.6,19.4
+Follow the path to Halfus Wyrmbreaker |goto The Bastion of Twilight/1 46.6,19.4 < 15 |noway |c
+step
+For this achievement, you will need to kill two of the dragons that are in the room with Halfus before defeating Halfus himself
+To start, pull Halfus
+Then, Release a dragon of your choice (There will be 3 of 5 possible present)
+Avoid choosing the Whelps if possible unless you have strong AoE!
+Release a second dragon of your choice
+Then, pull the two dragons together, killing both within 10 seconds of the other
+Finally, defeat Halfus
+Earn The Only Escape Achievement |achieve 5300 |goto The Bastion of Twilight/1 53.4,19.3
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Halfus Wyrmbreaker Achievement as well.
+step
+Congratulations, you have earned The Only Escape Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Double Dragon",{
+condition_end="achieved(4852)",
+description="Kill 6 Twilight Fiends in the Twilight Realm and then defeat Valiona and Theralion in the Bastion of Twilight.",
+},[[
+step
+map The Bastion of Twilight/1
+path loop off
+path	39.6,42.7	39.6,19.8	46.6,19.4
+path	53.7,29.1	53.7,48.9	53.7,68.3
+Follow the path to Valiona and Theralion |goto The Bastion of Twilight/1 53.7,68.3 < 15 |noway |c
+Note that you will have to have defeated Halfus the Wyrmbreaker to reach this boss
+step
+For this achievement, you will have to defeat 6 Twilight Fiends within the Twilight Realm
+To start, pull Valiona and wait for her to cast Blackout Twice
+_Don't damage the boss too much_
+Theralion will cast Dazzling Destruction soon after
+After Dazzling Destruction, stand in the Shadow Pool that appears, as it will take you into the Shadow Realm
+Kill 6 Twilight Fiends as the appear
+click Collapsing Twilight Portal
+Kill Valiona and Theralion
+Earn the Double Dragon Achievement |achieve 4852 |goto The Bastion of Twilight/1 53.9,78.4
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Valiona and Theralion Achievement as well.
+step
+Congratulations, you have earned the Double Dragon Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Elementary",{
+condition_end="achieved(5311)",
+description="Defeat the Elementium Monstrosity in the Bastion of Twilight while only allowing it to create a single Liquid Ice patch.",
+},[[
+step
+map The Bastion of Twilight/1
+path loop off
+path	39.6,42.7	39.6,19.8	46.6,19.4
+path	53.7,29.1	53.7,48.9	53.7,68.3
+path	53.6,86.7	47.1,92.8
+map The Bastion of Twilight/2
+path	42.4,18.2
+Follow the path to the Twilight Ascendant Council |goto The Bastion of Twilight/2 42.4,18.2 < 15 |noway |c
+step
+For this achievement, you will need the Elementium Monstrosity to only create one Ice Patch
+To start, stand at the center of the room close to the purple area on the floor
+Then, pull the boss, damaging both as much as possible
+_Note_ that if you defeat one of the bosses both will despawn, so spread your damage as equal as possible
+Soon after you defeat the first two, the next two will spawn, repeat the same process
+_STAY AT THE CENTER OF THE ROOM!_
+Once you defeat the second pair, the final boss will spawn
+Once the Elementium Monstrosity appears it will spawn an Ice Patch underneath it
+_DO NOT MOVE!_ Kill the boss from where you are standing
+Earn the Elementary Achievement |achieve 5311 |goto The Bastion of Twilight/2 42.5,45.5
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Ascendant Council Achievement as well.
+step
+Congratulations, you have earned the Elementary Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\The Abyss Will Gaze Back Into You",{
+condition_end="achieved(5312)",
+description="Defeat Cho'gall in the Bastion of Twilight before any raid member earns more than 30% Corrupted Blood.",
+},[[
+step
+map The Bastion of Twilight/1
+path loop off
+path	39.6,42.7	39.6,19.8	46.6,19.4
+path	53.7,29.1	53.7,48.9	53.7,68.3
+path	53.6,86.7	47.1,92.8
+map The Bastion of Twilight/2
+path	42.4,18.2	43.9,75.3	56.6,75.1
+Follow the path Cho'gall |goto The Bastion of Twilight/2 56.6,75.1 < 15 |noway |c
+step
+For this achievement, you will need to defeat Cho'gall before any raid member earns more than 30% Corrupted Blood
+The easiest way to do this is to just quickly burn him down
+If you have multiple raid members, beware of mind control (This applies to pets as well)
+Earn The Abyss Will Gaze Back Into You Achievement |achieve 5312 |goto The Bastion of Twilight/2 73.4,75.4
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Cho'gall Achievement as well.
+step
+Congratulations, you have earned The Abyss Will Gaze Back Into You Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Stay Chill",{
+condition_end="achieved(5304)",
+description="Defeat the Conclave of Wind in the Throne of the Four Winds while everyone in the raid has at least 7 stacks of Wind Chill.",
+},[[
+step
+To start, Kill Anshal
+Jump to the platform Nezir is on and wait until you have _3 stacks_ of the Wind Chill debuff
+_Do NOT attack Nezir yet!_
+Jump to the platform Rohash is on and kill hiim
+Jump back to Nezir's platform, gaining _6 stacks_ of Wind Chill
+_Do NOT attack Nezir yet!_
+Let Anshal finish casting Zephyr, then jump to his platform and kill him
+Jump Back to Nezir's platform and gain _7 stacks_ of Wind Chill before killing him
+Earn the Stay Chill Achievement |achieve 5304 |goto Throne of the Four Winds/1 47.5,26
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Conclave of Wind Achievement as well.
+step
+Congratulations, you have earned the Stay Chill Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Cataclysm Raider Achievements\\Four Play",{
+condition_end="achieved(5305)",
+description="Defeat Al'Akir in the Throne of the Four Winds while he is affected by Feedback.",
+},[[
+step
+To earn this achievement, defeat Al'Akir while he is affected by Feedback
+To start, DPS him down until he's at 80% health
+Then, wait for him to spawn Stormlings
+Drop the boss to 40% health, then kill the Stormling
+Kill the Al'Akir
+Earn the Four Play Achievement |achieve 5305 |goto Throne of the Four Winds/1 47.5,50
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Al'Akir Achievement as well.
+step
+Congratulations, you have earned the Four Play Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Death From Above",{
+condition_end="achieved(5821)",
+description="Only kill Cinderweb Drones while they are atop the web canopy during the Beth'tilac encounter in Firelands.",
+},[[
+step
+map Firelands/1
+path loop off
+path	33.2,77.0	41.7,70.4	26.00,58.85
+path	23.66,51.27	16.23,50.40	16.42,46.26
+path	26.20,47.00
+Follow the path Beth'tilac |goto Firelands/1 26.20,47.00 < 15 |noway |c
+only if not achieved(5821)
+step
+To start, kill a Cinder Web Spider that's hanging from the roof
+Click the web it leaves behind to climb up to the boss
+DPS Beth'tilac until it drops down
+Avoid using AoE Attacks during the final phase
+Kill the boss and earn the achievement
+Earn the Death From Above Achievement |achieve 5821 |goto Firelands/1 20.8,32
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Beth'tilac Achievement as well.
+step
+Congratulations, you have earned the Death From Above Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Not an Ambi-Turner",{
+condition_end="achieved(5810)",
+description="Defeat Lord Rhyolith in the Firelands without ever causing him to turn left while his armor is intact.",
+},[[
+step
+map Firelands/1
+path loop off;dist 20
+path	31.27,77.70	40.77,69.89	48.84,69.53
+path	54.86,64.87	64.15,56.84	68.67,62.49
+path	69.52,73.56
+Follow the path Lord Rhyolith |goto Firelands/1 69.52,73.56 < 15 |noway |c
+only if not achieved(5810)
+step
+To start, you want to DPS his right leg
+Burst him dow as fast as you can to earn the achievement
+Earn the Not an Ambi-Turner Achievement |achieve 5810 |goto Firelands/1 65.6,75.6
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Lord Rhyolith Achievement as well.
+step
+Congratulations, you have earned the Not an Ambi-Turner Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Do a Barrel Roll!",{
+condition_end="achieved(5813)",
+description="Defeat Alysrazor in the Firelands without any raid member getting hit by the following attacks.",
+},[[
+step
+map Firelands/1
+path loop off;dist 20
+path	31.27,77.70	40.77,69.89	48.84,69.53
+path	54.86,64.87	62.48,51.39
+Follow the path to Alysrazor |goto Firelands/1 62.48,51.39 < 15 |noway |c
+only if achieved(5813)
+step
+For this achievement, you will want to gather feathers after Majordomo Staghelms dialogue
+Once you gather enough you will start to fly
+Follow Alysrazor closely once you take flight
+Avoid Incendiary Clouds and kill Alysrazor quickly to earn the achievement
+Earn the Do a Barrel Roll! Achievement |achieve 5813 |goto Firelands/1 64,39
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Alysrazor Achievement as well.
+step
+Congratulations, you  have earned the Do a Barrel Roll! Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Bucket List",{
+condition_end="achieved(5829)",
+description="During a single engagement, bring Shannox to each of the following locations in the Firelands before dispatching him.",
+},[[
+step
+map Firelands/1
+path loop off
+path	33.1,29.3	32.9,52.8	41.7,70.4
+path	56.7,62.5
+Follow the path to Shannox |goto Firelands/1 56.7,62.5 < 15 |noway |c
+only if achieved(5829)
+step
+For Shannox to appear, you need to kill trash in the dungeon
+He will eventually spawn and patrol the instance
+In order to earn this achievement, draw aggro on Shannox while mounted and kite Shannox to the provided locations:
+Beth'tilac's Lair |achieve 5829/4 |goto 29.1,62.3
+Flamebreachc |achieve 5829/1 |goto 34.1,75.1
+The Ridge of Ancient Flame |achieve 5829/5 |goto 61.6,55.9
+Shattershow |achieve 5829/3 |goto 61.2,45.4
+Path of Corruuption |achieve 5829/2 |goto 34.0,30.8
+_Note:_ If you can change to a tank spec, you won't be affected by the stun from the dogs
+Earn the Bucket List Achievement |achieve 5829 |goto Firelands/1 49.2,46
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Shannox Achievement as well.
+step
+Congratulations, you have earned the Bucket List Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Share the Pain",{
+condition_end="achieved(5830)",
+description="Defeat Baleroc in the Firelands without allowing any member of your raid to suffer Torment more than three times.",
+},[[
+step
+map Firelands/1
+path loop off;dist 20
+path	31.27,77.70	40.77,69.89	48.84,69.53
+path	54.86,64.87	54.11,49.50	49.24,41.92
+Follow the path to Baleroc |goto 49.24,41.92 < 15 |noway |c
+only if not achieved(5830)
+step
+For this achievement, you will need to kill Baleroc without gaining Torment 3 times
+To start, when you see Baleroc casting torment, be on the lookout for a large purple pillar
+Move at least 15 yards away from it to avoid the shard that will give you the debuff
+DPS Baleroc down quickly to avoid any chance of gaining the debuff
+Earn the Share the Pain Achievement |achieve 5830 |goto Firelands/1 49.2,32.8
+|tip Set the Raid Difficulty to Heroic to Earn the Heroic: Baleroc Achievement as well.
+step
+Congratulations, you have earned the Share the Pain Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Only the Penitent...",{
+condition_end="achieved(5799)",
+description="Activate both of Fandral's Flames at once in Firelands without any raid member getting hit by Kneel to the Flame!",
+},[[
+step
+map Firelands/1
+path loop off;dist 20
+path	31.27,77.70	40.77,69.89	48.84,69.53
+path	54.86,64.87	54.11,49.50	49.24,41.92
+path	49.18,26.74	49.51,7.53
+Cross the bridge to Fandral |goto 49.51,7.53 < 15 |noway |c
+only not achieved(5799)
+step
+To Earn this achievement, you need a group of 6
+There will be a Druid of Flame casting a spell called _Kneel to the Flame!_
+Set your focus on the Druid of Flame to watch the cast bar
+There will be 2 orbs on each side of the druid
+Approach it carefully, _stopping completely when Kneel to the Flame! is about to complete_
+Click Fandral's Flames at the following locations:
+click Fandral's Flames
+Orb 1 |goto Firelands/3 48.38,75.06 < 10
+Orb 2 |goto 53.31,74.66 < 10
+|achieve 5799
+step
+Congratulations, you have earned the Only the Penitent Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Firelands Raider Achievements\\Heroic: Fandral Staghelm",{
+condition_end="achieved(5975)",
+description="Activate both of Fandral's Flames at once in Firelands without any raid member getting hit by Kneel to the Flame!",
+},[[
+step
+map Firelands/1
+path loop off;dist 20
+path	31.27,77.70	40.77,69.89	48.84,69.53
+path	54.86,64.87	54.11,49.50	49.24,41.92
+path	49.18,26.74	49.51,7.53
+only if not achieved(5975)
+step
+Kill Fandral Staghelm on Heroic Difficulty
+Right click your character portrait and make sure that you are doing Heroic Fireladns
+|achieve 5975
+step
+Congratulations, you have earned the Heroic: Fandral Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Boned (10 player)",{
+condition_end="achieved(4534)",
+description="Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 10-player mode.",
+},[[
+step
+map Icecrown Citadel/1
+path loop off
+path	38.9,29.2	38.9,36.3	39.0,52.4
+Follow the path, clearing trash as you make your way to the first boss, Lord Marrowgar |goto 39.0,52.4 < 20 |noway |c
+step
+In order to not be impaled, you should be sure to get hit by it's Bone Slice ability
+People who have been hit by that will not be able to be impaled
+|achieve 4534 |goto 39.0,52.4
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the Boned (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Full House (10 player)",{
+condition_end="achieved(4535)",
+description="Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 10-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat lady Deathwhisper with 5 specifc mobs active:
+Deformed Fanatic
+Reanimated Fanatic
+Reanimated Adherent
+Cult Fanatic
+Cult Adherent
+She will spawn adds every minute from when you begin the encounter, so don't dps her until you see what you need have spawned
+If you dps her and send her to phase 2 without having the mobs up, you will not be able to earn the achievement
+Defeat Lady Deathwhisper while 5 different type of cultists are active |achieve 4535 |goto Icecrown Citadel/1 38.96,86.68
+|tip Set the duneong difficulty to Heroic to earn the Heroic: Lady Deathwhisper Achievement.
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the Full House (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\I'm on a Boat (10 player)",{
+condition_end="achieved(4536)",
+description="Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than twice in 10-player mode.",
+},[[
+step
+To start, hope in the gun ship as soon as you're able and shoot the horde ship
+This achievement is still currently bugged, so as you spam 1 and 2 while in the cannon, you should earn this achievement
+|achieve 4536 |goto Icecrown Citadel/2 66.50,55.34
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the I'm on a Boat (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\I've Gone and Made a Mess (10 player)",{
+condition_end="achieved(4537)",
+description="Defeat the Deathbringer before Mark of the Fallen Champion is cast three times in 10-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat the Deathbring beofre Mark of the Fallen Champion is cast 3 times
+Just dps him down as it's a race
+Defeat the Deathbringer before Mark of the Fallen Champion is cast three times |achieve 4537 |goto Icecrown Citadel/3 51.67,33.35
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the I've Gone and Made a Mess Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Flu Shot Shortage (10 player)",{
+condition_end="achieved(4577)",
+description="Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 10-player mode.",
+},[[
+step
+To earn this achievement, you will to defeat Festergut without allowing Inoculated to raise above 2 stacks
+When Festergut uses Gas Spore, run away from him until it explodes to avoid being Inoculated, then DPS him down
+Defeat Festergut without being Inoculated twice |achieve 4577 |goto Icecrown Citadel/5 19.79,65.28
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the Flu Shot Shortage (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Dances with Oozes(10 player)",{
+condition_end="achieved(4538)",
+description="Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 10-player mode.",
+},[[
+step
+To start, you will need to maximize dps against Rotface to earn this achievement
+If you are with multiple people, you can have the additional members kite the oozes away from each other as the spawn
+Otherwise, you will have to use all cooldowns available and just burn the boss
+|achieve 4538 |goto Icecrown Citadel/5 19.88,42.28
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the achievement Dances with Oozes(10 player)!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Nausea, Heartburn, Indigestion... (10 player)",{
+condition_end="achieved(4578)",
+description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 10-player mode.",
+},[[
+step
+To earn this achievement, don't drink any of the Ooze provided for the encounter as it will cause you to fail this achievement
+|achieve 4578 |goto Icecrown Citadel/5 10.07,53.65
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the Nausea, Heartburn, Indigestion... (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\The Orb Whisperer (10 player)",{
+condition_end="achieved(4582)",
+description="Defeat the Blood Council without anyone in the raid taking more than 23,000 spell damage in a single hit in 10-player mode.",
+},[[
+step
+_Prince Valanar_ casts Empowered Shock Vortex
+If you're with multiple people, have someone attack the Kinetic Bombs if you have dots available
+_Prince Taldaram_ casts Conjure Empowered Flame, which you will have to run away from if you're the target
+If you are with multiple people, stand together with your group members to mitigate some damage
+_Prince Keleseth_ casts Empowered Shadow Lance, which damage can be negated by killing Dark Nuclei around the room
+Keep around _4 Stacks_ of Shadow Resonance if possible
+Defeat the Blood Council without anyone in the raid taking 23,000 or more in one hit |achieve 4582 |goto Icecrown Citadel/5 51.93,12.00
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Crimson Hall Achievement.
+step
+Congratulations, you have earned The Orb Whisperer (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Once Bitten, Twice Shy (10 player)",{
+condition_end="achieved(4539)",
+description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 10-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat Blood-Queen Lana'thel twice:
+It will take around 15 seconds for her to activate the Essence of the Blood-Queen debuff
+So wait to DPS her if you are looking to get the debuff
+|achieve 4539/2 |goto Icecrown Citadel/6 51.13,32.44
+If you are wanting to defeat her without becoming a vampire, you may want to bring additional dps to burn her quickly
+|achieve 4539/1	|goto Icecrown Citadel/6 51.13,32.44
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Crimson Hall Achievement.
+step
+Congratulations, you have earned the Once Bitten, Twice Shy (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Portal Jockey (10 player)",{
+condition_end="achieved(4579)",
+description="Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 10-player mode.",
+},[[
+step
+To start, you will need to be a healer for this achievement
+You will need to heal up Valithria Dreamwalker before any Portals appear during the encounter
+Enter every portal spawned during the encounter |achieve 4579 |goto Icecrown Citadel/5 76.62,73.26
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Frostwing Halls Achievement.
+step
+Congratulations, you have earned the Portal Jockey Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\All You Can Eat (10 player)",{
+condition_end="achieved(4580)",
+description="Defeat Sindragosa in 10-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
+},[[
+step
+This achievement is basically a DPS race
+You will need to defeat Sidnragosa before anyone gets more than 5 stacks of Mystic Buffet
+Defeat Sindragosa without gaining more than 5 stacks of Mystic Buffet |achieve 4580 |goto Icecrown Citadel/4 36.58,20.10
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Frostwing Halls Achievement.
+step
+Congratulations, you have earned the All You Can Eat (10 Player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (10 Player) Achievements\\Been Waiting a Long Time for This (10 player)",{
+condition_end="achieved(4601)",
+description="Allow Necrotic Plague to stack to 30 before defeating the Lich King in 10-player mode.",
+},[[
+step
+_You need a pet or another player in order to earn this achievement!_
+To start, begin the Lich King encounter, but be sure _not_ to damage him to 70 percent health or below
+Eventually, you will notice Necrotic Plague on you
+Being hit will stop the plague from building, so you will need to run away from adds
+The Lich King will get a buff called Plague Siphon
+Once he gets 30 stacks of Plague Siphon, Burn him down to Earn the achievmeent
+Defeat the Lich King having allowed a stack of Necrotic Plague to reach 30 |achieve 4601 |goto Icecrown Citadel/7 48.15,60.23
+step
+Congratualtions, you have earned the Been Waiting a Long Time for This (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Orbit-uary (10 player)",{
+condition_end="achieved(3056)",
+description="Defeat Flame Leviathan with all 4 Orbital Defense Systems active in 10-player mode.",
+},[[
+step
+talk Lore Keeper of Norgannon##33686 |goto Ulduar/1 52.64,88.26
+Tell him "Activate the second defense system."
+map Ulduar/1
+path loop off; dist 20
+path	50.03,71.16	49.73,56.07	49.00,42.60
+Make your way through the Iron Concourse and reach the Flame Leviathan |goto 49.00,42.60 |noway |c
+only if not achieved(2923)
+step
+For this achievement, you will need to defeat the Flame LEviathan with all defense systems active
+Climb into a Salvaged Demolishers and head towards the boss, destroying a few towers on the path towards him
+Once you get to the boss, spam you siege attacks
+If your vehicle is destroyed, it shouldn't be too much of a problem, though you may end up needing self sufficient healing
+If your vehicle ends up being destroyed, make sure that you never hold still or you'll be stunned
+|achieve 3056 |goto Ulduar/1 49,40
+step
+Congratulations, you have earned the Orbit-uary (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Stokin' the Furnace (10 player)",{
+condition_end="achieved(3056)",
+description="Defeat Ignis the Furnace Master in 4 minutes in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(3056)
+step
+This achievement is simple at level cap, simply DPS Ignis down in under 4 minutes
+|achieve 2930 |goto Ulduar/1 37.5,26.5
+step
+Congratulations, you have earned the Stokin' the Furnace (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Iron Dwarf, Medium Rare (10 player)",{
+condition_end="achieved(2923)",
+description="Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(2923)
+step
+To start, ignore the Harpoon guns
+You will need a powerful AoE
+You can kill the large enemies, but leave the smaller ones alone for now
+Once you have about 25 to 30 enemies on you, use the Harpoon Gun on Razorscale
+Wait for Razorscale to start casting Flame BReath and as soon as it hits, use your AoE attack
+|achieve 2923 |goto Ulduar/1 54.1,26.3
+only if not achieved(2923)
+step
+Congratualtions, you have earned the Iron Dwarf, Medium Rare (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Heartbreaker (10 player)",{
+condition_end="achieved(3058)",
+description="Defeat XT-002 Deconstructor after destroying his heart in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(3058)
+step
+To start, engage XT-002
+Be sure to do very slow dps at first
+Avoid using DoTs as you can accidentally kill it
+Once you take it down to 75 percent of it's health, the heart will pop out
+Kill the heart, then XT-002
+|achieve 3058 |goto Ulduar/1 48.5,13.9
+step
+Congratulations, you have earned the Heartbreaker (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Choose You, Steelbreaker (10 player)",{
+condition_end="achieved(2941)",
+description="Defeat the Assembly of Iron with Steelbreaker as the last member alive in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(2941)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.20,48.71	27.66,30.15	17.15,30.68
+path	15.51,41.96
+Enter the Assembly of Iron |goto 15.51,41.96 |noway |c
+only if not achieved(2941)
+step
+For this, kill Stormcaller Brundir, then Runemaster Molgeim then finally, Steelbreaker
+|achieve 2941 |goto Ulduar/2 15,56
+step
+Congratulations, you have earned the I Choose You, Steelbreaker (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Disarmed (10 player)",{
+condition_end="achieved(2953)",
+description="Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(2953)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+Follow the path to Kologarn |goto Ulduar/2 37.06,18.31 |noway |c
+only if not achieved(2953)
+step
+To start, DPS Kologarn's body until he's at about 25 percent health
+_Make sure not to attack his arms at all while you do this!_
+Once he's at the 25 percent mark, kill his Left Arm, then his Right Arm
+Finish the boss off immidiately after
+|achieve 2953 |goto Ulduar/2 37.3,14.0
+step
+Congratulations, you have earned the Disarmed (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Crazy Cat Lady (10 player)",{
+condition_end="achieved(3006)",
+description="Defeat Auriaya without destroying her Sanctum Sentries in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3006)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15
+Follow the path to Auriaya |goto Ulduar/3 52.90,74.15 |noway |c
+only if not achieved(3006)
+step
+For this achievement, simply avoid using any AoE and kill Auriaya
+|achieve 3006 |goto Ulduar/3 52.90,74.15
+step
+Congratulations, you have earned the Crazy Cat Lady (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Knock, Knock, Knock on Wood (10 player)",{
+condition_end="achieved(3179)",
+description="Defeat Freya while leaving all 3 Elders alive in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3179)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	56.66,68.68	55.82,61.33
+path	51.28,56.78	51.72,38.40	52.26,29.14
+Follow the path to Freya |goto 52.26,29.14 |noway |c
+only if not achieved(3179)
+step
+For this achievement, Kill Freya without killing the following enemies:
+Elder Brightleaf
+Elder Stonebark
+Ironbranch
+Go directly to Freya and just single target DPS her down
+|achieve 3179 |goto Ulduar/3 53,23
+step
+Congratulations, you have earned the Knock, Knock, Knock on Wood (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Lose Your Illusion (10 player)",{
+condition_end="achieved(3176)",
+description="Defeat Thorim while Sif is present in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3176)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	56.66,68.68	55.82,61.33
+path	59.45,51.49	65.59,48.56
+Follow the path to Thorim |goto 65.59,48.56 |noway |c
+only if not achieved(3176)
+step
+To start, kill the enemies inside of the room
+After killing the initial enemies, click the lever at the provided location
+click Lever
+map Ulduar/3
+path	loop off; dist 20
+path	69.04,43.15	69.21,38.08	75.23,38.11
+path	81.65,38.20	82.21,43.61	81.44,48.29
+path	78.03,50.41	74.00,50.19	71.46,48.60
+path	70.32,48.82
+Run down the corridor kill mobs quickly
+Reach the end of the hallway and jump down fast or it will reset the fight
+Kill Thorim
+|achieve 3176
+step
+Congratulations, you have earned the Lose Your Illusion (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Could Say That This Cache Was Rare (10 player)",{
+condition_end="achieved(3182)",
+description="Defeat Hodir before he shatters his rare cache in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3182)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	57.89,72.18	63.79,77.03
+path	73.14,79.13	75.93,76.98	75.09,71.80
+path	73.75,64.55	70.97,63.85
+Enter the Halls of Winter |goto 70.97,63.85 |noway |c
+only if not achieved(3182)
+step
+To earn this achievement, you need to kill Hodir within 3 minutes
+Pop all cooldowns that increase your damage and defeat Hodir
+|achieve 3182 |goto Ulduar/3 66.0,63.7
+step
+Congratulations, you have earned the I Could Say That This Cache Was Rare (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\Firefighter (10 player)",{
+condition_end="achieved(3180)",
+description="Defeat Mimiron after activating his Self-Destruct mechanism in 10-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/5
+path	43.65,62.19
+click Ulduar Teleporter
+Teleport to The Spark of Imaginations |goto Ulduar/5 43.65,62.19 |noway |c
+only if not achieved(3180)
+step
+map Ulduar/5
+path loop off; dist 20
+path	43.63,59.52	43.59,54.10	43.67,45.36
+Follow the path to Mimiron |goto 43.67,45.36 |noway |c
+only if not achieved(3180)
+step
+To earn this achievement, you will have to press a big red button at the back of the room before engaging Mimiron
+Once you've clicked it, wait for his dialogue then kill him
+|achieve 3180 |goto Ulduar/5 43.6,41.1
+step
+Congratulations, you have earned the Firefighter (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\I Love the Smell of Saronite in the Morning (10 player)",{
+condition_end="achieved(3181)",
+description="Defeat General Vezax after defeating the Saronite Animus in 10-player mode.",
+},[[
+step
+map Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/3
+path	51.02,54.02
+Teleport to the Conservatory of Life |goto Ulduar/3 51.02,54.02 |noway |c
+only if not achieved(3181)
+step
+map Ulduar/3
+path loop off; dist 20
+path	48.88,58.35	45.96,62.22	45.45,68.77
+path	42.70,73.55	34.89,74.44
+map Ulduar/4
+path	33.82,51.62	27.85,50.21	28.71,58.83
+path	35.66,67.97	41.56,65.68
+Follow the path to General Vezax |goto 41.56,65.68 |noway |c
+only if not achieved(3181)
+step
+To start, engage General Vezax without dpsing him too much
+He will spawn Saronite Vapors, and eventually when there are enough he will absorb them
+When that happens, a Saronite Animus will spawn
+Kill the Saronite Animus, then General Vazax
+|achieve 3181 |goto Ulduar/4 52.6,57.1
+step
+Congratulations, you have earned the I Love the Smell of Saronite in the Morning (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (10 Player) Achievements\\One Light in the Darkness (10 player)",{
+condition_end="achieved(3158)",
+description="Defeat Yogg-Saron with the assistance of one or fewer Keepers in 10-player mode.",
+},[[
+step
+map Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/4
+path	66.62,60.05
+Teleport to the Prison of Yogg-Saron |goto 66.62,60.05 |noway |c
+only if not achieved(3158)
+step
+To earn this achievement, simply defeat Yogg-Saron with the aid of one keeper or fewer
+If you do use a keeper, we would suggest that you speak with Freya.
+|achieve 3158 |goto Ulduar/4 68,40.8
+step
+Congratulations, you have earned the One Light in the Darkness (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (10 player)",{
+condition_end="achieved(2051) and achieved(2047)",
+description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+},[[
+step
+To earn this achievement, ignore the Twilight Drakes and kill Sartharion
+If he lasts long enough to do Lava Strike, avoid the area he casts it in
+|achieve 2051 |goto The Obsidian Sanctum/0 50.26,47.34
+|achieve 2047 |goto The Obsidian Sanctum/0 50.26,47.34
+step
+Congratulations, you have earned The Twilight Zone and Gonna Go When the Volcano Blows (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Dedicated Few (10 player)",{
+condition_end="achieved(578)",
+description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+},[[
+step
+Kill the following bosses while in a raid group of 8 or less:
+|tip Note that this achievement is soloable!
+Anub'Rekhan |acheive 578/1
+Heigan the Unclean |acheive 578/2
+Instructor Razuvious |acheive 578/3
+Gothik the Harvester |acheive 578/4
+Sapphiron |acheive 578/5
+Gluth |acheive 578/6
+Thaddius |acheive 578/7
+Noth the Plaguebringer |acheive 578/8
+Laotheb |acheive 578/9
+Kel'thuzad |acheive 578/10
+Patchwerk |acheive 578/11
+Grabbulus |acheive 578/12
+Grand Widow Faerlina |acheive 578/13
+Maexxna |acheive 578/14
+step
+Congratulations, you have earned The Dedicated Few (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Make Quick Werk of Him (10 player)",{
+condition_end="achieved(1856)",
+description="Defeat Patchwerk in Naxxramas in 3 minutes or less in 10-player mode.",
+},[[
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	68.36,77.24	64.21,70.91	55.85,66.13
+path	52.66,70.64	53.61,76.61
+Follow the path through the Construct Quarter |goto 53.61,76.61 < 20 |noway |c
+only if not achieved(1856)
+step
+To earn this achievement, defeat Patchwerk within the 3 mintue mark
+|achieve 1856 |goto 45.88,70.09
+|tip Patchwerk patrols along the path here.
+step
+Congratulations, you have earned the Make Quick Werk of Him Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Subtraction, Shocking!(10 player)",{
+condition_end="achieved(2180) and achieved(2178)",
+description="Defeat Thaddius in Naxxramas with less than 9 players in 10-player mode.",
+},[[
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	68.36,77.24	64.21,70.91	55.85,66.13
+path	52.66,70.64	53.61,76.61	47.17,60.43
+path	51.03,54.41	54.49,40.95	57.37,40.87
+path	64.04,52.60
+Follow the path |goto 64.04,52.60 < 20 |noway |c
+only if not achieved(2180) or achieved(2178)
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	67.80,54.59	60.98,57.30	58.99,60.29
+path	57.81,61.37	50.38,50.03	42.04,37.99
+path	34.49,26.60
+Follow the path to the Halls of Reanimation |goto 34.49,26.60 < 20 |noway |c
+only if not achieved(2180) or achieved(2178)
+step
+Defeat Thaddius while in a raid group consisting of 8 or less players
+Burn Thaddius as fast as you can to earn the Shocking! achievement
+|achieve 2180 |goto 26.38,14.66
+|achieve 2178 |goto 26.38,14.66
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Arachnophobia, Momma Said Knock You Out (10 player)",{
+condition_end="achieved(1858) and achieved(1997)",
+description="Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 10-player mode.",
+},[[
+step
+map Naxxramas/2
+path loop off;dist 20
+path	30.91,77.57	32.99,64.88	30.60,56.82
+Follow the path to Anub'Rekhan |goto 30.60,56.82 < 15 |noway |c
+only if not achieved(1997) and not achieved(1858)
+step
+Once you kill Anub'Rekhan, you will have 20 minutes to reach Maexxna |goto 30.78,45.89
+confirm
+only if not achieved(1997) and not achieved(1858)
+step
+map Naxxramas/2
+path loop off;dist 20
+path	30.69,56.72	32.88,64.58	39.53,64.50
+path	46.26,54.62	50.17,49.22	53.01,46.44
+path	50.96,39.77	49.46,36.83
+Follow the path to Grand Widow Faerlina |goto 49.46,36.83 < 15 |noway |c
+only if not achieved(1997) and not achieved(1858)
+step
+For this achievement, simply kill the Grand Widow Faerlina without touching any adds
+Again, make sure you _don't touch the adds!_
+Take off any items that might cause AoE damage
+|achieve 1997
+only if not achieved(1997) and not achieved(1858)
+step
+map Naxxramas/2
+path loop off;dist 20
+path	50.74,40.11	53.89,47.49	57.53,53.55
+path	59.50,67.94	62.63,70.86	67.89,62.26
+path	67.91,51.71	64.38,36.56	64.16,26.40
+Follow the path to Maexxna |goto 64.16,26.40 < 15 |noway |c
+only if not achieved(1997) and not achieved(1858)
+step
+Simply kill Maexxna within the allotted time
+|achieve 1858
+step
+Congratulations, you have earned the Arachnophobia and Momma Said Knock You Out Achievements!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Safety Dance(10 player)",{
+condition_end="achieved(1996)",
+description="Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 10 player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off
+path	55.16,52.40
+map Naxxramas/4
+path	34.87,26.86	33.61,37.48	33.60,50.04
+Kill Noth the Plaguebringer |goto 35.02,57.17 < 15 |noway |c
+only if not achieved(1996)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	39.95,56.56	42.49,52.67	42.17,43.32
+path	45.92,33.27	49.88,39.52
+Follow the path to Heigan the Unclean |goto 49.88,39.52 < 15 |noway |c
+only if not achieved(1996)
+step
+For this achievement, simply jump up onto the platform Heigan is standing on and kill him
+|achieve 1996 |goto Naxxramas/4 51.46,42.98
+step
+Congratulations, you have earned the Saftey Dance (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Spore Loser(10 player)",{
+condition_end="achieved(2182)",
+description="Defeat Loatheb in Naxxramas without killing any spores in 10-player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off
+path	55.16,52.40
+map Naxxramas/4
+path	34.87,26.86	33.61,37.48	33.60,50.04
+Kill Noth the Plaguebringer |goto 35.02,57.17 < 15 |noway |c
+only if not achieved(2182)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	39.95,56.56	42.49,52.67	42.17,43.32
+path	45.92,33.27	49.88,39.52
+Kill Heigan the Unclean |goto Naxxramas/4 51.46,42.98 < 15 |noway |c
+only if not achieved(2182)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	54.60,45.74	57.24,36.98	60.47,28.42
+path	71.73,28.44
+Follow the path into the  Necrotic Vault |goto 71.73,28.44 < 15 |noway |c
+only if not achieved(2182)
+step
+To earn this achievement, simply dps Loatheb, ignoring any spores that may spawn
+_Avoid using AoE_
+|achieve 2182 |goto Naxxramas/4 75.40,28.38
+step
+Congratulations, you have earned the Spore Loser (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\And They Would All Go Down Together (10 player)",{
+condition_end="achieved(2184)",
+description="Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 10-player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off;dist 20
+path	51.41,52.47
+map Naxxramas/3
+path	63.64,26.43	54.38,32.35	50.25,44.75
+Follow the path down |goto 50.25,44.75 < 20 |noway |c
+only if not achieved(2184)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	52.71,40.58	42.66,39.69	42.66,46.18
+Kill Instructor Razuvious |goto 42.66,46.18 < 15 |noway |c
+only if not achieved(2184)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	42.83,51.71	54.96,49.40	58.02,43.77
+path	66.31,44.77
+Kill Gothik the Harvester |goto 66.84,57.37 < 20 |noway |c
+only if not achieved(2184)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	62.47,63.05	57.64,72.24	48.62,72.30
+path	41.99,67.30	36.44,67.95
+Follow the path to the Four Horsemen |goto 36.44,67.95 < 15 |noway |c
+only if not achieved(2184)
+step
+This achievement is easiest earned with 4 other friends to kill the horsemen relatively quickly
+If you are doing it solo however, get aggro on the Horsemen and use the alter to line of sight the casters so that they come to you
+Pull the two melee to Lady Blaumeux and AoE the 3 Horsemen down |goto Naxxramas/3 30.18,83.77
+Then, run to Sir Zeliek and kill him quickly |goto Naxxramas/3 26.12,77.65
+Try as best you can to get them together and use powerful AoEs to kill them
+|achieve 2184
+step
+Congratulations, you have earned the And They Would All Go Down Together (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\The Hundred Club (10 player)",{
+condition_end="achieved(2146)",
+description="Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 10-player mode.",
+},[[
+step
+map Naxxramas/5
+path	53.47,50.13
+click Orb of Naxxramas
+Enter Sapphiron's Lair |goto Naxxramas/6 73.64,72.79 < 20 |noway |c
+only if not achieved(2146)
+step
+With the resistance stat being removed, you will earn this achievement no matter what simply by killing Sapphiron
+|achieve 2146 |goto Naxxramas/6 60.10,68.33
+step
+Congratulations, you have earned the The Hundred Club (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\Just Can't Get Enough (10 player)",{
+condition_end="achieved(2184)",
+description="Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 10 player mode.",
+},[[
+step
+map Naxxramas/5
+path	53.47,50.13
+click Orb of Naxxramas
+Enter Sapphiron's Lair |goto Naxxramas/6 73.64,72.79 < 20 |noway |c
+only if not achieved(2184)
+step
+map Naxxramas/6
+path loop off;dist 20
+path	45.36,64.29	36.29,56.32	34.06,42.13
+Follow the path to Kel'Thuzad's Chamber |goto 34.06,42.13 < 10 |noway |c
+only if not achieved(2184)
+step
+To start, don't dps Kel'Thuzad
+Instead, stand at the center of the room
+Kill 18 Unstoppable Abomination before even touching Kel'Thuzad
+Keep in mind, if you leave the green circle, it could cause Kel'Thuzad to despawn
+That said, _you absolutely NEED ranged dps_ in order to pull the Abominations or they will despawn near the time Kel'Thuzad attacks
+|achieve 2184 |goto Naxxramas/6 36.64,22.76
+step
+Congratulations, you have earned the Just Can't Get Enough (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (10 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (10 player)",{
+condition_end="achieved(622) and achieved(1869) and achieved(218) and achieved(2148)",
+description="Defeat Malygos in 6 minutes or less in 10-player mode.",
+},[[
+step
+For this achievement, you will need to kill Malygos in under 6 minutes
+Target Power Sparks as they spawn and kill them, standing in what's left over for a DPS boost
+Pop cooldowns and do as much damage as you can before he switches phases
+During phase 2, kill a Scion of Eternity and hop on one of the discs that they leave behind
+Once on one, kill a Scion of Eternity again to earn an addition achievement
+The goal is to dps him enough so that when entering phase 3, he will have very low health if he's not already defeated
+_Also, invite a friend and turn the party into a raid with less than 8 people to earn A Poke in the Eye (10 player)
+|achieve 2148 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 2180 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 1869 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 622 |goto The Eye of Eternity/1 37.83,50.10
+step
+Congratulation, you have earned the You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall(10 player) Achievements!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Don't Stand So Close To Me",{
+condition_end="achieved(6174)",
+description="Defeat Morchok in Dragon Soul on Normal or Heroic Difficulty without any two players (three players on 25-player mode) ever being within 5 yards of each other while Morchok is channeling Black Blood of the Earth.",
+},[[
+step
+If you go in solo on this encounter, you will earn the achievement upon killing the boss
+If you are playing with others, stand 6 yards apart
+If you kill the boss within a minute, you will be able to earn the achievement before he casts Black Blood of the Earth
+|achieve 6174 |goto Dragon Soul/1 50.69,69.90
+|tip Set the Raid Difficulty to Heroic to earn the Heroic: Morchok Achievement.
+step
+Congratulations, you have earned the Don't Stand So Close To Me Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Taste the Rainbow!",{
+condition_end="achieved(6129) and achieved(6111)",
+description="Experience the following color combinations, and then defeat Yor'sahj the Unsleeping on Normal or Heroic Difficulty.",
+},[[
+step
+talk Eiendormi##57288 |goto Dragon Soul/1 51.24,59.28
+Fly into the Maw of Shu'ma |goto Dragon Soul/3 55.38,79.72 < 10 |noway |c
+only if not achieved(6129)
+step
+Every couple of minutes, Yor'sahj will summon 4 Globules
+There are 4 combinations that you wil need to keep an eye out for below
+Since the game doesn't properly track which you have seen together during the encounter, you will need to keep track of which buffs he gains
+Experience the following Globule Combinations:
+Black and Yellow |achieve 6129/1 |goto Dragon Soul/3 45.29,53.86
+Red and Green |achieve 6129/2 |goto Dragon Soul/3 45.29,53.86
+Black and Blue |achieve 6129/3 |goto Dragon Soul/3 45.29,53.86
+Purple and Yellow |achieve 6129/4 |goto Dragon Soul/3 45.29,53.86
+|achieve 6111
+|tip Set the Raid Difficulty to Heroic to earn the Heroic: Yor'sahj Achievement.
+step
+Congratulations, you have earned the Taste the Rainbow! Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Ping Pong Champion",{
+condition_end="achieved(6128) and achieved(6110)",
+description="Bounce the Void of the Unmaking 10 times off of players, and then defeat Warlord Zon'ozz on Normal or Heroic Difficulty.",
+},[[
+step
+talk Valeera##57289 |goto Dragon Soul/1 49.16,58.99
+Fly into the Maw Go'rath |goto Dragon Soul/2 32.66,45.49 < 10 |noway |c
+_You will need a tanking pet or another player in order to earn this achievement!_
+only if not achieved(6128)
+step
+For this achievement, have a player or your pet gain aggro on Warlord Zon'ozz, doing very little damage to it
+Once they have gathered sufficient aggro, stop all dps or set your pet to passive
+If you aren't tanking the boss, be sure to move to the direction the boss is facing
+Eventually, Zon'ozz will cast Void of the Unmaking, causing a ball to spawn
+You will need to bounce the ball 10 times, while avoiding sending it towards the boss
+_If it hits the boss, it will disappear and you will have to try again!_
+|achieve 6128 |goto Dragon Soul/2 48.47,55.43
+|achieve 6110 |goto Dragon Soul/2 48.47,55.43
+|tip Set the Raid Difficulty to Heroic to earn the Heroic: Warlord Zon'ozz Achievement.
+step
+Congratulations, you have earned the Ping Pong Champ Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Heroic: Hagara the Stormbinder",{
+condition_end="achieved(6112) and achieved(6113)",
+description="Defeat Ultraxion in Dragon Soul on Normal or Heroic Difficulty without any raid member being hit by Hour of Twilight more than once.",
+},[[
+step
+Set the Raid Difficulty to Heroic before entering the raid
+talk Nethestrasz##57287 |goto Dragon Soul/1 50.28,57.66
+Fly to the top of the temple |goto Dragon Soul/1 49.30,59.92 < 10 |noway |c
+step
+click Travel to the Eye of Eternity |goto Dragon Soul/1 50.69,60.60 < 10
+Enter the Eye of Eternity |goto Dragon Soul/4 52.43,23.43 < 20 |noway |c
+step
+Defeat the waves of enemies that appear, then Hagara when She jumps off her disc
+kill Hagara the Stormbinder##55689
+|achieve 6112 |goto Dragon Soul/4 51.68,50.01
+|achieve 6113 |goto Dragon Soul/4 51.68,50.01
+step
+Congatulations, you have earned the Heroic: Hagara the Stormbinder Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Minutes to Midnight",{
+condition_end="achieved(6084)",
+description="Defeat Ultraxion in Dragon Soul on Normal or Heroic Difficulty without any raid member being hit by Hour of Twilight more than once.",
+},[[
+step
+talk Nethestrasz##57287 |goto Dragon Soul/1 50.28,57.66
+Fly to the top of the temple |goto Dragon Soul/1 49.30,59.92 < 5 |noway |c
+step
+talk Kalecgos##56664 |goto Dragon Soul/1 50.41,59.47
+Talk to Kalecgos to start the encounter
+|tip You will have to have cleared the previous bosses in order to access this one.
+After a bit, talk to _Thrall_
+You should be able to kill Ultraxion before he even casts one Hour of Twilight
+|achieve 6084 |goto Dragon Soul/1 50.10,57.02
+|tip Set the Raid Difficulty to Heroic to earn the Heroic: Ultraxion Achievement.
+step
+Congratulations, you have earned the Minutes to Midnight Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Deck Defender",{
+condition_end="achieved(6105) and achieved(6114)",
+description="Defeat Warmaster Blackhorn on Normal or Heroic Difficulty without allowing any Twilight Barrages to damage the Skyfire.",
+},[[
+talk Nethestrasz##57287 |goto Dragon Soul/1 50.28,57.66
+Fly to the top of the temple |goto Dragon Soul/1 49.30,59.92 < 5 |noway |c
+step
+Follow the path to the Battleship
+talk Sky Captain Swayze##55870 |goto Dragon Soul/1 48.94,54.79 < 20
+|tip You will have to have cleared the previous bosses in order to access the Battleship encounter.
+Board the ship
+|confirm
+step
+talk Sky Captain Swayze##55870
+Find the achievement in your list and track it immidiately
+It is important to watch the text to see if it turns red
+If the text is red you have failed and should reset the fight
+_To start, kill drakes as they come into range_, this is the most important part!
+When a giant swirl appears on the ship, stand in it to absorb the damage
+When Blackhorn lands on the ship, burn him down as fast as possible
+|achieve 6105
+|achieve 6114
+step
+Congratulations, you have earned the Deck Defender Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Maybe He'll Get Dizzy...",{
+condition_end="achieved(6133)",
+description="Defeat the Spine of Deathwing encounter on Normal or Heroic Difficulty after tricking Deathwing into performing the following roll sequence: Left, Right, Left, Right.",
+},[[
+step
+talk Sky Captain Swayze##55870
+|tip He's near the ship's cabin.
+To earn this Achievement, you will have to make Deathwing roll Left, Right, Left, then Right again
+Kill all tentacles in the lava pools to cause Corrupted Blood to spawn
+Look at your map and move to a magma pool at a lower pool of the map (the left)
+_Stay in the pool to not be flung off of Deathwing during the roll!_
+After the first roll, move to the top pool of the map (the right)
+_Again, stay in the pool to not be flung off of Deathwing during the roll!_
+Repeat the process again
+Once he has rolled left right left right, move to the literal left side of the map
+For this portion you will need him to stop rolling, so when you see the yellow text appear, immidiatelly move to the other Lava Pool, staying on the left side
+_You will have 3 seconds to move from one to the other!_
+Stack corrupted blood as usual, so that the Abberations have 9 counts of Corrupted Blood before killing them against the wall on the left
+|achieve 6133
+step
+Congratulations, you have earned the Maybe He'll Get Dizzy Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Dragon Soul Raider\\Chromatic Champion",{
+condition_end="achieved(6180)",
+description="Destroy Deathwing in Dragon Soul on Normal or Heroic Difficulty after beginning the encounter on each Aspect's platform and allowing Deathwing to assault that Aspect:",
+},[[
+step
+Note that it will take 4 lockouts to earn this achievement if you haven't done this before
+confirm
+step
+To earn this achievement, start by jumping between the 2 platforms and gaining 2 stacks of the speed buff
+Then, talk to Thrall and start the encounter
+_Move as fast as you can to the fourth platform where Alexstrasza is!_ |only if not achieved(6180/1)
+If you made it in time, you will see a message about Deathwing Assaulting Alexstrazsa |only if not achieved(6180/1)
+Wait for the Mutation to case Impale at least 2 times |only if not achieved(6180/1)
+Destroy the arm and move on |only if not achieved(6180/1)
+Jump to Nozdomu's platform and repeat the process, only attacking after Deathwing has began assaulting Ysera |only if not achieved(6180/3)
+Destroy the arm then move to Ysera's platform |only if not achieved(6180/4)
+Wait for Deathwing to assault Ysera, wait for impale, then destroy the arm |only if not achieved(6180/4)
+Finally, jump to Kalecgos' platform|only if not achieved(6180/2)
+Wait for impale, then destroy the arm|only if not achieved(6180/2)
+Once you have done so, kill Deathwing for the acheivement
+|achieve 6180/1
+|achieve 6180/2
+|achieve 6180/3
+|achieve 6180/4
+step
+Congratulations, you have earned the Chromatic Champion Acheiveemnt!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Boned (25 player)",{
+condition_end="achieved(4610)",
+description="Defeat Lord Marrowgar without any raid member remaining impaled for more than 8 seconds in 25-player mode.",
+},[[
+step
+map Icecrown Citadel/1
+path loop off
+path	38.9,29.2	38.9,36.3	39.0,52.4
+Follow the path, clearing trash as you make your way to the first boss, Lord Marrowgar |goto 39.0,52.4 <5 |noway |c
+step
+In order to not be impaled, you should be sure to get hit by it's Bone Slice ability
+People who have been hit by that will not be able to be impaled |achieve 4610 |goto 39.0,52.4
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the Boned (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Full House (25 player)",{
+condition_end="achieved(4611)",
+description="Defeat Lady Deathwhisper with at least five different types of Cultists active at the time of her demise in 25-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat lady Deathwhisper with 5 specifc mobs active:
+Deformed Fanatic
+Reanimated Fanatic
+Reanimated Adherent
+Cult Fanatic
+Cult Adherent
+She will spawn adds every minute from when you begin the encounter, so don't dps her until you see what you need have spawned
+If you dps her and send her to phase 2 without having the mobs up, you will not be able to earn the achievement
+Defeat Lady Deathwhisper while 5 different type of cultists are active |achieve 4611 |goto Icecrown Citadel/1 38.96,86.68
+|tip Set the duneong difficulty to Heroic to earn the Heroic: Lady Deathwhisper Achievement.
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the Full House (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\I'm on a Boat (25 player)",{
+condition_end="achieved(4612)",
+description="Claim victory in the Gunship Battle without any raid member visiting the enemy gunship more than twice in 25-player mode.",
+},[[
+step
+To start, hope in the gun ship as soon as you're able and shoot the horde ship
+This achievement is still currently bugged, so as you spam 1 and 2 while in the cannon, you should earn this achievement
+|achieve 4612 |goto Icecrown Citadel/2 66.50,55.34
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the I'm on a Boat (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\I've Gone and Made a Mess (25 player)",{
+condition_end="achieved(4613)",
+description="Defeat the Deathbringer before Mark of the Fallen Champion is cast five times in 25-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat the Deathbring beofre Mark of the Fallen Champion is cast 3 times
+Just dps him down as it's a race
+Defeat the Deathbringer before Mark of the Fallen Champion is cast three times |achieve 4613 |goto Icecrown Citadel/3 51.67,33.35
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: Storming the Citadel Achievement.
+step
+Congratulations, you have earned the I've Gone and Made a Mess Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Flu Shot Shortage (25 player)",{
+condition_end="achieved(4615)",
+description="Defeat Festergut while none of the players in your raid group ever had 3 stacks of Inoculated in 25-player mode.",
+},[[
+step
+To earn this achievement, you will to defeat Festergut without allowing Inoculated to raise above 3 stacks
+When Festergut uses Gas Spore, run away from him until it explodes to avoid being Inoculated, then DPS him down
+Defeat Festergut without being Inoculated twice |achieve 4615 |goto Icecrown Citadel/5 19.79,65.28
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the Flu Shot Shortage (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Dances with Oozes(25 player)",{
+condition_end="achieved(4614)",
+description="Defeat Rotface without a Big Ooze casting Unstable Ooze Explosion in 25-player mode.",
+},[[
+step
+To start, you will need to maximize dps against Rotface to earn this achievement
+If you are with multiple people, you can have the additional members kite the oozes away from each other as the spawn
+Otherwise, you will have to use all cooldowns available and just burn the boss
+|achieve 4614 |goto Icecrown Citadel/5 19.88,42.28
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the achievement Dances with Oozes(25 player)!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Nausea, Heartburn, Indigestion... (25 player)",{
+condition_end="achieved(4616)",
+description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 25-player mode.",
+},[[
+step
+To earn this achievement, don't drink any of the Ooze provided for the encounter as it will cause you to fail this achievement
+|achieve 4616 |goto Icecrown Citadel/5 10.07,53.65
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Plagueworks Achievement.
+step
+Congratulations, you have earned the Nausea, Heartburn, Indigestion... (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\The Orb Whisperer (25 player)",{
+condition_end="achieved(4617)",
+description="Defeat the Blood Council without anyone in the raid taking more than 25,000 spell damage in a single hit in 25-player mode.",
+},[[
+step
+_Prince Valanar_ casts Empowered Shock Vortex
+If you're with multiple people, have someone attack the Kinetic Bombs if you have dots available
+_Prince Taldaram_ casts Conjure Empowered Flame, which you will have to run away from if you're the target
+If you are with multiple people, stand together with your group members to mitigate some damage
+_Prince Keleseth_ casts Empowered Shadow Lance, which damage can be negated by killing Dark Nuclei around the room
+Keep around _4 Stacks_ of Shadow Resonance if possible
+Defeat the Blood Council without anyone in the raid taking 25,000 or more in one hit |achieve 4617 |goto Icecrown Citadel/5 51.93,12.00
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Crimson Hall Achievement.
+step
+Congratulations, you have earned The Orb Whisperer (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Once Bitten, Twice Shy (25 player)",{
+condition_end="achieved(4618)",
+description="Defeat Professor Putricide without using Regurgitated Ooze on the Abomination in 25-player mode.",
+},[[
+step
+To earn this achievement, you will need to defeat Blood-Queen Lana'thel twice:
+It will take around 15 seconds for her to activate the Essence of the Blood-Queen debuff
+So wait to DPS her if you are looking to get the debuff
+|achieve 4618/2 |goto Icecrown Citadel/6 51.13,32.44
+If you are wanting to defeat her without becoming a vampire, you may want to bring additional dps to burn her quickly
+|achieve 4618/1	|goto Icecrown Citadel/6 51.13,32.44
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Crimson Hall Achievement.
+step
+Congratulations, you have earned the Once Bitten, Twice Shy (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Portal Jockey (25 player)",{
+condition_end="achieved(4619)",
+description="Enter every portal spawned by Valithria Dreamwalker before healing her to full health in 25-player mode.",
+},[[
+step
+To start, you will need to be a healer for this achievement
+You will need to heal up Valithria Dreamwalker before any Portals appear during the encounter
+Enter every portal spawned during the encounter |achieve 4619 |goto Icecrown Citadel/5 76.62,73.26
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Frostwing Halls Achievement.
+step
+Congratulations, you have earned the Portal Jockey (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\All You Can Eat (25 player)",{
+condition_end="achieved(4620)",
+description="Defeat Sindragosa in 25-player mode without any member of your raid receiving more than 5 stacks of Mystic Buffet.",
+},[[
+step
+This achievement is basically a DPS race
+You will need to defeat Sidnragosa before anyone gets more than 5 stacks of Mystic Buffet
+Defeat Sindragosa without gaining more than 5 stacks of Mystic Buffet |achieve 4620 |goto Icecrown Citadel/4 36.58,20.10
+|tip Set the difficulty to Heroic to earn a portion of the Heroic: The Frostwing Halls Achievement.
+step
+Congratulations, you have earned the All You Can Eat (25 Player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Icecrown Raider (25 Player) Achievements\\Been Waiting a Long Time for This (25 player)",{
+condition_end="achieved(4621)",
+description="Allow Necrotic Plague to stack to 30 before defeating the Lich King in 25-player mode.",
+},[[
+step
+_You need a pet or another player in order to earn this achievement!_
+To start, begin the Lich King encounter, but be sure _not_ to damage him to 70 percent health or below
+Eventually, you will notice Necrotic Plague on you
+Being hit will stop the plague from building, so you will need to run away from adds
+The Lich King will get a buff called Plague Siphon
+Once he gets 30 stacks of Plague Siphon, Burn him down to Earn the achievmeent
+Defeat the Lich King having allowed a stack of Necrotic Plague to reach 30 |achieve 4621 |goto Icecrown Citadel/7 48.15,60.23
+step
+Congratualtions, you have earned the Been Waiting a Long Time for This (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Orbit-uary (25 player)",{
+condition_end="achieved(3057)",
+description="Defeat Flame Leviathan with all 4 Orbital Defense Systems active in 25-player mode.",
+},[[
+step
+talk Lore Keeper of Norgannon##33686
+Tell him "Activate the second defense system." |goto Ulduar/1 52.64,88.26
+map Ulduar/1
+path loop off; dist 20
+path	50.03,71.16	49.73,56.07	49.00,42.60
+Make your way through the Iron Concourse and reach the Flame Leviathan |goto 49.00,42.60 |noway |c
+only if not achieved(3057)
+step
+For this achievement, you will need to defeat the Flame Leviathan with all defense systems active
+Climb into a Salvaged Demolishers and head towards the boss, destroying a few towers on the path towards him
+Once you get to the boss, spam you siege attacks
+If your vehicle is destroyed, it shouldn't be too much of a problem, though you may end up needing self sufficient healing
+If your vehicle ends up being destroyed, make sure that you never hold still or you'll be stunned
+|achieve 3057 |goto Ulduar/1 49,40
+step
+Congratulations, you have earned the Orbit-uary (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Stokin' the Furnace (25 player)",{
+condition_end="achieved(2929)",
+description="Defeat Ignis the Furnace Master in 4 minutes in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(2929)
+step
+This achievement is simple at level cap, simply DPS Ignis down in under 4 minutes
+|achieve 2929 |goto Ulduar/1 37.5,26.5
+step
+Congratulations, you have earned the Stokin' the Furnace (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Iron Dwarf, Medium Rare (25 player)",{
+condition_end="achieved(2924)",
+description="Defeat 25 Dark Rune Guardian Dwarves with Razorscale's Flame Breath in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(2924)
+step
+To start, ignore the Harpoon guns
+You will need a powerful AoE
+You can kill the large enemies, but leave the smaller ones alone for now
+Once you have about 25 to 30 enemies on you, use the Harpoon Gun on Razorscale
+Wait for Razorscale to start casting Flame BReath and as soon as it hits, use your AoE attack
+|achieve 2923 |goto Ulduar/1 54.1,26.3
+only if not achieved(2924)
+step
+Congratualtions, you have earned the Iron Dwarf, Medium Rare (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Heartbreaker (25 player)",{
+condition_end="achieved(3059)",
+description="Defeat XT-002 Deconstructor after destroying his heart in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52	48.54,28.08
+click Ulduar Teleporter
+Teleport to the Colossal Forge |goto Ulduar/1 48.54,28.08 |noway |c
+only if not achieved(3059)
+step
+To start, engage XT-002
+Be sure to do very slow dps at first
+Avoid using DoTs as you can accidentally kill it
+Once you take it down to 75 percent of it's health, the heart will pop out
+Kill the heart, then XT-002
+|achieve 3059 |goto Ulduar/1 48.5,13.9
+step
+Congratulations, you have earned the Heartbreaker (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Choose You, Steelbreaker (25 player)",{
+condition_end="achieved(2944)",
+description="Defeat the Assembly of Iron with Steelbreaker as the last member alive in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(2944)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.20,48.71	27.66,30.15	17.15,30.68
+path	15.51,41.96
+Enter the Assembly of Iron |goto 15.51,41.96 |noway |c
+only if not achieved(2944)
+step
+For this, kill Stormcaller Brundir, then Runemaster Molgeim then finally, Steelbreaker
+|achieve 2944 |goto Ulduar/2 15,56
+step
+Congratulations, you have earned the I Choose You, Steelbreaker (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Disarmed (25 player)",{
+condition_end="achieved(2954)",
+description="Destroy both of Kologarn's arms and then Kologarn himself within 12 seconds in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(2954)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+Follow the path to Kologarn |goto Ulduar/2 37.06,18.31 |noway |c
+only if not achieved(2954)
+step
+To start, DPS Kologarn's body until he's at about 25 percent health
+_Make sure not to attack his arms at all while you do this!_
+Once he's at the 25 percent mark, kill his Left Arm, then his Right Arm
+Finish the boss off immidiately after
+|achieve 2954 |goto Ulduar/2 37.3,14.0
+step
+Congratulations, you have earned the Disarmed (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Crazy Cat Lady (25 player)",{
+condition_end="achieved(3007)",
+description="Defeat Auriaya without destroying her Sanctum Sentries in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3007)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15
+Follow the path to Auriaya |goto Ulduar/3 52.90,74.15 |noway |c
+only if not achieved(3007)
+step
+For this achievement, simply avoid using any AoE and kill Auriaya
+|achieve 3007 |goto Ulduar/3 52.90,74.15
+step
+Congratulations, you have earned the Crazy Cat Lady (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Knock, Knock, Knock on Wood (25 player)",{
+condition_end="achieved(3187)",
+description="Defeat Freya while leaving all 3 Elders alive in 25 player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3187)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	56.66,68.68	55.82,61.33
+path	51.28,56.78	51.72,38.40	52.26,29.14
+Follow the path to Freya |goto 52.26,29.14 |noway |c
+only if not achieved(3187)
+step
+For this achievement, Kill Freya without killing the following enemies:
+Elder Brightleaf
+Elder Stonebark
+Ironbranch
+Go directly to Freya and just single target DPS her down
+|achieve 3187 |goto Ulduar/3 53,23
+step
+Congratulations, you have earned the Knock, Knock, Knock on Wood (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Lose Your Illusion (25 player)",{
+condition_end="achieved(3183)",
+description="Defeat Thorim while Sif is present in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3183)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	56.66,68.68	55.82,61.33
+path	59.45,51.49	65.59,48.56
+Follow the path to Thorim |goto 65.59,48.56 |noway |c
+only if not achieved(3183)
+step
+To start, kill the enemies inside of the room
+After killing the initial enemies, click the lever at the provided location
+click Lever
+map Ulduar/3
+path	loop off; dist 20
+path	69.04,43.15	69.21,38.08	75.23,38.11
+path	81.65,38.20	82.21,43.61	81.44,48.29
+path	78.03,50.41	74.00,50.19	71.46,48.60
+path	70.32,48.82
+Run down the corridor kill mobs quickly
+Reach the end of the hallway and jump down fast or it will reset the fight
+Kill Thorim
+|achieve 3183
+step
+Congratulations, you have earned the Lose Your Illusion (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Could Say That This Cache Was Rare (25 player)",{
+condition_end="achieved(3184)",
+description="Defeat Hodir before he shatters his rare cache in 25 player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/2
+path	37.10,76.41
+click Ulduar Teleporter
+Teleport to the Antechamber of Ulduar |goto Ulduar/2 37.10,76.41 |noway |c
+only if not achieved(3184)
+step
+map Ulduar/2
+path loop off; dist 20
+path	37.10,54.92	34.83,35.10	37.06,18.31
+path	37.12,8.17
+map Ulduar/3
+path	52.90,74.15	57.89,72.18	63.79,77.03
+path	73.14,79.13	75.93,76.98	75.09,71.80
+path	73.75,64.55	70.97,63.85
+Enter the Halls of Winter |goto 70.97,63.85 < 25 |noway |c
+only if not achieved(3184)
+step
+To earn this achievement, you need to kill Hodir within 3 minutes
+Pop all cooldowns that increase your damage and defeat Hodir
+|achieve 3184 |goto Ulduar/3 66.0,63.7
+step
+Congratulations, you have earned the I Could Say That This Cache Was Rare (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\Firefighter (25 player)",{
+condition_end="achieved(3189)",
+description="Defeat Mimiron after activating his Self-Destruct mechanism in 25-player mode.",
+},[[
+step
+path Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/5
+path	43.65,62.19
+click Ulduar Teleporter
+Teleport to The Spark of Imaginations |goto Ulduar/5 43.65,62.19 |noway |c
+only if not achieved(3189)
+step
+map Ulduar/5
+path loop off; dist 20
+path	43.63,59.52	43.59,54.10	43.67,45.36
+Follow the path to Mimiron |goto 43.67,45.36 |noway |c
+only if not achieved(3189)
+step
+To earn this achievement, you will have to press a big red button at the back of the room before engaging Mimiron
+Once you've clicked it, wait for his dialogue then kill him
+|achieve 3189 |goto Ulduar/5 43.6,41.1
+step
+Congratulations, you have earned the Firefighter (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\I Love the Smell of Saronite in the Morning (25 player)",{
+condition_end="achieved(3188)",
+description="Defeat General Vezax after defeating the Saronite Animus in 25 player mode.",
+},[[
+step
+map Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/3
+path	51.02,54.02
+Teleport to the Conservatory of Life |goto Ulduar/3 51.02,54.02 |noway |c
+only if not achieved(3188)
+step
+map Ulduar/3
+path loop off; dist 20
+path	48.88,58.35	45.96,62.22	45.45,68.77
+path	42.70,73.55	34.89,74.44
+map Ulduar/4
+path	33.82,51.62	27.85,50.21	28.71,58.83
+path	35.66,67.97	41.56,65.68
+Follow the path to General Vezax |goto 41.56,65.68 |noway |c
+only if not achieved(3188)
+step
+To start, engage General Vezax without dpsing him too much
+He will spawn Saronite Vapors, and eventually when there are enough he will absorb them
+When that happens, a Saronite Animus will spawn
+Kill the Saronite Animus, then General Vazax
+|achieve 3188 |goto Ulduar/4 52.6,57.1
+step
+Congratulations, you have earned the I Love the Smell of Saronite in the Morning (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Ulduar Raider (25 Player) Achievements\\One Light in the Darkness (25 player)",{
+condition_end="achieved(3163)",
+description="Defeat Yogg-Saron with the assistance of one or fewer Keepers in 25-player mode.",
+},[[
+step
+map Ulduar/1
+path loop off; dist 20
+path	50.98,85.52
+map Ulduar/4
+path	66.62,60.05
+Teleport to the Prison of Yogg-Saron |goto 66.62,60.05 |noway |c
+only if not achieved(3163)
+step
+To earn this achievement, simply defeat Yogg-Saron with the aid of one keeper or fewer
+If you do use a keeper, we would suggest that you speak with Freya.
+|achieve 3163 |goto Ulduar/4 68,40.8
+step
+Congratulations, you have earned the One Light in the Darkness (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
+condition_end="achieved(2051) and achieved(2047)",
+description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+},[[
+step
+To earn this achievement, ignore the Twilight Drakes and kill Sartharion
+If he lasts long enough to do Lava Strike, avoid the area he casts it in
+|achieve 2051 |goto The Obsidian Sanctum/0 50.26,47.34
+|achieve 2047 |goto The Obsidian Sanctum/0 50.26,47.34
+step
+Congratulations, you have earned The Twilight Zone and Gonna Go When the Volcano Blows (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Dedicated Few (25 player)",{
+condition_end="achieved(579)",
+description="Defeat the bosses of Naxxramas with less than 21 people in the zone in 25-player mode.",
+},[[
+step
+Kill the following bosses while in a raid group of 21 or less:
+|tip Note that this achievement is soloable!
+Anub'Rekhan |acheive 579/1
+Heigan the Unclean |acheive 579/2
+Instructor Razuvious |acheive 579/3
+Gothik the Harvester |acheive 579/4
+Sapphiron |acheive 579/5
+Gluth |acheive 579/6
+Thaddius |acheive 579/7
+Noth the Plaguebringer |acheive 579/8
+Laotheb |acheive 579/9
+Kel'thuzad |acheive 579/10
+Patchwerk |acheive 579/11
+Grabbulus |acheive 579/12
+Grand Widow Faerlina |acheive 579/13
+Maexxna |acheive 579/14
+step
+Congratulations, you have earned The Dedicated Few (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Make Quick Werk of Him (25 player)",{
+condition_end="achieved(1857)",
+description="Defeat Patchwerk in Naxxramas in 3 minutes or less in 25-player mode.",
+},[[
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	68.36,77.24	64.21,70.91	55.85,66.13
+path	52.66,70.64	53.61,76.61
+Follow the path through the Construct Quarter |goto 53.61,76.61 < 20 |noway |c
+only if not achieved(1857)
+step
+To earn this achievement, defeat Patchwerk within the 3 mintue mark
+|achieve 1857 |goto 45.88,70.09
+|tip Patchwerk patrols along the path here.
+step
+Congratulations, you have earned the Make Quick Werk of Him Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Subtraction, Shocking!(25 player)",{
+condition_end="achieved(2181) and achieved(2179)",
+description="Defeat Thaddius in Naxxramas with less than 21 players in 25-player mode.",
+},[[
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	68.36,77.24	64.21,70.91	55.85,66.13
+path	52.66,70.64	53.61,76.61	47.17,60.43
+path	51.03,54.41	54.49,40.95	57.37,40.87
+path	64.04,52.60
+Follow the path |goto 64.04,52.60 < 20 |noway |c
+only if not achieved(2181) or achieved(2179)
+step
+map Naxxramas/1
+path	loop off;dist 20
+path	67.80,54.59	60.98,57.30	58.99,60.29
+path	57.81,61.37	50.38,50.03	42.04,37.99
+path	34.49,26.60
+Follow the path to the Halls of Reanimation |goto 34.49,26.60 < 20 |noway |c
+only if not achieved(2181) or achieved(2179)
+step
+Defeat Thaddius while in a raid group consisting of 21 or less players
+Burn Thaddius as fast as you can to earn the Shocking! achievement
+|achieve 2181 |goto 26.38,14.66
+|achieve 2179 |goto 26.38,14.66
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Arachnophobia, Momma Said Knock You Out (25 player)",{
+condition_end="achieved(1859) and achieved(2140)",
+description="Defeat Maexxna in Naxxramas within 20 minutes of Anub'Rekhan's death in 25-player mode.",
+},[[
+step
+map Naxxramas/2
+path loop off;dist 20
+path	30.91,77.57	32.99,64.88	30.60,56.82
+Follow the path to Anub'Rekhan |goto 30.60,56.82 < 15 |noway |c
+only if not achieved(2140) and not achieved(1859)
+step
+Once you kill Anub'Rekhan, you will have 20 minutes to reach Maexxna |goto 30.78,45.89
+confirm
+only if not achieved(2140) and not achieved(1859)
+step
+map Naxxramas/2
+path loop off;dist 20
+path	30.69,56.72	32.88,64.58	39.53,64.50
+path	46.26,54.62	50.17,49.22	53.01,46.44
+path	50.96,39.77	49.46,36.83
+Follow the path to Grand Widow Faerlina |goto 49.46,36.83 < 15 |noway |c
+only if not achieved(2140) and not achieved(1859)
+step
+For this achievement, simply kill the Grand Widow Faerlina without touching any adds
+Again, make sure you _don't touch the adds!_
+Take off any items that might cause AoE damage
+|achieve 2140
+only if not achieved(2140) and not achieved(1859)
+step
+map Naxxramas/2
+path loop off;dist 20
+path	50.74,40.11	53.89,47.49	57.53,53.55
+path	59.50,67.94	62.63,70.86	67.89,62.26
+path	67.91,51.71	64.38,36.56	64.16,26.40
+Follow the path to Maexxna |goto 64.16,26.40 < 15 |noway |c
+only if not achieved(2140) and not achieved(1859)
+step
+Simply kill Maexxna within the allotted time
+|achieve 1859
+step
+Congratulations, you have earned the Arachnophobia and Momma Said Knock You Out Achievements!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Safety Dance(25 player)",{
+condition_end="achieved(2139)",
+description="Defeat Heigan the Unclean in Naxxramas without anyone in the raid dying in 25 player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off
+path	55.16,52.40
+map Naxxramas/4
+path	34.87,26.86	33.61,37.48	33.60,50.04
+Kill Noth the Plaguebringer |goto 35.02,57.17 < 15 |noway |c
+only if not achieved(2139)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	39.95,56.56	42.49,52.67	42.17,43.32
+path	45.92,33.27	49.88,39.52
+Follow the path to Heigan the Unclean |goto 49.88,39.52 < 15 |noway |c
+only if not achieved(2139)
+step
+For this achievement, simply jump up onto the platform Heigan is standing on and kill him
+|achieve 2139 |goto Naxxramas/4 51.46,42.98
+step
+Congratulations, you have earned the Safety Dance (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Spore Loser (25 player)",{
+condition_end="achieved(2183)",
+description="Defeat Loatheb in Naxxramas without killing any spores in 25-player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off
+path	55.16,52.40
+map Naxxramas/4
+path	34.87,26.86	33.61,37.48	33.60,50.04
+Kill Noth the Plaguebringer |goto 35.02,57.17 < 15 |noway |c
+only if not achieved(2183)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	39.95,56.56	42.49,52.67	42.17,43.32
+path	45.92,33.27	49.88,39.52
+Kill Heigan the Unclean |goto Naxxramas/4 51.46,42.98 < 15 |noway |c
+only if not achieved(2183)
+step
+map Naxxramas/4
+path loop off;dist 20
+path	54.60,45.74	57.24,36.98	60.47,28.42
+path	71.73,28.44
+Follow the path into the  Necrotic Vault |goto 71.73,28.44 < 15 |noway |c
+only if not achieved(2183)
+step
+To earn this achievement, simply dps Loatheb, ignoring any spores that may spawn
+_Avoid using AoE_
+|achieve 2183 |goto Naxxramas/4 75.40,28.38
+step
+Congratulations, you have earned the Spore Loser (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\And They Would All Go Down Together (25 player)",{
+condition_end="achieved(2177)",
+description="Defeat the 4 Horsemen in Naxxramas, ensuring that they all die within 15 seconds of each other in 25-player mode.",
+},[[
+step
+map Naxxramas/5
+path loop off;dist 20
+path	51.41,52.47
+map Naxxramas/3
+path	63.64,26.43	54.38,32.35	50.25,44.75
+Follow the path down |goto 50.25,44.75 < 20 |noway |c
+only if not achieved(2177)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	52.71,40.58	42.66,39.69	42.66,46.18
+Kill Instructor Razuvious |goto 42.66,46.18 < 15 |noway |c
+only if not achieved(2177)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	42.83,51.71	54.96,49.40	58.02,43.77
+path	66.31,44.77
+Kill Gothik the Harvester |goto 66.84,57.37 < 20 |noway |c
+only if not achieved(2177)
+step
+map Naxxramas/3
+path loop off;dist 20
+path	62.47,63.05	57.64,72.24	48.62,72.30
+path	41.99,67.30	36.44,67.95
+Follow the path to the Four Horsemen |goto 36.44,67.95 < 15 |noway |c
+only if not achieved(2177)
+step
+This achievement is easiest earned with 4 other friends to kill the horsemen relatively quickly
+If you are doing it solo however, get aggro on the Horsemen and use the alter to line of sight the casters so that they come to you
+Pull the two melee to Lady Blaumeux and AoE the 3 Horsemen down |goto Naxxramas/3 30.18,83.77
+Then, run to Sir Zeliek and kill him quickly |goto Naxxramas/3 26.12,77.65
+Try as best you can to get them together and use powerful AoEs to kill them
+|achieve 2177
+step
+Congratulations, you have earned the And They Would All Go Down Together (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Hundred Club (25 player)",{
+condition_end="achieved(2147)",
+description="Defeat Sapphiron in Naxxramas without any member of the raid having a frost resist value over 100 in 25-player mode.",
+},[[
+step
+map Naxxramas/5
+path	53.47,50.13
+click Orb of Naxxramas
+Enter Sapphiron's Lair |goto Naxxramas/6 73.64,72.79 < 20 |noway |c
+only if not achieved(2147)
+step
+With the resistance stat being removed, you will earn this achievement no matter what simply by killing Sapphiron
+|achieve 2147 |goto Naxxramas/6 60.10,68.33
+step
+Congratulations, you have earned the The Hundred Club (25 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\Just Can't Get Enough (25 player)",{
+condition_end="achieved(2185)",
+description="Defeat Kel'Thuzad in Naxxramas while killing at least 18 abominations in his chamber in 25 player mode.",
+},[[
+step
+map Naxxramas/5
+path	53.47,50.13
+click Orb of Naxxramas
+Enter Sapphiron's Lair |goto Naxxramas/6 73.64,72.79 < 20 |noway |c
+only if not achieved(2185)
+step
+map Naxxramas/6
+path loop off;dist 20
+path	45.36,64.29	36.29,56.32	34.06,42.13
+Follow the path to Kel'Thuzad's Chamber |goto 34.06,42.13 < 10 |noway |c
+only if not achieved(2185)
+step
+To start, don't dps Kel'Thuzad
+Instead, stand at the center of the room
+Kill 18 Unstoppable Abomination before even touching Kel'Thuzad
+Keep in mind, if you leave the green circle, it could cause Kel'Thuzad to despawn
+That said, _you absolutely NEED ranged dps_ in order to pull the Abominations or they will despawn near the time Kel'Thuzad attacks
+|achieve 2185 |goto Naxxramas/6 36.64,22.76
+step
+Congratulations, you have earned the Just Can't Get Enough (10 player) Achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall (25 player)",{
+condition_end="achieved(1394) and achieved(1870) and achieved(623) and achieved(1875)",
+description="Defeat Malygos in 6 minutes or less in 25-player mode.",
+},[[
+step
+For this achievement, you will need to kill Malygos in under 6 minutes
+Target Power Sparks as they spawn and kill them, standing in what's left over for a DPS boost
+Pop cooldowns and do as much damage as you can before he switches phases
+During phase 2, kill a Scion of Eternity and hop on one of the discs that they leave behind
+Once on one, kill a Scion of Eternity again to earn an addition achievement
+The goal is to dps him enough so that when entering phase 3, he will have very low health if he's not already defeated
+_Also, invite a friend and turn the party into a raid with less than 8 people to earn A Poke in the Eye (10 player)
+|achieve 1875 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 623 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 1870 |goto The Eye of Eternity/1 37.83,50.10
+|achieve 1394 |goto The Eye of Eternity/1 37.83,50.10
+step
+Congratulation, you have earned the You Don't Have an Eternity, A Poke in the Eye, Denying the Scion, The Spellweaver's Downfall(10 player) Achievements!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Achievements Guides\\Glory of the Raider (25 player)\\The Twilight Zone, Gonna Go When the Volcano Blows (25 player)",{
+condition_end="achieved(2054) and achieved(2047)",
+description="With all three Twilight Drakes still alive, engage and defeat Sartharion the Onyx Guardian in 10-player mode.",
+},[[
+step
+To earn this achievement, ignore the Twilight Drakes and kill Sartharion
+If he lasts long enough to do Lava Strike, avoid the area he casts it in
+|achieve 2054 |goto The Obsidian Sanctum/0 50.26,47.34
+|achieve 2047 |goto The Obsidian Sanctum/0 50.26,47.34
+step
+Congratulations, you have earned The Twilight Zone and Gonna Go When the Volcano Blows (25 player) Achievement!
 ]])

@@ -14430,7 +14430,7 @@ step
 |goto 51.0,54.5 |n
 Click the Ulduar Teleporter and teleport to the Spark of Imagination. |goto Ulduar/5 43.6,61.9 <10 |noway |c
 step
-_Mimiron_ |goto 43.6,41.1
+_Mimiron_ |goto Ulduar/3 43.6,41.1
 This fight consists of 4 phases, each of which Mimiron is in a different mechanical vehicle or device.
 Click here for 10 man abilities. |next "mimi10" |confirm
 Click here for 25 man abilities. |next "mimi25" |confirm

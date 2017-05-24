@@ -3187,6 +3187,41 @@ data.basenodes.travel = {
 	"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <template:portaldungeon>",
 	"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <template:portaldungeon>",
 	"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <template:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
+
+	--[[
+	-- Karazhan
+	"Karazhan/1 59.82,78.27 -to- Deadwind Pass/0 46.93,74.81 <template:portaldungeon>",
+	"Deadwind Pass/0 46.81,74.60 -to- Karazhan/1 58.76,76.11 <template:portaldungeon>",
+
+	-- Sunwell Plateau
+	"Isle of Quel'Danas/0 44.25,45.75 -to- Sunwell Plateau/1 30.94,36.41 <template:portalDungeon>",
+	"Sunwell Plateau/1 30.94,36.12 -to- Isle of Quel'Danas/0 44.27,45.62 <template:portalDungeon>",
+
+	-- Hyjal Summit
+	"Tanaris/18 35.09,15.22 -x- Hyjal Summit/0 108.00,113.50 <template:portalDungeon>",
+		-- hyjal lobby to first zone
+		"Hyjal Summit/0 108.00,118.50 -to- Hyjal Summit/0 10.68,64.74 <template:portalDungeon>",
+
+	-- Gruul's Lair
+	"Blade's Edge Mountains/0 69.35,23.62 -to- Gruul's Lair/1 81.87,78.11 <template:portaldungeon>",
+	"Gruul's Lair/1 84.36,79.06 -to- Blade's Edge Mountains/0 69.19,24.00 <template:portaldungeon>",
+
+	-- Magtheridon's Lair
+	"Hellfire Peninsula/0 47.54,52.05 -to- Magtheridon's Lair/1 62.72,18.03 <template:portaldungeon>",
+	"Magtheridon's Lair/1 61.40,18.06 -to- Hellfire Peninsula/0 47.50,52.08 <template:portaldungeon>",
+
+	-- Serpentshrine Cavern
+	"Zangarmarsh/0 51.90,32.78 -to- Serpentshrine Cavern/1 13.49,61.14 <template:portaldungeon>",
+	"Serpentshrine Cavern/1 13.57,62.04 -to- Zangarmarsh/0 51.90,33.03 <template:portaldungeon>",
+
+	-- Tempest Keep
+	"Tempest Keep/1 50.06,91.93 -to- Netherstorm/0 73.56,63.71 <template:portaldungeon>",
+	"Netherstorm/0 73.77,63.73 -to- Tempest Keep/1 50.05,90.56 <template:portaldungeon>",
+
+	-- Black Temple
+	"Shadowmoon Valley/0 71.03,46.65 -to- Black Temple/2 21.89,59.54 <template:portaldungeon>",
+	"Black Temple/2 21.95,60.99 -to- Shadowmoon Valley/0 71.06,46.45 <template:portaldungeon>",
+	--]]
 }
 
 
@@ -3909,9 +3944,9 @@ data.portkeys = { -- smile if you're a muggle
 	--------------
 	--- LEGION ---
 	--------------
-	{item=140192, destination="Dalaran L/10 60.92,44.72", cooldown=1200, cost=20}, -- Dalaran Hearthstone
+	{item=140192, destination="Dalaran L/10 60.92,44.72", cooldown=1200, cost=20, cond=function() local m,f=ZGV.CurrentMapID,ZGV.CurrentMapFloor return m~=1014 and m~=1035 and m~=1101 and m~=1050 and m~=1051 and m~=1048 and m~=1068 and m~=1028 and m~=1052 and m~=1040 and m~=1077 and m~=1072 and m~=1056 and m~=1057 and m~=1044 and not (m==23 and f==20) end}, -- Dalaran Hearthstone
 	
-	{item=141605, destination="_TAXIWHISTLE", cooldown=60, cost=12, mode="whistle", cond=function() local m=ZGV.CurrentMapID  return m==1015 or m==1053 or m==1024 or m==1017 or m==1037 or m==1033 or m==1055 or m==1077 or m==1080 or m==1072 or m==1018 end }, -- Flight Master's Whistle
+	{item=141605, destination="_TAXIWHISTLE", cooldown=60, cost=12, mode="whistle", cond=function() local m=ZGV.CurrentMapID  return m==1015 or m==1053 or m==1024 or m==1017 or m==1037 or m==1033 or m==1055 or m==1080 or m==1072 or m==1018 end }, -- Flight Master's Whistle
 }
 
 

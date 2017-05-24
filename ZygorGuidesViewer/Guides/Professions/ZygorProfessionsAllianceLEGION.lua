@@ -5108,6 +5108,605 @@ step
 _Congratulations!_
 You reached level 800 with the Tailoring profession.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+Learn the Enchanting Profession |condition skill("Enchanting")>=1 |goto Dalaran L/10 38.28,40.33
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept Some Enchanted Evening##39874 |goto 38.33,40.37
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+turnin Some Enchanted Evening##39874 |goto 38.24,41.77
+accept The Last Few##39875 |goto 38.24,41.77
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 1 Copper Rod##6217 |n
+collect Copper Rod##6217 |c |goto 38.23,41.77
+|only if itemcount(6218) < 1
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 1 Strange Dust##10940 |n
+collect Strange Dust##10940 |c |goto 38.23,41.77
+|only if itemcount(6218) < 1
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 1 Lesser Magic Essence##10938 |n
+collect Lesser Magic Essence##10938 |c |goto 38.23,41.77
+|only if itemcount(6218) < 1
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Runed Copper Rod>_
+collect Runed Copper Rod##6218 |c
+|only if itemcount(6218) < 1
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 2 Enchanting Vellum##38682 |n
+collect 2 Enchanting Vellum##38682 |c |goto 38.23,41.77 |q 39875
+step
+collect 30 Arkhana##124440 |c |q 39875
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+|tip You can also buy them from the Auction House.
+step
+Open Your Enchanting Crafting Panel:
+_<Create 2 Word of Versatility>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+collect 2 Enchant Ring - Word of Versatility##128540 |q 39875/1
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+turnin The Last Few##39875 |goto 38.24,41.77
+accept Helping the Hunters##39876 |goto 38.24,41.77
+step
+talk Jace Darkweaver##90317
+turnin Helping the Hunters##39876 |goto Azsuna/0 43.15,43.61
+accept In the Loop##39877 |goto Azsuna/0 43.15,43.61
+accept Strings of the Puppet Masters##40048 |goto Azsuna/0 43.15,43.61
+step
+Use the Stack Of Vellums on Demon Hunters |use Stack Of Vellums##137120
+|tip They are fightining enemies around this area.
+Apply #6# Enchanting Vellums |q 39877/1 |goto 43.01,44.00
+step
+Follow the path |goto 43.06,45.40 < 30 |only if walking
+Follow the path |goto 40.84,48.29 < 30 |only if walking
+Kill enemies around this area.
+collect Rune of Dominance##137185 |q 40048/1 |goto 40.12,48.93
+step
+Follow the path |goto 40.84,48.29 < 30 |only if walking
+Follow the path |goto 43.06,45.40 < 30 |only if walking
+talk Jace Darkweaver##90317
+turnin In the Loop##39877 |goto 43.15,43.60
+turnin Strings of the Puppet Masters##40048 |goto 43.15,43.61
+accept Ringing True##39905 |goto 43.15,43.61
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+turnin Ringing True##39905 |goto Dalaran L/10 38.35,40.39
+step
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept Thunder Struck##39878 |goto 38.35,40.39
+step
+talk Guron Twaintail##98017
+turnin Thunder Struck##39878 |goto Thunder Totem/0 44.50,45.54
+accept Strong Like the Earth##39879 |goto Thunder Totem/0 44.50,45.54
+accept Waste Not##39880 |goto Thunder Totem/0 44.50,45.54
+stickystart "Empowered_Ambershard_Crystals_Enchanting"
+step
+Enter the cave |goto Highmountain/0 50.10,53.64 < 20 |walk
+Follow the path |goto Highmountain/0 51.59,52.51 < 20 |walk
+click Highmountain Shoulderpads
+click Highmountain Pants
+click Highmountain Jerkins
+|tip They look like various pieces of tan clothing on the ground around this area inside the cave.
+collect 15 Highmountain Armor##137195 |goto Highmountain/0 52.18,53.05 |q 39880
+step
+Disenchant the Highmountain Armor
+|tip They're in your bags.
+collect 15 Thunder Dust##137196 |q 39880/1
+step "Empowered_Ambershard_Crystals_Enchanting"
+Follow the path |goto 51.87,52.77 < 20 |walk
+Leave the cave |goto 50.10,53.64 < 20 |walk
+kill Enraged Ambershard##94507+
+collect 8 Empowered Ambershard Crystal##137193 |q 39879/1 |goto 49.14,54.89
+step
+talk Guron Twaintail##98017
+turnin Strong Like the Earth##39879 |goto Thunder Totem/0 44.48,45.52
+turnin Waste Not##39880 |goto Thunder Totem/0 44.48,45.52
+accept Cloaked in Tradition##39883 |goto Thunder Totem/0 44.48,45.52
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+turnin Cloaked in Tradition##39883 |goto Dalaran L/10 38.34,40.37
+step
+Reach Level 104 |ding 104
+|tip Use the Leveling guides to accomplish this.
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept Fey Enchantments##39881 |goto 38.34,40.37
+step
+talk Nalamya##98156
+turnin Fey Enchantments##39881 |goto Val'sharah/0 54.40,57.70
+accept No Longer Worthy##39884 |goto Val'sharah/0 54.40,57.70
+accept Led Astray##39889 |goto Val'sharah/0 54.40,57.70
+stickystart "Enchanted_Raven_Sigils_Enchanting"
+step
+Follow the path |goto 40.50,59.10 < 30 |only if walking
+Follow the path up |goto 38.48,57.29 < 20 |only if walking
+Continue up the path |goto 37.71,55.82 < 30 |only if walking
+Run up the stairs |goto 39.14,53.61 < 20 |only if walking
+Run up the stairs |goto 39.77,53.04 < 20 |only if walking
+kill Starlys Strongbow##92963 |q 39889/2 |goto 39.91,52.05
+step
+Run down the stairs |goto 41.46,53.00 < 20 |only if walking
+kill Trelan Shieldbreaker##92966 |q 39889/1 |goto 42.50,52.58
+|tip He walks around this area.
+step "Enchanted_Raven_Sigils_Enchanting"
+Run up the stairs |goto 41.82,52.99 < 20 |only if walking
+Kill enemies around this area
+|tip The Servants of Ravencrest will not drop the quest items.
+collect 8 Enchanted Raven Sigil##137221 |goto 40.93,53.01 |q 39884
+step
+Disenchant the Enchanted Raven Sigils
+|tip They're in your bags.
+collect 8 Raven Dust##137213 |q 39884/1
+step
+Run down the stairs |goto 40.06,53.04 < 20 |only if walking
+Run down the stairs |goto 39.43,53.35 < 20 |only if walking
+Follow the path down |goto 38.24,54.73 < 20 |only if walking
+Continue down the path |goto 37.73,56.22 < 30 |only if walking
+Follow the path |goto 40.13,60.31 < 30 |only if walking
+talk Nalamya##98156
+turnin No Longer Worthy##39884 |goto 54.40,57.70
+turnin Led Astray##39889 |goto 54.40,57.70
+accept The Glamour Has Faded##39882 |goto 54.40,57.71
+step
+_Enter the Darkheart Thicket Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+kill Archdruid Glaidalis##96512
+|tip Use the "Darkheart Thicket" dungeon guide to accomplish this.
+collect Nalamya's Book of Enchantments##137211 |q 39882/1
+step
+kill Shade of Xavius##101403 |q 39882/2
+|tip Use the "Darkheart Thicket" dungeon guide to accomplish this.
+step
+talk Nalamya##98156
+turnin The Glamour Has Faded##39882 |goto 54.40,57.70
+step
+Reach Level 106 |ding 106
+|tip Use the Leveling guides to accomplish this.
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept An Enchanting Home##39903 |goto Dalaran L/10 38.34,40.37
+step
+Follow the path up |goto Stormheim/0 34.29,49.24 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path up |goto Stormheim/0 35.18,47.15 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path up |goto Stormheim/0 44.87,54.17 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path up |goto Stormheim/0 40.11,50.64 < 20 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path |goto Stormheim/0 38.89,44.93 < 20 |only if walking
+Enter Tigrid's Home |q 39903/1 |goto Stormheim/0 39.35,42.67
+|tip Walk into the building.
+step
+talk Tigrid the Charmer##98367
+|tip Inside the building.
+turnin An Enchanting Home##39903 |goto 39.36,42.52
+accept A Touch of Magic##40265 |goto 39.36,42.52
+step
+click Tigrid's Arkhana
+Gather Tigrid's Arkhana |q 40265/1 |goto 39.31,42.62
+step
+clicknpc Dormant Crate##106954
+Enchant the Dormant Crate |q 40265/4 |count 1 |goto 39.24,42.77
+step
+clicknpc Dormant Grimoire##106952
+Enchant the Dormant Grimoire |q 40265/3 |count 1 |goto 39.26,42.82
+step
+clicknpc Dormant Crate##106961
+Enchant the Dormant Crate |q 40265/4 |count 2 |goto 39.39,42.83
+step
+clicknpc Dormant Crate##106961
+Enchant the Dormant Crate |q 40265/4 |count 3 |goto 39.44,42.63
+step
+clicknpc Dormant Grimoire##106932
+Enchant the Dormant Grimoire |q 40265/3 |count 2 |goto 39.36,42.60
+step
+clicknpc Dormant Pen##106980
+Enchant the Dormant Pen |q 40265/2 |goto 39.31,42.51
+step
+talk Tigrid the Charmer##98367
+|tip Inside the building.
+turnin A Touch of Magic##40265 |goto 39.36,42.52
+accept Revenge of the Enchantress##39904 |goto 39.36,42.52
+step
+_Enter the Halls of Valor Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+kill Odyn##95676
+|tip Use the "Halls of Valor" dungeon guide to accomplish this.
+click Spoils of the Worthy
+|tip It appears after you defeat Odyn.
+collect Tigrid's Enchanting Rod##129293 |q 39904/1
+step
+talk Tigrid the Charmer##98367
+|tip Inside the building.
+turnin Revenge of the Enchantress##39904 |goto 39.36,42.51
+step
+Reach Level 108 |ding 108
+|tip Use the Leveling guides to accomplish this.
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept Cursed, But Convenient##39891 |goto Dalaran L/10 38.32,40.33
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 3 Enchanting Vellum##38682 |n
+collect 3 Enchanting Vellum##38682 |goto 38.23,41.75 |q 39906 |future
+step
+collect 30 Arkhana##124440 |c |q 39906 |future
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+|tip You can also buy them from the Auction House.
+step
+collect 20 Leylight Shard##124441 |c |q 39906 |future
+|tip You can get these by disenchanting Legion level Rare (blue) armor and weapons.
+|tip You can also buy them from the Auction House.
+step
+Follow the path up |goto Azsuna/0 44.64,42.99 < 20 |only if walking
+Run up the rocks here |goto Azsuna/0 45.68,42.91 < 15 |only if walking
+Run up the rocks here |goto Azsuna/0 46.08,42.23 < 15 |only if walking
+Follow the path |goto Azsuna/0 45.80,41.57 < 20 |only if walking
+talk Enchantress Ilanya##107139
+|tip In front of the building.
+turnin Cursed, But Convenient##39891 |goto Azsuna/0 46.85,40.95
+accept Crossroads Rendezvous##40169 |goto Azsuna/0 46.85,40.95
+step
+talk Merrus Dawnwind##98381
+|tip In front of the building.
+accept The Druid's Debt##39910 |goto 46.84,40.88
+step
+talk Alynblaze##98159
+|tip In front of the building.
+accept Prepping For Battle##39906 |goto 46.86,40.81
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Word of Strength>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+collect Enchant Cloak - Word of Strength##128545 |q 39906/1
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Word of Critical Strike>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+collect Enchant Ring - Word of Critical Strike##128537 |q 39906/2
+step
+Open Your Enchanting Crafting Panel:
+_<Create 1 Word of Mastery>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+collect Enchant Ring - Word of Mastery##128539 |q 39906/3
+step
+talk Alynblaze##98159
+|tip In front of the building.
+turnin Prepping For Battle##39906 |goto 46.86,40.81
+accept Sentinel's Final Duty##39914 |goto 46.86,40.81
+step
+Run down the stairs |goto 47.58,40.66 < 20 |only if walking
+Follow the road |goto 48.72,41.45 < 30 |only if walking
+Cross the bridge |goto 50.39,43.65 < 30 |only if walking
+Run up the stairs |goto 51.60,44.67 < 20 |only if walking
+Follow the path |goto 51.88,45.34 < 20 |only if walking
+click Idol of the Claw
+|tip On the ground, upstairs inside the building.
+collect Idol of the Claw##137291 |q 39910/2 |goto 53.50,45.40
+step
+Jump down carefully here |goto 53.28,45.32 < 10 |only if walking
+Follow the path |goto 54.14,44.57 < 30 |only if walking
+Run up the stairs |goto 55.59,44.40 < 20 |only if walking
+Run up the stairs |goto 55.90,44.72 < 20 |only if walking
+Follow the path |goto 55.52,45.89 < 20 |only if walking
+click Idol of the Paw
+|tip It's behind the broken rock.
+collect Idol of the Paw##137290 |q 39910/1 |goto 56.30,46.17
+step
+Enter the building |goto 55.52,47.46 < 20 |walk
+click Idol of the Moon
+collect Idol of the Moon##137292 |q 39910/3 |goto 55.75,48.80
+step
+Leave the building |goto 55.54,47.54 < 20 |walk
+Follow the path |goto 56.43,45.46 < 20 |only if walking
+Run down the stairs |goto 57.73,44.48 < 20 |only if walking
+Jump down here |goto 58.81,43.01 < 20 |only if walking
+Enter the cave |goto 59.76,44.08 < 20 |walk
+kill Fathom-Commander Eksis##107251 |q 39914/1 |goto 58.48,44.87
+step
+Leave the cave |goto 59.76,44.07 < 20 |walk
+Follow the path |goto 62.41,43.28 < 30 |only if walking
+Follow the path up |goto 65.17,38.74 < 20 |only if walking
+Continue up the path |goto 65.45,38.19 < 15 |only if walking
+Follow the road |goto 65.13,36.25 < 40 |only if walking
+Follow the road |goto 63.52,33.27 < 30 |only if walking
+talk Fallen Priestess##98675
+|tip She appears when you get to this spot.
+turnin Crossroads Rendezvous##40169 |goto 63.83,30.29
+accept Turnabout Betrayal##39916 |goto 63.83,30.29
+step
+Kill enemies around this area
+|tip The Chaos Spawn imps won't drop the quest items.
+collect 5 Fel-Crusted Rune##137286 |goto 65.53,28.66 |q 39916
+step
+Disenchant the Fel-Crusted Runes
+|tip They're in your bags.
+collect 5 Dust of Foul Lies##129751 |q 39916/1
+step
+Follow the path |goto 65.50,28.56 < 30 |only if walking
+Follow the path |goto 64.68,29.06 < 30 |only if walking
+talk Fallen Priestess##98675
+turnin Turnabout Betrayal##39916 |goto 63.83,30.29
+accept Washed Clean##40130 |goto 63.83,30.29
+step
+Follow the path |goto 43.51,42.05 < 30 |only if walking
+Follow the path up |goto 40.83,36.71 < 20 |only if walking
+Follow the path up |goto 40.98,35.20 < 20 |only if walking
+Follow the path |goto 39.01,34.69 < 30 |only if walking
+Run up the stairs |goto 37.98,35.12 < 20 |only if walking
+Run up the stairs |goto 37.30,35.02 < 20 |only if walking
+talk Fallen Priestess##98683
+Watch the dialogue
+Observe the Purification Ritual |q 40130/1 |goto 36.53,34.09
+step
+talk Priestess Driana##98698
+turnin Washed Clean##40130 |goto 36.53,34.09
+accept The Absent Priestess##39918 |goto 36.53,34.09
+step
+Run down the stairs |goto 37.04,35.09 < 20 |only if walking
+Run down the stairs |goto 37.69,34.92 < 20 |only if walking
+Follow the path down |goto 39.01,34.72 < 30 |only if walking
+Follow the path down |goto 40.35,34.21 < 30 |only if walking
+Follow the path down |goto 41.14,35.82 < 30 |only if walking
+Follow the road |goto 40.93,37.91 < 30 |only if walking
+Follow the road |goto 42.99,41.53 < 30 |only if walking
+Follow the path up |goto 44.64,42.99 < 20 |only if walking
+Run up the rocks here |goto 45.68,42.91 < 15 |only if walking
+Run up the rocks here |goto 46.08,42.23 < 15 |only if walking
+Follow the path |goto 45.80,41.57 < 20 |only if walking
+talk Alynblaze##98159
+|tip In front of the building.
+turnin Sentinel's Final Duty##39914 |goto 46.86,40.81
+step
+talk Merrus Dawnwind##98381
+|tip In front of the building.
+turnin The Druid's Debt##39910 |goto 46.84,40.88
+step
+talk Enchantress Ilanya##107139
+|tip In front of the building.
+turnin The Absent Priestess##39918 |goto 46.86,40.95
+accept Elven Enchantments##39907 |goto 46.86,40.95
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+turnin Elven Enchantments##39907 |goto Dalaran L/10 38.30,40.37
+step
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
+step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+_Using the Suramar Questing Guide:_
+|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
+|tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
+Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
+step
+talk Enchanter Nalthanis##93531
+|tip Inside the building.
+accept On Azure Wings##39920 |goto 38.33,40.37
+step
+talk Kharmeera##99420
+turnin On Azure Wings##39920 |goto Azsuna/0 47.25,26.35
+accept Rod of Azure##39921 |goto Azsuna/0 47.25,26.35
+step
+Enter the building |goto Western Plaguelands/0 69.78,73.52 < 20 |walk
+|tip Click the Scholomance door to open it so you can walk through.
+Walk into the swirling portal |goto Western Plaguelands/0 69.00,72.84 |n
+Enter the Scholomance Dungeon |goto Scholomance/1 18.08,60.86 < 10000 |noway |c |q 39921
+|tip This is an old dungeon, so you can likely solo it easily.
+step
+Follow the path |goto Scholomance/1 43.04,61.04 |n
+Go through the gate |goto Scholomance/2 57.64,47.34 < 10000 |noway |c |q 39921
+step
+Follow the path |goto Scholomance/2 58.09,47.30 |n
+Continue following the path |goto Scholomance/1 45.72,60.74 < 10000 |noway |c |q 39921
+step
+map Scholomance/1
+path follow loose; loop off; ants curved; dist 20
+path	50.56,40.58	79.16,51.98	85.60,45.62
+Follow the path |goto Scholomance/1 79.96,24.20 |n
+|tip Kill bosses as you walk, to open up the path so you can progress through the dungeon.
+Walk through the doorway |goto Scholomance/2 77.26,26.74 < 10000 |noway |c |q 39921
+step
+map Scholomance/2
+path	57.19,26.57	40.22,26.71	42.92,47.30
+path	54.25,56.47
+Follow the path |goto Scholomance/2 54.22,56.37 |n
+Enter the room |goto Scholomance/2 54.11,65.17 < 30 |noway |c |q 39921
+step
+click Pile of Ancient Arkhana##6477
+collect Ancient Arkhana##136617 |q 39921/3 |goto 48.74,67.06
+step
+click Portal to Deepholm |goto Stormwind City/0 73.20,19.64 |n |only Alliance
+click Portal to Deepholm |goto Orgrimmar/1 50.8,36.4 |n |only Horde
+Travel to Deepholm |goto Deepholm/0 48.73,53.56 < 10000 |noway |c |q 39921
+step
+Leave the building |goto Deepholm/0 50.00,55.58 < 30 |n |walk
+Fly up and enter the swirling portal |goto Deepholm/0 47.73,51.97 |n
+Enter the Stonecore Dungeon |goto The Stonecore/1 54.27,93.89 < 10000 |noway |c |q 39921
+step
+map The Stonecore/1
+path follow loose; loop off; ants curved; dist 20
+path	54.43,90.90	62.29,77.51	62.52,58.28
+path	54.99,58.36	49.32,58.09	45.02,54.47
+path	36.63,44.73	39.72,32.15	38.36,23.17
+path	40.39,14.23	46.83,16.68
+kill Ozruk##42188
+|tip Kill bosses as you walk, to open up the path so you can progress through the dungeon.
+collect Radiant Zephyrite##136616 |q 39921/2 |goto The Stonecore/1 47.67,19.05
+step
+_Enter the Neltharion's Lair Dungeon:_
+|tip Use the Group Finder the enter the dungeon.
+kill Dargrul##91007
+|tip Use the "Neltharion's Lair" dungeon guide to accomplish this.
+collect Skystone Rod##136615 |q 39921/1
+step
+talk Kharmeera##99420
+turnin Rod of Azure##39921 |goto Azsuna/0 47.25,26.35
+accept Down to the Core##39923 |goto Azsuna/0 47.25,26.35
+step
+Run up the stairs |goto Suramar/0 35.27,50.85 < 20 |only if walking
+Cross the bridge |goto Suramar/0 36.30,50.63 < 20 |only if walking
+Follow the path |goto Suramar/0 37.50,49.52 < 20 |only if walking
+Follow the road |goto Suramar/0 39.45,49.38 < 30 |only if walking
+Follow the path |goto Suramar/0 42.49,54.05 < 30 |only if walking
+Follow the path |goto Suramar/0 41.11,57.65 < 30 |only if walking
+kill Or'ell##102495
+|tip He's a big centaur looking enemy that walks around this area, so you may need to search a bit for him.
+|tip Kill the enemies around this area before attacking him, to give yourself some space to fight him.
+|tip You may need help to kill him.
+collect Or'ell's Power Core##136623 |q 39923/2 |goto Suramar/0 42.46,58.98
+step
+Follow the path |goto 44.18,57.17 < 30 |only if walking
+kill Oldus##105232
+|tip He's a big centaur looking enemy that walks along this path, so you may need to search a bit for him.
+|tip Kill the enemies around this area before attacking him, to give yourself some space to fight him.
+|tip You may need help to kill him.
+collect Oldus' Power Core##136622 |q 39923/1 |goto 45.79,54.21
+step
+Follow the path |goto 46.39,53.52 < 30 |only if walking
+Enter the building |goto 47.77,54.74 < 30 |only if walking
+Run up the stairs |goto 48.16,56.27 < 20 |only if walking
+Follow the path |goto 48.81,57.42 < 20 |only if walking
+Walk onto the teleport pad |goto 49.86,60.12 < 10 |only if walking
+kill Oll'ison##105481
+|tip He's a big centaur looking enemy that walks along this path, so you may need to search a bit for him.
+|tip Kill the enemies around this area before attacking him, to give yourself some space to fight him.
+|tip You may need help to kill him.
+collect Oll'ison's Power Core##136625 |q 39923/4 |goto 50.62,62.11
+step
+Enter the building |goto 50.79,64.15 < 20 |only if walking
+Leave the building |goto 49.28,66.39 < 20 |only if walking
+kill Olmoore##105480
+|tip He's a big centaur looking enemy that walks along this path, so you may need to search a bit for him.
+|tip Kill the enemies around this area before attacking him, to give yourself some space to fight him.
+|tip You may need help to kill him.
+collect Olmoore's Power Core##136624 |q 39923/3 |goto 48.14,66.44
+step
+talk Kharmeera##99420
+turnin Down to the Core##39923 |goto Azsuna/0 47.26,26.35
+step
+_Congratulations!_
+You completed the Enchanting questline.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Enchanting\\Legion\\Enchanting 700-800",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Enchanting Quest Line" Guide
+Click Here to Continue |confirm
+step
+Reach Honored Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Honored
+|tip Use the "Val'sharah" Leveling guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Val'sharah world quests to accomplish this.
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy 115 Enchanting Vellum##38682 |n
+collect 115 Enchanting Vellum##38682 |goto Dalaran L/10 38.23,41.75
+|only if skill("Enchanting") < 800
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy Formula: Enchant Ring - Word of Versatility##128582 |n
+Use the Formula: Enchant Ring - Word of Versatility |use Formula: Enchant Ring - Word of Versatility##128582
+Learn the Rank 2 Formula for Enchant Ring - Word of Versatility |learn Enchant Ring - Word of Versatility##190995 |goto 38.24,41.81
+step
+talk Sylvia Hartshorn##106901
+buy Formula: Enchant Ring - Word of Versatility##128599 |n
+Use the Formula: Enchant Ring - Word of Versatility |use Formula: Enchant Ring - Word of Versatility##128599
+Learn the Rank 3 Formula for Enchant Ring - Word of Versatility |learn Enchant Ring - Word of Versatility##191012 |goto Val'sharah/0 54.70,73.25
+step
+collect 400 Arkhana##124440 |c
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+|tip You can also buy them from the Auction House.
+|only if skill("Enchanting") < 740
+step
+Open Your Enchanting Crafting Panel:
+_<Create 40 Word of Versatility>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+Reach Level 740 Enchanting |skill Enchanting,740
+step
+talk Ildine Sorrowspear##93530
+|tip Inside the building.
+buy Formula: Enchant Ring - Binding of Haste##128584 |n
+Use the Formula: Enchant Ring - Binding of Haste |use Formula: Enchant Ring - Binding of Haste##128584
+Learn the Rank 2 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring - Binding of Haste##190997 |goto Dalaran L/10 38.24,41.79
+step
+Reach Exalted Reputation with the Dreamweavers Faction |condition rep("Dreamweavers")>=Exalted
+|tip Use the "Val'sharah" Leveling guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Val'sharah world quests to accomplish this.
+step
+talk Sylvia Hartshorn##106901
+buy Formula: Enchant Ring - Binding of Haste##128601 |n
+Use the Formula: Enchant Ring - Binding of Haste |use Formula: Enchant Ring - Binding of Haste##128601
+Learn the Rank 3 Formula for Enchant Ring - Binding of Haste |learn Enchant Ring - Binding of Haste##191014 |goto Val'sharah/0 54.70,73.25
+step
+collect 1400 Arkhana##124440 |c
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+|tip You can also buy them from the Auction House.
+|only if skill("Enchanting") < 780
+step
+collect 160 Chaos Crystal##124442 |c
+|tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
+|tip You can also buy them from the Auction House.
+|only if skill("Enchanting") < 780
+step
+Open Your Enchanting Crafting Panel:
+_<Create 40 Binding of Haste>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+Reach Level 780 Enchanting |skill Enchanting,780
+step
+collect 1225 Arkhana##124440 |c
+|tip You can get these by disenchanting Legion level Uncommon (green) armor and weapons.
+|tip You can also buy them from the Auction House.
+|only if skill("Enchanting") < 800
+step
+collect 140 Chaos Crystal##124442 |c
+|tip You can get these by disenchanting Legion level Epic (purple) armor and weapons.
+|tip You can also buy them from the Auction House.
+|only if skill("Enchanting") < 800
+step
+Open Your Enchanting Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 35 Binding of Haste>_
+|tip Click the Enchanting Vellum in your bags to place the selected enchantment on them.
+Reach Level 800 Enchanting |skill Enchanting,800
+step
+_Congratulations!_
+You reached level 800 with the Enchanting profession.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",
 startlevel=100.0,
@@ -5117,16 +5716,6 @@ Kill enemies around this area
 |tip There are wolves and deer.
 |tip Loot and skin them.
 collect Stonehide Leather##124113 |n |goto Stormheim/0 49.36,56.91
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stormscale",{
-author="support@zygorguides.com",
-startlevel=100.0,
-},[[
-step
-kill Coldscale Gazecrawler##108185+
-|tip Interrupt them when they start casting Death Glare, or they will stun you.
-|tip Loot and skin them.
-collect Stormscale##124115 |n |goto Highmountain/0 51.57,64.13
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Herbalism\\Aethril",{
 author="support@zygorguides.com",

@@ -7646,7 +7646,7 @@ step
 goto Karazhan/12 40.0,18.3 |n
 Open the doors and enter the room. |goto Karazhan/12 40.0,18.3 |noway|c
 step
-talk King Llane##21684 |goto Karazhan/14 42.2,70.0
+talk Warchief Blackhand##21752 |goto Karazhan/14 32.17,51.30
 Complete the chess event.
 |confirm
 step

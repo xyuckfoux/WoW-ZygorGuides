@@ -4039,6 +4039,8 @@ ZygorGuidesViewer:RegisterInclude("H_UC_Cooking_Dailies",[[
 		accept Roach Coach##29334 |or |goto Undercity 62.1,44.9
 		accept Escargot A Go-Go##29333 |or |goto Undercity 62.1,44.9
 		accept Would You Like Some Flies With That?##29360 |or |goto Undercity 62.1,44.9
+		accept Lily, Oh Lily##29332 |or |goto Undercity 62.1,44.9
+		accept Fungus Among Us##29315 |or |goto Undercity 62.1,44.9
 	step
 		click Cockrach Cabin##336+
 		|tip Look in corners and behind crates. They are hidden all around Undercity.
@@ -4053,12 +4055,20 @@ ZygorGuidesViewer:RegisterInclude("H_UC_Cooking_Dailies",[[
 		|tip They are underneath the water in this lake.
 		collect 8 Brightwater Snail##69918 |q 29333/1 |goto Tirisfal Glades 70.5,39.6
 	step
+		click Sewer Cap##10615
+		collect 12 Sewer Cap##208816 |q Fungus Among Us##29315/1 |goto Undercity 36.1,30.2
+	step
+		click Stillwater Lily##8565
+		collect 10 Stillwater Lily##69917 |q Lily, Oh Lily##29332/1 |goto Undercity 51,55.3
+	step
 		talk Chef Audrey##53528
 		turnin Roach Coach##29334 |goto Undercity 62.6,35.5
 	step
 		talk Eunice Burch##4552
 		turnin Escargot A Go-Go##29333 |goto Undercity 62.1,44.9
 		turnin Would You Like Some Flies With That?##29360 |goto Undercity 62.1,44.9
+		turnin Fungus Among Us##29315 |goto Undercity 62.1,44.9
+		turnin Lily, Oh Lily##29332 |goto Undercity 62.1,44.9
 ]])
 
 ZygorGuidesViewer:RegisterInclude("H_Shattrath_Cooking_Dailies",[[

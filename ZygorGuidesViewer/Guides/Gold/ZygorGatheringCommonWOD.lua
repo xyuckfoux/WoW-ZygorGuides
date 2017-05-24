@@ -3683,8 +3683,8 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Farming\\Rugged Leather/Rugged Hide (Onyx
 		modelnpc DO NOT KILL ONYXIA!##10184
 		Follow the path and kill the 4 Onyxian Warders. DO NOT KILL ONYXIA |goto Onyxia's Lair/1 63.5,85.4 |noway |c |next "route_2" |or
 		goldcollect 244 Rugged Leather##8170 |next "Sell" |or
-		goldcollect 158 Rugged Hide##8171
-		goldcollect 10 Frostweave Cloth##33470
+		goldcollect 158 Rugged Hide##8171 |n
+		goldcollect 10 Frostweave Cloth##33470 |n
 		goldtracker
 		Click here to sell items |confirm |next "Sell"
 	step

@@ -262,6 +262,19 @@
 	
 	<!-- PETS AND MOUNTS -->
 		<!-- All Pets  Order for these matters-->
+		<!--LEGION PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceLEGION.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorPetsHordeLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeLEGION.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorPetsCommonLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonLEGION.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonLEGIONTrial.lua"/>
+
 		<!--WOD PETS-->
 		<Script file="PetsMounts\ZygorPetsAllianceWOD_MASTER.lua"/>
 		<Script file="PetsMounts\ZygorPetsAllianceWOD.lua"/>
@@ -367,6 +380,31 @@
 		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceWOD_MASTER.lua"/>
 		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceWOD.lua"/>
 		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceWODTrial.lua"/>
+
+		<!-- LEGION -->
+		<Script file="PetsMounts\ZygorHunterPetHordeLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetHordeLEGION.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetHordeLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorHunterPetAllianceLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetAllianceLEGION.lua"/>
+		<Script file="PetsMounts\ZygorHunterPetAllianceLEGIONTrial.lua"/>
+		
+		<Script file="PetsMounts\ZygorMountsHordeLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorMountsHordeLEGION.lua"/>
+		<Script file="PetsMounts\ZygorMountsHordeLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorMountsAllianceLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorMountsAllianceLEGION.lua"/>
+		<Script file="PetsMounts\ZygorMountsAllianceLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorBattlePetQuestsHordeLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorBattlePetQuestsHordeLEGION.lua"/>
+		<Script file="PetsMounts\ZygorBattlePetQuestsHordeLEGIONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceLEGION_MASTER.lua"/>
+		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceLEGION.lua"/>
+		<Script file="PetsMounts\ZygorBattlePetQuestsAllianceLEGIONTrial.lua"/>
 	
 	<!-- TITLES -->
 		<!-- CATA -->

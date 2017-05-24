@@ -4897,7 +4897,7 @@ talk Captain Hecklebury Smotts##2500 |goto 40.3,67.8
 accept The Captain's Chest##26599 |goto 40.3,67.8
 step
 talk Airwyn Bantamflax##44112
-|tip She is sitting on the table on the first floor of this building
+|tip She is sitting on the table on the third floor of this building
 turnin Airwyn Bantamflax##26821 |goto 42.5,73.2
 step
 talk Fin Fizracket##2486

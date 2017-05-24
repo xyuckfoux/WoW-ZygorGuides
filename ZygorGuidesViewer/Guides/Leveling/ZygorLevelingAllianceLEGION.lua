@@ -2562,8 +2562,6 @@ Enter the Chamber of the Guardian |q 42770/1 |goto Dalaran L/10 49.29,47.60
 step
 Run down the stairs |goto Dalaran L/12 41.14,65.04 < 10
 click Portal to Dalaran Crater
-|tip Before clicking the portal, talk to Ricket, the goblin standing near the portal, and purchase a glider.
-|tip Use the Goblin Glider Kit after taking the portal to avoid dying from the fall.
 Take the Dalaran Portal to Dalaran Crater |q 42770/2 |goto Dalaran L/12 28.81,77.47
 |only Paladin
 step
@@ -2975,7 +2973,8 @@ Return to Tyrosus |q 42120/4 |goto Tirisfal Glades/0 13.04,57.42
 |only Paladin
 step
 talk Lord Maxwell Tyrosus##106834
-turnin The Silver Hand##42120 |goto Dalaran L/10 71.83,45.03
+turnin The Silver Hand##42120 |goto Dalaran L/10 71.83,45.03 |or
+turnin The Silver Hand##42120 |goto Eastern Plaguelands/20 49.98,72.34 |or
 accept We Meet at Light's Hope##38576 |goto Dalaran L/10 71.83,45.03
 |only Paladin
 step
@@ -4238,12 +4237,6 @@ accept The Light's Wrath##41625 |goto Tirisfal Glades/0 78.95,40.99 |only if not
 accept The Light's Wrath##41625 |goto Netherlight Temple/1 51.62,47.79 |only if completedq(43935)
 |only Priest
 step
-talk Brother Larry##105769 |goto Tirisfal Glades/0 78.49,41.08 |n
-Travel to Dalaran |goto Dalaran L/10 69.68,43.57 < 100 |noway |c |q 41625
-|only Priest
-step
-click Portal to Dalaran
-Enter the portal to Dalaran |goto Netherlight Temple/1 49.83,80.78
 talk Archmage Kalec##105081
 |tip Inside the building.
 turnin The Light's Wrath##41625 |goto Dalaran L/10 28.64,49.87
@@ -4333,6 +4326,7 @@ step
 Enter the building |goto 26.54,27.42 < 15
 Begin the Nexus Vault Scenario |scenariostart |goto 27.50,26.02 |q 41631
 |tip Enter the swirling blue portal.
+|tip It's the on on the very bottom floor.
 |only Priest
 step
 Kill the enemies surrounding Azuregos
@@ -4404,7 +4398,7 @@ accept A Gift of Time##41632 |goto Dalaran L/10 28.65,49.90
 |only Priest
 step
 talk Alonsus Faol##102363
-turnin A Gift of Time##41632 |goto 46.25,20.95 |next "All_Priests"
+turnin A Gift of Time##41632 |goto Netherlight Temple/1 51.57,47.81 |next "All_Priests"
 |only Priest
 step
 label "Holy_Artifact"
@@ -13884,19 +13878,23 @@ Follow the path down |goto 64.53,46.78 < 20 |only if walking
 talk Toryl##102309
 |tip She walks around, so you may need to search a bit for her.
 accept Removing Obstacles##40907 |goto 65.10,51.11
+_WARNING_: If you complete this quest, you will be unable to tame a Jandvik Ripfang for the unique Auburn Wolf pet! |only Hunter
 step
 Follow the path |goto 65.87,51.16 < 15 |only if walking
 Follow the path |goto 68.48,51.15 < 20 |only if walking
 kill Calder##102738 |q 40907/1 |goto 69.07,53.21
+_WARNING_: If you complete this quest, you will be unable to tame a Jandvik Ripfang for the unique Auburn Wolf pet! |only Hunter
 step
 Follow the path |goto 68.93,50.96 < 20 |only if walking
 Follow the path |goto 68.62,48.10 < 20 |only if walking
 kill Eynar##102739 |q 40907/2 |goto 69.20,46.82
+_WARNING_: If you complete this quest, you will be unable to tame a Jandvik Ripfang for the unique Auburn Wolf pet! |only Hunter
 step
 Follow the path |goto 69.59,47.91 < 20 |only if walking
 talk Toryl##99948
 turnin Removing Obstacles##40907 |goto 70.58,48.81
 accept Jarl Come Back Now##40908 |goto 70.58,48.81
+_WARNING_: If you complete this quest, you will be unable to tame a Jandvik Ripfang for the unique Auburn Wolf pet! |only Hunter
 step
 Follow the path |goto 71.12,50.19 < 20 |only if walking
 Follow the path |goto 70.78,53.56 < 20 |only if walking
@@ -16035,6 +16033,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Skyhold/1 45.32,30.12
+|tip You will need Artifact Knowledge Rank 2 in order to accept this.
 |only Warrior
 step
 Follow the path |goto Val'sharah/0 54.96,53.43 < 20 |only if walking
@@ -16111,6 +16110,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Skyhold/1 45.32,30.12
+|tip You will need Artifact Knowledge Rank 3 in order to accept this.
 |only Warrior
 step
 Use the Call to Xe'ra ability
@@ -17926,7 +17926,7 @@ Witness the Awakening of Illidan Stormrage |q 44464/1 |goto Val'sharah/0 54.40,7
 step
 click Light's Heart
 |tip Inside the building.
-turnin Awakenings##44464 |goto 47.49,43.51
+turnin Awakenings##44464 |goto Trueshot Lodge/0 47.49,43.51
 |only Hunter
 step
 click Light's Heart
@@ -18869,7 +18869,7 @@ accept Champion: Master Mathias Shaw##43724 |instant |goto 40.49,78.08
 |only Rogue
 step
 talk Lord Jorach Ravenholdt##101513
-accept Another Worthy Blade##44034 |goto 41.38,78.08
+accept One More Thing...##44215 |goto 41.38,78.08
 |only Rogue
 step
 Follow the path up |goto 42.79,65.29 < 15 |walk
@@ -20513,11 +20513,11 @@ collect The Master's Journal pt. 1##136791 |q 41897/1 |goto 63.99,75.14
 |only Shaman
 step
 click The Master's Journal pt. 2
-collect The Master's Journal pt. 2##136792 |q 41897/1 |goto 61.74,71.99
+collect The Master's Journal pt. 2##136792 |q 41897/2 |goto 61.74,71.99
 |only Shaman
 step
 click The Master's Journal pt. 3
-collect The Master's Journal pt. 3##136793 |q 41897/1 |goto 62.37,75.96
+collect The Master's Journal pt. 3##136793 |q 41897/3 |goto 62.37,75.96
 |only Shaman
 step
 _Next to you:_
@@ -20743,7 +20743,7 @@ Feed Emberscar |q 41934/3 |goto 21.18,36.33
 |only Shaman
 step
 click Emberscar, Brand of Damnation
-Obtain Emberscar |q 41934/3 |goto 21.18,36.33
+Obtain Emberscar |q 41934/4 |goto 21.18,36.33
 |only Shaman
 step
 Follow the path |goto 25.56,41.36 < 20 |only if walking
@@ -22709,9 +22709,24 @@ stickystart "Sovereign_Souls_DemonHunter"
 step
 talk Camille Kleister##97429
 turnin We'll Need Some Obliterum##44616 |goto Dalaran L/10 39.64,30.80
-|only Demon Hunter
+accept Fire!##39838 |goto 39.64,30.80
+|only DemonHunter
 step
-collect 3 Obliterum##124125 |q 42732/1
+click Water Bucket##97430
+Extinguish #8# fires |q 39838/1 |goto 38.30,29.89
+|tip Use the water buckets to put out the wagon fire.
+|only DemonHunter
+step
+click Water Bucket##97430
+Extinguish #10# fel fires |q 39838/2 |goto 38.30,29.89
+|tip Use the water buckets to put out the fires on the wagon and buildings.
+|only DemonHunter
+step
+talk Camille Kleister##97429
+turnin Fire!##39838 |goto 39.64,30.80
+|only DemonHunter
+step
+collect 1 Obliterum##124125 |q 42732/1
 |tip Buy these from the Auction House.
 |tip You can also create you own by unlocking your Obliterum Forge, if you prefer.
 |tip Use the Obliterum Forge guide to accomplish this.

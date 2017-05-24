@@ -1208,14 +1208,8 @@ learn Baked Salmon##18247 |goto Feralas/0 46.3,41.7 |condition _G.IsSpellKnown(1
 step
 create Baked Salmon##18247,Cooking,300 |goto Stormwind City 77.6,52.9
 step
-talk Stephen Ryback##5482
-skillmax Cooking,375 |goto Stormwind City 77.3,53.2
-step
-talk Stephen Ryback##5482
-learn Ravager Dog##33284 |goto Stormwind City 77.3,53.2 |condition _G.IsSpellKnown(33284) or skill("Cooking")>=325
-step
-talk Uriku##20096
-buy Recipe: Talbuk Steak##27693 |goto Nagrand 56.2,73.2 |condition _G.IsSpellKnown(33289) or itemcount(27693) >= 1 or skill("Cooking")>=350
+talk Sid Limbardi##16826
+buy Recipe: Ravager Dog##27688 |goto Hellfire Peninsula/0 54.22,63.60 |condition _G.IsSpellKnown(33284) or skill("Cooking")>=325
 step
 map Terokkar Forest
 path	60.7,11.3	58.1,13.1	55.5,13.0
@@ -1223,21 +1217,50 @@ path	52.7,12.4	50.3,10.1	46.6,5.3
 kill Razorthorn Ravager##24922+
 collect 30 Ravager Flesh##27674 |condition skill("Cooking")>=330
 step
+use Recipe: Ravager Dog##27688
+learn Ravager Dog##33284 |condition _G.IsSpellKnown(33284) or skill("Cooking")>=350
+step
+Stand next to a fire, or create one yourself |cast Cooking fire##818
+create Ravager Dog##33284,Cooking,325
+step
+talk Supply Officer Mills##19038
+buy Recipe: Warp Burger##27692 |goto Terokkar Forest/0 55.73,53.04 |condition _G.IsSpellKnown(33288) or itemcount(27692) >= 1 or skill("Cooking")>=350
+|only if raceclass("DemonHunter")
+step
+map Terokkar Forest
+path	60.74,49.63	62.81,44.46	58.97,39.04
+path	56.92,33.02	55.68,42.96
+kill Warp Stalker##18464+
+collect 30 Warped Flesh##27681 |condition skill("Cooking")>=345
+|only if raceclass("DemonHunter")
+step
+use Recipe: Warp Burger##27692
+learn Warp Burger##33288 |condition _G.IsSpellKnown(33288) or skill("Cooking")>=350
+|only if raceclass("DemonHunter")
+step
+Stand next to a fire, or create one yourself |cast Cooking fire##818
+create Warp Burger##33288,Cooking,350
+|only if raceclass("DemonHunter")
+step
+talk Uriku##20096
+buy Recipe: Talbuk Steak##27693 |goto Nagrand 56.2,73.2 |condition _G.IsSpellKnown(33289) or itemcount(27693) >= 1 or skill("Cooking")>=350
+|only if not raceclass("DemonHunter")
+step
 map Nagrand
 path	48.8,47.6	52.0,48.6	56.8,45.8
 path	51.6,39.0	52.2,29.6	54.8,24.6
 path	57.6,23.2	51.4,23.6	45.4,27.4
 path	47.6,42.2	48.2,47.4	52.2,52.6
 collect 30 Talbuk Venison##27682 |condition skill("Cooking")>=345
-step
-Stand next to a fire, or create one yourself |cast Cooking fire##818
-create Ravager Dog##33284,Cooking,325
+|only if not raceclass("DemonHunter")
 step
 use Recipe: Talbuk Steak##27693
 learn Talbuk Steak##33289 |condition _G.IsSpellKnown(33284) or skill("Cooking")>=350
+|only if not raceclass("DemonHunter")
 step
 Stand next to a fire, or create one yourself |cast Cooking fire##818
 create Talbuk Steak##33289,Cooking,350
+|only if not raceclass("DemonHunter")
 step
 talk Jack Trapper##19185
 skillmax Cooking,450 |goto Shattrath City 63.1,68.0

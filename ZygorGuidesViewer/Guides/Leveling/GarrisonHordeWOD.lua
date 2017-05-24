@@ -4109,9 +4109,13 @@ talk Durotan##70860
 turnin Moving In##33657 |goto Frostfire Ridge/1 43.2,41.3
 accept Save Wolf Home##33468 |goto Frostfire Ridge/1 43.2,41.3
 step
+kill Giantslayer Zhakta##74702 |q Save Wolf Home##33468/4 |goto 22.02,57.28
+step
 stickystart "free"
 talk Wor'gol Defender##74507
 accept Free Our Brothers and Sisters##33807 |goto Frostfire Ridge/0 19.1,58.3
+step
+kill Gronnstalker Korhol##74700 |q Save Wolf Home##33468/2 |goto 19.25,58.21
 step
 _Go up_ the hill |goto Frostfire Ridge 19.7,60.0 < 15 |only if walking
 kill Beastmaster Trokar##74708 |q Save Wolf Home##33468/3 |goto 19.8,61.4
@@ -4119,7 +4123,7 @@ step "thunderlords"
 kill Thunderlord Ranger##76289+, Thunderlord Invader##74329+, Thunderlord Handler##74514+, Thunderlord Seer##78073+
 Slay #15# Thunderlords |q Save Wolf Home##33468/5 |goto Frostfire Ridge 20.0,59.0
 step "free"
-clicknpc Wor'gol Villager##84781+, Frost Wolf##74544+
+click Wor'gol Villager##84781+, Frost Wolf##74544+
 Free #6# Villagers and Frostwolves |q Free Our Brothers and Sisters##33807/1 |goto Frostfire Ridge 20.0,59.0
 step
 talk Draka##74651

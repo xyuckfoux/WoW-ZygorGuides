@@ -2053,11 +2053,11 @@ Use these Draenor Leveling Guides to complete Loremaster:
 |tip The Leveling guides cover all required questlines for Loremaster.
 |tip Click one of the lines below to load the Leveling guide for that zone.
 condition achieved(9833) |next
-Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Alliance Leveling Guides\\Warlords of Draenor 90-100\\Shadowmoon Valley (90-92)"
-Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Alliance Leveling Guides\\Warlords of Draenor 90-100\\Gorgrond (92-94)"
-Talador |condition achieved(9833,3) |confirm always |next "Zygor's Alliance Leveling Guides\\Warlords of Draenor 90-100\\Talador (94-96)"
-Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Alliance Leveling Guides\\Warlords of Draenor 90-100\\Spires of Arak (96-98)"
-Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Alliance Leveling Guides\\Warlords of Draenor 90-100\\Nagrand (98-100)"
+Shadowmoon Valley |condition achieved(9833,1) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Shadowmoon Valley (90-92)"
+Gorgrond |confirm |condition achieved(9833,2) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Gorgrond (92-94)"
+Talador |condition achieved(9833,3) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Talador (94-96)"
+Spires of Arak |condition achieved(9833,4) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Spires of Arak (96-98)"
+Nagrand |condition achieved(9833,5) |confirm always |next "Zygor's Alliance Leveling Guides\\Draenor (90-100)\\Nagrand (98-100)"
 step
 Congratulations, you earned the _Loremaster of Draenor_ Achievement!
 ]])
@@ -12114,6 +12114,3658 @@ To use our _Shadow Council Invasion_ guide, click here |confirm |next "Zygor's A
 To use our _Shadowmoon Clan Invasion_ guide, click here |confirm |next "Zygor's Alliance Achievements Guides\\Garrisons\\Invasions\\Shadowmoon Clan Invasion"
 step
 Congratulations, you have earned the _Silver Defender_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Collections\\Toy Box\\The Toymaster",{
+condition_end="achieved(9673)",
+description="This guide will help you earn The Toymaster achievement.",
+},[[
+step
+talk Craggle Wobbletop##52358
+|tip Craggle patrols the curved stone path just outside of the Trade District.
+buy 1 Blue Crashin' Thrashin' Racer Controller##54343 |use Blue Crashin' Thrashin' Racer##54343 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Blue Crashin' Thrashin' Racer_ toy |toy Blue Crashin' Thrashin' Racer##54343 |goto Stormwind City/0 58.9,64.0
+buy 1 Toy Train Set##44606 |use Toy Train Set##44606 |n
+|tip 250 gold, discounts with Gnomeregan reputation.
+Learn the _Toy Train Set_ toy |toy Toy Train Set##44606 |goto Stormwind City/0 58.9,64.0
+buy 1 Wind-Up Train Wrecker##45057 |use Wind-Up Train Wrecker##45057 |n
+|tip 250 gold, discounts with Gnomeregan reputation.
+Learn the _Wind-Up Train Wrecker_ toy |toy Wind-Up Train Wrecker##45057 |goto Stormwind City/0 58.9,64.0
+buy 1 Tiny Green Ragdoll##54437 |use Tiny Green Ragdoll##54437 |n
+|tip 10 gold, discounts with Gnomeregan reputation.
+Learn the _Tiny Green Ragdoll_ toy |toy Tiny Green Ragdoll##54437 |goto Stormwind City/0 58.9,64.0
+buy 1 Tiny Blue Ragdoll##54438 |use Tiny Blue Ragdoll##54438 |n
+|tip 10 gold, discounts with Gnomeregan reputation.
+Learn the _Tiny Blue Ragdoll_ toy |toy Tiny Blue Ragdoll##54438 |goto Stormwind City/0 58.9,64.0
+buy 1 The Pigskin##104323 |use The Pigskin##104323 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Pigskin_ toy |toy Pigskin##104323 |goto Stormwind City/0 58.9,64.0
+buy 1 Foot Ball##104324 |use Foot Ball##104324 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Foot Ball_ toy |toy Foot Ball##104324 |goto Stormwind City/0 58.9,64.0
+buy 1 Soft Foam Sword##137663 |use Soft Foam Sword##137663 |n
+|tip This costs 40 gold, discounts with Gnomeregan reputation.
+Learn the _Soft Foam Sword_ toy |toy Soft Foam Sword##137663 |goto Stormwind City/0 58.9,64.0
+step
+_Enter_ the tower |goto Azshara/0 25.1,38.6 |walk
+talk Tex Vortacoil##36375
+buy 1 Kalytha's Haunted Locket##68806 |use Kalytha's Haunted Locket##68806 |n
+|tip This toy costs 5,000 gold.
+Learn the _Kalytha's Haunted Locket_ toy |toy Kalytha's Haunted Locket##68806 |goto Azshara/0 25.6,38.0
+step
+_Go through_ the narrow pass here |goto Shadowmoon Valley D/0 47.5,39.5 |only if walking
+_Turn left_ on the road |goto Shadowmoon Valley D/0 48.2,40.5 |only if walking
+_Follow_ the path and enter the pavillion |goto Shadowmoon Valley D/0 49.2,37.9 |only if walking
+_Go up_ the winding ramp |goto Shadowmoon Valley D/0 49.9,37.0 < 10 |only if walking
+_Reach the top_ of the ramp |goto Shadowmoon Valley D/0 49.1,36.6 < 10 |only if walking
+_Open_ the Astrologer's Box |goto Shadowmoon Valley D/0 49.4,37.6 |only if walking
+click Astrologer's Box##226831 |goto Shadowmoon Valley D/0 49.4,37.6
+|tip It is a small brown chest in front of the bookcase at the top of a winding ramp.
+collect 1 Star Chart##109739 |use Star Chart##109739 |n
+Learn the _Star Chart_ toy |toy Star Chart##109739
+only Alliance
+step
+kill Yggdrel##75435
+collect 1 Ancient's Bloom##113570 |use Ancient's Bloom##113570 |n
+Learn the _Ancient's Bloom_ toy |toy Ancient's Bloom##113570 |goto Shadowmoon Valley D/0 48.6,66.2
+confirm
+step
+_Go to_ the river |goto Shadowmoon Valley D/0 52.0,69.0 |only if walking
+_Continue_ following the river southeast |goto Shadowmoon Valley D/0 53.5,73.0 |only if walking
+_Go to_ the base of the tree |goto Shadowmoon Valley D 55.29,74.87 |only if walking
+click Swamplighter Hive##232592 |q 35580 |future |goto Shadowmoon Valley D 55.29,74.87
+|tip It's a yellow beehive located up in the tree. All of the wasps will attack you when you click it.
+collect 1 Angry Beehive##117550 |use Angry Beehive##117550 |n
+Learn the _Angry Beehive_ toy |toy Angry Beehive##117550
+step
+_Go through_ the stone arch |goto Spires of Arak/0 72.3,25.6 |only if walking
+_Go up_ the hill |goto Spires of Arak/0 71.3,20.7 |only if walking
+kill Soul-Twister Torek##85026
+collect 1 Black Whirlwind##119178 |use Black Whirlwind##119178 |n
+|tip Not a guaranteed drop.
+Learn the _Black Whirlwind_ toy |toy Black Whirlwind##119178 |goto Spires of Arak/0 72.6,19.3
+confirm
+step
+_Climb up_ the rocks |goto Shadowmoon Valley D/0 38.7,49.3 < 5
+|tip Notice the "stepping stones" that lead up. You must be mounted to make the long jump. |only if walking
+kill Hypnocroak##79524
+collect 1 Hypnosis Goggles##113631 |use Hypnosis Goggles##113631 |n
+Learn the _Hypnosis Goggles_ toy |toy Hypnosis Goggles##113631 |goto Shadowmoon Valley D/0 37.6,49.0
+confirm
+step
+_Go to_ the pond |goto Shadowmoon Valley D/0 50.4,78.9 |only if walking
+_Swim down_ to the bottom |goto Shadowmoon Valley D 51.14,79.12 |only if walking
+click Vindicator's Cache##224784 |q 33574 |future |goto Shadowmoon Valley D 51.14,79.12
+|tip It's a small half-buried chest under the water.
+collect 1 Vindicator's Armor Polish Kit##113375 |use Vindicator's Armor Polish Kit##113375 |n
+Learn the _Vindicator's Armor Polish Kit_ toy |toy Vindicator's Armor Polish Kit##113375
+step
+_Go down_ the path |goto Frostfire Ridge/0 44.7,12.5 |only if walking
+kill Tor'goroth##82618
+collect 1 Soul Inhaler##119163 |use Soul Inhaler##119163 |n
+Learn the _Soul Inhaler_ toy |toy Soul Inhaler##119163 |goto Frostfire Ridge/0 43.5,8.9
+confirm
+step
+_Enter_ the building here |goto Frostfire Ridge/0 23.3,24.1 |walk
+click Arena Master's War Horn##226955 |goto Frostfire Ridge 23.17,24.95
+|tip It's on the seat of the throne.
+collect 1 Arena Master's War Horn##108735 |use Arena Master's War Horn##108735 |n
+Learn the _Arena Master's War Horn_ toy |toy Arena Master's War Horn##108735
+step
+kill Breathless##78867
+|tip Breathless is in the small canyon surrounded by large rocks.
+collect 1 Stolen Breath##111476 |use Stolen Breath##111476 |n
+Learn the _Stolen Breath_ toy |toy Stolen Breath##111476 |goto Frostfire Ridge/0 27.6,50.0
+confirm
+step
+_Go through_ the narrow pass |goto Frostfire Ridge/0 23.0,9.3 |only if walking
+_Fish_ from the Lagoon Pool |cast Fishing##131474
+Fish up the _Giant Draenor Clam_ |goto Frostfire Ridge 21.89,09.63
+|tip Try zooming your camera in if you have issues with clicking your bobber.
+use Giant Draenor Clam##108738 |only if itemcount(108738) > 0
+use Pretty Draenor Pearl##108739 |only if itemcount(108739) > 0
+collect 1 Pretty Draenor Pearl##108739 |use Pretty Draenor Pearl##108739 |n
+Learn the _Pretty Draenor Pearl_ toy |toy Pretty Draenor Pearl##108739
+step
+kill Basten##86257
+kill Valstil##86259
+|tip Kill Vastil first, he is the healer of the group. Be sure to interrupt Revitalizing Waters.
+kill Nultra##86258
+|tip This trio is pretty tough, you may want to bring a friend.
+collect 1 Botani Camouflage##119432 |use Botani Camouflage##119432 |n
+|tip This toy is not a guaranteed drop.
+Learn the _Botani Camouflage_ toy |toy Botani Camouflage##119432 |goto Gorgrond/0 69.2,44.6
+confirm
+step
+kill Sulfurious##80725
+collect 1 Bubble Wand##114227 |use Bubble Wand##114227 |n
+|tip This toy is a guaranteed drop.
+Learn the _Bubble Wand_ toy |toy Bubble Wand##114227 |goto Gorgrond/0 41.0,60.4
+confirm
+step
+_Go through_ the opening in the thorns |goto Gorgrond/0 58.1,69.0 < 10 |only if walking
+kill Fossilwood the Petrified##85250
+collect 1 Petrification Stone##118221 |use Petrification Stone##118221 |n
+Learn the _Petrification Stone_ toy |toy Petrification Stone##118221 |goto Gorgrond/0 57.4,68.6
+confirm
+step
+_Enter_ the glade |goto Gorgrond/0 40.0,83.0 |only if walking
+_Go up_ the hill |goto Gorgrond/0 39.6,79.9 |only if walking
+kill Bashiok##82085
+collect 1 Spirit of Bashiok##118222 |use Spirit of Bashiok##118222 |n
+Learn the _Spirit of Bashiok_ toy |toy Spirit of Bashiok##118222 |goto Gorgrond/0 40.1,78.9
+confirm
+step
+_Enter_ the cave |goto Gorgrond/0 48.6,47.2 < 15 |walk
+click Warm Goren Egg##234054 |goto Gorgrond 48.94,47.31
+|tip It's a glowing red egg sitting against the wall on the back side of the cave.
+collect 1 Warm Goren Egg##118705 |use Cracked Goren Egg##118706 |n
+|tip It takes 7 days for this egg to crack, allowing you to loot the toy.
+collect 1 Goren Garb##118716 |use Goren Garb##118716 |n
+Learn the _Goren Garb_ toy |toy Goren Garb##118716
+step
+kill Kharazos the Triumphant##78710 |goto Talador/0 56.6,62.6
+kill Sikthiss, Maiden of Slaughter##78715 |goto Talador/0 56.6,62.6
+|tip Both of these rares wander around the same small area.
+collect 1 Burning Legion Missive##116122 |use Burning Legion Missive##116122 |n
+Learn the _Burning Legion Missive_ toy |toy Burning Legion Missive##116122
+confirm
+step
+_Enter_ the cave |goto Talador/0 61.3,84.2 < 15 |walk
+_Go up_ the right ramp |goto Talador/0 64.4,86.6 < 15 |only if walking
+_Continue_ going down the side passage with spider eggs |goto Talador/0 66.4,87.9 < 15 |only if walking
+kill Klikixx##78872
+collect 1 Klikixx's Webspinner##116125 |use Klikixx's Webspinner##116125 |n
+|tip This toy is a guaranteed drop.
+Learn the _Klikixx's Webspinner_ toy |toy Klikixx's Webspinner##116125 |goto Talador/0 66.8,85.4
+step
+_Go right_ at the fork in the road |goto Talador/0 33.8,60.2
+kill Shadow Council Summoner##77794
+|tip Kill the summoners to free Echo of Murmur.
+kill Echo of Murmur##77828
+collect 1 Mournful Moan of Murmur##113670 |use Mournful Moan of Murmur##113670 |n
+Learn the _Mournful Moan of Murmur_ toy |toy Mournful Moan of Murmur##113670 |goto Talador/0 34.0,57.2
+step
+click Deceptia's Smoldering Boots##226976 |goto Talador 58.90,12.00
+|tip A small pair of boots in the ruined camp.
+collect 1 Deceptia's Smoldering Boots##108743 |use Deceptia's Smoldering Boots##108743 |n
+Learn the _Deceptia's Smolerding Boots_ toy |toy Deceptia's Smoldering Boots##108743
+step
+_Enter_ the cave |goto Talador/0 61.3,84.2 |walk
+_Go to_ the main cavern |goto Talador/0 65.4,86.2 |only if walking
+click Curious Deathweb Egg##227996 |goto Talador 66.50,86.94
+|tip It is a purple, motionless egg sack found behind the large crystal formation towards the back of the cave.
+collect 1 Giant Deathweb Egg##117569 |use Giant Deathweb Egg##117569 |n
+Learn the _Giant Deathweb Egg_ toy |toy Giant Deathweb Egg##117569
+step
+map Nagrand D
+path follow smart; loop on; ants curved; dist 40
+path	52.8,51.6	57.4,54.0	60.6,58.6
+path	59.8,65.2	60.4,70.2	63.6,72.4
+path	66.4,73.4	73.2,67.2	76.2,68.6
+path	79.8,65.6	82.0,60.8	81.6,49.8
+path	77.8,43.6	72.2,39.0	67.4,39.2
+path	63.2,34.6	62.4,29.2	64.6,26.2
+path	63.2,21.2	57.4,25.2	52.6,19.2
+path	47.2,17.8	45.0,24.8	43.8,32.0
+path	40.8,38.8	43.6,43.0	49.2,41.2
+path	51.6,46.6
+kill Warleader Tome##81330
+|tip Follow the path, searching for Tome. You will need a group to defeat him.
+collect 1 Outrider's Bridle Chain##120276 |use Outrider's Bridle Chain##120276 |n
+Learn the _Outrider's Bridle Chain_ toy |toy Outrider's Bridle Chain##120276
+step
+kill Bramblefell##91093 |tip Bramblefell wanders around the marsh in a small area.
+collect 1 Felflame Campfire##127652 |use Felflame Campfire##127652 |n
+|tip This toy is roughly a 35% drop.
+Learn the _Felflame Campfire_ toy |toy Felflame Campfire##127652 |goto Tanaan Jungle/0 41.0,68.8
+confirm
+step
+_Enter_ the cave |goto Tanaan Jungle/0 37.3,75.9 < 10 |walk
+_Go down_ the left passage |goto Tanaan Jungle/0 36.9,77.8 < 10 |only if walking
+kill Captain Ironbeard##93076
+collect 1 Ghostly Iron Buccaneer's Hat##127659 |use Ghostly Iron Buccaneer's Hat##127659 |n
+|tip This toy is roughly a 35% drop.
+Learn the _Ghostly Iron Buccaneer's Hat_ toy |toy Ghostly Iron Buccaneer's Hat##127659 |goto Tanaan Jungle 36.20,79.70
+confirm
+step
+kill Remnant of the Blood Moon##91227
+collect 1 Vial of Red Goo##127666 |use Vial of Red Goo##127666 |n
+|tip This toy is roughly a 35% drop.
+Learn the _Vial of Red Goo_ toy |toy Vial of Red Goo##127666 |goto Tanaan Jungle/0 22.2,50.6
+|tip Drained Blood Crystals are found all over the area.
+|tip This rare will require you and your allies to collect 125 Drained Blood Crystals and use them at this altar. You will see a progress bar at the top of the screen.
+|tip This rare will require a group to defeat.
+confirm
+step
+_Go up_ the steps |goto Tanaan Jungle/0 30.6,71.0 < 8 |only if walking
+_Enter_ the small building |goto Tanaan Jungle/0 32.1,70.8 < 5 |walk
+click Tome of Secrets##240855 |goto Tanaan Jungle 32.40,70.40
+collect 1 Accursed Tome of the Sargerei##127670 |use Accursed Tome of the Sargerei##127670 |n
+Learn the _Accursed Tome_ of the Sargerei toy |toy Accursed Tome of the Sargerei##127670
+step
+_Enter_ the building |goto Tanaan Jungle/0 43.0,35.8 < 10 |walk
+_Take the stairs_ all the way up |goto Tanaan Jungle/0 42.9,35.0 < 5 |only if walking
+click Dazzling Rod##241848 |goto Tanaan Jungle 42.80,35.40 |tip It is found at the very top of the tower.
+collect 1 Dazzling Rod##127859 |use Dazzling Rod##127859 |n
+Learn the _Dazzling Rod_ toy |toy Dazzling Rod##127859
+step
+click Jewel of Hellfire##240580 |goto Tanaan Jungle 28.70,23.30
+|tip This treasure is on the shore. You will need to swim from Ironhold Harbor to reach it.
+collect 1 Jewel of Hellfire##127668 |use Jewel of Hellfire##127668 |n
+Learn the _Jewel of Hellfire_ toy |toy Jewel of Hellfire##127668
+step
+click Loose Soil##241606 |goto Tanaan Jungle 64.70,42.80 < 8
+|tip Clicking the loose soil will cause a vine to throw you up into the tree. The fruit is on the branch you land on.
+click Strange Fruit##241599 |goto Tanaan Jungle 64.6,42.1
+collect 1 Strange Green Fruit##127396 |use Ripened Strange Fruit##127395 |n
+collect 1 Podling Camouflage##127394 |use Podling Camouflage##127394 |n
+|tip After 14 days, the Strange Fruit will ripen. You can then loot this toy.
+Learn the _Podling Camouflage_ toy |toy Podling Camouflage##127394
+confirm
+step
+Get the Pollen Protection buff |havebuff Interface\Icons\Spell_Nature_ProtectionformNature |only if not completedq(38639)
+|tip Click Mysterious Fruit around the area until you receive the buff.
+click The Perfect Blossom##241522 |goto Tanaan Jungle 40.80,75.50
+|tip It's hidden under the giant tree.
+collect 1 The Perfect Blossom##127766 |use The Perfect Blossom##127766 |n
+Learn The _Perfect Blossom_ toy |toy The Perfect Blossom##127766
+step
+kill Urgolax##50359
+collect 1 Chalice of Secrets##86575 |use Chalice of Secrets##86575 |n
+Learn the _Chalice of Secrets_ toy |toy Chalice of Secrets##86575 |goto Vale of Eternal Blossoms/0 39.8,25.0
+confirm
+step
+kill Kang the Soul Thief##50349
+collect 1 Kang's Bindstone##86571 |use Kang's Bindstone##86571 |n
+Learn the _Kang's Bindstone_ toy |toy Kang's Bindstone##86571 |goto Vale of Eternal Blossoms/0 15.0,35.6
+confirm
+step
+kill Yorik Sharpeye##50336
+collect 1 Mr. Smite's Brass Compass##86568 |use Mr. Smite's Brass Compass##86568 |n
+Learn the _Mr. Smite's Brass Compass_ toy |toy Mr. Smite's Brass Compass##86568 |goto Vale of Eternal Blossoms/0 87.8,44.6
+confirm
+step
+kill Moldo One-Eye##50806
+collect 1 Panflute of Pandaria##86586 |use Panflute of Pandaria##86586 |n
+Learn the _Panflute of Pandaria_ toy |toy Panflute of Pandaria##86586 |goto Vale of Eternal Blossoms/0 39.8,53.2
+confirm
+step
+kill Zai the Outcast##50769
+collect 1 Farwater Conch##86581 |use Farwater Conch##86581 |n
+Learn the _Farwater Conch_ toy |toy Farwater Conch##86581 |goto Kun-Lai Summit/0 73.8,77.4
+confirm
+step
+kill Ahone the Wanderer##50817 |tip She is located in the gazebo.
+collect 1 Pandaren Firework Launcher##86588 |use Pandaren Firework Launcher##86588 |n |tip This toy is roughly a 10% drop.
+Learn the _Pandaren Firework Launcher_ toy |toy Pandaren Firework Launcher##86588 |goto Kun-Lai Summit/0 40.8,42.6
+confirm
+step
+kill Ai-Li Skymirror##50821
+collect 1 Ai-Li's Skymirror##86589 |use Ai-Li's Skymirror##86589 |n
+Learn the _Ai-Li's Skymirror_ toy |toy Ai-Li's Skymirror##86589 |goto Dread Wastes/0 34.8,23.2
+confirm
+step
+_Enter_ the burrow |goto Dread Wastes/0 54.9,65.8 |walk
+kill Ik-Ik the Nimble##50836
+collect 1 Hozen Beach Ball##86593 |use Hozen Beach Ball##86593 |n
+Learn the _Hozen Beach Ball_ toy |toy Hozen Beach Ball##86593 |goto Dread Wastes/0 55.4,63.4
+confirm
+step
+kill Champion of the Black Flame##73171
+collect 1 Blackflame Daggers##104302 |use Blackflame Daggers##104302 |n
+Learn the _Blackflame Daggers_ toy |toy Blackflame Daggers##104302 |goto Timeless Isle/0 69.4,43.8
+confirm
+step
+kill Eternal Kilnmaster##72896
+collect 1 Eternal Kiln##104309 |use Eternal Kiln##104309 |n
+Learn the _Eternal Kiln_ toy |toy Eternal Kiln##104309 |goto Timeless Isle/0 35.6,36.2
+You can also find the Kilnmasters at one of these other locations:
+Here [41.6,28.8]
+Here [47.4,36.0]
+Here [56.6,38.6]
+Here [54.0,24.0]
+Here [68.8,34.4]
+Here [56.0,59.6]
+confirm
+step
+kill Golganarr##72970
+collect 1 Odd Polished Stone##104262 |use Odd Polished Stone##104262 |n
+Learn the _Odd Polished Stone_ toy |toy Odd Polished Stone##104262 |goto Timeless Isle/0 61.6,63.6
+confirm
+step
+click Cursed Gravestone## |goto Timeless Isle/0 26.4,28.0
+|tip It's on a swirling purple obelisk. You will need the Mist-Filled Spirit Lantern which drops from Evermaw, who swims around the island.
+kill Dread Ship Vazuvius##73281
+collect 1 Rime of the Time-Lost Mariner##104294 |use Rime of the Time-Lost Mariner##104294 |n
+Learn the _Rime of the Time-Lost Mariner_ toy |toy Rime of the Time-Lost Mariner##104294 |goto Timeless Isle/0 25.8,23.2
+confirm
+step
+kill Jakur of Ordon##73169
+collect 1 Warning Sign##104331 |use Warning Sign##104331 |n
+Learn the _Warning Sign_ toy |toy Warning Sign##104331 |goto Timeless Isle/0 53.6,83.0
+confirm
+step
+map Throne of Thunder/4
+path follow smart; loop off; ants curved; dist 15
+path	22.0,35.3	15.6,55.5	23.5,64.4
+path	31.6,65.8	40.4,74.6	42.8,76.6
+path	43.4,84.5	54.3,90.0	65.9,86.1
+path	72.0,81.5	74.9,67.3	62.7,57.5
+path	53.8,52.0
+Follow the path, killing and looting any Gastropods you see
+kill Gastropod##68220 |tip Don't get close to these.
+collect 1 Gastropod Shell##98136 |use Gastropod Shell##98136 |n
+Learn the _Gastropod Shell_ toy |toy Gastropod Shell##98136
+|tip You will need a group to farm this toy.
+confirm
+step
+kill Moonfang##71992 |tip Look for the bright white pillar of light.
+collect 1 Moonfang's Paw##105898 |use Moonfang's Paw##105898 |n
+Learn the _Moonfang's Paw_ toy |toy Moonfang's Paw##105898 |goto Darkmoon Island/0 39.8,44.4
+collect 1 Moonfang Shroud##101571 |use Moonfang Shroud##101571 |n
+Learn the _Moonfang Shroud_ toy |toy Moonfang Shroud##101571 |goto Darkmoon Island/0 39.8,44.4
+confirm
+step
+Earn _Revered_ status with the Sha'tari Defense faction |condition rep("Sha'tari Defense")>=Revered
+talk Maaria##85427
+|tip She inside located in your garrison trading post.
+buy 1 Sha'tari Defender's Medallion##119421 |use Sha'tari Defender's Medallion##119421 |n
+|tip This toy costs 250 gold, modified by reputation status.
+Learn the _Sha'tari Defender's Medallion_ toy |toy Sha'tari Defender's Medallion##119421
+confirm
+step
+Earn _Honored_ status with the Sha'tari Defense faction |condition rep("Sha'tari Defense")>=Honored
+talk Maaria##85427
+|tip She inside located in your garrison trading post.
+buy 1 Soul Evacuation Crystal##119182 |use Soul Evacuation Crystal##119182 |n
+|tip This toy costs 250 gold, modified by reputation status.
+Learn the _Soul Evacuation Crystal_ toy |toy Soul Evacuation Crystal##119182
+confirm
+step
+Earn _Revered_ status with the Hand of the Prophet faction |condition rep("Hand of the Prophet")>=Revered
+talk Vindicator Krethos ##90974
+|tip He is inside the bunker.
+buy 1 Karabor Councilor's Attire##128462 |use Karabor Councilor's Attire##128462 |n
+|tip This toy costs 300 gold, modified by reputation status.
+Learn the _Karabor Councilor's Attire_ toy |toy Karabor Councilor's Attire##128462 |goto Tanaan Jungle/0 58.4,60.5
+confirm
+step
+Earn _Revered_ status with the Order of the Awakened faction |condition rep("Order of the Awakened")>=Revered
+talk Dawn-Seeker Krisek##95424
+buy 1 Rukhmar's Sacred Memory##122283 |use Rukhmar's Sacred Memory##122283 |n
+|tip This toy costs 50,000 Apexis Crystals.
+Learn the _Rukhmar's Sacred Memory_ toy |toy Rukhmar's Sacred Memory##122283 |goto Tanaan Jungle/0 58.0,59.4
+confirm
+step
+Earn _Revered_ status with the Emperor Shaohao faction |condition rep("Emperor Shaohao")>=Revered
+talk Mistweaver Ku##73306
+buy 1 Celestial Defender's Medallion##103685 |use Celestial Defender's Medallion##103685 |n
+|tip This toy costs 1,000 Timeless Coins.
+Learn the _Celestial Defender's Medallion_ toy |toy Celestial Defender's Medallion##103685 |goto Timeless Isle/0 42.8,54.8
+confirm
+step
+Earn _Revered_ status with the Order of the Cloud Serpent faction |condition rep("Order of the Cloud Serpent")>=Revered
+talk San Redscale##58414
+buy 1 Cloud Ring##89222 |use Cloud Ring##89222 |n
+|tip This toy costs 1,000 gold.
+Learn the _Cloud Ring_ toy |toy Cloud Ring##89222 |goto The Jade Forest/0 56.6,44.4
+confirm
+step
+Earn _Exalted_ status with the The Tillers faction |condition rep("The Tillers")>=Exalted
+talk Gina Mudclaw##58706
+buy 1 Gin-Ji Knife Set##90175 |use Gin-Ji Knife Set##90175 |n
+|tip This toy costs 250 gold, modified by reputation status.
+Learn the _Gin-Ji Knife Set_ toy |toy Gin-Ji Knife Set##90175 |goto Valley of the Four Winds/0 53.2,51.6
+confirm
+step
+Earn _Exalted_ status with the Kirin Tor Offensive faction |condition rep("Kirin Tor Offensive")==Exalted
+talk Lady Jaina Proudmoore##67992
+accept Securing A Future##32599 |goto Isle of Thunder/0 63.2,72.2
+kill Lei Shen##68397
+Charge the staff |q Securing A Future##32599/1 |use Staff of Antonidas##94155 |future
+turnin Securing A Future##32599 |goto Isle of Thunder/0 63.2,72.2 |only if itemcount(94153) > 0
+collect 1 Glorious Standard of the Kirin Tor Offensive##95589 |use Glorious Standard of the Kirin Tor Offensive##95589 |n
+|tip This toy is the reward for completing "Securing A Future."
+Learn the _Glorious Standard of the Kirin Tor Offensive_ toy |toy Glorious Standard of the Kirin Tor Offensive##95589
+confirm
+step
+Earn _Best Friends_ status with the Nat Pagle faction |condition rep("Nat Pagle")==BestFriend
+talk Nat Pagle##63721
+buy 1 Nat's Fishing Chair##86596 |use Nat's Fishing Chair##86596 |n
+Learn the _Nat's Fishing Chair_ toy |toy Nat's Fishing Chair##86596 |goto Krasarang Wilds/0 68.4,43.4
+confirm
+step
+Earn _Revered_ status with the The Tillers faction |condition rep("The Tillers")>=Revered
+talk Gina Mudclaw##58706
+buy 1 Pandaren Scarecrow##89869 |use Pandaren Scarecrow##89869 |n
+|tip This toy costs 200 gold, modified by reputation status.
+Learn the _Pandaren Scarecrow_ toy |toy Pandaren Scarecrow##89869 |goto Valley of the Four Winds/0 53.2,51.6
+confirm
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Hearthstone Tournament" if it is available.
+Complete the "Hearthstone Tournament" garrison mission |collect 1 Autographed Hearthstone Card##118427 |or
+Learn the _Autographed Hearthstone Card_ toy |toy Autographed Hearthstone Card##118427 |or
+confirm
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Burning Blademasters" if it is available.
+Complete the "Burning Blademasters" garrison mission |collect 1 Burning Blade##128310 |or
+Learn the _Burning Blade_ toy |toy Burning Blade##128310 |or
+|tip Note: This mission requires you to have an item level of at least 675 and several followers with a 675 item level before it will appear.
+confirm
+step
+Fly to Southport |goto Spires of Arak/0 39.9,60.8
+You currently have the Brewery built as your Spires of Arak outpost |tip You must have the Smuggler's Den to purchase this toy |only if garrisonability("Inn")
+talk Lieutenant Willem##81929 |only if garrisonability("Inn")
+Tell him: "_I want to build a new structure._" |goto Spires of Arak/0 39.9,60.9 |tip This will cost you 5,000 gold. |only if garrisonability("Inn")
+Click the Drafting Table and select the Smuggler's Den |condition garrisonability("TradingPost") |goto Spires of Arak/0 39.7,60.9 |only if garrisonability("Inn")
+Use your garrison ability |cast Smuggling Run!##170097 |only if garrisonability("TradingPost")
+talk Honest Jim##82459 |only if garrisonability("TradingPost")
+buy 1 Bloodmane Charm##113096 |use Bloodmane Charm##113096 |tip This toy costs 500 gold. |only if garrisonability("TradingPost")
+Learn the _Bloodmane Charm_ toy |toy Bloodmane Charm##113096 |use |only if garrisonability("TradingPost")
+confirm
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "Cleaving Time" offered by Gamon |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Gamon##88007 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept Cleaving Time##37160 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Iron Limbcleaver |q Cleaving Time##37160/1 |goto Grimrail Depot/4 53.8,51.9 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Skylord Tovra##80005 |q Cleaving Time##37160/2 |goto Grimrail Depot/4 8.6,51.0 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Grimrail Depot on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin Cleaving Time##37160 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Gamon's Braid_ toy |toy Gamon's Braid##118937 |use Gamon's Braid##118937
+confirm
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "The Soulcutter" offered by Lilian Voss |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Lilian Voss##87996 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept The Soulcutter##37156 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Soulsever Blade |q The Soulcutter##37156/1 |goto Auchindoun/1 53.3,63.4 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Teron'gor##77734 |q The Soulcutter##37156/2 |goto Auchindoun/1 49.6,33.5 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Auchindoun on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin The Soulcutter##37156 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Lilian's Warning Sign_ toy |toy Lilian's Warning Sign##119039 |use Lilian's Warning Sign##119039
+confirm
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "For The Children!" offered by Millhouse Manastorm |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Millhouse Manastorm##88009 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept For The Children!##37179 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Miniature Iron Star |q For The Children!##37179/1 |goto Upper Blackrock Spire 2/3 34.5,54.5 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Warlord Zaela##77120 |q For The Children!##37179/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Upper Blackrock Spire on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin For The Children!##37179 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Manastorm's Duplicator_ toy |toy Manastorm's Duplicator##118938 |use Manastorm's Duplicator##118938
+confirm
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "Feeling A Bit Morose" offered by Moroes |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Moroes##87994 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept Feeling A Bit Morose##37157 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Horribly Acidic Solution |q Feeling A Bit Morose##37157/1 |goto Iron Docks/1 50.4,52.4 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Skulloc##83612 |q Feeling A Bit Morose##37157/2 |goto Iron Docks/1 68.4,43.6 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Upper Blackrock Spire on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin Feeling A Bit Morose##37157 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Moroes' Famous Polish_ toy |toy Moroes' Famous Polish##119092 |use Moroes' Famous Polish##119092
+confirm
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "Shadowy Secrets" offered by Highlord Darion Mograine |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Highlord Darion Mograine##88002 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept Shadowy Secrets##37163 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Dark Parchment |q Shadowy Secrets##37163/1 |goto Shadowmoon Burial Grounds/1 29.4,43.4 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Ner'zhul##76407 |q Shadowy Secrets##37163/2 |goto Shadowmoon Burial Grounds/3 48.1,47.1 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Shadowmoon Burial Grounds on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin Shadowy Secrets##37163 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Void Totem_ toy |toy Void Totem##119003 |use Void Totem##119003
+confirm
+step
+You must first upgrade your garrison to level 3 before purchasing this toy! |only if garrisonlvl(1) or garrisonlvl(2)
+talk Trader Araanda##95470
+buy 1 Personal Spotlight##127864 |use Personal Spotlight##127864 |n
+Learn the _Personal Spotlight_ toy |toy Personal Spotlight##127864 |goto Lunarfall/0 30.1,34.9
+step
+talk Benjamin Brode##88779
+buy 1 Hearthstone Board##119210 |use Hearthstone Board##119210 |n
+|tip This toy costs 1,000 gold.
+Learn the _Hearthstone Board_ toy |toy Hearthstone Board##119210 |goto Lunarfall/0 45.1,50.3
+buy 1 Winning Hand##119212 |use Winning Hand##119212 |n
+|tip This toy costs 100 gold.
+Learn the _Winning Hand_ toy |toy Winning Hand##119212 |goto Lunarfall/0 45.1,50.3
+confirm
+step
+You must first upgrade you garrison to level 3 before Tiffy will be available |only if garrisonlvl(1) or garrisonlvl(2)
+talk Tiffy Trapspring##94512
+buy 1 Indestructible Bone##127707 |use Indestructible Bone##127707 |n
+Learn the _Indestructible Bone_ toy |toy Indestructible Bone##127707 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 50 Pet Charms.
+buy 1 Spirit Wand##127695 |use Spirit Wand##127695 |n
+Learn the _Spirit Wand_ toy |toy Spirit Wand##127695 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 100 Pet Charms.
+buy 1 Magic Pet Mirror##127696 |use Magic Pet Mirror##127696 |n
+Learn the _Magic Pet Mirror_ toy |toy Magic Pet Mirror##127696 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 500 Pet Charms.
+confirm
+step
+Earn the _Azeroth's Top Twenty Tunes_ achievement |achieve 9912
+|tip This achievement requires you to collect 20 music rolls from around the world. The reward is the Portable Audiophone toy.
+Click here to load the guide for Azeroth's Top Twenty Tunes |confirm |next "Zygor's Alliance Achievements Guides\\Garrisons\\Azeroth's Top Twenty Tunes" |or
+collect 1 Portable Audiophone##122700 |use Portable Audiophone##122700 |n
+Learn the _Portable Audiophone_ toy |toy Portable Audiophone##122700 |next |or
+confirm |next
+step
+Complete the _Socrethar's Fury_ quest from _Garrison Campaign: The Sargerei_ |q Socrethar's Fury##35195 |future
+Click here to load the Garrison Campaign guide |confirm |next "Zygor's Alliance Leveling Guides\\Garrisons\\Garrison Campaign" |or
+collect 1 Sargerei Disguise##119134 |use Sargerei Disguise##119134 |n
+Learn the _Sargerei Disguise_ toy |toy Sargerei Disguise##119134 |or
+confirm
+step
+Complete the _The Trial of Champions_ quest from _Garrison Campaign: The Exarch's Call_ |q The Trial of Champions##36169 |future
+Click here to load the Garrison Campaign guide |confirm |next "Zygor's Alliance Leveling Guides\\Garrisons\\Garrison Campaign" |or
+collect 1 Touch of the Naaru##119144 |use Touch of the Naaru##119144 |n
+Learn the _Touch of the Naaru_ toy |toy Touch of the Naaru##119144 |or
+confirm
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Lens Some Hands" if it is available.
+|tip Please note, you must complete the mission "Field Photography" first.
+Complete the "Lens Some Hands" garrison mission |collect 1 S.E.L.F.I.E. Lens Upgrade Kit##122661 |use S.E.L.F.I.E. Lens Upgrade Kit##122661 |or
+Learn the _S.E.L.F.I.E. Camera MkII_ toy |toy S.E.L.F.I.E. Camera MkII##122674 |use S.E.L.F.I.E. Camera MkII##122674 |or
+confirm
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Finding Farahlon" if it is available.
+Complete the "Finding Farahlon" garrison mission |collect 1 Mysterious Shining Lockbox##118193 |use Mysterious Shining Lockbox##118193 |or
+Learn the _Archmage Vargoth's Spare Staff_ toy |toy Archmage Vargoth's Spare Staff##118191 |use Archmage Vargoth's Spare Staff##118191 |or
+confirm
+step
+talk Sally Fizzlefury##55143
+buy 1 Foxicopter Controller##88802 |use Foxicopter Controller##88802 |n
+|tip This toy costs 1,000 gold.
+Learn the _Foxicopter Controller_ toy |toy Foxicopter Controller##88802 |goto Valley of the Four Winds/0 16.0,83.0
+step
+talk Sally Fizzlefury##55143
+buy 1 Stackable Stag##91904 |use Stackable Stag##91904 |n
+|tip This toy costs 1,000 gold.
+Learn the _Stackable Stag_ toy |toy Stackable Stag##91904 |goto Valley of the Four Winds/0 16.0,83.0
+step
+talk Rork Sharpchin##29744
+buy 1 Iron Boot Flask##43499 |use Iron Boot Flask##43499 |n
+|tip This toy costs 10 Relics of Ulduar
+Learn the _Iron Boot Flask_ toy |toy Iron Boot Flask##43499 |goto The Storm Peaks/0 28.8,74.0
+step
+kill Doctor Theolen Krastinov##59369
+|tip Krastinov is a rare spawn in Heroic Scholomance.
+collect 1 Krastinov's Bag of Horrors##88566 |use Krastinov's Bag of Horrors##88566 |n
+|tip This toy is a guaranteed drop
+Learn the _Krastinov's Bag of Horrors_ toy |toy Krastinov's Bag of Horrors##88566 |goto Scholomance 37.8,36.4
+step
+#include "auctioneer"
+buy 1 Loaded Gnomish Dice##63269 |use Loaded Gnomish Dice##63269 |n
+Learn the _Loaded Gnomish Dice_ toy |toy Loaded Gnomish Dice##63269
+step
+#include "auctioneer"
+buy 1 Decahedral Dwarven Dice##36863 |use Decahedral Dwarven Dice##36863 |n
+Learn the _Decahedral Dwarven Dice_ toy |toy Decahedral Dwarven Dice##36863
+step
+#include "auctioneer"
+buy 1 Orb of Deception##1973 |use Orb of Deception##1973 |n
+Learn the _Orb of Deception_ toy |toy Orb of Deception##1973
+step
+#include "auctioneer"
+buy 1 Worn Troll Dice##36862 |use Worn Troll Dice##36862 |n
+Learn the _Worn Troll Dice_ toy |toy Worn Troll Dice##36862
+step
+#include "auctioneer"
+buy 1 Muradin's Favor##52201 |use Muradin's Favor##52201 |n
+Learn the _Muradin's Favor_ toy |toy Muradin's Favor##52201
+step
+#include "auctioneer"
+buy 1 Sylvanas' Music Box##52253 |use Sylvanas' Music Box##52253 |n
+Learn the _Sylvanas' Music Box_ toy |toy Sylvanas' Music Box##52253
+step
+kill Selin Fireheart##24723 |goto Magisters' Terrace/2 42.6,23.6
+kill Vexallus##24744 |goto 81.6,26.8
+kill Priestess Delrissa##24560 |goto Magisters' Terrace/1 39.2,56.2
+kill Kael'thas Sunstrider##24664 |goto Magisters' Terrace/1 7.4,50.1
+collect 1 Orb of the Sin'dorei##35275 |use Orb of the Sin'dorei##35275 |n
+|tip This toy has a small chance to drop from these 4 bosses on Heroic difficulty.
+Learn the _Orb of the Sin'dorei_ toy |toy Orb of the Sin'dorei##35275
+step
+kill Hearthsinger Forresten##10558
+collect 1 Piccolo of the Flaming Fire##13379 |use Piccolo of the Flaming Fire##13379 |n
+Learn the _Piccolo of the Flaming Fire_ toy |toy Piccolo of the Flaming Fire##13379 |goto Stratholme/1 59.8,26.7
+step
+kill Majordomo Staghelm##52571
+collect 1 Fandral's Seed Pouch##122304 |use Fandral's Seed Pouch##122304 |n
+|tip This toy can only drop for Druids.
+Learn the _Fandral's Seed Pouch_ toy |toy Fandral's Seed Pouch##122304 |goto Firelands/2 50.9,72.4
+step
+label "goldenBanana"
+kill Unga Fish-Getter##60299
+|tip You can find them dragging fish to the shore from the water.
+collect 1 Confusing Treasure Map##80827 |use Confusing Treasure Map##80827 |n
+accept Buried Hozen Treasure##30675 |goto Krasarang Wilds/0 50.0,85.5
+step
+click Lump of Sand##6478
+|tip you can find these all over the island.
+Find the buried Hozen treasure |q Buried Hozen Treasure##30675/1 |goto Krasarang Wilds/0 46.8,89.1
+step
+Click the quest completion box that pops up in your quest tracker
+turnin Buried Hozen Treasure##30675
+Learn the Golden Banana toy |toy The Golden Banana##80822 |use The Golden Banana##80822
+step
+talk Smokey Sootassle##59597
+accept Traffic Issues##30616 |goto 64.88,60.49
+step
+kill Ruqin Outrider##59538
+kill Ruqin Elder##59826
+kill Ruqin Infantry##59790
+Deal with the Ruqin Yaungols |q Traffic Issues##30616/1 |goto Kun-Lai Summit/0 62.8,67.4
+step
+talk Smokey Sootassle##59597
+turnin Traffic Issues##30616 |goto 64.88,60.49
+step
+talk Brother Lintpocket##59701
+accept The Burlap Trail: To Burlap Waystation##30592 |goto 58.09,61.46
+step
+map Kun-Lai Summit/0
+path follow smart; loop off; ants curved; dist 20
+path	58.5,64.8	56.9,64.7	55.9,65.7
+path	54.8,65.8	54.2,67.1	53.0,66.6
+Escort the Grummie caravan |q The Burlap Trail: To Burlap Waystation##30592/1
+|tip Follow the path, killing any attackers that threaten the caravan.
+step
+talk Brother Trailscenter##59703
+turnin The Burlap Trail: To Burlap Waystation##30592 |goto Kun-Lai Summit/0 51.7,67.8
+step
+talk Brother Trailscenter##59703
+accept The Rabbitsfoot##30602 |goto 51.66,67.83
+step
+talk Brother Rabbitsfoot##59806
+Rescue Rabbitsfoot |q The Rabbitsfoot##30602/1 |goto Kun-Lai Summit/0 49.1,70.4
+accept The Broketooth Ravage##30603 |goto 49.10,70.44
+step
+kill 1 Mo Mo##59805
+collect Rabbitsfoot's Luckydo##81137 |n
+Retrieve Rabbitsfoot's Luckydo |q The Broketooth Ravage##30603/1 |goto Kun-Lai Summit/0 48.0,73.3
+step
+talk Brother Rabbitsfoot##59452
+turnin The Rabbitsfoot##30602 |goto 51.97,67.22
+turnin The Broketooth Ravage##30603 |goto 51.97,67.22
+accept A Monkey Idol##30599 |goto 51.97,67.22
+step
+kill Hateful Ko Ko##59430
+collect Corpse of Ko Ko##80429 |n
+click Ko Ko's Altar##6478
+|tip It's a little blade on the stone.
+Destroy Ko Ko's Altar |q A Monkey Idol##30599/2 |goto Kun-Lai Summit/0 52.3,71.4
+step
+_Enter_ the cave |goto Kun-Lai Summit/0 52.8,71.4
+kill Dak Dak##59424
+|tip Dak Dak patrols up and down the ledge.
+collect Corpse of Dak Dak##80428 |goto Kun-Lai Summit/11 39.1,40.1 |n
+click Dak Dak's Altar##6478
+Destroy Dak Dak's Altar |q A Monkey Idol##30599/1 |goto Kun-Lai Summit/12 49.8,39.5
+step
+kill Tak Tak##59958
+collect Corpse of Tak Tak##80430 |n
+click Tak Tak's Altar##6478
+|tip It's a little blade on the stone.
+Destroy Tak Tak's Altar |q A Monkey Idol##30599/3 |goto Kun-Lai Summit/0 56.8,71.0
+step
+talk Brother Rabbitsfoot##59452
+turnin A Monkey Idol##30599 |goto 51.97,67.22
+Learn the Hozen Idol toy |toy Hozen Idol##88385 |use Hozen Idol##88385
+step
+label "shell"
+kill Gokk'lok##62767
+|tip Gokk'lok is a level 91 elite clam.
+accept Promises of Gold##31083 |goto Dread Wastes/0 27.4,16.2
+step
+talk Chief Rikkitun##62771
+turnin Promises of Gold##31083 |goto Dread Wastes/0 38.6,17.3
+Learn the Gokk'lok's Shell toy |toy Gokk'lok's Shell##88417 |use Gokk'lok's Shell##88417 |goto Dread Wastes/0 38.6,17.3
+step
+talk Sya Zhong##60178
+|tip She is inside the building.
+accept Holed Up##30682 |goto Kun-Lai Summit/0 42.9,88.3
+confirm
+step
+talk Ya Firebough##60189
+|tip He is inside the building.
+Tell him: "_...That's enough. Let's go._" |q Holed Up##30682/2 |goto Kun-Lai Summit/0 41.0,87.0
+step
+talk Old Lady Fung##60190
+|tip She is inside the building.
+Tell her: "_Yes... why don't you 'escort' me out of here._" |q Holed Up##30682/3 |goto Kun-Lai Summit/0 42.8,85.7
+step
+talk Jin Warmkeg##60187
+|tip He is inside the building.
+Tell him: "_Let's get out of here._" |q Holed Up##30682/1 |goto Kun-Lai Summit/0 43.9,86.2
+step
+talk Shado-Master Chong##60161
+|tip He is inside the building. You will need to click the doors to open them.
+turnin Holed Up##30682 |goto Kun-Lai Summit/0 44.5,89.9
+Learn the Jin Warmkeg's Brew toy |toy Jin Warmkeg's Brew##88579 |use Jin Warmkeg's Brew##88579 |goto Kun-Lai Summit/0 44.5,89.9
+step
+talk Ken-Ken##56115
+accept What's Eating Zhu's Watch?##30079 |goto 76.21,7.06
+step
+talk Despondent Warden of Zhu##57457
+Speak with Despondent Warden of Zhu |q What's Eating Zhu's Watch?##30079/1 |goto Krasarang Wilds/0 76.5,8.2
+step
+talk Sunni##57830
+Speak with Sunni |q What's Eating Zhu's Watch?##30079/2 |goto Krasarang Wilds/0 77.5,8.5
+step
+talk Yun##57825
+Speak with Yun |q What's Eating Zhu's Watch?##30079/3 |goto Krasarang Wilds/0 75.5,9.4
+step
+talk Mei Barrelbottom##57744
+Speak with Mei |q What's Eating Zhu's Watch?##30079/4 |goto Krasarang Wilds/0 75.8,7.6
+accept Finding Yi-Mo##30080 |goto Krasarang Wilds/0 75.84,7.60
+step
+talk Ken-Ken##56115
+turnin What's Eating Zhu's Watch?##30079 |goto Krasarang Wilds/0 76.21,7.06
+step
+talk Yi-Mo Longbrow##58376
+Find Yi-Mo |q Finding Yi-Mo##30080/1 |goto Krasarang Wilds/0 81.3,6.9
+turnin Finding Yi-Mo##30080 |goto Krasarang Wilds/0 81.3,6.9
+accept Cheer Up, Yi-Mo##30082 |goto Krasarang Wilds/0 81.3,6.9
+step
+talk Yi-Mo Longbrow##58376
+Tell him: "_Please, Yi-Mo: your aunt's worried wick about you._"
+Then, tell him: "_I don't have time for this. Move your ass or I'll move it for you._"
+click Yi-Mo Longbrow##57310 |tip Keep clicking him to roll him towards Zhu's Watch
+kill Thunderbird##58111 |tip These will randomly attack you while you return Yi-Mo.
+Bring Yi-Mo to Zhu's Watch |q Cheer Up, Yi-Mo##30082/1 |goto Krasarang Wilds/0 76.7,7.7
+step
+talk Mei Barrelbottom##57744
+turnin Cheer Up, Yi-Mo##30082 |goto Krasarang Wilds/0 75.84,7.60
+step
+talk Ken-Ken##56115
+accept Materia Medica##30081 |goto 76.22,7.06
+step
+kill 1 Weeping Horror##57649
+Gather Salty Cores |q Materia Medica##30081/1 |goto Krasarang Wilds/0 75.4,10.8
+click Slick Mudfish##6478
+|tip These are tiny green or purple fish on the ground around sha-touched areas. They are difficult to see, so look closely
+Gather Slick Mudfish |q Materia Medica##30081/2 |goto Krasarang Wilds/0 75.4,10.8
+click Rain-Slick Honeycomb##3365
+|tip These are found attached to stumps and trees in the area.
+Gather Chunks of Honeycomb |q Materia Medica##30081/3 |goto Krasarang Wilds/0 73.6,9.7
+step
+talk Ken-Ken##56115
+turnin Materia Medica##30081 |goto Krasarang Wilds/0 76.22,7.06
+accept Why So Serious?##30088 |goto Krasarang Wilds/0 76.22,7.06
+step
+kill Krasari Stalker##58221
+collect Huge Panther Fang##78941 |n
+Gather Huge Panther Fangs |q Why So Serious?##30088/1 |goto Krasarang Wilds/0 71.6,16.4
+step
+_Enter_ the cave |goto Valley of the Four Winds/0 77.1,57.3 |walk
+_Go up_ the ramp |goto Valley of the Four Winds/0 75.9,56.3 |only if walking
+click Jar of Pigment##3365
+Gather a Jar of Pigment |q Why So Serious?##30088/2 |goto Valley of the Four Winds/0 73.9,56.4
+step
+talk Ken-Ken##56115
+turnin Why So Serious?##30088 |goto Krasarang Wilds/0 76.22,7.06
+accept Apply Directly to the Forehead##30089 |goto Krasarang Wilds/0 76.22,7.06
+step
+clicknpc Despondent Warden of Zhu##57457
+use Ken-Ken's Mask##79021
+kill Manifestation of Despair##58312
+Cure 8 Despondent Wardens of Zhu |q Apply Directly to the Forehead##30089/1 |goto Krasarang Wilds/0 76.4,8.6
+step
+talk Ken-Ken##56115
+turnin Apply Directly to the Forehead##30089 |goto Krasarang Wilds/0 76.22,7.06
+accept Zhu's Despair##30090 |goto Krasarang Wilds/0 76.22,7.06
+step
+kill Essence of Despair##58409
+Destroy 8 Essences of Despair |q Zhu's Despair##30090/1 |goto Krasarang Wilds/0 76.5,8.4
+clicknpc Yi-Mo Longbrow##58410
+use Ken-Ken's Mask##79057
+kill Quintessence of Despair##58360
+Cure Yi-Mo |q Zhu's Despair##30090/2 |goto Krasarang Wilds/0 76.5,8.8
+step
+talk Ken-Ken##56115
+turnin Zhu's Despair##30090 |goto Krasarang Wilds/0 76.22,7.06
+Learn the Ken-Ken's Mask toy |toy Ken-Ken's Mask##88580 |use Ken-Ken's Mask##88580
+step
+talk Mayor Bramblestaff##59073 |goto Kun-Lai Summit/0 72.2,91.8
+accept Call Out Their Leader##30457 |goto Kun-Lai Summit/0 72.2,91.8
+step
+kill Bataari Yaungol##59147
+kill Bataari Flamecaller##59148
+Slay 10 Bataari tribe members |q Call Out Their Leader##30457/1 |goto Kun-Lai Summit/0 69.8,90.5
+step
+kill Bataari Fire-Warrior##59083
+Defeat the Bataari Fire-Warrior |q Call Out Their Leader##30457/2 |goto Kun-Lai Summit/0 68.2,88.6
+step
+talk Mayor Bramblestaff##59073 |goto Kun-Lai Summit/0 72.2,91.8
+turnin Call Out Their Leader##30457 |goto Kun-Lai Summit/0 72.2,91.8
+step
+talk Shado-Master Chong##60161
+accept Turnabout##30670 |goto Kun-Lai Summit/0 44.48,89.92
+step
+kill 1 Blind Rage##61224
+collect Blind Rage Essence##81713 |n
+Destroy 5 Blind Rage Essences |q Turnabout##30670/1 |goto Kun-Lai Summit/0 43.0,87.1
+step
+talk Shado-Master Chong##60161
+turnin Turnabout##30670 |goto Kun-Lai Summit/0 44.48,89.92
+accept Unmasking the Yaungol##30690 |goto Kun-Lai Summit/0 44.48,89.92
+step
+use Blinding Rage Trap##81741
+Pull Kobai into the trap |q Unmasking the Yaungol##30690/1 |goto Kun-Lai Summit/0 45.2,86.2
+|tip Click your special action button to spawn the Malevolent Fury.
+kill Malevolent Fury##61333
+Slay the Malevolent Fury |q Unmasking the Yaungol##30690/2 |goto Kun-Lai Summit/0 45.2,86.2
+step
+talk Shado-Master Chong##60161
+turnin Unmasking the Yaungol##30690 |goto Kun-Lai Summit/0 44.48,89.92
+accept To Winter's Blossom##30699 |goto Kun-Lai Summit/0 44.48,89.92
+step
+talk Lin Silentstrike##61816
+turnin To Winter's Blossom##30699 |goto Kun-Lai Summit/0 35.0,59.4
+accept Honor, Even in Death##30723 |goto Kun-Lai Summit/0 35.0,59.4
+step
+talk Ban Bearheart##61819
+accept A Line Unbroken##30715 |goto Kun-Lai Summit/0 35.12,59.66
+step
+click Shado-Master Zhiyao##61808
+Release Shado-Master Zhiyao from his oath |q A Line Unbroken##30715/1 |goto Kun-Lai Summit/0 30.4,60.0
+step
+click Liu of the Thousand Blows##61806
+Release Liu of the Thousand Blows from his oath |q A Line Unbroken##30715/2 |goto Kun-Lai Summit/0 30.2,62.5
+step
+click Shiya Boldblade##61810
+Release Shiya Boldblade from his oath |q A Line Unbroken##30715/3 |goto Kun-Lai Summit/0 30.0,64.4
+step
+kill 1 Kun-Lai Corpsepicker##61843
+Slay 12 Kun-Lai Corpsepickers |q Honor, Even in Death##30723/1 |goto Kun-Lai Summit/0 31.1,61.8
+step
+talk Ban Bearheart##61819
+turnin A Line Unbroken##30715 |goto Kun-Lai Summit/0 35.12,59.66
+step
+talk Lin Silentstrike##61816
+turnin Honor, Even in Death##30723 |goto Kun-Lai Summit/0 35.0,59.4
+step
+talk Lin Silentstrike##61816
+accept To the Wall!##30724 |goto Kun-Lai Summit/0 34.95,59.30
+step
+talk Kite Master Len##61512
+Tell him: "_I need a kite to get up to the wall!_" |q To the Wall!##30724/1 |goto Kun-Lai Summit/0 34.5,59.1
+step
+talk Suna Silentstrike##61454
+turnin To the Wall!##30724 |goto Kun-Lai Summit/0 29.30,62.29
+accept Off the Wall!##30750 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Lao-Chin the Iron Belly##61820
+accept A Terrible Sacrifice##30751 |goto Kun-Lai Summit/0 29.24,62.30
+step
+click Yaungol Oil Barrel##3365
+collect Yaungol Oil Barrel##82799 |n
+Gather 6 Yaungol Oil Barrels |q A Terrible Sacrifice##30751/1  |goto Kun-Lai Summit/0 27.5,60.6
+step
+kill 1 Osul Veteran Archer##61886
+kill 1 Osul Fire-Warrior##63576
+Kill 12 Yaungol on the wall |q Off the Wall!##30750/1 |goto Kun-Lai Summit/0 27.5,60.6
+step
+talk Lao-Chin the Iron Belly##61820
+turnin A Terrible Sacrifice##30751 |goto Kun-Lai Summit/0 29.24,62.30
+step
+talk Suna Silentstrike##61454
+turnin Off the Wall!##30750 |goto Kun-Lai Summit/0 29.30,62.29
+accept Lao-Chin's Gambit##30994 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Suna Silentstrike##61454
+Tell her: "_Alright, I'm ready to get back to the front._" |q Lao-Chin's Gambit##30994/1 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Lao-Chin the Iron Belly##61820
+turnin Lao-Chin's Gambit##30994 |goto Kun-Lai Summit/0 31.8,60.1
+accept Do a Barrel Roll!##30991 |goto Kun-Lai Summit/0 31.8,60.1
+step
+click Keg Bomb##60553 |goto Kun-Lai Summit/0 32.1,60.6
+|tip Click a keg bomb to jump on. Then, roll it down the hill into your enemies.
+|tip Press "1" to ignite the barrel. It will explode within a few seconds.
+Slay 50 Osul Invaders |q Do a Barrel Roll!##30991/1
+Slay 4 Osul Treelaunchers |q Do a Barrel Roll!##30991/2
+step
+talk Lao-Chin the Iron Belly##61820
+turnin Do a Barrel Roll!##30991 |goto Kun-Lai Summit/0 31.8,60.1
+Learn the Lao Chin's Last Mug toy |toy Lao Chin's Last Mug##88531 |use Lao Chin's Last Mug##88531
+step
+talk Toshley##21691
+accept Picking Up Some Power Converters##10584 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+click Power Converter##3365
+|tip An Electromental will spawn. Power converters are on the ground around the area.
+click Electromental##21729
+use Protovoltaic Magneto Collector##30656
+|tip the Collector on Electromentals, then kill them.
+kill Electromental##21729
+Gather 5 Electromentals |q Picking Up Some Power Converters##10584/1 |goto Blade's Edge Mountains/0 57.5,57.8
+step
+talk Toshley##21691
+turnin Picking Up Some Power Converters##10584 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Ride the Lightning##10657 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+click Scalewing Serpent##20749
+use Repolarized Magneto Sphere##30818
+|tip While the buff is active, let the Serpents use their Lightning Strike attack on you.
+Absorb 25 Lightning Strikes |q Ride the Lightning##10657/1 |goto Blade's Edge Mountains/0 68.3,68.6
+kill 1 Scalewing Serpent##20749
+collect Scalewing Lightning Gland##30849 |q Ride the Lightning##10657/2 |goto Blade's Edge Mountains/0 68.3,68.6
+step
+talk Toshley##21691
+turnin Ride the Lightning##10657 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Trapping the Light Fantastic##10674 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+use Multi-Spectrum Light Trap##30852
+|tip The light orbs are little purple-white globes floating around the area.
+Trap 15 Razzani light orbs |q Trapping the Light Fantastic##10674/1 |goto Blade's Edge Mountains/0 67.1,44.6
+step
+talk Toshley##21691
+turnin Trapping the Light Fantastic##10674 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Show Them Gnome Mercy!##10675 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+kill Nexus-Prince Razaan##21057
+|tip You will need to kill the mobs in the area to force him to show himself.
+click Collection of Souls##3365
+collect Collection of Souls##30890 |q Show Them Gnome Mercy!##10675/1 |goto Blade's Edge Mountains/0 66.4,44.0
+step
+talk Toshley##21691
+turnin Show Them Gnome Mercy!##10675 |goto Blade's Edge Mountains/0 60.6,69.0
+Learn the Power Converter toy |toy Power Converter##30690 |use Power Converter##30690
+step
+talk Chen Stormstout##56133
+accept Chen and Li Li##29907 |goto Valley of the Four Winds/0 85.94,22.10
+step
+Follow Chen to Pang's Stead |q Chen and Li Li##29907/1 |goto Valley of the Four Winds/0 83.8,21.1
+step
+talk Pang Thunderfoot##56204
+turnin Chen and Li Li##29907 |goto Valley of the Four Winds/0 83.7,21.0
+accept A Seemingly Endless Nuisance##29908 |goto Valley of the Four Winds/0 83.7,21.0
+step
+talk Muno the Farmhand##56440
+accept A Poor Grasp of the Basics##29877 |goto Valley of the Four Winds/0 82.71,21.24
+step
+kill Snagtooth Virmen##56184
+kill Snagtooth Troublemaker##55873
+kill Snagtooth Tool-Grabber##56185
+Slay 8 large virmen |q A Seemingly Endless Nuisance##29908/1 |goto Valley of the Four Winds/0 81.3,21.9
+kill Snagtooth Pesterling##65504
+Slay 18 virmen Pesterer |q A Seemingly Endless Nuisance##29908/2 |goto Valley of the Four Winds/0 81.3,21.9
+Find 7 pieces of buried farm equpment |q A Poor Grasp of the Basics##29877/1 |goto Valley of the Four Winds/0 81.3,21.9
+|tip These are tools scattered about the area.
+step
+talk Muno the Farmhand##56440
+turnin A Poor Grasp of the Basics##29877 |goto Valley of the Four Winds/0 82.71,21.24
+step
+talk Pang Thunderfoot##56204
+turnin A Seemingly Endless Nuisance##29908 |goto Valley of the Four Winds/0 83.7,21.0
+accept Low Turnip Turnout##29909 |goto Valley of the Four Winds/0 83.7,21.0
+step
+talk Ang Thunderfoot##56207
+turnin Low Turnip Turnout##29909 |goto Valley of the Four Winds/0 81.6,25.2
+step
+talk Ana Thunderfoot##56465
+accept Rampaging Rodents##29910 |goto Valley of the Four Winds/0 81.88,25.89
+step
+click Marmot Hole##105450
+|tip You must stand still until the cast completes to fill the hole.
+Fill 6 marmot holes |q Rampaging Rodents##29910/2 |goto Valley of the Four Winds/0 82.3,25.9
+click Plump Marmot##56203
+Punt 6 marmots |q Rampaging Rodents##29910/1 |goto Valley of the Four Winds/0 82.3,25.9
+step
+talk Ana Thunderfoot##56465
+turnin Rampaging Rodents##29910 |goto Valley of the Four Winds/0 81.88,25.89
+Learn the Puntable Marmot toy |toy Puntable Marmot##88370 |use Puntable Marmot##88370
+step
+talk Tai Ho##61482
+accept The Motives of the Mantid##30921 |goto Townlong Steppes/0 49.1,71.2
+accept Set the Mantid Back##30923 |goto Townlong Steppes/0 49.1,71.2
+step
+kill 1 Kri'thik Screamer##61377
+kill 1 Kri'thik Boneslicer##61376
+Find the first clue |q The Motives of the Mantid##30921/1 |goto Townlong Steppes/0 56.2,53.3
+Find the second clue |q The Motives of the Mantid##30921/2 |goto Townlong Steppes/0 56.2,53.3
+Find the third clue |q The Motives of the Mantid##30921/3 |goto Townlong Steppes/0 56.2,53.3
+Find the fourth clue |q The Motives of the Mantid##30921/4 |goto Townlong Steppes/0 56.2,53.3
+use Gunpowder Casks##81891
+Blow up the Kri'thik Weapons |q Set the Mantid Back##30923/1 |goto Townlong Steppes/0 55.4,53.1
+Blow up the Kri'thik Supplies |q Set the Mantid Back##30923/2 |goto Townlong Steppes/0 56.6,54.0
+step
+talk Tai Ho##61482
+turnin The Motives of the Mantid##30921 |goto Townlong Steppes/0 49.1,71.2
+turnin Set the Mantid Back##30923 |goto Townlong Steppes/0 49.1,71.2
+accept The Wisdom of Niuzao##30924 |goto Townlong Steppes/0 49.1,71.2
+step
+talk Ogo the Younger##61581
+turnin The Wisdom of Niuzao##30924 |goto Townlong Steppes/0 39.34,62.20
+step
+talk Bluesaddle##61161
+accept Bad Yak##30929 |goto Townlong Steppes/0 39.21,62.01
+step
+click Ruthers##61163
+|tip Wait for each channel to finish.
+Pet Ruthers |q Bad Yak##30929/1 |goto Townlong Steppes/0 39.3,61.9
+Offer Ruthers an apple |q Bad Yak##30929/2 |goto Townlong Steppes/0 39.3,61.9
+Nudge Ruthers |q Bad Yak##30929/3 |goto Townlong Steppes/0 39.3,61.9
+Attempt to mount Ruthers |q Bad Yak##30929/4 |goto Townlong Steppes/0 39.3,61.9
+step
+talk Bluesaddle##61161
+turnin Bad Yak##30929 |goto Townlong Steppes/0 39.21,62.01
+step
+talk Bluesaddle##61161
+accept Pick a Yak##30930 |goto Townlong Steppes/0 35.4,56.6
+step
+click Wild Townlong Yak##61635
+|tip You will need to lasso several yaks, after which each will attack you.
+Use the lasso on Townlong Yaks |use Yak Lasso##82468
+Find a suitable yak |q Pick a Yak##30930/1 |goto Townlong Steppes/0 35.8,50.9
+step
+talk Bluesaddle##61161
+turnin Pick a Yak##30930 |goto Townlong Steppes/0 35.4,56.6
+Learn the _Ruthers' Harness_ toy |toy Ruthers' Harness##82467 |use Ruthers' Harness##82467
+step
+talk Tired Shushen##58278
+accept Raid Leader Slovan##30169 |goto Krasarang Wilds/0 29.6,39.0
+step
+kill Slovan##58285 |tip He is behind the waterfall.
+Slay Slovan |q Raid Leader Slovan##30169/1 |goto Krasarang Wilds/0 31.8,29.0
+step
+talk Tired Shushen##58278
+turnin Raid Leader Slovan##30169 |goto Krasarang Wilds/0 29.6,39.0
+Learn the _Shushen's Spittoon_ toy |toy Shushen's Spittoon##88387 |use Shushen's Spittoon##88387
+step
+talk Smokey Sootassle##59597
+accept Traffic Issues##30616 |goto 64.88,60.49
+step
+talk Slimy Inkstain##59402
+accept Oil Stop##30614 |goto Kun-Lai Summit/0 65.49,60.82
+step
+talk Lucky Eightcoins##59371
+accept A Grummle's Luck##30808 |goto Kun-Lai Summit/0 64.71,61.76
+stickystart "luck"
+step
+kill Ruqin Outrider##59538
+kill Ruqin Elder##59826
+kill Ruqin Infantry##59790
+Deal with the Ruqin Yaungols |q Traffic Issues##30616/1 |goto Kun-Lai Summit/0 62.8,67.4
+step
+use Empty Oil Vial##80312
+Fill the oil vial |q Oil Stop##30614/1 |goto Kun-Lai Summit/0 63.3,68.5
+step "luck"
+click Stolen Bag of Luckydos##6478 |tip These are small bags spread around the camp.
+Collect 8 stolen Luckydos |q A Grummle's Luck##30808/1 |goto Kun-Lai Summit/0 62.8,67.5
+step
+talk Slimy Inkstain##59402
+turnin Oil Stop##30614 |goto Kun-Lai Summit/0 65.49,60.82
+step
+talk Lucky Eightcoins##59371
+turnin A Grummle's Luck##30808 |goto Kun-Lai Summit/0 64.71,61.76
+step
+talk Smokey Sootassle##59597
+turnin Traffic Issues##30616 |goto Kun-Lai Summit/0 64.88,60.49
+accept Roadside Assistance##30617 |goto Kun-Lai Summit/0 64.88,60.48
+step
+click Lucky Burlap Incense##???? |tip This are found along the path.
+Light the incense |q Roadside Assistance##30617/1 |goto Kun-Lai Summit/0 61.2,65.5
+step
+talk Brother Lintpocket##59701
+turnin Roadside Assistance##30617 |goto Kun-Lai Summit/0 58.1,61.5
+Learn the _Silversage Incense_ toy |toy Silversage Incense##88381 |use Silversage Incense##88381
+step
+talk Taran Zhu##60688
+accept A Foot in the Door##30814 |goto Townlong Steppes/0 71.2,56.7
+step
+kill 8 Osul Charger##60713+ |q A Foot in the Door##30814/1 |goto Townlong Steppes/0 71.6,52.9
+step
+talk Taran Zhu##60688
+turnin A Foot in the Door##30814 |goto Townlong Steppes/0 71.2,56.7
+accept First Assault##30769 |goto Townlong Steppes/0 71.2,56.7
+accept Running Rampant##30770 |goto Townlong Steppes/0 71.2,56.7
+accept Perfect Pitch##30771 |goto Townlong Steppes/0 71.2,56.7
+step
+kill 6 Osul Sharphorn##60647+ |q First Assault##30769/1 |goto Townlong Steppes/0 67.3,54.4
+clicknpc Long-Haired Yak##60669+
+clicknpc Steppebeast##60739+
+Free 8 Yaks or Mushan |q Running Rampant##30770/1 |goto Townlong Steppes/0 67.3,54.4
+click Pitch Pot##11377
+get 8 Dark Pitch##81174 |q Perfect Pitch##30771/1 |goto Townlong Steppes/0 67.3,54.4
+step
+talk Suna Silentstrike##60684
+turnin First Assault##30769 |goto Townlong Steppes/0 67.2,52.2
+step
+talk Ban Bearheart##60687
+turnin Running Rampant##30770 |goto Townlong Steppes/0 67.2,52.3
+turnin Perfect Pitch##30771 |goto Townlong Steppes/0 67.2,52.3
+accept Pitching In##30773 |goto Townlong Steppes/0 67.2,52.3
+step
+talk Suna Silentstrike##60684
+accept Seeing Red##30772 |goto Townlong Steppes/0 67.2,52.2
+accept Ranger Rescue##30774 |goto Townlong Steppes/0 67.2,52.2
+step
+talk Katak the Defeated##60735
+accept The Exile##30775 |goto Townlong Steppes/0 67.0,51.4
+step
+kill Battat##60728 |q The Exile##30775/1 |goto Townlong Steppes/0 65.7,51.7 |tip When he casts Raging Flurry step behind him to avoid the damage.
+step
+kill Urang##60725 |q The Exile##30775/2 |goto Townlong Steppes/0 64.8,50.2
+step
+talk Lin Silentstrike##60899
+Examine the body
+Free Lin Silentstrike |q Ranger Rescue##30774/2 |goto Townlong Steppes/0 66.6,49.1
+step
+kill Ku-Tong##60726 |q The Exile##30775/3 |goto Townlong Steppes/0 67.0,48.2 |tip When he casts Stalwart Defender hit him in the back.
+step
+Use Ban's Explosives on Osul Ballistas |use Ban's Explosives##81193
+Destroy 6 Osul Ballistas |q Pitching In##30773/1 |goto Townlong Steppes/0 66.9,44.1
+step
+from 8 Osul Marauder##60692+ |q 30772/1 |goto Townlong Steppes/0 67.3,49.6
+collect 4 Stone Key##81178+ |n
+click Drywood Cage
+Rescue 4 Longying Rangers |q Ranger Rescue##30774/1 |goto Townlong Steppes/0 67.3,49.6
+step
+talk Katak the Defeated##60735
+turnin The Exile##30775 |goto Townlong Steppes/0 67.0,51.4
+step
+talk Ban Bearheart##60687
+turnin Pitching In##30773 |goto Townlong Steppes/0 67.2,52.3
+turnin Seeing Red##30772 |goto Townlong Steppes/0 67.2,52.3
+turnin Ranger Rescue##30774 |goto Townlong Steppes/0 67.2,52.3
+step
+talk Suna Silentstrike##60684
+accept Jung Duk##30776 |goto Townlong Steppes/0 67.3,52.2
+step
+click Ceremonial Pile
+kill Jung Duk##60801 |q Jung Duk##30776/1 |goto Townlong Steppes/0 66.7,51.0
+step
+talk Ban Bearheart##60687
+turnin Jung Duk##30776 |goto Townlong Steppes/0 71.0,56.6
+accept In Search of Suna##30777 |goto Townlong Steppes/0 71.0,56.6
+step
+talk Ban Bearheart##61261
+turnin In Search of Suna##30777 |goto Townlong Steppes/0 82.7,73.0
+accept Dust to Dust##30778 |goto Townlong Steppes/0 82.7,73.0
+accept Slaying the Scavengers##30779 |goto Townlong Steppes/0 82.7,73.0
+step
+talk Xiao Tu##60903
+accept Last Toll of the Yaungol##30781 |goto Townlong Steppes/0 82.7,73.2
+step
+talk Yalia Sagewhisper##60864
+accept Totemic Research##30780 |goto Townlong Steppes/0 82.6,73.0
+stickystart "palewindvillage"
+step
+Wait for Xiao Tu to investigate.
+Examine the Southern Smoke Trail |q Last Toll of the Yaungol##30781/3 |goto Townlong Steppes/0 83.5,78.5
+If you lose Xiao head back to [Townlong Steppes 82.7,73.2] to retrieve him
+step
+Wait for Xiao Tu to investigate.
+Examine the Eastern Smoke Trail |q Last Toll of the Yaungol##30781/1 |goto Townlong Steppes/0 84.9,71.4
+If you lose Xiao head back to [Townlong Steppes 82.7,73.2] to retrieve him
+step
+Wait for Xiao Tu to investigate.
+Examine the Northwestern Smoke Trail |q Last Toll of the Yaungol##30781/4 |goto Townlong Steppes/0 84.0,70.9
+If you lose Xiao head back to [Townlong Steppes 82.7,73.2] to retrieve him
+step
+Wait for Xiao Tu to investigate.
+Examine the Western Smoke Trail |q Last Toll of the Yaungol##30781/2 |goto Townlong Steppes/0 81.1,72.0
+If you lose Xiao head back to [Townlong Steppes 82.7,73.2] to retrieve him
+step "palewindvillage"
+kill 12 Ashfang Hyena##60932+ |q Slaying the Scavengers##30779/1 |goto Townlong Steppes/0 81.1,71.8
+click Palewind Totem##11497
+get 9 Palewind Totem##81355 |q Totemic Research##30780/1 |goto Townlong Steppes/0 81.1,71.8
+Use your Shado-Pan Torch to burn Palewind Villagers |use Shado-Pan Torch##81356
+Burn 20 Palewind Villagers |q Dust to Dust##30778/1 |goto Townlong Steppes/0 81.1,71.8
+step
+talk Yalia Sagewhisper##60864
+turnin Totemic Research##30780 |goto Townlong Steppes/0 82.6,73.0
+step
+talk Ban Bearheart##61261
+turnin Dust to Dust##30778 |goto Townlong Steppes/0 82.7,73.0
+turnin Slaying the Scavengers##30779 |goto Townlong Steppes/0 82.7,73.0
+turnin Last Toll of the Yaungol##30781 |goto Townlong Steppes/0 82.7,73.0
+step
+talk Yalia Sagewhisper##60864
+accept What Lies Beneath##30827 |goto Townlong Steppes/0 82.6,73.0
+step
+talk Yalia Sagewhisper##60864
+Tell her you are ready to begin the ritual |q What Lies Beneath##30827/1 |goto Townlong Steppes/0 82.6,73.0
+clicknpc Totem of Tranquility##60990 |q What Lies Beneath##30827/3 |goto Townlong Steppes/0 82.6,73.0
+clicknpc Totem of Serenity##60991 |q What Lies Beneath##30827/4 |goto Townlong Steppes/0 82.6,73.0
+clicknpc Totem of Kindness##60933 |q What Lies Beneath##30827/2 |goto Townlong Steppes/0 82.6,73.0
+Complete the Ritual |q What Lies Beneath##30827/5 |goto Townlong Steppes/0 82.6,73.0
+step
+talk Yalia Sagewhisper##60864
+turnin What Lies Beneath##30827 |goto Townlong Steppes/0 82.6,73.0
+accept Hatred Becomes Us##30783 |goto Townlong Steppes/0 82.6,73.0
+step
+While doing the following quests do not allow your Hatred bar to reach 100. You can lower it by standing in Pools of Harmony.
+confirm
+step
+Use your Totem of Harmony on Crazed Shado-Pan Rangers |use Totem of Harmony##81417
+kill Seething Hatred##61054+
+Purify 8 Crazed Shado-Pan Rangers |q Hatred Becomes Us##30783/1 |goto Townlong Steppes/0 82.0,71.0
+You can find more of these at [Townlong Steppes,83.4,73.8]
+step
+talk Yalia Sagewhisper##60864
+turnin Hatred Becomes Us##30783 |goto Townlong Steppes/0 82.6,73.0
+Learn the _Totem of Harmony_ toy |toy Totem of Harmony##88584 |use Totem of Harmony##88584
+step
+talk Skoller##95650
+Choose his dialogue option
+Learn the _Skoller's Bag of Squirrel Treats_ toy |toy Skoller's Bag of Squirrel Treats##128328 |use Skoller's Bag of Squirrel Treats##128328 |goto Tanaan Jungle/0 55.3,75.0
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Fossil dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Fossil fragments and solve their artifacts until you attain the Ancient Amber toy.
+Vul'Gol Fossil Bank |goto Duskwood/0 35.75,71.96 |'
+Greenwarden's Fossil Bank |goto Wetlands/0 64.61,50.85 |'
+Savage Coast Raptor Fields |goto Northern Stranglethorn/0 36.75,42.23 |'
+Felstone Field |goto Western Plaguelands/0 37.33,56.66 |'
+Northridge Fossil Field |goto Western Plaguelands/0 46.96,35.33 |'
+Andorhal Fossil Bank |goto Western Plaguelands/0 33.46,73.45 |'
+Infectis Scar Fossil Field |goto Eastern Plaguelands/0 48.97,61.6 |'
+Terror Wing Fossil Field |goto Burning Steppes/0 77.97,53.2 |'
+Southshore Fossil Field |goto Hillsbrad Foothills/0 56.72,61.17 |'
+Misty Reed Fossil Bank |goto Swamp of Sorrows/0 83.72,80.99 |'
+Lakeridge Highway Fossil Bank |goto Redridge Mountains/0 37.34,67.85 |'
+Dreadmaul Fossil Field |goto Blasted Lands/0 44.08,34.46 |'
+Red Reaches Fossil Bank |goto Blasted Lands/0 65.48,78.84 |'
+Fields of Blood Fossil Bank |goto Southern Barrens/0 44.95,44.16 |'
+Kodo Graveyard |goto Desolace/0 52.99,58.37 |'
+Valley of Bones |goto Desolace/0 64.04,89.39 |'
+Dunemaul Fossil Ridge |goto Tanaris/0 39.92,65.48 |'
+Abyssal Sands Fossil Ridge |goto Tanaris/0 46.53,41.79 |'
+Lower Lakkari Tar Pits |goto Un'Goro Crater/0 52.13,28.86 |'
+Upper Lakkari Tar Pits |goto Un'Goro Crater/0 48.97,20.46 |'
+Marshlands Fossil Bank |goto Un'Goro Crater/0 67.63,65.7 |'
+Screaming Reaches Fossil Field |goto Un'Goro Crater/0 33.6,32.74 |'
+Terror Run Fossil Field |goto Un'Goro Crater/0 34.03,75.17 |'
+Quagmire Fossil Field |goto Dustwallow Marsh/0 48.54,54.5 |'
+Wyrmbog Fossil Field |goto Dustwallow Marsh/0 48.11,73.67 |'
+Unearthed Grounds |goto Stonetalon Mountains/0 76.11,76.25 |'
+Learn the _Ancient Amber_ toy |toy Ancient Amber##69776 |use Ancient Amber##69776
+step
+This toy requires a minimum of 300 skill points in Archaeology
+|tip All Draenei dig sites are marked on your map. You can find them in Outland.
+|tip Collect Draenei fragments and solve their artifacts until you attain the Arrival of the Naaru toy.
+Sha�naar Digsite |goto Hellfire Peninsula/0 13.79,58.59 |'
+Twin Spire Ruins Digsite |goto Zangarmarsh/0 46.96,49.97 |'
+Boha�mu Ruins Digsite |goto Zangarmarsh/0 43.8,66.77 |'
+Tuurem Digsite |goto Terokkar Forest/0 52.84,29.94 |'
+Bone Wastes Digsite |goto Terokkar Forest/0 47.1,60.31 |'
+East Auchindoun Digsite |goto Terokkar Forest/0 42.65,64.83 |'
+West Auchindoun Digsite |goto Terokkar Forest/0 37.62,63.97 |'
+Halaa Digsite |goto Nagrand/0 42.65,43.94 |'
+Illidari Point Digsite |goto Shadowmoon Valley/0 30.44,53.63 |'
+Eclipse Point Digsite |goto Shadowmoon Valley/0 46.09,68.07 |'
+Coilskar Point Digsite |goto Shadowmoon Valley/0 45.52,27.57 |'
+Ruins of Baa�ri Digsite |goto Shadowmoon Valley/0 56.86,36.19 |'
+Ruins of Enkaat Digsite |goto Netherstorm/0 33.03,53.63 |'
+Ruins of Farahlon Digsite |goto Netherstorm/0 53.56,21.11 |'
+Arklon Ruins Digsite |goto Netherstorm/0 39.49,72.8 |'
+Learn the _Arrival of the Naaru_ toy |toy Arrival of the Naaru##64456 |use Arrival of the Naaru##64456
+step
+This toy requires a minimum of 350 skill points in Archaeology
+|tip All Nerubian dig sites are marked on your map. You can find them in Northrend and Eastern Plaguelands.
+|tip Collect Nerubian fragments and solve their artifacts until you attain the Blessing of the Old God toy.
+Terrorweb Tunnel Digsite |goto Eastern Plaguelands/0 20.68,23.05 |'
+Plaguewood Digsite |goto Eastern Plaguelands/0 35.47,22.19 |'
+Talramas Digsite |goto Borean Tundra/0 68.93,15.08 |'
+En�kilah Digsite |goto Borean Tundra/0 86.16,23.91 |'
+Sands of Nasam |goto Borean Tundra/0 52.41,67.63 |'
+Pit of Narjun Digsite |goto Dragonblight/0 26.57,50.19 |'
+Kolramas Digsite |goto Zul'Drak/0 59.88,77.33 |'
+Scourgeholme Digsite |goto Icecrown/0 77.11,63.97 |'
+Pit of Fiends Digsite |goto Icecrown/0 76.25,53.42 |'
+Learn the _Blessing of the Old God_ toy |toy Blessing of the Old God##64481 |use Blessing of the Old God##64481
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms, Kalimdor, and Northrend.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Bones of Transformation toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |' |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Bones of Transformation_ toy |toy Bones of Transformation##64646 |use Bones of Transformation##64646
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Dwarf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Dwarf fragments and solve their artifacts until you attain the Chalice of the Mountain Kings toy.
+Thandol Span |goto Wetlands/0 49.97,11.85 |'
+Ironbeard�s Tomb |goto Wetlands/0 43.94,24.77 |'
+Whelgar�s Excavation Site |goto Wetlands/0 35.33,48.25 |'
+Thoradin�s Wall |goto Arathi Highlands/0 18.09,23.26 |'
+Aerie Peak Digsite |goto The Hinterlands/0 34.89,69.36 |'
+Uldaman Entrance Digsite |goto Badlands/0 44.08,10.55 |'
+Hammertoe�s Digsite |goto Badlands/0 48.68,26.49 |'
+Tomb of the Watchers Digsite |goto Badlands/0 48.39,48.9 |'
+Grim Batol Digsite |goto Twilight Highlands/0 25.85,54.06 |'
+Humboldt Conflagration Digsite |goto Twilight Highlands/0 41.36,23.26 |'
+Dunwald Ruins Digsite |goto Twilight Highlands/0 49.11,72.16 |'
+Thundermar Ruins Digsite |goto Twilight Highlands/0 50.26,34.03 |'
+Eastern Ruins of Thaurissan |goto Burning Steppes/0 53.27,37.91 |'
+Western Ruins of Thaurissan |goto Burning Steppes/0 45.09,35.97 |'
+Dun Garok Digsite |goto Hillsbrad Foothills/0 61.32,85.51 |'
+Pyrox Flats Digsite |goto Searing Gorge/0 39.49,46.09 |'
+Grimesilt Digsite |goto Searing Gorge/0 64.48,62.46 |'
+Ironband�s Excavation Site |goto Loch Modan/0 68.93,63.11 |'
+Bael Modan Digsite |goto Southern Barrens/0 48.25,86.8 |'
+Learn the _Chalice of the Mountain Kings_ toy |toy Chalice of the Mountain Kings##64373 |use Chalice of the Mountain Kings##64373
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Druid and Priest Statue Set toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Druid and Priest Statue Set_ toy |toy Druid and Priest Statue Set##64361 |use Druid and Priest Statue Set##64361
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Troll dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Troll fragments and solve their artifacts until you attain the Haunted War Drum toy.
+Eastern Zul�Mamwe Digsite |goto Northern Stranglethorn/0 62.47,70.0 |'
+Western Zul�Mamwe Digsite |goto Northern Stranglethorn/0 61.17,71.51 |'
+Bal�lal Ruins Digsite |goto Northern Stranglethorn/0 32.74,36.4 |'
+Balia�mah Ruins Digsite |goto Northern Stranglethorn/0 60.17,55.14 |'
+Western Zul�Kunda Digsite |goto Northern Stranglethorn/0 25.7,21.32 |'
+Eastern Zul�Kunda Digsite |goto Northern Stranglethorn/0 28.15,21.11 |'
+Ziata�jai Digsite |goto Northern Stranglethorn/0 53.56,60.53 |'
+Nek�mani Wellspring Digsite |goto The Cape of Stranglethorn/0 40.49,49.33 |'
+Ruins of Jubuwal |goto The Cape of Stranglethorn/0 52.7,31.23 |'
+Ruins of Aboraz |goto The Cape of Stranglethorn/0 41.79,53.42 |'
+Gurubashi Arena Digsite |goto The Cape of Stranglethorn/0 46.38,22.83 |'
+Witherbark Digsite |goto Arathi Highlands/0 60.89,71.08 |'
+Zul�Mashar Digsite |goto Eastern Plaguelands/0 65.05,12.71 |'
+Shadra�Alor Digsite |goto The Hinterlands/0 34.89,69.57 |'
+Altar of Zul Digsite |goto The Hinterlands/0 47.82,65.27 |'
+Agol�watha Digsite |goto The Hinterlands/0 46.24,41.14 |'
+Jintha�Alor Upper City Digsite |goto The Hinterlands/0 60.6,77.33 |'
+Jintha�Alor Lower City Digsite |goto The Hinterlands/0 66.05,68.93 |'
+Sunken Temple Digsite |goto Swamp of Sorrows/0 71.8,60.31 |'
+Zul�Farrak Digsite |goto Tanaris/0 39.63,21.97 |'
+Eastmoon Ruins Digsite |goto Tanaris/0 46.38,63.97 |'
+Southmoon Ruins Digsite |goto Tanaris/0 40.35,71.3 |'
+Broken Pillar Digsite |goto Tanaris/0 52.56,45.66 |'
+Drakil�jin Ruins Digsite |goto Grizzly Hills/0 71.66,25.42 |'
+Zol�Heb Digsite |goto Zul'Drak/0 77.97,36.19 |'
+Zim�Rhuk Digsite |goto Zul'Drak/0 59.16,43.29 |'
+Altar of Quetz�lun Digsite |goto Zul'Drak/0 73.23,58.37 |'
+Altar of Sseratus Digsite |goto Zul'Drak/0 40.21,44.37 |'
+Learn the _Haunted War Drum_ toy |toy Haunted War Drum##69777 |use Haunted War Drum##69777
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Highborne Soul Mirror toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Highborne Soul Mirror_ toy |toy Highborne Soul Mirror##64358 |use Highborne Soul Mirror##64358
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Kaldorei Wind Chimes toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Kaldorei Wind Chimes_ toy |toy Kaldorei Wind Chimes##64383 |use Kaldorei Wind Chimes##64383
+step
+This toy requires a minimum of 450 skill points in Archaeology
+|tip All Tol'vir dig sites are marked on your map. You can find them in Kalimdor.
+|tip Collect Tol'vir fragments and solve their artifacts until you attain the Pendant of the Scarab Storm toy.
+Tombs of the Precursors Digsite |goto Uldum/0 74.53,44.37 |'
+Ruins of Ammon Digsite |goto Uldum/0 32.02,64.19 |'
+Ruins of Ahmtul Digsite |goto Uldum/0 45.81,14.22 |'
+Ruins of Khintaset Digsite |goto Uldum/0 35.04,17.45 |'
+Khartut�s Tomb Digsite |goto Uldum/0 64.62,22.83 |'
+Neferset Digsite |goto Uldum/0 48.82,80.77 |'
+Steps of Fate Digsite |goto Uldum/0 74.1,52.34 |'
+Temple of Uldum Digsite |goto Uldum/0 33.6,29.94 |'
+Orsis Digsite |goto Uldum/0 40.49,40.93 |'
+Cursed Landing Digsite |goto Uldum/0 84.0,55.79 |'
+Keset Pass Digsite |goto Uldum/0 78.4,57.73 |'
+Akhenet Fields Digsite |goto Uldum/0 54.14,52.99 |'
+Obelisk of the Stars Digsite |goto Uldum/0 64.62,31.88 |'
+Sahket Wastes Digsite |goto Uldum/0 50.12,20.89 |'
+Schnottz�s Landing |goto Uldum/0 21.4,60.96 |'
+Learn the _Pendant of the Scarab Storm_ toy |toy Pendant of the Scarab Storm##64881 |use Pendant of the Scarab Storm##64881
+step
+This toy requires a minimum of 350 skill points in Archaeology
+|tip All Nerubian dig sites are marked on your map. You can find them in Eastern Kingdoms and Northrend.
+|tip Collect Nerubian fragments and solve their artifacts until you attain the Puzzle Box of Yogg-Saron toy.
+Terrorweb Tunnel Digsite |goto Eastern Plaguelands/0 12.06,24.77 |'
+Plaguewood Digsite |goto Eastern Plaguelands/0 35.47,21.76 |'
+Talramas Digsite |goto Borean Tundra/0 69.07,15.08 |'
+En�kilah Digsite |goto Borean Tundra/0 85.87,24.12 |'
+Sands of Nasam |goto Borean Tundra/0 52.27,68.07 |'
+Pit of Narjun Digsite |goto Dragonblight/0 26.71,49.76 |'
+Kolramas Digsite |goto Zul'Drak/0 60.31,77.54 |'
+Scourgeholme Digsite |goto Icecrown/0 77.26,63.33 |'
+Pit of Fiends Digsite |goto Icecrown/0 75.53,53.2 |'
+Learn the _Puzzle Box of Yogg-Saron_ toy |toy Puzzle Box of Yogg-Saron##64482 |use Puzzle Box of Yogg-Saron##64482
+step
+This toy requires a minimum of 350 skill points in Archaeology
+|tip All Vrykul dig sites are marked on your map. You can find them in Northrend.
+|tip Collect Vrykul fragments and solve their artifacts until you attain the Vrykul Drinking Horn toy.
+Voldrune Digsite |goto Grizzly Hills/0 28.43,75.39 |'
+Baleheim Digsite |goto Howling Fjord/0 64.19,40.06 |'
+Wyrmskull Digsite |goto Howling Fjord/0 58.16,52.13 |'
+Gjalerbron Digsite |goto Howling Fjord/0 35.9,10.55 |'
+Halgrind Digsite |goto Howling Fjord/0 50.12,53.85 |'
+Nifflevar Digsite |goto Howling Fjord/0 67.78,52.56 |'
+Skorn Digsite |goto Howling Fjord/0 44.52,29.72 |'
+Shield Hill Digsite |goto Howling Fjord/0 58.73,77.97 |'
+Njorndar Village Digsite |goto Icecrown/0 20.53,57.73 |'
+Ymirheim Digsite |goto Icecrown/0 57.44,55.57 |'
+Brunnhildar Village Digsite |goto The Storm Peaks/0 49.11,68.07 |'
+Valkyrion Digsite |goto The Storm Peaks/0 24.41,59.45 |'
+Sifreldar Village Digsite |goto The Storm Peaks/0 40.78,70.87 |'
+Learn the _Vrykul Drinking Horn_ toy |toy Vrykul Drinking Horn##69775 |use Vrykul Drinking Horn##69775
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Wisp Amulet toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Wisp Amulet_ toy |toy Wisp Amulet##64651 |use Wisp Amulet##64651
+step
+talk Nam Ironpaw##64395
+buy 1 Flippable Table##88801 |use Flippable Table##88801 |n
+Learn the _Flippable Table_ toy |toy Flippable Table##88801 |goto Valley of the Four Winds/0 53.6,51.2
+step
+talk Haris Pilton##18756
+buy 1 Eternal Black Diamond Ring##134007 |use Eternal Black Diamond Ring##134007 |n
+|tip This costs 5,000 gold.
+Learn the _Eternal Black Diamond Ring_ toy |toy Eternal Black Diamond Ring##134007 |goto Shattrath City/0 75.5,30.5
+buy 1 Noble's Eternal Elementium Signet##134004 |use Noble's Eternal Elementium Signet##134004 |n
+Learn the _Noble's Eternal Elementium Signet_ toy |toy Noble's Eternal Elementium Signet##134004 |goto Shattrath City/0 75.5,30.5
+step
+talk Breanni##28951
+buy 1 Red Ribbon Pet Leash##44820 |use Red Ribbon Pet Leash##44820 |n
+Learn the _Red Ribbon Pet Leash_ toy |toy Red Ribbon Pet Leash##44820 |goto Dalaran/1 58.7,39.2
+buy 1 Rope Pet Leash##37460 |use Rope Pet Leash##37460 |n
+Learn the _Rope Pet Leash_ toy |toy Rope Pet Leash##37460 |goto Dalaran/1 58.7,39.2
+step
+talk Irisee##33657
+buy 1 Exodar Banner##45020 |use Exodar Banner##45020 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Exodar Banner_ toy |toy Exodar Banner##45020 |goto Icecrown/0 76.2,19.3
+step
+talk Rook Hawkfist##33653
+buy 1 Darnassus Banner##45021 |use Darnassus Banner##45021 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Darnassus Banner_ toy |toy Darnassus Banner##45021 |goto Icecrown/0 76.3,19.2
+step
+talk Corporal Arthur Flew##33307
+buy 1 Stormwind Banner##45011 |use Stormwind Banner##45011 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Stormwind Banner_ toy |toy Stormwind Banner##45011 |goto Icecrown/0 76.4,19.2
+step
+talk Derrick Brindlebeard##33310
+buy 1 Ironforge Banner##45018 |use Ironforge Banner##45018 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Ironforge Banner_ toy |toy Ironforge Banner##45018 |goto Icecrown/0 76.5,19.4
+step
+talk Rillie Spindlenut##33650
+buy 1 Gnomeregan Banner##45019 |use Gnomeregan Banner##45019 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Gnomeregan Banner_ toy |toy Gnomeregan Banner##45019 |goto Icecrown/0 76.5,19.6
+step
+talk Dame Evniki Kapsalis##34885
+buy 1 Argent Crusader's Banner##46843 |use Argent Crusader's Banner##46843 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Argent Crusader's Banner_ toy |toy Argent Crusader's Banner##46843 |goto 69.4,23.2
+step
+kill Drakum##98283
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Roller Controller##108631 |use Crashin' Thrashin' Roller Controller##108631 |n
+Learn the _Crashin' Thrashin' Roller Controller_ toy |toy Crashin' Thrashin' Roller Controller##108631 |goto Tanaan Jungle/0 83.5,43.7
+step
+kill Smashum Grabb##98285
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Mortar Controller##108634 |use Crashin' Thrashin' Mortar Controller##108634 |n
+Learn the _Crashin' Thrashin' Mortar Controller_ toy |toy Crashin' Thrashin' Mortar Controller##108634 |goto Tanaan Jungle/0 88.1,55.8
+step
+kill Gondar##98284
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Cannon Controller##108633 |use Crashin' Thrashin' Cannon Controller##108633 |n
+Learn the _Crashin' Thrashin' Cannon Controller_ toy |toy Crashin' Thrashin' Cannon Controller##108633 |goto Tanaan Jungle/0 80.4,56.9
+step
+kill Bramblefell##91093
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Felflame Campfire##127652 |use Felflame Campfire##127652 |n
+Learn the _Felflame Campfire_ toy |toy Felflame Campfire##127652 |goto Tanaan Jungle/0 40.9,69.5
+step
+kill Imp-Master Valessa##90429
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Sassy Imp##127655 |use Sassy Imp##127655 |n
+Learn the _Sassy Imp_ toy |toy Sassy Imp##127655 |goto Tanaan Jungle/0 31.4,72.6
+step
+Enter the cave |goto Tanaan Jungle/0 37.4,75.9 < 5 |walk
+kill Captain Ironbeard##93076
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Ghostly Iron Buccaneer's Hat##127659 |use Ghostly Iron Buccaneer's Hat##127659 |n
+Learn the _Ghostly Iron Buccaneer's Hat_ toy |toy Ghostly Iron Buccaneer's Hat##127659 |goto Tanaan Jungle/0 36.2,79.8
+step
+kill Remnant of the Blood Moon##91227
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Vial of Red Goo##127666 |use Vial of Red Goo##127666 |n
+Learn the _Vial of Red Goo_ toy |toy Vial of Red Goo##127666 |goto Tanaan Jungle/0 22.2,50.5
+step
+kill High Priest Ikzan##90777
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+|tip He pats around this area.
+collect Cursed Feather of Ikzan##122117 |use Cursed Feather of Ikzan##122117 |n
+Learn the _Cursed Feather of Ikzan_ toy |toy Cursed Feather of Ikzan##122117 |goto Tanaan Jungle/0 20.7,39.9
+step
+kill Sahn Tidehunter##50780
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Aqua Jewel##86582 |use Aqua Jewel##86582 |n
+Learn the _Aqua Jewel_ toy |toy Aqua Jewel##86582 |goto Vale of Eternal Blossoms/0 69.6,30.8
+step
+kill Ba'ruun##82326
+|tip This is a rare spawn.
+collect Ba'ruun's Bountiful Bloom##113540 |use Ba'ruun's Bountiful Bloom##113540 |n
+Learn the _Ba'ruun's Bountiful Bloom_ toy |toy Ba'ruun's Bountiful Bloom##113540 |goto Shadowmoon Valley D/0 52.8,16.6
+step
+kill Gibblette the Cowardly##87352
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Goren "Log" Roller##119180 |use Goren "Log" Roller##119180 |n
+Learn the _Goren "Log" Roller_ toy |toy Goren "Log" Roller##119180 |goto Frostfire Ridge/0 66.6,25.4
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievements Guides\\Collections\\Toy Box\\All Toys",{
+condition_end="achieved(9673)",
+description="This guide will help you through attaining all of the toys.",
+},[[
+step
+talk Chapman##34382
+|tip These toys are only available while the Day of the Dead event is active.
+buy 1 "Blooming Rose" Contender's Costume##116856 |use "Blooming Rose" Contender's Costume##116856 |n
+|tip This costs 100 gold.
+Learn the _"Blooming Rose" Contender's Costume_ toy |toy "Blooming Rose" Contender's Costume##116856
+buy 1 "Night Demon" Contender's Costume##116888 |use "Night Demon" Contender's Costume##116888 |n
+|tip This costs 100 gold.
+Learn the _"Night Demon" Contender's Costume_ toy |toy "Night Demon" Contender's Costume##116888
+buy 1 "Purple Phantom" Contender's Costume##116889 |use "Purple Phantom" Contender's Costume##116889 |n
+|tip This costs 100 gold.
+Learn the _"Purple Phantom" Contender's Costume_ toy |toy "Purple Phantom" Contender's Costume##116889
+buy 1 "Santo's Sun" Contender's Costume##116890 |use "Santo's Sun" Contender's Costume##116890 |n
+|tip This costs 100 gold.
+Learn the _"Santo's Sun" Contender's Costume_ toy |toy "Santo's Sun" Contender's Costume##116890
+buy 1 "Snowy Owl" Contender's Costume##116891 |use "Snowy Owl" Contender's Costume##116891 |n
+|tip This costs 100 gold.
+Learn the _"Snowy Owl" Contender's Costume_ toy |toy "Snowy Owl" Contender's Costume##116891
+step
+_Go up_ the steps |goto Tanaan Jungle/0 30.6,71.0 < 8 |only if walking
+_Enter_ the small building |goto Tanaan Jungle/0 32.1,70.8 < 5 |walk
+click Tome of Secrets##240855 |goto Tanaan Jungle 32.40,70.40
+collect 1 Accursed Tome of the Sargerei##127670 |use Accursed Tome of the Sargerei##127670 |n
+Learn the _Accursed Tome_ of the Sargerei toy |toy Accursed Tome of the Sargerei##127670
+step
+kill Ai-Li Skymirror##50821
+collect 1 Ai-Li's Skymirror##86589 |use Ai-Li's Skymirror##86589 |n
+Learn the _Ai-Li's Skymirror_ toy |toy Ai-Li's Skymirror##86589 |goto Dread Wastes/0 34.8,23.2
+step
+placeholder
+step
+placeholder
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Fossil dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Fossil fragments and solve their artifacts until you attain the Ancient Amber toy.
+Vul'Gol Fossil Bank |goto Duskwood/0 35.75,71.96 |'
+Greenwarden's Fossil Bank |goto Wetlands/0 64.61,50.85 |'
+Savage Coast Raptor Fields |goto Northern Stranglethorn/0 36.75,42.23 |'
+Felstone Field |goto Western Plaguelands/0 37.33,56.66 |'
+Northridge Fossil Field |goto Western Plaguelands/0 46.96,35.33 |'
+Andorhal Fossil Bank |goto Western Plaguelands/0 33.46,73.45 |'
+Infectis Scar Fossil Field |goto Eastern Plaguelands/0 48.97,61.6 |'
+Terror Wing Fossil Field |goto Burning Steppes/0 77.97,53.2 |'
+Southshore Fossil Field |goto Hillsbrad Foothills/0 56.72,61.17 |'
+Misty Reed Fossil Bank |goto Swamp of Sorrows/0 83.72,80.99 |'
+Lakeridge Highway Fossil Bank |goto Redridge Mountains/0 37.34,67.85 |'
+Dreadmaul Fossil Field |goto Blasted Lands/0 44.08,34.46 |'
+Red Reaches Fossil Bank |goto Blasted Lands/0 65.48,78.84 |'
+Fields of Blood Fossil Bank |goto Southern Barrens/0 44.95,44.16 |'
+Kodo Graveyard |goto Desolace/0 52.99,58.37 |'
+Valley of Bones |goto Desolace/0 64.04,89.39 |'
+Dunemaul Fossil Ridge |goto Tanaris/0 39.92,65.48 |'
+Abyssal Sands Fossil Ridge |goto Tanaris/0 46.53,41.79 |'
+Lower Lakkari Tar Pits |goto Un'Goro Crater/0 52.13,28.86 |'
+Upper Lakkari Tar Pits |goto Un'Goro Crater/0 48.97,20.46 |'
+Marshlands Fossil Bank |goto Un'Goro Crater/0 67.63,65.7 |'
+Screaming Reaches Fossil Field |goto Un'Goro Crater/0 33.6,32.74 |'
+Terror Run Fossil Field |goto Un'Goro Crater/0 34.03,75.17 |'
+Quagmire Fossil Field |goto Dustwallow Marsh/0 48.54,54.5 |'
+Wyrmbog Fossil Field |goto Dustwallow Marsh/0 48.11,73.67 |'
+Unearthed Grounds |goto Stonetalon Mountains/0 76.11,76.25 |'
+Learn the _Ancient Amber_ toy |toy Ancient Amber##69776 |use Ancient Amber##69776
+step
+Legion
+step
+placeholder
+step
+kill Yggdrel##75435
+collect 1 Ancient's Bloom##113570 |use Ancient's Bloom##113570 |n
+Learn the _Ancient's Bloom_ toy |toy Ancient's Bloom##113570 |goto Shadowmoon Valley D/0 48.6,66.2
+step
+placeholder
+step
+_Go to_ the river |goto Shadowmoon Valley D/0 52.0,69.0 |only if walking
+_Continue_ following the river southeast |goto Shadowmoon Valley D/0 53.5,73.0 |only if walking
+_Go to_ the base of the tree |goto Shadowmoon Valley D 55.29,74.87 |only if walking
+click Swamplighter Hive##232592 |q 35580 |future |goto Shadowmoon Valley D 55.29,74.87
+|tip It's a yellow beehive located up in the tree. All of the wasps will attack you when you click it.
+collect 1 Angry Beehive##117550 |use Angry Beehive##117550 |n
+Learn the _Angry Beehive_ toy |toy Angry Beehive##117550
+step
+kill Sahn Tidehunter##50780
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Aqua Jewel##86582 |use Aqua Jewel##86582 |n
+Learn the _Aqua Jewel_ toy |toy Aqua Jewel##86582 |goto Vale of Eternal Blossoms/0 69.6,30.8
+step
+Legion
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Finding Farahlon" if it is available.
+Complete the "Finding Farahlon" garrison mission |collect 1 Mysterious Shining Lockbox##118193 |use Mysterious Shining Lockbox##118193 |or
+Learn the _Archmage Vargoth's Spare Staff_ toy |toy Archmage Vargoth's Spare Staff##118191 |use Archmage Vargoth's Spare Staff##118191 |or
+step
+_Jump down_ the ledge here |goto Frostfire Ridge/0 24.3,25.8 < 20 |only if walking
+_Go up_ the stairs |goto Frostfire Ridge/0 22.0,26.2 < 25 |only if walking
+_Pass through_ the doorway |goto 23.3,24.3 < 15 |only if walking
+click Arena Master's War Horn##226955 |q 33916 |future |goto Frostfire Ridge 23.17,24.95
+|tip It's on the seat of the throne.
+step
+talk Dame Evniki Kapsalis##34885
+buy 1 Argent Crusader's Banner##46843 |use Argent Crusader's Banner##46843 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Argent Crusader's Banner_ toy |toy Argent Crusader's Banner##46843 |goto Icecrown/0 69.4,23.2
+step
+This toy requires a minimum of 300 skill points in Archaeology
+|tip All Draenei dig sites are marked on your map. You can find them in Outland.
+|tip Collect Draenei fragments and solve their artifacts until you attain the Arrival of the Naaru toy.
+Sha�naar Digsite |goto Hellfire Peninsula/0 13.79,58.59 |'
+Twin Spire Ruins Digsite |goto Zangarmarsh/0 46.96,49.97 |'
+Boha�mu Ruins Digsite |goto Zangarmarsh/0 43.8,66.77 |'
+Tuurem Digsite |goto Terokkar Forest/0 52.84,29.94 |'
+Bone Wastes Digsite |goto Terokkar Forest/0 47.1,60.31 |'
+East Auchindoun Digsite |goto Terokkar Forest/0 42.65,64.83 |'
+West Auchindoun Digsite |goto Terokkar Forest/0 37.62,63.97 |'
+Halaa Digsite |goto Nagrand/0 42.65,43.94 |'
+Illidari Point Digsite |goto Shadowmoon Valley/0 30.44,53.63 |'
+Eclipse Point Digsite |goto Shadowmoon Valley/0 46.09,68.07 |'
+Coilskar Point Digsite |goto Shadowmoon Valley/0 45.52,27.57 |'
+Ruins of Baa�ri Digsite |goto Shadowmoon Valley/0 56.86,36.19 |'
+Ruins of Enkaat Digsite |goto Netherstorm/0 33.03,53.63 |'
+Ruins of Farahlon Digsite |goto Netherstorm/0 53.56,21.11 |'
+Arklon Ruins Digsite |goto Netherstorm/0 39.49,72.8 |'
+Learn the _Arrival of the Naaru_ toy |toy Arrival of the Naaru##64456 |use Arrival of the Naaru##64456
+step
+kill High Priest of Ordos##72898+
+collect Ash-Covered Horn##104329 |use Ash-Covered Horn##104329 |n
+Learn the _Ash-Covered Horn_ toy |toy Ash-Covered Horn##104329
+step
+Complete the achievement Wanderluster: Gold |achieve 9792
+Check you mail once this achievement is completed
+collect Attraction Sign##122126 |use Attraction Sign##122126 |n
+Learn the _Attraction Sign_ toy |toy Attraction Sign##122126
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Hearthstone Tournament" if it is available.
+Complete the "Hearthstone Tournament" garrison mission |collect 1 Autographed Hearthstone Card##118427 |or
+Learn the _Autographed Hearthstone Card_ toy |toy Autographed Hearthstone Card##118427 |or
+step
+placeholder
+step
+Enter the cave |goto Townlong Steppes/0 32.9,61.8 < 5 |walk
+kill Huggalon the Heart Watcher##66900
+collect B. F. F. Necklace##90067 |use B. F. F. Necklace##90067 |n
+Learn the _B. F. F. Necklace_ toy |toy B. F. F. Necklace##90067 |goto Townlong Steppes/13 64.5,22.4
+step
+kill Ba'ruun##82326
+|tip This is a rare spawn.
+collect Ba'ruun's Bountiful Bloom##113540 |use Ba'ruun's Bountiful Bloom##113540 |n
+Learn the _Ba'ruun's Bountiful Bloom_ toy |toy Ba'ruun's Bountiful Bloom##113540 |goto Shadowmoon Valley D/0 52.8,16.6
+step
+Legion
+step
+kill Blackhoof##51059
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+|tip He pats around this area.
+collect Battle Horn##86565 |use Battle Horn##86565 |n
+Learn the _Battle Horn_ toy |toy Battle Horn##86565 |goto Valley of the Four Winds/0 35.7,61.3
+step
+Legion
+step
+Complete the quest Booty Bay's Interests in Zul'Gurub on Heroic Difficulty
+collect Black Ice##133997 |use Black Ice##133997 |n
+Learn the _Black Ice_ toy |toy Black Ice##133997
+step
+_Go through_ the stone arch |goto Spires of Arak/0 72.3,25.6 |only if walking
+_Go up_ the hill |goto Spires of Arak/0 71.3,20.7 |only if walking
+kill Soul-Twister Torek##85026
+collect 1 Black Whirlwind##119178 |use Black Whirlwind##119178 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Black Whirlwind_ toy |toy Black Whirlwind##119178 |goto Spires of Arak/0 72.6,19.3
+step
+kill Champion of the Black Flame##73171
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect 1 Blackflame Daggers##104302 |use Blackflame Daggers##104302 |n
+Learn the _Blackflame Daggers_ toy |toy Blackflame Daggers##104302 |goto Timeless Isle/0 69.4,43.8
+step
+This is a toy obtainable by Horde only
+Complete the quest Diamonds are Forever, this can only be done if you have Jewelcrafting
+collect Blazing Diamond Pendant##115503 |use Blazing Diamond Pendant##115503 |n
+Learn the _Blazing Diamond Pendant_ toy |toy Blazing Diamond Pendant##115503
+step
+Complete the achievement "Brood of Alysrazor" at the Darkmoon Faire
+Check your mail box once this achievement is completed
+collect Blazing Wings##116115 |use Blazing Wings##116115 |n
+Learn the _Blazing Wings_ toy |toy Blazing Wings##116115
+step
+This toy requires a minimum of 350 skill points in Archaeology
+|tip All Nerubian dig sites are marked on your map. You can find them in Northrend and Eastern Plaguelands.
+|tip Collect Nerubian fragments and solve their artifacts until you attain the Blessing of the Old God toy.
+Terrorweb Tunnel Digsite |goto Eastern Plaguelands/0 20.68,23.05 |'
+Plaguewood Digsite |goto Eastern Plaguelands/0 35.47,22.19 |'
+Talramas Digsite |goto Borean Tundra/0 68.93,15.08 |'
+En�kilah Digsite |goto Borean Tundra/0 86.16,23.91 |'
+Sands of Nasam |goto Borean Tundra/0 52.41,67.63 |'
+Pit of Narjun Digsite |goto Dragonblight/0 26.57,50.19 |'
+Kolramas Digsite |goto Zul'Drak/0 59.88,77.33 |'
+Scourgeholme Digsite |goto Icecrown/0 77.11,63.97 |'
+Pit of Fiends Digsite |goto Icecrown/0 76.25,53.42 |'
+Learn the _Blessing of the Old God_ toy |toy Blessing of the Old God##64481 |use Blessing of the Old God##64481
+step
+This toy requires the Engineering Profession to make, learn, and use
+|tip You must be at least level 600 Engineering to create this.
+collect Blingtron 4000##87214 |use Blingtron 4000##87214 |n
+Learn the _Blingtron 4000_ toy |toy Blingtron 4000##87214
+step
+This toy requires the Engineering Profession to make, learn, and use
+|tip You must be at least level 600 Engineering to create this.
+collect Blingtron 5000##111821 |use Blingtron 5000##111821 |n
+Learn the _Blingtron 5000_ toy |toy Blingtron 5000##111821
+step
+Legion Engineering
+step
+Fly to Southport |goto Spires of Arak/0 39.9,60.8
+You currently have the Brewery built as your Spires of Arak outpost
+|tip You must have the Smuggler's Den to purchase this toy |only if garrisonability("Inn")
+talk Lieutenant Willem##81929 |only if garrisonability("Inn")
+Tell him: "_I want to build a new structure._" |goto Spires of Arak/0 39.9,60.9 |tip This will cost you 5,000 gold. |only if garrisonability("Inn")
+Click the Drafting Table and select the Smuggler's Den |condition garrisonability("TradingPost") |goto Spires of Arak/0 39.7,60.9 |only if garrisonability("Inn")
+Use your garrison ability |cast Smuggling Run!##170097 |only if garrisonability("TradingPost")
+talk Honest Jim##82459 |only if garrisonability("TradingPost")
+buy 1 Bloodmane Charm##113096 |use Bloodmane Charm##113096 |tip This toy costs 500 gold. |only if garrisonability("TradingPost")
+Learn the _Bloodmane Charm_ toy |toy Bloodmane Charm##113096 |use |only if garrisonability("TradingPost")
+confirm
+step
+talk Craggle Wobbletop##52358
+|tip Craggle patrols the curved stone path just outside of the Trade District.
+buy 1 Blue Crashin' Thrashin' Racer Controller##54343 |use Blue Crashin' Thrashin' Racer##54343 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Blue Crashin' Thrashin' Racer_ toy |toy Blue Crashin' Thrashin' Racer##54343 |goto Stormwind City/0 58.9,64.0
+buy 1 Toy Train Set##44606 |use Toy Train Set##44606 |n
+|tip 250 gold, discounts with Gnomeregan reputation.
+Learn the _Toy Train Set_ toy |toy Toy Train Set##44606 |goto Stormwind City/0 58.9,64.0
+buy 1 Wind-Up Train Wrecker##45057 |use Wind-Up Train Wrecker##45057 |n
+|tip 250 gold, discounts with Gnomeregan reputation.
+Learn the _Wind-Up Train Wrecker_ toy |toy Wind-Up Train Wrecker##45057 |goto Stormwind City/0 58.9,64.0
+buy 1 Tiny Green Ragdoll##54437 |use Tiny Green Ragdoll##54437 |n
+|tip 10 gold, discounts with Gnomeregan reputation.
+Learn the _Tiny Green Ragdoll_ toy |toy Tiny Green Ragdoll##54437 |goto Stormwind City/0 58.9,64.0
+buy 1 Tiny Blue Ragdoll##54438 |use Tiny Blue Ragdoll##54438 |n
+|tip 10 gold, discounts with Gnomeregan reputation.
+Learn the _Tiny Blue Ragdoll_ toy |toy Tiny Blue Ragdoll##54438 |goto Stormwind City/0 58.9,64.0
+buy 1 The Pigskin##104323 |use The Pigskin##104323 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Pigskin_ toy |toy Pigskin##104323 |goto Stormwind City/0 58.9,64.0
+buy 1 Foot Ball##104324 |use Foot Ball##104324 |n
+|tip 40 gold, discounts with Gnomeregan reputation.
+Learn the _Foot Ball_ toy |toy Foot Ball##104324 |goto Stormwind City/0 58.9,64.0
+buy 1 Soft Foam Sword##137663 |use Soft Foam Sword##137663 |n
+|tip This costs 40 gold, discounts with Gnomeregan reputation.
+Learn the _Soft Foam Sword_ toy |toy Soft Foam Sword##137663 |goto Stormwind City/0 58.9,64.0
+step
+placeholder
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms, Kalimdor, and Northrend.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Bones of Transformation toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |' |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Bones of Transformation_ toy |toy Bones of Transformation##64646 |use Bones of Transformation##64646
+step
+kill Basten##86257
+kill Valstil##86259
+|tip Kill Vastil first, he is the healer of the group. Be sure to interrupt Revitalizing Waters.
+kill Nultra##86258
+|tip This trio is pretty tough, you may want to bring a friend.
+collect 1 Botani Camouflage##119432 |use Botani Camouflage##119432 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Botani Camouflage_ toy |toy Botani Camouflage##119432 |goto Gorgrond/0 69.2,44.6
+step
+kill Kal'tik the Blight##50749
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Bottled Tornado##134023 |use Bottled Tornado##134023 |n
+Learn the _Bottled Tornado_ toy |toy Bottled Tornado##134023 |goto Vale of Eternal Blossoms/0 14.0,58.6
+step
+click Bleeding Hollow Mushroom Stash##241835
+collect Bottomless Stygana Mushroom Brew##128223 |use Bottomless Stygana Mushroom Brew##128223 |n
+Learn the _Bottomless Stygana Mushroom Brew_ toy |toy Bottomless Stygana Mushroom Brew##128223 |goto Tanaan Jungle/0 49.9,76.8
+step
+This toy is only available when the Midsummer event is active
+talk Midsummer Supplier##26123
+buy 1 Brazier of Dancing Flames##34686 |use Brazier of Dancing Flames##34686
+|tip This toy costs 350 Burning Blossoms, these can be obtained through doing dailies during this event.
+Learn the _Brazier of Dancing Flames_ toy |toy Brazier of Dancing Flames##34686 |goto Ironforge/0 64.6,26.2
+buy 1 Cozy Bonfire##116435 |use Cozy Bonfire##116435
+|tip This toy costs 350 Burning Blossoms, these can be obtained through doing dailies during this event.
+Learn the _Cozy Bonfire_ toy |toy Cozy Bonfire##116435 |goto Ironforge/0 64.6,26.2
+buy 1 Burning Defender's Medallion##116440 |use Burning Defender's Medallion##116440
+|tip This toy costs 500 Burning Blossoms, these can be obtained through doing dailies during this event.
+Learn the _Burning Defender's Medallion_ toy |toy Burning Defender's Medallion##116440 |goto Ironforge/0 64.6,26.2
+step
+kill Glimmerwing##77719
+|tip This is a rare spawn.
+collect Breath of Talador##116113 |use Breath of Talador##116113 |n
+Learn the _Breath of Talador_ toy |toy Breath of Talador##116113 |goto Talador/0 33.2, 64.2
+step
+These toys are only available during the Brewfest Event
+talk Belbi Quikswitch##23710
+buy 1 Brewfest Pony Keg##33927 |use Brewfest Pony Keg##33927 |n
+|tip This toy costs 100 Brewfest Prize Tokens, these can be obtained by doing the dailies during this event.
+Learn the _Brewfest Pony Keg_ toy |toy Brewfest Pony Keg##33927 |goto Dun Morogh/0 56.2,37.8
+buy 1 Brewfest Keg Pony##71137 |use Brewfest Keg Pony##71137
+|tip This toy costs 200 Brewfest Prize Tokens, these can be obtained by doing the dailies during this event.
+Learn the _Brewfest Keg Pony_ toy |toy Brewfest Keg Pony##71137 |goto Dun Morogh/0 56.2,37.8
+buy 1 Pandaren Brewpack##90427 |use Pandaren Brewpack##90427 |n
+|tip This toy costs 100 Brewfest Prize Tokens, these can be obtained by doing the dailies during this event.
+Learn the _Pandaren Brewpack_ toy |toy Pandaren Brewpack##90427 |goto Dun Morogh/0 56.2,37.8
+buy 1 Steamworks Sausage Grill##116757 |use Steamworks Sausage Grill##116757 |n
+|tip This toy costs 200 Brewfest Prize Tokens, these can be obtained by doing the dailies during this event.
+Learn the _Steamworks Sausage Grill_ toy |toy Steamworks Sausage Grill##116757 |goto Dun Morogh/0 56.2,37.8
+buy 1 Brewfest Banner##116758 |use Brewfest Banner##116758 |n
+|tip This toy costs 100 Brewfest Prize Tokens, these can be obtained by doing the dailies during this event.
+Learn the _Brewfest Banner_ toy |toy Brewfest Banner##116758 |goto Dun Morogh/0 56.2,37.8
+step
+Legion
+step
+kill Sulfurious##80725
+collect 1 Bubble Wand##114227 |use Bubble Wand##114227 |n
+|tip This toy is a guaranteed drop.
+Learn the _Bubble Wand_ toy |toy Bubble Wand##114227 |goto Gorgrond/0 41.0,60.4
+step
+kill Burgy Blackheart##50052
+collect Burgy Blackheart's Handsome Hat##134022 |use Burgy Blackheart's Handsome Hat##134022 |n
+Learn the _Burgy Blackheart's Handsome Hat_ toy |toy Burgy Blackheart's Handsome Hat##134022 |goto Shimmering Expanse/0 56.9,70.1
+step
+#include "A_Garrison_CommandTable"
+|tip Click your garrison command table and start the mission "Burning Blademasters" if it is available.
+Complete the "Burning Blademasters" garrison mission |collect 1 Burning Blade##128310 |or
+Learn the _Burning Blade_ toy |toy Burning Blade##128310 |or
+|tip Note: This mission requires you to have an item level of at least 675 and several followers with a 675 item level before it will appear.
+step
+kill Sikthiss, Maiden of Slaughter##78715 |or
+kill Galzomar##78713 |or
+kill Kharazos the Triumphant##78710 |or
+collect Burning Legion Missive##116122 |use Burning Legion Missive##116122 |n
+Learn the _Burning Legion Missive_ toy |toy Burning Legion Missive##116122 |goto Talador/0 56.5,63.7
+step
+Earn _Revered_ status with the Emperor Shaohao faction |condition rep("Emperor Shaohao")>=Revered
+talk Mistweaver Ku##73306
+buy 1 Celestial Defender's Medallion##103685 |use Celestial Defender's Medallion##103685 |n
+|tip This toy costs 1,000 Timeless Coins.
+Learn the _Celestial Defender's Medallion_ toy |toy Celestial Defender's Medallion##103685 |goto Timeless Isle/0 42.8,54.8
+step
+talk Speaker Gulan##73307
+buy 1 Censer of Eternal Agony##102467 |use Censer of Eternal Agony##102467 |n
+|tip This toy costs 1,000 Timeless Coins.
+Learn the _Censer of Eternal Agony_ toy |toy Censer of Eternal Agony##102467 |goto Timeless Isle/0 75.0,44.8
+step
+This has a chance to drop from any bag recieved from completing pet battle daily/weekly quests
+collect Chain Pet Leash##89139 |use Chain Pet Leash##89139 |n
+Learn the _Chain Pet Leash_ toy |toy Chain Pet Leash##89139
+step
+kill Urgolax##50359
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect 1 Chalice of Secrets##86575 |use Chalice of Secrets##86575 |n
+Learn the _Chalice of Secrets_ toy |toy Chalice of Secrets##86575 |goto Vale of Eternal Blossoms/0 39.8,25.0
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Dwarf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Dwarf fragments and solve their artifacts until you attain the Chalice of the Mountain Kings toy.
+Thandol Span |goto Wetlands/0 49.97,11.85 |'
+Ironbeard�s Tomb |goto Wetlands/0 43.94,24.77 |'
+Whelgar�s Excavation Site |goto Wetlands/0 35.33,48.25 |'
+Thoradin�s Wall |goto Arathi Highlands/0 18.09,23.26 |'
+Aerie Peak Digsite |goto The Hinterlands/0 34.89,69.36 |'
+Uldaman Entrance Digsite |goto Badlands/0 44.08,10.55 |'
+Hammertoe�s Digsite |goto Badlands/0 48.68,26.49 |'
+Tomb of the Watchers Digsite |goto Badlands/0 48.39,48.9 |'
+Grim Batol Digsite |goto Twilight Highlands/0 25.85,54.06 |'
+Humboldt Conflagration Digsite |goto Twilight Highlands/0 41.36,23.26 |'
+Dunwald Ruins Digsite |goto Twilight Highlands/0 49.11,72.16 |'
+Thundermar Ruins Digsite |goto Twilight Highlands/0 50.26,34.03 |'
+Eastern Ruins of Thaurissan |goto Burning Steppes/0 53.27,37.91 |'
+Western Ruins of Thaurissan |goto Burning Steppes/0 45.09,35.97 |'
+Dun Garok Digsite |goto Hillsbrad Foothills/0 61.32,85.51 |'
+Pyrox Flats Digsite |goto Searing Gorge/0 39.49,46.09 |'
+Grimesilt Digsite |goto Searing Gorge/0 64.48,62.46 |'
+Ironband�s Excavation Site |goto Loch Modan/0 68.93,63.11 |'
+Bael Modan Digsite |goto Southern Barrens/0 48.25,86.8 |'
+Learn the _Chalice of the Mountain Kings_ toy |toy Chalice of the Mountain Kings##64373 |use Chalice of the Mountain Kings##64373
+step
+Legion
+step
+talk Derek Odds##31032
+buy 1 Chef's Hat##134020 |use Chef's Hat##134020 |n
+|tip This toy costs 100 Epicurean's Awards these can be obtained by completing cooking dailies.
+Learn the _Chef's Hat_ toy |toy Chef's Hat##134020 |goto Dalaran/1 41.6,64.8
+step
+This toy requires Revered reputation with the Order of the Cloud Serpent |condition rep("Order of the Cloud Serpent")>=Revered
+talk San Redscale##58414
+buy 1 Cloud Ring##89222 |use Cloud Ring##89222 |n
+|tip This toy costs 1,000 gold.
+Learn the _Cloud Ring_ toy |toy Cloud Ring##89222 |goto The Jade Forest/0 56.6,44.4
+step
+This toy has a small chance to drop from enemies during the Halloween Event
+kill Captain Bonerender##96535+, Salty Dreg##96536+, Brackish Cultivator##96538+, Boneship Reveler##96637+
+collect Coin of Many Faces##128807 |use Coin of Many Faces##128807 |n
+Learn the _Coin of Many Faces_ toy |toy Coin of Many Faces##128807 |goto Shadowmoon Valley D/0 39.9,81.2
+step
+Legion
+step
+Legion
+step
+kill Gondar##98284
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Cannon Controller##108633 |use Crashin' Thrashin' Cannon Controller##108633 |n
+Learn the _Crashin' Thrashin' Cannon Controller_ toy |toy Crashin' Thrashin' Cannon Controller##108633 |goto Tanaan Jungle/0 80.4,56.9
+step
+This toy is from the 2015 Christmas Event and was lootable under the tree
+collect Crashin' Thrashin' Flamer Controller##108632 |use Crashin' Thrashin' Flamer Controller##108632 |n
+Learn the _Crashin' Thrashin' Flamer Controller_ toy |toy Crashin' Thrashin' Flamer Controller##108632
+step
+This toy is from the 2013 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Crashin' Thrashin' Flyer Controller##104318 |use Crashin' Thrashin' Flyer Controller##104318 |n
+Learn the _Crashin' Thrashin' Flyer Controller_ toy |toy Crashin' Thrashin' Flyer Controller##104318
+step
+This toy can only be bought during the Christmas Events
+|tip This toy can be Purchased from Izzy Hollyfizzle in a level 3 Warlords of Draenor garrison for 5 Merry Supplies.
+|tip You can obtain these from level 100 Winter Veil dailies
+talk Izzy Hollyfizzle##96362
+buy 1 Crashin' Thrashin' Killdozer Controller##108635 |use Crashin' Thrashin' Killdozer Controller##108635 |n
+Learn the _Crashin' Thrashin' Killdozer Controller_ toy |toy Crashin' Thrashin' Killdozer Controller##108635
+step
+kill Smashum Grabb##98285
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Mortar Controller##108634 |use Crashin' Thrashin' Mortar Controller##108634 |n
+Learn the _Crashin' Thrashin' Mortar Controller_ toy |toy Crashin' Thrashin' Mortar Controller##108634 |goto Tanaan Jungle/0 88.1,55.8
+step
+This toy is from the 2008 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Crashin' Thrashin' Racer Controller##37710 |use Crashin' Thrashin' Racer Controller##37710 |n
+Learn the _Crashin' Thrashin' Racer Controller_ toy |toy Crashin' Thrashin' Racer Controller##37710
+step
+This toy can either be bought from the AH or can be made through the Engineering Profession
+collect Crashin' Thrashin' Robot##23767 |use Crashin' Thrashin' Robot##23767 |n
+Learn the _Crashin' Thrashin' Robot_ toy |toy Crashin' Thrashin' Robot##23767
+step
+kill Drakum##98283
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Crashin' Thrashin' Roller Controller##108631 |use Crashin' Thrashin' Roller Controller##108631 |n
+Learn the _Crashin' Thrashin' Roller Controller_ toy |toy Crashin' Thrashin' Roller Controller##108631 |goto Tanaan Jungle/0 83.5,43.7
+step
+This toy is from the 2014 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Crashin' Thrashin' Shredder Controller##116763 |use Crashin' Thrashin' Shredder Controller##116763 |n
+Learn the _Crashin' Thrashin' Shredder Controller_ toy |toy Crashin' Thrashin' Shredder Controller##116763
+step
+This toy requires you to complete the quest "Choking the Skies"
+|tip To get to this quest look at our Townlong Steppes leveling guide.
+collect Cremating Torch##88589 |use Cremating Torch##88589 |n
+Learn the _Cremating Torch_ toy |toy Cremating Torch##88589
+step
+Legion
+step
+Legion
+step
+kill High Priest Ikzan##90777
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+|tip He pats around this area.
+collect Cursed Feather of Ikzan##122117 |use Cursed Feather of Ikzan##122117 |n
+Learn the _Cursed Feather of Ikzan_ toy |toy Cursed Feather of Ikzan##122117 |goto Tanaan Jungle/0 20.7,39.9
+step
+Legion
+step
+placeholder
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect D.I.S.C.O##38301 |use D.I.S.C.O##38301 |n
+Learn the _D.I.S.C.O_ toy |toy D.I.S.C.O##38301
+step
+Legion
+step
+Complete the Achievement "Big Wanderluster: Gold" |achieve 9811
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Darkmoon Gazer##122121 |use Darkmoon Gazer##122121 |n
+Learn the _Darkmoon Gazer_ toy |toy Darkmoon Gazer##122121
+step
+Complete the Achievement "Triumphant Turtle Tossing" |achieve 9894
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Darkmoon Ring-Flinger##122123 |use Darkmoon Ring-Flinger##122123 |n
+Learn the _Darkmoon Ring-Flinger_ toy |toy Darkmoon Ring-Flinger##122123
+step
+This toy can only be obtained when the Darkmoon Event is active
+talk Gelvas Grimegate##14828
+buy 1 Darkmoon Seesaw##97994 |use Darkmoon Seesaw##97994 |n
+|tip This toy costs 50 Darkmoon tickets, these can be obtained through completing the Darkmoon daily quests.
+Learn the _Darkmoon Seesaw_ toy |toy Darkmoon Seesaw##97994 |goto Darkmoon Island 48.0,64.8
+step
+Complete the Achievement "Ace Tonk Commander" |achieve 9885
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Darkmoon Tonk Controller##122122 |use Darkmoon Tonk Controller##122122 |n
+Learn the _Darkmoon Tonk Controller_ toy |toy Darkmoon Tonk Controller##122122
+step
+This toy can only be obtained when the Darkmoon Event is active
+talk Gelvas Grimegate##14828
+buy 1 Darkmoon Whistle##90899 |use Darkmoon Whistle##90899 |n
+|tip This toy costs 90 Darkmoon tickets, these can be obtained through completing the Darkmoon daily quests.
+Learn the _Darkmoon Whistle_ toy |toy Darkmoon Whistle##90899 |goto Darkmoon Island 48.0,64.8
+step
+Legion
+step
+This toy was is only obtainable by Horde during the Zalazane's Fall Event and is no longer available
+collect Darkspear Pride##54653 |use Darkspear Pride##54653 |n
+Learn the _Darkspear Pride_ toy |toy Darkspear Pride##54653
+step
+talk Rook Hawkfist##33653
+buy 1 Darnassus Banner##45021 |use Darnassus Banner##45021 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Darnassus Banner_ toy |toy Darnassus Banner##45021 |goto Icecrown/0 76.3,19.2
+step
+click Dazzling Rod
+collect Dazzling Rod##127859 |use Dazzling Rod##127859 |n
+Learn the _Dazzling Rod_ toy |toy Dazzling Rod##127859 |goto Tanaan Jungle/0 42.8,35.5
+step
+Legion
+step
+You can either buy this from the AH or if you are a rogue with a high level of pickpocketing you can pickpocket the Onslaught mobs in Dragonblight
+collect Decahedral Dwarven Dice##36863 |use Decahedral Dwarven Dice##36863 |n
+Learn the _Decahedral Dwarven Dice_ toy |toy Decahedral Dwarven Dice##36863
+step
+click Deceptia's Smoldering Boots##226976 |goto Talador 58.90,12.00
+|tip A small pair of boots in the ruined camp.
+collect 1 Deceptia's Smoldering Boots##108743 |use Deceptia's Smoldering Boots##108743 |n
+Learn the _Deceptia's Smolerding Boots_ toy |toy Deceptia's Smoldering Boots##108743
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Demon Hunter's Aspect##79769 |use Demon Hunter's Aspect##79769 |n
+Learn the _Demon Hunter's Aspect_ toy |toy Demon Hunter's Aspect##79769
+step
+Legion
+step
+This toy will be available during the 2016 Christmas Event
+collect Disposable Winter Veil Suits##139337 |use Disposable Winter Veil Suits##139337 |n
+Learn the _Disposable Winter Veil Suits_ toy |toy Disposable Winter Veil Suits##139337
+step
+This toy drops from a rare spawn found in the dungeon Old Hillsbrad Foothills on Heroic Difficulty
+kill Don Carlos##28132
+|tip He pats along this road.
+collect Don Carlos' Famous Hat##134019 |use Don Carlos' Famous Hat##134019 |n
+Learn the _Don Carlos' Famous Hat_ toy |toy Don Carlos' Famous Hat##134019 |goto Old Hillsbrad Foothills/0 44.4,54.8
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Druid and Priest Statue Set toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Druid and Priest Statue Set_ toy |toy Druid and Priest Statue Set##64361 |use Druid and Priest Statue Set##64361
+step
+This toy is only available by completing the quest "Elune's Blessing" during the Lunar Festival Event
+|tip You can accomplish this by going to our Lunar Festival Event guide.
+collect Elune's Lantern##21540 |use Elune's Lantern##21540 |n
+Learn the _Elune's Lantern_ toy |toy Elune's Lantern##21540
+step
+Legion
+step
+Legion
+step
+This toy will be available during the 2016 Christmas Event
+collect Endothermic Blaster##128636 |use Endothermic Blaster##128636 |n
+Learn the _Endothermic Blaster_ toy |toy Endothermic Blaster##128636
+step
+kill Ai-Ran the Shifting Cloud##50822
+collect Essence of the Breeze##86590 |use Essence of the Breeze##86590 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Essence of the Breeze_ toy |toy Essence of the Breeze##86590 |goto Vale of Eternal Blossoms/0 42.6,69.0
+step
+talk Haris Pilton##18756
+buy 1 Eternal Black Diamond Ring##134007 |use Eternal Black Diamond Ring##134007 |n
+|tip This costs 5,000 gold.
+Learn the _Eternal Black Diamond Ring_ toy |toy Eternal Black Diamond Ring##134007 |goto Shattrath City/0 75.5,30.5
+buy 1 Noble's Eternal Elementium Signet##134004 |use Noble's Eternal Elementium Signet##134004 |n
+Learn the _Noble's Eternal Elementium Signet_ toy |toy Noble's Eternal Elementium Signet##134004 |goto Shattrath City/0 75.5,30.5
+step
+kill Eternal Kilnmaster##72896
+collect 1 Eternal Kiln##104309 |use Eternal Kiln##104309 |n
+Learn the _Eternal Kiln_ toy |toy Eternal Kiln##104309 |goto Timeless Isle/0 35.6,36.2
+You can also find the Kilnmasters at one of these other locations:
+Here [41.6,28.8]
+Here [47.4,36.0]
+Here [56.6,38.6]
+Here [54.0,24.0]
+Here [68.8,34.4]
+Here [56.0,59.6]
+step
+kill Gar'lok##50739
+collect Eternal Warrior's Sigil##86578 |use Eternal Warrior's Sigil##86578 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Eternal Warrior's Sigil_ toy |toy Eternal Warrior's Sigil##86578 |goto Dread Wastes/0 39.2,41.8
+You can also find Gar'lok in these locations:
+Here [37.8,29.6]
+Here [35.6,30.8]
+step
+Placeholder
+step
+This toy can only be obtained during the Burning Crusade Timewalking Event
+talk Cupri##98685
+buy 1 Ever-Shifting Mirror##129929 |use Ever-Shifting Mirror##129929
+|tip This will cost 500 Timewarped Badges, these can be obtained by completing any timewalking dungeon during any timewalking event.
+Learn the _Ever-Shifting Mirror_ toy |toy Ever-Shifting Mirror##129929 |goto Shattrath City/0 54.6,39.6
+step
+This toy is only obtainable when the Lunar Festival Event is active
+|tip If you go to a horde character this item becomes "Everylasting Horde Firework".
+talk Fariel Starsong##15909
+buy 1 Everlasting Alliance Firework##89999 |use Everlasting Alliance Firework##89999 |n
+|tip This toy costs 25 Coins of Ancestry, these can be obtained by completing quests associated with the Lunar Festival Event, check out our Lunar Festival Event guide to complete this.
+Learn the _Everlasting Alliance Firework_ toy |toy Everlasting Alliance Firework##89999 |goto Moonglade/0 54.0,35.0
+step
+Complete the Achievement "Rocketeer: Gold" |achieve 9764
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Everlasting Darkmoon Firework##122119 |use Everlasting Darkmoon Firework##122119 |n
+Learn the _Everlasting Darkmoon Firework_ toy |toy Everlasting Darkmoon Firework##122119
+step
+This toy is only obtainable when the Lunar Festival Event is active
+|tip If you go to an Alliance character this item becomes "Everylasting Alliance Firework".
+talk Fariel Starsong##15909
+buy 1 Everlasting Horde Firework##90000 |use Everlasting Horde Firework##90000 |n
+|tip This toy costs 25 Coins of Ancestry, these can be obtained by completing quests associated with the Lunar Festival Event, check out our Lunar Festival Event guide to complete this.
+Learn the _Everlasting Horde Firework_ toy |toy Everlasting Horde Firework##90000 |goto Moonglade/0 54.0,35.0
+step
+talk Irisee##33657
+buy 1 Exodar Banner##45020 |use Exodar Banner##45020 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Exodar Banner_ toy |toy Exodar Banner##45020 |goto Icecrown/0 76.2,19.3
+step
+This toy is only obtainable by the Horde nad requires the completion of the quest "Farewell, Minnow"
+|tip This toy requires the completion of a long quest line in Azshara a level 15+ zone, follow our Azshara leveling guide.
+collect Faded Wizard Hat##53057 |use Faded Wizard Hat##53057 |n
+Learn the _Faded Wizard Hat_ toy |toy Faded Wizard Hat##53057
+step
+Legion
+step
+Legion
+step
+kill Majordomo Staghelm##52571
+collect 1 Fandral's Seed Pouch##122304 |use Fandral's Seed Pouch##122304 |n
+|tip This toy can only drop for Druids.
+Learn the _Fandral's Seed Pouch_ toy |toy Fandral's Seed Pouch##122304 |goto Firelands/2 50.9,72.4
+step
+kill Zai the Outcast##50769
+collect 1 Farwater Conch##86581 |use Farwater Conch##86581 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Farwater Conch_ toy |toy Farwater Conch##86581 |goto Kun-Lai Summit/0 73.8,77.4
+step
+kill Bramblefell##91093
+|tip Bramblefell wanders around the marsh in a small area.
+collect 1 Felflame Campfire##127652 |use Felflame Campfire##127652 |n
+|tip This toy is roughly a 35% drop.
+Learn the _Felflame Campfire_ toy |toy Felflame Campfire##127652 |goto Tanaan Jungle/0 41.0,68.8
+step
+This toy can either be bought on the Ah or can be made through the Engineering Profession
+collect Findle's Loot-A-Rang##109167 |use Findle's Loot-A-Rang##109167 |n
+Learn the _Findle's Loot-A-Rang_ toy |toy Findle's Loot-A-Rang##109167
+step
+Complete the Achievement "Darkmoon Racer Roadhog" |achieve 9761
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Fire-Eater's Vial##122129 |use Fire-Eater's Vial##122129 |n
+Learn the _Fire-Eater's Vial_ toy |toy Fire-Eater's Vial##122129
+step
+This toy is only obtainable by horde by completing the quest "Fury of Frostfire"
+|tip This is one of the random quests given to players through the garrison on a weekly basis.
+collect Firefury Totem##119145 |use Firefury Totem##119145 |n
+Learn the _Firefury Totem_ toy |toy Firefury Totem##119145
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Fishing Chair##33223 |use Fishing Chair##33223 |n
+Learn the _Fishing Chair_ toy |toy Fishing Chair##33223
+step
+Legion
+step
+This toy can only be obtained when the Darkmoon Event is active
+talk Carl Goodup##55305
+|tip He pats along this road.
+buy 1 Flimsy Yellow Balloon##75042 |use Flimsy Yellow Balloon##75042 |n
+Learn the _Flimsy Yellow Balloon_ toy |toy Flimsy Yellow Balloon##75042 |goto Darkmoon Island 49.6,80.4
+step
+placeholder
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Foam Sword Rack##45063 |use Foam Sword Rack##45063 |n
+Learn the _Foam Sword Rack_ toy |toy Foam Sword Rack##45063
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Fool's Gold##69227 |use Fool's Gold##69227 |n
+Learn the _Fool's Gold_ toy |toy Fool's Gold##69227
+step
+This toy is from the 2012 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Foot Ball##90888 |use Foot Ball##90888 |n
+Learn the _Foot Ball_ toy |toy Foot Ball##90888
+step
+talk Sally Fizzlefury##55143
+buy 1 Foxicopter Controller##88802 |use Foxicopter Controller##88802 |n
+|tip This toy costs 1,000 gold.
+Learn the _Foxicopter Controller_ toy |toy Foxicopter Controller##88802 |goto Valley of the Four Winds/0 16.0,83.0
+buy 1 Stackable Stag##91904 |use Stackable Stag##91904 |n
+|tip This toy costs 1,000 gold.
+Learn the _Stackable Stag_ toy |toy Stackable Stag##91904 |goto Valley of the Four Winds/0 16.0,83.0
+step
+This toy can only be obtained if you are revered with the Frenzyheart Tribe |condition rep("Frenzyheart Tribe")>=Revered
+talk Tanak##31911
+buy 1 Ripe Disgusting Jar##44718 |use Ripe Disgusting Jar##44718 |n
+collect Frenzyheart Brew##44719 |use Frenzyheart Brew##44719 |n
+Learn the _Frenzyheart Brew_ toy |toy Frenzyheart Brew##44719 |goto Sholazar Basin/0 55.0,69.0
+step
+This toy requires Revered reputation with the Vol'jin Headhunters |condition rep("Vol'jin's Headhunters")>=Revered
+|tip This is a Horde only toy.
+talk Shadow Hunter Denjai##96014
+buy 1 Frostwolf Grunt's Battlegear##128471 |use Frostwolf Grunt's Battlegear##128471 |n
+|tip This toy costs 300 gold.
+Learn the _Frostwolf Grunt's Battlegear_ toy |toy Frostwolf Grunt's Battlegear##128471
+step
+Placeholder
+step
+This toy is from the 2014 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Fuzzy Green Lounge Cushion##116692 |use Fuzzy Green Lounge Cushion##116692 |n
+Learn the _Fuzzy Green Lounge Cushion_ toy |toy Fuzzy Green Lounge Cushion##116692
+step
+Placeholder
+step
+kill Gastropod##68220+
+|tip These snails can be found all throughout this path before Ji'kun.
+collect Gastropod Shell##98136 |use Gastropod Shell##98136 |n
+|tip This toy has a very small chance to drop from these mobs in Throne of Thunder, there are about 5 of these snails up at a time.
+Learn the _Gastropod Shell_ toy |toy Gastropod Shell##98136 |goto Throne of Thunder/3 45.2,79.6
+step
+Complete the Achievement "Powermonger: Gold" |achieve 9785
+|tip This achievement can only be completed while the Darkmoon Faire is active.
+Check your mail box once you have completed this achievement
+collect Gaze of the Darkmoon##122120 |use Gaze of the Darkmoon##122120 |n
+Learn the _Gaze of the Darkmoon_ toy |toy Gaze of the Darkmoon##122120
+step
+_Enter_ the cave |goto Tanaan Jungle/0 37.3,75.9 < 10 |walk
+_Go down_ the left passage |goto Tanaan Jungle/0 36.9,77.8 < 10 |only if walking
+kill Captain Ironbeard##93076
+collect 1 Ghostly Iron Buccaneer's Hat##127659 |use Ghostly Iron Buccaneer's Hat##127659 |n
+|tip This toy is roughly a 35% drop.
+Learn the _Ghostly Iron Buccaneer's Hat_ toy |toy Ghostly Iron Buccaneer's Hat##127659 |goto Tanaan Jungle 36.20,79.70
+step
+_Enter_ the cave |goto Talador/0 61.3,84.2 |walk
+_Go to_ the main cavern |goto Talador/0 65.4,86.2 |only if walking
+click Curious Deathweb Egg##227996 |goto Talador 66.50,86.94
+|tip It is a purple, motionless egg sack found behind the large crystal formation towards the back of the cave.
+collect 1 Giant Deathweb Egg##117569 |use Giant Deathweb Egg##117569 |n
+Learn the _Giant Deathweb Egg_ toy |toy Giant Deathweb Egg##117569
+step
+This toy requires Exalted reputation with the Tillers |condition rep("The Tillers")>=Exalted
+talk Gina Mudclaw##58706
+buy 1 Gin-Ji Knife Set##90175 |use Gin-Ji Knife Set##90175 |n
+|tip This toy costs 200 gold
+Learn the _Gin-Ji Knife Set_ toy |toy Gin-Ji Knife Set##90175 |goto Valley of the Four Winds/0 52.2,48.6
+step
+Earn _Exalted_ status with the Kirin Tor Offensive faction |condition rep("Kirin Tor Offensive")==Exalted
+|tip This is an Alliance only toy.
+talk Lady Jaina Proudmoore##67992
+accept Securing A Future##32599 |goto Isle of Thunder/0 63.2,72.2
+kill Lei Shen##68397
+Charge the staff |q Securing A Future##32599/1 |use Staff of Antonidas##94155 |future
+turnin Securing A Future##32599 |goto Isle of Thunder/0 63.2,72.2 |only if itemcount(94153) > 0
+collect 1 Glorious Standard of the Kirin Tor Offensive##95589 |use Glorious Standard of the Kirin Tor Offensive##95589 |n
+|tip This toy is the reward for completing "Securing A Future."
+Learn the _Glorious Standard of the Kirin Tor Offensive_ toy |toy Glorious Standard of the Kirin Tor Offensive##95589
+confirm
+step
+Placeholder
+step
+talk Rillie Spindlenut##33650
+buy 1 Gnomeregan Banner##45019 |use Gnomeregan Banner##45019 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Gnomeregan Banner_ toy |toy Gnomeregan Banner##45019 |goto Icecrown/0 76.5,19.6
+step
+This toy was is only obtainable by Alliance during the Operation: Gnomereegan Event and is no longer available
+collect Gnomeregan Pride##54651 |use Gnomeregan Pride##54651 |n
+Learn the _Gnomeregan Pride_ toy |toy Gnomeregan Pride##54651
+step
+This toy can either be bought in the AH or made by players with the profession Engineering.
+|tip Players must be at least level 500 Engineering to craft this item.
+collect Gnomish Gravity Well##40727 |use Gnomish Gravity Well##40727 |n
+Learn the _Gnomish Gravity Well_ toy |toy Gnomish Gravity Well##40727
+step
+This toy is only obtainable by crafting it through Engineering
+|tip Players must be at least level 425 to craft this item.
+collect Gnomish X-Ray Specs##40895 |use Gnomish X-Ray Specs##40895 |n
+Learn the _Gnomish X-Ray Specs_ toy |toy Gnomish X-Ray Specs##40895
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Goblin Gumbo Kettle##33219 |use Goblin Gumbo Kettle##33219 |n
+Learn the _Goblin Gumbo Kettle_ toy |toy Goblin Gumbo Kettle##33219
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Goblin Weather Machine - Prototype 01-B##35227 |use Goblin Weather Machine - Prototype 01-B##35227 |n
+Learn the _Goblin Weather Machine - Prototype 01-B_ toy |toy Goblin Weather Machine - Prototype 01-B##35227
+step
+label "shell"
+kill Gokk'lok##62767
+|tip Gokk'lok is a level 91 elite clam.
+accept Promises of Gold##31083 |goto Dread Wastes/0 27.4,16.2
+step
+talk Chief Rikkitun##62771
+turnin Promises of Gold##31083 |goto Dread Wastes/0 38.6,17.3
+collect Gokk'lok's Shell##88417 |use Gokk'lok's Shell##88417 |n
+Learn the _Gokk'lok's Shell_ toy |toy Gokk'lok's Shell##88417 |goto Dread Wastes/0 38.6,17.3
+step
+kill Gibblette the Cowardly##87352
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+collect Goren "Log" Roller##119180 |use Goren "Log" Roller##119180 |n
+Learn the _Goren "Log" Roller_ toy |toy Goren "Log" Roller##119180 |goto Frostfire Ridge/0 66.6,25.4
+step
+_Enter_ the cave |goto Gorgrond/0 48.6,47.2 < 15 |walk
+click Warm Goren Egg##234054 |goto Gorgrond 48.94,47.31
+|tip It's a glowing red egg sitting against the wall on the back side of the cave.
+collect 1 Warm Goren Egg##118705 |use Cracked Goren Egg##118706 |n
+|tip It takes 7 days for this egg to crack, allowing you to loot the toy.
+collect 1 Goren Garb##118716 |use Goren Garb##118716 |n
+Learn the _Goren Garb_ toy |toy Goren Garb##118716
+step
+This toy is only obtainable during the Brewfest Event
+talk Keiran Donoghue##23481
+buy 1 Gravil Goldbraid's Famous Sausage Hat##138900 |use Gravil Goldbraid's Famous Sausage Hat##138900 |n
+Learn the _Gravil Goldbraid's Famous Sausage Hat_ toy |toy Gravil Goldbraid's Famous Sausage Hat##138900 |goto Dun Morogh/0 56.0,36.6
+step
+These toys are only obtainable during the Children's Week Event and cost 10 silver each
+talk Craggle Wobbletop##52358
+|tip He pats up and down this road.
+buy 1 Green Balloon##69895 |use Green Balloon##69895 |n
+Learn the _Green Balloon_ toy |toy Green Balloon##69895 |goto Stormwind City/0 57.6,73.4
+buy 1 Yellow Balloon##69896 |use Yellow Balloon##69896 |n
+Learn the _Yellow Balloon_ toy |toy Yellow Balloon##69896 |goto Stormwind City/0 57.6,73.4
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Grim Campfire##67097 |use Grim Campfire##67097 |n
+Learn the _Grim Campfire_ toy |toy Grim Campfire##67097
+step
+This toy can only be obtained during the Cataclysm Timewalking Event
+talk Kiatke##101759
+buy 1 Gurboggle's Gleaming Bauble##133511 |use Gurboggle's Gleaming Bauble##133511 |n
+|tip This will cost 1,500 Timewarped Badges, these can be obtained by completing any timewalking dungeon during any timewalking event.
+Learn the _Gurboggle's Gleaming Bauble_ toy |toy Gurboggle's Gleaming Bauble##133511 |goto Orgrimmar/0 52.0,41.6
+step
+kill Great Turtle Furyshell##73161+
+|tip These turtles can be found all along the western coast.
+|tip This toy has about a 1 percent chance to drop from these turtles.
+collect Hardened Shell##86584 |use Hardened Shell##86584 |n
+Learn the _Hardened Shell_ toy |toy Hardened Shell##86584 |goto Timeless Isle/0 26.0,50.0
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Troll dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Troll fragments and solve their artifacts until you attain the Haunted War Drum toy.
+Eastern Zul�Mamwe Digsite |goto Northern Stranglethorn/0 62.47,70.0 |'
+Western Zul�Mamwe Digsite |goto Northern Stranglethorn/0 61.17,71.51 |'
+Bal�lal Ruins Digsite |goto Northern Stranglethorn/0 32.74,36.4 |'
+Balia�mah Ruins Digsite |goto Northern Stranglethorn/0 60.17,55.14 |'
+Western Zul�Kunda Digsite |goto Northern Stranglethorn/0 25.7,21.32 |'
+Eastern Zul�Kunda Digsite |goto Northern Stranglethorn/0 28.15,21.11 |'
+Ziata�jai Digsite |goto Northern Stranglethorn/0 53.56,60.53 |'
+Nek�mani Wellspring Digsite |goto The Cape of Stranglethorn/0 40.49,49.33 |'
+Ruins of Jubuwal |goto The Cape of Stranglethorn/0 52.7,31.23 |'
+Ruins of Aboraz |goto The Cape of Stranglethorn/0 41.79,53.42 |'
+Gurubashi Arena Digsite |goto The Cape of Stranglethorn/0 46.38,22.83 |'
+Witherbark Digsite |goto Arathi Highlands/0 60.89,71.08 |'
+Zul�Mashar Digsite |goto Eastern Plaguelands/0 65.05,12.71 |'
+Shadra�Alor Digsite |goto The Hinterlands/0 34.89,69.57 |'
+Altar of Zul Digsite |goto The Hinterlands/0 47.82,65.27 |'
+Agol�watha Digsite |goto The Hinterlands/0 46.24,41.14 |'
+Jintha�Alor Upper City Digsite |goto The Hinterlands/0 60.6,77.33 |'
+Jintha�Alor Lower City Digsite |goto The Hinterlands/0 66.05,68.93 |'
+Sunken Temple Digsite |goto Swamp of Sorrows/0 71.8,60.31 |'
+Zul�Farrak Digsite |goto Tanaris/0 39.63,21.97 |'
+Eastmoon Ruins Digsite |goto Tanaris/0 46.38,63.97 |'
+Southmoon Ruins Digsite |goto Tanaris/0 40.35,71.3 |'
+Broken Pillar Digsite |goto Tanaris/0 52.56,45.66 |'
+Drakil�jin Ruins Digsite |goto Grizzly Hills/0 71.66,25.42 |'
+Zol�Heb Digsite |goto Zul'Drak/0 77.97,36.19 |'
+Zim�Rhuk Digsite |goto Zul'Drak/0 59.16,43.29 |'
+Altar of Quetz�lun Digsite |goto Zul'Drak/0 73.23,58.37 |'
+Altar of Sseratus Digsite |goto Zul'Drak/0 40.21,44.37 |'
+Learn the _Haunted War Drum_ toy |toy Haunted War Drum##69777 |use Haunted War Drum##69777
+step
+This toy is only able to buy when the Darkmoon Faire event is active
+talk Chester##85484
+buy 1 Haunting Memento##116139 |use Haunting Memento##116139 |n
+Learn the _Haunting Memento_ toy |toy Haunting Memento##116139 |goto Darkmoon Island 51.2,75.0
+step
+talk Benjamin Brode##88779
+buy 1 Hearthstone Board##119210 |use Hearthstone Board##119210 |n
+|tip This toy costs 1,000 gold.
+Learn the _Hearthstone Board_ toy |toy Hearthstone Board##119210 |goto Lunarfall/0 45.1,50.3
+buy 1 Winning Hand##119212 |use Winning Hand##119212 |n
+|tip This toy costs 100 gold.
+Learn the _Winning Hand_ toy |toy Winning Hand##119212 |goto Lunarfall/0 45.1,50.3
+step
+kill Major Nanners##50840
+collect Helpful Wikky's Whistle##86594 |use Helpful Wikky's Whistle##86594 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Helpful Wikky's Whistle_ toy |toy Helpful Wikky's Whistle##86594 |goto Vale of Eternal Blossoms/0 30.8,91.4
+step
+placeholder
+step
+Legion
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Highborne Soul Mirror toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Highborne Soul Mirror_ toy |toy Highborne Soul Mirror##64358 |use Highborne Soul Mirror##64358
+step
+To get this toy you must complete the achievement "Pub Crawl"
+|tip Check out our achievement guides to complete this.
+Check your mail box once this acheivement is completed
+collect Honorary Brewmaster Keg##87528 |use Honorary Brewmaster Keg##87528 |n
+Learn the _Honorary Brewmaster Keg_ toy |toy Honorary Brewmaster Keg##87528
+step
+placeholder
+step
+This toy can only be obtained during the Wrath of the Lich King Timewalking Event
+talk Auzin##98690
+buy 1 Hourglass of Eternity##129952 |use Hourglass of Eternity##129952 |n
+tip This will cost 2,000 Timewarped Badges, these can be obtained by completing any timewalking dungeon during any timewalking event.
+Learn the _Hourglass of Eternity_ toy |toy Hourglass of Eternity##129952 |goto Dalaran/0 50.6,46.6
+step
+kill Ik-Ik the Nimble##50836
+collect Hozen Beach Ball##86593 |use Hozen Beach Ball##86593 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Hozen Beach Ball_ toy |toy Hozen Beach Ball##86593 |goto Dread Wastes/0 55.4,63.4
+step
+talk Smokey Sootassle##59597
+accept Traffic Issues##30616 |goto 64.88,60.49
+step
+kill Ruqin Outrider##59538
+kill Ruqin Elder##59826
+kill Ruqin Infantry##59790
+Deal with the Ruqin Yaungols |q Traffic Issues##30616/1 |goto Kun-Lai Summit/0 62.8,67.4
+step
+talk Smokey Sootassle##59597
+turnin Traffic Issues##30616 |goto 64.88,60.49
+step
+talk Brother Lintpocket##59701
+accept The Burlap Trail: To Burlap Waystation##30592 |goto 58.09,61.46
+step
+map Kun-Lai Summit/0
+path follow smart; loop off; ants curved; dist 20
+path	58.5,64.8	56.9,64.7	55.9,65.7
+path	54.8,65.8	54.2,67.1	53.0,66.6
+Escort the Grummie caravan |q The Burlap Trail: To Burlap Waystation##30592/1
+|tip Follow the path, killing any attackers that threaten the caravan.
+step
+talk Brother Trailscenter##59703
+turnin The Burlap Trail: To Burlap Waystation##30592 |goto Kun-Lai Summit/0 51.7,67.8
+step
+talk Brother Trailscenter##59703
+accept The Rabbitsfoot##30602 |goto 51.66,67.83
+step
+talk Brother Rabbitsfoot##59806
+Rescue Rabbitsfoot |q The Rabbitsfoot##30602/1 |goto Kun-Lai Summit/0 49.1,70.4
+accept The Broketooth Ravage##30603 |goto 49.10,70.44
+step
+kill 1 Mo Mo##59805
+collect Rabbitsfoot's Luckydo##81137 |n
+Retrieve Rabbitsfoot's Luckydo |q The Broketooth Ravage##30603/1 |goto Kun-Lai Summit/0 48.0,73.3
+step
+talk Brother Rabbitsfoot##59452
+turnin The Rabbitsfoot##30602 |goto 51.97,67.22
+turnin The Broketooth Ravage##30603 |goto 51.97,67.22
+accept A Monkey Idol##30599 |goto 51.97,67.22
+step
+kill Hateful Ko Ko##59430
+collect Corpse of Ko Ko##80429 |n
+click Ko Ko's Altar##6478
+|tip It's a little blade on the stone.
+Destroy Ko Ko's Altar |q A Monkey Idol##30599/2 |goto Kun-Lai Summit/0 52.3,71.4
+step
+_Enter_ the cave |goto Kun-Lai Summit/0 52.8,71.4
+kill Dak Dak##59424
+|tip Dak Dak patrols up and down the ledge.
+collect Corpse of Dak Dak##80428 |goto Kun-Lai Summit/11 39.1,40.1 |n
+click Dak Dak's Altar##6478
+Destroy Dak Dak's Altar |q A Monkey Idol##30599/1 |goto Kun-Lai Summit/12 49.8,39.5
+step
+kill Tak Tak##59958
+collect Corpse of Tak Tak##80430 |n
+click Tak Tak's Altar##6478
+|tip It's a little blade on the stone.
+Destroy Tak Tak's Altar |q A Monkey Idol##30599/3 |goto Kun-Lai Summit/0 56.8,71.0
+step
+talk Brother Rabbitsfoot##59452
+turnin A Monkey Idol##30599 |goto 51.97,67.22
+Learn the Hozen Idol toy |toy Hozen Idol##88385 |use Hozen Idol##88385
+step
+kill Hypnocroak##79524
+collect Hypnosis Goggles##113631 |use Hypnosis Goggles##113631 |n
+Learn the _Hypnosis Goggles_ toy |toy Hypnosis Goggles##113631 |goto Shadowmoon Valley D/0 37.6,49.0
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Imp in a Ball##32542 |use Imp in a Ball##32542 |n
+Learn the _Imp in a Ball_ toy |toy Imp in a Ball##32542
+step
+You must first upgrade you garrison to level 3 before Tiffy will be available |only if garrisonlvl(1) or garrisonlvl(2)
+talk Tiffy Trapspring##94512
+buy 1 Indestructible Bone##127707 |use Indestructible Bone##127707 |n
+Learn the _Indestructible Bone_ toy |toy Indestructible Bone##127707 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 50 Pet Charms.
+buy 1 Spirit Wand##127695 |use Spirit Wand##127695 |n
+Learn the _Spirit Wand_ toy |toy Spirit Wand##127695 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 100 Pet Charms.
+buy 1 Magic Pet Mirror##127696 |use Magic Pet Mirror##127696 |n
+Learn the _Magic Pet Mirror_ toy |toy Magic Pet Mirror##127696 |goto Lunarfall/0 29.1,38.6
+|tip This toy costs 500 Pet Charms.
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Instant Statue Pedestal##54212 |use Instant Statue Pedestal##54212 |n
+Learn the _Instant Statue Pedestal_ toy |toy Instant Statue Pedestal##54212
+step
+talk Rork Sharpchin##29744
+buy 1 Iron Boot Flask##43499 |use Iron Boot Flask##43499 |n
+|tip This toy costs 10 Relics of Ulduar
+Learn the _Iron Boot Flask_ toy |toy Iron Boot Flask##43499 |goto The Storm Peaks/0 28.8,74.0
+step
+kill Captain Ironbeard##79725
+|tip This is a rare spawn.
+collect Iron Buccaneer's Hat##118244 |use Iron Buccaneer's Hat##118244 |n
+Learn the _Iron Buccaneer's Hat_ toy |toy Iron Buccaneer's Hat##118244 |goto Nagrand D/0 34.6,77.0
+step
+talk Derrick Brindlebeard##33310
+buy 1 Ironforge Banner##45018 |use Ironforge Banner##45018 |n
+|tip This costs 15 Champion's Seals, these can be obtained through completing dailies in the Argent Tournament.
+Learn the _Ironforge Banner_ toy |toy Ironforge Banner##45018 |goto Icecrown/0 76.5,19.4
+step
+click Jewel of Hellfire##240580 |quest 38334 |goto Tanaan Jungle/0 28.7,23.3 |future
+|tip It looks like a red crystal lodged into the skull of this skeleton laying on the ground in the middle of a bunch of trees on the beach.
+collect Jewel of Hellfire##127668 |use Jewel of Hellfire##127668 |n
+Learn the _Jewel of Hellfire_ toy |toy Jewel of Hellfire##127668 |goto Tanaan Jungle/0 28.7,23.3
+step
+Legion
+step
+talk Sya Zhong##60178
+|tip She is inside the building.
+accept Holed Up##30682 |goto Kun-Lai Summit/0 42.9,88.3
+confirm
+step
+talk Ya Firebough##60189
+|tip He is inside the building.
+Tell him: "_...That's enough. Let's go._" |q Holed Up##30682/2 |goto Kun-Lai Summit/0 41.0,87.0
+step
+talk Old Lady Fung##60190
+|tip She is inside the building.
+Tell her: "_Yes... why don't you 'escort' me out of here._" |q Holed Up##30682/3 |goto Kun-Lai Summit/0 42.8,85.7
+step
+talk Jin Warmkeg##60187
+|tip He is inside the building.
+Tell him: "_Let's get out of here._" |q Holed Up##30682/1 |goto Kun-Lai Summit/0 43.9,86.2
+step
+talk Shado-Master Chong##60161
+|tip He is inside the building. You will need to click the doors to open them.
+turnin Holed Up##30682 |goto Kun-Lai Summit/0 44.5,89.9
+Learn the Jin Warmkeg's Brew toy |toy Jin Warmkeg's Brew##88579 |use Jin Warmkeg's Brew##88579 |goto Kun-Lai Summit/0 44.5,89.9
+step
+Legion
+step
+This toy requires a minimum of 75 skill points in Archaeology
+|tip All Night Elf dig sites are marked on your map. You can find them in Eastern Kingdoms and Kalimdor.
+|tip Collect Night Elf fragments and solve their artifacts until you attain the Kaldorei Wind Chimes toy.
+Twilight Grove Digsite |goto Duskwood/0 47.1,42.86 |'
+Quel�Lithien Lodge Digsite |goto Eastern Plaguelands/0 47.24,12.06 |'
+Ruins of Arkkoran |goto Azshara/0 70.94,32.52 |'
+Ruins of Eldarath |goto Azshara/0 32.74,51.48 |'
+Nazj�vel Digsite |goto Darkshore/0 32.31,84.0 |'
+Nightmare Scar Digsite |goto Southern Barrens/0 47.96,37.69 |'
+Sargeron Digsite |goto Desolace/0 75.1,21.76 |'
+Slitherblade Shore Digsite |goto Desolace/0 30.3,28.86 |'
+Ethel Rethor Digsite |goto Desolace/0 38.91,25.42 |'
+Mannoroc Coven Digsite |goto Desolace/0 51.7,76.9 |'
+Darkmist Digsite |goto Feralas/0 64.91,58.8 |'
+Ravenwind Digsite |goto Feralas/0 39.63,11.63 |'
+North Isildien Digsite |goto Feralas/0 60.89,56.22 |'
+South Isildien Digsite |goto Feralas/0 59.31,66.34 |'
+Dire Maul Digsite |goto Feralas/0 59.16,47.39 |'
+Broken Commons Digsite |goto Feralas/0 62.03,30.37 |'
+Solarsal Digsite |goto Feralas/0 27.43,52.56 |'
+Oneiros Digsite |goto Feralas/0 52.56,17.23 |'
+Constellas Digsite |goto Felwood/0 37.62,65.48 |'
+Ironwood Digsite |goto Felwood/0 49.54,29.51 |'
+Jaedenar Digsite |goto Felwood/0 38.48,59.23 |'
+Morlos�Aran Digsite |goto Felwood/0 56.0,84.44 |'
+Southwind Village Digsite |goto Silithus/0 64.19,46.96 |'
+Shrine of Goldrinn Digsite |goto Mount Hyjal/0 28.86,30.59 |'
+Sanctuary of Malorne Digsite |goto Mount Hyjal/0 26.13,61.6 |'
+Grove of Aessina Digsite |goto Mount Hyjal/0 18.81,39.42 |'
+Scorched Plain Digsite |goto Mount Hyjal/0 55.43,54.28 |'
+Ruins of Lar�donir Digsite |goto Mount Hyjal/0 49.25,19.39 |'
+Frostwhisper Gorge Digsite |goto Winterspring/0 60.89,84.44 |'
+Lake Kel�Theril Digsite |goto Winterspring/0 50.26,55.79 |'
+Owl Wing Thicket Digsite |goto Winterspring/0 64.33,76.47 |'
+Forest Song Digsite |goto Ashenvale/0 84.0,44.37 |'
+Ruins of Ordil�Aran |goto Ashenvale/0 28.58,29.29 |'
+Ruins of Stardust |goto Ashenvale/0 33.46,66.99 |'
+Zoram Strand Digsite |goto Ashenvale/0 15.08,19.17 |'
+Stonetalon Peak |goto Stonetalon Mountains/0 41.64,21.76 |'
+Ruins of Eldre�thar |goto Stonetalon Mountains/0 48.11,73.88 |'
+Riplash Ruins Digsite |goto Borean Tundra/0 49.97,90.25 |'
+Moonrest Gardens Digsite |goto Dragonblight/0 21.97,59.23 |'
+Violet Stand Digsite |goto Crystalsong Forest/0 15.36,42.43 |'
+Ruins of Shandaral Digsite |goto Crystalsong Forest/0 80.99,60.96 |'
+Learn the _Kaldorei Wind Chimes_ toy |toy Kaldorei Wind Chimes##64383 |use Kaldorei Wind Chimes##64383
+step
+talk Tex Vortacoil##36375
+buy 1 Kalytha's Haunted Locket##68806 |use Kalytha's Haunted Locket##68806 |n
+|tip This toy costs 5,000 gold.
+Learn the _Kalytha's Haunted Locket_ toy |toy Kalytha's Haunted Locket##68806 |goto Azshara/0 25.6,38.0
+step
+kill Kang the Soul Thief##50349
+collect Kang's Bindstone##86571 |use Kang's Bindstone##86571 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Kang's Bindstone_ toy |toy Kang's Bindstone##86571 |goto Vale of Eternal Blossoms/0 15.0,35.6
+step
+Earn _Revered_ status with the Hand of the Prophet faction |condition rep("Hand of the Prophet")>=Revered
+talk Vindicator Krethos ##90974
+|tip He is inside the bunker.
+buy 1 Karabor Councilor's Attire##128462 |use Karabor Councilor's Attire##128462 |n
+|tip This toy costs 300 gold, modified by reputation status.
+Learn the _Karabor Councilor's Attire_ toy |toy Karabor Councilor's Attire##128462 |goto Tanaan Jungle/0 58.4,60.5
+step
+talk Ken-Ken##56115
+accept What's Eating Zhu's Watch?##30079 |goto Krasarang Wilds/0 76.21,7.06
+step
+talk Despondent Warden of Zhu##57457
+Speak with Despondent Warden of Zhu |q What's Eating Zhu's Watch?##30079/1 |goto Krasarang Wilds/0 76.5,8.2
+step
+talk Sunni##57830
+Speak with Sunni |q What's Eating Zhu's Watch?##30079/2 |goto Krasarang Wilds/0 77.5,8.5
+step
+talk Yun##57825
+Speak with Yun |q What's Eating Zhu's Watch?##30079/3 |goto Krasarang Wilds/0 75.5,9.4
+step
+talk Mei Barrelbottom##57744
+Speak with Mei |q What's Eating Zhu's Watch?##30079/4 |goto Krasarang Wilds/0 75.8,7.6
+accept Finding Yi-Mo##30080 |goto Krasarang Wilds/0 75.84,7.60
+step
+talk Ken-Ken##56115
+turnin What's Eating Zhu's Watch?##30079 |goto Krasarang Wilds/0 76.21,7.06
+step
+talk Yi-Mo Longbrow##58376
+Find Yi-Mo |q Finding Yi-Mo##30080/1 |goto Krasarang Wilds/0 81.3,6.9
+turnin Finding Yi-Mo##30080 |goto Krasarang Wilds/0 81.3,6.9
+accept Cheer Up, Yi-Mo##30082 |goto Krasarang Wilds/0 81.3,6.9
+step
+talk Yi-Mo Longbrow##58376
+Tell him: "_Please, Yi-Mo: your aunt's worried wick about you._"
+Then, tell him: "_I don't have time for this. Move your ass or I'll move it for you._"
+click Yi-Mo Longbrow##57310 |tip Keep clicking him to roll him towards Zhu's Watch
+kill Thunderbird##58111 |tip These will randomly attack you while you return Yi-Mo.
+Bring Yi-Mo to Zhu's Watch |q Cheer Up, Yi-Mo##30082/1 |goto Krasarang Wilds/0 76.7,7.7
+step
+talk Mei Barrelbottom##57744
+turnin Cheer Up, Yi-Mo##30082 |goto Krasarang Wilds/0 75.84,7.60
+step
+talk Ken-Ken##56115
+accept Materia Medica##30081 |goto 76.22,7.06
+step
+kill 1 Weeping Horror##57649
+Gather Salty Cores |q Materia Medica##30081/1 |goto Krasarang Wilds/0 75.4,10.8
+click Slick Mudfish##6478
+|tip These are tiny green or purple fish on the ground around sha-touched areas. They are difficult to see, so look closely
+Gather Slick Mudfish |q Materia Medica##30081/2 |goto Krasarang Wilds/0 75.4,10.8
+click Rain-Slick Honeycomb##3365
+|tip These are found attached to stumps and trees in the area.
+Gather Chunks of Honeycomb |q Materia Medica##30081/3 |goto Krasarang Wilds/0 73.6,9.7
+step
+talk Ken-Ken##56115
+turnin Materia Medica##30081 |goto Krasarang Wilds/0 76.22,7.06
+accept Why So Serious?##30088 |goto Krasarang Wilds/0 76.22,7.06
+step
+kill Krasari Stalker##58221
+collect Huge Panther Fang##78941 |n
+Gather Huge Panther Fangs |q Why So Serious?##30088/1 |goto Krasarang Wilds/0 71.6,16.4
+step
+_Enter_ the cave |goto Valley of the Four Winds/0 77.1,57.3 |walk
+_Go up_ the ramp |goto Valley of the Four Winds/0 75.9,56.3 |only if walking
+click Jar of Pigment##3365
+Gather a Jar of Pigment |q Why So Serious?##30088/2 |goto Valley of the Four Winds/0 73.9,56.4
+step
+talk Ken-Ken##56115
+turnin Why So Serious?##30088 |goto Krasarang Wilds/0 76.22,7.06
+accept Apply Directly to the Forehead##30089 |goto Krasarang Wilds/0 76.22,7.06
+step
+clicknpc Despondent Warden of Zhu##57457
+use Ken-Ken's Mask##79021
+kill Manifestation of Despair##58312
+Cure 8 Despondent Wardens of Zhu |q Apply Directly to the Forehead##30089/1 |goto Krasarang Wilds/0 76.4,8.6
+step
+talk Ken-Ken##56115
+turnin Apply Directly to the Forehead##30089 |goto Krasarang Wilds/0 76.22,7.06
+accept Zhu's Despair##30090 |goto Krasarang Wilds/0 76.22,7.06
+step
+kill Essence of Despair##58409
+Destroy 8 Essences of Despair |q Zhu's Despair##30090/1 |goto Krasarang Wilds/0 76.5,8.4
+clicknpc Yi-Mo Longbrow##58410
+use Ken-Ken's Mask##79057
+kill Quintessence of Despair##58360
+Cure Yi-Mo |q Zhu's Despair##30090/2 |goto Krasarang Wilds/0 76.5,8.8
+step
+talk Ken-Ken##56115
+turnin Zhu's Despair##30090 |goto Krasarang Wilds/0 76.22,7.06
+Learn the Ken-Ken's Mask toy |toy Ken-Ken's Mask##88580 |use Ken-Ken's Mask##88580
+step
+placeholder
+step
+Enter the cave |goto Talador/0 61.0,83.9 < 5 |walk
+Follow the path up |goto 64.1,86.0 |walk
+kill Klikixx##78872
+collect Klikixx's Webspinner##116125 |use Klikixx's Webspinner##116125 |n
+Learn the _Klikixx's Webspinner_ toy |toy Klikixx's Webspinner##116125 |goto 66.8,85.4
+step
+This toy can be found in the dungeon "Scholomance" on heroic difficulty
+kill Doctor Theolen Krastinov##59369
+|tip This is a rare spawn.
+collect Krastinov's Bag of Horrors##88566 |use Krastinov's Bag of Horrors##88566 |n
+Learn the _Krastinov's Bag of Horrors_ toy |toy Krastinov's Bag of Horrors##88566 |goto Scholomance/2 36.6,24.4
+step
+Legion?
+step
+talk Mayor Bramblestaff##59073 |goto Kun-Lai Summit/0 72.2,91.8
+accept Call Out Their Leader##30457 |goto Kun-Lai Summit/0 72.2,91.8
+step
+kill Bataari Yaungol##59147
+kill Bataari Flamecaller##59148
+Slay 10 Bataari tribe members |q Call Out Their Leader##30457/1 |goto Kun-Lai Summit/0 69.8,90.5
+step
+kill Bataari Fire-Warrior##59083
+Defeat the Bataari Fire-Warrior |q Call Out Their Leader##30457/2 |goto Kun-Lai Summit/0 68.2,88.6
+step
+talk Mayor Bramblestaff##59073 |goto Kun-Lai Summit/0 72.2,91.8
+turnin Call Out Their Leader##30457 |goto Kun-Lai Summit/0 72.2,91.8
+step
+talk Shado-Master Chong##60161
+accept Turnabout##30670 |goto Kun-Lai Summit/0 44.48,89.92
+step
+kill 1 Blind Rage##61224
+collect Blind Rage Essence##81713 |n
+Destroy 5 Blind Rage Essences |q Turnabout##30670/1 |goto Kun-Lai Summit/0 43.0,87.1
+step
+talk Shado-Master Chong##60161
+turnin Turnabout##30670 |goto Kun-Lai Summit/0 44.48,89.92
+accept Unmasking the Yaungol##30690 |goto Kun-Lai Summit/0 44.48,89.92
+step
+use Blinding Rage Trap##81741
+Pull Kobai into the trap |q Unmasking the Yaungol##30690/1 |goto Kun-Lai Summit/0 45.2,86.2
+|tip Click your special action button to spawn the Malevolent Fury.
+kill Malevolent Fury##61333
+Slay the Malevolent Fury |q Unmasking the Yaungol##30690/2 |goto Kun-Lai Summit/0 45.2,86.2
+step
+talk Shado-Master Chong##60161
+turnin Unmasking the Yaungol##30690 |goto Kun-Lai Summit/0 44.48,89.92
+accept To Winter's Blossom##30699 |goto Kun-Lai Summit/0 44.48,89.92
+step
+talk Lin Silentstrike##61816
+turnin To Winter's Blossom##30699 |goto Kun-Lai Summit/0 35.0,59.4
+accept Honor, Even in Death##30723 |goto Kun-Lai Summit/0 35.0,59.4
+step
+talk Ban Bearheart##61819
+accept A Line Unbroken##30715 |goto Kun-Lai Summit/0 35.12,59.66
+step
+click Shado-Master Zhiyao##61808
+Release Shado-Master Zhiyao from his oath |q A Line Unbroken##30715/1 |goto Kun-Lai Summit/0 30.4,60.0
+step
+click Liu of the Thousand Blows##61806
+Release Liu of the Thousand Blows from his oath |q A Line Unbroken##30715/2 |goto Kun-Lai Summit/0 30.2,62.5
+step
+click Shiya Boldblade##61810
+Release Shiya Boldblade from his oath |q A Line Unbroken##30715/3 |goto Kun-Lai Summit/0 30.0,64.4
+step
+kill 1 Kun-Lai Corpsepicker##61843
+Slay 12 Kun-Lai Corpsepickers |q Honor, Even in Death##30723/1 |goto Kun-Lai Summit/0 31.1,61.8
+step
+talk Ban Bearheart##61819
+turnin A Line Unbroken##30715 |goto Kun-Lai Summit/0 35.12,59.66
+step
+talk Lin Silentstrike##61816
+turnin Honor, Even in Death##30723 |goto Kun-Lai Summit/0 35.0,59.4
+step
+talk Lin Silentstrike##61816
+accept To the Wall!##30724 |goto Kun-Lai Summit/0 34.95,59.30
+step
+talk Kite Master Len##61512
+Tell him: "_I need a kite to get up to the wall!_" |q To the Wall!##30724/1 |goto Kun-Lai Summit/0 34.5,59.1
+step
+talk Suna Silentstrike##61454
+turnin To the Wall!##30724 |goto Kun-Lai Summit/0 29.30,62.29
+accept Off the Wall!##30750 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Lao-Chin the Iron Belly##61820
+accept A Terrible Sacrifice##30751 |goto Kun-Lai Summit/0 29.24,62.30
+step
+click Yaungol Oil Barrel##3365
+collect Yaungol Oil Barrel##82799 |n
+Gather 6 Yaungol Oil Barrels |q A Terrible Sacrifice##30751/1  |goto Kun-Lai Summit/0 27.5,60.6
+step
+kill 1 Osul Veteran Archer##61886
+kill 1 Osul Fire-Warrior##63576
+Kill 12 Yaungol on the wall |q Off the Wall!##30750/1 |goto Kun-Lai Summit/0 27.5,60.6
+step
+talk Lao-Chin the Iron Belly##61820
+turnin A Terrible Sacrifice##30751 |goto Kun-Lai Summit/0 29.24,62.30
+step
+talk Suna Silentstrike##61454
+turnin Off the Wall!##30750 |goto Kun-Lai Summit/0 29.30,62.29
+accept Lao-Chin's Gambit##30994 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Suna Silentstrike##61454
+Tell her: "_Alright, I'm ready to get back to the front._" |q Lao-Chin's Gambit##30994/1 |goto Kun-Lai Summit/0 29.30,62.29
+step
+talk Lao-Chin the Iron Belly##61820
+turnin Lao-Chin's Gambit##30994 |goto Kun-Lai Summit/0 31.8,60.1
+accept Do a Barrel Roll!##30991 |goto Kun-Lai Summit/0 31.8,60.1
+step
+click Keg Bomb##60553 |goto Kun-Lai Summit/0 32.1,60.6
+|tip Click a keg bomb to jump on. Then, roll it down the hill into your enemies.
+|tip Press "1" to ignite the barrel. It will explode within a few seconds.
+Slay 50 Osul Invaders |q Do a Barrel Roll!##30991/1
+Slay 4 Osul Treelaunchers |q Do a Barrel Roll!##30991/2
+step
+talk Lao-Chin the Iron Belly##61820
+turnin Do a Barrel Roll!##30991 |goto Kun-Lai Summit/0 31.8,60.1
+Learn the Lao Chin's Last Mug toy |toy Lao Chin's Last Mug##88531 |use Lao Chin's Last Mug##88531
+step
+Legion
+step
+Legion
+step
+Legion
+step
+Legion
+step
+Legion
+step
+placeholder
+step
+Legion
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "The Soulcutter" offered by Lilian Voss |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Lilian Voss##87996 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept The Soulcutter##37156 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Soulsever Blade |q The Soulcutter##37156/1 |goto Auchindoun/1 53.3,63.4 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Teron'gor##77734 |q The Soulcutter##37156/2 |goto Auchindoun/1 49.6,33.5 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Auchindoun on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin The Soulcutter##37156 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Lilian's Warning Sign_ toy |toy Lilian's Warning Sign##119039 |use Lilian's Warning Sign##119039
+step
+This toy can only be obtained during the Halloween Event
+talk Dorothy##53728
+buy 1 Little Wickerman##70722 |use Little Wickerman##70722 |n
+|tip This toy costs 150 Tricky Treats, these can be obtained by completing the Halloween dailies and completing the Halloween Dungeon.
+Learn the _Little Wickerman_ toy |toy Little Wickerman##70722 |goto Elwynn Forest/0 31.8,50.0
+step
+You can either buy this from the AH or if you are a rogue with a high level of pickpocketing you can pickpocket the Onslaught mobs in Dragonblight
+collect Loaded Gnomish Dice##63269 |use Loaded Gnomish Dice##63269 |n
+Learn the _Loaded Gnomish Dice_ toy |toy Loaded Gnomish Dicee##63269
+step
+This toy can be either made if you have the profession Engineering or can be bought from the AH
+collect Loot-A-Rang##60854 |use Loot-A-Rang##60854 |n
+Learn the _Loot-A-Rang_ toy |toy Loot-A-Rang##60854
+step
+This toy can be either made if you have the profession Engineering or can be bought from the AH
+collect MOLL-E##40768 |use MOLL-E##40768 |n
+Learn the _MOLL-E_ toy |toy MOLL-E##40768
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Magical Ogre Idol##72159 |use Magical Ogre Idol##72159 |n
+Learn the _Magical Ogre Idol_ toy |toy Magical Ogre Idol##72159
+step
+Legion
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "For The Children!" offered by Millhouse Manastorm |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Millhouse Manastorm##88009 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept For The Children!##37179 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Miniature Iron Star |q For The Children!##37179/1 |goto Upper Blackrock Spire 2/3 34.5,54.5 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Warlord Zaela##77120 |q For The Children!##37179/2 |goto Upper Blackrock Spire 2/3 14.4,47.7 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Upper Blackrock Spire on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin For The Children!##37179 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Manastorm's Duplicator_ toy |toy Manastorm's Duplicator##118938 |use Manastorm's Duplicator##118938
+step
+This toy can only be obtained during the Burning Crusade Timewalking Event
+talk Cupri##98685
+buy 1 Mark of the Ashtongue##129926 |use Mark of the Ashtongue##129926 |n
+|tip This will cost 1,250 Timewarped Badges, these can be obtained by completing any timewalking dungeon during any timewalking event.
+Learn the _Mark of the Ashtongue_ toy |toy Mark of the Ashtongue##129926 |goto Shattrath City/0 54.6,39.6
+step
+This toy was only available to Horde by completing the achievement "Theramore's Fall"
+|tip This toy is no longer obtainable, as the event for this achievement is no longer in the game.
+|tip If you have completed this achievement you may go back to this npc to buy this toy at any time.
+talk Zidormi##63546
+buy 1 Mini Mana Bomb##89205 |use Mini Mana Bomb##89205 |n
+Learn the _Mini Mana Bomb_ toy |toy Mini Mana Bomb##89205 |goto Dustwallow Marsh/0 55.9,49.6
+step
+This toy is from the 2010 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect MiniZep Controller##46709 |use MiniZep Controller##46709 |n
+Learn the _MiniZep Controller_ toy |toy MiniZep Controller##46709
+step
+Legion
+step
+This toy is only available during the Darkmoon Faire Event
+kill Moonfang##71992
+collect Moonfang Shroud##101571 |use Moonfang Shroud##101571 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Moonfang Shroud_ toy |toy Moonfang Shroud##101571 |goto Darkmoon Island 39.8,44.4
+step
+Legion
+step
+You must build a Lunarfall Inn to get the quest associated with this toy |only if not hasbuilding(34) or not hasbuilding(35) or not hasbuilding(36)
+Check your inn each day for the quest "Feeling A Bit Morose" offered by Moroes |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+talk Moroes##87994 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+accept Feeling A Bit Morose##37157 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Collect the Horribly Acidic Solution |q Feeling A Bit Morose##37157/1 |goto Iron Docks/1 50.4,52.4 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+kill Skulloc##83612 |q Feeling A Bit Morose##37157/2 |goto Iron Docks/1 68.4,43.6 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+|tip These objectives are completed in the Upper Blackrock Spire on Heroic difficulty. |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+turnin Feeling A Bit Morose##37157 |goto Lunarfall/0 45.1,50.3 |only if hasbuilding(34) or hasbuilding(35) or hasbuilding(36)
+Learn the _Moroes' Famous Polish_ toy |toy Moroes' Famous Polish##119092 |use Moroes' Famous Polish##119092
+step
+kill Echo of Murmur##77828
+collect Mournful Moan of Murmur##113670 |use Mournful Moan of Murmur##113670 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Mournful Moan of Murmur_ toy |toy Mournful Moan of Murmur##113670 |goto Talador/0 34.1,57.2
+step
+kill Yorik Sharpeye##50336
+collect Mr. Smite's Brass Compass##86568 |use Mr. Smite's Brass Compass##86568 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Mr. Smite's Brass Compass_ toy |toy Mr. Smite's Brass Compass##86568 |goto Vale of Eternal Blossoms/0 88.1,44.3
+step
+This toy can either be bought from the AH or can be obtained through completing the Shadowmourne quest line, doing this gives a bag containing this toy and a few other goodies
+|tip This quest line is only available to classes able to wield Shadowmourne, a 2 handed axe.
+collect Muradin's Favor##52201 |use Muradin's Favor##52201 |n
+Learn the _Muradin's Favor_ toy |toy Muradin's Favor##52201
+step
+This toy can be bought from a vendor in the Molten Front
+talk Ayla Shadowstorm##53881
+buy 1 Mushroom Chair##70161 |use Mushroom Chair##70161 |n
+|tip This toy costs 500 gold.
+Learn the _Mushroom Chair_ toy |toy Mushroom Chair##70161 |goto Molten Front/0 44.2,86.3
+step
+This toy can be bought from a vendor in the Molten Front
+talk Varlan Highbough##53882
+buy 1 Mylune's Call##70159 |use Mylune's Call##70159 |n
+|tip This toy costs 3,500 gold.
+Learn the _Mylune's Call_ toy |toy Mylune's Call##70159 |goto Molten Front/0 44.5,88.5
+step
+placehodler
+step
+Legion
+step
+Legion
+step
+This toy is obtained by gaining Best Friend reputation with Nat Pagle |condition rep("Nat Pagle")==BestFriend
+|tip To gain Best Friend statue with Nat Pagle complete his dailies and catch rare fish, check out our reputations guides.
+Once you gain Best Friend status with Nat Pagle check your mail
+collect Nat's Fishing Chair##86596 |use Nat's Fishing Chair##86596 |n
+Learn the _Nat's Fishing Chair_ toy |toy Nat's Fishing Chair##86596
+step
+Legion
+step
+This toy is given to players that purchase the Warforged Nightmare mount from the Blizzard store
+|tip This mount costs 25 US dollars.
+Check your mail once this is purchased
+collect Nightmarish Hitching Post##112324 |use Nightmarish Hitching Post##112324 |n
+Learn the _Nightmarish Hitching Post_ toy |toy Nightmarish Hitching Post##112324
+step
+kill Golganarr##72970
+collect Odd Polished Stone##104262 |use Odd Polished Stone##104262 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Odd Polished Stone_ toy |toy Odd Polished Stone##104262 |goto Timeless Isle/0 61.0,64.2
+step
+kill Stomper Kreego##79629
+|tip This is a rare spawn.
+collect Ogre Brewing Kit## |use Ogre Brewing Kit## |n
+Learn the _Ogre Brewing Kit_ toy |toy Ogre Brewing Kit## |goto Gorgrond/0 38.2,66.2
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Ogre Pinata##46780 |use Ogre Pinata##46780 |n
+Learn the _Ogre Pinata_ toy |toy Ogre Pinata##46780
+step
+This toy is a Rare World Drop that can come from any mob within pre Burning Crusade instances
+|tip This toy can also be bought from the AH.
+collect Orb of Deception##1973 |use Orb of Deception##1973 |n
+Learn the _Orb of Deception_ toy |toy Orb of Deception##1973
+step
+This toy has a small chance to drop from any of the bosses in the instance "Magisters' Terrace"
+kill Kael'thas Sunstrider##24664, Vexallus##24744, Selin Fireheart##24723, Priestess Delrissa##24560
+collect Orb of the Sin'dorei##35275 |use Orb of the Sin'dorei##35275 |n
+Learn the _Orb of the Sin'dorei_ toy |toy Orb of the Sin'dorei##35275
+step
+placeholder
+step
+kill Warleader Tome##81330
+|tip This Rare spawn pats clock wise around this area.
+collect Outrider's Bridle Chain##120276 |use Outrider's Bridle Chain##120276 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Outrider's Bridle Chain_ toy |toy Outrider's Bridle Chain##120276 |goto Nagrand D/0 55.0,52.6
+step
+kill Ahone the Wanderer##50817
+collect Pandaren Firework Launcher##86588 |use Pandaren Firework Launcher##86588 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Pandaren Firework Launcher_ toy |toy Pandaren Firework Launcher##86588 |goto Kun-Lai Summit/0 40.8,42.4
+step
+This toy requires you to be Revered with "The Tillers" |condition rep("The Tillers")>=Revered
+talk Gina Mudclaw##58706
+buy 1 Pandaren Scarecrow##89869 |use Pandaren Scarecrow##89869 |n
+|tip This toy costs 200 gold.
+Learn the _Pandaren Scarecrow_ toy |toy Pandaren Scarecrow##89869 |goto Valley of the Four Winds/0 52.2,48.6
+step
+kill Moldo One-Eye##50806
+|tip He pats around this area.
+collect Panflute of Pandaria##86586 |use Panflute of Pandaria##86586 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Panflute of Pandaria_ toy |toy Panflute of Pandaria##86586 |goto Vale of Eternal Blossoms/0 43.0,53.6
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Paper Flying Machine Kit##34499 |ues Paper Flying Machine Kit##34499 |n
+Learn the _Paper Flying Machine Kit_ toy |toy Paper Flying Machine Kit##34499
+step
+Legion
+step
+This toy requires a minimum of 450 skill points in Archaeology
+|tip All Tol'vir dig sites are marked on your map. You can find them in Kalimdor.
+|tip Collect Tol'vir fragments and solve their artifacts until you attain the Pendant of the Scarab Storm toy.
+Tombs of the Precursors Digsite |goto Uldum/0 74.53,44.37 |'
+Ruins of Ammon Digsite |goto Uldum/0 32.02,64.19 |'
+Ruins of Ahmtul Digsite |goto Uldum/0 45.81,14.22 |'
+Ruins of Khintaset Digsite |goto Uldum/0 35.04,17.45 |'
+Khartut�s Tomb Digsite |goto Uldum/0 64.62,22.83 |'
+Neferset Digsite |goto Uldum/0 48.82,80.77 |'
+Steps of Fate Digsite |goto Uldum/0 74.1,52.34 |'
+Temple of Uldum Digsite |goto Uldum/0 33.6,29.94 |'
+Orsis Digsite |goto Uldum/0 40.49,40.93 |'
+Cursed Landing Digsite |goto Uldum/0 84.0,55.79 |'
+Keset Pass Digsite |goto Uldum/0 78.4,57.73 |'
+Akhenet Fields Digsite |goto Uldum/0 54.14,52.99 |'
+Obelisk of the Stars Digsite |goto Uldum/0 64.62,31.88 |'
+Sahket Wastes Digsite |goto Uldum/0 50.12,20.89 |'
+Schnottz�s Landing |goto Uldum/0 21.4,60.96 |'
+Learn the _Pendant of the Scarab Storm_ toy |toy Pendant of the Scarab Storm##64881 |use Pendant of the Scarab Storm##64881
+step
+placeholder
+step
+placeholder
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Perpetual Purple Firework##49703 |use Perpetual Purple Firework##49703 |n
+Learn the _Perpetual Purple Firework_ toy |toy Perpetual Purple Firework##49703
+step
+This can either be made through the Engineering profession or bought on the AH
+collect Personal Hologram##108745 |use Personal Hologram##108745 |n
+Learn the _Personal Hologram_ toy |toy Personal Hologram##108745
+step
+talk Trader Araanda##95470
+buy 1 Personal Spotlight##127864 |use Personal Spotlight##127864 |n
+|tip This toy costs 100 gold.
+Learn the _Personal Spotlight_ toy |toy Personal Spotlight##127864 |goto Lunarfall/0 30.1,34.6
+step
+kill Fossilwood the Petrified##85250
+|tip This is a rare spawn.
+collect Petrification Stone##118221 |use Petrification Stone##118221 |n
+Learn the _Petrification Stone_ toy |toy Petrification Stone##118221 |goto Gorgrond/0 57.4,68.5
+step
+This toy is obtained through talking to a Blingtron 5000 and receiving it's gift
+click Blingtron 5000##34774
+|tip Engineers can place these down, you can usually find them in major cities next to the AH.
+collect Blingtron 5000 Gift Package##113258 |use Blingtron 5000 Gift Package##113258 |n
+collect Photo B.O.M.B.##123851 |use Photo B.O.M.B.##123851 |n
+Learn the _Photo B.O.M.B._ toy |toy Photo B.O.M.B.##123851
+step
+This toy can be obtained by killing a rare spawn in the dungeon "Stratholme"
+kill Hearthsinger Forresten##10558
+collect Piccolo of the Flaming Fire##13379 |use Piccolo of the Flaming Fire##13379 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Piccolo of the Flaming Fire_ toy |toy Piccolo of the Flaming Fire##13379 |goto Stratholme/0 60.5,31.3
+step
+This toy was originaly obtained through the Trading Card Game
+It can also be bought from the Black Market AH
+collect Picnic Basket##32566 |use Picnic Basket##32566 |n
+Learn the _Picnic Basket_ toy |toy Picnic Basket##32566
+step
+This toy is from the 2014 Christmas Event and was lootable under the tree
+|tip This toy can also be obtained by completing the daily quest "You're a Mean One..." during the Christmas Event.
+collect Pineapple Lounge Cushion##116689 |use Pineapple Lounge Cushion##116689 |n
+Learn the _Pineapple Lounge Cushion_ toy |toy Pineapple Lounge Cushion##116689
+step
+This toy is only obtainable during the pre Legion launch event
+kill Dread Infiltrator##112315
+collect Pocket Fel Spreader##140363 |use Pocket Fel Spreader##140363 |n
+Learn the _Pocket Fel Spreader_ toy |toy Pocket Fel Spreader##140363
+step
+click Ripened Strange Fruit##127395
+|tip This takes 14 days to open.
+collect Podling Camouflage##127394 |use Podling Camouflage##127394 |n
+Learn the _Podling Camouflage_ toy |toy Podling Camouflage##127394 |goto Tanaan Jungle/0 64.5, 42.1
+step
+This toy requires you to complete the achievement "Azeroth's Top Twenty Tunes"
+|tip To complete this achievement check out our achievement guides.
+Check your mail once you have completed this achievement
+collect Portable Audiophone##122700 |use Portable Audiophone##122700 |n
+Learn the _Portable Audiophone_ toy |toy Portable Audiophone##122700
+step
+talk Toshley##21691
+accept Picking Up Some Power Converters##10584 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+click Power Converter##3365
+|tip An Electromental will spawn. Power converters are on the ground around the area.
+click Electromental##21729
+use Protovoltaic Magneto Collector##30656
+|tip the Collector on Electromentals, then kill them.
+kill Electromental##21729
+Gather 5 Electromentals |q Picking Up Some Power Converters##10584/1 |goto Blade's Edge Mountains/0 57.5,57.8
+step
+talk Toshley##21691
+turnin Picking Up Some Power Converters##10584 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Ride the Lightning##10657 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+click Scalewing Serpent##20749
+use Repolarized Magneto Sphere##30818
+|tip While the buff is active, let the Serpents use their Lightning Strike attack on you.
+Absorb 25 Lightning Strikes |q Ride the Lightning##10657/1 |goto Blade's Edge Mountains/0 68.3,68.6
+kill 1 Scalewing Serpent##20749
+collect Scalewing Lightning Gland##30849 |q Ride the Lightning##10657/2 |goto Blade's Edge Mountains/0 68.3,68.6
+step
+talk Toshley##21691
+turnin Ride the Lightning##10657 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Trapping the Light Fantastic##10674 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+use Multi-Spectrum Light Trap##30852
+|tip The light orbs are little purple-white globes floating around the area.
+Trap 15 Razzani light orbs |q Trapping the Light Fantastic##10674/1 |goto Blade's Edge Mountains/0 67.1,44.6
+step
+talk Toshley##21691
+turnin Trapping the Light Fantastic##10674 |goto Blade's Edge Mountains/0 60.6,69.0
+accept Show Them Gnome Mercy!##10675 |goto Blade's Edge Mountains/0 60.6,69.0
+step
+kill Nexus-Prince Razaan##21057
+|tip You will need to kill the mobs in the area to force him to show himself.
+click Collection of Souls##3365
+collect Collection of Souls##30890 |q Show Them Gnome Mercy!##10675/1 |goto Blade's Edge Mountains/0 66.4,44.0
+step
+talk Toshley##21691
+turnin Show Them Gnome Mercy!##10675 |goto Blade's Edge Mountains/0 60.6,69.0
+Learn the Power Converter toy |toy Power Converter##30690 |use Power Converter##30690
+step
+This toy requires the Fishing skill
+Go down the hill |goto Frostfire Ridge/0 22.7,9.3 < 5 |walk
+Fish from the clam in the water |cast Fishing##131474 |goto 21.9,9.6
+collect Giant Draenor Clam##108738 |use  Giant Draenor Clam##108738 |n
+collect Pretty Draenor Pearl##108739 |use Pretty Draenor Pearl##108739 |n
+Learn the _Pretty Draenor Pearl_toy |toy Pretty Draenor Pearl##108739 |goto 21.9,9.6
+step
+Legion
+step
+talk Chen Stormstout##56133
+accept Chen and Li Li##29907 |goto Valley of the Four Winds/0 85.94,22.10
+step
+Follow Chen to Pang's Stead |q Chen and Li Li##29907/1 |goto Valley of the Four Winds/0 83.8,21.1
+step
+talk Pang Thunderfoot##56204
+turnin Chen and Li Li##29907 |goto Valley of the Four Winds/0 83.7,21.0
+accept A Seemingly Endless Nuisance##29908 |goto Valley of the Four Winds/0 83.7,21.0
+step
+talk Muno the Farmhand##56440
+accept A Poor Grasp of the Basics##29877 |goto Valley of the Four Winds/0 82.71,21.24
+step
+kill Snagtooth Virmen##56184
+kill Snagtooth Troublemaker##55873
+kill Snagtooth Tool-Grabber##56185
+Slay 8 large virmen |q A Seemingly Endless Nuisance##29908/1 |goto Valley of the Four Winds/0 81.3,21.9
+kill Snagtooth Pesterling##65504
+Slay 18 virmen Pesterer |q A Seemingly Endless Nuisance##29908/2 |goto Valley of the Four Winds/0 81.3,21.9
+Find 7 pieces of buried farm equpment |q A Poor Grasp of the Basics##29877/1 |goto Valley of the Four Winds/0 81.3,21.9
+|tip These are tools scattered about the area.
+step
+talk Muno the Farmhand##56440
+turnin A Poor Grasp of the Basics##29877 |goto Valley of the Four Winds/0 82.71,21.24
+step
+talk Pang Thunderfoot##56204
+turnin A Seemingly Endless Nuisance##29908 |goto Valley of the Four Winds/0 83.7,21.0
+accept Low Turnip Turnout##29909 |goto Valley of the Four Winds/0 83.7,21.0
+step
+talk Ang Thunderfoot##56207
+turnin Low Turnip Turnout##29909 |goto Valley of the Four Winds/0 81.6,25.2
+step
+talk Ana Thunderfoot##56465
+accept Rampaging Rodents##29910 |goto Valley of the Four Winds/0 81.88,25.89
+step
+click Marmot Hole##105450
+|tip You must stand still until the cast completes to fill the hole.
+Fill 6 marmot holes |q Rampaging Rodents##29910/2 |goto Valley of the Four Winds/0 82.3,25.9
+click Plump Marmot##56203
+Punt 6 marmots |q Rampaging Rodents##29910/1 |goto Valley of the Four Winds/0 82.3,25.9
+step
+talk Ana Thunderfoot##56465
+turnin Rampaging Rodents##29910 |goto Valley of the Four Winds/0 81.88,25.89
+Learn the Puntable Marmot toy |toy Puntable Marmot##88370 |use Puntable Marmot##88370
+step
+This toy requires a minimum of 350 skill points in Archaeology
+|tip All Nerubian dig sites are marked on your map. You can find them in Eastern Kingdoms and Northrend.
+|tip Collect Nerubian fragments and solve their artifacts until you attain the Puzzle Box of Yogg-Saron toy.
+Terrorweb Tunnel Digsite |goto Eastern Plaguelands/0 12.06,24.77 |'
+Plaguewood Digsite |goto Eastern Plaguelands/0 35.47,21.76 |'
+Talramas Digsite |goto Borean Tundra/0 69.07,15.08 |'
+En�kilah Digsite |goto Borean Tundra/0 85.87,24.12 |'
+Sands of Nasam |goto Borean Tundra/0 52.27,68.07 |'
+Pit of Narjun Digsite |goto Dragonblight/0 26.71,49.76 |'
+Kolramas Digsite |goto Zul'Drak/0 60.31,77.54 |'
+Scourgeholme Digsite |goto Icecrown/0 77.26,63.33 |'
+Pit of Fiends Digsite |goto Icecrown/0 75.53,53.2 |'
+Learn the _Puzzle Box of Yogg-Saron_ toy |toy Puzzle Box of Yogg-Saron##64482 |use Puzzle Box of Yogg-Saron##64482
+step
+placeholder
+step
+Legion
+step
+talk Breanni##28951
+buy 1 Red Ribbon Pet Leash##44820 |use Red Ribbon Pet Leash##44820 |n
+Learn the _Red Ribbon Pet Leash_ toy |toy Red Ribbon Pet Leash##44820 |goto Dalaran/0 58.6,39.6
+buy 1 Rope Pet Leash##37460 |use Rope Pet Leash##37460 |n
+Learn the _Rope Pet Leash_ toy |toy Rope Pet Leash##37460 |goto Dalaran/0 58.6,39.6
+step
+This toy is from the 2015 Christmas Event and was lootable under the tree
+collect Red Wooden Sled##128776 |use Red Wooden Sled##128776 |n
+Learn the _Red Wooden Sled_ toy |toy Red Wooden Sled##128776
+step
+kill Dread Ship Vazuvius##73281
+collect Rime of the Time-Lost Mariner##73281 |use Rime of the Time-Lost Mariner##73281 |n
+|tip This is a rare spawn and does not have a 100 percent chance to drop.
+Learn the _Rime of the Time-Lost Mariner_ toy |toy Rime of the Time-Lost Mariner##73281 |goto Timeless Isle/0 25.8,23.2
+step
+This toy is only available during the Darkmoon Faire Event
+kill Erinys##85531
+|tip He is in an underwater cave.
+collect Ring of Promises##116068 |goto Darkmoon Island/0 75.6,43.8
+accept Broken Promises##36477
+step
+talk Chester##85484
+turnin Broken Promises##36477 |goto Darkmoon Island/0 51.2,75.0
+collect Ring of Broken Promises##116067 |use Ring of Broken Promises##116067 |n
+Learn the _Ring of Broken Promises_ toy |toy Ring of Broken Promises##116067
+step
+This toy is the reward for completing the achievement "The Toymaster", which is obtaining 150 toys
+Check your mail once this achievement is completed
+collect Robo-Gnomebulator##119215 |use Robo-Gnomebulator##119215 |n
+Learn the _Robo-Gnomebulator_ toy |toy Robo-Gnomebulator##119215
+step
+Legion
+step
+This toy is only available during the "Love is in the Air" Event
+talk Lovely Merchant##37674
+buy 1 Romantic Picnic Basket##34480 |use Romantic Picnic Basket##34480
+|tip This toy costs 10 Love Tokens, these can be obtained by completing the dailies during this event.
+Learn the _Romantic Picnic Basket_ toy |toy Romantic Picnic Basket##34480 |goto IronForge/0 33.8,66.6
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Achievement Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
 condition_end="_G.PlayerHasToy(131811)",

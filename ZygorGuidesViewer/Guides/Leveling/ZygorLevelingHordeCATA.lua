@@ -1688,6 +1688,7 @@ stickystart "darkhoundblood"
 step
 kill Cursed Darkhound##1548+
 |tip A Worgen will appear and give you a quest when you kill a Cursed Darkhound.
+|tip If you are wearing heirloom gear you may need to just auto attack the Darkhounds as the Worgen will not appear if you kill the Cursed Darkhounds to fast.
 accept Escaped From Gilneas##24992 |goto 58.8,60.2
 More hounds can be found around [53.9,66.7]
 step "darkhoundblood"

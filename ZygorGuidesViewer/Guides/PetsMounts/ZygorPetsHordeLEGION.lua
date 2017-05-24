@@ -4,6 +4,3 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("PetsHLEGION") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "LEG"
-ZygorGuidesViewer:RegisterGuide("path\\guide",{
-},[[
-]])

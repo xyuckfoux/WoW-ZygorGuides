@@ -344,7 +344,16 @@ click Legion Portal
 accept WANTED: Inquisitor Tivos##42631 |goto Azsuna/0 26.81,49.06
 |tip You will accept this quest automatically.
 step
-kill Inquisitor Tivos##107269 |q 42631/1 |goto 26.81,49.06
+kill Inquisitor Tivos##107269 |q 42631/1 |goto 28.29,51.95
+|tip He's downstairs.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-43611
+click Legion Portal
+accept WANTED: Inquisitor Tivos##43611 |goto Azsuna/0 26.81,49.06
+|tip You will accept this quest automatically.
+step
+kill Inquisitor Tivos##107269 |q 43611/1 |goto 28.29,51.95
 |tip He's downstairs.
 |next "Court_Of_Farondis_WQ"
 step

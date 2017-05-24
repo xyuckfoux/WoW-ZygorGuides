@@ -1164,8 +1164,8 @@ learn Charred Bear Kabob##46684 |goto Orgrimmar/1 56.5,62.5 |condition _G.IsSpel
 step
 create Charred Bear Kabob##46684,Cooking,285 |goto Orgrimmar/1 56.5,62.5
 step
-talk Marogg##42506
-learn Baked Salmon##18247 |goto Orgrimmar/1 56.5,62.5 |condition _G.IsSpellKnown(46688) or skill("Cooking")>=300
+talk Sheendra Tallgrass##8145
+learn Baked Salmon##18247 |goto Feralas 74.6,42.8 |condition _G.IsSpellKnown(46688) or skill("Cooking")>=300
 step
 create Baked Salmon##18247,Cooking,300 |goto Orgrimmar/1 56.5,62.5
 step

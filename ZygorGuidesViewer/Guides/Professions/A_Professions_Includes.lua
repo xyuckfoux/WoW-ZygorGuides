@@ -3336,14 +3336,6 @@ ZygorGuidesViewer:RegisterInclude("A_Our_Daily_Bread",[[
 	step
 	label "begin"
 	title +Dalaran Cooking Dailies
-		talk Awilo Lon'gomba##29631
-		You will only be able to accept, and turn in, 1 of these 5 daily quests per day, and they all require you have 350+ Cooking skill:
-		accept Cheese for Glowergold##13115 |or |goto Dalaran 70.0,39.0
-		accept Convention at the Legerdemain##13113 |or |goto Dalaran 70.0,39.0
-		accept Infused Mushroom Meatloaf##13112 |or |goto Dalaran 70.0,39.0
-		accept Mustard Dogs!##13116 |or |goto Dalaran 70.0,39.0
-		accept Sewer Stew##13114 |or |goto Dalaran 70.0,39.0
-	step
 		talk Katherine Lee##28705
 		You will only be able to accept, and turn in, 1 of these 5 daily quests per day, and they all require you have 350+ Cooking skill:
 		accept Cheese for Glowergold##13103 |or |goto Dalaran 40.8,65.4

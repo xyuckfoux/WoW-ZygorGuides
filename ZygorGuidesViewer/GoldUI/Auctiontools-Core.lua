@@ -492,6 +492,8 @@ function Appraiser:SearchForItem(item)
 end
 
 local function Appraiser_SetTooltipData(tooltip, itemLink)
+	local name,link=GameTooltip:GetItem()
+	itemLink = itemLink or link
 	if not itemLink then return end -- blizz is no longer guaranteed to provide itemlinks on time
 
 	local function OldColor(timestamp,red,yellow)
@@ -1003,60 +1005,28 @@ function Appraiser:CreateTrackerFrame()
 	Appraiser.Events:SetScript("OnEvent",Appraiser.EventHandler)
 	Appraiser.Events:SetScript("OnUpdate",UpdateHandler)
 
-	hooksecurefunc (GameTooltip, "SetMerchantItem", function(tip, index) Appraiser_SetTooltipData(tip, GetMerchantItemLink(index)) end )
-	hooksecurefunc (GameTooltip, "SetBuybackItem", function(tip, index) Appraiser_SetTooltipData(tip, GetBuybackItemLink(index)) end )
-	hooksecurefunc (GameTooltip, "SetBagItem", function(tip, bag, slot) Appraiser_SetTooltipData(tip, GetContainerItemLink(bag, slot)) end )
-	hooksecurefunc (GameTooltip, "SetAuctionItem", function (tip, type, index) Appraiser_SetTooltipData(tip, GetAuctionItemLink(type, index)) end )
-	hooksecurefunc (GameTooltip, "SetLootRollItem", function (tip, slot) Appraiser_SetTooltipData(tip, GetLootRollItemLink(slot)) end )
-	hooksecurefunc (GameTooltip, "SetInventoryItem", function (tip, unit, slot) Appraiser_SetTooltipData(tip, GetInventoryItemLink(unit, slot)) end )
-	hooksecurefunc (GameTooltip, "SetGuildBankItem", function (tip, tab, slot) Appraiser_SetTooltipData(tip, GetGuildBankItemLink(tab, slot)) end )
-	hooksecurefunc (GameTooltip, "SetTradePlayerItem", function (tip, id) Appraiser_SetTooltipData(tip, GetTradePlayerItemLink(id)) end )
-	hooksecurefunc (GameTooltip, "SetTradeTargetItem", function (tip, id) Appraiser_SetTooltipData(tip, GetTradeTargetItemLink(id)) end )
-	hooksecurefunc (GameTooltip, "SetQuestItem", function (tip, type, index) Appraiser_SetTooltipData(tip, GetQuestItemLink(type, index)) end )
-	hooksecurefunc (GameTooltip, "SetQuestLogItem", function (tip, type, index) Appraiser_SetTooltipData(tip, GetQuestLogItemLink(type, index)) end )
-	--hooksecurefunc (GameTooltip, "SetInboxItem", function (tip, index, attachIndex) Appraiser_SetTooltipData(tip, GetInboxItemLink(index, attachIndex)) end )
-	hooksecurefunc (GameTooltip, "SetItemByID", function (tip, itemstring) Appraiser_SetTooltipData(tip) end )
-
-	hooksecurefunc (GameTooltip, "SetAuctionSellItem", function (tip)
-		local name, _, count = GetAuctionSellItemInfo()
-		local __, link = ZGV:GetItemInfo(name)
-		Appraiser_SetTooltipData(tip, link)
-	end)
-
-	hooksecurefunc (ItemRefTooltip, "SetHyperlink", function(tip, itemstring)
-		local name, link = ZGV:GetItemInfo (itemstring)
-		Appraiser_SetTooltipData(tip, link)
-	end)
-
-	hooksecurefunc (GameTooltip, "SetHyperlink", function(tip, itemstring)
-		local name, link = ZGV:GetItemInfo (itemstring)
-		Appraiser_SetTooltipData(tip, link)
-	end)
-
-	hooksecurefunc (GameTooltip, "SetLootItem", function(tip, slot)
-		if LootSlotHasItem(slot) then
-			local link, _, num = GetLootSlotLink(slot)
-			Appraiser_SetTooltipData(tip, link)
-		end
-	end)
+	hooksecurefunc (GameTooltip, "SetMerchantItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetBuybackItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetBagItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetAuctionItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetLootRollItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetInventoryItem",	function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetGuildBankItem",	function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetTradePlayerItem",	function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetTradeTargetItem",	function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetQuestItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetQuestLogItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetInboxItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetItemByID",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetAuctionSellItem",	function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (ItemRefTooltip, "SetHyperlink",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetHyperlink",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetLootItem",		function(tip) Appraiser_SetTooltipData(tip) end)
+	hooksecurefunc (GameTooltip, "SetSendMailItem",		function(tip) Appraiser_SetTooltipData(tip) end)
 
 
-	-- LEGION TEMP FIX, function no longer exists
+	-- LEGION TEMP FIX, SetTradeSkillItem no longer exists
 	-- possible replacements: SetRecipeResultItem / SetRecipeReagentItem
-	--[[
-	hooksecurefunc (GameTooltip, "SetTradeSkillItem", function(tip, skill, id)
-		local link = GetTradeSkillItemLink(skill)
-		if id then link = GetTradeSkillReagentItemLink(skill, id) end
-		Appraiser_SetTooltipData(tip, link)
-	end)
-	--]]
-
-
-	hooksecurefunc (GameTooltip, "SetSendMailItem", function(tip, id)
-		local name, _, num = GetSendMailItem(id)
-		local name, link = ZGV:GetItemInfo(name)
-		Appraiser_SetTooltipData(tip, link)
-	end)
 
 	GameTooltip:HookScript("OnTooltipCleared", Appraiser_ClearTooltipData)
 

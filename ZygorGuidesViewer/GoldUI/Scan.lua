@@ -37,6 +37,10 @@ tinsert(ZGV.startups,{"Gold scan startup",function(self)
 	--hooksecurefunc("SetAbandonQuest",self.QuestTracking_hook_SetAbandonQuest)
 	--hooksecurefunc("AbandonQuest",self.QuestTracking_hook_AbandonQuest)
 	Scan.enabled = true
+
+	-- Fix blizzard scan errors
+	ITEM_QUALITY_COLORS[-1]=ITEM_QUALITY_COLORS[0]
+
 	ZGV:Debug("Gold: Scan enabled.")
 end})
 

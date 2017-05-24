@@ -793,6 +793,7 @@ step
 talk Deema##84961
 |tip She can be in any of the bubbles around this area, so you will have to search for her.
 Free Deema |q Failed Apprentice##36313/1 |goto Shadowmoon Valley D 36.0,72.8
+only if skill("Enchanting") >= 1
 step
 talk Deema##84961
 turnin Failed Apprentice##36313 |goto Shadowmoon Valley D 35.70,73.80

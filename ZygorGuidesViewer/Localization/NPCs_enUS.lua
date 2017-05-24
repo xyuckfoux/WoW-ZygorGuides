@@ -26775,4 +26775,7 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [96474]="Tryks Pourtrue|",
 [96368]="Emmara Marie|",
 [96470]="Jana Winterhoof|",
+[92264]="Felsmith Nal'ryssa|",
+[107760]="Strap Bucklebolt|",
+[92265]="Urael|",
 } end)

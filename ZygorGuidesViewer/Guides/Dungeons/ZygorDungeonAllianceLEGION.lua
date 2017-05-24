@@ -421,11 +421,7 @@ _TANK:_
 |tip Try to keep him from attacking the Healer.
 Defeat King Deepbeard |scenariogoal 1/28778 |goto 66.32,50.04
 step
-map 1046/1
-path follow loose; loop off; ants curved; dist 20
-path	68.04,46.53	61.52,48.39	61.06,52.36
-path	56.75,45.00	52.47,47.85	50.64,54.66
-Follow the path |goto 50.64,54.66 < 20 |noway |c
+Follow the path |goto 68.04,46.53 < 20 |noway |c
 step
 kill Wrath of Azshara##96028
 |tip Kill the enemies channeling him before attacking him.
@@ -808,6 +804,7 @@ Ride the elevator down |goto 24.35,18.73 |n
 Enter the Vault of the Wardens |goto 1045/2 46.69,54.67 < 10000 |noway |c
 step
 kill Inquisitor Tormentorum##96015
+|tip He may be in a different spot in this room.
 _EVERYONE:_
 |tip If you get afflicted by Sapped Soul, the next ability you use will have its cooldown increased by 10 seconds.
 _DAMAGE:_
@@ -818,7 +815,7 @@ _HEALER:_
 _TANK:_
 |tip Interrupt Sap Soul.
 |tip Gain threat on the enemies he releases when he is at 70% and 40% health.
-Defeat Inquisitor Tormentorum |scenariogoal 1/29528 |goto 1045/2 46.69,54.67
+Defeat Inquisitor Tormentorum |scenariogoal 1/29528 |goto 1045/2 41.22,48.44
 step
 label "Vault_Of_Wardens_Router"
 What Is Your Group Doing Right Now?
@@ -853,7 +850,7 @@ Enter the Vault of Ice |goto 46.72,66.75 < 20 |noway |c
 step
 kill Ash'Golm##95886
 _EVERYONE:_
-|tip Walk on the moving orange lava patches, if necessary, to avoid letting the Ember adds touch.
+|tip Walk on the moving orange lava patches, if necessary, to avoid letting the Ember adds touch them.
 |tip Ember adds will explode if they touch lava patches.
 |tip Avoid the circles on the ground if you are at range.
 _DAMAGE:_
@@ -903,9 +900,227 @@ _TANK:_
 Defeat Cordana |scenarioend |goto 50.4,77.6
 step
 talk Robert Newhearth##112441
+|tip Upstairs inside the building.
 turnin Fel-Ravaged Tome##44486 |goto Dalaran L/10 25.44,44.71
 only if havequest(44486) or completedq(44486)
 step
 _Congratulations!_
 You completed the Vault of the Wardens dungeon!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\The Arcway",{
+mapid=1045,
+achieveid={10813},
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>830",
+keywords={"Arcway"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Arcway dungeon in Suramar.",
+},[[
+step
+Follow the path |goto Suramar/0 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
+Follow the path |goto Suramar/0 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
+Walk into the swirling portal |goto Suramar/0 41.04,61.83 |n |region suramar_sanctum_of_order
+Enter the Arcway Dungeon |goto The Arcway/1 47.99,21.47 < 10000 |noway |c
+|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
+|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+step
+map The Arcway/1
+path follow loose; loop off; ants curved; dist 20
+path	48.04,29.01	53.32,35.97	58.68,35.93
+path	67.38,28.51	72.98,32.02
+kill General Xakal##98206
+_EVERYONE:_
+|tip Move out of the way when you are targeted with Shadow Slash.
+|tip Avoid the green Fel Fissure circles on the ground.
+|tip You will get knocked back when he casts Wicked Slam, so be careful to position
+|tip yourself so you don't land on the green circles.
+_HEALER:_
+|tip Be ready for big heals when he casts Wicked Slam.
+_TANK:_
+|tip Make sure to taunt the Dread Felbats that appear.
+Defeat General Xakal |scenariogoal 1/29147 |goto 77.08,49.99
+step
+map The Arcway/1
+path follow loose; loop off; ants curved; dist 20
+path	69.88,55.17	66.82,56.16	64.25,64.36
+kill Nal'tira##98207
+_EVERYONE:_
+|tip If you get tethered to another player with Tangled Web, run away from each other to break it.
+|tip Avoid the yellow patches that appear on the ground.
+|tip Move out of the way if you are targeted by Blink Strikes.
+_HEALER:_
+|tip Be ready for big heals when she casts Temporal Displacement.
+Defeat Nal'tira |scenariogoal 1/29148 |goto 61.66,74.80
+step
+map The Arcway/1
+path follow loose; loop off; ants curved; dist 20
+path	57.43,75.04	49.67,74.32	48.04,67.56
+path	46.66,64.39	42.98,64.96
+kill Corstilax##98205
+_EVERYONE:_
+|tip Click the huge crystal that appears when players are targeted by Quarantine to free them.
+|tip Avoid the swirling circles on the ground when he casts Suppression Protocol.
+|tip Walk into the purple patches of Nightwell Energy to increase your haste by 15% per stack.
+|tip Run against Cleansing Force. He does an AoE blast when he finishes casting it, which deal heavy damage.
+|tip Cleansing Force removes Nightwell Energy haste buff stacks. If you have have any left when he finishes casting it,
+|tip and you get hit by the AoE blast, you will get stunned.
+_HEALER:_
+|tip Be alert when he casts Suppression Protocol, the group can take a good amount of damage.
+Defeat Corstilax |scenariogoal 1/29146 |goto 39.17,77.70
+step
+map The Arcway/1
+path follow loose; loop off; ants curved; dist 20
+path	37.93,67.86	34.41,61.53	28.55,65.99
+kill Ivanyr##98203
+_EVERYONE:_
+|tip Move away from other players if you are afflicted by Volatile Magic.
+|tip Run toward each other if you are targeted by Nether Link.
+|tip The space between players linked by Nether Link becomes a damage patch on the ground when Nether Link expires.
+_DAMAGE:_
+|tip Interrupt him when he starts casting Overcharge Mana.
+_HEALER:_
+|tip Be ready when he casts Volatile Magic, it hits the target hard, as well as allies near the target when it expires.
+Defeat Ivanyr |scenariogoal 1/29145 |goto 18.56,74.01
+step
+map The Arcway/1
+path follow loose; loop off; ants curved; dist 20
+path	25.58,68.32	32.82,62.56	35.79,62.22
+path	38.39,67.88	41.90,67.63	44.81,63.12
+path	48.03,64.24	49.18,57.34	52.12,50.34
+kill Advisor Vandros##98208
+_EVERYONE:_
+|tip Avoid the blue floating Chrono Shards, they explode after 8 seconds.
+|tip Avoid the purple orb Force Bombs, they explode.
+|tip Run through the shock waves after the Force Bombs explode.
+|tip You will get teleported away midway through the fight when he casts Banish In Time.
+|tip The place you get teleported to is random. Make your way back to him within 2 minutes, or you die.
+_DAMAGE:_
+|tip Make sure to interrupt Accelerating Blast as often as you can.
+_HEALER:_
+|tip Be ready when he casts Force Bombs, it can deal heavy damage to the whole group.
+Defeat Advisor Vandros |scenarioend |goto 48.04,42.48
+step
+_Congratulations!_
+You completed the Arcway dungeon!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Court of Stars",{
+mapid=1045,
+achieveid={10816},
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>830",
+keywords={"Court of Stars CoS"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Court of Stars dungeon in Suramar.",
+},[[
+step
+Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
+Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
+Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
+Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000 |noway |c |q 43314
+|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
+|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+step
+click Signal Lantern
+|tip It's at the end of the dock in front of you after you enter the dungeon.
+|tip Jump onto the boat that arrives.
+Ride the Boat to Moonlit Landing |goto Court of Stars/1 42.52,76.82 < 25 |noway |c
+step
+Enter the building |goto 42.36,65.29 < 10 |walk |n
+Run up the stairs |goto 42.48,63.33 < 7 |walk |n
+Follow the path |goto 44.42,62.19 < 7 |walk |n
+|tip Kill Duskwatch Sentries before they reach Arcane Beacons, or they will call for reinforcements.
+|tip Arcane Beacons look like pulsing big columns with spiral metal pointed scultures on top of them.
+|tip Click Arcane Beacons to destroy them.
+Leave the building and enter the courtyard |goto 42.15,60.49 < 10 |c
+step
+map Court of Stars/1
+path follow loose; loop off; ants curved; dist 20
+path	38.98,53.91	32.01,41.45
+kill Patrol Captain Gerdo##104215
+|tip He walks around this area.
+|tip Clear the area of trash mobs before engaging him, or they will come to his aid during the fight.
+|tip If you have a Rogue or Alchemist in your group, get them to click the Flask of the Solemn Night before engaging him.
+|tip The flask is located on the circular bar area in the middle of the courtyard.
+|tip This will poison the flask and he will die instantly upon drinking it during the fight.
+_EVERYONE:_
+|tip When you get the Arcane Lockdown debuff, jump multiple times to remove the stacks of it.
+|tip Triangle patches appear on the ground in front and behind him when he casts Resonant Slash. Move to his left or right.
+_DAMAGE:_
+|tip Kill the enemies quickly that appear to help him.
+_HEALER:_
+|tip When he is at low health, he will run to drink his Flask of the Solemn Night.
+|tip After drinking, he will deal more damage.
+_TANK:_
+|tip Gain threat on the enemies quickly that appear to help him.
+Defeat Patrol Captain Gerdo |scenariogoal 1/29612 |goto 34.28,28.10
+step
+Run up the stairs |goto 38.57,24.65 < 20 |walk |n
+Enter the building |goto 42.62,26.75 < 10 |walk |n
+Run up the stairs |goto 49.15,28.20 < 7 |walk |n
+Continue up the stairs and leave the building |goto 47.85,30.27 < 7 |walk |n
+Enter the building |goto 46.32,35.04 < 7 |walk |n
+Run down the stairs |goto 45.36,36.14 < 7 |walk |n
+Continue down the stairs |goto 45.92,38.93 < 7 |c
+step
+Follow the path |goto 44.89,37.39 < 7 |walk |n
+Follow the path |goto 46.00,40.50 < 7 |walk |n
+Leave the building |goto 48.63,39.27 < 10 |c
+step
+Cross the bridge |goto 51.11,43.69 < 20
+kill Felbound Enforcer##104278+
+|tip They walk around this area, so you may need to search a bit for them.
+|tip You can see them as yellow circles on your minimap.
+|tip After you kill a Felbound Enforcer, a named enemy will run to your location to investigate.
+|tip Do this 3 times.
+kill Imacu'tya##104275
+kill Baalgar the Watchful##104274
+kill Jazshariu##104273
+Click Here After Defeating All Three Enemies |confirm |goto 47.70,60.07
+step
+kill Talixae Flamewreath##104217
+_EVERYONE:_
+|tip Group together when she starts casting Infernal Eruption, Infernal Imps spawn at the location of all players.
+|tip Keep the Infernal Imps grouped together and kill them with AoE damage as fast as possible.
+_DAMAGE:_
+|tip Quickly kill the Infernal Imps that spawn after she cass Infernal Eruption.
+_HEALER:_
+|tip The Infernal Imps hit hard and can be hard to keep focused on the tank, so be ready for big heals when they spawn.
+_TANK:_
+|tip Gain threat on the Infernal Imps that spawn after she cass Infernal Eruption.
+Defeat Talixae Flamewreath |scenariogoal 1/29613 |goto 34.28,28.10
+step
+talk Ly'leth Lunastre##106468
+Gain the Masquerade Disguise |havebuff Interface\Icons\inv_helm_mask_fittedalpha_b_01_nightborne_02 |goto 60.46,61.74
+step
+talk Chatty Rumormonger##107486+
+|tip They are 5 of them all around inside this building, upstairs and downstairs.
+|tip You can see them as yellow circles on your minimap.
+|tip Talk to them to get random clues as to what the spy looks like.
+|tip With the clues in mind, inspect the Suspicious Nobles inside the building to find the one that matches the description.
+talk Suspicious Noble##107435
+|tip The correct npc will start talking and walking away.
+Click Here After You've Found the Spy |confirm |goto Court of Stars/2 42.15,46.55
+step
+Follow the path |goto Court of Stars/3 56.88,33.25 < 10 |walk
+Watch the dialogue
+|tip Follow the Suspicious Noble.
+kill Gerenth the Vile##108151
+|tip Click his corpse to loot the key needed to continue.
+Click Here Once You Have The Key |confirm |goto Court of Stars/3 66.36,19.09
+step
+map Court of Stars/3
+path follow loose; loop off; ants curved; dist 15
+path	56.95,33.22	57.93,54.69	60.40,69.83
+|tip Click the big Skyward Terrace door to open it.
+Watch the dialogue
+kill Advisor Melandrus##104218
+_EVERYONE:_
+|tip He will cast Blade Surge on a random player and rush to their location, leaving a copy of himself at that location.
+|tip These copies cast his abilities when he does, so he becomes more difficult in longer fights, due to these copies.
+|tip Distance yourself from other players, if possible, to avoid Blade Surge damaging multiple players at once.
+|tip Avoid the grey lines on the ground when he casts Piercing Gale.
+_HEALER:_
+|tip Be ready to big heals if the fight takes a long time, since his abilities increase in damage as the fight progresses.
+Defeat Advisor Melandrus |scenarioend |goto 65.85,78.15
+step
+_Congratulations!_
+You completed the Court of Stars dungeon!
 ]])

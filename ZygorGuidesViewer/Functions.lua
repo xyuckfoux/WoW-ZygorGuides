@@ -1,4 +1,4 @@
-﻿local ZGV=_G['ZygorGuidesViewer']
+local ZGV=_G['ZygorGuidesViewer']
 if not ZGV then return end
 
 local tinsert,twipe,tsort=tinsert,table.wipe,table.sort
@@ -1233,6 +1233,12 @@ ZGV.Gold = {ServerTrends = {ImportServerPrices=function() end}}  -- stub
 ZGV.Licence = {}
 
 function ZGV.Licence:CheckLicence(guide)
+	if not guide then return ZGV.Licence:ShowExpiredPopup(0) end -- no guide provided
+	if not ZGV.Licence:GetType(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide type
+	if not ZGV.Licence:GetSubtype(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide expansion
+	if not ZGV.Licence:GetSide(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide expansion
+	if not ZGV.Licence:VerifyKeyIntegrity(ZGV.Licence:GetKey(guide)) then return ZGV.Licence:ShowExpiredPopup(2) end
+	if not ZGV.Licence:VerifyKeyExpiration(ZGV.Licence:GetKey(guide)) then return ZGV.Licence:ShowExpiredPopup(3) end
 	return true
 end
 

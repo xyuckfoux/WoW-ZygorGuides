@@ -32163,7 +32163,7 @@ talk Lord Darius Crowley##35566
 turnin Last Stand##14222 |goto 48.9,52.8
 step
 talk King Genn Greymane##36332
-accept Last Chance at Humanity##14375 |goto 678/0 36.4,61.3 |instant
+accept Last Chance at Humanity##14375 |goto 679/0 36.4,61.3 |instant
 step
 talk Lord Godfrey##36170
 accept Among Humans Again##14313 |goto 36.5,62.3
@@ -32230,7 +32230,7 @@ Find a Forsaken Catapult and kill the Forsaken Machinist driving it. |kill Forsa
 invehicle |clicknpc Forsaken Catapult##36283 |q 14382 |goto 25.1,72.3
 step
 Use the Launch ability on your hotbar to launch yourself onto the deck of the Forsaken ship at [24.6,76.0]
-kill Captain Anson##36397 |q 14382/1 |goto 25.0,74.7 |tip He is on the bottom level of the ship, one layer down, towards the back.
+kill Captain Anson##36397 |q 14382/1 |goto 23.80,74.77 |tip He is on the bottom level of the ship, one layer down, towards the back.
 step
 Find a Forsaken Catapult and kill the Forsaken Machinist driving it. |kill Forsaken Machinist##36292 |n
 clicknpc Forsaken Catapult##36283 |invehicle |q 14382 |goto 25.1,72.3
@@ -32343,18 +32343,18 @@ accept To Greymane Manor##14465 |goto 37.6,65.2
 You will ride a horse to Greymane Manor |invehicle |c
 step
 talk Queen Mia Greymane##36606
-turnin To Greymane Manor##14465 |goto 678/2 62.1,49.6
-accept The King's Observatory##14466 |goto 678/2 62.1,49.6
+turnin To Greymane Manor##14465 |goto 679/2 62.1,49.6
+accept The King's Observatory##14466 |goto 679/2 62.1,49.6
 step
 Follow the stairs up.
 talk King Genn Greymane##36743
-turnin The King's Observatory##14466 |goto 678/3 42.7,20.6
-accept Alas, Gilneas##14467 |goto 678/3 42.7,20.6 |instant
+turnin The King's Observatory##14466 |goto 679/3 42.7,20.6
+accept Alas, Gilneas##14467 |goto 679/3 42.7,20.6 |instant
 step
 talk King Genn Greymane##36743
-accept Exodus##24438 |goto 678/3 42.7,20.6
+accept Exodus##24438 |goto 679/3 42.7,20.6
 step
-Go down the curved road |goto 678/0 29.6,51.8 <10
+Go down the curved road |goto 679/0 29.6,51.8 <10
 clicknpc Stagecoach Carriage##44928 |goto 29.0,54.2
 Ride in the Stagecoach Carriage |invehicle |c |q 24438
 step
@@ -32487,7 +32487,7 @@ Become stealthed |havebuff Interface\Icons\Ability_Stealth |c |q 24592
 step
 Use Krennan's Potion of Stealth if you accidentally lose stealth |use Krennan's Potion of Stealth##50218
 While stealthed run into the house |tip Avoid the dogs, they can still detect you and will attack.
-kill Lord Walden##37733 |q 24592/2 |goto 78.9,65.9 |tip He patrols around this area and inside the house.
+kill Lord Walden##37733 |q 24592/2 |goto 78.16,66.03 |tip He patrols around this area and inside the house.
 step
 Use Krennan's Potion of Stealth |use Krennan's Potion of Stealth##50218
 Become stealthed |havebuff Interface\Icons\Ability_Stealth |c |q 24592
@@ -32516,7 +32516,7 @@ kill Brown Stag##37786+
 collect 10 Side of Stag Meat |q 24675/1 |goto 75.3,47.4
 stickystart "Slavedriver"
 step
-kill Brothogg the Slavemaster##37802 |q 24674/1 |goto 678/1 54.5,82.8 |indoors Emberstone Mine
+kill Brothogg the Slavemaster##37802 |q 24674/1 |goto 679/1 54.5,82.8 |indoors Emberstone Mine
 |tip He's all the way in the back of the Emberstone Mine
 modelnpc 37701
 step "Slavedriver"
@@ -32527,7 +32527,7 @@ click Ball and Chain##181+
 Free 5 Enslaved Gilnean |q 24575/1 |goto 75.3,31.6
 step
 talk Lorna Crowley##37783
-turnin Liberation Day##24575 |goto 678/0 70.9,39.8
+turnin Liberation Day##24575 |goto 679/0 70.9,39.8
 step
 talk Magda Whitewall##38143
 turnin Last Meal##24675 |goto 70.6,39.7
@@ -32551,7 +32551,7 @@ accept The Battle for Gilneas City##24904 |goto 70.9,39.8
 step
 talk Krennan Aranas##38553 |goto 70.0,40.9
 Tell him let us take back our city or that you wish to join the battle underway
-Arrive in Gilneas City |goto 611/0 60.9,71.1 <10 |c
+Arrive in Gilneas City |goto 679/0 68.86,41.92 <10 |c
 step
 Wait for the Gilnean Militia to run in the city
 Enter the city of Gilneas here |goto 67.1,42.6,0.5 |c
@@ -32594,7 +32594,7 @@ Go down the stairs |goto 32.9,57.6 <5
 Continue down the second set of stairs |goto 34.2,56.3 <5
 Run through the tunnel to this location |goto 7.7,71.5 <10
 Spam use your Half-Burnt Torch to keep the rats and spiders from attacking you |use Half-Burnt Torch##50220
-Exit the tunnel on the other side |goto 678 |noway |c |q 24678
+Exit the tunnel on the other side |goto 679/0  |noway |c |q 24678
 step
 talk Krennan Aranas##38144
 turnin Knee-Deep##24678 |goto 49.8,56.9

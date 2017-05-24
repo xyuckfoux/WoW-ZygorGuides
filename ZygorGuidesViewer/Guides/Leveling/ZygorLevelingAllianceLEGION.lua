@@ -314,11 +314,12 @@ stickystart "RegainFelEnergy"
 stickystart "RepelLegionAttackers"
 step
 click Warden Cells
-|tip Around this area.
-Free 8 Imprisoned Illidari |q 38690/1 |goto 73.64,32.23
+|tip They look like green glass cases in the walls around this area.
+|tip You will only be able to click some of them.
+Free #8# Imprisoned Illidari |q 38690/1 |goto 73.64,32.23
 step "RegainFelEnergy"
 Kill enemies around this area
-Regain 100 Fel Energy |q 38689/1 |goto 69.11,36.51
+Regain #100# Fel Energy |q 38689/1 |goto 69.11,36.51
 step "RepelLegionAttackers"
 Kill enemies around this area
 click Legion Portal##54513+
@@ -473,10 +474,9 @@ talk Elerion Bladedancer##101004
 |tip On the balcony of the building.
 turnin A Weapon of the Alliance##44473 |goto 40.26,77.69
 step
-talk Khadgar's Upgraded Servant##114562
-|tip It appears next to you.
 accept In the Blink of an Eye##44663 |goto 40.3,77.7 |or
 accept In the Blink of an Eye##44184 |goto 40.3,77.7 |or
+|tip You will accept one of these quests automatically.
 step
 Enter the building |goto 80.75,37.75 < 15 |walk
 Follow the path |goto 81.56,35.56 < 15 |walk
@@ -494,43 +494,43 @@ talk Emissary Auldbridge##111109
 turnin In the Blink of an Eye##44663 |goto Dalaran L/10 57.57,45.75 |only if havequest(44663) or completedq(44663)
 turnin In the Blink of an Eye##44184 |goto Dalaran L/10 57.57,45.75 |only if havequest(44184) or completedq(44184)
 step
-_Next to you:_
 talk Kor'vas Bloodthorn##99343
+|tip She appears next to you in Dalaran.
 |tip You will only be able to accept one of these quests.
 accept Call of the Illidari##39261 |goto Dalaran L/10 57.60,45.77 |or
 accept Call of the Illidari##39047 |goto Dalaran L/10 57.60,45.77 |or
 step
 _Choose What to Do Next:_
 |tip Click the line below for the activity you would like to do.
-Pursue Artifact Weapons |next "Artifacts_DemonHunter" |only if level >= 102
-Choose Next Leveling Zone |next "Choose_Leveling_Zone_DemonHunter"
+Pursue Artifact Weapons |confirm |next "Artifacts_DemonHunter" |only if level >= 102
+Choose Next Leveling Zone |confirm |next "Choose_Leveling_Zone_DemonHunter"
 |only if level >= 101
 step
 label "Artifacts_DemonHunter"
 talk Kayn Sunfury##99247
 |tip It may be Altruis the Sufferer.
-turnin Call of the Illidari##39261 |goto 74.99,49.03 |only if havequest(39261) or completedq(39261)
-turnin Call of the Illidari##39047 |goto 74.99,49.03 |only if havequest(39047) or completedq(39047)
+turnin Call of the Illidari##39261 |goto 74.99,49.03 |only if havequest(39261) or completedq(39261) and not completedq(40814)
+turnin Call of the Illidari##39047 |goto 74.99,49.03 |only if havequest(39047) or completedq(39047) and not completedq(40814)
 |tip You will only be able to accept one of these quests.
 accept The Power to Survive##40814 |goto 74.99,49.03 |or |only if not completedq(40814)
 accept The Power to Survive##40816 |goto 74.99,49.03 |or |only if not completedq(40816)
-accept In Pursuit of Power##44383 |goto 74.99,49.03 |or |only if not completedq(44383)
-accept In Pursuit of Power##44379 |goto 74.99,49.03 |or |only if not completedq(44379)
+accept In Pursuit of Power##44383 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |or |only if not completedq(44383)
+accept In Pursuit of Power##44379 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |or |only if not completedq(44379)
 step
 Now you will Choose Your Artifact Weapon:
 |tip Choose Havoc if your Demon Hunter has the Havoc specialization.
 |tip Choose Vengeance if your Demon Hunter has the Vengeance specialization.
-Choose your Artifact Weapon |q 40814/1 |goto 75.0,49.0 |only if havequest(40814)
-Choose your Artifact Weapon |q 40816/1 |goto 75.0,49.0 |only if havequest(40816)
-Choose a Second Artifact to Pursue |q 44383/1 |goto 75.0,49.0 |only if havequest(44383)
-Choose a Second Artifact to Pursue |q 44379/1 |goto 75.0,49.0 |only if havequest(44379)
+Choose your Artifact Weapon |q 40814/1 |goto Dalaran L/10 75.0,49.0 |only if havequest(40814)
+Choose your Artifact Weapon |q 40816/1 |goto Dalaran L/10 75.0,49.0 |only if havequest(40816)
+Choose a Second Artifact to Pursue |q 44383/1 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |only if havequest(44383)
+Choose a Second Artifact to Pursue |q 44379/1 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |only if havequest(44379)
 step
 talk Kayn Sunfury##99247
 |tip It may be Altruis the Sufferer.
-turnin The Power to Survive##40814 |goto 75.0,49.0 |only if havequest(40814)
-turnin The Power to Survive##40816 |goto 75.0,49.0 |only if havequest(40816)
-turnin In Pursuit of Power##44383 |goto 75.0,49.0 |only if havequest(44383)
-turnin In Pursuit of Power##44379 |goto 75.0,49.0 |only if havequest(44379)
+turnin The Power to Survive##40814 |goto Dalaran L/10 75.0,49.0 |only if havequest(40814)
+turnin The Power to Survive##40816 |goto Dalaran L/10 75.0,49.0 |only if havequest(40816)
+turnin In Pursuit of Power##44383 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |only if havequest(44383)
+turnin In Pursuit of Power##44379 |goto Mardum, the Shattered Abyss/1 58.65,57.75 |only if havequest(44379)
 step
 _Which Artifact Did You Choose?_
 |tip Click the line with the name of the spec of the artifact you chose to pursue.
@@ -571,15 +571,15 @@ Interrogate Taldath |q 41121/3 |goto The Violet Hold L/1 49.63,46.96 |only if ha
 step
 talk Kayn Sunfury##99247
 |tip It may be Altruis the Sufferer.
-turnin By Any Means##39051 |goto 49.40,54.89 |only if havequest(39051) or completedq(39051)
-turnin By Any Means##41121 |goto 49.40,54.89 |only if havequest(41121) or completedq(41121)
+turnin By Any Means##39051 |goto 50.36,71.04 |only if havequest(39051) or completedq(39051)
+turnin By Any Means##41121 |goto 50.36,71.04 |only if havequest(41121) or completedq(41121)
 |tip You will only be able to accept one of these quests.
-accept The Hunt##39247 |goto 49.40,54.89 |or
-accept The Hunt##41119 |goto 49.40,54.89 |or
+accept The Hunt##39247 |goto 50.36,71.04 |or
+accept The Hunt##41119 |goto 50.36,71.04 |or
 step
 Walk into the Portal |goto 50.73,85.01 |n
-Leave the Violet Hold |goto Dalaran L/10 67.31,69.16 < 50 |noway |c |q 39247/1 |only if havequest(39247) or completedq(39247)
-Leave the Violet Hold |goto Dalaran L/10 67.31,69.16 < 50 |noway |c |q 41119/1 |only if havequest(41119) or completedq(41119)
+Leave the Violet Hold |goto Dalaran L/10 67.31,69.16 < 10000 |noway |c |q 39247 |only if havequest(39247) or completedq(39247)
+Leave the Violet Hold |goto Dalaran L/10 67.31,69.16 < 10000 |noway |c |q 41119 |only if havequest(41119) or completedq(41119)
 step
 talk Illidari Fel Bat##94321
 Fly to Felsoul Hold |goto Dalaran L/10 75.20,47.60 |q 39247/1 |only if havequest(39247) or completedq(39247)
@@ -588,12 +588,17 @@ step
 Fly to Felsoul Hold |goto Dalaran L/10 75.20,47.60 > 1000 |q 39247 |only if havequest(39247) or completedq(39247)
 Fly to Felsoul Hold |goto Dalaran L/10 75.20,47.60 > 1000 |q 41119 |only if havequest(41119) or completedq(41119)
 step
-Fly into Felsoul Hold scenariogoal 1/28177 |q 39247 |only if havequest(39247) or completedq(39247)
-Fly into Felsoul Hold scenariogoal 1/28177 |q 41119 |only if havequest(41119) or completedq(41119)
+Begin the Twinblades of the Deceiver Scenario |scenariostart |q 39247 |only if havequest(39247) or completedq(39247)
+Begin the Twinblades of the Deceiver Scenario |scenariostart |q 39247 |only if havequest(41119) or completedq(41119)
+step
+Fly into Felsoul Hold |scenariogoal 1/28177 |q 39247 |only if havequest(39247) or completedq(39247)
+Fly into Felsoul Hold |scenariogoal 1/28177 |q 41119 |only if havequest(41119) or completedq(41119)
 step
 Dive into the Fray |scenariogoal 2/28390 |q 39247 |only if havequest(39247) or completedq(39247)
 Dive into the Fray |scenariogoal 2/28390 |q 41119 |only if havequest(41119) or completedq(41119)
 step
+Follow the path down |goto Suramar/0 25.20,60.12 < 20 |only if walking
+Kill all enemies as you walk
 click Felshield Ward
 |tip It's a tall object with a huge green crystal floating above it.
 Destroy the First Ward |scenariogoal 3/28391 |count 1 |q 39247 |goto Suramar/0 28.16,64.48 |only if havequest(39247) or completedq(39247)
@@ -609,6 +614,11 @@ click Felshield Ward
 Destroy the Third Ward |scenariogoal 3/28391 |count 3 |q 39247 |goto Suramar/0 31.50,66.76 |only if havequest(39247) or completedq(39247)
 Destroy the Third Ward |scenariogoal 3/28391 |count 3 |q 41119 |goto Suramar/0 31.50,66.76 |only if havequest(41119) or completedq(41119)
 step
+Kill all enemies along this path
+|tip You may have skipped some accidentally, so search around.
+Absorb Demon Souls |scenariostage 3 |goto 29.96,61.57 |q 39247 |only if havequest(39247) or completedq(39247)
+Absorb Demon Souls |scenariostage 3 |goto 29.96,61.57 |q 39247 |only if havequest(41119) or completedq(41119)
+step
 Watch the dialogue
 kill Varedis Felsoul##94310 |scenariogoal 4/28394 |q 39247 |goto Suramar/0 33.34,67.18 |only if havequest(39247) or completedq(39247)
 kill Varedis Felsoul##94310 |scenariogoal 4/28394 |q 41119 |goto Suramar/0 33.34,67.18 |only if havequest(41119) or completedq(41119)
@@ -620,15 +630,17 @@ collect Twinblades of the Deceiver |q 41119/2 |goto 33.00,67.01 |only if haveque
 Wield the Twinblades of the Deceiver |scenarioend |q 39247 |only if havequest(39247) or completedq(39247)
 Wield the Twinblades of the Deceiver |scenarioend |q 41119 |only if havequest(41119) or completedq(41119)
 step
-_Nearby:_
-talk Illidari Fel Bat##101902 |goto Suramar/0 32.71,66.85 < 5
-Return to Dalaran |goto Dalaran L/10 74.53,46.25 < 50 |noway |c |q 39247 |only if havequest(39247) or completedq(39247)
-Return to Dalaran |goto Dalaran L/10 74.53,46.25 < 50 |noway |c |q 41119 |only if havequest(41119) or completedq(41119)
+talk Illidari Fel Bat##101902 |goto 32.71,66.85 |n
+Return to Dalaran |goto Dalaran L/10 74.53,46.25 < 10000 |noway |c |q 39247 |only if havequest(39247) or completedq(39247)
+Return to Dalaran |goto Dalaran L/10 74.53,46.25 < 10000 |noway |c |q 41119 |only if havequest(41119) or completedq(41119)
 step
 talk Kor'vas Bloodthorn##102799
-turnin The Hunt##39247 |goto Dalaran L/10 73.84,46.02 |only if havequest(39247) or completedq(39247)
-turnin The Hunt##41119 |goto Dalaran L/10 73.84,46.02 |only if havequest(41119) or completedq(41119)
-accept Eternal Vigil##42869 |goto Dalaran L/10 73.84,46.02 |next "All_Demon_Hunters"
+turnin The Hunt##39247 |goto Dalaran L/10 73.84,46.02 |only if (havequest(39247) or completedq(39247)) and (not completedq(44383) or not completedq(44379))
+turnin The Hunt##41119 |goto Dalaran L/10 73.84,46.02 |only if (havequest(41119) or completedq(41119)) and (not completedq(44383) or not completedq(44379))
+turnin The Hunt##39247 |goto Mardum, the Shattered Abyss/1 59.35,57.71 |only if (havequest(39247) or completedq(39247)) and (completedq(44383) or completedq(44379))
+turnin The Hunt##41119 |goto Mardum, the Shattered Abyss/1 59.35,57.71 |only if (havequest(41119) or completedq(41119)) and (completedq(44383) or completedq(44379))
+accept Eternal Vigil##42869 |goto Dalaran L/10 73.84,46.02 |only if not completedq(42869)
+|next "All_Demon_Hunters"
 step
 label "Vengeance_Artifact"
 talk Kayn Sunfury##99247
@@ -651,6 +663,7 @@ click Crystallized Soul
 collect Crystallized Soul##136385 |q 41804/2 |goto 26.65,44.82
 step
 talk Archmage Khadgar##90417
+|tip He runs back down to this spot.
 turnin Ask and You Shall Receive##41804 |goto 28.50,48.32
 accept Return to Jace##41806 |goto 28.49,48.33
 step
@@ -669,66 +682,69 @@ turnin Establishing a Connection##41807 |goto 74.42,51.26
 step
 talk Kayn Sunfury##99247
 |tip It may be Altruis the Sufferer.
-accept Vengeance Will Be Ours##41863 |goto 74.99,49.02
-accept Vengeance Will Be Ours##40249 |goto 74.99,49.02
 |tip You will only be able to accept one of these quests.
+accept Vengeance Will Be Ours##41863 |or |goto 74.99,49.02
+accept Vengeance Will Be Ours##40249 |or |goto 74.99,49.02
 step
 talk Illidari Fel Bat##99250
 Fly to the Broken Shore |q 41863/1 |goto 75.31,47.62 |only if havequest(41863) or completedq(41863)
 Fly to the Broken Shore |q 40249/1 |goto 75.31,47.62 |only if havequest(40249) or completedq(40249)
 step
-_Follow the path south:_
-talk Allari the Souleater##98882
-Free Allari the Souleater |scenariostage 1 |q 41863 |only if havequest(41863) or completedq(41863)
-Free Allari the Souleater |scenariostage 1 |q 40249 |only if havequest(40249) or completedq(40249)
+Begin the Scenario |scenariostart |q 41863 |only if havequest(41863) or completedq(41863)
+Begin the Scenario |scenariostart |q 41863 |only if havequest(40249) or completedq(40249)
 step
-_Continue following the path south:_
+talk Allari the Souleater##98882
+Free Allari the Souleater |scenariostage 1 |goto 1031 15.09,51.78 |q 41863 |only if havequest(41863) or completedq(41863)
+Free Allari the Souleater |scenariostage 1 |goto 1031 15.09,51.78 |q 40249 |only if havequest(40249) or completedq(40249)
+step
+Run up the stairs |goto 15.85,53.38 < 20 |only if walking
 click Felsoul Portals
 |tip Just follow the path and you will find them easily.
-Destroy the Legion Portals |scenariostage 2 |q 41863 |only if havequest(41863) or completedq(41863)
-Destroy the Legion Portals |scenariostage 2 |q 40249 |only if havequest(40249) or completedq(40249)
+Destroy the Legion Portals |scenariostage 2 |goto 17.56,57.40 |q 41863 |only if havequest(41863) or completedq(41863)
+Destroy the Legion Portals |scenariostage 2 |goto 17.56,57.40 |q 40249 |only if havequest(40249) or completedq(40249)
 step
-_Follow the path southeast:_
 kill Doomherald Saera##105095
-Eliminate Doomherald Saera |scenariogoal 3/29698 |q 41863 |only if havequest(41863) or completedq(41863)
-Eliminate Doomherald Saera |scenariogoal 3/29698 |q 40249 |only if havequest(40249) or completedq(40249)
+Eliminate Doomherald Saera |scenariogoal 3/29698 |goto 20.15,61.32 |q 41863 |only if havequest(41863) or completedq(41863)
+Eliminate Doomherald Saera |scenariogoal 3/29698 |goto 20.15,61.32 |q 40249 |only if havequest(40249) or completedq(40249)
 kill Doomherald Taraar##105094
-Eliminate Doomherald Taraar |scenariogoal 3/29697 |q 41863 |only if havequest(41863) or completedq(41863)
-Eliminate Doomherald Taraar |scenariogoal 3/29697 |q 40249 |only if havequest(40249) or completedq(40249)
+Eliminate Doomherald Taraar |scenariogoal 3/29697 |goto 20.15,61.32 |q 41863 |only if havequest(41863) or completedq(41863)
+Eliminate Doomherald Taraar |scenariogoal 3/29697 |goto 20.15,61.32 |q 40249 |only if havequest(40249) or completedq(40249)
 step
-_In this same location:_
+Watch the dialogue
 kill Gorgonnash##99046
-Destroy Gorgonnash |scenariogoal 4/29103 |q 41863 |only if havequest(41863) or completedq(41863)
-Destroy Gorgonnash |scenariogoal 4/29103 |q 40249 |only if havequest(40249) or completedq(40249)
+Destroy Gorgonnash |scenariogoal 4/29103 |goto 20.15,61.32 |q 41863 |only if havequest(41863) or completedq(41863)
+Destroy Gorgonnash |scenariogoal 4/29103 |goto 20.15,61.32 |q 40249 |only if havequest(40249) or completedq(40249)
 step
-_Run east to the pile of boulders:_
 Use your Spectral Sight ability
 |tip Stand facing the pile of boulders.
-Find Caria's Trail |scenariogoal 5/29706 |q 41863 |only if havequest(41863) or completedq(41863)
-Find Caria's Trail |scenariogoal 5/29706 |q 40249 |only if havequest(40249) or completedq(40249)
+Find Caria's Trail |scenariogoal 5/29706 |goto 21.71,61.01 |q 41863 |only if havequest(41863) or completedq(41863)
+Find Caria's Trail |scenariogoal 5/29706 |goto 21.71,61.01 |q 40249 |only if havequest(40249) or completedq(40249)
 step
-_Follow the path east through the cave:_
+Enter the cave |goto 22.33,61.11 < 15 |walk
 |tip Click the Collapsed Rocks to get through the pile of boulders and enter the cave.
+Follow the path |goto 23.49,63.17 < 15 |walk
+Follow the path |goto 24.29,64.06 < 20 |walk
 kill Caria Felsoul##99184
-Destroy Caria Felsoul |scenariogoal 6/29104 |q 41863 |only if havequest(41863) or completedq(41863)
-Destroy Caria Felsoul |scenariogoal 6/29104 |q 40249 |only if havequest(40249) or completedq(40249)
+Destroy Caria Felsoul |scenariogoal 6/29104 |goto 26.83,61.34 |q 41863 |only if havequest(41863) or completedq(41863)
+Destroy Caria Felsoul |scenariogoal 6/29104 |goto 26.83,61.34 |q 40249 |only if havequest(40249) or completedq(40249)
 step
-_After you kill Caria Felsoul:_
 click Aldrachi Warblades
-Claim the Aldrachi Warblades |scenarioend |q 41863 |only if havequest(41863) or completedq(41863)
-Claim the Aldrachi Warblades |scenarioend |q 40249 |only if havequest(40249) or completedq(40249)
-collect Aldrachi Warblades |q 41863/2 |only if havequest(41863) or completedq(41863)
-collect Aldrachi Warblades |q 40249/2 |only if havequest(40249) or completedq(40249)
+Claim the Aldrachi Warblades |scenarioend |goto 26.78,61.39 |q 41863 |only if havequest(41863) or completedq(41863)
+Claim the Aldrachi Warblades |scenarioend |goto 26.78,61.39 |q 40249 |only if havequest(40249) or completedq(40249)
+collect Aldrachi Warblades |q 41863/2 |goto 26.78,61.39 |only if havequest(41863) or completedq(41863)
+collect Aldrachi Warblades |q 40249/2 |goto 26.78,61.39 |only if havequest(40249) or completedq(40249)
 step
-_Nearby:_
 talk Illidari Fel Bat##99227
-Return to Dalaran |q 41863/3 |only if havequest(41863) or completedq(41863)
-Return to Dalaran |q 40249/3 |only if havequest(40249) or completedq(40249)
+Return to Dalaran |q 41863/3 |goto 26.13,61.17 |only if havequest(41863) or completedq(41863)
+Return to Dalaran |q 40249/3 |goto 26.13,61.17 |only if havequest(40249) or completedq(40249)
 step
 talk Kor'vas Bloodthorn##102799
-turnin Vengeance Will Be Ours##41863 |goto Dalaran L/10 73.85,46.04 |only if havequest(41863) or completedq(41863)
-turnin Vengeance Will Be Ours##40249 |goto Dalaran L/10 73.85,46.04 |only if havequest(40249) or completedq(40249)
-accept Eternal Vigil##42869 |goto Dalaran L/10 73.85,46.04 |next "All_Demon_Hunters"
+turnin Vengeance Will Be Ours##41863 |goto Dalaran L/10 73.85,46.04 |only if (havequest(41863) or completedq(41863)) and (not completedq(44383) or not completedq(44379))
+turnin Vengeance Will Be Ours##40249 |goto Dalaran L/10 73.85,46.04 |only if (havequest(40249) or completedq(40249)) and (not completedq(44383) or not completedq(44379))
+turnin Vengeance Will Be Ours##41863 |goto Mardum, the Shattered Abyss/1 59.35,57.71 |only if (havequest(41863) or completedq(41863)) and (completedq(44383) or completedq(44379))
+turnin Vengeance Will Be Ours##40249 |goto Mardum, the Shattered Abyss/1 59.35,57.71 |only if (havequest(40249) or completedq(40249)) and (completedq(44383) or completedq(44379))
+accept Eternal Vigil##42869 |goto Dalaran L/10 73.85,46.04 |only if not completedq(42869)
+|next "All_Demon_Hunters"
 step
 label "All_Demon_Hunters"
 Glide to Illidari Redoubt |q 42869/1 |goto Dalaran L/10 95.2,64.9
@@ -784,6 +800,7 @@ Speak to Battlelord Gaardoun |q 41070/1 |goto 55.88,54.08 |only if havequest(410
 step
 Follow the path down |goto 49.08,41.64 < 20
 Follow the path down |goto 47.43,54.20 < 20
+Watch the dialogue
 Follow Battlelord Gaardoun |q 41062/2 |goto Mardum, the Shattered Abyss/2 59.68,45.66 |only if havequest(41062) or completedq(41062)
 Follow Battlelord Gaardoun |q 41070/2 |goto Mardum, the Shattered Abyss/2 59.68,45.66 |only if havequest(41070) or completedq(41070)
 step
@@ -825,12 +842,12 @@ label "Choose_Leveling_Zone_DemonHunter"
 click Scouting Map
 |tip You are choosing the zone you wish to do quests in first.
 |tip Pick whichever you like, it doesn't matter.
-accept Paradise Lost##39718 |goto 58.79,54.37 |or
-accept The Tranquil Forest##39731 |goto 58.79,54.37 |or
-accept The Lone Mountain##39733 |goto 58.79,54.37 |or
-accept Stormheim##39735 |goto 58.79,54.37 |or
-Choose the Initial Strike Point |q 41069/1 |goto 58.79,54.37 |only if havequest(41069) or completedq(41069)
-Choose the Initial Strike Point |q 41099/1 |goto 58.79,54.37 |only if havequest(41099) or completedq(41099)
+accept Paradise Lost##39718 |goto 58.79,54.37 |or |only if not completedq(39718)
+accept The Tranquil Forest##39731 |goto 58.79,54.37 |or |only if not completedq(39731)
+accept The Lone Mountain##39733 |goto 58.79,54.37 |or |only if not completedq(39733)
+accept Stormheim##39735 |goto 58.79,54.37 |or |only if not completedq(39735)
+Choose the Initial Strike Point |q 41069/1 |goto 58.79,54.37 |only if not completedq(41069)
+Choose the Initial Strike Point |q 41099/1 |goto 58.79,54.37 |only if not completedq(41099)
 step
 talk Kayn Sunfury##95240
 turnin Direct Our Wrath##41069 |goto 58.60,57.79 |only if havequest(41069) or completedq(41069)
@@ -873,8 +890,13 @@ talk Aludane Whitecloud##96813
 Fly to Thunder Totem in Highmountain |q 38907/1	|goto 69.84,51.11 |next Zygor's Alliance Leveling Guides\\Legion (100-110)\\Highmountain
 |only if havequest(38907) and not completedq(38907)
 step
+click Illidari Gateway
+Travel to Dalaran |q 39735/1 |goto Mardum, the Shattered Abyss/1 59.31,91.97
+|only if havequest(39735) or completedq(39735)
+step
 click Illidari Gateway |goto Mardum, the Shattered Abyss/1 59.31,91.97 > 100
 talk Sky Admiral Rogers##96644
+|tip Inside the building.
 turnin Stormheim##39735 |goto Dalaran L/10 29.09,46.87
 accept A Royal Summons##38035 |goto Dalaran L/10 29.09,46.87
 |only if havequest(39735) or completedq(39735)
@@ -892,6 +914,7 @@ turnin A Royal Summons##38035 |goto Stormwind City/0 18.93,42.76
 accept Making the Rounds##38206 |goto Stormwind City/0 18.93,42.76
 |only if havequest(38035) or completedq(38035)
 step
+Watch the dialogue
 click Skyfire Deck Gun
 Inspect the Deck Guns |q 38206/1 |goto 18.58,46.36
 |only if havequest(38206) or completedq(38206)
@@ -911,8 +934,10 @@ turnin Making the Rounds##38206 |goto 18.67,51.11
 accept Greymane's Gambit##39800 |goto 18.67,51.11
 |only if havequest(38206) or completedq(38206)
 step
+Begin the Greymane's Gambit Scenario |scenariostart |q 39800
+step
 click Skyfire Deck Gun
-Man the Deck Guns |scenariogoal 1/27996 |goto The Cove of Nashal/0 31.96,8.43 |q 39800
+Man the Deck Guns |scenariostage 1 |goto The Cove of Nashal/0 31.96,8.43 |q 39800
 |only if havequest(39800) or completedq(39800)
 step
 Use the abilities on your hotbar
@@ -941,6 +966,7 @@ kill Dread-Captain Tattersail##93486
 Defeat the Captain of The Windrunner |scenariogoal 3/28006 |q 39800 |goto 54.79,67.66
 |only if havequest(39800) or completedq(39800)
 step
+Watch the dialogue
 click Donovan |goto 55.29,64.70 > 50
 click Volatile Flares
 |tip Inside the airship, around this area.
@@ -948,10 +974,10 @@ Remove #7# Volatile Flares |scenariogoal 4/31425 |q 39800 |goto 69.29,70.94
 |only if havequest(39800) or completedq(39800)
 step
 kill Nathanos Blightcaller##95852
-|tip Upstairs, on the deck of the airship.
-Defeat Nathanos Blightcaller |scenariogoal 5/28027 |goto 70.70,76.23
+|tip Upstairs on the deck of the airship.
+Defeat Nathanos Blightcaller |scenarioend |goto 70.70,76.23
 Complete Greymane's Mission |q 39800/1 |goto 70.70,76.23 |next Zygor's Alliance Leveling Guides\\Legion (100-110)\\Stormheim
-|only if havequest(39800) and not completedq(39800)
+|only if havequest(39800)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts",{
 author="support@zygorguides.com",
@@ -969,9 +995,12 @@ _On the Deck of the Airship:_
 You Can Skip the Combat Training Scenario
 |tip Use your Hearthstone now if you want to skip the Combat Training scenario.
 |tip You can complete it or skip it, it doesn't matter, and is purely personal preference.
-Click Here to Complete the Combat Training Scenario |confirm |q 43806 |future
-|only if _G.IsBoostTutorialScenario()
+Click Here to Complete the Combat Training Scenario |confirm |or |next "Start_Combat_Training"
+_Or_
+Click Here to Skip the Combat Training Scenario |confirm |or |next "Non_Boosted_Start"
+|only if not completedq(43806) or not completedq(40519)
 step
+label "Start_Combat_Training"
 _On the Deck of the Airship:_
 talk General Bret Hughes##100448
 Talk to General Bret Hughes |scenariostage 1 |q 43806 |future
@@ -9062,7 +9091,7 @@ collect Nightrose Recipe: Part 3, Instructions##122395 |q 38203/3 |goto 42.93,8.
 step
 label "A_Tainted_Vintage"
 Kill enemies around this area
-click Arcane-aged Wind
+click Arcane-aged Wine
 |tip They look like wooden barrels on the ground around this area.
 Combat the Haunting |q 37965/1 |goto 44.32,10.53
 |only if level < 110
@@ -9090,17 +9119,17 @@ step
 _Go East as the Eye of Kilrogg:_
 |tip Go to the big green swirling portal.
 |tip Avoid the Eyes of Zoth with the blue circles above them. They can detect you.
-Scout the Main Portal |q 42375/1 |goto 63.85,28.98
+Scout the Main Portal |q 42375/1 |goto 67.02,27.80
 step
 _Go North as the Eye of Kilrogg:_
 |tip Go to the smaller green swirling portal.
 |tip Avoid the Eyes of Zoth with the blue circles above them. They can detect you.
-Find the Ritual Site |q 42375/2 |goto 63.85,28.98
+Find the Ritual Site |q 42375/2 |goto 67.64,24.92
 step
 _Go South as the Eye of Kilrogg:_
 |tip Go to Arkethrax. He's down in a pit near a bunch of hanging metal cages.
 |tip Avoid the Eyes of Zoth with the blue circles above them. They can detect you.
-Find the Commander |q 42375/3 |goto 63.85,28.98
+Find the Commander |q 42375/3 |goto 67.24,30.59
 step
 Stop Controlling the Eye of Kilrogg |nobuff Interface\Icons\Spell_Shadow_EvilEye |q 42375
 |tip Right-click the Eye of Kilrogg buff to dismiss it.
@@ -10119,6 +10148,12 @@ stickystart "Spray_and_Prey"
 step
 talk Rordan Waterwise##96083
 accept Moozy's Sojourn##39323 |goto 40.25,64.05
+step "Defend_the_Riverlands"
+Kill enemies around this area
+talk Rivermane Tauren##99406+
+|tip They look like taurens kneeling and shaking around this area.
+Assist the Rivermane |q 39274/1 |goto 40.43,63.55
+|only if level < 110
 step
 click Wooden Barricade##8386
 Release the Tauren |q 39316/1 |goto 42.86,63.15
@@ -10132,12 +10167,6 @@ step
 label "Spray_and_Prey"
 Use the Bug Sprayer on Drogbar enemies |use Bug Sprayer##127988
 Spray #6# Drogbar |q 39277/1 |goto 40.43,63.55
-step "Defend_the_Riverlands"
-Kill enemies around this area
-talk Rivermane Tauren##99406+
-|tip They look like taurens kneeling and shaking around this area.
-Assist the Rivermane |q 39274/1 |goto 40.43,63.55
-|only if level < 110
 step
 talk Angler Creel##95186
 turnin Trapped Tauren##39316 |goto 41.13,61.57
@@ -10191,18 +10220,20 @@ step
 Jump down here |goto Highmountain/20 52.46,24.68 < 10 |walk
 Follow the path down |goto Highmountain/20 66.63,45.19 < 10 |walk
 Follow the path up |goto Highmountain/20 63.08,59.44 < 10 |walk
-Leave the cave |goto Highmountain/20 73.71,83.40 > 1000 |walk
+Leave the cave |goto Highmountain/20 73.71,83.40 > 10000 |walk
+Follow the path |goto Highmountain/0 38.92,61.00 < 20 |only if walking
 talk Sella Waterwise##96084
 turnin Moozy's Adventure##39572 |goto Highmountain/0 40.01,57.96
 step
-Follow the path |goto 37.21,64.39 < 20 |only if walking
-Follow the path up |goto 36.58,64.95 < 10 |only if walking
-Follow the path up |goto 33.43,66.20 < 20 |only if walking
-talk Aviana##97925
-accept Hatchlings of the Talon##41094 |goto 32.18,66.85
+Follow the path |goto 37.21,64.39 < 20 |n |only if walking
+Follow the path up |goto 36.58,64.95 < 10 |c |q 41094 |future
 step
 talk Roren Longshadow##100550
 fpath Sylvan Falls |goto 35.86,65.92
+step
+Follow the path up |goto 33.43,66.20 < 20 |only if walking
+talk Aviana##97925
+accept Hatchlings of the Talon##41094 |goto 32.18,66.85
 step
 talk Aviana##97925
 |tip Dismount before talking to her, or you won't get the wings to keep you from falling to your death.
@@ -10215,6 +10246,11 @@ Touch #6# Emerald Globes |q 41094/2 |goto Val'sharah/0 74.31,35.08
 step
 Click the Complete Quest Box:
 turnin Hatchlings of the Talon##41094
+step
+Follow the path down |goto Val'sharah/0 69.99,47.12 < 20 |only if walking
+Follow the path |goto Val'sharah/0 68.46,48.56 < 20 |only if walking
+talk Landrius Ravenfall##100468
+fpath Starsong Refuge |goto Val'sharah/0 69.03,50.83
 step
 Follow the path |goto Highmountain/0 36.80,65.99 < 20 |only if walking
 talk Jale Rivermane##97662
@@ -10432,6 +10468,7 @@ talk Ethel Waterwise##107726
 Find Ethel Waterwise |q 42590/1 |goto 53.33,20.64
 step
 Cross the bridge |goto 56.22,26.65 < 15 |walk
+Follow the path |goto 51.57,38.37 < 15 |walk
 Follow the path |goto 49.73,53.74 < 15 |walk
 Watch the dialogue
 |tip Walk close to Ethel Waterwise.
@@ -10555,6 +10592,13 @@ step
 Ride the elevator down |goto Thunder Totem/0 49.21,45.81 > 10000 |walk
 talk Mayla Highmountain##108434
 turnin The High Chieftain##39580 |goto Thunder Totem/6 55.01,63.15
+step
+Ride the elevator up |goto Thunder Totem/6 58.75,87.30 > 10000 |walk
+Follow the path up |goto Thunder Totem/0 56.90,59.88 < 20 |only if walking
+Cross the bridge |goto Highmountain/0 51.10,64.08 < 15 |only if walking
+Cross the bridge |goto Highmountain/0 57.88,63.55 < 20 |only if walking
+talk Lassa Skymane##100559
+fpath Stonehoof Watch |goto Highmountain/0 59.23,65.06
 step
 Cross the bridge |goto Highmountain/0 58.55,64.46 < 20 |only if walking
 Follow the path |goto Highmountain/0 55.85,63.18 < 20 |only if walking
@@ -10772,15 +10816,9 @@ click Oren's Rappel Point
 |tip You will be lowered down by a rope.
 click Oren's Prized Possessions
 |tip It's an object sitting in the water directly below you.
-|tip You will be attacked by spiders after clicking it.
+|tip You will be pulled back up automatically.
 collect Oren's Prized Possessions##137566 |q 42425/1 |goto 49.45,39.30
 step
-click Ancient Highborn Scroll of Escape |goto 48.82,40.02 |n
-Escape the Pit |goto 51.06,36.85 < 30 |noway |c |q 42425
-step
-Cross the bridge |goto 50.31,35.69 < 15 |walk
-Follow the path down |goto 48.83,35.30 < 20 |walk
-Walk onto the bridge |goto 49.40,38.04 < 15 |walk
 talk Oren Windstrider##94068
 turnin Going Down, Going Up##42425 |goto 49.46,39.23
 accept Empty Nest##39305 |goto 49.46,39.23
@@ -10868,6 +10906,15 @@ step
 talk Bolas Skyfeather##107660
 turnin Bolas Bastion##42630 |goto 42.96,38.77
 step
+Cross the bridge |goto 51.56,38.35 < 15 |only if walking and not knowstaxi("Nesingwary")
+Cross the bridge |goto 58.85,14.79 < 15 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 48.73,54.46 < 20 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Highmountain/0 47.95,54.02 < 20 |only if walking and not knowstaxi("Nesingwary")
+Follow the path |goto Thunder Totem/0 39.67,2.80 < 20 |only if walking and not knowstaxi("Nesingwary")
+Cross the river |goto Highmountain/0 42.20,52.84 < 20 |only if walking and not knowstaxi("Nesingwary")
+talk Tamara Sigmund##94973
+fpath Nesingwary |goto Highmountain/0 40.23,52.71
+step
 talk Hemet Nesingwary##94409
 turnin Rating Razik##39417 |goto Highmountain/0 40.04,52.25
 accept Amateur Hour##40170 |goto Highmountain/0 40.04,52.25
@@ -10902,7 +10949,8 @@ kill 8 Pinerock Elderhorn##94151 |q 39124/1 |goto 41.60,47.98
 |tip You can find more to the south.
 step
 label "Pinerock_Stalkers"
-kill 10 Pinerock Stalker##99481 |q 39123/1 |goto 43.16,49.49
+kill Pinerock Prowler##94149+
+Slay #10# Pinerock Stalkers |q 39123/1 |goto 43.16,49.49
 |tip You can find more across the river.
 stickystop "A_Hunter_at_Heart"
 step
@@ -10959,7 +11007,7 @@ Follow the path up |goto 51.99,72.77 < 15 |walk
 Cross the bridge |goto 42.11,82.17 < 15 |walk
 Follow the path up |goto 31.30,60.79 > 10000 |walk
 Leave the cave |goto Highmountain/0 38.45,42.66 < 20 |walk
-Kill enemies around this area
+Kill Bristlefur enemies around this area
 clicknpc Bristlefur Bear##102384+
 |tip They look like dead brown bears on the ground around this area.
 collect 4 Bristlefur Pelt##128286 |q 39392/1 |goto Highmountain/0 37.75,42.30
@@ -11379,7 +11427,7 @@ step
 click Skyfire Medical Supplies
 collect Skyfire First Aid Kit##123876 |q 38036/1 |count 1 |goto 35.29,53.29
 step
-Run up the stairs |goto 34.23,53.33 < 10 |only if walking
+Run up the ramp |goto 34.23,53.33 < 10 |only if walking
 click Skyfire Medical Supplies
 collect Skyfire First Aid Kit##123876 |q 38036/1 |count 2 |goto 34.31,53.63
 step
@@ -11709,7 +11757,8 @@ click Grapple Point |goto 47.55,75.45 |n
 Grapple across the Waterfall |goto 48.09,75.79 < 5 |noway |c |q 38412
 step
 click Grapple Point |goto 48.09,75.79 |n
-|tip It's up on the rocks nearby.
+|tip It's up on the rocks nearby, next to the broken wooden bridge.
+|tip If you can't reach it, move a little closer to the rocks.
 Grapple up the Rocks |goto 48.34,76.66 < 10 |noway |c |q 38412
 step
 click Grapple Point |goto 48.07,76.83 |n
@@ -11766,14 +11815,12 @@ step
 click Ritual Circle
 Free Erilar |q 38413/3 |goto 44.15,80.66
 step
-talk Vethir##90907
-turnin Wings of Liberty##38413 |goto 42.78,82.70
-step
 label "Drekirjar_Vrykul"
 Kill enemies around this area
 Slay #10# Drekirjar Vrykul |q 40568/1 |goto 45.36,79.65
 step
 talk Vethir##90907
+turnin Wings of Liberty##38413 |goto 42.78,82.70
 turnin Fury of the Storm##40568 |goto 42.78,82.70
 step
 Enter the cave |goto 42.52,81.86 > 1000 |walk
@@ -11952,6 +11999,14 @@ kill Stout Highlands Runehorn##107852+
 |tip Watch out for the Highlands Ettins that patrol around this area.
 collect 8 Meaty Rack of Musken Ribs##138020 |q 39792/1 |goto 56.48,76.03
 step
+Follow the path up |goto 57.67,79.25 < 15 |only if walking
+Run up the path |goto 50.62,76.96 < 10 |only if walking
+Continue up the path |goto 52.80,80.14 < 10 |only if walking
+Continue up the path |goto 53.46,81.12 < 10 |only if walking
+Follow the path |goto 53.26,84.67 < 15 |only if walking
+talk Fluga the Scalekeeper##111420
+fpath Hafr Fjall |goto 55.63,87.43
+step
 Cross the bridge |goto 56.76,51.13 < 20 |only if walking
 talk Rax Sixtrigger##107675
 turnin A Stack of Racks##39792 |goto 51.36,57.14
@@ -11960,7 +12015,6 @@ talk Snaggle Sixtrigger##107674
 accept Put It All on Red##42483 |goto 51.38,57.31
 step
 Cross the bridge |goto 53.63,53.97 < 20 |only if walking
-Follow the path down |goto 60.51,52.10 < 20 |only if walking
 Follow the path |goto 63.47,54.94 < 30 |only if walking
 talk Vydhar##93231
 turnin To Haustvald##39796 |goto 68.46,54.32
@@ -12326,97 +12380,16 @@ turnin To Honor the Fallen##43595 |goto 58.95,42.84
 turnin Shadows in the Mists##40044 |goto 58.95,42.84
 accept Piercing the Mists##43596 |goto 58.95,42.84 |only if level >= 110
 step
-Follow the road |goto 60.90,54.94 < 30 |only if walking
-Follow the path |goto 63.63,59.25 < 20 |only if walking
-talk Vethir##97979
-turnin Knocking on Valor's Door##40001 |goto 65.89,59.47
-accept A Familiar Fate##40002 |goto 65.89,59.47
+talk Ensign Ward##94346 |goto 59.97,51.36 |n
+Fly to Greywatch |goto 72.08,59.82 < 30 |noway |c |q 39059
 step
-kill Dravax##97890
-collect Jailer's Shard##129106 |q 40002/1 |goto 65.41,57.71
+talk Gryphon-Master Clifford##98108
+fpath Greywatch |goto 72.17,59.84
 step
-click Circle of Binding
-Free Vethir |q 40002/2 |goto 65.76,59.51
-step
-talk Vethir##97979
-turnin A Familiar Fate##40002 |goto 65.89,59.47
-accept Stem the Tide##40003 |goto 65.89,59.47
-accept Break the Spine##40004 |goto 65.89,59.47
-step
-Cross the bridge |goto 64.30,60.33 < 20 |c |only if walking |q 40004
-step
-accept Drive Back the Tideskorn##39998 |goto 64.91,61.23
-|tip You will accept this quest automatically.
-|only if level < 110
-stickystart "Drive_Back_the_Tideskorn"
-step
-Run up the stairs |goto 67.49,65.11 < 20 |only if walking
-kill Muorg##97944 |q 40004/3 |goto 66.77,67.81
-|tip He walks around and fights other NPC's around this area.
-step
-Run up the stairs |goto 67.54,70.15 < 15 |only if walking
-Use your Stormforged Horn |use Stormforged Horn##129161
-Dstroy the South Portal |q 40003/3 |goto 68.45,69.87
-step
-kill Karuas##97859 |q 40004/2 |goto 67.89,68.54
-|tip He walks around.
-step
-Use your Stormforged Horn |use Stormforged Horn##129161
-Destroy the East Portal |q 40003/2 |goto 69.79,66.50
-step
-kill Garzareth##97822 |q 40004/1 |goto 69.19,65.91
-step
-Run down the stairs |goto 70.49,65.73 < 15 |only if walking
-kill Ravathes##97942 |q 40004/4 |goto 71.41,64.73
-step
-Use your Stormforged Horn |use Stormforged Horn##129161
-Destroy the North Portal |q 40003/1 |goto 70.04,63.79
-step
-label "Drive_Back_the_Tideskorn"
-Kill enemies around this area
-|tip Use the ability buttons on the screen to kill enemies faster.
-click Tideskorn Banners
-|tip They look like brown strips of cloth hanging from walls around this area.
-click Felblood Cups
-|tip They look like small white drinking cups sitting on objects around this area.
-click Nether Circles
-|tip They look like green globe portals on the ground around this area.
-Drive Back the Tideskorn |q 39998/1 |goto 69.75,64.26
-|only if level < 110
-step
-Run up the stairs |goto 68.23,66.20 < 15 |only if walking
-talk Vethir##97979
-turnin Stem the Tide##40003 |goto 70.21,69.47
-turnin Break the Spine##40004 |goto 70.21,69.47
-accept Stormheim's Salvation##40005 |goto 70.21,69.47
-step
-talk Vethir##97979 |goto 70.21,69.47 |n
-Fly with Vethir |goto 70.21,69.47 > 40 |noway |c |q 40005
-step
-kill God-King Skovald##92307
-|tip Kill the enemies he summons quickly.
-|tip Use the ability buttons on the screen to kill him faster.
-Defeat God-King Skovald |q 40005/1 |goto 71.10,70.51
-step
-Watch the dialogue
-talk Vethir##97979 |goto 70.48,69.52 |n
-Fly with Vethir |goto 70.48,69.52 > 75 |noway |c |q 40005
-step
-talk Havi##97988
-turnin Stormheim's Salvation##40005 |goto 70.25,69.24
-accept Securing the Aegis##40072 |goto 70.25,69.24
-step
-Run down the stairs |goto 68.52,66.65 < 20 |only if walking
-Follow the path |goto 62.23,56.98 < 20 |only if walking
-Follow the path |goto 65.39,54.71 < 20 |only if walking
-Follow the path |goto 70.71,60.35 < 15 |only if walking
 talk Genn Greymane##94318
 turnin To Catch a Banshee##39059 |goto 71.55,59.82
 accept Combustible Contagion##39060 |goto 71.55,59.82
 accept Whispers from the Dark##39061 |goto 71.55,59.82
-step
-talk Gryphon-Master Clifford##98108
-fpath Greywatch |goto 72.17,59.84
 stickystart "Forsaken_Scouting_Orders"
 step
 Follow the path |goto 70.79,60.33 < 15 |only if walking
@@ -12630,6 +12603,86 @@ talk Sir Finley Mrrgglton##108072
 turnin What the Bonespeakers Buried##42641 |goto 74.91,55.58
 turnin Spilling Bad Blood##42645 |goto 74.91,55.58
 step
+Follow the road |goto 60.90,54.94 < 30 |only if walking
+Follow the path |goto 63.63,59.25 < 20 |only if walking
+talk Vethir##97979
+turnin Knocking on Valor's Door##40001 |goto 65.89,59.47
+accept A Familiar Fate##40002 |goto 65.89,59.47
+step
+kill Dravax##97890
+collect Jailer's Shard##129106 |q 40002/1 |goto 65.41,57.71
+step
+click Circle of Binding
+Free Vethir |q 40002/2 |goto 65.76,59.51
+step
+talk Vethir##97979
+turnin A Familiar Fate##40002 |goto 65.89,59.47
+accept Stem the Tide##40003 |goto 65.89,59.47
+accept Break the Spine##40004 |goto 65.89,59.47
+step
+Cross the bridge |goto 64.30,60.33 < 20 |c |only if walking |q 40004
+step
+accept Drive Back the Tideskorn##39998 |goto 64.91,61.23
+|tip You will accept this quest automatically.
+|only if level < 110
+stickystart "Drive_Back_the_Tideskorn"
+step
+Run up the stairs |goto 67.49,65.11 < 20 |only if walking
+kill Muorg##97944 |q 40004/3 |goto 66.77,67.81
+|tip He walks around and fights other NPC's around this area.
+step
+Run up the stairs |goto 67.54,70.15 < 15 |only if walking
+Use your Stormforged Horn |use Stormforged Horn##129161
+Dstroy the South Portal |q 40003/3 |goto 68.45,69.87
+step
+kill Karuas##97859 |q 40004/2 |goto 67.89,68.54
+|tip He walks around.
+step
+Use your Stormforged Horn |use Stormforged Horn##129161
+Destroy the East Portal |q 40003/2 |goto 69.79,66.50
+step
+kill Garzareth##97822 |q 40004/1 |goto 69.19,65.91
+step
+Run down the stairs |goto 70.49,65.73 < 15 |only if walking
+kill Ravathes##97942 |q 40004/4 |goto 71.41,64.73
+step
+Use your Stormforged Horn |use Stormforged Horn##129161
+Destroy the North Portal |q 40003/1 |goto 70.04,63.79
+step
+label "Drive_Back_the_Tideskorn"
+Kill enemies around this area
+|tip Use the ability buttons on the screen to kill enemies faster.
+click Tideskorn Banners
+|tip They look like brown strips of cloth hanging from walls around this area.
+click Felblood Cups
+|tip They look like small white drinking cups sitting on objects around this area.
+click Nether Circles
+|tip They look like green globe portals on the ground around this area.
+Drive Back the Tideskorn |q 39998/1 |goto 69.75,64.26
+|only if level < 110
+step
+Run up the stairs |goto 68.23,66.20 < 15 |only if walking
+talk Vethir##97979
+turnin Stem the Tide##40003 |goto 70.21,69.47
+turnin Break the Spine##40004 |goto 70.21,69.47
+accept Stormheim's Salvation##40005 |goto 70.21,69.47
+step
+talk Vethir##97979 |goto 70.21,69.47 |n
+Fly with Vethir |goto 70.21,69.47 > 40 |noway |c |q 40005
+step
+kill God-King Skovald##92307
+|tip Kill the enemies he summons quickly.
+|tip Use the ability buttons on the screen to kill him faster.
+Defeat God-King Skovald |q 40005/1 |goto 71.10,70.51
+step
+Watch the dialogue
+talk Vethir##97979 |goto 70.48,69.52 |n
+Fly with Vethir |goto 70.48,69.52 > 75 |noway |c |q 40005
+step
+talk Havi##97988
+turnin Stormheim's Salvation##40005 |goto 70.25,69.24
+accept Securing the Aegis##40072 |goto 70.25,69.24
+step
 Cross the bridge |goto 56.74,51.16 < 20 |only if walking
 click Snaggle's Note
 turnin Put It All on Red##42483 |goto 51.42,57.35 |next "Zygor's Alliance Leveling Guides\\Legion (100-110)\\Legion Intro & Artifacts" |only if not raceclass("DemonHunter")
@@ -12689,46 +12742,45 @@ Kill the enemies that attack in waves
 |tip Follow First Arcanist Thalyssra.
 |tip Stay inside the blue bubble barrier she casts.
 |tip Kill the enemies that channel the barrier to disrupt them.
-Escort Thalyssra to Shelter |q 40008/1 |goto 35.31,47.36
+Escort Thalyssra to Shelter |q 40008/1 |goto 35.31,47.36 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##99482
-turnin The Only Way Out is Through##40008 |goto 35.31,47.36
-accept The Nightborne Pact##40123 |goto 35.31,47.36
+turnin The Only Way Out is Through##40008 |goto 35.31,47.36 |region suramar_shalaran
+accept The Nightborne Pact##40123 |goto 35.31,47.36 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##99482
-Bandage Thalyssra |q 40123/1 |goto 35.31,47.36
+Bandage Thalyssra |q 40123/1 |goto 35.31,47.36 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##99482
-turnin The Nightborne Pact##40123 |goto 35.31,47.36
-accept Arcane Thirst##40009 |goto 35.31,47.36
+turnin The Nightborne Pact##40123 |goto 35.31,47.36 |region suramar_shalaran
+accept Arcane Thirst##40009 |goto 35.31,47.36 |region suramar_shalaran
 step
-Search Shal'Aran |q 40009/1 |goto 36.78,46.57
+Search Shal'Aran |q 40009/1 |goto 36.78,46.57 |region suramar_shalaran
 step
 kill Eternal Tether##99539
 |tip They look like 2 orbs floating around, channeling to Keeper Selentia.
 |tip Once you kill an Eternal Tether, you will be able to attack Keeper Selentia.
-kill Keeper Selentia##99524 |q 40009/2 |goto 36.86,46.50
+kill Keeper Selentia##99524 |q 40009/2 |goto 36.86,46.50 |region suramar_shalaran
 step
 click Crystallized Ancient Mana
 |tip They look like purple crystals sitting in a circle on the ground.
-Collect #6# Crystallized Ancient Mana |q 40009/3 |goto 36.86,46.48
+Collect #6# Crystallized Ancient Mana |q 40009/3 |goto 36.86,46.48 |region suramar_shalaran
 step
-Follow the path |goto 36.20,47.10 < 20 |walk
+Follow the path |goto 36.20,47.10 < 20 |walk |region suramar_shalaran
 talk First Arcanist Thalyssra##99482
-turnin Arcane Thirst##40009 |goto 35.31,47.35
-accept Shal'Aran##42229 |goto 35.31,47.35
+turnin Arcane Thirst##40009 |goto 35.31,47.35 |region suramar_shalaran
+accept Shal'Aran##42229 |goto 35.31,47.35 |region suramar_shalaran
 step
 Watch the dialogue
 |tip Follow First Arcanist Thalyssra.
-Explore Shal'aran |q 42229/1 |goto 36.58,46.91
+Explore Shal'aran |q 42229/1 |goto 36.58,46.91 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Shal'Aran##42229 |goto 36.58,46.91
-accept Ancient Mana##44672 |goto 36.58,46.91
-accept Oculeth's Workshop##40011 |goto 36.58,46.91
-accept An Old Ally##40012 |goto 36.58,46.91
+turnin Shal'Aran##42229 |goto 36.58,46.91 |region suramar_shalaran
+accept Ancient Mana##44672 |goto 36.58,46.91 |region suramar_shalaran
+accept Oculeth's Workshop##40011 |goto 36.58,46.91 |region suramar_shalaran
+accept An Old Ally##40012 |goto 36.58,46.91 |region suramar_shalaran
 step
-Leave the cave |goto 35.04,47.62 < 10 |walk
 talk Ancient Cloudwing##111675
 fpath Meredil |goto 34.38,49.41
 step
@@ -12739,12 +12791,11 @@ click Ancient Mana Chunks
 |tip Use the Mana Divining Stone to track them on your minimap.
 Harvest #3# Ancient Mana Nodes |q 44672/1 |goto 34.81,51.85
 step
-Enter the cave |goto 35.00,47.69 < 10 |walk
 talk First Arcanist Thalyssra##97140
-turnin Ancient Mana##44672 |goto 36.58,46.91
+turnin Ancient Mana##44672 |goto 36.58,46.91 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-home Shal'Aran |goto 36.58,46.91
+home Shal'Aran |goto 36.58,46.91 |region suramar_shalaran
 step
 Leave the cave |goto 35.04,47.62 < 10 |walk
 Follow the road |goto 33.20,47.89 < 20 |only if walking
@@ -12862,24 +12913,20 @@ talk Absolon##101848
 turnin Lingering on the Edge##40796 |goto 30.36,47.84
 step
 Follow the path |goto 32.87,47.16 < 20 |only if walking
-Enter the cave |goto 35.00,47.69 < 10 |walk
-Deliver Theryn to Thalyssra |q 41704/1 |goto 36.58,46.91
+Deliver Theryn to Thalyssra |q 41704/1 |goto 36.58,46.91 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Subject 16##41704 |goto 36.58,46.91
-accept Kel'danath's Legacy##41760 |goto 36.58,46.91
+turnin Subject 16##41704 |goto 36.58,46.91 |region suramar_shalaran
+accept Kel'danath's Legacy##41760 |goto 36.58,46.91 |region suramar_shalaran
 step
-Leave the cave |goto 35.04,47.62 < 10 |walk
 Use your Spellstone of Kel'danath ability on enemies around this area
 |tip It appears as a button on the screen.
 Charm #5# Withered |q 41760/1 |goto 34.57,53.17
 step
-Enter the cave |goto 35.00,47.69 < 10 |walk
 talk First Arcanist Thalyssra##97140
-turnin Kel'danath's Legacy##41760 |goto 36.58,46.91
-accept Sympathizers Among the Shal'dorei##41762 |goto 36.57,46.92
+turnin Kel'danath's Legacy##41760 |goto 36.58,46.91 |region suramar_shalaran
+accept Sympathizers Among the Shal'dorei##41762 |goto 36.57,46.92 |region suramar_shalaran
 step
-Leave the cave |goto 35.04,47.62 < 10 |walk
 Run up the stairs |goto 35.26,50.86 < 15 |only if walking
 Cross the bridge |goto 36.34,50.58 < 20 |only if walking
 Follow the path |goto 41.61,50.72 < 30 |only if walking
@@ -12987,16 +13034,15 @@ clicknpc Chief Telemancer Oculeth##102017
 |tip Walk toward the nearby cave.
 Carry Chief Telemancer Oculeth |goto 34.49,48.72 > 5 |c |q 40830
 step
-Enter the cave |goto 35.00,47.69 < 10 |walk
-Carry Oculeth into Shal'Aran |q 40830/1 |goto 36.52,46.95
+Carry Oculeth into Shal'Aran |q 40830/1 |goto 36.52,46.95 |region suramar_shalaran
 step
 Use the Put Down Oculeth ability
 |tip It's on your action bar.
-Drop Oculeth near Thalyssra |q 40830/2 |goto 36.52,46.95
+Drop Oculeth near Thalyssra |q 40830/2 |goto 36.52,46.95 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Close Enough##40830 |goto 36.57,46.91
-accept Hungry Work##44691 |goto 36.58,46.91
+turnin Close Enough##40830 |goto 36.57,46.91 |region suramar_shalaran
+accept Hungry Work##44691 |goto 36.58,46.91 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##98548
 Choose _"Feed Oculeth"_
@@ -13004,34 +13050,29 @@ Choose _"Feed Oculeth"_
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
-Feed Chief Telemancer Oculeth |q 44691/1 |goto 36.59,46.97
+Feed Chief Telemancer Oculeth |q 44691/1 |goto 36.59,46.97 |region suramar_shalaran
 step
 talk Chief Telemancer Oculeth##101499
-turnin Hungry Work##44691 |goto 36.59,46.97
-accept Survey Says...##40956 |goto 36.59,46.97
+turnin Hungry Work##44691 |goto 36.59,46.97 |region suramar_shalaran
+accept Survey Says...##40956 |goto 36.59,46.97 |region suramar_shalaran
 step
-Leave the cave |goto 35.00,47.69 < 10 |walk
 Run up the stairs |goto 35.27,50.85 < 20 |only if walking
 Follow the path |goto 37.46,49.52 < 20 |only if walking
-Follow the path |goto 37.68,46.83 < 20 |only if walking
 Use the Telemancy Beacon |use Telemancy Beacon##133897
 |tip You will have to use the item repeatedly.
 |tip Click Warp Rifts and kill the enemies that attack.
-Survey #100# Percent |q 40956/1 |goto 36.10,47.24
+Survey #100# Percent |q 40956/1 |goto 36.10,47.24 |region suramar_eluneeth
 step
 click Place Telemancy Beacon
-turnin Survey Says...##40956 |goto 36.10,47.24
+turnin Survey Says...##40956 |goto 36.10,47.24 |region suramar_eluneeth
 step
-click Portal to Shal'Aran |goto 36.10,47.24 |n
-Travel to Shal'Aran |goto 36.40,45.09 < 10 |noway |c |q 40010
+click Portal to Shal'Aran |goto 36.10,47.24 |n |region suramar_eluneeth
+Travel to Shal'Aran |goto 36.40,45.09 < 10 |noway |c |q 40010 |future |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-accept Tapping the Leylines##40010 |goto 36.57,46.91
+accept Tapping the Leylines##40010 |goto 36.57,46.91 |region suramar_shalaran
 step
-click Portal to Ruins of Elune'eth |goto 36.34,44.92 |n
-Travel to the Ruins of Elune'eth |goto 36.31,46.89 < 5 |noway |c |q 40010
-step
-Follow the path up |goto 37.25,45.21 < 20 |only if walking
+Follow the path up |goto 37.25,45.21 < 20 |only if walking |region suramar_eluneeth
 Follow the path down |goto 38.01,44.95 < 15 |only if walking
 Explore Anora Hollow |q 40010/1 |goto 41.45,38.97
 step
@@ -13040,11 +13081,12 @@ click Unpowered Telemancy Beacon
 |tip Inside the building.
 accept Tel'anor'eporter Online!##43809 |goto 42.03,35.24
 step
-click Unpowered Telemancy Beacon
-|tip This requires you to have 100 Ancient Mana.
+Collect #100# Ancient Mana |q 43809/1 |goto 42.03,35.24
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Unpowered Telemancy Beacon
 turnin Tel'anor'eporter Online!##43809 |goto 42.03,35.24
 step
 Follow the path down |goto 41.97,36.24 < 15 |only if walking
@@ -13074,6 +13116,10 @@ Follow the path |goto 47.38,44.05 < 15 |only if walking
 Follow the path |goto 47.65,42.74 < 15 |only if walking
 Follow the path |goto 48.50,39.29 < 20 |only if walking
 kill Azurefall Guardian##99859
+|tip Don't kill it, just weaken it.
+Use the Cleansing Ritual Focus on the Azurefall Guardian |use Cleansing Ritual Focus##131760
+|tip Use it when the Azurefall Guardian is weakened.
+kill Congealed Corruption##99882
 Cleanse the Corruption |q 40370/1 |goto 47.38,36.65
 step
 label "Mana-Corrupted_Waterspawn"
@@ -13086,11 +13132,10 @@ talk Morhun Rivertamer##99788
 turnin Something in the Water##40348 |goto 43.44,41.72
 turnin Purge the Unclean##40370 |goto 43.44,41.72
 step
-Follow the path down |goto 41.97,36.24 < 15 |only if walking
+Follow the path |goto 41.76,41.12 < 20 |only if walking
 talk Arcanist Valtrois##102600
 Speak with Arcanist Valtrois |q 40010/3 |goto 41.63,39.13
 step
-Follow the path down |goto 41.99,36.22 < 15 |only if walking
 Enter the cave |goto 41.66,39.01 > 10000
 |tip Follow Arcanist Valtrois.
 talk Arcanist Valtrois##102600
@@ -13157,16 +13202,15 @@ talk Arcanist Valtrois##102600
 turnin Power Grid##41028 |goto 39.87,29.58
 step
 talk Arcanist Valtrois##102600
-accept Feeding Shal'Aran##41138 |goto Suramar/0 36.54,46.97
+accept Feeding Shal'Aran##41138 |goto Suramar/0 36.54,46.97 |region suramar_shalaran
 step
 Watch the dialogue
 Follow Arcanist Valtrois downstairs.
-Examine the Leyline Feed |q 41138/1 |goto 37.02,46.24
+Examine the Leyline Feed |q 41138/1 |goto 37.02,46.24 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
-turnin Feeding Shal'Aran##41138 |goto 37.02,46.23
+turnin Feeding Shal'Aran##41138 |goto 37.02,46.23 |region suramar_shalaran
 step
-Leave the cave |goto 34.97,47.74 < 10 |walk
 Follow the path |goto 34.96,51.23 < 20 |only if walking
 Follow the path |goto 35.61,58.34 < 20 |only if walking
 Follow the path |goto 37.32,63.86 < 20 |only if walking
@@ -13202,11 +13246,12 @@ step
 click Unpowered Telemancy Beacon
 accept Lunastre Estate Teleporter Online!##43811 |goto 43.68,79.24
 step
-click Unpowered Telemancy Beacon
-|tip This requires you to have 100 Ancient Mana.
+Collect #100# Ancient Mana |q 43811/1 |goto 43.68,79.24
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Unpowered Telemancy Beacon
 turnin Lunastre Estate Teleporter Online!##43811 |goto 43.68,79.24
 step
 click Lunastre Monument
@@ -13248,54 +13293,48 @@ talk Vanthir##106495
 |tip Watch out for mobs with blue circles above them, they can see through your disguise.
 Speak with Vanthir |q 42147/1 |goto 42.82,60.22
 step
-Run up the stairs |goto 42.75,61.80 < 15 |only if walking
-Enter the building |goto 43.41,62.36 < 10 |walk
-Walk onto the transportation pag |goto 44.59,62.12 < 7 |walk
-Run down the stairs |goto 43.71,62.24 < 10 |walk
+Walk onto the transportation pad |goto 44.59,62.12 < 7 |walk |region suramar_sanctum_of_order
+Run down the stairs |goto 43.71,62.24 < 10 |walk |region suramar_sanctum_of_order
 click Unpowered Telemancy Beacon
-accept Sanctum of Order Teleporter Online!##43813 |goto 43.41,60.56
+accept Sanctum of Order Teleporter Online!##43813 |goto 43.41,60.56 |region suramar_sanctum_of_order
 step
-click Unpowered Telemancy Beacon
-|tip This requires you to have 100 Ancient Mana.
+Collect #100# Ancient Mana |q 43813/1 |goto 43.41,60.56 |region suramar_sanctum_of_order
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
-turnin Sanctum of Order Teleporter Online!##43813 |goto 43.41,60.56
 step
-click Portal to Shal'Aran |goto 43.41,60.57 |n
-Travel to Shal'Aran |goto 36.40,45.09 < 50 |noway |c |q 42147
+click Unpowered Telemancy Beacon
+turnin Sanctum of Order Teleporter Online!##43813 |goto 43.41,60.56 |region suramar_sanctum_of_order
 step
 talk First Arcanist Thalyssra##97140
 |tip Downstairs.
-turnin First Contact##42147 |goto 37.08,46.23
-accept Arcane Communion##40324 |goto 37.08,46.23
+turnin First Contact##42147 |goto 37.08,46.23 |region suramar_shalaran
+accept Arcane Communion##40324 |goto 37.08,46.23 |region suramar_shalaran
 step
 talk Theryn##104618
 |tip This requires you to have 300 Ancient Mana.
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
-Feed Theryn |q 40324/1 |goto 37.14,46.30
+Feed Theryn |q 40324/1 |goto 37.14,46.30 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Arcane Communion##40324 |goto 37.09,46.23
-accept Scenes from a Memory##40325 |goto 37.09,46.23
+turnin Arcane Communion##40324 |goto 37.09,46.23 |region suramar_shalaran
+accept Scenes from a Memory##40325 |goto 37.09,46.23 |region suramar_shalaran
 step
 Watch the dialogue
 clicknpc Memory##107506+
 |tip Keep clicking the memories until the ritual is complete.
-Complete the Arcane Communion |q 40325/1 |goto 37.25,45.67
+Complete the Arcane Communion |q 40325/1 |goto 37.25,45.67 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Scenes from a Memory##40325 |goto 37.08,46.23
-accept Cloaked in Moonshade##42224 |goto 37.08,46.23
+turnin Scenes from a Memory##40325 |goto 37.08,46.23 |region suramar_shalaran
+accept Cloaked in Moonshade##42224 |goto 37.08,46.23 |region suramar_shalaran
 step
 talk Absolon##101848
 |tip Upstairs.
-accept Cling to Hope##40798 |goto 37.72,47.84
+accept Cling to Hope##40798 |goto 37.72,47.84 |region suramar_shalaran
 step
-Follow the path |goto 36.21,47.10 < 20 |walk
-Leave the cave |goto 34.98,47.72 < 10 |walk
 Follow the path |goto 33.05,47.39 < 20 |only if walking
 Follow the path up |goto 31.52,41.17 < 20 |only if walking
 Cross the bridge |goto 32.46,39.85 < 20 |only if walking
@@ -13345,9 +13384,11 @@ talk Kalendros Irongrove##106696
 turnin Missing Along the Way##41463 |goto 19.59,22.38
 accept Not Here, Not Now, Not Ever##41464 |goto 19.59,22.38
 step
+Kill Darkfiend enemies around this area
+collect Satyr Horn##137189+ |n
+|tip You need these to destroy the totems.
 clicknpc Darkfiend Totem##106765+
 |tip They look like white totem poles with red cratches in them around this area.
-|tip Kill Darkfiend enemies around this area to get the Satyr Horns you need.
 Destroy #3# Darkfiend Totems |q 41464/1 |goto 18.72,23.20
 step
 talk Kalendros Irongrove##106696
@@ -13403,8 +13444,8 @@ accept Moonshade Holdout##42226 |goto 17.36,37.84
 step
 Kill the enemies that attack in waves
 kill Fal'dorei Webslinger##107856 |q 42226/1 |goto 17.70,38.11
-kill Fal'dorei Widowmaker##107888 |q 42226/3 |goto 17.70,38.11
 kill Fal'dorei Broodcaller##107857 |q 42226/2 |goto 17.70,38.11
+kill Fal'dorei Widowmaker##107888 |q 42226/3 |goto 17.70,38.11
 step
 talk Valewalker Farodin##107126
 turnin Moonshade Holdout##42226 |goto 17.41,37.95
@@ -13428,11 +13469,12 @@ Follow the path |goto 42.23,70.54 < 20 |walk
 click Leyline Feed
 accept Leyline Feed: Falanaar Depths##43593 |goto 57.90,75.11
 step
-click Leyline Feed
-|tip This requires you to have 250 Ancient Mana.
+Collect #250# Ancient Mana |q 43593/1 |goto 57.90,75.11
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Leyline Feed
 turnin Leyline Feed: Falanaar Depths##43593 |goto 57.90,75.11
 step
 Follow the path |goto 53.91,76.35 < 20 |walk
@@ -13443,11 +13485,12 @@ Follow the path |goto 59.21,46.58 < 15 |walk
 click Leyline Feed
 accept Leyline Feed: Falanaar Arcway##43592 |goto 66.45,52.62
 step
-click Leyline Feed
-|tip This requires you to have 250 Ancient Mana.
+Collect #250# Ancient Mana |q 43592/1 |goto 66.45,52.62
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Leyline Feed
 turnin Leyline Feed: Falanaar Arcway##43592 |goto 66.45,52.62
 step
 Follow the path |goto 59.28,46.71 < 15 |walk
@@ -13467,12 +13510,17 @@ click Fal'adora Beacon##3365
 Activate the Fal'adora Beacon |q 42230/1 |goto 40.88,13.73
 step
 click Ancient Seed Stand
-turnin The Valewalker's Burden##42230 |goto Suramar/0 36.86,46.48
+turnin The Valewalker's Burden##42230 |goto Suramar/0 36.86,46.48 |region suramar_shalaran
 step
 talk Valewalker Farodin##107126
-accept Seed of Hope##44561 |goto 36.85,46.56
+accept Seed of Hope##44561 |goto 36.85,46.56 |region suramar_shalaran
 step
-Leave the cave |goto 34.96,47.74 < 10 |walk
+talk Arcanist Valtrois##103155
+accept Leyline Apprentice##44492 |goto 37.00,46.35 |region suramar_shalaran
+step
+talk Arcanist Valtrois##103155
+turnin Leyline Apprentice##44492 |goto 37.00,46.35 |region suramar_shalaran
+step
 talk Mayruna Moonwing##103568
 turnin The Only Choice We Can Make##41467 |goto 25.67,30.88
 accept Redhoof the Ancient##41473 |goto 25.67,30.88
@@ -13675,7 +13723,8 @@ step
 Run up the stairs |goto 35.50,20.10 < 15 |only if walking
 kill Commander Domitille##106275
 |tip He walks around on a huge tiger, so you may have to search for him.
-|tip You will automatically accept the quest after looting him.
+Use Commander Domitille's Helm |use Commander Domitille's Helm##136851
+|tip Get the item by looting him.
 accept Zealot's Dues##40762 |goto 34.92,19.24
 step
 click Aftermath of the Well
@@ -13707,6 +13756,7 @@ turnin Recovering Stolen Power##40968
 accept Waiting for Revenge##41109
 step
 talk Lothrius Mooncaller##101768
+|tip Inside the building.
 turnin Precious Little Left##40967 |goto 36.44,22.40
 turnin Lay Waste, Lay Mines##40965 |goto 36.44,22.40
 turnin Stop the Spell Seekers##41032 |goto 36.44,22.40
@@ -13742,6 +13792,7 @@ accept Overwhelming Distraction##40971 |goto 32.21,12.73
 step
 Use the Inert Crystal on Imperial Conjurers |use Inert Crystal##133999
 |tip Stand on the purple glowing Mana Focusers on the ground around this area.
+|tip Move further along the path when the Ensorcelled Mana Wraiths are distracted and attacking the Imperial Conjurers.
 Overcharge #3# Imperial Conjurers |q 40971/1 |goto 31.11,13.39
 step
 kill Conjurer Thalerian##102575 |q 40970/1 |goto 28.73,12.64
@@ -13750,19 +13801,21 @@ step
 Run up the stairs |goto 28.59,14.36 < 15 |only if walking
 Continue up the stairs |goto 27.91,13.22 < 15 |only if walking
 Continue up the stairs |goto 28.20,11.69 < 15 |only if walking
-talk Syrana Starweaver##103129
-turnin The Orchestrator of Our Demise##40970 |goto 30.10,10.40
-turnin Overwhelming Distraction##40971 |goto 30.10,10.40
-step
+Follow the path |goto 29.57,10.77 < 20 |only if walking
 click Unpowered Telemancy Beacon
 accept Moon Guard Teleporter Online!##43808 |goto 30.82,11.03
 step
-click Unpowered Telemancy Beacon
-|tip This requires you to have 100 Ancient Mana.
+Collect #100# Ancient Mana |q 43808/1 |goto 30.82,11.03
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Unpowered Telemancy Beacon
 turnin Moon Guard Teleporter Online!##43808 |goto 30.82,11.03
+step
+talk Syrana Starweaver##103129
+turnin The Orchestrator of Our Demise##40970 |goto 30.10,10.40
+turnin Overwhelming Distraction##40971 |goto 30.10,10.40
 step
 talk Thalrenus Rivertree##101766
 accept Last Stand of the Moon Guard##40972 |goto 30.08,10.34
@@ -13771,11 +13824,15 @@ Watch the dialogue
 |tip You will be teleported away.
 Abandon the Stronghold |q 40972/1 |goto 30.08,10.34
 step
-Enter the cave |goto 35.01,47.66 < 10 |walk
 talk First Arcanist Thalyssra##97140
-turnin Last Stand of the Moon Guard##40972 |goto 36.88,46.61
+turnin Last Stand of the Moon Guard##40972 |goto 36.88,46.61 |region suramar_shalaran
 step
-Leave the cave |goto 35.01,47.66 < 10 |walk
+talk Arcanist Valtrois##103155
+accept Leyline Proficiency##44493 |goto 37.00,46.35 |region suramar_shalaran
+step
+talk Arcanist Valtrois##103155
+turnin Leyline Proficiency##44493 |goto 37.00,46.35 |region suramar_shalaran
+step
 Run up the stairs |goto 35.27,50.86 < 20 |only if walking
 Cross the bridge |goto 36.29,50.63 < 20 |only if walking
 Follow the road |goto 38.95,48.79 < 30 |only if walking
@@ -13871,7 +13928,8 @@ Follow the path |goto 68.51,57.48 < 10 |walk
 talk Stokalfr##99564
 Rescue Stokalfr |q 40320/3 |goto 68.05,58.43
 step
-Follow the path up |goto 68.54,57.65 < 10 |walk
+Follow the path |goto 68.54,57.65 < 10 |walk
+Follow the path up |goto 68.60,58.52 < 15 |walk
 Leave the cave |goto 69.94,57.04 < 15 |walk
 click Throndyr's Pyre
 Build Jarl Throndyre's Pyre |q 40332/2 |goto 72.25,59.21
@@ -14080,59 +14138,23 @@ Follow the path |goto Suramar/34 49.73,68.72 < 15 |walk
 click Leyline Feed
 accept Leyline Feed: Elor'shan##43587 |goto Suramar/34 46.93,47.17
 step
-click Leyline Feed
-|tip This requires you to have 250 Ancient Mana.
+Collect #250# Ancient Mana |q 43587/1 |goto 46.93,47.17
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Leyline Feed
 turnin Leyline Feed: Elor'shan##43587 |goto 46.93,47.17
 step
-Reach 1225 Friendly Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Friendly")>=1225
-|tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
-step
 talk First Arcanist Thalyssra##97140
-accept Building an Army##44636 |goto Suramar/0 36.88,46.61
+accept Lady Lunastre##41877 |goto Suramar/0 36.88,46.61 |region suramar_shalaran
 step
-talk First Arcanist Thalyssra##97140
-Tell her _"I've come to help the withered with their combat training."_
-Speak with Thalyssra to Start Training your Withered |q 44636/1 |goto 36.88,46.60
+talk Arcanist Valtrois##103155
+accept Leyline Master##44495 |goto 37.00,46.35 |region suramar_shalaran
 step
-Begin the Collapse Scenario |scenariostart |q 44636
+talk Arcanist Valtrois##103155
+turnin Leyline Master##44495 |goto 37.00,46.35 |region suramar_shalaran
 step
-Click the Quest Complete Box:
-turnin Building an Army##44636
-step
-talk First Arcanist Thalyssra##109008
-Speak with Thalyssra |scenariostage 1 |goto 22.85,36.20 |q 44636
-step
-Enter the building |goto 22.88,35.62 > 1000 |c |q 44636
-step
-_Follow the path and kill all enemies:_
-|tip As your withereds get more powerful from training, you'll be able to make it further through this area.
-|tip Enter all of the doors you come across that you can.
-|tip You will find chests, more withereds to recruit, and bosses to kill.
-Use the Mayhem! and Follow Me! abilities as you fight
-|tip They appear as a button on the screen.
-talk Withered Exile##110141+
-|tip You will come across them as you walk.
-|tip Talk to them to recruit them to your army.
-|tip Your withered will sometimes run away when they are hurt. Click them to prevent them from leaving.
-Proceed as Far as you can into the Collapse |scenariostage 2 |q 44636
-step
-click Glimmering Treasure Chest
-|tip There may be more chests, depending on how far you got into the Collapse.
-Receive the Spoils of War |scenarioend |goto Suramar/0 22.79,36.15 |q 44636
-|tip Use the items you get in your bags to increase your reputation with The Nightfallen.
-step
-Reach 1900 Friendly Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Friendly")>=1900
-|tip Use "The Nightfallen Reputation" guide to accomplish this.
-|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
-step
-talk First Arcanist Thalyssra##97140
-accept Lady Lunastre##41877 |goto Suramar/0 36.88,46.61
-step
-Leave the cave |goto 35.00,47.70 < 10 |walk
 Run up the stairs |goto 35.26,50.85 < 20 |only if walking
 Follow the path |goto 37.44,49.53 < 15 |only if walking
 Follow the road |goto 39.19,48.96 < 30 |only if walking
@@ -14276,16 +14298,18 @@ step
 click Telemancy Beacon
 Activate the Telemancy Beacon |q 42487/1 |goto 47.74,81.37
 step
+click Portal to Shal'Aran |goto 47.73,81.35 |n
+Travel to Shal'Aran |goto 36.40,45.09 > 700 |noway |c |q 42487
+step
 talk First Arcanist Thalyssra##97140
 Choose _<Offer the Gift-Wrapped Arcwine Bottle.>_
 Watch the dialogue
-Deliver Vanthir's Gift to Thalyssra |q 42487/2 |goto 36.89,46.61
+Deliver Vanthir's Gift to Thalyssra |q 42487/2 |goto 36.89,46.61 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Friends On the Outside##42487 |goto 36.89,46.61
-accept Thalyssra's Abode##42488 |goto 36.89,46.61
+turnin Friends On the Outside##42487 |goto 36.89,46.61 |region suramar_shalaran
+accept Thalyssra's Abode##42488 |goto 36.89,46.61 |region suramar_shalaran
 step
-Leave the cave |goto 35.00,47.71 < 10 |walk
 Follow the path |goto 34.96,51.19 < 20 |only if walking
 talk Iadreth##100185
 accept A Way Back In##40401 |goto 34.31,56.14
@@ -14303,18 +14327,21 @@ click Supply Caches
 |tip They look like metal and wooden chests on the ground around this area.
 Find #6# Stashed Supplies |q 40469/1 |goto 42.62,62.55
 step
-Follow the path |goto 39.18,59.62 < 30 |only if walking
+Follow the path |goto 39.04,60.58 < 20 |only if walking
 talk Iadreth##100185
 turnin Final Preparations##40469 |goto 34.32,56.15
 accept A Desperate Journey##40424 |goto 34.32,56.15
 step
 Kill the enemies that attack
+|tip Stay with Iadreth.
 Scout the First Area |q 40424/1 |goto 35.19,59.08
 step
 Kill the enemies that attack
+|tip Stay with Iadreth.
 Scout the Second Area |q 40424/2 |goto 36.14,60.34
 step
 Watch the dialogue
+|tip Stay with Iadreth.
 Find Astoril |q 40424/3 |goto 37.87,61.65
 step
 talk Astoril##100301
@@ -14332,18 +14359,55 @@ step
 click Unpowered Telemancy Beacon
 accept Felsoul Teleporter Online!##41575 |goto 53.61,36.78
 step
-click Unpowered Telemancy Beacon
-|tip This requires you to have 100 Ancient Mana.
+Collect #100# Ancient Mana |q 41575/1 |goto 53.61,36.78
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Unpowered Telemancy Beacon
 turnin Felsoul Teleporter Online!##41575 |goto 53.61,36.78
 step
 talk First Arcanist Thalyssra##97140
-Report to Thalyssra |q 40470/3 |goto Suramar/0 36.89,46.61
+Report to Thalyssra |q 40470/3 |goto Suramar/0 36.89,46.61 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-turnin Quality of Life##40470 |goto 36.89,46.61
+turnin Quality of Life##40470 |goto 36.89,46.61 |region suramar_shalaran
+accept Building an Army##44636 |goto 36.88,46.61 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##97140
+Tell her _"I've come to help the withered with their combat training."_
+Speak with Thalyssra to Start Training your Withered |q 44636/1 |goto 36.88,46.60 |region suramar_shalaran
+step
+Begin the Collapse Scenario |scenariostart |q 44636
+step
+Click the Quest Complete Box:
+turnin Building an Army##44636
+step
+talk First Arcanist Thalyssra##109008
+Speak with Thalyssra |scenariostage 1 |goto 22.85,36.20
+|only if _G.C_Scenario.IsInScenario()
+step
+Enter the building |goto 22.88,35.62 > 1000 |c
+|only if _G.C_Scenario.IsInScenario()
+step
+_Follow the path and kill all enemies:_
+|tip As your withereds get more powerful from training, you'll be able to make it further through this area.
+|tip Enter all of the doors you come across that you can.
+|tip You will find chests, more withereds to recruit, and bosses to kill.
+Use the Mayhem! and Follow Me! abilities as you fight
+|tip They appear as a button on the screen.
+talk Withered Exile##110141+
+|tip You will come across them as you walk.
+|tip Talk to them to recruit them to your army.
+|tip Your withered will sometimes run away when they are hurt. Click them to prevent them from leaving.
+Proceed as Far as you can into the Collapse |scenariostage 2
+|only if _G.C_Scenario.IsInScenario()
+step
+click Glimmering Treasure Chest
+|tip There may be more chests, depending on how far you got into the Collapse.
+Receive the Spoils of War |scenarioend |goto Suramar/0 22.79,36.15
+|tip Use the items you get in your bags to increase your reputation with The Nightfallen.
+|only if _G.C_Scenario.IsInScenario()
 stickystart "Arcane_Amplifier"
 step
 Follow the path up |goto 65.18,52.05 < 20 |only if walking
@@ -14371,17 +14435,9 @@ Use the Amplifier Fragments |use Amplifier Fragment##138392
 collect Arcane Amplifier##138391 |q 42488/1 |goto 66.88,62.74
 step
 talk First Arcanist Thalyssra##97140
-turnin Thalyssra's Drawers##42489 |goto 36.89,46.61
-turnin Thalyssra's Abode##42488 |goto 36.89,46.61
+turnin Thalyssra's Drawers##42489 |goto 36.89,46.61 |region suramar_shalaran
+turnin Thalyssra's Abode##42488 |goto 36.89,46.61 |region suramar_shalaran
 step
-talk Arcanist Valtrois##103155
-accept Leyline Apprentice##44492 |goto 37.00,46.35
-step
-talk Arcanist Valtrois##103155
-turnin Leyline Apprentice##44492 |goto 37.00,46.35
-step
-Follow the path |goto 36.66,46.30 < 20 |only if walking
-Follow the path up |goto 37.24,45.16 < 20 |only if walking
 Follow the path up |goto 38.29,45.53 < 15 |only if walking
 Follow the path up |goto 41.46,43.29 < 20 |only if walking
 Cross the bridge |goto 44.01,43.25 < 20 |only if walking
@@ -14488,30 +14544,23 @@ step
 talk Thaedris Feathersong##100779
 turnin Feathersong's Redemption##40321 |goto 44.94,23.82
 step
-talk Arcanist Valtrois##103155
-accept Leyline Proficiency##44493 |goto 37.00,46.35
-step
-talk Arcanist Valtrois##103155
-turnin Leyline Proficiency##44493 |goto 37.00,46.35
-accept Leyline Master##44495 |goto 37.00,46.35
-step
-talk Arcanist Valtrois##103155
-turnin Leyline Master##44495 |goto 37.00,46.35
-step
-Leave the cave |goto 34.97,47.74 < 10 |walk
 Follow the path |goto 34.95,51.10 < 20 |only if walking
 Follow the path up |goto 34.64,57.59 < 20 |only if walking
 Follow the path down |goto 32.66,58.84 < 15 |only if walking
 Follow the path |goto 31.61,63.56 < 20 |only if walking
 Run up the ramp |goto 30.31,60.45 < 15 |only if walking
 talk Lyana Darksorrow##98801
-accept Lyana Darksorrow##40297 |goto 30.87,59.15
+|tip You will only be able to accept one of these quests.
+accept Lyana Darksorrow##40297 |goto 30.87,59.15 |or
+accept Lyana Darksorrow##44489 |goto 30.87,59.15 |or
 step
 clicknpc Soul Harvester##99470
-Destroy the Soul Harvester |q 40297/1 |goto 30.87,59.15
+Destroy the Soul Harvester |q 40297/1 |goto 30.87,59.15 |only if havequest(40297) or completedq(40297)
+Destroy the Soul Harvester |q 44489/1 |goto 30.87,59.15 |only if havequest(44489) or completedq(44489)
 step
 talk Lyana Darksorrow##99514
-turnin Lyana Darksorrow##40297 |goto 30.87,59.15
+turnin Lyana Darksorrow##40297 |goto 30.87,59.15 |only if havequest(40297) or completedq(40297)
+turnin Lyana Darksorrow##44489 |goto 30.87,59.15 |only if havequest(44489) or completedq(44489)
 accept Glaive Circumstances##40307 |goto 30.87,59.15
 accept Fresh Meat##40898 |goto 30.87,59.15
 stickystart "Fresh_Fel-Flesh"
@@ -14530,6 +14579,7 @@ collect Lyana's Wrathful Warglaive##130210 |q 40307/1 |goto 24.50,64.40
 step
 label "Fresh_Fel-Flesh"
 kill Felfire Basilisk##101868+
+|tip You can find more around this whole area.
 collect 6 Fresh Fel-Flesh##133743 |q 40898/1 |goto 26.77,61.30
 step
 Follow the path |goto 28.55,60.78 < 20 |only if walking
@@ -14537,14 +14587,17 @@ Follow the path up |goto 30.34,60.42 < 15 |only if walking
 talk Lyana Darksorrow##99514
 turnin Glaive Circumstances##40307 |goto 30.88,59.16
 turnin Fresh Meat##40898 |goto 30.88,59.16
-accept Grimwing the Devourer##40901 |goto 30.88,59.16
+|tip You will only be able to accept one of these quests.
+accept Grimwing the Devourer##40901 |goto 30.88,59.16 |or
+accept Grimwing the Devourer##44490 |goto 30.88,59.16 |or
 step
 Cross the bridge |goto 28.73,61.92 < 20 |only if walking
 Follow the path |goto 26.98,63.08 < 20 |only if walking
 Follow the path up |goto 25.22,60.87 < 20 |only if walking
 Use the Fresh Mound of Flesh |use Fresh Mound of Flesh##133756
 kill Grimwing the Devourer##102292
-collect Grimwing's Head##134065 |q 40901/1 |goto 25.73,58.66
+collect Grimwing's Head##134065 |q 40901/1 |goto 25.73,58.66 |only if havequest(40901) or completedq(40901)
+collect Grimwing's Head##134065 |q 44490/1 |goto 25.73,58.66 |only if havequest(44490) or completedq(44490)
 step
 Follow the path |goto 25.23,60.85 < 20 |only if walking
 Follow the path |goto 26.51,62.89 < 20 |only if walking
@@ -14554,7 +14607,8 @@ Cross the bridge |goto 31.87,66.33 < 20 |only if walking
 Follow the path |goto 32.18,68.02 < 20 |only if walking
 talk Lyana Darksorrow##99890
 |tip Inside the building.
-turnin Grimwing the Devourer##40901 |goto 30.03,69.41
+turnin Grimwing the Devourer##40901 |goto 30.03,69.41 |only if havequest(40901) or completedq(40901)
+turnin Grimwing the Devourer##44490 |goto 30.03,69.41 |only if havequest(44490) or completedq(44490)
 accept A Fate Worse Than Dying##40328 |goto 30.03,69.41
 accept Symbols of Power##40929 |goto 30.03,69.41
 stickystart "Legion_Emblems"
@@ -14567,7 +14621,7 @@ click Felsoul Cages
 Save #8# Felsoul Captives |q 40328/1 |goto 34.47,68.43
 step
 label "Legion_Emblems"
-Kill Legion enemies around this area
+Kill enemies around this area
 collect 8 Legion Emblem##133807 |q 40929/1 |goto 34.43,67.27
 step
 Follow the path |goto 33.36,67.94 < 20 |only if walking
@@ -14606,11 +14660,12 @@ step
 click Leyline Feed
 accept Leyline Feed: Halls of the Eclipse##43594 |goto 27.26,86.42
 step
-click Leyline Feed
-|tip This requires you to have 250 Ancient Mana.
+Collect #250# Ancient Mana |q 43594/1 |goto 27.26,86.42
 |tip If you need more, click Ancient Mana crystals, as well as other various objects, to collect them.
 |tip The objects are all around the Suramar zone, and you can track them on your minimap.
 |tip You can also kill enemies in Suramar to collect Ancient Mana.
+step
+click Leyline Feed
 turnin Leyline Feed: Halls of the Eclipse##43594 |goto 27.26,86.42
 step
 kill Kozak the Afflictor##99485
@@ -14642,10 +14697,13 @@ turnin Shard of Kozak##41098 |goto 31.19,85.19
 step
 Follow the path down |goto 33.49,81.69 < 20 |only if walking
 Enter the cave |goto 35.86,82.20 > 10000 |walk
-Follow the path |goto Suramar/23 60.51,79.89 < 15 |walk
+Follow the path |goto Suramar/23 60.51,79.89 < 20 |walk
+Run down the stairs |goto Suramar/23 51.27,57.20 < 20 |walk
+Run up the stairs |goto Suramar/23 49.81,27.16 < 20 |walk
 kill Vorgos##103089
-collect Shard of Vorgos##134027 |q 41097/1 |goto Suramar/23 60.92,63.46
+collect Shard of Vorgos##134027 |q 41097/1 |goto Suramar/23 51.75,15.54
 step
+Run up the stairs |goto 50.66,48.51 < 20 |walk
 Follow the path |goto 60.08,79.01 < 15 |walk
 Leave the cave |goto 23.16,89.85 > 10000 |walk
 Follow the path up |goto Suramar/0 34.05,81.50 < 20 |only if walking
@@ -14653,6 +14711,7 @@ click Portal Activation Altar
 |tip Inside the building.
 turnin Shard of Vorgos##41097 |goto Suramar/0 30.85,84.97
 step
+Watch the dialogue
 talk Lyana Darksorrow##100823
 accept Azoran Must Die##40412 |goto 31.04,85.02
 step
@@ -14690,18 +14749,19 @@ click Left Arm
 Collect Brambley's Left Arm |q 41214/2 |goto 35.23,73.84
 step
 click Tibia
-Collect Brambley's Tibia |q 41214/4 |goto 35.74,72.47
+Collect Brambley's Tibia |q 41214/3 |goto 35.74,72.47
 step
 Follow the path up |goto 36.22,73.27 < 15 |walk
 click Femur
-Collect Brambley's Femur |q 41214/5 |goto 37.18,72.34
+Collect Brambley's Femur |q 41214/4 |goto 37.18,72.34
 step
 Run up the stairs |goto 36.87,72.42 < 10 |walk
 click Right Arm
-Collect Brambley's Right Arm |q 41214/3 |goto 36.48,71.20
+Collect Brambley's Right Arm |q 41214/5 |goto 36.48,71.20
 step
 Follow the path up |goto 36.13,71.20 < 15 |walk
 click Brambley's Dagger
+|tip Don't kill Mangelrath yet.
 Collect Brambley's Dagger |q 41214/6 |goto 35.77,70.75
 step
 _Next to you:_
@@ -14726,29 +14786,26 @@ Reach Honored Reputation with the Nightfallen Faction |condition rep("The Nightf
 |tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
-turnin Seed of Hope##44561 |goto 36.85,46.55
-accept Moths to a Flame##42828 |goto 36.85,46.55
-accept Growing Strong##44562 |goto 36.85,46.55
+turnin Seed of Hope##44561 |goto 36.85,46.55 |region suramar_shalaran
+accept Moths to a Flame##42828 |goto 36.85,46.55 |region suramar_shalaran
+accept Growing Strong##44562 |goto 36.85,46.55 |region suramar_shalaran
 step
 clicknpc Underglow Locust##109158+
 |tip They look like bugs flying around this area.
-Collect #4# Locusts |q 42828/1 |goto 37.11,46.27
+Collect #4# Locusts |q 42828/1 |goto 37.11,46.27 |region suramar_shalaran
 step
 talk Valewalker Farodin##107126
-turnin Moths to a Flame##42828 |goto 36.85,46.55
+turnin Moths to a Flame##42828 |goto 36.85,46.55 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-accept Make an Entrance##42829 |goto 36.89,46.61
+accept Make an Entrance##42829 |goto 36.89,46.61 |region suramar_shalaran
 step
-Follow the path |goto 37.26,46.21 < 20 |only if walking
-Follow the path |goto 42.60,54.10 < 20 |only if walking
-Run down the stairs |goto 44.80,56.74 < 20 |only if walking
-Run down the stairs |goto 46.72,59.79 < 20 |only if walking
-Continue down the stairs |goto 47.27,59.40 < 15 |only if walking
+Follow the path |goto 47.45,64.33 < 20 |only if walking
 Follow the path |goto 48.67,62.10 < 20 |only if walking
 Run down the stairs |goto 50.64,59.42 < 15 |only if walking
 Run up the stairs |goto 52.05,57.57 < 15 |only if walking
 talk Nighteyes##110987
+|tip In the pool of water.
 accept Survival of the Fittest##41216 |goto 50.69,56.59
 step
 Use the Overloaded Collar on animals around this area |use Overloaded Collar##134119
@@ -14779,6 +14836,7 @@ Kill enemies around this area
 Slay #50# Adversaries |q 43582/3 |goto 54.22,58.01
 step
 talk Nighteyes##110987
+|tip In the pool of water.
 turnin Shalassic Park##43582 |goto 50.70,56.59
 step
 Run down the stairs |goto 52.10,56.16 < 15 |only if walking
@@ -14901,11 +14959,10 @@ Cross the bridge |goto 61.32,56.21 < 20 |only if walking
 Escape the Vineyard |q 44084/2 |goto 64.00,60.43
 step
 talk First Arcanist Thalyssra##97140
-turnin Vengeance for Margaux##44084 |goto 36.88,46.61
-accept Seek the Unsavory##42839 |goto 36.88,46.61
+turnin Vengeance for Margaux##44084 |goto 36.88,46.61 |region suramar_shalaran
+accept Seek the Unsavory##42839 |goto 36.88,46.61 |region suramar_shalaran
 stickystart "Shadowbloom"
 step
-Leave the cave |goto 34.98,47.71 < 10 |walk
 Run up the stairs |goto 35.53,51.06 < 20 |only if walking
 kill Territorial Croaker##105014+
 collect 4 Toad Gizzard##134549 |q 41256/1 |goto 37.82,54.13
@@ -14980,6 +15037,8 @@ Follow the path |goto 62.82,60.34 < 20 |only if walking
 Follow the path |goto 58.97,56.63 < 20 |only if walking
 Follow the path |goto 56.18,53.45 < 20 |only if walking
 Jump down here |goto 53.73,53.41 < 10 |only if walking
+|tip Stand next to the fence unmounted and jump without getting a running start.
+|tip Keep trying until you get over the fence.
 click Thousand-Year Arcwine
 Steal the Thousand-Year Arcwine |q 42841/1 |goto 53.49,54.44
 step
@@ -15010,7 +15069,7 @@ Run down the stairs |goto 47.88,77.73 < 15 |only if walking
 Leave the water |goto 46.18,71.58 < 10 |only if walking
 kill Overseer Durant##107333
 |tip Inside the building.
-Assassinate Overseer Durant |q 42792/4 |goto 45.92,71.29
+Assassinate Overseer Durant |q 42792/4 |goto 45.87,72.09
 step
 Follow the path |goto 47.57,83.33 < 15 |only if walking
 talk Vanthir##107598
@@ -15018,14 +15077,14 @@ turnin Make Your Mark##42792 |goto 48.40,83.29
 accept And They Will Tremble##44052 |goto 48.40,83.29
 step
 talk First Arcanist Thalyssra##97140
-turnin And They Will Tremble##44052 |goto 36.89,46.61
+turnin And They Will Tremble##44052 |goto 36.89,46.61 |region suramar_shalaran
 step
 Reach 8000 Honored Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Honored")>=8000
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
 |tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk First Arcanist Thalyssra##97140
-accept The Perfect Opportunity##43309 |goto 36.88,46.61
+accept The Perfect Opportunity##43309 |goto 36.88,46.61 |region suramar_shalaran
 step
 Follow the path |goto 47.53,83.29 < 15 |only if walking
 Watch the dialogue
@@ -15057,10 +15116,6 @@ talk Arluin##107253
 turnin Or Against Us##43311 |goto 48.93,73.46
 accept Death Becomes Him##43315 |goto 48.93,73.46
 step
-Run up the stairs |goto 43.51,61.64 < 15 |walk
-Follow the path |goto 43.75,62.63 < 20 |walk
-Run down the stairs |goto 44.68,63.98 < 15 |walk
-Leave the building |goto 45.85,64.48 < 20 |walk
 Follow the path |goto 47.55,64.32 < 20 |only if walking
 Run down the stairs |goto 50.69,59.55 < 20 |only if walking
 Follow the water |goto 54.12,59.82 < 20 |only if walking
@@ -15111,9 +15166,8 @@ talk Ly'leth Lunastre##107632
 |tip Inside the building.
 turnin Rumor Has It##43313 |goto 47.88,82.96
 step
-Follow the path |goto 48.87,83.48 < 20 |only if walking
-Follow the water |goto 52.32,81.65 < 20 |only if walking
-Follow the water |goto 52.82,78.52 < 20 |only if walking
+Follow the path |goto 47.55,64.32 < 20 |only if walking
+Run down the stairs |goto 50.69,59.55 < 20 |only if walking
 Run up the stairs |goto 53.35,58.14 < 20 |only if walking
 |tip Be careful to avoid the mobs with blue circles above them.
 talk Aurore##110679
@@ -15126,37 +15180,141 @@ talk Ly'leth Lunastre##107632
 turnin Vote of Confidence##44040 |goto 47.88,82.96
 accept In the Bag##43317 |goto 47.88,82.95
 step
-Follow the path up |goto 42.91,61.94 < 15 |walk
+Follow the path up |goto 42.91,61.94 < 15 |walk |region suramar_sanctum_of_order
 Watch the dialogue
-Witness Ly'leth's Ascension |q 43317/1 |goto 43.18,62.17
+Witness Ly'leth's Ascension |q 43317/1 |goto 43.18,62.17 |region suramar_sanctum_of_order
 step
 talk Ly'leth Lunastre##107632
-turnin In the Bag##43317 |goto 43.26,62.24
-accept Ly'leth's Champion##43318 |goto 43.26,62.24
+turnin In the Bag##43317 |goto 43.26,62.24 |region suramar_sanctum_of_order
+accept Ly'leth's Champion##43318 |goto 43.26,62.24 |region suramar_sanctum_of_order
 step
 talk Ly'leth Lunastre##107632
-Talk to Ly'leth |q 43318/1 |goto 43.26,62.24
+Talk to Ly'leth |q 43318/1 |goto 43.26,62.24 |region suramar_sanctum_of_order
 step
-Watch the dialogue
-|tip You will be teleported.
-kill Coryn##110354 |q 43318/2 |goto 44.15,63.01
+Watch the dialogue |goto 43.26,62.24 |n |region suramar_sanctum_of_order
+Teleport to the Roof |goto 44.75,63.53 < 5 |noway |c |q 43318
+step
+kill Coryn##110354 |q 43318/2 |goto 44.13,63.00
 |tip Use the abilities on your action bar.
 step
 Watch the dialogue
 talk Ly'leth Lunastre##107632
-turnin Ly'leth's Champion##43318 |goto 43.26,62.24
+turnin Ly'leth's Champion##43318 |goto 43.26,62.24 |region suramar_sanctum_of_order
 step
 talk Lunastre Attendant##111903
 accept Friends With Benefits##44053 |goto 47.80,82.86
 step
 talk First Arcanist Thalyssra##97140
-turnin Friends With Benefits##44053 |goto 36.51,46.76
-accept Opening the Arcway##42490 |goto 36.51,46.76
-accept Beware the Fury of a Patient Elf##43314 |goto 36.51,46.76
+turnin Friends With Benefits##44053 |goto 36.51,46.76 |region suramar_shalaran
+accept Opening the Arcway##42490 |goto 36.51,46.76 |region suramar_shalaran
+accept Beware the Fury of a Patient Elf##43314 |goto 36.51,46.76 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
 |tip Downstairs.
-accept Long Buried Knowledge##42491 |goto 37.01,46.23
+accept Long Buried Knowledge##42491 |goto 37.01,46.23 |region suramar_shalaran
+step
+Follow the path |goto 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
+Follow the path |goto 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
+Walk into the swirling portal |goto 41.04,61.83 |n |region suramar_sanctum_of_order
+Enter the Arcway Dungeon |goto The Arcway/1 47.99,21.47 < 10000 |noway |c |q 42490
+|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
+|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+step
+click Suramar Leyline Map
+|tip It looks like a big scroll laying on the ground next to the wall.
+|tip Use the Arcway dungeon guide to complete the Arcway dungeon.
+collect Suramar Leyline Map##138394 |q 42491/1 |goto The Arcway/1 22.97,63.88
+step
+kill Advisor Vandros##98208
+|tip He's inside the Arcway dungeon.
+|tip Use the Arcway dungeon guide to complete the Arcway dungeon.
+Slay Advisor Vandros |q 42490/1 |goto 48.4,38.5
+step
+talk First Arcanist Thalyssra##97140
+turnin Opening the Arcway##42490 |goto Suramar/0 36.51,46.76 |region suramar_shalaran
+step
+talk Arcanist Valtrois##103155
+|tip Downstairs.
+turnin Long Buried Knowledge##42491 |goto 37.01,46.23 |region suramar_shalaran
+step
+Jump down here |goto 48.34,65.22 < 20 |only if walking
+Enter the building |goto 48.99,65.02 < 20 |walk
+Walk into the swirling portal |goto 50.99,65.59 |n
+Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000 |noway |c |q 43314
+|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
+|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+step
+kill Advisor Melandrus##104218
+|tip He's inside the Court  dungeon.
+|tip Use the Court of Stars dungeon guide to complete the Court of Stars dungeon.
+Slay Advisor Melandrus |q 43314/1 |goto Court of Stars/3 65.85,78.15
+collect Melandrus' Spellstone##140757 |q 43314/2 |goto Court of Stars/3 65.85,78.15
+step
+talk First Arcanist Thalyssra##97140
+turnin Beware the Fury of a Patient Elf##43314 |goto Suramar/0 36.51,46.76 |region suramar_shalaran
+step
+Reach Revered Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Revered
+|tip Use "The Nightfallen Reputation" guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+step
+talk Valewalker Farodin##107126
+turnin Growing Strong##44562 |goto 36.54,46.81 |region suramar_shalaran
+accept Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalaran
+step
+Reach 7000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=7000
+|tip Use "The Nightfallen Reputation" guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+step
+talk Valewalker Farodin##107126
+accept A Growing Crisis##44152 |goto 36.53,46.81 |region suramar_shalaran
+step
+click Portal to Falanaar |goto 35.89,45.56 |n |region suramar_shalaran
+Teleport to the Temple of Fal'adora |goto Suramar/32 41.38,15.05 < 50 |noway |c |q 44152
+step
+talk Valewalker Farodin##112967
+turnin A Growing Crisis##44152 |goto Suramar/32 42.33,14.91
+accept Fragments of Disaster##43361 |goto Suramar/32 42.33,14.91
+accept The Shardmaidens##43360 |goto Suramar/32 42.33,14.91
+stickystart "Slay_Shardmaidens"
+step
+Follow the path |goto 43.02,30.32 < 15 |walk
+click Crystallized Boughs
+|tip They look like green crystal plants on the ground around this area.
+collect 5 Crystallized Bark##139340 |q 43361/1 |goto 37.12,46.77
+step
+label "Slay_Shardmaidens"
+kill 6 Shardmaiden##105554 |q 43360/1 |goto 37.12,46.77
+step
+Follow the path up |goto 37.76,43.50 < 20 |walk
+Follow the path |goto 42.82,30.45 < 15 |walk
+Return to the Temple of Fal'adora |q 43361/2 |goto 41.45,15.59
+step
+talk Valewalker Farodin##112967
+turnin Fragments of Disaster##43361 |goto 42.35,14.93
+turnin The Shardmaidens##43360 |goto 42.35,14.93
+accept Another Arcan'dor Closes...##44156 |goto 42.35,14.93
+step
+click Portal to Shal'Aran |goto 40.91,13.73 |n
+Return to Shal'Aran |goto Suramar/0 36.40,45.09 < 50 |noway |c |q 44156 |region suramar_shalaran
+step
+talk Valewalker Farodin##107126
+turnin Another Arcan'dor Closes...##44156 |goto 36.54,46.81 |region suramar_shalaran
+accept The Stuff of Dreams##43362 |goto 36.54,46.81 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##97140
+accept Branch of the Arcan'dor##40125 |goto 36.51,46.75 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##97140
+turnin Branch of the Arcan'dor##40125 |goto 36.51,46.75 |region suramar_shalaran
+step
+|confirm
+step
+Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Exalted
+|tip Use "The Nightfallen Reputation" guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+step
+talk Valewalker Farodin##107126
+turnin Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalaran
 step
 |confirm
 ]])
@@ -15838,6 +15996,8 @@ turnin A Hero's Weapon##43425 |goto 43.96,33.48
 step
 Run up the stairs |goto Skyhold/1 52.42,36.17 < 20 |walk
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Skyhold/1 45.32,30.18
 |only Warrior
 stickystart "World_Quests_Warrior"
@@ -15853,6 +16013,8 @@ turnin Awakenings##44464 |goto Skyhold/1 45.32,30.18
 |only Warrior
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 45.32,30.12
 |only Warrior
 step
@@ -15867,6 +16029,11 @@ step
 Run up the stairs |goto Skyhold/1 52.48,36.13 < 20 |only if walking
 click Light's Heart
 turnin An Unclear Path##44466 |goto Skyhold/1 45.32,30.12
+|only Warrior
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Skyhold/1 45.32,30.12
 |only Warrior
 step
@@ -15938,6 +16105,11 @@ step
 Run up the stairs |goto Skyhold/1 52.48,36.13 < 20 |only if walking
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto Skyhold/1 45.32,30.12
+|only Warrior
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Skyhold/1 45.32,30.12
 |only Warrior
 step
@@ -15949,6 +16121,11 @@ step
 Run up the stairs |goto Skyhold/1 52.48,36.13 < 20 |only if walking
 click Light's Heart
 turnin In My Father's House##44480 |goto Skyhold/1 45.32,30.12
+|only Warrior
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Skyhold/1 45.32,30.12
 |only Warrior
 step
@@ -16736,6 +16913,8 @@ accept Champion: Lothraxion##43701 |instant |goto 73.05,23.02
 |only Paladin
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Eastern Plaguelands/20 52.19,69.55
 |only Paladin
 step
@@ -16749,6 +16928,8 @@ turnin Awakenings##44464 |goto Eastern Plaguelands/20 52.19,69.55
 |only Paladin
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 52.20,69.51
 |only Paladin
 step
@@ -16762,6 +16943,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto Eastern Plaguelands/20 52.31,69.37
+|only Paladin
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Eastern Plaguelands/20 52.31,69.37
 |only Paladin
 step
@@ -16835,6 +17021,8 @@ turnin Ravencrest's Legacy##44479 |goto Eastern Plaguelands/20 52.31,69.37
 |only Paladin
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 52.31,69.37
 |only Paladin
 step
@@ -16844,9 +17032,13 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 |only Paladin
 step
 click Light's Heart
-|tip Inside the building.
-turnin In My Father's House##44480 |goto Trueshot Lodge/0 34.44,51.14
-accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
+turnin In My Father's House##44480 |goto Eastern Plaguelands/20 52.31,69.37
+|only Paladin
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
+accept Destiny Unfulfilled##44496 |goto Eastern Plaguelands/20 52.31,69.37
 |only Paladin
 step
 Use the Call to Xe'ra ability
@@ -17591,7 +17783,6 @@ talk Halduron Brightwing##108456
 |tip Upstairs in the tower.
 turnin Ore Under the Sea##42655 |goto Trueshot Lodge/0 43.12,5.99
 |only Hunter
-stickystop "Arcane_Vessel_Fragments_Hunter"
 step
 _Enter the Darkheart Thicket Dungeon:_
 |tip Use the Group Finder to enter the dungeon.
@@ -17600,7 +17791,6 @@ kill Oakheart##103344
 collect Nightmare Oak##138270 |q 42654/1
 kill Shade of Xavius##101403 |q 42654/2
 |only Hunter
-stickystart "Arcane_Vessel_Fragments_Hunter"
 step
 talk Halduron Brightwing##108456
 |tip Upstairs in the tower.
@@ -17641,6 +17831,7 @@ talk Emmarel Shadewarden##107973
 turnin Same Day Delivery##42133 |goto Trueshot Lodge/0 43.40,26.35
 |only Hunter
 step
+label "Arcane_Vessel_Fragments_Hunter"
 click Scouting Map
 |tip Inside the building.
 Complete "The Missing Vessel" Missions
@@ -17723,6 +17914,8 @@ turnin A Hero's Weapon##43423 |goto 47.64,49.35
 step
 click Light's Heart
 |tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto 47.49,43.51
 |only Hunter
 step
@@ -17737,6 +17930,9 @@ turnin Awakenings##44464 |goto 47.49,43.51
 |only Hunter
 step
 click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 47.42,43.49
 |only Hunter
 step
@@ -17749,7 +17945,14 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 |only Hunter
 step
 click Light's Heart
+|tip Inside the building.
 turnin An Unclear Path##44466 |goto Trueshot Lodge/0 47.42,43.49
+|only Hunter
+step
+click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
 |only Hunter
 step
@@ -17825,6 +18028,8 @@ turnin Ravencrest's Legacy##44479 |goto Trueshot Lodge/0 47.42,43.49
 step
 click Light's Heart
 |tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 34.44,51.14
 |only Hunter
 step
@@ -17836,6 +18041,12 @@ step
 click Light's Heart
 |tip Inside the building.
 turnin In My Father's House##44480 |goto Trueshot Lodge/0 34.44,51.14
+|only Hunter
+step
+click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Trueshot Lodge/0 34.44,51.14
 |only Hunter
 step
@@ -18679,6 +18890,8 @@ turnin A Hero's Weapon##43422 |goto 38.03,58.31
 |only Rogue
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Dalaran L/4 40.66,54.57
 |only Rogue
 step
@@ -18695,6 +18908,8 @@ turnin Awakenings##44464 |goto Dalaran L/4 40.66,54.57
 |only Rogue
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 40.79,54.82
 |only Rogue
 step
@@ -18711,6 +18926,11 @@ Continue down the stairs |goto Dalaran L/4 90.59,84.77 < 10 |walk
 Cross the bridge |goto Dalaran L/4 49.05,35.98 < 15 |walk
 click Light's Heart
 turnin An Unclear Path##44466 |goto Dalaran L/4 40.79,54.82
+|only Rogue
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Dalaran L/4 40.79,54.82
 |only Rogue
 step
@@ -18784,6 +19004,11 @@ Continue down the stairs |goto Dalaran L/4 90.59,84.77 < 10 |walk
 Cross the bridge |goto Dalaran L/4 49.05,35.98 < 15 |walk
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto Dalaran L/4 40.79,54.82
+|only Rogue
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Dalaran L/4 40.79,54.82
 |only Rogue
 step
@@ -18797,6 +19022,11 @@ Continue down the stairs |goto Dalaran L/4 90.59,84.77 < 10 |walk
 Cross the bridge |goto Dalaran L/4 49.05,35.98 < 15 |walk
 click Light's Heart
 turnin In My Father's House##44480 |goto Dalaran L/4 40.79,54.82
+|only Rogue
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Dalaran L/4 40.79,54.82
 |only Rogue
 step
@@ -19637,6 +19867,8 @@ accept A Second Legend##43935 |instant |goto 51.53,47.81
 |only Priest
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Netherlight Temple/1 49.81,26.44
 |only Priest
 step
@@ -19650,6 +19882,8 @@ turnin Awakenings##44464 |goto Netherlight Temple/1 49.81,26.44
 |only Priest
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 49.81,26.41
 |only Priest
 step
@@ -19663,6 +19897,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto Netherlight Temple/1 49.81,26.41
+|only Priest
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Netherlight Temple/1 49.81,26.41
 |only Priest
 step
@@ -19733,6 +19972,11 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto Netherlight Temple/1 49.81,26.41
+|only Priest
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Netherlight Temple/1 49.81,26.41
 |only Priest
 step
@@ -19743,6 +19987,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto The Maelstrom L/0 32.48,32.81
+|only Priest
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
 |only Priest
 step
@@ -20545,6 +20794,8 @@ turnin A Hero's Weapon##43418 |goto 35.22,46.42
 |only Shaman
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto The Maelstrom L/0 32.48,32.80
 |only Shaman
 step
@@ -20558,6 +20809,8 @@ turnin Awakenings##44464 |goto The Maelstrom L/0 32.48,32.80
 |only Shaman
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 32.48,32.81
 |only Shaman
 step
@@ -20571,6 +20824,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto The Maelstrom L/0 32.48,32.81
+|only Shaman
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto The Maelstrom L/0 32.48,32.81
 |only Shaman
 step
@@ -20644,6 +20902,8 @@ turnin Ravencrest's Legacy##44479 |goto The Maelstrom L/0 32.48,32.81
 |only Shaman
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 32.48,32.81
 |only Shaman
 step
@@ -20654,6 +20914,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto The Maelstrom L/0 32.48,32.81
+|only Shaman
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto The Maelstrom L/0 32.48,32.81
 |only Shaman
 step
@@ -21493,6 +21758,8 @@ turnin A Hero's Weapon##43415 |goto 58.84,42.79
 step
 Run down the stairs |goto Hall of the Guardian/1 69.69,74.02 < 15 |walk
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Hall of the Guardian/1 83.66,32.85
 |only Mage
 step
@@ -21507,6 +21774,8 @@ turnin Awakenings##44464 |goto Hall of the Guardian/1 83.66,32.85
 |only Mage
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto Hall of the Guardian/1 83.77,32.70
 |only Mage
 step
@@ -21521,6 +21790,11 @@ step
 Run down the stairs |goto Hall of the Guardian/1 69.60,74.09 < 15 |walk
 click Light's Heart
 turnin An Unclear Path##44466 |goto Hall of the Guardian/1 83.77,32.70
+|only Mage
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Hall of the Guardian/1 83.77,32.70
 |only Mage
 step
@@ -21591,11 +21865,12 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 Run down the stairs |goto Hall of the Guardian/1 69.60,74.09 < 15 |walk
 click Light's Heart
-|tip Inside the building.
 turnin Ravencrest's Legacy##44479 |goto Hall of the Guardian/1 83.77,32.70
 |only Mage
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 83.83,32.74
 |only Mage
 step
@@ -21606,6 +21881,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto Hall of the Guardian/1 83.83,32.74
+|only Mage
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Hall of the Guardian/1 83.83,32.74
 |only Mage
 step
@@ -21778,7 +22058,7 @@ step
 click Scouting Map
 Begin the "Additional Accoutrements" Mission
 |tip This mission will take 1 hour to complete.
-Complete the "Additional Accoutrements" Mission |q 42682/1 |goto 58.72,53.09
+Click Here After You Start the Mission |confirm |goto 58.72,53.09 |q 42682
 |only DemonHunter
 step
 talk Archmage Khadgar##90417
@@ -21925,13 +22205,19 @@ click Illidari Gateway |goto Dalaran L/10 98.04,69.29 |n
 Return to the Fel Hammer |goto Mardum, the Shattered Abyss/1 59.19,85.76 < 10000 |noway |c |q 44153
 |only DemonHunter
 step
-click Light's Heart
-turnin Light's Charge##44153 |goto Mardum, the Shattered Abyss/1 58.64,43.14
+click Scouting Map
+Begin the "Additional Accoutrements" Mission
+|tip This mission will take 1 hour to complete.
+Complete the "Additional Accoutrements" Mission |q 42682/1 |goto 58.72,53.09
 |only DemonHunter
 step
 talk Kor'vas Bloodthorn##103761
 turnin Additional Accoutrements##42682 |goto 59.34,57.62
 accept The Blood of Demons##37447 |goto 59.34,57.62
+|only DemonHunter
+step
+click Light's Heart
+turnin Light's Charge##44153 |goto Mardum, the Shattered Abyss/1 58.64,43.14
 |only DemonHunter
 step
 Kill enemies around this area
@@ -22040,83 +22326,55 @@ accept Confrontation at the Black Temple##42921 |or |goto 60.00,48.94
 accept Confrontation at the Black Temple##42634 |or |goto 60.00,48.94
 |only DemonHunter
 step
-Summon the Gateway |q 42921/1 |goto 62.52,50.08
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-Summon the Gateway |q 42634/1 |goto 62.52,50.08
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-click Gateway to the Black Temple
-Use the Gateway |q 42921/2 |goto 62.52,50.08
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
+Watch the dialogue
+Summon the Gateway |q 42921/1 |goto 62.52,50.08 |only if havequest(42921) or completedq(42921)
+Summon the Gateway |q 42634/1 |goto 62.52,50.08 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 click Gateway to the Black Temple
-Use the Gateway |q 42634/2 |goto 62.52,50.08
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Use the Gateway |q 42921/2 |goto 62.52,50.08 |only if havequest(42921) or completedq(42921)
+Use the Gateway |q 42634/2 |goto 62.52,50.08 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
-Begin the Confrontation at the Black Temple Scenario |scenariostart |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-Begin the Confrontation at the Black Temple Scenario |scenariostart |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Begin the Confrontation at the Black Temple Scenario |scenariostart |q 42921 |only if havequest(42921) or completedq(42921)
+Begin the Confrontation at the Black Temple Scenario |scenariostart |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 talk Kayn Sunfury##108080
-Speak with Kayn Sunfury |scenariostage 1 |goto Black Temple L/1 56.21,19.64 |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-talk Altruis the Sufferer##18417
-Speak with Altruis the Sufferer |scenariostage 1 |goto Black Temple L/1 56.21,19.64 |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Speak with Kayn Sunfury |scenariostage 1 |goto Black Temple L/1 56.21,19.64 |q 42921 |only if havequest(42921) or completedq(42921)
+Speak with Altruis the Sufferer |scenariostage 1 |goto Black Temple L/1 56.21,19.64 |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 Follow the path up |goto 68.00,25.61 < 15 |only if walking
 Watch the dialogue
-Ascend the Steps and Await the Opening of the Gate |scenariostage 2 |goto 70.46,37.46 |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-Follow the path up |goto 68.00,25.61 < 15 |only if walking
-Watch the dialogue
-Ascend the Steps and Await the Opening of the Gate |scenariostage 2 |goto 70.46,37.46 |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Ascend the Steps and Await the Opening of the Gate |scenariostage 2 |goto 70.46,37.46 |q 42921 |only if havequest(42921) or completedq(42921)
+Ascend the Steps and Await the Opening of the Gate |scenariostage 2 |goto 70.46,37.46 |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 talk Kayn Sunfury##108080
 Watch the dialogue
-|Tip Follow Kayn Sunfury.
-Speak with Kayn Sunfury and then Confront Akama |scenariostage 3 |goto 70.54,34.62 |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-talk Altruis the Sufferer##18417
-Watch the dialogue
-|Tip Follow Altruis the Sufferer.
-Speak with Altruis the Sufferer and then Confront Akama |scenariostage 3 |goto 70.54,34.62 |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+|tip Follow Kayn Sunfury.
+Speak with Kayn Sunfury and then Confront Akama |scenariostage 3 |goto 70.54,34.62 |q 42921 |only if havequest(42921) or completedq(42921)
+Speak with Altruis the Sufferer and then Confront Akama |scenariostage 3 |goto 70.54,34.62 |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 kill Akama##108090
-Defeat Akama |scenariostage 4 |goto 57.69,53.74 |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-kill Akama##108090
-Defeat Akama |scenariostage 4 |goto 57.69,53.74 |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Defeat Akama |scenariostage 4 |goto 57.69,53.74 |q 42921 |only if havequest(42921) or completedq(42921)
+Defeat Akama |scenariostage 4 |goto 57.69,53.74 |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 _Where You Defeated Him:_
 talk Akama##108090
 Watch the dialogue
-Speak with Akama |scenarioend |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
+Speak with Akama |scenarioend |q 42921 |only if havequest(42921) or completedq(42921)
+Speak with Akama |scenarioend |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
-_Where You Defeated Him:_
-talk Akama##108090
 Watch the dialogue
-Speak with Akama |scenarioend |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
-step
 click Gateway to the Fel Hammer |goto 33.91,69.71 |n
-Return to the Fel Hammer |goto Mardum, the Shattered Abyss/1 60.45,51.05 < 10000 |noway |c |q 42921
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42921)
-step
-click Gateway to the Fel Hammer |goto 33.91,69.71 |n
-Return to the Fel Hammer |goto Mardum, the Shattered Abyss/1 60.45,51.05 < 10000 |noway |c |q 42634
-|only if ZGV:RaceClassMatch("DemonHunter") and havequest(42634)
+Return to the Fel Hammer |goto Mardum, the Shattered Abyss/1 60.45,51.05 < 10000 |noway |c |q 42921 |only if havequest(42921) or completedq(42921)
+Return to the Fel Hammer |goto Mardum, the Shattered Abyss/1 60.45,51.05 < 10000 |noway |c |q 42634 |only if havequest(42634) or completedq(42634)
+|only DemonHunter
 step
 talk Kayn Sunfury##108572
 |tip It could be Altruis the Sufferer.
@@ -22212,7 +22470,7 @@ turnin You Will Be Prepared!##44213 |goto 57.80,43.43
 step
 talk Archmage Khadgar##90417
 |tip Inside the building.
-turnin Goddess Watch Over You##44337 |goto Dalaran L/10 28.53,48.33
+turnin Goddess Watch Over You##44337 |goto Dalaran L/10 28.53,48.33 |only if havequest(44337) or completedq(44337)
 accept In the House of Light and Shadow##44448 |goto Dalaran L/10 28.53,48.33
 |only DemonHunter
 step
@@ -22717,6 +22975,8 @@ turnin A Hero's Weapon##43422 |goto 57.29,32.36 |only if havequest(43422) or com
 |only DemonHunter
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto Mardum, the Shattered Abyss/1 58.68,43.64
 |only DemonHunter
 step
@@ -22732,6 +22992,8 @@ turnin Awakenings##44464 |goto Mardum, the Shattered Abyss/1 58.68,43.64
 |only DemonHunter
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 58.65,43.40
 |only DemonHunter
 step
@@ -22745,6 +23007,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto Mardum, the Shattered Abyss/1 58.65,43.40
+|only DemonHunter
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
@@ -22818,6 +23085,8 @@ turnin Ravencrest's Legacy##44479 |goto Mardum, the Shattered Abyss/1 58.65,43.4
 |only DemonHunter
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
@@ -22828,6 +23097,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto Mardum, the Shattered Abyss/1 58.65,43.40
+|only DemonHunter
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Mardum, the Shattered Abyss/1 58.65,43.40
 |only DemonHunter
 step
@@ -23557,6 +23831,7 @@ step
 Follow the path up |goto 52.93,40.45 < 15 |only if walking
 Follow the path up |goto 50.04,46.30 < 20 |only if walking
 talk Ritssyn Flamescowl##110488
+|tip He walks to this spot after the dialogue.
 accept A Hero's Weapon##43414 |goto 36.42,30.69
 |only Warlock
 step
@@ -23570,6 +23845,8 @@ turnin A Hero's Weapon##43414 |goto 36.37,30.69
 |only Warlock
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto 53.18,32.63
 |only Warlock
 step
@@ -23584,6 +23861,8 @@ turnin Awakenings##44464 |goto Dreadscar Rift/0 53.18,32.63
 |only Warlock
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 53.17,32.63
 |only Warlock
 step
@@ -23597,6 +23876,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto Dreadscar Rift/0 53.17,32.63
+|only Warlock
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Dreadscar Rift/0 53.17,32.63
 |only Warlock
 step
@@ -23667,6 +23951,11 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto Dreadscar Rift/0 53.17,32.63
+|only Warlock
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Dreadscar Rift/0 53.17,32.63
 |only Warlock
 step
@@ -23677,6 +23966,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto Dreadscar Rift/0 53.17,32.63
+|only Warlock
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Dreadscar Rift/0 53.17,32.63
 |only Warlock
 step
@@ -24288,7 +24582,7 @@ turnin The Mead Master##41038 |goto 62.12,20.14
 accept Stolen Knowledge##41039 |goto 62.12,20.14
 |only Monk
 step
-Cross the bridge |goto 40.11,62.68 < 20 |only if walking |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Cross the bridge |goto 40.11,62.68 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
 Cross the bridge |goto 44.15,60.44 < 20 |only if walking
 Follow the path |goto 44.63,63.30 < 20 |only if walking
 click Grapple Point |goto 45.12,63.84 |n
@@ -24482,6 +24776,8 @@ accept Champion: Aegira##41739 |instant |goto 55.40,57.23
 |only Monk
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto 51.80,48.16
 |only Monk
 step
@@ -24495,6 +24791,8 @@ turnin Awakenings##44464 |goto The Wandering Isle L/0 51.80,48.16
 |only Monk
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 51.80,48.16
 |only Monk
 step
@@ -24508,6 +24806,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto The Wandering Isle L/0 51.78,48.13
+|only Monk
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto The Wandering Isle L/0 51.78,48.13
 |only Monk
 step
@@ -24578,6 +24881,11 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto The Wandering Isle L/0 51.78,48.13
+|only Monk
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto The Wandering Isle L/0 51.78,48.13
 |only Monk
 step
@@ -24588,6 +24896,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto The Wandering Isle L/0 51.78,48.13
+|only Monk
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto The Wandering Isle L/0 51.78,48.13
 |only Monk
 step
@@ -24896,7 +25209,7 @@ accept Light's Charge##44153 |goto Dalaran L/10 28.48,48.46
 step
 click Light's Heart
 |tip Inside the building.
-turnin Light's Charge##44153 |goto 60.14,52.12
+turnin Light's Charge##44153 |goto The Dreamgrove/0 60.14,52.12
 |only Druid
 step
 talk Broll Bearmantle##105903
@@ -25397,6 +25710,8 @@ turnin The Emerald Nightmare##42432 |goto The Dreamgrove/0 44.66,51.97
 step
 click Light's Heart
 |tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto 60.06,52.14
 |only Druid
 step
@@ -25412,6 +25727,8 @@ turnin Awakenings##44464 |goto The Dreamgrove/0 60.06,52.14
 step
 click Light's Heart
 |tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 60.06,52.14
 |only Druid
 step
@@ -25426,6 +25743,12 @@ step
 click Light's Heart
 |tip Inside the building.
 turnin An Unclear Path##44466 |goto The Dreamgrove/0 60.06,52.14
+|only Druid
+step
+click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto The Dreamgrove/0 60.06,52.14
 |only Druid
 step
@@ -25497,6 +25820,12 @@ step
 click Light's Heart
 |tip Inside the building.
 turnin Ravencrest's Legacy##44479 |goto The Dreamgrove/0 60.06,52.14
+|only Druid
+step
+click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto The Dreamgrove/0 60.06,52.14
 |only Druid
 step
@@ -25508,6 +25837,12 @@ step
 click Light's Heart
 |tip Inside the building.
 turnin In My Father's House##44480 |goto The Dreamgrove/0 60.06,52.14
+|only Druid
+step
+click Light's Heart
+|tip Inside the building.
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto The Dreamgrove/0 60.06,52.14
 |only Druid
 step
@@ -26259,6 +26594,8 @@ turnin A Hero's Weapon##43407 |goto 57.10,58.53
 |only DeathKnight
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Awakenings##44464 |goto 54.26,74.19
 |only DeathKnight
 step
@@ -26272,6 +26609,8 @@ turnin Awakenings##44464 |goto Broken Shore/1 54.26,74.19
 |only DeathKnight
 step
 click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept An Unclear Path##44466 |goto 54.24,74.13
 |only DeathKnight
 step
@@ -26285,6 +26624,11 @@ Witness Illidan's Resilience |q 44466/1 |goto Val'sharah/0 45.54,34.75
 step
 click Light's Heart
 turnin An Unclear Path##44466 |goto Broken Shore/1 54.24,74.13
+|only DeathKnight
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Ravencrest's Legacy##44479 |goto Broken Shore/1 54.24,74.13
 |only DeathKnight
 step
@@ -26355,6 +26699,11 @@ Return to Val'sharah |goto Val'sharah/0 41.44,45.63 < 10000 |noway |c |q 44479
 step
 click Light's Heart
 turnin Ravencrest's Legacy##44479 |goto Broken Shore/1 54.24,74.13
+|only DeathKnight
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Broken Shore/1 54.24,74.13
 |only DeathKnight
 step
@@ -26365,6 +26714,11 @@ Witness Illidan's Resilience |q 44480/1 |goto Azshara/0 34.83,49.90
 step
 click Light's Heart
 turnin In My Father's House##44480 |goto Broken Shore/1 54.24,74.13
+|only DeathKnight
+step
+click Light's Heart
+|tip We believe this quest's availability is determined by your Order Hall Artifact Research.
+|tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept Destiny Unfulfilled##44496 |goto Broken Shore/1 54.24,74.13
 |only DeathKnight
 step

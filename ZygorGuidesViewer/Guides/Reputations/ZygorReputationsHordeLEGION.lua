@@ -3,6 +3,34 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("ReputationsHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Court of Farondis",{
+author="support@zygorguides.com",
+},[[
+step
+Reputation with the Court of Farondis can be earned by completing the Aszuna Leveling Guide
+Click here to load the Aszuna Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Azsuna"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Dreamweavers",{
+author="support@zygorguides.com",
+},[[
+step
+Reputation with the Dreamweavers can be earned by completing the Val'sharah Leveling Guide
+Click here to load the Val'sharah Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Val'sharah"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Highmountain Tribe",{
+author="support@zygorguides.com",
+},[[
+step
+Reputation with the Highmountain Tribe can be earned by completing the Highmountain Leveling Guide
+Click here to load the Highmountain Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Highmountain"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\Valarjar",{
+author="support@zygorguides.com",
+},[[
+step
+Reputation with the Valarjar can be earned by completing the Stormheim Leveling Guide
+Click here to load the Stormheim Leveling Guide |confirm always |next "Zygor's Horde Leveling Guides\\Legion (100-110)\\Stormheim"
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\The Nightfallen",{
 author="support@zygorguides.com",
 startlevel=110.0,
@@ -31,4 +59,13 @@ step
 talk Chief Telemancer Oculeth##98548
 |tip This requires you to have 50 Ancient Mana.
 accept Feed Oculeth##43106 |instant |goto 36.28,44.98
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Horde Reputations Guides\\Legion\\The Wardens",{
+author="support@zygorguides.com",
+startlevel=110.0,
+endlevel=110.0,
+},[[
+step
+Reputation with The Wardens can be earned by completing The Wardens world and emissary quests.
+Click here to load the World Quests Guide |confirm always |next "Zygor's Horde Dailies Guides\\Legion\\Legion World Quests"
 ]])

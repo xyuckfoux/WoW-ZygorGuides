@@ -28840,6 +28840,21 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only DeathKnight
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DeathKnight
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only DeathKnight
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DeathKnight
+step
 More content coming soon!
 confirm
 |only DeathKnight
@@ -29015,6 +29030,21 @@ Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
 step
 talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only DemonHunter
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only DemonHunter
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only DemonHunter
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only DemonHunter
 step
 More content coming soon!
@@ -29401,6 +29431,21 @@ talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
 |only Hunter
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Hunter
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Hunter
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Hunter
+step
 More content coming soon!
 confirm
 |only Hunter
@@ -29578,6 +29623,20 @@ collect 2500 Nethershard##1226 |q 46251/1
 step
 talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
+|only Mage
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Mage
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##147582 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Mage
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
 |only Mage
 step
 More content coming soon!
@@ -29778,10 +29837,20 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Monk
 step
-More content coming soon!
-confirm
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.79,63.19
 |only Monk
 step
+Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
+|tip It will be a large green icon on the World Map.
+Collect #100# mark of the Sentinax |q 47139/1
+|only Monk
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.19
+|only Monk
+step
+More content coming soon!
 confirm
 |only Monk
 step
@@ -29976,6 +30045,19 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.74,63.27
 |only Paladin
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.79,63.19
+|only Paladin
+step
+Locate The Sentinax in The Broken Shore and kill enemies that spawn from the portals in the area
+|tip It will be a large green icon on the World Map.
+Collect #100# mark of the Sentinax |q 47139/1
+|only Paladin
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.19
+|only Paladin
+step
 More content coming soon!
 confirm
 |only Paladin
@@ -30151,6 +30233,21 @@ Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
 step
 talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only Priest
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Priest
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 44.79,63.17
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Priest
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only Priest
 step
 More content coming soon!
@@ -30332,6 +30429,20 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
 |only Rogue
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Rogue
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##147582 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Rogue
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Rogue
+step
 More content coming soon!
 confirm
 |only Rogue
@@ -30511,6 +30622,20 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto 44.73,63.26
 |only Shaman
 step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.76,63.18
+|only Shaman
+step
+You must go under the Sentinax that pats around the Broken Shore
+|tip Summon portals and defeat the enemies that come out.
+collect 100 Mark of the Sentinax##47139 |q 47139/1
+|tip Boss summons give quite alot of marks, use these beacons as soon as you get them.
+|only Shaman
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##147582 |goto Broken Shore/0 44.76,63.18
+|only Shaman
+step
 More content coming soon!
 confirm
 |only Shaman
@@ -30686,6 +30811,21 @@ Complete a Legion Assault |q 46247/1 |goto 44.54,63.52
 step
 talk Maiev Shadowsong##116576
 turnin Defending Broken Isles##46247 |goto 44.54,63.52
+|only Warlock
+step
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto 44.79,63.17
+|only Warlock
+step
+collect 100 Mark of the Sentinax##147582 |q 47139/1 |goto 50.56,43.35
+|tip These are collected from Sentinax Portals.
+|tip Sentinax Beacons summon portals which spawn mobs that you can kill for Marks.
+|tip Setninax Beacons drop from mobs in Broken Shore.
+|tip Open your map and look for the Sentinax icon. Use your beacons below the ship.
+|only Warlock
+step
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto 44.79,63.17
 |only Warlock
 step
 More content coming soon!
@@ -32954,7 +33094,7 @@ accept Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Druid
 step
 Collect 2500 Nethershards |q 46251/1
-|tip You can do this by completing World Quests and killing bosses in the Broken Shore.
+|tip You can do this by completing World Quests and killing Rares in the Broken Shore.
 |tip You will get 2499 Nethershards back.
 |only Druid
 step
@@ -32962,73 +33102,21 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Druid
 step
-talk Grovewarden Proudhorn##118105
-accept Talon's Call##46317 |goto Broken Shore/0 43.81,62.97
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-talk Thisalee Crow##106299
-turnin Talon's Call##46317 |goto The Dreamgrove/0 44.45,51.47
-accept Defense of Aviana##46318 |goto The Dreamgrove/0 44.45,51.47
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Druid
 step
-Help Defend the Shrine of Aviana |scenariostart |q 46318 |goto Mount Hyjal/0 41.10,42.82
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Druid
 step
-talk Skylord Shadegrove
-Ask him _"How can we help?"_
-Meet Skylord Shadegrove |scenariostage 1 |q 46318 |goto Mount Hyjal/0 42.74,45.67
-|only Druid
-step
-Kill enemies in this area
-Kill Demons Attacking the Shrine |scenariostage 2 |q 46318 |goto Mount Hyjal/0 41.23,43.79
-|only Druid
-step
-Return to the Shrine |scenariostage 3 |q 46318 |goto Mount Hyjal/0 42.32,45.13
-|only Druid
-step
-Uncover the Traitor |scenariostage 4 |q 46318 |goto Mount Hyjal/0 42.68,45.30
-|only Druid
-step
-Go up the path |goto The Dreamgrove/0 33.91,21.50 < 10 |only if walking
-talk Thisalee Crow##106299
-turnin Defense of Aviana##46318 |goto The Dreamgrove/0 31.07,4.75
-accept You Can't Take the Sky From Me##46319 |goto The Dreamgrove/0 31.07,4.75
-|only Druid
-step
-Follow the path |goto Azsuna/0 41.00,35.19 < 10 |only if walking
-Go up the path |goto 39.17,32.74 < 10 |only if walking
-Continue up the mountain |goto 36.89,31.21 < 10 |only if walking
-Follow the path |goto 39.09,26.70 < 10 |only if walking
-Retrieve the Idol of Aviana |scenariostart |q 46319 |goto 41.24,24.77
-|only Druid
-step
-Meet Up With Thisalee Crow |scenariostage 1 |q 46319 |goto 41.24,24.77
-|only Druid
-step
-_Use Prowl_
-Follow Thisalee while _stealthed_
-Follow the path |goto 41.56,22.67 < 6 |walk
-Follow the path |goto 42.70,23.04 < 6 |walk
-Infiltrate the Legion Encampment |scenariostage 2 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-Scout Infazzar |scenariostage 3 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-Kill the enemies that attack
-Fight Off Attacking Demons and Harpies |scenariostage 4 |q 46319 |goto 43.09,22.93
-|only Druid
-step
-click Lunarwing Owl
-Follow Infazzar to His Ship |scenariostage 5 |q 46319 |goto 42.78,24.79
-|only Druid
-step
-kill Infazzar the Shade |scenariostage 6 |q 46319 |goto Azsuna/0 39.02,28.69
-|only Druid
-step
-Go up the path |goto The Dreamgrove/0 33.91,21.50 < 10 |only if walking
-click Corrupted Idol of Aviana##120947
-turnin You Can't Take the Sky From Me##46319 |goto The Dreamgrove/0 29.97,4.27
+More content coming soon!
+|confirm
 |only Druid
 step
 talk Archmage Khadgar##116302
@@ -38369,7 +38457,7 @@ accept Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Warrior
 step
 Collect 2500 Nethershards |q 46251/1
-|tip You can do this by completing World Quests and killing bosses in the Broken Shore.
+|tip You can do this by completing World Quests and killing Rares in the Broken Shore.
 |tip You will get 2499 Nethershards back.
 |only Warrior
 step
@@ -38377,60 +38465,21 @@ talk Archmage Khadgar##116302
 turnin Shard Times##46251 |goto Broken Shore/0 44.73,63.27
 |only Warrior
 step
-talk Valarjar Warsinger##119527
-accept A Godly Invitation##46208 |goto 43.59,63.08
+talk Lord Illidan Stormrage##117873
+accept Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-talk Odyn##96469
-turnin A Godly Invitation##46208 |goto Skyhold/1 58.40,84.56
-accept The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+Collect #100# Marks of the Sentinax |q 47139/1
+|tip Do this by killing empowered portal Rares and elite enemies.
+|tip Rare demonic lieutenants seem to be the most efficient way to complete this.
 |only Warrior
 step
-talk Odyn##96469
-Tell him _"I'm ready to begin the trial, Odyn."_
-Begin the Trial of Rage Scenario |scenariostart |q 46207 |goto 58.40,84.56
+talk Lord Illidan Stormrage##117873
+turnin Mark of the Sentinax##47139 |goto Broken Shore/0 44.78,63.21
 |only Warrior
 step
-talk Damrul the Stronk##118762
-Tell him _"I challenge you to fight!"_
-Challenge Damrul the Stronk |scenariogoal 1/35413 |q 46207 |goto Halls of Valor/1 52.30,87.07
-|only Warrior
-step
-kill Damrul the Stronk##118762
-Defeat Damrul the Stronk |scenariogoal 1/35403 |q 46207 |goto Halls of Valor/1 50.32,85.82
-|only Warrior
-step
-talk Omanawkwa Steelhoof##118775
-Tell him _"I challenge you to fight!"_
-Challenge Omanawkwa Steelhoof |scenariogoal 2/35414 |q 46207 |goto Halls of Valor/1 50.47,87.13
-|only Warrior
-step
-kill Omanawkwa Steelhoof##118775
-Defeat Omanawkwa Steelhoof |scenariogoal 2/35410 |q 46207 |goto 50.47,85.82
-|only Warrior
-step
-talk Asrea Moonblade##118772
-Tell her _"I challenge you to fight!"_
-Challenge Asrea Moonblade |scenariogoal 3/35415 |q 46207 |goto Halls of Valor/1 51.39,87.03
-|only Warrior
-step
-kill Asrea Moonblade##118772
-Defeat Asrea Moonblade |scenariogoal 3/35411 |q 46207 |goto 50.47,85.82
-|only Warrior
-step
-Step onto the Rune |scenariogoal 4/36226 |q 46207 |goto Halls of Valor/1 52.49,87.95
-|only Warrior
-step
-kill Asprirant Thyri##118855
-Defeat Asprirant Thyri |scenariogoal 4/35412 |q 46207 |goto Halls of Valor/1 50.95,85.80
-|only Warrior
-step
-click Skyhold Portal
-Return to Skyhold |q 46207/2 |goto Halls of Valor/1 51.41,89.43
-|only Warrior
-step
-talk Odyn##96469
-turnin The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+More content coming soon!
+|confirm
 |only Warrior
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore\\Excavator Karla Quests",{

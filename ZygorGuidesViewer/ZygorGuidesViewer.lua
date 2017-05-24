@@ -409,6 +409,7 @@ function ZGV:OnEnable()
 	self:Hook_QuestChoice()
 
 	if TaskPOI_OnClick then hooksecurefunc("TaskPOI_OnClick", function(self,button) ZGV:SuggestWorldQuestGuide(self) end) end
+	if WorldMapPOI_OnClick then hooksecurefunc("WorldMapPOI_OnClick", function(self,button) ZGV:SuggestBrokenRareGuide(self) end) end
 
 	if WorldQuestTrackerAddon then
 		local WQT=LibStub ("AceAddon-3.0"):GetAddon("WorldQuestTrackerAddon")
@@ -5908,6 +5909,51 @@ function ZGV:SuggestWorldQuestGuide(object,questID,force)
 		end
 	end
 end
+
+function ZGV:SuggestBrokenRareGuide(object)
+	local poiID = object and object.poiID
+	if not poiID then return end
+
+	local guidetitle = "Dailies Guides\\Legion\\World Quests"
+
+	local guide = self:GetGuideByTitle(guidetitle)
+	if not guide then return end
+	if not guide.parsed then guide:Parse(true) end
+	local labelstep
+	for labelname,labeldata in pairs(guide.steplabels) do
+		if labelname == "rare-"..poiID then
+			labelstep = labeldata[1]
+			break
+		end
+	end
+
+	if not labelstep then
+		ZGV:Debug("&_SUB &worldquests no label for rare "..poiID)
+		return
+	end
+	
+	if ZGV.CurrentGuide==guide then
+		ZGV:Debug("&_SUB &worldquests switching to "..poiID)
+		ZGV:FocusStep(labelstep,true)
+	else
+		ZGV:Debug("&_SUB &worldquests popup for "..poiID)
+		ZGV.NotificationCenter.AddButton(
+		"worldquest",
+		object.name,
+		"Click here to open the guide for this rare elite",
+		ZGV.DIR.."\\Skins\\guideicons-big",
+		{0, 0.25, 0, 0.25},
+		function() ZGV:SetGuide(guidetitle,labelstep) end,
+		nil,
+		1,
+		10, --poptime
+		30, --removetime
+		false, --quiet
+		nil,--onopen
+		"worldquest")
+	end
+end
+
 
 local SimpleThreadFrame = CreateFrame("FRAME","ZygorGuidesViewerSimpleThreadFrame")
 SimpleThreadFrame.threads = {}

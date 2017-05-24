@@ -1546,7 +1546,6 @@ step
 This mount can only be bought during the Mists of Pandaria Timewalking event
 |tip This event happens maybe once every 2 to 3 months.
 confirm
---@@BETASTART
 step
 talk Mistweaver Xia##118828
 buy Yu'lei, Daughter of Jade##87775 |use Yu'lei, Daughter of Jade##87775 |goto Timeless Isle/0 43.00,55.21
@@ -1556,7 +1555,6 @@ learnmount Yu'lei, Daughter of Jade##127165
 step
 _Congratulations!_
 You are now the proud owner of a Yu'lei, Daughter of Jade.
---@@BETAEND
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Pets & Mounts Guide\\Mounts\\Legion\\Brilliant Direbeak",{
@@ -1675,6 +1673,21 @@ Summon your Direbeak Hatchling
 Next to you
 talk Direbeak Hatchling##115785
 turnin Hunting Lesson: Tiny Apparition##44980
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept The Unkindly Faction##44981
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Direbeak Hatchling |q 44981/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin The Unkindly Faction##44981
 step
 More content coming soon!
 confirm
@@ -1924,6 +1937,21 @@ Summon your Sharptalon Hatchling
 Next to you
 talk Sharptalon Hatchling##115786
 turnin Hunting Lesson: Terror Larva##45003
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept The Uncongenial Faction##45005
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Sharptalon Hatchling |q 45005/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin The Uncongenial Faction##45005
 step
 More content coming soon!
 confirm

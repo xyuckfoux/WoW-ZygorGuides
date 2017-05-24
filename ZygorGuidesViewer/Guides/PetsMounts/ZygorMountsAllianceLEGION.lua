@@ -1675,6 +1675,21 @@ Next to you
 talk Direbeak Hatchling##115785
 turnin Hunting Lesson: Tiny Apparition##44980
 step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+accept The Unkindly Faction##44981
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Direbeak Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Direbeak Hatchling |q 44981/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Direbeak Hatchling
+Next to you
+talk Direbeak Hatchling##115785
+turnin The Unkindly Faction##44981
+step
 More content coming soon!
 confirm
 ]])
@@ -1909,6 +1924,21 @@ Summon your Sharptalon Hatchling
 Next to you
 talk Sharptalon Hatchling##115786
 turnin Hunting Lesson: Terror Larva##45003
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+accept The Uncongenial Faction##45005
+|tip To Start the next quest you will have to wait for dailies to reset.
+step
+Make sure your Sharptalon Hatchling is summoned while you complete these World Quests
+Complete 3 PvP World Quests with your Sharptalon Hatchling |q 45005/1
+|tip You can use our World Quest guide to accomplish this.
+step
+Summon your Sharptalon Hatchling
+Next to you
+talk Sharptalon Hatchling##115786
+turnin The Uncongenial Faction##45005
 step
 More content coming soon!
 confirm

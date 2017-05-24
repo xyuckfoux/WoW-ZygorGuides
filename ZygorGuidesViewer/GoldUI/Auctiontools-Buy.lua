@@ -733,8 +733,8 @@ end
 function Appraiser:ShoppingRowMenu(row)
 	if not row.item then return end
 
-	if not Appraiser.Buy_Frame.ShoppingMenu then Appraiser.Buy_Frame.ShoppingMenu = CreateFrame("FRAME","AT_Shopping_Menu",Appraiser.Buy_Frame,"UIDropDownMenuTemplate") end
-	UIDropDownMenu_SetAnchor(Appraiser.Buy_Frame.ShoppingMenu, 0, 0, "TOP", row, "BOTTOM")
+	if not Appraiser.Buy_Frame.ShoppingMenu then Appraiser.Buy_Frame.ShoppingMenu = CreateFrame("FRAME","AT_Shopping_Menu",Appraiser.Buy_Frame,"UIDropDownForkTemplate") end
+	UIDropDownFork_SetAnchor(Appraiser.Buy_Frame.ShoppingMenu, 0, 0, "TOP", row, "BOTTOM")
 	local menu = {}
 
 	tinsert(menu,{
@@ -748,8 +748,8 @@ function Appraiser:ShoppingRowMenu(row)
 			notCheckable=0,
 		})
 	
-	EasyMenu(menu,Appraiser.Buy_Frame.ShoppingMenu,nil,0,0,"MENU",false)
-	UIDropDownMenu_SetWidth(Appraiser.Buy_Frame.ShoppingMenu, 300)
+	EasyFork(menu,Appraiser.Buy_Frame.ShoppingMenu,nil,0,0,"MENU",false)
+	UIDropDownFork_SetWidth(Appraiser.Buy_Frame.ShoppingMenu, 300)
 end
 
 function Appraiser:ClearSearchData()

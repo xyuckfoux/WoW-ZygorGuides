@@ -12,10 +12,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Assault on Violet Hold dungeon.",
 },[[
 step
-Enter the Assault on Violet Hold Dungeon |goto Violet Hold/1 50.95,69.91 < 10000 |noway |c
+Enter the Assault on Violet Hold Dungeon |goto Dalaran L/10 67.29,69.63 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
-step
-Begin the Assault on Violet Hold Scenario |scenariostart
 step
 label "First_Bosses"
 Kill enemies around this area
@@ -42,7 +40,7 @@ _HEALER:_
 |tip Group members standing near Congealing Goo will take damage every 2 seconds.
 _TANK:_
 |tip Move Festerface to a Recongealing Goo after the DPS kill it, so that he eats it.
-Defeat the First Escaped Prisoner |scenariostage 1 |goto 38.09,33.30 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
+Defeat the First Escaped Prisoner |scenariostage 1 |goto Violet Hold/1 38.09,33.30 |next "First_Bosses" |only if _G.select(2,_G.C_Scenario.GetInfo())==1
 Defeat the Second Escaped Prisoner |scenariostage 2 |goto 38.09,33.30 |next "Final_Boss" |only if _G.select(2,_G.C_Scenario.GetInfo())==2
 step
 label "Shivermaw"
@@ -153,11 +151,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Black Rook Hold dungeon.",
 },[[
 step
-Enter the Black Rook Hold Dungeon
+Enter the Black Rook Hold Dungeon |goto Val'sharah/0 37.13,50.19 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
-confirm
-step
-Begin the Black Rook Hold Scenario |scenariostart
 step
 map Black Rook Hold/1
 path follow loose; loop off; ants curved; dist 20
@@ -292,17 +287,18 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
-Enter the Darkheart Thicket Dungeon |goto Darkheart Thicket/0 36.71,14.16 < 10000 |noway |c
+Enter the Darkheart Thicket Dungeon |goto Val'sharah/0 59.03,31.17 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
-step
-Begin the Darkheart Thicket Scenario |scenariostart
 step
 map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
 path	36.83,15.80	35.81,24.42	29.15,25.62
 path	23.48,24.40	22.68,30.12	25.37,33.84
 path	25.81,46.17	24.77,53.41	24.38,58.57
-Follow the path |goto 24.38,58.57 < 20 |noway |c
+Follow the path around to the right, then back to the left when you reach the tangled trees
+When you reach the Rotting Grotto, continue down the path to the right towards the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Archdruid Glaidalis##96512
 _DAMAGE:_
@@ -319,7 +315,9 @@ path follow loose; loop off; ants curved; dist 20
 path	25.77,65.18	26.42,74.32	32.37,81.02
 path	36.90,78.16	41.62,70.01	42.52,60.78
 path	43.19,49.45
-Follow the path |goto 43.19,49.45 < 20 |noway |c
+Follow the stone path as it curves left to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Oakheart##103344
 _DAMAGE:_
@@ -336,7 +334,11 @@ map Darkheart Thicket/0
 path follow loose; loop off; ants curved; dist 20
 path	46.92,39.38	51.18,35.53	58.71,33.12
 path	61.58,36.45	64.40,41.60
-Follow the path |goto 64.40,41.60 < 20 |noway |c
+Take the northeast passage and follow the water to the second boss
+|tip Avoid touching the eggs, as they will spawn whelps.
+|tip Keep your back faced away from eggs as well. Getting knocked back into eggs will spawn whelps.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Dresaron##99200
 _EVERYONE:_
@@ -351,7 +353,10 @@ path follow loose; loop off; ants curved; dist 20
 path	62.86,49.12	59.35,54.65	57.71,60.05
 path	62.82,67.99	70.71,76.86	75.50,80.77
 path	80.36,84.78
-Follow the path |goto 80.36,84.78 < 20 |noway |c
+Go through the wood arch to the southwest and drop down
+Drop down again into the ravine and follow it south to reach the last boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Shade of Xavius##101403
 _EVERYONE:_
@@ -371,14 +376,16 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
-Enter the Eye of Azshara Dungeon |goto 1046/1 47.59,87.41 < 10000 |noway |c
+Enter the Eye of Azshara Dungeon |goto Azsuna/0 61.12,41.12 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	46.79,83.06	51.94,72.80
 Enter the Eye of Azshara |q 38286/1 |goto 46.86,84.48 |only if not completedq(38286)
-Follow the path down |goto 51.94,72.80 < 20 |noway |c
+Follow the path forward to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Warlord Parjesh##91784
 _DAMAGE:_
@@ -395,7 +402,11 @@ step
 map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	43.42,72.00	39.14,60.22	38.90,51.86
-Follow the path |goto 38.90,51.86 < 20 |noway |c
+Follow the path to the west and continue north
+|tip You will need to kill one or more Hatecoil Arcanists to drop the lightning from Lady Hatecoil.
+|tip Hatecoil Arcanists are located in the bright blue patches of flora.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Lady Hatecoil##91789
 _EVERYONE:_
@@ -409,11 +420,7 @@ _TANK:_
 |tip When Lady Hatecoil casts Beckon Storm, gain threat on the adds that spawn.
 Defeat Lady Hatecoil |scenariogoal 1/28777 |goto 46.49,49.88
 step
-map 1046/1
-path follow loose; loop off; ants curved; dist 20
-path	50.00,42.08	51.65,32.68
-Follow the path |goto 51.65,32.68 < 40 |noway |c
-step
+Go northeast to Serpentrix's island
 kill Serpentrix##91808
 |tip Kill all the enemies around Serpentix before attacking Serpentix.
 _EVERYONE:_
@@ -430,7 +437,10 @@ map 1046/1
 path follow loose; loop off; ants curved; dist 20
 path	65.27,34.60	75.32,37.40	76.11,48.17
 path	70.13,51.15
-Follow the path |goto 70.13,51.15 < 20 |noway |c
+Enter the large cave to the east and follow the right wall to the exit
+Curve around to the southwest and kill the two Skrog giants
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill King Deepbeard##91797
 _EVERYONE:_
@@ -445,7 +455,11 @@ _TANK:_
 |tip Try to keep him from attacking the Healer.
 Defeat King Deepbeard |scenariogoal 1/28778 |goto 66.32,50.04
 step
-Follow the path |goto 68.04,46.53 < 20 |noway |c
+map 1046/1
+path follow loose; loop off; ants curved; dist 20
+path	68.3,47.1	63.2,45.4
+Follow the north passage and drop down by the broken ship
+confirm
 step
 kill Wrath of Azshara##96028
 |tip Kill the enemies channeling him before attacking him.
@@ -480,13 +494,15 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Halls of Valor dungeon.",
 },[[
 step
-Enter the Halls of Valor Dungeon |goto Halls of Valor/2 47.72,8.68 < 10000 |noway |c
+Enter the Halls of Valor Dungeon |goto Stormheim/0 72.64,70.54 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map Halls of Valor/2
 path follow loose; loop off; ants curved; dist 20
-path	47.75,12.21	47.72,39.23
-Follow the path |goto 47.72,39.23 < 50 |noway |c
+path	47.75,12.21	47.0,25.0	47.72,39.23
+Follow the bridge to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Hymdall##94960
 _EVERYONE:_
@@ -498,10 +514,10 @@ _HEALER:_
 |tip Stay behind him.
 _TANK:_
 |tip Face him away from the group.
-Defeat Hymdall |scenariogoal 1/28994 |goto 47.73,43.41
+Defeat Hymdall |scenariogoal 1/28994
 step
-Follow the path that opens up nearby |goto 47.73,43.41 |n
-Enter the Hearth of Revelry |goto Halls of Valor/2 47.67,63.04 < 10000 |noway |c
+Continue forward and enter the Hearth of Revelry
+confirm
 step
 label "Hearth_Of_Revelry"
 What Is Your Group Doing Right Now?
@@ -516,7 +532,9 @@ label "Hyrja"
 map Halls of Valor/2
 path follow loose; loop off; ants curved; dist 20
 path	54.61,71.56	62.17,82.91
-Follow the path up |goto 62.17,82.91 < 20 |noway |c
+Go left, following the banquet tables and going up the two sets of stairs
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Olmyr the Enlightened##97202
 kill Solsten##97219
@@ -530,48 +548,14 @@ _TANK:_
 Defeat Hyrja |scenariogoal 1/28995 |goto 63.56,85.03 |next "Hearth_Of_Revelry"
 step
 label "Fenryr_Start"
-Enter the portal |goto 38.04,75.58 |n
-Travel to the Fields of the Eternal |goto Halls of Valor/1 65.56,31.90 < 10000 |noway |c
+Go right and walk through the portal |goto 38.04,75.58
+Travel to the Fields of the Eternal
+confirm
 step
-Where is Fenryr Located?
-|tip He is randomly located along either the left or right path.
-|tip Open your map to see where he is, then click the line below that matches his location.
-Left Path |confirm |next "Fenryr_Left"
-Right Path |confirm |next "Fenryr_Right"
+Follow the bloody footprints on the ground ahead of you to Fenryr's first location
+DPS Fenryr until he runs away. Then, follow his bloody trail
+confirm
 step
-label "Fenryr_Left"
-map Halls of Valor/1
-path follow loose; loop off; ants curved; dist 20
-path	65.56,31.90	53.66,48.01	52.58,56.29
-path	57.19,62.24
-Follow the path |goto 57.19,62.24 < 20 |noway |c
-step
-map Halls of Valor/1
-path follow loose; loop off; ants curved; dist 20
-path	52.77,62.66	45.34,65.54	40.43,68.96
-path	31.16,74.18
-kill Fenryr##99868
-|tip He will run away before you kill him.
-Follow the path |goto 31.16,74.18 < 20 |noway |c
-|next "Kill_Fenryr"
-step
-label "Fenryr_Right"
-map Halls of Valor/1
-path follow loose; loop off; ants curved; dist 20
-path	51.12,42.10	43.37,41.84	38.19,40.56
-path	36.29,36.13
-Follow the path |goto 36.29,36.13 < 15 |noway |c
-step
-map Halls of Valor/1
-path follow loose; loop off; ants curved; dist 20
-path	36.29,36.13	31.7,44.3	30.3,51.3
-path	30.2,64.0	28.3,71.2
-kill Fenryr##99868
-|tip He will run away before you kill him.
-Follow the path |goto 28.3,71.2 < 20 |noway |c
-|next "Kill_Fenryr"
-step
-label "Kill_Fenryr"
 kill Fenryr##99868
 _EVERYONE:_
 |tip Avoid allies being targeted by Ravenous Leap.
@@ -582,19 +566,20 @@ _HEALER:_
 |tip Run away if you are targeted by Scent of Blood.
 _TANK:_
 |tip Fenryr uses Scent of Blood, which causes him to attack a random party member and you won't be able to interrupt it.
-Defeat Fenryr |scenariogoal 1/28996 |goto 29.16,75.71
+Defeat Fenryr |scenariogoal 1/28996
 step
-Enter the portal |goto 66.56,27.21 |n
-Return to the Hearth of Revelry |goto Halls of Valor/2 47.67,63.04 < 10000 |noway |c |next "Hearth_Of_Revelry"
+Retrace your steps and walk through the portal |goto 66.56,27.21 |n
+Return to the Hearth of Revelry
+confirm |next "Hearth_Of_Revelry"
 step
 label "Halls_Of_Valor_End"
-Go through the doorway |goto Halls of Valor/2 47.71,72.25 |n
-Follow the path |goto Halls of Valor/3 51.38,12.76 < 10000 |noway |c
-step
 map Halls of Valor/3
 path follow loose; loop off; ants curved; dist 20
 path	51.38,12.76	51.37,74.80
-Follow the path |goto 51.37,74.80 |noway |c
+Run through the previously barred doorway in the main hall
+Run up the bridge of light
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 You may kill these in any order, but once the first 2 are talked to, challenged, and defeated the last 2 will gain those 2's abilities and aggro at the same time
 confirm
@@ -617,7 +602,7 @@ _TANK:_
 click Aegis of Aggramar |only if havequest(40072)
 |tip It looks like a golden shield that appears on the ground while fighting God-King Skovald. |only if havequest(40072)
 Claim the Aegis of Aggramar |q 40072/1 |goto 51.44,88.83 |only if havequest(40072)
-Defeat God-King Skovald |scenariogoal 1/28997 |goto 51.44,88.83
+Defeat God-King Skovald |scenariogoal 1/28997
 step
 kill Odyn##95676
 _EVERYONE:_
@@ -626,7 +611,7 @@ _EVERYONE:_
 |tip Avoid the circles on the ground.
 |tip Avoid the glowing orbs that appear after he casts Shatter Spears.
 Defeat Odyn |q 40072/2 |goto 51.44,88.83 |only if havequest(40072)
-Defeat Odyn |scenarioend |goto 51.44,88.83
+Defeat Odyn |scenarioend
 step
 click The Aegis of Aggramar
 turnin Securing the Aegis##40072 |goto 50.73,88.26
@@ -649,7 +634,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Maw of Souls dungeon.",
 },[[
 step
-Enter the _Maw of Souls_ dungeon |goto Helmouth Cliffs/1 46.77,78.55 < 10000 |noway |c
+Enter the _Maw of Souls_ dungeon |goto Stormheim/0 52.47,45.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 kill Ymiron, the Fallen King##96756
@@ -662,15 +647,16 @@ _TANK:_
 |tip Be prepared to use cooldowns when Ymiron's mana bar fills up.
 Defeat Ymiron |scenariogoal 1/29340 |goto Helmouth Cliffs/1 52.89,27.62
 step
-Watch the cutscene
-Travel to Helheim |goto Helmouth Cliffs/2 42.70,45.99 < 10000 |noway |c
+Click the horn on the hill behind where Ymiron spawned
+confirm
 step
 map Helmouth Cliffs/2
 path follow loose; loop off; ants curved; dist 20
 path 42.70,45.99	79.93,56.45
-Run up the stairs |goto Helmouth Cliffs/2 89.56,59.19 |n
+Cross the ship and go up the stairs to the top deck
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 |tip Click the cage to get free after you get teleported.
-Enter the Deck of the Ship |goto 1042/3 74.58,56.22 < 10000 |noway |c
+confirm
 step
 kill Harbaron##96754
 _EVERYONE:_
@@ -687,7 +673,9 @@ step
 map Helmouth Cliffs/3
 path follow loose; loop off; ants curved; dist 20
 path	70.03,46.27	30.80,55.24
-Follow the path down |goto 30.80,55.24 < 20 |noway |c
+Cross the top deck of the ship, killing trash on one side
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Helya##96759
 _EVERYONE:_
@@ -712,16 +700,19 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Neltharion's Lair dungeon.",
 },[[
 step
-Enter the Neltharion's Lair Dungeon |goto Neltharion's Lair/0 96.35,40.19 < 10000 |noway |c
+Enter the Neltharion's Lair Dungeon |goto Highmountain/0 49.57,68.69 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
-Jump down the hole |goto 95.23,42.58 |condition not _G.HasFullControl()
+Jump down the hole |condition not _G.HasFullControl()
 step
 map Neltharion's Lair/0
 path follow loose; loop off; ants curved; dist 20
 path	86.67,49.49	83.14,44.61	76.09,41.28
 path	72.21,45.00
-Follow the path |goto 72.21,45.00 < 15 |noway |c
+Follow the path, killing the mobs along the way
+Jump off the platform at the end into the water below
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Rokmora##91003
 _DAMAGE:_
@@ -734,12 +725,16 @@ Defeat Rokmora |scenariogoal 1/28560 |goto 66.50,50.14
 step
 click Empty Barrel
 Ride in the Empty Barrel |goto 70.12,56.57 |condition not _G.HasFullControl()
+|tip The barrel is located near the water after Rokmora.
 step
 map Neltharion's Lair/0
 path follow loose; loop off; ants curved; dist 20
 path	60.01,85.79	57.45,81.90	54.13,78.25
-path	50.11,73.25
-Follow the path |goto 50.11,73.25 < 30 |noway |c
+path	50.11,73.25	49.1,60.8
+Continue forward and go up the ramp
+|tip Do not take any side passages.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Ularogg Cragshaper##105300
 _DAMAGE:_
@@ -755,7 +750,10 @@ map Neltharion's Lair/0
 path follow loose; loop off; ants curved; dist 20
 path	42.78,50.33	45.00,43.70	46.73,41.00
 path	47.10,33.73	41.93,30.84	37.85,33.44
-Follow the path |goto 37.85,33.44 < 10 |c |noway
+Continue through the dungeon, following the path as it curves to the left
+|tip You can skip the pack of mobs immediately following Ularogg by hugging the left wall.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Naraxas##91005
 _EVERYONE:_
@@ -765,7 +763,7 @@ _HEALER:_
 |tip Be ready to heal the Tank when Naraxas uses Spiked Tongue.
 _TANK:_
 |tip When Naraxas uses Spiked Tongue, move away as far as you can.
-Defeat Naraxas |scenariogoal 1/28562 |goto 33.73,37.20
+Defeat Naraxas |scenariogoal 1/28562
 step
 Jump down the hole |goto 33.50,37.59 |condition not _G.HasFullControl()
 step
@@ -773,7 +771,9 @@ map Neltharion's Lair/0
 path follow loose; loop off; ants curved; dist 20
 path	29.86,41.63	26.98,47.20	24.23,52.25
 path	19.88,55.62	18.08,59.74
-_Follow_ the path |goto 18.08,59.74 < 10 |c |noway
+Continue straight ahead towards the final boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 kill Dargrul the Underking##91007
 _EVERYONE:_
@@ -799,9 +799,8 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Vault of the Wardens dungeon.",
 },[[
 step
-Enter the Vault of the Wardens Dungeon
+Enter the Vault of the Wardens Dungeon |goto Azsuna/0 48.29,80.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
-confirm
 step
 map 1045/1
 path follow loose; loop off; ants curved; dist 20
@@ -959,14 +958,21 @@ step
 Follow the path |goto Suramar/0 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
 Follow the path |goto Suramar/0 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
 Walk into the swirling portal |goto Suramar/0 41.04,61.83 |n |region suramar_sanctum_of_order
-Enter the Arcway Dungeon |goto The Arcway/1 47.99,21.47 < 10000 |noway |c
+Enter the Arcway Dungeon |scenariostart
 |tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
 |tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	48.04,29.01	53.32,35.97	58.68,35.93
-path	67.38,28.51	72.98,32.02
+path	67.38,28.51	73.2,42.2
+Enter The Grand Hall and go through the first passage on the left
+Go down the stairs in front of you
+Go through the passage in the northeast corner of the room
+Make a right and go down the hall to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill General Xakal##98206
 _EVERYONE:_
 |tip Move out of the way when you are targeted with Shadow Slash.
@@ -977,11 +983,17 @@ _HEALER:_
 |tip Be ready for big heals when he casts Wicked Slam.
 _TANK:_
 |tip Make sure to taunt the Dread Felbats that appear.
-Defeat General Xakal |scenariogoal 1/29147 |goto 77.08,49.99
+Defeat General Xakal |scenariogoal 2/29147 |goto 77.08,49.99
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	69.88,55.17	66.82,56.16	64.25,64.36
+Drop down from the ledge in the southwest corner of the room
+|tip Watch out for the patrols underneath the bridge.
+Go up the stairs on the left and go into the next room
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Nal'tira##98207
 _EVERYONE:_
 |tip If you get tethered to another player with Tangled Web, run away from each other to break it.
@@ -989,12 +1001,19 @@ _EVERYONE:_
 |tip Move out of the way if you are targeted by Blink Strikes.
 _HEALER:_
 |tip Be ready for big heals when she casts Temporal Displacement.
-Defeat Nal'tira |scenariogoal 1/29148 |goto 61.66,74.80
+Defeat Nal'tira |scenariogoal 2/29148 |goto 61.66,74.80
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	57.43,75.04	49.67,74.32	48.04,67.56
 path	46.66,64.39	42.98,64.96
+Exit the room through the west opening
+Go up the stairs and make a right, going north
+Take the first passage to your left and go up the stairs
+Enter the first room on your left
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Corstilax##98205
 _EVERYONE:_
 |tip Click the huge crystal that appears when players are targeted by Quarantine to free them.
@@ -1005,11 +1024,15 @@ _EVERYONE:_
 |tip and you get hit by the AoE blast, you will get stunned.
 _HEALER:_
 |tip Be alert when he casts Suppression Protocol, the group can take a good amount of damage.
-Defeat Corstilax |scenariogoal 1/29146 |goto 39.17,77.70
+Defeat Corstilax |scenariogoal 2/29146 |goto 39.17,77.70
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	37.93,67.86	34.41,61.53	28.55,65.99
+Go through the northwest passage and enter the first room on your left
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Ivanyr##98203
 _EVERYONE:_
 |tip Move away from other players if you are afflicted by Volatile Magic.
@@ -1019,13 +1042,21 @@ _DAMAGE:_
 |tip Interrupt him when he starts casting Overcharge Mana.
 _HEALER:_
 |tip Be ready when he casts Volatile Magic, it hits the target hard, as well as allies near the target when it expires.
-Defeat Ivanyr |scenariogoal 1/29145 |goto 18.56,74.01
+Defeat Ivanyr |scenariogoal 2/29145 |goto 18.56,74.01
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	25.58,68.32	32.82,62.56	35.79,62.22
 path	38.39,67.88	41.90,67.63	44.81,63.12
 path	48.03,64.24	49.18,57.34	52.12,50.34
+Exit the chamber the way you came in
+Make a left in the hallway and go down the stairs
+Go through the passage to the left and make a right in the hallway
+Go down the stairs and into the left room at the bottom of the stairs
+|tip You should be in the center ring.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Advisor Vandros##98208
 _EVERYONE:_
 |tip Avoid the blue floating Chrono Shards, they explode after 8 seconds.
@@ -1040,7 +1071,7 @@ _HEALER:_
 Defeat Advisor Vandros |scenarioend |goto 48.04,42.48
 step
 _Congratulations!_
-You completed the Arcway dungeon!
+You completed The Arcway dungeon!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Horde Dungeon Guides\\Legion Dungeons\\Court of Stars",{
 mapid=1045,
@@ -1054,26 +1085,41 @@ step
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000 |noway |c |q 43314
+Enter the Court of Stars Dungeon |scenariostart
 |tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
 |tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 click Signal Lantern
 |tip It's at the end of the dock in front of you after you enter the dungeon.
 |tip Jump onto the boat that arrives.
-Ride the Boat to Moonlit Landing |goto Court of Stars/1 42.52,76.82 < 25 |noway |c
+Ride the Boat to Moonlit Landing |goto Court of Stars/1 42.52,76.82 < 25
+confirm
 step
-Enter the building |goto 42.36,65.29 < 10 |walk |n
-Run up the stairs |goto 42.48,63.33 < 7 |walk |n
-Follow the path |goto 44.42,62.19 < 7 |walk |n
+map Court of Stars/1
+path follow loose; loop off; ants curved; dist 7
+path	42.36,65.29	42.48,63.33	44.42,62.19
+path	42.15,60.49
+Enter the building through the doorway to your left
+Run up the stairs
+Leave the building through the doorway on the top floor
 |tip Kill Duskwatch Sentries before they reach Arcane Beacons, or they will call for reinforcements.
 |tip Arcane Beacons look like pulsing big columns with spiral metal pointed scultures on top of them.
 |tip Click Arcane Beacons to destroy them.
-Leave the building and enter the courtyard |goto 42.15,60.49 < 10 |c
+Leave the building and enter the courtyard
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Court of Stars/1
 path follow loose; loop off; ants curved; dist 20
 path	38.98,53.91	32.01,41.45
+Cross the bridge directly in front of you
+Cross the second bridge to the north
+|tip Kill Duskwatch Sentries before they reach Arcane Beacons, or they will call for reinforcements.
+|tip Arcane Beacons look like pulsing big columns with spiral metal pointed scultures on top of them.
+|tip Click Arcane Beacons to destroy them.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Patrol Captain Gerdo##104215
 |tip He walks around this area.
 |tip Clear the area of trash mobs before engaging him, or they will come to his aid during the fight.
@@ -1092,19 +1138,21 @@ _TANK:_
 |tip Gain threat on the enemies quickly that appear to help him.
 Defeat Patrol Captain Gerdo |scenariogoal 1/29612 |goto 34.28,28.10
 step
-Run up the stairs |goto 38.57,24.65 < 20 |walk |n
-Enter the building |goto 42.62,26.75 < 10 |walk |n
-Run up the stairs |goto 49.15,28.20 < 7 |walk |n
-Continue up the stairs and leave the building |goto 47.85,30.27 < 7 |walk |n
-Enter the building |goto 46.32,35.04 < 7 |walk |n
-Run down the stairs |goto 45.36,36.14 < 7 |walk |n
-Continue down the stairs |goto 45.92,38.93 < 7 |c
+map Court of Stars/1
+path follow loose; loop off; ants curved; dist 20
+path	38.57,24.65	42.62,26.75<10	49.15,28.20<7
+path	47.85,30.27<7	46.32,35.04<7	45.36,36.14<7
+path	45.92,38.93<7	44.89,37.39<7	46.00,40.50<7
+path	48.63,39.27<10
+Run up the stairs on the east side of the center plaza and enter the building
+Run to the top of the spiraling stairs on the far side of the room and leave the building
+Enter the building directly across from the one you left and go all the way downstairs
+Leave the building
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-Follow the path |goto 44.89,37.39 < 7 |walk |n
-Follow the path |goto 46.00,40.50 < 7 |walk |n
-Leave the building |goto 48.63,39.27 < 10 |c
-step
-Cross the bridge |goto 51.11,43.69 < 20
+Cross the bridge to the right of the building's exit |goto 51.11,43.69 < 20
+Go to the courtyard on the other side of the bridge
 kill Felbound Enforcer##104278+
 |tip They walk around this area, so you may need to search a bit for them.
 |tip You can see them as yellow circles on your minimap.
@@ -1115,6 +1163,7 @@ kill Baalgar the Watchful##104274
 kill Jazshariu##104273
 Click Here After Defeating All Three Enemies |confirm |goto 47.70,60.07
 step
+Go to the front of the Jeweled Estate
 kill Talixae Flamewreath##104217
 _EVERYONE:_
 |tip Group together when she starts casting Infernal Eruption, Infernal Imps spawn at the location of all players.
@@ -1130,6 +1179,7 @@ step
 talk Ly'leth Lunastre##106468
 Gain the Masquerade Disguise |havebuff Interface\Icons\inv_helm_mask_fittedalpha_b_01_nightborne_02 |goto 60.46,61.74
 step
+Enter the Jeweled Estate behind Ly'leth Lunastre
 talk Chatty Rumormonger##107486+
 |tip They are 5 of them all around inside this building, upstairs and downstairs.
 |tip You can see them as yellow circles on your minimap.
@@ -1139,7 +1189,7 @@ talk Suspicious Noble##107435
 |tip The correct npc will start talking and walking away.
 Click Here After You've Found the Spy |confirm |goto Court of Stars/2 42.15,46.55
 step
-Follow the path |goto Court of Stars/3 56.88,33.25 < 10 |walk
+Go up the stairs and through the northeast door |goto Court of Stars/3 56.88,33.25 < 10 |walk
 Watch the dialogue
 |tip Follow the Suspicious Noble.
 kill Gerenth the Vile##108151
@@ -1149,6 +1199,8 @@ step
 map Court of Stars/3
 path follow loose; loop off; ants curved; dist 15
 path	56.95,33.22	57.93,54.69	60.40,69.83
+Exit the terrace and go to the southeast door
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 |tip Click the big Skyward Terrace door to open it.
 Watch the dialogue
 kill Advisor Melandrus##104218

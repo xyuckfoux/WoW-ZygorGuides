@@ -1819,9 +1819,9 @@ function ZGV:InitializeDropDown(frame)
 --		if (i == 1) then
 --			info.isTitle = 1
 --		end
-		UIDropDownMenu_AddButton(info)
+		UIDropDownFork_AddButton(info)
 	end
-	UIDropDownMenu_SetText(frame, self.CurrentGuideName)
+	UIDropDownFork_SetText(frame, self.CurrentGuideName)
 end
 
 
@@ -4089,16 +4089,6 @@ local function group_to_array(group)
 	return arr
 end
 
-local function BuildDropDown_GuideMenu(level,value)
-	local self=ZGV
-	--[[
-	local menu = { }
-
-	menu = group_to_array(self.registered_groups)
-	EasyMenu(menu,ZGVFMenu,"ZygorGuidesViewerFrame_Border_TitleBar",30,10,"MENU",3)
-	--]]
-end
-
 function ZGV:GetMostRecentGuide(gtype)
 	local guides = self.db.char.guides_history[gtype]
 	if guides and guides[1] then
@@ -4515,7 +4505,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 			func = function() ZGV:SearchForCompleteableGoal() end
 		}
 	--]]
-	EasyMenu(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)
+	EasyFork(menu,ZGVFMenu,goalframe:GetName(),0,0,"MENU",3)
 end
 
 --[[
@@ -4569,7 +4559,7 @@ function ZGV:OpenQuickSteps()
 		ZGVFMenu.goalframe=nil
 	end
 
-	EasyMenu(menu,ZGVFMenu,"cursor",0,0,"MENU",3)
+	EasyFork(menu,ZGVFMenu,"cursor",0,0,"MENU",3)
 end
 --]]
 
@@ -5876,6 +5866,7 @@ end
 
 
 -- Prevent Blizzard world map taint errors
+--[[
 function WorldMapFrame.UIElementsFrame.ActionButton.GetDisplayLocation(self, useAlternateLocation)
 	if InCombatLockdown() then return end
 	return WorldMapActionButtonMixin.GetDisplayLocation(self, useAlternateLocation)
@@ -5885,6 +5876,7 @@ function WorldMapFrame.UIElementsFrame.ActionButton.Refresh(self)
 	if InCombatLockdown() then return end
 	WorldMapActionButtonMixin.Refresh(self)
 end
+--]]
 
 
 function ZGV:FakeWidescreen()

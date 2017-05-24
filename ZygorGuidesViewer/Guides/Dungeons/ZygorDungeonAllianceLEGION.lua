@@ -12,7 +12,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Assault on Violet Hold dungeon.",
 },[[
 step
-Enter the Assault on Violet Hold Dungeon |scenariostart
+Enter the Assault on Violet Hold Dungeon |goto Dalaran L/10 67.29,69.63 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 label "First_Bosses"
@@ -151,7 +151,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Black Rook Hold dungeon.",
 },[[
 step
-Enter the Black Rook Hold Dungeon |scenariostart
+Enter the Black Rook Hold Dungeon |goto Val'sharah/0 37.13,50.19 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map Black Rook Hold/1
@@ -287,7 +287,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
-Enter the Darkheart Thicket Dungeon |scenariostart
+Enter the Darkheart Thicket Dungeon |goto Val'sharah/0 59.03,31.17 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map Darkheart Thicket/0
@@ -376,7 +376,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
-Enter the Eye of Azshara Dungeon |scenariostart
+Enter the Eye of Azshara Dungeon |goto Azsuna/0 61.12,41.12 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map 1046/1
@@ -494,7 +494,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Halls of Valor dungeon.",
 },[[
 step
-Enter the Halls of Valor Dungeon |scenariostart
+Enter the Halls of Valor Dungeon |goto Stormheim/0 72.64,70.54 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map Halls of Valor/2
@@ -634,7 +634,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Maw of Souls dungeon.",
 },[[
 step
-Enter the _Maw of Souls_ dungeon |scenariostart
+Enter the _Maw of Souls_ dungeon |goto Stormheim/0 52.47,45.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 kill Ymiron, the Fallen King##96756
@@ -700,7 +700,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Neltharion's Lair dungeon.",
 },[[
 step
-Enter the Neltharion's Lair Dungeon |scenariostart
+Enter the Neltharion's Lair Dungeon |goto Highmountain/0 49.57,68.69 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 Jump down the hole |condition not _G.HasFullControl()
@@ -799,7 +799,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Vault of the Wardens dungeon.",
 },[[
 step
-Enter the Vault of the Wardens Dungeon |scenariostart
+Enter the Vault of the Wardens Dungeon |goto Azsuna/0 48.29,80.22 |scenariostart
 |tip Use the Group Finder to enter the dungeon.
 step
 map 1045/1
@@ -958,14 +958,21 @@ step
 Follow the path |goto Suramar/0 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
 Follow the path |goto Suramar/0 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
 Walk into the swirling portal |goto Suramar/0 41.04,61.83 |n |region suramar_sanctum_of_order
-Enter the Arcway Dungeon |goto The Arcway/1 47.99,21.47 < 10000 |noway |c
+Enter the Arcway Dungeon |scenariostart
 |tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
 |tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	48.04,29.01	53.32,35.97	58.68,35.93
-path	67.38,28.51	72.98,32.02
+path	67.38,28.51	73.2,42.2
+Enter The Grand Hall and go through the first passage on the left
+Go down the stairs in front of you
+Go through the passage in the northeast corner of the room
+Make a right and go down the hall to the first boss
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill General Xakal##98206
 _EVERYONE:_
 |tip Move out of the way when you are targeted with Shadow Slash.
@@ -976,11 +983,17 @@ _HEALER:_
 |tip Be ready for big heals when he casts Wicked Slam.
 _TANK:_
 |tip Make sure to taunt the Dread Felbats that appear.
-Defeat General Xakal |scenariogoal 1/29147 |goto 77.08,49.99
+Defeat General Xakal |scenariogoal 2/29147 |goto 77.08,49.99
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	69.88,55.17	66.82,56.16	64.25,64.36
+Drop down from the ledge in the southwest corner of the room
+|tip Watch out for the patrols underneath the bridge.
+Go up the stairs on the left and go into the next room
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Nal'tira##98207
 _EVERYONE:_
 |tip If you get tethered to another player with Tangled Web, run away from each other to break it.
@@ -988,12 +1001,19 @@ _EVERYONE:_
 |tip Move out of the way if you are targeted by Blink Strikes.
 _HEALER:_
 |tip Be ready for big heals when she casts Temporal Displacement.
-Defeat Nal'tira |scenariogoal 1/29148 |goto 61.66,74.80
+Defeat Nal'tira |scenariogoal 2/29148 |goto 61.66,74.80
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	57.43,75.04	49.67,74.32	48.04,67.56
 path	46.66,64.39	42.98,64.96
+Exit the room through the west opening
+Go up the stairs and make a right, going north
+Take the first passage to your left and go up the stairs
+Enter the first room on your left
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Corstilax##98205
 _EVERYONE:_
 |tip Click the huge crystal that appears when players are targeted by Quarantine to free them.
@@ -1004,11 +1024,15 @@ _EVERYONE:_
 |tip and you get hit by the AoE blast, you will get stunned.
 _HEALER:_
 |tip Be alert when he casts Suppression Protocol, the group can take a good amount of damage.
-Defeat Corstilax |scenariogoal 1/29146 |goto 39.17,77.70
+Defeat Corstilax |scenariogoal 2/29146 |goto 39.17,77.70
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	37.93,67.86	34.41,61.53	28.55,65.99
+Go through the northwest passage and enter the first room on your left
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Ivanyr##98203
 _EVERYONE:_
 |tip Move away from other players if you are afflicted by Volatile Magic.
@@ -1018,13 +1042,21 @@ _DAMAGE:_
 |tip Interrupt him when he starts casting Overcharge Mana.
 _HEALER:_
 |tip Be ready when he casts Volatile Magic, it hits the target hard, as well as allies near the target when it expires.
-Defeat Ivanyr |scenariogoal 1/29145 |goto 18.56,74.01
+Defeat Ivanyr |scenariogoal 2/29145 |goto 18.56,74.01
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
 path	25.58,68.32	32.82,62.56	35.79,62.22
 path	38.39,67.88	41.90,67.63	44.81,63.12
 path	48.03,64.24	49.18,57.34	52.12,50.34
+Exit the chamber the way you came in
+Make a left in the hallway and go down the stairs
+Go through the passage to the left and make a right in the hallway
+Go down the stairs and into the left room at the bottom of the stairs
+|tip You should be in the center ring.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Advisor Vandros##98208
 _EVERYONE:_
 |tip Avoid the blue floating Chrono Shards, they explode after 8 seconds.
@@ -1039,7 +1071,7 @@ _HEALER:_
 Defeat Advisor Vandros |scenarioend |goto 48.04,42.48
 step
 _Congratulations!_
-You completed the Arcway dungeon!
+You completed The Arcway dungeon!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Dungeon Guides\\Legion Dungeons\\Court of Stars",{
 mapid=1045,
@@ -1053,26 +1085,41 @@ step
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000 |noway |c |q 43314
+Enter the Court of Stars Dungeon |scenariostart
 |tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
 |tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 click Signal Lantern
 |tip It's at the end of the dock in front of you after you enter the dungeon.
 |tip Jump onto the boat that arrives.
-Ride the Boat to Moonlit Landing |goto Court of Stars/1 42.52,76.82 < 25 |noway |c
+Ride the Boat to Moonlit Landing |goto Court of Stars/1 42.52,76.82 < 25
+confirm
 step
-Enter the building |goto 42.36,65.29 < 10 |walk |n
-Run up the stairs |goto 42.48,63.33 < 7 |walk |n
-Follow the path |goto 44.42,62.19 < 7 |walk |n
+map Court of Stars/1
+path follow loose; loop off; ants curved; dist 7
+path	42.36,65.29	42.48,63.33	44.42,62.19
+path	42.15,60.49
+Enter the building through the doorway to your left
+Run up the stairs
+Leave the building through the doorway on the top floor
 |tip Kill Duskwatch Sentries before they reach Arcane Beacons, or they will call for reinforcements.
 |tip Arcane Beacons look like pulsing big columns with spiral metal pointed scultures on top of them.
 |tip Click Arcane Beacons to destroy them.
-Leave the building and enter the courtyard |goto 42.15,60.49 < 10 |c
+Leave the building and enter the courtyard
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
 map Court of Stars/1
 path follow loose; loop off; ants curved; dist 20
 path	38.98,53.91	32.01,41.45
+Cross the bridge directly in front of you
+Cross the second bridge to the north
+|tip Kill Duskwatch Sentries before they reach Arcane Beacons, or they will call for reinforcements.
+|tip Arcane Beacons look like pulsing big columns with spiral metal pointed scultures on top of them.
+|tip Click Arcane Beacons to destroy them.
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
 kill Patrol Captain Gerdo##104215
 |tip He walks around this area.
 |tip Clear the area of trash mobs before engaging him, or they will come to his aid during the fight.
@@ -1091,19 +1138,21 @@ _TANK:_
 |tip Gain threat on the enemies quickly that appear to help him.
 Defeat Patrol Captain Gerdo |scenariogoal 1/29612 |goto 34.28,28.10
 step
-Run up the stairs |goto 38.57,24.65 < 20 |walk |n
-Enter the building |goto 42.62,26.75 < 10 |walk |n
-Run up the stairs |goto 49.15,28.20 < 7 |walk |n
-Continue up the stairs and leave the building |goto 47.85,30.27 < 7 |walk |n
-Enter the building |goto 46.32,35.04 < 7 |walk |n
-Run down the stairs |goto 45.36,36.14 < 7 |walk |n
-Continue down the stairs |goto 45.92,38.93 < 7 |c
+map Court of Stars/1
+path follow loose; loop off; ants curved; dist 20
+path	38.57,24.65	42.62,26.75<10	49.15,28.20<7
+path	47.85,30.27<7	46.32,35.04<7	45.36,36.14<7
+path	45.92,38.93<7	44.89,37.39<7	46.00,40.50<7
+path	48.63,39.27<10
+Run up the stairs on the east side of the center plaza and enter the building
+Run to the top of the spiraling stairs on the far side of the room and leave the building
+Enter the building directly across from the one you left and go all the way downstairs
+Leave the building
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
 step
-Follow the path |goto 44.89,37.39 < 7 |walk |n
-Follow the path |goto 46.00,40.50 < 7 |walk |n
-Leave the building |goto 48.63,39.27 < 10 |c
-step
-Cross the bridge |goto 51.11,43.69 < 20
+Cross the bridge to the right of the building's exit |goto 51.11,43.69 < 20
+Go to the courtyard on the other side of the bridge
 kill Felbound Enforcer##104278+
 |tip They walk around this area, so you may need to search a bit for them.
 |tip You can see them as yellow circles on your minimap.
@@ -1114,6 +1163,7 @@ kill Baalgar the Watchful##104274
 kill Jazshariu##104273
 Click Here After Defeating All Three Enemies |confirm |goto 47.70,60.07
 step
+Go to the front of the Jeweled Estate
 kill Talixae Flamewreath##104217
 _EVERYONE:_
 |tip Group together when she starts casting Infernal Eruption, Infernal Imps spawn at the location of all players.
@@ -1129,6 +1179,7 @@ step
 talk Ly'leth Lunastre##106468
 Gain the Masquerade Disguise |havebuff Interface\Icons\inv_helm_mask_fittedalpha_b_01_nightborne_02 |goto 60.46,61.74
 step
+Enter the Jeweled Estate behind Ly'leth Lunastre
 talk Chatty Rumormonger##107486+
 |tip They are 5 of them all around inside this building, upstairs and downstairs.
 |tip You can see them as yellow circles on your minimap.
@@ -1138,7 +1189,7 @@ talk Suspicious Noble##107435
 |tip The correct npc will start talking and walking away.
 Click Here After You've Found the Spy |confirm |goto Court of Stars/2 42.15,46.55
 step
-Follow the path |goto Court of Stars/3 56.88,33.25 < 10 |walk
+Go up the stairs and through the northeast door |goto Court of Stars/3 56.88,33.25 < 10 |walk
 Watch the dialogue
 |tip Follow the Suspicious Noble.
 kill Gerenth the Vile##108151
@@ -1148,6 +1199,8 @@ step
 map Court of Stars/3
 path follow loose; loop off; ants curved; dist 15
 path	56.95,33.22	57.93,54.69	60.40,69.83
+Exit the terrace and go to the southeast door
+|tip Opening the world map will display an ant trail guiding you through the current floor.
 |tip Click the big Skyward Terrace door to open it.
 Watch the dialogue
 kill Advisor Melandrus##104218

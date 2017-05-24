@@ -818,8 +818,8 @@ function Appraiser:InventoryRowMenu(row)
 
 	Appraiser.ActiveSearch = row.item.itemid
 
-	if not Appraiser.Inventory_Frame.InventoryMenu then Appraiser.Inventory_Frame.InventoryMenu = CreateFrame("FRAME","AT_Inventory_Menu",Appraiser.Inventory_Frame,"UIDropDownMenuTemplate") end
-	UIDropDownMenu_SetAnchor(Appraiser.Inventory_Frame.InventoryMenu, 0, 0, "TOP", row, "BOTTOM")
+	if not Appraiser.Inventory_Frame.InventoryMenu then Appraiser.Inventory_Frame.InventoryMenu = CreateFrame("FRAME","AT_Inventory_Menu",Appraiser.Inventory_Frame,"UIDropDownForkTemplate") end
+	UIDropDownFork_SetAnchor(Appraiser.Inventory_Frame.InventoryMenu, 0, 0, "TOP", row, "BOTTOM")
 	local menu = {}
 
 	tinsert(menu,{
@@ -833,8 +833,8 @@ function Appraiser:InventoryRowMenu(row)
 			notCheckable=0,
 		})
 	
-	EasyMenu(menu,Appraiser.Inventory_Frame.InventoryMenu,nil,0,0,"MENU",false)
-	UIDropDownMenu_SetWidth(Appraiser.Inventory_Frame.InventoryMenu, 300)
+	EasyFork(menu,Appraiser.Inventory_Frame.InventoryMenu,nil,0,0,"MENU",false)
+	UIDropDownFork_SetWidth(Appraiser.Inventory_Frame.InventoryMenu, 300)
 end
 
 function Appraiser:UpdateAuctionCost(stacksize,stackcount)

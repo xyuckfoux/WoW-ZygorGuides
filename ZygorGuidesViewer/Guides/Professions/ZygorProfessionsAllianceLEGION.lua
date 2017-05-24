@@ -6753,6 +6753,721 @@ step
 _Congratulations!_
 You reached level 800 with the Inscription profession.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Jewelcrafting\\Legion\\Jewelcrafting Quest Line",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+Learn the Jewelcrafting Profession |condition skill("Jewelcrafting")>=1 |goto Dalaran L/10 40.06,35.30
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+accept Facet-nating Friends##40523 |goto 40.27,34.68
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+Tell him _"I'd like to introduce myself."_
+Introduce Yourself to Timothy Jones |q 40523/1 |goto 40.06,35.30
+step
+talk Sminx Glasseye##93543
+|tip Inside the building.
+Tell her _"I'd like to introduce myself."_
+Introduce Yourself to Sminx Glasseye |q 40523/2 |goto 39.60,35.47
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Facet-nating Friends##40523 |goto 40.27,34.70
+accept Truly Outrageous##40529 |goto 40.27,34.70
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+accept A Familiar Ring to It##40524 |goto 40.05,35.28
+step
+collect 15 Leystone Ore##123918 |c |q 40524
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+step
+Use Your Prospecting Ability:
+_<Prospect 15 Leystone Ore>_
+|tip They're in your bags.
+|tip You may need to prospect more or less Leystone Ore, depending on your luck.
+collect 5 Gem Chip##129100 |q 40529/1
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Truly Outrageous##40529 |goto 40.27,34.70
+accept An Eye for Detail##40530 |goto 40.27,34.70
+step
+talk Catriona Macrae##96198
+|tip Upstairs inside the building.
+Talk to Catriona Macrae |q 40530/1 |goto 49.49,39.37
+step
+click Catriona's Jewel
+Examine the Gem |q 40530/2 |goto 49.51,38.15
+step
+talk Didi the Wrench##93520
+|tip Inside the building.
+Tell her _"I'm here to inspect the gem chips Tiffany Cartier gave you."_
+Talk to Didi the Wrench |q 40530/3 |goto 38.84,24.74
+step
+click Gem Chips
+Examine the Gem Chips |q 40530/4 |goto 38.74,24.43
+step
+talk Debbi Moore##97005
+|tip Inside the building.
+Tell her _"I'm here to inspect the jewels Tiffany Cartier gave you."_
+Talk to Debbi Moore |q 40530/5 |goto 49.36,55.25
+step
+click Bag of Jewels
+Examine the Bag of Jewels |q 40530/6 |goto 49.50,55.60
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Bring the Bag of Jewels to Tiffany Cartier |q 40530/7 |goto 40.26,34.70
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin An Eye for Detail##40530 |goto 40.26,34.70
+accept Swift Vengeance##40531 |goto 40.26,34.70
+step
+talk Raethan##97359
+Tell him _"I want to hire a personal bodyguard."_
+|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 40531
+step
+Follow the path down |goto 64.30,58.65 < 15 |walk
+talk Harold Winston##100671
+Tell him _"I'm here to reclaim the jewels you stole."_
+kill Harold Winston##100671
+collect Bag of Real Jewels##132259 |q 40531/1 |goto 49.37,65.62
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Swift Vengeance##40531 |goto Dalaran L/10 40.26,34.70
+step "Menu"
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Choose the Design to Learn:
+|tip You will only accept one of these quests, based on which gem you choose.
+accept Making the Cut##40532 |goto 40.27,34.68 |or |next "Deadly_Amber_Jewelcrafting"
+accept Making the Cut##40533 |goto 40.27,34.68 |or |next "Quick_Azsunite_Jewelcrafting"
+accept Making the Cut##40534 |goto 40.27,34.68 |or |next "Master_Opal_Jewelcrafting"
+step
+label "Deadly_Amber_Jewelcrafting"
+click Tiffany's Carving Machine
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut a Deadly Deep Amber |q 40532/1 |goto 39.99,34.32
+|next "Turnin_Making_The_Cut_Jewelcrafting"
+step
+label "Quick_Azsunite_Jewelcrafting"
+click Tiffany's Carving Machine
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut a Quick Azsunite |q 40533/1 |goto 39.99,34.32
+|next "Turnin_Making_The_Cut_Jewelcrafting"
+step
+label "Master_Opal_Jewelcrafting"
+click Tiffany's Carving Machine
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut a Masterful Queen's Opal |q 40534/1 |goto 39.99,34.32
+|next "Turnin_Making_The_Cut_Jewelcrafting"
+step
+label "Turnin_Making_The_Cut_Jewelcrafting"
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Making the Cut##40532 |goto 40.27,34.68 |only if havequest(40532) or completedq(40532)
+turnin Making the Cut##40533 |goto 40.27,34.68 |only if havequest(40533) or completedq(40533)
+turnin Making the Cut##40534 |goto 40.27,34.68 |only if havequest(40534) or completedq(40534)
+|next "Finish"
+step "Finish"
+Follow the path up |goto Azsuna/0 45.45,42.27 < 20 |only if walking
+talk Lady Irisse##88798
+|tip Inside the building.
+Find Someone Who Knows About the Band of Farondis |q 40524/1 |goto Azsuna/0 47.06,41.48
+step
+talk Timothy Jones##100538
+|tip Inside the building.
+turnin A Familiar Ring to It##40524 |goto 46.67,41.36
+accept Getting the Band Back Together##40525 |goto 46.67,41.36
+accept Knocked for a Loop##42214 |goto 46.67,41.36
+stickystart "Salteye_Bangles_Jewelcrafting"
+step
+Run down the rocks |goto 47.59,40.25 < 20 |only if walking
+Follow the path down |goto 48.59,39.24 < 20 |only if walking
+click Ancient Chest
+|tip Under the broken boat.
+collect Third Piece of the Band of Farondis##132876 |q 40525/3 |goto 50.13,37.17
+step
+click Ancient Chest
+collect Second Piece of the Band of Farondis##132875 |q 40525/2 |goto 49.95,35.42
+step
+click Ancient Chest
+collect First Piece of the Band of Farondis##132368 |q 40525/1 |goto 50.65,32.77
+step "Salteye_Bangles_Jewelcrafting"
+Kill Salteye enemies around this area
+collect 10 Salteye Bangle##132370 |q 42214/1 |goto 49.99,36.77
+step
+Follow the path up |goto 50.96,32.72 < 20 |only if walking
+Follow the path |goto 50.38,31.94 < 30 |only if walking
+Follow the road |goto 49.48,33.22 < 30 |only if walking
+Follow the road |goto 49.23,33.99 < 30 |only if walking
+Continue following the road |goto 48.45,36.05 < 30 |only if walking
+Follow the path up |goto 48.32,38.07 < 20 |only if walking
+Cross the bridge |goto 47.31,38.26 < 20 |only if walking
+talk Timothy Jones##100710
+|tip Inside the building.
+turnin Getting the Band Back Together##40525 |goto 46.67,41.36
+turnin Knocked for a Loop##42214 |goto 46.67,41.36
+step
+talk Timothy Jones##100710
+|tip Inside the building.
+Choose the Design to Learn:
+|tip You will only accept one of these quests, based on which gem you choose.
+accept Finishing Touches##40526 |goto 46.67,41.36 |or |next "Design_Skystone_Loop_Jewelcrafting"
+accept Finishing Touches##40527 |goto 46.67,41.36 |or |next "Design_Deep_Amber_Loop_Jewelcrafting"
+accept Finishing Touches##40528 |goto 46.67,41.36 |or |next "Design_Azsunite_Loop_Jewelcrafting"
+step
+label "Design_Skystone_Loop_Jewelcrafting"
+click Timothy's Gem Vice
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut the Skystone |q 40526/1 |goto 46.68,41.31
+|next "Turnin_Finishing_Touches_Jewelcrafting"
+step
+label "Design_Deep_Amber_Loop_Jewelcrafting"
+click Timothy's Gem Vice
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut the Deep Amber |q 40527/1 |goto 46.68,41.31
+|next "Turnin_Finishing_Touches_Jewelcrafting"
+step
+label "Design_Azsunite_Loop_Jewelcrafting"
+click Timothy's Gem Vice
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut the Azsunite |q 40528/1 |goto 46.68,41.31
+|next "Turnin_Finishing_Touches_Jewelcrafting"
+step
+label "Turnin_Finishing_Touches_Jewelcrafting"
+talk Timothy Jones##100710
+|tip Inside the building.
+turnin Finishing Touches##40526 |goto 46.67,41.36 |only if havequest(40526) or completedq(40526)
+turnin Finishing Touches##40527 |goto 46.67,41.36 |only if havequest(40527) or completedq(40527)
+turnin Finishing Touches##40528 |goto 46.67,41.36 |only if havequest(40528) or completedq(40528)
+step
+Reach Level 102 |ding 102
+|tip Use the Leveling guides to accomplish this.
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+accept Raising the Drogbar##40535 |goto Dalaran L/10 40.26,34.70
+step
+Cross the bridge |goto Val'sharah/0 53.81,72.47 < 20 |only if walking
+Follow the path |goto Val'sharah/0 53.02,71.67 < 30 |only if walking
+Continue following the path |goto Val'sharah/0 51.00,70.64 < 30 |only if walking
+Follow the path down |goto Val'sharah/0 48.32,68.85 < 30 |only if walking
+talk Lasune Starblade##100884
+|tip Inside the building.
+Watch the dialogue
+Talk to the Locals |q 40535/1 |goto Val'sharah/0 45.65,67.21
+step
+Follow the path |goto 45.07,72.33 < 20 |only if walking
+talk Jabrul##100498
+Find Jabrul |q 40535/2 |goto 45.37,73.33
+step
+Follow the path |goto 44.56,73.51 < 20 |only if walking
+Follow the path up |goto 44.53,74.16 < 20 |only if walking
+click Jabrul's Bag of Jewels
+collect Jabrul's Jewels##132446 |q 40535/3 |goto 44.72,74.78
+step
+talk Jabrul##100498
+Watch the dialogue
+Bring Jabrul His Jewels |q 40535/4 |goto 45.37,73.33
+step
+talk Jabrul##100776
+turnin Raising the Drogbar##40535 |goto 45.37,73.33
+accept Bruls Before Jewels##40536 |goto 45.37,73.33
+step
+talk Jabrul##100776 |goto 45.37,73.33 |n
+|tip He will start following you.
+Begin Following the Water West |goto 45.37,73.33 > 10 |noway |c |q 40536
+step
+Follow the path |goto 43.08,74.98 < 20 |only if walking
+Kill the enemies that attack
+Help Jabrul Find the First Stone |q 40536/1 |goto 41.48,76.54
+step
+Follow the path |goto 42.87,77.71 < 20 |only if walking
+Kill the enemies that attack
+Help Jabrul Find the Second Stone |q 40536/2 |goto 44.55,78.54
+step
+Follow the path |goto 44.88,75.92 < 30 |only if walking
+Cross the bridge |goto 45.08,73.73 < 20 |only if walking
+Continue following the path |goto 45.08,72.26 < 20 |only if walking
+Escort Jabrul to the Night Elf Camp |q 40536/3 |goto 45.61,69.11
+step
+talk Jabrul##100776
+|tip Inside the building.
+turnin Bruls Before Jewels##40536 |goto 45.45,67.37
+step
+Reach Level 104 |ding 104
+|tip Use the Leveling guides to accomplish this.
+step
+talk Clive Cozen##100939
+|tip Outside next to the building.
+accept Hidden Intentions##40539 |goto Dalaran L/10 38.96,35.83
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+accept Lapidary Lessons##40538 |goto 40.26,34.70
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+Tell her _I'm looking for some diamonds, Tiffany, do you have any?_
+Watch the dialogue
+Ask Tiffany Cartier Where to Get Diamonds |q 40539/1 |goto 40.26,34.70
+step
+talk Raethan##97359
+Tell him _"I want to hire a personal bodyguard."_
+|tip This will cost 5 gold, but will prevent other players from attacking you, for 5 minutes, in this PvP area.
+Hire a Bodyguard |havebuff Interface\Icons\inv_offhand_dalaran_d_01 |goto Dalaran L/11 68.99,58.38 |q 40539
+step
+Follow the path |goto 59.77,39.48 < 15 |walk
+talk Ms. Xiulan##101492
+Ask Around the Underbelly for Diamonds |q 40539/2 |goto 71.41,19.60
+step
+talk Ms. Xiulan##101492
+Tell her _"(Aggressive) 250 gold is outrageous for one diamond! I'll give you 10."_
+Tell her _"I'll look into doing that favor for you."_
+Click Here After You Talk to Ms. Xiulan |confirm |goto 71.32,19.67 |q 40539
+step
+Follow the path |goto 67.16,25.53 < 15 |walk
+Run down the stairs |goto 57.84,50.87 < 15 |walk
+talk Inkrot##97756
+|tip Under the stairs.
+kill Inkrot##97756
+Take Care of Inkrot |q 40539/3 |goto 60.41,78.22
+step
+Run up the stairs |goto 54.94,55.97 < 15 |walk
+Follow the path |goto 59.79,39.07 < 15 |walk
+talk Ms. Xiulan##101492
+collect Black Market Diamond##137624 |q 40539/4 |goto 71.30,19.70
+step
+Use the Black Market Diamond |use Black Market Diamond##137624
+Carve the Black Market Diamond into a Diamond Lockpick |condition itemcount(137624) == 0 |q 40539
+step
+talk Clive Cozen##100939
+|tip Outside next to the building.
+turnin Hidden Intentions##40539 |goto Dalaran L/10 38.95,35.81
+step
+click Tiffany's Carving Machine
+|tip Inside the building.
+|tip Use the abilities on your action bar to rotate the gem.
+|tip Right-click the jagged shards to cut the gem.
+Cut a Well-Cut Maelstrom Sapphire |q 40538/1 |goto 40.00,34.32
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Lapidary Lessons##40538 |goto 40.27,34.68
+step
+Reach Level 106 |ding 106
+|tip Use the Leveling guides to accomplish this.
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+accept Come at Me, Brul##40540 |goto 40.27,34.68
+step
+Follow the path |goto Stormheim/0 34.24,49.26 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path up |goto Stormheim/0 35.08,47.32 < 20 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto Stormheim/0 37.55,45.63 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto Stormheim/0 38.74,45.24 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path down |goto Stormheim/0 39.10,41.02 < 30 |only if walking and _G.UnitFactionGroup("player")=="Alliance"
+Follow the path |goto Stormheim/0 37.66,32.15 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path up |goto Stormheim/0 39.79,34.30 < 30 |only if walking and _G.UnitFactionGroup("player")=="Horde"
+Follow the path up |goto Stormheim/0 41.30,35.73 < 20 |only if walking
+Run up the rocks |goto Stormheim/0 42.11,35.75 < 15 |only if walking
+talk Jabrul##100499
+turnin Come at Me, Brul##40540 |goto Stormheim/0 42.25,34.99
+accept The Charge Within##40541 |goto Stormheim/0 42.25,34.99
+accept Mysteries of Nature##40546 |goto Stormheim/0 42.25,34.99
+stickystart "The_Charge_Within_Jewelcrafting"
+step
+Follow the path up |goto 42.84,36.98 < 20 |only if walking
+Follow the path |goto 45.14,37.00 < 20 |only if walking
+Follow the path |goto 46.87,34.49 < 20 |only if walking
+click Dragon Glass
+collect Dragon Glass##132820 |q 40546/1 |goto 46.68,31.19
+step
+label "The_Charge_Within_Jewelcrafting"
+Kill Squallhunter enemies around this area
+|tip The Squallhunter Whelplings don't count.
+Use the Absorb Charge ability near their corpses
+|tip It appears as a button on the screen.
+Collect #10# Storm Dragon Charges |q 40541/1 |goto 46.85,34.74
+step
+Follow the path down |goto 45.08,36.93 < 30 |only if walking
+Follow the path down |goto 42.58,36.58 < 20 |only if walking
+Run up the rocks |goto Stormheim/0 42.11,35.75 < 15 |only if walking
+talk Jabrul##100499
+turnin The Charge Within##40541 |goto 42.25,35.00
+turnin Mysteries of Nature##40546 |goto 42.25,35.00
+step
+talk Jabrul##101119
+Choose the Design to Learn:
+|tip You will only accept one of these quests, based on which gem you choose.
+accept Eyes of Nashal##40542 |goto 42.25,35.00 |or
+accept Eyes of Nashal##40543 |goto 42.25,35.00 |or
+accept Eyes of Nashal##40544 |goto 42.25,35.00 |or
+step
+Enter the building |goto 42.35,34.58 < 10 |walk
+Follow the path up |goto 42.62,33.66 < 10 |walk
+click Eye of Nashal
+|tip At the top of the tower.
+collect Eye of Nashal##132767 |q 40542/1 |count 1 |goto 42.51,33.99 |only if havequest(40542) or completedq(40542)
+collect Eye of Nashal##132767 |q 40543/1 |count 1 |goto 42.51,33.99 |only if havequest(40543) or completedq(40543)
+collect Eye of Nashal##132767 |q 40544/1 |count 1 |goto 42.51,33.99 |only if havequest(40544) or completedq(40544)
+step
+click Eye of Nashal
+|tip At the top of the tower.
+collect Eye of Nashal##132767 |q 40542/1 |count 2 |goto 42.41,34.12 |only if havequest(40542) or completedq(40542)
+collect Eye of Nashal##132767 |q 40543/1 |count 2 |goto 42.41,34.12 |only if havequest(40543) or completedq(40543)
+collect Eye of Nashal##132767 |q 40544/1 |count 2 |goto 42.41,34.12 |only if havequest(40544) or completedq(40544)
+step
+talk Jabrul##101119
+|tip At the bottom of the tower, outside.
+turnin Eyes of Nashal##40542 |goto 42.25,35.00 |only if havequest(40542) or completedq(40542)
+turnin Eyes of Nashal##40543 |goto 42.25,35.00 |only if havequest(40543) or completedq(40543)
+turnin Eyes of Nashal##40544 |goto 42.25,35.00 |only if havequest(40544) or completedq(40544)
+step
+Reach Level 108 |ding 108
+|tip Use the Leveling guides to accomplish this.
+step
+click Letter From Jabrul
+|tip Inside the building.
+accept Jabrul Needs You##40556 |goto Dalaran L/10 40.03,33.95
+step
+talk Jabrul##100521
+turnin Jabrul Needs You##40556 |goto Azsuna/0 56.37,59.62
+accept To Dalaran, With Love##40547 |goto Azsuna/0 56.37,59.62
+step
+click Floating Planks
+|tip They look like brown wooden boards floating in the water around this area.
+collect 6 Wooden Plank##132823 |q 40547/1 |goto 55.34,58.86
+step
+talk Jabrul##100521
+Click Here After Talking to Jabrul |confirm |goto 56.37,59.62 |q 40547
+step
+click Inconspicuous Crate
+Crate Up and Mail Jabrul |q 40547/2 |goto 56.36,59.57
+step
+click Inconspicuous Crate
+Watch the dialogue
+Make Sure Jabrul Arrived Safely |q 40547/3 |goto Dalaran L/10 40.16,32.28
+step
+talk Jabrul##100500
+|tip Inside the building.
+turnin To Dalaran, With Love##40547 |goto 39.78,34.05
+step
+Reach Level 110 |ding 110
+|tip Use the Leveling guides to accomplish this.
+step
+Unlock World Quests |condition completedq(43341)
+|tip Use the World Quests guide to accomplish this.
+step
+_Using the Suramar Questing Guide:_
+|tip Use the Suramar questing guide to complete quests until you complete the quest titled "Masquerade".
+|tip This is the quest when you unlock the action button ability to disguise yourself in Suramar City.
+Complete the "Masquerade" Quest in Suramar |condition completedq(42079)
+step
+click Broken Toy Box
+|tip Inside the building.
+accept Socket to Me##40558 |goto 40.06,34.90
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+accept Jewel of the Heavens##40561 |goto 40.05,35.30
+accept Spiriting Away##40560 |goto 40.05,35.30
+accept The Raven's Wisdom##40559 |goto 40.05,35.30
+step
+Reach Level 600 Jewelcrafting |skill Jewelcrafting,600
+|tip Use the "Jewelcrafting 1-600" profession guide to accomplish this.
+step
+talk Sminx Glasseye##93543
+accept A Personal Touch##40562 |goto 39.60,35.49
+step
+Cross the bridge |goto Suramar/0 48.37,80.46 < 20 |only if walking
+Run up the stairs |goto Suramar/0 48.51,79.08 < 20 |only if walking
+click Nightborne Jewelry Cases
+|tip They look like display boxes with various colored gems in them on the counters around this area.
+collect 5 Nightborne Jewelry Case##139887 |q 40562/2 |goto Suramar/0 49.70,77.42
+step
+click Custom Jewelry Order
+collect Custom Jewelry Order##139886 |q 40562/1 |goto 50.03,75.99
+step
+Run down the stairs |goto 48.41,78.78 < 20 |only if walking
+Cross the bridge |goto 51.20,82.48 < 20 |only if walking
+kill Duskwatch Shroud##111619+
+|tip You will likely need to kill several to get the item.
+collect Nightborne Loupe##132867 |q 40562/3 |goto 50.81,84.05
+step
+kill Adult Truesilver Crab##101624
+|tip Underwater inside the sunken ship.
+collect Crystal Shell##132838 |q 40558/1 |goto Northern Stranglethorn/0 35.74,55.87
+step
+kill Lost Netherwhelp##101625
+collect Crystal Scale##132840 |q 40558/3 |goto Twilight Highlands/0 25.87,69.66
+step
+click Jade Plume
+collect Crystal Plume##132843 |q 40558/6 |goto Moonglade/0 31.07,47.63
+step
+click Portal to Deepholm |goto Stormwind City/0 73.20,19.64 |n |only Alliance
+click Portal to Deepholm |goto Orgrimmar/1 50.8,36.4 |n |only Horde
+Travel to Deepholm |goto Deepholm/0 48.73,53.56 < 10000 |noway |c |q 40558
+step
+kill Crimson Geode##108950
+collect Crystal Core##132839 |q 40558/2 |goto Deepholm/0 51.99,20.17
+step
+click Golden Hare##101629
+|tip It looks like a small yellow rabbit running around on the ground.
+Use the Golden Hare |use Golden Hare##132976
+collect Crystal Heart##132841 |q 40558/4 |goto Vale of Eternal Blossoms/0 14.03,67.19
+step
+Cross the bridge |goto Highmountain/0 58.53,64.44 < 20 |only if walking
+Follow the path up |goto Highmountain/0 57.40,63.31 < 30 |only if walking
+Follow the path up |goto Highmountain/0 55.90,63.94 < 30 |only if walking
+Follow the path up |goto Highmountain/0 54.70,67.09 < 30 |only if walking
+Continue following the path up |goto Highmountain/0 55.33,71.95 < 30 |only if walking
+Continue up the path |goto Highmountain/0 54.52,73.24 < 30 |only if walking
+Enter the cave |goto Highmountain/0 54.59,75.32 < 20 |walk
+Follow the path down |goto Highmountain/0 54.96,78.00 < 20 |walk
+Follow the path down |goto Highmountain/0 55.25,80.14 < 30 |walk
+kill Amberstone Earthrender##101630
+collect Crystal Shard##132842 |q 40558/5 |goto Highmountain/0 53.41,81.35
+step
+talk Sminx Glasseye##93543
+|tip Inside the building.
+turnin A Personal Touch##40562 |goto Dalaran L/10 39.61,35.49
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+turnin Socket to Me##40558 |goto 40.26,34.68
+step
+_Enter the Black Rook Hold Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+click Delayeth's Journal: The Jewels of the Is
+|tip This is located on the bottom floor of The Grand Hall.
+|tip Use the Black Rook Hold dungeon guide to navigate the dungeon.
+collect Delayeth's Journal: The Jewels of the Is##132859 |q 40559/1 |goto Black Rook Hold/2 57.21,40.74
+step
+kill Dantalionax##98970 |q 40559/2
+|tip Use the Black Rook Hold dungeon guide to accomplish this.
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+turnin The Raven's Wisdom##40559 |goto Dalaran L/10 40.06,35.30
+step
+_Enter the Maw of Souls Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+click Musty Crate
+|tip Under the stairs on the right side.
+|tip Use the Maw of Souls dungeon guide to navigate the dungeon.
+collect Ring of the Fallen##132862 |q 40560/1 |goto Helmouth Cliffs/2 68.88,66.13
+step
+kill Helya##96759 |q 40560/2
+|tip Use the Maw of Souls dungeon guide to accomplish this.
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+turnin Spiriting Away##40560 |goto Dalaran L/10 40.06,35.30
+step
+_Enter the Halls of Valor Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+kill Odyn##95676
+|tip Use the Halls of Valor dungeon guide to accomplish this.
+click Spoils of the Worthy
+|tip It appears after you defeat Odyn.
+collect Thrymja, Ring of the Gods##132866 |q 40561/1
+step
+talk Timothy Jones##93527
+|tip Inside the building.
+turnin Jewel of the Heavens##40561 |goto 40.06,35.30
+step
+_Congratulations!_
+You completed the Jewelcrafting questline.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Jewelcrafting\\Legion\\Jewelcrafting 700-800",{
+author="support@zygorguides.com",
+startlevel=100.0,
+},[[
+step
+_Before Starting This Guide:_
+Complete the "Jewelcrafting Quest Line" Guide
+Click Here to Continue |confirm
+step
+talk Jabrul##100500
+|tip Inside the building.
+buy 1 Design: Quick Azsunite##138452 |n
+Use the Design: Quick Azsunite |use Design: Quick Azsunite##138452
+Learn the Design for Quick Azsunite |learn Quick Azsunite##195849 |goto Dalaran L/10 39.70,34.26
+step
+collect Leystone Ore##123918 |n
+collect Felslate##123919 |n
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+Use Your Prospecting Ability:
+_<Prospect Leystone Ore & Felslate>_
+|tip They're in your bags.
+|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
+collect 25 Azsunite##130174
+|tip You can also purchase them from the Auction House.
+|only if skill("Jewelcrafting") < 715
+step
+Open Your Jewelcrafting Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+_<Create 25 Quick Azsunite>_
+Reach Level 715 Jewelcrafting |skill Jewelcrafting,715
+step
+talk Jabrul##100500
+|tip Inside the building.
+buy 1 Design: Skystone Loop##137793 |n
+Use the Design: Skystone Loop |use Design: Skystone Loop##137793
+Learn the Rank 1 Design for Skystone Loop |learn Skystone Loop##195857 |goto 39.70,34.26
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+buy 1 Design: Skystone Loop##137818 |n
+Use the Design: Skystone Loop |use Design: Skystone Loop##137818
+Learn the Rank 2 Design for Skystone Loop |learn Skystone Loop##195903 |goto 40.26,34.68
+step
+Reach Honored Reputation with the Highmountain Tribe Faction |condition rep("Highmountain Tribe")>=Honored
+|tip Use the "Highmountain" Leveling guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Highmountain world quests to accomplish this.
+step
+talk Ransa Greyfeather##106902
+buy 1 Design: Skystone Loop##137839 |n
+Use the Design: Skystone Loop |use Design: Skystone Loop##137839
+Learn the Rank 3 Design for Skystone Loop |learn Skystone Loop##195924 |goto Thunder Totem/0 38.07,46.05
+step
+collect Leystone Ore##123918 |n
+collect Felslate##123919 |n
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+Use Your Prospecting Ability:
+_<Prospect Leystone Ore & Felslate>_
+|tip They're in your bags.
+|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
+collect 50 Skystone##130176 |c
+collect 25 Chaotic Spinel##130175 |c
+|tip You can also purchase them from the Auction House.
+|only if skill("Jewelcrafting") < 740
+step
+Open Your Jewelcrafting Crafting Panel:
+_<Create 25 Skystone Loop>_
+Reach Level 740 Jewelcrafting |skill Jewelcrafting,740
+step
+talk Jabrul##100500
+|tip Inside the building.
+buy 1 Design: Azsunite Pendant##137797 |n
+Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137797
+Learn the Rank 1 Design for Azsunite Pendant |learn Azsunite Pendant##195861 |goto Dalaran L/10 39.70,34.26
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+buy 1 Design: Azsunite Pendant##137822 |n
+Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137822
+Learn the Rank 2 Design for Azsunite Pendant |learn Azsunite Pendant##195907 |goto 40.26,34.68
+step
+Complete the _"Work Order: Azsunite Pendant"_ World Quest
+|tip This world quest appears in Azsuna when it is available.
+|tip Use the Legion World Quests guide to accomplish this.
+collect Design: Azsunite Pendant##137843 |n
+|tip This design can only be obtained from this world quest.
+Use the Design: Azsunite Pendant |use Design: Azsunite Pendant##137843
+Learn the Rank 3 Design for Azsunite Pendant |learn Azsunite Pendant##195928
+step
+collect Leystone Ore##123918 |n
+collect Felslate##123919 |n
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+Use Your Prospecting Ability:
+_<Prospect Leystone Ore & Felslate>_
+|tip They're in your bags.
+|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
+collect 125 Skystone##130176 |c
+collect 25 Sangrite##130172 |c
+|tip You can also purchase them from the Auction House.
+|only if skill("Jewelcrafting") < 764
+step
+Open Your Jewelcrafting Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+_<Create 25 Azsunite Pendant>_
+|tip Make sure to stop crafting when you reach level 764 Jewelcrafting.
+Reach Level 764 Jewelcrafting |skill Jewelcrafting,764
+step
+talk Jabrul##100500
+|tip Inside the building.
+buy 1 Design: Raging Furystone Gorget##137811 |n
+Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137811
+Learn the Rank 1 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195875 |goto 39.70,34.26
+step
+talk Tiffany Cartier##93526
+|tip Inside the building.
+buy 1 Design: Raging Furystone Gorget##137836 |n
+Use the Design: Azsunite Pendant |use Design: Raging Furystone Gorget##137836
+Learn the Rank 2 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195921 |goto 40.26,34.68
+step
+_Enter the Halls of Valor (Heroic) Dungeon:_
+|tip Use the Group Finder to enter the dungeon.
+kill Odyn##95676
+|tip Use the Halls of Valor dungeon guide to accomplish this.
+click Spoils of the Worthy
+|tip It appears after you defeat Odyn.
+collect Design: Raging Furystone Gorget##137857 |n
+|tip You may have to run the dungeon multiple times before this drops.
+Use the Design: Raging Furystone Gorget |use Design: Raging Furystone Gorget##137857
+Learn the Rank 3 Design for Raging Furystone Gorget |learn Raging Furystone Gorget##195942
+step
+collect Leystone Ore##123918 |n
+collect Felslate##123919 |n
+|tip Use the "Leystone Ore & Felslate (Mining Route)" guide to gather them, if you have Mining.
+|tip You can also buy them from the Auction House.
+Use Your Prospecting Ability:
+_<Prospect Leystone Ore & Felslate>_
+|tip They're in your bags.
+|tip You may need to prospect more or less Leystone Ore & Felslate, depending on your luck.
+collect 90 Furystone##130178 |c
+collect 30 Pandemonite##130181 |c
+|tip You can also purchase them from the Auction House.
+|only if skill("Jewelcrafting") < 800
+step
+_Complete "Brimstone Destroyer" World Quests:_
+|tip These world quests require you to have the Mining profession.
+|tip Look on your world map in all of the Legion zones.
+|tip The world quest will have a Mining icon.
+|tip Use the World Quests guide to accomplish this.
+collect 60 Infernal Brimstone##124444
+|tip You can also purchase them from the Auction House.
+|only if skill("Jewelcrafting") < 800
+step
+collect 150 Blood of Sargeras##124124 |c
+|tip You can get these as rewards for certain world quests or killing dungeon bosses.
+|tip Use the "World Quests" guide and dungeon guides to accomplish this.
+|tip You can also get them by gathering with gathering professions at rank 2 or higher.
+|tip Use the Farming guides for to accomplish this.
+|only if skill("Jewelcrafting") < 800
+step
+Open Your Jewelcrafting Crafting Panel:
+|tip You may have to make a few more or less, depending on your luck.
+|tip The recipe will turn green and stop giving a guaranteed skill up each time you make it.
+_<Create 30 Raging Furystone Gorget>_
+Reach Level 800 Jewelcrafting |skill Jewelcrafting,800
+step
+_Congratulations!_
+You reached level 800 with the Jewelcrafting profession.
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Profession Guides\\Farming\\Legion\\Skinning\\Stonehide Leather",{
 author="support@zygorguides.com",
 startlevel=100.0,

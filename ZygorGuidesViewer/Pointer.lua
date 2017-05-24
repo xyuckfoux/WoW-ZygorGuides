@@ -2528,9 +2528,12 @@ end
 
 function Pointer.ArrowFrame_ShowMenu()
 	local self=ZGV.Pointer.ArrowFrame
-	if not self.menu then self.menu = CreateFrame("FRAME",self:GetName().."Menu",self,"UIDropDownMenuTemplate") end
+	if not self.menuframe then self.menuframe = CreateFrame("FRAME",self:GetName().."Menu",self) end
 
-	UIDropDownMenu_SetAnchor(self.menu, 0, 0, "TOP", self, "BOTTOM")
+	local Dewdrop = AceLibrary:GetInstance("Dewdrop-2.0")
+	
+	UIDropDownFork_SetAnchor(self.menu, 0, 0, "TOP", self, "BOTTOM")
+
 	--local backdrop = DropDownList1:GetBackdrop()
 	--backdrop.edgeSize=16
 	--DropDownList1:SetBackdrop(backdrop)
@@ -2767,8 +2770,8 @@ function Pointer.ArrowFrame_ShowMenu()
 			notCheckable=1,
 		})
 		
-	EasyMenu(menu,self.menu,nil,0,0,"MENU",10)
-	UIDropDownMenu_SetWidth(self.menu, 300)
+	EasyFork(menu,self.menuframe,nil,0,0,"MENU",10)
+	UIDropDownFork_SetWidth(self.menu, 300)
 end
 
 function Pointer.ArrowFrame_SetAlpha(but,v)

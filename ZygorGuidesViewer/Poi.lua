@@ -524,8 +524,8 @@ function Poi:ShowMapMenu()
 	--if not ZGV.DEV then return end  --devwall
 
 	local self=ZGV.Poi.MapButtonFrame 
-	if not self.menu then self.menu = CreateFrame("FRAME",self:GetName().."Menu",self,"UIDropDownMenuTemplate") end
-	UIDropDownMenu_SetAnchor(self.menu, 0, 0, "BOTTOMLEFT", self, "BOTTOMRIGHT")
+	if not self.menu then self.menu = CreateFrame("FRAME",self:GetName().."Menu",self,"UIDropDownForkTemplate") end
+	UIDropDownFork_SetAnchor(self.menu, 0, 0, "BOTTOMLEFT", self, "BOTTOMRIGHT")
 	local menu = {}
 
 	if ZGV.db.profile.poienabled then 
@@ -570,7 +570,7 @@ function Poi:ShowMapMenu()
 								ZGV.db.profile.hideguide[keyword] = true
 							end
 							ZGV.Poi:ChangeState(true) 
-							UIDropDownMenu_Refresh(self.menu) 
+							UIDropDownFork_Refresh(self.menu) 
 						end }
 				)
 			end
@@ -598,7 +598,7 @@ function Poi:ShowMapMenu()
 					func = function() 
 						ZGV.db.profile.poitype=1 
 						ZGV.Poi:ChangeState(true) 
-						UIDropDownMenu_Refresh(self.menu) 
+						UIDropDownFork_Refresh(self.menu) 
 					end },
 					{ text = L['opt_poitype_complete'], 
 					keepShownOnClick=true, 
@@ -606,7 +606,7 @@ function Poi:ShowMapMenu()
 					func = function() 
 						ZGV.db.profile.poitype=2 
 						ZGV.Poi:ChangeState(true) 
-						UIDropDownMenu_Refresh(self.menu) 
+						UIDropDownFork_Refresh(self.menu) 
 					end },
 				},
 				notCheckable=1,
@@ -639,8 +639,8 @@ function Poi:ShowMapMenu()
 			})
 	end
 	
-	EasyMenu(menu,self.menu,nil,0,0,"MENU",false)
-	UIDropDownMenu_SetWidth(self.menu, 300)
+	EasyFork(menu,self.menu,nil,0,0,"MENU",false)
+	UIDropDownFork_SetWidth(self.menu, 300)
 end
 
 

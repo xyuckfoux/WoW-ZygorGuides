@@ -33,6 +33,9 @@
 	<Include file="HereBeDragons-1.0\HereBeDragons-1.0.lua"/>
 	<Include file="HereBeDragons-1.0\HereBeDragons-Pins-1.0.lua"/>
 
+	<Include file="UIDropDownFork.xml"/>
+	<Script file="EasyFork.lua"/>
+
 	<!--
 	<Include file="LibQuestWatch-1.0\lib.xml"/>
 	-->

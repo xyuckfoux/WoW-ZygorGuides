@@ -4,7 +4,7 @@ local data={}
 addon.LibRoverData = data
 
 data.version={
-	nodes_version = 12,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
+	nodes_version = 13,  -- Increase this when working on the nodes. Bake the connections using ZGV.Testing.NeighbourCache:DumpNeighbours() when you're done.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -2368,7 +2368,7 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Felsoul Hold
 		"Suramar/0 36.10,45.75 <region:suramar_shalaran> -to- Suramar/23 52.35,36.75 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Felsoul Hold} {cond:PlayerCompletedQuest(41575)} {cost:13}",
+			"{template:custom} {atob:Click the Portal to Felsoul Hold\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(41575)} {cost:13}",
 
 	-- Portal from Felsoul Hold to Shal'Aran
 		"Suramar/23 53.60,36.80 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
@@ -2376,7 +2376,7 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Falanaar
 		"Suramar/0 35.89,45.56 <region:suramar_shalaran> -to- Suramar/32 41.38,15.05 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Falanaar} {cond:PlayerCompletedQuest(42230)} {cost:30}",
+			"{template:custom} {atob:Click the Portal to Falanaar\ninside the Shal'Aran Cave} {cond:PlayerCompletedQuest(42230)} {cost:30}",
 
 	-- Portal from Falanaar to Shal'Aran
 		"Suramar/32 40.91,13.70 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
@@ -2384,7 +2384,7 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Moon Guard Stronghold
 		"Suramar/0 36.01,45.25 <region:suramar_shalaran> -to- Suramar/0 30.79,10.87 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Moon Guard Stronghold inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Moon Guard Stronghold\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43808)}",
 
 	-- Portal from Moon Guard Stronghold to Shal'Aran
@@ -2393,7 +2393,7 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Lunastre Estate
 		"Suramar/0 36.17,45.02 <region:suramar_shalaran> -to- Suramar/0 43.61,79.10 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Lunastre Estate inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Lunastre Estate\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43811)}",
 
 	-- Portal from Lunastre Estate to Shal'Aran
@@ -2402,7 +2402,7 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Ruins of Elune'eth
 		"Suramar/0 36.34,44.91 <region:suramar_shalaran> -to- Suramar/0 36.31,46.89 <region:suramar_eluneeth> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Ruins of Elune'eth inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Ruins of Elune'eth\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(40956)} {cost:2}",
 
 	-- Portal from Ruins of Elune'eth to Shal'Aran
@@ -2419,30 +2419,21 @@ data.basenodes.travel = {
 
 	-- Ruins of Elune'eth Road Connection #3
 		"Suramar/0 37.04,45.27 <region:suramar_eluneeth> -x- Suramar/0 37.69,45.22 {template:custom}"..
-		"{atob:Follow the path up} {btoa:Follow the path down}",
-
-	-- Portal from Shal'Aran to The Waning Crescent
-		"Suramar/0 36.48,44.75 <region:suramar_shalaran> -to- Suramar/0 47.45,81.97 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to The Waning Crescent inside the Shal'Aran Cave}"..
-			"{cond:PlayerCompletedQuest(42487)}",
-
-	-- Portal from The Waning Crescent to Shal'Aran
-		"Suramar/0 47.73,81.38 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(42487)}",
-
+		"{atob:Follow the path up} {btoa:Follow the path down}",	
+	
 	-- Portal from Shal'Aran to Sanctum of Order
 		"Suramar/0 36.70,44.64 <region:suramar_shalaran> -to- Suramar/0 43.40,60.72 <region:suramar_sanctum_of_order> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Sanctum of Order inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Sanctum of Order\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43813)}",
 
 	-- Portal from Sanctum of Order to Shal'Aran
 		"Suramar/0 43.41,60.56 <region:suramar_sanctum_of_order> -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Shal'Aran Downstairs in the Sanctum of Order}"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran\nDownstairs in the Sanctum of Order}"..
 			"{cond:PlayerCompletedQuest(43813)}",
 
 	-- Portal from Shal'Aran to Tel'anor
 		"Suramar/0 36.92,44.66 <region:suramar_shalaran> -to- Suramar/0 42.17,35.38 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Tel'anor inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Tel'anor\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(43809)}",
 
 	-- Portal from Tel'anor to Shal'Aran
@@ -2451,12 +2442,32 @@ data.basenodes.travel = {
 
 	-- Portal from Shal'Aran to Twilight Vineyards
 		"Suramar/0 36.95,45.00 <region:suramar_shalaran> -to- Suramar/0 64.09,60.80 (B:PORTAL)"..
-			"{template:custom} {atob:Click the Portal to Twilight Vineyards inside the Shal'Aran Cave}"..
+			"{template:custom} {atob:Click the Portal to Twilight Vineyards\ninside the Shal'Aran Cave}"..
 			"{cond:PlayerCompletedQuest(44084)}",
 
 	-- Portal from Twilight Vineyards to Shal'Aran
 		"Suramar/0 64.00,60.43 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
 			"{template:custom} {atob:Click the Portal to Shal'Aran} {cond:PlayerCompletedQuest(44084)}",
+
+	-- Portal from Shal'Aran to The Waning Crescent
+		"Suramar/0 36.48,44.75 <region:suramar_shalaran> -to- Suramar/0 47.45,81.97 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to The Waning Crescent\ninside the Shal'Aran Cave}"..
+			"{cond:PlayerCompletedQuest(42487) and not PlayerCompletedQuest(38649)}",
+
+	-- Portal from The Waning Crescent to Shal'Aran
+		"Suramar/0 47.73,81.38 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran}"..
+			"{cond:PlayerCompletedQuest(42487) and not PlayerCompletedQuest(38649)}",
+
+	-- Portal from Shal'Aran to Evermoon Terrace
+		"Suramar/0 36.49,44.75 <region:suramar_shalaran> -to- Suramar/0 52.04,78.87 (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Evermoon Terrace\ninside the Shal'Aran Cave}"..
+			"{cond:PlayerCompletedQuest(42889)}",
+
+	-- Portal from Evermoon Terrace to Shal'Aran
+		"Suramar/0 51.98,78.75 -to- Suramar/0 36.40,45.09 <region:suramar_shalaran> (B:PORTAL)"..
+			"{template:custom} {atob:Click the Portal to Shal'Aran\nat the Top of the Tower}"..
+			"{cond:PlayerCompletedQuest(42889)}",
 
 
 

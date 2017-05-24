@@ -15322,14 +15322,299 @@ step
 talk Valewalker Farodin##107126
 turnin The Stuff of Dreams##43362 |goto Suramar/0 36.53,46.81 |region suramar_shalaran
 step
+Reach 20000 Revered Reputation with the Nightfallen Faction |condition repval("The Nightfallen","Revered")>=20000
+|tip Use "The Nightfallen Reputation" guide to accomplish this.
+|tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
+step
+talk Valewalker Farodin##107126
+accept A Change of Seasons##43502 |goto 36.85,46.55 |region suramar_shalaran
+step
+talk Arcanist Valtrois##103155
+|tip Downstairs.
+turnin A Change of Seasons##43502 |goto 37.02,46.23 |region suramar_shalaran
+accept Giving It All We've Got##43562 |goto 37.02,46.23 |region suramar_shalaran
+step
+Activate the Elor'shan Leyline |q 43562/1
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Kel'balor Leyline |q 43562/2
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Ley Station Moonfall Leyline |q 43562/3
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Ley Station Aethenar Leyline |q 43562/4
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Falanaar Arcway Leyline |q 43562/5
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Falanaar Depths Leyline |q 43562/6
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+Activate the Halls of the Eclipse Leyline |q 43562/7
+|tip You accomplished this earlier in the Suramar questing guide.
+step
+talk Arcanist Valtrois##103155
+Tell her _"All the conduits are active. Can you amplify the feed?"_
+Ask Valtrois to Amplify the Feed |q 43562/8 |goto 37.02,46.23 |region suramar_shalaran
+step
+Watch the dialogue
+talk Arcanist Valtrois##103155
+|tip Downstairs.
+turnin Giving It All We've Got##43562 |goto 37.09,46.56 |region suramar_shalaran
+accept Ephemeral Manastorm Projector##43563 |goto 37.09,46.56 |region suramar_shalaran
+accept Flow Control##43564 |goto 37.09,46.56 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##98548
+|tip Downstairs.
+accept Bring Home the Beacon##43565 |goto 37.14,46.62 |region suramar_shalaran
+step
+Cross the bridge |goto 48.38,80.46 < 20 |only if walking
+Run up the stairs |goto 48.49,79.06 < 20 |only if walking
+Follow the path |goto 49.34,76.27 < 20 |only if walking
+Use the Advanced Telemancy Beacon |use Advanced Telemancy Beacon##140257
+|tip Use it repeatedly.
+Survey Evermoon Commons |q 43565/1 |goto 49.18,75.43
+step
+Use the Advanced Telemancy Beacon |use Advanced Telemancy Beacon##140257
+|tip Use it repeatedly.
+Survey Evermoon Bazaar |q 43565/2 |goto 49.33,76.09
+step
+Run down the stairs |goto 48.43,78.83 < 20 |only if walking
+Cross the bridge |goto 51.20,82.53 < 20 |only if walking
+Use the Advanced Telemancy Beacon |use Advanced Telemancy Beacon##140257
+|tip Use it repeatedly.
+Survey Siren's Vigil |q 43565/3 |goto 50.91,83.55
+step
+Cross the bridge |goto 50.10,83.78 < 20 |only if walking
+Cross the bridge |goto 46.75,80.30 < 20 |only if walking
+Follow the path down |goto 45.70,77.50 < 20 |only if walking
+click Arcway Outlet
+Seal the Lunastre Lane Outlet |q 43564/1 |goto 45.68,76.03
+step
+Follow the water |goto 46.50,75.30 < 20 |only if walking
+Continue following the water |goto 46.62,67.76 < 30 |only if walking
+click Arcway Outlet
+Seal the Parade Grounds Outlet |q 43564/2 |goto 49.71,62.67
+step
+Follow the water |goto 51.89,61.23 < 30 |only if walking
+kill Chronarch Defender##109670+
+|tip You can find more to the southeast.
+|tip Pull them into the water from the walkway nearby around this area.
+|tip They patrol, so kill a few enemies to clear the path, so you can pull them by themselves.
+|tip These are elite enemies, so you may need help.
+collect 4 Warp-Resistant Plating##139689 |q 43563/1 |goto 53.36,62.92
+step
+Leave the water here |goto 56.17,64.97 < 30 |only if walking
+Run up the stairs |goto 56.31,63.34 < 30 |only if walking
+Run through the bushes |goto 58.05,63.05 < 30 |only if walking
+Cross the bridge |goto 58.38,62.39 < 30 |only if walking
+click Arcway Outlet##3365
+|tip This area is packed with elite enemies, so you may need help.
+Seal the Midnight Court Outlet |q 43564/3 |goto 59.89,59.20
+step
+talk Arcanist Valtrois##103155
+|tip Downstairs.
+turnin Ephemeral Manastorm Projector##43563 |goto 37.09,46.56 |region suramar_shalaran
+turnin Flow Control##43564 |goto 37.09,46.56 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##98548
+|tip Downstairs.
+turnin Bring Home the Beacon##43565 |goto 37.13,46.62 |region suramar_shalaran
+step
 Reach Exalted Reputation with the Nightfallen Faction |condition rep("The Nightfallen")>=Exalted
 |tip Use "The Nightfallen Reputation" guide to accomplish this.
 |tip Use the "Legion World Quests" guide and complete Suramar world quests to accomplish this.
 step
 talk Valewalker Farodin##107126
-turnin Redemption for the Fallen##44563 |goto 36.54,46.81 |region suramar_shalaran
+|tip Upstairs.
+turnin Redemption for the Fallen##44563 |goto 36.86,46.55 |region suramar_shalaran
 step
-|confirm
+talk First Arcanist Thalyssra##97140
+|tip Downstairs.
+accept All In##43567 |goto 37.13,46.55 |region suramar_shalaran
+step
+Watch the dialogue
+Begin the All In Scenario |scenariostart |q 43567
+step
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 1 |goto 1102 21.50,75.56
+|tip He walks back and forth.
+step
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 2 |goto 20.86,66.84
+step
+Cross the bridge |goto 25.74,68.19 < 20 |walk
+kill Duskwatch Archivist##113191 |scenariogoal 1/31058 |count 3 |goto 31.50,68.09
+step
+Follow the path |goto 32.93,62.46 < 15 |walk
+Reach the Door to the Nightflow Conduit |scenariostage 2 |goto 37.29,65.72
+step
+Kill the enemies that attack in waves
+Defend Arluin While He Opens the  Door to the Nightflow Conduit |scenariostage 3 |goto 36.69,63.85
+step
+Follow the path |goto 37.87,67.54 < 20 |walk
+click Place E.M.P.
+Place the E.M.P. |scenariostage 4 |goto 39.16,78.11
+step
+Watch the dialogue
+Kill the enemies that attack in waves
+Survive the Manastorm |scenarioend |goto 40.19,74.44
+Sabotage the Nightflow Conduit |q 43567/1 |goto 40.19,74.44
+step
+clicknpc Arluin##113062
+Check on Arluin |q 43567/2 |goto Suramar/0 34.60,47.89
+step
+Enter Shal'Aran |q 43567/3 |goto 36.51,46.83 |region suramar_shalaran
+step
+talk Valewalker Farodin##107126
+turnin All In##43567 |goto 36.84,46.53 |region suramar_shalaran
+accept Arcan'dor, Gift of the Ancient Magi##43568 |goto 36.84,46.53 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##112147
+|tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
+Watch the dialogue
+Share the Fruit with Oculeth |q 43568/1 |goto 36.49,46.77 |region suramar_shalaran
+step
+talk Arcanist Valtrois##112145
+|tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
+Watch the dialogue
+Share the Fruit with Valtrois |q 43568/2 |goto 36.52,46.84 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##112146
+|tip Click the blue Fruit of the Arcan'dor hanging on the tree nearby to get the fruit.
+Watch the dialogue
+Share the Fruit with Thalyssra |q 43568/3 |goto 36.53,46.79 |region suramar_shalaran
+step
+Watch the dialogue
+talk First Arcanist Thalyssra##112146
+turnin Arcan'dor, Gift of the Ancient Magi##43568 |goto 36.53,46.79 |region suramar_shalaran
+step
+talk Vanthir##107598
+accept Arluin's Request##43569 |goto 36.47,46.61 |region suramar_shalaran
+step
+Run down the stairs |goto 46.01,66.46 < 20 |only if walking
+Follow the path |goto 47.87,66.59 < 15 |walk
+Watch the dialogue
+|tip She's in a side room under the bridge.
+Locate Arluelle |q 43569/1 |goto 48.27,66.86
+step
+talk Arluelle##110698
+|tip She's in a side room under the bridge.
+Share the Arcan'dor Fruit with Arluelle |q 43569/2 |goto 48.27,66.86
+step
+talk Arluelle##110698
+|tip She's in a side room under the bridge.
+turnin Arluin's Request##43569 |goto 48.27,66.86
+step
+talk First Arcanist Thalyssra##115736
+accept One Day at a Time##45260 |goto 36.50,46.73 |region suramar_shalaran
+step
+Use the Fruit of the Arcan'dor on a Suramar Refugee |use Fruit of the Arcan'dor##143597
+|tip There are Suramar Refugees all around inside the cave.
+Cure a Suramar Refugee |q 45260/1 |goto 37.49,47.44 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin One Day at a Time##45260 |goto 36.50,46.73 |region suramar_shalaran
+accept Silence in the City##38649 |goto 36.50,46.73 |region suramar_shalaran
+step
+talk Chief Telemancer Oculeth##115710
+turnin Silence in the City##38649 |goto 36.62,45.09 |region suramar_shalaran
+accept Crackdown##38695 |goto 36.62,45.09 |region suramar_shalaran
+step
+Watch the dialogue
+Allow Oculeth to Teleport You |q 38695/1 |goto 36.50,44.75 |region suramar_shalaran
+step
+Follow the path |goto 46.17,79.08 < 20 |only if walking
+click Broken Telemancy Beacon
+Examine the Broken Telemancy Beacon |q 38695/2 |goto 47.74,81.36
+step
+Follow the path |goto 47.53,83.29 < 20 |only if walking
+Search the Waning Crescent |q 38695/3 |goto 48.38,83.61
+step
+talk Silgryn##114948
+|tip Inside the building.
+turnin Crackdown##38695 |goto 47.84,82.93
+accept Answering Aggression##38692 |goto 47.84,82.93
+accept No Reason to Stay##38720 |goto 47.84,82.93
+stickystart "Answering_Aggression"
+step
+talk Brigitte##115992
+|tip Upstairs inside the building.
+Click Here After You Talk to Brigitte |confirm |goto 49.08,83.79 |q 38720
+step
+talk Emille##115991
+|tip Upstairs inside the building.
+Click Here After You Talk to Emille |confirm |goto 49.31,83.95 |q 38720
+step
+talk Eneas##116001
+|tip Downstairs inside the building.
+Evacuate Eneas' Family |q 38720/1 |goto 49.11,83.79
+step
+Cross the bridge |goto 49.64,83.36 < 20 |only if walking
+Follow the path |goto 50.80,85.03 < 20 |only if walking
+click Master's Vase
+|tip Inside the building.
+Evacuate Master Devlyn |q 38720/4 |goto 50.55,85.00
+step
+Follow the path |goto 50.64,85.61 < 20 |only if walking
+Cross the bridge |goto 50.09,83.77 < 20 |only if walking
+talk Thorvos##114983
+|tip Inside the building.
+kill Duskwatch Punisher##116013
+Evacuate Thorvos and Valanth |q 38720/2 |goto 48.97,81.66
+step
+talk Scarleth##114985
+|tip Inside the building.
+Evacuate Scarleth's Girls |q 38720/3 |goto 47.97,80.24
+step
+label "Answering_Aggression"
+Kill enemies around this area
+Slay #12# Elisandre's Forces |q 38692/1 |goto 47.72,81.38
+step
+Follow the path |goto 48.34,81.82 < 30 |only if walking
+Cross the bridge |goto 49.64,83.36 < 20 |only if walking
+Follow the path |goto 50.80,85.03 < 20 |only if walking
+talk Silgryn##114948
+|tip Inside the building.
+turnin Answering Aggression##38692 |goto 49.68,85.38
+turnin No Reason to Stay##38720 |goto 49.68,85.38
+accept Regroup##38694 |goto 49.68,85.38
+step
+Watch the dialogue
+Follow Silgryn |q 38694/1 |goto 51.01,87.01
+step
+click Deline's Gondola
+Ride on Deline's Gondola |q 38694/2 |goto 51.02,87.08
+step
+Teleport to the Top of the Terrace |q 38694/3 |goto 51.54,78.96
+step
+talk Silgryn##114948
+|tip At the top of the tower.
+turnin Regroup##38694 |goto 52.11,79.15
+step
+click Telemancy Beacon
+accept The Way Back Home##42889 |goto 51.99,78.77
+step
+click Telemancy Beacon
+Activate the Beacon |q 42889/1 |goto 51.99,78.77
+step
+click Portal to Shal'Aran |goto 51.98,78.75 |n
+Teleport to Shal'Aran |goto 36.40,45.09 |region suramar_shalaran |noway |c |q 42889
+step
+talk First Arcanist Thalyssra##115736
+turnin The Way Back Home##42889 |goto 36.49,46.73 |region suramar_shalaran
+accept Visitor in Shal'Aran##44955 |goto 36.49,46.73 |region suramar_shalaran
+step
+click Arluelle##116085
+Meet the Stranger |q 44955/1 |goto 34.60,47.93
+step
+talk Arluelle##116085 |goto 34.60,47.91 |n
+Run into the Shal'Aran Cave |goto 34.90,47.86 < 10 |noway |c |q 44955
+step
+Introduce Arluelle to Thalyssra |q 44955/2 |goto 36.50,46.73 |region suramar_shalaran
+step
+talk First Arcanist Thalyssra##115736
+turnin Visitor in Shal'Aran##44955 |goto 36.49,46.73 |region suramar_shalaran
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Legion (100-110)\\Order Hall Quests",{
 author="support@zygorguides.com",
@@ -16125,7 +16410,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Skyhold/1 45.32,30.12
-|tip You will need Artifact Knowledge Rank 3 in order to accept this.
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Warrior
 step
 Use the Call to Xe'ra ability
@@ -17039,6 +17324,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 52.31,69.37
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Paladin
 step
 Use the Call to Xe'ra ability
@@ -18046,6 +18332,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 34.44,51.14
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Hunter
 step
 Use the Call to Xe'ra ability
@@ -19025,6 +19312,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Dalaran L/4 40.79,54.82
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Rogue
 step
 Use the Call to Xe'ra ability
@@ -19993,6 +20281,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Netherlight Temple/1 49.81,26.41
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Priest
 step
 Use the Call to Xe'ra ability
@@ -20920,6 +21209,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 32.48,32.81
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Shaman
 step
 Use the Call to Xe'ra ability
@@ -21887,6 +22177,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto 83.83,32.74
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Mage
 step
 Use the Call to Xe'ra ability
@@ -23118,6 +23409,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Mardum, the Shattered Abyss/1 58.65,43.40
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only DemonHunter
 step
 Use the Call to Xe'ra ability
@@ -23987,6 +24279,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Dreadscar Rift/0 53.17,32.63
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Warlock
 step
 Use the Call to Xe'ra ability
@@ -24946,6 +25239,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto The Wandering Isle L/0 51.78,48.13
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Monk
 step
 Use the Call to Xe'ra ability
@@ -25886,6 +26180,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto The Dreamgrove/0 60.06,52.14
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only Druid
 step
 Use the Call to Xe'ra ability
@@ -26764,6 +27059,7 @@ click Light's Heart
 |tip We believe this quest's availability is determined by your Order Hall Artifact Research.
 |tip If the quest isn't available, talk to the Head Archivist in your Order Hall to get more Artifact Research Notes.
 accept In My Father's House##44480 |goto Broken Shore/1 54.24,74.13
+|tip You will need Artifact Knowledge Rank 5 in order to accept this.
 |only DeathKnight
 step
 Use the Call to Xe'ra ability

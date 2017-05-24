@@ -1502,6 +1502,13 @@ step
 kill Perrexx##95318 |q 43630/1 |goto 61.06,69.49
 |next "Court_Of_Farondis_WQ"
 step
+label quest-43458
+accept WANTED: Perrexx##43458 |goto Val'sharah/0 61.06,69.49
+|tip You will accept this quest automatically.
+step
+kill Perrexx##95318 |q 43458/1 |goto 61.06,69.49
+|next "Court_Of_Farondis_WQ"
+step
 label quest-43753
 accept Ley Race##43753 |goto Val'sharah/0 57.99,89.31
 |tip You will accept this quest automatically.
@@ -2420,20 +2427,25 @@ kill Flotsam##99929 |q 43985/1 |goto 49.15,7.66
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40966
+Cross the bridge |goto Thunder Totem/0 51.52,38.18 < 20 |region thunder_totem_circle_platform |only if walking
 accept Ritualists in Our Midsts##40966 |goto Highmountain/0 50.73,53.17
 |tip You will accept this quest automatically.
 stickystart "Greystone_Shardmasters"
 stickystart "Smash_Crystal_Conduits"
 step
 Enter the cave |goto 50.04,53.73 < 20 |walk
-kill Shardmaster Azurrogg##102501 |q 40966/1 |goto 52.24,53.06
+Follow the path |goto 51.57,52.49 < 20 |walk
+Follow the path down |goto 52.46,52.91 < 20 |walk
+kill Shardmaster Azurrogg##102501 |q 40966/1 |goto 53.10,53.56
+|tip Standing on top of the rock.
 step
 label "Greystone_Shardmasters"
 kill 3 Greystone Shardmaster##101644 |q 40966/2 |goto 50.73,53.17
 step
 label "Smash_Crystal_Conduits"
 click Crystal Conduits
-Smash #7# Crystal Conduits |q 40966/3 |goto 52.24,53.06
+|tip They look like big red crystal blocks on the ground throughout the cave.
+Smash #7# Crystal Conduits |q 40966/3 |goto 52.20,53.56
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40282
@@ -2676,6 +2688,23 @@ accept Snowfeather Swarm!##44892 |goto Highmountain/0 36.89,17.59
 step
 Slay the Snowfeather enemies around this area
 Cull Snowfeather Falcosaurs |q 44892/1 |goto Highmountain/0 35.74,21.31
+|next "Court_Of_Farondis_WQ"
+step
+label quest-40980
+accept Boilback Plague##40980 |goto Highmountain/0 37.90,41.89
+|tip You will accept this quest automatically.
+step
+kill 8 Boilback Bristlefur##102361 |q 40980/1 |goto Highmountain/0 37.06,43.47
+|next "Court_Of_Farondis_WQ"
+step
+label quest-44823
+accept Thunder Totem Cleanup Detail##44823 |goto Thunder Totem/0 44.81,38.69
+|tip You will accept this quest automatically.
+step
+kill Bluewax Drumtaker##108145+
+click Small Ceremonial Drum##3365+
+collect Small Ceremonial Drum##138197+ |n
+Assist Thunder Totem |q 44823/1 |goto Thunder Totem/0 47.42,42.82
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42798
@@ -3515,6 +3544,31 @@ kill Felhide Gargantuan##103675
 Skin the Felhide Gargantuan |q 41569/1 |goto Stormheim/0 63.33,74.82
 |next "Court_Of_Farondis_WQ"
 step
+label quest-45307
+Follow the path down |goto Suramar/0 67.37,44.56 < 20 |only if walking
+Follow the path |goto Suramar/0 69.66,47.91 < 30 |only if walking
+accept Claws for Alarm!##45307 |goto Suramar/0 73.63,52.14
+|tip You will accept this quest automatically.
+step
+Follow the water |goto 81.04,53.61 < 30 |only if walking
+click Murky's Egg
+Locate Murky's Egg |q 45307/1 |goto 82.05,54.38
+stickystart "Assault_Sashjtar_Ruins_Claws_For_Alarm_WQ"
+step
+Follow the path up |goto 82.14,56.05 < 20 |only if walking
+Run up the stairs |goto 82.68,57.93 < 15 |only if walking
+kill Sashj'tar Culinarian##116489 |q 45307/2 |goto 83.23,57.14
+|tip Inside the building.
+step
+label "Assault_Sashjtar_Ruins_Claws_For_Alarm_WQ"
+Kill enemies around this area
+|tip Use the abilities on your action bar to kill enemies.
+Assault the Sashj'tar Ruins |q 45307/3 |goto 82.32,58.20
+step
+Stop Controlling Murky |outvehicle |c
+|tip Click the yellow arrow on your action bar.
+|next "Court_Of_Farondis_WQ"
+step
 label quest-44856
 Cross the bridge |goto Suramar/0 24.26,31.92 < 30 |only if walking
 accept Cut the Cattitude##44856 |goto Suramar/0 22.40,30.22
@@ -4315,6 +4369,15 @@ accept Lifelines##44744 |goto Suramar/0 49.40,72.39
 step
 Slay the enemies that run into this area
 Defend the Arcwine Distribution |q 44744/1 |goto Suramar/0 49.40,72.39
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41914
+Enter the building |goto Suramar/0 59.36,43.01
+accept Clear the Catacombs##41914 |goto Suramar/35 54.24,87.58
+|tip You will accept this quest automatically.
+step
+Click the Ancient Catacomb Eggs
+Defeat the Ancient Catacomb Egg |q 41914/1 |goto Suramar/35 54.24,87.58
 |next "Court_Of_Farondis_WQ"
 step
 label quest-40299

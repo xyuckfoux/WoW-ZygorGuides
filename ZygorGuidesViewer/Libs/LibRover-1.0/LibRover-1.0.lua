@@ -4056,30 +4056,30 @@ do
 
 		function Lib.ShowDebugMenu(parent,but)
 			self=Lib
-			if not Lib.debugmenu then Lib.debugmenu = CreateFrame("FRAME","LibRoverDebugMenu",nil,"UIDropDownMenuTemplate") end
-			UIDropDownMenu_SetAnchor(Lib.debugmenu, 0, 0, "TOP", parent, "BOTTOM")
+			if not Lib.debugmenu then Lib.debugmenu = CreateFrame("FRAME","LibRoverDebugMenu",nil,"UIDropDownForkTemplate") end
+			UIDropDownFork_SetAnchor(Lib.debugmenu, 0, 0, "TOP", parent, "BOTTOM")
 
 			local menu = {}
 			--tinsert(menu,{ text = "aaa",  isTitle = true,notCheckable=true, })
 			tinsert(menu,{ text = "Show all nodes",  notCheckable=true, func=function() LibRover:ShowAllNodes() end })
 			tinsert(menu,{ text = "Debug bad nodes",  checked=LibRover.debug_badnodes, func=function() LibRover.debug_badnodes = not LibRover.debug_badnodes end })
 
-			EasyMenu(menu,Lib.debugmenu,nil,0,0,"MENU",10)
-			UIDropDownMenu_SetWidth(Lib.debugmenu, 300)
+			EasyFork(menu,Lib.debugmenu,nil,0,0,"MENU",10)
+			UIDropDownFork_SetWidth(Lib.debugmenu, 300)
 		end
 				
 		function Lib.ShowNodeDebugMenu(parent,node)
 			self=Lib
-			if not Lib.debugmenu then Lib.debugmenu = CreateFrame("FRAME","LibRoverDebugMenu",nil,"UIDropDownMenuTemplate") end
-			UIDropDownMenu_SetAnchor(Lib.debugmenu, 0, 0, "TOP", parent, "BOTTOM")
+			if not Lib.debugmenu then Lib.debugmenu = CreateFrame("FRAME","LibRoverDebugMenu",nil,"UIDropDownForkTemplate") end
+			UIDropDownFork_SetAnchor(Lib.debugmenu, 0, 0, "TOP", parent, "BOTTOM")
 
 			local menu = {}
 			--tinsert(menu,{ text = "aaa",  isTitle = true,notCheckable=true, })
 			tinsert(menu,{ text = "Ban node",  checked=LibRover.banned_nodes[node], func=function() LibRover.banned_nodes[node]=not LibRover.banned_nodes[node] LibRover:Debug("Banned node: %s",node:tostring()) LibRover:UpdateNow() end })
 			tinsert(menu,{ text = "Force through",  nocCheckable=true, func=function() LibRover.force_next_manual=node  LibRover:Debug("Forcing node: %s",node:tostring()) LibRover:UpdateNow() end })
 
-			EasyMenu(menu,Lib.debugmenu,nil,0,0,"MENU",10)
-			UIDropDownMenu_SetWidth(Lib.debugmenu, 300)
+			EasyFork(menu,Lib.debugmenu,nil,0,0,"MENU",10)
+			UIDropDownFork_SetWidth(Lib.debugmenu, 300)
 		end
 
 		function LibRover:DumpZoneData()

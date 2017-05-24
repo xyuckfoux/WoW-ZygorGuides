@@ -261,8 +261,8 @@ end
 function Mailtools:SenderRowMenu(row)
 	if not row.item then return end
 
-	if not Mailtools.MainFrame.Sender_Frame.SenderMenu then Mailtools.MainFrame.Sender_Frame.SenderMenu = CreateFrame("FRAME","MT_Sender_Menu",Mailtools.MainFrame.Sender_Frame,"UIDropDownMenuTemplate") end
-	UIDropDownMenu_SetAnchor(Mailtools.MainFrame.Sender_Frame.SenderMenu, 0, 0, "TOP", row, "BOTTOM")
+	if not Mailtools.MainFrame.Sender_Frame.SenderMenu then Mailtools.MainFrame.Sender_Frame.SenderMenu = CreateFrame("FRAME","MT_Sender_Menu",Mailtools.MainFrame.Sender_Frame,"UIDropDownForkTemplate") end
+	UIDropDownFork_SetAnchor(Mailtools.MainFrame.Sender_Frame.SenderMenu, 0, 0, "TOP", row, "BOTTOM")
 	local menu = {}
 
 	tinsert(menu,{
@@ -277,8 +277,8 @@ function Mailtools:SenderRowMenu(row)
 			notCheckable=0,
 		})
 	
-	EasyMenu(menu,Mailtools.MainFrame.Sender_Frame.SenderMenu,nil,0,0,"MENU",false)
-	UIDropDownMenu_SetWidth(Mailtools.MainFrame.Sender_Frame.SenderMenu, 300)
+	EasyFork(menu,Mailtools.MainFrame.Sender_Frame.SenderMenu,nil,0,0,"MENU",false)
+	UIDropDownFork_SetWidth(Mailtools.MainFrame.Sender_Frame.SenderMenu, 300)
 end
 
 function Mailtools:GetPostalFee()

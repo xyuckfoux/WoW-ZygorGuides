@@ -2228,7 +2228,7 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('fpsgraph',{ name="FPS Graph", desc="Show a detailed FPS graph. Max=100fps.", type = 'toggle', width = "full", _default=false, set = function(i,v) Setter_Simple(i,v)  ZGV:StartFPSFrame() end, })
 			--AddOption('npcdebugauto',{ name = "Automatically add current npcs to list", type="toggle", width = "full", })
 
-			AddOption('debug_beta',{ name = "Pretend this is Beta", type="toggle", width = "full", disabled=function() return ZGV.DIR:find("-BETA") end, get = function(i,v) if ZGV.DIR:find("-BETA") then return true else return Getter_Simple(i,v) end end })
+			AddOption('debug_beta',{ name = "Enable Beta access", type="toggle", tristate=true, width = "full", set = function(i,v) Setter_Simple(i,v)  ZGV:SetBeta(v) end })
 
 
 			AddOption('bug_button',{  type = 'toggle',  
@@ -2259,7 +2259,7 @@ function ZGV:Options_DefineOptionTables()
 
 			AddOption('sep00devdisp',{ type="header", name="Dev information" })
 
-			AddOption('debug_display',{ name = "Show Zygor developers information", type="toggle", width = "full", _default = true,
+			AddOption('debug_display',{ name = "Show Zygor developers information", type="toggle", width = "full", _default = false,
 				set = function(i,v) 
 					Setter_Simple(i,v)  
 					ZGV.Pointer.OverlayFrame.ZygorCoordsDEV:SetShown(v)
@@ -3035,7 +3035,6 @@ function ZGV:Options_DefineOptionTables()
 
 	AddOptionGroup("dev","Dev","zgdev", { guiHidden=true })
 		AddOption('load_im', { type = 'toggle', desc="Enable Inventory Manager", _default = false, set=Setter_Loud })
-		AddOption('load_betaguides', { type = 'toggle', desc="Enable all Beta guides", _default = false, set=Setter_Loud })
 		AddOption('show_ui', { type = 'toggle', desc="Enable Updated UI", _default = false, set=Setter_Loud })
 		AddOption('load_gold', { type = 'toggle', desc="Enable Gold guides", _default = false, set=Setter_Loud })
 		AddOption('load_all', { type = 'toggle', desc="Enable all!", _default = false, set=function(info,val) Setter_Loud(info,val) self.db.profile.load_mail=val self.db.profile.load_im=val self.db.profile.load_betaguides=val self.db.profile.load_gold=val self.db.profile.show_ui=val end })
@@ -3278,6 +3277,8 @@ function ZGV:Options_RegisterDefaults()
 	self.db.profile.gold_profitlevel = 0.25
 
 	self.db.profile.auction_autoshow_tab = true
+
+	self.db.profile.debug_display = false   -- 2017-04-22: clear the misassigned default of true
 
 	--self.db.profile.waypointaddon = "internal"
 	--self.db.profile.minicons = true

@@ -749,7 +749,7 @@ Click here to be taken to the Auctioneer to purchase it |confirm |next "buy"
 step
 label "create"
 Click here for the _Golden Lotus Pre Quests_. |next GLPQ |confirm |tip The Pattern comes from the Treasures of the Vale given during Golden Lotus dailies.
-Click here for the daily quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets["DailiesAMOP"]
+Click here for the daily quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies" |only if ZGV.guidesets["DailiesAMOP"]
 |tip You have to complete the Dailies for the Golden Lotus and open Treasures of the Vale (quest rewards)to get the recipe for this pet.
 step
 label "GLPQ"

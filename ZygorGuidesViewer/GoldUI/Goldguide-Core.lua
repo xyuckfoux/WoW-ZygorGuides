@@ -630,7 +630,7 @@ function Goldguide.Common:AreRequirementsMet(ignore_skill,ignore_level)
 			if type(self.meta.levelreq)=="table" and level<self.meta.levelreq[1] then return false,"level" end
 		end
 		if self.meta.skillreq and not ignore_skill then
-			for skill,skillid in pairs(ZGV.skillIDs) do
+			for skill,skillid in pairs(ZGV.Professions.skillIDs) do
 				local req = self.meta.skillreq[string.lower(skill)]
 				if req and (ZGV:GetSkill(skill).level<req) then return false,"skill" end
 			end

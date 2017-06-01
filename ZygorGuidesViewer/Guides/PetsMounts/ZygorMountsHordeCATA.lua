@@ -673,8 +673,8 @@ description="This guide will help you acquire the Darkmoon Dancing Bear and Swif
 },[[
 step
 This mount requires Darkmoon Island to be accessible.
-Click here for the Darkmoon Quests. |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests" |confirm |only if ZGV.guidesets["DailiesACATA"]
-Click here for the Darkmoon Daily Quests. |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here for the Darkmoon Quests. |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests" |confirm |only if ZGV.guidesets["DailiesACATA"]
+Click here for the Darkmoon Daily Quests. |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
 confirm
 step
 Follow the Path to the Darkmoon Faire |goto Darkmoon Island,56.0,52.9,1 |c
@@ -3955,59 +3955,59 @@ next "a" |only if default
 confirm
 step
 _Lunar Festival_
-Click here for the base questline. |next "Zygor's Horde Events Guides\\Lunar Festival\\Lunar Festival Main Questline" |confirm
-Click here for the _Elders_ portion of the event. |next "Zygor's Horde Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Lunar Festival\\Lunar Festival Achievements" |confirm
+Click here for the base questline. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Main Questline" |confirm
+Click here for the _Elders_ portion of the event. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path" |confirm
+Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Lunar Festival\\Lunar Festival Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/1)
 step
 _Love is in the Air_
-Click here for the base questline. |next "Zygor's Horde Events Guides\\Love is in the Air\\Love is in the Air Main Questline" |confirm
-Click here for the Dailies portion of the event. |next "Zygor's Horde Events Guides\\Love is in the Air\\Love is in the Air Dailies" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Love is in the Air\\Love is in the Air Achievements" |confirm
+Click here for the base questline. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Main Questline" |confirm
+Click here for the Dailies portion of the event. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Dailies" |confirm
+Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Love is in the Air\\Love is in the Air Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/2)
 step
 _Noblegarden_
-Click here to cover the _Quests and Dailies_ for this event. |next "Zygor's Horde Events Guides\\Noblegarden\\Noblegarden Quests and Dailies" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Noblegarden\\Noblegarden Achievements" |confirm
+Click here to cover the _Quests and Dailies_ for this event. |next "Zygor's Events Guides\\Noblegarden\\Noblegarden Quests and Dailies" |confirm
+Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Noblegarden\\Noblegarden Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/3)
 step
 _Children's Week_
-Click here for the _Stormwind Quests_ portion. |next "Zygor's Horde Events Guides\\Children's Week\\Children's Week Stormwind Quests" |confirm
-Click here for the _Shattrath Quests_ portion. |next "Zygor's Horde Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm
-Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Wolvar version. |next "Zygor's Horde Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm
-Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Oracle version. |next "Zygor's Horde Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm
-Click here for the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Children's Week\\Children's Week Achievements" |confirm
+Click here for the _Stormwind Quests_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Stormwind Quests" |confirm
+Click here for the _Shattrath Quests_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm
+Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Wolvar version. |next "Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm
+Click here for the _Oracle Quests_ portion. You can only do This _OR_ the Oracle version. |next "Zygor's Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm
+Click here for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Children's Week\\Children's Week Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/4)
 step
 _Midsummer Festival_
-Click here for the _Quest_ portion. |next "Zygor's Horde Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm
-Click here the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements" |confirm
-Click here for the _Pandaria Quest_ portion. |next "Zygor's Horde Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests (Pandaria)" |confirm
+Click here for the _Quest_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm
+Click here the _Event Achievement_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements" |confirm
+Click here for the _Pandaria Quest_ portion. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests (Pandaria)" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/5)
 step
 _Brewfest_
-Click here for the _quest_ portion. |next "Zygor's Horde Events Guides\\Brewfest\\Brewfest Quests" |confirm
-Click here for the _daily_ portion. |next "Zygor's Horde Events Guides\\Brewfest\\Brewfest Dailies" |confirm
-Click ehre for the _Event Achievement_ portion. |next "Zygor's Horde Events Guides\\Brewfest\\Brewfest Achievements" |confirm
+Click here for the _quest_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Quests" |confirm
+Click here for the _daily_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Dailies" |confirm
+Click ehre for the _Event Achievement_ portion. |next "Zygor's Events Guides\\Brewfest\\Brewfest Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/6)
 step
 _Hallow's End_
-Click here for the _Quest Portion_ of the event. |next "Zygor's Horde Events Guides\\Hallow's End\Hallow's End Quests" |confirm
-Click here for the _Daily Portion_ of the event. |next "Zygor's Horde Events Guides\\Hallow's End\\Hallow's End Dailies" |confirm
-Click here for the _Achievement Portion_ of the event. |next "Zygor's Horde Events Guides\\Hallow's End\\Hallow's End Achievements" |confirm
-Click here for the _Pandaria Achievement Portion_ of the event. |next "Zygor's Horde Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)" |confirm
+Click here for the _Quest Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\Hallow's End Quests" |confirm
+Click here for the _Daily Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Dailies" |confirm
+Click here for the _Achievement Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements" |confirm
+Click here for the _Pandaria Achievement Portion_ of the event. |next "Zygor's Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/7)
 step
 _Merrymaker_
-Click here for the _Quest Portion_ of the event. |next "Zygor's Horde Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests" |confirm
-Click here for the _Achievement Portion_ of the event. |next "Zygor's Horde Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements" |confirm
+Click here for the _Quest Portion_ of the event. |next "Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests" |confirm
+Click here for the _Achievement Portion_ of the event. |next "Zygor's Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements" |confirm
 If this event is currently unavailable, click here to continue. |confirm
 only if not achieved(2144/8)
 step
@@ -8065,7 +8065,7 @@ talk Deathstalker Visceri##33373
 turnin The Valiant's Challenge##13729 |goto 76.5,24.2
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc",{
-next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+next="Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 },[[
@@ -8723,7 +8723,7 @@ You can buy a Darkspear Tabard from Champion Uru'zin in Orgrimmar at [50.0,58.5]
 |tip Wear the Darkspear Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Argent Tournament Guides\\Required Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Troll",{
-next="Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
+next="Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide\\Home Cities Reputation\\Darkspear Trolls & Orgrimmar\\Orc & Troll (5-13)",
 author="support@zygorguides.com",
 description="This guide will help you to get Exalted\nreputation with the Darkspear Trolls and\nOrgrimmar factions.\nYou need to be exalted with these 5 reputations in order to earn your Crusader title and open up more daily quests.",
 endlevel=5

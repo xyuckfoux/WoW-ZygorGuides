@@ -903,6 +903,7 @@ accept The Reliquary Calls##41171 |or |only if not completedq(41171) |next "The_
 accept Worth Its Weight##41174 |or |only if not completedq(41174) |next "Worth_Its_Weight" |goto 40.85,26.28
 accept Goblin Archaeology##41177 |or |only if not completedq(41177) |next "Goblin_Archaeology" |goto 40.85,26.28
 accept The Right Path##41192 |or |only if not completedq(41192) |next "The Right Path" |goto 40.85,26.28
+accept Out of the Frying Pan##41161 |or |only if not completedq(41161) |next "Out of the Frying Pan" |goto 40.85,26.28
 |next "Archaeology_Quests_Finished"
 step
 label "Fragments_of_the_Fjords"
@@ -1221,6 +1222,35 @@ Observe the Burial Ceremony |q 41193/2 |goto Thunder Totem/0 64.70,50.13
 step
 talk Lessah Moonwater##103485
 turnin Laying to Rest##41193 |goto Thunder Totem/0 64.70,50.13
+|next "Accept_Archaeology_Quest"
+step
+label "Out of the Frying Pan"
+talk Brann Bronzebeard##103484
+turnin Out of the Frying Pan##41161 |goto Azsuna/0 39.10,38.69
+accept And Into the Fel Fire##41162 |goto Azsuna/0 39.10,38.69
+step
+Dig in Digsites in Azsuna
+|tip The digsites are random, and are shown as small shovel icons on the map.
+kill Wyrmtongue Collector##102778+
+|tip These appear periodically when looting the Archaeology finds.
+|tip You can also get an item from these finds that can summon a Wyrmtongue Collector that you can kill.
+collect #10# Part of the Infernal Device##134084 |q 41162/1
+step
+talk Brann Bronzebeard##103484
+turnin And Into the Fel Fire##41162 |goto Azsuna/0 39.10,38.69
+accept The Apocalypse Bringer##41163 |goto Azsuna/0 39.10,38.69
+step
+talk Brann Bronzebeard##103484
+Tell him _"Start the device, Brann"_
+Follow Brann |goto Azsuna/0 39.24,37.36
+Have Brann activate the device |q 41163/1 |goto 39.24,37.36
+step
+kill Wyrmy Tunkins##103515
+|tip It will come out of the device once activated by Brann.
+Defeat the Wyrmy Tunkins |q 41163/2 |goto Azsuna/0 39.24,37.36
+step
+talk Brann Bronzebeard##103484
+turnin The Apocalypse Bringer##41163 |goto Azsuna/0 39.10,38.69
 |next "Accept_Archaeology_Quest"
 step
 label "Archaeology_Quests_Finished"
@@ -4036,7 +4066,7 @@ step
 Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
 Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
 Jump off toward the floating island |goto Dalaran L/10 26.22,20.40 < 20 |only if walking
-|tip Use the Goblin Glider Kit immediately after jumping.
+|tip Use the Goblin Glider Kit immediately after jumping. |only if walking
 talk Conjurer Margoss##108825
 accept Drowned Mana##42911 |goto Dalaran L/10 23.10,-11.40
 step
@@ -4068,7 +4098,7 @@ step
 Follow the path |goto Dalaran L/10 38.13,45.34 < 20 |only if walking
 Follow the path |goto Dalaran L/10 30.75,32.64 < 20 |only if walking
 Jump off toward the floating island |goto Dalaran L/10 26.22,20.40 < 20 |only if walking
-|tip Use the Goblin Glider Kit immediately after jumping.
+|tip Use the Goblin Glider Kit immediately after jumping. |only if walking
 talk Conjurer Margoss##108825
 accept Drowned Mana##42911 |goto Dalaran L/10 23.10,-11.40
 step

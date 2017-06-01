@@ -6,24 +6,24 @@ ZygorGuidesViewer.GuideMenuTier = "MOP"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive\\Beastmaster Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Dominance Offensive faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8206},
-startlevel=90,
 },[[
 #include "Sturdy_Traps"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive",{
 author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Dominance Offensive faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7929},
-startlevel=90,
-description="This guide will take you through The Dominance Offensive dailies\nBecoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
 },[[
 #include "Dominance_Offensive"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Chee Chee.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Chee Chee after completing the Tillers prequests.
@@ -137,8 +137,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Ella.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Ella after completing the Tillers prequests.
@@ -293,8 +293,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Farmer Fung.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Farmer Fung after completing the Tillers prequests.
@@ -369,8 +369,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Fish Fellreed.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Fish Fellreed after completing the Tillers prequests.
@@ -459,8 +459,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Gina Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Gina Mudclaw after completing the Tillers prequests.
@@ -538,8 +538,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Haohan Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Haohan Mudclaw after completing the Tillers prequests.
@@ -614,8 +614,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Jogu the Drunk.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Jogu the Drunk after completing the Tillers prequests.
@@ -716,8 +716,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Old Hillpaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Old Hillpaw after completing the Tillers prequests.
@@ -798,8 +798,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Sho.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Sho after completing the Tillers prequests.
@@ -884,8 +884,8 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Tina Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Tina Mudclaw after completing the Tillers prequests.
@@ -968,16 +968,16 @@ Please click here to return to the beginning of the guide. |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Anglers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6547,7614},
-startlevel=90,
 },[[
 #include "H_Anglers"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The August Celestials faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6543},
-startlevel=90,
 },[[
 #include "August_Celestials"
 step
@@ -987,8 +987,8 @@ This is the end of the current guide. Click here to go back to the beginning. |c
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Emperor Shaohao faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8715},
-startlevel=90,
 },[[
 #include "timeless_isle_prequests"
 step
@@ -1003,8 +1003,8 @@ Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Golden Lotus faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7315, 6546},
-startlevel=90,
 },[[
 step
 Proceeding to Pre-Quests |next |only if default
@@ -1018,6 +1018,8 @@ label dailies
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Huojin Pandaren",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Huojin Pandaren faction.",
+condition_suggested="level>=1 and level<=90",
+achieveid={8206},
 },[[
 step
 talk Turtlemaster Odai##66022
@@ -1031,16 +1033,16 @@ Congratulations, you have reached exalted with the Huojin Pandaren!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Klaxxi faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6545},
-startlevel=90,
 },[[
 #include "H_Klaxxi"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Lorewalkers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6548},
-startlevel=90,
 },[[
 step
 click The Emperor's Burden - Part 8##
@@ -1247,8 +1249,8 @@ Congratulations, you are now Exalted with the Lorewalkers!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with Nat Pagle faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7274},
-startlevel=90,
 },[[
 step
 label menu
@@ -1296,24 +1298,24 @@ turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Order of the Cloud Serpent faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6550},
-startlevel=90,
 },[[
 #include "H_Cloud_Serpent"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Shado-Pan Assault faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6366},
-startlevel=90,
 },[[
 #include "Shado_Pan_Daily_H"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Sunreaver Onslaught",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Sunreaver Onslaught faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8209},
-startlevel=90,
 },[[
 step
 #include "Sunreavers_dailies"
@@ -1321,8 +1323,8 @@ step
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Tillers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6544},
-startlevel=90,
 },[[
 step
 #include "H_Tillers"

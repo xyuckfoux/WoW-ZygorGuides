@@ -136,8 +136,8 @@ data.basenodes.DungeonEntrances = {
 			-- THE SHATTERED HALLS
 			"Hellfire Peninsula 47.48,52.02 -x- The Shattered Halls/1 61.14,92.81 {autotype:portal_dungeon}",
 
-			"Zangarmarsh 50.36,40.85 <region:coilfang1> -x- Zangarmarsh 50.67,40.07 <region:coilfangpipe> {template:atob12} {atob1:Dive between pipes} {atob2:Swim through pipe} {btoa1:Dive deep down pipe} {btoa2:Swim to surface}",
-			"Zangarmarsh 51.84,38.85 <region:coilfangpipe> -x- Zangarmarsh 51.91,37.93 <region:coilfang2> {template:atob12} {atob1:Swim through pipe} {atob2:Swim to surface} {btoa1:Dive into pipe} {btoa2:Swim into pipe}",
+			"Zangarmarsh 50.36,40.85 <region:coilfang1> -x- Zangarmarsh 50.67,40.07 <region:coilfangpipe> {title_atob1:Dive between pipes} {title_atob2:Swim through pipe} {title_btoa1:Dive deep down pipe} {title_btoa2:Swim to surface}",
+			"Zangarmarsh 51.84,38.85 <region:coilfangpipe> -x- Zangarmarsh 51.91,37.93 <region:coilfang2> {title_atob1:Swim through pipe} {title_atob2:Swim to surface} {title_btoa1:Dive into pipe} {title_btoa2:Swim into pipe}",
 			-- THE STEAMVAULT
 			"Zangarmarsh 50.29,33.33 <region:coilfang2> -x- The Steamvault 17.59,29.76 {autotype:portal_dungeon}",
 			-- THE SLAVE PENS
@@ -694,10 +694,10 @@ data.basenodes.DungeonFloors = {
 		--------------------------------
 		["Court of Stars"] = {
 			"Court of Stars/1 63.36,65.91 <radius:15> -x- Court of Stars/2 38.42,40.67 <radius:15>"..
-				"{template:atob} {atob:Enter the building} {btoa:Leave the building}",
+				"{template:building}",
 
 			"Court of Stars/2 47.80,39.54 <radius:15> -x- Court of Stars/3 54.76,53.74 <radius:15>"..
-				"{template:atob} {atob:Run up the stairs} {btoa:Run down the stairs}",
+				"{title_atob:Run up the stairs} {title_btoa:Run down the stairs}",
 
 
 
@@ -708,7 +708,7 @@ data.basenodes.DungeonFloors = {
 		----------------------------
 		["Stormheim Invasion"] = {
 			"Stormheim Invasion/1 40.73,43.58 <radius:10> -x- Stormheim Invasion/2 44.02,34.65 <radius:15>"..
-			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}",
+			"{title_atob:Follow the path down} {title_btoa:Follow the path up}",
 		},
 
 		----------------------------
@@ -716,7 +716,7 @@ data.basenodes.DungeonFloors = {
 		----------------------------
 		["Highmountain Invasion"] = {
 			"Highmountain Invasion/1 33.73,36.75 <radius:10> -x- Highmountain Invasion/2 38.80,28.00 <radius:15>"..
-			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}",
+			"{title_atob:Follow the path down} {title_btoa:Follow the path up}",
 		},		
 }
 

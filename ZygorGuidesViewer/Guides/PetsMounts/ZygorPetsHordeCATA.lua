@@ -64,9 +64,9 @@ description="This guide will walk you through obtaining the Aquatic pet: Speedy"
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Turtle Box##23002
@@ -305,8 +305,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here for Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -852,9 +852,9 @@ description="This guide will walk you through obtaining the Critter pet: Egbert"
 },[[
 step
 You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Horde_, and _Back to the Orphanage (Dalaran)_
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Egbert's Egg##32616 |tip Warden of the Horde
@@ -888,9 +888,9 @@ description="This guide will walk you through obtaining the Critter pet: Mr. Wig
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Piglet's Collar##23007 |tip Warden of the Horde
@@ -908,8 +908,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -1076,9 +1076,9 @@ description="This guide will walk you through obtaining the Critter pet: Peanut"
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Elekk Training Collar##32622
@@ -1094,8 +1094,8 @@ description="This guide will walk you through obtaining the Critter pet: Pint-Si
 step
 This _pet_ is _only availiable_ during the _Brewfest_ Holiday
 collect 100 Brewfest Prize Tokens##37829
-Click here if you need to do the quests leading up to the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here if you have completed the quests and only need the dailies. |next "Zygor's Horde Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you need to do the quests leading up to the dailies. |next "Zygor's Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here if you have completed the quests and only need the dailies. |next "Zygor's Events Guides\\Brewfest (September 20th - October 6th)\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
 step
 Go to Durotar and talk to Blix Fixwidget
 talk Blix Fixwidget##24495
@@ -1287,9 +1287,9 @@ description="This guide will walk you through obtaining the Critter pet: Scooter
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Snail Shell##66073
@@ -1332,9 +1332,9 @@ pet=127,
 description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat",
 },[[
 step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Rat Cage##23015 |tip Warden of the Horde
@@ -3141,8 +3141,8 @@ description="This guide will walk you through obtaining the Flying pet: Darkmoon
 },[[
 step
 This pet requires Darkmoon Island to be accessible.
-Click here to be taken to the Darkmoon Faire Quests |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
-Click here to do Darkmoon Faire Dailies |confirm |next "Zygor's Horde Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
+Click here to be taken to the Darkmoon Faire Quests |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+Click here to do Darkmoon Faire Dailies |confirm |next "Zygor's Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies" |only if ZGV.guidesets["DailiesHCATA"]
 earn 90 Darkmoon Prize Ticket##515 |goto Darkmoon Island,56.0,52.9
 Click here to buy the pet |confirm |next "buy"
 step
@@ -4417,8 +4417,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -4701,8 +4701,8 @@ description="This guide will walk you through obtaining the Humanoid pet: Curiou
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Curious Oracle Hatchling##46545
@@ -4716,8 +4716,8 @@ description="This guide will walk you through obtaining the Humanoid pet: Curiou
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Curious Wolvar Pup##46544
@@ -4807,7 +4807,7 @@ description="This guide will walk you through obtaining the Humanoid pet: Peddle
 step
 This pet is sold by Lovely Merchants during the Love is in the Air Holiday
 |tip The merchants are in the captial cities
-To earn tokens, click here. |next "Zygor's Horde Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+To earn tokens, click here. |next "Zygor's Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 collect 40 Love Token##49927
 confirm
 step
@@ -4851,8 +4851,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for Valiant Rank Dailies |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -5082,9 +5082,9 @@ description="This guide will walk you through obtaining the Magic pet: Legs",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 confirm
 step
 collect 1 Legs##69648 |tip Back to the Orphanage (Shattrath)
@@ -5131,10 +5131,10 @@ step
 Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
 Exalted with The Sunreavers |condition rep("The Sunreavers")>=Exalted
 Click here for The Pre Quests. |next |only if not completedq(13838) |confirm
-next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
-next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
-next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
+next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"] and completedq(13678)
+next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only" |confirm |only DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13795)
+next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only" |only if not DeathKnight |only if ZGV.guidesets["DailiesHCATA"] and completedq(13794)
 Click here if you have completed the Pre Quests. |next buy |confirm
 step
 talk Helidan Lightwing##33849
@@ -5200,9 +5200,9 @@ pet=157,
 description="This guide will walk you through obtaining the Magic pet: Willy",
 },[[
 step
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Zygor's Horde Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+For the Shattrath Daily set, click here. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 step
 talk Orphan Matron Mercy##22819
 turnin Back to the Orphanage##10967 |goto Shattrath City 74.9,47.9
@@ -5728,8 +5728,8 @@ In order to be able to do this guide section, you must have already completed th
 confirm always
 step
 Proceeding to Pre Quests. |next |only if default
-Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-Click here for |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here Aspirant Rank Daily quests. |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies. Includes Pre-Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click here for |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies" |confirm |only if ZGV.guidesets["DailiesHCATA"]
 Click here if you are already at the rank of Champion. |next buy |confirm
 step
 talk Helidan Lightwing##33849

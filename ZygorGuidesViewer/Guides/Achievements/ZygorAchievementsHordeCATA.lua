@@ -2287,7 +2287,7 @@ Complete "A Hero's Headgear" daily |achieve 961/8
 confirm
 step
 Routing |next "achieve" |only if default
-Routing |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Frenzyheart Tribe Dailies" |only if not achieved(961)
+Routing |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Frenzyheart Tribe Dailies" |only if not achieved(961)
 step
 label "achieve"
 Congratulations, you have earned the Honorary Frenzyheart achievement! |achieve 961
@@ -10132,7 +10132,7 @@ step
 #include "H_Firelands_PreQuests"
 step
 Routing to proper section |next "achieve" |only if not ZGV.guidesets['DailiesHCATA']
-Routing to proper section |next "Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets['DailiesHCATA']
+Routing to proper section |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets['DailiesHCATA']
 step
 label achieve
 This achievement requires that you do the Firelands Dailies and Quests in order to complete it

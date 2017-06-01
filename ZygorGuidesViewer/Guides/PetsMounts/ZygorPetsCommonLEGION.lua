@@ -1639,7 +1639,14 @@ pet=1935,
 description="This guide will walk you through obtaining the Humanoid pet: Squirky",
 },[[
 step
-This pet is not yet in-game.
+_Squirky_ is level 25
+|tip Many Squirkies can be found on this small island.
+Challenge one to a pet battle and capture it
+|tip This island is swarming with elite Murlocs, so watch out!
+learnpet Squirky##225663 |goto Azsuna/0 19.56,21.57
+step
+_Congratulations!_
+You have collected the _Squirky_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Sunborn Val'kyr",{
 model={69254},

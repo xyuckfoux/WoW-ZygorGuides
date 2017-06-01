@@ -40,7 +40,7 @@ data.basenodes.FloorCrossings = {
 			"Durotar/0 83.2,53.6 -x- Durotar/12 54.9,9.5 {template:cave}", -- Skull Rock
 			"Valley of Trials/0 53.0,21.3 -x- Durotar/8 72.2,89.7 {template:cave}", -- Burning Blade Coven
 			"Durotar/0 59.0,58.3 -x- Durotar/10 37.4,68.0 {template:building}", -- Tiragarde Keep
-			"Durotar/10 60.3,50.7 -x- Durotar/11 33.5,33.5 {template:atob} {atob:Go upstairs} {btoa:Go downstairs}", -- Tiragarde Keep, Great Hall (upstairs)
+			"Durotar/10 60.3,50.7 -x- Durotar/11 33.5,33.5 {title_atob:Go upstairs} {title_btoa:Go downstairs}", -- Tiragarde Keep, Great Hall (upstairs)
 			"Durotar/0 52.8,28.6 -x- Durotar/19 50.3,90.5 {template:cave}", -- Dustwind Cave
 		},
 		["Echo Isles"] = {
@@ -113,8 +113,8 @@ data.basenodes.FloorCrossings = {
 		},
 		["Teldrassil"] = {
 			"Teldrassil/0 45.6,50.6 @teldrbanethila0 -x- Teldrassil/4 52.6,15.5 @teldrbanethila4 {template:barrow}", -- Banethil Barrow Den (Upper Den)
-			"Teldrassil/4 24.6,86.0 @teldrbanethilb4 -x- Teldrassil/5 29.9,76.4 @teldrbanethilb5 {template:atob} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
-			"Teldrassil/4 54.2,36.5 @teldrbanethilc4 -x- Teldrassil/5 46.7,39.7 @teldrbanethilc5 {template:atob} {atob:Descend into Lower Den} {btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
+			"Teldrassil/4 24.6,86.0 @teldrbanethilb4 -x- Teldrassil/5 29.9,76.4 @teldrbanethilb5 {title_atob:Descend into Lower Den} {title_btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
+			"Teldrassil/4 54.2,36.5 @teldrbanethilc4 -x- Teldrassil/5 46.7,39.7 @teldrbanethilc5 {title_atob:Descend into Lower Den} {title_btoa:Ascend to Upper Den}", -- Banethil Barrow Den (Lower Den)
 			"@teldrbanethila4 -x- @teldrbanethilb4 {replace:1}",
 			"@teldrbanethilb4 -x- @teldrbanethilc4 {replace:1}",
 			"@teldrbanethilc4 -x- @teldrbanethila4 {replace:1}",
@@ -160,9 +160,9 @@ data.basenodes.FloorCrossings = {
 			"Elwynn Forest/0 38.5,81.5 -x- Elwynn Forest/2 35.2,68.4 {template:mine}", --Fargomine Lower
 		},
 		["Gilneas 2"] = {
-			"Gilneas 2/0 29.03,51.66 -x- Gilneas 2/2 66.89,58.26 {template:atob} {atob:Enter the building} {btoa:Leave the building}", -- Greymane Manor Main Floor
-			"Gilneas 2/2 61.0,47.5 -x- Gilneas 2/3 56.7,47.5 {template:atob} {atob:Run up the stairs} {btoa:Run down the stairs}", -- Greymane Manor Upper Floor
-			"Gilneas 2/0 76.08,31.63 -x- Gilneas 2/1 28.33,69.82 {template:atob} {atob:Enter the mine} {btoa:Leave the mine}", -- Emberstone Mine
+			"Gilneas 2/0 29.03,51.66 -x- Gilneas 2/2 66.89,58.26 {template:building}", -- Greymane Manor Main Floor
+			"Gilneas 2/2 61.0,47.5 -x- Gilneas 2/3 56.7,47.5 {title_atob:Run up the stairs} {title_btoa:Run down the stairs}", -- Greymane Manor Upper Floor
+			"Gilneas 2/0 76.08,31.63 -x- Gilneas 2/1 28.33,69.82 {template:mine}", -- Emberstone Mine
 		},
 		["Ghostlands"] = {
 			"Ghostlands/0 66.4,28.5 -x- Ghostlands/1 94.0,35.6 {template:tunnel}", -- Amani Catacombs
@@ -181,7 +181,7 @@ data.basenodes.FloorCrossings = {
 		["Tirisfal Glades"] = {
 			"Tirisfal Glades/0 82.6,33.5 -x- Tirisfal Glades/13 17.3,82.9 {template:building}", -- Scarlet Monastery Entrance
 			"Tirisfal Glades/0 82.3,32.6 -x- Tirisfal Glades/13 14.5,73.1 {template:building}", -- Scarlet Monastery Entrance
-			"Deathknell/0 44.56,82.68 -x- Tirisfal Glades/0 30.33,72.86 {template:atob} {atob:Enter the crypt} {btoa:Leave the crypt}", -- Deathknell Crypt
+			"Deathknell/0 44.56,82.68 -x- Tirisfal Glades/0 30.33,72.86 {title_atob:Enter the crypt} {title_btoa:Leave the crypt}", -- Deathknell Crypt
 		},
 		["Westfall"] = {
 			"Westfall/0 42.5,71.8 -x- Westfall/17 69.3,23.7 {template:building}", -- Deadmines Cave Entrance (Moonbrook)
@@ -211,7 +211,7 @@ data.basenodes.FloorCrossings = {
 
 		["The Jade Forest"] = {
 			"The Jade Forest/0 45.9,28.9 -x- The Jade Forest/6 75.7,24.7 {template:mine}", -- Greenstone Quarry (Outside --> Upper Quarry)
-			"The Jade Forest/6 39.8,38.0 -x- The Jade Forest/7 51.2,51.0 {template:atob} {atob:Go to the Lower Quarry} {btoa:Go to the Upper Quarry}", -- Greenstone Quarry (Upper Quarry --> Lower Quarry)
+			"The Jade Forest/6 39.8,38.0 -x- The Jade Forest/7 51.2,51.0 {title_atob:Go to the Lower Quarry} {title_btoa:Go to the Upper Quarry}", -- Greenstone Quarry (Upper Quarry --> Lower Quarry)
 			"The Jade Forest/0 57.7,31.7 -x- The Jade Forest/15 76.8,20.0 {template:cave}", -- The Widow's Wail (Outside of Cave --> Inside Cave)
 			"The Jade Forest/0 57.5,27.7 -x- The Jade Forest/16 82.4,47.7 {template:cave}", -- Oona Kagu (Outside of Cave --> Inside Cave)
 		},
@@ -222,13 +222,13 @@ data.basenodes.FloorCrossings = {
 		},
 		["Kun-Lai Summit"] = {
 			"Kun-Lai Summit/0  52.9,71.3 -x- Kun-Lai Summit/11 56.5,15.9 {template:cave}", --The Deeper
-			"Kun-Lai Summit/11 52.4,65.5 -x- Kun-Lai Summit/12 51.6,55.9 {template:atob} {atob:Go downstairs} {btoa:Go upstairs}", --The Deeper2
+			"Kun-Lai Summit/11 52.4,65.5 -x- Kun-Lai Summit/12 51.6,55.9 {title_atob:Go downstairs} {title_btoa:Go upstairs}", --The Deeper2
 			"Kun-Lai Summit/0  50.3,61.7 -x- Kun-Lai Summit/10 74.9,91.5 {template:cave}", -- Knucklethump Hole
 			"Kun-Lai Summit/0  73.2,73.5 -x- Kun-Lai Summit/9  11.5,30.0 {template:cave}", -- Pranksters' Hollow
 			"Kun-Lai Summit/0  59.1,52.5 -x- Kun-Lai Summit/8  66.9,82.3 {template:cave}", -- Howlingwind Cavern
 			"Kun-Lai Summit/0  53.0,46.5 -x- Kun-Lai Summit/17 88.3,54.8 {template:building}", -- Tomb of Conquerors
 			"Kun-Lai Summit/0  33.1,26.6 -x- Kun-Lai Summit/20 52.2,11.6 {template:building}", -- Ruins of Korune
-			"Kun-Lai Summit/20 30.9,75.9 <radius:15> -x- Kun-Lai Summit/21 34.3,76.1 {template:atob} {atob:Go downstairs} {btoa:Go upstairs}", -- Crypt of Korune
+			"Kun-Lai Summit/20 30.9,75.9 <radius:15> -x- Kun-Lai Summit/21 34.3,76.1 {title_atob:Go downstairs} {title_btoa:Go upstairs}", -- Crypt of Korune
 		},
 		["Townlong Steppes"] = {
 			"Townlong Steppes /0 33.02,61.24 -x- Townlong Steppes/13 20.15,68.46 {template:cave}", -- Niuzao Catacombs
@@ -295,7 +295,7 @@ data.basenodes.FloorCrossings = {
 			"Frostfire Ridge/1 55.3,25.8 -x- Frostfire Ridge/2 55.7,18.7 {template:building}", --Bladespire Citadel
 			
 			"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 20.69,38.83 {template:pathup}", --Bladespire Fortress west ramp
-			"Frostfire Ridge/0 21.0,42.3 -x- Frostfire Ridge/1 -7.8,86.5 {template:atob} {atob:Enter the bridge} {btoa:Get off the bridge}", --Gormaul Tower - Bladespire Fortress bridge
+			"Frostfire Ridge/0 21.0,42.3 -x- Frostfire Ridge/1 -7.8,86.5 {title_atob:Enter the bridge} {title_btoa:Get off the bridge}", --Gormaul Tower - Bladespire Fortress bridge
 			
 			--[[ too detailed ramp, too zealous.
 			"Frostfire Ridge/0 24.3,36.4 -x- Frostfire Ridge/1 21.14,25.23 <radius:5> {template:pathup} {cost:-0.001} {dark:1}", --Bladespire Fortress
@@ -324,9 +324,9 @@ data.basenodes.FloorCrossings = {
 			"@+ -x- Gorgrond/0 43.4,47.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
 			"@+ -x- Gorgrond/18 64.2,82.9 <dark:1> <radius:20> {template:cave}", --Fissure of Fury
 			"@+ -x- Gorgrond/18 57.0,78.6 <radius:20> {template:cave}", --Fissure of Fury
-			"Gorgrond/18 67.4,46.5 <radius:30> -x- Gorgrond/19 63.3,66.7 <radius:30> {template:atob} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
+			"Gorgrond/18 67.4,46.5 <radius:30> -x- Gorgrond/19 63.3,66.7 <radius:30> {title_atob:Continue walking down into the cave} {title_btoa:Run up the ramp to leave the cave}", --Heart of Fury
 			"Gorgrond/0 54.0,55.7 <dist:20> -x- Gorgrond/20 69,73 <dist:20> {template:cave}", --Fissure of Fury
-			"Gorgrond/20 70,51 <dist:30> -x- Gorgrond/21 65,56 <dist:30> {template:atob} {atob:Continue walking down into the cave} {btoa:Run up the ramp to leave the cave}", --Heart of Fury
+			"Gorgrond/20 70,51 <dist:30> -x- Gorgrond/21 65,56 <dist:30> {title_atob:Continue walking down into the cave} {title_btoa:Run up the ramp to leave the cave}", --Heart of Fury
 		},
 		["Lunarfall"] = {
 			"Lunarfall/0 66.6,42.0 -x- Lunarfall/23 70.4,70.1 {template:mine}", --Lunarfall Excavation
@@ -334,7 +334,7 @@ data.basenodes.FloorCrossings = {
 		["Nagrand D"] = {
 			"Nagrand D/0 67.0,49.6 -x- Nagrand D/11 11.8,77.1 {template:cave}", --Vault of the Titan
 			"Nagrand D/0 56.5,61.9 -x- Nagrand D/12 77.7,39.3 {template:cave}", --The Underpale
-			"Nagrand D/12 10.3,62.0 -to- Nagrand D/0 47.2,64.3 {template:atob} {atob:Walk through the tunnel}", -- The Underpale 2 (exit only)
+			"Nagrand D/12 10.3,62.0 -to- Nagrand D/0 47.2,64.3 {title:Walk through the tunnel}", -- The Underpale 2 (exit only)
 			"Nagrand D/0 88.0,55.4 -x- Nagrand D/10 27.4,15.4 {template:cave}", -- The Master's Cavern
 		},
 		["Shadowmoon Valley D"] = {
@@ -371,18 +371,18 @@ data.basenodes.FloorCrossings = {
 		["Dalaran L"] = {
 			-- Underbelly Entrance for Warlock Order Hall Portal
 				"Dalaran L/10 34.33,45.60 <radius:10> -x- Dalaran L/11 19.18,57.14 <radius:10>"..
-					"{template:atob} {atob:Enter the Underbelly and run down the stairs}"..
-					"{btoa:Run up the stairs and leave the Underbelly} {cond:ZGV.IsLegionOn()}",
+					"{title_atob:Enter the Underbelly and run down the stairs}"..
+					"{title_btoa:Run up the stairs and leave the Underbelly} {cond:ZGV.IsLegionOn()}",
 
 			-- Underbelly Main Entrance
 				"Dalaran L/10 59.85,47.89 <radius:10> -x- Dalaran L/11 76.26,68.47 <radius:10>"..
-					"{template:atob} {atob:Enter the Underbelly and run down the stairs}"..
-					"{btoa:Run up the stairs and leave the Underbelly} {cond:ZGV.IsLegionOn()}",
+					"{title_atob:Enter the Underbelly and run down the stairs}"..
+					"{title_btoa:Run up the stairs and leave the Underbelly} {cond:ZGV.IsLegionOn()}",
 
 			-- Rogue Order Hall Entrance
 				"Dalaran L/10 52.83,70.29 <radius:10> -x- Dalaran L/4 87.05,76.65 <radius:10> {template:atob}"..
-					"{atob:Talk to \"Red\" Jack Findle and Show Him Your Insignia, Enter the Doorway, and Run Down the Stairs}"..
-					"{btoa:Run Up the Stairs, Click the Torch, and Leave the Doorway} {cond:PlayerIsOnQuest(40832) or PlayerCompletedQuest(40832)}",
+					"{title_atob:Talk to \"Red\" Jack Findle and Show Him Your Insignia, Enter the Doorway, and Run Down the Stairs}"..
+					"{title_btoa:Run Up the Stairs, Click the Torch, and Leave the Doorway} {cond:PlayerIsOnQuest(40832) or PlayerCompletedQuest(40832)}",
 		},
 
 
@@ -392,24 +392,24 @@ data.basenodes.FloorCrossings = {
 		["Azsuna"] = {
 			-- Oceanus Cove Entrance #1
 				"Azsuna/0 50.72,59.10 <radius:25> -x- Azsuna/18 72.80,85.82 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave} {cond:ZGV.IsLegionOn()}",
+					"{template:cave} {cond:ZGV.IsLegionOn()}",
 
 			-- Oceanus Cove Entrance #2
 				"Azsuna/0 45.77,55.53 <radius:30> -x- Azsuna/18 27.77,49.64 <radius:25>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave} {cond:ZGV.IsLegionOn()}",
+					"{template:cave} {cond:ZGV.IsLegionOn()}",
 				
 			-- Oceanus Cove Entrance #3
 				"Azsuna/0 48.18,50.58 <radius:30> -x- Azsuna/18 42.58,18.32 <radius:25>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave} {cond:ZGV.IsLegionOn()}",
+					"{template:cave} {cond:ZGV.IsLegionOn()}",
 
 			-- Temple of a Thousand Lights
 				"Azsuna/0 56.03,68.69 <radius:10> -x- Azsuna/19 65.95,19.19 <radius:10>"..
-					"{template:atob} {atob:Enter the building and run down the stairs}"..
-					"{btoa:Run up the stairs and leave the building} {cond:ZGV.IsLegionOn()}",
+					"{title_atob:Enter the building and run down the stairs}"..
+					"{title_btoa:Run up the stairs and leave the building} {cond:ZGV.IsLegionOn()}",
 
 			-- Nar'thalas Academy
 				"Azsuna/0 53.78,40.40 <radius:15> -x- Azsuna/17 62.40,84.94 <radius:15>"..
-					"{template:atob} {atob:Enter the building} {btoa:Leave the building}"..
+					"{template:building}"..
 					"{cond:ZGV.IsLegionOn()}",
 		},
 
@@ -421,26 +421,26 @@ data.basenodes.FloorCrossings = {
 		["Val'sharah"] = {
 			-- Darkpens Entrance
 				"Val'sharah/0 40.53,44.88 <radius:10> -x- Val'sharah/13 38.13,87.90 <radius:10>"..
-					"{template:atob} {atob:Run down the stairs} {btoa:Run up the stairs}"..
+					"{title_atob:Run down the stairs} {title_btoa:Run up the stairs}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Sleeper's Barrow Entrance from Val'sharah
 				"Val'sharah/0 50.01,85.60 <radius:10> -x- Val'sharah/14 67.04,26.85 <radius:10>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Sleeper's Barrow Floor #2
 				"Val'sharah/14 34.54,60.30 <radius:15> -x- Val'sharah/15 25.56,59.75 <radius:15>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Sleeper's Barrow Floor #2 Jump Down to Floor #1
 				"Val'sharah/15 76.80,56.89 <radius:10> -to- Val'sharah/14 62.07,48.22 <radius:20>"..
-					"{template:atob} {atob:Jump down here} {cond:ZGV.IsLegionOn()}",	
+					"{title:Jump down here} {cond:ZGV.IsLegionOn()}",	
 					
 			-- The Dreamgrove Ground Entrance (Druid Only)
 				"Val'sharah/0 45.48,34.51 <radius:20> -x- The Dreamgrove/0 44.82,32.76 <radius:20>"..
-					"{template:atob} {atob:Follow the path} {btoa:Follow the path}"..
+					"{title:Follow the path}"..
 					"{cond:select(2,UnitClass('player'))=='DRUID' and ZGV.IsLegionOn()}",
 		},
 
@@ -452,63 +452,63 @@ data.basenodes.FloorCrossings = {
 		["Highmountain"] = {
 			-- Neltharion's Vault Exit to Obsidian Overlook
 				"Highmountain/0 47.53,84.32 <radius:15> -x- Highmountain/30 41.80,90.71 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Neltharion's Vault Floor #1 to Floor #2 Border
 				"Highmountain/30 46.83,18.83 <radius:20> -x- Highmountain/29 50.18,86.90 <radius:20>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Highmountain to Neltharion's Vault Main Entrance
 				"Highmountain/0 44.68,72.33 <radius:20> -x- Highmountain/29 24.22,41.41 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Mucksnout Den Entrance #1
 				"Highmountain/0 41.50,46.77 <radius:20> -x- Highmountain/16 52.09,86.28 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Mucksnout Den Entrance #2
 				"Highmountain/0 38.46,42.64 <radius:20> -x- Highmountain/16 33.48,64.11 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Lifespring Cavern Entrance
 				"Highmountain/0 38.37,61.30 <radius:15> -x- Highmountain/20 72.57,74.94 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Lifespring Cavern Floor #1 to Floor #2 Main Border
 				"Highmountain/20 41.25,59.40 <radius:10> -x- Highmountain/21 37.30,78.71 <radius:10>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Lifespring Cavern Upper Floor to Lower Floor Wooden Bridge
 				"Highmountain/21 72.41,54.76 <radius:10> -to- Highmountain/20 56.39,17.40 <radius:15>"..
-					"{template:atob} {atob:Follow the path down} {cond:ZGV.IsLegionOn()}",
+					"{title_atob:Follow the path down} {cond:ZGV.IsLegionOn()}",
 
 			-- Bitestone Enclave Entrance
 				"Highmountain/0 41.36,72.50 <radius:20> -x- Highmountain/5 19.31,28.75 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Cave of the Blood Trial Entrance
 				"Highmountain/0 37.61,33.46 <radius:20> -x- Highmountain/8 51.91,19.27 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Stonedark Grotto Entrance
 				"Highmountain/0 42.59,25.28 <radius:20> -x- Highmountain/31 21.78,75.61 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 			
 			
 			
 				-- Trueshot Lodge Ground Entrance (Hunter Only)
 				"Highmountain/0 36.13,44.71 <radius:20> -x- Trueshot Lodge/0 42.72,9.98 <radius:20>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}"..
 					"{cond:select(2,UnitClass('player'))=='HUNTER' and ZGV.IsLegionOn()}",
 		},
 
@@ -516,13 +516,13 @@ data.basenodes.FloorCrossings = {
 			-- Thunder Totem Elevator #1
 				"Thunder Totem/0 49.27,46.09 <region:thunder_totem_circle_platform> <radius:10> -x- "..
 					"Thunder Totem/6 68.48,49.94 <radius:10>"..
-					"{template:atob} {atob:Ride the elevator down} {btoa:Ride the elevator up}"..
+					"{title_atob:Ride the elevator down} {title_btoa:Ride the elevator up}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Elevator #2
 				"Thunder Totem/0 45.85,59.02 <region:thunder_totem_circle_platform> <radius:10> -x- "..
 					"Thunder Totem/6 58.69,87.00 <radius:10>"..
-					"{template:atob} {atob:Ride the elevator down} {btoa:Ride the elevator up}"..
+					"{title_atob:Ride the elevator down} {title_btoa:Ride the elevator up}"..
 					"{cond:ZGV.IsLegionOn()}",
 			
 			
@@ -530,72 +530,72 @@ data.basenodes.FloorCrossings = {
 			-- Thunder Totem Platform Path #1
 				"Thunder Totem/0 51.28,39.13 <region:thunder_totem_circle_platform> <radius:15> -x- "..
 					"Thunder Totem/0 56.28,26.58 <radius:15>"..
-					"{template:atob} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{title:Cross the bridge}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Platform Path #2
 				"Thunder Totem/0 53.97,56.44 <region:thunder_totem_circle_platform> <radius:30> -x- "..
 					"Thunder Totem/0 60.02,64.38 <radius:20>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}"..
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Platform Path #3
 				"Thunder Totem/0 42.08,64.11 <region:thunder_totem_circle_platform> <radius:15> -x- "..
 					"Thunder Totem/0 40.08,74.39 <radius:15>"..
-					"{template:atob} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{title:Cross the bridge}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Platform Path #4
 				"Thunder Totem/0 54.50,55.07 <region:thunder_totem_circle_platform> <radius:20> -x- "..
 					"Thunder Totem/0 58.23,50.98 <radius:20>"..
-					"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}"..
+					"{title_atob:Follow the path down} {title_btoa:Follow the path up}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 
 			
 			-- Thunder Totem Tunnel #1
 				"Thunder Totem/0 33.91,56.80 <radius:10> -x- Thunder Totem/6 30.94,77.72 <radius:10>"..
-					"{template:atob} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{title_atob:Enter the tunnel} {title_btoa:Leave the tunnel}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Tunnel #2
 				"Thunder Totem/0 34.95,44.20 <radius:10> -x- Thunder Totem/6 32.75,49.71 <radius:10>"..
-					"{template:atob} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{title_atob:Enter the tunnel} {title_btoa:Leave the tunnel}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Tunnel #3
 				"Thunder Totem/0 42.19,33.04 <radius:10> -x- Thunder Totem/6 50.75,22.57 <radius:10>"..
-					"{template:atob} {atob:Enter the tunnel} {btoa:Leave the tunnel}"..
+					"{title_atob:Enter the tunnel} {title_btoa:Leave the tunnel}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Main Entrance #1
 				"Highmountain/0 48.98,55.41 <radius:15> -x- Thunder Totem/0 58.97,14.56 <radius:15>"..
-					"{template:atob} {atob:Cross the bridge} {btoa:Cross the bridge}"..
+					"{title:Cross the bridge}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Main Entrance #2
 				"Highmountain/0 50.66,64.01 <radius:30> -x- Thunder Totem/0 61.69,64.75 <radius:20>"..
-					"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}"..
+					"{title_atob:Follow the path down} {title_btoa:Follow the path up}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Main Entrance #3
 				"Highmountain/0 44.93,65.57 <radius:20> -x- Thunder Totem/0 34.01,78.12 <radius:20>"..
-					"{template:atob} {atob:Follow the path} {btoa:Follow the path}"..
+					"{title:Follow the path}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Western Entrance #1
 				"Highmountain/0 42.02,66.57 <radius:30> -x- Thunder Totem/0 20.18,63.51 <radius:20>"..
-					"{template:atob} {atob:Follow the path} {btoa:Follow the path}"..
+					"{title:Follow the path}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Western Entrance #2
 				"Highmountain/0 43.91,59.37 <radius:20> -x- Thunder Totem/0 28.59,38.84 <radius:20>"..
-					"{template:atob} {atob:Follow the path} {btoa:Follow the path}"..
+					"{title:Follow the path}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thunder Totem Western Entrance #3
 				"Highmountain/0 45.54,56.31 <radius:30> -x- Thunder Totem/0 40.42,26.89 <radius:20>"..
-					"{template:atob} {atob:Follow the path} {btoa:Follow the path}"..
+					"{title:Follow the path}"..
 					"{cond:ZGV.IsLegionOn()}",			
 			
 		},
@@ -606,27 +606,27 @@ data.basenodes.FloorCrossings = {
 		["Stormheim"] = {
 			-- Stormscale Cavern Entrance #1
 				"Stormheim/0 31.46,56.91 <radius:15> -x- Stormheim/9 77.42,45.57 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Stormscale Cavern Entrance #2
 				"Stormheim/0 29.95,54.94 <radius:20> -x- Stormheim/9 59.68,20.31 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thorignir Refuge Entrance
 				"Stormheim/0 42.76,81.83 <radius:20> -x- Stormheim/25 67.71,65.07 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}"..
+					"{template:cave}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Thorignir Refuge Floor #1 to Floor #2 Crossing
 				"Stormheim/25 37.27,58.42 <radius:15> -x- Stormheim/26 48.42,40.65 <radius:15>"..
-					"{template:atob} {atob:Follow the path down} {btoa:Follow the path up}"..
+					"{title_atob:Follow the path down} {title_btoa:Follow the path up}"..
 					"{cond:ZGV.IsLegionOn()}",
 
 			-- Aggramar's Vault Entrance
 				"Stormheim/0 47.63,44.82 <radius:20> -x- Stormheim/27 28.51,71.34 <radius:20>"..
-					"{template:atob} {atob:Enter the building} {btoa:Leave the building}"..
+					"{template:building}"..
 					"{cond:ZGV.IsLegionOn()}",
 		},		
 				
@@ -638,57 +638,57 @@ data.basenodes.FloorCrossings = {
 		["Suramar"] = {
 			-- Ley Station Anora Entrance
 				"Suramar/0 41.59,38.99 <radius:15> -x- Suramar/36 23.91,32.34 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- Jump Down into Falanaar Tunnels
 				"Suramar/0 21.19,42.96 <radius:15> -to- Suramar/33 46.85,43.76 <radius:40>"..
-					"{template:atob} {atob:Jump down into the water}",
+					"{title:Jump down into the water}",
 
 			-- Falanaar Tunnels Floor #1 to Floor #2
 				"Suramar/33 50.97,16.02 <radius:15> -x- Suramar/32 30.64,69.23 <radius:15>"..
-					"{template:atob} {atob:Follow the path up} {btoa:Follow the path down}",
+					"{title_atob:Follow the path up} {title_btoa:Follow the path down}",
 
 			-- Falanaar Tunnels Main Entrance
 				"Suramar/32 50.35,62.73 <radius:15> -x- Suramar/0 22.86,35.76 <radius:15>"..
-					"{template:atob} {atob:Leave the building} {btoa:Enter the building}",
+					"{title_atob:Leave the building} {title_btoa:Enter the building}",
 
 			-- Ley Station Moonfall Entrance
 				"Suramar/0 35.70,24.30 <radius:15> -x- Suramar/37 49.28,88.09 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- Ley Station Aethenar Entrance
 				"Suramar/0 24.35,19.43 <radius:15> -x- Suramar/38 63.53,87.13 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- Ley Station Kel'balor Entrance
 				"Suramar/0 59.37,43.03 <radius:15> -x- Suramar/35 53.98,85.53 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- Elor'shan Entrance
 				"Suramar/0 65.95,42.06 <radius:15> -x- Suramar/34 56.37,86.81 <radius:15>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- The Arcway Entrance
 				"Suramar/0 35.68,82.23 <radius:20> -x- Suramar/23 27.03,89.23 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 
 			-- The Arcway Vaults Entrance
 				"Suramar/0 34.54,84.24 <radius:20> -x- Suramar/24 41.94,25.50 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 					
 			-- Sanctum of Order - Bottom Floor Entrance
 				"Suramar/0 45.95,64.59 -x- Suramar/0 45.77,64.41 <region:suramar_sanctum_of_order> {template:atob}"..
-					"{atob:Enter the Sanctum of Order (Bottom Floor)}"..
-					"{btoa:Leave the Sanctum of Order (Bottom Floor)}",
+					"{title_atob:Enter the Sanctum of Order (Bottom Floor)}"..
+					"{title_btoa:Leave the Sanctum of Order (Bottom Floor)}",
 			
 			-- Sanctum of Order - Top Floor Entrance
 				"Suramar/0 42.80,61.84 -x- Suramar/0 43.57,62.50 <region:suramar_sanctum_of_order> {template:atob}"..
-					"{atob:Enter the Sanctum of Order (Top Floor)}"..
-					"{btoa:Leave the Sanctum of Order (Top Floor)}",
+					"{title_atob:Enter the Sanctum of Order (Top Floor)}"..
+					"{title_btoa:Leave the Sanctum of Order (Top Floor)}",
 
 			-- Teloth'aran Entrance
 				"Suramar/0 54.65,46.32 <radius:20> -x- Suramar/22 39.41,83.43 <radius:20>"..
-					"{template:atob} {atob:Enter the cave} {btoa:Leave the cave}",
+					"{template:cave}",
 		},
 
 		
@@ -698,7 +698,7 @@ data.basenodes.FloorCrossings = {
 		-------------------------
 		["Hall of the Guardian"] = {
 			"Hall of the Guardian/1 59.64,60.14 <radius:15> -x- Hall of the Guardian/2 58.32,65.16 <radius:15>"..
-			"{template:atob} {atob:Run up the stairs} {btoa:Run down the stairs} {cond:PlayerCompletedQuest(41036)}",
+			"{title_atob:Run up the stairs} {title_btoa:Run down the stairs} {cond:PlayerCompletedQuest(41036)}",
 		},
 
 
@@ -709,8 +709,8 @@ data.basenodes.FloorCrossings = {
 		["Eastern Plaguelands"] = {
 			--[[
 			"Eastern Plaguelands/20 41.84,75.90 <radius:15> -x- Eastern Plaguelands/0 75.34,52.78 <radius:15>"..
-			"{template:atob} {atob:Run up the stairs, click the Secret Door, and leave the building}"..
-			"{btoa:Enter the building, click the Secret Door, and run down the stairs} {cond:PlayerCompletedQuest(38566)}",
+			"{title_atob:Run up the stairs, click the Secret Door, and leave the building}"..
+			"{title_btoa:Enter the building, click the Secret Door, and run down the stairs} {cond:PlayerCompletedQuest(38566)}",
 			--]]
 
 
@@ -734,7 +734,7 @@ data.basenodes.FloorCrossings = {
 		---------------------------------
 		["Mardum, the Shattered Abyss"] = {
 			"Mardum, the Shattered Abyss/2 68.66,67.24 <radius:10> -x- Mardum, the Shattered Abyss/3 65.39,53.64 <radius:15>"..
-			"{template:atob} {atob:Follow the path down} {btoa:Follow the path up} {cond:PlayerCompletedQuest(42872)}",
+			"{title_atob:Follow the path down} {title_btoa:Follow the path up} {cond:PlayerCompletedQuest(42872)}",
 		},		
 
 
@@ -744,12 +744,10 @@ data.basenodes.FloorCrossings = {
 		---------------------------------
 		["Broken Shore"] = {
 			-- Bottom Floor to Top Floor
-				"Broken Shore/2 35.41,37.52 -to- Broken Shore/1 36.25,38.55 {mode:PORTAL} {template:atob}"..
-					"{atob:Walk onto the Teleport Pad to go Upstairs} {cond:PlayerCompletedQuest(39757)}",
+				"Broken Shore/2 35.41,37.52 -to- Broken Shore/1 36.25,38.55 {mode:PORTAL} {title:Walk onto the Teleport Pad to go Upstairs} {cond:PlayerCompletedQuest(39757)}",
 
 			-- Top Floor to Bottom Floor
-				"Broken Shore/1 33.96,36.30 -to- Broken Shore/2 37.77,39.76 {mode:PORTAL} {template:atob}"..
-					"{atob:Walk onto the Teleport Pad to go Downstairs} {cond:PlayerCompletedQuest(39757)}",
+				"Broken Shore/1 33.96,36.30 -to- Broken Shore/2 37.77,39.76 {mode:PORTAL} {title:Walk onto the Teleport Pad to go Downstairs} {cond:PlayerCompletedQuest(39757)}",
 		},
 
 

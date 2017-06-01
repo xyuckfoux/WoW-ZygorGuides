@@ -1833,7 +1833,7 @@ step
 create Mithril Bar##10097,Mining,220 total |condition skill("Engineering")>=210
 step
 #include "maincity_anvil"
-create Gold Bar##3308,Mining,100 total |condition skill("Engineering")>=210
+create Gold Bar##3308,Mining,10 total |condition skill("Engineering")>=210
 step
 #include "trainer_Engineering"
 learn Heavy Blasting Powder##3945 |condition skill("Engineering")>=210

@@ -382,7 +382,7 @@ description="This guide will walk you through obtaining the Critter pet: Lovebir
 step
 This pet is sold by Lovely Merchants during the Love is in the Air Holiday
 |tip The merchants are in the captial cities.
-To earn tokens, _click here_. |next "Zygor's Horde Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
+To earn tokens, _click here_. |next "Zygor's Events Guides\\Love is in the Air (February 6th - 20th)\\Love is in the Air Dailies" |confirm |only if ZGV.guidesets["DailiesACATA"]
 collect 40 Love Token##49927
 confirm
 step
@@ -471,7 +471,7 @@ description="This guide will walk you through obtaining the Elemental pet: Blazi
 step
 This pet is sold by Midsummer Merchant during the Midsummer Fire Festival Holiday
 |tip The merchants are in the captial cities.
-To earn tokens, _click here_. |next "Zygor's Horde Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm |only if ZGV.guidesets["DailiesACATA"]
+To earn tokens, _click here_. |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests" |confirm |only if ZGV.guidesets["DailiesACATA"]
 collect 350 Burning Blossom##23247
 confirm
 step
@@ -614,8 +614,8 @@ This pet is only availiable during the Brewfest Holiday
 |tip You will need to complete the quests, then do the dailies to amass brewest tokens.
 collect 200 Brewfest Prize Tokens##37829
 step
-_Click here_ if you need to do the quests leading up to the dailies. |next "Zygor's Horde Events Guides\\Brewfest\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
-_Click here_ if you have completed the quests and only need the dailies. |next "Zygor's Horde Events Guides\\Brewfest\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+_Click here_ if you need to do the quests leading up to the dailies. |next "Zygor's Events Guides\\Brewfest\\Brewfest Quests" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
+_Click here_ if you have completed the quests and only need the dailies. |next "Zygor's Events Guides\\Brewfest\\Brewfest Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHCATA"]
 step
 talk Blix Fixwidget##24495 |goto Durotar 40.4,17.8
 buy 1 Stout Alemental##116756

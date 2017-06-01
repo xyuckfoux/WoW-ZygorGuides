@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("DailiesACATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Stormwind City\\Main City Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Stormwind City\\Main City Cooking Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the\nCooking daily quests in Stormwind, Ironforge and Darnassus\nYou must be at least level 10 to\ncomplete the quests in this guide.",
 },[[
@@ -40,7 +40,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the Dailies Menu |confirm |next menu
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Stormwind City\\Stormwind City Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Stormwind City\\Stormwind City Fishing Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the Fishing daily quests in Stormwind City.\nYou must be at least level 10 to complete the quests in this guide.",
 },[[
@@ -84,7 +84,7 @@ turnin Hitting a Walleye##26414 |goto Stormwind City 55.0,69.7
 turnin Rock Lobster##26442 |goto Stormwind City 55.0,69.7
 turnin Thunder Falls##26536 |goto Stormwind City 55.0,69.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Stormwind City\\Stormwind City Jewelcrafting Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Classic Dailies\\Stormwind City\\Stormwind City Jewelcrafting Dailies",{
 author="support@zygorguides.com",
 description="Walks you through completing the Jewelcrafting daily quests in Stormwind City.",
 },[[
@@ -140,7 +140,1155 @@ turnin Nibbler! No!##25105 |goto Stormwind City 63.8,61.5
 turnin Ogrezonians in the Mood##25155 |goto Stormwind City 63.8,61.5
 turnin The Latest Fashion!##25157 |goto Stormwind City 63.8,61.5
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Coldarra Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through getting Friendly reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+},[[
+step
+label	hub
+Proceeding to Pre-Quests |next |only if default
+Proceeding to Dailies |next dailies |only if completedq(11049)
+step
+Go to Shadowmoon Valley in Outland |goto Shadowmoon Valley |noway |c
+step
+talk Mordenai##22113
+accept Kindness##10804 |goto Shadowmoon Valley,62.9,59.5
+step
+kill Rocknail Ripper##21478+, Rocknail Flayer##21477+
+|tip The Rocknail Flayers will drop Rocknail Flayer Carcasses, instead of Rocknail Flayer Giblets.
+collect Rocknail Flayer Giblets##31373 |n
+Click the Rocknail Flayer Giblets in your bags, once you have 5 of them, to combine them into a Rocknail Flayer Carcass |use Rocknail Flayer Giblets##31373
+collect 8 Rocknail Flayer Carcass##31372 |q 10804 |goto 60.5,57.7
+step
+Use the Rocknail Flayer Carcasses in your bags |use Rocknail Flayer Carcass##31372
+Feed 8 Netherwing Drakes |q 10804/1 |goto 60.5,57.7
+step
+talk Mordenai##22113
+turnin Kindness##10804 |goto 62.9,59.5
+accept Seek Out Neltharaku##10811 |goto 62.9,59.5
+step
+talk Neltharaku##21657
+turnin Seek Out Neltharaku##10811 |goto 68.2,60.4
+accept Neltharaku's Tale##10814 |goto 68.2,60.4
+talk Neltharaku##21657
+Listen to the Tale of Neltharaku |q 10814/1 |goto 68.2,60.4
+turnin Neltharaku's Tale##10814 |goto 68.2,60.4
+accept Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
+step
+kill Dragonmaw Drake-Rider##21719+, Dragonmaw Wrangler##21717+, Dragonmaw Subjugator##21718+
+kill 15 Dragonmaw Orc |q 10836/1 |goto 66.4,60.0
+step
+talk Neltharaku##21657
+turnin Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
+accept To Netherwing Ledge!##10837 |goto 68.2,60.4
+step
+Click the Nethervine Crystals
+|tip They look like big thorny plants with a small puff of red smoke near the top of them, on the ground around this area.
+collect 12 Nethervine Crystal |q 10837/1 |goto 64.1,80.7
+step
+talk Neltharaku##21657
+turnin To Netherwing Ledge!##10837 |goto 68.2,60.4
+accept The Force of Neltharaku##10854 |goto 68.2,60.4
+step
+Use your Enchanted Nethervine Crystal on Enslaved Netherwing Drakes |use Enchanted Nethervine Crystal
+|tip Help the Enslaved Netherwing Drakes kill their Dragonmaw Subjugator after you free them.
+Free 5 Enslaved Netherwing Drakes |q 10854/1 |goto 67.4,59.3
+step
+talk Neltharaku##21657
+turnin The Force of Neltharaku##10854 |goto 68.2,60.4
+accept Karynaku##10858 |goto 68.2,60.4
+step
+talk Karynaku##22112
+turnin Karynaku##10858 |goto 69.9,61.5
+accept Zuluhed the Whacked##10866 |goto 69.9,61.5
+step
+kill Zuluhed the Whacked |q 10866/2 |goto 70.9,61.5
+|tip You will probably need a group to kill Zuluhed the Whacked.  He will summon demons through a portal to help him fight.  To avoid having to fight the demons, pull Zuluhed the Whacked into one of the small buildings, on either side of him, when he casts the portal.
+collect Zuluhed's Key##31664 |q 10866 |goto 70.9,61.5
+step
+Click Zuluhed's Chains
+|tip It looks like a big metal ball and chain.
+Free Karynaku |q 10866/1 |goto 69.8,61.3
+step
+talk Karynaku##22112
+turnin Zuluhed the Whacked##10866 |goto 69.9,61.5
+accept Ally of the Netherwing##10870 |goto 69.9,61.5
+step
+talk Mordenai##22113
+turnin Ally of the Netherwing##10870 |goto 62.9,59.5
+accept Blood Oath of the Netherwing##11012 |instant |goto 62.9,59.5
+accept In Service of the Illidari##11013 |goto 62.9,59.5
+step
+talk Overlord Mor'ghor##23139
+turnin In Service of the Illidari##11013 |goto 66.2,85.7
+accept Enter the Taskmaster##11014 |goto 66.2,85.7
+step
+talk Taskmaster Varkule Dragonbreath##23140
+turnin Enter the Taskmaster##11014 |goto 66.1,86.4
+step
+talk Yarzill the Merc##23141
+accept Your Friend on the Inside##11019 |instant |goto 66.0,86.5
+accept The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
+step
+Click a Netherwing Egg
+|tip They look like dark purple eggs with blue crystals on them. They spawn in random places, so you will probably need to search for them.  For help finding a Netherwing Egg, use the Netherwing Egg Hunting - Optimized Path section of this guide.
+collect 1 Netherwing Egg |q 11049/1 |goto 68.5,61.2
+step
+talk Yarzill the Merc##23141
+turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
+daily
+step
+label	dailies
+talk Yarzill the Merc##23141
+accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Netherwing Crystals##11015 |goto 66.1,86.4
+accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350. |or
+accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
+|tip This quest is only available if you have your Mining skill to at least 350. |or
+accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
+|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+step
+kill Dragonmaw Transporter##23188+
+|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
+collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
+step
+kill Greater Felfire Diemetradon##21462+, Felboar##21878+
+collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+step
+Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+step
+Click Netherdust Bushes
+|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
+collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
+step
+Click Nethercite Deposits
+|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
+collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
+step
+The entrance to the mine starts here |goto Shadowmoon Valley 65.3,90.2 < 10
+step
+kill Nethermine Flayer##23169+, Black Blood of Draenor##23286+
+collect 30 Netherwing Crystal |q 11015/1 |goto 70.8,84.4
+Skin Nethermine Flayers |only if skill ("Skinning") >= 350
+collect 35 Nethermine Flayer Hide |q 11016/1 |goto 70.8,84.4 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350.
+step
+Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
+step
+talk Yarzill the Merc##23141
+turnin A Slow Death##11020 |goto 66.0,86.5
+turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+turnin Netherwing Crystals##11015 |goto 66.1,86.4
+turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
+|tip This quest is only available if you have your Skinning skill to at least 350.
+turnin Nethercite Ore##11018 |goto 66.1,86.4
+|tip This quest is only available if you have your Mining skill to at least 350.
+turnin Netherdust Pollen##11017 |goto 66.1,86.4
+|tip This quest is only available if you have your Herbalism skill to at least 350.
+step
+Repeat this process daily until you are Friendly with the Netherwing faction. Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
+You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
+next hub
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through getting Honored reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+},[[
+step
+label	"hub"
+Proceeding to proper section |next |only if default
+Proceeding to proper section |next dailies |only if completedq(11054)
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Rise, Overseer!##11053 |goto Shadowmoon Valley,66.1,86.4
+step
+talk Overlord Mor'ghor##23139
+turnin Rise, Overseer!##11053 |goto 66.2,85.7
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept The Netherwing Mines##11075 |goto 66.1,86.4
+step
+talk Chief Overseer Mudlump##23291
+accept Overseeing and You: Making the Right Choices##11054 |goto 66.8,86.1
+step
+talk Mistress of the Mines##23149
+turnin The Netherwing Mines##11075 |goto 65.4,90.2
+step
+Go inside the mine to [71.6,87.6]
+talk Ronag the Slave Driver##23166
+accept Crazed and Confused##11083
+step
+kill 1 Crazed Murkblood Foreman |q 11083/1 |goto 73.7,88.1
+kill 5 Crazed Murkblood Miner |q 11083/2 |goto 73.7,88.1
+step
+talk Ronag the Slave Driver##23166
+turnin Crazed and Confused##11083 |goto 71.6,87.6
+step
+kill Black Blood of Draenor##23286+
+collect Sludge-covered Object##32724+ |n
+Click the Sludge-covered Objects in your bags to open them |use Sludge-covered Object##32724
+collect Murkblood Escape Plans##32726 |n
+Click the Murkblood Escape Plans in your bags |use Murkblood Escape Plans##32726
+accept The Great Murkblood Revolt##11081 |goto 64.8,85.6
+step
+Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
+step
+talk Mistress of the Mines##23149
+turnin The Great Murkblood Revolt##11081 |goto 65.4,90.2
+accept Seeker of Truth##11082 |goto 65.4,90.2
+step
+Go inside the mine and follow the path
+talk Murkblood Overseer##23309
+Tell him you are here for him
+Gather Murkblood Information |q 11082/1 |goto 73.0,82.2
+collect Hand of the Overseer |q 11082/2 |goto 73.0,82.2
+step
+Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
+step
+talk Mistress of the Mines##23149
+turnin Seeker of Truth##11082 |goto 65.4,90.2
+step
+collect 10 Knothide Leather |q 11054/1
+|tip You can get the 10 Knothide Leather from the Auction House, or by Skinning mobs for the leather.
+If you want to get the 10 Knothide Leather by skinning, kill the mobs around [60.4,45.2]
+step
+kill Tyrantus##20931
+collect Hardened Hide of Tyrantus |q 11054/2 |goto Netherstorm,46.4,10.8
+step
+talk Chief Overseer Mudlump##23291
+turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley,66.8,86.1
+daily
+step
+label	dailies
+talk Yarzill the Merc##23141
+accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Netherwing Crystals##11015 |goto 66.1,86.4
+accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350. |or
+accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
+|tip This quest is only available if you have your Mining skill to at least 350. |or
+accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
+|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+step
+talk Chief Overseer Mudlump##23291
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+stickystart "disciplinepeons"
+step
+kill Dragonmaw Transporter##23188+
+|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
+collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
+step "disciplinepeons"
+Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
+Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
+step
+kill Greater Felfire Diemetradon##21462+, Felboar##21878+
+collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+step
+Click Netherdust Bushes
+|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
+collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
+step
+Click Nethercite Deposits
+|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
+collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
+step
+talk Mistress of the Mines##23149
+accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+Go inside the mine to [65.1,87.5]
+talk Dragonmaw Foreman##23376
+accept Dragons are the Least of Our Problems##11077
+step
+Click Nethermine Cargo
+|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
+collect 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
+step
+kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
+kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
+collect 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
+Skin Nethermine Flayers |only if skill ("Skinning") >= 350
+collect 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350.
+step
+talk Dragonmaw Foreman##23376
+turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+step
+talk Mistress of the Mines##23149
+turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+talk Yarzill the Merc##23141
+turnin A Slow Death##11020 |goto 66.0,86.5
+turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+turnin Netherwing Crystals##11015 |goto 66.1,86.4
+turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
+|tip This quest is only available if you have your Skinning skill to at least 350.
+turnin Nethercite Ore##11018 |goto 66.1,86.4
+|tip This quest is only available if you have your Mining skill to at least 350.
+turnin Netherdust Pollen##11017 |goto 66.1,86.4
+|tip This quest is only available if you have your Herbalism skill to at least 350.
+step
+talk Chief Overseer Mudlump##23291
+turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+step
+Repeat this process daily until you are Honored with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
+You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
+next "hub"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through getting Revered reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+},[[
+step
+label	"hub"
+Proceeding to proper section |next |only if default
+Proceeding to proper section |next dailies |only if completedq(11071)
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Stand Tall, Captain!##11084 |goto Shadowmoon Valley,66.1,86.4
+step
+talk Overlord Mor'ghor##23139
+turnin Stand Tall, Captain!##11084 |goto 66.2,85.7
+step
+talk Ja'y Nosliw##22433
+accept Earning Your Wings...##11063 |instant |goto 65.9,87.2
+step
+talk Murg "Oldie" Muckjaw##23340
+accept Dragonmaw Race: The Ballad of Oldie McOld##11064
+Follow Murg "Oldie" Muckjaw as he flies
+|tip He will throw pumpkins at you as he flies, and you have to dodge them.  The easiest strategy is to fly sort of far behind him, and above him, so that you are looking down on him as you fly.  Don't let any of the pumpkins hit you and you will win the race.
+Defeat Murg "Oldie" Muckjaw |q 11064/1 |goto 65.2,85.7
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: The Ballad of Oldie McOld##11064 |goto 65.9,87.2
+step
+talk Trope the Filth-Belcher##23342
+accept Dragonmaw Race: Trope the Filth-Belcher##11067
+Follow Trope the Filth-Belcher as he flies
+|tip He will throw green bombs at you as he flies, and you have to dodge them.  The easiest strategy is to fly far behind him, and under him.  Strafe to the sides when he throws the bombs and you can dodge them easily.  Don't let any of the bombs hit you and you will win the race.
+Defeat Trope the Filth-Belcher |q 11067/1 |goto 65.2,85.5
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: Trope the Filth-Belcher##11067 |goto 65.9,87.2
+step
+talk Corlok the Vet##23344
+accept Dragonmaw Race: Corlok the Vet##11068
+Follow Corlok the Vet as he flies
+|tip He will throw groups of skulls at you as he flies, and you have to dodge them.  The easiest strategy is to fly close behind him, but above him, while looking down at him.  Strafe to the sides when he throws the skulls and you can dodge them easily.  Don't let any of the skulls hit you and you will win the race.
+Defeat Corlok the Vet |q 11068/1 |goto 65.2,85.2
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: Corlok the Vet##11068 |goto 65.9,87.2
+step
+talk Wing Commander Ichman##13437
+accept Dragonmaw Race: Wing Commander Ichman##11069
+Follow Wing Commander Ichman as he flies
+|tip He will throw fireballs at you as he flies, and you have to dodge them.  The easiest strategy is to fly behind him, but far above him, while looking down at him.  Strafe to the sides when he throws the fireballs and you can dodge them easily.  Don't let any of the fireballs hit you and you will win the race.  Also, be careful because he does sharp turns and maneuvers, so it's easy to lose track of him if you aren't careful.
+Defeat Wing Commander Ichman |q 11069/1 |goto 65.2,85.0
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: Wing Commander Ichman##11069 |goto 65.9,87.2
+step
+talk Wing Commander Mulverick##13181
+accept Dragonmaw Race: Wing Commander Mulverick##11070
+Follow Wing Commander Mulverick as he flies
+|tip He will throw lightning bolts at you as he flies, and you have to dodge them.  The lightning bolts will follow you, unlike the previous race quests, where the objects they throw did not follow you.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Don't let any of the lightning bolts hit you and you will win the race.
+Defeat Wing Commander Mulverick |q 11070/1 |goto 65.2,84.9
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: Wing Commander Mulverick##11070 |goto 65.9,87.2
+step
+talk Captain Skyshatter##23348
+accept Dragonmaw Race: Captain Skyshatter##11071
+Follow Captain Skyshatter as he flies
+|tip Meteors fall all around you as you fly with Captain Skyshatter, and you have to dodge them.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Stay close to him and the meteors will hit him, as well as you, which will stop him for a second, allowing you to catch up to him, if needed.  You will not get knocked off your mount by the meteors, just stunned for a second, so there's nothing to worry about.
+Defeat Captain Skyshatter |q 11071/1 |goto 65.5,85.3
+step
+talk Ja'y Nosliw##22433
+turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
+daily
+step
+label	dailies
+talk Yarzill the Merc##23141
+accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Netherwing Crystals##11015 |goto 66.1,86.4
+accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350. |or
+accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
+|tip This quest is only available if you have your Mining skill to at least 350. |or
+accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
+|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+step
+talk Chief Overseer Mudlump##23291
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+step
+talk Overlord Mor'ghor##23139
+accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
+step
+kill Greater Felfire Diemetradon##21462+, Felboar##21878+
+collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+stickystart "netherrelic"
+step
+Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
+Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
+step "netherrelic"
+kill Dragonmaw Transporter##23188+
+|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
+collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
+step
+Click Netherdust Bushes
+|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
+collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
+step
+Click Nethercite Deposits
+|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
+collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
+step
+talk Mistress of the Mines##23149
+accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+Go inside the mine to [65.1,87.5]
+talk Dragonmaw Foreman##23376
+accept Dragons are the Least of Our Problems##11077
+step
+Click Nethermine Cargo
+|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
+collect 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
+step
+kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
+kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
+collect 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
+Skin Nethermine Flayers |only if skill ("Skinning") >= 350
+collect 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350.
+step
+talk Dragonmaw Foreman##23376
+turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+step
+talk Mistress of the Mines##23149
+turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
+kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
+step
+talk Yarzill the Merc##23141
+turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+turnin Netherwing Crystals##11015 |goto 66.1,86.4
+turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
+|tip This quest is only available if you have your Skinning skill to at least 350.
+turnin Nethercite Ore##11018 |goto 66.1,86.4
+|tip This quest is only available if you have your Mining skill to at least 350.
+turnin Netherdust Pollen##11017 |goto 66.1,86.4
+|tip This quest is only available if you have your Herbalism skill to at least 350.
+step
+talk Chief Overseer Mudlump##23291
+turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+step
+talk Overlord Mor'ghor##23139
+turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
+step
+Repeat this process daily until you are Revered with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
+You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
+next "hub"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through getting Exalted reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
+},[[
+step
+label	"hub"
+Proceeding to proper section |next |only if default
+Proceeding to proper section |next |only if completedq(11100) or completedq(11095)
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Hail, Commander!##11092 |goto Shadowmoon Valley,66.1,86.4
+step
+talk Overlord Mor'ghor##23139
+turnin Hail, Commander!##11092
+accept Kill Them All!##11094 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
+accept Kill Them All!##11099 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
+step
+kill Arvoar the Rapacious##23267+
+|tip He looks like a big Flayer mob that walks in a circle in this spot.
+collect Partially Digested Hand##32621 |n
+Click the Partially Digested Hand in your bags |use Partially Digested Hand##32621
+accept A Job Unfinished...##11041 |goto 74.5,86.3
+stickystart "overmineflayer"
+step
+kill Barash the Den Mother |q 11041/2 |goto 70.2,84.3
+|tip She looks like a big yellow Flayer mob that walks in a circle in this spot.
+step "overmineflayer"
+kill 10 Overmine Flayer |q 11041/1 |goto 71.3,85.8
+step
+talk Overlord Mor'ghor##23139
+turnin A Job Unfinished...##11041 |goto 66.2,85.7
+step
+talk Arcanist Thelis##21955
+turnin Kill Them All!##11094 |goto 56.3,59.6
+accept Commander Hobb##11095 |goto 56.3,59.6
+only if rep ('The Scryers') >= Friendly
+step
+talk Commander Hobb##23434
+turnin Commander Hobb##11095 |goto 56.5,58.7
+only if rep ('The Scryers') >= Friendly
+step
+talk Anchorite Ceyla##21402
+turnin Kill Them All!##11099 |goto 62.6,28.4
+accept Commander Arcus##11100 |goto 62.6,28.4
+only if rep ('The Aldor') >= Friendly
+step
+talk Commander Arcus##23452
+turnin Commander Arcus##11100 |goto 62.4,29.3
+only if rep ('The Aldor') >= Friendly
+daily
+step
+label	dailies
+talk Yarzill the Merc##23141
+accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Netherwing Crystals##11015 |goto 66.1,86.4
+accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350. |or
+accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
+|tip This quest is only available if you have your Mining skill to at least 350. |or
+accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
+|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+step
+talk Chief Overseer Mudlump##23291
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+step
+talk Overlord Mor'ghor##23139
+accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
+step
+kill Dragonmaw Transporter##23188+
+|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
+collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
+step
+talk Commander Hobb##23434
+accept The Deadliest Trap Ever Laid##11097
+Follow Commander Hobb and help him fight the Dragonmaw Skybreakers
+Protect Commander Hobb, he must survive
+Defeat the Dragonmaw Forces |q 11097/1 |goto 56.5,58.7
+only if rep ('The Scryers') >= Friendly
+step
+from Greater Felfire Diemetradon##21462+, Felboar##21878+
+collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+step
+talk Commander Arcus##23452
+accept The Deadliest Trap Ever Laid##11101
+Follow Commander Arcus and help him fight the Dragonmaw Skybreakers
+Protect Commander Arcus, he must survive
+Defeat the Dragonmaw Forces |q 11101/1 |goto 62.4,29.3
+only if rep ('The Aldor') >= Friendly
+step
+Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
+Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
+step
+Click Netherdust Bushes
+|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
+get 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
+step
+Click Nethercite Deposits
+|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
+get 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
+step
+talk Mistress of the Mines##23149
+accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+Go inside the mine to 65.1,87.5
+talk Dragonmaw Foreman##23376
+accept Dragons are the Least of Our Problems##11077
+stickystart "netherhide"
+step
+Click Nethermine Cargo
+|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
+get 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
+step "netherhide"
+kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
+kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
+get 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
+Skin Nethermine Flayers |only if skill ("Skinning") >= 350
+get 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
+|tip This quest is only available if you have your Skinning skill to at least 350.
+step
+talk Dragonmaw Foreman##23376
+turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+step
+talk Mistress of the Mines##23149
+turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+step
+kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
+kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
+step
+talk Yarzill the Merc##23141
+turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
+turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+step
+talk Taskmaster Varkule Dragonbreath##23140
+turnin Netherwing Crystals##11015 |goto 66.1,86.4
+turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
+|tip This quest is only available if you have your Skinning skill to at least 350.
+turnin Nethercite Ore##11018 |goto 66.1,86.4
+|tip This quest is only available if you have your Mining skill to at least 350.
+turnin Netherdust Pollen##11017 |goto 66.1,86.4
+|tip This quest is only available if you have your Herbalism skill to at least 350.
+step
+talk Chief Overseer Mudlump##23291
+turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+step
+talk Overlord Mor'ghor##23139
+turnin Disrupting the Twilight Portal##11086
+turnin The Deadliest Trap Ever Laid##11097 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
+turnin The Deadliest Trap Ever Laid##11101 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
+step
+Repeat this process daily until you are Exalted with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
+You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
+next "hub"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
+author="support@zygorguides.com",
+},[[
+description This guide section will walk you through the final steps of getting your Netherdrake Mount,
+description once you've earned Exalted reputation with the Netherwing faction.
+description You must have completed the Netherwing Reputation (Revered) guide section
+description in order to be able to complete the quests in this guide section.
+startlevel 80
+step
+talk Taskmaster Varkule Dragonbreath##23140
+accept Bow to the Highlord##11107 |goto Shadowmoon Valley,66.1,86.4
+step
+talk Overlord Mor'ghor##23139
+turnin Bow to the Highlord##11107 |goto 66.2,85.7
+accept Lord Illidan Stormrage##11108 |goto 66.2,85.7
+Watch the cut scene
+You will be taken to Shattrath City |goto Shattrath City 65.8,18.6 < 20 |noway |c
+step
+talk Barthamus##23433
+turnin Lord Illidan Stormrage##11108 |goto Shattrath City,66.6,16.4
+step
+Look at the netherdrakes sitting around this area.  Pick whichever one you like the best and complete the quest it offers you:
+accept Voranaku the Violet Netherwing Drake##11113 |goto 66.8,17.6 |instant |or
+accept Zoya the Veridian Netherwing Drake##11114 |goto 66.8,17.6 |instant |or
+accept Suraku the Azure Netherwing Drake##11112 |goto 66.8,17.6 |instant |or
+accept Onyxien the Onyx Netherwing Drake##11111 |goto 66.8,17.6 |instant |or
+accept Malfas the Purple Netherwing Drake##11110 |goto 66.8,17.6 |instant |or
+accept Jorus the Cobalt Netherwing Drake##11109 |goto 66.8,17.6 |instant |or
+step
+Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Netherwing Egg Hunting - Optimized Path", {
+author="support@zygorguides.com",
+startlevel=80,
+description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
+},[[
+step
+There can be an egg here |goto Shadowmoon Valley,69.4,63.6 < 5 |c
+|tip At the top of the stairs inside this tower.
+step
+There can be an egg here |goto Shadowmoon Valley,70.1,62.0 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,60.7 < 5 |c
+|tip Sitting on the middle of this small round table inside this big room on the bottom level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,70.9,62.6 < 5 |c
+|tip Sitting on the floor next to this small fire brazier inside this big room on the bottom level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.3,62.6 < 5 |c
+|tip Sitting on the floor next to the wall inside this big room on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,60.8 < 5 |c
+|tip Sitting on the floor inside this tiny room on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,70.0,60.3 < 5  |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,69.7,58.5 < 5 |c
+|tip Sitting on the ground in this pen area amongst the baby netherdrakes.
+step
+There can be an egg here |goto Shadowmoon Valley,68.1,59.7 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,68.3,59.8 < 5 |c
+|tip Sitting on the ground in this corner.
+step
+There can be an egg here |goto Shadowmoon Valley,68.5,61.2 < 5 |c
+|tip Sitting on the ground in this stall inside the stable.
+step
+There can be an egg here |goto Shadowmoon Valley,67.2,61.3 < 5 |c
+|tip Sitting in this wooden wagon.
+step
+There can be an egg here |goto Shadowmoon Valley,67.2,62.3 < 5 |c
+|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
+step
+There can be an egg here |goto Shadowmoon Valley,68.9,62.5 < 5 |c
+|tip Sitting on the ground inside this half burned down hut.
+step
+There can be an egg here |goto Shadowmoon Valley,76.0,81.2 < 5 |c
+|tip Sitting on the corner edge of this wooden landing dock.
+step
+There can be an egg here |goto Shadowmoon Valley,75.2,82.3 < 5 |c
+|tip Sitting on the ground next to this big bunch of blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,73.7,82.3 < 5 |c
+|tip Sitting on top of this small mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,73.0,84.0 < 5 |c
+|tip Sitting on the edge of this small cliff, between 2 bunchs of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,71.0,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,68.2,81.7 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,66.2,83.8 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.7,84.2 < 5 |c
+|tip Sitting at the very tip of this huge crystal.
+step
+There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.4,76.5 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,63.2,75.6 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,62.2,74.2 < 5 |c
+|tip Sitting on this small floating rock.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,61.7,73.3 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,63.0,71.6 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,61.3,70.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,60.6,73.4 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,59.3,74.1 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,60.0,76.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,59.6,78.3 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,61.2,77.3 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,62.2,77.8 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,63.0,83.7 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,63.5,84.8 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,65.5,84.9 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+talk Yarzill the Merc##23141
+Turn in all of the Netherwing Eggs you have collected |collect 0! Netherwing Egg##32506 |goto 66.0,86.5
+step
+There can be an egg here |goto Shadowmoon Valley,64.0,86.1 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.  This one is pretty well hidden, so pay close attention to this one or you might pass it up.
+step
+There can be an egg here |goto Shadowmoon Valley,62.5,84.9 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,60.2,87.1 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,62.1,89.5 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,64.9,90.8 < 5 |c
+|tip Sitting on the ground near this bunch of big blue crystals.
+step
+Go inside the mine
+There can be an egg here |goto Shadowmoon Valley,64.8,87.2 < 5 |c
+|tip Netherwing Eggs can spawn in various places in this entry hallway in the mines, so look around before moving on.
+step
+Jump down off the mine cart track here |goto Shadowmoon Valley,68.3,84.0 < 5 |c
+step
+There can be an egg here |goto Shadowmoon Valley,68.8,86.1 < 5 |c
+|tip Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.
+step
+There can be an egg here |goto Shadowmoon Valley,72.3,87.3 < 5 |c
+|tip Netherwing Eggs can spawn in various places all around this room with the big blue ghost dragon, so make sure to check thoroughly.
+step
+There can be an egg here |goto Shadowmoon Valley,69.9,85.8 < 5 |c
+|tip Go back to the mine cart track and follow the track on the right side.
+step
+There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,73.0,89.3 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,68.5,81.6 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+There can be an egg here |goto Shadowmoon Valley,64.8,83.0 < 5 |c
+|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
+step
+Jump over the wooden rail in this spot to get down to the hallway below |goto Shadowmoon Valley,65.2,84.2 < 5 |c
+step
+Leave the cave |goto Shadowmoon Valley,65.3,90.2 < 5 |c
+|tip Make sure to keep an eye out for Netherwing Eggs as you run through the entrance hallway to leave the cave.
+step
+There can be an egg here |goto Shadowmoon Valley,65.5,94.2 < 5 |c
+|tip Sitting on this big floating rock.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,68.0,94.9 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,69.6,91.8 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals.
+step
+There can be an egg here |goto Shadowmoon Valley,70.9,89.2 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,71.4,86.6 < 5 |c
+|tip Sitting on the ground next to this bunch of big blue crystals, up on the top of this mountain.
+step
+There can be an egg here |goto Shadowmoon Valley,72.2,87.1 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,73.4,90.3 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,75.8,91.6 < 5 |c
+|tip Sitting on this small floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.6,92.6 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.4,95.7 < 5 |c
+|tip Sitting on this big floating rock.
+step
+There can be an egg here |goto Shadowmoon Valley,77.3,85.9 < 5 |c
+|tip Sitting on top of this tall mountain peak.
+step
+There can be an egg here |goto Shadowmoon Valley,76.5,83.3 < 5 |c
+|tip Sitting on the ground inside this netherdrake skeleton's mouth.
+step
+There can be an egg here |goto Shadowmoon Valley,78.9,83.3 < 5 |c
+|tip Sitting right next to this bunch of big blue crystals on the side of this cliff.  You have to fly down to it.
+step
+There can be an egg here |goto Shadowmoon Valley,78.1,81.2 < 5 |c
+|tip Sitting on top of this tall mountain peak.  You have to fly up to it.
+step
+There can be an egg here |goto Shadowmoon Valley,78.8,79.6 < 5 |c
+|tip Sitting at the very tip of this huge crystal.
+step
+This is the end of the path.
+Click here to go back to the beginning of the path. |confirm |next "start"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Shattrath Cooking Dailies",{
+author="support@zygorguides.com",
+description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
+},[[
+daily
+#include "A_Shattrath_Cooking_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Burning Crusade Dailies\\Shattered Sun Offensive\\Dailies", {
+author="support@zygorguides.com",
+description="This guide section will walk you through the Shattered Sun Offensive Daily Quests.",
+},[[
+daily
+step
+talk Innkeeper Haelthol##19232
+home Shattrath City |goto Shattrath City,56.3,81.5
+only if rep ("The Scryers")>=Neutral
+step
+talk Minalei##19046
+home Shattrath City |goto Shattrath City,28.2,49.4
+only if rep ("The Aldor")>=Neutral
+step
+talk Exarch Nasuun##24932
+accept Maintaining the Sunwell Portal##11514 |goto Shattrath City,49.1,42.5
+step
+talk Lord Torvos##25140
+accept Sunfury Attack Plans##11877 |goto 62.8,36.0
+step
+talk Emissary Mordin##19202
+accept Gaining the Advantage##11875 |goto 62.8,35.6
+only if skill("Skinning")>300 or skill("Mining")>300 or skill("Herbalism")>300
+step
+talk Harbinger Haronem##19475
+accept The Multiphase Survey##11880 |goto Shattrath City,61.7,52.1
+step
+Click the Shattrath Portal |goto Shattrath City 48.6,42.0 < 7
+Port to the Isle of Quel'Danas |goto Isle of Quel'Danas |noway
+step
+talk Astromancer Darnarian##25133
+accept Know Your Ley Lines##11547 |goto Isle of Quel'Danas,47.5,35.4
+step
+talk Battlemage Arynna##25057
+accept The Air Strikes Must Continue##11533 |goto 47.5,35.1
+step
+talk Harbinger Inuuro##25061
+accept The Battle Must Go On##11537 |goto 47.6,35.1
+step
+talk Anchorite Ayuri##25112
+accept Your Continued Support##11548 |goto 48.8,37.2
+This quest requires that you give 10 Gold in trade of reputation with the Shattered Sun Offensive, you should be able to turn it in immidiately.
+turnin Your Continued Support##11548 |goto 48.8,37.2
+step
+talk Vindicator Kaalan##25108
+accept Keeping the Enemy at Bay##11543|goto 50.6,39.0
+step
+talk Magister Ilastar##25069
+accept Crush the Dawnblade##11540 |goto 49.3,40.4
+step
+talk Smith Hauthaa##25046
+accept Don't Stop Now....##11536 |goto 50.6,40.8
+accept Ata'mal Armaments##11544 |goto 50.6,40.8
+step
+talk Mar'nah##24975
+accept Rediscovering Your Roots##11521 |goto 51.5,32.5
+accept Open for Business##11546 |goto 51.5,32.5
+step
+talk Captain Valindria##25088
+accept Disrupt the Greengill Coast##11541 |goto 53.8,34.3
+step
+talk Captain Theris Dawnhearth##24967
+accept Arm the Wards!##11523 |goto 47.5,30.5
+accept The Missing Magistrix##11526 |goto 47.5,30.5
+step
+talk Vindicator Xayann##24965
+accept Further Conversions##11525 |goto 47.1,30.7
+stickystart "bloodcrystal"
+step
+kill Wretched Fiend##24966+
+collect 4 Mana Remnants##34338 |q 11523 |goto Isle of Quel'Danas,44.3,28.5
+kill Erratic Sentry##24972+ |n
+Use Attuned Crystal Cores on the Erratic Sentries corpse |use Attuned Crystal Cores##34368
+goal 5 Converted Sentry Deployed |q 11525/1 |goto Isle of Quel'Danas,44.3,28.5
+collect 5 Bloodberry |q 11546/1 |tip They can be found all around this area on the ground.
+step "bloodcrystal"
+kill 6 Dawnblade Summoner |q 11540/1 |goto Isle of Quel'Danas,42.1,35.7
+kill 6 Dawnblade Blood Knight |q 11540/2 |goto Isle of Quel'Danas,42.1,35.7
+kill 3 Dawnblade Marksman |q 11540/3 |goto Isle of Quel'Danas,42.1,35.7
+Use your Astromancer's Crystal to sample the Bloodcrystal's density |use Astromancer's Crystal##34533
+Bloodcrystal Reading Taken |q 11547/3 |goto Isle of Quel'Danas,42.1,35.7
+step
+Use the Mana Remnants to Energize the Crystal Ward |use Mana Remnants##34338
+Energize a Crystal Ward |q 11523/1 |goto Isle of Quel'Danas,46.5,35.5
+step
+talk Ayren Cloudbreaker##25059
+Tell him you Need to Intercept the Dawnblade Reinforcements.
+Use your Flaming Oil to set fire to the ships in the water. |use Flaming Oil##34489
+Sin'loren sails burned |q 11543/1 |goto 48.5,25.2
+Bloodoath sails burned |q 11543/2 |goto 48.5,25.2
+Dawnchaser sails burned |q 11543/3|goto 48.5,25.2
+step
+kill Dawnblade Reservist##25087+ |q 11543/4
+You can find more at [Isle of Quel'Danas,51.1,9.7]
+Another spot for them is at [Isle of Quel'Danas,55.2,11.8]
+step
+talk Unrestrained Dragonhawk##25236 |goto Isle of Quel'Danas,52.4,17.4 < 10
+Ride the dragonhawk to Sun's Reach |goto Isle of Quel'Danas,48.4,25.3 |noway|c
+step
+talk Ayren Cloudbreaker##25059
+Tell him you've been ordered to undertake an airstrike
+Use your Arcane Charges on mobs once you get to the Dead Scar |use Arcane Charges##34475
+kill 2 Pit Overlord##25031+ |q 11533/1 |goto Isle of Quel'Danas,48.5,25.2
+kill 3 Eredar Sorcerer##25033+ |q 11533/2 |goto Isle of Quel'Danas,48.5,25.2
+kill 12 Wrath Enforcer##25030+ |q 11533/3 |goto Isle of Quel'Danas,48.5,25.2
+step
+kill Emissary of Hate##25003 |n
+Use your Shattered Sun Banner on his corpse |use Shattered Sun Banner##34414
+Impale the Emissary of Hate |q 11537/1 |goto Isle of Quel'Danas,48.5,43.7
+kill 6 Burning Legion Demon |q 11537/2 |goto Isle of Quel'Danas,48.5,43.7
+Use your Astromancer's Crystal to sample the Portal's density. |use Astromancer's Crystal##34533
+Portal Reading Taken |q 11547/1 |goto Isle of Quel'Danas,48.5,43.7
+step
+Take this path back to they shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
+step
+kill Darkspine Myrmidon##25060+
+collect Darkspine Chest Key##34477 |n
+kill Darkspine Siren##25073+
+collect Orb of Murloc Control##34483 |n
+Use your Orbs of Murloc Control on Greengill Slaves along the shore |use Orb of Murloc Control##34483
+Free 10 Greengill Slaves |q 11541/1 |goto Isle of Quel'Danas,64.1,49.9
+Use your Darkspine Chest Keys on the Darkspine Ore Chest
+collect 3 Darkspine Iron Ore |q 11536/1 |goto Isle of Quel'Danas,64.1,49.9
+step
+Use your Astromancer's Crystal to sample the Shrine's density. |use Astromancer's Crystal##34533
+Shrine Reading Taken |q 11547/2 |goto Isle of Quel'Danas,61.1,62.0
+step
+kill Shadowmoon Chosen##22084+,Shadowmoon Slayer##22082+,Shadowmoon Darkweaver##22081+
+collect 5 Ata'mal Armament##34500 |q 11544 |goto Shadowmoon Valley,68.5,37.5
+step
+kill Razorthorn Flayer##24920+
+collect Razorthorn Flayer Gland##34255 |q 11521 |goto Terokkar Forest,59.7,10.3
+Use your Razorthorn Flayer Gland on Razorthorn Ravagers |use Razorthorn Flayer Gland##34255
+Use your pets Expose Razorthorn Root ability on mounds of dirt around the area. |cast Expose Razorthorn Root##44935
+collect 5 Razorthorn Root##34254 |q 11521/1 |goto Terokkar Forest,59.7,10.3
+step
+kill Clefthoof Bull##17132+,Talbuk Thorngrazer##17131+,Wild Elekk##18334+
+Skin their corpses in order to collect the Nether Residue
+collect 8 Nether Residue##35229 |q 11875/1 |goto Nagrand,58.8,75.1
+only if skill("Skinning")>=300
+step
+Mine inside the cave and collect Nether Residue
+collect 8 Nether Residue##35229 |q 11875/1 |goto 40.8,31.6
+You can check [Nagrand,50.0,56.6] for more Mining Nodes
+only if skill("Mining")>=300
+step
+Click the Multiphase Spectographic Goggles to wear them |use Multiphase Spectrographic Goggles##35233
+Get the Multiphase Goggles buff |havebuff 135994 |goto Nagrand 38.3,65.3
+tip You have to be in the Nagrand zone to correctly get the buff.
+only if havequest(11880)
+step
+Fly around the Spirit Fields looking for Fiery Red Orbs on the ground
+Use your Multiphase Spectrographic Goggles on the Orbs |use Multiphase Spectrographic Goggles##35233
+goal 6 Multiphase Readings Taken |q 11880/1 |goto Nagrand,38.3,65.3
+step
+kill Unbound Ethereal##22244+,Bash'ir Raider##22241+,Bash'ir Arcanist##22243+,Bash'ir Spell-Thief##22242+
+collect 1 Bash'ir Phasing Device##34248 |q 11514 |goto Blade's Edge Mountains,54.0,18.1
+Use the Bash'ir Phasing Device |use Bash'ir Phasing Device##34248
+Collect 10 Smuggled Mana Cell |q 11514/1 |goto Blade's Edge Mountains,54.0,18.1
+step
+kill Sunfury Bloodwarder##18853+,Sunfury Captain##19453+,Sunfury Magister##18855+,Sunfury Geologist##19779+,Sunfury Astromancer##19643
+collect Sunfury Attack Plans |q 11877/1 |goto Netherstorm,25.9,66.8
+step
+talk Magistrix Seyla##24937
+accept Blood for Blood##11515 |goto Hellfire Peninsula,58.2,17.6
+accept Blast the Gateway##11516 |goto Hellfire Peninsula,58.2,17.6
+step
+kill Wrath Herald##24919+
+collect 4 Demonic Blood##34259
+use the Sizzling Embers to summon a Living Flare |use Sizzling Embers##34253
+kill Incandescent Fel Spark##22323+ |n
+Once you see a message that says "Living Flare becomes unstable with brimming energy!" take it to [Hellfire Peninsula,58.6,18.7]
+Legion Gateway Destroyed |q 11516/1 |goto Hellfire Peninsula,66.4,20.1
+step
+Use your Fel Siphon on Felblood Initiates |use Fel Siphon##34257
+kill 4 Emaciated Felblood##24918 |q 11515/1 |goto 59.9,21.0
+step
+talk Magistrix Seyla##24937
+turnin Blast the Gateway##11516 |goto Hellfire Peninsula,58.2,17.6
+turnin Blood for Blood##11515 |goto Hellfire Peninsula,58.2,17.6
+step
+talk Lord Torvos##25140
+turnin Sunfury Attack Plans##11877 |goto Shattrath City,62.8,36.0
+step
+talk Emissary Mordin##19202
+turnin Gaining the Advantage##11875 |goto 62.8,35.6
+step
+talk Harbinger Haronem##19475
+turnin The Multiphas Survey##11880 |goto 61.6,52.2
+step
+talk Exarch Nasuun##24932
+turnin Maintaining the Sunwell Portal##11514 |goto 49.1,42.5
+step
+Click the Shattrath Portal |goto Shattrath City 48.6,42.0 < 10 |n
+Port to the Isle of Qual'Danas |goto Isle of Quel'Danas |noway
+step
+talk Captain Valindria##25088
+turnin Disrupt the Greengill Coast##11541 |goto Isle of Quel'Danas,53.8,34.3
+step
+Click the Ata'mal Armaments and cleanse them at Hauthaa's Anvil |use Ata'mal Armament##34500
+Cleanse 5 Ata'mal Metals |q 11544/1 |goto 50.6,40.7
+step
+talk Smith Hauthaa##25046
+turnin Don't Stop Now....##11536 |goto 50.6,40.7
+turnin Ata'mal Armaments##11544 |goto 50.6,40.7
+step
+talk Vindicator Kaalan##25108
+turnin Keeping the Enemy at Bay##11543 |goto 50.6,39.0
+step
+talk Magister Ilastar##25069
+turnin Crush the Dawnblade##11540 |goto 49.3,40.4
+step
+talk Mar'nah##24975
+turnin Open for Business##11546 |goto 51.5,32.5
+turnin Rediscovering Your Roots##11521 |goto 51.5,32.5
+step
+talk Astromancer Darnarian##25133
+turnin Know Your Ley Lines##11547 |goto 47.5,35.3
+step
+talk Battlemage Arynna##25057
+turnin The Air Strikes Must Continue##11533 |goto 47.5,35.1
+step
+talk Harbinger Inuuro##25061
+turnin The Battle Must Go On##11537 |goto 47.6,35.1
+step
+talk Captain Theris Dawnhearth##24967
+turnin Arm the Wards!##11523 |goto 47.5,30.5
+step
+talk Vindicator Xayann##24965
+turnin Further Conversions##11525 |goto 47.1,30.7
+step
+talk Eldara Dawnrunner##25032
+accept A Friend in the Frontlines##11554 |instant |goto Isle of Quel'Danas,47.3,30.7
+only if rep ("Shattered Sun Offensive")==Friendly
+step
+talk Eldara Dawnrunner##25032
+accept Honored By Your Allies##11555 |instant |goto Isle of Quel'Danas,47.3,30.7
+only if rep ("Shattered Sun Offensive")==Honored
+step
+talk Eldara Dawnrunner##25032
+accept Revered in the Field of Battle##11556 |instant |goto Isle of Quel'Danas,47.3,30.7
+only if rep ("Shattered Sun Offensive")==Revered
+step
+talk Eldara Dawnrunner##25032
+accept Exalted Among All Combatants##11557 |instant |goto Isle of Quel'Danas,47.3,30.7
+only if rep ("Shattered Sun Offensive")==Exalted
+step
+talk Anchorite Kairthos##25163
+accept A Magnanimous Benefactor##11549 |instant |goto Isle of Quel'Danas,51.2,33.1
+|tip This quest will cost you 1,000 Gold, but give you the title "Of the Shattered Sun".
+only if rep ("Shattered Sun Offensive")==Exalted
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Coldarra Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Coldarra region of Borean Tundra.",
 },[[
@@ -225,7 +1373,7 @@ step
 You have reached the end of the Dailies
 Click here to return to the beginning |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Borean Tundra\\Kaskala Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Kaskala Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Kaskala region of Borean Tundra.\nThere are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -240,7 +1388,7 @@ step
 talk Utaik##26213
 turnin Preparing for the Worst##11945 |goto 63.9,45.7
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Dalaran Cooking Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Cooking Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Cooking daily quests in Dalaran.",
 },[[
@@ -349,7 +1497,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Fishing Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Fishing Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Fishing daily quests in Dalaran.",
 },[[
@@ -401,7 +1549,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dalaran\\Jewelcrafting Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dalaran\\Jewelcrafting Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the Jewelcrafting daily quests in Dalaran.",
 },[[
@@ -518,7 +1666,7 @@ step
 You have reached the end of the dailies for today
 Click here to go back to the beginning of the guide |confirm |next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dragonblight\\Wyrmrest Accord Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Wyrmrest Accord Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the daily quests in the Wyrmrest Temple region of Dragonblight.\nThe Moa'ki Harbor region of Dragonblight does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
@@ -534,7 +1682,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Dragonblight\\Moa'ki Harbor Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Moa'ki Harbor Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Moa'ki Harbor region of Dragonblight.\nThere are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -550,7 +1698,7 @@ step
 talk Trapper Mau'i##26228
 turnin Planning for the Future##11960 |goto 48.3,74.3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
@@ -635,7 +1783,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -751,7 +1899,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Granite Springs Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Granite Springs Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
 },[[
@@ -838,7 +1986,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Grizzly Hills\\Venture Bay Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Venture Bay Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills.\nThere are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
@@ -966,7 +2114,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Howling Fjord\\Steel Gate Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Steel Gate Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Apothecary Camp region of Howling Fjord.",
 },[[
@@ -1057,7 +2205,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Howling Fjord\\Kamagua Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Kamagua Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Kamagua region of Howling Fjord.",
 },[[
@@ -1151,7 +2299,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Howling Fjord\\Westguard Keep Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Westguard Keep Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quest in the Westguard Keep region of Howling Fjord.",
 },[[
@@ -1241,7 +2389,7 @@ step
 You have finished this Dailies Guide. Click here to return to the beginning of the Dailies |confirm
 |next dailies
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Aspirant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race.",
 },[[
@@ -1371,7 +2519,7 @@ turnin Up To The Challenge##13672 |goto 76.5,19.4
 If you have not collected 15 Seals, you can cilck here to go back the beginning of the Dailies |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section.",
 },[[
@@ -1969,7 +3117,7 @@ talk Eadric the Pure##33759
 turnin Eadric the Pure##13794 |goto 70.0,23.4
 only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Death Knight Only",{
 author="support@zygorguides.com",
 description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -2056,7 +3204,7 @@ talk Illyrie Nightfall##33770
 turnin Among the Champions##13793 |goto 73.6,20.1
 only DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Champion Rank Dailies - Non-Death Knight Only",{
 author="support@zygorguides.com",
 description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section.\nAlso, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 },[[
@@ -2146,7 +3294,7 @@ talk Cellian Daybreak##33763
 turnin Taking Battle To The Enemy##13789 |goto 69.9,23.5
 only if not DeathKnight
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Argent Tournament Grounds Crusader Dailies",{
 author="support@zygorguides.com",
 description="In order to be able to complete the quests in this guide section, you must already be Exalted\nwith the Ironforge, Stormwind City, Exodar, Darnassus and Gnomeregan.\nAlso, you must have already become a Champion with each of those factions,\nusing the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 },[[
@@ -2199,7 +3347,7 @@ You will only be able to accept, and turn in, 1 of these 2 daily quests per day:
 turnin Get Kraken!##14108 |goto 69.5,23.1
 turnin The Fate Of The Fallen##14107 |goto 69.5,23.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\ATG Black Knight Quest Chain",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\ATG Black Knight Quest Chain",{
 author="support@zygorguides.com",
 description="This Argent Tournament Grounds guide section unlocks a Champion Rank group daily quest.\nWe recommend you complete the Argent Tournament Grounds Valiant Rank Dailies guide section,\nand achieve Champion Rank with your race, before doing this quest chain.\nStarting this quest chain when you are already Champion Rank will allow you to do the entire quest chain\nwithout having to switch back and forth between guide sections, allowing you to get it done much faster and more efficiently.\nYou will be unable to get some quests in this quest chain if you are not already at Champion Rank with The Argent Tournament Grounds.",
 },[[
@@ -2296,7 +3444,7 @@ turnin The Black Knight's Fate##14017 |goto 69.4,23.0
 step
 Congratulations! You've reached the end of this section
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\The Skybreaker",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\The Skybreaker",{
 author="support@zygorguides.com",
 },[[
 daily
@@ -2418,7 +3566,7 @@ step
 You have finished these quests today. Click here to go to the beginning of this guide |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Ymirheim and The Valley of Lost Hope",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Ymirheim and The Valley of Lost Hope",{
 author="support@zygorguides.com",
 },[[
 daily
@@ -2461,7 +3609,7 @@ step
 talk Ground Commander Koup##31808
 turnin Assault by Air##13309 |goto 62.6,51.3
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Shadowvault Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Shadowvault Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Shadowvault region of Icecrown.",
 },[[
@@ -2503,7 +3651,7 @@ step
 talk Vile##30216
 turnin Vile Like Fire!##13071 |goto 43.1,25.2
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Death's Rise Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Death's Rise Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Death's Rise region of Icecrown.",
 },[[
@@ -2543,7 +3691,7 @@ step
 talk Uzo Deathcaller##29405
 turnin No Fly Zone##12815 |goto 19.6,47.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\The Silver Covenant Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\The Silver Covenant Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests\nfor The Silver Covenant faction in the Argent Tournament Grounds area of Icecrown.",
 },[[
@@ -2620,7 +3768,7 @@ turnin Breakfast Of Champions##14076 |goto 76.2,19.6
 turnin Gormok Wants His Snobolds##14090 |goto 76.2,19.6
 turnin What Do You Feed a Yeti, Anyway?##14112 |goto 76.2,19.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Sholazar Basin Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Sholazar Basin Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests to unlock the ability to complete daily quests\nfor The Oracles and Frenzyheart Tribe factions in Sholazar Basin.",
 },[[
@@ -2839,7 +3987,7 @@ step
 talk High-Oracle Soo-say##28027
 turnin Return of the Friendly Dryskin##12695 |goto 54.6,56.4
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Frenzyheart Tribe Dailies",{
 author="support@zygorguides.com",
 achieveid={950},
 description="This guide section will walk you through completing the daily quests for the Frenzyheart Tribe faction in Sholazar Basin.",
@@ -2856,7 +4004,7 @@ step
 Click here to go back to the start of the dailies. Note that this will not actually reset the daily quests |confirm
 |next "daily"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\The Oracles Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\The Oracles Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests for the The Oracles faction in Sholazar Basin.",
 },[[
@@ -2873,7 +4021,7 @@ step
 After you complete the dailies above, you will need to repeat them in order to attain Exalted
 Click here to go back to the start of the dailies guide |confirm |next "daily"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Pre-quest and Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Pre-quest and Dailies",{
 author="support@zygorguides.com",
 description="This guide section contains the quest path for the entire The Storm Peaks zone,\nwhich includes the pre-quests to unlock the daily quests in the Brunnhildar Village,\nDun Niffelem (The Sons of Hodir), Frosthold, and K3 regions of The Storm Peaks.",
 },[[
@@ -3132,7 +4280,7 @@ accept Hodir's Tribute##13559 |goto 66.2,61.4
 Click here to return to the beginning of the Dailies |confirm
 |next hub |only if rep('The Sons of Hodir')<=Exalted
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\The Storm Peaks\\Brunnhildar, K-3 and Frosthold Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Brunnhildar, K-3 and Frosthold Dailies",{
 author="support@zygorguides.com",
 description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.",
 },[[
@@ -3200,7 +4348,7 @@ step
 You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
 |next hub
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Zul'Drak\\The Argent Stand Dailies and Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Zul'Drak\\The Argent Stand Dailies and Pre-Quests",{
 author="support@zygorguides.com",
 description="This guide section contains the pre-quests and dailies for Argent Stand.",
 },[[
@@ -3322,7 +4470,7 @@ accept Congratulations!##12604 |instant |goto 40.3,66.6
 step
 You have finished the Argent Stand Dailies, click here to retrun to the beginning of the Dailies Guide |confirm |next daily
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Human Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Human Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Human race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Human.",
 },[[
@@ -3432,7 +4580,7 @@ step
 Congratulations, you are now a Champion of Stormwind!
 |tip This is the end of the Human Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Night Elf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Night Elf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Night Elf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Night Elf.",
 },[[
@@ -3541,7 +4689,7 @@ step
 Congratulations, you are now a Champion of Darnassus!
 |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Dwarf Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Dwarf Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Dwarf race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Dwarf.",
 },[[
@@ -3652,7 +4800,7 @@ turnin The Valiant's Challenge##13713 |goto 76.3,19.1
 step
 Congratulations, you are now a Champion of Ironforge! |tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Gnome Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Gnome Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Gnome race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Gnome.",
 },[[
@@ -3762,7 +4910,7 @@ step
 Congratulations, you are now a Champion of Gnomeregan!
 |tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Draenei Champion Rank",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Icecrown\\Crusader Title Guide (Unlocks More Dailies)\\Draenei Champion Rank",{
 author="support@zygorguides.com",
 description="This guide section will walk you through achieving Argent Tournament Grounds Champion Rank with the Draenei race.\nYou must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section in order to be able to complete this guide section.\nYou cannot complete this section if you are a Draenei.",
 },[[
@@ -3871,7 +5019,7 @@ step
 Congratulations, you are now a Champion of The Exodar!
 |tip This is the end of the Gnome Champion Rank Guide for the Crusader Title.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (No ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80, without including any Argent Tournament Grounds dailies.\nTo be able to complete all the quests in this guide section, you must have completed the The Storm Peaks Full Zone Guide (Includes Pre-Quests),\nThe Sons of Hodir Reputation (Honored), and Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -4186,7 +5334,7 @@ talk Chief Engineer Boltwrench##30345
 turnin The Solution Solution##13292
 turnin Retest Now##13322
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Northrend (70 - 80)\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Speed Gold Runs\\Level 80 Dailies Speed Gold Run (With ATG Dailies)",{
 author="support@zygorguides.com",
 description="This guide section will walk you through a 25 daily quest speed gold run at level 80.\nTo be able to complete all the quests in this guide section, you must have completed\nthe The Storm Peaks Full Zone Guide (Includes Pre-Quests), The Sons of Hodir Reputation (Honored),\nand Icecrown Full Zone Quest Path (Includes Regular Dailies Pre-Quests) guide sections.",
 },[[
@@ -4662,1595 +5810,7 @@ turnin Breakfast Of Champions##14076 |goto 76.2,19.6
 turnin Gormok Wants His Snobolds##1400 |goto 76.2,19.6
 turnin What Do You Feed a Yeti, Anyway?##14112 |goto 76.2,19.6
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Neutral)", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Friendly reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
-},[[
-step
-label	hub
-Proceeding to Pre-Quests |next |only if default
-Proceeding to Dailies |next dailies |only if completedq(11049)
-step
-Go to Shadowmoon Valley in Outland |goto Shadowmoon Valley |noway |c
-step
-talk Mordenai##22113
-accept Kindness##10804 |goto Shadowmoon Valley,62.9,59.5
-step
-kill Rocknail Ripper##21478+, Rocknail Flayer##21477+
-|tip The Rocknail Flayers will drop Rocknail Flayer Carcasses, instead of Rocknail Flayer Giblets.
-collect Rocknail Flayer Giblets##31373 |n
-Click the Rocknail Flayer Giblets in your bags, once you have 5 of them, to combine them into a Rocknail Flayer Carcass |use Rocknail Flayer Giblets##31373
-collect 8 Rocknail Flayer Carcass##31372 |q 10804 |goto 60.5,57.7
-step
-Use the Rocknail Flayer Carcasses in your bags |use Rocknail Flayer Carcass##31372
-Feed 8 Netherwing Drakes |q 10804/1 |goto 60.5,57.7
-step
-talk Mordenai##22113
-turnin Kindness##10804 |goto 62.9,59.5
-accept Seek Out Neltharaku##10811 |goto 62.9,59.5
-step
-talk Neltharaku##21657
-turnin Seek Out Neltharaku##10811 |goto 68.2,60.4
-accept Neltharaku's Tale##10814 |goto 68.2,60.4
-talk Neltharaku##21657
-Listen to the Tale of Neltharaku |q 10814/1 |goto 68.2,60.4
-turnin Neltharaku's Tale##10814 |goto 68.2,60.4
-accept Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
-step
-kill Dragonmaw Drake-Rider##21719+, Dragonmaw Wrangler##21717+, Dragonmaw Subjugator##21718+
-kill 15 Dragonmaw Orc |q 10836/1 |goto 66.4,60.0
-step
-talk Neltharaku##21657
-turnin Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
-accept To Netherwing Ledge!##10837 |goto 68.2,60.4
-step
-Click the Nethervine Crystals
-|tip They look like big thorny plants with a small puff of red smoke near the top of them, on the ground around this area.
-collect 12 Nethervine Crystal |q 10837/1 |goto 64.1,80.7
-step
-talk Neltharaku##21657
-turnin To Netherwing Ledge!##10837 |goto 68.2,60.4
-accept The Force of Neltharaku##10854 |goto 68.2,60.4
-step
-Use your Enchanted Nethervine Crystal on Enslaved Netherwing Drakes |use Enchanted Nethervine Crystal
-|tip Help the Enslaved Netherwing Drakes kill their Dragonmaw Subjugator after you free them.
-Free 5 Enslaved Netherwing Drakes |q 10854/1 |goto 67.4,59.3
-step
-talk Neltharaku##21657
-turnin The Force of Neltharaku##10854 |goto 68.2,60.4
-accept Karynaku##10858 |goto 68.2,60.4
-step
-talk Karynaku##22112
-turnin Karynaku##10858 |goto 69.9,61.5
-accept Zuluhed the Whacked##10866 |goto 69.9,61.5
-step
-kill Zuluhed the Whacked |q 10866/2 |goto 70.9,61.5
-|tip You will probably need a group to kill Zuluhed the Whacked.  He will summon demons through a portal to help him fight.  To avoid having to fight the demons, pull Zuluhed the Whacked into one of the small buildings, on either side of him, when he casts the portal.
-collect Zuluhed's Key##31664 |q 10866 |goto 70.9,61.5
-step
-Click Zuluhed's Chains
-|tip It looks like a big metal ball and chain.
-Free Karynaku |q 10866/1 |goto 69.8,61.3
-step
-talk Karynaku##22112
-turnin Zuluhed the Whacked##10866 |goto 69.9,61.5
-accept Ally of the Netherwing##10870 |goto 69.9,61.5
-step
-talk Mordenai##22113
-turnin Ally of the Netherwing##10870 |goto 62.9,59.5
-accept Blood Oath of the Netherwing##11012 |instant |goto 62.9,59.5
-accept In Service of the Illidari##11013 |goto 62.9,59.5
-step
-talk Overlord Mor'ghor##23139
-turnin In Service of the Illidari##11013 |goto 66.2,85.7
-accept Enter the Taskmaster##11014 |goto 66.2,85.7
-step
-talk Taskmaster Varkule Dragonbreath##23140
-turnin Enter the Taskmaster##11014 |goto 66.1,86.4
-step
-talk Yarzill the Merc##23141
-accept Your Friend on the Inside##11019 |instant |goto 66.0,86.5
-accept The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
-step
-Click a Netherwing Egg
-|tip They look like dark purple eggs with blue crystals on them. They spawn in random places, so you will probably need to search for them.  For help finding a Netherwing Egg, use the Netherwing Egg Hunting - Optimized Path section of this guide.
-collect 1 Netherwing Egg |q 11049/1 |goto 68.5,61.2
-step
-talk Yarzill the Merc##23141
-turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
-daily
-step
-label	dailies
-talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
-step
-kill Dragonmaw Transporter##23188+
-|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
-step
-kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
-step
-Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
-step
-Click Netherdust Bushes
-|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
-step
-Click Nethercite Deposits
-|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
-step
-The entrance to the mine starts here |goto Shadowmoon Valley 65.3,90.2 < 10
-step
-kill Nethermine Flayer##23169+, Black Blood of Draenor##23286+
-collect 30 Netherwing Crystal |q 11015/1 |goto 70.8,84.4
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide |q 11016/1 |goto 70.8,84.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
-step
-Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
-step
-talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto 66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
-step
-Repeat this process daily until you are Friendly with the Netherwing faction. Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
-You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
-next hub
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Friendly)", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Honored reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Friendly) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
-},[[
-step
-label	"hub"
-Proceeding to proper section |next |only if default
-Proceeding to proper section |next dailies |only if completedq(11054)
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Rise, Overseer!##11053 |goto Shadowmoon Valley,66.1,86.4
-step
-talk Overlord Mor'ghor##23139
-turnin Rise, Overseer!##11053 |goto 66.2,85.7
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept The Netherwing Mines##11075 |goto 66.1,86.4
-step
-talk Chief Overseer Mudlump##23291
-accept Overseeing and You: Making the Right Choices##11054 |goto 66.8,86.1
-step
-talk Mistress of the Mines##23149
-turnin The Netherwing Mines##11075 |goto 65.4,90.2
-step
-Go inside the mine to [71.6,87.6]
-talk Ronag the Slave Driver##23166
-accept Crazed and Confused##11083
-step
-kill 1 Crazed Murkblood Foreman |q 11083/1 |goto 73.7,88.1
-kill 5 Crazed Murkblood Miner |q 11083/2 |goto 73.7,88.1
-step
-talk Ronag the Slave Driver##23166
-turnin Crazed and Confused##11083 |goto 71.6,87.6
-step
-kill Black Blood of Draenor##23286+
-collect Sludge-covered Object##32724+ |n
-Click the Sludge-covered Objects in your bags to open them |use Sludge-covered Object##32724
-collect Murkblood Escape Plans##32726 |n
-Click the Murkblood Escape Plans in your bags |use Murkblood Escape Plans##32726
-accept The Great Murkblood Revolt##11081 |goto 64.8,85.6
-step
-Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
-step
-talk Mistress of the Mines##23149
-turnin The Great Murkblood Revolt##11081 |goto 65.4,90.2
-accept Seeker of Truth##11082 |goto 65.4,90.2
-step
-Go inside the mine and follow the path
-talk Murkblood Overseer##23309
-Tell him you are here for him
-Gather Murkblood Information |q 11082/1 |goto 73.0,82.2
-collect Hand of the Overseer |q 11082/2 |goto 73.0,82.2
-step
-Leave the mine |goto Shadowmoon Valley 65.3,90.2 < 10
-step
-talk Mistress of the Mines##23149
-turnin Seeker of Truth##11082 |goto 65.4,90.2
-step
-collect 10 Knothide Leather |q 11054/1
-|tip You can get the 10 Knothide Leather from the Auction House, or by Skinning mobs for the leather.
-If you want to get the 10 Knothide Leather by skinning, kill the mobs around [60.4,45.2]
-step
-kill Tyrantus##20931
-collect Hardened Hide of Tyrantus |q 11054/2 |goto Netherstorm,46.4,10.8
-step
-talk Chief Overseer Mudlump##23291
-turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley,66.8,86.1
-daily
-step
-label	dailies
-talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
-step
-talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-stickystart "disciplinepeons"
-step
-kill Dragonmaw Transporter##23188+
-|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
-step "disciplinepeons"
-Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
-Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
-Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
-step
-kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
-step
-Click Netherdust Bushes
-|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
-step
-Click Nethercite Deposits
-|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
-step
-talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-Go inside the mine to [65.1,87.5]
-talk Dragonmaw Foreman##23376
-accept Dragons are the Least of Our Problems##11077
-step
-Click Nethermine Cargo
-|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-collect 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
-step
-kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
-kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
-collect 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
-step
-talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
-step
-talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto 66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
-step
-talk Chief Overseer Mudlump##23291
-turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-step
-Repeat this process daily until you are Honored with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
-You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
-next "hub"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Honored)", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Revered reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Honored) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
-},[[
-step
-label	"hub"
-Proceeding to proper section |next |only if default
-Proceeding to proper section |next dailies |only if completedq(11071)
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Stand Tall, Captain!##11084 |goto Shadowmoon Valley,66.1,86.4
-step
-talk Overlord Mor'ghor##23139
-turnin Stand Tall, Captain!##11084 |goto 66.2,85.7
-step
-talk Ja'y Nosliw##22433
-accept Earning Your Wings...##11063 |instant |goto 65.9,87.2
-step
-talk Murg "Oldie" Muckjaw##23340
-accept Dragonmaw Race: The Ballad of Oldie McOld##11064
-Follow Murg "Oldie" Muckjaw as he flies
-|tip He will throw pumpkins at you as he flies, and you have to dodge them.  The easiest strategy is to fly sort of far behind him, and above him, so that you are looking down on him as you fly.  Don't let any of the pumpkins hit you and you will win the race.
-Defeat Murg "Oldie" Muckjaw |q 11064/1 |goto 65.2,85.7
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: The Ballad of Oldie McOld##11064 |goto 65.9,87.2
-step
-talk Trope the Filth-Belcher##23342
-accept Dragonmaw Race: Trope the Filth-Belcher##11067
-Follow Trope the Filth-Belcher as he flies
-|tip He will throw green bombs at you as he flies, and you have to dodge them.  The easiest strategy is to fly far behind him, and under him.  Strafe to the sides when he throws the bombs and you can dodge them easily.  Don't let any of the bombs hit you and you will win the race.
-Defeat Trope the Filth-Belcher |q 11067/1 |goto 65.2,85.5
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Trope the Filth-Belcher##11067 |goto 65.9,87.2
-step
-talk Corlok the Vet##23344
-accept Dragonmaw Race: Corlok the Vet##11068
-Follow Corlok the Vet as he flies
-|tip He will throw groups of skulls at you as he flies, and you have to dodge them.  The easiest strategy is to fly close behind him, but above him, while looking down at him.  Strafe to the sides when he throws the skulls and you can dodge them easily.  Don't let any of the skulls hit you and you will win the race.
-Defeat Corlok the Vet |q 11068/1 |goto 65.2,85.2
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Corlok the Vet##11068 |goto 65.9,87.2
-step
-talk Wing Commander Ichman##13437
-accept Dragonmaw Race: Wing Commander Ichman##11069
-Follow Wing Commander Ichman as he flies
-|tip He will throw fireballs at you as he flies, and you have to dodge them.  The easiest strategy is to fly behind him, but far above him, while looking down at him.  Strafe to the sides when he throws the fireballs and you can dodge them easily.  Don't let any of the fireballs hit you and you will win the race.  Also, be careful because he does sharp turns and maneuvers, so it's easy to lose track of him if you aren't careful.
-Defeat Wing Commander Ichman |q 11069/1 |goto 65.2,85.0
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Wing Commander Ichman##11069 |goto 65.9,87.2
-step
-talk Wing Commander Mulverick##13181
-accept Dragonmaw Race: Wing Commander Mulverick##11070
-Follow Wing Commander Mulverick as he flies
-|tip He will throw lightning bolts at you as he flies, and you have to dodge them.  The lightning bolts will follow you, unlike the previous race quests, where the objects they throw did not follow you.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Don't let any of the lightning bolts hit you and you will win the race.
-Defeat Wing Commander Mulverick |q 11070/1 |goto 65.2,84.9
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Wing Commander Mulverick##11070 |goto 65.9,87.2
-step
-talk Captain Skyshatter##23348
-accept Dragonmaw Race: Captain Skyshatter##11071
-Follow Captain Skyshatter as he flies
-|tip Meteors fall all around you as you fly with Captain Skyshatter, and you have to dodge them.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Stay close to him and the meteors will hit him, as well as you, which will stop him for a second, allowing you to catch up to him, if needed.  You will not get knocked off your mount by the meteors, just stunned for a second, so there's nothing to worry about.
-Defeat Captain Skyshatter |q 11071/1 |goto 65.5,85.3
-step
-talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
-daily
-step
-label	dailies
-talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
-step
-talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-step
-talk Overlord Mor'ghor##23139
-accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
-step
-kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
-stickystart "netherrelic"
-step
-Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
-Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
-Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
-step "netherrelic"
-kill Dragonmaw Transporter##23188+
-|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
-step
-Click Netherdust Bushes
-|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
-step
-Click Nethercite Deposits
-|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
-step
-talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-Go inside the mine to [65.1,87.5]
-talk Dragonmaw Foreman##23376
-accept Dragons are the Least of Our Problems##11077
-step
-Click Nethermine Cargo
-|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-collect 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
-step
-kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
-kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
-collect 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
-step
-talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
-step
-talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
-kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
-step
-talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
-step
-talk Chief Overseer Mudlump##23291
-turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-step
-talk Overlord Mor'ghor##23139
-turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
-step
-Repeat this process daily until you are Revered with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
-You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
-next "hub"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Revered)", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through getting Exalted reputation with the Netherwing faction.\nYou must have completed the Netherwing Reputation (Revered) - Pre-Quests guide section\nin order to be able to complete the quests in this guide section.",
-},[[
-step
-label	"hub"
-Proceeding to proper section |next |only if default
-Proceeding to proper section |next |only if completedq(11100) or completedq(11095)
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Hail, Commander!##11092 |goto Shadowmoon Valley,66.1,86.4
-step
-talk Overlord Mor'ghor##23139
-turnin Hail, Commander!##11092
-accept Kill Them All!##11094 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
-accept Kill Them All!##11099 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
-step
-kill Arvoar the Rapacious##23267+
-|tip He looks like a big Flayer mob that walks in a circle in this spot.
-collect Partially Digested Hand##32621 |n
-Click the Partially Digested Hand in your bags |use Partially Digested Hand##32621
-accept A Job Unfinished...##11041 |goto 74.5,86.3
-stickystart "overmineflayer"
-step
-kill Barash the Den Mother |q 11041/2 |goto 70.2,84.3
-|tip She looks like a big yellow Flayer mob that walks in a circle in this spot.
-step "overmineflayer"
-kill 10 Overmine Flayer |q 11041/1 |goto 71.3,85.8
-step
-talk Overlord Mor'ghor##23139
-turnin A Job Unfinished...##11041 |goto 66.2,85.7
-step
-talk Arcanist Thelis##21955
-turnin Kill Them All!##11094 |goto 56.3,59.6
-accept Commander Hobb##11095 |goto 56.3,59.6
-only if rep ('The Scryers') >= Friendly
-step
-talk Commander Hobb##23434
-turnin Commander Hobb##11095 |goto 56.5,58.7
-only if rep ('The Scryers') >= Friendly
-step
-talk Anchorite Ceyla##21402
-turnin Kill Them All!##11099 |goto 62.6,28.4
-accept Commander Arcus##11100 |goto 62.6,28.4
-only if rep ('The Aldor') >= Friendly
-step
-talk Commander Arcus##23452
-turnin Commander Arcus##11100 |goto 62.4,29.3
-only if rep ('The Aldor') >= Friendly
-daily
-step
-label	dailies
-talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
-step
-talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-step
-talk Overlord Mor'ghor##23139
-accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
-step
-kill Dragonmaw Transporter##23188+
-|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic |q 11035/1 |goto 72.1,75.2
-step
-talk Commander Hobb##23434
-accept The Deadliest Trap Ever Laid##11097
-Follow Commander Hobb and help him fight the Dragonmaw Skybreakers
-Protect Commander Hobb, he must survive
-Defeat the Dragonmaw Forces |q 11097/1 |goto 56.5,58.7
-only if rep ('The Scryers') >= Friendly
-step
-from Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
-step
-talk Commander Arcus##23452
-accept The Deadliest Trap Ever Laid##11101
-Follow Commander Arcus and help him fight the Dragonmaw Skybreakers
-Protect Commander Arcus, he must survive
-Defeat the Dragonmaw Forces |q 11101/1 |goto 62.4,29.3
-only if rep ('The Aldor') >= Friendly
-step
-Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
-Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
-Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
-step
-Click Netherdust Bushes
-|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-get 40 Netherdust Pollen |q 11017/1 |goto 62.6,86.2
-step
-Click Nethercite Deposits
-|tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-get 40 Nethercite Ore |q 11018/1 |goto 70.0,91.4
-step
-talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-Go inside the mine to 65.1,87.5
-talk Dragonmaw Foreman##23376
-accept Dragons are the Least of Our Problems##11077
-stickystart "netherhide"
-step
-Click Nethermine Cargo
-|tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-get 15 Nethermine Cargo |q 11076/1 |goto 66.9,84.0
-step "netherhide"
-kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
-kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
-get 30 Netherwing Crystal |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-get 35 Nethermine Flayer Hide |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
-step
-talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
-step
-talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
-step
-kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
-kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
-step
-talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
-step
-talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
-step
-talk Chief Overseer Mudlump##23291
-turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
-step
-talk Overlord Mor'ghor##23139
-turnin Disrupting the Twilight Portal##11086
-turnin The Deadliest Trap Ever Laid##11097 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
-turnin The Deadliest Trap Ever Laid##11101 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
-step
-Repeat this process daily until you are Exalted with the Netherwing faction.  Also, you can use the Netherwing Egg Optimized Path guide section to find Netherwing Eggs and turn them in for 250 Netherwing reputation per Netherwing Egg
-You have reached the end of the dailies guide. Click here to return to the beginning of the guide |confirm
-next "hub"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Netherdrake Mount Guide\\Netherwing Reputation (Exalted) - Getting Your Netherdrake!", {
-author="support@zygorguides.com",
-},[[
-description This guide section will walk you through the final steps of getting your Netherdrake Mount,
-description once you've earned Exalted reputation with the Netherwing faction.
-description You must have completed the Netherwing Reputation (Revered) guide section
-description in order to be able to complete the quests in this guide section.
-startlevel 80
-step
-talk Taskmaster Varkule Dragonbreath##23140
-accept Bow to the Highlord##11107 |goto Shadowmoon Valley,66.1,86.4
-step
-talk Overlord Mor'ghor##23139
-turnin Bow to the Highlord##11107 |goto 66.2,85.7
-accept Lord Illidan Stormrage##11108 |goto 66.2,85.7
-Watch the cut scene
-You will be taken to Shattrath City |goto Shattrath City 65.8,18.6 < 20 |noway |c
-step
-talk Barthamus##23433
-turnin Lord Illidan Stormrage##11108 |goto Shattrath City,66.6,16.4
-step
-Look at the netherdrakes sitting around this area.  Pick whichever one you like the best and complete the quest it offers you:
-accept Voranaku the Violet Netherwing Drake##11113 |goto 66.8,17.6 |instant |or
-accept Zoya the Veridian Netherwing Drake##11114 |goto 66.8,17.6 |instant |or
-accept Suraku the Azure Netherwing Drake##11112 |goto 66.8,17.6 |instant |or
-accept Onyxien the Onyx Netherwing Drake##11111 |goto 66.8,17.6 |instant |or
-accept Malfas the Purple Netherwing Drake##11110 |goto 66.8,17.6 |instant |or
-accept Jorus the Cobalt Netherwing Drake##11109 |goto 66.8,17.6 |instant |or
-step
-Congratulations, you are now the proud owner of a Netherdrake Mount!  Enjoy!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland\\Netherwing Egg Hunting - Optimized Path", {
-author="support@zygorguides.com",
-startlevel=80,
-description="This guide section will walk you through an optimized path of collecting Netherwing Eggs,\nwhich you can turn in for 250 Netherwing rep each.\nYou must have completed the Netherwing Reputation (Neutral) - Pre-Quests guide section\nin order to be able to collect and turn in the Netherwing Eggs you find using this guide section.",
-},[[
-step
-There can be an egg here |goto Shadowmoon Valley,69.4,63.6 < 5 |c
-|tip At the top of the stairs inside this tower.
-step
-There can be an egg here |goto Shadowmoon Valley,70.1,62.0 < 5 |c
-|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,71.4,60.7 < 5 |c
-|tip Sitting on the middle of this small round table inside this big room on the bottom level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,70.9,62.6 < 5 |c
-|tip Sitting on the floor next to this small fire brazier inside this big room on the bottom level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,71.3,62.6 < 5 |c
-|tip Sitting on the floor next to the wall inside this big room on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,71.4,60.8 < 5 |c
-|tip Sitting on the floor inside this tiny room on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,70.0,60.3 < 5  |c
-|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,69.7,58.5 < 5 |c
-|tip Sitting on the ground in this pen area amongst the baby netherdrakes.
-step
-There can be an egg here |goto Shadowmoon Valley,68.1,59.7 < 5 |c
-|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,68.3,59.8 < 5 |c
-|tip Sitting on the ground in this corner.
-step
-There can be an egg here |goto Shadowmoon Valley,68.5,61.2 < 5 |c
-|tip Sitting on the ground in this stall inside the stable.
-step
-There can be an egg here |goto Shadowmoon Valley,67.2,61.3 < 5 |c
-|tip Sitting in this wooden wagon.
-step
-There can be an egg here |goto Shadowmoon Valley,67.2,62.3 < 5 |c
-|tip In this tiny hallway of the lookout point on the top level of the Dragonmaw Fortress.
-step
-There can be an egg here |goto Shadowmoon Valley,68.9,62.5 < 5 |c
-|tip Sitting on the ground inside this half burned down hut.
-step
-There can be an egg here |goto Shadowmoon Valley,76.0,81.2 < 5 |c
-|tip Sitting on the corner edge of this wooden landing dock.
-step
-There can be an egg here |goto Shadowmoon Valley,75.2,82.3 < 5 |c
-|tip Sitting on the ground next to this big bunch of blue crystals.
-step
-There can be an egg here |goto Shadowmoon Valley,73.7,82.3 < 5 |c
-|tip Sitting on top of this small mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,73.0,84.0 < 5 |c
-|tip Sitting on the edge of this small cliff, between 2 bunchs of big blue crystals.
-step
-There can be an egg here |goto Shadowmoon Valley,71.0,81.5 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,68.2,81.7 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,66.2,83.8 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,65.7,84.2 < 5 |c
-|tip Sitting at the very tip of this huge crystal.
-step
-There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,65.4,76.5 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,63.2,75.6 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,62.2,74.2 < 5 |c
-|tip Sitting on this small floating rock.  You have to fly down to it.
-step
-There can be an egg here |goto Shadowmoon Valley,61.7,73.3 < 5 |c
-|tip Sitting on this big floating rock.  You have to fly down to it.
-step
-There can be an egg here |goto Shadowmoon Valley,63.0,71.6 < 5 |c
-|tip Sitting on this big floating rock.  You have to fly up to it.
-step
-There can be an egg here |goto Shadowmoon Valley,61.3,70.7 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,60.6,73.4 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,59.3,74.1 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,60.0,76.7 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,59.6,78.3 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,61.2,77.3 < 5 |c
-|tip Sitting on this big floating rock.  You have to fly up to it.
-step
-There can be an egg here |goto Shadowmoon Valley,62.2,77.8 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,63.3,81.5 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,63.0,83.7 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,63.5,84.8 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,65.5,84.9 < 5 |c
-|tip Sitting on the ground next to this bunch of big blue crystals.
-step
-talk Yarzill the Merc##23141
-Turn in all of the Netherwing Eggs you have collected |collect 0! Netherwing Egg##32506 |goto 66.0,86.5
-step
-There can be an egg here |goto Shadowmoon Valley,64.0,86.1 < 5 |c
-|tip Sitting on the ground next to this bunch of big blue crystals.  This one is pretty well hidden, so pay close attention to this one or you might pass it up.
-step
-There can be an egg here |goto Shadowmoon Valley,62.5,84.9 < 5 |c
-|tip Sitting on the ground next to this bunch of big blue crystals.
-step
-There can be an egg here |goto Shadowmoon Valley,60.2,87.1 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,62.1,89.5 < 5 |c
-|tip Sitting on this big floating rock.  You have to fly up to it.
-step
-There can be an egg here |goto Shadowmoon Valley,64.9,90.8 < 5 |c
-|tip Sitting on the ground near this bunch of big blue crystals.
-step
-Go inside the mine
-There can be an egg here |goto Shadowmoon Valley,64.8,87.2 < 5 |c
-|tip Netherwing Eggs can spawn in various places in this entry hallway in the mines, so look around before moving on.
-step
-Jump down off the mine cart track here |goto Shadowmoon Valley,68.3,84.0 < 5 |c
-step
-There can be an egg here |goto Shadowmoon Valley,68.8,86.1 < 5 |c
-|tip Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.
-step
-There can be an egg here |goto Shadowmoon Valley,72.3,87.3 < 5 |c
-|tip Netherwing Eggs can spawn in various places all around this room with the big blue ghost dragon, so make sure to check thoroughly.
-step
-There can be an egg here |goto Shadowmoon Valley,69.9,85.8 < 5 |c
-|tip Go back to the mine cart track and follow the track on the right side.
-step
-There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
-|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
-step
-There can be an egg here |goto Shadowmoon Valley,73.0,89.3 < 5 |c
-|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
-step
-There can be an egg here |goto Shadowmoon Valley,73.6,85.2 < 5 |c
-|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
-step
-There can be an egg here |goto Shadowmoon Valley,68.5,81.6 < 5 |c
-|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
-step
-There can be an egg here |goto Shadowmoon Valley,64.8,83.0 < 5 |c
-|tip Follow the path in the cave to this spot.  Netherwing Eggs can spawn in various places all around this room, so make sure to check thoroughly in each small side space.  Also, be sure to keep an eye out for eggs all around as you run through the mine to this spot.
-step
-Jump over the wooden rail in this spot to get down to the hallway below |goto Shadowmoon Valley,65.2,84.2 < 5 |c
-step
-Leave the cave |goto Shadowmoon Valley,65.3,90.2 < 5 |c
-|tip Make sure to keep an eye out for Netherwing Eggs as you run through the entrance hallway to leave the cave.
-step
-There can be an egg here |goto Shadowmoon Valley,65.5,94.2 < 5 |c
-|tip Sitting on this big floating rock.  You have to fly up to it.
-step
-There can be an egg here |goto Shadowmoon Valley,68.0,94.9 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,69.6,91.8 < 5 |c
-|tip Sitting on the ground next to this bunch of big blue crystals.
-step
-There can be an egg here |goto Shadowmoon Valley,70.9,89.2 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,71.4,86.6 < 5 |c
-|tip Sitting on the ground next to this bunch of big blue crystals, up on the top of this mountain.
-step
-There can be an egg here |goto Shadowmoon Valley,72.2,87.1 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,73.4,90.3 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,75.8,91.6 < 5 |c
-|tip Sitting on this small floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,77.6,92.6 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,77.4,95.7 < 5 |c
-|tip Sitting on this big floating rock.
-step
-There can be an egg here |goto Shadowmoon Valley,77.3,85.9 < 5 |c
-|tip Sitting on top of this tall mountain peak.
-step
-There can be an egg here |goto Shadowmoon Valley,76.5,83.3 < 5 |c
-|tip Sitting on the ground inside this netherdrake skeleton's mouth.
-step
-There can be an egg here |goto Shadowmoon Valley,78.9,83.3 < 5 |c
-|tip Sitting right next to this bunch of big blue crystals on the side of this cliff.  You have to fly down to it.
-step
-There can be an egg here |goto Shadowmoon Valley,78.1,81.2 < 5 |c
-|tip Sitting on top of this tall mountain peak.  You have to fly up to it.
-step
-There can be an egg here |goto Shadowmoon Valley,78.8,79.6 < 5 |c
-|tip Sitting at the very tip of this huge crystal.
-step
-This is the end of the path.
-Click here to go back to the beginning of the path. |confirm |next "start"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Shattrath Cooking Dailies",{
-author="support@zygorguides.com",
-description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
-},[[
-daily
-#include "A_Shattrath_Cooking_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Main Questline",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Lunar Festival')",
-description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
-},[[
-step
-#include "Lunar Festival Main Quest"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Lunar Festival')",
-description="This guide section will walk you through an optimized path for honoring the elders\nthat are spread out all over Azeroth for the Lunar Festival event.\nUsing this guide section, you will collect 83 Coins of Ancestry.",
-},[[
-step
-#include "Lunar Festival Elder Path"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Achievements",{
-condition_suggested="isevent('Lunar Festival')",
-},[[
-step
-#include "Lunar Festival Achievement"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Main Questline",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Love is in the Air')",
-description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
-},[[
-step
-#include "Love is in the Air Main Quest"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Dailies",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Love is in the Air')",
-description="This guide section will walk you through completing the Love is in the Air even daily quests.",
-},[[
-daily
-step
-#include "Love is in the Air Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Achievements",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Love is in the Air')",
-description="This guide section will walk you through completing the Love is in the Air event achievements.",
-},[[
-step
-#include "Love is in the Air Achievement"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Noblegarden\\Noblegarden Quests and Dailies",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Noblegarden')",
-description="This guide section will walk you through completing the quests and dailies for the Noblegarden event.",
-},[[
-step
-#include "Noblegarden Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Noblegarden\\Noblegarden Achievements",{
-author="support@zygorguides.com",
-pet=200,
-condition_suggested="isevent('Noblegarden')",
-description="This guide section will walk you through getting all 12 achievements for the Noblegarden event.",
-},[[
-#include "Noblegarden Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Stormwind Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Children's Week")]],
-startlevel=60,
-description="This guide section will walk you through completing the Stormwind questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Stormwind"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Shattrath Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Children's Week")]],
-startlevel=60,
-description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Shattrath"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Children's Week")]],
-condition_valid="rep('The Oracles')>=Neutral ",
-condition_valid_msg=" You're not Neutral with The Oracles.",
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Dalaran Oracles Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Children's Week")]],
-condition_valid="rep('Frenzyheart Tribe')>=Neutral ",
-condition_valid_msg=" You're not Neutral by the Frenzyheart Tribe.",
-startlevel=70,
-description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
-},[[
-step
-#include "Children's Week Dalaran Wolvar Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Achievements",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Children's Week")]],
-startlevel=10,
-description="This guide section will walk you through completing the Achievements for the Children's Week event.",
-},[[
-step
-#include "Children's Week Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-description="This guide section will walk you through completing the quests for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Dailies",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-description="This guide section will walk you through completing the dailies for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Midsummer Achievement Guide",{
-author="support@zygorguides.com",
-condition_end="achieved(263) and achieved(1035) and achieved(1034) and achieved(271) and achieved(272) and achieved(1145)",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-keywords={"The","Flame","Warden","Ice","the","Frost","Lord","Burning","Hot","Pole","Dance","King","of","the","Fire","Festival","Torch","Juggler","Fires","of","Azeroth","Desecration","of","the","Horde"},
-description="This guide section will walk you through completing the Achievements for the Midsummer Fire Festival event:\n- Ice the Frost Lord\n- Burning Hot Pole Dance\n- King of the Fire Festival\n- The Fires of Azeroth\n- Desecration of the Horde",
-},[[
-step
-#include "Midsummer Fire Festival Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Eastern Kingdoms",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1028)",
-keywords={"Extinguishing","Eastern","Kingdoms"},
-description="This guide section will walk you through completing the Extinguishing Eastern Kingdoms achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Eastern Kingdoms"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Kalimdor",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1029)",
-keywords={"Extinguishing","Kalimdor"},
-description="This guide section will walk you through completing the Extinguishing Kalimdor achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Kalimdor"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Outland",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1030)",
-keywords={"Extinguishing","Outland"},
-description="This guide section will walk you through completing the Extinguishing Outland achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Outland"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Northrend",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(6008)",
-keywods="Extinguishing Northrend",
-description="This guide section will walk you through completing the Extinguishing Northrend achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Northrend"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing the Cataclysm",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(6013)",
-keywords={"Extinguishing","the","Cataclysm"},
-description="This guide section will walk you through completing the Extinguishing the Cataclysm achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing the Cataclysm"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Pandaria",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(8042)",
-keywords={"Extinguishing","Pandaria"},
-description="This guide section will walk you through completing the Extinguishing Pandaria achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Eastern Kingdoms",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1022)",
-keywords={"Flame","Warden","of","Eastern","Kingdoms"},
-description="This guide section will walk you through completing the Flame Warden of Eastern Kingdoms achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Eastern Kingdoms"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Kalimdor",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1023)",
-keywords={"Flame","Warden","of","Kalimdor"},
-description="This guide section will walk you through completing the Flame Warden of Kalimdor achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Kalimdor"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Outland",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(1024)",
-keywords={"Flame","Warden","of","Outland"},
-description="This guide section will walk you through completing the Flame Warden of Outland achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Outland"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Northrend",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80.,
-condition_end="achieved(6007)",
-keywords={"Flame","Warden","of","Northrend"},
-description="This guide section will walk you through completing the Flame Warden of Northrend achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing Northrend"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Cataclysm",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(6011)",
-keywords={"Flame","Warden","of","Cataclysm"},
-description="This guide section will walk you through completing the Flame Warden of Cataclysm achievement for the Midsummer Fire Festival event.",
-},[[
-step
-#include "Midsummer Fire Festival Achievements_Extinguishing the Cataclysm"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Pandaria",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Midsummer Fire Festival')",
-startlevel=80,
-condition_end="achieved(8045)",
-keywords={"Flame","Warden","of","Pandaria"},
-description="This guide section will walk you through completing the Flame Warden of Pandaria achievement for the Midsummer Fire Festival event.",
-},[[
-#include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Harvest Festival\\Harvest Festival Quest",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Harvest Festival')",
-description="This guide section will walk you through completing the quest for the Harvest Festival event.",
-},[[
-step
-#include "Harvest Festival Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Quests",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Brewfest')",
-description="This guide section will walk you through completing the quests for the Brewfest event.",
-},[[
-step
-#include "Brewfest Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Dailies",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Brewfest')",
-description="This guide section will walk you through completing the daily quests for the Brewfest event.",
-},[[
-daily
-step
-#include "Brewfest Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Achievements",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Brewfest')",
-description="This guide section will walk you through completing the achievements for the Brewfest event.",
-},[[
-step
-#include "Brewfest Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Hallow's End")]],
-description="This guide section will walk you through completing the quests for the Hallow's End event.",
-},[[
-#include "Hallows_End_Quests_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Dailies",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Hallow's End")]],
-description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
-},[[
-daily
-#include "Hallows_End_Dailies_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Warlords of Draenor Dailies",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Hallow's End")]],
-description="This guide section will walk you through completing the Draenor daily quests for the Hallow's End event.",
-},[[
-daily
-#include "Hallows_End_WoD_Dailies_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Achievements",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Hallow's End")]],
-description="This guide section will walk you through completing the achievements for the Hallow's End event.",
-},[[
-#include "Hallows_End_Achievements_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)",{
-condition_suggested=[[isevent("Hallow's End")]],
-description="Visit all the Candy Buckets in Pandaria",
-},[[
-#include "Hallows_End_Achievements_Alliance_Pandaria"
-step
-Congraulations, you now have the _Tricks and Treats of Pandaria_ achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Pilgrim's Bounty")]],
-description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
-},[[
-#include "Pilgrims_Bounty_Quests_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Daily Quests",{
-author="support@zygorguides.com",
-condition_suggested=[[isevent("Pilgrim's Bounty")]],
-description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
-},[[
-#include "Pilgrims_Bounty_Dailies_Alliance"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Feast of Winter Veil')",
-description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
-},[[
-step
-#include "Feast of Winter Veil Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Dailies",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Feast of Winter Veil')",
-description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
-},[[
-step
-talk Wulmort Jinglepocket##13433
-accept You're a Mean One...##7043 |goto Ironforge 33.6,68.0
-step
-kill 1 The Abominable Greench##54499
-Free Metzen the Reindeer |q You're a Mean One...##7043/2 |goto Hillsbrad Foothills 43.5,39.2
-modelnpc Metzen the Reindeer##15664
-click Stoeln Treats##7678
-collect Stolen Treats##17662 |q You're a Mean One...##7043/1 |goto 43.53,38.60
-step
-talk Wulmort Jinglepocket##13433
-turnin You're a Mean One...##7043 |goto Ironforge 33.6,68.0
-step
-talk Almie##96451
-accept What Horrible Presents!##39668 |goto Lunarfall 44.1,51.7
-accept Grumpus##39651 |goto Lunarfall 44.1,51.7
-accept Menacing Grumplings##39649 |goto Lunarfall 44.1,51.7
-accept Where Are the Children?##39648 |goto Lunarfall 44.1,51.7
-stickystart "Grumpus"
-stickystart "Grumpling"
-stickystart "Children"
-stickystart "Presents"
-step "Presents"
-Use your Spirit Bomb on unusual presents. |use Spirt Bomb##128675
-Destroy 5 unusual presents |q What Horrible Presents##39668/1 |goto Frostfire Ridge 45.3,27.0
-|tip They are tiny colored looking toys next to satchels lying on the ground.
-modelnpc 96487
-step "Grumpus"
-kill Grumpus##96448 |q Grumpus ##39651/1 |goto Frostfire Ridge 45.6,28.2
-|tip This is an elite mob, you will need a group to kill it.
-step "Grumpling"
-kill 8 Grumpling##96449+ |q Menacing Grumplings ##39649/1 |goto Frostfire Ridge 46.6,27.8
-step "Children"
-Click Holding Cages
-free 6 Draenei Child |q Where Are the Children? ##39648/1 |goto Frostfire Ridge 46.6,27.8
-modelnpc 96454
-step
-talk Almie##96451
-turnin What Horrible Presents!##39668 |goto Lunarfall 44.1,51.7
-turnin Grumpus##39651 |goto Lunarfall 44.1,51.7
-turnin Menacing Grumplings##39649 |goto Lunarfall 44.1,51.7
-turnin Where Are the Children?##39648 |goto Lunarfall 44.1,51.7
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements",{
-author="support@zygorguides.com",
-condition_suggested="isevent('Feast of Winter Veil')",
-condition_end="achieved(1691)",
-description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
-},[[
-step
-#include "Feast of Winter Veil Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests", {
-condition_suggested="isevent('Darkmoon Faire')",
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-#include "A_Darkmoon_Faire_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies", {
-condition_suggested="isevent('Darkmoon Faire')",
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-#include "A_Darkmoon_Faire_Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements", {
-condition_suggested="isevent('Darkmoon Faire')",
-description="This guide will help you navigate through the Darkmoon Faire Event",
-},[[
-#include "A_Darkmoon_Faire_Achievements"
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Outland (60 - 70)\\Shattered Sun Offensive\\Dailies", {
-author="support@zygorguides.com",
-description="This guide section will walk you through the Shattered Sun Offensive Daily Quests.",
-},[[
-daily
-step
-talk Innkeeper Haelthol##19232
-home Shattrath City |goto Shattrath City,56.3,81.5
-only if rep ("The Scryers")>=Neutral
-step
-talk Minalei##19046
-home Shattrath City |goto Shattrath City,28.2,49.4
-only if rep ("The Aldor")>=Neutral
-step
-talk Exarch Nasuun##24932
-accept Maintaining the Sunwell Portal##11514 |goto Shattrath City,49.1,42.5
-step
-talk Lord Torvos##25140
-accept Sunfury Attack Plans##11877 |goto 62.8,36.0
-step
-talk Emissary Mordin##19202
-accept Gaining the Advantage##11875 |goto 62.8,35.6
-only if skill("Skinning")>300 or skill("Mining")>300 or skill("Herbalism")>300
-step
-talk Harbinger Haronem##19475
-accept The Multiphase Survey##11880 |goto Shattrath City,61.7,52.1
-step
-Click the Shattrath Portal |goto Shattrath City 48.6,42.0 < 7
-Port to the Isle of Quel'Danas |goto Isle of Quel'Danas |noway
-step
-talk Astromancer Darnarian##25133
-accept Know Your Ley Lines##11547 |goto Isle of Quel'Danas,47.5,35.4
-step
-talk Battlemage Arynna##25057
-accept The Air Strikes Must Continue##11533 |goto 47.5,35.1
-step
-talk Harbinger Inuuro##25061
-accept The Battle Must Go On##11537 |goto 47.6,35.1
-step
-talk Anchorite Ayuri##25112
-accept Your Continued Support##11548 |goto 48.8,37.2
-This quest requires that you give 10 Gold in trade of reputation with the Shattered Sun Offensive, you should be able to turn it in immidiately.
-turnin Your Continued Support##11548 |goto 48.8,37.2
-step
-talk Vindicator Kaalan##25108
-accept Keeping the Enemy at Bay##11543|goto 50.6,39.0
-step
-talk Magister Ilastar##25069
-accept Crush the Dawnblade##11540 |goto 49.3,40.4
-step
-talk Smith Hauthaa##25046
-accept Don't Stop Now....##11536 |goto 50.6,40.8
-accept Ata'mal Armaments##11544 |goto 50.6,40.8
-step
-talk Mar'nah##24975
-accept Rediscovering Your Roots##11521 |goto 51.5,32.5
-accept Open for Business##11546 |goto 51.5,32.5
-step
-talk Captain Valindria##25088
-accept Disrupt the Greengill Coast##11541 |goto 53.8,34.3
-step
-talk Captain Theris Dawnhearth##24967
-accept Arm the Wards!##11523 |goto 47.5,30.5
-accept The Missing Magistrix##11526 |goto 47.5,30.5
-step
-talk Vindicator Xayann##24965
-accept Further Conversions##11525 |goto 47.1,30.7
-stickystart "bloodcrystal"
-step
-kill Wretched Fiend##24966+
-collect 4 Mana Remnants##34338 |q 11523 |goto Isle of Quel'Danas,44.3,28.5
-kill Erratic Sentry##24972+ |n
-Use Attuned Crystal Cores on the Erratic Sentries corpse |use Attuned Crystal Cores##34368
-goal 5 Converted Sentry Deployed |q 11525/1 |goto Isle of Quel'Danas,44.3,28.5
-collect 5 Bloodberry |q 11546/1 |tip They can be found all around this area on the ground.
-step "bloodcrystal"
-kill 6 Dawnblade Summoner |q 11540/1 |goto Isle of Quel'Danas,42.1,35.7
-kill 6 Dawnblade Blood Knight |q 11540/2 |goto Isle of Quel'Danas,42.1,35.7
-kill 3 Dawnblade Marksman |q 11540/3 |goto Isle of Quel'Danas,42.1,35.7
-Use your Astromancer's Crystal to sample the Bloodcrystal's density |use Astromancer's Crystal##34533
-Bloodcrystal Reading Taken |q 11547/3 |goto Isle of Quel'Danas,42.1,35.7
-step
-Use the Mana Remnants to Energize the Crystal Ward |use Mana Remnants##34338
-Energize a Crystal Ward |q 11523/1 |goto Isle of Quel'Danas,46.5,35.5
-step
-talk Ayren Cloudbreaker##25059
-Tell him you Need to Intercept the Dawnblade Reinforcements.
-Use your Flaming Oil to set fire to the ships in the water. |use Flaming Oil##34489
-Sin'loren sails burned |q 11543/1 |goto 48.5,25.2
-Bloodoath sails burned |q 11543/2 |goto 48.5,25.2
-Dawnchaser sails burned |q 11543/3|goto 48.5,25.2
-step
-kill Dawnblade Reservist##25087+ |q 11543/4
-You can find more at [Isle of Quel'Danas,51.1,9.7]
-Another spot for them is at [Isle of Quel'Danas,55.2,11.8]
-step
-talk Unrestrained Dragonhawk##25236 |goto Isle of Quel'Danas,52.4,17.4 < 10
-Ride the dragonhawk to Sun's Reach |goto Isle of Quel'Danas,48.4,25.3 |noway|c
-step
-talk Ayren Cloudbreaker##25059
-Tell him you've been ordered to undertake an airstrike
-Use your Arcane Charges on mobs once you get to the Dead Scar |use Arcane Charges##34475
-kill 2 Pit Overlord##25031+ |q 11533/1 |goto Isle of Quel'Danas,48.5,25.2
-kill 3 Eredar Sorcerer##25033+ |q 11533/2 |goto Isle of Quel'Danas,48.5,25.2
-kill 12 Wrath Enforcer##25030+ |q 11533/3 |goto Isle of Quel'Danas,48.5,25.2
-step
-kill Emissary of Hate##25003 |n
-Use your Shattered Sun Banner on his corpse |use Shattered Sun Banner##34414
-Impale the Emissary of Hate |q 11537/1 |goto Isle of Quel'Danas,48.5,43.7
-kill 6 Burning Legion Demon |q 11537/2 |goto Isle of Quel'Danas,48.5,43.7
-Use your Astromancer's Crystal to sample the Portal's density. |use Astromancer's Crystal##34533
-Portal Reading Taken |q 11547/1 |goto Isle of Quel'Danas,48.5,43.7
-step
-Take this path back to they shoreside. |goto Isle of Quel'Danas,57.3,38.6 |c
-step
-kill Darkspine Myrmidon##25060+
-collect Darkspine Chest Key##34477 |n
-kill Darkspine Siren##25073+
-collect Orb of Murloc Control##34483 |n
-Use your Orbs of Murloc Control on Greengill Slaves along the shore |use Orb of Murloc Control##34483
-Free 10 Greengill Slaves |q 11541/1 |goto Isle of Quel'Danas,64.1,49.9
-Use your Darkspine Chest Keys on the Darkspine Ore Chest
-collect 3 Darkspine Iron Ore |q 11536/1 |goto Isle of Quel'Danas,64.1,49.9
-step
-Use your Astromancer's Crystal to sample the Shrine's density. |use Astromancer's Crystal##34533
-Shrine Reading Taken |q 11547/2 |goto Isle of Quel'Danas,61.1,62.0
-step
-kill Shadowmoon Chosen##22084+,Shadowmoon Slayer##22082+,Shadowmoon Darkweaver##22081+
-collect 5 Ata'mal Armament##34500 |q 11544 |goto Shadowmoon Valley,68.5,37.5
-step
-kill Razorthorn Flayer##24920+
-collect Razorthorn Flayer Gland##34255 |q 11521 |goto Terokkar Forest,59.7,10.3
-Use your Razorthorn Flayer Gland on Razorthorn Ravagers |use Razorthorn Flayer Gland##34255
-Use your pets Expose Razorthorn Root ability on mounds of dirt around the area. |cast Expose Razorthorn Root##44935
-collect 5 Razorthorn Root##34254 |q 11521/1 |goto Terokkar Forest,59.7,10.3
-step
-kill Clefthoof Bull##17132+,Talbuk Thorngrazer##17131+,Wild Elekk##18334+
-Skin their corpses in order to collect the Nether Residue
-collect 8 Nether Residue##35229 |q 11875/1 |goto Nagrand,58.8,75.1
-only if skill("Skinning")>=300
-step
-Mine inside the cave and collect Nether Residue
-collect 8 Nether Residue##35229 |q 11875/1 |goto 40.8,31.6
-You can check [Nagrand,50.0,56.6] for more Mining Nodes
-only if skill("Mining")>=300
-step
-Click the Multiphase Spectographic Goggles to wear them |use Multiphase Spectrographic Goggles##35233
-Get the Multiphase Goggles buff |havebuff 135994 |goto Nagrand 38.3,65.3
-tip You have to be in the Nagrand zone to correctly get the buff.
-only if havequest(11880)
-step
-Fly around the Spirit Fields looking for Fiery Red Orbs on the ground
-Use your Multiphase Spectrographic Goggles on the Orbs |use Multiphase Spectrographic Goggles##35233
-goal 6 Multiphase Readings Taken |q 11880/1 |goto Nagrand,38.3,65.3
-step
-kill Unbound Ethereal##22244+,Bash'ir Raider##22241+,Bash'ir Arcanist##22243+,Bash'ir Spell-Thief##22242+
-collect 1 Bash'ir Phasing Device##34248 |q 11514 |goto Blade's Edge Mountains,54.0,18.1
-Use the Bash'ir Phasing Device |use Bash'ir Phasing Device##34248
-Collect 10 Smuggled Mana Cell |q 11514/1 |goto Blade's Edge Mountains,54.0,18.1
-step
-kill Sunfury Bloodwarder##18853+,Sunfury Captain##19453+,Sunfury Magister##18855+,Sunfury Geologist##19779+,Sunfury Astromancer##19643
-collect Sunfury Attack Plans |q 11877/1 |goto Netherstorm,25.9,66.8
-step
-talk Magistrix Seyla##24937
-accept Blood for Blood##11515 |goto Hellfire Peninsula,58.2,17.6
-accept Blast the Gateway##11516 |goto Hellfire Peninsula,58.2,17.6
-step
-kill Wrath Herald##24919+
-collect 4 Demonic Blood##34259
-use the Sizzling Embers to summon a Living Flare |use Sizzling Embers##34253
-kill Incandescent Fel Spark##22323+ |n
-Once you see a message that says "Living Flare becomes unstable with brimming energy!" take it to [Hellfire Peninsula,58.6,18.7]
-Legion Gateway Destroyed |q 11516/1 |goto Hellfire Peninsula,66.4,20.1
-step
-Use your Fel Siphon on Felblood Initiates |use Fel Siphon##34257
-kill 4 Emaciated Felblood##24918 |q 11515/1 |goto 59.9,21.0
-step
-talk Magistrix Seyla##24937
-turnin Blast the Gateway##11516 |goto Hellfire Peninsula,58.2,17.6
-turnin Blood for Blood##11515 |goto Hellfire Peninsula,58.2,17.6
-step
-talk Lord Torvos##25140
-turnin Sunfury Attack Plans##11877 |goto Shattrath City,62.8,36.0
-step
-talk Emissary Mordin##19202
-turnin Gaining the Advantage##11875 |goto 62.8,35.6
-step
-talk Harbinger Haronem##19475
-turnin The Multiphas Survey##11880 |goto 61.6,52.2
-step
-talk Exarch Nasuun##24932
-turnin Maintaining the Sunwell Portal##11514 |goto 49.1,42.5
-step
-Click the Shattrath Portal |goto Shattrath City 48.6,42.0 < 10 |n
-Port to the Isle of Qual'Danas |goto Isle of Quel'Danas |noway
-step
-talk Captain Valindria##25088
-turnin Disrupt the Greengill Coast##11541 |goto Isle of Quel'Danas,53.8,34.3
-step
-Click the Ata'mal Armaments and cleanse them at Hauthaa's Anvil |use Ata'mal Armament##34500
-Cleanse 5 Ata'mal Metals |q 11544/1 |goto 50.6,40.7
-step
-talk Smith Hauthaa##25046
-turnin Don't Stop Now....##11536 |goto 50.6,40.7
-turnin Ata'mal Armaments##11544 |goto 50.6,40.7
-step
-talk Vindicator Kaalan##25108
-turnin Keeping the Enemy at Bay##11543 |goto 50.6,39.0
-step
-talk Magister Ilastar##25069
-turnin Crush the Dawnblade##11540 |goto 49.3,40.4
-step
-talk Mar'nah##24975
-turnin Open for Business##11546 |goto 51.5,32.5
-turnin Rediscovering Your Roots##11521 |goto 51.5,32.5
-step
-talk Astromancer Darnarian##25133
-turnin Know Your Ley Lines##11547 |goto 47.5,35.3
-step
-talk Battlemage Arynna##25057
-turnin The Air Strikes Must Continue##11533 |goto 47.5,35.1
-step
-talk Harbinger Inuuro##25061
-turnin The Battle Must Go On##11537 |goto 47.6,35.1
-step
-talk Captain Theris Dawnhearth##24967
-turnin Arm the Wards!##11523 |goto 47.5,30.5
-step
-talk Vindicator Xayann##24965
-turnin Further Conversions##11525 |goto 47.1,30.7
-step
-talk Eldara Dawnrunner##25032
-accept A Friend in the Frontlines##11554 |instant |goto Isle of Quel'Danas,47.3,30.7
-only if rep ("Shattered Sun Offensive")==Friendly
-step
-talk Eldara Dawnrunner##25032
-accept Honored By Your Allies##11555 |instant |goto Isle of Quel'Danas,47.3,30.7
-only if rep ("Shattered Sun Offensive")==Honored
-step
-talk Eldara Dawnrunner##25032
-accept Revered in the Field of Battle##11556 |instant |goto Isle of Quel'Danas,47.3,30.7
-only if rep ("Shattered Sun Offensive")==Revered
-step
-talk Eldara Dawnrunner##25032
-accept Exalted Among All Combatants##11557 |instant |goto Isle of Quel'Danas,47.3,30.7
-only if rep ("Shattered Sun Offensive")==Exalted
-step
-talk Anchorite Kairthos##25163
-accept A Magnanimous Benefactor##11549 |instant |goto Isle of Quel'Danas,51.2,33.1
-|tip This quest will cost you 1,000 Gold, but give you the title "Of the Shattered Sun".
-only if rep ("Shattered Sun Offensive")==Exalted
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Deepholm\\Therazane's Throne Dailies, plus Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Deepholm\\Therazane's Throne Dailies, plus Pre-Quests",{
 description="Walks you through completing the\ndaily quests in the Therazane's\nThrone region of Deepholm.",
 },[[
 step
@@ -6261,7 +5821,7 @@ step
 step
 #include "A_Therazane_DailyQuest"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Uldum Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Uldum Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock\nthe daily quests in Uldum.\nYou must be at least level 83 to\ncomplete this guide section.",
 },[[
@@ -6295,7 +5855,7 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide |confirm
 next "hub"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Twilight Highlands\\Twilight Highlands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Twilight Highlands\\Twilight Highlands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 description="Contains the pre-quests to unlock\nthe daily quests in Twilight Highlands.\nYou must be at least level 84 to\ncomplete this guide section.",
 },[[
@@ -6351,7 +5911,7 @@ step
 You have reached the end of these dailies. Click here to return to the beginning of the guide |confirm
 next "dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Tol Barad Peninsula\\Tol Barad Dailies",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Tol Barad Peninsula\\Tol Barad Dailies",{
 achieveid={4874},
 author="support@zygorguides.com",
 description="Walks you through completing the\ndaily quests in Tol Barad.",
@@ -6359,7 +5919,7 @@ description="Walks you through completing the\ndaily quests in Tol Barad.",
 daily
 #include "A_Baradin_Hold_Dailies"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Guardians of Hyjal",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Guardians of Hyjal",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Guardians of Hyjal\nfaction.",
 },[[
@@ -6371,7 +5931,7 @@ Once you earn Friendly reputation with the Guardians of Hyjal faction, you can b
 |tip Wear the Tabard of the Guardians of Hyjal and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Guardians of Hyjal faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Guardians of Hyjal by talking to Provisioner Whitecloud at [Mount Hyjal 62.8,23.9]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\The Earthen Ring",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\The Earthen Ring",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith The Earthen Ring faction.",
 },[[
@@ -6385,7 +5945,7 @@ Once you earn Friendly reputation with The Earthen Ring faction, you can buy the
 |tip Wear the Tabard of the Earthen Ring and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with The Earthen Ring faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Earthen Ring by talking to Provisioner Arok at [Shimmering Expanse 49.1,42.2]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Therazane",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Therazane",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Therazane faction.",
 },[[
@@ -6399,7 +5959,7 @@ Once you earn Friendly reputation with the Therazane faction, you can buy the Ta
 |tip Wear the Tabard of Therazane and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Therazane faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Therazane by talking to D'lom the Collector at [Deepholm 54.1,33.3]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Ramkahen",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Ramkahen",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Ramkahen faction.",
 },[[
@@ -6413,7 +5973,7 @@ Once you earn Friendly reputation with the Ramkahen faction, you can buy the Tab
 |tip Wear the Tabard of Ramkahen and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Ramkahen faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of Ramkahen by talking to Blacksmith Abasi at [Uldum 54.1,33.3]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Wildhammer Clan",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Wildhammer Clan",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Wildhammer Clan faction.",
 },[[
@@ -6427,7 +5987,7 @@ Once you earn Friendly reputation with the Wildhammer Clan faction, you can buy 
 |tip Wear the Tabard of the Wildhammer Clan and use the Dungeon Finder tool to complete random Cataclysm Heroics.  You will gain reputation with the Wildhammer Clan faction for each mob you kill inside the dungeon, so you can gain reputation very quickly doing this.
 You can buy the Tabard of the Wildhammer Clan by talking to Craw MacGraw at [Twilight Highlands 48.6,30.7]
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Reputation\\Baradin's Wardens",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Reputation\\Baradin's Wardens",{
 author="support@zygorguides.com",
 description="Walks you through the process\nof obtaining Exalted reputation\nwith the Baradin's Wardens faction.",
 },[[
@@ -6440,7 +6000,7 @@ Complete the Baradin Hold Dailies guide in the Tol Barad section.
 |tip Do this daily, if you'd like.  The daily quests in this section will only be available if the Alliance faction currently controls Tol Barad.
 Once you earn Friendly reputation with the Baradin's Wardens faction, you can buy Baradin's Wardens Commendations from Quartermaster Brazie at [72.4,63.2] |tip They cost 10 Tol Barad Commendations each and you can use the Baradin's Wardens Commendations to increase your Baradin's Wardens reputation by 250.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Zandalari Menace Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Zandalari Menace Quest Line",{
 author="support@zygorguides.com",
 startlevel=85,
 description="Walks you through completing\nthe Zandalari Menace quest line\nin Stranglethorn Vale.\nYou must be level 85 to be\nable to use this guide.",
@@ -6591,7 +6151,7 @@ To continue with the Zul'Gurub dungeon quest line:
 talk Baron Revilgaz##2496
 accept Booty Bay's Interests##29153 |goto 41.2,73.1
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
 author="support@zygorguides.com",
 description="Walks you through how to use the\nFirelands guide sections.",
 },[[
@@ -6602,7 +6162,7 @@ _
 _
 You will need to use the Firelands Quests and Firelands Dailies together.  Complete as many quests as you can in the Firelands Quests guide section, and use the Firelands Dailies guide section to gain Marks of the World Tree.  |tip Marks of the World Tree are currency needed to complete certain quests in order to unlock more daily quests.
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 startlevel=80.00,
 description="Walks you through completing the Firelands quest line in Mount Hyjal.",
@@ -6729,6 +6289,7 @@ step
 Use the Firelands Dailies Run guide each day:
 |tip You won't be able to do all the dailies yet.  Just do the dailies you can do for now.
 earn 150 Mark of the World Tree##416
+Click here to load the Dailies guide |confirm |next dailies
 step
 talk Malfurion Stormrage##52135
 accept The Shadow Wardens##29214 |goto Molten Front 47.0,91.3
@@ -6771,6 +6332,7 @@ step
 Use the Firelands Dailies Run guide each day:
 |tip You won't be able to do all the dailies yet.  Just do the dailies you can do for now.
 earn 125 Mark of the World Tree##416
+Click here to load the Dailies guide |confirm |next dailies
 only if completedq(29214) and completedq(29181)
 step
 talk Damek Bloombeard##53214
@@ -6790,6 +6352,7 @@ step
 Use the Firelands Dailies Run guide each day:
 |tip You won't be able to do all the dailies yet.  Just do the dailies you can do for now.
 earn 125 Mark of the World Tree##416
+Click here to load the Dailies guide |confirm |next dailies
 only if completedq(29214) and completedq(29181)
 step
 talk Ayla Shadowstorm##53881
@@ -7440,7 +7003,7 @@ step
 label "RestartDailies"
 Click this line to return to the beginning of the Firelands Dailies guide section |confirm |next "firelands"
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
 condition_end="completedq(29331)",
 author="support@zygorguides.com",
 description="Walks you through completing the Call of the World-Shaman quest line.",
@@ -7547,6 +7110,446 @@ talk Thrall##54168
 turnin Elemental Bonds: The Vow##29331 |goto Mount Hyjal 60.2,29.8
 step
 Congratulations, you saved Thrall!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Main Questline",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Lunar Festival')",
+description="This guide section will walk you through completing the main questline for the Lunar Festival event.",
+},[[
+step
+#include "Lunar Festival Main Quest"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Lunar Festival')",
+description="This guide section will walk you through an optimized path for honoring the elders\nthat are spread out all over Azeroth for the Lunar Festival event.\nUsing this guide section, you will collect 83 Coins of Ancestry.",
+},[[
+step
+#include "Lunar Festival Elder Path"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Lunar Festival\\Lunar Festival Achievements",{
+condition_suggested="isevent('Lunar Festival')",
+},[[
+step
+#include "Lunar Festival Achievement"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Main Questline",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Love is in the Air')",
+description="This guide section will walk you through completing the main questline for the Love is in the Air event.",
+},[[
+step
+#include "Love is in the Air Main Quest"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Dailies",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Love is in the Air')",
+description="This guide section will walk you through completing the Love is in the Air even daily quests.",
+},[[
+daily
+step
+#include "Love is in the Air Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Love is in the Air\\Love is in the Air Achievements",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Love is in the Air')",
+description="This guide section will walk you through completing the Love is in the Air event achievements.",
+},[[
+step
+#include "Love is in the Air Achievement"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Noblegarden\\Noblegarden Quests and Dailies",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Noblegarden')",
+description="This guide section will walk you through completing the quests and dailies for the Noblegarden event.",
+},[[
+step
+#include "Noblegarden Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Noblegarden\\Noblegarden Achievements",{
+author="support@zygorguides.com",
+pet=200,
+condition_suggested="isevent('Noblegarden')",
+description="This guide section will walk you through getting all 12 achievements for the Noblegarden event.",
+},[[
+#include "Noblegarden Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Stormwind Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Children's Week")]],
+startlevel=60,
+description="This guide section will walk you through completing the Stormwind questline for the Children's Week event.",
+},[[
+step
+#include "Children's Week Stormwind"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Shattrath Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Children's Week")]],
+startlevel=60,
+description="This guide section will walk you through completing the Shattrath questline for the Children's Week event.",
+},[[
+step
+#include "Children's Week Shattrath"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Children's Week")]],
+condition_valid="rep('The Oracles')>=Neutral ",
+condition_valid_msg=" You're not Neutral with The Oracles.",
+startlevel=70,
+description="This guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
+},[[
+step
+#include "Children's Week Dalaran Oracles Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Children's Week")]],
+condition_valid="rep('Frenzyheart Tribe')>=Neutral ",
+condition_valid_msg=" You're not Neutral by the Frenzyheart Tribe.",
+startlevel=70,
+description="This guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
+},[[
+step
+#include "Children's Week Dalaran Wolvar Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Children's Week\\Children's Week Achievements",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Children's Week")]],
+startlevel=10,
+description="This guide section will walk you through completing the Achievements for the Children's Week event.",
+},[[
+step
+#include "Children's Week Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+description="This guide section will walk you through completing the quests for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Dailies",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+description="This guide section will walk you through completing the dailies for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Midsummer Achievement Guide",{
+author="support@zygorguides.com",
+condition_end="achieved(263) and achieved(1035) and achieved(1034) and achieved(271) and achieved(272) and achieved(1145)",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+keywords={"The","Flame","Warden","Ice","the","Frost","Lord","Burning","Hot","Pole","Dance","King","of","the","Fire","Festival","Torch","Juggler","Fires","of","Azeroth","Desecration","of","the","Horde"},
+description="This guide section will walk you through completing the Achievements for the Midsummer Fire Festival event:\n- Ice the Frost Lord\n- Burning Hot Pole Dance\n- King of the Fire Festival\n- The Fires of Azeroth\n- Desecration of the Horde",
+},[[
+step
+#include "Midsummer Fire Festival Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Eastern Kingdoms",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1028)",
+keywords={"Extinguishing","Eastern","Kingdoms"},
+description="This guide section will walk you through completing the Extinguishing Eastern Kingdoms achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Eastern Kingdoms"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Kalimdor",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1029)",
+keywords={"Extinguishing","Kalimdor"},
+description="This guide section will walk you through completing the Extinguishing Kalimdor achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Kalimdor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Outland",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1030)",
+keywords={"Extinguishing","Outland"},
+description="This guide section will walk you through completing the Extinguishing Outland achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Outland"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Northrend",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(6008)",
+keywods="Extinguishing Northrend",
+description="This guide section will walk you through completing the Extinguishing Northrend achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Northrend"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing the Cataclysm",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(6013)",
+keywords={"Extinguishing","the","Cataclysm"},
+description="This guide section will walk you through completing the Extinguishing the Cataclysm achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing the Cataclysm"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Pandaria",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(8042)",
+keywords={"Extinguishing","Pandaria"},
+description="This guide section will walk you through completing the Extinguishing Pandaria achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Eastern Kingdoms",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1022)",
+keywords={"Flame","Warden","of","Eastern","Kingdoms"},
+description="This guide section will walk you through completing the Flame Warden of Eastern Kingdoms achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Eastern Kingdoms"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Kalimdor",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1023)",
+keywords={"Flame","Warden","of","Kalimdor"},
+description="This guide section will walk you through completing the Flame Warden of Kalimdor achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Kalimdor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Outland",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(1024)",
+keywords={"Flame","Warden","of","Outland"},
+description="This guide section will walk you through completing the Flame Warden of Outland achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Outland"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Northrend",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80.,
+condition_end="achieved(6007)",
+keywords={"Flame","Warden","of","Northrend"},
+description="This guide section will walk you through completing the Flame Warden of Northrend achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Northrend"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Cataclysm",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(6011)",
+keywords={"Flame","Warden","of","Cataclysm"},
+description="This guide section will walk you through completing the Flame Warden of Cataclysm achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing the Cataclysm"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Pandaria",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(8045)",
+keywords={"Flame","Warden","of","Pandaria"},
+description="This guide section will walk you through completing the Flame Warden of Pandaria achievement for the Midsummer Fire Festival event.",
+},[[
+#include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Harvest Festival\\Harvest Festival Quest",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Harvest Festival')",
+description="This guide section will walk you through completing the quest for the Harvest Festival event.",
+},[[
+step
+#include "Harvest Festival Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Quests",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Brewfest')",
+description="This guide section will walk you through completing the quests for the Brewfest event.",
+},[[
+step
+#include "Brewfest Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Dailies",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Brewfest')",
+description="This guide section will walk you through completing the daily quests for the Brewfest event.",
+},[[
+daily
+step
+#include "Brewfest Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Brewfest\\Brewfest Achievements",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Brewfest')",
+description="This guide section will walk you through completing the achievements for the Brewfest event.",
+},[[
+step
+#include "Brewfest Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Hallow's End")]],
+description="This guide section will walk you through completing the quests for the Hallow's End event.",
+},[[
+#include "Hallows_End_Quests_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Dailies",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Hallow's End")]],
+description="This guide section will walk you through completing the daily quests for the Hallow's End event.",
+},[[
+daily
+#include "Hallows_End_Dailies_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Warlords of Draenor Dailies",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Hallow's End")]],
+description="This guide section will walk you through completing the Draenor daily quests for the Hallow's End event.",
+},[[
+daily
+#include "Hallows_End_WoD_Dailies_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Achievements",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Hallow's End")]],
+description="This guide section will walk you through completing the achievements for the Hallow's End event.",
+},[[
+#include "Hallows_End_Achievements_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Hallow's End\\Hallow's End Achievements (Pandaria)",{
+condition_suggested=[[isevent("Hallow's End")]],
+description="Visit all the Candy Buckets in Pandaria",
+},[[
+#include "Hallows_End_Achievements_Alliance_Pandaria"
+step
+Congraulations, you now have the _Tricks and Treats of Pandaria_ achievement!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Quests and Cooking 1-300 Guide",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Pilgrim's Bounty")]],
+description="This guide section will walk you through completing the quests for the Pilgrim's Bounty event, as well as getting your Cooking skill from 1-300.",
+},[[
+#include "Pilgrims_Bounty_Quests_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Pilgrim's Bounty\\Pilgrim's Bounty Daily Quests",{
+author="support@zygorguides.com",
+condition_suggested=[[isevent("Pilgrim's Bounty")]],
+description="This quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
+},[[
+#include "Pilgrims_Bounty_Dailies_Alliance"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Quests",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Feast of Winter Veil')",
+description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
+},[[
+step
+#include "Feast of Winter Veil Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Dailies",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Feast of Winter Veil')",
+description="This guide section will walk you through completing the quests for the Feast of Winter Veil event.",
+},[[
+step
+talk Wulmort Jinglepocket##13433
+accept You're a Mean One...##7043 |goto Ironforge 33.6,68.0
+step
+kill 1 The Abominable Greench##54499
+Free Metzen the Reindeer |q You're a Mean One...##7043/2 |goto Hillsbrad Foothills 43.5,39.2
+modelnpc Metzen the Reindeer##15664
+click Stoeln Treats##7678
+collect Stolen Treats##17662 |q You're a Mean One...##7043/1 |goto 43.53,38.60
+step
+talk Wulmort Jinglepocket##13433
+turnin You're a Mean One...##7043 |goto Ironforge 33.6,68.0
+step
+talk Almie##96451
+accept What Horrible Presents!##39668 |goto Lunarfall 44.1,51.7
+accept Grumpus##39651 |goto Lunarfall 44.1,51.7
+accept Menacing Grumplings##39649 |goto Lunarfall 44.1,51.7
+accept Where Are the Children?##39648 |goto Lunarfall 44.1,51.7
+stickystart "Grumpus"
+stickystart "Grumpling"
+stickystart "Children"
+stickystart "Presents"
+step "Presents"
+Use your Spirit Bomb on unusual presents. |use Spirt Bomb##128675
+Destroy 5 unusual presents |q What Horrible Presents##39668/1 |goto Frostfire Ridge 45.3,27.0
+|tip They are tiny colored looking toys next to satchels lying on the ground.
+modelnpc 96487
+step "Grumpus"
+kill Grumpus##96448 |q Grumpus ##39651/1 |goto Frostfire Ridge 45.6,28.2
+|tip This is an elite mob, you will need a group to kill it.
+step "Grumpling"
+kill 8 Grumpling##96449+ |q Menacing Grumplings ##39649/1 |goto Frostfire Ridge 46.6,27.8
+step "Children"
+Click Holding Cages
+free 6 Draenei Child |q Where Are the Children? ##39648/1 |goto Frostfire Ridge 46.6,27.8
+modelnpc 96454
+step
+talk Almie##96451
+turnin What Horrible Presents!##39668 |goto Lunarfall 44.1,51.7
+turnin Grumpus##39651 |goto Lunarfall 44.1,51.7
+turnin Menacing Grumplings##39649 |goto Lunarfall 44.1,51.7
+turnin Where Are the Children?##39648 |goto Lunarfall 44.1,51.7
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Feast of Winter Veil\\Feast of Winter Veil Achievements",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Feast of Winter Veil')",
+condition_end="achieved(1691)",
+description="This guide section will walk you through completing the achievements for the Feast of Winter Veil event.",
+},[[
+step
+#include "Feast of Winter Veil Achievements"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests", {
+condition_suggested="isevent('Darkmoon Faire')",
+description="This guide will help you navigate through the Darkmoon Faire Event",
+},[[
+#include "A_Darkmoon_Faire_Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies", {
+condition_suggested="isevent('Darkmoon Faire')",
+description="This guide will help you navigate through the Darkmoon Faire Event",
+},[[
+#include "A_Darkmoon_Faire_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements", {
+condition_suggested="isevent('Darkmoon Faire')",
+description="This guide will help you navigate through the Darkmoon Faire Event",
+},[[
+#include "A_Darkmoon_Faire_Achievements"
 ]])
 ZygorGuidesViewer:RegisterGuide("Events\\Warlords of Draenor\\The Iron Horde Invasion",{
 description="Take part in the opening event of the Warlords of Draenor!",

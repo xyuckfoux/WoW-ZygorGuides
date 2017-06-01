@@ -3288,7 +3288,10 @@ function ZGV:Options_RegisterDefaults()
 
 	self.db.profile.auction_autoshow_tab = true
 
-	self.db.char.BakedCache = nil
+	if self.db.char.BakedCache then
+		StaticPopup_Show('ZYGORGUIDESVIEWER_DEFAULT',"Baked cache data found.\nYou should run Baker now,\nif you haven't already.")
+		self.db.char.BakedCache = nil
+	end
 
 	--self.db.profile.waypointaddon = "internal"
 	--self.db.profile.minicons = true

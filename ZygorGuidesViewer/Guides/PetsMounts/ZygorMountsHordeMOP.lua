@@ -740,7 +740,7 @@ step
 label a
 This mount requires you to be _Exalted_ with _The Klaxxi_.
 In order to become Exalted with the Klaxxi, refer to the Zygor Guides Reputation section.
-Click here for the daily quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the daily quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to check your progress. |confirm
 Click here to be taken to The Klaxxi Quartermaster to purchase the mount. |next "buy" |only if rep("The Klaxxi")>=Exalted
 step
@@ -784,7 +784,7 @@ description="This guide will help you acquire the Azure Water Strider mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with _The Anglers_.
-Click here to be taken to start _The Anglers_ dailies. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Anglers Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here to be taken to start _The Anglers_ dailies. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Anglers Dailies" |confirm |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Anglers' Quartermaster to purchase the mount. |next "buy" |only if rep("The Anglers")>=Exalted
 Click here to check your progress. |confirm
 step
@@ -815,7 +815,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Tillers' Quartermaster to purchase the mount. |confirm |next "buy"
 Click here to check your progress. |next "b" |confirm
 step
@@ -846,7 +846,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -874,7 +874,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Tillers' Quartermaster to purchase the mount. |confirm |next "buy"
 Click here to check your progress. |next "b" |confirm
 step
@@ -905,7 +905,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -952,7 +952,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Shado-Pan_.
 Use the daily guides to earn Reputation with the Shado-Pan.
-Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here to be taken to the reputation guide to begin becoming Exalted with The Shado-Pan. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Shado-Pan Quartermaster to purchase the mount. |next "buy" |only if rep("Shado-Pan")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -999,7 +999,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Tillers_.
 Routing to the proper section. |next "dailies" |only if not completedq(31945)
-Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Tillers Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies" |confirm  |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Tillers' Quartermaster to purchase the mount. |confirm |next "buy"
 Click here to check your progress. |next "b" |confirm
 step
@@ -1310,7 +1310,7 @@ description="This guide will help you acquire the Onyx Cloud Serpent mount.",
 step
 This mount requires you to be _Exalted_ with _Shado-Pan_.
 In order to become Exalted with the Shado-Pan, refer to the Zygor Guides Reputation section.
-Click here to be sent to the Shado-Pan daily quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here to be sent to the Shado-Pan daily quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Exalted with the Shado-Pan |achieve 6366
 step
 label "quest"
@@ -1840,7 +1840,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1872,7 +1872,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step
@@ -1909,7 +1909,7 @@ You currently are _Honored_ with _Dominance Offensive_ |only if rep("Dominance O
 You currently are _Revered_ with _Dominance Offensive_ |only if rep("Dominance Offensive")==Revered
 You currently are _Exalted_ with _Dominance Offensive_ |only if rep("Dominance Offensive")==Exalted
 _Click here_ to be taken to the pre-quests for the Dominance Offensive. |confirm |next "pre" |only if not ZGV.guidesets["DailiesHMOP"] and not ZGV.guidesets["ReputationsHMOP"] and not completedq(32108)
-_Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\Dominance Offensive Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"] and not ZGV.guidesets["ReputationsHMOP"]
+_Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Dominance Offensive Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"] and not ZGV.guidesets["ReputationsHMOP"]
 _Click here_ to be taken to the reputation guide to begin becoming Exalted with the Dominance Offensive. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Dominance Offensive\\Dominance Offensive" |confirm |only if ZGV.guidesets["ReputationsHMOP"]
 _Click here_ to be taken to the Dominance Offensive Quartermaster to purchase the mount. |confirm |next "buy" |only if rep("Dominance Offensive")>=Exalted
 step
@@ -1958,7 +1958,7 @@ step
 label "a"
 This mount requires you to be _Exalted_ with _The Order of the Cloud Serpent_.
 Routing to the proper section. |next |only if not completedq(30142)
-Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
+Click here for the Golden Lotus Daily Quests. |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies" |confirm |only if ZGV.guidesets["DailiesHMOP"]
 Click here to be taken to The Order of the cloud Serpent Quartermaster to purchase the mount. |next "buy" |only if rep("Order of the Cloud Serpent")>=Exalted
 Click here to check your progress. |next "b" |confirm
 step

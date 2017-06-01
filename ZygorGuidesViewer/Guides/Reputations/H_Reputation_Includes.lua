@@ -4264,6 +4264,7 @@ ZygorGuidesViewer:RegisterInclude("H_Skyguard_Daily",[[
 		|next "dailies" |only if rep("Sha'tari Skyguard")<=Revered
 		|next |only if rep("Sha'tari Skyguard")==Exalted
 ]])
+
 ZygorGuidesViewer:RegisterInclude("H_Frenzyheart_PreQuests", [[
 		talk Tamara Wobblesprocket##28568
 		accept The Part-time Hunter##12654 |goto Sholazar Basin 50.5,62.1
@@ -4473,6 +4474,7 @@ ZygorGuidesViewer:RegisterInclude("H_Frenzyheart_PreQuests", [[
 		|tip This will spawn after the fight.
 		turnin A Hero's Burden##12581
 ]])
+
 ZygorGuidesViewer:RegisterInclude("H_Frenzyheart_Dailies", [[
 		talk Zepik the Gorloc Hunter##28668
 		accept Frenzyheart Champion##12582
@@ -4595,6 +4597,7 @@ ZygorGuidesViewer:RegisterInclude("H_Frenzyheart_Dailies", [[
 		turnin Strength of the Tempest##12741 |goto Sholazar Basin 55.7,69.5 |only if havequest(12741)
 		turnin The Heartblood's Strength##12732 |goto Sholazar Basin 55.7,69.5 |only if havequest(12732)
 ]])
+
 ZygorGuidesViewer:RegisterInclude("H_Oracles_PreQuests", [[
 		talk Tamara Wobblesprocket##28568
 		accept The Part-time Hunter##12654 |goto Sholazar Basin 50.5,62.1
@@ -4920,9 +4923,11 @@ ZygorGuidesViewer:RegisterInclude("H_Oracles_Dailies", [[
 		talk High-Oracle Soo-say##28027
 		turnin Appeasing the Great Rain Stone##12704 |goto Sholazar Basin 54.6,56.4 |only if havequest(12704)
 ]])
---------------------------------------------------------------------------------------------------------------------------------------
--- MoP DAILIES/REPUTATIONS
---------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------
+----- MoP DAILIES/REPUTATIONS -----
+-----------------------------------
+
 ZygorGuidesViewer:RegisterInclude("Shado_Pan_Daily_H",[[
 	step
 	label shado_dailies

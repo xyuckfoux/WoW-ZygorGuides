@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 38.2,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
+	nodes_version = 40,  -- Increase this when working on the nodes. Bake the connections using the Debug menu when you're done.
 }
 
 
@@ -377,36 +377,36 @@ data.point_context_templates = {
 
 data.connection_templates = {
 	['building'] = {
-		['text_a_to_b'] = "Enter building",
-		['text_b_to_a'] = "Exit building",
+		['title_atob'] = "Enter the building",
+		['title_btoa'] = "Leave the building",
 	},
 	['cave'] = {
-		['text_a_to_b'] = "Enter cave",
-		['text_b_to_a'] = "Exit cave",
+		['title_atob'] = "Enter the cave",
+		['title_btoa'] = "Leave the cave",
 	},
 	['mine'] = {
-		['text_a_to_b'] = "Enter mine",
-		['text_b_to_a'] = "Exit mine",
+		['title_atob'] = "Enter the mine",
+		['title_btoa'] = "Leave the mine",
 	},
 	['tunnel'] = {
-		['text_a_to_b'] = "Enter tunnel",
-		['text_b_to_a'] = "Exit tunnel",
+		['title_atob'] = "Enter tunnel",
+		['title_btoa'] = "Exit tunnel",
 	},
 	['longtunnel'] = {
-		['text_a_to_b'] = "Enter tunnel",
-		['text_b_to_a'] = "Go through tunnel",
+		['title_atob'] = "Enter tunnel",
+		['title_btoa'] = "Go through tunnel",
 	},
 	['barrow'] = {
-		['text_a_to_b'] = "Enter barrow",
-		['text_b_to_a'] = "Exit barrow",
+		['title_atob'] = "Enter barrow",
+		['title_btoa'] = "Exit barrow",
 	},
 	['tomb'] = {
-		['text_a_to_b'] = "Enter tomb",
-		['text_b_to_a'] = "Exit tomb",
+		['title_atob'] = "Enter tomb",
+		['title_btoa'] = "Exit tomb",
 	},
 	['pathup'] = {
-		['text_a_to_b'] = "Go up the path",
-		['text_b_to_a'] = "Go down the path",
+		['title_atob'] = "Go up the path",
+		['title_btoa'] = "Go down the path",
 	},
 }
 

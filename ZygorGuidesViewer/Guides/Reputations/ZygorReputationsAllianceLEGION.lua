@@ -6,9 +6,10 @@ ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Armies","Legionfall","Army"},
-description="This guide will walk you through gaining reputation with the \"Armies of Legionfall\" faction.",
+description="This guide will walk you through becoming exalted with the Armies of Legionfall faction.",
+condition_suggested="level>=100 and level<=110",
+achieveid={11545, 11796},
 },[[
 step
 _Earning reputation with Armies of Legionfall can be achieved by:_
@@ -30,9 +31,9 @@ You earned exalted reputation with the "Armies of Legionfall" faction.
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Conjurer Margoss",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Conjurer","Margoss"},
-description="This guide will walk you through gaining reputation with the \"Conjurer Margoss\" faction.",
+description="This guide will walk you through becoming exalted with the Conjurer Margoss faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 collect Goblin Glider Kit##109076 |c |condition rep("Conjurer Margoss")>=BestFriend
@@ -59,9 +60,9 @@ You earned Best Friend reputation with the "Conjurer Margoss" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Court of Farondis",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Court","Farondis"},
-description="This guide will walk you through gaining reputation with the \"Court of Farondis\" faction.",
+description="This guide will walk you through becoming exalted with the Court of Farondis faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 Gain Exalted Reputation with Court of Farondis |condition rep("Court of Farondis")>=Exalted
@@ -74,9 +75,9 @@ You earned Exalted reputation with the "Court of Farondis" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Dreamweavers",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Dreamweavers"},
-description="This guide will walk you through gaining reputation with the \"Dreamweavers\" faction.",
+description="This guide will walk you through becoming exalted with the Dreamweavers faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 Gain Exalted Reputation with Dreamweavers |condition rep("Dreamweavers")>=Exalted
@@ -89,9 +90,9 @@ You earned Exalted reputation with the "Dreamweavers" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Highmountain Tribe",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Highmountain","Tribe"},
-description="This guide will walk you through gaining reputation with the \"Highmountain Tribe\" faction.",
+description="This guide will walk you through becoming exalted with the Highmountain Tribe faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 Gain Exalted Reputation with Highmountain Tribe |condition rep("Highmountain Tribe")>=Exalted
@@ -104,9 +105,10 @@ You earned Exalted reputation with the "Highmountain Tribe" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Nightfallen",{
 author="support@zygorguides.com",
-startlevel=110.0,
 keywords={"Nightfallen"},
-description="This guide will walk you through gaining reputation with \"The Nightfallen\" faction.",
+description="This guide will walk you through becoming exalted with The Nightfallen faction.",
+condition_suggested="level>=100 and level<=110",
+achieveid={10778},
 },[[
 step
 Gain Exalted Reputation with The Nighfallen |condition rep("The Nighfallen")>=Exalted |goto Suramar/0 36.51,46.80 |region suramar_shalaran
@@ -131,9 +133,9 @@ You earned Exalted reputation with "The Nightfallen" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\Valarjar",{
 author="support@zygorguides.com",
-startlevel=100.0,
 keywords={"Valarjar"},
-description="This guide will walk you through gaining reputation with the \"Valarjar\" faction.",
+description="This guide will walk you through becoming exalted with the Valarjar faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 Gain Exalted Reputation with Valarjar |condition rep("Valarjar")>=Exalted
@@ -146,9 +148,9 @@ You earned Exalted reputation with the "Valarjar" faction.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Legion Reputations\\The Wardens",{
 author="support@zygorguides.com",
-startlevel=110.0,
 keywords={"Wardens"},
-description="This guide will walk you through gaining reputation with \"The Wardens\" faction.",
+description="This guide will walk you through becoming exalted with The Wardens faction.",
+condition_suggested="level>=100 and level<=110",
 },[[
 step
 Gain Exalted Reputation with The Wardens |condition rep("The Wardens")>=Exalted

@@ -27533,4 +27533,5 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [29565]="Unworthy Initiate|",
 [49355]="Lord Harford|",
 [107574]="Anduin Wrynn|",
+[225663]="Squirky|",
 } end)

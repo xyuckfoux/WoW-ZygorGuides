@@ -9349,7 +9349,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputatio
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Avengers of Hyjal faction.",
 condition_suggested="level>=85 and level<=90",
-achieveid={5827},
+condition_suggested="level>=80 and level<=85",
 },[[
 step
 label "start"
@@ -9374,7 +9374,7 @@ Congratulations, you are now Exalted with the Avengers of Hyjal!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Baradin's Wardens",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Baradin's Wardens faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={5375},
 },[[
 step
@@ -9389,7 +9389,7 @@ Congratulations, you are now Exalted with Hellscream's Reach!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\The Earthen Ring",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Earthen Ring faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={4882},
 },[[
 step
@@ -9415,7 +9415,7 @@ Congratulations, you are now Exalted with The Earthen Ring!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Gilneas",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Gilneas faction.",
-condition_suggested="level>=1 and level<=90",
+condition_suggested="level>=1 and level<=85",
 },[[
 step
 talk Lord Candren##50307
@@ -9429,7 +9429,7 @@ Congratulations, you have reached exalted with Gilneas!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Guardians of Hyjal",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Guardians of Hyjal faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={5827},
 },[[
 step
@@ -10461,7 +10461,7 @@ Congratulations you are Exalted with the Guardians of Hyjal!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Ramkahen",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Ramkahen faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={4884},
 },[[
 #include "A_Uldum_Leveling"
@@ -10509,7 +10509,7 @@ Congratulations, you are now Exalted with Ramkahen!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Therazane",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Therazane faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={4881},
 },[[
 #include "A_Deepholm_Leveling"
@@ -10530,7 +10530,7 @@ Congratulations, you are now Exalted with Therazane!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Cataclysm Reputations\\Wildhammer Clan",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming Exalted with the Wildhammer Clan faction.",
-condition_suggested="level>=85 and level<=90",
+condition_suggested="level>=80 and level<=85",
 achieveid={4885},
 },[[
 #include "A_Twilight_Leveling"

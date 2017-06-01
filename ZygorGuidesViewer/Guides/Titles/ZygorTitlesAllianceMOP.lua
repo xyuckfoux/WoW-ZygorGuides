@@ -486,7 +486,7 @@ step
 In order to achieve the Farmer Title, you must become exalted with _The Tillers_
 |confirm
 step
-leechsteps "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies"
+leechsteps "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
 step
 Obtain the Farmer Title |achieve 6544
 step

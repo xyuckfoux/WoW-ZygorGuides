@@ -2896,6 +2896,17 @@ Goal Reached |q 45047/2 |goto 40.61,62.29
 |tip The goal is through the middle passage, on the far side of the yellow wall.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41530
+Follow the path |goto Val'sharah/0 68.17,48.55 < 10 |only if walking
+Follow the path |goto 65.26,43.75 < 25 |only if walking
+Follow the path |goto 63.18,40.85 < 25 |only if walking
+accept Lively Dreamleaf##41530 |goto Val'sharah/0 60.29,36.73
+|tip You will accept this quest automatically.
+step
+click Lively Dreamleaf##195114
+collect 10 Lively Dreamleaf##140954 |q 41530/1 |goto 60.29,36.73
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41600
 Follow the path |goto Val'sharah/0 68.43,48.60 < 25 |only if walking
 Follow the path |goto 73.16,42.70 < 25 |only if walking
@@ -7195,6 +7206,14 @@ kill Well-Fed Musken##103786
 collect Thick Slab of Bacon##135511 |q 41556/1 |goto Stormheim/0 34.18,45.68
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41261
+accept Slab of Bacon##41261 |goto Stormheim/0 53.92,28.40
+|tip You will accept this quest automatically.
+step
+kill Well-Fed Musken##103786
+collect Thick Slab of Bacon##135511 |q 41261/1 |goto 53.92,28.40
+|next "Court_Of_Farondis_WQ"
+step
 label quest-41278
 click Grapple Point |only if walking
 |tip It's a grey hook. |only if walking
@@ -8553,6 +8572,15 @@ accept Huge Runescale Koi##41616 |goto Suramar/0 22.54,33.01
 step
 Fish from the Huge Runescale Koi School |cast Fishing##131474
 collect 10 Huge Runescale Koi##134574 |q 41616/1 |goto 22.54,33.01
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41280
+Follow the path |goto Suramar/0 36.57,45.45 < 20 |only if walking
+accept Huge Runescale Koi##41280 |goto Suramar/0 35.08,41.22
+|tip You will accept this quest automatically.
+step
+Fish from the Huge Runescale Koi School |cast Fishing##131474
+collect 10 Huge Runescale Koi##134574 |q 41280/1 |goto 35.08,41.22
 |next "Court_Of_Farondis_WQ"
 step
 label quest-44805
@@ -10282,6 +10310,24 @@ Threat extinguished |q 47132/1 |goto 53.09,66.09
 |tip Be aware, using this ability will slow you briefly.
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46126
+Follow the path down |goto Broken Shore/0 39.35,63.75 < 15 |only if walking
+Drop down |goto 38.70,61.98 < 15 |only if walking
+accept Fel-Corrupted Feathers##46126 |goto Broken Shore/0 31.43,60.59
+|tip You will accept this quest automatically.
+stickystart "Feathers"
+step
+click Harpy Nest##6477
+Burn #5# Harpy Nests |q 46126/3 |goto 31.43,60.59
+|tip These are located on trees in the area.
+step
+label "Feathers"
+kill Deadwood Felcaster##118786+
+Kill #8# Deadwood Felcasters |q 46126/1 |goto 31.43,60.59
+kill Deadwood Featherblade##118788+
+Kill #8# Deadwood Featherblades |q 46126/2 |goto 31.43,60.59
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46933
 Follow the path down |goto Broken Shore/0 39.35,63.75 < 15 |only if walking
 Drop down |goto 38.70,61.98 < 15 |only if walking
@@ -10491,6 +10537,42 @@ Burn all of the things |q 45653/1 |goto 41.74,29.09
 |tip Use the extra action button "Enhanced Dragonsbreath" to quickly kill the enemies.
 |next "Court_Of_Farondis_WQ"
 |only Mage
+step
+label quest-46308
+Follow the path |goto Broken Shore/0 66.27,42.54 < 15 |only if walking
+Follow the path |goto Broken Shore/0 71.38,35.05 < 15 |only if walking
+Follow the path up |goto Broken Shore/0 70.40,40.86 < 15 |only if walking
+accept Leave a Trail##46308 |goto Broken Shore/0 71.78,42.27
+|tip You will accept this quest automatically.
+|only Rogue
+step
+click the Rappel Rope |q 46308/1 |goto 71.90,42.21
+|only Rogue
+step
+click Fel-Infused Gunpowder Cache##3365 |q 46308/2 |goto 71.99,42.24
+|only Rogue
+step
+Go into stealth and avoid getting detected by the mobs within this cave
+click Felfire Explosive |q 46308/3 |count 1 |goto 71.85,41.85
+|only Rogue
+step
+Stay in stealth avoiding all enemies inside this cave
+click Felfire Explosive |q 46308/3 |count 2 |goto 72.13,39.74
+|only Rogue
+step
+Stay in stealth avoiding all enemies inside this cave
+click Felfire Explosive |q 46308/3 |count 3 |goto 72.79,38.41
+|only Rogue
+step
+Stay in stealth avoiding all enemies inside this cave
+click Felfire Explosive |q 46308/3 |count 4 |goto 73.38,36.73
+|only Rogue
+step
+Follow the path to leave the cave |goto 76.26,39.84
+click Campfire |goto 77.06,39.45
+Light the Gunpowder |q 46308/4 |goto 77.06,39.45
+|next "Court_Of_Farondis_WQ"
+|only Rogue
 step
 label quest-46046
 Follow the path |goto Broken Shore/0 43.80,58.35 < 25 |only if walking

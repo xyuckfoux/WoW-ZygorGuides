@@ -634,7 +634,7 @@ function Goldguide:MakeTable_Crafting()
 		
 	for _,skillname in ipairs(CRAFTING_SKILLS) do
 		if skillname=="All" or ZGV:GetSkill(skillname).level>0 then
-			local skillid = (skillname=="All" and 0) or ZGV.skillIDs[skillname]
+			local skillid = (skillname=="All" and 0) or ZGV.Professions.skillIDs[skillname]
 			local item = container.TypeDropdown:AddItem(skillname,skillid,function(item)
 				ZGV.db.profile.gold_crafting_type = item.userdata.value
 				if container:IsVisible() then Goldguide:Update() end

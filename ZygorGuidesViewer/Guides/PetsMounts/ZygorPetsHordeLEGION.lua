@@ -244,7 +244,7 @@ description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden"
 },[[
 step
 You will need to gain _Rank 4_ with the Legion Brawler's Guild
-Click here to be taken to the Brawler's guild event guide. |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+Click here to be taken to the Brawler's guild event guide. |confirm |next "Zygor's Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
 |tip This will show you strategies on how to defeat each boss.
 only if ZGV:GetReputation(2010).friendRep<7000
 step

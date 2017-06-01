@@ -2988,7 +2988,7 @@ step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
 Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
 step
@@ -3037,7 +3037,7 @@ Routing to proper section |next "clickroute" |only if ZGV.guidesets['Reputations
 Routing to proper section |next "exalted" |only if default
 step
 label "clickroute"
-Click here to be taken to the Reputation guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to be taken to the Reputation guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies" |only if ZGV.guidesets['DailiesAMOP']
 Click here to be taken to the Dailies guide to help you become _Exalted_ with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
@@ -3090,7 +3090,7 @@ description="This guide will walk you through obtaining the Amber is the Color o
 step
 For this achievement you must be at least _Revered_ with _The Klaxxi_ and completed all of the Dread Wastes Leveling/Loremaster quests.
 Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("The Klaxxi")<Revered
 step
@@ -3466,7 +3466,7 @@ description="This guide will walk you through obtaining the Defender of Gods Ach
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
 Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
 step
@@ -3516,7 +3516,7 @@ description="This guide will walk you through obtaining the Dog Pile Achievement
 step
 For this achievement you must be at least _Honored_ with _The Golden Lotus_.
 Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Golden Lotus")<Honored
 step
@@ -3615,7 +3615,7 @@ This achievement is mostly luck based, as the quest hub may not always be availa
 Even when the quest hub is available, the NPCs you need may not be.
 Refer to our _August Celestial_ Daily guide and look for the _Temple of the White Tiger_ hub to be available.
 Click here to go to the Reputations guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The August Celestials Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The August Celestials_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
 talk Sage Lotusbloom##64001
@@ -3798,7 +3798,7 @@ description="Complete 15 Shado-Pan daily quests with each of the Shadow-Pan Hero
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
 Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
 step
@@ -3814,7 +3814,7 @@ Complete daily quests with Tenwu of the Red Smoke |achieve 7298/8
 Complete daily quests with Lao-Chin the Iron Belly |achieve 7298/9
 You will need to refer to our Shado-Pan Daily guide to gain rep with them.
 Click here to go to the Reputations guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to work toward this achievement with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 Note that when you turn in quests, be sure to dismount first.
 |achieve 7298
 step
@@ -3834,7 +3834,7 @@ description="This guide will walk you through obtaining the How to Strain Your D
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
 Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
 step
@@ -3872,7 +3872,7 @@ description="This guide will walk you through obtaining the In a Trail of Smoke 
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
 Click here to go to the Reputations guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Order of the Cloud Serpent_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Order of the Cloud Serpent")<Revered
 step
@@ -4377,7 +4377,7 @@ step
 label "revered"
 Once the prequests are completed, refer to our Tillers daily guide to work your reputation up to _Revered_.
 Click here to go to the Reputations guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Tillers_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _The Tillers_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
 step
@@ -4406,7 +4406,7 @@ While going through the dailies guides to complete the requirements for this ach
 confirm
 step
 Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 step
 label golden2
@@ -4598,7 +4598,7 @@ description="This guide will walk you through obtaining the Proven Strength Achi
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
 Click here to go to the Reputations guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Shado-Pan_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |confirm |next |only if default
 |only if rep("Shado-Pan")<Revered
 step
@@ -4839,7 +4839,7 @@ _Target of Opportunity: Sra'thik Swarmlord_
 _Friends, Not Food!_
 Once you complete the quest _REMEMBER TO DISMOUNT_ before turning either of the quests in.
 Click here to go to the Reputations guide to attempt this achievement. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to attempt this achievement. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to attempt this achievement. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies" |only if ZGV.guidesets['DailiesAMOP']
 |achieve 7307
 step
 Congratulations, you have earned the _Silent Assassin_ achievement.
@@ -4876,7 +4876,7 @@ step
 label "revered"
 For this achievement you must be at least _Revered_ with _The Golden Lotus_.
 Click here to go to the Reputations guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Golden Lotus_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies" |only if ZGV.guidesets['DailiesAMOP']
 You will need to continue through the dailies with _Golden Lotus_ to get your reputation to _Revered_. |only if default
 |confirm |next |only if default
 step
@@ -4924,7 +4924,7 @@ path	54.6,36.0	54.4,35.8	54.4,36.2
 path	54.2,35.8	55.0,35.8
 Use the provided coordinates to find the cooresponding NPCs.
 Click here to go to the Reputations guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi" |only if ZGV.guidesets['ReputationsAMOP'] and not ZGV.guidesets['DailiesAMOP']
-Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
+Click here to go to the Dailies guide to gain reputation with _The Klaxxi_. |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies" |only if ZGV.guidesets['DailiesAMOP']
 Complete 5 dailies with one buff.
 step
 Congratulations, you have earned the _Stay Klaxxi_ achievement.
@@ -6823,208 +6823,6 @@ buy Recipe: Spicy Vegetable Chips##74658 |n |goto Valley of the Four Winds 53.2,
 learn Spicy Salmon##125120
 learn Spicy Vegetable Chips##125123 |use Recipe: Spicy Vegetable Chips##74658
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of Pandaren Cooking",{
-condition_end="achieved(7306)",
-description="This guide will walk you through\nbecoming the Master of Pandaren Cooking.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-This achievement requires that you are leveled in all ways of Pandaren Cooking.
-|confirm |next mopc
-step
-label mopc
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_520-600"
-step
-|next "520_up" |only if not achieved(7306)
-|next "end" |only if achieved(7306)
-step
-label end
-Earn the Master of Pandaren Cooking achievement |achieve 7306
-step
-Congratulations, you have earned the Master of Pandaren Cooking Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Brew",{
-condition_end="achieved(7305)",
-description="This guide will walk you through\nbecoming the Master of the Brew.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Brew_ |confirm |next wotb
-step
-label wotb
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Brew"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7305)
-|next "end" |only if achieved(7305)
-step
-label end
-Earn the Master of the Brew achievement |achieve 7305
-step
-Congratulations, you have earned the Master of the Brew Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Grill",{
-condition_end="achieved(7300)",
-description="This guide will walk you through\nbecoming the Master of the Grill.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Grill_ |confirm |next wotg
-step
-label wotg
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Grill"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7300)
-|next "end" |only if achieved(7300)
-step
-label end
-Earn the Master of the Grill achievement |achieve 7300
-step
-Congratulations, you have earned the Master of the Grill Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Oven",{
-condition_end="achieved(7304)",
-description="This guide will walk you through\nbecoming the Master of the Oven.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Oven_ |confirm |next woto
-step
-label woto
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Oven"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7304)
-|next "end" |only if achieved(7304)
-step
-label end
-Earn the Master of the Oven achievement |achieve 7304
-step
-Congratulations, you have earned the Master of the Oven Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Pot",{
-condition_end="achieved(7302)",
-description="This guide will walk you through\nbecoming the Master of the Pot.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Pot_ |confirm |next wotp
-step
-label wotp
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Pot"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7302)
-|next "end" |only if achieved(7302)
-step
-label end
-Earn the Master of the Pot achievement |achieve 7302
-step
-Congratulations, you have earned the Master of the Pot Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Steamer",{
-condition_end="achieved(7303)",
-description="This guide will walk you through\nbecoming the Master of the Steamer.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Steamer_ |confirm |next wots
-step
-label wots
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Steamer"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7303)
-|next "end" |only if achieved(7303)
-step
-label end
-Earn the Master of the Steamer achievement |achieve 7303
-step
-Congratulations, you have earned the Master of the Steamer Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of the Wok",{
-condition_end="achieved(7301)",
-description="This guide will walk you through\nbecoming the Master of the Wok.",
-},[[
-step
-In order to earn this achievement, you will have to level your cooking skill.
-If you wish to level up all of your masteries together, please go to the Master of Pandaren Cooking Guide.
-Click here to level up your cooking and only choose the _Way of the Wok_ |confirm |next wotw
-step
-label wotw
-|next "520_up" |only if skill("Cooking")>525
-|next "520_down" |only if skill("Cooking")<525
-step
-label 520_down
-#include "Pandarian_Cooking_1-520"
-step
-label 520_up
-#include "Cooking_PreMasteries"
-#include "Cooking_Wok"
-step
-label cooking_mastery_start
-|next "520_up" |only if not achieved(7301)
-|next "end" |only if achieved(7301)
-step
-label end
-Earn the Master of the Wok achievement |achieve 7301
-step
-Congratulations, you have earned the Master of the Wok Achievement!
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Now I Am the Master",{
 condition_end="achieved(7325)",
 description="This guide will walk you through the\nachievement Now I Am the Master.",
@@ -7384,6 +7182,34 @@ Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 Use your Fishing skill to fish in the water here.  |cast Fishing##131474
 collect Jewel Danio##74863 |goto Vale of Eternal Blossoms/0 20.3,17.6
 |tip Fish in the Jewel Danio Schools to catch this.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Cooking\\Master of Pandaren Cooking",{
+condition_end="achieved(7306)",
+description="This guide will walk you through\nbecoming the Master of Pandaren Cooking.",
+},[[
+step
+In order to earn this achievement, you will have to level your cooking skill.
+This achievement requires that you are leveled in all ways of Pandaren Cooking.
+|confirm |next mopc
+step
+label mopc
+|next "520_up" |only if skill("Cooking")>525
+|next "520_down" |only if skill("Cooking")<525
+step
+label 520_down
+#include "Pandarian_Cooking_1-520"
+step
+label 520_up
+#include "Cooking_PreMasteries"
+#include "Cooking_520-600"
+step
+|next "520_up" |only if not achieved(7306)
+|next "end" |only if achieved(7306)
+step
+label end
+Earn the Master of Pandaren Cooking achievement |achieve 7306
+step
+Congratulations, you have earned the Master of Pandaren Cooking Achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Collections\\Going To Need A Bigger Bag",{
 condition_end="achieved(8728)",

@@ -464,7 +464,7 @@ do
 
 			-- Powerhorse: extract all {data:blablabla} tags.
 
-			local data={mode="walk"}
+			local conndata={mode="walk"}
 			repeat
 				local text1,key,val,text2 = text:match("^(.-){(.-):(.-)}(.-)$")
 				if key then
@@ -472,7 +472,7 @@ do
 					if key=="mode" then val=val and val:lower() ntype=val end  -- ZEPPELIN->zeppelin. Gets copied to node.type too!
 					local num = tonumber(val)
 					if num then val=num end
-					data[key]=val
+					conndata[key]=val
 					text=text1..text2
 				end
 			until not key
@@ -510,17 +510,20 @@ do
 			local link12,link21,link1m
 
 			-- parse condition, if any
-			ParseDataCond(data)
+			ParseDataCond(conndata)
 
-			if n1 and n2 and data.replace then -- don't make a new connection! Just modify an existing one (if any)
-				for i,nodemeta in ipairs(n1.n) do if nodemeta[1]==n2 then for k,v in pairs(data) do nodemeta[2][k]=v end end end
+			if n1 and n2 and conndata.replace then -- don't make a new connection! Just modify an existing one (if any)
+				for i,nodemeta in ipairs(n1.n) do if nodemeta[1]==n2 then for k,v in pairs(conndata) do nodemeta[2][k]=v end end end
 				if twoway then
-					for i,nodemeta in ipairs(n2.n) do if nodemeta[1]==n1 then for k,v in pairs(data) do nodemeta[2][k]=v end end end
+					for i,nodemeta in ipairs(n2.n) do if nodemeta[1]==n1 then for k,v in pairs(conndata) do nodemeta[2][k]=v end end end
 				end
 				return -- that's it, this was just a replacement for an existing (automatic?) connection.
 			end
 
-			if dat1 then for k,v in pairs(dat1) do n1[k]=v end end
+			if dat1 then
+				ParseDataCond(dat1)
+				for k,v in pairs(dat1) do n1[k]=v end
+			end
 			if x1 then AddNode(n1,dontlink) end --new!
 			-- we surely have the first node, right?
 			if n2 then
@@ -528,7 +531,7 @@ do
 				if x2 then AddNode(n2,dontlink) end
 				-- we have a proper second node! link to it
 
-				link12 = CloneTable(data)
+				link12 = CloneTable(conndata)
 				link12.hardwired=true
 
 				n1:AddNeigh(n2,link12)
@@ -537,7 +540,7 @@ do
 			if twoway then
 				if n2 then
 					-- normal return trip
-					link21 = CloneTable(data)
+					link21 = CloneTable(conndata)
 					n2:AddNeigh(n1,link21)
 					link21.hardwired=true
 				elseif m2 then
@@ -545,7 +548,7 @@ do
 					if not n1.ms then n1.ms={} end
 					local link1m = {}
 					n1.ms[m2]=link1m
-					for k,v in pairs(data) do link1m[k]=v end
+					for k,v in pairs(conndata) do link1m[k]=v end
 				end
 			else
 				--if n2 then n2.onlydst=n1 end
@@ -561,19 +564,15 @@ do
 				-- This way a node that's later known to have 5 neighbours, can quickly tell one of the neighbours as the SPECIAL neighbour.
 				-- But, if the node ALREADY has a special neighbour... then delete this; it's a multi-special whore node.
 
-				if not data.dontsetborder then -- allow for some linkages that are NOT special
+				if not conndata.dontsetborder then -- allow for some linkages that are NOT special
 					n1.border = n1.border and "multi" or n2
 					if n2 then  n2.border = n2.border and "multi" or n1  end
 					if n1.border==n2 then n1.bordermeta=link12 end
 					if n2 and n2.border==n1 then n2.bordermeta=link21 end
 				end
-				
-			else
-				-- single node!!
-				for k,v in pairs(data) do n1[k]=v end
 			end
 
-			if data.autotype=="portal_dungeon" then
+			if conndata.autotype=="portal_dungeon" then
 				n1.type="portal"
 				n2.type="portal"
 				link12.mode="portal"
@@ -706,29 +705,23 @@ do
 			n1.btoa=atob
 		--]]
 
-		local actiontitle_funcs = Lib.data.connection_templates
-		actiontitle_funcs['atob'] = {
-			['a_to_b'] = function(self,fromnode,tonode)  -- shown on both nodes when going from A to B
-				if tonode==self.border then 
-					return (self.bordermeta and self.bordermeta.atob) or ""
-				end  
-				if fromnode==self.border then 
-					return (self.bordermeta and self.bordermeta.btoa) or "" 
-				end
-			end,
-			['b_to_a'] = function(self,fromnode,tonode)  -- shown on both nodes when going from B to A
-				if tonode==self.border then 
-					return (self.bordermeta and self.bordermeta.btoa) or "" 
-				end  
-				if fromnode==self.border then 
-					return (self.bordermeta and self.bordermeta.atob) or ""
-				end 
-			end,
-		}
-		actiontitle_funcs['atob12'] = { -- don't touch: magic.
-			['a_to_b'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.atob1 end  if fromnode==self.border then return self.bordermeta.btoa2 end end,
-			['b_to_a'] = function(self,fromnode,tonode) if tonode==self.border then return self.bordermeta.btoa1 end  if fromnode==self.border then return self.bordermeta.atob2 end end,
-		}
+		
+		local function a_to_b (self,fromnode,tonode)
+			if tonode==self.border then 
+				return (self.bordermeta and self.bordermeta.title_atob1 or self.bordermeta.title_atob or self.bordermeta.title) or ""
+			end  
+			if fromnode==self.border then 
+				return (self.bordermeta and self.bordermeta.title_btoa2 or self.bordermeta.title_btoa or self.bordermeta.title) or "" 
+			end
+		end
+		local function b_to_a (self,fromnode,tonode)
+			if tonode==self.border then 
+				return (self.bordermeta and self.bordermeta.title_btoa1 or self.bordermeta.title_btoa or self.bordermeta.title) or "" 
+			end  
+			if fromnode==self.border then 
+				return (self.bordermeta and self.bordermeta.title_atob2 or self.bordermeta.title_atob or self.bordermeta.title) or ""
+			end 
+		end
 
 		local function SmartAddNode(data,deftype,dontlink)
 			-- all-purpose "map x,y x map x,y"
@@ -751,27 +744,12 @@ do
 			end
 
 			if n1 and n2 and n1.bordermeta then
-				local template = actiontitle_funcs[n1.bordermeta.template]
-				if template then
-					if template.text_a_to_b then  -- simple text pair: use the "custom" function.
-						n1.actiontitle=actiontitle_funcs['atob'].a_to_b
-						n2.actiontitle=actiontitle_funcs['atob'].b_to_a
-						-- set parameters for the 'custom' function
-						n1.bordermeta.atob = template.text_a_to_b
-						n1.bordermeta.btoa = template.text_b_to_a
-						n2.bordermeta.atob = template.text_a_to_b
-						n2.bordermeta.btoa = template.text_b_to_a
-						n1.actiontitle_template_name=n1.bordermeta.template -- for debugging
-						n2.actiontitle_template_name=n1.bordermeta.template -- for debugging
-					elseif template.a_to_b and template.b_to_a then
-						n1.actiontitle=actiontitle_funcs[n1.bordermeta.template].a_to_b
-						n2.actiontitle=actiontitle_funcs[n1.bordermeta.template].b_to_a
-						n1.actiontitle_template_name=n1.bordermeta.template.."/a_to_b" -- for debugging
-						n2.actiontitle_template_name=n1.bordermeta.template.."/b_to_a" -- for debugging
-					end
-					n1.bordermeta.template=nil
-					if n2.bordermeta then n2.bordermeta.template=nil end
-
+				-- get data from connection_templates if {template:xxxx} is valid
+				local template = Lib.data.connection_templates[n1.bordermeta.template]
+				if template then  for k,v in pairs(template) do  n1.bordermeta[k]=template[k] n2.bordermeta[k]=template[k] end  end
+				if n1.bordermeta.title_atob or n1.bordermeta.title_atob1 then
+					n1.actiontitle=a_to_b
+					n2.actiontitle=b_to_a
 				end
 			end
 
@@ -4147,11 +4125,17 @@ do
 		end
 
 		function LibRover:FindNode(map,f,x,y)
+			if type(map)=="string" and not (f or x or y) then
+				map,f,x,y = ZGV.Parser.ParseMapXYDist(map)
+			else
+				x=x/100
+				y=y/100
+			end
 			local mapid = self.data.MapIDsByName[map] or tonumber(map)
 			if not mapid then print("No such map!") end
 			local ret={}
 			for ni,node in ipairs(self.nodes.all) do
-				if node.m==mapid and math.abs(node.x*100-x)<1 and math.abs(node.y*100-y)<1 then
+				if node.m==mapid and math.abs(node.x-x)<0.01 and math.abs(node.y-y)<0.01 then
 					tinsert(ret,node)
 				end
 			end

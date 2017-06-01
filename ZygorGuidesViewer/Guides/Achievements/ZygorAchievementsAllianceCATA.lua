@@ -4304,7 +4304,7 @@ Complete the "Rejek: First Blood" daily |achieve 961/8
 confirm
 step
 Routing |next "achieve" |only if default
-Routing |next "Zygor's Dailies Guides\\Northrend (70 - 80)\\Sholazar Basin\\Frenzyheart Tribe Dailies" |only if not achieved(961)
+Routing |next "Zygor's Dailies Guides\\Wrath of the Lich King Dailies\\Sholazar Basin\\Frenzyheart Tribe Dailies" |only if not achieved(961)
 step
 label "achieve"
 Congratulations, you have earned the Honorary Frenzyheart achievement! |achieve 961
@@ -8185,11 +8185,11 @@ step
 step
 label route
 Routing to proper section |next "achieve" |only if not ZGV.guidesets['DailiesACATA']
-Routing to proper section |next "Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets['DailiesACATA']
+Routing to proper section |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets['DailiesACATA']
 step
 label achieve
 This achievement requires that you do the Firelands Dailies and Quests in order to complete it.
-Click here to load the "Firelands Dailies Guide" |confirm |next "Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
+Click here to load the "Firelands Dailies Guide" |confirm |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Cataclysm\\Wildhammer Tour of Duty",{
 condition_end="achieved(5481)",

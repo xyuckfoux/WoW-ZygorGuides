@@ -9,19 +9,19 @@ GuideMenu.Home={
 	{"banner", image=ZGV.DIR.."\\Skins\\banner"},
 
 	{"section", text=[[LEVELING]]},
-	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 9 "Take Out the Head..."|r.]], guide="LEVELING\\Legion (100-110)\\Broken Shore Campaign"},
+	{"item", text=[[Updated |cfffe6100Legionfall Campaign Week 10 "Take Out the Head..."|r.]], guide="LEVELING\\Legion (100-110)\\Broken Shore Campaign"},
+
+	{"section", text=[[REPUTATIONS]]},
+	{"item", text=[[Added |cfffe6100Vol'jin's Spear|r.]], guide="REPUTATIONS\\Warlords of Draenor\\Vol'jin's Spear", faction="H"},
+
+	{"section", text=[[PETS]]},
+	{"item", text=[[Added |cfffe6100Squirky|r.]], guide="PETSMOUNTS\\Battle Pets\\Humanoid Pets\\Squirky"},
 
 	{"section", text=[[ACHIEVEMENTS]]},
-	{"item", text=[[Added |cfffe6100Legion Curator (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Legion Curator"},
-	{"item", text=[[Added |cfffe6100Surveying the Land (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Surveying the Land"},
-	{"item", text=[[Added |cfffe6100This Side Up (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\This Side Up"},
-	{"item", text=[[Added |cfffe6100A Keen Eye (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\A Keen Eye"},
-	{"item", text=[[Added |cfffe6100The Dwarven Dream (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\The Dwarven Dream"},
-	{"item", text=[[Added |cfffe6100Handle With Care (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Handle With Care"},
-	{"item", text=[[Added |cfffe6100Getting Your Hands Dirty (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Getting Your Hands Dirty"},
-	{"item", text=[[Added |cfffe6100Sifting Through the Sand (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\Sifting Through the Sand"},
-	{"item", text=[[Added |cfffe6100No Stone Unturned (BETA)|r.]], guide="ACHIEVEMENTS\\Professions\\Archaeology\\No Stone Unturned"},
-
+	{"item", text=[[Added |cfffe6100Bringing Home the Beacon (BETA)|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Bringing Home the Beacon"},
+	{"item", text=[[Added |cfffe6100Naxt Victim|r.]], guide="ACHIEVEMENTS\\Exploration\\Legion\\Naxt Victim"},
+	{"item", text=[[Added |cfffe6100Legion Aquaculture|r.]], guide="ACHIEVEMENTS\\Professions\\Fishing\\Legion Aquaculture"},
+	{"item", text=[[Added |cfffe6100Legion Fisherman|r.]], guide="ACHIEVEMENTS\\Professions\\Fishing\\Legion Fisherman"},
 	{"separator"},
 
 	{"title", text=[[Recent Content:]]},

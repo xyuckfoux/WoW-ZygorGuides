@@ -674,8 +674,8 @@ accept Report to Goldshire##54 |goto 33.6,53.0
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Death Knight 55-58",
-condition_invalid="not raceclass('DeathKnight') ",
-condition_invalid_msg="Death Knight only.",
+condition_valid="raceclass('DeathKnight') ",
+condition_valid_msg="Death Knight only.",
 condition_suggested="raceclass('DeathKnight') and not completedq(13188)",
 condition_suggested_exclusive=true,
 condition_end="completedq(13188)",

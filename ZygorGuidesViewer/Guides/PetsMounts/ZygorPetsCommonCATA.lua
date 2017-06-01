@@ -3434,7 +3434,7 @@ description="This guide will walk you through obtaining the Elemental pet: Crims
 },[[
 step
 You will have to do the _Firelands dailies_ quests to complete the quest _"Filling the Moonwell"_
-Click here for the Firelands Pre Quests and Dailies guide. |next "Zygor's Dailies Guides\\Cataclysm (80 - 85)\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets["DailiesACATA"]
+Click here for the Firelands Pre Quests and Dailies guide. |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests" |only if ZGV.guidesets["DailiesACATA"]
 Click here for the Pre Quests. |confirm
 Click here if you already have the quest _Filling the Moonwell_ |next "buy" |only if completedq(29279)
 step

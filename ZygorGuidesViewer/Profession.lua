@@ -16,11 +16,11 @@ local ZGVP = ZGV.Professions
 -- this is not widely used, yet, sadly - most functions remain global.
 
 
-ZGV.skills = {}
+ZGV.Professions.skills = {}
 
 local LS=ZygorGuidesViewer_L("Skills")
 
-ZGV.skillSpells = {
+ZGV.Professions.skillSpells = {
 	['Alchemy']=2259,
 	['Blacksmithing']=2018,
 	['Inscription']=45357,
@@ -46,7 +46,7 @@ ZGV.skillSpells = {
 	['First Aid']=3273,
 	['Fishing']=7620,
 }
-local skillSpells=ZGV.skillSpells
+local skillSpells=ZGV.Professions.skillSpells
 
 local CookingSkills = { --Copy from skillSpells, just to make scanning them easier because we only want to scan cooking masteries at one point.
 	--Feel free to remove the duplicate code if you think of a better way. ~Errc
@@ -58,8 +58,17 @@ local CookingSkills = { --Copy from skillSpells, just to make scanning them easi
 	['Way of the Brew']=125589,
 }
 
+local CookingCategories = {  -- Legion-style, for C_TradeSkillUI.GetCategoryInfo(cat).
+	['Way of the Pot']=66,
+	['Way of the Grill']=64,
+	['Way of the Wok']=65,
+	['Way of the Steamer']=67,
+	['Way of the Oven']=68,
+	['Way of the Brew']=69,
+}
+
 -- sinus 2013-01-10 : this uses the "skill" numbers, found on wowhead.com/skill=171 for example. This is a backup if the above spell numbers start failing like Herbalism.
-ZGV.skillIDs = {
+ZGV.Professions.skillIDs = {
 	['Alchemy']=171,
 	['Blacksmithing']=164,
 	['Enchanting']=333,
@@ -86,11 +95,12 @@ ZGV.skillIDs = {
 	['Fishing']=356,
 	['Riding']=762,
 }
+local skillIDs=ZGV.Professions.skillIDs
 
-ZGV.skillIDsRev = {}
-for k,v in pairs(ZGV.skillIDs) do ZGV.skillIDsRev[v]=k end -- reverse lookup for proffesion names
+ZGV.Professions.skillIDsRev = {}
+for k,v in pairs(skillIDs) do ZGV.Professions.skillIDsRev[v]=k end -- reverse lookup for proffesion names
 
-ZGV.skillLocale = {
+ZGV.Professions.skillLocale = {
 	[129]={deDE="Erste Hilfe",esES="Primeros auxilios",frFR="Secourisme",ptBR="Primeiros Socorros",ruRU="Первая помощь"},
 	[164]={deDE="Schmiedekunst",esES="Herrería",frFR="Forge",ptBR="Ferraria",ruRU="Кузнечное дело"},
 	[165]={deDE="Lederverarbeitung",esES="Peletería",frFR="Travail du cuir",ptBR="Couraria",ruRU="Кожевничество"},
@@ -108,13 +118,13 @@ ZGV.skillLocale = {
 	[773]={deDE="Inschriftenkunde",esES="Inscripción",frFR="Calligraphie",ptBR="Escrivania",ruRU="Начертание"},
 	[794]={deDE="Archäologie",esES="Arqueología",frFR="Archéologie",ptBR="Arqueologia",ruRU="Археология"},
 } -- GETS TRIMMED.
-for id,data in pairs(ZGV.skillLocale) do ZGV.skillLocale[id]=data[GetLocale()] end
+for id,data in pairs(ZGV.Professions.skillLocale) do ZGV.Professions.skillLocale[id]=data[GetLocale()] end
 
 
-ZGV.LocaleSkills={}
-setmetatable(ZGV.LocaleSkills,{__index=function(t,skill) return ZGV.skillLocale[ZGV.skillIDs[skill] or 0] or GetSpellInfo(ZGV.skillSpells[skill]) or skill end})
-ZGV.LocaleSkillsR={}
-setmetatable(ZGV.LocaleSkillsR,{__index=function(t,q) return q end})
+ZGV.Professions.LocaleSkills={}
+setmetatable(ZGV.Professions.LocaleSkills,{__index=function(t,skill) return ZGV.Professions.skillLocale[skillIDs[skill] or 0] or GetSpellInfo(skillSpells[skill]) or skill end})
+ZGV.Professions.LocaleSkillsR={}
+setmetatable(ZGV.Professions.LocaleSkillsR,{__index=function(t,q) return q end})
 
 tinsert(ZGV.startups,{"Professions setup",function(self)
 	self:AddEvent("PLAYER_ENTERING_WORLD","CacheSkills")
@@ -126,10 +136,11 @@ tinsert(ZGV.startups,{"Professions setup",function(self)
 	self:AddEvent("TRADE_SKILL_SHOW","Profession_TRADE_SKILL_SHOW")
 
 	self:AddEvent("TRADE_SKILL_LIST_UPDATE","CacheRecipes")
+	self:AddEvent("TRADE_SKILL_DATA_SOURCE_CHANGED","CacheSkills")
 
 	--self:AddEvent("CHAT_MSG_COMBAT_FACTION_CHANGE","CHAT_MSG_COMBAT_FACTION_CHANGE_Faction")
 
-	self.skills[""]={
+	self.Professions.skills[""]={
 		active=false,
 		level=0,
 		max=0
@@ -139,8 +150,8 @@ tinsert(ZGV.startups,{"Professions setup",function(self)
 
 	if GetLocale()~="enUS" then
 		for spell,num in pairs(skillSpells) do -- Localize spell-based skills. So far this only leaves Herbalism out, but who knows...
-			ZGV.LocaleSkills[spell]=GetSpellInfo(num)
-			ZGV.LocaleSkillsR[ZGV.LocaleSkills[spell]]=spell
+			ZGV.Professions.LocaleSkills[spell]=GetSpellInfo(num)
+			ZGV.Professions.LocaleSkillsR[ZGV.Professions.LocaleSkills[spell]]=spell
 		end
 	end
 end})
@@ -189,33 +200,39 @@ function ZGV:CacheSkills_Queued()
 	for i,prof in pairs(profs) do
 		local name,icon,rank,maxrank,numspells,spelloffset,skillline = GetProfessionInfo(prof)
 
-		local pro = self.skills[name]
+		local pro = self.Professions.skills[name]
 		if not pro then
 			pro={}
-			self.skills[name]=pro
+			self.Professions.skills[name]=pro
 		end
 		pro.level=rank
 		pro.max=maxrank
 		pro.active=true
 		pro.skillID=skillline
-		pro.spell=self.skillSpells[name]
+		pro.spell=skillSpells[name]
 		pro.name=name
 
-		if skillline == 185 and rank >= 535 then --Cooking > 535, so check for masteries
-			for id,level in pairs(ZGV.db.char.cookingMasteries) do
-				local name = GetSpellInfo(id)
+		local function getCategory(id)
+			local catdata = C_TradeSkillUI.GetCategoryInfo(id)
+			if catdata and catdata.hasProgressBar and catdata.skillLineCurrentLevel>0 then
+				self.Professions.skills[catdata.name] = self.Professions.skills[catdata.name] or {}
+				pro = self.Professions.skills[catdata.name]
+				pro.level=catdata.skillLineCurrentLevel
+				pro.max=catdata.skillLineMaxLevel
+				pro.active=true
+				pro.TS_categoryID=catdata.categoryID
+				pro.spell=skillSpells[catdata.name]
+				pro.name=catdata.name
+			end
+			local sub={C_TradeSkillUI.GetSubCategories(id)}
+			if sub then
+				for i,id in ipairs(sub) do getCategory(id) end
+			end
+		end
 
-				local pro = self.skills[name]
-				if not pro then
-					pro={}
-					self.skills[name]=pro
-				end
-				pro.level=level
-				pro.max=700 --HARD CODED
-				pro.active=true -- It is in db.char... so that means we had seen it at some point
-				pro.skillID=id
-				pro.spell=id
-				pro.name=name
+		if C_TradeSkillUI.GetTradeSkillLine()==skillline then  -- check for category masteries
+			for i,id in ipairs{C_TradeSkillUI.GetCategories()} do
+				getCategory(id)
 			end
 		end
 	end
@@ -225,8 +242,8 @@ end
 
 function ZGV:GetSkill(name)
 	local skill,spell
-	skill = self.skillIDs[name]
-	if not skill then spell = self.skillSpells[name] end
+	skill = skillIDs[name]
+	if not skill then spell = skillSpells[name] end
 
 	if ZGV.db.profile.fakeskills[name] then
 		return ZGV.db.profile.fakeskills[name]
@@ -236,10 +253,10 @@ function ZGV:GetSkill(name)
 end
 
 function ZGV:FindSkill(skill,spell)
-	for name,skilldata in pairs(self.skills) do
+	for name,skilldata in pairs(self.Professions.skills) do
 		if (skill and skilldata.skillID==skill) or (spell and skilldata.spell==spell) then return skilldata end
 	end
-	return self.skills[""]
+	return self.Professions.skills[""]
 end
 
 

@@ -118,9 +118,9 @@ function Crafting:CalculateDetails(refresh)
 		self.demand = trend.sold
 	end
 
-	if self.learned and self.demand then
+	if self.learned and self.demand and self.demand>0 then
 		self.status = 0 -- known, in demand - easy mode
-	elseif self.demand>0 then
+	elseif self.demand and self.demand>0 then
 		self.status = 1 -- unknown, in demand - adv mode
 	else
 		self.status = 2 -- unknown, not in demand - expert mode

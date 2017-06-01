@@ -115,8 +115,10 @@ accept The Lesson of the Iron Bough##30027 |goto 56.7,18.2
 |only Pandaren Monk
 step
 click Weapon Rack##210016
-Use the Trainee's Staff |use Trainee's Staff##73209
-Loot and Equip the Trainee's Staff |q 30027/1 |goto 56.9,19.7
+Use the Trainee's Handwrap |use Trainee's Handwrap##77279
+Use the Trainee's Handwrap |use Trainee's Handwrap##77278
+Loot and Equip the Trainee's Handwrap |q 30027/1 |goto 56.9,19.7
+Loot and Equip a second Trainee's Handwrap |q 30027/2 |goto 56.9,19.7
 |only Pandaren Monk
 step
 talk Master Shang Xi##53566

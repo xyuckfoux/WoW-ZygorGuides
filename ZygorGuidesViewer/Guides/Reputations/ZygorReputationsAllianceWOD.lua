@@ -4,12 +4,18 @@ if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("ReputationsAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Arakkoa Outcasts",{
-description="This guide will show you how to become Exalted with the Arakkoa Outcasts.\nBecoming Exalted with the Arakkoa Outcasts allows you access to special items including the Shadowmane Charger mount and the Son of Sethe battle pet.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Arakkoa Outcasts faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={9469},
 },[[
 #include "Arakkoa_Outcasts"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Council of Exarchs",{
-description="This guide will show you how to become Exalted with the Council of Exarchs.\nBecoming Exalted with the Council of Exarchs allows you access to special items including the Dusty Rockhide mount and the Relic of Karabor.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Council of Exarchs faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={9470},
 },[[
 stickystart "info"
 step
@@ -38,25 +44,37 @@ _Revered_ |only if rep('Council of Exarchs')==Revered
 _Exalted_ |only if rep('Council of Exarchs')==Exalted
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Hand of the Prophet",{
-description="This guide will walk you through becoming Exalted with the Hand of the Prophet faction.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Hand of the Prophet faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={10350},
 },[[
 step
 #include "A_Hand_of_Prophet_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Order of the Awakened",{
-description="This guide will walk you through becoming Exalted with the Order of the Awakened faction.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Order of the Awakened faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={10350},
 },[[
 step
 #include "A_Order_of_Awakened_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\The Saberstalkers",{
-description="This guide will walk you through becoming Exalted with the Saberstalkers faction.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with The Saberstalkers faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={10350},
 },[[
 step
 #include "A_Saberstalkers_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Sha'tari Defense",{
-description="This guide will show you how to become Exalted with Sha'tari Defense.\nBecoming Exalted with Sha'tari Defense allows you access to special items such as the Armored Irontusk mount and a Sha'tari Defense plate Transmog set.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Sha'tari Defense faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={9476},
 },[[
 step
 Routing to Rep |next "menu" |only if hasbuilding(144,2) or hasbuilding(145,3)
@@ -91,12 +109,18 @@ You must have at least a _level 2 Trading Post_ in your Garrison to gain Sha'tar
 |tip Use the Garrison Buildings guide to accomplish this.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Steamwheedle Preservation Society",{
-description="This guide will show you how to become Exalted with the Steamwheedle Preservation Society.\nBecoming Exalted with the Steamwheedle Preservation Society allows you access to special items including the Domesticated Razorback mount.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Steamwheedle Preservation Society faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={9472},
 },[[
 #include "Steamwheedle_Preservation_Society"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Warlords of Draenor\\Wrynn's Vanguard",{
-description="This guide will show you how to become Exalted with Wrynn's Vanguard.\nBecoming Exalted with Wrynn's Vanguard allows you access to special items such as the Pale Thorngrazer mount and Primal Gladiator gear.",
+author="support@zygorguides.com",
+description="This guide will walk you through becoming exalted with the Wrynn's Vanguard faction.",
+condition_suggested="level>=90 and level<=100",
+achieveid={9474, 9214},
 },[[
 step
 Your current reputation rank is:

@@ -16927,7 +16927,7 @@ step
 label "start"
 You will have needed to unlock the _"Isle of Thunder"_ daily zone
 You will also need to have progressed enough to have learned the Saurok Jump ability
-Click here to load the Kirin Tor Offensive Guide |confirm |next "Zygor's Dailies Guides\\Pandaria (85 - 90)\\Kirin Tor Offensive Dailies"
+Click here to load the Kirin Tor Offensive Guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Kirin Tor Offensive Dailies"
 Click here to continue |confirm
 step
 You will have _10 Minutes_ to collect all of the pieces to the Chamberlain

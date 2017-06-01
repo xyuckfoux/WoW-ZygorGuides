@@ -6,82 +6,25 @@ ZygorGuidesViewer.GuideMenuTier = "MOP"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Operation: Shieldwall\\Operation: Shieldwall\\Beastmaster Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Operation: Shieldwall faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8205},
-startlevel=90,
 },[[
 #include "Beastmaster_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Operation: Shieldwall\\Operation: Shieldwall",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Operation: Shieldwall faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7928},
-startlevel=90,
 },[[
 step
 #include "Operation_Shieldwall_Daily"
 ]])
-ZygorGuidesViewer:RegisterInclude("tillers_prequests",[[
-author="support@zygorguides.com",
-talk Tang Ironhoe##64036
-accept The Tillers##31372 |goto Vale of Eternal Blossoms 87.0,60.8
-step
-talk Farmer Yoon##58721
-turnin The Tillers##31372 |goto Valley of the Four Winds 52.0,48.0
-accept A Helping Hand##30252 |goto Valley of the Four Winds 52.0,48.0
-step
-click Unbudging Rock
-Clear 8 Unbudging Rocks |q 30252/1 |goto 51.8,48.8
-step
-talk Farmer Yoon##58646
-turnin A Helping Hand##30252 |goto 52.8,47.9
-step
-talk Farmer Yoon##58646
-accept Learn and Grow I: Seeds##30535 |goto 52.3,48.8
-step
-talk Merchant Greenfield##58718
-Tell him you're there to pick up seeds
-Get a Packet of Green Cabbage Seeds |q 30535/1 |goto 52.9,52.2
-step
-talk Farmer Yoon##58646
-turnin Learn and Grow I: Seeds##30535 |goto 52.3,48.8
-accept Learn and Grow II: Tilling and Planting##30254 |goto 52.3,48.8
-step
-clicknpc Untilled Soil##59985+
-Till 2 patches of Soil |q 30254/1 |goto 52.0,48.3
-Use the EZ-Gro Green Cabbage Seeds in your bags on the Tilled Soil |use EZ-Gro Green Cabbage Seeds##80302
-Plant seeds in 2 patches of Tilled Soil |q 30254/2 |goto 52.0,48.3
-|modelnpc Tilled Soil##58563
-step
-talk Farmer Yoon##58646
-turnin Learn and Grow II: Tilling and Planting##30254 |goto 52.3,48.8
-accept Learn and Grow III: Tending Crops##30255 |goto 52.3,48.8
-step
-Use the Rusty Watering Can on the Parched EZ-Gro Green Cabbage |use Rusty Watering Can##79104
-Water 2 parched Ez-Gro Green Cabbage |q 30255/1 |goto 52.0,48.3
-|modelnpc Parched EZ-Gro Green Cabbage##59987
-step
-talk Farmer Yoon##58646
-turnin Learn and Grow III: Tending Crops##30255 |goto 52.3,48.8
-accept Learn and Grow IV: Harvesting##30256 |goto 52.3,48.8
-step
-clicknpc Ripe EZ-Gro Green Cabbage##59833
-collect 2 EZ-Gro Green Cabbage |q 30256/1 |goto 52.0,48.3
-step
-talk Farmer Yoon##58646
-turnin Learn and Grow IV: Harvesting##30256 |goto 52.3,48.8
-accept Learn and Grow V: Halfhill Market##30257 |goto 52.3,48.8
-step
-click Dark Soil
-collect Marsh Lily |q 30257/1 |goto 52.8,48.0
-step
-talk Gina Mudclaw##58706
-turnin Learn and Grow V: Halfhill Market##30257 |goto 53.1,51.8
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Chee Chee.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Chee Chee after completing the Tillers prequests
@@ -201,8 +144,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Ella",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Ella.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Ella after completing the Tillers prequests.
@@ -364,8 +307,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Farmer Fung.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Farmer Fung after completing the Tillers prequests.
@@ -445,8 +388,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Fish Fellreed.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Fish Fellreed after completing the Tillers prequests
@@ -539,8 +482,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Gina Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Gina Mudclaw after completing the Tillers prequests.
@@ -621,8 +564,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Haohan Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Haohan Mudclaw after completing the Tillers prequests.
@@ -702,8 +645,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Jogu the Drunk.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Jogu the Drunk after completing the Tillers prequests.
@@ -809,8 +752,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Old Hillpaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Old Hillpaw after completing the Tillers prequests.
@@ -896,8 +839,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Sho",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Sho.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Sho after completing the Tillers prequests.
@@ -988,8 +931,8 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming best friends with Tina Mudclaw.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6551, 6552},
-startlevel=90,
 },[[
 step
 You can only start earning reputation with Tina Mudclaw after completing the Tillers prequests
@@ -1078,16 +1021,16 @@ Please click here to return to the beginning of the guide |confirm |next "menu"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Anglers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Anglers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6547,7614},
-startlevel=90,
 },[[
 #include "A_Anglers"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The August Celestials",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The August Celestials faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6543},
-startlevel=90,
 },[[
 step
 #include "August_Celestials"
@@ -1098,8 +1041,8 @@ This is the end of the current guide. Click here to go back to the beginning. |c
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Emperor Shaohao",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Emperor Shaohao faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8715},
-startlevel=90,
 },[[
 #include "timeless_isle_prequests"
 step
@@ -1114,8 +1057,8 @@ Congratulations, you are now _Exalted_ with _Emperor Shaohao_!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Golden Lotus",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Golden Lotus faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7315, 6546},
-startlevel=90,
 },[[
 step
 Routing to proper section |next "prequests" |only if not completedq(31511) and not completedq(31512)
@@ -1128,8 +1071,8 @@ label "prequests"
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Kirin Tor Offensive",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Kirin Tor Offensive faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={8208},
-startlevel=90,
 },[[
 step
 #include "Kirin_Tor_Offensive"
@@ -1137,16 +1080,16 @@ step
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Klaxxi",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Klaxxi faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6545},
-startlevel=90,
 },[[
 #include "A_Klaxxi"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Lorewalkers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Lorewalkers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6548},
-startlevel=90,
 },[[
 step
 click The Emperor's Burden - Part 8##
@@ -1353,8 +1296,8 @@ Congratulations, you are now Exalted with the Lorewalkers!
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Nat Pagle",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with Nat Pagle faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={7274},
-startlevel=90,
 },[[
 step
 label menu
@@ -1405,31 +1348,31 @@ turnin Flying Tiger Gourami##31443 |goto Krasarang Wilds 68.4,43.5
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Order of the Cloud Serpent faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6550},
-startlevel=90,
 },[[
 #include "A_Cloud_Serpent"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Shado-Pan Assault",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Shado-Pan Assault faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6366},
-startlevel=90,
 },[[
 #include "Shado_Pan_Daily_A"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\The Tillers",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with The Tillers faction.",
+condition_suggested="level>=85 and level<=90",
 achieveid={6544},
-startlevel=90,
 },[[
 #include "A_Tillers_DailyQuest"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Reputations Guides\\Mists of Pandaria Reputations\\Tushui Pandaren",{
 author="support@zygorguides.com",
 description="This guide will walk you through becoming exalted with the Tushui Pandaren faction.",
-condition_suggested="level>=1 and level<=60",
+condition_suggested="level>=1 and level<=90",
 },[[
 step
 talk Adherent Hanjun##69334

@@ -1052,8 +1052,8 @@ turnin Bring Me Kel'gash's Head!##9215 |goto 72.4,29.7
 ZygorGuidesViewer:RegisterGuide("Zygor's Leveling Guides\\Starter Guides\\Death Knight (55-58)",{
 author="support@zygorguides.com",
 image=ZGV.DIR.."\\Guides\\Images\\Death Knight 55-58",
-condition_invalid="not raceclass('DeathKnight') ",
-condition_invalid_msg="Death Knight only.",
+condition_valid="raceclass('DeathKnight')",
+condition_valid_msg="Death Knight only.",
 condition_suggested="raceclass('DeathKnight') and not completedq(13189)",
 condition_suggested_exclusive=true,
 condition_end="completedq(13189)",
@@ -4486,7 +4486,7 @@ only Tauren
 step
 _Take the elevator_ down |goto Orgrimmar 50.9,62.6 < 10 |only if walking
 _Enter_ the building |goto Orgrimmar/1 50.0,75.8 < 8 |walk
-talk Vol'jin##86832
+talk High Overlord Saurfang##14720
 |tip He is in the big center building
 turnin Walk With The Earth Mother##26397 |goto Orgrimmar 48.1,70.5
 ]])

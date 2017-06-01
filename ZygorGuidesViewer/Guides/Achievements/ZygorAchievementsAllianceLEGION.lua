@@ -4189,7 +4189,7 @@ ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legio
 condition_end="achieved(11260)",
 author="support@zygorguides.com",
 startlevel=110,
-endlevel=110,
+keywords={"Treasures","Suramar"},
 description="This guide will walk you through completing the \"Treasures of Suramar\" Achievement.",
 },[[
 step
@@ -4200,6 +4200,100 @@ Discover #45# Treasures in Suramar |achieve 11260
 step
 _Congratulations!_
 You have completed the _Treasures of Suramar_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Bringing Home the Beacon",{
+condition_end="achieved(11802)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Bringing","Home","the","Beacon"},
+description="This guide will walk you through completing the \"Bringing Home the Beacon\" Achievement.",
+},[[
+step
+Use a Sentinax Beacon in each of the following areas
+|tip These Beacons drop off of rare spawns on the Broken Shore or from the enemies that come out of the portals summoned by the beacons while under the Sentinax.
+The Sentinax will appear under one of these areas and it will stay there for 3 hours
+|tip Starting at 12 server it will move at 3,6,9 and then 12 again and repeat.
+Shadow Fracture |achieve 11802/1 |goto Broken Shore/0 44, 38
+Soul Ruin |achieve 11802/2 |goto Broken Shore/0 51.0, 41.0
+Dark Stockades |achieve 11802/3 |goto Broken Shore/0 44, 51
+Coast of Anguish |achieve 11802/4 |goto Broken Shore/0 54, 68
+Garrison of the Fel |achieve 11802/5 |goto Broken Shore/0 59, 45
+Felfire Pass |achieve 11802/6 |goto Broken Shore/0 81, 46
+Felrage Strand |achieve 11802/7 |goto Broken Shore/0 80, 30
+Crescent Ruins |achieve 11802/8 |goto Broken Shore/0 51, 16
+The Creeping Grotto |achieve 11802/9 |goto Broken Shore/0 39, 28
+step
+_Congratulations!_
+You have completed the _Bringing Home the Beacon_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Exploration\\Legion\\Naxt Victim",{
+condition_end="achieved(11841)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Naxt","Victim"},
+description="This guide will walk you through completing the \"Naxt Victim\" Achievement.",
+},[[
+step
+For this achievement you will need to kill each of the Demonic Lieutenants summoned by the Sentinax
+You can either farm for the beacons to summon these yourself or wait under the Sentinax for other players to summon them.
+confirm
+step
+If you are farming for the beacons to summon these bosses you will first need to find a Nethershard farming Sentinax group
+Press _I_ and look in the Premade Groups, Custom section for "Sentinax" or "Shard" groups
+Usually there will be a few groups active, _Do Not_ join a raid group.
+confirm
+stickystart "Than'otalion"
+stickystart "Skulguloth"
+stickystart "Force-Commander Xillious"
+stickystart "An'thyna"
+stickystart "Fel Obliterator"
+stickystart "Illisthyndria"
+step
+Now that you are in a farming group defeat all the enemies you can that come out of the portals summoned
+|tip If you get any green or blue quality Beacons use them to summon more enemies to kill.
+The Epic quailty beacons are the ones that are used to summon the Demonic Lieutenants, these have a small chance to drop off of any of the enemies from the other 2 types of beacons
+|tip Once one Lieutenant is defeated the Sentinax will not allow you to summon any more beacons for 5 minutes.
+confirm
+|only if not achieved(11841)
+step
+label "Than'otalion"
+collect Portal-Stone: Than'otalion##146916 |n
+Use the Portal-Stone and summon Than'oralion |use Portal-Stone: Than'otalion##146916
+kill Than'otalion##120583 |achieve 11841/1
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+label "Skulguloth"
+collect Portal-Stone: Skulguloth##146917 |n
+Use the Portal-Stone to summon SKulguloth |use Portal-Stone: Skulguloth##146917
+kill Skulguloth##120641 |achieve 11841/2
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+label "Force-Commander Xillious"
+collect Portal-Stone: Force-Commander Xillious##146918 |n
+use the Portal-Stone to summon Force-Commander Xillious |use Portal-Stone: Force-Commander Xillious##146918
+kill Force-Commander Xillious##120665 |achieve 11841/3
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+label "An'thyna"
+collect Portal-Stone: An'thyna##146919 |n
+Use the Portal-Stone to summon An'thyna |use Portal-Stone: An'thyna##146919
+kill An'thyna##120675 |achieve 11841/4
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+label "Fel Obliterator"
+collect Portal-Stone: Fel Obliterator##146920 |n
+Use the Portal-Stone to summon Fel Obliterator |use Portal-Stone: Fel Obliterator##146920
+kill Fel Obliterator##120681 |achieve 11841/5
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+label "Illisthyndria"
+collect Portal-Stone: Illisthyndria##146921 |n
+Use the Portal-Stone to summon Illisthyndria |use Portal-Stone: Illisthyndria##146921
+kill Illisthyndria##120686 |achieve 11841/6
+|tip This is an Elite Boss enemy you will need your group to help kill it with you.
+step
+_Congratulations!_
+You have completed the _Naxt Victim_ achievement
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General\\Legion\\Brokenly Epic",{
@@ -4910,6 +5004,51 @@ Complete #250# Legion Digsites |achieve 10609
 step
 _Congratulations!_
 You have earned the _No Stone Unturned_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Archaeology\\Legion Archaeologist",{
+condition_end="achieved(10600)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Legion","Archaeologist"},
+description="This guide will walk you through completing the \"Legion Archaeologist\" Achievement.",
+},[[
+step
+For this achievement you need to obtain 800 level in Archaeology
+Click here to check out our 700-800 Archaeology guide |confirm |next "Zygor's Profession Guides\\Archaeology\\Leveling Guides\\Archaeology 700-800 Leveling Guide"
+Obtain 800 skill points in Archaeology |achieve 10600
+step
+_Congratulations!_
+You have earned the _Legion Archaeologist_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\Legion Aquaculture",{
+condition_end="achieved(10597)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Legion","Aquaculture"},
+description="This guide will walk you through completing the \"Legion Aquaculture\" Achievement.",
+},[[
+step
+For this achievement you will need to catch 100 normal fish from the waters of the Broken Isles
+Check out our any of our Legion Fishing farming guides to accomplish this
+Catch 100 normal fish in Legion |achieve 10597
+step
+_Congratulations!_
+You have earned the _Legion Aquaculture_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\Legion Fisherman",{
+condition_end="achieved(10594)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"Legion","Fisherman"},
+description="This guide will walk you through completing the \"Legion Fisherman\" Achievement.",
+},[[
+step
+For this achievement you need to get 800 skill level in fishing
+Click here to check out our 700-800 Fishing Guide |confirm |next "Zygor's Profession Guides\\Fishing\\Leveling Guides\\Fishing 700-800 Leveling Guide"
+Obtain 800 skill points in fishing |achieve 10594
+step
+_Congratulations!_
+You have earned the _Legion Fisherman_ achievement
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Cataclysm\\20 Dungeon Quests Completed",{
@@ -6548,7 +6687,6 @@ description="This guide will walk you through completing the \"Patient Zero\" Ac
 step
 For this achievement, you will need to reach Phase 2 _"Without anyone in your raid dying"_
 You will need to reset the encounter if someone dies before then
-|tip
 Send a healer and a damage dealer away from the group
 Have them bounce the debuff between themselves until the boss is nearly dead
 Once near the end of the encounter, gather the raid and dispel the debuff
@@ -6858,7 +6996,7 @@ description="This guide will walk you through completing the \"Armies of Legionf
 },[[
 step
 For this achievement, you will need to become _Exalted_ with the _Armies of Legionfall_
-|tip Refer to the Armies of Legionfall reputation guide and complete World Quests in Suramar to accomplish this.
+|tip Refer to the Armies of Legionfall reputation guide and complete World Quests on the Broken Shore to accomplish this.
 Click here to load the "Armies of Legionfall" reputation guide |confirm |next "Zygor's Reputations Guides\\Legion Reputations\\Armies of Legionfall"
 Become _Exalted_ with the _Armies of Legionfall_ |achieve 11796
 step

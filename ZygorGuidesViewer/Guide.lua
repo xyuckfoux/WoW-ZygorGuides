@@ -72,7 +72,19 @@ Guide.Sides = {
 	}
 
 function Guide:DoCond(which,...)
-	if which=="valid" and not self.condition_valid then
+	if which and self['condition_'..which] then
+		local isOK,ret = pcall(self['condition_'..which],self,...)
+		if isOK then
+			return ret,ret and "" or self['condition_'..which..'_msg']
+		else
+			ZGV:Print("ERROR parsing condition for guide:\n"..self.title.."\n"..self['condition_'..which.."_raw"].."\nError: "..ret)
+			return false,"ERROR: "..(self['condition_'..which..'_msg'] or "")
+		end
+	end
+
+	-- no condition to check? improvise from attributes...
+
+	if which=="valid" then
 		-- Check class/spec compatiblity
 		if self.class then
 			local lclass,kclass=UnitClass("player")
@@ -98,53 +110,38 @@ function Guide:DoCond(which,...)
 		end
 		-- If above is ok
 		return true
-	end
-
-	if which=="suggested" and not self.condition_suggested and self.startlevel and self.type=="LEVELING" then local level=ZGV:GetPlayerPreciseLevel()  return level>=self.startlevel and level<(self.endlevel or 999) end
-	if which=="outleveled" and self.endlevel then 
-		return ZGV:GetPlayerPreciseLevel()>=self.endlevel,"Level "..ZGV.FormatLevel(self.endlevel).." passed." 
-	end
-	if which=="end" and not self.condition_end and self.endlevel then 
-		return ZGV:GetPlayerPreciseLevel()>=self.endlevel,"Level "..ZGV.FormatLevel(self.endlevel).." reached." 
-	end
-	if which and self['condition_'..which] then
-		local isOK,err = pcall(self['condition_'..which],self,...)
-		if isOK then
-			return err,self['condition_'..which..'_msg']
-		else
-			ZGV:Print("ERROR parsing condition for guide:\n"..self.title.."\n"..self['condition_'..which.."_raw"].."\nError: "..err)
-			return false,"ERROR: "..(self['condition_'..which..'_msg'] or "")
-		end
+	elseif which=="suggested" and self.startlevel and self.type=="LEVELING" then
+		local level=ZGV:GetPlayerPreciseLevel()
+		return level>=self.startlevel and level<(self.endlevel or 999)
+	elseif which=="outleveled" and self.endlevel then 
+		return ZGV:GetPlayerPreciseLevel()>=self.endlevel,"Level "..ZGV.FormatLevel(self.endlevel).." passed."
+	elseif which=="end" and self.endlevel then 
+		return ZGV:GetPlayerPreciseLevel()>=self.endlevel,"Level "..ZGV.FormatLevel(self.endlevel).." reached."
 	end
 end
 
 function Guide:GetStatus(detailed)
-	local ret,msg
+	local pass,msg
 
-	ret,msg = self:DoCond("invalid")
-	if ret then return "INVALID",msg end
+	pass,msg = self:DoCond("valid")
+	if not pass then return "INVALID",msg end
 
-	ret,msg = self:DoCond("valid")
-	if ret then
-		if detailed and self:GetCompletion()==1 then return "COMPLETE" end
+	if detailed and self:GetCompletion()==1 then return "COMPLETE" end
 
-		ret,msg = self:DoCond("outleveled")
-		if ret then return "OUTLEVELED",msg end
+	pass,msg = self:DoCond("outleveled")
+	if pass then return "OUTLEVELED",msg end
 
-		ret,msg = self:DoCond("end")
-		if ret then return "COMPLETE",msg end
+	pass,msg = self:DoCond("end")
+	if pass then return "COMPLETE",msg end
 
-		msg="" -- TODO it's a bug, we ask the end condition and we're reusing its value even if the guide isnt complete
+	msg="" -- TODO it's a bug, we ask the end condition and we're reusing its value even if the guide isnt complete
 
-		if self.condition_suggested_raw or self.type=="LEVELING" then
-			ret,msg = self:DoCond("suggested")
-			if ret then return "SUGGESTED" end
-		end
-
-		return "VALID",msg
-	else
-		return "INVALID",msg
+	if self.condition_suggested_raw or self.type=="LEVELING" then
+		pass,msg = self:DoCond("suggested")
+		if pass then return "SUGGESTED" end
 	end
+
+	return "VALID",msg
 end
 
 function Guide:GetCompletion(mode)
@@ -254,7 +251,7 @@ function Guide:GetCompletionText(mode)
 	elseif mode=="skill" then
 		local skill = ZGV:GetSkill(self.completionparams[1])
 		--return ("%d/%d"):format(a,b), ("%s skill: %d/%d"):format(ZGV.LocaleSkills[self.completionparams[1]],a,b)
-		return math.floor(comp*100).."%", ("%s skill: %d/%d"):format(ZGV.LocaleSkills[self.completionparams[1]],a,b)
+		return math.floor(comp*100).."%", ("%s skill: %d/%d"):format(ZGV.Professions.LocaleSkills[self.completionparams[1]],a,b)
 	elseif mode=="quests" then
 		return math.floor(comp*100).."%", ("Quests completed: %d/%d"):format(a,b)
 	elseif mode=="level" then
@@ -404,9 +401,9 @@ end
 function Guide:HasProfession() --Real quick and dirty check to see if this profession guide works for us.
 	if not self.type == "PROFESSIONS" then return end
 	if not self.completionparams then return end
-	if not ZGV.skills then return end
+	if not ZGV.Professions.skills then return end
 
-	if ZGV.skills[self.completionparams[1]] then return true end
+	if ZGV.Professions.skills[self.completionparams[1]] then return true end
 end
 
 ------- hello popup

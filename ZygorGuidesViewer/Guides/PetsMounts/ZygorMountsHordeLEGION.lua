@@ -1139,7 +1139,7 @@ description="This guide will help you acquire the Brawler's Burly Basilisk.",
 },[[
 step
 You will need to gain _Rank 8_ with the Legion Brawler's Guild
-Click here to be taken to the Brawler's guild event guide. This will show you strategies on how to defeat each boss |confirm |next "Zygor's Horde Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
+Click here to be taken to the Brawler's guild event guide. This will show you strategies on how to defeat each boss |confirm |next "Zygor's Events Guides\\Brawler's Guild\\Legion Brawler's Guild"
 confirm
 only if ZGV:GetReputation(2010).friendRep<7000
 step

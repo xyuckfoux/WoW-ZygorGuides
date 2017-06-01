@@ -12796,7 +12796,7 @@ talk First Arcanist Thalyssra##97140
 turnin Ancient Mana##44672 |goto 36.58,46.91 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
-home Shal'Aran |goto 36.58,46.91 |region suramar_shalaran
+home Shal'Aran |goto 36.58,46.91 |region suramar_shalaran |q 41149
 step
 Leave the cave |goto 35.04,47.62 < 10 |walk
 Follow the road |goto 33.20,47.89 < 20 |only if walking
@@ -15244,8 +15244,6 @@ Follow the path |goto 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
 Follow the path |goto 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
 Walk into the swirling portal |goto 41.04,61.83 |n |region suramar_sanctum_of_order
 Enter the Arcway Dungeon |goto The Arcway/1 47.99,21.47 < 10000 |noway |c |q 42490
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 click Suramar Leyline Map
 |tip It looks like a big scroll laying on the ground next to the wall.
@@ -15267,12 +15265,9 @@ step
 Jump down here |goto 48.34,65.22 < 20 |only if walking
 Enter the building |goto 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000 |noway |c |q 43314
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
 step
 kill Advisor Melandrus##104218
-|tip He's inside the Court  dungeon.
+|tip He's inside the Court of Stars dungeon.
 |tip Use the Court of Stars dungeon guide to complete the Court of Stars dungeon.
 Slay Advisor Melandrus |q 43314/1 |goto Court of Stars/3 65.85,78.15
 collect Melandrus' Spellstone##140757 |q 43314/2 |goto Court of Stars/3 65.85,78.15
@@ -16892,18 +16887,18 @@ stickystart "Fel_Portals_Warrior"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Warrior
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Warrior"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and inscenario
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and inscenario
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -16912,11 +16907,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Warrior") and inscenario
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warrior") and inscenario
+|only if ZGV:RaceClassMatch("Warrior") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Warrior"
 click Legion Portal
@@ -17628,18 +17623,18 @@ stickystart "Fel_Portals_Paladin"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Paladin
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Paladin"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and inscenario
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and inscenario
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -17648,11 +17643,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Paladin") and inscenario
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Paladin") and inscenario
+|only if ZGV:RaceClassMatch("Paladin") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Paladin"
 click Legion Portal
@@ -18783,18 +18778,18 @@ stickystart "Fel_Portals_Hunter"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Hunter
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Hunter"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and inscenario
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and inscenario
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -18803,11 +18798,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Hunter") and inscenario
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Hunter") and inscenario
+|only if ZGV:RaceClassMatch("Hunter") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Hunter"
 click Legion Portal
@@ -19860,18 +19855,18 @@ stickystart "Fel_Portals_Rogue"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Rogue
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Rogue"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and inscenario
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and inscenario
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -19880,11 +19875,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Rogue") and inscenario
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Rogue") and inscenario
+|only if ZGV:RaceClassMatch("Rogue") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Rogue"
 click Legion Portal
@@ -20751,18 +20746,18 @@ stickystart "Fel_Portals_Priest"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Priest
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Priest"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and inscenario
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and inscenario
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -20771,11 +20766,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Priest") and inscenario
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Priest") and inscenario
+|only if ZGV:RaceClassMatch("Priest") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Priest"
 click Legion Portal
@@ -21714,18 +21709,18 @@ stickystart "Fel_Portals_Shaman"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Shaman
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Shaman"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and inscenario
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and inscenario
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -21734,11 +21729,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Shaman") and inscenario
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Shaman") and inscenario
+|only if ZGV:RaceClassMatch("Shaman") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Shaman"
 click Legion Portal
@@ -22880,18 +22875,18 @@ stickystart "Fel_Portals_Mage"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Mage
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Mage"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and inscenario
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and inscenario
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -22900,11 +22895,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Mage") and inscenario
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Mage") and inscenario
+|only if ZGV:RaceClassMatch("Mage") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Mage"
 click Legion Portal
@@ -23703,18 +23698,18 @@ stickystart "Fel_Portals_DemonHunter"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only DemonHunter
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_DemonHunter"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -23723,11 +23718,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DemonHunter") and inscenario
+|only if ZGV:RaceClassMatch("DemonHunter") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_DemonHunter"
 click Legion Portal
@@ -24923,18 +24918,18 @@ stickystart "Fel_Portals_Warlock"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Warlock
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Warlock"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and inscenario
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and inscenario
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -24943,11 +24938,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Warlock") and inscenario
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Warlock") and inscenario
+|only if ZGV:RaceClassMatch("Warlock") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Warlock"
 click Legion Portal
@@ -25919,18 +25914,18 @@ stickystart "Fel_Portals_Monk"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Monk
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Monk"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and inscenario
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and inscenario
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -25939,11 +25934,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Monk") and inscenario
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Monk") and inscenario
+|only if ZGV:RaceClassMatch("Monk") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Monk"
 click Legion Portal
@@ -26944,18 +26939,18 @@ stickystart "Fel_Portals_Druid"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only Druid
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_Druid"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and inscenario
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and inscenario
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -26964,11 +26959,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("Druid") and inscenario
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("Druid") and inscenario
+|only if ZGV:RaceClassMatch("Druid") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_Druid"
 click Legion Portal
@@ -27861,18 +27856,18 @@ stickystart "Fel_Portals_DeathKnight"
 step
 accept Fel Annihilation##43483 |goto 37.64,57.64
 |tip You will accept this quest automatically.
-|only DeathKnight
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 stickystart "Fel_Annihilation_DeathKnight"
 step
 Follow the path |goto 35.51,48.86 < 15 |walk
 Follow the path  |goto 43.65,17.18 < 15 |walk
 talk Farseer Nobundo##110695
 accept Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 Speak to Nobundo to Begin the Assault |q 43705/1 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 Kill the enemies that attack in waves
 |tip Focus on keeping Farseer Nobundo alive.
@@ -27881,11 +27876,11 @@ Defeat the Second Assault |q 43705/3 |goto 44.88,9.34
 Defeat the Third Wave of Demons |q 43705/4 |goto 44.88,9.34
 kill Karzak the Impaler##110781 |q 43705/5 |goto 44.88,9.34
 Defend Farseer Nobundo from the Legion Assault |q 43705/6 |goto 44.88,9.34
-|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 talk Farseer Nobundo##110695
 turnin Nobundo's Last Stand##43705 |goto 44.91,9.26
-|only if ZGV:RaceClassMatch("DeathKnight") and inscenario
+|only if ZGV:RaceClassMatch("DeathKnight") and _G.C_Scenario.IsInScenario()
 step
 label "Fel_Portals_DeathKnight"
 click Legion Portal
@@ -28992,9 +28987,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only DeathKnight
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only DeathKnight
 step
@@ -29084,6 +29079,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only DeathKnight
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.28
+|only DeathKnight
+step
+click Scouting Map
+Complete #3# Legionfall Missions |q 46249/1 |goto Broken Shore/2 49.79,50.61
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only DeathKnight
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.28
 |only DeathKnight
 step
 More content coming soon!
@@ -29242,9 +29252,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only DemonHunter
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only DemonHunter
 step
@@ -29334,6 +29344,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.28
+|only DemonHunter
+step
+click Scouting Map
+Complete #3# Legionfall Missions |q 46249/1 |goto Mardum, the Shattered Abyss/2 58.84,54.91
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only DemonHunter
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.28
 |only DemonHunter
 step
 More content coming soon!
@@ -29595,6 +29620,18 @@ talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Druid
 step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
+|only Druid
+step
+click Scouting Map
+Complete #3# Legionfall Missions in your Order Hall |q 46249/1 |goto The Dreamgrove/0 52.71,51.08
+|only Druid
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
+|only Druid
+step
 More content coming soon!
 confirm
 |only Druid
@@ -29751,9 +29788,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only Hunter
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Hunter
 step
@@ -29843,6 +29880,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Hunter
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.28
+|only Hunter
+step
+click Scouting Map
+Complete #3# Legionfall Missions |q 46249/1 |goto Trueshot Lodge/0 42.49,46.59
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only Hunter
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.28
 |only Hunter
 step
 More content coming soon!
@@ -30001,9 +30053,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.70,63.24
 |only Mage
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Mage
 step
@@ -30092,6 +30144,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Mage
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
+|only Mage
+step
+click Scouting Map
+Complete #3# Legionfall Missions at your Class Order Hall |q 46249/1 |goto Hall of the Guardian/1 81.38,60.79
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only Mage
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
 |only Mage
 step
 More content coming soon!
@@ -30254,9 +30321,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only Monk
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Monk
 step
@@ -30361,6 +30428,19 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Monk
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.27
+|only Monk
+step
+click Scouting Map
+Complete 3 Legion Order Hall Missions |q 46249/1 |goto The Wandering Isle L/0 52.91,60.16
+|tip They are 885+ Missions from the Class Hall Mission board.
+|only Monk
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.27
 |only Monk
 step
 More coming soon!
@@ -30604,6 +30684,19 @@ talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
 |only Paladin
 step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.27
+|only Paladin
+step
+click Scouting Map
+Complete 3 Legionfall Missions |q 46249/1 |goto Eastern Plaguelands/20 53.37,78.71
+|tip They are 885+ Missions from the Class Hall Mission board.
+|only Paladin
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.27
+|only Paladin
+step
 More content coming soon!
 confirm
 |only Paladin
@@ -30760,9 +30853,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only Priest
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Priest
 step
@@ -30849,6 +30942,18 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Priest
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
+|only Priest
+step
+click Command Map
+Complete #3# Legionfall Missions in your Order Hall |q 46249/1 |goto Netherlight Temple/1 49.85,48.87
+|only Priest
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
 |only Priest
 step
 More content coming soon!
@@ -31007,9 +31112,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.66,63.36
 |only Rogue
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Rogue
 step
@@ -31098,6 +31203,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Rogue
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
+|only Rogue
+step
+click Scouting Map
+Complete #3# Legionfall Missions at your Class Order Hall |q 46249/1 |goto Dalaran L/4 37.51,44.29
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only Rogue
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
 |only Rogue
 step
 More content coming soon!
@@ -31256,9 +31376,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.70,63.24
 |only Shaman
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto Broken Shore/0 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Shaman
 step
@@ -31347,6 +31467,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Shaman
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
+|only Shaman
+step
+click Scouting Map
+Complete #3# Legionfall Missions at your Class Order Hall |q 46249/1 |goto The Maelstrom L/0 33.41,59.30
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only Shaman
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.75,63.33
 |only Shaman
 step
 More content coming soon!
@@ -31505,9 +31640,9 @@ talk Archmage Khadgar##116302
 accept Altar of the Aegis##46244 |goto 44.73,63.27
 |only Warlock
 step
-Press _I_ and queue for Cathedral of Light or enter the dungeon with your group |goto 64.75,16.65
+Press _I_ and queue for Cathedral of Eternal Night or enter the dungeon with your group |goto 64.75,16.65
 kill Mephistroth##120793
-|tip Mephistroth is the final boss of the Cathedral of Light instance.
+|tip Mephistroth is the final boss of the Cathedral of Eternal Night instance.
 Defeat Mephistroth |q 46244/1
 |only Warlock
 step
@@ -31597,6 +31732,21 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Warlock
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto 44.73,63.28
+|only Warlock
+step
+click Dreadscar Battle Plans
+Complete #3# Legionfall Missions |q 46249/1 |goto Dreadscar Rift/0 66.19,47.01
+|tip Legionfall missions can be identified by looking at the zone text underneath the title after clicking on the mission.
+|tip Only Broken Shore missions count towards this objective.
+|tip You may also use the mission table in the Command Center on Broken Shore if that building is complete.
+|only Warlock
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.73,63.28
 |only Warlock
 step
 More content coming soon!
@@ -31876,6 +32026,18 @@ Click here to load the World Quest guide |confirm |next "Zygor's Dailies Guides\
 step
 talk Maiev Shadowsong##116576
 turnin Take Out the Head...##46250 |goto 44.54,63.53
+|only Warrior
+step
+talk Archmage Khadgar##116302
+accept Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
+|only Warrior
+step
+click Eye of Odin
+Complete #3# Legionfall Missions in your Order Hall |q 46249/1 |goto Skyhold/1 59.13,13.42
+|only Warrior
+step
+talk Archmage Khadgar##116302
+turnin Championing Our Cause##46249 |goto Broken Shore/0 44.72,63.26
 |only Warrior
 step
 More content coming soon!

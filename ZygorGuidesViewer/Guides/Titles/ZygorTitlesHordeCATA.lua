@@ -3,6 +3,25 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("TitlesH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Brutal Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 4 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Challenger",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 35% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2090
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Conqueror",{
 },[[
 step
@@ -12,11 +31,74 @@ In order to complete the _"The Conqueror"_ achievement you must become Exalted w
 step
 Congratulations! You have earned the title Conqueror!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Duelist",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 3% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2092
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Merciless Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 2 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Rival",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 10% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2093
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Vengeful Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 3 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Champion of the Naaru",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by completing the attunement quest for Serpentshrine Cavern
+Players also had to summon and defeat Nightbane in Karazhan and defeat Gruul and Magtheridon
+achieve 432
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Hand of A'dal",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by completing the The Vials of Eternity questline before the 3.0.2 patch
+achieve 431
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Reputations\\Of the Shattered Sun",{
 author="support@zygorguides.com",
 description="These dailies will walk you through getting the reputation\nneeded to purchase the Title of the Shattered Sun.",
 },[[
 #include "H_SSO_PreQuest_with_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Argent Defender",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Trial of the Grand Crusader with 50 attempts remaining.
+achieve 4080
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Astral Walker",{
 author="support@zygorguides.com",
@@ -40,6 +122,14 @@ from The Lich King##36597
 step
 Congratulations! You have earned the title Bane of the Fallen King!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Celestial Defender",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by participating in the realm first kill of Algalon the Observer in 25 player mode.
+achieve 3259
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of the Frozen Wastes",{
 author="support@zygorguides.com",
 },[[
@@ -49,6 +139,30 @@ Complete every Wrath of the Lich King Heroic Instance, with the exception of The
 |achieve 1658
 step
 Congratulations! You have earned the title "Champion of the Frozen Wastes"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of Ulduar",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Ulduar 10 man raid without any player dying.
+achieve 2903
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Naxxramas",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by participating in the realm first kill of Kel'Thuzad in Naxxramas in 25-player mode.
+achieve 1402
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Ulduar",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Ulduar 25 man raid without any player dying.
+achieve 2904
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Kingslayer",{
 author="support@zygorguides.com",
@@ -160,11 +274,17 @@ step
 Congratulations! You have earned the title Arena Master!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Player versus Player\\Battlemaster",{
+author="support@zygorguides.com",
 },[[
 step
 This title is earned by completing the _Battlemaster_ achievement.
-In order to complete the _Battlemaster_ achievement you must obtain 5 achievements that make you the master of the following battlegrounds: Alterac Valley, Warsong Gulch, Strand of the Ancients, Arathi Basin, and Eye of the Storm.
-|achieve 1175
+In order to complete the _Battlemaster_ achievement you must obtain the following achievements
+|tip Use the achievement guides to accomplish this.
+achieve 1175/1
+achieve 1175/2
+achieve 1175/3
+achieve 1175/4
+achieve 1175/5
 step
 Congratulations! You have earned the title Battlemaster!
 ]])
@@ -266,7 +386,7 @@ description="This guide will show you how to earn the Argent Champion title.",
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Aspirant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually the Crusader title.",
+description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually the Crusader title.",
 keywords={"Crusader"},
 },[[
 daily
@@ -275,7 +395,7 @@ step
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and gain the Crusader title.",
+description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and gain the Crusader title.",
 keywords={"Crusader"},
 },[[
 daily
@@ -290,17 +410,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Blood Elf.
 |confirm always
 step
 talk Eressea Dawnsinger##33379
-accept Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
-turnin Valiant Of Silvermoon##13711 |goto Icecrown,76.5,23.9
-accept The Valiant's Charge##13722 |goto Icecrown,76.5,23.9
+accept Valiant Of Silvermoon##13711 |goto Icecrown 76.5,23.9
+turnin Valiant Of Silvermoon##13711 |goto Icecrown 76.5,23.9
+accept The Valiant's Charge##13722 |goto Icecrown 76.5,23.9
 step
 talk Eressea Dawnsinger##33379
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13783 |or |goto 76.5,23.9
 accept A Worthy Weapon##13784 |or |goto 76.5,23.9
 accept The Edge Of Winter##13785 |or |goto 76.5,23.9
@@ -312,52 +432,54 @@ talk Aneera Thuron##33548
 accept The Grand Melee##13787 |goto 76.5,23.9
 accept At The Enemy's Gates##13859 |goto 76.5,23.9
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-Tell her you are glad to help
-collect Ashwood Brand |q 13783/1 |goto Grizzly Hills,61.2,50.3
+Tell her _"I am glad to help."_
+collect Ashwood Brand |q 13783/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13784/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13784/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13785 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13785 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13785/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13785/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse|invehicle |q 13859 |goto Icecrown,48.9,71.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13859 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438|q 13859/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13859/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13859/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13859/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13859/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13859/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability. If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13859 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13786/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13786/1 |goto 44.3,54.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Silvermoon Hawkstrider|invehicle |q 13787 |goto 75.5,24.1
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13787 |goto 75.5,24.1
 step
 Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13787/1 |goto 75.3,26.0
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them. If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13787/1 |goto 75.3,26.0
 step
 talk Eressea Dawnsinger##33379
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13783 |goto 76.5,23.9
 turnin A Worthy Weapon##13784 |goto 76.5,23.9
 turnin The Edge Of Winter##13785 |goto 76.5,23.9
@@ -371,19 +493,20 @@ turnin At The Enemy's Gates##13859 |goto 76.5,23.9
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13722/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Eressea Dawnsinger##33379
 turnin The Valiant's Charge##13722 |goto 76.5,23.9
 accept The Valiant's Challenge##13731 |goto 76.5,23.9
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Silvermoon Hawkstrider|invehicle |q 13731 |goto 72.2,22.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13731 |goto 72.2,22.4
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight. When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13731/1 |goto 68.6,21.0
 step
 talk Eressea Dawnsinger##33379
@@ -397,17 +520,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are an Orc.
 |confirm always
 step
 talk Mokra the Skullcrusher##33361
-accept Valiant Of Orgrimmar##13707 |goto Icecrown,76.5,24.6
-turnin Valiant Of Orgrimmar##13707 |goto Icecrown,76.5,24.6
-accept The Valiant's Charge##13697 |goto Icecrown,76.5,24.6
+accept Valiant Of Orgrimmar##13707 |goto Icecrown 76.5,24.6
+turnin Valiant Of Orgrimmar##13707 |goto Icecrown 76.5,24.6
+accept The Valiant's Charge##13697 |goto Icecrown 76.5,24.6
 step
 talk Mokra the Skullcrusher##33361
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13762 |or |goto 76.5,24.6
 accept A Worthy Weapon##13763 |or |goto 76.5,24.6
 accept The Edge Of Winter##13764 |or |goto 76.5,24.6
@@ -419,51 +542,53 @@ talk Morah Worgsister##33544
 accept The Grand Melee##13767 |goto 76.4,24.6
 accept At The Enemy's Gates##13856 |goto 76.4,24.6
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13762/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13762/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13763 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13763 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13763/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13763/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13764 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13764 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13764/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13764/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse|invehicle |q 13856 |goto Icecrown,48.9,71.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse|invehicle |q 13856 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438|q 13856/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13856/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13856/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on them to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13856/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13856/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13856/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on them to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13856 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13765/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13765/1 |goto 44.3,54.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Orgrimmar Wolf|invehicle |q 13767 |goto 75.5,24.0
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13767 |goto 75.5,24.0
 step
 Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13767/1 |goto 75.3,26.0
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13767/1 |goto 75.3,26.0
 step
 talk Mokra the Skullcrusher##33361
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13762 |goto 76.5,24.6
 turnin A Worthy Weapon##13763 |goto 76.5,24.6
 turnin The Edge Of Winter##13764 |goto 76.5,24.6
@@ -477,19 +602,20 @@ turnin At The Enemy's Gates##13856 |goto 76.4,24.6
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13697/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Mokra the Skullcrusher##33361
 turnin The Valiant's Charge##13697 |goto 76.5,24.6
 accept The Valiant's Challenge##13726 |goto 76.5,24.6
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Orgrimmar Wolf|invehicle |q 13726 |goto 72.2,22.5
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13726 |goto 72.2,22.5
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
-Use the abilities on your hotbar to defeat the Argent Champion|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
+Use the abilities on your hotbar to defeat the Argent Champion
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13726/1 |goto 68.6,21.0
 step
 talk Mokra the Skullcrusher##33361
@@ -506,17 +632,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Tauren.
 |confirm always
 step
 talk Runok Wildmane##33403
-accept Valiant Of Thunder Bluff##13709 |goto Icecrown,76.2,24.6
-turnin Valiant Of Thunder Bluff##13709 |goto Icecrown,76.2,24.6
-accept The Valiant's Charge##13720 |goto Icecrown,76.2,24.6
+accept Valiant Of Thunder Bluff##13709 |goto Icecrown 76.2,24.6
+turnin Valiant Of Thunder Bluff##13709 |goto Icecrown 76.2,24.6
+accept The Valiant's Charge##13720 |goto Icecrown 76.2,24.6
 step
 talk Runok Wildmane##33403
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13773 |or |goto 76.2,24.6
 accept A Worthy Weapon##13774 |or |goto 76.2,24.6
 accept The Edge Of Winter##13775 |or |goto 76.2,24.6
@@ -529,51 +655,52 @@ accept The Grand Melee##13777 |goto 76.1,24.6
 accept At The Enemy's Gates##13858 |goto 76.1,24.6
 step
 Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-Tell her you are glad to help
-collect Ashwood Brand |q 13773/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13773/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13774 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13774 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13774/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13774/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13775 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13775 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13775/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13775/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse|invehicle |q 13858 |goto Icecrown,48.9,71.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13858 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438|q 13858/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13858/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13858/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13858/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13858/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13858/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13858 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13776/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13776/1 |goto 44.3,54.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Thunder Bluff Kodo|invehicle |q 13777 |goto 75.5,24.3
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Thunder Bluff Kodo |invehicle |q 13777 |goto 75.5,24.3
 step
 Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13777/1 |goto 75.3,26.0
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13777/1 |goto 75.3,26.0
 step
 talk Runok Wildmane##33403
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13773 |goto 76.2,24.6
 turnin A Worthy Weapon##13774 |goto 76.2,24.6
 turnin The Edge Of Winter##13775 |goto 76.2,24.6
@@ -587,20 +714,20 @@ turnin At The Enemy's Gates##13858 |goto 76.1,24.6
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13720/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Runok Wildmane##33403
 turnin The Valiant's Charge##13720 |goto 76.2,24.6
 accept The Valiant's Challenge##13728 |goto 76.2,24.6
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Thunder Bluff Kodo|invehicle |q 13728 |goto 71.9,22.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Thunder Bluff Kodo |invehicle |q 13728 |goto 71.9,22.4
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13728/1 |goto 68.6,21.0
 step
 talk Runok Wildmane##33403
@@ -617,17 +744,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Troll.
 |confirm always
 step
 talk Zul'tore##33372
-accept Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
-turnin Valiant Of Sen'jin##13708 |goto Icecrown,76.0,24.5
-accept The Valiant's Charge##13719 |goto Icecrown,76.0,24.5
+accept Valiant Of Sen'jin##13708 |goto Icecrown 76.0,24.5
+turnin Valiant Of Sen'jin##13708 |goto Icecrown 76.0,24.5
+accept The Valiant's Charge##13719 |goto Icecrown 76.0,24.5
 step
 talk Zul'tore##33372
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13768 |or |goto 76.0,24.5
 accept A Worthy Weapon##13769 |or |goto 76.0,24.5
 accept The Edge Of Winter##13770 |or |goto 76.0,24.5
@@ -639,52 +766,53 @@ talk Gahju##33545
 accept The Grand Melee##13772 |goto 75.9,24.4
 accept At The Enemy's Gates##13857 |goto 75.9,24.4
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-Tell her you are glad to help
-collect Ashwood Brand |q 13768/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13768/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
 collect 4 Winter Hyacinth##45000 |q 13769 |goto Icecrown,69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13770/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13770/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse|invehicle |q 13857 |goto Icecrown,48.9,71.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13857 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438|q 13857/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13857/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13857/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13857/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13857/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13857/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13857 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13771/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13771/1 |goto 44.3,54.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Darkspear Raptor|invehicle |q 13772 |goto 75.6,23.8
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Darkspear Raptor |invehicle |q 13772 |goto 75.6,23.8
 step
 Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-get 3 Mark of the Valiant |q 13772/1 |goto 75.3,26.0
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13772/1 |goto 75.3,26.0
 step
 talk Zul'tore##33372
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13768 |goto 76.0,24.5
 turnin A Worthy Weapon##13769 |goto 76.0,24.5
 turnin The Edge Of Winter##13770 |goto 76.0,24.5
@@ -698,20 +826,20 @@ turnin At The Enemy's Gates##13857 |goto 75.9,24.4
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13719/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Zul'tore##33372
 turnin The Valiant's Charge##13719 |goto 76.0,24.5
 accept The Valiant's Challenge##13727 |goto 76.0,24.5
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Darkspear Raptor|invehicle |q 13727 |goto 72.0,22.5
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Darkspear Raptor |invehicle |q 13727 |goto 72.0,22.5
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13727/1 |goto 68.6,21.0
 step
 talk Zul'tore##33372
@@ -728,17 +856,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with the Darkspear Trolls, Orgrimmar, Silvermoon City, Thunder Bluff, and Undercity factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are an Undead.
 |confirm always
 step
 talk Deathstalker Visceri##33373
-accept Valiant Of Undercity##13710 |goto Icecrown,76.5,24.2
-turnin Valiant Of Undercity##13710 |goto Icecrown,76.5,24.2
-accept The Valiant's Charge##13721 |goto Icecrown,76.5,24.2
+accept Valiant Of Undercity##13710 |goto Icecrown 76.5,24.2
+turnin Valiant Of Undercity##13710 |goto Icecrown 76.5,24.2
+accept The Valiant's Charge##13721 |goto Icecrown 76.5,24.2
 step
 talk Deathstalker Visceri##33373
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13778 |or |goto 76.5,24.2
 accept A Worthy Weapon##13779 |or |goto 76.5,24.2
 accept The Edge Of Winter##13780 |or |goto 76.5,24.2
@@ -750,52 +878,53 @@ talk Handler Dretch##33547
 accept The Grand Melee##13782 |goto 76.5,24.3
 accept At The Enemy's Gates##13860 |goto 76.5,24.3
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-Tell her you're glad to help
-collect Ashwood Brand |q 13778/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13778/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13779 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13779 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13779/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13779/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13780 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13780 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13780/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13780/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Campaign Warhorse|invehicle |q 13860 |goto Icecrown,48.9,71.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13860 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438|q 13860/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13860/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13860/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13860/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13860/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13860/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13860 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13781/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13781/1 |goto 44.3,54.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Forsaken Warhorse|invehicle |q 13782 |goto 75.6,23.9
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Forsaken Warhorse |invehicle |q 13782 |goto 75.6,23.9
 step
 Talk to the riders on mounts of other Horde races
-Tell them you are ready to fight!
-Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13782/1 |goto 75.3,26.0
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13782/1 |goto 75.3,26.0
 step
 talk Deathstalker Visceri##33373
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13778 |goto 76.5,24.2
 turnin A Worthy Weapon##13779 |goto 76.5,24.2
 turnin The Edge Of Winter##13780 |goto 76.5,24.2
@@ -809,20 +938,20 @@ turnin At The Enemy's Gates##13860 |goto 76.5,24.3
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13721/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Deathstalker Visceri##33373
 turnin The Valiant's Charge##13721 |goto 76.5,24.2
 accept The Valiant's Challenge##13729 |goto 76.5,24.2
 step
-Equip the Horde Lance in your bags|use Horde Lance##46070
-Click to mount the Stabled Forsaken Warhorse|invehicle |q 13729 |goto 72.1,22.4
+Equip the Horde Lance |use Horde Lance##46070
+Click to mount the Stabled Forsaken Warhorse |invehicle |q 13729 |goto 72.1,22.4
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13729/1 |goto 68.6,21.0
 step
 talk Deathstalker Visceri##33373
@@ -838,9 +967,8 @@ Routing to proper section |next |only if not completedq(10011)
 Routing to proper section |next "done" |only if completedq(10011)
 step
 talk Nazgrel##3230
-accept The Assassin##9400 |goto Hellfire Peninsula,55,36
+accept The Assassin##9400 |goto Hellfire Peninsula 55,36
 step
-Go to this spot
 Find Krun Spinebreaker |q 9400/1 |goto 33.6,43.5
 step
 clicknpc Fel Orc Corpse##17062
@@ -855,11 +983,9 @@ talk Far Seer Regulkut##16574
 turnin The Warchief's Mandate##9405 |goto 54.2,37.9
 accept A Spirit Guide##9410 |goto 54.2,37.9
 step
-Use your Ancestral Spirit Wolf Totem next to the Fel Orc Corpse |use Ancestral Spirit Wolf Totem##23669 |modelnpc Fel Orc Corpse##17062 |goto 33.6,43.5
-Follow the spirit wolf
+Use your Ancestral Spirit Wolf Totem next to the Fel Orc Corpse |use Ancestral Spirit Wolf Totem##23669 |goto 33.6,43.5 < 5 |walk
 |tip Stay close to the wolf and follow it until it stops, or you will not be able to turn in the quest.
-Follow the wolf to this spot|goto 32,27.8 < 5
-step
+Follow the Wolf |goto 32,27.8 < 10 |walk
 talk Gorkan Bloodfist##16845
 turnin A Spirit Guide##9410 |goto 32,27.8
 accept The Mag'har##9406 |goto 32,27.8
@@ -868,32 +994,40 @@ talk Nazgrel##3230
 turnin The Mag'har##9406 |goto 55,36
 step
 talk Shado 'Fitz' Farstrider##18200
-accept Windroc Mastery (1)##9854 |goto Nagrand,71.6,40.5
+accept Windroc Mastery (1)##9854 |goto Nagrand 71.6,40.5
+step
 talk Hemet Nesingwary##18180
-accept Clefthoof Mastery (1)##9789 |goto Nagrand,71.6,40.5
+accept Clefthoof Mastery (1)##9789 |goto Nagrand 71.6,40.5
+step
 talk Harold Lane##18218
-accept Talbuk Mastery (1)##9857 |goto Nagrand,71.6,40.5
+accept Talbuk Mastery (1)##9857 |goto Nagrand 71.6,40.5
 step
 kill 12 Talbuk Stag##17130+ |q 9857/1 |goto 72.2,38.4
 You can find more Talbuk Stags at [70.8,46.4]
 step
 kill 12 Windroc##17128+ |q 9854/1 |goto 66.5,39.5
+stickystart "clefthoofkills1"
+stickystart "ivorytuskquest"
 step
-kill 12 Clefthoof##18205+ |q 9789/1 |goto 64,45.1
-kill Wild Elekk##18334
-collect 3 Pair of Ivory Tusks##25463 |q 9914 |future |goto 64,45.1
 kill Dust Howlers##17158
 collect Howling Wind##24504 |n
 Use the Howling Wind in your bags |use Howling Wind##24504
-accept The Howling Wind##9861
+accept The Howling Wind##9861 |goto 64,45.1
 You can find more Clefthoofs, Elekks, and Dust Howlers at [70.8,46.4]
+step "clefthoofkills1"
+kill 12 Clefthoof##18205+ |q 9789/1 |goto 64,45.1
+step "ivorytuskquest"
+kill Wild Elekk##18334
+collect 3 Pair of Ivory Tusks##25463 |q 9914 |future |goto 64,45.1
 step
 talk Shado 'Fitz' Farstrider##18200
 turnin Windroc Mastery (1)##9854 |goto 71.6,40.5
 accept Windroc Mastery (2)##9855 |goto 71.6,40.5
+step
 talk Hemet Nesingwary##18180
 turnin Clefthoof Mastery (1)##9789 |goto 71.6,40.5
 accept Clefthoof Mastery (2)##9850 |goto 71.6,40.5
+step
 talk Harold Lane##18218
 turnin Talbuk Mastery (1)##9857 |goto 71.6,40.5
 accept Talbuk Mastery (2)##9858 |goto 71.6,40.5
@@ -915,6 +1049,7 @@ accept The Impotent Leader##9888 |goto 55.5,37.6
 step
 talk Warden Bullrok##18407
 accept Proving Your Strength##10479 |goto 55.8,38
+step
 click the Garadar Bulletin Board
 accept Wanted: Giselda the Crone##9935 |goto 55.8,38
 accept Wanted: Zorbo the Advisor##9939 |goto 55.8,38
@@ -924,8 +1059,10 @@ accept The Throne of the Elements##9870 |goto 55,39
 step
 talk Farseer Kurkush##18066
 accept Vile Idolatry##9863 |goto 54.7,39.7
+step
 talk Farseer Corhuk##18067
 accept The Missing War Party##9864 |goto 54.7,39.7
+step
 talk Farseer Margadesh##18068
 accept Murkblood Leaders...##9867 |goto 54.7,39.7
 step
@@ -935,11 +1072,14 @@ step
 talk Elementalist Morgh##18074
 turnin The Howling Wind##9861 |goto 60.5,22.4
 accept Murkblood Corrupters##9862 |goto 60.5,22.4
+step
 talk Elementalist Sharvak##18072
 turnin The Throne of the Elements##9870 |goto 60.5,22.4
+step
 talk Elementalist Lo'ap##18073
 accept A Rare Bean##9800 |goto 60.5,22.4
 accept Muck Diving##9815 |goto 60.5,22.4
+step
 talk Elementalist Untrag##18071
 accept The Underneath##9818 |goto 60.5,22.4
 step
@@ -947,10 +1087,12 @@ talk Gordawg##18099
 |tip He may not be in this spot, he wanders around the Throne of Elements area.
 turnin The Underneath##9818 |goto 61.8,24.4
 accept The Tortured Earth##9819 |goto 61.8,24.4
+stickystart "digesteddung"
 step
 kill 12 Talbuk Thorngrazer##17131+ |q 9858/1 |goto 52.1,25.6
-click Dung##3675
-collect 8 Digested Caracoli |q 9800/1 |goto 52.1,25.6
+step "digesteddung"
+click Dung##3675+
+collect 8 Digested Caracoli##24419 |q 9800/1 |goto 52.1,25.6
 step
 kill 12 Clefthoof Bull##17132+ |q 9850/1 |goto 51.6,30.8
 You can find more Clefthoof Bulls at [49.7,35.6]
@@ -965,21 +1107,24 @@ step
 talk Saurfang the Younger##18229
 turnin The Missing War Party##9864 |goto 32.4,36.1
 accept Once Were Warriors##9865 |goto 32.4,36.1
+step
 talk Elder Yorley##18414
 turnin Missing Mag'hari Procession##9944 |goto 32.4,36.1
 accept War on the Warmaul##9945 |goto 32.4,36.1
+step
 talk Elder Ungriz##18415
 accept Finding the Survivors##9948 |goto 32.4,36.1
 step
-The path up to 'War on the Warmaul' and 'Finding the Survivors' starts here |goto 29.2,31.6,0.5 |noway |c
+Follow the path |goto 29.2,31.6 < 10 |walk
 kill 8 Warmaul Brute##18065+ |q 9945/1 |goto 23.4,29.2
 kill 8 Warmaul Warlock##18037+ |q 9945/2 |goto 23.4,29.2
 collect Warmaul Prison Key##25604 |n
 click the yellow cages around this area
-Free 5 Mag'har Prisoners |q 9948/1 |goto 23.4,29.2
+Free #5# Mag'har Prisoners |q 9948/1 |goto 23.4,29.2
 step
 talk Elder Yorley##18414
 turnin War on the Warmaul##9945 |goto 32.4,36.1
+step
 talk Elder Ungriz##18415
 turnin Finding the Survivors##9948 |goto 32.4,36.1
 step
@@ -1012,13 +1157,13 @@ accept A Head Full of Ivory##9914 |goto 31.8,56.8
 turnin A Head Full of Ivory##9914 |goto 31.8,56.8
 step
 click Oshu'gun Crystal Fragment##6415
-kill Vir'aani Raider##17149
+kill Vir'aani Raider##17149+
 collect 10 Oshu'gun Crystal Fragment |q 9882/1 |goto 33.4,62.4
 step
 kill 8 Voidspawn##17981+ |q 9925/1 |goto 30.6,67.5
 step
 kill Gava'xi##18298 |q 9900/1 |goto 42.4,73.5
-|tip He spawns at the peak of a small hill at this location, sometimes he spawns at the base of the hill though, so keep an eye out.  He walks around all around this area, near this hill, so you may need to search for him.
+|tip He spawns at the peak of a small hill at this location, sometimes he spawns at the base of the hill though, so keep an eye out. He walks around all around this area, near this hill, so you may need to search for him.
 step
 kill 12 Ravenous Windroc##18220+ |q 9855/1 |goto 48.4,61.5
 step
@@ -1042,8 +1187,8 @@ talk Wazat##19035
 turnin I Must Have Them!##10109 |goto 61.7,67.1
 step
 talk Kilrath##18273
-turnin The Impotent Leader##9888 |goto Terokkar Forest,19.8,60.9
-accept Don't Kill the Fat One##9889 |goto Terokkar Forest,19.8,60.9
+turnin The Impotent Leader##9888 |goto Terokkar Forest 19.8,60.9
+accept Don't Kill the Fat One##9889 |goto Terokkar Forest 19.8,60.9
 step
 kill 10 Boulderfist Invader##18260+ |q 9889/1 |goto 20,63.1
 step
@@ -1057,8 +1202,8 @@ turnin Success!##9890 |goto 19.8,60.9
 accept Because Kilrath is a Coward##9891 |goto 19.8,60.9
 step
 talk Jorin Deadeye##18106
-turnin Because Kilrath is a Coward##9891 |goto Nagrand,55.5,37.6
-accept Message in a Battle##9906 |goto Nagrand,55.5,37.6
+turnin Because Kilrath is a Coward##9891 |goto Nagrand 55.5,37.6
+accept Message in a Battle##9906 |goto Nagrand 55.5,37.6
 step
 talk Warden Bullrok##18407
 turnin Proving Your Strength##10479 |goto 55.8,38
@@ -1069,8 +1214,10 @@ accept Standards and Practices##9910 |goto 55.5,37.6
 step
 talk Farseer Kurkush##18066
 turnin Vile Idolatry##9863 |goto 54.7,39.7
+step
 talk Farseer Corhuk##18067
 turnin He Will Walk The Earth...##9866 |goto 54.7,39.7
+step
 talk Farseer Margadesh##18068
 turnin Murkblood Leaders...##9867 |goto 54.7,39.7
 step
@@ -1083,6 +1230,7 @@ talk Elementalist Lo'ap##18073
 turnin A Rare Bean##9800 |goto 60.5,22.4
 accept Agitated Spirits of Skysong##9804 |goto 60.5,22.4
 turnin Muck Diving##9815 |goto 60.5,22.4
+step
 talk Elementalist Morgh##18074
 turnin Murkblood Corrupters##9862 |goto 60.5,22.4
 step
@@ -1103,8 +1251,10 @@ accept Shattering the Veil##9849 |goto 61.8,24.4
 step
 talk Harold Lane##18218
 turnin Talbuk Mastery (2)##9858 |goto 71.6,40.5
+step
 talk Hemet Nesingwary##18180
 turnin Clefthoof Mastery (2)##9850 |goto 71.6,40.5
+step
 talk Shado 'Fitz' Farstrider##18200
 turnin Windroc Mastery (2)##9855 |goto 71.6,40.5
 step
@@ -1154,7 +1304,7 @@ kill 10 Boulderfist Warrior##17136+ |q 9907/1 |goto 40.8,31.5
 kill 10 Boulderfist Mage##17137+ |q 9907/2 |goto 40.8,31.5
 click Bleeding Hollow Supply Crate##5531
 collect 10 Bleeding Hollow Supply Crate |q 9916/1 |goto 40.8,31.5
-|tip They look like wooden boxes with a red symbol on the side of them.  There are a lot of them inside the cave.
+|tip They look like wooden boxes with a red symbol on the side of them. There are a lot of them inside the cave.
 step
 kill 8 Lake Surger##17155+ |q 9810/2 |goto 33.8,48.9
 step
@@ -1172,10 +1322,12 @@ talk Jorin Deadeye##18106
 turnin An Audacious Advance##9907 |goto 55.5,37.6
 accept Diplomatic Measures##10107 |goto 55.5,37.6
 step
-The path up to Lantresor of the Blade starts here |goto 73.8,68.1 < 5 |only if walking
+Follow the path |goto 73.8,68.1 < 10 |only if walking
 talk Lantresor of the Blade##18261
 Listen to his story
 Hear the story of the Blademaster |q 10107/1 |goto 73.8,62.6
+step
+talk Lantresor of the Blade##18261
 turnin Diplomatic Measures##10107 |goto 73.8,62.6
 accept Armaments for Deception##9928 |goto 73.8,62.6
 accept Ruthless Cunning##9927 |goto 73.8,62.6
@@ -1224,7 +1376,7 @@ talk Garrosh##18063
 turnin Message to Garadar##9934 |goto 55.5,37.6
 step
 talk Warden Bullrok##18407
-accept Wanted: Durn the Hungerer##9937 |goto Nagrand,55.8,38.0
+accept Wanted: Durn the Hungerer##9937 |goto Nagrand 55.8,38.0
 step
 talk Matron Celestine##18301
 accept He Called Himself Altruis...##9983 |goto 55.2,36.1
@@ -1257,7 +1409,7 @@ turnin Buying Time##9999 |goto 27.3,43.1
 accept The Master Planner##10001 |goto 27.3,43.1
 step
 kill Mo'arg Master Planner##18567
-collect The Master Planner's Blueprints |q 10001/1 |goto Nagrand,17.5,50.3
+collect The Master Planner's Blueprints |q 10001/1 |goto Nagrand 17.5,50.3
 You can also find the Mater Planner around [23.3,35.4]
 step
 talk Altruis the Sufferer##18417
@@ -1269,53 +1421,53 @@ accept Cho'war the Pillager##9946 |goto 32.3,36.2
 step
 Follow the path up and around
 kill Cho'war the Pillager##18423
-collect Head of Cho'war |q 9946/1 |goto Nagrand,25.8,13.8
+collect Head of Cho'war |q 9946/1 |goto Nagrand 25.8,13.8
 step
 Leave the Cave here |goto 27.2,18.7 < 5
 talk Elder Yorley##18414
 turnin Cho'war the Pillager##9946 |goto 32.3,36.2
 step
 talk Warden Bullrok##18407
-turnin Wanted: Durn the Hungerer##9937 |goto Nagrand,55.8,38.0
+turnin Wanted: Durn the Hungerer##9937 |goto Nagrand 55.8,38.0
 step
 talk Sal'salabim##18584
-Tell him "Altruis sent me. He said that you could help me."
+Tell him _"Altruis sent me. He said that you could help me."_
 |tip He will immediately start attacking you!
-Persuad Sal'salabim |q 10004/1 |goto Shattrath City,77.3,34.9
+Persuad Sal'salabim |q 10004/1 |goto Shattrath City 77.3,34.9
 step
 talk Sal'salabim##18584
-turnin Patience and Understanding##10004 |goto Shattrath City,77.3,34.9
-accept Crackin' Some Skulls##10009 |goto Shattrath City,77.3,34.9
+turnin Patience and Understanding##10004 |goto Shattrath City 77.3,34.9
+accept Crackin' Some Skulls##10009 |goto Shattrath City 77.3,34.9
 step
 talk Raliq the Drunk##18585
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
+Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 |tip He will immediately start attacking you!
 Collect Raliq's Debt |q 10009/1 |goto 75.0,31.5
 step
 talk Coosh'coosh##18586
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
+Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 |tip He will immediately start attacking you!
-Collect Coosh'coosh's Debt |q 10009/2 |goto Zangarmarsh,80.9,91.1
+Collect Coosh'coosh's Debt |q 10009/2 |goto Zangarmarsh 80.9,91.1
 step
 talk Floon##18588
-Tell him you are here to collect a dept, pay up or you're going to have to hurt him.
+Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 |tip He will immediately start attacking you!
-Collect Floon's Debt |q 10009/3 |goto Terokkar Forest,27.2,58.1
+Collect Floon's Debt |q 10009/3 |goto Terokkar Forest 27.2,58.1
 step
 talk Sal'salabim##18584
 turnin Crackin' Some Skulls##10009 |goto 77.3,34.9
 accept It's Just That Easy?##10010 |goto 77.3,34.9
 step
 talk Altruis the Sufferer##18417
-turnin It's Just That Easy?##10010 |goto Nagrand,27.3,43.1
-accept Forge Camp: Annihilated##10011 |goto Nagrand,27.3,43.1
+turnin It's Just That Easy?##10010 |goto Nagrand 27.3,43.1
+accept Forge Camp: Annihilated##10011 |goto Nagrand 27.3,43.1
 step
-kill "Demos\,\ Overseer of Hate##18535"
+kill "Demos, Overseer of Hate##18535"
 collect Fel Cannon Activator##25770 |n
 Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25770
-Destroy Forge Camp: Hate |q 10011/1 |goto Nagrand,25.0,36.1
+Destroy Forge Camp: Hate |q 10011/1 |goto Nagrand 25.0,36.1
 step
-kill "Xirkos\,\ Overseer of Fear##18536"
+kill "Xirkos, Overseer of Fear##18536"
 collect Fel Cannon Activator##25771 |n
 Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25771
 Destoy Forge Camp: Fear |q 10011/2 |goto 19.6,51.1
@@ -1324,19 +1476,19 @@ talk Altruis the Sufferer##18417
 turnin Forge Camp: Annihilated##10011 |goto 27.3,43.1
 step
 label "done"
-Once you have completed the above quests, you will have to grind your way to exalted.
-Click to proceed. |confirm always
+Once you have completed the above quests, you will have to grind your way to exalted
+Click to proceed |confirm always
 step
 label	"bead_grind"
 kill Warmaul Reaver##17138+, Warmaul Shaman##18064+
-collect Obsidian Warbeads##25433 |n |goto Nagrand,48.9,22.7
+collect Obsidian Warbeads##25433 |n |goto Nagrand 48.9,22.7
 If you are fresh into revered, you will need 420 beads to get 21,000 reputation points.
 Collect beads in sets of 10.
 Click here when you're ready to turn in. |confirm always
 step
 label	"turn_in"
 talk Warden Bullrok##18407
-accept More Warbeads##10478 |n |goto Nagrand,55.8,37.9
+accept More Warbeads##10478 |n |goto Nagrand 55.8,37.9
 Click here to go back to farming. |next "bead_grind" |confirm |only if rep("The Mag'har")<=Revered
 Earn Exalted status with The Mag'har |condition rep("The Mag'har")==Exalted |next "exalted"
 step
@@ -1350,9 +1502,9 @@ keywords={"The, Diplomat"},
 step
 label	"back up"
 talk Fahssn##17923
-accept The Sporelings' Plight##9739 |goto Zangarmarsh,19.1,64.2
-accept Natural Enemies##9743 |goto Zangarmarsh,19.1,64.2
-turn in these two quests 4 times to go from unfriend to friendly.
+accept The Sporelings' Plight##9739 |goto Zangarmarsh 19.1,64.2
+accept Natural Enemies##9743 |goto Zangarmarsh 19.1,64.2
+|tip Turn in these two quests 4 times to go from Unfriend to Friendly.
 |only if rep('Sporeggar')<=Neutral
 step
 kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
@@ -1363,8 +1515,8 @@ collect 10 Mature Spore Sac##24290 |q 9739/1 |goto 16.0,60.3
 |only if rep('Sporeggar')<=Neutral
 step
 talk Fahssn##17923
-turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh,19.1,64.2
-turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh,19.1,64.2
+turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh 19.1,64.2
+turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh 19.1,64.2
 |only if rep('Sporeggar')<=Neutral
 step
 kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
@@ -1376,22 +1528,20 @@ Turn in 10 Spore Sacs or 6 Bog Lord Tendrils at a time here: [19.0,63.3]
 Reach Friendly with Sporeggar |condition rep('Sporeggar')>=Friendly
 step
 talk Fahssn##17923
-accept Sporeggar##9919 |goto Zangarmarsh,19.1,64.2
+accept Sporeggar##9919 |goto Zangarmarsh 19.1,64.2
 step
 talk Msshi'fn##17924
 turnin Sporeggar##9919 |goto 19.7,52.0
 step
-Once you have reached friendly, you can farm the quest Now That We're Friends... and Bring Me A Shrubbery!  Grinding mobs at The Spawning Glen no longer will give you reputation.
+Once you have reached friendly, you can farm the quest Now That We're Friends... and Bring Me A Shrubbery! Grinding mobs at The Spawning Glen no longer will give you reputation.
 Collecting 265 Sanguine Hibiscus from The Underbog will give you enough
 Click here if you want to grind out Sanguine Hibiscus. |confirm always |next "hibiscus_1"
-or
 Click here if you want to grind Naga mobs|confirm always |next "grind_1"
 step
 label	"hibiscus_1"
-goto 50.3,40.9 |n
-Swim down through the pipe underwater to the other side. |goto 51.9,38.1,1 |c
-step
-Enter the Underbog |goto Zangarmarsh,54.2,34.4 < 5
+Swim down the pipe |goto 50.3,40.9 < 10 |walk
+Reach the other side |goto 51.9,38.1,1 < 10 |walk
+Enter the Underbog |goto Zangarmarsh 54.2,34.4 < 10 |walk
 talk T'shu##54674
 accept Bring Me A Shrubbery!##29691 |goto The Underbog 31.6,65.4
 accept Stalk the Stalker##29567 |goto The Underbog 31.6,65.4
@@ -1415,9 +1565,7 @@ step
 label	"hibiscus_r"
 talk T'shu##54674
 accept Bring Me Another Shrubbery!##9714 |instant |repeatable |or |goto The Underbog 31.6,65.4
-or
 Click here to go farming for more _Sanguine Hibiscus_ |confirm always |next "hibiscus" |or
-or
 Click here if you would like to farm Naga for more reputation |confirm always |next "grind_1" |or
 step
 talk Gzhun'tt##17856
@@ -1441,19 +1589,18 @@ step
 label	"grind_r"
 talk Gzhun'tt##17856
 accept Now That We're Still Friends...##9727 |repeatable |next "grind"|or |goto 19.5,50.0
-or
 Click here to go farming for _Sanguine Hibiscus_ |confirm |next "hibiscus_1" |or
 |only if rep('Sporeggar')>=Friendly
 step
 label	"grind_2"
-kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh,26.9,41.7
-kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh,26.9,41.7
+kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh 26.9,41.7
+kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh 26.9,41.7
 |only if havequest(9726)
 |next "grind_3"
 step
 label	"grind"
-kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh,26.9,41.7
-kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh,26.9,41.7
+kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh 26.9,41.7
+kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh 26.9,41.7
 |only if havequest(9727)
 |next "grind_4"
 step
@@ -1480,8 +1627,8 @@ keywords={"The, Diplomat"},
 },[[
 step
 talk Nafien##15395
-accept Deadwood of the North##28338 |goto Felwood,64.0,10.3
-accept Disarming Bears##28366 |goto Felwood,64.0,10.3
+accept Deadwood of the North##28338 |goto Felwood 64.0,10.3
+accept Disarming Bears##28366 |goto Felwood 64.0,10.3
 step
 talk Ferli##48461
 accept Stupid Drizle!##28362 |goto 64.1,10.3
@@ -1495,24 +1642,26 @@ collect Drizle's Key##63695 |q 28364/1 |goto 62.1,9.9
 step
 talk Drizle##47556
 turnin The Chieftain's Key##28364 |goto 60.6,9.5
+stickystart "deadwoodkills"
 step
-kill Deadwood Den Watcher##7156+, Deadwood Avenger##7157+, Deadwood Shaman##7158+
-Kill 15 Deadwood Furbolg |q 28338/1 |goto 62.0,12.8
 click Deadwood Weapon Pile##10202
 collect 7 Deadwood Weapons |q 28366/1
 collect 1 Deadwood Ritual Totem##20741 |n
 accept Deadwood Ritual Totem##8470
-You can find more around [Felwood,59.7,9.8].
+You can find more around [Felwood,59.7,9.8]
+step "deadwoodkills"
+kill Deadwood Den Watcher##7156+, Deadwood Avenger##7157+, Deadwood Shaman##7158+
+Kill #15# Deadwood Furbolg |q 28338/1 |goto 62.0,12.8
 step
 talk Nafien##15395
 turnin Deadwood of the North##28338 |goto 64.0,10.3
 turnin Disarming Bears##28366 |goto 64.0,10.3
 accept Speak to Salfa##28521 |goto 64.0,10.3
-You should be able to turn in Feathers for Nafien, a repeatable reputation quest.
+|tip You should be able to turn in Feathers for Nafien, a repeatable reputation quest.
 step
 talk Kernda##11558
 turnin Deadwood Ritual Totem##8470 |goto 64.7,5.7
-You should be friendly with Timbermaw after completing this quest.
+|tip You should be friendly with Timbermaw after completing this quest.
 only if rep('Timbermaw Hold')>=Neutral
 step
 talk Meilosh##11557
@@ -1520,9 +1669,9 @@ accept Runecloth##6031 |goto 64.9,5.2
 only if rep ('Timbermaw Hold')>=Friendly
 step
 talk Salfa##11556
-turnin Speak to Salfa##28521 |goto Winterspring,21.1,46.2
-accept Delivery for Donova##28524 |goto Winterspring,21.1,46.2
-accept Winterfall Activity##28522 |goto Winterspring,21.1,46.2
+turnin Speak to Salfa##28521 |goto Winterspring 21.1,46.2
+accept Delivery for Donova##28524 |goto Winterspring 21.1,46.2
+accept Winterfall Activity##28522 |goto Winterspring 21.1,46.2
 step
 talk Donova Snowden##9298
 turnin Delivery for Donova##28524 |goto 25.1,58.5
@@ -1534,9 +1683,9 @@ turnin Falling to Corruption##28464 |goto 24.5,47.6
 accept Mystery Goo##28467 |goto 24.5,47.6
 step
 kill Winterfall Totemic##7441+, Winterfall Den Watcher##7440+, Winterfall Runner##10916+
-Kill 15 Winterfall Furbolg |q 28460/1 |goto 24.5,47.6
+Kill #15# Winterfall Furbolg |q 28460/1 |goto 24.5,47.6
 collect 10 Winterfall Spirit Beads |q 28522/1 |goto 24.5,47.6
-You can find more mobs around [Winterspring,27.3,49.3].
+You can find more mobs around [Winterspring,27.3,49.3]
 step
 talk Donova Snowden##9298
 turnin Mystery Goo##28467 |goto 25.1,58.5
@@ -1546,16 +1695,16 @@ accept Scalding Signs##28530 |goto 25.1,58.5
 step
 kill Winterfall Runner##10916
 collect Winterfall Crate |q 28469/1 |goto 29.3,54.8
-They walk along the road so some searching may be required.
+|tip They walk along the road so some searching may be required.
 step
-kill Scalding Springsurge##48767+,Boiling Springbubble##48768+
+kill Scalding Springsurge##48767+, Boiling Springbubble##48768+
 collect 7 Suspicious Green Sludge |q 28530/1 |goto 32.7,50.6
 step
 talk Donova Snowden##9298
 turnin Winterfall Runners##28469 |goto 25.1,58.5
 turnin Scalding Signs##28530 |goto 25.1,58.5
 accept High Chief Winterfall##28470 |goto 25.1,58.5
-You should be honored with Timbermaw Hold at this point.
+|tip You should be honored with Timbermaw Hold at this point.
 step
 kill High Chief Winterfall##10738 |q 28470/1 |goto 37.0,55.6
 step
@@ -1564,7 +1713,7 @@ turnin High Chief Winterfall##28470 |goto 25.1,58.5
 step
 talk Salfa##11556
 turnin Winterfall Activity##28522 |goto 21.1,46.2
-You should now be able to do the quest More Beads for Salfa.
+|tip You should now be able to do the quest More Beads for Salfa.
 step
 talk Burndl##48722
 accept Bearzerker##28614 |goto 65.3,46.2
@@ -1572,24 +1721,22 @@ step
 talk Tanrir##48723
 accept Turning the Earth##28615 |goto 65.4,46.2
 step
-Use Tanrir's Overcharged Totem to overload Winterfall Earth Totems. |use Tanrir's Overcharged Totem##64637
-Overload 4 Winterfall Earth Totems |q 28615/1 |goto 67.0,47.7
-|modelnpc Winterfall Earth Totem##49177
+Use Tanrir's Overcharged Totem to overload Winterfall Earth Totems |use Tanrir's Overcharged Totem##64637
+Overload #4# Winterfall Earth Totems |q 28615/1 |goto 67.0,47.7
 step
 kill Grolnar the Berserk##49178 |q 28614/1 |goto 69.3,50.6
 step
 talk Tanrir##48723
-turnin Turning the Earth##28615 |goto Winterspring,65.4,46.2
+turnin Turning the Earth##28615 |goto Winterspring 65.4,46.2
 step
 talk Burndl##48722
 turnin Bearzerker##28614 |goto 65.3,46.2
 step
 label	"the_grind"
 At this point, you can do two repeatable quests, as well as grind to earn rep.
-More Beads for Salfa requires that you grind in Winterspring.  You collect 5 Winterfall Spirit Beads, which are worth 2,000 Reputation per turn in.  Click here to farm at the Winterspring location. |confirm |next "winterfall"
-or
-Feathers for Nafien requires that you grind in Felwood. You collect 5 Deadwood Headdress Feathers, which are worth 2,000 Reputation per turn in.  Click here to farm at the Felwood location. |confirm |next "deadwood"
-Collecting 65 Beads/Feathers will get you from Honored to Exalted.
+More Beads for Salfa requires that you grind in Winterspring. You collect 5 Winterfall Spirit Beads, which are worth 2,000 Reputation per turn in. Click here to farm at the Winterspring location. |confirm |next "winterfall"
+Feathers for Nafien requires that you grind in Felwood. You collect 5 Deadwood Headdress Feathers, which are worth 2,000 Reputation per turn in. Click here to farm at the Felwood location. |confirm |next "deadwood"
+|tip Collecting 65 Beads/Feathers will get you from Honored to Exalted.
 step
 label	"winterfall"
 kill Winterfall Shaman##7439+,Winterfall Ursa##7438+
@@ -1602,22 +1749,20 @@ step
 talk Salfa##11556
 accept More Beads for Salfa##28523 |n |goto 21.1,46.2
 Click here to go back to grinding. |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
-or
 Exalted with Timbermaw Hold |next "exalted" |condition rep('Timbermaw Hold')==Exalted
 step
 label	"deadwood"
 kill Deadwood Avenger##7157+,Deadwood Den Watcher##7156+,Deadwood Shaman##7158+
-collect Deadwood Headdress Feather##21377 |n |goto Felwood,61.9,12.3
+collect Deadwood Headdress Feather##21377 |n |goto Felwood 61.9,12.3
 |tip You need to collect at least 5.
-5 Feather Headresses = 2,000 Reputation.  You're aiming for at least 60 to 65 Feather Headresses in total.
+5 Feather Headresses = 2,000 Reputation. You're aiming for at least 60 to 65 Feather Headresses in total.
 More can be found at [Felwood,59.6,8.9]
 Click here to turn in your feathers |confirm |next "turnin"
 step
 label	"turnin"
 talk Nafien##15395
 accept Feathers for Nafien##28395 |n |goto 64.0,10.3
-Click here to go back to grinding. |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
-or
+Click here to go back to grinding |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
 Exalted with Timbermaw Hold |next "exalted" |condition rep('Timbermaw Hold')==Exalted
 step
 label	"exalted"
@@ -1628,21 +1773,19 @@ keywords={"Guardian, of, Cenarius"},
 },[[
 step
 label	"menu"
-There are several ways to earn reputation with _Cenarion Circle_.  Earning Exalted with this Faction is half of the _Achievement Guardian of Cenarius_.
-You can _farm mobs and bosses_ in the _Ruins of Ahn'Qiraj_.  You would need at least 1 other person to form the raid.
-or
+There are several ways to earn reputation with _Cenarion Circle_. Earning Exalted with this Faction is half of the _Achievement Guardian of Cenarius_.
+You can _farm mobs and bosses_ in the _Ruins of Ahn'Qiraj_. You would need at least 1 other person to form the raid.
 There are a large number of _quests_ available _at Cenarion Hold_, but once those are completed you'll need to grind your way to Exalted. Click here to go to these quests |confirm always |next "quest"
-or
-The _only repeatable quest_ as of 4.2 is from Bor Wildmane at Cenarion Hold.  You will need to _collect 10 Encrypted Twilight Text_ per _turn in_. Click here to continue |confirm always |next "farm"
+The _only repeatable quest_ as of 4.2 is from Bor Wildmane at Cenarion Hold. You will need to _collect 10 Encrypted Twilight Text_ per _turn in_. Click here to continue |confirm always |next "farm"
 |next "exalted" |only if rep('Cenarion Circle')==Exalted
 step
 label	"quest"
 talk Windcaller Proudhorn##15191
-accept Securing the Supply Lines##8280 |goto Silithus,54.9,36.0
+accept Securing the Supply Lines##8280 |goto Silithus 54.9,36.0
 step
 Click the Wanted Poster: Deathclasp |model 3053
 accept Wanted - Deathclasp, Terror of the Sands##8283 |goto 55.0,36.0
-|tip You must kill an elite mob for this quest, so you may need a partner if you cannot solo it.  You can skip this quest if you can't solo it and can't find a partner to help.
+|tip You must kill an elite mob for this quest, so you may need a partner if you cannot solo it. You can skip this quest if you can't solo it and can't find a partner to help.
 step
 talk Calandrath##15174
 home Cenarion Hold |goto 55.5,36.8
@@ -1666,9 +1809,9 @@ collect 20 Encrypted Twilight Text##20404 |q 8323 |future |goto 45.4,41.3
 kill 10 Twilight Geolord##11881+ |q 8320/1 |goto 45.4,41.3
 step
 kill Sand Skitterer##11738+
-collect 8 Sand Skitterer Fang |q 8277/2 |goto 46.2,34.8
+collect 8 Sand Skitterer Fang##20376 |q 8277/2 |goto 46.2,34.8
 kill Stonelash Scorpid##11735+
-collect 8 Stonelash Scorpid Stinger |q 8277/1 |goto 46.2,34.8
+collect 8 Stonelash Scorpid Stinger##20373 |q 8277/1 |goto 46.2,34.8
 kill 15 Dredge Striker##11740+ |q 8280/1 |goto 46.2,34.8
 step
 talk Beetix Ficklespragg##15189
@@ -1686,12 +1829,11 @@ talk Huum Wildmane##15270
 turnin Twilight Geolords##8320 |goto 52.7,35.7
 accept Vyral the Vile##8321 |goto 52.7,35.7
 step
-Enter the cave |goto 70.2,16.1 < 5 |q 8321
-Follow the path inside the cave
+Enter the cave |goto 70.2,16.1 < 5 |walk
 kill Vyral the Vile##15202
-collect Vyral's Signet Ring |q 8321/1 |goto 73.1,16.5
+collect Vyral's Signet Ring##20466 |q 8321/1 |goto 73.1,16.5
 step
-Leave the cave |goto 70.2,16.1 < 5 |q 8321
+Leave the cave |goto 70.2,16.1 < 5 |walk
 talk Huum Wildmane##15270
 turnin Vyral the Vile##8321 |goto 52.7,35.6
 step
@@ -1699,7 +1841,7 @@ talk Geologist Larksbane##15183
 accept The Twilight Mystery##8284 |goto 53.6,35.3
 step
 click Twilight Tablet Fragments##6419
-collect 8 Twilight Tablet Fragment |q 8284/1 |goto 31.0,13.6
+collect 8 Twilight Tablet Fragment##20378 |q 8284/1 |goto 31.0,13.6
 step
 talk Geologist Larksbane##15183
 turnin The Twilight Mystery##8284 |goto 53.6,35.3
@@ -1723,29 +1865,29 @@ They spawn in various locations, you find more at:
 [57.1,47.2]
 [60.0,41.1]
 step
-Stand inside the big blue-glowing metal machine
 Deliver Silithyst |q 9422/1 |goto 39.1,46.9
+|tip Stand inside the big blue-glowing metal machine.
 step
 talk Marshal Bluewall##17080
 turnin Scouring the Desert##9422 |goto 39.6,47.0
 step
 kill Twilight Keeper Havunth##11804
 |tip He walks around this area in a purple robe, so you may need to search for him.
-collect Twilight Lexicon - Chapter 3 |q 8279/3 |goto 46.2,39.8
+collect Twilight Lexicon - Chapter 3##20396 |q 8279/3 |goto 46.2,39.8
 step
 kill Twilight Keeper Mayna##15200
 |tip She walks around this area carrying a book, so you may need to search for her.
-collect Twilight Lexicon - Chapter 1 |q 8279/1 |goto 33.9,34.1
+collect Twilight Lexicon - Chapter 1##20394 |q 8279/1 |goto 33.9,34.1
 step
 kill 20 Dredge Crusher##11741+ |q 8281/1 |goto 44.9,48.7
 You can find more Dredge Crushers around [Silithus,37.9,32.4]
 step
 kill Stonelash Flayer##11737+
-collect 3 Stonelash Flayer Stinger |q 8278/1 |goto 42.8,63.5
+collect 3 Stonelash Flayer Stinger##20375 |q 8278/1 |goto 42.8,63.5
 kill Stonelash Pincer##11736+
-collect 3 Stonelash Pincer Stinger |q 8278/2 |goto 42.8,63.5
+collect 3 Stonelash Pincer Stinger##20374 |q 8278/2 |goto 42.8,63.5
 kill Rock Stalker##11739+
-collect 3 Rock Stalker Fang |q 8278/3 |goto 42.8,63.5
+collect 3 Rock Stalker Fang##20377 |q 8278/3 |goto 42.8,63.5
 step
 talk Windcaller Proudhorn##15191
 turnin Stepping Up Security##8281 |goto 54.9,36.0
@@ -1757,28 +1899,28 @@ talk Noggle Ficklespragg##15190
 accept Noggle's Lost Satchel##8282 |goto 55.3,36.2
 step
 talk Frankal Stonebridge##15171
-Tell him you've heard he might have some information as to the weareabouts of Mistress Natalia Mar'alith
+Tell him _"I've heard you might have some information as to the weareabouts of Mistress Natalia Mar'alith."_
 Question Frankal |q 8304/1 |goto 46.0,79.4
 step
 talk Rutgar Glyphshaper##15170
-Tell him the Commander has sent you here to gather some information about his missing wife
+Tell him _"The Commander has sent you here to gather some information about your missing wife."_
 Question Rutgar |q 8304/2 |goto 46.4,79.1
 step
-Click the Complete Quest box in the top right corner of your screen
+Click the _Quest Complete_ box:
 turnin Dearest Natalia##8304
 accept Into The Maw of Madness##8306
 step
-Follow the path up |goto 47.4,81.1 < 5
+Follow the path up |goto 47.4,81.1 < 5 |walk
 click Noggle's Satchel##323
 |tip Be careful of Deathclasp, the elite scorpion that patrols this small area.
 collect Noggle's Satchel##20379 |q 8282/1 |goto 49.2,81.6
 step
 kill Deathclasp##15196
 collect Deathclasp's Pincer |q 8283/1 |goto 49.5,81.3
-|tip Deathclasp is an elite mob, so you may need a partner if you cannot solo him.  You can skip this quest if you can't solo it and can't find a partner to help.
+|tip Deathclasp is an elite mob, so you may need a partner if you cannot solo him. You can skip this quest if you can't solo it and can't find a partner to help.
 step
 kill Twilight Keeper Exeter##11803
-collect Twilight Lexicon - Chapter 2 |q 8279/2 |goto 24.8,77.3
+collect Twilight Lexicon - Chapter 2##20395 |q 8279/2 |goto 24.8,77.3
 step
 talk Noggle Ficklespragg##15190
 turnin Noggle's Lost Satchel##8282 |goto 55.3,36.2
@@ -1801,15 +1943,15 @@ kill Mistress Natalia Mar'alith##15215
 Discover the Fate of Mistress Natalia Mar'alith |q 8306/1 |goto 55.6,90.6
 step
 click the Hive'Regal Glyphed Crystal##6414
-<Use the transcription device to gather a rubbing.>
-collect Hive'Regal Rubbing |q 8309/1 |goto 55.6,90.5
+Select _<Use the transcription device to gather a rubbing.>_
+collect Hive'Regal Rubbing##20456 |q 8309/1 |goto 55.6,90.5
 step
 Follow this path |goto 56.1,87.8 < 5
 Follow this path |goto 56.4,83.0 < 5
 Follow this path |goto 57.2,79.2 < 5
 Leave the hive |goto 58.5,78.4 < 5
 kill Hive'Regal Ambusher##11730+, Hive'Regal Slavemaker##11733+, Hive'Regal Spitfire##11732+, Hive'Regal Hive Lord##11734+
-collect Hive'Regal Silithid Brain |q 8310/1 |goto 59.3,74.8
+collect Hive'Regal Silithid Brain##20459 |q 8310/1 |goto 59.3,74.8
 collect 1 Brann Bronzebeard's Lost Letter##20461 |n
 Click Brann Bronzebeard's Lost Letter |use Brann Bronzebeard's Lost Letter##20461
 accept Brann Bronzebeard's Lost Letter##8308
@@ -1825,7 +1967,7 @@ turnin Into The Maw of Madness##8306 |goto 53.2,32.5
 turnin A Terrible Purpose##8287 |goto 53.2,32.5
 step
 kill Twilight Avenger##11880+, Twilight Geolord##11881+, Twilight Stonecaller##11882+
-collect 10 Encrypted Twilight Text |q 8323/1 |goto 45.4,41.3
+collect 10 Encrypted Twilight Text##20404 |q 8323/1 |goto 45.4,41.3
 step
 talk Frankal Stonebridge##15171
 turnin Breaking the Code##8310 |goto 46.0,79.4
@@ -1845,37 +1987,36 @@ turnin Unraveling the Mystery##8314 |goto Silithus 53.6,35.3
 step
 label	"farm_text"
 kill Twilight Avenger##11880+, Twilight Keeper Havunth##11804+, Twilight Stonecaller##11882+, Twilight Geolord##11881+
-collect Encrypted Twilight Text##20404 |n |goto Silithus,45.6,40.1
+collect Encrypted Twilight Text##20404 |n |goto Silithus 45.6,40.1
 More Twilight mobs can be found at [28.0,74.8]
 Here [69.7,16.6]
 Here [33.5,33.9]
 When you have a lot of Twilight Texts to turn in, click here |confirm
 step
 talk Bor Wildmane##15306
-accept Encrypted Twilight Texts##8319 |n |goto Silithus,53.2,35.1
+accept Encrypted Twilight Texts##8319 |n |goto Silithus 53.2,35.1
 You can click here to farm more Texts |confirm |next "farm_text"
-or
 Click here to do quests outside of Silithus for more rep |confirm
 |next "exalted" |only if rep('Cenarion Circle')==Exalted
 step
 talk Zen'Aliri##38269
-accept Finding Stormclaw##24854 |goto Un'Goro Crater,55.7,60.6
+accept Finding Stormclaw##24854 |goto Un'Goro Crater 55.7,60.6
 step
 talk Garl Stormclaw##38274
 turnin Finding Stormclaw##24854 |goto 70.8,76.4
 accept Claws of White##24719 |goto 70.8,76.4
 step
-kill Ravasaur##6505+,Ravasaur Runner##6506+,Ravasaur Hunter##6507+,Venomhide Ravasaur##6508+
+kill Ravasaur##6505+, Ravasaur Runner##6506+, Ravasaur Hunter##6507+, Venomhide Ravasaur##6508+
 collect 5 White Ravasaur Claw |q 24719/1 |goto 67.4,72.3
-More can be found around [Un'Goro Crater,69.1,57.1]
+More can be found around [Un'Goro Crater 69.1,57.1]
 step
 talk Garl Stormclaw##38274
 turnin Claws of White##24719 |goto 70.6,76.8
 accept Carried on the Waves##24686 |goto 70.6,76.8
 step
 While traveling to the coordinates, look in the water for Bloodpetal Seeds |modelnpc 38202
-Catch the Bloodpetal Seeds with Garl's Net. |use Garl's Net##50441
-collect 4 Un'Goro Lasher Seed |q 24686/1 |goto 73.5,60.2
+Catch the Bloodpetal Seeds with Garl's Net |use Garl's Net##50441
+collect 4 Un'Goro Lasher Seed##50253 |q 24686/1 |goto 73.5,60.2
 step
 talk Garl Stormclaw##38274
 turnin Carried on the Waves##24686 |goto 70.6,75.9
@@ -1885,7 +2026,7 @@ talk Ithis Moonwarden##38263
 turnin Flowing to the North##24689 |goto 76.4,48.3
 accept Bouquets of Death##24687 |goto 76.4,48.3
 step
-Attack the Juvenile Bloodpetals in the area.
+Attack the Juvenile Bloodpetals in the area
 kill 6 Pack of Juvenile Bloodpetal##38213+ |q 24687/1 |goto 75.8,44.1
 step
 talk Ithis Moonwarden##38263
@@ -1905,19 +2046,19 @@ accept I Ain't Sayin' You a Gourd-Digger...##26956 |goto 48.5,54.9
 step
 click Unhealthy-Looking Pumpkin##6326
 kill Thrashing Pumpkin##44487+
-Remove 3 Unhealthy-Looking Pumpkins |q 26956/3 |goto 47.4,52.9
+Remove #3# Unhealthy-Looking Pumpkins |q 26956/3 |goto 47.4,52.9
 step
 click Rotten Apple##9820+
 kill Pome Wraith##44488+
-Remove 4 Rotten Apples |q 26956/2 |goto 46.8,54.1
+Remove #4# Rotten Apples |q 26956/2 |goto 46.8,54.1
 step
 click Bad Corn##9819
 kill Corn Stalker##44489+
-Remove 6 Bad Corn |q 26956/1 |goto 45.8,53.4
+Remove #6# Bad Corn |q 26956/1 |goto 45.8,53.4
 step
 kill Plague Lurker##1824+, Venom Mist Lurker##1822+, Diseased Wolf##1817+, Hulking Plaguebear##44482+
 |tip You must do this with the Troll Zen'Kiki next to you. If you lose him, return to the Menders' Stead and talk to him.
-Kill 20 Wildlife with Zen'Kiki |q 26953/1 |goto 50.3,59.6
+Kill #20# Wildlife with Zen'Kiki |q 26953/1 |goto 50.3,59.6
 step
 talk Adrine Towhide##44456
 turnin Zen'Kiki, the Druid##26953 |goto 48.9,54.8
@@ -1927,8 +2068,8 @@ talk Selyria Groenveld##44457
 turnin I Ain't Sayin' You a Gourd-Digger...##26956 |goto 48.5,54.9
 step
 Click Zen'Kiki
-|tip He's the Troll that's following you around.  Keep clicking him to pull the Diseased Hawks down to you.
-kill 7 Diseased Hawk##44481 |q 26954/1 |goto 53.9,53.7
+|tip He's the Troll that's following you around. Keep clicking him to pull the Diseased Hawks down to you.
+kill 7 Diseased Hawk##44481+ |q 26954/1 |goto 53.9,53.7
 step
 talk Adrine Towhide##44456
 turnin A Different Approach##26954 |goto 48.9,54.8
@@ -1959,7 +2100,6 @@ Ride the Hearthglen Mustang |invehicle |c |q 27000 |goto 47.7,31.7
 step
 Use your Whinny ability on your hotbar near Northridge Spiders
 Frighten 25 Northridge Spiders |q 27000/1 |goto 47.4,35.0
-|modelnpc Northridge Spider##44284
 step
 Click the red arrow on your hotbar to stop riding the Hearthglen Mustang |outvehicle |c |q 27000
 step
@@ -1988,9 +2128,9 @@ talk Field Agent Kaartish##44454
 accept Gahrron's Withering Cauldron##27053 |goto 49.3,54.9
 step
 kill Cauldron Lord Soulwrath##11078
-collect Gahrron's Withering Cauldron Key |q 27053/1 |goto 62.7,58.9
+collect Gahrron's Withering Cauldron Key##13196 |q 27053/1 |goto 62.7,58.9
 step
-Click the Scourge Cauldron
+click Scourge Cauldron##176392
 |tip It's a huge shaking black pot with orange liquid in it on a stone platform.
 turnin Gahrron's Withering Cauldron##27053 |goto 62.6,58.6
 accept Return to the Stead##27057 |goto 62.6,58.6
@@ -2002,18 +2142,18 @@ talk Adrine Towhide##44456
 accept Zen'Kiki and the Cultists##26955 |goto 48.9,54.8
 step
 Click Cultist Cages
-|tip They look like big yellow cages around this area. |model 01787
-Free and Heal 4 Captive Plaguebears |q 26955/1 |goto 66.7,48.9
+|tip They look like big yellow cages around this area.
+Free and Heal #4# Captive Plaguebears |q 26955/1 |goto 66.7,48.9
 step
 talk Adrine Towhide##44456
 turnin Zen'Kiki and the Cultists##26955 |goto 48.9,54.8
 step
 talk Carlin Redpath##11063
-accept Little Pamela##27383 |goto Eastern Plaguelands,35.6,68.9
+accept Little Pamela##27383 |goto Eastern Plaguelands 35.6,68.9
 step
 talk Pamela Redpath##10926
-turnin Little Pamela##27383 |goto Eastern Plaguelands,32.5,83.7
-accept Pamela's Doll##27384 |goto Eastern Plaguelands,32.5,83.7
+turnin Little Pamela##27383 |goto Eastern Plaguelands 32.5,83.7
+accept Pamela's Doll##27384 |goto Eastern Plaguelands 32.5,83.7
 step
 You can find the doll parts in all of the buildings
 click Pamela's Doll's Right Side##4233
@@ -2024,14 +2164,14 @@ click Pamela's Doll's Head##4231
 collect Pamela's Doll's Head##12886 |q 27384 |goto 35.5,85.3
 step
 Use Pamela's Doll's Head |use Pamela's Doll's Head##12886
-collect Pamela's Doll |q 27384/1
+collect Pamela's Doll##12885 |q 27384/1
 step
 talk Pamela Redpath##10926
 turnin Pamela's Doll##27384 |goto 32.4,83.7
 accept I'm Not Supposed to Tell You This##27392 |goto 32.4,83.7
 step
 kill The Lone Hunter##45450
-collect Joseph's Hunting Blade |q 27392/1 |goto 40.3,83.8
+collect Joseph's Hunting Blade##60987 |q 27392/1 |goto 40.3,83.8
 step
 talk Pamela Redpath##10926
 turnin I'm Not Supposed to Tell You This##27392 |goto 32.5,83.6
@@ -2045,7 +2185,7 @@ talk Chromie##10667
 turnin A Strange Historian##27386 |goto 35.3,68.1
 step
 talk Urk Gagbaz##45500
-accept Cenarion Tenacity##27544 |goto Eastern Plaguelands,35.0,68.1
+accept Cenarion Tenacity##27544 |goto Eastern Plaguelands 35.0,68.1
 step
 talk Rayne##16135
 turnin Cenarion Tenacity##27544 |goto 30.2,56.9
@@ -2067,7 +2207,7 @@ step
 kill Shadowmage##8550+, Dark Adept##8546+
 collect Plague Disseminator Control Rune##61037 |n
 Use your Overcharged Mote when you have a Plague Disseminator Control Rune |use Overcharged Mote##61038
-Destroy 3 Plague Disseminators |q 27420/1 |goto 36.4,46.0
+Destroy #3# Plague Disseminators |q 27420/1 |goto 36.4,46.0
 step
 talk Rayne##16135
 turnin Postponing the Inevitable##27420 |goto 30.2,56.9
@@ -2095,7 +2235,7 @@ Coilfang Armaments drop in normal Steamvaults, as well as heroic Coilfang instan
 step
 kill Crust Burster##16844+
 |tip They are under the jumping piles of rocks, they come up to fight when you get close to the jumping rocks.
-collect Eroded Leather Case##23338 |n |goto Hellfire Peninsula,47.8,65.8
+collect Eroded Leather Case##23338 |n |goto Hellfire Peninsula 47.8,65.8
 Click the Eroded Leather Case |use Eroded Leather Case##23338
 accept Missing Missive##9373
 step
@@ -2104,7 +2244,7 @@ turnin Missing Missive##9373 |goto 15.7,52
 accept Demonic Contamination##9372 |goto 15.7,52
 step
 kill Hulking Helboar##16880+
-collect 6 Helboar Blood Sample |q 9372/1 |goto 24.9,54.3
+collect 6 Helboar Blood Sample##23336 |q 9372/1 |goto 24.9,54.3
 step
 talk Thiah Redmane##16991
 turnin Demonic Contamination##9372 |goto 15.7,52
@@ -2124,7 +2264,7 @@ kill 8 Thornfang Ravager##19349+ |q 10159/1 |goto 10.1,53.2
 kill 8 Thornfang Venomspitter##19350+ |q 10159/2 |goto 10.1,53.2
 step
 talk Mahuram Stouthoof##16888
-turnin Keep Thornfang Hill Clear!##10159 |goto Hellfire Peninsula,15.7,52
+turnin Keep Thornfang Hill Clear!##10159 |goto Hellfire Peninsula 15.7,52
 step
 talk Tola'thion##19293
 accept Colossal Menace##10132 |goto 15.6,52.0
@@ -2152,9 +2292,9 @@ talk Earthbinder Galandria Nightbreeze##19294
 turnin Natural Remedies##10351 |goto 16.0,51.6
 step
 talk Lauranna Thar'well##17909
-accept Plants of Zangarmarsh##9802 |goto Zangarmarsh,80.4,64.2
+accept Plants of Zangarmarsh##9802 |goto Zangarmarsh 80.4,64.2
 talk Ikeyen##17956
-accept The Umbrafen Tribe##9747 |goto Zangarmarsh,80.4,64.2
+accept The Umbrafen Tribe##9747 |goto Zangarmarsh 80.4,64.2
 step
 talk Warden Hamoot##17858
 accept A Warm Welcome##9728 |goto 79.1,65.3
@@ -2187,11 +2327,12 @@ kill 6 Umbrafen Witchdoctor##20115+ |q 9747/4 |goto 83.1,85.2
 step
 talk Kayra Longmane##17969
 accept Escape from Umbrafen##9752
-Escort Kayra Longmane to safety |q 9752/1 |goto 83.4,85.5
+Escort Kayra Longmane to Safety |q 9752/1 |goto 83.4,85.5
 step
 talk Ikeyen##17956
 turnin The Umbrafen Tribe##9747 |goto 80.4,64.2
 accept A Damp, Dark Place##9788 |goto 80.4,64.2
+step
 talk Lauranna Thar'well##17909
 accept Saving the Sporeloks##10096 |goto 80.4,64.2
 step
@@ -2201,13 +2342,12 @@ step
 talk Ysiel Windsinger##17841
 turnin Escape from Umbrafen##9752 |goto 78.4,62
 step
-The path to 'Ikeyen's Belongings' starts here |goto Zangarmarsh,74.7,91.6,0.3 |noway |c
-step
-Go southwest inside the cave to 70.5,97.9 |goto 70.5,97.9
+Follow the path |goto Zangarmarsh 74.7,91.6 < 10 |only if walking
+Go southwest inside the cave |goto 70.5,97.9 < 10
 click Ikeyen's Belongings##318
-collect Ikeyen's Belongings |q 9788/1
+collect Ikeyen's Belongings##24411 |q 9788/1
 step
-Go northeast inside the cave to 72.5,94.0 |goto 72.5,94.0
+Go northeast inside the cave |goto 72.5,94.0 < 10
 kill Lord Klaq##18282 |q 9894/1
 |tip On the bottom level of the cave, in the small round room all the way in the back.
 step
@@ -2216,8 +2356,8 @@ kill 10 Marsh Dredger##18137+ |q 10096/1 |goto 75.7,90.2
 step
 Stand here to Investigate Umbrafen Lake |q 9716/1 |goto 70.9,82.1
 kill Darkcrest Slaver##19946+,Darkcrest Sorceress##19947+
-collect 10 Unidentified Plant Parts|q 9802/1 |goto 70.9,82.1
-collect 30 Naga Claws|q 9728/1 |goto 70.9,82.1
+collect 10 Unidentified Plant Parts##24401 |q 9802/1 |goto 70.9,82.1
+collect 30 Naga Claws##24280 |q 9728/1 |goto 70.9,82.1
 You can find more Naga at:
 [73.4,82.3]
 [72.2,75.8]
@@ -2227,6 +2367,7 @@ turnin Safeguarding the Watchers##9894 |goto 80.4,64.7
 step
 talk Ikeyen##17956
 turnin A Damp, Dark Place##9788 |goto 80.4,64.2
+step
 talk Lauranna Thar'well##17909
 turnin Saving the Sporeloks##10096 |goto 80.4,64.2
 Turn in any stacks of 10 Unidentified Plant Parts you have
@@ -2243,7 +2384,7 @@ turnin Disturbance at Umbrafen Lake##9716 |goto 78.4,62
 accept As the Crow Flies##9718 |goto 78.4,62
 step
 Use your Stormcrow Amulet |use Stormcrow Amulet##25465
-Watch yourself fly as a crow.
+|tip Watch yourself fly as a crow.
 Explore the Lakes of Zangarmarsh |q 9718/1
 step
 talk Ysiel Windsinger##17841
@@ -2264,14 +2405,14 @@ turnin Blessings of the Ancients##9785 |goto 80.4,64.7
 step
 Use your Ironvine Seeds on the Umbrafen Lake Pump Controls |use Ironvine Seeds##24355
 Disable the Umbrafen Lake Pump Controls |q 9720/1 |goto 70.6,80.3
-|tip The pump controls look like a little box with some levers on it
+|tip The pump controls look like a little box with some levers on it.
 step
 Use your Ironvine Seeds on the Lagoon Pump Controls |use Ironvine Seeds##24355
 Disable the Lagoon Pump Controls |q 9720/4 |goto 63.1,64.1
-|tip The pump controls look like a little box with some levers on it
+|tip The pump controls look like a little box with some levers on it.
 step
 Use your Ironvine Seeds on the Serpent Lake Controls |use Ironvine Seeds##24355
-|tip The pump controls look like a little box with some levers on it
+|tip The pump controls look like a little box with some levers on it.
 Disable the Serpent Lake Controls |q 9720/3 |goto 62,40.8
 kill Steam Pump Overseer##18340+, Bloodscale Overseer##20088+, and Bloodscale Wavecaller##20089+
 Get a Drain Schematics
@@ -2283,7 +2424,7 @@ Locate the drain in Serpent Lake |q 9731/1 |goto 50.4,40.8
 step
 Use your Ironvine Seeds on the Umbrafen Lake Pump Controls |use Ironvine Seeds##24355
 Disable the Umbrafen Lake Pump Controls |q 9720/2 |goto 25.4,42.9
-|tip The pump controls look like a little box with some levers on it
+|tip The pump controls look like a little box with some levers on it.
 step
 talk Ysiel Windsinger##17841
 turnin Balance Must Be Preserved##9720 |goto 78.4,62
@@ -2294,20 +2435,16 @@ talk Lethyn Moonfire##17834
 accept What's Wrong at Cenarion Thicket?##9957 |goto 78.5,63.1
 step
 talk Amythiel Mistwalker##16885
-turnin Warning the Cenarion Circle##9724 |goto Hellfire Peninsula,16,52.2
-accept Return to the Marsh##9732 |goto Hellfire Peninsula,16,52.2
+turnin Warning the Cenarion Circle##9724 |goto Hellfire Peninsula 16,52.2
+accept Return to the Marsh##9732 |goto Hellfire Peninsula 16,52.2
 step
 talk Ysiel Windsinger##17841
-turnin Return to the Marsh##9732 |goto Zangarmarsh,78.4,62
-accept Checking Up##29566 |goto Zangarmarsh,78.4,62
-accept Storming the Steamvault##29616 |goto Zangarmarsh,78.4,62
+turnin Return to the Marsh##9732 |goto Zangarmarsh 78.4,62
+accept Checking Up##29566 |goto Zangarmarsh 78.4,62
+accept Storming the Steamvault##29616 |goto Zangarmarsh 78.4,62
 step
-goto Zangarmarsh,50.4,40.9 |n
-Swim down this drain to Coifang Reservoir |goto Zangarmarsh,50.4,40.9,0.5 |noway |c
-step
-goto 49.0,35.7|n
-Go through the swirling portal into The Slave Pens dungeon |goto The Slave Pens |noway |c
-step
+Swim down the drain |goto Zangarmarsh 50.4,40.9 < 5 |walk
+Go through the swirling portal |goto 49.0,35.7 < 10 |walk
 talk Watcher Jhang##54667
 turnin Checking Up##29566 |goto The Slave Pens 18.9,11.3
 step
@@ -2336,11 +2473,10 @@ step
 Be ready to fight a couple mobs
 kill Coilfang Champion##17957+, Coilfang Enchantress##17961+ |goto 95.7,66.2
 talk Naturalist Bite##17893
-Tell him
-<Naturalist, please grant me your boon |havebuff 132127
+Tell him _"<Naturalist, please grant me your boon"_ |havebuff 132127
 step
 kill Quagmirran##17942+
-collect The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9
+collect The Slave Master's Eye##72119 |q 29565/2 |goto The Slave Pens 86.2,67.9
 step
 talk Nahuud##54668
 turnin A Brother Betrayed##29564 |goto The Slave Pens 17.9,12.2
@@ -2349,12 +2485,7 @@ talk Watcher Jhang##54667
 turnin Lost in Action##29563 |goto 18.8,11.3
 turnin The Heart of the Matter##29565 |goto 18.8,11.3
 step
-goto 21.1,13.7 |n
-Leave this instance |goto Zangarmarsh |noway |c
-step
-goto Zangarmarsh 54.2,34.4 |n
-Enter The Underbog |goto The Underbog |noway |c
-step
+Enter The Underbog |goto Zangarmarsh 54.2,34.4 < 10
 talk Naturalist Bite##54678
 accept A Necessary Evil##29568 |goto The Underbog 29.5,64.7
 step
@@ -2380,7 +2511,7 @@ Follow the path around until you get here
 kill Ghaz'an##18105 |goto 77.2,43.8
 |confirm
 step
-Jump down in the water here  |goto 78.9,24.5 < 5
+Jump down in the water here |goto 78.9,24.5 < 5
 Swim across the water and jump down here |goto 79.6,15.2 < 5
 talk Earthbinder Rayge##17885
 Discover Earthbinder Rayge |q 29570/1 |goto 67.4,21.3
@@ -2391,7 +2522,7 @@ Talk to Windcaller Claw
 Discover Windcaller Claw |q 29570/2 |goto 41.5,25.4
 step
 kill The Black Stalker##17882
-collect Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5
+collect Black Stalker's Brain##24248 |q 29567/1 |goto The Underbog 25.9,45.5
 step
 Make sure you have picked up 5 Sanguine Hibiscus
 click Sanguine Hibiscus##5031
@@ -2417,7 +2548,7 @@ step
 talk Windcaller Claw##54851
 accept Windcaller Claw and the Water Thief##29615 |goto 18.9,27.8
 step
-kill 3 Bog Overlord##21694+|q 29614/1 |goto 33.7,22.7
+kill 3 Bog Overlord##21694+ |q 29614/1 |goto 33.7,22.7
 step
 kill Hydromancer Thespia##17797 |q 29615/1 |goto The Steamvault 54.3,12.4
 step
@@ -2425,7 +2556,7 @@ click Main Chambers Access Panel##7147 |goto 54.2,10.6
 You hear a faint echo...
 |confirm always
 step
-Go through the opening on your left. |goto 42.1,32.9 < 5
+Go through the opening on your left |goto 42.1,32.9 < 5
 Go up the ramp |goto 49.3,42.8 < 5
 Go up to the bridge on the right side |goto 55.8,47.3 < 5
 Cross the bridge and go through the hallway |goto 39.7,69.0 < 5
@@ -2452,15 +2583,9 @@ step
 talk Naturalist Bite##54849
 turnin Containment is Key##29614 |goto 17.6,25.9
 step
-goto 17.6,30.6 |n
-Leave The Steamvault |goto Zangarmarsh |noway |c
-step
-goto 51.9,38.2 |n
-Swim through the tunnel to the other side. |goto Zangarmarsh,50.4,40.9,0.5 |noway|c
-step
 click Wanted Poster##15
-accept Leader of the Darkcrest##9730 |goto 79.1,64.8
-accept Leader of the Bloodscale##9817 |goto 79.1,64.8
+accept Leader of the Darkcrest##9730 |goto Zangarmarsh 79.1,64.8
+accept Leader of the Bloodscale##9817 |goto Zangarmarsh 79.1,64.8
 step
 kill Rajah Haghazed##18046 |q 9730/1 |goto Zangarmarsh 65.1,68.7
 step
@@ -2471,9 +2596,9 @@ turnin Leader of the Darkcrest##9730 |goto 79.1,65.2
 turnin Leader of the Bloodscale##9817 |goto 79.1,65.2
 step
 talk Earthbinder Tavgren##18446
-turnin What's Wrong at Cenarion Thicket?##9957 |goto Terokkar Forest,44.3,26.3
-accept Strange Energy##9968 |goto Terokkar Forest,44.3,26.3
-accept Clues in the Thicket##9971 |goto Terokkar Forest,44.3,26.3
+turnin What's Wrong at Cenarion Thicket?##9957 |goto Terokkar Forest 44.3,26.3
+accept Strange Energy##9968 |goto Terokkar Forest 44.3,26.3
+accept Clues in the Thicket##9971 |goto Terokkar Forest 44.3,26.3
 step
 talk Warden Treelos##18424
 accept It's Watching You!##9951 |goto 45,22.5
@@ -2492,10 +2617,10 @@ talk Earthbinder Tavgren##18446
 turnin Clues in the Thicket##9971 |goto 44.3,26.3
 step
 kill Vicious Teromoth##18437+
-collect 4 Vicious Teromoth Sample |q 9968/2 |goto 44.1,23.8
+collect 4 Vicious Teromoth Sample##24279 |q 9968/2 |goto 44.1,23.8
 step
 kill Teromoth##18468+
-collect 4 Teromoth Sample |q 9968/1 |goto 45.8,29.8
+collect 4 Teromoth Sample##25672 |q 9968/1 |goto 45.8,29.8
 step
 talk Earthbinder Tavgren##18446
 turnin Strange Energy##9968 |goto 44.3,26.3
@@ -2507,12 +2632,12 @@ turnin By Any Means Necessary##9978 |goto 47.1,27
 accept Wind Trader Lathrai##9979 |goto 47.1,27
 step
 talk Wind Trader Lathrai##18484
-turnin Wind Trader Lathrai##9979 |goto Shattrath City,72.2,30.7
-accept A Personal Favor##10112 |goto Shattrath City,72.2,30.7
+turnin Wind Trader Lathrai##9979 |goto Shattrath City 72.2,30.7
+accept A Personal Favor##10112 |goto Shattrath City 72.2,30.7
 step
 kill Skithian Windripper##18453+
 kill Skithian Dreadhawk##18452+
-collect 5 Lathrai's Stolen Goods |q 10112/1 |goto Terokkar Forest 30.9,42.0
+collect 5 Lathrai's Stolen Goods##27861 |q 10112/1 |goto Terokkar Forest 30.9,42.0
 step
 talk Wind Trader Lathrai##18484
 turnin A Personal Favor##10112 |goto Shattrath City 72.3,30.9
@@ -2541,14 +2666,14 @@ talk Lieutenant Meridian##21006
 turnin Attack on Firewing Point##9996 |goto 69.6,44.6
 accept The Final Code##10446 |goto 69.6,44.6
 step
-Enter this building |goto 73.4,36.3 < 5
+Enter this building |goto 73.4,36.3 < 5 |walk
 click Orb of Translocation##7161
-Run up the ramp to [73.9,35.8]
+Run up the ramp |goto 73.9,35.8 < 10
 kill Sharth Voldoun##18554+
 collect The Final Code##29912 |goto 73.3,34.6
 step
 click Orb of Translocation##7161
-Teleport to the bottom of the tower |goto 73.3,36.3 < 5
+Teleport to the bottom of the tower |goto 73.3,36.3 < 5 |walk
 click Mana Bomb##7213
 Activate Mana Bomb |q 10446/1 |goto 71.3,37.4
 step
@@ -2557,14 +2682,14 @@ turnin The Final Code##10446 |goto 57.0,53.6
 accept Letting Earthbinder Tavgren Know##10005 |goto 57.0,53.6
 step
 talk Earthbinder Tavgren##18446
-turnin Letting Earthbinder Tavgren Know##10005 |goto Terokkar Forest,44.3,26.3
+turnin Letting Earthbinder Tavgren Know##10005 |goto Terokkar Forest 44.3,26.3
 step
 talk Lakotae##22420
 accept The Infested Protectors##10896 |goto 37.9,51.7
 step
 kill Infested Root-walker##22095+
-Kill the Wood Mites that come out of their corpses
-kill 25 Wood Mite |q 10896/1 |goto 35.2,48.8
+|tip Kill the Wood Mites that come out of their corpses.
+kill 25 Wood Mite##22419+ |q 10896/1 |goto 35.2,48.8
 You can find more Infested Root-walkers at [39.1,47.0]
 step
 talk Lakotae##22420
@@ -2594,9 +2719,9 @@ step
 talk Samia Inkling##21983
 accept Poaching from Poachers##10717 |goto 61.8,39.6
 step
-kill 10 Wyrmcult Hewer##21810 |q 10713/1 |goto 59.9,37.8
+kill 10 Wyrmcult Hewer##21810+ |q 10713/1 |goto 59.9,37.8
 kill Wyrmcult Poacher##21809+
-collect 5 Wyrmcult Net |q 10717/1 |goto 59.9,37.8
+collect 5 Wyrmcult Net##31119 |q 10717/1 |goto 59.9,37.8
 collect 1 Meeting Note##31120 |n
 Click the Meeting Note in your bags |use Meeting Note##31120
 accept Did You Get The Note?##10719
@@ -2632,37 +2757,33 @@ talk Watcher Moonshade##22386
 turnin Longtail is the Lynchpin##10893 |goto 49.9,35.9
 accept Meeting at the Blackwing Coven##10722 |goto 49.9,35.9
 step
-kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+ |goto 42.2,25.1
-Get the Understanding Ravenspeech buff |havebuff 132188
+kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+
+Get the Understanding Ravenspeech buff |havebuff 132188 |goto 42.2,25.1
 |tip Must be within melee range to receive the buff
-Anytime the buff wears off, kill Grishna mobs again to get it back
+|tip Anytime the buff wears off, kill Grishna mobs again to get it back.
 step
 Stand next to the wooden totem with the Understanding Ravenspeech buff on you
 |tip On the ground, next to a pond with basilisks in it.
 Receive the Third Prophecy |q 10607/3 |goto 40.7,18.7
-|model The Third Prophecy##7249
 step
 Stand next to the wooden totem with the Understanding Ravenspeech buff on you
 |tip Up the left ramp, then left across the hanging bridge.
 Receive the First Prophecy |q 10607/1 |goto 39,17.2
-|model The First Prophecy##7249
 step
 Stand next to the wooden totem with the Understanding Ravenspeech buff on you
 |tip Up the right ramp, then go right across the hanging bridge, then down the stairs to the left.
 Receive the Second Prophecy |q 10607/2 |goto 42.5,21.6
-|model The Second Prophecy##7249
 step
 Stand next to the wooden totem with the Understanding Ravenspeech buff on you
 |tip On the ground, in front of a hut.
 Receive the Fourth Prophecy |q 10607/4 |goto 40.2,23
-|model The Fourth Prophecy##7249
 step
 Go inside the cave
 kill Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
 collect 5 Costume Scraps##31121 |q 10722 |goto 32.3,34.9
 step
 Combine your 5 Costume Scraps to make an Overseer Disguise |use Costume Scraps##31121
-Put on the Overseer Disguise |havebuff 132760 |q 10722 |use Overseer Disguise##31122
+Put on the Overseer Disguise |use Overseer Disguise##31122 |havebuff 132760 |q 10722
 talk Kolphis Darkscale##22019
 Attend the meeting with Kolphis Darkscale |q 10722/1 |goto 32.6,37.5
 step
@@ -2670,11 +2791,11 @@ talk Tree Warden Chawn##22007
 turnin Meeting at the Blackwing Coven##10722 |goto 62.0,39.5
 accept Maxnar Must Die!##10748 |goto 62.0,39.5
 step
-Go inside the cave |goto Blade's Edge Mountains,32.1,34.1 < 5 |q 10748
+Go inside the cave |goto Blade's Edge Mountains 32.1,34.1 < 5 |walk
 kill Maxnar the Ashmaw##21389 |q 10748/1 |goto 33.9,35.4
 |tip Follow the cave path until it dead ends into him.
 step
-Leave the cave. |goto Blade's Edge Mountains,32.1,34.1 < 5 |q 10748
+Leave the cave |goto Blade's Edge Mountains 32.1,34.1 < 5 |walk
 talk Tree Warden Chawn##22007
 turnin Maxnar Must Die!##10748 |goto 62,39.5
 step
@@ -2692,7 +2813,7 @@ click Fertile Volcanic Soil##7297
 Plant the Ironroot Seeds |q 10771/1 |goto 71.7,22.4
 step
 click Fertile Volcanic Soil##7297
-Plant the Ironroot Seeds|q 10771/2 |goto 71.6,20.3
+Plant the Ironroot Seeds |q 10771/2 |goto 71.6,20.3
 step
 click Fertile Volcanic Soil##7297
 Plant the Ironroot Seeds |q 10771/3 |goto 71.6,18.5
@@ -2715,9 +2836,9 @@ turnin Little Embers##10770 |goto 61.2,38.4
 turnin From the Ashes##10771 |goto 61.2,38.4
 step
 Make sure you have your Felsworn Gas Mask in your bags |collect Felsworn Gas Mask##31366 |q 10819
-It has a 60 minute timer on it
+|tip It has a 60 minute timer on it.
 If you need another one, talk to Wildlord Antelarion at [62.6,39.6]
-Click here to continue. |confirm always
+Click here to continue |confirm always
 step
 Put on your Felsworn Gas Mask |equipped Felswron Gas Mask##31366 |use Felsworn Gas Mask##31366
 click Legion Communicator##7091
@@ -2741,23 +2862,23 @@ collect 5 Camp Anger Key##31536 |q 10821 |goto 73.0,41.0
 step
 Click the Legion Obelisk to activate it |goto 73.5,43.5
 |tip It's a metal structure with a floating tall metal piece in the middle of it.
-Click here to proceed. |confirm always
+Click here to proceed |confirm always
 step
 Click the Legion Obelisk to activate it |goto 75.3,41.7
 |tip It's a metal structure with a floating tall metal piece in the middle of it.
-Click here to proceed. |confirm always
+Click here to proceed |confirm always
 step
 Click the Legion Obelisk to activate it |goto 73.8,41.0
 |tip It's a metal structure with a floating tall metal piece in the middle of it.
-Click here to proceed. |confirm always
+Click here to proceed |confirm always
 step
 Click the Legion Obelisk to activate it |goto 75.4,40.6
 |tip It's a metal structure with a floating tall metal piece in the middle of it.
-Click here to proceed. |confirm always
+Click here to proceed |confirm always
 step
 Click the Legion Obelisk to activate it |goto 74.0,39.9
 |tip It's a metal structure with a floating tall metal piece in the middle of it.
-Click here to proceed. |confirm always
+Click here to proceed |confirm always
 step
 kill Doomcryer##19963 |q 10821/1 |goto 74.3,42.5
 step
@@ -2766,15 +2887,15 @@ turnin You're Fired!##10821 |goto 62.4,38.4
 accept Death's Door##10910 |goto 62.4,38.4
 step
 Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
-Talk to Evergrove Druid
+talk Evergrove Druid##22423
 turnin Death's Door##10910 |goto 63.2,65.5
 accept Harvesting the Fel Ammunition##10904 |goto 63.2,65.5
 step
 kill Death's Might##21519+, Deathforge Over-Smith##19978+, Death's Watch##21516+
-collect 5 Fel Cannonball |q 10904/1 |goto 63.8,66.5
+collect 5 Fel Cannonball##31757 |q 10904/1 |goto 63.8,66.5
 step
 Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
-Talk to Evergrove Druid
+talk Evergrove Druid##22423
 turnin Harvesting the Fel Ammunition##10904
 accept Fire At Will!##10911
 step
@@ -2799,34 +2920,34 @@ talk Wildlord Antelarion##22127
 turnin The Hound-Master##10912 |goto 62.7,39.4
 step
 talk Aurine Moonblaze##20871
-accept Flora of the Eco-Domes##10426 |goto Netherstorm,42.3,32.6
+accept Flora of the Eco-Domes##10426 |goto Netherstorm 42.3,32.6
 step
 Use Energy Field Modulator on Farahlon Lashers |use Energy Field Modulator##29818
 kill Mutated Farahlon Lasher##20774+
-Test Energy Modulator 10 times |q 10426/1 |goto 41.2,32.2
+Test Energy Modulator #10# Times |q 10426/1 |goto 41.2,32.2
 step
 talk Aurine Moonblaze##20871
 turnin Flora of the Eco-Domes##10426 |goto 42.3,32.6
 accept Creatures of the Eco-Domes##10427 |goto 42.3,32.6
 step
 kill Talbuk Doe##20610+, Talbuk Sire##20777
-Use the Talbuk Tagger on talbuks when they are below 20 percent health. |use Talbuk##29817
-Tag 12 Talbuk |q 10427/1 |goto 40.4,35.5
+Use the Talbuk Tagger on talbuks when they are below 20% health |use Talbuk##29817
+Tag #12# Talbuk |q 10427/1 |goto 40.4,35.5
 step
 talk Aurine Moonblaze##20871
 turnin Creatures of the Eco-Domes##10427 |goto 42.3,32.6
 accept When Nature Goes Too Far##10429 |goto 42.3,32.6
 step
 kill Markaru##20775+
-collect Hulking Hydra Heart |q 10429/1 |goto 44.3,28.5
+collect Hulking Hydra Heart##29768 |q 10429/1 |goto 44.3,28.5
 step
 talk Aurine Moonblaze##20871
 turnin When Nature Goes Too Far##10429 |goto 42.3,32.6
 step
 talk Arch Druid Lathorius##25809
-accept A Mission Statement##11864 |instant |goto Borean Tundra,57,44.3
-accept Ears of Our Enemies##11866 |goto Borean Tundra,57,44.3
-accept Help Those That Cannot Help Themselves##11876 |goto Borean Tundra,57,44.3
+accept A Mission Statement##11864 |instant |goto Borean Tundra 57,44.3
+accept Ears of Our Enemies##11866 |goto Borean Tundra 57,44.3
+accept Help Those That Cannot Help Themselves##11876 |goto Borean Tundra 57,44.3
 step
 talk Hierophant Cenius##25810
 accept Happy as a Clam##11869 |goto 57.3,44.1
@@ -2837,28 +2958,28 @@ step
 talk Zaza##25811
 accept Unfit for Death##11865 |goto 56.8,44
 step
-Use your D.E.H.T.A. Trap Smasher while standing next to Trapped Mammoth Calves|use D.E.H.T.A. Trap Smasher##35228
+Use your D.E.H.T.A. Trap Smasher while standing next to Trapped Mammoth Calves |use D.E.H.T.A. Trap Smasher##35228
 |tip They look like baby elephants laying on the ground in a trap.
-Free 8 Mammoth Calves |q 11876/1 |modelnpc 24613 |goto 53.8,40.6
+Free #8# Mammoth Calves |q 11876/1 |goto 53.8,40.6
 step
-kill 10 Loot Crazed Diver##25836 |q 11869/1  |goto 53.4,42.7
-kill Loot Crazed Divers|n
-collect 15 Nesingwary Lackey Ear |q 11866/1 |goto 53.4,42.7
+kill 10 Loot Crazed Diver##25836+ |q 11869/1  |goto 53.4,42.7
+kill Loot Crazed Divers
+collect 15 Nesingwary Lackey Ear##35188 |q 11866/1 |goto 53.4,42.7
 step
 Find and kill "Lunchbox"|kill "Lunchbox"|q 11884/2 |goto 46.4,40
 kill Nedar, Lord of Rhinos##25801|q 11884/1 |goto 46.4,40
-|tip He walks around this area.  Kill 'Lunchbox' and then Nedar, Lord of Rhinos will jump off.
+|tip He walks around this area. Kill 'Lunchbox' and then Nedar, Lord of Rhinos will jump off.
 step
 Stand inside the Caribou Traps on the ground
 |tip They look like metal spiked traps on the ground.
-Use your Pile of Fake Furs|use Pile of Fake Furs##35127
-Trap 8 Nesingwary Trappers |q 11865/1 |modelnpc 25835 |goto 56.2,50.5
+Use your Pile of Fake Furs |use Pile of Fake Furs##35127
+Trap #8# Nesingwary Trappers |q 11865/1 |goto 56.2,50.5
 step
 talk Arch Druid Lathorius##25809
 turnin Ears of Our Enemies##11866 |goto 57,44.3
 turnin Help Those That Cannot Help Themselves##11876 |goto 57,44.3
 accept Khu'nok Will Know##11878 |goto 57,44.3
-After you turn in Ears of Our Enemies, you will get a repeatable quest called Can't Get Ear-nough...
+|tip After you turn in Ears of Our Enemies, you will get a repeatable quest called Can't Get Ear-nough...
 step
 talk Hierophant Cenius##25810
 turnin Happy as a Clam##11869 |goto 57.3,44.1
@@ -2872,34 +2993,33 @@ turnin Unfit for Death##11865 |goto 56.8,44
 accept The Culler Cometh##11868 |goto 56.8,44
 step
 Deliver the Orphaned Mammoth Calf to Khu'nok |q 11878/1 |goto 59.5,30.4
-|modelnpc Mammoth Calf##24613, Khu'nok the Behemoth##25862
 step
 talk Khu'nok the Behemoth##25862
 turnin Khu'nok Will Know##11878 |goto 59.5,30.4
 accept Kaw the Mammoth Destroyer##11879 |goto 59.5,30.4
 step
-Ride around and find a Wooly Mammoth Bull|n |modelnpc 25743
-Click it to ride it|invehicle|c
+Ride around and find a Wooly Mammoth Bull
+Click it to ride it |invehicle |c |q 11879
 step
 Use the skills on your mammoth action bar to do the following:
 kill Kaw the Mammoth Destroyer##25802
 Click Kaw's War Halberd on the ground
-collect Kaw's War Halberd|q 11879/1 |goto 53.7,23.9
+collect Kaw's War Halberd##35234 |q 11879/1 |goto 53.7,23.9
 step
 talk Arch Druid Lathorius##25809
 turnin Kaw the Mammoth Destroyer##11879 |goto 57,44.3
 step
 kill Karen "I Don't Caribou" the Culler##25803 |q 11868/1 |goto 57.3,56.5
-|tip She walks around in this spot.  Be careful, she has 2 stealthed guards that come with her.
+|tip She walks around in this spot. Be careful, she has 2 stealthed guards that come with her.
 step
 talk Hierophant Liandra##25838
 turnin The Abandoned Reach##11870 |goto 57.8,55.1
 accept Not On Our Watch##11871 |goto 57.8,55.1
 step
-kill Northsea Thugs##25843 |n
-Click the Shipment of Animal Parts containers on the ground
+kill Northsea Thugs##25843
+click Shipment of Animal Parts##188018+
 |tip They look like brown bags and crates sitting on the ground around this area.
-collect 12 Shipment of Animal Parts|q 11871/1 |goto 59.1,55.9
+collect 12 Shipment of Animal Parts##35222 |q 11871/1 |goto 59.1,55.9
 step
 talk Hierophant Liandra##25838
 turnin Not On Our Watch##11871 |goto 57.8,55.1
@@ -2917,11 +3037,12 @@ step
 talk King Mrgl-Mrgl##25197
 accept Learning to Communicate##11571 |goto 43.5,14
 step
-Go southwest underwater to 42.5,15.9|goto 42.5,15.9
-kill Scalder##25226 |n
+Follow the path |goto 42.5,15.9 < 10
+|tip It's underwater.
+kill Scalder##25226
 |tip He is a water elemental that walks back and forth on the pink trench underwater.
 Use The King's Empty Conch on Scalder's corpse |use The King's Empty Conch##34598
-collect The King's Filled Conch|q 11571/1
+collect The King's Filled Conch##34623 |q 11571/1
 step
 click Winterfin Clam##261
 collect 5 Winterfin Clam##34597 |goto 42.5,16.4
@@ -2938,11 +3059,13 @@ accept Them!##11561 |goto 42.8,13.7
 step
 talk King Mrgl-Mrgl##25197
 accept Oh Noes, the Tadpoles!##11560 |goto 43.5,14
+stickystart "rescuetadpoles"
 step
-kill 15 Winterfin murlocs|q 11561/1 |goto 40.6,17.5
-click Cage##1787
-Rescue 20 Winterfin Tadpoles |q 11560/1 |goto 40.6,17.5
-|modelnpc Winterfin Oracle##25216+, Winterfin Shorestriker##25215+, Winterfin Warrior##25217+
+kill Winterfin Oracle##25216+, Winterfin Shorestriker##25215+, Winterfin Warrior##25217+
+Kill #15# Winterfin Murlocs |q 11561/1 |goto 40.6,17.5
+step "rescuetadpoles"
+click Cage##1787+
+Rescue #20# Winterfin Tadpoles |q 11560/1 |goto 40.6,17.5
 step
 talk Brglmurgl##25199
 turnin Them!##11561 |goto 42.8,13.7
@@ -2959,10 +3082,10 @@ talk Cleaver Bmurglbrm##25211
 accept Succulent Orca Stew##11564 |goto 42,13.2
 step
 kill Glrggl##25203
-collect Glrggl's Head |q 11563/1 |goto 37.4,9.8
+collect Glrggl's Head##34617 |q 11563/1 |goto 37.4,9.8
 step
 kill Glimmer Bay Orca##25204+ |n
-collect 7 Succulent Orca Blubber|q 11564/1 |goto 40.3,12.4
+collect 7 Succulent Orca Blubber##34618 |q 11564/1 |goto 40.3,12.4
 step
 talk Mrmrglmr##25205
 turnin Grmmurggll Mrllggrl Glrggl!!!##11563 |goto 42,12.8
@@ -2975,51 +3098,49 @@ talk King Mrgl-Mrgl##25197
 turnin The Spare Suit##11565 |goto 43.5,14
 accept Surrender... Not!##11566 |goto 43.5,14
 step
-Go southwest to Winterfin Village|n
+Go southwest to Winterfin Village
 Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620
 step
-Go inside the cave |goto 37.8,23.2
 talk Glrglrglr##28375
-accept Keymaster Urmgrgl##11569
+|tip He is inside the cave.
+accept Keymaster Urmgrgl##11569 |goto 37.8,23.2
 step
-Go down the path and underneath |goto 38.4,22.7
 kill Keymaster Urmgrgl##25210
-collect Urmgrgl's Key|q 11569/1
+collect Urmgrgl's Key##34600 |q 11569/1 |goto 38.4,22.7
 step
-Follow the path up and to the back of the cave |goto 37.6,27.4
 kill Claximus##25209
-collect Claw of Claximus|q 11566/1
+|tip He is at the back of the cave.
+collect Claw of Claximus##34621 |q 11566/1 |goto 37.6,27.4
 step
-Go back up the path |goto 37.8,23.2
 talk Glrglrglr##28375
-turnin Keymaster Urmgrgl##11569
+turnin Keymaster Urmgrgl##11569 |goto 37.8,23.2
 step
 talk Lurgglbr##25208
-accept Escape from the Winterfin Caverns##11570 |goto 37.8,23
-Escort Lurgglbr to safety |q 11570/1
+accept Escape from the Winterfin Caverns##11570
+Escort Lurgglbr to Safety |q 11570/1 |goto 37.8,23
 step
 talk King Mrgl-Mrgl##25197
 turnin Surrender... Not!##11566 |goto 43.5,14
 turnin Escape from the Winterfin Caverns##11570 |goto 43.5,14
 step
-If you are not Exalted with the Cenarion Expedition, you can turn in Lackey Ears for a repeatable quest, or run Heroic Dungeons.
-The Heroic Dungeons are Slave Pens, Underbog and Steamvault.
+If you are not Exalted with the Cenarion Expedition, you can turn in Lackey Ears for a repeatable quest, or run Heroic Dungeons
+The Heroic Dungeons are Slave Pens, Underbog and Steamvault
 Click here to do the repeatable quest |confirm
 step
 label ears
 kill Northsea Mercenary##25839+, Northsea Thug##25843+
 collect Nesingwary Lackey Ear##35188 |goto Borean Tundra 60.9,63.4
-Collect Lackey Ears in stacks of 15.
-When you want to turn in Lackey Ears, click here. |next "turnin" |confirm
+Collect Lackey Ears in stacks of 15
+When you want to turn in Lackey Ears, click here |next "turnin" |confirm
 step
 label turnin
 talk Arch Druid Lathorius##25809
 accept Can't Get Ear-Nough##11867 |n |goto 57.1,44.3
-Click here to go back to farming ears. |next "ears" |confirm
+Click here to go back to farming ears |next "ears" |confirm
 Keep repeating this quest until you are Exalted with the Cenarion Expedition |condition rep('Cenarion Expedition')==Exalted |next "exalted"
 step
 label exalted
-Congratulations, you are now Exalted with the Cenarion Expedition!'
+Congratulations, you are now Exalted with the Cenarion Expedition!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Insane\\Bloodsail Buccaneers Group",{
 keywords={"The, Insane, In, Membrane"},

@@ -177,6 +177,10 @@ collect 250 Witchberries##74846 |condition itemcount(74846)>=250
 |tip You can also buy these from the Auction House.
 |only if skill("Way of the Brew") < 600 and _G.UnitFactionGroup("player")=="Horde"
 step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Brew") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
 Open Your Cooking Crafting Panel:
 _<Create 5 Banquet of the Brew>_
 |tip Create campfire if there isn't one nearby.
@@ -185,6 +189,612 @@ Click here to continue |confirm
 step
 _Congratulations!_
 You reached level 600 with the Way of the Brew cooking profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Grill",{
+condition_end="achieved(7300)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Way","of","the","Grill"},
+description="This guide will walk you through completing the \"Way of the Grill\" Cooking path.",
+},[[
+step
+_Before Starting This Guide:_
+Reach at least 530 Cooking Skill
+Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
+You will also need to unlock the farm through "The Tillers" faction
+Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
+Click here to continue |confirm
+step
+talk Sungshin Ironpaw##64231
+accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Sliced Peaches |q 31281/1
+collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
+accept Ready for Greatness##31302 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
+buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Rice Pudding |q 31302/1
+collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin Ready for Greatness##31302 |goto 53.6,51.2
+accept Way of the Grill##31311 |goto 53.6,51.2
+step
+collect 5 Raw Tiger Steak##74833 |q 31311/1 |condition itemcount(74833)>=5
+|tip These can be farmed from Tigers in the Jade Forest.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+talk Kol Ironpaw##58712
+turnin Way of the Grill##31311 |goto 52.97,51.31
+accept Strong as a Tiger##31467 |goto 52.97,51.31
+step
+talk Kol Ironpaw##58712
+Learn Charbroiled Tiger Steak |learn Charbroiled Tiger Steak##104298 |q 31467/1 |goto 52.97,51.31
+step
+collect 5 Raw Tiger Steak##74833 |q 31467
+|tip These can be farmed from Tigers in the Jade Forest.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Charbroiled Tiger Steak>_
+|tip Create campfire if there isn't one nearby.
+collect 5 Charbroiled Tiger Steak##74642 |q 31467/2 |goto 52.91,51.44
+step
+talk Kol Ironpaw##58712
+turnin Strong as a Tiger##31467 |goto 52.97,51.31
+step
+collect 15 Raw Tiger Steak##74833
+|tip These can be farmed from Tigers in the Jade Forest.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 550 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Charboiled Tiger Steak>_
+|tip Create campfire if there isn't one nearby.
+Reach 550 Way of the Grill style cooking |skill Way of the Grill,550 |goto 52.91,51.44
+Click here to continue |confirm
+step
+talk Kol Ironpaw##58712
+Learn Eternal Blossom Fish |learn Eternal Blossom Fish##104299 |goto 52.97,51.31
+step
+collect 13 Jade Lungfish##74856 |condition itemcount(74856)>=13
+|tip These can be fished in rivers in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 65 Striped Melon##74848 |condition itemcount(74848)>=65
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Eternal Blossom Fish>_
+|tip Create campfire if there isn't one nearby.
+Reach 576 Way of the Grill style cooking |skill Way of the Grill,576 |goto 52.94,51.41
+Click here to continue |confirm
+step
+talk Kol Ironpaw##58712
+Learn Banquet of the Grill |learn Banquet of the Grill##126492 |goto 52.98,51.34
+step
+You will need to start collecting Ironpaw Tokens to continue progression
+Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
+Use the Pandaria Cooking Dailies guide to accomplish this
+Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
+|only if skill("Way of the Grill") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Redbelly Mandarin##74860 |condition itemcount(74860)>=50
+|tip These can be fished in Townlong Steppes near the Fields of Niuzao.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Raw Crab Meat##74838 |condition itemcount(74838)>=50
+|tip These can be farming from Much Sifters in the Dread Wastes.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 250 White Turnip##74850 |condition itemcount(74850)>=250
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Grill") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Grill") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Banquet of the Pot>_
+|tip Create campfire if there isn't one nearby.
+Reach 600 Way of the Grill style cooking |skill Way of the Grill,600 |goto 52.94,51.41
+Click here to continue |confirm
+step
+_Congratulations!_
+You reached level 600 with the Way of the Grill cooking profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Oven",{
+condition_end="achieved(7304)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Way","of","the","Oven"},
+description="This guide will walk you through completing the \"Way of the Oven\" Cooking path.",
+},[[
+step
+_Before Starting This Guide:_
+Reach at least 530 Cooking Skill
+Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
+You will also need to unlock the farm through "The Tillers" faction
+Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
+Click here to continue |confirm
+step
+talk Sungshin Ironpaw##64231
+accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Sliced Peaches |q 31281/1
+collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
+accept Ready for Greatness##31302 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
+buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Rice Pudding |q 31302/1
+collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin Ready for Greatness##31302 |goto 53.6,51.2
+accept Way of the Oven##31478 |goto 53.6,51.2
+step
+collect 5 Wildfowl Breast##74839 |q 31478/1 |condition itemcount(74839)>=5
+|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+talk Jian Ironpaw##58716
+turnin Way of the Oven##31478 |goto 53.40,51.60
+accept Endurance##31477 |goto 53.40,51.60
+step
+talk Jian Ironpaw##58716
+Learn Wildfowl Roast |learn Wildfowl Roast##104310 |q 31477/1 |goto 53.40,51.60
+step
+collect 5 Wildfowl Breast##74839 |q 31477
+|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Wildfowl Roast>_
+|tip Create campfire if there isn't one nearby.
+collect 5 Wildfowl Roast##74654 |q 31477/2 |goto 52.91,51.44
+step
+talk Jian Ironpaw##58716
+turnin Endurance##31477 |goto 53.40,51.60
+step
+collect 15 Wildfowl Breast##74839
+|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Oven") < 550 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Wildfowl Roast>_
+|tip Create campfire if there isn't one nearby.
+Reach 550 Way of the Oven style cooking |skill Way of the Oven,550 |goto 52.91,51.44
+Click here to continue |confirm
+step
+talk Jian Ironpaw##58716
+Learn Twin Fish Platter |learn Twin Fish Platter##104311 |goto 53.40,51.60
+step
+collect 26 Krasarang Paddlefish##74865 |condition itemcount(74837)>=13
+|tip These can be fished from rivers in Krasarang Wilds.
+|tip These can also be fished from schools in the Yan-Zhe River, in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Oven") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Twin Fish Platter>_
+|tip Create campfire if there isn't one nearby.
+Reach 576 Way of the Oven style cooking |skill Way of the Oven,576 |goto 52.94,51.41
+Click here to continue |confirm
+step
+talk Jian Ironpaw##58716
+Learn Banquet of the Oven |learn Banquet of the Oven##126501 |goto 53.40,51.60
+step
+You will need to start collecting Ironpaw Tokens to continue progression
+Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
+Use the Pandaria Cooking Dailies guide to accomplish this
+Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
+|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Krasarang Paddlefish##74865 |condition itemcount(74865)>=50
+|tip These can be fished from rivers in Krasarang Wilds.
+|tip These can also be fished from schools in the Yan-Zhe River, in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Raw Turtle Meat##74837 |condition itemcount(74837)>=50
+|tip These can be farmed from Young Turtles in the Jade Forest.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 250 Mogu Pumpkin##74842 |condition itemcount(74842)>=250
+|tip These can be looted from Vermin enemies.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Banquet of the Pot>_
+|tip Create campfire if there isn't one nearby.
+Reach 600 Way of the Pot style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
+Click here to continue |confirm
+step
+_Congratulations!_
+You reached level 600 with the Way of the Pot cooking profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Pot",{
+condition_end="achieved(7302)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Way","of","the","Pot"},
+description="This guide will walk you through completing the \"Way of the Pot\" Cooking path.",
+},[[
+step
+_Before Starting This Guide:_
+Reach at least 530 Cooking Skill
+Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
+You will also need to unlock the farm through "The Tillers" faction
+Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
+Click here to continue |confirm
+step
+talk Sungshin Ironpaw##64231
+accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Sliced Peaches |q 31281/1
+collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
+accept Ready for Greatness##31302 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
+buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Rice Pudding |q 31302/1
+collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin Ready for Greatness##31302 |goto 53.6,51.2
+accept Way of the Pot##31472 |goto 53.6,51.2
+step
+collect 5 Jade Lungfish##74856 |q 31472/1 |condition itemcount(74856)>=5
+|tip These can be fished in rivers in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+talk Mei Mei Ironpaw##58714
+turnin Way of the Pot##31472 |goto 52.54,51.59
+accept The Soup of Contemplation##31474 |goto 52.54,51.59
+step
+talk Mei Mei Ironpaw##58714
+Learn Swirling Mist Soup |learn Swirling Mist Soup##104304 |q 31474/1 |goto 52.63,51.51
+step
+collect 5 Jade Lungfish##74856 |q 31474
+|tip These can be fished in rivers in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Swirling Mist Soup>_
+|tip Create campfire if there isn't one nearby.
+collect 5 Swirling Mist Soup##74644 |q 31474/2 |goto 52.91,51.44
+step
+talk Mei Mei Ironpaw##58714
+turnin The Soup of Contemplation##31474 |goto 52.63,51.51
+step
+collect 15 Jade Lungfish##74856
+|tip These can be fished in rivers in Valley of the Four Winds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 550 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Swirling Mist Soup>_
+|tip Create campfire if there isn't one nearby.
+Reach 550 Way of the Pot style cooking |skill Way of the Pot,550 |goto 52.91,51.44
+Click here to continue |confirm
+step
+talk Mei Mei Ironpaw##58714
+Learn Braised Turtle |learn Braised Turtle##104305 |goto 52.63,51.51
+step
+collect 13 Emperor Salmon##74837 |condition itemcount(74837)>=13
+|tip These can be fished from rivers in Krasarang Wilds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 65 Juicycrunch Carrot##74841 |condition itemcount(74841)>=65
+|tip These can be looted from Saurok enemies.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Braised Turtle>_
+|tip Create campfire if there isn't one nearby.
+Reach 576 Way of the Pot style cooking |skill Way of the Pot,576 |goto 52.94,51.41
+Click here to continue |confirm
+step
+talk Mei Mei Ironpaw##58714
+Learn Banquet of the Pot |learn Banquet of the Pot##126497 |goto 52.63,51.51
+step
+You will need to start collecting Ironpaw Tokens to continue progression
+Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
+Use the Pandaria Cooking Dailies guide to accomplish this
+Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
+|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Reef Octopus##74864 |condition itemcount(74864)>=50
+|tip These can be fished from pools in the Jade Forest.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Mushan Ribs##74834 |condition itemcount(74834)>=50
+|tip These can be farmed from Mushan in the Dread Wastes.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 250 Juicycruch Carrot##74841 |condition itemcount(74841)>=250
+|tip These can be looted from Zandalari Troll enemies.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Banquet of the Pot>_
+|tip Create campfire if there isn't one nearby.
+Reach 600 Way of the Pot style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
+Click here to continue |confirm
+step
+_Congratulations!_
+You reached level 600 with the Way of the Pot cooking profession.
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Steamer",{
+condition_end="achieved(7303)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Way","of","the","Steamer"},
+description="This guide will walk you through completing the \"Way of the Steamer\" Cooking path.",
+},[[
+step
+_Before Starting This Guide:_
+Reach at least 530 Cooking Skill
+Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
+You will also need to unlock the farm through "The Tillers" faction
+Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
+Click here to continue |confirm
+step
+talk Sungshin Ironpaw##64231
+accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Sliced Peaches |q 31281/1
+collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
+accept Ready for Greatness##31302 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
+buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Sliced Peaches>_
+|tip Create campfire if there isn't one nearby.
+Make #5# Rice Pudding |q 31302/1
+collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
+step
+talk Sungshin Ironpaw##64231
+turnin Ready for Greatness##31302 |goto 53.6,51.2
+accept Way of the Steamer##31475 |goto 53.6,51.2
+step
+collect 5 Giant Mantis Shrimp##74857 |q 31475/1 |condition itemcount(74857)>=5
+|tip These can be fished along the coast of The Dread Wastes.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+talk Anthea Ironpaw##58713
+turnin Way of the Steamer##31475 |goto 52.68,52.01
+accept The Spirit of Cooking##31476 |goto 52.68,52.01
+step
+talk Yan Ironpaw##58715
+Learn Shrimp Dumplings |learn Shrimp Dumplings##104307 |q 31476/1 |goto 52.55,51.76
+step
+collect 5 Giant Mantis Shrimp##74857 |q 31476
+|tip These can be fished along the coast of The Dread Wastes.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+step
+Open Your Cooking Crafting Panel:
+_<Create 5 Shrimp Dumplings>_
+|tip Create campfire if there isn't one nearby.
+collect 5 Shrimp Dumplings##74651 |q 31476/2 |goto 52.91,51.44
+Click here to continue |confirm
+step
+talk Yan Ironpaw##58715
+turnin The Spirit of Cooking##31476 |goto 52.55,51.76
+step
+collect 5 Giant Mantis Shrimp##74857
+|tip These can be fished along the coast of The Dread Wastes.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 550 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Shrimp Dumplings>_
+|tip Create campfire if there isn't one nearby.
+Reach 550 Way of the Steamer style cooking |skill Way of the Steamer,550 |goto 52.91,51.44
+Click here to continue |confirm
+step
+talk Yan Ironpaw##58715
+Learn Fire Spirit Salmon |learn Fire Spirit Salmon##104308 |goto 52.55,51.75
+step
+collect 13 Emperor Salmon##74859 |condition itemcount(74859)>=13
+|tip These can be fished from rivers in Krasarang Wilds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 65 Scallions##74843 |condition itemcount(74843)>=65
+|tip These can be looted from Saurok enemies.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 576 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Fire Spirit Salmon>_
+|tip Create campfire if there isn't one nearby.
+Reach 576 Way of the Steamer style cooking |skill Way of the Steamer,576 |goto 52.94,51.41
+Click here to continue |confirm
+step
+talk Anthea Ironpaw##58713
+Learn Banquet of the Steamer |learn Banquet of the Steamer##126499 |goto 52.55,51.76
+step
+You will need to start collecting Ironpaw Tokens to continue progression
+Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
+Use the Pandaria Cooking Dailies guide to accomplish this
+Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
+|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Wildfowl Breast##74839 |condition itemcount(74839)>=50
+|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 50 Emperor Salmon##74859 |condition itemcount(74859)>=50
+|tip These can be fished from rivers in Krasarang Wilds.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+collect 250 Jade Squash##74847 |condition itemcount(74847)>=250
+|tip These can be looted from Hozen enemies.
+|tip You can use your farm in Halfhill to grow these.
+|tip You can also trade "Ironpaw Tokens" for bags of them.
+|tip You can also buy these from the Auction House.
+|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
+Open Your Cooking Crafting Panel:
+_<Create Banquet of the Steamer>_
+|tip Create campfire if there isn't one nearby.
+Reach 600 Way of the Steamer style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
+Click here to continue |confirm
+step
+_Congratulations!_
+You reached level 600 with the Way of the Steamer cooking profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Wok",{
 condition_end="achieved(7301)",
@@ -328,6 +938,10 @@ collect 250 Red Blossom Leek##74844 |condition itemcount(74844)>=250
 |tip You can also buy these from the Auction House.
 |only if skill("Way of the Wok") < 600 and _G.UnitFactionGroup("player")=="Horde"
 step
+talk Nam Ironpaw##64395
+buy 5 100 Year Soy Sauce##74853 |condition itemcount(74853)>=5 |goto 53.53,51.25
+|only if skill("Way of the Wok") < 600 and _G.UnitFactionGroup("player")=="Horde"
+step
 Open Your Cooking Crafting Panel:
 _<Create 5 Banquet of the Wok>_
 |tip Create campfire if there isn't one nearby.
@@ -336,449 +950,6 @@ Click here to continue |confirm
 step
 _Congratulations!_
 You reached level 600 with the Way of the Wok cooking profession.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Steamer",{
-condition_end="achieved(7303)",
-author="support@zygorguides.com",
-startlevel=85,
-endlevel=90,
-keywords={"Cooking","Way","of","the","Steamer"},
-description="This guide will walk you through completing the \"Way of the Steamer\" Cooking path.",
-},[[
-step
-_Before Starting This Guide:_
-Reach at least 530 Cooking Skill
-Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
-You will also need to unlock the farm through "The Tillers" faction
-Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
-Click here to continue |confirm
-step
-talk Sungshin Ironpaw##64231
-accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Sliced Peaches |q 31281/1
-collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
-accept Ready for Greatness##31302 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
-buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Rice Pudding |q 31302/1
-collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin Ready for Greatness##31302 |goto 53.6,51.2
-accept Way of the Steamer##31475 |goto 53.6,51.2
-step
-collect 5 Giant Mantis Shrimp##74857 |q 31475/1 |condition itemcount(74857)>=5
-|tip These can be fished along the coast of The Dread Wastes.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-talk Anthea Ironpaw##58713
-turnin Way of the Steamer##31475 |goto 52.68,52.01
-accept The Spirit of Cooking##31476 |goto 52.68,52.01
-step
-talk Yan Ironpaw##58715
-Learn Shrimp Dumplings |learn Shrimp Dumplings##104307 |q 31476/1 |goto 52.55,51.76
-step
-collect 5 Giant Mantis Shrimp##74857 |q 31476
-|tip These can be fished along the coast of The Dread Wastes.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Shrimp Dumplings>_
-|tip Create campfire if there isn't one nearby.
-collect 5 Shrimp Dumplings##74651 |q 31476/2 |goto 52.91,51.44
-Click here to continue |confirm
-step
-talk Yan Ironpaw##58715
-turnin The Spirit of Cooking##31476 |goto 52.55,51.76
-step
-collect 5 Giant Mantis Shrimp##74857
-|tip These can be fished along the coast of The Dread Wastes.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 550 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Shrimp Dumplings>_
-|tip Create campfire if there isn't one nearby.
-Reach 550 Way of the Steamer style cooking |skill Way of the Steamer,550 |goto 52.91,51.44
-Click here to continue |confirm
-step
-talk Yan Ironpaw##58715
-Learn Fire Spirit Salmon |learn Fire Spirit Salmon##104308 |goto 52.55,51.75
-step
-collect 13 Emperor Salmon##74859 |condition itemcount(74859)>=13
-|tip These can be fished from rivers in Krasarang Wilds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 576 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 65 Scallions##74843 |condition itemcount(74843)>=65
-|tip These can be looted from Saurok enemies.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 576 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Fire Spirit Salmon>_
-|tip Create campfire if there isn't one nearby.
-Reach 576 Way of the Steamer style cooking |skill Way of the Steamer,576 |goto 52.94,51.41
-Click here to continue |confirm
-step
-talk Anthea Ironpaw##58713
-Learn Banquet of the Steamer |learn Banquet of the Steamer##126499 |goto 52.55,51.76
-step
-You will need to start collecting Ironpaw Tokens to continue progression
-Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
-Use the Pandaria Cooking Dailies guide to accomplish this
-Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
-|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Wildfowl Breast##74839 |condition itemcount(74839)>=50
-|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Emperor Salmon##74859 |condition itemcount(74859)>=50
-|tip These can be fished from rivers in Krasarang Wilds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 250 Jade Squash##74847 |condition itemcount(74847)>=250
-|tip These can be looted from Hozen enemies.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Steamer") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Banquet of the Steamer>_
-|tip Create campfire if there isn't one nearby.
-Reach 600 Way of the Steamer style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
-Click here to continue |confirm
-step
-_Congratulations!_
-You reached level 600 with the Way of the Steamer cooking profession.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Pot",{
-condition_end="achieved(7302)",
-author="support@zygorguides.com",
-startlevel=85,
-endlevel=90,
-keywords={"Cooking","Way","of","the","Pot"},
-description="This guide will walk you through completing the \"Way of the Pot\" Cooking path.",
-},[[
-step
-_Before Starting This Guide:_
-Reach at least 530 Cooking Skill
-Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
-You will also need to unlock the farm through "The Tillers" faction
-Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
-Click here to continue |confirm
-step
-talk Sungshin Ironpaw##64231
-accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Sliced Peaches |q 31281/1
-collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
-accept Ready for Greatness##31302 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
-buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Rice Pudding |q 31302/1
-collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin Ready for Greatness##31302 |goto 53.6,51.2
-accept Way of the Pot##31472 |goto 53.6,51.2
-step
-collect 5 Jade Lungfish##74856 |q 31472/1 |condition itemcount(74856)>=5
-|tip These can be fished in rivers in Valley of the Four Winds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-talk Mei Mei Ironpaw##58714
-turnin Way of the Pot##31472 |goto 52.54,51.59
-accept The Soup of Contemplation##31474 |goto 52.54,51.59
-step
-talk Mei Mei Ironpaw##58714
-Learn Swirling Mist Soup |learn Swirling Mist Soup##104304 |q 31474/1 |goto 52.63,51.51
-step
-collect 5 Jade Lungfish##74856 |q 31474
-|tip These can be fished in rivers in Valley of the Four Winds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Swirling Mist Soup>_
-|tip Create campfire if there isn't one nearby.
-collect 5 Swirling Mist Soup##74644 |q 31474/2 |goto 52.91,51.44
-step
-talk Mei Mei Ironpaw##58714
-turnin The Soup of Contemplation##31474 |goto 52.63,51.51
-step
-collect 15 Jade Lungfish##74856
-|tip These can be fished in rivers in Valley of the Four Winds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 550 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Swirling Mist Soup>_
-|tip Create campfire if there isn't one nearby.
-Reach 550 Way of the Pot style cooking |skill Way of the Pot,550 |goto 52.91,51.44
-Click here to continue |confirm
-step
-talk Mei Mei Ironpaw##58714
-Learn Braised Turtle |learn Braised Turtle##104305 |goto 52.63,51.51
-step
-collect 13 Emperor Salmon##74837 |condition itemcount(74837)>=13
-|tip These can be fished from rivers in Krasarang Wilds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 576 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 65 Juicycrunch Carrot##74841 |condition itemcount(74841)>=65
-|tip These can be looted from Saurok enemies.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 576 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Braised Turtle>_
-|tip Create campfire if there isn't one nearby.
-Reach 576 Way of the Pot style cooking |skill Way of the Pot,576 |goto 52.94,51.41
-Click here to continue |confirm
-step
-talk Mei Mei Ironpaw##58714
-Learn Banquet of the Pot |learn Banquet of the Pot##126497 |goto 52.63,51.51
-step
-You will need to start collecting Ironpaw Tokens to continue progression
-Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
-Use the Pandaria Cooking Dailies guide to accomplish this
-Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
-|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Reef Octopus##74864 |condition itemcount(74864)>=50
-|tip These can be fished from pools in the Jade Forest.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Mushan Ribs##74834 |condition itemcount(74834)>=50
-|tip These can be farmed from Mushan in the Dread Wastes.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 250 Juicycruch Carrot##74841 |condition itemcount(74841)>=250
-|tip These can be looted from Zandalari Troll enemies.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Pot") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Banquet of the Pot>_
-|tip Create campfire if there isn't one nearby.
-Reach 600 Way of the Pot style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
-Click here to continue |confirm
-step
-_Congratulations!_
-You reached level 600 with the Way of the Pot cooking profession.
-]])
-ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Way of the Oven",{
-condition_end="achieved(7302)",
-author="support@zygorguides.com",
-startlevel=85,
-endlevel=90,
-keywords={"Cooking","Way","of","the","Oven"},
-description="This guide will walk you through completing the \"Way of the Oven\" Cooking path.",
-},[[
-step
-_Before Starting This Guide:_
-Reach at least 530 Cooking Skill
-Click here to load the Cooking Leveling Guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Cooking 1-520 Leveling Guide"
-You will also need to unlock the farm through "The Tillers" faction
-Click here to load The Tillers Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\The Tillers Dailies"
-Click here to continue |confirm
-step
-talk Sungshin Ironpaw##64231
-accept So You Want to Be a Chef...##31281 |goto Valley of the Four Winds 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Sliced Peaches |learn Salt and Pepper Shank##125117 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Pandaren Peach##74660 |q 31281 |condition itemcount(74660)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Sliced Peaches |q 31281/1
-collect 5 Sliced Peaches##86057 |q 31281/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin So You Want to Be a Chef...##31281 |goto 53.6,51.2
-accept Ready for Greatness##31302 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-Learn Rice Pudding |learn Rice Pudding##125122 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-buy 5 Rice##74851 |q 31302 |goto 53.6,51.2 |condition itemcount(74851)>=5 |goto 53.6,51.2
-buy 5 Yak Milk##74852 |q 31302 |goto 53.6,51.2 |condition itemcount(74852)>=5 |goto 53.6,51.2
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Sliced Peaches>_
-|tip Create campfire if there isn't one nearby.
-Make #5# Rice Pudding |q 31302/1
-collect 5 Rice Pudding##86069 |q 31302/2 |goto 53.6,51.2
-step
-talk Sungshin Ironpaw##64231
-turnin Ready for Greatness##31302 |goto 53.6,51.2
-accept Way of the Oven##31478 |goto 53.6,51.2
-step
-collect 5 Wildfowl Breast##74839 |q 31478/1 |condition itemcount(74839)>=5
-|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-talk Jian Ironpaw##58716
-turnin Way of the Oven##31478 |goto 53.40,51.60
-accept Endurance##31477 |goto 53.40,51.60
-step
-talk Jian Ironpaw##58716
-Learn Wildfowl Roast |learn Wildfowl Roast##104310 |q 31477/1 |goto 53.40,51.60
-step
-collect 5 Wildfowl Breast##74839 |q 31477
-|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Wildfowl Roast>_
-|tip Create campfire if there isn't one nearby.
-collect 5 Wildfowl Roast##74654 |q 31477/2 |goto 52.91,51.44
-step
-talk Jian Ironpaw##58716
-turnin Endurance##31477 |goto 53.40,51.60
-step
-collect 15 Wildfowl Breast##74839
-|tip These can be looted from Whitefisher Cranes in Valley of the Four Winds.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Oven") < 550 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Wildfowl Roast>_
-|tip Create campfire if there isn't one nearby.
-Reach 550 Way of the Oven style cooking |skill Way of the Oven,550 |goto 52.91,51.44
-Click here to continue |confirm
-step
-talk Jian Ironpaw##58716
-Learn Twin Fish Platter |learn Twin Fish Platter##104311 |goto 53.40,51.60
-step
-collect 26 Krasarang Paddlefish##74865 |condition itemcount(74837)>=13
-|tip These can be fished from rivers in Krasarang Wilds.
-|tip These can also be fished from schools in the Yan-Zhe River, in Valley of the Four Winds.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Oven") < 576 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create Twin Fish Platter>_
-|tip Create campfire if there isn't one nearby.
-Reach 576 Way of the Oven style cooking |skill Way of the Oven,576 |goto 52.94,51.41
-Click here to continue |confirm
-step
-talk Jian Ironpaw##58716
-Learn Banquet of the Oven |learn Banquet of the Oven##126501 |goto 53.40,51.60
-step
-You will need to start collecting Ironpaw Tokens to continue progression
-Collect 5 Ironpaw Tokens |condition curcount(402) >= 5
-Use the Pandaria Cooking Dailies guide to accomplish this
-Click here to load the Pandaria Cooking Dailies guide |confirm |next "Zygor's Dailies Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies"
-|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Reef Octopus##74864 |condition itemcount(74864)>=50
-|tip These can be fished from pools in the Jade Forest.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 50 Mushan Ribs##74834 |condition itemcount(74834)>=50
-|tip These can be farmed from Mushan in the Dread Wastes.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-collect 250 Juicycruch Carrot##74841 |condition itemcount(74841)>=250
-|tip These can be looted from Zandalari Troll enemies.
-|tip You can use your farm in Halfhill to grow these.
-|tip You can also trade "Ironpaw Tokens" for bags of them.
-|tip You can also buy these from the Auction House.
-|only if skill("Way of the Oven") < 600 and _G.UnitFactionGroup("player")=="Horde"
-step
-Open Your Cooking Crafting Panel:
-_<Create 5 Banquet of the Pot>_
-|tip Create campfire if there isn't one nearby.
-Reach 600 Way of the Pot style cooking |skill Way of the Steamer,600 |goto 52.94,51.41
-Click here to continue |confirm
-step
-_Congratulations!_
-You reached level 600 with the Way of the Pot cooking profession.
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Enchanting\\Leveling Guides\\Enchanting 500-600 Leveling Guide",{
 author="support@zygorguides.com",

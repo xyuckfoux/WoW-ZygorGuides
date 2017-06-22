@@ -208,3 +208,7 @@ step
 _Congratulations!_
 You completed the Eye of Azshara dungeon.
 ]])
+ZGV.BETASTART()
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZGV.BETAEND()

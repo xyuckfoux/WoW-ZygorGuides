@@ -119,6 +119,19 @@ click Aethril Cluster##0
 Aethril Cluster gathered |q 41545/1 |goto 40.03,9.73
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41286
+Follow the path |goto Azsuna/0 63.36,30.21 < 20 |only if walking
+Follow the path |goto 62.93,34.47 < 25 |only if walking
+Follow the path |goto 62.53,36.10 < 25 |only if walking
+Follow the path |goto 61.32,39.14 < 25 |only if walking
+accept Aethril Cluster##41286 |goto Azsuna/0 61.54,41.80
+|tip You will accept this quest automatically.
+step
+kill Lost Gatherer##109070
+click Aethril Cluster##0
+Aethril Cluster gathered |q 41286/1 |goto 61.54,41.80
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42652
 Cross the bridge |goto Azsuna/0 56.49,62.07 < 30 |only if walking
 Follow the path up |goto 55.77,65.84 < 30 |only if walking
@@ -295,11 +308,13 @@ collect 10 Bushy Aethril##140951 |q 41529/1 |goto 62.25,49.27
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43193
-Cross the bridge |goto 56.51,62.07 < 30 |only if walking
-accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
+Follow the path |goto Azsuna/0 46.98,73.18 < 20 |only if walking
+Follow the path |goto 44.83,74.88 < 25 |only if walking
+Follow the path |goto 42.32,78.05 < 20 |only if walking
+accept Calamitous Intent##43193 |goto Azsuna/0 38.01,84.81
 |tip You will accept this quest automatically.
 step
-kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
+kill Calamir##109331 |q 43193/1 |goto 38.01,84.81
 |tip
 _DAMAGE:_ |only if grouprole("DAMAGE")
 |tip Run away when Calamir casts Howling Gale. |only if grouprole("DAMAGE")

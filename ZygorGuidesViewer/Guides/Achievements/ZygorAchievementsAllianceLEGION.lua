@@ -1415,6 +1415,22 @@ step
 _Congratulations!_
 You have earned the _Heroic: Halls of Valor_ achievement
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Return to Karazhan",{
+condition_end="achieved(11929)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Heroic","Return","to","Karazhan"},
+description="This guide will walk you through completing the \"Heroic: Return to Karazhan\" Achievement.",
+},[[
+step
+For this achievement, complete Return to Karazhan on Heroic or higher difficulty
+Click here to load the "Return to Karazhan" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Karazhan\\Return to Karazhan"
+Defeat Viz'aduum the Watcher in Return to Karazhan on Heroic difficulty or higher |achieve 11929
+step
+_Congratulations!_
+You have earned the _Heroic: Return to Karazhan_ achievement
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Heroic: Neltharion's Lair",{
 condition_end="achieved(10796)",
 author="support@zygorguides.com",
@@ -2209,7 +2225,7 @@ step
 _Congratulations!_
 You have earned the _Mythic: Cathedral of Eternal Night_ achievement
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Wailing Caverns",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Pet Battle Challenge: Wailing Caverns",{
 condition_end="achieved(11765)",
 author="support@zygorguides.com",
 startlevel=110,
@@ -2224,6 +2240,22 @@ Complete the Pet Battle Dungeon in the Wailing Caverns |achieve 11765
 step
 _Congratulations!_
 You have earned the _Pet Battle Challenge: Wailing Caverns_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Dungeons\\Legion\\Pet Battle Challenge: Deadmines",{
+condition_end="achieved(11856)",
+author="support@zygorguides.com",
+startlevel=110,
+endlevel=110,
+keywords={"Pet","Battle","Wailing","Caverns"},
+description="This guide will walk you through completing the \"Pet Battle Challenge: Deadmines\" Achievement.",
+},[[
+step
+For this achievement, complete Pet Battle Challenge: Deadmines
+Click here to load the "Pet Battle Challenge: Wailing Caverns" dungeon guide |confirm |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+Complete the Pet Battle Dungeon in the Deadmines |achieve 11856
+step
+_Congratulations!_
+You have earned the _Pet Battle Challenge: Deadmines_ achievement
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Legion Brawler's Guild\\Educated Guesser",{
@@ -5050,6 +5082,184 @@ step
 _Congratulations!_
 You have earned the _Legion Fisherman_ achievement
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\The Wish Remover",{
+condition_end="achieved(10722)",
+author="support@zygorguides.com",
+startlevel=100,
+keywords={"The","Wish","Remover"},
+description="This guide will walk you through completing the \"The Wish Remover\" Achievement.",
+},[[
+step
+For this achievement you will need to fish up all of the different coins from the Dalaran Fountain
+|tip You can fish up the same coin more then once, so this achievement will take quite awhile to complete.
+Buy Lures from Marica Chase, standing next to the fountain, these will help acquire these coins quicker
+|tip With the Fishing artifact these lures last 4 minuties without they only last 2.
+|tip It is not determined if different Lures give a higher chance to get a certain coin, so just try them all, but be sure to keep one lure buff up at all times.
+Fish for the coins here |cast Fishing##131474 |goto Dalaran L/10 52.28,66.37
+Click here to see your progress |confirm
+step
+label "Coins 1"
+Fish for the coins here |cast Fishing##131474 |goto Dalaran L/10 52.28,66.37
+collect Stellagosa's Silver Coin##138894 |achieve 10722/1
+collect Prince Farondis' Royal Seal##138892 |achieve 10722/2
+collect Runas' Last Copper##138893 |achieve 10722/3
+collect Senegos' Ancient Coin##138895 |achieve 10722/4
+collect Okuna Longtusk's Doubloon##138896 |achieve 10722/5
+collect Ooker's Dookat##138897 |achieve 10722/6
+collect Coin of Golk the Rumble##138898 |achieve 10722/7
+collect Daglop's Infernal Copper Coin##138899 |achieve 10722/8
+collect Tyrande's Coin##138901 |achieve 10722/9
+collect Malfurion's Coin##138902 |achieve 10722/10
+collect Kur'talos Ravencrest's Spectral Coin##138903 |achieve 10722/11
+collect Jarod Shadowsong's Coin##138904 |achieve 10722/12
+collect Penelope Heathrow's Allowance##138905 |achieve 10722/13
+collect Remulos' Sigil##138906 |achieve 10722/14
+collect Elothir's Golden Leaf##138907 |achieve 10722/15
+collect Koda's Sigil##138908 |achieve 10722/16
+collect King Mrgl-Mrgl's Coin##138909 |achieve 10722/17
+collect Hemet Nesingwary's Bullet##138910 |achieve 10722/18
+collect Murky's Coin##138911 |achieve 10722/19
+collect Spiritwalker Ebonhorn's Coin##138912 |achieve 10722/20
+Click here to see your progress on more of the coins |confirm |or
+Click here if you have gathered all of the coins |confirm |or |next "Coins complete" |only if achieved(10722)
+step
+label "Coins 2"
+Fish for the coins here |cast Fishing##131474 |goto Dalaran L/10 52.28,66.37
+collect Addie Fizzlebog's Coin##138913 |achieve 10722/21
+collect Boomboom Brullingsworth's Coin##138914 |achieve 10722/22
+collect The Candleking's Candelcoin##138915 |achieve 10722/23
+collect Torok Bloodtotem's Coin##138916 |achieve 10722/24
+collect God-King Skocald's Fel-Tainted Coin##138917 |achieve 10722/25
+collect Genn Greymane's Coin##138918 |achieve 10722/26
+collect Nathanos Blightcaller's Coin##138919 |achieve 10722/27
+collect Helya's Coin##138920 |achieve 10722/28
+collect Sir Finley Mrrgglton's Coin##138921 |achieve 10722/29
+collect Havi's Coin##138922 |achieve 10722/30
+collect Vydhar's Wooden Nickel##138923 |achieve 10722/31
+collect Rax Sixtrigger's Gold-Painted Copper Coin##138924 |achieve 10722/32
+collect First Arcanist Thalyssra's Coin##138925 |achieve 10722/33
+collect Magistrix Elisande's Coin##138926 |achieve 10722/34
+collect Oculeth's Vanishing Coin##138927 |achieve 10722/35
+collect Ly'leth Lunastre's Family Crest##138928 |achieve 10722/36
+collect Pearlhunter Phin's Soggy Coin##138929 |achieve 10722/37
+Click here to check your progress in the previous step |confirm |or |next "Coins 1"
+Click here to see your progress on more of the coins |confirm |or
+Click here if you have gathered all of the coins |confirm |or |next "Coins complete" |only if achieved(10722)
+step
+Fish for the coins here |cast Fishing##131474 |goto Dalaran L/10 52.28,66.37
+collect Advisor Vandros' Coin##138930 |achieve 10722/38
+collect Gul'dan's Coin##138931 |achieve 10722/39
+collect Yowlon's Mark##138932|achieve 10722/40
+collect Allari the Souleater's Coin##138933 |achieve 10722/41
+collect Altruis the Sufferer's Coin##138934 |achieve 10722/42
+collect Cyana Nightglaive's Coin##138935 |achieve 10722/43
+collect Falara Nightsong's Coin##138936 |achieve 10722/44
+collect Izal Whitemoon's Coin##138937 |achieve 10722/45
+collect Jace Darkweaver's Coin##138938 |achieve 10722/46
+collect Kayn Sunfury's Coin##138939 |achieve 10722/47
+collect Korvas Bloodthorn's Coin##138940 |achieve 10722/48
+collect The Coin##138941 |achieve 10722/49
+collect Blingtron's Botcoin##138942 |achieve 10722/50
+collect Lady Liadrin's Coin##138943 |achieve 10722/51
+collect Lunara's Coin##138944 |achieve 10722/52
+collect Illidan's Coin##138945 |achieve 10722/53
+collect Queen Azshara's Royal Seal##138946 |achieve 10722/54
+collect Gallywix's Coin-on-a-String##138947 |achieve 10722/55
+collect Li Li's Coin##138948 |achieve 10722/56
+Click here to see your progress on the first step of coins |confirm |or |next "Coins 1"
+Click here to check your progress in the previous step |confirm |or |next "Coins 2"
+Click here if you have gathered all of the coins |confirm |or |next "Coins complete" |only if achieved(10722)
+step
+label "Coins complete"
+_Congratulations!_
+You have earned the _The Wish Remover_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\Fishing\\Fishing 'Round the Isles",{
+condition_end="achieved(10598)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"The","Fishing","Round","Isles"},
+description="This guide will walk you through completing the \"Fishing 'Round the Isles\" Achievement.",
+},[[
+step
+For this achievement you will need to complete every Fishing World Quest on the Broken Isles
+Take a look at our Legion World Quest Guides to accomplish this |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+|tip These fishing world quests are not always available, and at most there will only be 2 up at one time.
+confirm
+step
+label "Fishing WQ"
+Complete the World Quest "Huge Mossgill Perch" |achieve 10598/1
+Complete the World Quest "Work Order: Cursed Queenfish" |achieve 10598/2
+Complete the World Quest "Lively Runescale Koi" |achieve 10598/3
+Complete the World Quest "Lively Cursed Queenfish" |achieve 10598/4
+Complete the World Quest "Queen Queenfish" |achieve 10598/5
+Complete the World Quest "Wild Northern Barracuda" |achieve 10598/6
+Complete the World Quest "Huge Cursed Queenfish" |achieve 10598/7
+Complete the World Quest "Huge Runescale Koi" |achieve 10598/8
+Complete the World Quest "Lively Highmountain Salmon" |achieve 10598/9
+Complete the World Quest "Lively Stormrays" |achieve 10598/10
+Complete the World Quest "Huge Highmountain Salmon" |achieve 10598/11
+Complete the World Quest "Buoy Fishing" |achieve 10598/12
+Click here if you need more help from our World Quest guides |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to check your progress on the next list |confirm |or
+Click here if you have completed all of the Fishing World Quests |confirm |or |next "Fishing WQ Complete" |only if achieved(10598)
+step
+Complete the World Quest "Raft Fishing" |achieve 10598/13
+Complete the World Quest "Huge Stormrays" |achieve 10598/14
+Complete the World Quest "Slippery Stormrays" |achieve 10598/15
+Complete the World Quest "Cave Fishing" |achieve 10598/16
+Complete the World Quest "Work Order: Stormrays" |achieve 10598/17
+Complete the World Quest "Work Order: Highmountain Salmon" |achieve 10598/18
+Complete the World Quest "Lively Mossgill Perch" |achieve 10598/19
+Complete the World Quest "Migrating Highmountain Salmon" |achieve 10598/20
+Complete the World Quest "Rocket Boot Fishing" |achieve 10598/21
+Complete the World Quest "Work Order: Mossgill Perch" |achieve 10598/22
+Complete the World Quest "Work Order: Runescale Koi" |achieve 10598/23
+Complete the World Quest "The Angler Mangler" |achieve 10598/24
+Click here if you need more help from our World Quest guides |confirm |or |next "Zygor's Dailies Guides\\Legion\\World Quests"
+Click here to check your progress with the last list |confirm |or |next "Fishing WQ"
+Click here if you have completed all of the Fishing World Quests |confirm |or |next "Fishing WQ Complete" |only if achieved(10598)
+step
+label "Fishing WQ Complete"
+_Congratulations!_
+You have earned the _Fishing 'Round the Isles_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Professions\\First Aid\\Is There a Medic in the Zone?",{
+condition_end="achieved(11138)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Is","There","Medic","Zone"},
+description="This guide will walk you through completing the \"Is There a Medic in the Zone?\" Achievement.",
+},[[
+step
+For this achievement you will need to Come to the aid of 10 wounded travelers across the Broken Shores
+Click here to check out our First Aid Quest Line guide |confirm |or |next "Zygor's Profession Guides\\First Aid\\Quest Guides\\Legion First Aid Quest Line"
+|confirm |or
+step
+You do not need to complete all 16, you only need 10 to complete this achievement
+Complete the "Blood Letter" quest line |achieve 11138/1
+Complete the "Blood Note" quest line |achieve 11138/2
+Complete the "Bloody Plea" quest line |achieve 11138/3
+Complete the "Bloody Prayer" quest line |achieve 11138/4
+Complete the "Bloody Request" quest line |achieve 11138/5
+Complete the "Crumpled Letter" quest line |achieve 11138/6
+Complete the "Crumpled Note" quest line |achieve 11138/7
+Complete the "Crumpled Request" quest line |achieve 11138/8
+Complete the "Fevered Letter" quest line |achieve 11138/9
+Complete the "Fevered Note" quest line |achieve 11138/10
+Complete the "Fevered Plea" quest line |achieve 11138/11
+Complete the "Fevered Prayer" quest line |achieve 11138/12
+Complete the "Fevered Request" quest line |achieve 11138/13
+Complete the "Singed Letter" quest line |achieve 11138/14
+Complete the "Singed Note" quest line |achieve 11138/15
+Complete the "Singed Plea" quest line |achieve 11138/16
+Click here if you need more help using our First Aid Quest Line guide |confirm |or |next "Zygor's Profession Guides\\First Aid\\Quest Guides\\Legion First Aid Quest Line"
+Click here if you have completed 10 of the First Aid Quest Lines |confirm |or |next "First Aid Zone Medic" |only if achieved(11138)
+step
+label "First Aid Zone Medic"
+_Congratulations!_
+You have earned the _Is There a Medic in the Zone?_ achievement
+]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Cataclysm\\20 Dungeon Quests Completed",{
 condition_end="achieved(4957)",
@@ -6007,6 +6217,37 @@ Complete "Champions of Legionfall" |achieve 11846
 step
 _Congratulations!_
 You have earned the _Champions of Legionfall_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Quests\\Legion\\Breaching the Tomb",{
+condition_end="achieved(11546)",
+author="support@zygorguides.com",
+startlevel=110,
+keywords={"Breaching","the","Tomb"},
+description="This guide will walk you through completing the \"Breaching the Tomb\" Achievement.",
+},[[
+step
+For this achievement you will need to complete all of the quest lines associated with the Broken Shore
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+confirm
+step
+Complete Armies of Legionfall |achieve 11546/1
+Complete Assault on Broken Shore |achieve 11546/2
+Complete Begin Construction |achieve 11546/3
+Complete Aaigen Point |achieve 11546/4
+Complete Vengeance Point |achieve 11546/5
+Complete Defending Broken Isles |achieve 11546/6
+Complete Champions of Legionfall |achieve 11546/7
+Complete Shard Times |achieve 11546/8
+Complete Mark of the Sentinax |achieve 11546/9
+Complete Self-Fulfilling Prophecy |achieve 11546/10
+Complete Intolerable Infestation |achieve 11546/11
+Complete Relieved of Their Valuables |achieve 11546/12
+Complete Take Out the Head... |achieve 11546/13
+Complete Championing Our Cause |achieve 11546/14
+Complete Strike Them Down |achieve 11546/15
+step
+_Congratulations!_
+You have earned the _Breaching the Tomb_ achievement
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Raid\\Legion\\A Change In Scenery",{
@@ -7230,7 +7471,7 @@ You can use the World Quest guide to get Artifact Power Tokens
 Click here to load the World Quest Guide |confirm |next "Zygor's Dailies Guides\\Legion\\World Quests"
 Use the Suramar guide to unlock big chunks of Artifact Power if you haven't
 Click here to load the Suramar guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Suramar (110)"
-Unlock a new set of traits for one artiface |achieve 11772
+Unlock a new set of traits for one artifact |achieve 11772
 step
 _Congratulations!_
 You have earned the _Power Ascended_ achievement
@@ -7968,50 +8209,453 @@ step
 label "start"
 You will be collecting 5 pieces of any of the tier 8 armors, attainted form Ulduar
 _Important:_ You will be unable to earn this achievement if you are a Monk or Demon Hunter
+Be sure to right click your character portrait and set the Raid size to _25-Man_
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
 step
-kill Thorim##32865
-10-Man: Shoulder token drops here
-25-Man: Headpiece token drops here
-Click here to load the  |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
-Click here to continue |confirm
+talk Magister Sarien##33963
+buy Gloves of Unerring Aim##45836 |condition itemcount(45836) == 1 |goto Dalaran/1 65.69,24.43
+buy Belt of the Ardent Marksman##45827 |condition itemcount(45827) == 1 |goto Dalaran/1 65.69,24.43
+buy Leggings of the Tireless Sentry##45844 |condition itemcount(45844) == 1 |goto Dalaran/1 65.69,24.43
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 65.67,24.45 |n
+buy Breastplate of the Warward Protector##45633 |goto Dalaran/1 65.67,24.45 |n
+Use the Crown of the Wayward Protector |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Protector |use Chestguard of the Wayward Conqueror##45638
 Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Hunter
+|only Horde
 step
-kill Hodir##32845
-10-Man: Leg token drops here
-25-Man: Chest token drops here
-Click here to load the  |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
-Click here to continue |confirm
+talk Arcanist Firael##33964
+buy Gloves of Unerring Aim##45836 |condition itemcount(45836) == 1 |goto Dalaran/1 38.63,55.10
+buy Belt of the Ardent Marksman##45827 |condition itemcount(45827) == 1 |goto Dalaran/1 38.63,55.10
+buy Leggings of the Tireless Sentry##45844 |condition itemcount(45844) == 1 |goto Dalaran/1 38.63,55.10
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Warward Protector##45633 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Protector |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Protector |use Chestguard of the Wayward Conqueror##45638
 Earn the Mogg-Saron Achievement |achieve 11751
-step
-kill Freya##32906
-10-Man: Glove token drops here
-25-Man: Leg token drops here
-Click here to load the Naxxramas guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
-Earn the Mogg-Saron Achievement |achieve 11751
-step
-kill Mimiron##33350
-10-Man: Headpiece token drops here
-25-Man: Glove token drops here
-Click here to load the Naxxramas Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
-Click here to continue |confirm
-Earn the Mogg-Saron Achievement |achieve 11751
+|only Hunter
+|only Alliance
 step
 kill Yogg-Saron##33288
-10-Man: Chest token drops here
 25-Man: Shoulder token drops here
-Click here to load The Obsidian Sanctum Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Use the Mantle of the Wayward Protector if it dropped |use Mantle of the Wayward Protector##45657
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
 Click here to continue |confirm
 Earn the Mogg-Saron Achievement |achieve 11751
+|only Hunter
 step
-If you didn't collect a piece from the same set, you will need to wait a week until the Raid resets
-|tip Use the calender to check out your lockout status.
-Use your _Wayward Token_ to redeem a tier 8 set piece for your class
-Alternatively, you can attempt to collect the set on an different character
-Click here to go back to the start of the guide |confirm |next "start"
+talk Magister Sarien##33963
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 65.67,24.45 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 65.67,24.45 |n
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
 Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Paladin
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Paladin
+|only Alliance
+step
+For Damek to appear, you will need 425 _Marks of the World Tree_, which are gathered from Molten Front Offensive dailies
+You will need to complete the quests "Druids of the Talon", "The Shadow Wardens" and "Additional Armaments"
+Click here to load the Fireland Dailies and Prequest guide |next "Zygor's Dailies Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests"
+buy Rickety Belt##70120 |condition itemcount(70120) == 1 |goto Molten Front 47.0,90.6
+buy Ricket's Gun Show##70121 |condition itemcount(70121) == 1 |goto Molten Front 47.0,90.6
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Paladin
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Paladin
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Click here to load the Ulduar guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Paladin
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Chestguard of the Wayward Conqueror if it dropped |use Chestguard of the Wayward Conqueror##45635
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Paladin
+step
+talk Magister Sarien##33963
+buy Belt of the Singing Blade##45824 |goto Dalaran/1 65.67,24.45 |n
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 65.67,24.45 |n
+buy Breastplate of the Warward Protector##45633  |condition itemcount(45831) == 1 |goto Dalaran/1 65.67,24.45
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Warrior
+|only Horde
+step
+talk Magister Sarien##33963
+buy Belt of the Singing Blade##45824 |goto Dalaran/1 38.63,55.10 |n
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Warward Protector##45633  |condition itemcount(45831) == 1 |goto Dalaran/1 38.63,55.10
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Warrior
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warrior
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warrior
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warrior
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 65.67,24.45 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 65.67,24.45 |n
+buy Sash of Potent Incantation##45831 |condition itemcount(45831) == 1 |goto Dalaran/1 65.67,24.45
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Warlock
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 38.63,55.10 |n
+buy Sash of Potent Incantation##45831 |condition itemcount(45831) == 1 |goto Dalaran/1 38.63,55.10
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Warlock
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warlock
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warlock
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Warlock
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 51.98,72.08 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 51.98,72.08 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Rogue
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Rogue
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Rogue
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Rogue
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Rogue
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 65.67,24.45 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 65.67,24.45 |n
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Priest
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Conqueror##45638 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Conqueror##45632 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Conqueror |use Crown of the Wayward Conqueror##45638
+Use the Chestguard of the Wayward Conqueror |use Chestguard of the Wayward Conqueror##45638
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Priest
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Priest
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Priest
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Priest
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 51.98,72.08 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 51.98,72.08 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Druid
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Druid
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Druid
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Druid
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Druid
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 43.47,49.15 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 43.47,49.15 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Mage
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only Mage
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Mage
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Mage
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Mage
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 65.70,24.46 |n
+buy Breastplate of the Warward Protector##45633 |goto Dalaran/1 65.70,24.46 |n
+Use the Crown of the Wayward Protector |use Crown of the Wayward Protector##45639
+Use the Chestguard of the Wayward Protector |use Chestguard of the Wayward Protector##45636
+Click here to continue |confirm
+|only Shaman
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Protector##45639 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Warward Protector##45633 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Protector |use Crown of the Wayward Protector##45639
+Use the Chestguard of the Wayward Protector |use Chestguard of the Wayward Protector##45636
+Click here to continue |confirm
+|only Shaman
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Shaman
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Shaman
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only Shaman
+step
+talk Magister Sarien##33963
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 51.98,72.08 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 51.98,72.08 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only DeathKnight
+|only Horde
+step
+talk Arcanist Firael##33964
+buy Crown of the Wayward Vanquisher##45640 |goto Dalaran/1 38.63,55.10 |n
+buy Breastplate of the Wayward Vaquisher##45634 |goto Dalaran/1 38.63,55.10 |n
+Use the Crown of the Wayward Vanquisher |use Crown of the Wayward Vanquisher##45640
+Use the Breastplate of the Wayward Vaquisher |use Breastplate of the Wayward Vaquisher##45634
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only DeathKnight
+|only Alliance
+step
+kill Freya##32906
+25-Man: Leg token drops here
+Use the Legplates of the Wayward Conqueror |use Legplates of the Wayward Conqueror##45653
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only DeathKnight
+step
+kill Mimiron##33350
+25-Man: Glove token drops here
+Use the Gauntlets of the Wayward Conqueror |use Gauntlets of the Wayward Conqueror##45641
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only DeathKnight
+step
+kill General Vezax##33271
+25-man:
+collect Boots of the Underdweller##45501 |condition itemcount(45501) == 1
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+Click here to continue |confirm
+|only DeathKnight
+step
+kill Yogg-Saron##33288
+25-Man: Shoulder token drops here
+Use the Mantle of the Wayward Conqueror |use Mantle of the Wayward Conqueror##45656
+Click here to load the Ulduar Guide |confirm |next "Zygor's Dungeon Guides\\Northrend Raids\\Ulduar"
+Click here to continue |confirm
+Earn the Mogg-Saron Achievement |achieve 11751
+|only DeathKnight
 step
 _Congratulations!_
 You have earned the _Mogg-Saron_ achievement

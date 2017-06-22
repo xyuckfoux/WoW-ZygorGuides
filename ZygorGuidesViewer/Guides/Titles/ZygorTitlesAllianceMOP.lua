@@ -442,19 +442,26 @@ step
 Congratulations, you now have the _Zookeeper_ Title!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Professions\\Cooking\\Master of the Ways",{
+condition_end="achieved(7306)",
 author="support@zygorguides.com",
-description="This guide section will assist you in achieving the Master of the Ways title.",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Ways"},
+description="This guide will walk you through completing the \"Master of the Ways\" Achievement.",
 },[[
 step
-This Title requires that you complete level 600 in all six ways of Pandaren Cooking. Refer to the Zygor Guides Professions section for help with this achievement. |achieve 7306
-Achieved Master of the Wok. |achieve 7301
-Achieved Master of the Grill. |achieve 7300
-Achieved Master of the Brew. |achieve 7305
-Achieved Master of the Steamer. |achieve 7303
-Achieved Master of the Pot. |achieve 7302
-Achieved Master of the Oven. |achieve 7304
+This Title requires that you complete level 600 in all six ways of Pandaren Cooking
+Refer to the Zygor Guides Professions section for help with this achievement
+Load the Way of the Brew cooking guide |achieve 7305 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Brew"
+Load the Way of the Grill cooking guide |achieve 7300 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Grill"
+Load the Way of the Oven cooking guide |achieve 7304 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Oven"
+Load the Way of the Pot cooking guide |achieve 7302 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Pot"
+Load the Way of the Steamer cooking guide |achieve 7303 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Steamer"
+Load the Way of the Wok cooking guide |achieve 7301 |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Wok"
+Earn the Master of the Ways achievement |achieve 7306
 step
-Congratulations, you now have the _Master of the Ways_ Title!
+Congratulations!
+You now have the _Master of the Ways_ title
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Mists of Pandaria Titles\\Reputations\\The Beloved",{
 author="support@zygorguides.com",

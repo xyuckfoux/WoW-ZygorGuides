@@ -8,7 +8,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Aspirant",[[
 		accept Up To The Challenge##13678 |goto Icecrown 76.3,24.3
 	step
 		talk Magister Edien Sunhollow##33542
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13673 |or |goto 76.3,24.4
 		accept A Worthy Weapon##13674 |or |goto 76.3,24.4
 		accept The Edge of Winter##13675 |or |goto 76.3,24.4
@@ -20,12 +20,12 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Aspirant",[[
 		accept Learning the Reins##13677 |goto 76.2,24.4
 	step
 		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
-		talk Maiden of Ashwood Lake##33220 |goto Grizzly Hills 61.2,50.3
-		Tell her you are glad to help
-		collect Ashwood Brand |q 13673/1 
+		talk Maiden of Ashwood Lake##33220
+		Tell her _"I am glad to help."_
+		collect Ashwood Brand |q 13673/1 |goto Grizzly Hills 61.2,50.3
 	step
 		click Winter Hyacinth##3231
 		collect 4 Winter Hyacinth##45000 |q 13674 |goto Icecrown 69.1,76.2
@@ -38,29 +38,31 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Aspirant",[[
 		kill Lord Everblaze##33289
 		collect 1 Everburning Ember##45005 |q 13675 |goto Crystalsong Forest 54.5,74.9
 	step
-		Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
+		clicknpc Maiden of Winter's Breath##33303
+		Use the Everburning Ember |use Everburning Ember##45005
 		collect Winter's Edge |q 13675/1 |goto Howling Fjord 42.2,19.7
 	step
 		kill Vrykul Necrolord##31783+, Frostbrood Whelp##31718+
-		kill 8 Icecrown Scourge |q 13676/1 |goto Icecrown 74.8,35.5
+		Kill #8# Icecrown Scourge |q 13676/1 |goto Icecrown 74.8,35.5
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13677 |goto 75.6,23.7
 	step
-		Target a Melee Target
+		click Melee Target
 		|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks.
-		Use your Thrust ability to attack the target 5 times |q 13677/1 |goto 73.1,24.8
+		Use your Thrust Ability #5# Times |q 13677/1 |goto 73.1,24.8
 	step
-		Target a Charge Target from a distance
-		Use Shield-Breaker ability until you notice the targets Defend is gone
-		Use your Charge ability on the Charge Target 2 times |q 13677/3 |goto 72.9,25.1
+		click Charge Target
+		|tip Use Shield-Breaker ability until you notice the targets Defend is gone.
+		Use your Charge Ability #2# Times |q 13677/3 |goto 72.9,25.1
 	step
-		Target a Ranged Target from a distance
+		click Ranged Target
 		Use Shield-Breaker ability on Ranged Target to bring it's shields down
-		Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13677/2 |goto 73.3,25.0
+		Use Shield-Breaker ability on Ranged Target #2# Times |q 13677/2 |goto 73.3,25.0
+		|tip These will only count if the target's shields are down.
 	step
 		talk Magister Edien Sunhollow##33542
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13673 |goto 76.3,24.4
 		turnin A Worthy Weapon##13674 |goto 76.3,24.4
 		turnin The Edge of Winter##13675 |goto 76.3,24.4
@@ -88,11 +90,11 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		Click to mount the Stabled Sunreaver Hawkstrider |invehicle |q 13680 |goto 71.8,20.0
 	step
 		talk Squire David##33447
-		Tell him you are ready to fight!
+		Tell him _"I am ready to fight!"_
 		|tip Use your Defend ability on your hotbar to max your shield out at 3 charges before telling Squire David this.
-		An Argent Valiant runs up on a horse
+		kill Argent Valiant##33448
 		Use the abilities on your hotbar to defeat the Argent Valiant
-		|tip The best strategy to defeat the Argent Valiant is to always make sure your shield is up by using your Defend ability. Then, use your Shield-Breaker ability to bring down the Argent Valiant's shield. When his shield is down, use your Charge ability on him.  Keep repeating this process until he is defeated.
+		|tip The best strategy to defeat the Argent Valiant is to always make sure your shield is up by using your Defend ability. Then, use your Shield-Breaker ability to bring down the Argent Valiant's shield. When his shield is down, use your Charge ability on him. Keep repeating this process until he is defeated.
 		Defeat the Argent Valiant |q 13680/1 |goto 71.4,19.6
 	step
 		talk Magister Edien Sunhollow##33542
@@ -130,7 +132,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	// ORC VALIANT RANK DAILY LOOP (BEGIN)
 	step
 		talk Mokra the Skullcrusher##33361
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13762 |or |goto 76.5,24.6
 		accept A Worthy Weapon##13763 |or |goto 76.5,24.6
 		accept The Edge Of Winter##13764 |or |goto 76.5,24.6
@@ -146,62 +148,63 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		only Orc
 	step
 		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 		talk Maiden of Ashwood Lake##33220
-		collect Ashwood Brand |q 13762/1 |goto Grizzly Hills,61.2,50.3
+		collect Ashwood Brand |q 13762/1 |goto Grizzly Hills 61.2,50.3
 		only Orc
 	step
 		click Winter Hyacinth##3231
-		collect 4 Winter Hyacinth##45000 |q 13763 |goto Icecrown,69.1,76.2
+		collect 4 Winter Hyacinth##45000 |q 13763 |goto Icecrown 69.1,76.2
 		only Orc
 	step
 		Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 		Listen to the Maiden of Drak'Mar
 		click Blade of Drak'Mar##8564
-		collect Blade of Drak'Mar |q 13763/1 |goto Dragonblight,93.2,26.1
+		collect Blade of Drak'Mar |q 13763/1 |goto Dragonblight 93.2,26.1
 		only Orc
 	step
 		kill Lord Everblaze##33289
 		collect 1 Everburning Ember##45005 |q 13764 |goto Crystalsong Forest 54.5,74.9
 		only Orc
 	step
-		Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
+		clicknpc Maiden of Winter's Breath##33303
+		Use the Everburning Ember |use Everburning Ember##45005
 		collect Winter's Edge##45003 |q 13764/1 |goto Howling Fjord 42.2,19.7
 		only Orc
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
-		Click to mount the Stabled Campaign Warhorse|invehicle |q 13856 |goto Icecrown 48.9,71.4
+		Equip the Horde Lance |use Horde Lance##46070
+		Click to mount the Stabled Campaign Warhorse |invehicle |q 13856 |goto Icecrown 48.9,71.4
 		only Orc
 	step
-		kill 15 Boneguard Footman##33438 |q 13856/1 |goto 50.1,74.8
+		kill 15 Boneguard Footman##33438+ |q 13856/1 |goto 50.1,74.8
 		|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
-		kill 10 Boneguard Scout##33550 |q 13856/2 |goto 50.1,74.8
+		kill 10 Boneguard Scout##33550+ |q 13856/2 |goto 50.1,74.8
 		|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-		kill 3 Boneguard Lieutenant##33429 |q 13856/3 |goto 50.1,74.8
-		|tip They ride horses around this area. Use your Shield-Breaker ability on them to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+		kill 3 Boneguard Lieutenant##33429+ |q 13856/3 |goto 50.1,74.8
+		|tip They ride horses around this area. Use your Shield-Breaker ability on them to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 		only Orc
 	step
 		Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13856 |goto 49.1,71.4
 		only Orc
 	step
-		kill 10 Converted Hero##32255 |q 13765/1 |goto 44.3,54.2
+		kill 10 Converted Hero##32255+ |q 13765/1 |goto 44.3,54.2
 		only Orc
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13767 |goto 75.5,24.0
 		only Orc
 	step
 		Talk to the riders on mounts of other Horde races
-		Tell them you are ready to fight!
+		Tell them _"I am ready to fight!"_
 		Fight and defeat them
-		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-		collect 3 Mark of the Valiant |q 13767/1 |goto 75.3,26.0
+		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+		collect 3 Mark of the Valiant##45127 |q 13767/1 |goto 75.3,26.0
 		only Orc
 	step
 		talk Mokra the Skullcrusher##33361
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13762 |goto 76.5,24.6
 		turnin A Worthy Weapon##13763 |goto 76.5,24.6
 		turnin The Edge Of Winter##13764 |goto 76.5,24.6
@@ -220,7 +223,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	// TROLL VALIANT RANK DAILY LOOP (BEGIN)
 	step
 		talk Zul'tore##33372
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13768 |or |goto 76.0,24.5
 		accept A Worthy Weapon##13769 |or |goto 76.0,24.5
 		accept The Edge Of Winter##13770 |or |goto 76.0,24.5
@@ -235,64 +238,64 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		accept At The Enemy's Gates##13857 |goto 75.9,24.4
 		only Troll
 	step
-		Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 		talk Maiden of Ashwood Lake##33220
-		Tell her you are glad to help
-		collect Ashwood Brand |q 13768/1 |goto Grizzly Hills,61.2,50.3
+		collect Ashwood Brand |q 13768/1 |goto Grizzly Hills 61.2,50.3
 		only Troll
 	step
 		click Winter Hyacinth##3231
-		collect 4 Winter Hyacinth##45000 |q 13769 |goto Icecrown,69.1,76.2
+		collect 4 Winter Hyacinth##45000 |q 13769 |goto Icecrown 69.1,76.2
 		only Troll
 	step
 		Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 		Listen to the Maiden of Drak'Mar
 		click Blade of Drak'Mar##8564
-		collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight,93.2,26.1
+		collect Blade of Drak'Mar |q 13769/1 |goto Dragonblight 93.2,26.1
 		only Troll
 	step
 		kill Lord Everblaze##33289
-		collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest,54.5,74.9
+		collect 1 Everburning Ember##45005 |q 13770 |goto Crystalsong Forest 54.5,74.9
 		only Troll
 	step
-		Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-		collect Winter's Edge |q 13770/1 |goto Howling Fjord,42.2,19.7
+		clicknpc Maiden of Winter's Breath##33303
+		Use the Everburning Ember |use Everburning Ember##45005
+		collect Winter's Edge |q 13770/1 |goto Howling Fjord 42.2,19.7
 		only Troll
 	step
-		Equip the Horde Lance in your bags|use Horde Lance##46070
-		Click to mount the Stabled Campaign Warhorse |invehicle |q 13857 |goto Icecrown,48.9,71.4
+		Equip the Horde Lance |use Horde Lance##46070
+		Click to mount the Stabled Campaign Warhorse |invehicle |q 13857 |goto Icecrown 48.9,71.4
 		only Troll
 	step
-		kill 15 Boneguard Footman##33438 |q 13857/1 |goto 50.1,74.8
+		kill 15 Boneguard Footman##33438+ |q 13857/1 |goto 50.1,74.8
 		|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
-		kill 10 Boneguard Scout##33550 |q 13857/2 
+		kill 10 Boneguard Scout##33550+ |q 13857/2 
 		|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-		kill 3 Boneguard Lieutenant##33429 |q 13857/3 
-		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+		kill 3 Boneguard Lieutenant##33429+ |q 13857/3 
+		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 		only Troll
 	step
 		Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13857 |goto 49.1,71.4
 		only Troll
 	step
-		kill 10 Converted Hero##32255 |q 13771/1 |goto 44.3,54.2
+		kill 10 Converted Hero##32255+ |q 13771/1 |goto 44.3,54.2
 		only Troll
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Darkspear Raptor |invehicle |q 13772 |goto 75.6,23.8
 		only Troll
 	step
 		Talk to the riders on mounts of other Horde races
-		Tell them you are ready to fight!
+		Tell them _"I am ready to fight!"_
 		Fight and defeat them
-		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-		collect 3 Mark of the Valiant |q 13772/1 |goto 75.3,26.0
+		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+		collect 3 Mark of the Valiant##45127 |q 13772/1 |goto 75.3,26.0
 		only Troll
 	step
 		talk Zul'tore##33372
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13768 |goto 76.0,24.5
 		turnin A Worthy Weapon##13769 |goto 76.0,24.5
 		turnin The Edge Of Winter##13770 |goto 76.0,24.5
@@ -311,7 +314,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	// TAUREN VALIANT RANK DAILY LOOP (BEGIN)
 	step
 		talk Runok Wildmane##33403
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13773 |or |goto 76.2,24.6
 		accept A Worthy Weapon##13774 |or |goto 76.2,24.6
 		accept The Edge Of Winter##13775 |or |goto 76.2,24.6
@@ -327,22 +330,21 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		only Tauren
 	step
 		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 		talk Maiden of Ashwood Lake##33220
-		Tell her you are glad to help
-		collect Ashwood Brand |q 13773/1 |goto Grizzly Hills,61.2,50.3
+		collect Ashwood Brand |q 13773/1 |goto Grizzly Hills 61.2,50.3
 		only Tauren
 	step
 		click Winter Hyacinth##3231
-		collect 4 Winter Hyacinth##45000 |q 13774 |goto Icecrown,69.1,76.2
+		collect 4 Winter Hyacinth##45000 |q 13774 |goto Icecrown 69.1,76.2
 		only Tauren
 	step
 		Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 		Listen to the Maiden of Drak'Mar
 		click Blade of Drak'Mar##8564
-		collect Blade of Drak'Mar |q 13774/1 |goto Dragonblight,93.2,26.1
+		collect Blade of Drak'Mar |q 13774/1 |goto Dragonblight 93.2,26.1
 		only Tauren
 	step
 		kill Lord Everblaze##33289
@@ -353,36 +355,37 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		collect Winter's Edge |q 13775/1 |goto Howling Fjord 42.2,19.7
 		only Tauren
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
-		Click to mount the Stabled Campaign Warhorse|invehicle |q 13858 |goto Icecrown,48.9,71.4
+		Equip the Horde Lance |use Horde Lance##46070
+		Click to mount the Stabled Campaign Warhorse|invehicle |q 13858 |goto Icecrown 48.9,71.4
 		only Tauren
 	step
-		kill 15 Boneguard Footman##33438 |q 13858/1 |goto 50.1,74.8
+		kill 15 Boneguard Footman##33438+ |q 13858/1 |goto 50.1,74.8
 		|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
-		kill 10 Boneguard Scout##33550 |q 13858/2 
+		kill 10 Boneguard Scout##33550+ |q 13858/2
 		|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-		kill 3 Boneguard Lieutenant##33429 |q 13858/3 
-		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+		kill 3 Boneguard Lieutenant##33429+ |q 13858/3
+		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 		only Tauren
 	step
 		Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13858 |goto 49.1,71.4
 		only Tauren
 	step
-		kill 10 Converted Hero##32255 |q 13776/1 |goto 44.3,54.2
+		kill 10 Converted Hero##32255+ |q 13776/1 |goto 44.3,54.2
 		only Tauren
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Thunder Bluff Kodo |invehicle |q 13777 |goto 75.5,24.3
 		only Tauren
 	step
 		Talk to the riders on mounts of other Horde races
-		Tell them you are ready to fight!
-		Fight and defeat them|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-		collect 3 Mark of the Valiant |q 13777/1 |goto 75.3,26.0
+		Tell them _"I am ready to fight!"_
+		Fight and defeat them
+		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+		collect 3 Mark of the Valiant##45127 |q 13777/1 |goto 75.3,26.0
 		only Tauren
 	step
 		talk Runok Wildmane##33403
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13773 |goto 76.2,24.6
 		turnin A Worthy Weapon##13774 |goto 76.2,24.6
 		turnin The Edge Of Winter##13775 |goto 76.2,24.6
@@ -401,7 +404,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	// SCOURGE VALIANT RANK DAILY LOOP (BEGIN)
 	step
 		talk Deathstalker Visceri##33373
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13778 |or |goto 76.5,24.2
 		accept A Worthy Weapon##13779 |or |goto 76.5,24.2
 		accept The Edge Of Winter##13780 |or |goto 76.5,24.2
@@ -417,11 +420,10 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		only Scourge
 	step
 		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 		talk Maiden of Ashwood Lake##33220
-		Tell her you're glad to help
 		collect Ashwood Brand |q 13778/1 |goto Grizzly Hills 61.2,50.3
 		only Scourge
 	step
@@ -439,41 +441,42 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		collect 1 Everburning Ember##45005 |q 13780 |goto Crystalsong Forest 54.5,74.9
 		only Scourge
 	step
-		Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
+		clicknpc Maiden of Winter's Breath##33303
+		Use the Everburning Ember |use Everburning Ember##45005
 		collect Winter's Edge |q 13780/1 |goto Howling Fjord 42.2,19.7
 		only Scourge
 	step
-		Equip the Horde Lance in your bags|use Horde Lance##46070
-		Click to mount the Stabled Campaign Warhorse|invehicle |q 13860 |goto Icecrown 48.9,71.4
+		Equip the Horde Lance |use Horde Lance##46070
+		Click to mount the Stabled Campaign Warhorse |invehicle |q 13860 |goto Icecrown 48.9,71.4
 		only Scourge
 	step
-		kill 15 Boneguard Footman##33438|q 13860/1 |goto 50.1,74.8
+		kill 15 Boneguard Footman##33438+ |q 13860/1 |goto 50.1,74.8
 		|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
-		kill 10 Boneguard Scout##33550 |q 13860/2 |goto 50.1,74.8
+		kill 10 Boneguard Scout##33550+ |q 13860/2 |goto 50.1,74.8
 		|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-		kill 3 Boneguard Lieutenant##33429 |q 13860/3 |goto 50.1,74.8
-		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+		kill 3 Boneguard Lieutenant##33429+ |q 13860/3 |goto 50.1,74.8
+		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 		only Scourge
 	step
 		Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13860 |goto 49.1,71.4
 		only Scourge
 	step
-		kill 10 Converted Hero##32255 |q 13781/1 |goto 44.3,54.2
+		kill 10 Converted Hero##32255+ |q 13781/1 |goto 44.3,54.2
 		only Scourge
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Forsaken Warhorse |invehicle |q 13782 |goto 75.6,23.9
 		only Scourge
 	step
 		Talk to the riders on mounts of other Horde races
-		Tell them you are ready to fight!
+		Tell them _"I am ready to fight!"_
 		Fight and defeat them
-		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-		collect 3 Mark of the Valiant |q 13782/1 |goto 75.3,26.0
+		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+		collect 3 Mark of the Valiant##45127 |q 13782/1 |goto 75.3,26.0
 		only Scourge
 	step
 		talk Deathstalker Visceri##33373
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13778
 		turnin A Worthy Weapon##13779
 		turnin The Edge Of Winter##13780 |goto 76.5,24.2
@@ -492,7 +495,7 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 	// BLOOD ELF VALIANT RANK DAILY LOOP (BEGIN)
 	step
 		talk Eressea Dawnsinger##33379
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		accept A Blade Fit For A Champion##13783 |or |goto 76.5,23.9
 		accept A Worthy Weapon##13784 |or |goto 76.5,23.9
 		accept The Edge Of Winter##13785 |or |goto 76.5,23.9
@@ -508,16 +511,15 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		only BloodElf
 	step
 		Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-		Target Lake Frogs
+		click Lake Frog##33211+
 		Use the emote /kiss on the Lake Frogs
 		Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 		talk Maiden of Ashwood Lake##33220
-		Tell her you are glad to help
 		collect Ashwood Brand |q 13783/1 |goto Grizzly Hills 61.2,50.3
 		only BloodElf
 	step
 		click Winter Hyacinth##3231
-		collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown,69.1,76.2
+		collect 4 Winter Hyacinth##45000 |q 13784 |goto Icecrown 69.1,76.2
 		only BloodElf
 	step
 		Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
@@ -530,20 +532,21 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		collect 1 Everburning Ember##45005 |q 13785 |goto Crystalsong Forest 54.5,74.9
 		only BloodElf
 	step
-		Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-		collect Winter's Edge |q 13785/1 |goto Howling Fjord,42.2,19.7
+		clicknpc Maiden of Winter's Breath##33303
+		Use the Everburning Ember |use Everburning Ember##45005
+		collect Winter's Edge |q 13785/1 |goto Howling Fjord 42.2,19.7
 		only BloodElf
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Campaign Warhorse |invehicle |q 13859 |goto Icecrown 48.9,71.4
 		only BloodElf
 	step
-		kill 15 Boneguard Footman##33438|q 13859/1 |goto 50.1,74.8
+		kill 15 Boneguard Footman##33438+ |q 13859/1 |goto 50.1,74.8
 		|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
-		kill 10 Boneguard Scout##33550 |q 13859/2 |goto 50.1,74.8
+		kill 10 Boneguard Scout##33550+ |q 13859/2 |goto 50.1,74.8
 		|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-		kill 3 Boneguard Lieutenant##33429 |q 13859/3 |goto 50.1,74.8
-		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+		kill 3 Boneguard Lieutenant##33429+ |q 13859/3 |goto 50.1,74.8
+		|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 		only BloodElf
 	step
 		Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13859 |goto 49.1,71.4
@@ -552,19 +555,19 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		kill 10 Converted Hero##32255 |q 13786/1 |goto 44.3,54.2
 		only BloodElf
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13787 |goto 75.5,24.1
 		only BloodElf
 	step
 		Talk to the riders on mounts of other Horde races
-		Tell them you are ready to fight!
+		Tell them _"I am ready to fight!"_
 		Fight and defeat them
-		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-		collect 3 Mark of the Valiant |q 13787/1 |goto 75.3,26.0
+		|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+		collect 3 Mark of the Valiant##45127 |q 13787/1 |goto 75.3,26.0
 		only BloodElf
 	step
 		talk Eressea Dawnsinger##33379
-		You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+		|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 		turnin A Blade Fit For A Champion##13783 |goto 76.5,23.9
 		turnin A Worthy Weapon##13784 |goto 76.5,23.9
 		turnin The Edge Of Winter##13785 |goto 76.5,23.9
@@ -617,31 +620,31 @@ ZygorGuidesViewer:RegisterInclude("Argent Tourney_Valiant",[[
 		accept The Valiant's Challenge##13731 |goto 76.5,23.9
 		only BloodElf
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Orgrimmar Wolf |invehicle |q 13726 |goto 72.2,22.5
 		only Orc
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Darkspear Raptor |invehicle |q 13727 |goto 72.0,22.5
 		only Troll
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Thunder Bluff Kodo |invehicle |q 13728 |goto 71.9,22.4
 		only Tauren
 	step
-		Equip the Horde Lance in your bags |use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Forsaken Warhorse |invehicle |q 13729 |goto 72.1,22.4
 		only Scourge
 	step
-		Equip the Horde Lance in your bags|use Horde Lance##46070
+		Equip the Horde Lance |use Horde Lance##46070
 		Click to mount the Stabled Silvermoon Hawkstrider |invehicle |q 13731 |goto 72.2,22.4
 		only BloodElf
 	step
 		talk Squire Danny##33518
-		Tell him you are ready to fight!
-		An Argent Champion runs up on a horse
+		Tell him _"I am ready to fight!"_
+		kill Argent Valiant##33448
 		Use the abilities on your hotbar to defeat the Argent Champion
-		|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+		|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 		Defeat the Argent Valiant |q 13726/1 |goto 68.6,21.0 |only Orc
 		Defeat the Argent Valiant |q 13727/1 |goto 68.6,21.0 |only Troll
 		Defeat the Argent Valiant |q 13728/1 |goto 68.6,21.0 |only Tauren

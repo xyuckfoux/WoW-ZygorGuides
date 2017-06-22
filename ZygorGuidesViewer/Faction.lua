@@ -155,7 +155,10 @@ function ZGV:CacheReputations()
 			local friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThresh, nextFriendThreshold = GetFriendshipReputation(id)
 			--FriendName and nextFriendThreshold are new with 5.1
 			local ranktype
-			if friendID==1690 or friendID==1691 or friendID==1419 or friendID==1374 then --Bizmo's Brawlpub / Brawl'gar (or Season 1)
+			if	friendID==2010 or friendID==2011 or -- legion, season 3
+				friendID==1690 or friendID==1691 or -- wod, no longer seems to exist
+				friendID==1419 or friendID==1374    -- pandaria, season 1
+				then --Bizmo's Brawlpub / Brawl'gar
 				ranktype="brawl"
 				val = friendRep - friendThresh
 				bmax = min( friendMaxRep - friendThresh, 10000)
@@ -222,7 +225,14 @@ end
 
 function RepProto:Next()
 	local nextstanding = self:GetNextStanding()
-	return standingnames[self.reptype][nextstanding]
+
+	if self.reptype=="bodyguard" then 
+		return bodyguardrepnames[nextstanding] 
+	elseif self.reptype=="friend" then 
+		return tillerrepnames[nextstanding] 
+	else
+		return standingnames[nextstanding]
+	end
 end
 
 function RepProto:Going(color)

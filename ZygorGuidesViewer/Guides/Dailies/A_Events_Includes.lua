@@ -1161,8 +1161,8 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Quests_Alliance",[[
 		turnin Taking Precautions##29402 |goto 64.2,46.3
 		accept The Collector's Agent##29403 |goto 64.2,46.3
 	step
-		_Enter_ the Cathedral of Light |goto Stormwind City 52.7,50.5 < 5 |walk
-		_Go into_ the catacombs |goto 51.3,44.2 < 5 |only if walking
+		Enter the Cathedral of Light |goto Stormwind City 52.7,50.5 < 5 |walk
+		Go into the catacombs |goto 51.3,44.2 < 5 |only if walking
 		kill Unleashed Void##54114+
 		Disrupt the Meeting |q 29403/1 |goto 55.3,43.5
 	step
@@ -1222,9 +1222,9 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Alliance",[[
 		turnin Clean Up in Stormwind##29144 |goto Elwynn Forest 32.4,50.9
 	step
 		talk Gertrude Fenlow##52548
-		Tell her "_I'm ready to fly_" |invehicle |c |goto 32.2,50.8
+		Tell her _"I'm ready to fly"_ |invehicle |c |goto 32.2,50.8
 	step
-		Use the _Toss Stink Bomb_ ability on your action bar all around _Undercity_
+		Use the _Toss Stink Bomb_ ability on your action bar all around Undercity
 		Drop #25# Stink Bombs |q 29054/1
 		Click the _Return Home_ button on your action bar |outvehicle
 	step
@@ -1273,7 +1273,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Alliance",[[
 		turnin A Time to Lose##29371 |goto Elwynn Forest 32.1,50.6
 	--New Legion Daily
 	step
-		For the next part of the dailies you will need to have the new Legion Dalaran unlocked.
+		For the next part of the dailies you will need to have the new Legion Dalaran unlocked
 		confirm
 	step
 		talk Duroc Ironjaw##109854
@@ -1308,7 +1308,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_WoD_Dailies_Alliance",[[
 		|tip These are found all around this small island.
 		Kill #12# Boneship Crewmen |q Culling the Crew##39721/1 |goto Shadowmoon Valley D/0 39.8,80.4
 	step "squashlings"
-		kill 6 Growing Squashling##96545 |q Smashing Squashlings##39716/1 |goto Shadowmoon Valley D/0 40.2,81.8
+		kill 6 Growing Squashling##96545+ |q Smashing Squashlings##39716/1 |goto Shadowmoon Valley D/0 40.2,81.8
 	step "fertilizer"
 		clicknpc Dread Fertilizer##96765+
 		|tip These are found all around this small island.
@@ -1507,14 +1507,6 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Alliance",[[
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 		use Handful of Treats##37586
 		Visit the Candy Bucket in Southern Barrens, Fort Triumph |achieve 963/20 |goto Southern Barrens 49.0,68.5
-	step
-		talk Zidormi##63546 |goto Dustwallow Marsh 55.9,49.6 < 5 |walk
-		Ask her to show you Theramore before it's destruction
-		click Candy Bucket##6404
-		Complete the Candy Bucket quest
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-		use Handful of Treats##37586
-		Visit the Candy Bucket in Dustwallow Marsh, Theramore |q 12349 |goto Dustwallow Marsh 66.6,45.3 --No longer part of the achievement?..
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest
@@ -4412,7 +4404,8 @@ ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Quests",[[
 		accept An Innocent Disguise##11891 |goto Ashenvale 15.7,20.3
 	step
 		Use your Orb of the Crawler in this spot |use Orb of the Crawler##35237
-		Get the Crab Disguise |havebuff Interface\Icons\Ability_Hunter_Pet_Crab |goto Ashenvale 9.6,13.2 |q 11891
+		Get the Crab Disguise |havebuff 46337 |goto Ashenvale 9.6,13.2 |q 11891
+		confirm
 	step
 		Listen to the plan of the Twilight Cultists |q 11891/1 |goto Ashenvale 9.2,12.6
 	step
@@ -4481,7 +4474,7 @@ ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Dailies",[[
 ]])
 ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Achievements",[[
 		talk Midsummer Supplier##26123
-		buy 15 Juggling Torch##34599 |goto Stormwind City 49.0,72.0
+		buy 15 Juggling Torch##34599 |condition itemcount(34599) >= 15 |goto Stormwind City 49.0,72.0
 		|tip If you can't buy these be sure to complete the quests Torch Tossing and More Torch Tossing in our Midsummer Fire Festival Main Questline and Dailies guides.
 	step
 		Use your 40 Juggling Torches as fast as you can 
@@ -4909,6 +4902,68 @@ ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Achievements_Extingui
 	step
 		click Midsummer Bonfire##
 		accept Desecrate this Fire!##32496 |instant |goto Vale of Eternal Blossoms/0 77.8,33.6
+]])
+ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Achievements_Extinguishing Draenor",[[
+		talk Shadowmoon Valley Flame Warden##114500
+		accept Honor the Flame##44579 |instant |achieve 11283/5 |goto Shadowmoon Valley D/0 42.61,36.00
+	step
+		talk Spires of Arak Flame Guardian##114488
+		accept Honor the Flame##44570 |goto Spires of Arak/0 48.01,44.70
+	step
+		click Midsummer Bonfire##101054
+		turnin Honor the Flame##44570 |achieve 11283/1 |goto Spires of Arak/0 48.01,44.70
+	step
+		talk Talador Flame Guardian##114489
+		accept Honor the Flame##44571 |goto Talador/0 43.46,71.81
+	step
+		click Midsummer Bonfire##101054
+		turnin Honor the Flame##44571 |achieve 11283/2 |goto Talador/0 43.46,71.81
+	step
+		talk Nagrand Flame Guardian##114490
+		accept Honor the Flame##44572 |goto Nagrand D/0 80.52,47.70
+	step
+		click Midsummer Bonfire##101054
+		turnin Honor the Flame##44572 |achieve 11283/3 |goto Nagrand D/0 80.52,47.70
+	step
+		click Horde Bonfire##101054 
+		accept Desecrate this Fire!##44583 |instant |achieve 11276 |goto Frostfire Ridge/0 72.77,65.16
+	step
+		talk Gorgrond Flame Guardian##114491
+		accept Honor the Flame##44573 |goto Gorgrond/0 43.92,93.78
+	step
+		click Midsummer Bonfire##101054
+		turnin Honor the Flame##44573 |achieve 11283/4 |goto Gorgrond/0 43.92,93.78
+]])
+ZygorGuidesViewer:RegisterInclude("Midsummer Fire Festival Achievements_Extinguishing Broken Isles",[[
+		talk Azsuna Flame Guardian##114492
+		accept Honor the Flame##44574 |goto Azsuna/0 48.25,29.69
+	step
+		click Midsummer Bonfire##101054
+		turnin Honor the Flame##44574 |achieve 11280/1 |goto Azsuna/0 48.25,29.69
+	step
+		talk Suramar Flame Warden##114519
+		accept Honor the Flame##44613 |instant |achieve 11280/5 |goto Suramar/0 23.05,58.37
+	step
+		click Horde Bonfire##101054
+		accept Desecrate this Fire!##44627 |instant |achieve 11278 |goto Suramar/0 30.31,45.41
+	step
+		talk Val'Sharah Flame Guardian##114493
+		accept Honor the Flame##44575 |goto Val'sharah/0 44.88,57.93
+	step
+		click Horde Bonfire##101054
+		turnin Honor the Flame##44575 |achieve 11280/2 |goto Val'sharah/0 44.88,57.93
+	step
+		talk Highmountain Flame Guardian##114494
+		accept Honor the Flame##44576 |goto Highmountain/0 55.50,84.44
+	step
+		click Horde Bonfire##101054
+		turnin Honor the Flame##44576 |achieve 11280/3 |goto Highmountain/0 55.50,84.44
+	step
+		talk Stormheim Flame Guardian##114496
+		accept Honor the Flame##44577 |goto Stormheim/0 32.49,42.15
+	step
+		click Horde Bonfire##101054
+		turnin Honor the Flame##44577 |achieve 11280/4 |goto Stormheim/0 32.49,42.15
 ]])
 
 -- Harvest Festival --

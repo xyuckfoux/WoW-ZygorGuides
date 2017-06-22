@@ -203,6 +203,8 @@ data.basenodes.DungeonEntrances = {
 			-- HALLS OF REFLECTION
 			"Icecrown 55.46,90.88 -x- Halls of Reflection 47.33,80.81 {autotype:portal_dungeon}",
 			"Pit of Saron 32.30,6.81 -x- Halls of Reflection 47.33,80.81 {autotype:portal_dungeon}",
+			-- RUBY SANCTUM
+			"Dragonblight 61.20,52.76 -x- The Ruby Sanctum 49.01,31.40 {autotype:portal_dungeon}",
 
 		--Maelstrom
 			-- THRONE OF THE TIDES
@@ -250,13 +252,15 @@ data.basenodes.DungeonEntrances = {
 			"Spires of Arak/0 35.6,33.7 -x- Skyreach/1 60.5,25.9 {autotype:portal_dungeon}",
 			-- Upper Blackrock Spire
 			-- Data already exists, from Eastern Kingdoms
+
 		--Legion
-			--The Arcway
+			--The Court
+			"Suramar/0 50.68,65.49 -x- Court of Stars/1 6.84,68.64 {autotype:portal_dungeon}",
 			--Assault on Violet Hold
 			"Dalaran L/10 66.94,69.16 -x- Violet Hold/1 50.95,69.91 {autotype:portal_dungeon}",
 			--Black Rook Hold
 			"Val'sharah/0 37.15,50.20 -x- Black Rook Hold/1 29.63,10.30 {autotype:portal_dungeon}",
-			--Court of Stars
+			--Arcway
 			"Suramar/0 41.08,61.75 -x- The Arcway/1 47.99,21.47 {autotype:portal_dungeon}",
 			--Darkheart Thicket
 			"Val'sharah/0 59.06,31.21 -x- Darkheart Thicket/0 36.71,14.16 {autotype:portal_dungeon}",
@@ -273,54 +277,63 @@ data.basenodes.DungeonEntrances = {
 			"Azsuna/0 48.30,80.23 -x- 1045/1 70.28,77.60 {autotype:portal_dungeon}",
 			--Cathedral of Eternal Night
 			"Broken Shore/0 64.70,16.59 -x- Cathedral of Eternal Night/1 46.8,90.2 {autotype:portal_dungeon}",
+			--Karazhan
+			"Deadwind Pass/0 46.72,70.20 -x- Karazhan L/6 63.9,61.3 {autotype:portal_dungeon}",
+
 	-- RAID ENTRANCE/EXITS
-		--Molten Core
-		"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <subtype:portaldungeon>",
-		"Molten Core/1 26.5,24.3 -to- Burning Steppes/16 54.1,83.1 <subtype:portaldungeon>",
-		"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <subtype:moltentele> {cond:IsQuestFlaggedCompleted(7848)}",
-		-- Temple of Ahn'Qiraj
-		"Ahn'Qiraj: The Fallen Kingdom/0 46.78,7.45 -x- Ahn'Qiraj/2 52.00,26.92 {autotype:portal_dungeon}",
-		-- Ruins of Ahn'Qiraj
-		"Ahn'Qiraj: The Fallen Kingdom/0 58.92,14.29 -x- Ruins of Ahn'Qiraj/0 60.51,11.70 {autotype:portal_dungeon}",
-		--Blackwing Lair
-		"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <subtype:portaldungeon>",
-		"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <subtype:portaldungeon>",
-		"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <subtype:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
+			--Molten Core
+			"Blackrock Depths/2 68.8,38.2 -to- Molten Core/1 26.6,25.0 <subtype:portaldungeon>",
+			"Molten Core/1 26.5,24.3 -to- Burning Steppes/16 54.1,83.1 <subtype:portaldungeon>",
+			"Burning Steppes/16 54.1,83.1 -to- Molten Core/1 26.5,24.3 <subtype:moltentele> {cond:IsQuestFlaggedCompleted(7848)}",
+			-- Temple of Ahn'Qiraj
+			"Ahn'Qiraj: The Fallen Kingdom/0 46.78,7.45 -x- Ahn'Qiraj/2 52.00,26.92 {autotype:portal_dungeon}",
+			-- Ruins of Ahn'Qiraj
+			"Ahn'Qiraj: The Fallen Kingdom/0 58.92,14.29 -x- Ruins of Ahn'Qiraj/0 60.51,11.70 {autotype:portal_dungeon}",
+			--Blackwing Lair
+			"Blackrock Spire/7 54.7,22.5 -to- Blackwing Lair/1 52.5,83.6 <subtype:portaldungeon>",
+			"Blackwing Lair/1 52.5,83.6 -to- Burning Steppes/14 65.6,42.2 <subtype:portaldungeon>",
+			"Burning Steppes/14 64.3,70.9 -to- Blackwing Lair/1 52.5,83.6 <subtype:orbofcommand> {cond:IsQuestFlaggedCompleted(7761)}",
 
-		--[[
-		-- Karazhan
-		"Karazhan/1 59.82,78.27 -to- Deadwind Pass/0 46.93,74.81 <subtype:portaldungeon>",
-		"Deadwind Pass/0 46.81,74.60 -to- Karazhan/1 58.76,76.11 <subtype:portaldungeon>",
+			--[[
+			-- Karazhan
+			"Karazhan/1 59.82,78.27 -to- Deadwind Pass/0 46.93,74.81 <subtype:portaldungeon>",
+			"Deadwind Pass/0 46.81,74.60 -to- Karazhan/1 58.76,76.11 <subtype:portaldungeon>",
 
-		-- Sunwell Plateau
-		"Isle of Quel'Danas/0 44.25,45.75 -to- Sunwell Plateau/1 30.94,36.41 <subtype:portalDungeon>",
-		"Sunwell Plateau/1 30.94,36.12 -to- Isle of Quel'Danas/0 44.27,45.62 <subtype:portalDungeon>",
+			-- Sunwell Plateau
+			"Isle of Quel'Danas/0 44.25,45.75 -to- Sunwell Plateau/1 30.94,36.41 <subtype:portalDungeon>",
+			"Sunwell Plateau/1 30.94,36.12 -to- Isle of Quel'Danas/0 44.27,45.62 <subtype:portalDungeon>",
 
-		-- Hyjal Summit
-		"Tanaris/18 35.09,15.22 -x- Hyjal Summit/0 108.00,113.50 <subtype:portalDungeon>",
-			-- hyjal lobby to first zone
-			"Hyjal Summit/0 108.00,118.50 -to- Hyjal Summit/0 10.68,64.74 <subtype:portalDungeon>",
+			-- Hyjal Summit
+			"Tanaris/18 35.09,15.22 -x- Hyjal Summit/0 108.00,113.50 <subtype:portalDungeon>",
+				-- hyjal lobby to first zone
+				"Hyjal Summit/0 108.00,118.50 -to- Hyjal Summit/0 10.68,64.74 <subtype:portalDungeon>",
 
-		-- Gruul's Lair
-		"Blade's Edge Mountains/0 69.35,23.62 -to- Gruul's Lair/1 81.87,78.11 <subtype:portaldungeon>",
-		"Gruul's Lair/1 84.36,79.06 -to- Blade's Edge Mountains/0 69.19,24.00 <subtype:portaldungeon>",
+			-- Gruul's Lair
+			"Blade's Edge Mountains/0 69.35,23.62 -to- Gruul's Lair/1 81.87,78.11 <subtype:portaldungeon>",
+			"Gruul's Lair/1 84.36,79.06 -to- Blade's Edge Mountains/0 69.19,24.00 <subtype:portaldungeon>",
 
-		-- Magtheridon's Lair
-		"Hellfire Peninsula/0 47.54,52.05 -to- Magtheridon's Lair/1 62.72,18.03 <subtype:portaldungeon>",
-		"Magtheridon's Lair/1 61.40,18.06 -to- Hellfire Peninsula/0 47.50,52.08 <subtype:portaldungeon>",
+			-- Magtheridon's Lair
+			"Hellfire Peninsula/0 47.54,52.05 -to- Magtheridon's Lair/1 62.72,18.03 <subtype:portaldungeon>",
+			"Magtheridon's Lair/1 61.40,18.06 -to- Hellfire Peninsula/0 47.50,52.08 <subtype:portaldungeon>",
 
-		-- Serpentshrine Cavern
-		"Zangarmarsh/0 51.90,32.78 -to- Serpentshrine Cavern/1 13.49,61.14 <subtype:portaldungeon>",
-		"Serpentshrine Cavern/1 13.57,62.04 -to- Zangarmarsh/0 51.90,33.03 <subtype:portaldungeon>",
+			-- Serpentshrine Cavern
+			"Zangarmarsh/0 51.90,32.78 -to- Serpentshrine Cavern/1 13.49,61.14 <subtype:portaldungeon>",
+			"Serpentshrine Cavern/1 13.57,62.04 -to- Zangarmarsh/0 51.90,33.03 <subtype:portaldungeon>",
 
-		-- Tempest Keep
-		"Tempest Keep/1 50.06,91.93 -to- Netherstorm/0 73.56,63.71 <subtype:portaldungeon>",
-		"Netherstorm/0 73.77,63.73 -to- Tempest Keep/1 50.05,90.56 <subtype:portaldungeon>",
+			-- Tempest Keep
+			"Tempest Keep/1 50.06,91.93 -to- Netherstorm/0 73.56,63.71 <subtype:portaldungeon>",
+			"Netherstorm/0 73.77,63.73 -to- Tempest Keep/1 50.05,90.56 <subtype:portaldungeon>",
 
-		-- Black Temple
-		"Shadowmoon Valley/0 71.03,46.65 -to- Black Temple/2 21.89,59.54 <subtype:portaldungeon>",
-		"Black Temple/2 21.95,60.99 -to- Shadowmoon Valley/0 71.06,46.45 <subtype:portaldungeon>",
-		--]]
+			-- Black Temple
+			"Shadowmoon Valley/0 71.03,46.65 -to- Black Temple/2 21.89,59.54 <subtype:portaldungeon>",
+			"Black Temple/2 21.95,60.99 -to- Shadowmoon Valley/0 71.06,46.45 <subtype:portaldungeon>",
+			--]]
+		--Legion
+			--Emerald Nightmare
+			--Trial of Valor
+			--The Nighthold
+			--Tomb of Sargeras
+			"Broken Shore/0 64.53,20.81 -x- Tomb of Sargeras/1 45.2,90.2 {autotype:portal_dungeon}",
 }
 
 data.basenodes.DungeonFloors = {

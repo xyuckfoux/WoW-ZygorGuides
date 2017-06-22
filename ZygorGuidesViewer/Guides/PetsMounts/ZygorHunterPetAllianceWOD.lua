@@ -3,7 +3,7 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("HunterPetAWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Blue Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Blue Draenor Clefthoof",{
 model={54440},
 description="This guide will walk you through obtaining the Blue Draenor Clefthoof pet.",
 },[[
@@ -15,7 +15,7 @@ step
 Use your Tame Beast ability on _Young Icehoof_. |cast Tame Beast##1515
 modeldisplay 54440
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Brown and Fawn Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Brown and Fawn Clefthoof",{
 model={19581},
 description="This guide will walk you through obtaining the Brown and Fawn Clefthoof pet.",
 },[[
@@ -27,7 +27,7 @@ step
 Use your Tame Beast ability on _Aged Clefthoof_. |cast Tame Beast##1515
 modeldisplay 19581
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Brown Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Brown Clefthoof",{
 model={19583},
 description="This guide will walk you through obtaining the Brown Clefthoof pet.",
 },[[
@@ -39,7 +39,7 @@ step
 Use your Tame Beast ability on _Clefthoof Bull_. |cast Tame Beast##1515
 modeldisplay 19583
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Brown Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Brown Draenor Clefthoof",{
 model={54592},
 description="This guide will walk you through obtaining the Brown Draenor Clefthoof pet.",
 },[[
@@ -51,7 +51,7 @@ step
 Use your Tame Beast ability on _Witherhide Mother_. |cast Tame Beast##1515
 modeldisplay 54592
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Dark Brown Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Dark Brown Clefthoof",{
 model={19584},
 description="This guide will walk you through obtaining the Dark Brown Clefthoof pet.",
 },[[
@@ -63,7 +63,7 @@ step
 Use your Tame Beast ability on _Clefthoof Calf_. |cast Tame Beast##1515
 modeldisplay 19584
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Grey Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Grey Clefthoof",{
 model={37744},
 description="This guide will walk you through obtaining the Grey Clefthoof pet.",
 },[[
@@ -75,7 +75,7 @@ step
 Use your Tame Beast ability on _Decrepit Clefthoof_. |cast Tame Beast##1515
 modeldisplay 37744
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Grey Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Grey Draenor Clefthoof",{
 model={52374},
 description="This guide will walk you through obtaining the Grey Draenor Clefthoof pet.",
 },[[
@@ -87,7 +87,7 @@ step
 Use your Tame Beast ability on _Gentle Clefthoof_. |cast Tame Beast##1515
 modeldisplay 52374
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Red Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Red Clefthoof",{
 model={19797},
 description="This guide will walk you through obtaining the Red Clefthoof pet.",
 },[[
@@ -100,7 +100,7 @@ step
 Use your Tame Beast ability on _Brokentoe_. |cast Tame Beast##1515
 modeldisplay 19797
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Red-Brown Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Red-Brown Clefthoof",{
 model={37745},
 description="This guide will walk you through obtaining the Red-Brown Clefthoof pet.",
 },[[
@@ -117,7 +117,7 @@ Banthar also patrols through the locations below:
 Use your Tame Beast ability on _Banthar_. |cast Tame Beast##1515
 modeldisplay 37745
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Red Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Red Draenor Clefthoof",{
 model={54593},
 description="This guide will walk you through obtaining the Red Draenor Clefthoof pet.",
 },[[
@@ -129,7 +129,7 @@ step
 Use your Tame Beast ability on _Tamed Clefthoof_. |cast Tame Beast##1515
 modeldisplay 54593
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Saddled Brown Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Brown Draenor Clefthoof",{
 model={53310},
 description="This guide will walk you through obtaining the Saddled Brown Draenor Clefthoof pet.",
 },[[
@@ -142,7 +142,7 @@ step
 Use your Tame Beast ability on _Iron Horde Battlebeast_. |cast Tame Beast##1515
 modeldisplay 53310
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Saddled Grey Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Grey Draenor Clefthoof",{
 model={53309},
 description="This guide will walk you through obtaining the Saddled Grey Draenor Clefthoof pet.",
 },[[
@@ -154,7 +154,7 @@ step
 Use your Tame Beast ability on _Hunting Mount_. |cast Tame Beast##1515
 modeldisplay 53309
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Saddled Red Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Red Draenor Clefthoof",{
 model={53309},
 description="This guide will walk you through obtaining the Saddled Red Draenor Clefthoof pet.",
 },[[
@@ -166,7 +166,7 @@ step
 Use your Tame Beast ability on _Grom'kar Warbeast_. |cast Tame Beast##1515
 modeldisplay 53309
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\Saddled White Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled White Draenor Clefthoof",{
 model={53309},
 description="This guide will walk you through obtaining the Saddled White Draenor Clefthoof pet.",
 },[[
@@ -178,7 +178,7 @@ step
 Use your Tame Beast ability on _Broken Clefthoof_. |cast Tame Beast##1515
 modeldisplay 53309
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Clefthooves\\White Draenor Clefthoof",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Clefthooves\\White Draenor Clefthoof",{
 model={52374},
 description="This guide will walk you through obtaining the White Draenor Clefthoof pet.",
 },[[
@@ -190,7 +190,7 @@ step
 Use your Tame Beast ability on _Wooly Clefthoof_. |cast Tame Beast##1515
 modeldisplay 52374
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Black Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Black Rylak",{
 model={61213},
 description="This guide will walk you through obtaining the Black Rylak pet.",
 },[[
@@ -202,7 +202,7 @@ step
 Use your Tame Beast ability on _Darkwing Adolescent_. |cast Tame Beast##1515
 modeldisplay 61213
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Green Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Green Rylak",{
 model={58290},
 description="This guide will walk you through obtaining the Green Rylak pet.",
 },[[
@@ -214,7 +214,7 @@ step
 Use your Tame Beast ability on _Roardan the Sky Terror_. |cast Tame Beast##1515
 modeldisplay 58290
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Pale Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Pale Rylak",{
 model={55603},
 description="This guide will walk you through obtaining the Pale Rylak pet.",
 },[[
@@ -226,7 +226,7 @@ step
 Use your Tame Beast ability on _Glacial Icemaw_. |cast Tame Beast##1515
 modeldisplay 55603
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Red Armoured Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Red Armoured Rylak",{
 model={56062},
 description="This guide will walk you through obtaining the Red Armoured Rylak pet.",
 },[[
@@ -238,7 +238,7 @@ step
 Use your Tame Beast ability on _Tura'aka_. |cast Tame Beast##1515
 modeldisplay 56062
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Red Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Red Rylak",{
 model={54957},
 description="This guide will walk you through obtaining the Red Rylak pet.",
 },[[
@@ -250,7 +250,7 @@ step
 Use your Tame Beast ability on _Flamewing Skytalon_. |cast Tame Beast##1515
 modeldisplay 54957
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Silver Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Silver Rylak",{
 model={60896},
 description="This guide will walk you through obtaining the Silver Rylak pet.",
 },[[
@@ -262,7 +262,7 @@ step
 Use your Tame Beast ability on _Amaukwa_. |cast Tame Beast##1515
 modeldisplay 60896
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Tan Armoured Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Tan Armoured Rylak",{
 model={53152},
 description="This guide will walk you through obtaining the Tan Armoured Rylak pet.",
 },[[
@@ -276,7 +276,7 @@ step
 Use your Tame Beast ability on _Thunderlords Rylak_. |cast Tame Beast##1515
 modeldisplay 53152
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Flying Pets\\Rylaks\\Yellow Rylak",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Rylaks\\Yellow Rylak",{
 model={53862},
 description="This guide will walk you through obtaining the Yellow Rylak pet.",
 },[[
@@ -288,7 +288,7 @@ step
 Use your Tame Beast ability on _Gorge Rylak_. |cast Tame Beast##1515
 modeldisplay 53862
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery-Exotic\\Beast Pets\\Spirit Beasts\\Shadowy Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Shadowy Draenor Wolf",{
 model={55831},
 description="This guide will walk you through obtaining the Shadowy Draenor Wolf pet.",
 },[[
@@ -429,7 +429,7 @@ Once Xan is defeated _Gara will become neutral and is now tameable_!
 Use your Tame Beast ability on _Gara_. |cast Tame Beast##1515
 modeldisplay 55831
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Black Draenor Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Boars\\Black Draenor Boar",{
 model={52652},
 description="This guide will walk you through obtaining the Black Draenor Boar pet.",
 },[[
@@ -438,7 +438,7 @@ step
 Use your Tame Beast ability on _Bladespire Goresnout_. |cast Tame Beast##1515
 modeldisplay 52652
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Brown Draenor Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Boars\\Brown Draenor Boar",{
 model={56210},
 description="This guide will walk you through obtaining the Brown Draenor Boar pet.",
 },[[
@@ -447,7 +447,7 @@ step
 Use your Tame Beast ability on _Young Rocktusk_. |cast Tame Beast##1515
 modeldisplay 56210
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Grey-Brown Draenor Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Boars\\Grey-Brown Draenor Boar",{
 model={52738},
 description="This guide will walk you through obtaining the Grey-Brown Draenor Boar pet.",
 },[[
@@ -456,7 +456,7 @@ step
 Use your Tame Beast ability on _Razorback Sow_. |cast Tame Beast##1515
 modeldisplay 52738
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\Silver Draenor Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Boars\\Silver Draenor Boar",{
 model={52706},
 description="This guide will walk you through obtaining the Silver Draenor Boar pet.",
 },[[
@@ -465,7 +465,7 @@ step
 Use your Tame Beast ability on _Shardtusk Boar_. |cast Tame Beast##1515
 modeldisplay 52706
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Boars\\White Draenor Boar",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Boars\\White Draenor Boar",{
 model={52698},
 description="This guide will walk you through obtaining the White Draenor Boar pet.",
 },[[
@@ -474,7 +474,7 @@ step
 Use your Tame Beast ability on _Trained Coldsnout_. |cast Tame Beast##1515
 modeldisplay 52698
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Black & Red Draenor Tiger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Black & Red Draenor Tiger",{
 model={59724},
 description="This guide will walk you through obtaining the Black & Red Draenor Tiger pet.",
 },[[
@@ -483,7 +483,7 @@ step
 Use your Tame Beast ability on _Elder Ridge Prowler_. |cast Tame Beast##1515
 modeldisplay 59724
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Cats\\Grey & Red Draenor Tiger",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Cats\\Grey & Red Draenor Tiger",{
 model={59721},
 description="This guide will walk you through obtaining the Grey & Red Draenor Tiger pet.",
 },[[
@@ -492,7 +492,7 @@ step
 Use your Tame Beast ability on _Young Ridge Prowler_. |cast Tame Beast##1515
 modeldisplay 59721
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Black Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Black Hydra",{
 model={2423},
 description="This guide will walk you through obtaining the Black Hydra pet.",
 },[[
@@ -501,7 +501,7 @@ step
 Use your Tame Beast ability on _Strashaz Hydra_. |cast Tame Beast##1515
 modeldisplay 2423
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Blue Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Blue Hydra",{
 model={10898},
 description="This guide will walk you through obtaining the Blue Hydra pet.",
 },[[
@@ -510,7 +510,7 @@ step
 Use your Tame Beast ability on _Mystlash Hydra_. |cast Tame Beast##1515
 modeldisplay 10898
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Blue Outland Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Blue Outland Hydra",{
 model={18314},
 description="This guide will walk you through obtaining the Blue Outland Hydra pet.",
 },[[
@@ -519,7 +519,7 @@ step
 Use your Tame Beast ability on _Mire Hydra_. |cast Tame Beast##1515
 modeldisplay 18314
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Blue Thunder Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Blue Thunder Hydra",{
 model={55413},
 description="This guide will walk you through obtaining the Blue Thunder Hydra pet.",
 },[[
@@ -528,7 +528,7 @@ step
 Use your Tame Beast ability on _Sulfurscale Hydra_. |cast Tame Beast##1515
 modeldisplay 55413
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Chimaeron",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Chimaeron",{
 model={33308},
 description="This guide will walk you through obtaining the Chimaeron pet.",
 },[[
@@ -544,7 +544,7 @@ _Dismiss your current pet_ and _DPS him down to 20% health_, but be very careful
 Use your Tame Beast ability on _Chimaeron_ once he _enrages at 20% health_. |cast Tame Beast##1515
 modeldisplay 33308
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Ghost Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Ghost Hydra",{
 model={25864},
 description="This guide will walk you through obtaining the Ghost Hydra pet.",
 },[[
@@ -556,7 +556,7 @@ step
 Use your Tame Beast ability on _Spirit of Atha_. |cast Tame Beast##1515
 modeldisplay 25864
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Green Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Green Hydra",{
 model={15288},
 description="This guide will walk you through obtaining the Green Hydra pet.",
 },[[
@@ -565,7 +565,7 @@ step
 Use your Tame Beast ability on _Lost Offspring of Gahz'ranka_. |cast Tame Beast##1515
 modeldisplay 15288
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Green Outland Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Green Outland Hydra",{
 model={17528},
 description="This guide will walk you through obtaining the Green Outland Hydra pet.",
 },[[
@@ -574,7 +574,7 @@ step
 Use your Tame Beast ability on _Ghaz'an_. |cast Tame Beast##1515
 modeldisplay 17528
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Green Thunder Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Green Thunder Hydra",{
 model={55461},
 description="This guide will walk you through obtaining the Green Thunder Hydra pet.",
 },[[
@@ -583,7 +583,7 @@ step
 Use your Tame Beast ability on _Varashian Vilefang_. |cast Tame Beast##1515
 modeldisplay 55461
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Grey Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Grey Hydra",{
 model={2837},
 description="This guide will walk you through obtaining the Grey Hydra pet.",
 },[[
@@ -592,7 +592,7 @@ step
 Use your Tame Beast ability on _Bittertide Hydra_. |cast Tame Beast##1515
 modeldisplay 2837
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Grey Outland Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Grey Outland Hydra",{
 model={17653},
 description="This guide will walk you through obtaining the Grey Outland Hydra pet.",
 },[[
@@ -601,7 +601,7 @@ step
 Use your Tame Beast ability on _Mragesh_. |cast Tame Beast##1515
 modeldisplay 17653
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Orange Outland Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Orange Outland Hydra",{
 model={19678},
 description="This guide will walk you through obtaining the Orange Outland Hydra pet.",
 },[[
@@ -610,7 +610,7 @@ step
 Use your Tame Beast ability on _Parched Hydra_. |cast Tame Beast##1515
 modeldisplay 19678
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Purple Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Purple Hydra",{
 model={1397},
 description="This guide will walk you through obtaining the Purple Hydra pet.",
 },[[
@@ -619,7 +619,7 @@ step
 Use your Tame Beast ability on _Gesharahan_. |cast Tame Beast##1515
 modeldisplay 1397
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Purple Outland Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Purple Outland Hydra",{
 model={19776},
 description="This guide will walk you through obtaining the Purple Outland Hydra pet.",
 },[[
@@ -628,7 +628,7 @@ step
 Use your Tame Beast ability on _Markaru_. |cast Tame Beast##1515
 modeldisplay 19776
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Purple Thunder Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Purple Thunder Hydra",{
 model={57041},
 description="This guide will walk you through obtaining the Purple Thunder Hydra pet.",
 },[[
@@ -637,7 +637,7 @@ step
 Use your Tame Beast ability on _Echidnian Hydra_. |cast Tame Beast##1515
 modeldisplay 57041
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Red Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Red Hydra",{
 model={1092},
 description="This guide will walk you through obtaining the Red Hydra pet.",
 },[[
@@ -646,7 +646,7 @@ step
 Use your Tame Beast ability on _Trigore the Lasher_. |cast Tame Beast##1515
 modeldisplay 1092
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\Red Thunder Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\Red Thunder Hydra",{
 model={55763},
 description="This guide will walk you through obtaining the Red Thunder Hydra pet.",
 },[[
@@ -655,7 +655,7 @@ step
 Use your Tame Beast ability on _Gennadian_. |cast Tame Beast##1515
 modeldisplay 55763
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Hydras\\White Hydra",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Hydras\\White Hydra",{
 model={6737},
 description="This guide will walk you through obtaining the White Hydra pet.",
 },[[
@@ -664,7 +664,7 @@ step
 Use your Tame Beast ability on _Thessala Hydra_. |cast Tame Beast##1515
 modeldisplay 6737
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Blue Draenor Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Blue Draenor Raptor",{
 model={60172},
 description="This guide will walk you through obtaining the Blue Draenor Raptor pet.",
 },[[
@@ -673,7 +673,7 @@ step
 Use your Tame Beast ability on _Riplash_. |cast Tame Beast##1515
 modeldisplay 60172
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Dark Green Draenor Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Dark Green Draenor Raptor",{
 model={59540},
 description="This guide will walk you through obtaining the Dark Green Draenor Raptor pet.",
 },[[
@@ -683,7 +683,7 @@ step
 Use your Tame Beast ability on _Jungle Wastetalon_. |cast Tame Beast##1515
 modeldisplay 59540
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Green Draenor Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Green Draenor Raptor",{
 model={61299},
 description="This guide will walk you through obtaining the Green Draenor Raptor pet.",
 },[[
@@ -693,7 +693,7 @@ step
 Use your Tame Beast ability on _Jungle Wastetalon_. |cast Tame Beast##1515
 modeldisplay 61299
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Red Draenor Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Red Draenor Raptor",{
 model={61300},
 description="This guide will walk you through obtaining the Red Draenor Raptor pet.",
 },[[
@@ -703,7 +703,7 @@ step
 Use your Tame Beast ability on _Gorgrond Wastetalon_. |cast Tame Beast##1515
 modeldisplay 61300
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Raptors\\Yellow Draenor Raptor",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Raptors\\Yellow Draenor Raptor",{
 model={59579},
 description="This guide will walk you through obtaining the Yellow Draenor Raptor pet.",
 },[[
@@ -713,7 +713,7 @@ step
 Use your Tame Beast ability on _Gorgrond Wastetalon_. |cast Tame Beast##1515
 modeldisplay 59579
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Black Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Black Draenor Ravager",{
 model={55972},
 description="This guide will walk you through obtaining the Black Draenor Ravager pet.",
 },[[
@@ -722,7 +722,7 @@ step
 Use your Tame Beast ability on _Shadeback Ravager_. |cast Tame Beast##1515
 modeldisplay 55972
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Blue Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Blue Draenor Ravager",{
 model={57771},
 description="This guide will walk you through obtaining the Blue Draenor Ravager pet.",
 },[[
@@ -731,7 +731,7 @@ step
 Use your Tame Beast ability on _Hive Queen Skrikka_. |cast Tame Beast##1515
 modeldisplay 57771
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Buff Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Buff Draenor Ravager",{
 model={55977},
 description="This guide will walk you through obtaining the Buff Draenor Ravager pet.",
 },[[
@@ -740,7 +740,7 @@ step
 Use your Tame Beast ability on _Bonespike Ravager_. |cast Tame Beast##1515
 modeldisplay 55977
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Green Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Green Draenor Ravager",{
 model={55975},
 description="This guide will walk you through obtaining the Green Draenor Ravager pet.",
 },[[
@@ -749,7 +749,7 @@ step
 Use your Tame Beast ability on _Verdant Ravager_. |cast Tame Beast##1515
 modeldisplay 55975
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Icy Blue Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Icy Blue Draenor Ravager",{
 model={61121},
 description="This guide will walk you through obtaining the Icy Blue Draenor Ravager pet.",
 },[[
@@ -758,7 +758,7 @@ step
 Use your Tame Beast ability on _Icespine Stinger_. |cast Tame Beast##1515
 modeldisplay 61121
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Red Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Red Draenor Ravager",{
 model={55979},
 description="This guide will walk you through obtaining the Red Draenor Ravager pet.",
 },[[
@@ -768,7 +768,7 @@ step
 Use your Tame Beast ability on _Desert Wastetalon_. |cast Tame Beast##1515
 modeldisplay 55979
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Ravagers\\Yellow Draenor Ravager",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Ravagers\\Yellow Draenor Ravager",{
 model={57410},
 description="This guide will walk you through obtaining the Yellow Draenor Ravager pet.",
 },[[
@@ -778,7 +778,7 @@ step
 Use your Tame Beast ability on _Desert Wastetalon_. |cast Tame Beast##1515
 modeldisplay 57410
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Riverbeasts\\Blue Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Riverbeasts\\Blue Riverbeast",{
 model={57324},
 description="This guide will walk you through obtaining the Blue Riverbeast pet.",
 },[[
@@ -787,7 +787,7 @@ step
 Use your Tame Beast ability on _Twilight Riverbeast_. |cast Tame Beast##1515
 modeldisplay 57324
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Riverbeasts\\Dark Brown Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Riverbeasts\\Dark Brown Riverbeast",{
 model={53729},
 description="This guide will walk you through obtaining the Dark Brown Riverbeast pet.",
 },[[
@@ -796,7 +796,7 @@ step
 Use your Tame Beast ability on _Riverwallow Calfling_. |cast Tame Beast##1515
 modeldisplay 53729
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Riverbeasts\\Green Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Riverbeasts\\Green Riverbeast",{
 model={52415},
 description="This guide will walk you through obtaining the Green Riverbeast pet.",
 },[[
@@ -805,7 +805,7 @@ step
 Use your Tame Beast ability on _Wetland Riverbeast_. |cast Tame Beast##1515
 modeldisplay 52415
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Riverbeasts\\Pale Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Riverbeasts\\Pale Riverbeast",{
 model={52413},
 description="This guide will walk you through obtaining the Pale Riverbeast pet.",
 },[[
@@ -814,7 +814,7 @@ step
 Use your Tame Beast ability on _Riverwallower_. |cast Tame Beast##1515
 modeldisplay 52413
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Riverbeasts\\Red-Brown Riverbeast",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Riverbeasts\\Red-Brown Riverbeast",{
 model={59205},
 description="This guide will walk you through obtaining the Red-Brown Riverbeast pet.",
 },[[
@@ -823,7 +823,7 @@ step
 Use your Tame Beast ability on _Lazymaw Riverbeast_. |cast Tame Beast##1515
 modeldisplay 59205
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Black Draenor Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Black Draenor Talbuk",{
 model={53741},
 description="This guide will walk you through obtaining the Black Draenor Talbuk pet.",
 },[[
@@ -832,7 +832,7 @@ step
 Use your Tame Beast ability on _Silverpelt Charger_. |cast Tame Beast##1515
 modeldisplay 53741
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Black Gazelle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Black Gazelle",{
 model={1547},
 description="This guide will walk you through obtaining the Black Gazelle pet.",
 },[[
@@ -841,7 +841,7 @@ step
 Use your Tame Beast ability on _Rikkilea Strider_. |cast Tame Beast##1515
 modeldisplay 1547
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Black Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Black Stag",{
 model={1991},
 description="This guide will walk you through obtaining the Black Stag pet.",
 },[[
@@ -850,7 +850,7 @@ step
 Use your Tame Beast ability on _Blighted Elk_. |cast Tame Beast##1515
 modeldisplay 1991
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Black Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Black Talbuk",{
 model={19779},
 description="This guide will walk you through obtaining the Black Talbuk pet.",
 },[[
@@ -859,7 +859,7 @@ step
 Use your Tame Beast ability on _Talbuk Sire_. |cast Tame Beast##1515
 modeldisplay 19779
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Brown Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Brown Stag",{
 model={1917},
 description="This guide will walk you through obtaining the Brown Stag pet.",
 },[[
@@ -868,7 +868,7 @@ step
 Use your Tame Beast ability on _Tallhorn Stag_. |cast Tame Beast##1515
 modeldisplay 1917
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Brown Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Brown Talbuk",{
 model={19220},
 description="This guide will walk you through obtaining the Brown Talbuk pet.",
 },[[
@@ -877,7 +877,7 @@ step
 Use your Tame Beast ability on _Talbuk Thorngrazer_. |cast Tame Beast##1515
 modeldisplay 19220
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Dark Brown Pandaren Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Dark Brown Pandaren Stag",{
 model={45746},
 description="This guide will walk you through obtaining the Dark Brown Pandaren Stag pet.",
 },[[
@@ -886,7 +886,7 @@ step
 Use your Tame Beast ability on _Silverhorn Yearling_. |cast Tame Beast##1515
 modeldisplay 45746
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Diseased Gazelle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Diseased Gazelle",{
 model={14951},
 description="This guide will walk you through obtaining the Diseased Gazelle pet.",
 },[[
@@ -895,7 +895,7 @@ step
 Use your Tame Beast ability on _Felrot Courser_. |cast Tame Beast##1515
 modeldisplay 14951
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Green-Brown Pandaren Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Green-Brown Pandaren Stag",{
 model={45209},
 description="This guide will walk you through obtaining the Green-Brown Pandaren Stag pet.",
 },[[
@@ -904,7 +904,7 @@ step
 Use your Tame Beast ability on _Painted Stag_. |cast Tame Beast##1515
 modeldisplay 45209
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Grey Pandaren Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Grey Pandaren Stag",{
 model={46052},
 description="This guide will walk you through obtaining the Grey Pandaren Stag pet.",
 },[[
@@ -913,7 +913,7 @@ step
 Use your Tame Beast ability on _Ancient Stag_. |cast Tame Beast##1515
 modeldisplay 46052
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Indigo Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Indigo Talbuk",{
 model={19223},
 description="This guide will walk you through obtaining the Indigo Talbuk pet.",
 },[[
@@ -927,7 +927,7 @@ path	24.4,48.8
 _Use_ your Tame Beast ability on Bach'lor |cast Tame Beast##1515
 modeldisplay 19223
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Lavender Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Lavender Talbuk",{
 model={19219},
 description="This guide will walk you through obtaining the Lavender Talbuk pet.",
 },[[
@@ -936,7 +936,7 @@ step
 Use your Tame Beast ability on _Talbuk Stag_. |cast Tame Beast##1515
 modeldisplay 19219
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Orange Pandaren Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Orange Pandaren Stag",{
 model={45749},
 description="This guide will walk you through obtaining the Orange Pandaren Stag pet.",
 },[[
@@ -945,7 +945,7 @@ step
 Use your Tame Beast ability on _Silverhorn Calf_. |cast Tame Beast##1515
 modeldisplay 45749
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Purple Draenor Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Purple Draenor Talbuk",{
 model={53764},
 description="This guide will walk you through obtaining the Purple Draenor Talbuk pet.",
 },[[
@@ -954,7 +954,7 @@ step
 Use your Tame Beast ability on _Pearlfur Grazer_. |cast Tame Beast##1515
 modeldisplay 53764
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Red Draenor Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Red Draenor Talbuk",{
 model={58048},
 description="This guide will walk you through obtaining the Red Draenor Talbuk pet.",
 },[[
@@ -969,7 +969,7 @@ path	65.2,58.6	57.0,71.2	44.8,69.6
 Use your Tame Beast ability on _Breezestrider Colt_. |cast Tame Beast##1515
 modeldisplay 58048
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Reindeer",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Reindeer",{
 model={15903},
 description="This guide will walk you through obtaining the Reindeer pet.",
 },[[
@@ -978,7 +978,7 @@ step
 Use your Tame Beast ability on _Marsh Caribou_. |cast Tame Beast##1515
 modeldisplay 15903
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Silver Draenor Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Silver Draenor Talbuk",{
 model={53741},
 description="This guide will walk you through obtaining the Silver Draenor Talbuk pet.",
 },[[
@@ -993,7 +993,7 @@ path	65.2,58.6	57.0,71.2	44.8,69.6
 Use your Tame Beast ability on _Breezestrider Colt_. |cast Tame Beast##1515
 modeldisplay 53741
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Silver Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Silver Stag",{
 model={16872},
 description="This guide will walk you through obtaining the Silver Stag pet.",
 },[[
@@ -1002,7 +1002,7 @@ step
 Use your Tame Beast ability on _Snowfall Elk_. |cast Tame Beast##1515
 modeldisplay 16872
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Striped Tan Gazelle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Striped Tan Gazelle",{
 model={1547},
 description="This guide will walk you through obtaining the Striped Tan Gazelle pet.",
 },[[
@@ -1011,7 +1011,7 @@ step
 Use your Tame Beast ability on _Longstrider Gazelle_. |cast Tame Beast##1515
 modeldisplay 1547
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Tan & Black Gazelle",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Tan & Black Gazelle",{
 model={1547},
 description="This guide will walk you through obtaining the Tan & Black Gazelle pet.",
 },[[
@@ -1024,7 +1024,7 @@ You can find Fairlands Gazelle at the locations below:
 Use your Tame Beast ability on _Fairlands Gazelle_. |cast Tame Beast##1515
 modeldisplay 1547
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\Tan Draenor Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\Tan Draenor Talbuk",{
 model={53612},
 description="This guide will walk you through obtaining the Tan Draenor Talbuk pet.",
 },[[
@@ -1039,7 +1039,7 @@ path	65.2,58.6	57.0,71.2	44.8,69.6
 Use your Tame Beast ability on _Breezestrider Colt_. |cast Tame Beast##1515
 modeldisplay 53612
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\White Pandaren Stag",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\White Pandaren Stag",{
 model={46052},
 description="This guide will walk you through obtaining the White Pandaren Stag pet.",
 },[[
@@ -1048,7 +1048,7 @@ step
 Use your Tame Beast ability on _Shrine Elk_. |cast Tame Beast##1515
 modeldisplay 46052
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Stags\\White Talbuk",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Stags\\White Talbuk",{
 model={37779},
 description="This guide will walk you through obtaining the White Talbuk pet.",
 },[[
@@ -1061,7 +1061,7 @@ path	47.2,30.8	46.0,39.8	41.2,38.8
 Use your Tame Beast ability on _Talbuk Doe_. |cast Tame Beast##1515
 modeldisplay 37779
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Black Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Black Draenor Wolf",{
 model={52602},
 description="This guide will walk you through obtaining the Black Draenor Wolf pet.",
 },[[
@@ -1070,7 +1070,7 @@ step
 Use your Tame Beast ability on _Shadowmoon Stalker_. |cast Tame Beast##1515
 modeldisplay 52602
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Brown Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Brown Draenor Wolf",{
 model={56900},
 description="This guide will walk you through obtaining the Brown Draenor Wolf pet.",
 },[[
@@ -1079,7 +1079,7 @@ step
 Use your Tame Beast ability on _Nagrand Prowler_. |cast Tame Beast##1515
 modeldisplay 56900
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Grey Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Grey Draenor Wolf",{
 model={52601},
 description="This guide will walk you through obtaining the Grey Draenor Wolf pet.",
 },[[
@@ -1088,7 +1088,7 @@ step
 Use your Tame Beast ability on _Gloomshade Howler_. |cast Tame Beast##1515
 modeldisplay 52601
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Silver Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Silver Draenor Wolf",{
 model={53317},
 description="This guide will walk you through obtaining the Silver Draenor Wolf pet.",
 },[[
@@ -1097,7 +1097,7 @@ step
 Use your Tame Beast ability on _Frost Wolf Alpha_. |cast Tame Beast##1515
 modeldisplay 53317
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Beast Pets\\Wolves\\Saddled Brown Draenor Wolf",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Hunter Pets\\Ground Pets\\Wolves\\Saddled Brown Draenor Wolf",{
 model={56174},
 description="This guide will walk you through obtaining the Saddled Brown Draenor Wolf pet.",
 },[[

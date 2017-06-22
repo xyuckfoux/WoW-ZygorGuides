@@ -5,14 +5,18 @@ if ZGV:DoMutex("PetsHCATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
 ZGV.CommonPets=true
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Magical Crawdad",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Magical Crawdad.",
+model={18269},
 pet=132,
-description="This guide will walk you through obtaining the Aquatic pet: Magical Crawdad",
 },[[
 #include "H_Mr._Pinchy's_Magical_Crawdad_Box"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Pengu",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Pengu.",
+model={28216},
 pet=198,
-description="This guide will walk you through obtaining the Aquatic pet: Pengu",
 },[[
 step
 Completing all normal quests should make you revered with the Kalu'ak before having to do daily quests.
@@ -27,8 +31,10 @@ step
 learnpet Pengu##32595 |use Nurtured Penguin Egg##44723
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sea Pony",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Sea Pony.",
+model={39109},
 pet=340,
-description="This guide will walk you through obtaining the Aquatic pet: Sea Pony",
 },[[
 step
 This pet requires Darkmoon Island to be accessible.
@@ -41,8 +47,10 @@ step
 learnpet Sea Pony##55386 |use Sea Pony##73953
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Shore Crawler.",
+model={32790},
 pet=629,
-description="This guide will walk you through obtaining the Aquatic pet: Shore Crawler",
 },[[
 step
 talk Matty##63086
@@ -50,8 +58,10 @@ Tell him you're interested in catching some rare pets.
 learnpet Shore Crawler##63097 |goto Orgrimmar 37.6,79.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Small Frog",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Small Frog.",
+model={6297},
 pet=419,
-description="This guide will walk you through obtaining the Aquatic pet: Small Frog",
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -59,8 +69,10 @@ Challenge one to a pet battle and capture it
 learnpet Small Frog##61071 |goto Northern Barrens 36.2,44.0
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Speedy",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Speedy.",
+model={16259},
 pet=125,
-description="This guide will walk you through obtaining the Aquatic pet: Speedy",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -75,8 +87,10 @@ step
 learnpet Speedy##16547 |use Turtle Box##23002 |tip Back to the Orphanage (Shattrath)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Strand Crawler.",
+model={45880},
 pet=211,
-description="This guide will walk you through obtaining the Aquatic pet: Strand Crawler",
 },[[
 step
 label "select"
@@ -232,8 +246,10 @@ label "use"
 learnpet Strand Crawler##33226 |use Strand Crawler##44983
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Black Kingsnake",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Black Kingsnake.",
+model={1206},
 pet=75,
-description="This guide will walk you through obtaining the Beast pet: Black Kingsnake",
 },[[
 step
 talk Xan'tish##8404
@@ -242,8 +258,10 @@ step
 learnpet Black Kingsnake##7565 |use Black Kingsnake##10360
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bombay Cat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Bombay Cat.",
+model={5556},
 pet=40,
-description="This guide will walk you through obtaining the Beast pet: Bombay Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -253,8 +271,10 @@ step
 learnpet Bombay Cat##7385  |use Cat Carrier (Bombay)##8485
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Brown Snake",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Brown Snake.",
+model={2957},
 pet=77,
-description="This guide will walk you through obtaining the Beast pet: Brown Snake",
 },[[
 step
 talk Xan'tish##8404
@@ -263,8 +283,10 @@ step
 learnpet Brown Snake##7562 |use Brown Snake##10361
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cornish Rex Cat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
+model={5586},
 pet=41,
-description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -274,8 +296,10 @@ step
 learnpet Cornish Rex Cat##7384 |use Cat Carrier (Cornish Rex)##8486
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Crimson Snake",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Crimson Snake.",
+model={6303},
 pet=78,
-description="This guide will walk you through obtaining the Beast pet: Crimson Snake",
 },[[
 step
 talk Xan'tish##8404
@@ -284,8 +308,10 @@ step
 learnpet Crimson Snake##7567 |use Crimson Snake##10392
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Dun Morogh Cub",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Dun Morogh Cub.",
+model={28489},
 pet=205,
-description="This guide will walk you through obtaining the Beast pet: Dun Morogh Cub\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -295,8 +321,10 @@ step
 learnpet Dun Morogh Cub##33194 |use Dun Morogh Cub##44970
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Durotar Scorpion",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Durotar Scorpion.",
+model={15470},
 pet=207,
-description="This guide will walk you through obtaining the Beast pet: Durotar Scorpion",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -465,8 +493,10 @@ step
 learnpet Durotar Scorpion##33198 |use Durotar Scorpion##44973
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Feline Familiar",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Feline Familiar.",
+model={38539},
 pet=319,
-description="This guide will walk you through obtaining the Beast pet: Feline Familiar",
 },[[
 step
 This pet can only be obtained during the Hallows End event.
@@ -478,8 +508,10 @@ step
 learnpet Feline Familiar##53884 |use Feline Familiar##70908
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Hyjal Bear Cub",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Hyjal Bear Cub.",
+model={38455},
 pet=317,
-description="This guide will walk you through obtaining the Beast pet: Hyjal Bear Cub",
 },[[
 step
 You will have to do the Firelands dailies quests to complete the quest "Calling the Ancients"
@@ -498,8 +530,10 @@ step
 learnpet Hyjal Bear Cub##53658 |use Hyjal Bear Cub##70140
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lashtail Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Lashtail Hatchling.",
+model={38065},
 pet=307,
-description="This guide will walk you through obtaining the Beast pet: Lashtail Hatchling",
 },[[
 step
 talk Commander Aggro'gosh##2464
@@ -688,8 +722,10 @@ step
 learnpet Lashtail Hatchling##52894 |use Lashtail Hatchling##69251
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Orange Tabby Cat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
+model={5554},
 pet=43,
-description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -699,8 +735,10 @@ step
 learnpet Orange Tabby Cat##7382 |use Cat Carrier (Orange Tabby)##8487
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Panther Cub",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Panther Cub.",
+model={37814},
 pet=301,
-description="This guide will walk you through obtaining the Beast pet: Panther Cub",
 },[[
 step
 talk Bwemba##53081
@@ -785,8 +823,10 @@ step
 learnpet Panther Cub##52226 |use Panther Cub##68833
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Silver Tabby Cat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
+model={5555},
 pet=45,
-description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -795,28 +835,11 @@ tip This pet must be bought with an Alliance character or through the Auction Ho
 step
 learnpet Silver Tabby Cat##7381 |use Cat Carrier (Silver Tabby)##8488
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Sumprush Rodent",{
-pet=1128,
-description="This guide will walk you through obtaining the Beast pet: Sumprush Rodent",
-},[[
-step
-In order to get this pet, you will need to collect Lion's Landing Commissions.
-collect 2000 Lion's Landing Commision##91838 |next buy
-Click here to farm. |confirm
-step
-kill Shieldwall Footman##67304+, Dwarven Mortar Team Engineer##67545+, Shieldwall Rifleman##67297+, Shieldwall Vindicator##67296+, Thane Stonehearth##67636
-collect Lion's Landing Commission##91838 |goto Krasarang Wilds 81.6,25.3
-step
-label buy
-talk Ongrom Black Tooth##67751
-buy Rodent Crate##92527 |goto Krasarang Wilds/0 10.8,53.4
-You will need to search for a Sumprush Rodent around the area.
-Use your Rodent Crate to capture the Sumprush Rodent. |use Rodent Crate##92527
-learnpet Sumprush Rodent##68506 |goto Krasarang Wilds/0 10.8,53.4
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Armadillo Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Armadillo Pup.",
+model={36220},
 pet=272,
-description="This guide will walk you through obtaining the Critter pet: Armadillo Pup",
 },[[
 step
 This pet requires your guild to have the achievement "Critter Kill Squad" completed
@@ -828,8 +851,10 @@ step
 learnpet Armadillo Pup##48242 |use Armadillo Pup##63398
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Brown Prairie Dog",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Brown Prairie Dog.",
+model={1072},
 pet=70,
-description="This guide will walk you through obtaining the Critter pet: Brown Prairie Dog",
 },[[
 step
 talk Halpa##8401
@@ -838,8 +863,10 @@ step
 learnpet Brown Prairie Dog##14421 |use Prarie Dog Whistle##10394
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dung Beetle",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Dung Beetle.",
+model={7511},
 pet=467,
-description="This guide will walk you through obtaining the Critter pet: Dung Beetle",
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -847,8 +874,10 @@ Challenge one to a pet battle and capture it
 learnpet Dung Beetle##62115 |goto Orgrimmar 42.4,46.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Egbert",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Egbert.",
+model={21382},
 pet=158,
-description="This guide will walk you through obtaining the Critter pet: Egbert",
 },[[
 step
 You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Horde_, and _Back to the Orphanage (Dalaran)_
@@ -863,8 +892,10 @@ learnpet Egbert##23258 |use Egbert's Egg##32616
 |tip Warden of the Horde
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Elwynn Lamb",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb.",
+model={16205},
 pet=209,
-description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -874,8 +905,10 @@ step
 learnpet Elwynn Lamb##33200 |use Elwynn Lamb##44974
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Hare",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Hare.",
+model={1560},
 pet=448,
-description="This guide will walk you through obtaining the Critter pet: Hare",
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -883,8 +916,10 @@ Challenge one to a pet battle and capture it
 learnpet Hare##61751 |goto Durotar 47.3,30.5
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mr. Wiggles",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Mr. Wiggles.",
+model={16257},
 pet=126,
-description="This guide will walk you through obtaining the Critter pet: Mr. Wiggles",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -898,8 +933,10 @@ step
 learnpet Mr. Wiggles##16548 |use Piglet's Collar##23007 |tip Warden of the Horde
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mulgore Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Mulgore Hatchling.",
+model={28502},
 pet=210,
-description="This guide will walk you through obtaining the Critter pet: Mulgore Hatchling",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -1071,8 +1108,10 @@ step
 learnpet Mulgore Hatchling##33219 |use Mulgore Hatchling##44980
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Peanut",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Peanut.",
+model={21393},
 pet=159,
-description="This guide will walk you through obtaining the Critter pet: Peanut",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -1088,8 +1127,10 @@ learnpet Peanut##23266 |use Elekk Training Collar##32622
 |tip Back to the Orphanage (Shattrath)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Pint-Sized Pink Pachyderm",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm.",
+model={22629},
 pet=166,
-description="This guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm",
 },[[
 step
 This _pet_ is _only availiable_ during the _Brewfest_ Holiday
@@ -1104,8 +1145,10 @@ step
 learnpet Pint-Sized Pink Pachyderm##24753 |use Pint-Sized Pink Pachyderm##46707
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Porcupette",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Porcupette.",
+model={41833},
 pet=381,
-description="This guide will walk you through obtaining the Critter pet: Porcupette",
 },[[
 step
 label "start"
@@ -1282,8 +1325,10 @@ learnpet Porcupette##61086 |use Porcupette##89587
 Click here if the Porcupette wasn't contained in any of the Sack of Pet Supplies, and you wish to go to the beginning of this guide. |confirm |next "start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Scooter the Snail",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Scooter the Snail.",
+model={38135},
 pet=289,
-description="This guide will walk you through obtaining the Critter pet: Scooter the Snail",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -1298,8 +1343,10 @@ step
 learnpet Scooter the Snail##51635 |use Snail Shell##66073 |tip Warden of the Horde
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Snowshoe Rabbit",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
+model={328},
 pet=72,
-description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -1308,18 +1355,11 @@ buy 1 Rabbit Crate (Snowshoe)##8497
 step
 learnpet Snowshoe Rabbit##7560 |use Rabbit Crate (Snowshoe)##8497
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
-pet=454,
-description="This guide will walk you through obtaining the Critter pet: Undercity Rat",
-},[[
-step
-Challenge one to a pet battle and capture it
-|tip The Undercity Rats are level 2.
-learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
-]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Cockroach",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Undercity Cockroach.",
+model={2177},
 pet=55,
-description="This guide will walk you through obtaining the Critter pet: Undercity Cockroach",
 },[[
 step
 talk Dealer Rashaad##20980
@@ -1327,9 +1367,22 @@ buy 1 Undercity Cockroach##10393 |goto Netherstorm 43.4,35.2
 step
 learnpet Undercity Cockroach##7395 |use Undercity Cockroach##10393
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Undercity Rat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Undercity Rat.",
+model={1141},
+pet=454,
+},[[
+step
+Challenge one to a pet battle and capture it
+|tip The Undercity Rats are level 2.
+learnpet Undercity Rat##61889 |goto Undercity 70.9,35.4
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Whiskers the Rat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat.",
+model={2176},
 pet=127,
-description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat",
 },[[
 step
 If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
@@ -1342,8 +1395,10 @@ step
 learnpet Whiskers the Rat##16549 |use Rat Cage##23015 |tip Warden of the Horde
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\White Kitten",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: White Kitten.",
+model={9990},
 pet=46,
-description="This guide will walk you through obtaining the Critter pet: White Kitten\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -1353,8 +1408,10 @@ step
 learnpet White Kitten##7386 |use Cat Carrier (White Kitten)##8489
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Winter Reindeer",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Winter Reindeer.",
+model={15901},
 pet=118,
-description="This guide will walk you through obtaining the Critter pet: Winter Reindeer",
 },[[
 step
 These pets are only availiable during the Winter Veil Holiday
@@ -1365,8 +1422,10 @@ step
 learnpet Winter Reindeer##15706 |use Jingling Bell##21308
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Wolpertinger",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Wolpertinger.",
+model={22349},
 pet=153,
-description="This guide will walk you through obtaining the Critter pet: Wolpertinger",
 },[[
 step
 You can only obtain this pet during the Brewfest event.
@@ -1386,8 +1445,10 @@ step
 learnpet Wolpertinger##22943 |use Wolpertinger's Tankard##32233
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Golden Dragonhawk Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling.",
+model={20026},
 pet=142,
-description="This guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling",
 },[[
 step
 talk Jilanne##16860
@@ -1396,8 +1457,10 @@ step
 learnpet Golden Dragonhawk Hatchling##21055 |use Golden Dragonhawk Hatchling##29953
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Lil' Tarecgosa",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa.",
+model={38614},
 pet=320,
-description="This guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa",
 },[[
 step
 This pet is a reward for complete the achievement _"Dragonwrath, Tarecgosa's Rest - Guild Edition"_
@@ -1410,9 +1473,10 @@ step
 learnpet Lil' Tarecgosa##54027 |use Lil' Tarecgosa##71033
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Red Dragonhawk Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling.",
+model={20027},
 pet=143,
-model={28401,29363,29362},
-description="This guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling",
 },[[
 step
 talk Jilanne##16860
@@ -1421,8 +1485,10 @@ step
 learnpet Red Dragonhawk Hatchling##21064 |use Red Dragonhawk Hatchling##29956
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Silver Dragonhawk Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling.",
+model={20037},
 pet=144,
-description="This guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling",
 },[[
 step
 talk Jilanne##16860
@@ -1431,8 +1497,10 @@ step
 learnpet Silver Dragonhawk Hatchling##21063 |use Silver Dragonhawk##29957
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Thundering Serpent Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling.",
+model={43865},
 pet=802,
-description="This guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling",
 },[[
 step
 This pet requires you to be _Revered_ with your guild.
@@ -1444,8 +1512,10 @@ step
 learnpet Thundering Serpent Hatchling##65313 |use Thundering Serpent Hatchling##85513
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Ammen Vale Lashling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.",
+model={28493},
 pet=212,
-description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -1455,8 +1525,10 @@ step
 learnpet Ammen Vale Lashling##33205 |use Ammen Vale Lashling##44984
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Dark Phoenix Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling.",
+model={37136},
 pet=270,
-description="This guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling",
 },[[
 step
 #include misc_rep_mount,rep="Guild"
@@ -1470,8 +1542,10 @@ step
 learnpet Dark Phoenix Hatchling##47944 |use Dark Phoenix Hatchling##63138
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Elementium Geode",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Elementium Geode.",
+model={45878},
 pet=293,
-description="This guide will walk you through obtaining the Elemental pet: Elementium Geode",
 },[[
 step
 You can either farm for this pet using Mining or buy it from the Auction House:
@@ -1497,8 +1571,10 @@ label last
 learnpet Elementium Geode##50722 |use Elementium Geode##67282
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Lumpy",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Lumpy.",
+model={45939},
 pet=337,
-description="This guide will walk you through obtaining the Elemental pet: Lumpy",
 },[[
 step
 talk Strange Snowman##13636
@@ -1519,9 +1595,10 @@ step
 learnpet Lumpy##55215 |use Lump of Coal##73797
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pebble",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Pebble.",
+model={45940},
 pet=265,
-description="This guide will walk you through obtaining the Elemental pet: Pebble",
-endlevel=83
 },[[
 step
 If you have done the Pre-Quests for Therazane, click here. |next "daily" |only if completedq(26709)
@@ -2409,8 +2486,10 @@ step
 learnpet Pebble##45247 |use Pebble##60869
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Searing Scorchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Searing Scorchling.",
+model={8409},
 pet=172,
-description="This guide will walk you through obtaining the Elemental pet: Searing Scorchling",
 },[[
 step
 This pet requires you to have done the Firelands Pre-quests and dailies to enter the Molten Front
@@ -2434,8 +2513,10 @@ step
 learnpet Searing Scorchling##25706 |use Scorched Stone##34955
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Teldrassil Sproutling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling.",
+model={28482},
 pet=204,
-description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -2445,8 +2526,10 @@ step
 learnpet Teldrassil Sproutling##33188 |use Teldrassil Sproutling##44965
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Tiny Snowman",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Tiny Snowman.",
+model={13610},
 pet=117,
-description="This guide will walk you through obtaining the Elemental pet: Tiny Snowman",
 },[[
 step
 These pets are only availiable during the Winter Veil Holiday
@@ -2457,8 +2540,10 @@ step
 learnpet Tiny Snowman##15710 |use Snowman Kit##21309
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Withers",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Withers.",
+model={45943},
 pet=220,
-description="This guide will walk you through obtaining the Elemental pet: Withers",
 },[[
 step
 Enter this cave |goto Darkshore,56.8,31.2 < 5 |walk
@@ -2469,16 +2554,20 @@ step
 learnpet Withers##34278 |use Withers##46325
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Alliance Balloon",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Alliance Balloon.",
+model={38343},
 pet=331,
-description="This guide will walk you through obtaining the Flying pet: Alliance Balloon",
 },[[
 step
 Horde can not earn this pet because it is gathered from an Alliance only quest.
 learnpet Alliance Balloon##54539 |use Alliance Balloon##72042
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Mini Jouster",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Blue Mini Jouster.",
+model={69048},
 pet=259,
-description="This guide will walk you through obtaining the Flying pet: Blue Mini Jouster",
 },[[
 step
 Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
@@ -3125,8 +3214,10 @@ learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blue Moth",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Blue Moth.",
+model={19987},
 pet=138,
-description="This guide will walk you through obtaining the Flying pet: Blue Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -3136,8 +3227,10 @@ step
 learnpet Blue Moth##21010 |use Blue Moth Egg##29901
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Darkmoon Balloon",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Darkmoon Balloon.",
+model={38344},
 pet=336,
-description="This guide will walk you through obtaining the Flying pet: Darkmoon Balloon",
 },[[
 step
 This pet requires Darkmoon Island to be accessible.
@@ -3153,16 +3246,20 @@ step
 learnpet Darkmoon Balloon##55187 |use Darkmoon Balloon##73762
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gilnean Raven",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Gilnean Raven.",
+model={42872},
 pet=630,
-description="This guide will walk you through obtaining the Flying pet: Gilnean Raven",
 },[[
 step
 This pet is only available to Alliance characters.
 learnpet Gilnean Raven##63098
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Gold Mini Jouster",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Gold Mini Jouster.",
+model={69047},
 pet=260,
-description="This guide will walk you through obtaining the Flying pet: Gold Mini Jouster",
 },[[
 step
 Going to _Egg Wave_ |only if not completedq(25560) |next "eggwave"
@@ -3811,8 +3908,10 @@ learnpet Blue Mini Jouster##42177 |use Blue Mini Jouster##65661 |or
 learnpet Gold Mini Jouster##42183 |use Gold Mini Jouster##65662 |or
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Great Horned Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Great Horned Owl.",
+model={4615},
 pet=68,
-description="This guide will walk you through obtaining the Flying pet: Great Horned Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -3822,8 +3921,10 @@ step
 learnpet Great Horned Owl##7553 |use Great Horned Owl##8500
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Hawk Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Hawk Owl.",
+model={6299},
 pet=67,
-description="This guide will walk you through obtaining the Flying pet: Hawk Owl\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -3833,8 +3934,10 @@ step
 learnpet Hawk Owl##7555 |use Hawk Owl##8501
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Plump Turkey",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Plump Turkey.",
+model={45968},
 pet=201,
-description="This guide will walk you through obtaining the Flying pet: Plump Turkey",
 },[[
 #include "Pilgrims_Bounty_Quests_Horde"
 #include "Pilgrims_Bounty_Achievements_Horde"
@@ -3846,8 +3949,10 @@ step
 learnpet Plump Turkey##32818 |use Turkey Cage##44810
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Pterrordax Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Pterrordax Hatchling.",
+model={38229},
 pet=309,
-description="This guide will walk you through obtaining the Flying pet: Pterrordax Hatchling",
 },[[
 step
 This pet is a _rare Archaeology "Fossil"_ solve
@@ -3867,8 +3972,10 @@ step
 learnpet Pterrordax Hatchling##53225 |use Pterrodax Hatchling##69821
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Rustberg Gull",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Rustberg Gull.",
+model={36499},
 pet=271,
-description="This guide will walk you through obtaining the Flying pet: Rustberg Gull",
 },[[
 step
 label begin
@@ -4116,8 +4223,10 @@ step
 learnpet Rustberg Gull##48107 |use Rustberg Gull##64996
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tiny Flamefly",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Tiny Flamefly.",
+model={28435},
 pet=287,
-description="This guide will walk you through obtaining the Flying pet: Tiny Flamefly",
 },[[
 step
 talk Ariok##48559
@@ -4407,8 +4516,10 @@ step
 learnpet Tiny Flamefly##51632 |use Tiny Flamefly##66080
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Tirisfal Batling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Tirisfal Batling.",
+model={4732},
 pet=206,
-description="This guide will walk you through obtaining the Flying pet: Tirisfal Batling",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -4580,8 +4691,10 @@ step
 learnpet Tirisfal Batling##33197 |use Tirisfal Batling##44971
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Westfall Chicken",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Westfall Chicken.",
+model={304},
 pet=84,
-description="This guide will walk you through obtaining the Flying pet: Westfall Chicken",
 },[[
 step
 talk William Saldean##33996
@@ -4602,8 +4715,10 @@ learnpet Westfall Chicken##30379 |use Chicken Egg##11110
 |tip Yes... the Tirisfal Glades chicken gives you a Westfall Chicken!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\White Moth",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: White Moth.",
+model={19999},
 pet=141,
-description="This guide will walk you through obtaining the Flying pet: White Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -4613,8 +4728,10 @@ step
 learnpet White Moth##21018 |use White Moth Egg##29904
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Yellow Moth",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Yellow Moth.",
+model={19985},
 pet=140,
-description="This guide will walk you through obtaining the Flying pet: Yellow Moth\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -4624,16 +4741,20 @@ step
 learnpet Yellow Moth##21008 |use Yellow Moth Egg##29903
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Squire",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Argent Squire.",
+model={28946},
 pet=214,
-description="This guide will walk you through obtaining the Humanoid pet: Argent Squire",
 },[[
 step
 This pet is only available to Alliance Characters.
 learnpet Argent Squire##33238
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Argent Gruntling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Argent Gruntling.",
+model={28948},
 pet=216,
-description="This guide will walk you through obtaining the Humanoid pet: Argent Gruntling",
 },[[
 step
 Proceeding to proper section |next |only if default
@@ -4696,8 +4817,10 @@ step
 learnpet Argent Gruntling##33239 |use Argent Gruntling##45022
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Oracle Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling.",
+model={25173},
 pet=225,
-description="This guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -4711,8 +4834,10 @@ step
 learnpet Curious Oracle Hatchling##33530 |use Curious Oracle Hatchling##46545 |tip Back to the Orphanage (Dalaran)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Curious Wolvar Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup.",
+model={25384},
 pet=226,
-description="This guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -4726,8 +4851,10 @@ step
 learnpet Curious Wolvar Pup##33529 |use Curious Wolvar Pup##46544 |tip Back to the Orphanage (Dalaran)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Father Winter's Helper",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Father Winter's Helper.",
+model={15660},
 pet=119,
-description="This guide will walk you through obtaining the Humanoid pet: Father Winter's Helper",
 },[[
 step
 These pets are only availiable during the _Winter Veil_ Holiday
@@ -4738,8 +4865,10 @@ step
 learnpet Father Winter's Helper##15698 |use Green Helper Box##21301
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Horde)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
+model={37196},
 pet=283,
-description="This guide will walk you through obtaining the Humanoid pet: Guild Herald",
 },[[
 step
 Your guild needs have the achievement "Profit Sharing"
@@ -4751,16 +4880,20 @@ step
 learnpet Guild Herald##49590 |use Guild Herald##65364
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Herald (Alliance)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
+model={37196},
 pet=282,
-description="This guide will walk you through obtaining the Humanoid pet: Guild Herald",
 },[[
 step
 This pet model is only available to Alliance Characters.
 learnpet Guild Herald##49587
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Horde)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
+model={37199},
 pet=281,
-description="This guide will walk you through obtaining the Humanoid pet: Guild Page",
 },[[
 step
 Your guild needs have the achievement "Alliance Slayer"
@@ -4772,16 +4905,20 @@ step
 learnpet Guild Page##49588 |use Guild Page##65362
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Guild Page (Alliance)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
+model={37200},
 pet=280,
-description="This guide will walk you through obtaining the Humanoid pet: Guild Page",
 },[[
 step
 This pet model is only available to Alliance Characters.
 learnpet Guild Page##49586
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Horde)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
+model={37527},
 pet=298,
-description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling",
 },[[
 step
 This pet can be purchased for $10.00 on the official Blizzard Store.
@@ -4793,16 +4930,20 @@ step
 learnpet Moonkin Hatchling##51649 |use Moonkin Hatchling##68619
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Moonkin Hatchling (Alliance)",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
+model={37526},
 pet=296,
-description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling",
 },[[
 step
 This pet model is only available to Alliance characters.
 learnpet Moonkin Hatchling##51601
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Peddlefeet",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Peddlefeet.",
+model={15992},
 pet=122,
-description="This guide will walk you through obtaining the Humanoid pet: Peddlefeet",
 },[[
 step
 This pet is sold by Lovely Merchants during the Love is in the Air Holiday
@@ -4817,8 +4958,10 @@ step
 learnpet Peddlefeet##16085 |use Truesilver Shafted Arrow##22235
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Rotten Little Helper",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Rotten Little Helper.",
+model={51505},
 pet=1349,
-description="This guide will walk you through obtaining the Humanoid pet: Rotten Little Helper",
 },[[
 step
 These pets are only availiable during the Winter Veil Holiday
@@ -4829,8 +4972,10 @@ step
 learnpet Rotten Little Helper##73741 |use Rotten Helper Box##104317
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Winter's Little Helper",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Winter's Little Helper.",
+model={15663},
 pet=120,
-description="This guide will walk you through obtaining the Humanoid pet: Winter's Little Helper",
 },[[
 step
 These pets are only availiable during the Winter Veil Holiday
@@ -4841,8 +4986,10 @@ step
 learnpet Winter's Little Helper##15705 |use Red Helper Box##21305
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Broom",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Broom.",
+model={45960},
 pet=213,
-description="This guide will walk you through obtaining the Magic pet: Enchanted Broom",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -5014,8 +5161,10 @@ step
 learnpet Enchanted Broom##33227 |use Enchanted Broom##44982
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Lantern",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Lantern.",
+model={36902},
 pet=267,
-description="This guide will walk you through obtaining the Magic pet: Enchanted Lantern",
 },[[
 step
 Skipping to the next step |next |only if skill("Enchanting")<525
@@ -5056,8 +5205,10 @@ label "bought"
 learnpet Enchanted Lantern##46898 |use Enchanted Lantern##67274
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Festival Lantern",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Festival Lantern.",
+model={39333},
 pet=342,
-description="This guide will walk you through obtaining the Magic pet: Festival Lantern",
 },[[
 step
 This pet can only be obtained during the Lunar Festival event.
@@ -5077,8 +5228,10 @@ step
 learnpet Festival Lantern##55574 |use Festival Lantern##74611
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Legs",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Legs.",
+model={38134},
 pet=308,
-description="This guide will walk you through obtaining the Magic pet: Legs",
 },[[
 step
 You may only get three of these pets per year from completing the quest lines Back to the Orphanage (Shattrath), Warden of the Horde, and Back to the Orphanage (Dalaran)
@@ -5092,8 +5245,10 @@ step
 learnpet Legs##53048 |use Legs##69648 |tip Back to the Orphanage (Shattrath)
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Lunar Lantern",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Lunar Lantern.",
+model={39163},
 pet=341,
-description="This guide will walk you through obtaining the Magic pet: Lunar Lantern",
 },[[
 step
 This pet can only be obtained during the Lunar Festival event.
@@ -5113,8 +5268,10 @@ step
 learnpet Lunar Lantern##55571 |use Lunar Lantern##74610
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Magic Lamp",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Magic Lamp.",
+model={36901},
 pet=292,
-description="This guide will walk you through obtaining the Magic pet: Magic Lamp.\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -5124,8 +5281,10 @@ step
 learnpet Magic Lamp##50545 |use Magic Lamp##67275
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Shimmering Wyrmling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Shimmering Wyrmling.",
+model={70232},
 pet=229,
-description="This guide will walk you through obtaining the Magic pet: Shimmering Wyrmling",
 },[[
 step
 Use the Icecrown Dailies section of this guide to complete the Argent Tournament Grounds and The Sunreavers pre-quest_ and dailies
@@ -5196,8 +5355,10 @@ step
 learnpet Shimmering Wyrmling##34724 |use Shimmering Wyrmling##46821
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Willy",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Willy.",
+model={21381},
 pet=157,
-description="This guide will walk you through obtaining the Magic pet: Willy",
 },[[
 step
 If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Zygor's Events Guides\\Children's Week (April 27th - May 4th)\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
@@ -5212,8 +5373,10 @@ step
 learnpet Willy##23231 |use Sleepy Willy##32617
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Gnome",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Gnome.",
+model={36211},
 pet=277,
-description="This guide will walk you through obtaining the Mechanical pet: Clockwork Gnome",
 },[[
 step
 This pet is a rare Archaeology "Dwarf" solve
@@ -5233,8 +5396,10 @@ step
 learnpet Clockwork Gnome##48609 |use Clockwork Gnome##64372
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clockwork Rocket Bot",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot.",
+model={22776},
 pet=191,
-description="This guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot",
 },[[
 step
 This pet can only be obtained during the Feast of Winter Veil Event.
@@ -5259,8 +5424,10 @@ step
 learnpet Clockwork Rocket Bot##24968
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\De-Weaponized Mechanical Companion",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion.",
+model={33559},
 pet=262,
-description="This guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion",
 },[[
 step
 Skipping to the next step |next aa |only if skill("Engineering")<475
@@ -5311,8 +5478,10 @@ step
 learnpet De-Weaponized Mechanical Companion##43916 |use De-Weaponized Mechanical Companion##60216
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lifelike Toad",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Lifelike Toad.",
+model={901},
 pet=95,
-description="This guide will walk you through obtaining the Mechanical pet: Lifelike Toad",
 },[[
 step
 _Skipping_ to the next _step_ |next |only if skill("Engineering")<265
@@ -5359,8 +5528,10 @@ label "bought"
 learnpet Lifelike Toad##12419 |use Lifelike Mechanical Toad##15996
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Lil' Smoky",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Lil' Smoky.",
+model={8910},
 pet=86,
-description="This guide will walk you through obtaining the Mechanical pet: Lil' Smoky",
 },[[
 step
 Skipping to the next step |next lazy |only if skill("Engineering")<205
@@ -5432,8 +5603,10 @@ label bought
 learnpet Lil' Smoky##9657 |use Lil' Smoky##11826
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Pandaren Dragonling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling.",
+model={45386},
 pet=844,
-description="This guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling",
 },[[
 step
 Routing to the proper section. |next |only if skill("Engineering")>=575
@@ -5471,8 +5644,10 @@ step
 learnpet Mechanical Pandaren Dragonling##64899
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanical Squirrel",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel.",
+model={7937},
 pet=39,
-description="This guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel",
 },[[
 step
 Routing to the proper section. |next |only if skill("Engineering")>=75
@@ -5514,8 +5689,10 @@ label bought
 learnpet Mechanical Squirrel##2671 |use Mechanical Squirrel Box##4401
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Mechanopeep",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep.",
+model={28539},
 pet=215,
-description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep\nThis pet is sold from an Alliance only vendor. You will need to earn it on an Alliance character or purchase it from the Auction House.",
 },[[
 step
 #include "auctioneer"
@@ -5525,8 +5702,10 @@ step
 learnpet Mechanopeep##33274 |use Mechanopeep##45002
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Personal World Destroyer",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Personal World Destroyer.",
+model={33512},
 pet=261,
-description="This guide will walk you through obtaining the Mechanical pet: Personal World Destroyer",
 },[[
 step
 Routing you to the proper section. |next |only if skill("Engineering")<475 |next
@@ -5568,8 +5747,10 @@ label bought
 learnpet Personal World Destroyer##43800 |use Personal World Destroyer##59597
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Pet Bombling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Pet Bombling.",
+model={8909},
 pet=85,
-description="This guide will walk you through obtaining the Mechanical pet: Pet Bombling",
 },[[
 step
 Click here if you want to farm the schematic for this pet. |only if skill("Engineering")<205 |next
@@ -5628,8 +5809,10 @@ label bought
 learnpet Pet Bombling##9656 |use Pet Bombling##11825
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Tranquil Mechanical Yeti",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti.",
+model={10269},
 pet=116,
-description="This guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti",
 },[[
 step
 The recipe to make this was removed with the quest line back in 2014.
@@ -5666,8 +5849,10 @@ label "Tranquil Yeti"
 Congratulations you are now the proud owner of a _Tranquil Mechanical Yeti_
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Crawling Claw",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Crawling Claw.",
+model={34262},
 pet=264,
-description="This guide will walk you through obtaining the Undead pet: Crawling Claw",
 },[[
 step
 This pet is a rare Archaeology "Tol'vir" solve
@@ -5687,8 +5872,10 @@ step
 learnpet Crawling Claw##45128 |use Crawling Claw##60847
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Creepy Crate",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Creepy Crate.",
+model={38638},
 pet=321,
-description="This guide will walk you through obtaining the Undead pet: Creepy Crate",
 },[[
 step
 This pet can only be obtained during the Hallow's End festival
@@ -5697,8 +5884,10 @@ step
 #include "Hallows_End_Quests_Horde"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Fossilized Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Fossilized Hatchling.",
+model={34413},
 pet=266,
-description="This guide will walk you through obtaining the Undead pet: Fossilized Hatchling",
 },[[
 step
 This pet is a rare Archaeology "Fossil" solve
@@ -5717,9 +5906,45 @@ collect 1 Fossilized Hatchling##60955
 step
 learnpet Fossilized Hatchling##45340 |use Fossilized Hatchling##60955
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Macabre Marionette",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Macabre Marionette.",
+model={29404},
+pet=1351,
+},[[
+step
+You can only obtain this pet during the Day of the Dead event, which only runs for one weekend a year.
+confirm
+step
+talk Innkeeper Gryshka##6929
+buy Ice Cold Milk##1179 |goto Orgrimmar/1 53.5,78.8
+step
+talk Suja##46708
+buy Simple Flour##30817 |goto Orgrimmar/1 56.5,61.1
+step
+talk Chapman##34382
+buy Orange Marigold##46718 |goto Dalaran/1 34.7,39.1
+|tip You may want to buy a few of these due to their short duration.
+buy Recipe: Bread of the Dead##46710 |goto Dalaran/1 34.7,39.1
+step
+Use the recipe in your bags to learn the Bread of the Dead. |use Recipe: Bread of the Dead##46710
+learn Bread of the Dead##65454
+step
+#include "cooking_fire"
+create 1 Bread of the Dead##65454,Cooking,1 total
+step
+talk Cheerful Dalaran Spirit##35256
+accept The Grateful Dead##14166 |goto Dalaran/1 34.5,38.5
+turnin The Grateful Dead##14166 |goto Dalaran/1 34.5,38.5
+step
+Use the Macabre Marionette in your bags. |use Macabre Marionette##46831
+learnpet Macabre Marionette##34770
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Sen'jin Fetish",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Sen'jin Fetish.",
+model={46939},
 pet=218,
-description="This guide will walk you through obtaining the Undead pet: Sen'jin Fetish",
 },[[
 step
 In order to be able to do this guide section, you must have already completed the ARGENT TOURNAMENT GROUNDS DAILIES (VALIANT RANK) guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
@@ -5891,8 +6116,10 @@ step
 learnpet Sen'jin Fetish##33810 |use Sen'jin Fetish##45606
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Voodoo Figurine",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Voodoo Figurine.",
+model={38232},
 pet=310,
-description="This guide will walk you through obtaining the Undead pet: Voodoo Figurine",
 },[[
 step
 This pet is a rare Archaeology "Troll" solve
@@ -5910,36 +6137,4 @@ You're looking for a _rare artifact_ in the _"Troll"_ tab called _"Voodoo Figuri
 collect 1 Voodoo Figurine##69824
 step
 learnpet Voodoo Figurine##53232 |use Voodoo Figurine##69824
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Macabre Marionette",{
-pet=1351,
-description="This guide will walk you through obtaining the Undead pet: Macabre Marionette",
-},[[
-step
-You can only obtain this pet during the Day of the Dead event, which only runs for one weekend a year.
-confirm
-step
-talk Innkeeper Gryshka##6929
-buy Ice Cold Milk##1179 |goto Orgrimmar/1 53.5,78.8
-step
-talk Suja##46708
-buy Simple Flour##30817 |goto Orgrimmar/1 56.5,61.1
-step
-talk Chapman##34382
-buy Orange Marigold##46718 |goto Dalaran/1 34.7,39.1
-|tip You may want to buy a few of these due to their short duration.
-buy Recipe: Bread of the Dead##46710 |goto Dalaran/1 34.7,39.1
-step
-Use the recipe in your bags to learn the Bread of the Dead. |use Recipe: Bread of the Dead##46710
-learn Bread of the Dead##65454
-step
-#include "cooking_fire"
-create 1 Bread of the Dead##65454,Cooking,1 total
-step
-talk Cheerful Dalaran Spirit##35256
-accept The Grateful Dead##14166 |goto Dalaran/1 34.5,38.5
-turnin The Grateful Dead##14166 |goto Dalaran/1 34.5,38.5
-step
-Use the Macabre Marionette in your bags. |use Macabre Marionette##46831
-learnpet Macabre Marionette##34770
 ]])

@@ -9,21 +9,19 @@ if not ZygorGuidesViewer then return end
 ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 	step
 	label	"menu"
-		There are several ways to earn reputation with _Cenarion Circle_.  Earning Exalted with this Faction is half of the _Achievement Guardian of Cenarius_.
-		You can _farm mobs and bosses_ in the _Ruins of Ahn'Qiraj_.  You would need at least 1 other person to form the raid.
-		Or
+		There are several ways to earn reputation with _Cenarion Circle_. Earning Exalted with this Faction is half of the _Achievement Guardian of Cenarius_.
+		You can _farm mobs and bosses_ in the _Ruins of Ahn'Qiraj_. You would need at least 1 other person to form the raid.
 		There are a large number of _quests_ available at _Cenarion Hold_, but once those are completed you'll need to grind your way to Exalted. Click here to go to these quests |confirm always |next "quest"
-		Or
-		The _only repeatable quest_ as of 4.2 is from Bor Wildmane at Cenarion Hold.  You will need to _collect 10 Encrypted Twilight Text_ per _turn in_. Click here to continue |confirm always |next "farm_text"
+		The _only repeatable quest_ as of 4.2 is from Bor Wildmane at Cenarion Hold. You will need to _collect 10 Encrypted Twilight Text_ per _turn in_. Click here to continue |confirm always |next "farm_text"
 		next "exalted" |only if rep('Cenarion Circle')==Exalted
 	step
 	label	"quest"
 		talk Windcaller Proudhorn##15191
 		accept Securing the Supply Lines##8280 |goto Silithus 54.9,36.0
 	step
-		Click the Wanted Poster: Deathclasp |model 3053
+		click Wanted Poster: Deathclasp##180448
 		accept Wanted - Deathclasp, Terror of the Sands##8283 |goto 55.0,36.0 
-		|tip You must kill an elite mob for this quest, so you may need a partner if you cannot solo it.  You can skip this quest if you can't solo it and can't find a partner to help.
+		|tip You must kill an elite mob for this quest, so you may need a partner if you cannot solo it. You can skip this quest if you can't solo it and can't find a partner to help.
 	step
 		talk Calandrath##15174
 		home Cenarion Hold |goto 55.5,36.8
@@ -67,12 +65,12 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		turnin Twilight Geolords##8320 |goto 52.7,35.7
 		accept Vyral the Vile##8321 |goto 52.7,35.7
 	step
-		_Enter_ the cave |goto 70.2,16.1 < 5 |walk
-		Follow the path inside the cave
+		Enter the cave |goto 70.2,16.1 < 5 |walk
+		|tip Follow the path inside the cave.
 		kill Vyral the Vile##15202
 		collect Vyral's Signet Ring |q 8321/1 |goto 73.1,16.5
 	step
-		_Leave_ the cave |goto 70.2,16.1 < 5 |walk
+		Leave the cave |goto 70.2,16.1 < 5 |walk
 		talk Huum Wildmane##15270
 		turnin Vyral the Vile##8321 |goto 52.7,35.6
 	step
@@ -121,7 +119,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		collect Twilight Lexicon - Chapter 1 |q 8279/1 |goto 33.9,34.1
 	step "dredgecrusher"
 		kill 20 Dredge Crusher##11741+ |q 8281/1 |goto 44.9,48.7
-		You can find more Dredge Crushers at the following location |goto Silithus,37.9,32.4
+		You can find more Dredge Crushers at the following location |goto Silithus 37.9,32.4
 	step
 		kill Stonelash Flayer##11737+
 		collect 3 Stonelash Flayer Stinger |q 8278/1 |goto 42.8,63.5
@@ -140,18 +138,18 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		accept Noggle's Lost Satchel##8282 |goto 55.3,36.2
 	step
 		talk Frankal Stonebridge##15171
-		Tell him you've heard he might have some information as to the weareabouts of Mistress Natalia Mar'alith
+		Tell him _"I've heard you might have some information as to the weareabouts of Mistress Natalia Mar'alith."_
 		Question Frankal |q 8304/1 |goto 46.0,79.4
 	step
 		talk Rutgar Glyphshaper##15170
-		Tell him the Commander has sent you here to gather some information about his missing wife
+		Tell him _"The Commander has sent me here to gather some information about your missing wife."_
 		Question Rutgar |q 8304/2 |goto 46.4,79.1
 	step
-		Click the Complete Quest box in the top right corner of your screen
+		Click the _Quest Complete_ box:
 		turnin Dearest Natalia##8304
 		accept Into The Maw of Madness##8306
 	step
-		_Follow_ the path up |goto 47.4,81.1 < 10
+		Follow the path up |goto 47.4,81.1 < 10
 		click Noggle's Satchel##323 
 		|tip Be careful of Deathclasp, the elite scorpion that patrols this small area.
 		collect Noggle's Satchel##20379 |q 8282/1 |goto 49.2,81.6
@@ -176,28 +174,28 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		talk Rutgar Glyphshaper##15170
 		accept Glyph Chasing##8309 |goto 46.4,79.1
 	step
-		_Enter_ the hive |goto 58.5,78.4 < 10 |walk
-		_Follow_ the path |goto 57.2,79.2 < 10 |walk
-		_Continue_ along the path |goto 56.4,83.0 < 10 |walk
-		_Follow_ the path towards the open room |goto 56.1,87.8 < 10 |walk
+		Enter the hive |goto 58.5,78.4 < 10 |walk
+		Follow the path |goto 57.2,79.2 < 10 |walk
+		Continue along the path |goto 56.4,83.0 < 10 |walk
+		Follow the path towards the open room |goto 56.1,87.8 < 10 |walk
 		kill Mistress Natalia Mar'alith##15215
 		Discover the Fate of Mistress Natalia Mar'alith |q 8306/1 |goto 55.6,90.6
 	step
 		click the Hive'Regal Glyphed Crystal##6414
-		<Use the transcription device to gather a rubbing.>
+		Select _"<Use the transcription device to gather a rubbing.>"_
 		collect Hive'Regal Rubbing |q 8309/1 |goto 55.6,90.5
 	step
-		_Enter_ the tunnel |goto 56.1,87.8 < 10 |walk
-		_Follow_ the path |goto 56.4,83.0 < 10 |walk
-		_Continue_ along the path |goto 57.2,79.2 < 10 |walk
-		_Leave_ the hive |goto 58.5,78.4 < 10 |walk
+		Enter the tunnel |goto 56.1,87.8 < 10 |walk
+		Follow the path |goto 56.4,83.0 < 10 |walk
+		Continue along the path |goto 57.2,79.2 < 10 |walk
+		Leave the hive |goto 58.5,78.4 < 10 |walk
 		kill Hive'Regal Ambusher##11730+, Hive'Regal Slavemaker##11733+, Hive'Regal Spitfire##11732+, Hive'Regal Hive Lord##11734+
 		collect Hive'Regal Silithid Brain |q 8310/1 |goto 59.3,74.8
 		collect 1 Brann Bronzebeard's Lost Letter##20461 |n
-		Click Brann Bronzebeard's Lost Letter |use Brann Bronzebeard's Lost Letter##20461
+		Use Brann Bronzebeard's Lost Letter |use Brann Bronzebeard's Lost Letter##20461
 		accept Brann Bronzebeard's Lost Letter##8308 |goto 59.3,74.8
 	step
-		_Follow_ the path up |goto 65.8,76.5 < 10 |only if walking
+		Follow the path up |goto 65.8,76.5 < 10 |only if walking
 		talk Hermit Ortell##15194
 		turnin The Twilight Lexicon##8279 |goto 68.7,63.0
 		accept A Terrible Purpose##8287 |goto 68.7,63.0
@@ -218,14 +216,13 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		turnin Glyph Chasing##8309 |goto 46.4,79.1
 		accept Unraveling the Mystery##8314 |goto 46.4,79.1
 	step
-		_Follow_ the path up |goto 65.8,76.5 < 10 |only if walking
+		Follow the path up |goto 65.8,76.5 < 10 |only if walking
 		talk Hermit Ortell##15194
 		turnin True Believers##8323 |goto 68.7,63.0
 	step
 		talk Geologist Larksbane##15183
-		turnin Unraveling the Mystery##8314 |goto 53.6,35.3
-		next "menu"
-	step |only if walking
+		turnin Unraveling the Mystery##8314 |goto 53.6,35.3 |next "menu"
+	step
 	label	"farm_text"
 		map Silithus
 		path loop on
@@ -239,27 +236,26 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		talk Bor Wildmane##15306
 		accept Encrypted Twilight Texts##8319 |goto Silithus,53.2,35.1 |n
 		You can click here to farm more Texts |confirm |next "farm_text"
-		Or
 		Click here to do quests outside of Silithus for more rep |confirm
 		next "exalted" |only if rep('Cenarion Circle')==Exalted
 	step
 		talk Zen'Aliri##38269
-		accept Finding Stormclaw##24854 |goto Un'Goro Crater,55.7,60.6
+		accept Finding Stormclaw##24854 |goto Un'Goro Crater 55.7,60.6
 	step
 		talk Garl Stormclaw##38274
 		turnin Finding Stormclaw##24854 |goto 70.8,76.4
 		accept Claws of White##24719 |goto 70.8,76.4
 	step
-		kill Ravasaur##6505+,Ravasaur Runner##6506+,Ravasaur Hunter##6507+,Venomhide Ravasaur##6508+
+		kill Ravasaur##6505+, Ravasaur Runner##6506+, Ravasaur Hunter##6507+, Venomhide Ravasaur##6508+
 		collect 5 White Ravasaur Claw |q 24719/1 |goto 67.4,72.3
-		More can be found at the following location |goto Un'Goro Crater,69.1,57.1
+		More can be found at the following location |goto Un'Goro Crater 69.1,57.1
 	step
 		talk Garl Stormclaw##38274
 		turnin Claws of White##24719 |goto 70.6,76.8
 		accept Carried on the Waves##24686 |goto 70.6,76.8
 	step
-		While traveling to the coordinates, look in the water for Bloodpetal Seeds |modelnpc 38202
-		Catch the Bloodpetal Seeds with Garl's Net. |use Garl's Net##50441
+		While traveling to the coordinates, look in the water for Bloodpetal Seeds
+		Catch the Bloodpetal Seeds with Garl's Net |use Garl's Net##50441
 		collect 4 Un'Goro Lasher Seed |q 24686/1 |goto 73.5,60.2
 	step
 		talk Garl Stormclaw##38274
@@ -312,7 +308,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		turnin I Ain't Sayin' You a Gourd-Digger...##26956 |goto 48.5,54.9
 	step
 		Click Zen'Kiki 
-		|tip He's the Troll that's following you around.  Keep clicking him to pull the Diseased Hawks down to you.
+		|tip He's the Troll that's following you around. Keep clicking him to pull the Diseased Hawks down to you.
 		kill 7 Diseased Hawk##44481 |q 26954/1 |goto 53.9,53.7
 	step
 		talk Adrine Towhide##44456
@@ -344,7 +340,6 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 	step
 		Use your Whinny ability on your hotbar near Northridge Spiders
 		Frighten 25 Northridge Spiders |q 27000/1 |goto 47.4,35.0
-		modelnpc Northridge Spider##44284
 	step
 		Click the red arrow on your hotbar to stop riding the Hearthglen Mustang |outvehicle |c |q 27000
 	step
@@ -358,7 +353,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		Use your Whinny ability on your hotbar near Northridge Spiders
 		Continuously scare the Northridge Spiders and try to make them run to [48.0,32.9]
 		The Hearthglen Recruits will kill the Northridge Spiders
-		Lure 10 Northridge Spiders to Lumber Mill |q 27001/1 |goto 47.0,35.3
+		Lure #10# Northridge Spiders to Lumber Mill |q 27001/1 |goto 47.0,35.3
 	step
 		Click the red arrow on your hotbar to stop riding the Hearthglen Mustang |outvehicle |c |q 27001
 	step
@@ -388,17 +383,17 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 	step
 		Click Cultist Cages 
 		|tip They look like big yellow cages around this area. |model 01787
-		Free and Heal 4 Captive Plaguebears |q 26955/1 |goto 66.7,48.9
+		Free and Heal #4# Captive Plaguebears |q 26955/1 |goto 66.7,48.9
 	step
 		talk Adrine Towhide##44456
 		turnin Zen'Kiki and the Cultists##26955 |goto 48.9,54.8
 	step
 		talk Carlin Redpath##11063
-		accept Little Pamela##27383 |goto Eastern Plaguelands,35.6,68.9
+		accept Little Pamela##27383 |goto Eastern Plaguelands 35.6,68.9
 	step
 		talk Pamela Redpath##10926
-		turnin Little Pamela##27383 |goto Eastern Plaguelands,32.5,83.7
-		accept Pamela's Doll##27384 |goto Eastern Plaguelands,32.5,83.7
+		turnin Little Pamela##27383 |goto Eastern Plaguelands 32.5,83.7
+		accept Pamela's Doll##27384 |goto Eastern Plaguelands 32.5,83.7
 	step
 		You can find the doll parts in all of the buildings
 		click Pamela's Doll's Right Side##4233
@@ -430,7 +425,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		turnin A Strange Historian##27386 |goto 35.3,68.1
 	step
 		talk Urk Gagbaz##45500
-		accept Cenarion Tenacity##27544 |goto Eastern Plaguelands,35.0,68.1
+		accept Cenarion Tenacity##27544 |goto Eastern Plaguelands 35.0,68.1
 	step
 		talk Rayne##16135
 		turnin Cenarion Tenacity##27544 |goto 30.2,56.9
@@ -453,7 +448,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Circle_Faction",[[
 		kill Shadowmage##8550+, Dark Adept##8546+
 		collect Plague Disseminator Control Rune##61037 |n
 		Use your Overcharged Mote when you have a Plague Disseminator Control Rune |use Overcharged Mote##61038
-		Destroy 3 Plague Disseminators |q 27420/1 |goto 36.4,46.0
+		Destroy #3# Plague Disseminators |q 27420/1 |goto 36.4,46.0
 	step
 		talk Rayne##16135
 		turnin Postponing the Inevitable##27420 |goto 30.2,56.9
@@ -481,7 +476,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		|tip They are under the jumping piles of rocks, they come up to fight when you get close to the jumping rocks.
 		collect Eroded Leather Case##23338 |n
 		Click the Eroded Leather Case |use Eroded Leather Case##23338
-		accept Missing Missive##9373 |goto Hellfire Peninsula,47.8,65.8
+		accept Missing Missive##9373 |goto Hellfire Peninsula 47.8,65.8
 	step
 		talk Thiah Redmane##16991
 		turnin Missing Missive##9373 |goto 15.7,52
@@ -508,7 +503,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		kill 8 Thornfang Venomspitter##19350+ |q 10159/2 |goto 10.1,53.2
 	step
 		talk Mahuram Stouthoof##16888
-		turnin Keep Thornfang Hill Clear!##10159 |goto Hellfire Peninsula,15.7,52
+		turnin Keep Thornfang Hill Clear!##10159 |goto Hellfire Peninsula 15.7,52
 	step
 		talk Tola'thion##19293
 		accept Colossal Menace##10132 |goto 15.6,52.0
@@ -536,9 +531,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Natural Remedies##10351 |goto 16.0,51.6
 	step
 		talk Lauranna Thar'well##17909
-		accept Plants of Zangarmarsh##9802 |goto Zangarmarsh,80.4,64.2
+		accept Plants of Zangarmarsh##9802 |goto Zangarmarsh 80.4,64.2
 		talk Ikeyen##17956
-		accept The Umbrafen Tribe##9747 |goto Zangarmarsh,80.4,64.2
+		accept The Umbrafen Tribe##9747 |goto Zangarmarsh 80.4,64.2
 	step
 		talk Warden Hamoot##17858
 		accept A Warm Welcome##9728 |goto 79.1,65.3
@@ -572,11 +567,12 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	step
 		talk Kayra Longmane##17969
 		accept Escape from Umbrafen##9752 |goto 83.4,85.5
-		Escort Kayra Longmane to safety |q 9752/1 |goto 83.4,85.5
+		Escort Kayra Longmane to Safety |q 9752/1 |goto 83.4,85.5
 	step
 		talk Ikeyen##17956
 		turnin The Umbrafen Tribe##9747 |goto 80.4,64.2
 		accept A Damp, Dark Place##9788 |goto 80.4,64.2
+	step
 		talk Lauranna Thar'well##17909
 		accept Saving the Sporeloks##10096 |goto 80.4,64.2
 	step
@@ -587,19 +583,21 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Escape from Umbrafen##9752 |goto 78.4,62
 	stickystart "marshlurker"
 	step
-		_Follow_ the path up |goto Zangarmarsh,74.7,91.6 < 10 |only if walking
-		_Enter_ the cave |goto 70.5,97.9 |walk
+		Follow the path up |goto Zangarmarsh 74.7,91.6 < 10 |only if walking
+		Enter the cave |goto 70.5,97.9 < 5 |walk
 		click Ikeyen's Belongings##318
-		collect Ikeyen's Belongings |q 9788/1
+		collect Ikeyen's Belongings##24411 |q 9788/1 |goto 70.6,97.9
 	step
-		_Follow_ the path to the northeast |goto 72.5,94.0 |walk
+		Follow the path to the northeast |goto 72.5,94.0 |walk
 		kill Lord Klaq##18282 |q 9894/1 
 		|tip On the bottom level of the cave, in the small round room all the way in the back.
 	step "marshlurker"
 		kill 10 Marsh Lurker##18136+ |q 10096/2 |goto 75.7,90.2
 		kill 10 Marsh Dredger##18137+ |q 10096/1 |goto 75.7,90.2
+	stickystart "darkcreststuff"
 	step
-		Stand here to Investigate Umbrafen Lake |q 9716/1 |goto 70.9,82.1
+		Investigate Umbrafen Lake |q 9716/1 |goto 70.9,82.1
+	step "darkcreststuff"
 		kill Darkcrest Slaver##19946+,Darkcrest Sorceress##19947+
 		collect 10 Unidentified Plant Parts|q 9802/1 |goto 70.9,82.1
 		collect 30 Naga Claws|q 9728/1 |goto 70.9,82.1
@@ -628,7 +626,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept As the Crow Flies##9718 |goto 78.4,62
 	step
 		Use your Stormcrow Amulet |use Stormcrow Amulet##25465
-		Watch yourself fly as a crow.
+		|tip Watch yourself fly as a crow.
 		Explore the Lakes of Zangarmarsh |q 9718/1
 	step
 		talk Ysiel Windsinger##17841
@@ -648,27 +646,29 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Blessings of the Ancients##9785 |goto 80.4,64.7
 	step
 		Use your Ironvine Seeds on the Umbrafen Lake Pump Controls |use Ironvine Seeds##24355
-		Disable the Umbrafen Lake Pump Controls |q 9720/1 |goto 70.6,80.3 
-		|tip The pump controls look like a little box with some levers on it
+		Disable the Umbrafen Lake Pump Controls |q 9720/1 |goto 70.6,80.3
+		|tip The pump controls look like a little box with some levers on it.
 	step
 		Use your Ironvine Seeds on the Lagoon Pump Controls |use Ironvine Seeds##24355
-		Disable the Lagoon Pump Controls |q 9720/4 |goto 63.1,64.1 
-		|tip The pump controls look like a little box with some levers on it
+		Disable the Lagoon Pump Controls |q 9720/4 |goto 63.1,64.1
+		|tip The pump controls look like a little box with some levers on it.
+	stickystart "getdrainschematic"
 	step
 		Use your Ironvine Seeds on the Serpent Lake Controls |use Ironvine Seeds##24355 
-		|tip The pump controls look like a little box with some levers on it
+		|tip The pump controls look like a little box with some levers on it.
 		Disable the Serpent Lake Controls |q 9720/3 |goto 62,40.8
+	step "getdrainschematic"
 		kill Steam Pump Overseer##18340+, Bloodscale Overseer##20088+, and Bloodscale Wavecaller##20089+
-		Get a Drain Schematics
+		collect Drain Schematics##24330 |n
 		Click the Drain Schematics in your bags |use Drain Schematics##24330
-		accept Drain Schematics##9731
+		accept Drain Schematics##9731 |goto 62,40.8
 	step
 		Swim straight down into the big bubbling pipe opening below until you discover the drain
 		Locate the drain in Serpent Lake |q 9731/1 |goto 50.4,40.8
 	step
 		Use your Ironvine Seeds on the Umbrafen Lake Pump Controls |use Ironvine Seeds##24355
 		Disable the Umbrafen Lake Pump Controls |q 9720/2 |goto 25.4,42.9 
-		|tip The pump controls look like a little box with some levers on it
+		|tip The pump controls look like a little box with some levers on it.
 	step
 		talk Ysiel Windsinger##17841
 		turnin Balance Must Be Preserved##9720 |goto 78.4,62
@@ -679,13 +679,13 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept What's Wrong at Cenarion Thicket?##9957 |goto 78.5,63.1
 	step
 		talk Amythiel Mistwalker##16885
-		turnin Warning the Cenarion Circle##9724 |goto Hellfire Peninsula,16,52.2
-		accept Return to the Marsh##9732 |goto Hellfire Peninsula,16,52.2
+		turnin Warning the Cenarion Circle##9724 |goto Hellfire Peninsula 16,52.2
+		accept Return to the Marsh##9732 |goto Hellfire Peninsula 16,52.2
 	step
 		talk Ysiel Windsinger##17841
-		turnin Return to the Marsh##9732 |goto Zangarmarsh,78.4,62
-		accept Checking Up##29566 |goto Zangarmarsh,78.4,62
-		accept Storming the Steamvault##29616 |goto Zangarmarsh,78.4,62
+		turnin Return to the Marsh##9732 |goto Zangarmarsh 78.4,62
+		accept Checking Up##29566 |goto Zangarmarsh 78.4,62
+		accept Storming the Steamvault##29616 |goto Zangarmarsh 78.4,62
 	step
 		talk Watcher Jhang##54667
 		turnin Checking Up##29566 |goto The Slave Pens 18.9,11.3
@@ -697,8 +697,8 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		talk Nahuud##54668
 		accept A Brother Betrayed##29564 |goto 17.9,12.1
 	step
-		_Follow_ the path and go straight through the main room |goto 25.0,51.2 < 10 |only if walking
-		_Go through_ the hallway |goto 40.2,35.5 < 10 |only if walking
+		Follow the path and go straight through the main room |goto 25.0,51.2 < 10 |only if walking
+		Go through the hallway |goto 40.2,35.5 < 10 |only if walking
 		You can either stand back and pull Mennu from the ramp, or clear the enemies first so they won't aggro
 		kill Mennu the Betrayer##17941 |q 29564/1 |goto 48.8,24.3
 	step
@@ -708,14 +708,14 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		kill Rokmar the Crackler##17991+
 		collect The Invader's Claw |q 29565/1 |goto 57.3,45.4
 	step
-		_Follow_ the path up |goto 74.9,51.4 < 10
+		Follow the path up |goto 74.9,51.4 < 10
 		talk Naturalist Bite##17893
 		Discover Naturalist Bite |q 29563/2 |goto 95.7,66.2
 	step
 		Be ready to fight a couple mobs
 		kill Coilfang Champion##17957+, Coilfang Enchantress##17961+
 		talk Naturalist Bite##17893
-		Tell him _"Naturalist, please grant me your boon"_ |havebuff 132127 |q 29565 |goto 95.7,66.2 --Ability_Druid_FerociousBite
+		Tell him _"Naturalist, please grant me your boon."_ |havebuff 132127 |q 29565 |goto 95.7,66.2 --Ability_Druid_FerociousBite
 	step
 		kill Quagmirran##17942+
 		collect The Slave Master's Eye |q 29565/2 |goto The Slave Pens 86.2,67.9
@@ -738,29 +738,29 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	stickystart "sanguinehibiscus"
 	step
 		Keep following this straight path |goto 42.5,62.0 < 10
-		Follow this path up and around |goto 57.4,82.9 < 10
+		Follow the path up and around |goto 57.4,82.9 < 10
 		He will summon mushrooms, these will explode to deal damage to player, and heal the boss.
-		Keep moving him so that doesn't happen
+		|tip Keep moving him so that doesn't happen.
 		kill Hungarfen##17770 |q 29568/1 |goto 70.0,90.0
 	step
 		kill Ghaz'an##18105 |goto 77.2,43.8
 		confirm |q 29567
 	step
-		_Jump down_ into the water |goto 78.9,24.5 < 10
-		_Swim across_ the water and jump down |goto 79.6,15.2 < 10
+		Jump down into the water |goto 78.9,24.5 < 10
+		Swim across the water and jump down |goto 79.6,15.2 < 10
 		talk Earthbinder Rayge##17885
 		Discover Earthbinder Rayge |q 29570/1 |goto 67.4,21.3
 	step
-		_Follow_ the path down and to the right |goto 67.0,14.0 < 10
+		Follow the path down and to the right |goto 67.0,14.0 < 10
 		kill Swamplord Musel'ek##17826, Claw##17827
 		Talk to Windcaller Claw
 		Discover Windcaller Claw |q 29570/2 |goto 41.5,25.4
 	step
 		kill The Black Stalker##17882
-		collect Black Stalker's Brain |q 29567/1 |goto The Underbog 25.9,45.5
+		collect Black Stalker's Brain##24248 |q 29567/1 |goto The Underbog 25.9,45.5
 	step "sanguinehibiscus"
 		As you go through the dungeon, look for Sanguine Hibiscus
-		click Sanguine Hibiscus##5031
+		click Sanguine Hibiscus##5031+
 		collect 5 Sanguine Hibiscus##24246 |q 29691/1
 	step
 		talk Naturalist Bite##54678
@@ -791,9 +791,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		You hear a faint echo...
 		confirm always
 	step
-		_Go through_ the opening on your left |goto 42.1,32.9 < 10
-		_Go up_ the ramp |goto 49.3,42.8 < 10
-		_Go up_ to the bridge on the right side |goto 55.8,47.3 < 10
+		Go through the opening on your left |goto 42.1,32.9 < 10
+		Go up the ramp |goto 49.3,42.8 < 10
+		Go up to the bridge on the right side |goto 55.8,47.3 < 10
 		Cross the bridge and go through the hallway |goto 39.7,69.0 < 10
 		kill Mekgineer Steamrigger##17796
 		collect Irradiated Gear |q 29614/3 |goto The Steamvault 33.6,81.2
@@ -803,12 +803,12 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		You hear a faint echo... and You hear a loud rumble of metal grinding on stone....
 		confirm always
 	step
-		_Follow_ the tunnel back to the bridge |goto 54.0,51.4 < 10
-		_Take a right_ after crossing the bridge, and go up a ramp |goto 69.8,43.4 < 10
+		Follow the tunnel back to the bridge |goto 54.0,51.4 < 10
+		Take a right after crossing the bridge, and go up a ramp |goto 69.8,43.4 < 10
 		kill Warlord Kalithresh##17798 |q 29613/1 
 	step
-		_Follow_ the path down to the ramp |goto 49.1,42.6 < 10
-		_Enter_ the doorway |goto 42.5,33.0 < 10
+		Follow the path down to the ramp |goto 49.1,42.6 < 10
+		Enter the doorway |goto 42.5,33.0 < 10
 		talk Windcaller Claw##54851
 		turnin Windcaller Claw and the Water Thief##29615 |goto 18.8,27.6
 	step
@@ -831,15 +831,15 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Leader of the Bloodscale##9817 |goto 79.1,65.2
 	step
 		talk Earthbinder Tavgren##18446
-		turnin What's Wrong at Cenarion Thicket?##9957 |goto Terokkar Forest,44.3,26.3
-		accept Strange Energy##9968 |goto Terokkar Forest,44.3,26.3
-		accept Clues in the Thicket##9971 |goto Terokkar Forest,44.3,26.3
+		turnin What's Wrong at Cenarion Thicket?##9957 |goto Terokkar Forest 44.3,26.3
+		accept Strange Energy##9968 |goto Terokkar Forest 44.3,26.3
+		accept Clues in the Thicket##9971 |goto Terokkar Forest 44.3,26.3
 	step
 		talk Warden Treelos##18424
 		accept It's Watching You!##9951 |goto 45,22.5
 	step
 		click Strange Object##7214
-		Examine the Strange Object |q 9971/1 |goto 45.1,21.8 
+		Examine the Strange Object |q 9971/1 |goto 45.1,21.8
 		|tip Inside the building, looks like a white ball on the floor next to a dead guy.
 	step
 		kill Naphthal'ar##18438 |q 9951/1 |goto 43.4,22.1 
@@ -852,10 +852,10 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Clues in the Thicket##9971 |goto 44.3,26.3
 	step
 		kill Vicious Teromoth##18437+
-		collect 4 Vicious Teromoth Sample |q 9968/2 |goto 44.1,23.8
+		collect 4 Vicious Teromoth Sample##24279 |q 9968/2 |goto 44.1,23.8
 	step
 		kill Teromoth##18468+
-		collect 4 Teromoth Sample |q 9968/1 |goto 45.8,29.8
+		collect 4 Teromoth Sample##25672 |q 9968/1 |goto 45.8,29.8
 	step
 		talk Earthbinder Tavgren##18446
 		turnin Strange Energy##9968 |goto 44.3,26.3
@@ -867,19 +867,19 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Wind Trader Lathrai##9979 |goto 47.1,27
 	step
 		talk Wind Trader Lathrai##18484
-		turnin Wind Trader Lathrai##9979 |goto Shattrath City,72.2,30.7
-		accept A Personal Favor##10112 |goto Shattrath City,72.2,30.7
+		turnin Wind Trader Lathrai##9979 |goto Shattrath City 72.2,30.7
+		accept A Personal Favor##10112 |goto Shattrath City 72.2,30.7
 	step
 		kill Skithian Windripper##18453+
 		kill Skithian Dreadhawk##18452+
-		collect 5 Lathrai's Stolen Goods |q 10112/1 |goto Terokkar Forest 30.9,42.0
+		collect 5 Lathrai's Stolen Goods##27861 |q 10112/1 |goto Terokkar Forest 30.9,42.0
 	step
 		talk Wind Trader Lathrai##18484
 		turnin A Personal Favor##10112 |goto Shattrath City 72.3,30.9
 		accept Investigate Tuurem##9990 |goto Shattrath City 72.3,30.9
 	step
 		click Sealed Box##6881
-		collect Sealed Box |q 9990/1 |goto Terokkar Forest 54.0,30.0
+		collect Sealed Box##25727 |q 9990/1 |goto Terokkar Forest 54.0,30.0
 	step
 		talk Earthbinder Tavgren##18446
 		turnin Investigate Tuurem##9990 |goto 44.4,26.3
@@ -901,14 +901,14 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Attack on Firewing Point##9996 |goto Terokkar Forest 69.7,44.2
 		accept The Final Code##10446 |goto Terokkar Forest 69.7,44.2
 	step
-		_Enter_ this building |goto 73.4,36.3 < 10
-		click Orb of Translocation##7161 |goto 73.3,34.6 < 5
-		_Run up_ the ramp |goto 73.9,35.8 < 10
+		Enter this building |goto 73.4,36.3 < 10 |walk
+		click Orb of Translocation##7161 |goto 73.3,34.6 < 5 |walk
+		Run up the ramp |goto 73.9,35.8 < 10
 		kill Sharth Voldoun##18554+
-		collect The Final Code##29912 |q 10446
+		collect The Final Code##29912 |q 10446 |goto 73.8,35.8
 	step
 		click Orb of Translocation##7161
-		Teleport to the bottom of the tower |goto 73.3,36.3 < 10
+		Teleport to the bottom of the tower |goto 73.3,36.3 < 10 |walk
 		click Mana Bomb##7213
 		Activate Mana Bomb |q 10446/1 |goto 71.3,37.4
 	step
@@ -917,14 +917,14 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Letting Earthbinder Tavgren Know##10005 |goto Terokkar Forest 57.0,53.5
 	step
 		talk Earthbinder Tavgren##18446
-		turnin Letting Earthbinder Tavgren Know##10006 |goto Terokkar Forest,44.3,26.3
+		turnin Letting Earthbinder Tavgren Know##10006 |goto Terokkar Forest 44.3,26.3
 	step
 		talk Lakotae##22420
 		accept The Infested Protectors##10896 |goto 37.9,51.7
 	step
 		kill Infested Root-walker##22095+
-		Kill the Wood Mites that come out of their corpses
-		kill 25 Wood Mite |q 10896/1 |goto 35.2,48.8
+		|tip Kill the Wood Mites that come out of their corpses.
+		kill 25 Wood Mite##22419+ |q 10896/1 |goto 35.2,48.8
 		You can find more Infested Root-walkers at the following location |goto 39.1,47.0
 	step
 		talk Lakotae##22420
@@ -953,19 +953,21 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	step
 		talk Samia Inkling##21983
 		accept Poaching from Poachers##10717 |goto 61.8,39.6
+	stickystart "wyrmculthewerkills"
 	step
-		kill 10 Wyrmcult Hewer##21810+ |q 10713/1 |goto 59.9,37.8
 		kill Wyrmcult Poacher##21809+
 		collect 5 Wyrmcult Net |q 10717/1 |goto 59.9,37.8
 		collect Meeting Note##31120 |n
 		Click the Meeting Note in your bags |use Meeting Note##31120
 		accept Did You Get The Note?##10719 |goto 59.9,37.8
+	step "wyrmculthewerkills"
+		kill 10 Wyrmcult Hewer##21810+ |q 10713/1 |goto 59.9,37.8
 	step
 		kill Ruuan'ok Ravenguard##19987+, Ruuan'ok Skyfury##19986+, Ruuan'ok Cloudgazer##19985+, Ruuan'ok Matriarch##20211+
 		collect 6 Ruuan'ok Claw##30704 |q 10567 |goto 63.9,31.5
 	step
 		Use the 6 Ruuan'ok Claws inside the glowing circle |use Ruuan'ok Claw##30704
-		kill Harbinger of the Raven##21767 
+		kill Harbinger of the Raven##21767
 		|tip On the little island in the pond.
 		collect Harbinger's Pendant##30706 |q 10567/1 |goto 64.5,33.1
 	step
@@ -995,27 +997,23 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		kill Grishna Scorncrow##19990+, Grishna Falconwing##19988+, Grishna Harbinger##19989+
 		Get the Understanding Ravenspeech buff |havebuff 132188 |q 10722 |goto 42.2,25.1 --Ability_Hunter_Pet_DragonHawk
 		|tip Must be within melee range to receive the buff.
-		Anytime the buff wears off, kill Grishna mobs again to get it back
+		|tip Anytime the buff wears off, kill Grishna mobs again to get it back.
 	step
 		Stand next to the wooden totem with the Understanding Ravenspeech buff on you 
 		|tip On the ground, next to a pond with basilisks in it.
 		Receive the Third Prophecy |q 10607/3 |goto 40.7,18.7
-		|model The Third Prophecy##7249
 	step
 		Stand next to the wooden totem with the Understanding Ravenspeech buff on you 
 		|tip Up the left ramp, then left across the hanging bridge.
 		Receive the First Prophecy |q 10607/1 |goto 39,17.2
-		|model The First Prophecy##7249
 	step
 		Stand next to the wooden totem with the Understanding Ravenspeech buff on you 
 		|tip Up the right ramp, then go right across the hanging bridge, then down the stairs to the left.
 		Receive the Second Prophecy |q 10607/2 |goto 42.5,21.6
-		|model The Second Prophecy##7249
 	step
 		Stand next to the wooden totem with the Understanding Ravenspeech buff on you 
 		|tip On the ground, in front of a hut.
 		Receive the Fourth Prophecy |q 10607/4 |goto 40.2,23
-		|model The Fourth Prophecy##7249
 	step
 		Go inside the cave
 		kill Wyrmcult Scout##21637+, Wyrmcult Acolyte##21383+, Wyrmcult Zealot##21382+
@@ -1034,7 +1032,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		kill Maxnar the Ashmaw##21389 |q 10748/1 |goto 33.9,35.4 
 		|tip Follow the cave path until it dead ends into him.
 	step
-		Leave the cave. |goto Blade's Edge Mountains,32.1,34.1 < 10 |q 10748 |walk
+		Leave the cave |goto Blade's Edge Mountains 32.1,34.1 < 10 |q 10748 |walk
 		talk Tree Warden Chawn##22007
 		turnin Maxnar Must Die!##10748 |goto 62,39.5
 	step
@@ -1075,15 +1073,14 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Little Embers##10770 |goto 61.2,38.4
 		turnin From the Ashes##10771 |goto 61.2,38.4
 	step
-		Make sure you have your Felsworn Gas Mask in your bags |collect Felsworn Gas Mask##31366 |q 10819
+		collect 1 Felsworn Gas Mask##31366 |q 10819
 		It has a 60 minute timer on it
 		If you need another one, talk to Wildlord Antelarion at the following location |goto 62.6,39.6
-		Click here to continue. |confirm always
 	step
 		Use your Felsworn Gas Mask to equip it |use Felsworn Gas Mask##31366
 		Wear the Felsworn Gas Mask |havebuff 133133 |c |q 10819 --INV_Helmet_31
-		Click the Legion Communicator 
-		|tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator
+		Click the Legion Communicator
+		|tip Between 2 big green floating crystals. You must be wearing the Felsworn Gas Mask to use the Legion Communicator.
 		turnin Felsworn Gas Mask##10819 |goto 73.3,40.1
 		accept Deceive thy Enemy##10820 |goto 73.3,40.1
 	step
@@ -1102,23 +1099,23 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	step
 		Click the Legion Obelisk to activate it |goto 73.5,43.5
 		|tip It's a metal structure with a floating tall metal piece in the middle of it.
-		|confirm always |q 10821
+		|confirm |q 10821
 	step
 		Click the Legion Obelisk to activate it |goto 75.3,41.7
 		|tip It's a metal structure with a floating tall metal piece in the middle of it.
-		|confirm always |q 10821 
+		|confirm |q 10821 
 	step
 		Click the Legion Obelisk to activate it |goto 73.8,41.0
 		|tip It's a metal structure with a floating tall metal piece in the middle of it.
-		|confirm always |q 10821 
+		|confirm |q 10821 
 	step
 		Click the Legion Obelisk to activate it |goto 75.4,40.6
 		|tip It's a metal structure with a floating tall metal piece in the middle of it.
-		|confirm always |q 10821 
+		|confirm |q 10821 
 	step
-		Click the Legion Obelisk to activate it  |goto 74.0,39.9
+		Click the Legion Obelisk to activate it |goto 74.0,39.9
 		|tip It's a metal structure with a floating tall metal piece in the middle of it.
-		|confirm always |q 10821
+		|confirm |q 10821
 	step
 		kill Doomcryer##19963 |q 10821/1 |goto 74.3,42.5
 	step
@@ -1127,26 +1124,26 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Death's Door##10910 |goto 62.4,38.4
 	step
 		Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
-		Talk to Evergrove Druid
+		talk Evergrove Druid##22423
 		turnin Death's Door##10910 |goto 63.2,65.5
 		accept Harvesting the Fel Ammunition##10904 |goto 63.2,65.5
 	step
 		kill Death's Might##21519+, Deathforge Over-Smith##19978+, Death's Watch##21516+
-		collect 5 Fel Cannonball |q 10904/1 |goto 63.8,66.5
+		collect 5 Fel Cannonball##31757 |q 10904/1 |goto 63.8,66.5
 	step
 		Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
-		Talk to Evergrove Druid
+		talk Evergrove Druid##22423
 		turnin Harvesting the Fel Ammunition##10904
 		accept Fire At Will!##10911
 	step
 		Use your Naturalized Ammunition next to the Death's Door Fel Cannon |use Naturalized Ammunition##31807 
 		|tip It looks like a big metal green-glowing bullet shaped machine.
-		Use the Artillery on the Warp-Gate ability 7 times |cast Artillery on the Warp-Gate##39221
+		Use the Artillery on the Warp-Gate 7 Times |cast Artillery on the Warp-Gate##39221
 		Destroy the South Warp-Gate |q 10911/1 |goto 64.8,68.3
 	step
 		Use your Naturalized Ammunition next to the Death's Door Fel Cannon |use Naturalized Ammunition##31807 
 		|tip It looks like a big metal green-glowing bullet shaped machine.
-		Use the Artillery on the Warp-Gate ability 7 times |cast Artillery on the Warp-Gate##39221
+		Use the Artillery on the Warp-Gate 7 times |cast Artillery on the Warp-Gate##39221
 		Destroy the North Warp-Gate |q 10911/2 |goto 62.0,60.3
 	step
 		Use your Druid Signal anywhere in Death's Door |use Druid Signal##31763
@@ -1160,19 +1157,19 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin The Hound-Master##10912 |goto 62.7,39.4
 	step
 		talk Aurine Moonblaze##20871
-		accept Flora of the Eco-Domes##10426 |goto Netherstorm,42.3,32.6
+		accept Flora of the Eco-Domes##10426 |goto Netherstorm 42.3,32.6
 	step
 		Use Energy Field Modulator on Farahlon Lashers |use Energy Field Modulator##29818
 		kill Mutated Farahlon Lasher##20774+
-		Test Energy Modulator 10 times |q 10426/1 |goto 41.2,32.2
+		Test Energy Modulator #10# Times |q 10426/1 |goto 41.2,32.2
 	step
 		talk Aurine Moonblaze##20871
 		turnin Flora of the Eco-Domes##10426 |goto 42.3,32.6
 		accept Creatures of the Eco-Domes##10427 |goto 42.3,32.6
 	step
 		kill Talbuk Doe##20610+, Talbuk Sire##20777
-		Use the Talbuk Tagger on talbuks when they are below 20 percent health. |use Talbuk##29817
-		Tag 12 Talbuk |q 10427/1 |goto 40.4,35.5
+		Use the Talbuk Tagger on talbuks when they are below 20% health |use Talbuk##29817
+		Tag #12# Talbuk |q 10427/1 |goto 40.4,35.5
 	step
 		talk Aurine Moonblaze##20871
 		turnin Creatures of the Eco-Domes##10427 |goto 42.3,32.6
@@ -1185,9 +1182,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin When Nature Goes Too Far##10429 |goto 42.3,32.6
 	step
 		talk Arch Druid Lathorius##25809
-		accept A Mission Statement##11864 |instant |goto Borean Tundra,57,44.3
-		accept Ears of Our Enemies##11866 |goto Borean Tundra,57,44.3
-		accept Help Those That Cannot Help Themselves##11876 |goto Borean Tundra,57,44.3
+		accept A Mission Statement##11864 |instant |goto Borean Tundra 57,44.3
+		accept Ears of Our Enemies##11866 |goto Borean Tundra 57,44.3
+		accept Help Those That Cannot Help Themselves##11876 |goto Borean Tundra 57,44.3
 	step
 		talk Hierophant Cenius##25810
 		accept Happy as a Clam##11869 |goto 57.3,44.1
@@ -1201,26 +1198,26 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	step
 		Use your D.E.H.T.A. Trap Smasher while standing next to Trapped Mammoth Calves |use D.E.H.T.A. Trap Smasher##35228
 		|tip They look like baby elephants laying on the ground in a trap.
-		Free 8 Mammoth Calves |q 11876/1 |goto 53.8,40.6 |modelnpc 24613
+		Free #8# Mammoth Calves |q 11876/1 |goto 53.8,40.6
 	step "lootcrazed"
-		kill 10 Loot Crazed Diver##25836 |q 11869/1 |goto 53.4,42.7
-		kill Loot Crazed Divers |n
-		collect 15 Nesingwary Lackey Ear|q 11866/1 |goto 53.4,42.7
+		kill 10 Loot Crazed Diver##25836+ |q 11869/1 |goto 53.4,42.7
+		kill Loot Crazed Divers
+		collect 15 Nesingwary Lackey Ear |q 11866/1 |goto 53.4,42.7
 	step
-		Find and kill "Lunchbox" |kill "Lunchbox"|q 11884/2 |goto 46.4,40
-		kill Nedar, Lord of Rhinos##25801 |q 11884/1 |goto 46.4,40 
-		|tip He walks around this area.  Kill 'Lunchbox' and then Nedar, Lord of Rhinos will jump off.
+		kill "Lunchbox"##25968 |q 11884/2 |goto 46.4,40
+		|tip He walks around this area. Kill 'Lunchbox' and then Nedar, Lord of Rhinos will jump off.
+		kill Nedar, Lord of Rhinos##25801 |q 11884/1 |goto 46.4,40
 	step
 		Stand inside the Caribou Traps on the ground
 		|tip They look like metal spiked traps on the ground.
 		Use your Pile of Fake Furs |use Pile of Fake Furs##35127
-		Trap 8 Nesingwary Trappers |q 11865/1 |modelnpc 25835 |goto 56.2,50.5
+		Trap #8# Nesingwary Trappers |q 11865/1 |goto 56.2,50.5
 	step
 		talk Arch Druid Lathorius##25809
 		turnin Ears of Our Enemies##11866 |goto 57,44.3
 		turnin Help Those That Cannot Help Themselves##11876 |goto 57,44.3
 		accept Khu'nok Will Know##11878 |goto 57,44.3
-		After you turn in Ears of Our Enemies, you will get a repeatable quest called Can't Get Ear-nough...
+		|tip After you turn in Ears of Our Enemies, you will get a repeatable quest called Can't Get Ear-nough...
 	step
 		talk Hierophant Cenius##25810
 		turnin Happy as a Clam##11869 |goto 57.3,44.1
@@ -1240,7 +1237,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Khu'nok Will Know##11878 |goto 59.5,30.4
 		accept Kaw the Mammoth Destroyer##11879 |goto 59.5,30.4
 	step
-		Ride around and find a Wooly Mammoth Bull |n |modelnpc 25743
+		Ride around and find a Wooly Mammoth Bull
 		Click it to ride it |invehicle |c |q 11879
 	step
 		Use the skills on your mammoth action bar to do the following:
@@ -1252,16 +1249,16 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin Kaw the Mammoth Destroyer##11879 |goto 57,44.3
 	step
 		kill 1 Karen "I Don't Caribou" the Culler##25803 |q 11868/1 |goto 57.3,56.5 
-		|tip She walks around in this spot.  Be careful, she has 2 stealthed guards that come with her.
+		|tip She walks around in this spot. Be careful, she has 2 stealthed guards that come with her.
 	step
 		talk Hierophant Liandra##25838
 		turnin The Abandoned Reach##11870 |goto 57.8,55.1
 		accept Not On Our Watch##11871 |goto 57.8,55.1
 	step
-		kill Northsea Thugs##25843 |n
+		kill Northsea Thugs##25843
 		Click the Shipment of Animal Parts containers on the ground
 		|tip They look like brown bags and crates sitting on the ground around this area.
-		collect 12 Shipment of Animal Parts|q 11871/1 |goto 59.1,55.9
+		collect 12 Shipment of Animal Parts##35222 |q 11871/1 |goto 59.1,55.9
 	step
 		talk Hierophant Liandra##25838
 		turnin Not On Our Watch##11871 |goto 57.8,55.1
@@ -1281,9 +1278,9 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	stickystart "winterfinclam"
 	step
 		kill Scalder##25226
-		It's underwater
+		|tip It's underwater.
 		Use The King's Empty Conch on Scalder's corpse |use The King's Empty Conch##34598
-		collect The King's Filled Conch |q 11571/1 |goto 42.5,15.9
+		collect The King's Filled Conch##34623 |q 11571/1 |goto 42.5,15.9
 	step "winterfinclam"
 		click Winterfin Clam##261
 		|tip They are on the ground underwater.
@@ -1311,7 +1308,7 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	step
 		kill 15 Winterfin murlocs |q 11561/1 |goto 40.6,17.5
 		click the yellow cage##1787+
-		Rescue 20 Winterfin Tadpoles |q 11560/1 |goto 40.6,17.5
+		Rescue #20# Winterfin Tadpoles |q 11560/1 |goto 40.6,17.5
 		kill Winterfin Oracle##25216, Winterfin Shorestriker##25215
 	step
 		talk Brglmurgl##25199
@@ -1329,10 +1326,10 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		accept Succulent Orca Stew##11564 |goto 42,13.2
 	step
 		kill Glrggl##25203
-		collect Glrggl's Head|q 11563/1 |goto 37.4,9.8
+		collect Glrggl's Head##34617 |q 11563/1 |goto 37.4,9.8
 	step
-		kill Glimmer Bay Orcas##25204+ |n
-		collect 7 Succulent Orca Blubber|q 11564/1 |goto 40.3,12.4
+		kill Glimmer Bay Orcas##25204+
+		collect 7 Succulent Orca Blubber##34618 |q 11564/1 |goto 40.3,12.4
 	step
 		talk Mrmrglmr##25205
 		turnin Grmmurggll Mrllggrl Glrggl!!!##11563 |goto 42,12.8
@@ -1345,21 +1342,21 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 		turnin The Spare Suit##11565 |goto 43.5,14
 		accept Surrender... Not!##11566 |goto 43.5,14
 	step
-		Go southwest to Winterfin Village |n
+		Go southwest to Winterfin Village
 		Use King Mrgl-Mrgl's Spare Suit |havebuff 134169 |use King Mrgl-Mrgl's Spare Suit##34620 |q 11566 --INV_Misc_Head_Murloc_01
 	step
-		--_Enter_ the cave |goto 37.8,23.2
+		Enter the cave |goto 37.8,23.2 < 5 |walk
 		talk Glrglrglr##28375
 		accept Keymaster Urmgrgl##11569 |goto 37.8,23.2
 	step
 		kill Keymaster Urmgrgl##25210
 		collect Urmgrgl's Key |q 11569/1 |goto 38.4,22.7
 	step
-		Follow the path up and to the back of the cave to
+		Follow the path up and to the back of the cave
 		kill Claximus##25209
 		collect Claw of Claximus |q 11566/1 |goto 37.6,27.4
 	step
-		--Go back up the path to [37.8,23.2] 
+		Go back up the path |goto 37.8,23.2 < 10
 		talk Glrglrglr##28375
 		turnin Keymaster Urmgrgl##11569 |goto 37.8,23.2
 	step
@@ -1382,13 +1379,13 @@ ZygorGuidesViewer:RegisterInclude("A_Cenarion_Expedition_Faction",[[
 	label "ears"
 		kill Northsea Mercenary##25839+, Northsea Thug##25843+
 		collect Nesingwary Lackey Ear##35188 |n
-		Collect Lackey Ears in stacks of 15. |goto Borean Tundra 60.9,63.4
-		When you want to turn in Lackey Ears, click here. |next "turnin" |confirm
+		Collect Lackey Ears in stacks of 15 |goto Borean Tundra 60.9,63.4
+		When you want to turn in Lackey Ears, click here |next "turnin" |confirm
 	step
 	label "turnin"
 		talk Arch Druid Lathorius##25809
 		accept Can't Get Ear-Nough##11867 |goto 57.1,44.3 |n
-		Click here to go back to farming ears. |next "ears" |confirm
+		Click here to go back to farming ears |next "ears" |confirm
 		Keep repeating this quest until you are Exalted with the Cenarion Expedition |condition rep('Cenarion Expedition')==Exalted |next "exalted"
 	step
 	label "exalted"
@@ -2009,8 +2006,8 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 	--	Routing to proper section |next |only if not completedq(28614)
 	step
 		talk Nafien##15395
-		accept Deadwood of the North##28338 |goto Felwood,64.0,10.3
-		accept Disarming Bears##28366 |goto Felwood,64.0,10.3
+		accept Deadwood of the North##28338 |goto Felwood 64.0,10.3
+		accept Disarming Bears##28366 |goto Felwood 64.0,10.3
 	step
 		talk Ferli##48461
 		accept Stupid Drizle!##28362 |goto 64.1,10.3
@@ -2031,17 +2028,17 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 		collect 7 Deadwood Weapons |q 28366/1 |goto 62.0,12.8
 		collect 1 Deadwood Ritual Totem##20741 |use Deadwood Ritual Totem##20741 |n
 		accept Deadwood Ritual Totem##8470
-		You can find more at the following location |goto Felwood,59.7,9.8
+		You can find more at the following location |goto Felwood 59.7,9.8
 	step
 		talk Nafien##15395
 		turnin Deadwood of the North##28338 |goto 64.0,10.3
-		turnin Disarming Bears##28366|goto 64.0,10.3
+		turnin Disarming Bears##28366 |goto 64.0,10.3
 		accept Speak to Salfa##28521 |goto 64.0,10.3
-		You should be able to turn in Feathers for Nafien, a repeatable reputation quest
+		|tip You should be able to turn in Feathers for Nafien, a repeatable reputation quest.
 	step
 		talk Kernda##11558
 		turnin Deadwood Ritual Totem##8470 |goto 64.7,5.7
-		You should be friendly with Timbermaw after completing this quest
+		|tip You should be friendly with Timbermaw after completing this quest.
 		only if rep('Timbermaw Hold')>=Neutral
 	step
 		talk Meilosh##11557
@@ -2049,9 +2046,9 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 		only if rep ('Timbermaw Hold')>=Friendly
 	step
 		talk Salfa##11556
-		turnin Speak to Salfa##28521 |goto Winterspring,21.1,46.2
-		accept Delivery for Donova##28524 |goto Winterspring,21.1,46.2
-		accept Winterfall Activity##28522 |goto Winterspring,21.1,46.2
+		turnin Speak to Salfa##28521 |goto Winterspring 21.1,46.2
+		accept Delivery for Donova##28524 |goto Winterspring 21.1,46.2
+		accept Winterfall Activity##28522 |goto Winterspring 21.1,46.2
 	step
 		talk Donova Snowden##9298
 		turnin Delivery for Donova##28524 |goto 25.1,58.5
@@ -2063,9 +2060,9 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 		accept Mystery Goo##28467 |goto 24.5,47.6
 	step
 		kill Winterfall Totemic##7441+, Winterfall Den Watcher##7440+, Winterfall Runner##10916+
-		Kill 15 Winterfall Furbolg |q 28460/1 |goto 24.5,47.6
+		Kill #15# Winterfall Furbolg |q 28460/1 |goto 24.5,47.6
 		collect 10 Winterfall Spirit Beads |q 28522/1 |goto 24.5,47.6
-		You can find more mobs at the following location |goto Winterspring,27.3,49.3
+		You can find more mobs at the following location |goto Winterspring 27.3,49.3
 	step
 		talk Donova Snowden##9298
 		turnin Mystery Goo##28467 |goto 25.1,58.5
@@ -2075,7 +2072,7 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 	step
 		kill Winterfall Runner##10916
 		collect Winterfall Crate |q 28469/1 |goto 29.3,54.8
-		They walk along the road so some searching may be required
+		|tip They walk along the road so some searching may be required.
 	step
 		kill Scalding Springsurge##48767+,Boiling Springbubble##48768+
 		collect 7 Suspicious Green Sludge |q 28530/1 |goto 32.7,50.6
@@ -2084,7 +2081,7 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 		turnin Winterfall Runners##28469 |goto 25.1,58.5
 		turnin Scalding Signs##28530 |goto 25.1,58.5
 		accept High Chief Winterfall##28470 |goto 25.1,58.5
-		You should be honored with Timbermaw Hold at this point
+		|tip You should be honored with Timbermaw Hold at this point.
 	step
 		kill High Chief Winterfall##10738 |q 28470/1 |goto 37.0,55.6
 	step
@@ -2093,7 +2090,7 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 	step
 		talk Salfa##11556
 		turnin Winterfall Activity##28522 |goto 21.1,46.2
-		You should now be able to do the quest More Beads for Salfa
+		|tip You should now be able to do the quest More Beads for Salfa.
 	step
 		talk Burndl##48722
 		accept Bearzerker##28614 |goto 65.3,46.2
@@ -2103,22 +2100,20 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 	step
 		Use Tanrir's Overcharged Totem to overload Winterfall Earth Totems |use Tanrir's Overcharged Totem##64637
 		Overload 4 Winterfall Earth Totems |q 28615/1 |goto 67.0,47.7
-		|modelnpc Winterfall Earth Totem##49177
 	step
 		kill Grolnar the Berserk##49178 |q 28614/1 |goto 69.3,50.6
 	step
 		talk Tanrir##48723
-		turnin Turning the Earth##28615 |goto Winterspring,65.4,46.2
+		turnin Turning the Earth##28615 |goto Winterspring 65.4,46.2
 	step
 		talk Burndl##48722
 		turnin Bearzerker##28614 |goto 65.3,46.2
 	step
 	label	"the_grind"
 		At this point, you can do two repeatable quests, as well as grind to earn rep.
-		More Beads for Salfa requires that you grind in Winterspring.  You collect 5 Winterfall Spirit Beads, which are worth 2,000 Reputation per turn in.  Click here to farm at the Winterspring location. |confirm |next "winterfall"
-		or
-		Feathers for Nafien requires that you grind in Felwood. You collect 5 Deadwood Headdress Feathers, which are worth 2,000 Reputation per turn in.  Click here to farm at the Felwood location. |confirm |next "deadwood"
-		Collecting 65 Beads/Feathers will get you from Honored to Exalted.
+		More Beads for Salfa requires that you grind in Winterspring. You collect 5 Winterfall Spirit Beads, which are worth 2,000 Reputation per turn in. Click here to farm at the Winterspring location. |confirm |next "winterfall"
+		Feathers for Nafien requires that you grind in Felwood. You collect 5 Deadwood Headdress Feathers, which are worth 2,000 Reputation per turn in. Click here to farm at the Felwood location. |confirm |next "deadwood"
+		|tip Collecting 65 Beads/Feathers will get you from Honored to Exalted.
 	step
 	label	"winterfall"
 		kill Winterfall Shaman##7439+,Winterfall Ursa##7438+
@@ -2130,22 +2125,21 @@ ZygorGuidesViewer:RegisterInclude("A_Timbermaw_Faction",[[
 	step
 		talk Salfa##11556 
 		accept More Beads for Salfa##28523 |n |goto 21.1,46.2
-		Click here to go back to grinding. |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
-		or
+		Click here to go back to grinding |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
 		Exalted with Timbermaw Hold |next "exalted" |condition rep('Timbermaw Hold')==Exalted
 	step
 	label	"deadwood"
 		kill Deadwood Avenger##7157+,Deadwood Den Watcher##7156+,Deadwood Shaman##7158+
-		collect Deadwood Headdress Feather##21377 |n |goto Felwood,61.9,12.3
+		collect Deadwood Headdress Feather##21377 |n |goto Felwood 61.9,12.3
 		|tip You need to collect at least 5.
-		5 Feather Headresses = 2,000 Reputation.  You're aiming for at least 60 to 65 Feather Headresses in total.
+		5 Feather Headresses = 2,000 Reputation. You're aiming for at least 60 to 65 Feather Headresses in total.
 		More can be found at the following location |goto Felwood 59.6,8.9
 		Click here to turn in your feathers |confirm |next "turnin"
 	step
 	label	"turnin"
 		talk Nafien##15395
 		accept Feathers for Nafien##28395 |n |goto 64.0,10.3
-		Click here to go back to grinding. |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
+		Click here to go back to grinding |next "the_grind" |only if rep('Timbermaw Hold')<=Revered |confirm
 		Exalted with Timbermaw Hold |next "exalted" |condition rep('Timbermaw Hold')==Exalted
 	step
 	label	"exalted"
@@ -2804,9 +2798,9 @@ ZygorGuidesViewer:RegisterInclude("A_Sporeggar_Faction",[[
 	--	Routing to proper section |next |only if not completedq(9919)
 	step
 		talk Fahssn##17923
-		accept The Sporelings' Plight##9739 |goto Zangarmarsh,19.1,64.2
-		accept Natural Enemies##9743 |goto Zangarmarsh,19.1,64.2
-		Turn in these two quests 4 times to go from unfriendly to friendly
+		accept The Sporelings' Plight##9739 |goto Zangarmarsh 19.1,64.2
+		accept Natural Enemies##9743 |goto Zangarmarsh 19.1,64.2
+		|tip Turn in these two quests 4 times to go from unfriendly to friendly.
 		|only if rep('Sporeggar')<=Neutral
 	step
 		kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
@@ -2817,8 +2811,8 @@ ZygorGuidesViewer:RegisterInclude("A_Sporeggar_Faction",[[
 		|only if rep('Sporeggar')<=Neutral
 	step
 		talk Fahssn##17923
-		turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh,19.1,64.2
-		turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh,19.1,64.2
+		turnin The Sporelings' Plight##9739 |repeatable |goto Zangarmarsh 19.1,64.2
+		turnin Natural Enemies##9743 |repeatable |goto Zangarmarsh 19.1,64.2
 		|only if rep('Sporeggar')<=Neutral
 	step
 		kill Starving Fungal Giant##18125+, Starving Bog Lord##19519+
@@ -2840,7 +2834,6 @@ ZygorGuidesViewer:RegisterInclude("A_Sporeggar_Faction",[[
 		Grinding mobs at The Spawning Glen no longer will give you reputation
 		Collecting 265 Sanguine Hibiscus from The Underbog will give you enough
 		Click here if you want to grind out Sanguine Hibiscus |confirm always |next "hibiscus_1"
-		or
 		Click here if you want to grind Naga mobs |confirm always |next "grind_1"
 	step
 	label	"hibiscus_1"
@@ -2867,9 +2860,7 @@ ZygorGuidesViewer:RegisterInclude("A_Sporeggar_Faction",[[
 	label	"hibiscus_r"
 		talk T'shu##54674
 		accept Bring Me Another Shrubbery!##9714 |instant |repeatable |or |goto The Underbog 31.6,65.4
-		or
 		Click here to go farming for more _Sanguine Hibiscus_ |confirm always |next "hibiscus" |or 
-		or
 		Click here if you would like to farm Naga for more reputation |confirm always |next "grind_1" |or
 	step
 		talk Gzhun'tt##17856
@@ -2893,20 +2884,19 @@ ZygorGuidesViewer:RegisterInclude("A_Sporeggar_Faction",[[
 	step
 	label	"grind_r"
 		talk Gzhun'tt##17856
-		accept Now That We're Still Friends...##9727 |repeatable |next "grind"|or |goto 19.5,50.0
-		or
+		accept Now That We're Still Friends...##9727 |repeatable |next "grind" |or |goto 19.5,50.0
 		Click here to go farming for _Sanguine Hibiscus_ |confirm |next "hibiscus_1" |or
 		|only if rep('Sporeggar')>=Friendly
 	step
 	label	"grind_2"
-		kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh,26.9,41.7
-		kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh,26.9,41.7
+		kill 12 Bloodscale Slavedriver##18089+ |q 9726/1 |goto Zangarmarsh 26.9,41.7
+		kill 6 Bloodscale Enchantress##18088+ |q 9726/2 |goto Zangarmarsh 26.9,41.7
 		|only if havequest(9726)
 		|next "grind_3"
 	step
 	label	"grind"
-		kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh,26.9,41.7
-		kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh,26.9,41.7
+		kill 12 Bloodscale Slavedriver##18089+ |q 9727/1 |repeatable |goto Zangarmarsh 26.9,41.7
+		kill 6 Bloodscale Enchantress##18088+ |q 9727/2 |repeatable |goto Zangarmarsh 26.9,41.7
 		|only if havequest(9727)
 		|next "grind_4"
 	step
@@ -2943,11 +2933,11 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		kill Chieftain Mummaki##19174
 		collect Chieftain Mummaki's Totem |q 10116/1 |goto 23.8,26.8
 	step
-		kill 3 Daggerfen Assassin##18116 |q 10115/1 |goto 28.2,22.1
-		kill 15 Daggerfen Muckdweller##18115 |q 10115/2 |goto 28.2,22.1
+		kill 3 Daggerfen Assassin##18116+ |q 10115/1 |goto 28.2,22.1
+		kill 15 Daggerfen Muckdweller##18115+ |q 10115/2 |goto 28.2,22.1
 	step
-		kill 5 Ango'rosh Shaman##18118 |q 9835/1 |goto 34.6,29.7
-		kill 10 Ango'rosh Ogre##18117 |q 9835/2 |goto 34.6,29.7
+		kill 5 Ango'rosh Shaman##18118+ |q 9835/1 |goto 34.6,29.7
+		kill 10 Ango'rosh Ogre##18117+ |q 9835/2 |goto 34.6,29.7
 	step
 		talk Ikuti##18008
 		turnin Wanted: Chieftain Mummaki##10116 |goto 42.0,27.2
@@ -2966,7 +2956,7 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		kill Fenclaw Thrasher##18214
 		collect 8 Fenclaw Hide##24486 |q 9834/1 |goto 48.1,38.4
 	step
-		kill 12 Marshfang Slicer##18131 |q 9833/1 |goto 35.9,58.6
+		kill 12 Marshfang Slicer##18131+ |q 9833/1 |goto 35.9,58.6
 	step
 		kill Terrorclaw##20477 |q 9902/1 |goto 22.4,46.1
 		|tip On a little island.
@@ -2974,7 +2964,7 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		kill Marshlight Bleeder##18133 
 		|tip They are all around this area on the land, to the north and south.
 		collect 6 Marshlight Bleeder Venom |q 9830/1 |goto 17.3,38.4
-		You'll be able to find more around the following location |goto Zangarmarsh,19.6,33.3
+		You'll be able to find more around the following location |goto Zangarmarsh 19.6,33.3
 	stickystart "angoroshmaul"
 	step
 		kill Overlord Gorefist##18160 |q 9839/1 |goto 18.3,7.7
@@ -3020,18 +3010,19 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		accept Solving the Problem##9878 |goto 54.5,72.3
 	step
 		kill Boulderfist Hunter##18352+
-		collect Boulderfist Plans|q 9917/1 |goto 63.1,73.2
+		collect Boulderfist Plans |q 9917/1 |goto 63.1,73.2
 	stickystart "kilsorrowagents"
 	step
 		kill Giselda the Crone##18391 |q 9936/1 |goto 71.1,82.4
 	step "kilsorrowagents"
 		kill Kil'sorrow Deathsworn##17148+, Kil'sorrow Spellbinder##17146+, Kil'sorrow Cultist##17147+
-		Kill 10 Kil'sorrow Agents|q 9936/2 |goto 67.9,79.3
+		Kill #10# Kil'sorrow Agents |q 9936/2 |goto 67.9,79.3
 	step
 		talk Corki##18369
-		accept HELP!##9923
+		accept HELP!##9923 |goto 72.6,70.7
+	step
 		kill Boulderfist Crusher##17134+, Boulderfist Mystic##17135+
-		collect 1 Boulderfist Key##25490 |q 9923 |sticky |goto 72.6,70.7
+		collect 1 Boulderfist Key##25490 |n
 		click Corki's Prison##1787
 		Free Corki |q 9923/1 |goto 72.6,70.7
 	step
@@ -3047,12 +3038,13 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 	step
 		click Telaar Supply Crate##6881
 		collect 10 Telaar Supply Crate |q 9956/1 |goto 27.9,29.7
+	stickystart "murkkills"
 	step
+		Use the Torch of Liquid Fire on Sunspring Villager Corpses in the water and the village |use Torch of Liquid Fire##24560
+		Burn #10# Sunspring Villager Corpses |q 9874/1 |goto 29.5,43.5
+	step "murkkills"
 		kill 10 Murkblood Scavenger##18207+ |q 9878/1 |goto 29.5,43.5
 		kill 5 Murkblood Raider##18203+ |q 9878/2 |goto 29.5,43.5
-		Use the Torch of Liquid Fire on Sunspring Villager Corpses in the water and the village |use Torch of Liquid Fire##24560
-		Burn 10 Sunspring Villager Corpses |q 9874/1 |goto 29.5,43.5
-		|modelnpc Sunspring Villager##18240+
 	step
 		talk Poli'lukluk the Wiser##18224
 		turnin Solving the Problem##9878 |goto 54.5,72.3
@@ -3078,8 +3070,8 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 	step
 		Fight Lump until he's almost dead 
 		|tip Sleeping on the hill.
-		Talk to Lump and tell him you need answers! |q 9918/1 |goto 62.7,71.4
-		'|modelnpc Lump##18351
+		Talk to Lump and tell him _"I need answers!"_
+		Interrogate Lump |q 9918/1 |goto 62.7,71.4
 	step
 		talk Huntress Bintook##18353
 		turnin Not On My Watch!##9918 |goto 55,70.5
@@ -3116,25 +3108,28 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		turnin Diplomatic Measures##10108 |goto 73.8,62.6
 		accept Armaments for Deception##9928 |goto 73.8,62.6
 		accept Ruthless Cunning##9927 |goto 73.8,62.6
+	stickystart "kilsorrowarms"
 	step
-		click Kil'sorrow Armament##6959+
-		collect 10 Kil'sorrow Armaments |q 9928/1 |goto 71.4,79.4
 		kill Kil'sorrow Deathsworn##17148+, Kil'sorrow Spellbinder##17146+, Kil'sorrow Cultist##17147+
 		Use your Warmaul Ogre Banners on their corpses |use Warmaul Ogre Banner##25552
 		Plant #10# Warmaul Ogre Banners |q 9927/1 |goto 71.4,79.4
+	step "kilsorrowarms"
+		click Kil'sorrow Armament##6959+
+		collect 10 Kil'sorrow Armaments |q 9928/1 |goto 71.4,79.4
 	step
 		talk Lantresor of the Blade##18261
 		turnin Armaments for Deception##9928 |goto 73.8,62.6
 		turnin Ruthless Cunning##9927 |goto 73.8,62.6
 		accept Returning the Favor##9931 |goto 73.8,62.6
 		accept Body of Evidence##9932 |goto 73.8,62.6
+	stickystart "kilsorrowbanners"
 	step
+		Use the Damp Woolen Blanket on the Blazing Warmaul Pyre |use Damp Woolen Blanket##25658
+		Defend the Boulderfist Saboteurs that appear until they are done placing the corpses |q 9932/1 |goto 46.5,24.3
+	step "kilsorrowbanners"
 		kill Warmaul Shaman##18064+,Warmaul Reaver##17138+
 		Use your Kil'sorrow Banners on their corpses |use Kil'sorrow Banner##25555
 		Plant #10# Kil'sorrow Banners |q 9931/1 |goto 46.5,24.3
-		Use the Damp Woolen Blanket on the Blazing Warmaul Pyre |use Damp Woolen Blanket##25658
-		Defend the Boulderfist Saboteurs that appear until they are done placing the corpses |q 9932/1 |goto 46.5,24.3
-		|modelnpc Boulderfist Saboteur##18396
 	step
 		talk Lantresor of the Blade##18261
 		turnin Returning the Favor##9931 |goto 73.8,62.6
@@ -3151,7 +3146,7 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		accept Wanted: Durn the Hungerer##9938 |goto 54.7,70.9
 	step
 		talk Huntress Kima##18416
-		accept He Called Himself Altruis...##9982 |goto Nagrand,54.8,70.5
+		accept He Called Himself Altruis...##9982 |goto Nagrand 54.8,70.5
 	step
 		The next few quests are meant to be _group quests_
 		If you are not high level, you may need at least _3 people_ for these quests
@@ -3188,24 +3183,24 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		turnin The Master Planner##10001 |goto 27.3,43.1
 		accept Patience and Understanding##10004 |goto 27.3,43.1
 	step
-		_Enter_ the cave |goto 27.0,23.7 < 10 |walk
+		Enter the cave |goto 27.0,23.7 < 10 |walk
 		talk Corki##18445 
 		|tip You may have to fight the 65 Elite standing next to the cage.
 		turnin Corki's Ransom##9954 |goto 29.5,26.1
 		accept Cho'war the Pillager##9955 |goto 29.5,26.1
 	step
-		_Leave_ the cave |goto 27.0,23.7 < 10 |walk
-		_Enter_ the cave |goto 27.2,18.7 < 10 |walk
+		Leave the cave |goto 27.0,23.7 < 10 |walk
+		Enter the cave |goto 27.2,18.7 < 10 |walk
 		kill Cho'war the Pillager##18423+
-		collect Cho'war's Key##25648 |q 9955 |goto Nagrand,25.8,13.8
+		collect Cho'war's Key##25648 |q 9955 |goto Nagrand 25.8,13.8
 	step
-		_Leave_ the cave |goto 27.2,18.7 < 10 |walk
-		_Enter_ the cave |goto 27.0,23.7 < 10 |walk
-		Click _Corki's_ cage to unlock it
+		Leave the cave |goto 27.2,18.7 < 10 |walk
+		Enter the cave |goto 27.0,23.7 < 10 |walk
+		Click Corki's cage to unlock it
 		Free Corki |q 9955/1 |goto 29.5,26.1
 		|tip You may have to fight the 65 Elite standing next to the cage.
 	step
-		_Leave_ the cave |goto 27.0,23.7 < 10 |walk
+		Leave the cave |goto 27.0,23.7 < 10 |walk
 		talk Warden Moi'bff Jill##18408
 		turnin Wanted: Durn the Hungerer##9938 |goto 54.7,70.9
 	step
@@ -3213,26 +3208,26 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		turnin Cho'war the Pillager##9955 |goto 55.5,68.7
 	step
 		talk Sal'salabim##18584
-		Tell him "Altruis sent me. He said that you could help me." 
+		Tell him _"Altruis sent me. He said that you could help me."_
 		|tip He will immediately start attacking you!
-		Persuad Sal'salabim |q 10004/1 |goto Shattrath City,77.3,34.9
+		Persuad Sal'salabim |q 10004/1 |goto Shattrath City 77.3,34.9
 	step
 		talk Sal'salabim##18584
-		turnin Patience and Understanding##10004 |goto Shattrath City,77.3,34.9
-		accept Crackin' Some Skulls##10009 |goto Shattrath City,77.3,34.9
+		turnin Patience and Understanding##10004 |goto Shattrath City 77.3,34.9
+		accept Crackin' Some Skulls##10009 |goto Shattrath City 77.3,34.9
 	step
 		talk Raliq the Drunk##18585
-		Tell him you are here to collect a dept, pay up or you're going to have to hurt him. 
+		Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 		|tip He will immediately start attacking you!
 		Collect Raliq's Debt |q 10009/1 |goto 75.0,31.5
 	step
 		talk Coosh'coosh##18586
-		Tell him you are here to collect a dept, pay up or you're going to have to hurt him
+		Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 		|tip He will immediately start attacking you!
 		Collect Coosh'coosh's Debt |q 10009/2 |goto Zangarmarsh 80.9,91.1
 	step
 		talk Floon##18588
-		Tell him you are here to collect a dept, pay up or you're going to have to hurt him
+		Tell him _"I am here to collect a debt, pay up or I'm going to have to hurt you."_
 		|tip He will immediately start attacking you!
 		Collect Floon's Debt |q 10009/3 |goto Terokkar Forest 27.2,58.1
 	step
@@ -3244,12 +3239,12 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 		turnin It's Just That Easy?##10010 |goto Nagrand 27.3,43.1
 		accept Forge Camp: Annihilated##10011 |goto Nagrand 27.3,43.1
 	step
-		kill Demos\,\ Overseer of Hate##18535
+		kill Demos, Overseer of Hate##18535
 		collect Fel Cannon Activator##25770 |n
 		Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25770
 		Destroy Forge Camp: Hate |q 10011/1 |goto Nagrand 25.0,36.1
 	step
-		kill Xirkos\,\ Overseer of Fear##18536
+		kill Xirkos, Overseer of Fear##18536
 		collect Fel Cannon Activator##25771 |n
 		Use the Fel Cannon Activator in your bags |use Fel Cannon Activator##25771
 		Destoy Forge Camp: Fear |q 10011/2 |goto 19.6,51.1
@@ -3274,9 +3269,8 @@ ZygorGuidesViewer:RegisterInclude("A_Kurenai_Faction",[[
 	label	"turn_in"
 		talk Warden Moi'bff Jill##18408
 		accept More Warbeads##10477 |n |goto Nagrand,54.7,70.9
-		or
-		Click here to go back to farming. |next "bead_grind" |confirm
-		Earn Exalted reputation with the Kurenai. |condition rep("Kurenai")==Exalted |next "exalted"
+		Click here to go back to farming |next "bead_grind" |confirm
+		Earn Exalted reputation with the Kurenai |condition rep("Kurenai")==Exalted |next "exalted"
 	step
 	label exalted
 		Congratulations, you are now Exalted with The Kurenai! |condition rep("Kurenai")==Exalted

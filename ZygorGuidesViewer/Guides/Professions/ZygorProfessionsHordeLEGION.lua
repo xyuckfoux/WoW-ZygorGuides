@@ -904,6 +904,8 @@ accept Worth Its Weight##41174 |or |only if not completedq(41174) |next "Worth_I
 accept Goblin Archaeology##41177 |or |only if not completedq(41177) |next "Goblin_Archaeology" |goto 40.85,26.28
 accept The Right Path##41192 |or |only if not completedq(41192) |next "The Right Path" |goto 40.85,26.28
 accept Out of the Frying Pan##41161 |or |only if not completedq(41161) |next "Out of the Frying Pan" |goto 40.85,26.28
+accept Unspeakable Power##41180 |or |only if not completedq(41180) |next "Unspeakable Power" |goto 40.85,26.28
+accept A New Lead##41189 |or |only if not completedq(41189) |next "A New Lead" |goto 40.85,26.28
 |next "Archaeology_Quests_Finished"
 step
 label "Fragments_of_the_Fjords"
@@ -1234,7 +1236,7 @@ Dig in Digsites in Azsuna
 kill Wyrmtongue Collector##102778+
 |tip These appear periodically when looting the Archaeology finds.
 |tip You can also get an item from these finds that can summon a Wyrmtongue Collector that you can kill.
-collect #10# Part of the Infernal Device##134084 |q 41162/1
+collect 10 Part of the Infernal Device##134084 |q 41162/1
 step
 talk Brann Bronzebeard##103484
 turnin And Into the Fel Fire##41162 |goto Azsuna/0 39.10,38.69
@@ -1251,6 +1253,94 @@ Defeat the Wyrmy Tunkins |q 41163/2 |goto Azsuna/0 39.24,37.36
 step
 talk Brann Bronzebeard##103484
 turnin The Apocalypse Bringer##41163 |goto Azsuna/0 39.10,38.69
+|next "Accept_Archaeology_Quest"
+step
+label "Unspeakable Power"
+Follow the path |goto Suramar/0 34.97,51.16 < 30 |only if walking
+Follow the path up |goto Suramar/0 34.07,54.36 < 20 |only if walking
+Follow the path |goto Suramar/0 33.02,56.85 < 30 |only if walking
+Follow the path |goto Suramar/0 34.95,58.82 < 30 |only if walking
+Follow the path |goto Suramar/0 37.96,62.77 < 30 |only if walking
+Follow the road |goto Suramar/0 36.82,85.93 < 30 |only if walking
+Follow the path |goto Suramar/0 40.86,78.83 < 30 |only if walking
+Follow the path |goto Suramar/0 40.16,82.61 < 30 |only if walking
+Continue following the path |goto Suramar/0 39.63,84.92 < 30 |only if walking
+Follow the path |goto Suramar/0 37.43,86.32 < 30 |only if walking
+Follow the path |goto Suramar/0 36.73,90.02 < 30 |only if walking
+Enter the cave |goto Suramar/0 38.14,90.64 < 15 |walk
+talk Tae'thelan Bloodwatcher##103482
+turnin Unspeakable Power##41180 |goto Suramar/0 38.20,90.08
+accept Narrowing Down##41181 |goto Suramar/0 38.20,90.08
+step
+Dig in Digsites in Suramar
+|tip The digsites are random, and are shown as small shovel icons on the map.
+kill Angry Highborne Spirit##102777+
+|tip These appear periodically when looting the Archaeology finds.
+collect 10 Tattered Highborne Scroll##134116 |q 41181/1
+step
+Follow the path |goto 34.97,51.16 < 30 |only if walking
+Follow the path up |goto 34.07,54.36 < 20 |only if walking
+Follow the path |goto 33.02,56.85 < 30 |only if walking
+Follow the path |goto 34.95,58.82 < 30 |only if walking
+Follow the path |goto 37.96,62.77 < 30 |only if walking
+Follow the road |goto 36.82,85.93 < 30 |only if walking
+Follow the path |goto 40.86,78.83 < 30 |only if walking
+Follow the path |goto 40.16,82.61 < 30 |only if walking
+Continue following the path |goto 39.63,84.92 < 30 |only if walking
+Follow the path |goto 37.43,86.32 < 30 |only if walking
+Follow the path |goto 36.73,90.02 < 30 |only if walking
+Enter the cave |goto 38.14,90.64 < 15 |walk
+talk Tae'thelan Bloodwatcher##103482
+turnin Narrowing Down##41181 |goto Suramar/0 38.20,90.08
+accept Uncovering the Orb of Sciallax##41182 |goto Suramar/0 38.20,90.08
+step
+talk Tae'thelan Bloodwatcher##103482
+Tell him: _"I'm ready to go."_
+Meet with Tae'thelan |q 41182/1 |goto Suramar/0 59.31,42.95
+step
+Follow Tae'thelan into the cave
+click the Encased Orb
+Plant the explosives |q 41182/2 |goto Suramar/35 44.19,72.22
+step
+talk Tae'thelan Bloodwatcher##103482
+turnin Uncovering the Orb of Sciallax##41182 |goto Suramar/35 44.37,70.64
+|next "Accept_Archaeology_Quest"
+step
+label "A New Lead"
+talk Lessah Moonwater##103485
+turnin A New Lead##41189 |goto Thunder Totem/0 45.90,44.93
+accept Crystal Eyes##41190 |goto Thunder Totem/0 45.90,44.93
+step
+collect 6 Highmountain Ritual-Stones##130904
+You can either buy these from the AH or you can survey the digsites in Highmountain
+|tip The digsites are random, and are shown as small shovel icons on the map.
+|only if not completedq(41190)
+step
+Enter the cave |goto Highmountain/0 41.65,46.99
+click the Mucksnout Den Crystal
+"_Place the three Highmountain Ritual-Stones into the crystal._"
+Interact with the Mucksnout Den Crystal |q 41190/2 |goto Highmountain/16 50.50,87.79
+step
+Enter the cave |goto Highmountain/0 48.06,33.74
+click the Rockcrawler Chasm Crystal
+"_Place the three Highmountain Ritual-Stones into the crystal._"
+Interact with the Rockcrawler Chasm Crystal |q 41190/1 |goto Highmountain/0 48.38,34.62
+step
+talk Lessah Moonwater##103485
+turnin Crystal Eyes##41190 |goto Thunder Totem/0 45.90,44.93
+accept Drogbar Deception##41191 |goto Thunder Totem/0 45.90,44.93
+step
+Enter the cave |goto Highmountain/0 38.38,61.32
+Follow the path |goto Highmountain/20 67.61,66.26
+Continue following the path |goto 67.76,45.70
+Continue following the path |goto 57.09,36.42
+Continue following the path |goto 41.27,59.62
+Follow the path up |goto Highmountain/21 42.92,64.67
+kill Gelmogg##95881
+collect Ancient Highmountain Necklace##134094 |q 41191/1 |goto 46.67,34.19
+step
+talk Lessah Moonwater##103485
+turnin Drogbar Deception##41191 |goto Thunder Totem/0 45.90,44.93
 |next "Accept_Archaeology_Quest"
 step
 label "Archaeology_Quests_Finished"
@@ -2121,6 +2211,8 @@ click Test Kitchen Results
 |tip It appears nearby.
 |tip The work orders take 4 hours each.
 |tip It may take a while to get the recipe.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 collect Recipe: Salt and Pepper Shank##133831 |n
 Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133831
 Learn the Rank 2 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201524 |goto Dalaran L/10 40.16,65.95 |only Alliance
@@ -2136,6 +2228,8 @@ click Test Kitchen Results
 |tip It appears nearby.
 |tip The work orders take 4 hours each.
 |tip It may take a while to get the recipe.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 collect Recipe: Salt and Pepper Shank##133851 |n
 Use the Recipe: Salt and Pepper Shank |use Recipe: Salt and Pepper Shank##133851
 Learn the Rank 3 Recipe for Salt and Pepper Shank |learn Salt and Pepper Shank##201544 |goto 40.16,65.95 |only Alliance
@@ -2207,6 +2301,8 @@ click Test Kitchen Results
 |tip It appears nearby.
 |tip The work orders take 4 hours each.
 |tip It may take a while to get the recipe.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 collect Recipe: The Hungry Magister##133821 |n
 Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133821
 Learn the Rank 1 Recipe for The Hungry Magister |learn The Hungry Magister##201505 |goto Dalaran L/10 40.16,65.95 |only Alliance
@@ -2222,6 +2318,8 @@ click Test Kitchen Results
 |tip It appears nearby.
 |tip The work orders take 4 hours each.
 |tip It may take a while to get the recipe.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 collect Recipe: The Hungry Magister##133841 |n
 Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133841
 Learn the Rank 2 Recipe for The Hungry Magister |learn The Hungry Magister##201534 |goto 40.16,65.95 |only Alliance
@@ -2237,6 +2335,8 @@ click Test Kitchen Results
 |tip It appears nearby.
 |tip The work orders take 4 hours each.
 |tip It may take a while to get the recipe.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 collect Recipe: The Hungry Magister##133861 |n
 Use the Recipe: The Hungry Magister |use Recipe: The Hungry Magister##133861
 Learn the Rank 3 Recipe for The Hungry Magister |learn The Hungry Magister##201554 |goto 40.16,65.95 |only Alliance
@@ -2420,11 +2520,15 @@ talk Nomi##101846
 |tip Inside the building.
 Choose _"Research recipes using Silver Mackerel."_
 |tip Start a Work Order.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 Return the Mackerel to Nomi |q 40991/2 |goto 40.16,65.95 |only Alliance
 Return the Mackerel to Nomi |q 40991/2 |goto 69.76,38.76 |only Horde
 step
 click Test Kitchen Results
 |tip The Work Order will take 12 seconds to complete.
+|tip You can obtain Nomi Snacks from completed Work Orders.
+|tip Nomi Snacks will allow you to instantly complete Work Orders in progress.
 Collect the Test Kitchen Results |q 40991/3 |goto 40.11,65.28 |only Alliance
 Collect the Test Kitchen Results |q 40991/3 |goto 69.72,38.38 |only Horde
 step

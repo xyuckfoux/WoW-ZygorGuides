@@ -422,10 +422,10 @@ local ConditionEnv = {
 		return math.floor(select(2,ZGV:GetThunderStage())*100)
 	end,
 	hasmount = function(mountspell)
-		local id,name,spell
-		for i=1,GetNumCompanions("MOUNT") do
-			 id,name,spell = GetCompanionInfo("MOUNT",i)
-			 if spell==mountspell then return true end
+		local mountIDs = C_MountJournal.GetMountIDs()
+		for i, mountID in ipairs(mountIDs) do
+			local name, spell, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID)
+			if spell==mountspell and isCollected then return true end
 		end
 	end,
 	itemcount = function(...)
@@ -813,11 +813,11 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 				if cmd=="leechsteps" then
 					-- works anywhere
-					local fromguide,from,to = params:match("^\"(.+)\"%s-,%s-(.-)%s-,%s-(.-)$")
+					local fromguide,from,to = params:match("^\"(.+)\"%s*(%d+)%s*%-%s*(%d+)$")
 
 					local leechsteps_guide = ZGV:SanitizeGuideTitle(fromguide or params:match("^\"(.+)\"$") or params) :gsub("\\+","\\")
 					local leechsteps_from = tonumber(from) or 1
-					local leechsteps_to = tonumber(to) or 999
+					local leechsteps_to = tonumber(to) or 9999
 
 					if fully_parse then
 
@@ -923,9 +923,9 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 						-- THIS SUCKS. Find the last ding to find the last level.
 						while st do
-							local lev
-							st,en,lev = text:find("[ \t\r\n]ding ([0-9]+)[ \t\r\n]",en+1)
-							if lev then prevlevel = tonumber(lev) end
+							local lev,cmd
+							st,en,cmd,lev = text:find("[ \t\r\n]([dinglev]+) ([0-9]+)[ \t\r\n]",en+1)
+							if (cmd=="ding" or cmd=="level") and lev then prevlevel = tonumber(lev) end
 						end
 						breakout=true
 						break
@@ -1061,6 +1061,8 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 							goal={}
 						end
 
+						if type(GOALTYPES[cmd])=="string" then cmd=GOALTYPES[cmd] end
+
 						if cmd=="goto" or cmd=="at" or cmd=="fly" then
 
 							if do_debug then ZGV:Debug(":== "..cmd..": ["..params.."]") end
@@ -1127,6 +1129,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 										step.waypath[var] = tonumber(val) or val
 										prevpathvars[var] = tonumber(val) or val
 									end
+									if step.waypath.radius then step.waypath.dist=step.waypath.radius end  -- radius=dist
 								end
 							end
 
@@ -1166,6 +1169,9 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 						elseif cmd=="buttonicon" then
 							goal.buttonicon = tonumber(params) or 1
 
+						elseif cmd=="countexpr" then
+							goal.countexpr = params
+							
 						elseif cmd=="modelnpc" then
 							goal.modelname,goal.modelnpc = ParseID(params)
 
@@ -1396,7 +1402,7 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 				end
 
 
-				if cmd=="ding" then
+				if cmd=="level" then
 					prevlevel = goal.level
 				end
 

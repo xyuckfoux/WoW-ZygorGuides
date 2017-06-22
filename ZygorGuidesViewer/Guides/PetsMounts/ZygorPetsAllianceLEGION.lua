@@ -4,9 +4,11 @@ if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("PetsALEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Lagan",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Lagan.",
+condition_suggested="level>=100 and level<=110",
 model={71980},
 pet=1930,
-description="This guide will walk you through obtaining the Aquatic pet: Lagan",
 },[[
 step
 This pet is a reward for completing the dungeon achievement _Poor Unfortunate Souls_
@@ -21,9 +23,11 @@ _Congratulations!_
 You have collected the _Lagan_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ridgeback Piglet",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet.",
+condition_suggested="level>=100 and level<=110",
 model={65667},
 pet=1756,
-description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet",
 },[[
 step
 label "Start"
@@ -71,9 +75,11 @@ _Congratulations!_
 You have collected the _Ridgeback Piglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Thaumaturgical Piglet",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet.",
+condition_suggested="level>=100 and level<=110",
 model={65671},
 pet=1759,
-description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet",
 },[[
 step
 label "Start"
@@ -121,9 +127,11 @@ _Congratulations!_
 You have collected the _Thaumaturgical Piglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Noblegarden Bunny",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny.",
+condition_suggested="level>=100 and level<=110",
 model={28726},
 pet=1943,
-description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny",
 },[[
 step
 This pet can only be purchased during the _Noblegarden_ event
@@ -139,9 +147,11 @@ _Congratulations!_
 You have collected the _Noblegarden Bunny_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Emmigosa",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa.",
+condition_suggested="level>=100 and level<=110",
 model={65120},
 pet=1720,
-description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa",
 },[[
 step
 This pet is a reward for completing the quest _On the Brink_ in Azsuna.
@@ -153,9 +163,11 @@ _Congratulations!_
 You have collected the _Emmigosa_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Igneous Flameling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling.",
+condition_suggested="level>=100 and level<=110",
 model={73308},
 pet=1949,
-description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling",
 },[[
 step
 This pet can only be purchased during the _Midsummer Fire Festival_ event
@@ -173,9 +185,11 @@ _Congratulations!_
 You have collected the _Igneous Flameling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Alliance Enthusiast",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast.",
+condition_suggested="level>=100 and level<=110",
 model={71002},
 pet=1918,
-description="This guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast",
 },[[
 step
 This pet is a reward for obtaining honor level 50 for the first time
@@ -188,16 +202,20 @@ _Congratulations!_
 You have collected the _Alliance Enthusiast_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Gruntling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling.",
+condition_suggested="level>=100 and level<=110",
 model={73245},
-description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling",
 },[[
 step
 This pet is a reward for reaching PvP Prestige level 7 for the first time
 |tip You must complete this on a _Horde_ character.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Dutiful Squire",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire.",
+condition_suggested="level>=100 and level<=110",
 model={73244},
-description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire",
 },[[
 step
 This pet is a reward for reaching PvP Prestige level 7 for the first time
@@ -209,27 +227,33 @@ _Congratulations!_
 You have collected the _Dutiful Squire_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Horde Fanatic",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Horde Fanatic.",
+condition_suggested="level>=100 and level<=110",
 model={71003},
 pet=1919,
-description="This guide will walk you through obtaining the Humanoid pet: Horde Fanatic",
 },[[
 step
 This pet is a reward for obtaining honor level 50 for the first time
 You must complete this on a _Horde_ character
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Knight-Captain Murky",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky.",
+condition_suggested="level>=100 and level<=110",
 model={73351},
 pet=1940,
-description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky",
 },[[
 step
 This pet was a reward for attending US or EU BlizzCon 2016 event
 |tip This pet can no longer be obtained.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Legionnaire Murky",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky.",
+condition_suggested="level>=100 and level<=110",
 model={73352},
 pet=1939,
-description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky",
 },[[
 step
 This pet was a reward for attending US or EU BlizzCon 2016 event
@@ -237,9 +261,11 @@ This pet was a reward for attending US or EU BlizzCon 2016 event
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Tylarr Gronnden",{
 author="support@zygorguides.com",
+description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
+condition_suggested="level>=100 and level<=110",
+author="support@zygorguides.com",
 model={59026},
 pet=2022,
-description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden",
 },[[
 step
 You will need to gain _Rank 4_ with the Legion Brawler's Guild
@@ -256,9 +282,11 @@ _Congratulations!_
 You have collected the _Tylarr Gronnden_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Cauldron",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Cauldron.",
+condition_suggested="level>=100 and level<=110",
 model={69490},
 pet=1699,
-description="This guide will walk you through obtaining the Magic pet: Enchanted Cauldron",
 },[[
 step
 This pet is crafted by players with the _Enchanting_ profession
@@ -293,9 +321,11 @@ _Congratulations!_
 You have collected the _Enchanted Cauldron_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Pen",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Pen.",
+condition_suggested="level>=100 and level<=110",
 model={69488},
 pet=1701,
-description="This guide will walk you through obtaining the Magic pet: Enchanted Pen",
 },[[
 step
 This pet is crafted by players with the _Enchanting_ profession
@@ -330,9 +360,11 @@ _Congratulations!_
 You have collected the _Enchanted Pen_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Enchanted Torch",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Torch.",
+condition_suggested="level>=100 and level<=110",
 model={69489},
 pet=1700,
-description="This guide will walk you through obtaining the Magic pet: Enchanted Torch",
 },[[
 step
 This pet is crafted by players with the _Enchanting_ profession
@@ -367,9 +399,11 @@ _Congratulations!_
 You have collected the _Enchanted Torch_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Transmutant",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Transmutant.",
+condition_suggested="level>=100 and level<=110",
 model={71828},
 pet=1920,
-description="This guide will walk you through obtaining the Magic pet: Transmutant",
 },[[
 step
 label "Start"
@@ -418,9 +452,11 @@ _Congratulations!_
 You have collected the _Transmutant_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Untethered Wyrmling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling.",
+condition_suggested="level>=100 and level<=110",
 model={71827},
 pet=1921,
-description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling",
 },[[
 step
 This pet is a reward for completing the quest _Balance to Spare_ in Suramar
@@ -434,9 +470,11 @@ _Congratulations!_
 You have collected the _Untethered Wyrmling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Trigger",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Trigger.",
+condition_suggested="level>=100 and level<=110",
 model={68666},
 pet=1886,
-description="This guide will walk you through obtaining the Mechanical pet: Trigger",
 },[[
 step
 This pet is crafted by players with the _Engineering_ profession

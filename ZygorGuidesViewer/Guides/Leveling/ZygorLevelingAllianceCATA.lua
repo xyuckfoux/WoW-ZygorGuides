@@ -18275,21 +18275,6 @@ accept The Twilight Lexicon##8279 |goto 68.7,63.0
 step
 talk Marshal Bluewall##17080
 turnin Report to Marshal Bluewall##9415 |goto 39.6,47.0
-accept Scouring the Desert##9419 |goto 39.6,47.0
-step
-Click the Silithyst Geyser |goto 50.0,49.9
-|tip They look like small pink rocks with holes in the top of them.  They have smoke floating out of their tops, and they blow up a stream of orange steam occasionally.  You can find them all around Silithus.
-Surround yourself in Silithyst Dust |havebuff 135867 |c |q 9419
-They spawn in various locations, you find more at:
-[53.2,41.6]
-[57.1,47.2]
-[60.0,41.1]
-step
-Stand inside the big blue-glowing metal machine
-Deliver Silithyst |q 9419/1 |goto 39.1,46.9
-step
-talk Marshal Bluewall##17080
-turnin Scouring the Desert##9419 |goto 39.6,47.0
 step
 kill Twilight Keeper Havunth##11804
 |tip He walks around this area in a purple robe, so you may need to search for him.

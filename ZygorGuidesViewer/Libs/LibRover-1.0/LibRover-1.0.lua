@@ -2556,11 +2556,6 @@ do
 						if cost_debugging then costdesc = costdesc .. "wall +60; " end
 					end
 						
-					if mode=="fly" and (not current.parentlink or current.parentlink.mode~="fly") then
-						mytime = mytime+5
-						if cost_debugging then costdesc = costdesc .. "mountup +5; " end
-					end
-
 					-- get some sane fallback...
 					mytime = mytime or neighlink.cost or 0
 
@@ -2664,6 +2659,11 @@ do
 						mycost=mycost+30
 					end
 					--]]
+
+					if mode=="fly" and ((not current.parentlink and not IsFlying("player")) or (current.parentlink and current.parentlink.mode~="fly")) and ((neighlink and neighlink.dist or 9999)>30) then
+						mytime = mytime+2
+						if cost_debugging then costdesc = costdesc .. "mountup +2; " end
+					end
 
 					-- cost calculation is over.
 

@@ -403,6 +403,7 @@ function ZygorGuidesViewerFrame_Step_Setup(num)
 
 	local iconcount=16
 	local function icon_seticon(self,n)
+		self:SetTexture(ZGV.CurrentSkinStyle:SkinData("StepLineIcons"))
 		self:SetTexCoord((n-1)/iconcount,n/iconcount,0,1)
 	end
 

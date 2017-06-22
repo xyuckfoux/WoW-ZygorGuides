@@ -6808,7 +6808,7 @@ Tell him "_I'm not an actor._"
 Then tell him "_Ok. I'll give it a try then._"
 Complete the opera event and loot the boss for a chance to drop the Music Roll.
 If it doesn't drop you'll have to try again next week.
-_Click here_ if it didn't drop to do go the next step. |confirm |next |only if not achieved(9914/22)
+_Click here_ if it didn't drop to do go the next step. |confirm |next |only if not achieved(9914,22)
 use Music Roll: Karazhan Opera House##122231 |achieve 9914/4
 step
 map Zul'Gurub
@@ -6830,7 +6830,7 @@ kill Zanzil##52053
 kill High Priestess Kilnara##52059
 kill Jin'do the Godbreaker##52148
 If it doesn't drop you'll have to try again tomorrow
-_Click here_ if it didn't drop to do go the next step |confirm |next |only if not achieved(9914/12)
+_Click here_ if it didn't drop to do go the next step |confirm |next |only if not achieved(9914,12)
 use Music Roll: Zul'Gurub Voodoo##122215 |achieve 9914/23
 step
 The Arena Chest spawns every three hours starting with 12 A.M. daily. Standing in the Areana does flag you for PVP.
@@ -10071,55 +10071,4 @@ _Obtain_ 300 mounts |achieve 10355
 |tip You can select any mount from the Mounts panel by pressing "Shift+P" and searching our database.
 step
 Congratulations, you have _earned_ the Lord of Reins Achievement!
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Toys\\Legion\\Rocfeather Skyhorn Kite",{
-condition_end="_G.PlayerHasToy(131811)",
-author="support@zygorguides.com",
-startlevel=100,
-},[[
-step
-Follow the path |goto Highmountain/0 51.07,43.38 < 30 |only if walking
-Follow the path down |goto Highmountain/0 48.69,43.78 < 30 |only if walking
-click Treasure Chest
-|tip It's on top of the big rock.
-|tip Click the Mucksnout Runt before clicking the Treasure Chest.  Lawl.
-collect Delicate Roc Feather##131926 |goto Highmountain/0 47.63,44.06 |condition _G.GetItemCount(131926) or _G.PlayerHasToy(131811)
-step
-Follow the path |goto 48.77,43.67 < 30 |only if walking
-Follow the path up |goto 49.39,39.70 < 20 |only if walking
-kill Crawshuk the Hungry##97345
-|tip He is a rare elite, you may need help.
-collect Gleaming Roc Feather##131809 |goto 48.37,40.18 |condition _G.GetItemCount(131809) or _G.PlayerHasToy(131811)
-step
-Follow the path down |goto 48.70,40.51 < 20 |only if walking
-Follow the path |goto 50.80,39.68 < 30 |only if walking
-Follow the path up |goto 51.87,37.50 < 20 |only if walking
-Follow the path |goto 52.37,36.37 < 20 |only if walking
-Follow the path |goto 52.62,34.73 < 20 |only if walking
-Follow the path up |goto 51.87,34.14 < 20 |only if walking
-Follow the path up |goto 50.54,33.77 < 20 |only if walking
-Follow the path |goto 49.61,35.67 < 20 |only if walking
-Follow the path up |goto 49.55,37.01 < 20 |only if walking
-click Treasure Chest
-|tip It's in the bird nest.
-collect Shimmering Roc Feather##131927 |goto 49.64,37.75 |condition _G.GetItemCount(131927) or _G.PlayerHasToy(131811)
-step
-Cross the bridge |goto 54.48,48.28 < 20 |only if walking
-Cross the bridge |goto 55.13,50.01 < 20 |only if walking
-Follow the path up |goto 56.65,53.40 < 20 |only if walking
-Follow the path |goto 56.42,54.48 < 20 |only if walking
-Follow the path narrow path up |goto 55.27,52.57 < 15 |only if walking
-Carefully jump down onto the rock |goto 53.48,51.35 < 7 |only if walking
-Carefully jump down onto the wooden log |goto 53.58,51.09 < 7 |only if walking
-click Treasure Chest
-collect Derelict Skyhorn Kite##131810 |goto 53.62,51.03 |condition _G.GetItemCount(131810) or _G.PlayerHasToy(131811)
-step
-Use the Shimmering Roc Feather |use Shimmering Roc Feather##131927
-collect Rocfeather Skyhorn Kite##131811 |goto 53.62,51.03 |condition _G.GetItemCount(131811) or _G.PlayerHasToy(131811)
-step
-Use the Rocfeather Skyhorn Kite |use Rocfeather Skyhorn Kite##131811
-Obtain the Rocfeather Skyhorn Kite Toy |toy Rocfeather Skyhorn Kite##131811
-step
-_Congratulations!_
-You obtained the Rocfeather Skyhorn Kite toy.
 ]])

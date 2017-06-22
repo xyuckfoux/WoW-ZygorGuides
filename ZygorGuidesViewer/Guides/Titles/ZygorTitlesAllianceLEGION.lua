@@ -196,6 +196,22 @@ step
 Congratulations!
 You have earned the _Slayer_ title!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Darkener",{
+author="support@zygorguides.com",
+description="This guide will assist you in earning The Darkener title.",
+},[[
+step
+This title is a reward for defeating Kil'jaeden on _Mythic_ difficulty
+|tip Kil'jaeden is the last boss in the raid instance _Tomb of Sargeras_.
+This part of the raid does not become available until _Tuesday, Aug. 8, 2017_!
+confirm |only if not achieved(11781)
+step
+Enter the Tomb of Sargeras |goto Broken Shore/0 64.56,20.78
+kill Kil'jaeden##117269 |achieve 11781
+step
+Congratulations!
+You have earned _The Darkener_ title!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Dreamer",{
 author="support@zygorguides.com",
 description="This guide will assist you in earning The Dreamer title.",
@@ -210,6 +226,29 @@ kill Xavius##103769 |achieve 10827
 step
 Congratulations!
 You have earned _The Dreamer_ title!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\The Tomb Raider",{
+author="support@zygorguides.com",
+description="This guide will assist you in earning The Tomb Raider title.",
+},[[
+step
+This title is a reward for completing the _Glory of the Tomb Raider_ achievement
+This raid does not become fully available until _Tuesday, Aug. 8, 2017_!
+confirm |only if not achieved(11763)
+step
+Complete the following objectives to earn this title:
+achieve 11763/1
+achieve 11763/2
+achieve 11763/3
+achieve 11763/4
+achieve 11763/5
+achieve 11763/6
+achieve 11763/7
+achieve 11763/8
+achieve 11763/9
+step
+Congratulations!
+You have earned _The Tomb Raider_ title!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\Dungeons & Raids\\Vengeance Incarnate",{
 author="support@zygorguides.com",
@@ -318,6 +357,18 @@ Collect #300# unique mounts |achieve 10355
 step
 Congratulations!
 You have earned the _Lord of the Reins_ title!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\Timelord",{
+author="support@zygorguides.com",
+description="This guide will assist you in earning the Timelord title.",
+},[[
+step
+This title is a reward for completing the _Chromie Homie_ achievement
+Reach the "Timelord" friendship rank with Chromie |achieve 11941
+|tip Use the Deaths of Chromie guides to accomplish this.
+step
+Congratulations!
+You have earned the _Timelord_ title!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Legion Titles\\General\\The Unrelenting",{
 author="support@zygorguides.com",

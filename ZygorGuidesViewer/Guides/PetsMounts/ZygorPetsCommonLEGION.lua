@@ -5,9 +5,10 @@ if ZGV:DoMutex("PetsCommonLEGION") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Benax",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Benax",
 model={72658},
 pet=1934,
-description="This guide will walk you through obtaining the Aquatic pet: Benax",
 },[[
 step
 kill Anax##111197
@@ -17,24 +18,26 @@ step
 _Congratulations!_
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Bleakwater Jelly",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Bleakwater Jelly",
 model={65630},
 pet=1753,
-description="This guide will walk you through obtaining the Aquatic pet: Bleakwater Jelly",
 },[[
 step
 Enter the Helheim portal |goto Stormheim/0 73.38,39.74
 kill Soulthirster##97630
 collect Bleakwater Jelly##129188 |n |goto Helheim/0 29.29,63.96
 |tip This pet has a small chance to drop.
-learnpet Bleakwater Jelly##98116 |use Bleakwater Jelly##129188
+learnpet Bleakwater Jellsuny##98116 |use Bleakwater Jelly##129188
 step
 _Congratulations!_
 You have collected the _Bleakwater Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Blorp",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Blorp",
 model={63693},
 pet=1666,
-description="This guide will walk you through obtaining the Aquatic pet: Blorp",
 },[[
 step
 talk Galissa Sundew##55103
@@ -48,9 +51,10 @@ _Congratulations!_
 You have collected the _Blorp_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Coralback Fiddler",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Coralback Fiddler",
 model={65800},
 pet=1775,
-description="This guide will walk you through obtaining the Aquatic pet: Coralback Fiddler",
 },[[
 step
 The _Coralback Fiddler_ is level 25
@@ -62,9 +66,10 @@ _Congratulations!_
 You have collected the _Coralback Fiddler_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Ghostshell Crab",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Ghostshell Crab",
 model={63691},
 pet=1665,
-description="This guide will walk you through obtaining the Aquatic pet: Ghostshell Crab",
 },[[
 step
 talk Galissa Sundew##55103
@@ -78,9 +83,10 @@ _Congratulations!_
 You have collected the _Ghostshell Crab_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Juvenile Scuttleback",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Juvenile Scuttleback",
 model={65151},
 pet=1728,
-description="This guide will walk you through obtaining the Aquatic pet: Juvenile Scuttleback",
 },[[
 step
 The _Juvenile Scuttleback_ is level 25
@@ -92,9 +98,10 @@ _Congratulations!_
 You have collected the _Juvenile Scuttleback_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Plump Jelly",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Plump Jelly",
 model={65638},
 pet=1755,
-description="This guide will walk you through obtaining the Aquatic pet: Plump Jelly",
 },[[
 step
 talk Draemus##107326
@@ -106,9 +113,10 @@ _Congratulations!_
 You have collected the _Plump Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sewer-Pipe Jelly",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Sewer-Pipe Jelly",
 model={65637},
 pet=1754,
-description="This guide will walk you through obtaining the Aquatic pet: Sewer-Pipe Jelly",
 },[[
 step
 talk Laura Malley##97364
@@ -120,9 +128,10 @@ _Congratulations!_
 You have collected the _Sewer-Pipe Jelly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Spring Strider",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Spring Strider",
 model={43798},
 pet=1739,
-description="This guide will walk you through obtaining the Aquatic pet: Spring Strider",
 },[[
 step
 The _Spring Strider_ is level 25
@@ -134,9 +143,10 @@ _Congratulations!_
 You have collected the _Spring Strider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Sting Ray Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Sting Ray Pup",
 model={70937},
 pet=1911,
-description="This guide will walk you through obtaining the Aquatic pet: Sting Ray Pup",
 },[[
 step
 This pet requires both a Good Friend reputation with Conjurer Margoss and 50 Drowned Mana
@@ -154,9 +164,10 @@ _Congratulations!_
 You have collected the _Sting Ray Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Young Mutant Warturtle",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Aquatic pet: Young Mutant Warturtle",
 model={71611},
 pet=1912,
-description="This guide will walk you through obtaining the Aquatic pet: Young Mutant Warturtle",
 },[[
 step
 This pet can be battled by buying an item in the Underbelly
@@ -177,9 +188,10 @@ _Congratulations!_
 You have collected the _Young Mutant Warturtle_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ash'ana",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Ash'ana",
 model={37949},
 pet=1927,
-description="This guide will walk you through obtaining the Beast pet: Ash'ana",
 },[[
 step
 Earn Revered reputation with the Dreamweavers |condition rep("Dreamweavers")>=Revered
@@ -192,9 +204,10 @@ _Congratulations!_
 You have collected the _Ash'ana_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ashmaw Cub",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Ashmaw Cub",
 model={65070},
 pet=1706,
-description="This guide will walk you through obtaining the Beast pet: Ashmaw Cub",
 },[[
 step
 Follow the path |goto Val'sharah/0 56.33,81.10 < 20 |only if walking
@@ -213,9 +226,10 @@ _Congratulations!_
 You have collected the _Ashmaw Cub_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Baby Elderhorn",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Baby Elderhorn",
 model={66485},
 pet=1884,
-description="This guide will walk you through obtaining the Beast pet: Baby Elderhorn",
 },[[
 step
 Earn Revered reputation with the Highmountain Tribe |condition rep("Highmountain Tribe")>=Revered
@@ -228,9 +242,10 @@ _Congratulations!_
 You have collected the _Baby Elderhorn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Black-Footed Fox Kit",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Black-Footed Fox Kit",
 model={65389},
 pet=1743,
-description="This guide will walk you through obtaining the Beast pet: Black-Footed Fox Kit",
 },[[
 step
 The _Black-Footed Fox Kit_ is level 25
@@ -242,9 +257,10 @@ _Congratulations!_
 You have collected the _Black-Footed Fox Kit_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Burrow Spiderling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Burrow Spiderling",
 model={65129},
 pet=1726,
-description="This guide will walk you through obtaining the Beast pet: Burrow Spiderling",
 },[[
 step
 The _Burrow Spiderling_ is level 25
@@ -256,9 +272,10 @@ _Congratulations!_
 You have collected the _Burrow Spiderling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Cavern Moccasin",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Cavern Moccasin",
 model={74469},
 pet=1999,
-description="This guide will walk you through obtaining the Beast pet: Cavern Moccasin",
 },[[
 step
 Complete the Wailing Caverns daily quest
@@ -272,9 +289,10 @@ _Congratulations!_
 You have collected the _Cavern Moccasin_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Corgi Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Corgi Pup",
 model={68729},
 pet=1890,
-description="This guide will walk you through obtaining the Beast pet: Corgi Pup",
 },[[
 step
 This pet was available during the WoW 12th Aniversity Event
@@ -285,9 +303,10 @@ _Congratulations!_
 You have collected the _Corgi Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Corgnelius",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Corgnelius",
 model={68845},
 pet=1929,
-description="This guide will walk you through obtaining the Beast pet: Corgnelius",
 },[[
 step
 This pet is a reward for completing the Order Hall Mission _It's so FLUFFY!_
@@ -298,9 +317,10 @@ _Congratulations!_
 You have collected the _Corgnelius_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Crystalline Broodling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Crystalline Broodling",
 model={66211},
 pet=1809,
-description="This guide will walk you through obtaining the Beast pet: Crystalline Broodling",
 },[[
 step
 The _Crystalline Broodling_ is level 25
@@ -312,9 +332,10 @@ _Congratulations!_
 You have collected the _Crystalline Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Dreadmaw",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Dreadmaw",
 model={73661},
 pet=1952,
-description="This guide will walk you through obtaining the Beast pet: Dreadmaw",
 },[[
 step
 Enter the Trial of the Crusader raid |goto goto Icecrown/0 75.05,21.81 < 5 |c
@@ -330,9 +351,10 @@ _Congratulations!_
 You have collected the _Dreadmaw_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Fel Piglet",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Fel Piglet",
 model={65672},
 pet=1760,
-description="This guide will walk you through obtaining the Beast pet: Fel Piglet",
 },[[
 step
 talk Draemus##107326
@@ -344,9 +366,10 @@ _Congratulations!_
 You have collected the _Fel Piglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Felspider",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Felspider",
 model={72868},
 pet=1731,
-description="This guide will walk you through obtaining the Beast pet: Felspider",
 },[[
 step
 The _Felspider_ is level 25
@@ -358,9 +381,10 @@ _Congratulations!_
 You have collected the _Felspider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Grumpy",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Grumpy",
 model={65071},
 pet=1705,
-description="This guide will walk you through obtaining the Beast pet: Grumpy",
 },[[
 step
 This pet is a reward for completing the quest _Grumpy_ in Val'sharah |goto Val'sharah/0 38.63,65.66
@@ -375,9 +399,10 @@ _Congratulations!_
 You have collected the _Grumpy_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Leyline Broodling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Leyline Broodling",
 model={66212},
 pet=1808,
-description="This guide will walk you through obtaining the Beast pet: Leyline Broodling",
 },[[
 step
 This pet is obtained from the chest at the end of the Withered Army Training scenario
@@ -395,9 +420,10 @@ _Congratulations!_
 You have collected the _Leyline Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lurking Owl Kitten",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Lurking Owl Kitten",
 model={71826},
 pet=1922,
-description="This guide will walk you through obtaining the Beast pet: Lurking Owl Kitten",
 },[[
 step
 talk Mayruna Moonwing##103568
@@ -445,9 +471,10 @@ _Congratulations!_
 You have collected the _Lurking Owl Kitten_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Mischief",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Mischief",
 model={73353},
 pet=1936,
-description="This guide will walk you through obtaining the Beast pet: Mischief",
 },[[
 step
 Mischief is available for purchase from the Blizzard store for _$10_
@@ -457,9 +484,10 @@ _Congratulations!_
 You have collected the _Mischief_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Mist Fox Kit",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Mist Fox Kit",
 model={65390},
 pet=1744,
-description="This guide will walk you through obtaining the Beast pet: Mist Fox Kit",
 },[[
 step
 The _Mist Fox Kit_ is level 25
@@ -471,9 +499,10 @@ _Congratulations!_
 You have collected the _Mist Fox Kit_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Nursery Spider",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Nursery Spider",
 model={65130},
 pet=1727,
-description="This guide will walk you through obtaining the Beast pet: Nursery Spider",
 },[[
 step
 talk Breanni##96479
@@ -485,9 +514,10 @@ _Congratulations!_
 You have collected the _Nursery Spider_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\River Calf",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: River Calf",
 model={55291},
 pet=1453,
-description="This guide will walk you through obtaining the Beast pet: River Calf",
 },[[
 step
 talk Draemus##107326
@@ -499,9 +529,10 @@ _Congratulations!_
 You have collected the _River Calf_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Rose Taipan",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Rose Taipan",
 model={65457},
 pet=1749,
-description="This guide will walk you through obtaining the Beast pet: Rose Taipan",
 },[[
 step
 The _Rose Taipan_ is level 25
@@ -513,9 +544,10 @@ _Congratulations!_
 You have collected the _Rose Taipan_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Slithering Brownscale",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Slithering Brownscale",
 model={63674},
 pet=1736,
-description="This guide will walk you through obtaining the Beast pet: Slithering Brownscale",
 },[[
 step
 The _Slithering Brownscale_ is level 25
@@ -528,9 +560,10 @@ _Congratulations!_
 You have collected the _Slithering Brownscale_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Snowfang",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Snowfang",
 model={73093},
 pet=1941,
-description="This guide will walk you through obtaining the Beast pet: Snowfang",
 },[[
 step
 This pet can only be obtained by Shamans
@@ -547,9 +580,10 @@ _Congratulations!_
 You have collected the _Snowfang_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Son of Skum",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Son of Skum",
 model={76262},
 pet=2049,
-description="This guide will walk you through obtaining the Beast pet: Son of Skum",
 },[[
 step
 Complete the Wailing Caverns daily quest
@@ -563,9 +597,10 @@ _Congratulations!_
 You have collected the _Son of Skum_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Spiketail Beaver",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Spiketail Beaver",
 model={40713},
 pet=1763,
-description="This guide will walk you through obtaining the Beast pet: Spiketail Beaver",
 },[[
 step
 The _Spiketail Beaver_ is level 25
@@ -577,9 +612,10 @@ _Congratulations!_
 You have collected the _Spiketail Beaver_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Terror Larva",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Terror Larva",
 model={30995},
 pet=1735,
-description="This guide will walk you through obtaining the Beast pet: Terror Larva",
 },[[
 step
 The _Terror Larva_ is level 25
@@ -591,9 +627,10 @@ _Congratulations!_
 You have collected the _Terror Larva_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Thornclaw Broodling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Thornclaw Broodling",
 model={66213},
 pet=1810,
-description="This guide will walk you through obtaining the Beast pet: Thornclaw Broodling",
 },[[
 step
 The _Thornclaw Broodling_ is level 25
@@ -605,9 +642,10 @@ _Congratulations!_
 You have collected the _Thornclaw Broodling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Vicious Broodling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Vicious Broodling",
 model={66210},
 pet=1807,
-description="This guide will walk you through obtaining the Beast pet: Vicious Broodling",
 },[[
 step
 The _Vicious Broodling_ is level 25
@@ -619,10 +657,69 @@ step
 _Congratulations!_
 You have collected the _Vicious Broodling_ battle pet
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Ban-Fu, Cub of Ban-Lu",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Ban-Fu, Cub of Ban-Lu",
+model={75989},
+pet=2047,
+},[[
+step
+This pet is only available to Monks |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Monk.
+|only if not Monk
+step
+You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to proceed |confirm
+|only if not achieved(11546)
+|only Monk
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Monk
+step
+This pet can be bought after achieving _Power Ascended_ in one of the 3 specs
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this pet.
+confirm
+|only Monk
+step
+talk Mei Chele##99154
+buy 1 Ban-Fu, Cub of Ban-Lu##147542 |use Ban-Fu, Cub of Ban-Lu##147542 |goto The Wandering Isle/0 54.8,62.2
+|tip This pet costs 1,000 Order Resources.
+learnpet Ban-Fu, Cub of Ban-Lu##240794
+|only Monk
+step
+_Congratulations!_
+You are now the proud owner of Ban-Fu, Cub of Ban-Lu.
+|only Monk
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Mining Monkey",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Beast pet: Mining Monkey",
+model={78106},
+pet=2064,
+},[[
+step
+This pet is a reward for completing the Pet Battle Challenge: Deadmines achievement
+|tip After completing the first run you will recieve it as a weekly, completing this weekly for the first time will reward this achievement.
+Click here to check out our guide to accomplish this |confirm |or |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+Click here if you have already completed the Challenge |confirm |or |only if achieved(11856)
+step
+collect Mining Monkey##151632 |n |use Mining Monkey##151632
+learnpet Mining Monkey##247452
+step
+_Congratulations!_
+You are now the proud owner of a Mining Monkey.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Auburn Ringtail",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Auburn Ringtail",
 model={64651},
 pet=1738,
-description="This guide will walk you through obtaining the Critter pet: Auburn Ringtail",
 },[[
 step
 The _Auburn Ringtail_ is level 25
@@ -634,9 +731,10 @@ _Congratulations!_
 You have collected the _Auburn Ringtail_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Blind Rat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Blind Rat",
 model={4960},
 pet=1915,
-description="This guide will walk you through obtaining the Critter pet: Blind Rat",
 },[[
 step
 Enter the Underbelly |goto Dalaran L/10 59.65,47.58
@@ -651,9 +749,10 @@ _Congratulations!_
 You have collected the _Blind Rat_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Crispin",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Crispin",
 model={65590},
 pet=1752,
-description="This guide will walk you through obtaining the Critter pet: Crispin",
 },[[
 step
 Follow the path up |goto Highmountain/0 51.96,34.12 < 20 |only if walking
@@ -669,9 +768,10 @@ _Congratulations!_
 You have collected the _Crispin_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dust Bunny",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Dust Bunny",
 model={65854},
 pet=1778,
-description="This guide will walk you through obtaining the Critter pet: Dust Bunny",
 },[[
 step
 click Dusty Rug |goto Dalaran L/10 52.58,30.22
@@ -694,9 +794,10 @@ _Congratulations!_
 You have collected the _Dust Bunny_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Gleamhoof Fawn",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Gleamhoof Fawn",
 model={71224},
 pet=1913,
-description="This guide will walk you through obtaining the Critter pet: Gleamhoof Fawn",
 },[[
 step
 The _Gleamhoof Fawn_ is level 25
@@ -708,9 +809,10 @@ _Congratulations!_
 You have collected the _Gleamhoof Fawn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Mudshell Conch",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Mudshell Conch",
 model={45883},
 pet=1776,
-description="This guide will walk you through obtaining the Critter pet: Mudshell Conch",
 },[[
 step
 The _Mudshell Conch_ is level 25
@@ -722,9 +824,10 @@ _Congratulations!_
 You have collected the _Mudshell Conch_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Olivetail Hare",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Olivetail Hare",
 model={4626},
 pet=1729,
-description="This guide will walk you through obtaining the Critter pet: Olivetail Hare",
 },[[
 step
 The _Olivetail Hare_ is level 25
@@ -736,9 +839,10 @@ _Congratulations!_
 You have collected the _Olivetail Hare_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Rescued Fawn",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Rescued Fawn",
 model={70663},
 pet=1938,
-description="This guide will walk you through obtaining the Critter pet: Rescued Fawn",
 },[[
 step
 This pet is a reward for completing the pet collection achievement _Broken Isles Safari_
@@ -753,9 +857,10 @@ _Congratulations!_
 You have collected the _Rescued Fawn_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Trashy",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Trashy",
 model={74520},
 pet=2004,
-description="This guide will walk you through obtaining the Critter pet: Trashy",
 },[[
 step
 talk Conjurer Margoss##108825
@@ -769,9 +874,10 @@ _Congratulations!_
 You have collected the _Trashy_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Zoom",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Zoom",
 model={69896},
 pet=1903,
-description="This guide will walk you through obtaining the Critter pet: Zoom",
 },[[
 step
 Enter the cave |goto Highmountain/0 42.61,25.37 < 20 |walk
@@ -788,10 +894,279 @@ step
 _Congratulations!_
 You have collected the _Zoom_ battle pet
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Sneaky Marmot",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Sneaky Marmot",
+model={1072},
+pet=2063,
+},[[
+step
+This pet is only available to Rogues |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Rogue.
+|only if not Rogue
+step
+To obtain this pet you will first need to complete the Rogue Pickpocketing quest line
+Click here to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Pickpocketing Quest Line"
+Click here if you have already completed this quest line |confirm
+|only Rogue
+step
+talk Griftah##103792
+buy 1 Sneaky Marmot##151569 |n |use Sneaky Marmot##151569 |goto Dalaran L/4 45.41,26.64
+|tip This pet costs 10,000 Coins of Air.
+|tip These are obtained by pick pocketing Humanoids and Demons around the Broken Isles.
+learnpet Sneaky Marmot##247123
+|only Rogue
+step
+_Congratulations!_
+You are now the proud owner of a Sneaky Marmot.
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Dig Rat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Dig Rat",
+model={1418},
+pet=2065,
+},[[
+step
+This pet is only available to Rogues |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Rogue.
+|only if not Rogue
+step
+To obtain this pet you will first need to complete the Rogue Pickpocketing quest line
+Click here to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Rogue Pickpocketing Quest Line"
+Click here if you have already completed this quest line |confirm
+|only Rogue
+step
+talk Griftah##103792
+buy 1 Dig Rat##151633 |n |use Dig Rat##151633 |goto Dalaran L/4 45.41,26.64
+|tip This pet costs 10,000 Coins of Air.
+|tip These are obtained by pick pocketing Humanoids and Demons around the Broken Isles.
+learnpet Dig Rat##247474
+|only Rogue
+step
+_Congratulations!_
+You are now the proud owner of a Dig Rat.
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Tricorne",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Tricorne",
+model={76956},
+pet=2057,
+},[[
+step
+This pet can be bought with the currency obtained from completing the Pet Battle dungeon "Deadmines"
+You can only obtain one Old Bottle Cap a week, you will need 2 Old Bottle Caps to purchase this pet
+Check out our Pet Battle dungeon guide to accomplish this |confirm |or |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+collect 2 Old Bottle Cap##151191 |or
+step
+talk Marcus "Bagman" Brown##119390
+buy 1 Tricorne##150741 |n |use Tricorne##150741 |goto Westfall/0 41.47,71.13
+learnpet Tricorne##244440
+step
+_Congratulations!_
+You are now the proud owner of a Tricorne.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Sun Darter Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Critter pet: Sun Darter Hatchling",
+model={74529},
+pet=382,
+},[[
+step
+To obtain this pet you will need to first need to get several itmes
+|tip These items are needed to pass challenges that are protecting the location of the Sun Darter Hatchling.
+Click here to proceed |confirm
+step
+First you will need to either purchase or craft 6 different Major Protection potions
+You may either buy these from the AH or craft them with the Alchemy profession if you have the recipes
+collect 1 Major Arcane Protection Potion##22845
+collect 1 Major Holy Protection Potion##22847
+collect 1 Major Fire Protection Potion##22841
+collect 1 Major Nature Protection Potion##22844
+collect 1 Major Frost Protection Potion##22842
+collect 1 Major Shadow Protection Potion##22846
+step
+Next you will need a Winterfall Firewater potion
+This can either be bought from the AH or can be farmed for from Winterfall enemies
+kill High Chief Winterfall##10738+, Winterfall Pathfinder##7442+, Winterfall Shaman##7439+, Winterfall Totemic##7441+, Winterfall Den Watcher##7440+, Winterfall Runner##10916+, Winterfall Ursa##7438+
+collect Winterfall Firewater##12820 |goto Winterspring/0 25.5,48.5
+step
+Now you need Ethereal Oil this can either be bought from the AH or crafted with the Alchemy profession if you have the recipe
+collect Ethereal Oil##44958
+step
+You will also need Pygmy Oil
+This can either be bought from the AH or crafted with the Alchemy profession if you have the recipe
+collect 10 Pygmy Oil##40195
+step
+You will then need a "Little Princess" Costume
+This can either be bought from the AH or bought at the Magical Menagerie for 1 Pet Charm
+talk Lio the Lioness##98725
+collect "Little Princess" Costume##103789 |goto Dalaran L/10 59.31,39.57
+step
+You will also need a Scroll of Intellect the level 1 version
+This can either be bought from the AH or crafted with the Inscription profession
+collect Scroll of Intellect##955
+step
+Enter the hidden cave here |goto Townlong Steppes/0 21.33,46.93
+kill Scotty##66162
+|tip If he is not there wait a few minutes he has a short respawn timer.
+collect Scotty's Lucky Coin##89373 |goto Townlong Steppes/0 21.85,46.08
+step
+talk Sprinkle Noggenfogger##98844
+buy 20 Noggenfogger Elixir##8529 |n |goto Tanaris/0 51.2,29.8
+collect Noggenfogger Elixir##8529 |goto Tanaris/0 51.2,29.8
+step
+Enter the Dire Maul |goto Dire Maul/1 71.1,93.8 < 10000 |c
+step
+map Dire Maul/1
+path follow loose; loop off; ants curved; dist 10
+path	71.5,90.1	69.3,86.8	62.0,87.2
+path	56.3,85.4	43.5,88.4	42.2,78.6
+Follow the path |goto 42.2,78.6 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Go through the Gordok Courtyard Door
+map Dire Maul/1
+path follow loose; loop off; ants curved; dist 10
+path	28.1,76.6	27.0,70.0	26.3,57.7
+path	23.8,60.4
+Follow the path |goto 23.8,60.4 < 6
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Run up the ramp
+click Ogre Tannin Basket
+collect Ogre Tannin##18240 |goto 23.1,56.3
+step
+Jump down here |goto 25.2,58.4
+talk Knot Thimblejack##14338
+turnin The Gordok Ogre Suit##27120 |goto 28.5,55.8
+collect Gordok Ogre Suit##18258
+step
+Enter Blackrock Depths |goto Blackrock Depths/1 34.7,78.1 < 10000 |c
+step
+map Blackrock Depths/1
+path follow smart; loop off; ants curved; dist 15
+path	38.2,76.2	41.2,72.4
+Go through the East Garrison Door |goto Blackrock Depths/1 40.7,67.1 < 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+click The Shadowforge Lock |goto Blackrock Depths/1 40.7,61.4
+Unlock The Shadowforge Lock |scenariogoal 1/25080
+step
+map Blackrock Depths/1
+path follow smart; loop off; ants curved; dist 15
+path	41.5,65.8	43.1,63.0	45.5,60.2
+path	Blackrock Depths/2 46.1,86.6	Blackrock Depths/2 47.7,82.1	Blackrock Depths/2 42.5,73.5
+path	Blackrock Depths/2 38.6,76.1	Blackrock Depths/2 36.7,77.9	Blackrock Depths/2 41.5,68.3
+path	Blackrock Depths/1 41.1,39.5	Blackrock Depths/1 45.3,37.3	Blackrock Depths/2 45.9,65.9
+path	Blackrock Depths/2 50.4,66.5
+Follow this path to the Grim Guzzler |goto Blackrock Depths/2 50.4,66.5	< 5
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+talk Dark Iron Brewer##28067
+|tip Press his dialogue boxes until he passes out.
+click Mug of Dire Brew
+collect Dire Brew##38320 |goto Blackrock Depths/2 50.0,61.0
+step
+Now that you have collected all of the materials you can start going through the challenges to obtain this pet
+Enter the cave |goto Winterspring/0 48.74,-2.44
+|tip It is a cave to the very North of Winterspring over the mountains and all the way down to the ground.
+|tip You will need a flying mount to get here.
+confirm
+step
+_Warning_ Make sure you follow the paths, do not take any short cuts, it seems if you drop down at any point during this puzzle you will get teleported to the beginning
+Go through the cave until you get to the Fire Barrier
+To get through this you must use your Major Fire Protection Potion
+Use your Major Fire Protection Potion |use Major Fire Protection Potion##22841 |goto Winterspring/0 48.96,0.17
+confirm
+step
+Next will be a Fel Barrier
+To get through this you will need to use all of the other Major Protection potions you aquired
+Use your Major Arcane Protection Potion |use Major Arcane Protection Potion##22845 |goto 49.27,0.56
+Use your Major Holy Protection Potion |use Major Holy Protection Potion##22847 |goto 49.27,0.56
+Use your Major Nature Protection Potion |use Major Nature Protection Potion##22844 |goto 49.27,0.56
+Use your Major Frost Protection Potion |use Major Frost Protection Potion##22842 |goto 49.27,0.56
+Use your Major Shadow Protection Potion |use Major Shadow Protection Potion##22846 |goto 49.27,0.56
+|tip You will have to wait 1 minute inbetween using each of these potions.
+Once you have all of these buffs go through the barrier
+confirm
+step
+The next puzzle requires you to use your Noggenfogger Elixir to walk past a _Diligent Watcher_
+|tip It looks like a Gargoyle in a corner along the path as soon as you get past the Fel Barrier.
+|tip Use the elixir as soon as you get past the Fel Barrier.
+_Warning_ You must use the Noggenfogger Elixir until you get the Skeleton disguise! |havebuff 16591
+Use your Noggenfogger Elixir |use Noggenfogger Elixir##8529
+confirm
+step
+Once you get past this Water there will be 2 paths one on the right and on the left
+Use your Scotty's Lucky Coin |use Scotty's Lucky Coin##89373
+Take the path on the right with the vines |havebuff 130121
+Once past the barrier click the water coin in the small pond within this room
+|tip DO NOT touch the water.
+click Water Stone
+|tip It is a very small blue stone in the water.
+collect Water Stone##147455 |goto Winterspring/0 47.68,1.47
+confirm
+step
+Once the Water Stone is collected you will need to leave this room
+Use the Water Stone |use Water Stone##147455
+Go through the Water Barrier |goto Winterspring/0 48.30,2.99
+confirm
+step
+Next you will need to run by the Stone Watcher, to do this you will need to use your Dire Brew |havebuff 51010
+Use your Dire Brew |use Dire Brew##38320 |goto Winterspring/0 48.67,5.05
+confirm
+step
+Run up the left path until you get to the Ethereal Barrier
+Use your Ethereal Oil |use Ethereal Oil##44958 |havebuff 62408 |goto Winterspring/0 49.67,4.66
+confirm
+step
+Go to the Strange Stone |goto Winterspring/0 50.50,4.63
+Use your Gordok Ogre Suit |use Gordok Ogre Suit##18258
+Use your Winterfall Firewater |use Winterfall Firewater##12820
+click Strange Stone##54213 |havebuff 17038
+click the dialogue box
+confirm
+step
+Go back out to this gate |goto Winterspring/0 49.55,4.31
+Use your Pygmy Oil until you turn into a Pygmy |use Pygmy Oil##40195
+Once your a Pygmy you can run through this gate |havebuff 53806
+confirm
+step
+Summon your Perky Pug
+Apply your Little Princess Costume to your Perky Pug
+click the Wisdom Cube |goto Winterspring/0 49.17,3.71
+Click the Dialogue box "_Place Hand beneath Cube_"
+confirm
+step
+Go back out the gate and go down the bottom path
+Make sure you follow the path down
+_CANCEL_ your Winterfall Firewater buff |nobuff 17038
+|tip You can do this by right clicking the buff located on the top right of your screen.
+Once the Winterfall Firewater buff is cancel use your Scroll of Intellect |use Scroll of Intellect##955
+click the Tarnished Plague |havebuff 8096
+confirm
+step
+Once you do this follow the path down to the water making sure you do not drop down
+Go through the water and click the Oddly-Colored Egg
+collect Sun Darter Hatchling##142223
+learnpet Sun Darter Hatchling##61087
+step
+_Congratulations!_
+You are now the proud owner of a Sun Darter Hatchling.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Dream Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Dream Whelpling",
 model={65121},
 pet=1722,
-description="This guide will walk you through obtaining the Dragonkin pet: Dream Whelpling",
 },[[
 step
 Enter the Emerald Dream raid instance |goto Val'sharah/0 56.39,36.97
@@ -805,9 +1180,10 @@ _Congratulations!_
 You have collected the _Dream Whelpling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Infinite Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Infinite Hatchling",
 model={74657},
 pet=2017,
-description="This guide will walk you through obtaining the Dragonkin pet: Infinite Hatchling",
 },[[
 step
 This pet can only be purchased during the _Mists of Pandaria Timewalking_ week
@@ -822,9 +1198,10 @@ _Congratulations!_
 You have collected the _Infinite Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Ironbound Proto-Whelp",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Ironbound Proto-Whelp",
 model={26740},
 pet=1956,
-description="This guide will walk you through obtaining the Dragonkin pet: Ironbound Proto-Whelp",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -840,9 +1217,10 @@ _Congratulations!_
 You have collected the _Ironbound Proto-Whelp_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Nightmare Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Nightmare Whelpling",
 model={71945},
 pet=1723,
-description="This guide will walk you through obtaining the Dragonkin pet: Nightmare Whelpling",
 },[[
 step
 Enter the Emerald Dream raid instance |goto Val'sharah/0 56.39,36.97
@@ -854,9 +1232,10 @@ _Congratulations!_
 You have collected the _Nightmare Whelpling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Stormborne Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Stormborne Whelpling",
 model={71835},
 pet=1721,
-description="This guide will walk you through obtaining the Dragonkin pet: Stormborne Whelpling",
 },[[
 step
 Follow the path |goto Stormheim/0 53.53,83.62 < 20 |only if walking
@@ -869,10 +1248,57 @@ step
 _Congratulations!_
 You have collected the _Stormborne Whelpling_ battle pet
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Bronze Proto-Whelp",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Bronze Proto-Whelp",
+model={78222},
+pet=2071,
+},[[
+step
+This pet has a chance to drop from Time-Lost Wallets
+|tip These can be obtained by running the Death to Chromie scenario.
+|tip You have a chance to select the Time-Lost Wallets when using Sands of TIme when inside the scenario
+Check out our Death to Chromie Portal guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Portals"
+Or if you have completed the Portal guide check out our Death to Chromie Speed Run guide |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Speed Run"
+|confirm |or
+step
+collect Time-Lost Wallet##151482+ |n
+Open up the Time-Lost Wallet |use Time-Lost Wallet##151482
+collect Bronze Proto-Whelp##151829 |n |use Bronze Proto-Whelp##151829
+learnpet Bronze Proto-Whelp##248025
+step
+_Congratulations!_
+You have collected the _Bronze Proto-Whelp_ battle pet
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Dragonkin Pets\\Ageless Bronze Drake",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Dragonkin pet: Ageless Bronze Drake",
+model={78261},
+pet=2072,
+},[[
+step
+This pet has a chance to drop from Time-Lost Wallets
+|tip These can be obtained by running the Death to Chromie scenario.
+|tip You have a chance to select the Time-Lost Wallets when using Sands of TIme when inside the scenario
+Check out our Death to Chromie Portal guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Portals"
+Or if you have completed the Portal guide check out our Death to Chromie Speed Run guide |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Speed Run"
+|confirm |or
+step
+collect Time-Lost Wallet##151482+ |n
+Open up the Time-Lost Wallet |use Time-Lost Wallet##151482
+collect Ageless Bronze Drake##151828 |n |use Ageless Bronze Drake##151828
+learnpet Ageless Bronze Drake##248240
+step
+_Congratulations!_
+You have collected the _Ageless Bronze Drake_ battle pet
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Autumnal Sproutling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Autumnal Sproutling",
 model={57823},
 pet=1429,
-description="This guide will walk you through obtaining the Elemental pet: Autumnal Sproutling",
 },[[
 step
 talk Draemus##107326
@@ -884,9 +1310,10 @@ _Congratulations!_
 You have collected the _Autumnal Sproutling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Broot",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Broot",
 model={65813},
 pet=1777,
-description="This guide will walk you through obtaining the Elemental pet: Broot",
 },[[
 step
 This pet can only be obtained by Druids
@@ -904,9 +1331,10 @@ _Congratulations!_
 You have collected the _Broot_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Everliving Spore",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Everliving Spore",
 model={74468},
 pet=1998,
-description="This guide will walk you through obtaining the Elemental pet: Everliving Spore",
 },[[
 step
 Complete the Wailing Caverns daily quest
@@ -920,9 +1348,10 @@ _Congratulations!_
 You have collected the _Everliving Spore_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Fetid Waveling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Fetid Waveling",
 model={66155},
 pet=1802,
-description="This guide will walk you through obtaining the Elemental pet: Fetid Waveling",
 },[[
 step
 talk Filandras Mistcaller##94480 |goto Val'sharah/0 67.56,44.87
@@ -934,9 +1363,10 @@ _Congratulations!_
 You have collected the _Fetid Waveling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Magma Rageling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Magma Rageling",
 model={73671},
 pet=1955,
-description="This guide will walk you through obtaining the Elemental pet: Magma Rageling",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -952,9 +1382,10 @@ _Congratulations!_
 You have collected the _Magma Rageling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Nightmare Lasher",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Nightmare Lasher",
 model={72085},
 pet=1932,
-description="This guide will walk you through obtaining the Elemental pet: Nightmare Lasher",
 },[[
 step
 This pet can only be obtained by Druids
@@ -972,9 +1403,10 @@ _Congratulations!_
 You have collected the _Nightmare Lasher_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Nightmare Treant",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Nightmare Treant",
 model={72461},
 pet=1933,
-description="This guide will walk you through obtaining the Elemental pet: Nightmare Treant",
 },[[
 step
 This pet is a reward for completing the Pet Battle achievement _Family Familiar_
@@ -989,9 +1421,10 @@ _Congratulations!_
 You have collected the _Nightmare Treant_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Paradox Spirit",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Paradox Spirit",
 model={74700},
 pet=2018,
-description="This guide will walk you through obtaining the Elemental pet: Paradox Spirit",
 },[[
 step
 This pet can only be purchased during the _Mists of Pandaria Timewalking_ week
@@ -1006,9 +1439,10 @@ _Congratulations!_
 You have collected the _Paradox Spirit_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Snaplasher",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Snaplasher",
 model={73689},
 pet=1960,
-description="This guide will walk you through obtaining the Elemental pet: Snaplasher",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -1024,9 +1458,10 @@ _Congratulations!_
 You have collected the _Snaplasher_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Stormstruck Beaver",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Stormstruck Beaver",
 model={47633},
 pet=1917,
-description="This guide will walk you through obtaining the Elemental pet: Stormstruck Beaver",
 },[[
 step
 Check around Stonescar Gorge |goto Stormheim/0 41.77,61.65 < 25 |walk
@@ -1045,9 +1480,10 @@ _Congratulations!_
 You have collected the _Stormstruck Beaver_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Winter Rageling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Elemental pet: Winter Rageling",
 model={73684},
 pet=1959,
-description="This guide will walk you through obtaining the Elemental pet: Winter Rageling",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -1064,9 +1500,10 @@ _Congratulations!_
 You have collected the _Winter Rageling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Albatross Chick",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Albatross Chick",
 model={65066},
 pet=1708,
-description="This guide will walk you through obtaining the Flying pet: Albatross Chick",
 },[[
 step
 Follow the path |goto Azsuna/0 31.17,45.50 < 25 |only if walking
@@ -1081,9 +1518,10 @@ _Congratulations!_
 You have collected the _Albatross Chick_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Albino Buzzard",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Albino Buzzard",
 model={74036},
 pet=1984,
-description="This guide will walk you through obtaining the Flying pet: Albino Buzzard",
 },[[
 step
 You must completed the quest _Battle Pet Tamers: Eastern Kingdoms_ to unlock this quest
@@ -1110,9 +1548,10 @@ _Congratulations!_
 You have collected the _Albino Buzzard_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Bloodgazer Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Bloodgazer Hatchling",
 model={70068},
 pet=1977,
-description="This guide will walk you through obtaining the Flying pet: Bloodgazer Hatchling",
 },[[
 step
 The world quest _Bloodgazer Swarm!_ must be active to earn this pet
@@ -1134,9 +1573,10 @@ _Congratulations!_
 You have collected the _Bloodgazer Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Coastal Sandpiper",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Coastal Sandpiper",
 model={71056},
 pet=1914,
-description="This guide will walk you through obtaining the Flying pet: Coastal Sandpiper",
 },[[
 step
 The _Coastal Sandpiper_ is level 25
@@ -1148,9 +1588,10 @@ _Congratulations!_
 You have collected the _Coastal Sandpiper_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Crackers",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Crackers",
 model={58823},
 pet=1997,
-description="This guide will walk you through obtaining the Flying pet: Crackers",
 },[[
 step
 You must be a Rogue to obtain this pet
@@ -1214,9 +1655,10 @@ You have collected the _Crackers_ battle pet
 |only Rogue
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Direbeak Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Direbeak Hatchling",
 model={70070},
 pet=1975,
-description="This guide will walk you through obtaining the Flying pet: Direbeak Hatchling",
 },[[
 step
 The world quest _Direbeak Swarm!_ must be active to earn this pet
@@ -1244,9 +1686,10 @@ _Congratulations!_
 You have collected the _Direbeak Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Echo Batling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Echo Batling",
 model={65981},
 pet=1761,
-description="This guide will walk you through obtaining the Flying pet: Echo Batling",
 },[[
 step
 Enter the cave |goto Highmountain/0 51.59,37.54 < 15 |walk
@@ -1260,9 +1703,10 @@ _Congratulations!_
 You have collected the _Echo Batling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Felbat Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Felbat Pup",
 model={68859},
 pet=1889,
-description="This guide will walk you through obtaining the Flying pet: Felbat Pup",
 },[[
 step
 The _Felbat Pup_ was only availble during the Legion Invasion pre-event
@@ -1274,9 +1718,10 @@ _Congratulations!_
 You have collected the _Felbat Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Firebat Pup",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Firebat Pup",
 model={68860},
 pet=1928,
-description="This guide will walk you through obtaining the Flying pet: Firebat Pup",
 },[[
 step
 This pet is a reward for completing the Order Hall Mission _Friends, Not Food_
@@ -1287,9 +1732,10 @@ _Congratulations!_
 You have collected the _Firebat Pup_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Fledgling Kingfeather",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Fledgling Kingfeather",
 model={62219},
 pet=1709,
-description="This guide will walk you through obtaining the Flying pet: Fledgling Kingfeather",
 },[[
 step
 Follow the path up |goto Azsuna/0 39.28,32.70 < 15 |only if walking
@@ -1303,9 +1749,10 @@ _Congratulations!_
 You have collected the _Fledgling Kingfeather_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Fledgling Oliveback",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Fledgling Oliveback",
 model={62217},
 pet=1710,
-description="This guide will walk you through obtaining the Flying pet: Fledgling Oliveback",
 },[[
 step
 Follow the path up |goto Azsuna/0 39.28,32.70 < 15 |only if walking
@@ -1318,9 +1765,10 @@ _Congratulations!_
 You have collected the _Fledgling Oliveback_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Fledgling Warden Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Fledgling Warden Owl",
 model={65087},
 pet=1716,
-description="This guide will walk you through obtaining the Flying pet: Fledgling Warden Owl",
 },[[
 step
 Earn Revered reputation with The Wardens |condition rep("The Wardens")>=Revered
@@ -1333,9 +1781,10 @@ _Congratulations!_
 You have collected the _Fledgling Warden Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Golden Eaglet",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Golden Eaglet",
 model={62218},
 pet=1712,
-description="This guide will walk you through obtaining the Flying pet: Golden Eaglet",
 },[[
 step
 The _Golden Eaglet_ is level 25
@@ -1347,9 +1796,10 @@ _Congratulations!_
 You have collected the _Golden Eaglet_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Hog-Nosed Bat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Hog-Nosed Bat",
 model={65982},
 pet=1762,
-description="This guide will walk you through obtaining the Flying pet: Hog-Nosed Bat",
 },[[
 step
 The _Hog-Nosed Bat_ is level 25
@@ -1362,9 +1812,10 @@ _Congratulations!_
 You have collected the _Hog-Nosed Bat_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Long-Eared Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Long-Eared Owl",
 model={65089},
 pet=1713,
-description="This guide will walk you through obtaining the Flying pet: Long-Eared Owl",
 },[[
 step
 The _Long-Eared Owl_ is level 25
@@ -1376,9 +1827,10 @@ _Congratulations!_
 You have collected the _Long-Eared Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Nightwatch Swooper",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Nightwatch Swooper",
 model={65090},
 pet=1715,
-description="This guide will walk you through obtaining the Flying pet: Nightwatch Swooper",
 },[[
 step
 talk Draemus##107326
@@ -1390,9 +1842,10 @@ _Congratulations!_
 You have collected the _Nightwatch Swooper_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Northern Hawk Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Northern Hawk Owl",
 model={65091},
 pet=1714,
-description="This guide will walk you through obtaining the Flying pet: Northern Hawk Owl",
 },[[
 step
 The _Northern Hawk Owl_ is level 25
@@ -1404,9 +1857,10 @@ _Congratulations!_
 You have collected the _Northern Hawk Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Orphaned Felbat",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Orphaned Felbat",
 model={68861},
 pet=2050,
-description="This guide will walk you through obtaining the Flying pet: Orphaned Felbat",
 },[[
 step
 Earn exalted reputation with Legionfall |condition rep("Legionfall")>=Exalted
@@ -1436,9 +1890,10 @@ _Congratulations!_
 You are now the proud owner of a Orphaned Felbat.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Pygmy Owl",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Pygmy Owl",
 model={65091},
 pet=1907,
-description="This guide will walk you through obtaining the Flying pet: Pygmy Owl",
 },[[
 step
 talk Lorel Sagefeather##92111 |goto Val'sharah/0 59.80,77.34
@@ -1451,9 +1906,10 @@ _Congratulations!_
 You have collected the _Pygmy Owl_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Sharptalon Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Sharptalon Hatchling",
 model={70069},
 pet=1976,
-description="This guide will walk you through obtaining the Flying pet: Sharptalon Hatchling",
 },[[
 step
 The world quest _Sharptalon Swarm!_ must be active to earn this pet
@@ -1481,9 +1937,10 @@ _Congratulations!_
 You have collected the _Sharptalon Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Shimmering Aquafly",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Shimmering Aquafly",
 model={65237},
 pet=1734,
-description="This guide will walk you through obtaining the Flying pet: Shimmering Aquafly",
 },[[
 step
 The _Shimmering Aquafly_ is level 25
@@ -1495,9 +1952,10 @@ _Congratulations!_
 You have collected the _Shimmering Aquafly_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Skyhorn Nestling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Skyhorn Nestling",
 model={62216},
 pet=1711,
-description="This guide will walk you through obtaining the Flying pet: Skyhorn Nestling",
 },[[
 step
 Follow the path up |goto Highmountain/0 51.65,43.96 < 20 |only if walking
@@ -1561,9 +2019,10 @@ _Congratulations!_
 You have collected the _Skyhorn Nestling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Snowfeather Hatchling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Snowfeather Hatchling",
 model={70071},
 pet=1974,
-description="This guide will walk you through obtaining the Flying pet: Snowfeather Hatchling",
 },[[
 step
 The world quest _Snowfeather Swarm!_ must be active to earn this pet
@@ -1586,9 +2045,10 @@ _Congratulations!_
 You have collected the _Snowfeather Hatchling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Vale Flitter",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Vale Flitter",
 model={51292},
 pet=1737,
-description="This guide will walk you through obtaining the Flying pet: Vale Flitter",
 },[[
 step
 The _Vale Flitter_ is level 25
@@ -1600,9 +2060,10 @@ _Congratulations!_
 You have collected the _Vale Flitter_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Young Venomfang",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Flying pet: Young Venomfang",
 model={74472},
 pet=2000,
-description="This guide will walk you through obtaining the Flying pet: Young Venomfang",
 },[[
 step
 Complete the Wailing Caverns daily quest
@@ -1616,9 +2077,10 @@ _Congratulations!_
 You have collected the _Young Venomfang_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Snobold Runt",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Snobold Runt",
 model={73663},
 pet=1953,
-description="This guide will walk you through obtaining the Humanoid pet: Snobold Runt",
 },[[
 step
 Enter the Trial of the Crusader raid |goto Icecrown/0 75.05,21.81 < 5 |c
@@ -1634,9 +2096,10 @@ _Congratulations!_
 You have collected the _Snobold Runt_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Squirky",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Squirky",
 model={72660},
 pet=1935,
-description="This guide will walk you through obtaining the Humanoid pet: Squirky",
 },[[
 step
 _Squirky_ is level 25
@@ -1649,9 +2112,10 @@ _Congratulations!_
 You have collected the _Squirky_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Sunborn Val'kyr",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Sunborn Val'kyr",
 model={69254},
 pet=1885,
-description="This guide will walk you through obtaining the Humanoid pet: Sunborn Val'kyr",
 },[[
 step
 Earn Revered reputation with the Valarjar |condition rep("Valarjar")>=Revered
@@ -1664,9 +2128,10 @@ _Congratulations!_
 You have collected the _Sunborn Val'kyr_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Thistleleaf Adventurer",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Thistleleaf Adventurer",
 model={66147},
 pet=1803,
-description="This guide will walk you through obtaining the Humanoid pet: Thistleleaf Adventurer",
 },[[
 step
 This pet has a small chance to drop from the Dreamweaver Provisions emissary quest reward
@@ -1684,9 +2149,10 @@ _Congratulations!_
 You have collected the _Thistleleaf Adventurer_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Wyrmy Tunkins",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Humanoid pet: Wyrmy Tunkins",
 model={69532},
 pet=1887,
-description="This guide will walk you through obtaining the Humanoid pet: Wyrmy Tunkins",
 },[[
 step
 This pet is a reward for demon Archaeology solves
@@ -1698,9 +2164,10 @@ _Congratulations!_
 You have collected the _Wyrmy Tunkins_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Blood Boil",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Blood Boil",
 model={73699},
 pet=1964,
-description="This guide will walk you through obtaining the Magic pet: Blood Boil",
 },[[
 step
 Enter the Icecrown Citadel raid |goto Icecrown/0 53.82,87.11 < 10 |c
@@ -1716,9 +2183,10 @@ _Congratulations!_
 You have collected the _Blood Boil_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Celestial Calf",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Celestial Calf",
 model={68858},
 pet=1888,
-description="This guide will walk you through obtaining the Magic pet: Celestial Calf",
 },[[
 step
 talk Mad Merchant##108468
@@ -1732,9 +2200,10 @@ _Congratulations!_
 You have collected the _Celestial Calf_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Court Scribe",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Court Scribe",
 model={72239},
 pet=1931,
-description="This guide will walk you through obtaining the Magic pet: Court Scribe",
 },[[
 step
 Earn Revered reputation with the Court of Farondis |condition rep("Court of Farondis")>=Revered
@@ -1747,9 +2216,10 @@ _Congratulations!_
 You have collected the _Court Scribe_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Creeping Tentacle",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Creeping Tentacle",
 model={73694},
 pet=1962,
-description="This guide will walk you through obtaining the Magic pet: Creeping Tentacle",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -1765,9 +2235,10 @@ _Congratulations!_
 You have collected the _Creeping Tentacle_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Eldritch Manafiend",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Eldritch Manafiend",
 model={65716},
 pet=1774,
-description="This guide will walk you through obtaining the Magic pet: Eldritch Manafiend",
 },[[
 step
 The _Eldritch Manafiend_ is level 25
@@ -1780,9 +2251,10 @@ _Congratulations!_
 You have collected the _Eldritch Manafiend_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Erudite Manafiend",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Erudite Manafiend",
 model={65715},
 pet=1773,
-description="This guide will walk you through obtaining the Magic pet: Erudite Manafiend",
 },[[
 step
 The _Erudite Manafiend_ is level 25
@@ -1795,9 +2267,10 @@ _Congratulations!_
 You have collected the _Erudite Manafiend_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Extinguished Eye",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Extinguished Eye",
 model={65113},
 pet=1717,
-description="This guide will walk you through obtaining the Magic pet: Extinguished Eye",
 },[[
 step
 Earn Revered reputation with The Nightfallen |condition rep("The Nightfallen")>=Revered
@@ -1811,9 +2284,10 @@ _Congratulations!_
 You have collected the _Extinguished Eye_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Eye of Inquisition",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Eye of Inquisition",
 model={65112},
 pet=1719,
-description="This guide will walk you through obtaining the Magic pet: Eye of Inquisition",
 },[[
 step
 kill Felsoul Inquisitor##101878+, Overburdened Taskmaster##106348+, Felsoul Doomguard##100047+, Legion Endbringer##99762+, Wrathguard Fury##99581+, Ravenous Magehunter##99584+, Abhorrent Artificer##106339+, Felsoul Corrupter##110805+
@@ -1825,9 +2299,10 @@ _Congratulations!_
 You have collected the _Eye of Inquisition_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Hateful Eye",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Hateful Eye",
 model={65111},
 pet=1718,
-description="This guide will walk you through obtaining the Magic pet: Hateful Eye",
 },[[
 step
 This pet can only be obtained by Demon Hunters and Warlocks
@@ -1844,9 +2319,10 @@ _Congratulations!_
 You have collected the _Hateful Eye_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Hungering Claw",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Hungering Claw",
 model={71938},
 pet=1926,
-description="This guide will walk you through obtaining the Magic pet: Hungering Claw",
 },[[
 step
 talk Drak'thul##102695 |goto Broken Shore/0 37.08,71.62
@@ -1991,9 +2467,10 @@ _Congratulations!_
 You have collected the _Hungering Claw_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Sanctum Cub",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Sanctum Cub",
 model={29819},
 pet=1958,
-description="This guide will walk you through obtaining the Magic pet: Sanctum Cub",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -2009,9 +2486,10 @@ _Congratulations!_
 You have collected the _Sanctum Cub_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Stardust",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Stardust",
 model={68857},
 pet=1969,
-description="This guide will walk you through obtaining the Magic pet: Stardust",
 },[[
 step
 Complete the _Raiding with Leashes IV: Wrath of the Lich King_ achievement |achieve 11320
@@ -2034,9 +2512,10 @@ _Congratulations!_
 You have collected the _Stardust_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Wonderous Wisdomball",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Wonderous Wisdomball",
 model={73463},
 pet=1937,
-description="This guide will walk you through obtaining the Magic pet: Wonderous Wisdomball",
 },[[
 step
 This pet is rewarded for completing a small quest line from the Strange Humming Crystal item
@@ -2109,9 +2588,10 @@ _Congratulations!_
 You have collected the _Wonderous Wisdomball_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Alarm-o-Bot",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Alarm-o-Bot",
 model={74484},
 pet=1805,
-description="This guide will walk you through obtaining the Mechanical pet: Alarm-o-Bot",
 },[[
 step
 talk Draemus##107326
@@ -2123,9 +2603,10 @@ _Congratulations!_
 You have collected the _Alarm-o-Bot_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\G0-R41-0N Ultratonk",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: G0-R41-0N Ultratonk",
 model={73692},
 pet=1961,
-description="This guide will walk you through obtaining the Mechanical pet: G0-R41-0N Ultratonk",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -2142,9 +2623,10 @@ _Congratulations!_
 You have collected the _G0-R41-0N Ultratonk_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Knockoff Blingtron",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Knockoff Blingtron",
 model={59042},
 pet=1806,
-description="This guide will walk you through obtaining the Mechanical pet: Knockoff Blingtron",
 },[[
 step
 This pet is obtained through the new Blingtron daily quest
@@ -2158,9 +2640,10 @@ _Congratulations!_
 You have collected the _Knockoff Blingtron_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Runeforged Servitor",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Runeforged Servitor",
 model={73673},
 pet=1957,
-description="This guide will walk you through obtaining the Mechanical pet: Runeforged Servitor",
 },[[
 step
 Enter the Ulduar raid |goto The Storm Peaks/0 41.56,17.79 < 15 |c
@@ -2177,10 +2660,69 @@ step
 _Congratulations!_
 You have collected the _Runeforged Servitor_ battle pet
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanicalr Pets\\Pocket Cannon",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Pocket Cannon",
+model={75498},
+pet=2041,
+},[[
+step
+This pet can be bought with the currency obtained from completing the Pet Battle dungeon "Deadmines"
+You can only obtain one Old Bottle Cap a week, you will need 3 Old Bottle Caps to purchase this pet
+Check out our Pet Battle dungeon guide to accomplish this |confirm |or |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+collect 3 Old Bottle Cap##151191 |or
+step
+talk Marcus "Bagman" Brown##119390
+buy 1 Pocket Cannon##150739 |n |use Pocket Cannon##150739 |goto Westfall/0 41.47,71.13
+learnpet Pocket Cannon##244345
+step
+_Congratulations!_
+You are now the proud owner of a Pocket Cannon.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Pet Reaper 0.9",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Pet Reaper 0.9",
+model={45555},
+pet=2058,
+},[[
+step
+This pet can be bought with the currency obtained from completing the Pet Battle dungeon "Deadmines"
+You can only obtain one Old Bottle Cap a week, you will need 1 Old Battle Cap to purchase this pet
+Check out our Pet Battle dungeon guide to accomplish this |confirm |or |next "Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines"
+collect 1 Old Bottle Cap##151191 |or
+step
+talk Marcus "Bagman" Brown##119390
+buy 1 Pet Reaper 0.9##150742 |n |use Pet Reaper 0.9##150742 |goto Westfall/0 41.47,71.13
+learnpet Pet Reaper 0.9##244466
+step
+_Congratulations!_
+You are now the proud owner of a Pet Reaper 0.9.
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Micronax",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Mechanical pet: Micronax",
+model={78587},
+pet=666,
+},[[
+step
+This pet is obtained when completing the Tomb of Sargeras raid meta achievement
+Complete the Tomb of Sargeras raid meta achievement _Glory of the Tomb Raider_ |achieve 11763
+|tip You can accomplish this by checking out our Legion Raid achievement guides.
+step
+Once this achievement is completed check your in-game mail
+collect Micronax Controller##101426 |n |use Micronax Controller##101426
+learnpet Micronax##249870
+step
+_Congratulations!_
+You are now the proud owner of a Micronax.
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Blightbreath",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Blightbreath",
 model={73704},
 pet=1965,
-description="This guide will walk you through obtaining the Undead pet: Blightbreath",
 },[[
 step
 Enter the Icecrown Citadel raid |goto Icecrown/0 53.82,87.11 < 10 |c
@@ -2197,9 +2739,10 @@ _Congratulations!_
 You have collected the _Blightbreath_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Boneshard",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Boneshard",
 model={73697},
 pet=1963,
-description="This guide will walk you through obtaining the Undead pet: Boneshard",
 },[[
 step
 Enter the Icecrown Citadel raid |goto Icecrown/0 53.82,87.11 < 10 |c
@@ -2215,9 +2758,10 @@ _Congratulations!_
 You have collected the _Boneshard_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Drudge Ghoul",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Drudge Ghoul",
 model={73707},
 pet=1967,
-description="This guide will walk you through obtaining the Undead pet: Drudge Ghoul",
 },[[
 step
 Enter the Icecrown Citadel raid |goto Icecrown/0 53.82,87.11 < 10 |c
@@ -2232,9 +2776,10 @@ _Congratulations!_
 You have collected the _Drudge Ghoul_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Nerubian Swarmer",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Nerubian Swarmer",
 model={59766},
 pet=1954,
-description="This guide will walk you through obtaining the Undead pet: Nerubian Swarmer",
 },[[
 step
 Enter the Trial of the Crusader raid |goto Icecrown/0 75.05,21.81 < 5 |c
@@ -2250,9 +2795,10 @@ _Congratulations!_
 You have collected the _Nerubian Swarmer_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Risen Saber Kitten",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Risen Saber Kitten",
 model={66157},
 pet=1804,
-description="This guide will walk you through obtaining the Undead pet: Risen Saber Kitten",
 },[[
 step
 kill Darkshade##92965
@@ -2263,9 +2809,10 @@ _Congratulations!_
 You have collected the _Risen Saber Kitten_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Scraps",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Scraps",
 model={75766},
 pet=2042,
-description="This guide will walk you through obtaining the Undead pet: Scraps",
 },[[
 step
 Complete the Excavator Karla Quest Line
@@ -2289,9 +2836,10 @@ _Congratulations!_
 You are now the proud owner of Scraps.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Soulbroken Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Soulbroken Whelpling",
 model={73706},
 pet=1966,
-description="This guide will walk you through obtaining the Undead pet: Soulbroken Whelpling",
 },[[
 step
 Enter the Icecrown Citadel raid |goto Icecrown/0 53.82,87.11 < 10 |c
@@ -2307,9 +2855,10 @@ _Congratulations!_
 You have collected the _Soulbroken Whelpling_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Tiny Apparition",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Tiny Apparition",
 model={65516},
 pet=1750,
-description="This guide will walk you through obtaining the Undead pet: Tiny Apparition",
 },[[
 step
 The _Tiny Apparition_ is level 25
@@ -2322,9 +2871,10 @@ _Congratulations!_
 You have collected the _Tiny Apparition_ battle pet
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Wicked Soul",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Wicked Soul",
 model={73708},
 pet=1968,
-description="This guide will walk you through obtaining the Undead pet: Wicked Soul",
 },[[
 step
 kill The Lich King##36597
@@ -2335,3 +2885,119 @@ step
 _Congratulations!_
 You have collected the _Wicked Soul_ battle pet
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Bloodbrood Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Bloodbrood Whelpling",
+model={75315},
+pet=2035,
+},[[
+step
+This pet is only available to DeathKnights |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance DeathKnight.
+|only if not DeathKnight
+step
+You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to proceed |confirm
+|only if not achieved(11546)
+|only DeathKnight
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only DeathKnight
+step
+This pet can be bought after achieving _Power Ascended_ as the Blood Spec.
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this pet.
+confirm
+|only DeathKnight
+step
+talk Slimy##121752
+buy 1 Bloodbrood Whelpling##147539 |use Bloodbrood Whelpling##147539
+|tip This pet costs 1,000 Order Resources.
+learnpet Bloodbrood Whelpling##237250
+|only DeathKnight
+step
+_Congratulations!_
+You are now the proud owner of Bloodbrood Whelpling.
+|only DeathKnight
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Vilebrood Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Vilebrood Whelpling",
+model={75317},
+pet=2037,
+},[[
+step
+This pet is only available to DeathKnights |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance DeathKnight.
+|only if not DeathKnight
+step
+You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to proceed |confirm
+|only if not achieved(11546)
+|only DeathKnight
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only DeathKnight
+step
+This pet can be bought after achieving _Power Ascended_ as the Unholy Spec.
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this pet.
+confirm
+|only DeathKnight
+step
+talk Slimy##121752
+buy 1 Vilebrood Whelpling##147541 |use Vilebrood Whelpling##147541
+|tip This pet costs 1,000 Order Resources.
+learnpet Vilebrood Whelpling##237252
+|only DeathKnight
+step
+_Congratulations!_
+You are now the proud owner of Vilebrood Whelpling.
+|only DeathKnight
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Undead Pets\\Frostbrood Whelpling",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Undead pet: Frostbrood Whelpling",
+model={75316},
+pet=2036,
+},[[
+step
+This pet is only available to DeathKnights |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance DeathKnight.
+|only if not DeathKnight
+step
+You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
+Check out our Broken Shore Campaign guide to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Click here to proceed |confirm
+|only if not achieved(11546)
+|only DeathKnight
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only DeathKnight
+step
+This pet can be bought after achieving _Power Ascended_ as the Frost Spec.
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this pet.
+confirm
+|only DeathKnight
+step
+talk Slimy##121752
+buy 1 Frostbrood Whelpling##147540 |use Frostbrood Whelpling##147540
+|tip This pet costs 1,000 Order Resources.
+learnpet Frostbrood Whelpling##237251
+|only DeathKnight
+step
+_Congratulations!_
+You are now the proud owner of Frostbrood Whelpling.
+|only DeathKnight
+]])
+ZGV.BETAEND()

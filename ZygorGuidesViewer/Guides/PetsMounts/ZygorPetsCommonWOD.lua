@@ -4,8 +4,10 @@ if ZGV:DoMutex("PetsCWOD") then return end
 if ZGV:DoMutex("PetsCommonWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Blorp",{
-pet=1666,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Blorp",
+model={63693},
+pet=1666,
 },[[
 step
 talk Galissa Sundew##55103
@@ -16,8 +18,10 @@ use Blorp's Bubble##126925
 learnpet Blorp##93814
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Fen Crab",{
-pet=1581,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Fen Crab",
+model={60916},
+pet=1581,
 },[[
 step
 Challenge _any Battle Pet_ to a pet battle
@@ -27,8 +31,10 @@ Use the _Capture_ ability
 learnpet Fen Crab##88473 |goto Tanaan Jungle/0 62.3,41.7
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Ghostshell Crab",{
-pet=1665,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Ghostshell Crab",
+model={63691},
+pet=1665,
 },[[
 step
 talk Galissa Sundew##55103
@@ -39,8 +45,10 @@ use Translucent Shell##126926
 learnpet Ghostshell Crab##93808
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Bloodthorn Hatchling",{
-pet=1577,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Bloodthorn Hatchling",
+model={58613},
+pet=1577,
 },[[
 step
 talk Tiffy Trapspring##94512 |goto Lunarfall/0 30.2,39.8 |only Alliance
@@ -53,8 +61,10 @@ use Bloodthorn Hatchling##127704
 learnpet Bloodthorn Hatchling##88514
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Fel Pup",{
-pet=1660,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Fel Pup",
+model={61986},
+pet=1660,
 },[[
 step
 _Run up_ the dirt path |goto Tanaan Jungle/0 31.0,63.5 < 30 |only if walking
@@ -68,8 +78,10 @@ talk Abandoned Fel Pup##90426
 accept A Fel Puppy Of My Own##38428
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Lost Netherpup",{
-pet=1661,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Lost Netherpup",
+model={63447},
+pet=1661,
 },[[
 step
 talk Tiffy Trapspring##94512 |goto Lunarfall/0 30.2,39.8 |only Alliance
@@ -82,8 +94,10 @@ use Lost Netherpup##127705
 learnpet Lost Netherpup##93142
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Periwinkle Calf",{
-pet=1663,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Periwinkle Calf",
+model={58760},
+pet=1663,
 },[[
 step
 There are 15 legendary Tanaan Jungle pet battles that can be completed each day.
@@ -108,8 +122,10 @@ use Periwinkle Calf##127754
 learnpet Periwinkle Calf##93352 |goto Tanaan Jungle/0 47.3,52.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Savage Cub",{
-pet=1692,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Savage Cub",
+model={64720},
+pet=1692,
 },[[
 step
 talk Z'tenga the Walker##92805 |goto Tanaan Jungle/0 55.3,74.7
@@ -120,16 +136,20 @@ use Savage Cub##128477
 learnpet Savage Cub##96126
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Critter Pets\\Nibbles",{
-pet=1691,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Critter pet: Nibbles",
+model={64585},
+pet=1691,
 },[[
 step
 This pet is a reward from ordering the Legion Collector's Edition.
 learnpet Nibbles##95841
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Shard of Cyrukh",{
-pet=1690,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Shard of Cyrukh",
+model={64425},
+pet=1690,
 },[[
 step
 Complete the Garrison Campaign Quest:
@@ -142,8 +162,10 @@ use Shard of Cyrukh##128309
 learnpet Shard of Cyrukh##95572 |goto Tanaan Jungle/0 63.3,28.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Blazing Firehawk",{
-pet=1693,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Blazing Firehawk",
+model={38310},
+pet=1693,
 },[[
 step
 talk Dawn-Seeker Krisek##95424 |goto Tanaan Jungle/0 58.0,59.4 |only Alliance
@@ -155,8 +177,10 @@ use Blazing Firehawk##128478
 learnpet Blazing Firehawk##96123
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Bloodbeak",{
-pet=1468,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Bloodbeak",
+model={58826},
+pet=1468,
 },[[
 step
 Challenge a _Bloodbeak_ to a pet battle
@@ -166,8 +190,10 @@ Use the _Capture_ ability
 learnpet Bloodbeak##85388 |goto Tanaan Jungle/0 62.3,41.7
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Cerulean Moth",{
-pet=1586,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Cerulean Moth",
+model={60618},
+pet=1586,
 },[[
 step
 _Follow_ the path |goto Tanaan Jungle/0 55.0,64.2 < 30 |only if walking
@@ -178,8 +204,10 @@ Use the _Capture_ ability
 learnpet Cerulean Moth##88422 |goto Tanaan Jungle/0 56.0,66.2
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Crimsonwing Moth",{
-pet=1589,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Crimsonwing Moth",
+model={60888},
+pet=1589,
 },[[
 step
 Challenge a _Crimsonwing Moth_ to a pet battle
@@ -197,8 +225,10 @@ Point 6: [Talador/0 38.8,79.2]
 Point 7: [Talador/0 49.4,85.8]
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Dusty Sporewing",{
-pet=1588,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Dusty Sporewing",
+model={60889},
+pet=1588,
 },[[
 step
 talk Tiffy Trapspring##94512 |goto Lunarfall/0 30.2,39.8 |only Alliance
@@ -211,8 +241,10 @@ use Dusty Sporewing##127703
 learnpet Dusty Sporewing##88415
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Glowing Sporebat",{
-pet=1598,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Glowing Sporebat",
+model={60972},
+pet=1598,
 },[[
 step
 talk Tiffy Trapspring##94512 |goto Lunarfall/0 30.2,39.8 |only Alliance
@@ -225,8 +257,10 @@ Glowing Sporewing##127701
 learnpet Glowing Sporebat##88575
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Sapphire Firefly",{
-pet=1592,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Sapphire Firefly",
+model={60862},
+pet=1592,
 },[[
 step
 Challenge a _Sapphire Firefly_ to a pet battle
@@ -242,8 +276,10 @@ Point 4: [Spires of Arak/0 58.0,51.0]
 Point 5: [Spires of Arak/0 55.4,32.4]
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Seaborne Spore",{
-pet=1539,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Seaborne Spore",
+model={61550},
+pet=1539,
 },[[
 step
 There are 15 legendary Tanaan Jungle pet battles that can be completed each day.
@@ -268,8 +304,10 @@ use Seaborne Spore##118105
 learnpet Seaborne Spore##86718
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Violet Firefly",{
-pet=1591,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Violet Firefly",
+model={60863},
+pet=1591,
 },[[
 step
 Challenge a _Violet Firefly_ to a pet battle
@@ -279,8 +317,10 @@ Use the _Capture_ ability
 learnpet Violet Firefly##88357 |goto Tanaan Jungle/0 26.6,55.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Zangar Spore",{
-pet=1536,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Zangar Spore",
+model={59885},
+pet=1536,
 },[[
 step
 There are 15 legendary Tanaan Jungle pet battles that can be completed each day.
@@ -305,16 +345,20 @@ use Zangar Spore##118101
 learnpet Zangar Spore##86715 |goto Tanaan Jungle/0 47.3,52.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Baby Winston",{
-pet=1828,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Baby Winston",
+model={68067},
+pet=1828,
 },[[
 step
 This pet is a reward from ordering the Overwatch Collector's Edition.
 learnpet Baby Winston##103159
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Crusher",{
-pet=1688,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Crusher",
+model={64222},
+pet=1688,
 },[[
 step
 talk Trader Araanda##95470 |goto Lunarfall/0 30.0,34.6 |only Alliance
@@ -326,16 +370,20 @@ use Crusher##127868
 learnpet Crusher##94927
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Grumpling",{
-pet=1725,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Grumpling",
+model={65128},
+pet=1725,
 },[[
 step
 This pet will be part of the 2015 Feast of Winter Vale event.
 learnpet Grumpling##97229
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Hogs",{
-pet=1384,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Hogs",
+model={53502},
+pet=1384,
 },[[
 step
 talk Mola##54601 |goto Darkmoon Island/0 53.6,55.0
@@ -349,16 +397,20 @@ use Hogs' Studded Collar##123862
 learnpet Hogs##76873
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Murkidan",{
-pet=1454,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humaniod pet: Murkidan",
+model={64589},
+pet=1454,
 },[[
 step
 This pet is a reward from ordering a blizzcon 2015 virtual ticket.
 learnpet Murkidan##85009
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Terky",{
-pet=1073,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Terky",
+model={15398},
+pet=1073,
 },[[
 step
 This pet WAS only available during the iCoke promotion in Taiwan.
@@ -371,16 +423,20 @@ use White Murloc Egg##22780
 learnpet Terky##16445
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Brightpaw",{
-pet=1466,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Brightpaw",
+model={64621},
+pet=1466,
 },[[
 step
 This pet will be a blizzard in-store pet.
 learnpet Brightpaw##85283
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Energized Manafiend",{
-pet=1764,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Energized Manafiend",
+model={65713},
+pet=1764,
 },[[
 step
 kill Rukdug##98198 |goto Nagrand D 26.2,34.3
@@ -392,8 +448,10 @@ use Vibrating Arcane Crystal##129216
 learnpet Energized Manafiend##98236
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empowered Manafiend",{
-pet=1766,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Empowered Manafiend",
+model={65717},
+pet=1766,
 },[[
 step
 kill Pugg##98199 |goto Nagrand D 28.2,29.6
@@ -405,8 +463,10 @@ use Warm Arcane Crystal##129217
 learnpet Empowered Manafiend##98237
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Empyreal Manafiend",{
-pet=1765,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Empyreal Manafiend",
+model={65714},
+pet=1765,
 },[[
 step
 kill Guk##98200 |goto Nagrand D 23.8,38.2
@@ -418,8 +478,10 @@ use Glittering Arcane Crystal##129218
 learnpet Empyreal Manafiend##98238
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nethaera's Light",{
-pet=1604,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Nethaera's Light",
+model={61133},
+pet=1604,
 },[[
 step
 Find _Nethaera's Light_
@@ -430,8 +492,10 @@ Target _Nethaera's Light_ and _cheer_ at it |script DoEmote("CHEER")
 learnpet Nethaera's Light##88814 |goto Dalaran/0 45.3,23.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Nightmare Bell",{
-pet=1664,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Nightmare Bell",
+model={63584},
+pet=1664,
 },[[
 step
 There are 15 legendary Tanaan Jungle pet battles that can be completed each day.
@@ -455,17 +519,21 @@ use Nightmare Bell##127753
 |tip There is only a chance to get this item in the Fel-Touched Pet Supplies.
 learnpet Nightmare Bell##93483 |goto Tanaan Jungle/0 47.3,52.8
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Zerador",{
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Zeradar",{
+author="support@zygorguides.com",
+description="This guide will walk you through obtaining the Magic pet: Zeradar",
+model={64587},
 pet=1255,
-description="This guide will walk you through obtaining the Magic pet: Zerador",
 },[[
 step
 This pet is a reward for ordering the Starcraft 2: Legacy of the Void Collector's Edition.
-learnpet Zerador##71655
+learnpet Zeradar##71655
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Corrupted Nest Guardian",{
-pet=1672,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Corrupted Nest Guardian",
+model={64097},
+pet=1672,
 },[[
 step
 Enter the _Hellfire Citadel_ Raid |goto Tanaan Jungle/0 45.6,53.6

@@ -191,7 +191,7 @@ function Goal:IsVisible()
 end
 
 
-local _c = { "goal","kill","get","accept","turnin","collect","buy","fpath","home","ding","havebuff","nobuff","invehicle","outvehicle","equipped","rep","condition","achieve","create","skill","skillmax","learn","learnspell","learnpet","learnmount","confirm","earn","fly","complete" }
+local _c = { "goal","kill","get","accept","turnin","collect","buy","fpath","home","level","havebuff","nobuff","invehicle","outvehicle","equipped","rep","condition","achieve","create","skill","skillmax","learn","learnspell","learnpet","learnmount","confirm","earn","fly","complete" }
 local completable = {}
 for i=1,#_c do completable[_c[i]]=true end
 
@@ -244,15 +244,15 @@ function Goal:IsComplete()
 		or self.fake_complete then
 		return true,true,true
 	end
-	
-	if self.force_nocomplete then return false,false, nil,"forced not completable" end ------------------------------- 
-	if not self:IsCompleteable() then return false,false, nil,"not completable" end ----------------------------------
 
 	if self.countexprfun then
 		ZGV.Parser.ConditionEnv._SetLocal(self.parentStep.parentGuide,self.parentStep,self)
 		local res,err = pcall(self.countexprfun)
 		if res then self.count=err else error("Error in step ".. self.parentStep.num .. " goal " .. self.num .. " count expression: "..err) end
 	end
+	
+	if self.force_nocomplete then return false,false, nil,"forced not completable" end ------------------------------- 
+	if not self:IsCompleteable() then return false,false, nil,"not completable" end ----------------------------------
 
 	if self.updatescriptfun then
 		ZGV.Parser.ConditionEnv._SetLocal(self.parentStep.parentGuide,self.parentStep,self)
@@ -499,7 +499,7 @@ GOALTYPES['talknpcs'] = {
 }
 
 GOALTYPES['_item'] = {
-	parse = function(self,params)
+	parse = function(self,params)		-- serves as generic parser for: [num] [name]##id["+"]
 		local count,objinfo,objid
 		local obj = ""
 
@@ -737,11 +737,11 @@ GOALTYPES['learnmount'] = {
 		self.spell,self.spellid = ParseID(params)
 	end,
 	iscomplete = function(self)
-		for i=1,GetNumCompanions("MOUNT") do
-			 local id,name,spell = GetCompanionInfo("MOUNT",i)
-			 if spell==self.spellid then return true,true end
+		local mountIDs = C_MountJournal.GetMountIDs();
+		for i, mountID in ipairs(mountIDs) do
+			local name, spell, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID)
+			if spell==self.spellid and isCollected then return true,true end
 		end
-		return false,true
 	end,
 	gettext = function(self) return L["stepgoal_learnmount"]:format(COLOR_ITEM(GetSpellInfo(self.spellid))) end,
 }
@@ -936,12 +936,12 @@ GOALTYPES['noquest'] = {
 		if ZGV.GetTargetId()==self.npcid then
 			if GossipFrame:IsShown() then
 				local noquests=true
-				local DATA_IN_GOSSIP=6  -- 5.2: name, level, isTrivial, isDaily, isRepeatable, isLegendary
+				local DATA_IN_GOSSIP=7  -- 7.2.5: title, level, isTrivial, frequency, isRepeatable, isLegendary, isIgnored
 				for qnum=1,GetNumGossipAvailableQuests() do
-					local name,level,isTrivial,isDaily,isRepeatable,isLegendary = select((qnum-1)*DATA_IN_GOSSIP+1,GetGossipAvailableQuests())
-					if isDaily then noquests=nil break end  -- one daily breaks it
+					local name,level,isTrivial,frequency,isRepeatable,isLegendary = select((qnum-1)*DATA_IN_GOSSIP+1,GetGossipAvailableQuests())
+					if frequency==LE_QUEST_FREQUENCY_DAILY then noquests=nil break end  -- one daily breaks it
 				end
-				local DATA_IN_GOSSIP=5  -- 5.2: name, level, isTrivial, isComplete, isLegendary
+				local DATA_IN_GOSSIP=6  -- 7.2.5: title, level, isLowLevel, isComplete, isLegendary, isIgnored
 				for qnum=1,GetNumGossipActiveQuests() do
 					local name,level,isTrivial,isComplete,isLegendary = select((qnum-1)*DATA_IN_GOSSIP+1,GetGossipActiveQuests())
 					if isComplete then noquests=nil break end  -- one complete breaks it
@@ -997,9 +997,12 @@ GOALTYPES['scenarioend'] = {
 
 GOALTYPES['scenariostage'] = {
 	parse = function(self,params)
-		self.scenario_stagenum = tonumber(params)
+		self.scanarioname,self.scenario_stagenum = ParseID(params)
+		--self.scenario_stagenum = tonumber(params)
 	end,
 	iscomplete = function(self)
+		if not C_Scenario.IsInScenario() then return false,false, nil, nil, "bad" end
+
 		local name, currentStage, numStages,_,_,_,completed = C_Scenario.GetInfo();
 		return completed or (currentStage>self.scenario_stagenum), currentStage>0, nil, nil, (not completed and currentStage==0) and "bad"
 	end,
@@ -1018,12 +1021,11 @@ GOALTYPES['scenariostage'] = {
 
 GOALTYPES['scenariogoal'] = {
 	parse = function(self,params)
-		local stagenum,rest = params:match("(%d+)%s*/%s*(.*)")
-		if stagenum then self.scenario_stagenum=tonumber(stagenum) params=rest end
-		local id,num = params:match("(%d+)%s+(%d+)")
-		if num then num,id=tonumber(num),tonumber(id) else id=tonumber(params) end
-		self.scenario_criteriaid = id
-		self.count = self.count or num
+		if tonumber(params) then
+			self.scenario_criteriaid = tonumber(params)
+		else
+			self.goalname,self.scenario_stagenum,self.scenario_criteriaid = ParseID(params)
+		end
 	end,
 	iscomplete = function(self)
 		if self.scenario_stagenum then
@@ -1227,14 +1229,21 @@ GOALTYPES['equipped'] = {
 
 GOALTYPES['rep'] = {
 	parse = function(self,params)
-		self.faction,self.rep,self.repexp = params:match("^(.-)%s*,%s*(.-),([0-9]-)$")
-		if type(self.rep)=="string" then self.rep=ZGV.StandingNamesEngRev[self.rep] end
+		self.params=params
+		self.faction,self.rep,self.repexp = params:match("^(.-)%s*,(.*)$")
+
+		if not ZGV.StandingNamesEngRev[self.rep] then
+			error("Unknown rep standing "..self.rep)
+		end
+
+		self.rep=ZGV.StandingNamesEngRev[self.rep] 
+		
 		if ZGV.BFL[self.faction] then self.faction=ZGV.BFL[self.faction] end
 	end,
 	iscomplete = function(self)
-		local rep = ZGV:GetReputation(self.faction)
-		if rep then
-			return rep.standing>=self.rep, true, 1-(rep:CalcTo(self.rep)/(rep.max-rep.min)) or 0
+		local faction = ZGV:GetReputation(self.faction)
+		if faction then
+			return faction.standing>=self.rep, true, 1-(faction:CalcTo(self.rep)/(faction.max-faction.min)) or 0
 		else
 			return nil,nil,nil
 		end
@@ -1243,7 +1252,8 @@ GOALTYPES['rep'] = {
 		local text = L["stepgoal_rep"]:format(ZGV.StandingNames[self.rep],self.faction)
 		local progtext = L["completion_rep"]:format(ZGV:GetReputation(self.faction):Going())
 		return text,nil,progtext
-	end
+	end,
+	help = "rep <faction>,<standing>  -- completes when user has reached standing (string) with faction (string). "
 }
 
 GOALTYPES['invehicle'] = {
@@ -1367,7 +1377,8 @@ local buff_textures = {
 
 GOALTYPES['havebuff'] = {
 	parse = function(self,params)
-		self.buff = tonumber(params) or buff_textures[params] or params
+		local name,id = ParseID(params)
+		self.buff = tonumber(id) or (name and buff_textures[name]) or name or "unknown"
 	end,
 	iscomplete = function(self)
 		for i=1,30 do
@@ -1379,6 +1390,12 @@ GOALTYPES['havebuff'] = {
 		return false,true
 	end,
 	gettext = function(self) return L["stepgoal_havebuff"]:format(COLOR_ITEM(self.buff)) end,
+	help = "havebuff name##id  -- completes when user has buff with texture id. "
+	--[[
+	legacy syntax:
+	havebuff id,
+	havebuff name
+	--]]
 }
 
 GOALTYPES['nobuff'] = {
@@ -1387,6 +1404,12 @@ GOALTYPES['nobuff'] = {
 		return not GOALTYPES['havebuff'].iscomplete(self),true
 	end,
 	gettext = function(self) return L["stepgoal_nobuff"]:format(COLOR_ITEM(self.buff)) end,
+	help = "nobuff name##id  -- completes when user does not have buff with texture id. "
+	--[[
+	legacy syntax:
+	nobuff id,
+	nobuff name
+	--]]
 }
 
 GOALTYPES['click'] = {
@@ -1550,6 +1573,11 @@ GOALTYPES['achieve'] = {
 
 		return text,nil,progtext
 	end,
+	onclick = function(self)
+		if not AchievementFrame then  AchievementFrame_LoadUI()  end
+		if not AchievementFrame:IsShown() then  AchievementFrame_ToggleAchievementFrame()  end
+		AchievementFrame_SelectAchievement(self.achieveid)
+	end,
 }
 
 GOALTYPES['achievetext'] = {
@@ -1566,10 +1594,12 @@ GOALTYPES['achievetext'] = {
 	end,
 }
 
-GOALTYPES['ding'] = {
+GOALTYPES['ding'] = "level";
+
+GOALTYPES['level'] = {
 	parse = function(self,params)
 		self.level = tonumber(params)
-		if not self.level then return "'ding': invalid level value" end
+		if not self.level then return "'level': invalid level value" end
 	end,
 	iscomplete = function(self)
 		local level = ZGV:GetPlayerPreciseLevel()
@@ -1578,11 +1608,11 @@ GOALTYPES['ding'] = {
 		return level>=tonumber(self.level), level<tonumber(self.level), percent
 	end,
 	gettext = function(self,complete,complete_extra,goalcountnow,goalcountneeded,remaining,brief)
-		local text = (brief and L["stepgoal_ding_brief"] or L["stepgoal_ding"]):format(COLOR_NPC(self.level))
+		local text = (brief and L["stepgoal_level_brief"] or L["stepgoal_level"]):format(COLOR_NPC(self.level))
 
 		local level = ZGV:GetPlayerPreciseLevel()
 		local percent = (level<self.level-1) and 0 or (level>=self.level) and 100 or floor(UnitXP("player")/UnitXPMax("player") * 100)
-		local progtext = L["completion_ding"]:format(percent)
+		local progtext = L["completion_level"]:format(percent)
 
 		return text,nil,progtext
 	end,
@@ -1772,7 +1802,11 @@ GOALTYPES['follower'] = {
 
 GOALTYPES['count'] = {
 	parse = function(self,params)
-		self.count = tonumber(params)
+		if tonumber(params) then
+			self.count = tonumber(params)
+		else
+			self.countexpr = params
+		end
 	end,
 }
 
@@ -1912,8 +1946,8 @@ GOALTYPES['poicurrency'] = {
 			elseif currency == "OR" then name,_,icon = GetCurrencyInfo(1220)
 			elseif currency == "AM" then name,_,icon = GetCurrencyInfo(1155)
 			 end
-
-			if name then table.insert(step.poicurrencydata,{value=value, type=name, icon=icon:gsub("\ ","\\")}) end
+			 
+			if name and name~="" then table.insert(step.poicurrencydata,{value=value, type=name, icon=icon}) end
 		end
 
 
@@ -2149,6 +2183,81 @@ GOALTYPES['killboss'] = {
 		return "** kill boss bit "..self.bossbit.." in instance "..self.dungeon
 	end
 }
+
+local itemset_slots = { -- slot name to slot location
+	head=2,
+	shoulders=4,
+	chest=6,
+	legs=8,
+	waist=7,
+	feet=9,
+	wrist=10,
+	hands=11,
+	back=17,
+	}
+
+GOALTYPES['itemset'] = {
+	parse = function(self,params)
+		self.setid,self.slotname = params:match("([0-9]*)/(.*)")
+		self.complete = ""
+		if not self.setid then self.setid=params end -- only one param, full set goal
+		if not tonumber(self.setid) then 
+			ZGV:Debug("itemset - Missing or invalid id "..self.setid or "")
+			return
+		end
+
+		local setinfo = C_TransmogSets.GetSetInfo(self.setid)
+		if not setinfo then 
+			ZGV:Debug("itemset - Unknown set "..self.setid)
+			return
+		end
+		self.setname = setinfo.name 
+		self.setdescription = setinfo.description 
+
+		if self.slotname then
+			if not itemset_slots[self.slotname] then
+				ZGV:Debug("itemset - Unknown slot "..self.slotname)
+				self.slotname=nil
+			else
+				for appid in pairs(C_TransmogSets.GetSetSources(self.setid)) do -- find item that matches slot in param
+					local iteminfo = C_TransmogCollection.GetSourceInfo(appid)
+					if iteminfo.invType==itemset_slots[self.slotname] then
+						self.itemappid = appid
+						self.itemname = iteminfo.name
+						break
+					end
+				end
+			end
+		end
+	end,
+	iscomplete = function(self)
+		if not tonumber(self.setid) then return false,false end
+
+		if self.compelete then -- already marked as completed, don't check it anymore
+			return true,true
+		elseif not self.itemappid then -- full itemset check
+			local info = C_TransmogSets.GetSetInfo(self.setid)
+			if info.collected then self.complete = "_done" end
+			return info.collected, true
+		else -- single itemset
+			if not self.itemname then -- if no name recorded yet, try to get it
+				local iteminfo = C_TransmogCollection.GetSourceInfo(self.itemappid)
+				self.itemname = iteminfo.name
+			end
+			local sources = C_TransmogSets.GetSetSources(self.setid)
+			if sources[self.itemappid] then self.complete = "_done" end
+			return sources[self.itemappid], true
+		end
+	end,
+	gettext = function(self)
+		if self.itemappid then -- single item
+			return L['stepgoal_itemset_item'..self.complete]:format(self.itemname or "unknown")
+		else -- full set
+			return L['stepgoal_itemset'..self.complete]:format(self.setdescription or "unknown",self.setname or "unknown")
+		end
+	end, 
+}
+
 
 GOALTYPES['image'] = {
 	parse = function(self,params,step)
@@ -3040,7 +3149,7 @@ function Goal:IsObsolete()
 	do return false end --obsoletion is by section now
 end
 
-local _n = {"ding","kill","rep","achieve","skill","skillmax","create","learn","learnspell","learnpet","learnmount","buy"}
+local _n = {"level","kill","rep","achieve","skill","skillmax","create","learn","learnspell","learnpet","learnmount","buy"}
 local nonaux = {}  for i=1,#_n do nonaux[_n[i]]=true end
 
 function Goal:IsAuxiliary()

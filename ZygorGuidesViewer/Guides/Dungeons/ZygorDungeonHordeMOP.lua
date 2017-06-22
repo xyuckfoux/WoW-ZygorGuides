@@ -4051,7 +4051,7 @@ step
 kill Razorgore the Untamed##12435 |goto Blackwing Lair/1 35.7,67.2
 |tip The objective of this fight is to destroy all the eggs in the room by controlling Razorgore the Untamed before killing him.
 |tip When controlling Razorgore, he has the following abilities:
-|tip Destroy Egg destroys a nearby egg. 3 second cast.
+|tip Destroy Egg destroys a nearby egg. This is an instant cast.
 |tip Calm Dragonkin puts the target Dragonkin to sleep for 30 seconds.
 |tip Fireball Volley inflicts 1000 Fire damage to all enearby enemies. 2 second cast.
 |tip When fighting Razorgore, he also has these abilities:
@@ -15053,6 +15053,11 @@ kill Yor'sahj the Unsleeping##55312 |goto Dragon Soul/3 46.8,49.9
 _Heroic_
 |tip In Heroic he will spawn 4 slimes during Call Blood Shu'ma.
 confirm
+step
+talk Nethestrasz##57287 |goto Dragon Soul/1 50.2,57.8
+Arrive at the top of the tower |goto 49.5,60.2
+click the portal to Eye of Eternity |goto 50.5,60.5
+Arrive in the Eye of Eternity |goto Dragon Soul/4 52.5,23.5 < 5 |noway |c
 step
 kill Hagara the Stormbinder##55689 |goto Dragon Soul/4 52.7,52
 |tip Focused Assault slices rapidly at the target, dealing 50% weapon damage.

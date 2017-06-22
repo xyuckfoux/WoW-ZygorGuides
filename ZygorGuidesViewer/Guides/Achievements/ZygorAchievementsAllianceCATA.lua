@@ -3,6 +3,32 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battles\\General\\Taming Azeroth",{
+author="support@zygorguides.com",
+description="This guide will walk you through earning the 'Taming Azeroth' achievement.",
+condition_end="achieved(6607)",
+achieveid={6607},
+condition_suggested="level>=1 and level<=90",
+},[[
+step
+Earn the _Taming Eastern Kingdoms_ achievement |achieve 6607/5
+Click here to load the "Battle Pet Tamers: Eastern Kingdoms" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Eastern Kingdoms" |only if not achieved(6607,5)
+|tip
+Earn the _Taming Outland_ achievement |achieve 6607/1
+Click here to load the "Battle Pet Tamers: Outland" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland" |only if not achieved(6607,1)
+|tip
+Earn the _Taming Northrend_ achievement |achieve 6607/2
+Click here to load the "Battle Pet Tamers: Northrend" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend" |only if not achieved(6607,2)
+|tip
+Earn the _Taming Cataclysm_ achievement |achieve 6607/3
+Click here to load the "Battle Pet Tamers: Cataclysm" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm" |only if not achieved(6607,3)
+|tip
+Earn the _Taming Pandaria_ achievement |achieve 6607/4
+Click here to load the "Battle Pet Tamers: Pandaria" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria" |only if not achieved(6607,4)
+step
+Congratulations!
+You have earned the _Taming Azeroth_ achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battles\\Collect\\Eastern Kingdoms Safari",{
 condition_end="achieved(6586)",
 description="Catch every battle pet in Eastern Kingdoms.",
@@ -17468,15 +17494,15 @@ confirm
 step
 To earn this achievement, start by jumping between the 2 platforms and gaining 2 stacks of the speed buff
 Then, talk to Thrall and start the encounter
-_Move as fast as you can to the fourth platform where Alexstrasza is!_ |only if not achieved(6180/1)
-If you made it in time, you will see a message about Deathwing Assaulting Alexstrazsa |only if not achieved(6180/1)
-Wait for the Mutation to case Impale at least 2 times |only if not achieved(6180/1)
-Destroy the arm and move on |only if not achieved(6180/1)
-Jump to Nozdomu's platform and repeat the process, only attacking after Deathwing has began assaulting Ysera |only if not achieved(6180/3)
-Destroy the arm then move to Ysera's platform |only if not achieved(6180/4)
-Wait for Deathwing to assault Ysera, wait for impale, then destroy the arm |only if not achieved(6180/4)
-Finally, jump to Kalecgos' platform|only if not achieved(6180/2)
-Wait for impale, then destroy the arm|only if not achieved(6180/2)
+_Move as fast as you can to the fourth platform where Alexstrasza is!_ |only if not achieved(6180,1)
+If you made it in time, you will see a message about Deathwing Assaulting Alexstrazsa |only if not achieved(6180,1)
+Wait for the Mutation to case Impale at least 2 times |only if not achieved(6180,1)
+Destroy the arm and move on |only if not achieved(6180,1)
+Jump to Nozdomu's platform and repeat the process, only attacking after Deathwing has began assaulting Ysera |only if not achieved(6180,3)
+Destroy the arm then move to Ysera's platform |only if not achieved(6180,4)
+Wait for Deathwing to assault Ysera, wait for impale, then destroy the arm |only if not achieved(6180,4)
+Finally, jump to Kalecgos' platform|only if not achieved(6180,2)
+Wait for impale, then destroy the arm|only if not achieved(6180,2)
 Once you have done so, kill Deathwing for the acheivement
 |achieve 6180/1
 |achieve 6180/2

@@ -1936,7 +1936,7 @@ function ZGV:Options_DefineOptionTables()
 		--AddOption('autoselectitem',{ type = 'toggle', _default=false, disabled = function() return not (self.db.profile.autoturnin and self.db.profile.questitemselector) end, width="full"})
 		AddOption('autoselectitem',{ type = 'toggle', _default=false, width="full"})
 
-		AddOption('foglight',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  if v then self.Foglight:Startup() else self.Foglight:TurnOff() end end, _default = true, })
+		AddOption('foglight',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v)  self.Foglight:ToggleOverlay() end, _default = true, })
 
 		AddOption('petbattleframe',{ type = 'toggle', width = "full", set = function(i,v) Setter_Simple(i,v) end, _default = true, })
 

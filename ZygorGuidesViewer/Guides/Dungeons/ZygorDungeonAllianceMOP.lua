@@ -4118,7 +4118,7 @@ step
 kill Razorgore the Untamed##12435 |goto Blackwing Lair/1 35.7,67.2
 |tip The objective of this fight is to destroy all the eggs in the room by controlling Razorgore the Untamed before killing him.
 |tip When controlling Razorgore, he has the following abilities:
-|tip Destroy Egg destroys a nearby egg. 3 second cast.
+|tip Destroy Egg destroys a nearby egg. This is an instant cast.
 |tip Calm Dragonkin puts the target Dragonkin to sleep for 30 seconds.
 |tip Fireball Volley inflicts 1000 Fire damage to all enearby enemies. 2 second cast.
 |tip When fighting Razorgore, he also has these abilities:

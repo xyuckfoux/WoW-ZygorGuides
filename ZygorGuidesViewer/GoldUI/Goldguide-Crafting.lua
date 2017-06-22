@@ -221,10 +221,10 @@ function Crafting:add_line(txt) self.guide = self.guide .. txt .. " \n" end
 function Crafting:GenerateGuide()
 	local productname = ZGV:GetItemInfo(self.productid)
 
-	local legendary_guide = nil
+	local static_guide = nil
 	for i,v in pairs(ZGV.registeredguides) do
-		if v.legendarycraft==self.productid then
-			legendary_guide=v
+		if v.craft_item==self.productid then
+			static_guide=v
 			break
 		end
 	end
@@ -238,7 +238,7 @@ function Crafting:GenerateGuide()
 	self:add_line("'You will need following reagents:")
 	for itemid,itemcount in pairs(self.reagentcount) do
 		local name = ZGV:GetItemInfo(itemid)
-		self:add_line(". "..itemcount.." "..name)
+		self:add_line(". "..itemcount.." "..(name or itemid))
 	end
 	if not self.learned then
 		self:add_line("'You will need to get the recipe.")
@@ -254,8 +254,8 @@ function Crafting:GenerateGuide()
 	end
 
 	-- Step 3a -- optional questline
-	if legendary_guide then
-		for line in string.gmatch(legendary_guide.rawdata, ".*$") do
+	if static_guide then
+		for line in string.gmatch(static_guide.rawdata, ".*$") do
 			self:add_line(line)
 		end
 	end
@@ -265,7 +265,7 @@ function Crafting:GenerateGuide()
 	self:add_line("'Obtain the following reagents:")
 	local farms_found = false
 	for itemid,itemcount in pairs(self.reagentcount) do
-		if not (legendary_guide and legendary_guide.legendaryreagents[itemid]) then
+		if not (static_guide and static_guide.craft_reagents[itemid]) then
 			local name = ZGV:GetItemInfo(itemid)
 			local price = ZGVG:GetSellPrice(itemid)
 

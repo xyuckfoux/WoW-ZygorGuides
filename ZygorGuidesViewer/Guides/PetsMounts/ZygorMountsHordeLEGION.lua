@@ -41,7 +41,6 @@ step
 _Congratulations!_
 You are now the proud owner of a Defiled Reins.
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Ground Mounts\\Battle Pet Mounts\\Brilliant Direbeak",{
 author="support@zygorguides.com",
 startlevel=110.0,
@@ -1040,6 +1039,1524 @@ learnmount Viridian Sharptalon##213165
 step
 _Congratulations!_
 You are now the proud owner of a Viridian Sharptalon.
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Archmage's Prismatic Disc",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Archmage's","Prismatic","Disc","Mage","mount"},
+condition_end="hasmount(229376)",
+model={73770},
+description="This guide will help you acquire the Archmage's Prismatic Disc mount.",
+},[[
+step
+This mount is only available to Mages |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Mage.
+|only if not Mage
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Mage
+step
+talk Invoker Threadgold##117770
+accept Avocation of Antonidas##45844 |goto Broken Shore/0 45.19,61.79
+|only Mage
+step
+talk Archmage Kalec##108247
+turnin Avocation of Antonidas##45844 |goto Hall of the Guardian/2 56.42,38.32
+accept Burning Within##45845 |goto Hall of the Guardian/2 56.42,38.32
+accept Chilled to the Core##45846 |goto Hall of the Guardian/2 56.42,38.32
+accept Close to Home##45847 |goto Hall of the Guardian/2 56.42,38.32
+|only Mage
+step
+talk Archmage Celindra##96786
+Tell her: _"I'm looking for Antonidas' arcane disc piece. Do you have it?"_
+Speak with Archmage Celindra |goto Dalaran L/10 56.09,47.02
+click Tri-Disc of the Arcane
+collect Tri-Disc of the Arcane##143838 |q 45847/1 |goto Dalaran L/10 53.85,47.38
+|only Mage
+step
+talk Archmage Khadgar##90417
+Tell him _"Khadgar, I'm looking for a piece of a disc that Antonidas gave you a long time ago."_
+Speak with Archmage Khadgar |q 45845/1 |goto Dalaran L/10 28.56,48.39
+|only Mage
+step
+click the Portal to Karazhan |q 45845/3 |goto Dalaran L/12 32.36,71.93
+|only Mage
+step
+talk Archmage Alturus##114667
+Tell him: _"I'm here to inquire about the Tri-Disc of Fire."_
+Speak with Archmage Alturus |q 45845/2 |goto Deadwind Pass/0 48.56,78.88
+|only Mage
+step
+Enter the Tomb |goto 48.65,78.84
+Follow the path down |goto Deadwind Pass/22 53.30,38.10 < 10
+Follow the hallway |goto Deadwind Pass/22 58.19,90.44 < 10
+Take the Portal to Alturus' Sanctum |q 45845/4 |goto 50.83,91.01
+|only Mage
+step
+click Tri-Disc of Fire
+collect Tri-Disc of Fire##143836 |q 45845/5 |goto Deadwind Pass/0 51.61,89.50
+|only Mage
+step
+talk Archmage Cedric##18165
+Tell him: _"Archmage Cedric, I'm looking for a piece of a disc that Antonidas gave to you. Do you happen have it?"_
+Speak with Archmage Cedric |q 45846/1 |goto Hillsbrad Foothills/0 30.91,30.82
+|only Mage
+step
+kill Ok'rok Icetouch##121200
+collect Tri-Disc of Frost##143837 |q 45846/2 |goto Hillsbrad Foothills/0 43.56,29.81
+|only Mage
+step
+talk Archmage Kalec##108247
+turnin Burning Within##45845 |goto Hall of the Guardian/2 56.42,38.32
+turnin Chilled to the Core##45846 |goto Hall of the Guardian/2 56.42,38.32
+turnin Close to Home##45847 |goto Hall of the Guardian/2 56.42,38.32
+accept Dispersion of the Discs##45354 |goto Hall of the Guardian/2 56.42,38.32
+|only Mage
+step
+talk Archmage Kalec##108247
+Tell him: _"I'm ready to travel to the Eye of Eternity."_
+Speak with Archmage Kalec |goto Hall of the Guardian/2 56.42,38.32
+Enter the Scenario and watch the Dialogue
+Listen to Kalec's Instructions |scenariogoal 1/34807 |q 45354 |goto 1166/1 38.76,49.05
+|only Mage
+step
+click Tri-Disc of Fire##119506 |goto 1166/1 31.32,56.76
+kill Primal Rage of Fire##119299 |scenariogoal 2/34808 |q 45354
+|tip Spellsteal Burning Rage when it is applied.
+|tip Avoid standing in any fire on the ground.
+|only Mage
+step
+click Tri-Disc of the Arcane##119505 |goto 1166/1 38.69,36.67
+kill Primal Rage of the Arcane##119446 |scenariogoal 2/34810 |q 45354
+|tip Avoid the Arcane circles being placed around the room.
+|tip He will split throughout the fight, these share health.
+|only Mage
+step
+click Tri-Disc of Frost##119507 |goto 1166/1 46.34,56.20
+kill Primal Rage of Frost##119300 |scenariogoal 2/34809 |q 45354
+|tip Interrupt Avalanche when he casts it.
+|tip Spell Steal Fringed Barrier when it is applied.
+|tip Avoid Glacier Spear.
+|tip Kill the adds as soon as they appear.
+|only Mage
+step
+Complete the Ritual in the Eye of Eternity |q 45354/1
+|only Mage
+step
+talk Archmage Kalec##116441
+Tell him: _"I'm ready to go back, Kalec."_ |goto 1166/1 38.76,49.05 < 5
+Arrive back at the Hall of the Guardians |goto Hall of the Guardian/2 59.79,47.74 |c |noway
+|only Mage
+step
+talk Archmage Kalec##108247
+turnin Dispersion of the Discs##45354 |goto Hall of the Guardian/2 56.42,38.21
+|only Mage
+step
+_Congratulations!_
+You collected the _Archmage's Prismatic Disc_ mount
+|only Mage
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Ban-Lu, Grandmaster's Companion",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Ban-Lu","Grandmaster's","Companion","Monk","mount"},
+condition_end="hasmount(229385)",
+model={73784},
+description="This guide will help you acquire the Ban-Lu, Grandmaster's Companion mount.",
+},[[
+step
+This mount is only available to Monks |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Monk.
+|only if not Monk
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Monk
+step
+accept Master Who?##46353 |goto Dalaran L/10 60.58,44.80
+|only Monk
+step
+Enter the Teleportation Mandala |goto The Wandering Isle L/0 49.89,47.12 < 10
+Follow the path |goto 50.04,48.73 < 20
+Follow the path |goto 44.93,51.31 < 20
+Follow the path |goto 42.09,51.28 < 20
+Follow the path |goto 39.38,51.28 < 20
+Follow the path |goto 36.26,51.33 < 20
+Follow the path |goto 31.43,47.01 < 20
+Follow the path |goto 30.88,43.91 < 20
+Follow the path |goto 32.20,42.84 < 20
+talk Master Bu##120758
+turnin Master Who?##4635 |goto 32.32,43.42
+accept The Tale of Ban-Lu##46341 |goto 32.32,43.42
+|only Monk
+step
+Listen to Master Bu's Story |q 46341/1 |goto 32.32,43.42
+|only Monk
+step
+talk Master Bu##120758
+turnin The Tale of Ban-Lu##46341 |goto 32.37,43.12
+accept Return to the Broken Peak##46342 |goto 32.37,43.12
+|only Monk
+step
+talk Master Bu##120758
+turnin Return to the Broken Peak##46342 |goto Kun-Lai Summit/0 47.34,41.70
+accept The Trail of Ban-Lu##46343 |goto 47.34,41.70
+|only Monk
+step
+click Pawprint
+First set of pawprints found |q 46343/1 |goto 47.05,40.57
+|only Monk
+step
+click Pawprint
+Second set of pawprints found |q 46343/2 |goto 46.02,40.14
+|only Monk
+step
+click Pawprint
+Third set of pawprints found |q 46343/3 |goto 46.35,42.48
+|only Monk
+step
+click Pawprint
+Fourth set of pawprints found |q 46343/4 |goto 46.55,45.17
+|only Monk
+step
+talk Master Bu##120758
+turnin The Tale of Ban-Lu##46341 |goto 47.92,48.89
+|only Monk
+step
+talk Smelly Mountaintop##120744
+accept Smelly's Luckydo##46344 |goto 47.95,49.08
+|only Monk
+step
+kill Hozen Snowthumper##120799+, Hozen Crag-Leaper##120798+, Dookya##120797
+collect 3 Smelly's Luckydo##147315 |q 46344/1 |goto 50.33,49.58
+|only Monk
+step
+talk Smelly Mountaintop##120744
+turnin Smelly's Luckydo##46344 |goto 47.95,49.08
+|only Monk
+step
+talk Master Bu##120758
+accept The Shadow of Ban-Lu##46346 |goto 47.92,48.89
+|only Monk
+step
+talk Master Bu##120758
+turnin The Shadow of Ban-Lu##46346 |goto 36.52,48.24
+accept Clean-up on Aisle Sha##46347 |goto 36.52,48.24
+|only Monk
+step
+talk Commander Shen-Li##120747
+Speak with Commander Shen-li |q 46347/1 |goto 36.76,47.58
+|only Monk
+step
+talk Commander Shen-Li##120747
+Tell him "I'm ready to clean up the sha." |goto 36.76,47.58
+Click here to continue |confirm
+|only Monk
+step
+kill Remnant of Anger##120972
+|tip They will be all around the area.
+Note: This guide is a work in progress and will be updated with full details soon!
+Squish the Sha Remnants |q 46347/2
+|only Monk
+step
+talk Commander Shen-Li##120747
+Tell him "I've cleaned up the Sha." |q 46347/3 |goto 36.76,47.58
+|only Monk
+step
+talk Master Bu##120758
+turnin Clean-up on Aisle Sha##46347 |goto 36.52,48.24
+accept The River to Ban-Lu##46348 |goto 36.52,48.24
+|only Monk
+step
+talk Waterspeaker Ryuli##120726
+turnin The River to Ban-Lu##46348 |goto 74.37,88.68
+accept Lilies for Ryuli##46349 |goto 74.37,88.68
+|only Monk
+step
+click Moon Lily
+collect 6 Moon Lily##147313 |q 46349/1 |goto 73.98,46.36
+|only Monk
+step
+talk Waterspeaker Ryuli##120726
+turnin Lilies for Ryuli##46349 |goto 74.37,88.68
+|only Monk
+step
+talk Waterspeaker Ryuli##120726
+accept The Trial of Ban-Lu##46350 |goto 73.86,89.02
+|only Monk
+step
+Watch the dialogue
+Ban-Lu Found |q 46350/1 |goto The Jade Forest/0 23.44,35.18
+|only Monk
+step
+kill Ban-Lu##121173
+Defeat Ban-Lu |q 46350/2 |goto 24.09,35.97
+|only Monk
+step
+Follow the path |goto 51.54,44.84 < 20
+Follow the path |goto 51.58,40.47 < 20
+Follow the path |goto 52.85,39.13 < 20
+Follow the path |goto 51.92,35.94 < 20
+Follow the path |goto 51.10,31.67 < 20
+Follow the path |goto 48.95,29.18 < 20
+Follow the path |goto 44.75,29.09 < 20
+Follow the path |goto 42.89,27.63 < 20
+talk Ban-Lu##121173
+turnin The Trial of Ban-Lu##46350 |goto 41.68,25.41
+|only Monk
+step
+_Congratulations!_
+You collected the _Ban-Lu, Grandmaster's Companion_ mount
+|only Monk
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Battlelord's Bloodthirsty War Wyrm",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Battlelord's","Bloodthirsty","War","Wyrm","Warrior","mount"},
+condition_end="hasmount(229388)",
+model={73778},
+description="This guide will help you acquire the Battlelord's Bloodthirsty War Wyrm mount.",
+},[[
+step
+This mount is only available to Warriors |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Warrior.
+|only if not Warrior
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Warrior
+step
+talk Valarjar Warsinger##119527
+accept A Godly Invitation##46208 |goto Broken Shore/0 43.59,63.08
+|only Warrior
+step
+talk Odyn##96469
+turnin A Godly Invitation##46208 |goto Skyhold/1 58.40,84.56
+accept The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+|only Warrior
+step
+talk Odyn##96469
+Tell him _"I'm ready to begin the trial, Odyn."_
+Begin the Trial of Rage Scenario |scenariostart |q 46207 |goto 58.40,84.56
+|only Warrior
+step
+talk Damrul the Stronk##118762
+Tell him _"I challenge you to fight!"_
+Challenge Damrul the Stronk |scenariogoal 1/35413 |q 46207 |goto Halls of Valor/1 52.30,87.07
+|only Warrior
+step
+kill Damrul the Stronk##118762
+Defeat Damrul the Stronk |scenariogoal 1/35403 |q 46207 |goto Halls of Valor/1 50.32,85.82
+|only Warrior
+step
+talk Omanawkwa Steelhoof##118775
+Tell him _"I challenge you to fight!"_
+Challenge Omanawkwa Steelhoof |scenariogoal 2/35414 |q 46207 |goto Halls of Valor/1 50.47,87.13
+|only Warrior
+step
+kill Omanawkwa Steelhoof##118775
+Defeat Omanawkwa Steelhoof |scenariogoal 2/35410 |q 46207 |goto 50.47,85.82
+|only Warrior
+step
+talk Asrea Moonblade##118772
+Tell her _"I challenge you to fight!"_
+Challenge Asrea Moonblade |scenariogoal 3/35415 |q 46207 |goto Halls of Valor/1 51.39,87.03
+|only Warrior
+step
+kill Asrea Moonblade##118772
+Defeat Asrea Moonblade |scenariogoal 3/35411 |q 46207 |goto 50.47,85.82
+|only Warrior
+step
+Step onto the Rune |scenariogoal 4/36226 |q 46207 |goto Halls of Valor/1 52.49,87.95
+|only Warrior
+step
+kill Asprirant Thyri##118855
+Defeat Asprirant Thyri |scenariogoal 4/35412 |q 46207 |goto Halls of Valor/1 50.95,85.80
+|only Warrior
+step
+click Skyhold Portal
+Return to Skyhold |q 46207/2 |goto Halls of Valor/1 51.41,89.43
+|only Warrior
+step
+talk Odyn##96469
+turnin The Trial of Rage##46207 |goto Skyhold/1 58.40,84.56
+|only Warrior
+step
+_Congratulations!_
+You collected the _Battlelord's Bloodthirsty War Wyrm_ mount
+|only Warrior
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Deathlord's Vilebrood Vanquisher",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"deathlord's","vilebrood","vanquisher","mount","death","knight"},
+condition_end="hasmount(229387)",
+model={75314},
+description="This guide will help you acquire the Deathlord's Vilebrood Vanquisher mount.",
+},[[
+step
+This mount is only available to Death Knight |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Death Knight.
+|only if not DeathKnight
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only DeathKnight
+step
+talk Dread Commander Thalanor##117573
+accept Amal'thazad's Message##46719 |goto Broken Shore/0 43.92,63.12
+|only DeathKnight
+step
+talk Amal'thazad##93555
+turnin Amal'thazad's Message##46719 |goto Broken Shore/2 58.21,31.07
+accept Frozen Memories##46720 |goto 58.21,31.07
+|only DeathKnight
+step
+Take the portal to the top of Archerus |q 46720/1 |goto 55.52,28.34
+|only DeathKnight
+step
+Listen to the Lich King's plan |q 46720/2 |goto Broken Shore/1 47.82,51.83
+|tip Simply wait for the dialogue to complete.
+|only DeathKnight
+step
+Witnes the Lich King's vision  |q 46720/3 |goto Icecrown/0 44.70,4.41
+|tip Land on the little chunk of ice and wait for the vision to complete.
+|only DeathKnight
+step
+Click the quest completion box
+turnin Frozen Memories##46720 |goto 44.70,4.41
+accept Draconic Secrets##46812 |goto 44.70,4.41
+|only DeathKnight
+step
+talk Trizormu##27938
+|tip He is on the ground floor.
+Tell him: _"Tell me all you know of a glacier to the north where a powerful dragon fell."_
+Trizormu interrogated |q 46812/1 |goto Dragonblight/0 60.31,54.86
+|only DeathKnight
+step
+talk Tariolstrasz##26443
+|tip He is on the ground floor.
+Tell him: _"Tell me all you know of a great dragon that fell on a glacier to the north of Icecrown."_
+Steward Tariolstrasz interrogated |q 46812/2 |goto 57.90,54.16
+|only DeathKnight
+step
+Infiltrate the Ruby Sanctum |q 46812/3 |goto The Ruby Sanctum/0 49.01,31.40
+|only DeathKnight
+step
+Follow the path |goto 41.40,76.55 < 20 |only if walking
+|tip Avoid the Ruby Keepers.
+click Codex Draconomicus Rubicus##6477
+Read the Codex Draconomicus |q 46812/4 |goto 47.92,77.21
+|only DeathKnight
+step
+Click the quest completion box
+turnin Draconic Secrets##46812 |goto 47.92,77.21
+accept The Lost Glacier##46813 |goto 47.92,77.21
+|only DeathKnight
+step
+Travel to the Lost Glacier |q 46813/1 |goto Icecrown/0 42.60,0.38
+|tip Move around a little bit if the scenario doesn't trigger.
+|only DeathKnight
+step
+Find the Frozen Span |scenariogoal 1/36221 |q 46813 |goto The Lost Glacier/0 52.20,69.57
+|tip You will need to fight through the ghouls to reach the Frozen Span.
+|only DeathKnight
+step
+Find Kyranastraz' Rest |scenariogoal 2/36222 |q 46813
+|tip There is a narrow path of ice ahead. Follow that towards the skeletal remains.
+|only DeathKnight
+step
+kill Revitalized Ghoul##121040+, Revitalized Monstrosity##121048+, Revitalized Skeleton##121060+
+Collect the red dragon's essence |scenariogoal 3/36223 |q 46813
+|tip Kill mobs until the bar on your screen fills up.
+|only DeathKnight
+step
+Convert the life essence to death |scenariogoal 4/36224 |q 46813
+|tip Use the special action button ability on your screen.
+|only DeathKnight
+step
+click Deep Crack
+|tip It is located near the green mound.
+turnin The Lost Glacier##46813
+|only DeathKnight
+step
+_Congratulations!_
+You collected the _Deathlord's Vilebrood Vanquisher_ mount
+|only DeathKnight
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Farseer's Raging Tempest",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Farseer's","Raging","Tempest","Shaman","mount"},
+condition_end="hasmount(231442)",
+model={76024},
+description="This guide will help you acquire the Farseer's Raging Tempest mount.",
+},[[
+step
+This mount is only available to Shamen |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Shaman.
+|only if not Shaman
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Shaman
+step
+talk Orono##117888
+accept Carried On the Wind##46791 |goto Broken Shore/0 44.66,61.61
+|only Shaman
+step
+talk Consular Celestos##106521
+turnin Carried On the Wind##46791 |goto The Maelstrom L/0 28.35,45.12
+accept Gathering of the Storms##46792 |goto The Maelstrom L/0 28.35,45.12
+|only Shaman
+step
+talk Consular Celestos##106521
+Tell him: _"Send me to the Throne of the Four Winds."_
+Speak with Consular Celestos |q 46792/1 |goto The Maelstrom L/0 28.35,45.12
+|only Shaman
+step
+kill Anshal##120130 |scenariogoal 1/35886 |q 46792 |goto 1148/1 31.82,50.07
+|tip Interrupt Healing Surge as much as possible
+|tip Be sure to avoid the green puddles on the ground.
+|tip Kill the adds when they appear.
+|only Shaman
+step
+kill Nezir##120129 |scenariogoal 1/35885 |q 46792 |goto 1148/1 47.7,25.5
+|tip Avoid the puddles falling on the ground when hes casting Tempest of Frost.
+|tip Interrupt Wind Chill.
+|tip Try to avoid getting hit by Freezing Gale.
+|only Shaman
+step
+kill Rohash##120128 |scenariogoal 1/35884 |q 46792 |goto 1148/1 63.6,49.9
+|tip Interrupt Slicing Gale when you can.
+|tip Avoid standing in Stinging Vortex, this will be placed on top of you and suck you in until you leave the circle.
+|tip Stay in closer to the center of the room to prepare for Sandstorm, this will blow you back.
+|tip Once Sandstorm starts be sure to run against the push back and avoid getting hit by the tornados that appear.
+|only Shaman
+step
+Enter the swirl |goto 1148/1 61.47,52.80
+Watch the Dialogue
+Listen to Thunderaan's Speech |scenariogoal 2/35973 |q 46792 |goto 1148/1 47.33,60.36
+|only Shaman
+step
+Complete the Gathering of the Storms Scenario |q 46792/2
+|only Shaman
+step
+talk Consular Celestos##106521
+turnin Gathering of the Storms##46792 |goto The Maelstrom L/0 28.35,45.12
+|only Shaman
+step
+_Congratulations!_
+You collected the _Farseer's Raging Tempest_ mount
+|only Shaman
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\High Priest's Lightsworn Seeker",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"high","priest's","lightsworn","seeker","mount","priest"},
+condition_end="hasmount(240981)",
+model={73774},
+description="This guide will help you acquire the High Priest's Lightsworn Seeker mount.",
+},[[
+step
+This mount is only available to Priests |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Priest.
+|only if not Priest
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Priest
+step
+talk Grand Priest##118536
+accept The Speaker Awaits##45788 |goto Broken Shore/0 44.40,63.66
+|only Priest
+step
+talk Betild Deepanvil##102709
+turnin The Speaker Awaits##45788 |goto Netherlight Temple/1 47.94,21.89
+accept The Sunken Vault##45789 |goto Netherlight Temple/1 47.94,21.89
+|only Priest
+step
+talk Brann Bronzebeard##117694
+Tell him: _"I am ready to head to the Maelstrom."_
+Submarine taken to the Sunken Vault |q 45789/1 |goto Azsuna/0 44.26,51.24
+|only Priest
+step
+Locate the lost Titan vault near the Maelstrom |scenariostage 1 |goto Lightless Cavern/1 47.21,50.67
+|only Priest
+step
+Enter the Titan vault |scenariostage 2 |goto 53.53,54.72
+|only Priest
+step
+click Control Console
+Activate the console |scenariogoal 3/35058 |goto 72.89,70.94
+|only Priest
+step
+Listen to the custodian's story |scenariostage 4 |goto 71.89,65.47
+|tip This will take some time to complete.
+|only Priest
+step
+Defend yourself against the vault's defense machanisms |scenariostage 5 |goto 68.82,63.19
+|tip Kill the waves of enemies.
+|tip Move out of AoE effects.
+|only Priest
+step
+talk Brann Bronzebeard##117694
+Tell him: _"I am ready to head back to Dalaran."_ |goto 69.20,62.12
+Return to Dalaran |goto Dalaran L/10 72.46,45.93 < 50 |c |noway
+|only Priest
+step
+talk Betild Deepanvil##102709
+turnin The Sunken Vault##45789 |goto Netherlight Temple/1 49.77,20.64
+|only Priest
+step
+_Congratulations!_
+You collected the _High Priest's Lightsworn Seeker_ mount
+|only Priest
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Highlord's Golden Charger",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Highlord's","Golden","Charger","Paladin","mount"},
+condition_end="hasmount(231435)",
+model={74148},
+description="This guide will help you acquire the Highlord's Golden Charger mount.",
+},[[
+step
+This mount is only available to Paladins |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Paladin.
+|only if not Paladin
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Paladin
+step
+accept Worthy of the Title##46069
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Worthy of the Title##46069 |goto Eastern Plaguelands/20 52.40,77.53
+accept Preparations Underway##46070 |goto 52.40,77.53
+|only Paladin
+step
+collect Stonehide Leather Barding 1 ##131746 |q 46070/1
+|tip You can buy this from the Auction House.
+|tip You can create this using Leatherworking.
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Preparations Underway##46070 |goto 52.40,77.53
+accept The Hammer of Dalaran##46071 |goto 52.40,77.53
+|only Paladin
+step
+talk Alard Schmied##92183
+turnin The Hammer of Dalaran##46071 |goto Dalaran L/10 44.07,28.82
+accept A Few Things First##46083 |goto Dalaran L/10 44.07,28.82
+|only Paladin
+step
+collect 25 Leystone Ore##123918 |q 46083/1
+|tip You can buy these from the Auction House.
+|tip You can collect these with the Mining skill.
+|only Paladin
+step
+talk Sundries Merchant##109563
+|tip You must be in your disguise to talk to this npc.
+buy 1 Suramarian Sapphire##147768 |q 46083/2 |goto Suramar/0 50.06,77.24
+|tip This costs 500 Ancient Mana.
+|only Paladin
+step
+talk Alard Schmied##92183
+turnin A Few Things First##46083 |goto Dalaran L/10 44.07,28.82
+accept Leather to Legendary##46074 |goto Dalaran L/10 44.07,28.82
+|only Paladin
+step
+Watch the Dialogue
+click Plated Barding
+collect Plated Barding##144294 |q 46074/1 |goto 44.39,28.76
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##90250
+Return to Grayson |q 46074/2 |goto Eastern Plaguelands/20 52.40,77.53
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Leather to Legendary##46074 |goto 52.40,77.53
+accept Stirring in the Shadows##45770 |goto 52.40,77.53
+|only Paladin
+step
+Follow the path |goto 41.89,71.22 < 20
+Follow the path |goto 45.48,83.93 < 20
+Exit the building |goto 39.99,92.47 < 15
+talk Defender Sterius##118360
+Tell him "I'm ready to go." |goto Eastern Plaguelands/0 43.46,19.57
+Enter the Stirring in the Shadows scenario
+confirm
+|only Paladin
+step
+Choose 2 allies to recruit |goto 1130/1 63.59,79.00 |scenariostage 1
+|only Paladin
+stickystart "Holy Water"
+step
+Follow the path |goto 63.57,66.60 < 25
+Follow the path |goto 62.73,57.58 < 25
+|tip While in this scenario a Shadowy Figure will periodically spawn summoning mobs for you to fight.
+kill Osseine##118198 |scenariogoal 2/36042 |goto 72.85,46.71
+|only Paladin
+step
+Enter the building |goto 75.17,47.05 < 10
+click Silver Hand Knight##118327
+Find the 1st Missing Paladin |goto 78.23,48.02
+|confirm
+|only Paladin
+step
+Follow the path |goto 66.84,51.09
+kill Pestulon##118199 |goto 58.12,45.66
+|scenariogoal 2/36043
+|only Paladin
+step
+Enter the building |goto 56.22,47.03
+click Silver Hand Knight##118332 |goto 53.50,49.18
+Find the 2nd Missing Paladin
+|confirm
+|only Paladin
+step
+Follow the path |goto 57.90,42.31
+Follow the path |goto 59.87,30.16
+kill Rotmouth##118197 |scenariogoal 2/36041 |goto 66.73,22.38
+|only Paladin
+step
+Enter the building |goto 68.11,20.05
+click Silver Hand Knight##118332
+Find the 3rd Missing Paladin |goto 70.09,16.53
+|confirm
+|only Paladin
+step
+label "Holy Water"
+click Cache of Holy Water##6478+
+collect 6 Stratholme Holy Water##144064
+|tip These can be found in boxes all around Stratholme.
+|only Paladin
+step
+Search the City |scenariostage 2
+|only Paladin
+step
+Follow the path |goto 66.43,27.73 < 20
+Follow the path |goto 71.27,47.76 < 20
+Follow the path |goto 61.51,58.94 < 20
+talk Lord Grayson Shadowbreaker##117714
+Tell him "Here's the Holy Water, Grayson"
+Give Grayson the Holy Water |scenariogoal 3/35263 |goto 63.34,71.88
+|only Paladin
+step
+click Blessed Mount Barding
+Imbue the Barding |scenariogoal 4/35264 |goto 63.29,74.45
+|only Paladin
+step
+map 1130/1
+path follow strict;loop off;ants straight
+path	63.55,66.42	62.73,57.65	65.58,50.09
+path	57.86,40.55	59.38,29.97	55.57,19.11
+path	47.95,19.92
+Enter the building |goto 42.88,20.37 < 5
+Watch the Dialogue
+Explore Rivendare's Crypt |scenariogoal 5/35274
+|only Paladin
+step
+Leave the building |goto 42.88,20.37 < 5
+kill Raemien the Soultaker##118224 |goto 48.41,20.16 |scenariogoal 6/35275
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##117714
+Tell him "I'm ready to return, Grayson" |scenariogoal 7/35263 |goto 47.05,20.40
+Complete the Stirring in the Shadows |q 45770/1
+|only Paladin
+step
+talk Lord Grayson Shadowbreaker##90250
+turnin Stirring in the Shadows##45770 |goto Eastern Plaguelands/20 52.15,77.80
+|only Paladin
+step
+_Congratulations!_
+You collected the _Highlord's Golden Charger_ mount
+|only Paladin
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Highlord's Valorous Charger",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Highlord's","Valorous","Charger","Paladin","mount"},
+condition_end="hasmount(231589)",
+model={74151},
+description="This guide will help you acquire the Highlord's Valorous Charger mount.",
+},[[
+step
+This mount is only available to Paladins |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Paladin.
+|only if not Paladin
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Paladin
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Paladin
+step
+Can be bought after achieving _Power Ascended_ as the Holy Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Paladin
+step
+talk Crusader Lord Dalfors##99976
+buy Heraldic Reins of the Valorous Charger##143505 |use Heraldic Reins of the Valorous Charger##143505 |goto Eastern Plaguelands/20 52.67,74.47
+|tip This mount costs 1,000 Order Resources.
+learnmount Highlord's Valorous Charger##231589
+|only Paladin
+step
+_Congratulations!_
+You are now the proud owner of Highlord's Valorous Charger.
+|only Paladin
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Highlord's Vengeful Charger",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Highlord's","Vengeful","Charger","Paladin","mount"},
+condition_end="hasmount(231587)",
+model={74149},
+description="This guide will help you acquire the Highlord's Vengeful Charger mount.",
+},[[
+step
+This mount is only available to Paladins |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Paladin.
+|only if not Paladin
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Paladin
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Paladin
+step
+Can be bought after achieving _Power Ascended_ as the Retribution Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Paladin
+step
+talk Crusader Lord Dalfors##99976
+buy Harsh Reins of the Vengeful Charger##143503 |use Harsh Reins of the Vengeful Charger##143503 |goto Eastern Plaguelands/20 52.67,74.47
+|tip This mount costs 1,000 Order Resources.
+learnmount Highlord's Vengeful Charger##231587
+|only Paladin
+step
+_Congratulations!_
+You are now the proud owner of Highlord's Vengeful Charger.
+|only Paladin
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Highlord's Vigilant Charger",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Highlord's","Vigilant","Charger","Paladin","mount"},
+condition_end="hasmount(231588)",
+model={74150},
+description="This guide will help you acquire the Highlord's Vigilant Charger mount.",
+},[[
+step
+This mount is only available to Paladins |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Paladin.
+|only if not Paladin
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Paladin
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Paladin
+step
+Can be bought after achieving _Power Ascended_ as the Protection Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Paladin
+step
+talk Crusader Lord Dalfors##99976
+buy Stoic Reins of the Vigilant Charger##143504 |use Stoic Reins of the Vigilant Charger##143504 |goto Eastern Plaguelands/20 52.67,74.47
+|tip This mount costs 1,000 Order Resources.
+learnmount Highlord's Vigilant Charger##231588
+|only Paladin
+step
+_Congratulations!_
+You are now the proud owner of Highlord's Vigilant Charger.
+|only Paladin
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Huntmaster's Loyal Wolfhawk",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"huntmaster's","loyal","wolfhawk","mount","hunter"},
+condition_end="hasmount(239829)",
+model={73780},
+description="This guide will help you acquire the Huntmaster's Loyal Wolfhawk mount.",
+},[[
+step
+This mount is only available to Hunters |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Hunter.
+|only if not Hunter
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Hunter
+step
+talk Nimi Brightcastle##117810
+accept A Golden Ticket##46336 |goto Broken Shore/0 43.76,63.40
+|only Hunter
+step
+click Golden Letter
+|tip It's on the corner of the table.
+turnin A Golden Ticket##46336 |goto Trueshot Lodge/0 42.80,45.61
+accept Night of the Wilds##46337 |goto 42.80,45.61
+|only Hunter
+step
+talk Herald of Odyn##119953
+Tell her: _"I am ready to attend the feast"_
+Herald taken to the Eternal Hunt |q 46337/1 |goto 49.72,36.53
+|only Hunter
+step
+kill Habrok##119800
+|tip Your pet's Growl ability will not work on this beast.
+Hunt the owl spirit |scenariogoal 1/35800 |q 46337 |goto Fields of the Eternal Hunt/0 26.88,48.78
+|only Hunter
+step
+kill Ketlingr##119798
+|tip Your pet's Growl ability will not work on this beast.
+|tip Ketlingr will Pounce on your location. Start moving when the cast starts.
+|tip Don't stand in front of Ketlingr.
+Hunt the cat spirit |scenariogoal 1/35799 |q 46337 |goto 34.07,60.46
+|only Hunter
+step
+Cross the bridge |goto 41.90,68.38 < 15 |walk
+kill Garos##119799
+|tip Your pet's Growl ability will not work on this beast.
+|tip Interrupt Acid Spit.
+|tip Garos will summon several small worms during Wild Spawn.
+Hunt the worm spirit |scenariogoal 1/35794 |q 46337 |goto 64.59,66.05
+|only Hunter
+step
+Follow the path |goto 54.01,47.53 < 25 |walk
+kill Hyrtir##119795
+|tip Your pet's Growl ability will not work on this beast.
+|tip Move away during Wild Bellow.
+Hunt the stag spirit |scenariogoal 1/35790 |q 46337 |goto 64.28,27.46
+|only Hunter
+step
+kill Vetholnir##119797
+|tip The hawk spirit flies around the area.
+|tip Your pet's Growl ability will not work on this beast.
+|tip Run around during Focused Gusts.
+|tip Interrupt Gusting Winds.
+|tip Vetholnir will summon several small worms during Wild Spawn.
+Hunt the hawk spirit |scenariogoal 2/35801 |q 46337 |goto 53.03,44.63
+|only Hunter
+step
+Cross the bridge |goto 44.64,65.46 < 15 |walk
+kill Fereki##119796
+|tip Your pet's Growl ability will not work on this beast.
+|tip Move away during Wild Bellow.
+|tip Don't stand in front of Fereki.
+|tip Fereki will Pounce on your location. Start moving when the cast starts.
+Hunt the wolf spirit |scenariogoal 2/36338 |q 46337 |goto 27.80,83.21
+|only Hunter
+step
+kill Haukenulfnir##119914
+|tip Your pet's Growl ability will not work on this beast.
+|tip Interrupt Gusting Winds.
+|tip Haukenulfnir will Pounce on your location. Start moving when the cast starts.
+|tip Move away during Wild Bellow.
+|tip Tornados spawned by Wild Winds will knock you back. Avoid them.
+Defeat the wolfhawk |scenariogoal 3/35803 |q 46337 |goto 28.01,66.39
+|only Hunter
+step
+talk Odyn##119665
+Tell him: _"Revel the night away and awake in Trueshot Lodge"_
+Revel the night away |scenariogoal 4/36349 |q 46337 |goto 36.56,41.21
+|only Hunter
+step
+click Empty Saddle
+turnin Night of the Wilds##46337 |goto Trueshot Lodge/0 44.23,21.44
+|only Hunter
+step
+_Congratulations!_
+You collected the _Huntmaster's Loyal Wolfhawk_ mount
+|only Hunter
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Huntmaster's Fierce Wolfhawk",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"huntmaster's","Fierce","wolfhawk","mount","hunter"},
+condition_end="hasmount(229438)",
+model={73782},
+description="This guide will help you acquire the Huntmaster's Fierce Wolfhawk mount.",
+},[[
+step
+This mount is only available to Hunters |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Hunter.
+|only if not Hunter
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Hunter
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Hunter
+step
+Can be bought after achieving _Power Ascended_ as the Survival Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Hunter
+step
+talk Pan the Kind Hand##100661
+buy 1 Trust of a Fierce Wolfhawk##142226 |use Trust of a Fierce Wolfhawk##142226 |goto Trueshot Lodge/3 59.2,33.0
+|tip This mount costs 1,000 Order Resources.
+learnmount Huntmaster's Fierce Wolfhawk##229438
+|only Hunter
+step
+_Congratulations!_
+You are now the proud owner of Huntmaster's Fierce Wolfhawk.
+|only Hunter
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Huntmaster's Dire Wolfhawk",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"huntmaster's","Dire","wolfhawk","mount","hunter"},
+condition_end="hasmount(229439)",
+model={73781},
+description="This guide will help you acquire the Huntmaster's Dire Wolfhawk mount.",
+},[[
+step
+This mount is only available to Hunters |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Hunter.
+|only if not Hunter
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Hunter
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Hunter
+step
+Can be bought after achieving _Power Ascended_ as the Marksmanship Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Hunter
+step
+talk Pan the Kind Hand##100661
+buy 1 Trust of a Dire Wolfhawk##142228 |use Trust of a Dire Wolfhawk##142228 |goto Trueshot Lodge/3 59.2,33.0
+|tip This mount costs 1,000 Order Resources.
+learnmount Huntmaster's Dire Wolfhawk##229439
+|only Hunter
+step
+_Congratulations!_
+You are now the proud owner of Huntmaster's Dire Wolfhawk.
+|only Hunter
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Netherlord's Chaotic Wrathsteed",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"netherlord's","chaotic","wrathsteed","wrath","steed","warlock","mount"},
+condition_end="hasmount(241851)",
+model={73783},
+description="This guide will help you acquire the Netherlord's Chaotic Wrathsteed mount.",
+},[[
+step
+This mount is only available to Warlocks |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Warlock.
+|only if not Warlock
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Warlock
+step
+talk Elithys Firestorm##117622
+accept Bloodbringer's Missive##46237 |goto Broken Shore/0 43.92,63.08
+|only Warlock
+step
+talk Mor'zul Bloodbringer##119166
+Ask him: _"Why have you called me here?"_
+Speak with Mor'zul Bloodbringer |q 46237/1 |goto Dreadscar Rift/0 35.23,38.55
+|only Warlock
+step
+talk Mor'zul Bloodbringer##119166
+turnin Bloodbringer's Missive##46237 |goto 35.23,38.55
+accept If You Build It##46238 |goto 35.23,38.55
+accept Fel to the Core##46239 |goto 35.23,38.55
+accept Give Me Fuel, Give Me Fire##46240 |goto 35.23,38.55
+|only Warlock
+stickystart "BuildIt"
+step
+Follow the path |goto Val'sharah/0 55.01,74.49 < 20 |only if walking
+Follow the path |goto 57.70,76.31 < 30 |only if walking
+Enter Lostlight Grotto |goto 57.57,83.43 < 25 |only if walking
+kill Moonlost Owlbeast##108259+
+collect 50 Owlbeast Blood##144444 |q 46240/1 |goto 59.93,81.73
+|only Warlock
+step
+Retrieve the Overcharged Fel Core |q 46239/1
+|tip You can obtain this item by completing any invasion in the Broken Isles.
+|tip The final boss of the last scenario will drop the core.
+|only Warlock
+step
+label "BuildIt"
+collect 5 Felslate##123919
+|tip This can be gathered with Mining.
+collect 3 Chatoic Spinel##130175
+|tip This can be gathered with Jewelcrafting by prospecting ore.
+collect 1 Unbending Potion##127845
+|tip This can be crafted with Alchemy.
+|tip You can purchase any of these from the Auction House.
+|only Warlock
+step
+talk Mor'zul Bloodbringer##119166
+turnin If You Build It##46238 |goto Dreadscar Rift/0 35.23,38.55
+turnin Fel to the Core##46239 |goto 35.23,38.55
+turnin Give Me Fuel, Give Me Fire##46240 |goto 35.23,38.55
+accept The Minions of Hel'nurath##46241 |goto 35.23,38.55
+|only Warlock
+step
+Follow the path |goto Broken Shore/0 46.88,58.67 < 25 |only if walking
+Follow the path |goto 50.54,53.86 < 25 |only if walking
+click Xorothian Cultist##119053
+|tip Use your Succubus' Seduce ability on them.
+Leader's location found |q 46241/1 |goto 45.22,47.46
+|only Warlock
+step
+Click the quest complete box
+turnin The Minions of Hel'nurath##46241 |goto 45.22,47.46
+accept The Dreadlord's Calling##46242 |goto 45.22,47.46
+|only Warlock
+step
+kill Zuriwa the Hexxer##119173
+Retrieve the Xorothian Calling Stone |q 46242/1 |goto 43.44,46.76
+|only Warlock
+step
+talk Mor'zul Bloodbringer##119166
+turnin The Dreadlord's Calling##46242 |goto Dreadscar Rift/0 35.23,38.59
+accept The Wrathsteed of Xoroth##46243 |goto 35.23,38.59
+|only Warlock
+step
+click Mor'zul's Gateway
+Enter the portal |scenariostart
+|only Warlock
+step
+click Xorothian Calling Stone
+Place the Calling Stone |scenariogoal 1/35652
+|tip Wait for the dialogue to complete.
+|only Warlock
+step
+Defeat the minions |scenariogoal 2/35653
+|tip To remove the shield for Ritualists, use your Felhunter's Devour Magic ability.
+|only Warlock
+step
+kill Arax'ath##119840
+Defeat Arax'ath |scenariogoal 3/35654
+|tip You MUST kill the imps IMMEDIATELY when they spawn!
+Enslave the Wrathsteed |scenariogoal 3/35655
+|tip Cast Enslave Demon on the Wrathsteed.
+|only Warlock
+step
+talk Mor'zul Bloodbringer##119823
+turnin The Wrathsteed of Xoroth##46243
+|tip Wait for the dialogue to complete.
+|only Warlock
+step
+_Congratulations!_
+You collected the _Netherlord's Chaotic Wrathsteed_ mount
+|only Warlock
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Netherlord's Brimstone Wrathsteed",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"netherlord's","Brimstone","wrathsteed","wrath","steed","warlock","mount"},
+condition_end="hasmount(238452)",
+model={75532},
+description="This guide will help you acquire the Netherlord's Brimstone Wrathsteed mount.",
+},[[
+step
+This mount is only available to Warlocks |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Warlock.
+|only if not Warlock
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Warlock
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Warlock
+step
+This mount can be bought after achieving _Power Ascended_ as either the Demonology, Affliction, or Destruction Specs
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+|only Warlock
+step
+talk Calydus##101097
+buy 1 Hellblazing Reins of the Brimstone Dreadsteed##143637 |use Hellblazing Reins of the Brimstone Dreadsteed##143637 |goto Dreadscar Rift/7 37.8,31.8
+|tip This mount costs 1,000 Order Resources.
+learnmount Netherlord's Brimstone Wrathsteed##238452
+|only Warlock
+step
+_Congratulations!_
+You are now the proud owner of Netherlord's Brimstone Wrathsteed.
+|only Warlock
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Netherlord's Accursed Wrathsteed",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"netherlord's","Accursed","wrathsteed","wrath","steed","warlock","mount"},
+condition_end="hasmount(238454)",
+model={75533},
+description="This guide will help you acquire the Netherlord's Accursed Wrathsteed mount.",
+},[[
+step
+This mount is only available to Warlocks |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Warlock.
+|only if not Warlock
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Warlock
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Warlock
+step
+kill Lord Hel'nurath##112936 |goto Broken Shore/0 44.62,53.21
+|tip He is a rare spawn found on the Broken Shore.
+collect Shadowy Reins of the Accursed Dreadsteed##142233 |use Shadowy Reins of the Accursed Dreadsteed##142233
+learnmount Netherlord's Accursed Wrathsteed##238454
+|only Warlock
+step
+_Congratulations!_
+You are now the proud owner of Netherlord's Accursed Wrathsteed.
+|only Warlock
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Shadowblade's Murderous Omen",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Shadowblade's","Murderous","Omen","Rogue","mount"},
+condition_end="hasmount(231434)",
+model={74133},
+description="This guide will help you acquire the Shadowblade's Murderous Omen mount.",
+},[[
+step
+This mount is only available to Rogues |confirm
+|tip You can earn it by completing this guide on an Alliance Rogue.
+|only if not Rogue
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Rogue
+step
+talk Apothecary Keever##119259
+accept Dread Infiltrators##46103 |goto Broken Shore/0 45.06,64.01
+|only Rogue
+step
+talk Lilian Voss##98099
+turnin Dread Infiltrators##46103 |goto Dalaran L/4 19.93,21.33
+accept Hiding In Plain Sight##46089 |goto Dalaran L/4 19.93,21.33
+|only Rogue
+step
+Watch the Dialogue
+Listen to Lilian's plan |q 46089/1 |goto Dalaran L/4 19.93,21.33
+|only Rogue
+step
+Be sure you are stealthed before entering the city to avoid aggroing guards.
+|tip Avoid any guards that are able to see through stealth.
+kill Tercin Shivenllher##118510
+Assasinate the Silvermoon Mark |q 46089/2 |goto Silvermoon City/0 84.4,38.4
+|tip You can see the Mark as a star on the map much like rares.
+|only Rogue
+step
+Be sure you are stealthed before entering the city to avoid aggroing guards.
+|tip Avoid any guards that are able to see through stealth.
+kill Mistress Matilda##118511
+Assasinate the Undercity Mark |q 46089/3 |goto Undercity/0 73.0,55.0
+|tip You can see the Mark as a star on the map much like rares.
+|only Rogue
+step
+Be sure you are stealthed before entering the city to avoid aggroing guards.
+|tip Avoid any guards that are able to see through stealth.
+kill Kroksy the Impregnable##118512
+Assasinate the Thunder Bluff Mark |q 46089/4 |goto Thunder Bluff/0 57.4,51.0
+|tip You can see the Mark as a star on the map much like rares.
+|only Rogue
+step
+Be sure you are stealthed before entering the city to avoid aggroing guards.
+|tip Avoid any guards that are able to see through stealth.
+kill Auctioneer Xifa##44868
+Assasinate the Orgrimmar Mark |q 46089/5 |goto Orgrimmar/1 54.2,74.6
+|tip You can see the Mark as a star on the map much like rares.
+|only Rogue
+step
+talk Lilian Voss##98099
+turnin Hiding In Plain Sight##46089 |goto Dalaran L/4 19.93,21.33
+|only Rogue
+step
+_Congratulations!_
+You collected the _Shadowblade's Murderous Omen_ mount
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Shadowblade's Baneful Omen",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Shadowblade's","Baneful","Omen","Rogue","mount"},
+condition_end="hasmount(231524)",
+model={74134},
+description="This guide will help you acquire the Shadowblade's Baneful Omen mount.",
+},[[
+step
+This mount is only available to Rogues |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Rogue.
+|only if not Rogue
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Rogue
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Rogue
+step
+This mount can be bought after achieving _Power Ascended_ as the Subtlety Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Rogue
+step
+talk Zan Shivsproket##121282
+buy 1 Mephitic Reins of Dark Portent##143491 |use Mephitic Reins of Dark Portent##143491 |goto Dalaran L/4 42.62,81.42
+|tip This mount costs 1,000 Order Resources.
+learnmount Shadowblade's Baneful Omen##231524
+|only Rogue
+step
+_Congratulations!_
+You are now the proud owner of Shadowblade's Baneful Omen.
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Shadowblade's Crimson Omen",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Shadowblade's","Crimson","Omen","Rogue","mount"},
+condition_end="hasmount(231525)",
+model={74136},
+description="This guide will help you acquire the Shadowblade's Crimson Omen mount.",
+},[[
+step
+This mount is only available to Rogues |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Rogue.
+|only if not Rogue
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Rogue
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Rogue
+step
+This mount can be bought after achieving _Power Ascended_ as the Outlaw Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Rogue
+step
+talk Zan Shivsproket##121282
+buy 1 Bloody Reins of Dark Portent##143490 |use Bloody Reins of Dark Portent##143490 |goto Dalaran L/4 42.62,81.42
+|tip This mount costs 1,000 Order Resources.
+learnmount Shadowblade's Crimson Omen##231525
+|only Rogue
+step
+_Congratulations!_
+You are now the proud owner of Shadowblade's Crimson Omen.
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Shadowblade's Lethal Omen",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"Shadowblade's","Lethal","Omen","Rogue","mount"},
+condition_end="hasmount(231523)",
+model={74135},
+description="This guide will help you acquire the Shadowblade's Lethal Omen mount.",
+},[[
+step
+This mount is only available to Rogues |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Rogue.
+|only if not Rogue
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only Rogue
+step
+Once the Broken Shore Campaign is completed you will then need to complete your Class Hall mount quest line
+Check out our 7.2 Order Hall quest line to accomplish this |confirm |or |next "Zygor's Leveling Guides\\Legion (100-110)\\7.2 Order Hall Quests"
+Click here to proceed |confirm
+|only Rogue
+step
+This mount can be bought after achieving _Power Ascended_ as the Assasination Spec
+|tip To gain the achievement Power Ascended you will need to obtain 52 traits in your weapon.
+|tip Once this happens you will be able to buy this mount.
+confirm
+|only Rogue
+step
+talk Zan Shivsproket##121282
+buy 1 Midnight Black Reins of Dark Portent##143492 |use Midnight Black Reins of Dark Portent##143492 |goto Dalaran L/4 42.62,81.42
+|tip This mount costs 1,000 Order Resources.
+learnmount Shadowblade's Lethal Omen##231523
+|only Rogue
+step
+_Congratulations!_
+You are now the proud owner of Shadowblade's Lethal Omen.
+|only Rogue
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Class Mounts\\Slayer's Felbroken Shrieker",{
+author="support@zygorguides.com",
+startlevel=110.0,
+keywords={"slayer's","felbroken","shrieker","demon","hunter","mount"},
+condition_end="hasmount(229417)",
+model={73783},
+description="This guide will help you acquire the Slayer's Felbroken Shrieker mount.",
+},[[
+step
+This mount is only available to Demon Hunters |confirm
+|tip You can earn it by completing this guide on a Horde or Alliance Demon Hunter.
+|only if not DemonHunter
+step
+You must complete the Broken Shore campaign to continue
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\Broken Shore Campaign"
+Breach the Tomb |q 46246 |future
+|tip Use the Broken Shore Campaign guide to accomplish this.
+|only DemonHunter
+step
+talk Illidari Enforcer##118314
+accept Livin' on the Ledge##46333 |goto Broken Shore/0 43.95,62.69
+|only DemonHunter
+step
+talk Matron Mother Malevolence##108784
+turnin Livin' on the Ledge##46333 |goto Mardum, the Shattered Abyss/2 59.98,48.91
+accept To Fel and Back##46334 |goto 59.98,48.91
+|only DemonHunter
+step
+talk Kyra Lightblade##116490
+Tell her: _"I need passage to Felwing Ledge."_
+Speak with Kyra Lightblade |q 46334/1 |goto 57.73,18.11
+|only DemonHunter
+step
+talk Matron Mother Malevolence##119781
+Tell her: _"I'm ready, Matron Mother."_
+Speak with Matron Mother Malevolence |scenariogoal 1/35778 |q 46334 |goto Felwing Ledge/0 42.94,16.77
+|only DemonHunter
+step
+kill Lixahl##119916
+|tip Move out of the corrosive ground.
+|tip You will only need to damage Lixahl to around 60%.
+Attempt to Subdue Lixahl |scenariogoal 2/35779 |q 46334 |goto 43.08,19.10
+|only DemonHunter
+step
+Follow the path |goto 44.51,21.76 < 15 |only if walking
+Follow the path |goto 44.70,28.32 < 15 |only if walking
+Follow the path |goto 44.30,34.57 < 20 |only if walking
+Track Lixahl |scenariogoal 3/35780 |q 46334 |goto 42.60,39.13
+|only DemonHunter
+step
+kill Lixahl##119916
+|tip Move out of the corrosive ground.
+|tip You will only need to damage Lixahl to around 30%.
+Attempt to Subdue Lixahl Once More |scenariogoal 4/35782 |q 46334 |goto 42.60,39.13
+|only DemonHunter
+step
+Follow the path |goto 40.67,39.42 < 15 |only if walking
+Follow the path |goto 38.63,46.63 < 20 |only if walking
+Continue Tracking Lixahl |scenariogoal 5/35783 |q 46334 |goto 41.69,56.13
+|only DemonHunter
+step
+Glide to Lixahl |scenariogoal 6/36466 |q 46334 |goto 44.35,62.72
+|tip Double Jump and glide to Lixahl.
+|only DemonHunter
+step
+kill Lixahl##119916
+|tip Interrupt Piercing Screech whenever possible.
+|tip Move out of the corrosive ground.
+Lixahl Subdued |scenariogoal 7/35784 |q 46334 |goto 52.04,80.55
+|only DemonHunter
+step
+click Lixahl
+Ride Lixahl |scenariogoal 8/35811 |q 46334 |goto 51.52,80.08
+|only DemonHunter
+step
+talk Yrdris Lightblade##119844
+Return to The Fel Hammer |q 46334/3 |goto Felwing Ledge/0 48.60,17.08
+|only DemonHunter
+step
+talk Matron Mother Malevolence##108784
+turnin To Fel and Back##46334 |goto Mardum, the Shattered Abyss/2 60.03,48.87
+|only DemonHunter
+step
+_Congratulations!_
+You collected the _Slayer's Felbroken Shrieker_ mount
+|only DemonHunter
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Mounts\\Legion\\Flying Mounts\\Dropped Mounts\\Living Infernal Core",{

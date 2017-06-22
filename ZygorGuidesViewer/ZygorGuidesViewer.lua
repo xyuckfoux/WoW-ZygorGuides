@@ -2611,216 +2611,221 @@ function ZGV:UpdateFrame(full,onupdate)
 					frame:SetBackdropBorderColor(0,0,0,1)
 				end
 
-				-- ICONS and status for ALL steps. Why not.
-				for l=1,LINES_PER_STEP do
+				--// Show icons and backgrounds for all lines of the step.
 
-					line = frame.lines[l]
-					if not line then break end
+					for l=1,LINES_PER_STEP do
 
-					local icon = line.icon
-					local back = line.back
+						line = frame.lines[l]
+						if not line then break end
 
-					local goal = line.goal
+						local icon = line.icon
+						local back = line.back
 
-					if goal then
-						local label = line.label
-						local clicker = line.clicker
-						local anim_w2g = line.anim_w2g
-						local anim_w2r = line.anim_w2r
-						local anim_r2r = line.anim_r2r
-
-						local status,progress = goal:GetStatus()
-						progress = tonumber(progress) or 0
-
-						-- prepare completion effects
-
-						-- set justCompleted only once per completion
-						-- except if this is the goal that when completed makes guide progress to 
-						local justCompleted = justcompletedgoals[goal]
-
-						-- ICONS
-
-						if goal and self.db.profile.goalicons then
-							label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,(l==1 and -2 or -1))
-							icon:SetPoint("CENTER",line,"TOPLEFT",self.db.profile.fontsize*0.5+1,-self.db.profile.fontsize*0.5-1)
-							icon:SetSize(self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize,self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize) -- TODO SkinData friendly?
-							icon:Show()
-
-							if goal.next or goal.loadguide then
-								icon:SetIcon(actionicon.next)
-							elseif poi_actions[goal.action] then
-								icon:SetIcon(actionicon[goal.action])
-							elseif status=="passive" then
-
-								if goal.action=="talk" or goal.action=="from" or goal.action=="goto" or
-								goal.action=="goldcollect" or goal.action=="goldtracker" or (goal.action=="image" and not goal.inline) then
-									icon:SetIcon(actionicon[goal.action])
-								elseif (goal.action=="image" and goal.inline) then
-									icon:SetIcon(0)
-								else
-									icon:SetIcon(1)
-								end
-								icon:SetDesaturated(false)
-
-							elseif status=="incomplete" then
-
-								icon:SetIcon(actionicon[goal.action])
-								icon:SetDesaturated(false)
-
-							elseif status=="complete" then
-
-								icon:SetIcon(3)
-								icon:SetDesaturated(false)
-
-							elseif status=="impossible" then
-
-								icon:SetIcon(actionicon[goal.action])
-								icon:SetDesaturated(true)
-
-							elseif status=="obsolete" then
-
-								--icon:SetIcon(actionicon[goal.action])
-								--icon:SetDesaturated(false)
-								icon:SetIcon(actionicon[goal.action])
-								icon:SetDesaturated(true)
-
-							else	-- maybe hidden, maybe WTF
-								icon:SetIcon(1)
-							end
-						else
-							label:SetPoint("LEFT",line,"TOPLEFT",0,-1)
-							icon:Hide()
-						end
-
-
-						-- BACKGROUNDS
-
-						if self.db.profile.goalbackgrounds then
-
-							back:Show()
-
-							-- COLORS
-
-							local r,g,b,a=0,0,0,0
-
-							if status=="passive" then
-								--if line.special=="stickyline" then
-								--	r,g,b,a = 0.2,0.15,0,1
-								--else
-									r,g,b,a = 0,0,0,0
-								--end
-
-							elseif status=="incomplete" then
-
-								local inc=self.db.profile.goalbackincomplete
-								local pro=self.db.profile.goalbackprogressing
-								local com=self.db.profile.goalbackcomplete
-								r,g,b = self.gradient3(self.db.profile.goalbackprogress and progress*0.7 or 0,  inc.r,inc.g,inc.b, pro.r,pro.g,pro.b, com.r,com.g,com.b, 0.5)
-								a = self.db.profile.goalbackincomplete.a
-
-								--local r,g,b,a = gradientRGBA(self.db.profile.goalbackincomplete,self.db.profile.goalbackcomplete,self.db.profile.goalbackprogress and progress*0.7 or 0)
-
-							elseif status=="complete" then
-
-								r,g,b,a = fromRGBA(self.db.profile.goalbackcomplete)
-
-							elseif status=="impossible" then
-
-								r,g,b,a = fromRGBA(self.db.profile.goalbackimpossible)
-
-							elseif status=="obsolete" then  -- TODO: remove?
-
-								r,g,b,a = fromRGBA(self.db.profile.goalbackobsolete)
-
-							elseif status=="warning" then
-
-								r,g,b,a = fromRGBA(self.db.profile.goalbackwarning)
-							end
-
-							-- FLASHES
-
-							a = a * ZGV.db.profile.opacitymain
-
-							if status=="incomplete" and (goal.action~="goto" and goal.action~="fly") and self.db.profile.goalupdateflash and progress>(self.recentGoalProgress[goal] or 1) and self.frameNeedsResizing==0 and stepdata==self.CurrentStep then
-
-								if line.special=="stickyline" then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,0.3)  end
-								if line.special=="poiline" then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,0.3)  end
-
-								anim_w2r.r,anim_w2r.g,anim_w2r.b,anim_w2r.a = r,g,b,a
-								anim_w2r:Play()
-								self:Debug("Animating progress: "..goal:GetText())
-
-								-- self.completionelapsed = 0  -- experimental delay
-
-							elseif status=="complete" and justCompleted and self.db.profile.goalcompletionflash and self.frameNeedsResizing==0 then
-
-								anim_w2g:Play()
-								self:Debug("Animating completion.")
-
-								-- self.completionelapsed = 0  -- experimental delay
-							elseif goal.parentStep.PoiStep and goal.parentStep.PoiStep.flashGoals then
-								anim_r2r.sr,anim_r2r.sg,anim_r2r.sb,anim_r2r.sa=mix4(r,g,b,a, 0.6,0.6,0.6,1)
-								anim_r2r.r,anim_r2r.g,anim_r2r.b,anim_r2r.a = r,g,b,a
-								anim_r2r:Play()
-							end
-
-							if  (anim_w2r:IsDone() or not anim_w2r:IsPlaying()) 
-							and (anim_w2g:IsDone() or not anim_w2g:IsPlaying())
-							and (anim_r2r:IsDone() or not anim_r2r:IsPlaying()) then
-								if line.special=="stickyline" and self.db.profile.stickycolored then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,a*0.5)  end
-								if line.special=="poiline" and self.db.profile.stickycolored then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,a*0.5)  end
-								back:SetBackdropColor(r,g,b,a)
-								back:SetBackdropBorderColor(r,g,b,a)
-							end
-
-						else
-							back:Hide()
-						end
+						local goal = line.goal
 
 						if goal then
-							if self.recentGoalProgress[goal]~=progress then
-								goal.dirtytext=true
+							local label = line.label
+							local clicker = line.clicker
+							local anim_w2g = line.anim_w2g
+							local anim_w2r = line.anim_w2r
+							local anim_r2r = line.anim_r2r
+
+							local status,progress = goal:GetStatus()
+							progress = tonumber(progress) or 0
+
+							-- prepare completion effects
+
+							-- set justCompleted only once per completion
+							-- except if this is the goal that when completed makes guide progress to 
+							local justCompleted = justcompletedgoals[goal]
+
+							-- ICONS
+
+							if goal and self.db.profile.goalicons then
+								label:SetPoint("TOPLEFT",line,"TOPLEFT",icon_indent+2,(l==1 and -2 or -1))
+								icon:SetPoint("CENTER",line,"TOPLEFT",self.db.profile.fontsize*0.5+1,-self.db.profile.fontsize*0.5-1)
+								icon:SetSize(self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize,self.CurrentSkinStyle.StepLineIconSize * self.db.profile.fontsize) -- TODO SkinData friendly?
+								icon:Show()
+
+								if goal.next or goal.loadguide then
+									icon:SetIcon(actionicon.next)
+								elseif goal.action=="achieve" and goal.achieveid then
+									icon:SetTexture(select(10,GetAchievementInfo(goal.achieveid)))
+									icon:SetTexCoord(0,1,0,1)
+								elseif poi_actions[goal.action] then
+									icon:SetIcon(actionicon[goal.action])
+								elseif status=="passive" then
+
+									if goal.action=="talk" or goal.action=="from" or goal.action=="goto" or
+									goal.action=="goldcollect" or goal.action=="goldtracker" or (goal.action=="image" and not goal.inline) then
+										icon:SetIcon(actionicon[goal.action])
+									elseif (goal.action=="image" and goal.inline) then
+										icon:SetIcon(0)
+									else
+										icon:SetIcon(1)
+									end
+									icon:SetDesaturated(false)
+
+								elseif status=="incomplete" then
+
+									icon:SetIcon(actionicon[goal.action])
+									icon:SetDesaturated(false)
+
+								elseif status=="complete" then
+
+									icon:SetIcon(3)
+									icon:SetDesaturated(false)
+
+								elseif status=="impossible" then
+
+									icon:SetIcon(actionicon[goal.action])
+									icon:SetDesaturated(true)
+
+								elseif status=="obsolete" then
+
+									--icon:SetIcon(actionicon[goal.action])
+									--icon:SetDesaturated(false)
+									icon:SetIcon(actionicon[goal.action])
+									icon:SetDesaturated(true)
+
+								else	-- maybe hidden, maybe WTF
+									icon:SetIcon(1)
+								end
+							else
+								label:SetPoint("LEFT",line,"TOPLEFT",0,-1)
+								icon:Hide()
 							end
 
-							self.recentGoalProgress[goal] = progress
 
-							-- unpause when completing a goal
+							-- BACKGROUNDS
 
-							if justCompleted and goal.parentStep==self.CurrentStep then
-								self.pause=nil
+							if self.db.profile.goalbackgrounds then
+
+								back:Show()
+
+								-- COLORS
+
+								local r,g,b,a=0,0,0,0
+
+								if status=="passive" then
+									--if line.special=="stickyline" then
+									--	r,g,b,a = 0.2,0.15,0,1
+									--else
+										r,g,b,a = 0,0,0,0
+									--end
+
+								elseif status=="incomplete" then
+
+									local inc=self.db.profile.goalbackincomplete
+									local pro=self.db.profile.goalbackprogressing
+									local com=self.db.profile.goalbackcomplete
+									r,g,b = self.gradient3(self.db.profile.goalbackprogress and progress*0.7 or 0,  inc.r,inc.g,inc.b, pro.r,pro.g,pro.b, com.r,com.g,com.b, 0.5)
+									a = self.db.profile.goalbackincomplete.a
+
+									--local r,g,b,a = gradientRGBA(self.db.profile.goalbackincomplete,self.db.profile.goalbackcomplete,self.db.profile.goalbackprogress and progress*0.7 or 0)
+
+								elseif status=="complete" then
+
+									r,g,b,a = fromRGBA(self.db.profile.goalbackcomplete)
+
+								elseif status=="impossible" then
+
+									r,g,b,a = fromRGBA(self.db.profile.goalbackimpossible)
+
+								elseif status=="obsolete" then  -- TODO: remove?
+
+									r,g,b,a = fromRGBA(self.db.profile.goalbackobsolete)
+
+								elseif status=="warning" then
+
+									r,g,b,a = fromRGBA(self.db.profile.goalbackwarning)
+								end
+
+								-- FLASHES
+
+								a = a * ZGV.db.profile.opacitymain
+
+								if status=="incomplete" and (goal.action~="goto" and goal.action~="fly") and self.db.profile.goalupdateflash and progress>(self.recentGoalProgress[goal] or 1) and self.frameNeedsResizing==0 and stepdata==self.CurrentStep then
+
+									if line.special=="stickyline" then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,0.3)  end
+									if line.special=="poiline" then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,0.3)  end
+
+									anim_w2r.r,anim_w2r.g,anim_w2r.b,anim_w2r.a = r,g,b,a
+									anim_w2r:Play()
+									self:Debug("Animating progress: "..goal:GetText())
+
+									-- self.completionelapsed = 0  -- experimental delay
+
+								elseif status=="complete" and justCompleted and self.db.profile.goalcompletionflash and self.frameNeedsResizing==0 then
+
+									anim_w2g:Play()
+									self:Debug("Animating completion.")
+
+									-- self.completionelapsed = 0  -- experimental delay
+								elseif goal.parentStep.PoiStep and goal.parentStep.PoiStep.flashGoals then
+									anim_r2r.sr,anim_r2r.sg,anim_r2r.sb,anim_r2r.sa=mix4(r,g,b,a, 0.6,0.6,0.6,1)
+									anim_r2r.r,anim_r2r.g,anim_r2r.b,anim_r2r.a = r,g,b,a
+									anim_r2r:Play()
+								end
+
+								if  (anim_w2r:IsDone() or not anim_w2r:IsPlaying()) 
+								and (anim_w2g:IsDone() or not anim_w2g:IsPlaying())
+								and (anim_r2r:IsDone() or not anim_r2r:IsPlaying()) then
+									if line.special=="stickyline" and self.db.profile.stickycolored then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,a*0.5)  end
+									if line.special=="poiline" and self.db.profile.stickycolored then  r,g,b,a=mix4(sr,sg,sb,sa, r,g,b,a*0.5)  end
+									back:SetBackdropColor(r,g,b,a)
+									back:SetBackdropBorderColor(r,g,b,a)
+								end
+
+							else
+								back:Hide()
 							end
-						end
 
-						if status=="impossible" then
-							line:SetAlpha(0.4)
+							if goal then
+								if self.recentGoalProgress[goal]~=progress then
+									goal.dirtytext=true
+								end
+
+								self.recentGoalProgress[goal] = progress
+
+								-- unpause when completing a goal
+
+								if justCompleted and goal.parentStep==self.CurrentStep then
+									self.pause=nil
+								end
+							end
+
+							if status=="impossible" then
+								line:SetAlpha(0.4)
+							else
+								line:SetAlpha(1.0)
+							end
+
+						elseif line.isheader then
+							-- leave it! it should handle its own back.
+
+						elseif line.special=="stickyseparator" and self.db.profile.stickydisplay==1 then
+							icon:Hide()
+							back:SetBackdropColor(sr,sg,sb,1)
+							back:SetBackdropBorderColor(sr,sg,sb,1)
+							back:Show()
+						elseif line.special=="stickyline" and self.db.profile.stickycolored then
+							icon:Hide()
+							back:SetBackdropColor(sr,sg,sb,sa)
+							back:SetBackdropBorderColor(sr,sg,sb,sa)
+							back:Show()
+						elseif line.special=="poiline" and self.db.profile.stickycolored then
+							icon:Hide()
+							back:SetBackdropColor(sr,sg,sb,sa)
+							back:SetBackdropBorderColor(sr,sg,sb,sa)
+							back:Show()
 						else
-							line:SetAlpha(1.0)
+							-- no goal? ah, subtitle.
+							icon:Hide()
+							back:Hide()
 						end
-
-					elseif line.isheader then
-						-- leave it! it should handle its own back.
-
-					elseif line.special=="stickyseparator" and self.db.profile.stickydisplay==1 then
-						icon:Hide()
-						back:SetBackdropColor(sr,sg,sb,1)
-						back:SetBackdropBorderColor(sr,sg,sb,1)
-						back:Show()
-					elseif line.special=="stickyline" and self.db.profile.stickycolored then
-						icon:Hide()
-						back:SetBackdropColor(sr,sg,sb,sa)
-						back:SetBackdropBorderColor(sr,sg,sb,sa)
-						back:Show()
-					elseif line.special=="poiline" and self.db.profile.stickycolored then
-						icon:Hide()
-						back:SetBackdropColor(sr,sg,sb,sa)
-						back:SetBackdropBorderColor(sr,sg,sb,sa)
-						back:Show()
-					else
-						-- no goal? ah, subtitle.
-						icon:Hide()
-						back:Hide()
 					end
-				end
+				--\\
 
 				-- check if step was flashing due to poi force, if so reduce flash counter
 				local poigoal = frame.lines[1] and frame.lines[1].goal
@@ -6066,3 +6071,46 @@ function ZGV:FakeWidescreen()
 	WorldFrame:SetPoint("BOTTOMRIGHT",ParentUI,"BOTTOMRIGHT",0,150)
 end
 
+function ZGV:SaveChromieProgress()
+	-- returns the number of cleared dragonshrines in Death of Chromie scenario, increased by 1 to mimic |count 1..8
+	if not C_Scenario.IsInScenario() then return 1 end
+
+	ZGV.DragonShrineCount = ZGV.DragonShrineCount or 1
+
+	if GetCurrentMapAreaID()~=1177 then return ZGV.DragonShrineCount end
+	local count = 5
+	for i=1,GetNumMapLandmarks() do
+		local _, name, _, _, _, _, _, _, _, areaID, poiID, _, atlasIcon, _ = C_WorldMap.GetMapLandmarkInfo(i)
+		if poiID~=5325 then
+			count=count-1
+		end
+	end
+	ZGV.DragonShrineCount = count
+	return count
+end
+
+local dragonshrines = {
+	[5317] = "Obsidian", -- Zorathides
+	[5318] = "Obsidian", -- dragonshrine
+	[5319] = "Ruby", -- Talar Icechill 
+	[5320] = "Ruby", -- dragonshrine
+	[5321] = "Azure", -- Void Garg 
+	[5322] = "Azure", -- dragonshrine
+	[5323] = "Emerald", -- Thalas Vyle
+	[5324] = "Emerald", -- dragonshrine
+}
+function ZGV:IsDragonshrineUp(name)
+	if not C_Scenario.IsInScenario() then return false end
+
+	if not ZGV.DragonShrineCache then ZGV.DragonShrineCache={} end
+	if GetCurrentMapAreaID()~=1177 then return ZGV.DragonShrineCache[name] end
+	for i=1,GetNumMapLandmarks() do
+		local _, _, _, _, _, _, _, _, _, areaID, poiID, _ = C_WorldMap.GetMapLandmarkInfo(i)
+		if dragonshrines[poiID] and dragonshrines[poiID]==name then
+			ZGV.DragonShrineCache[name]=true
+			return true
+		end
+	end
+	ZGV.DragonShrineCache[name]=false
+	return false
+end

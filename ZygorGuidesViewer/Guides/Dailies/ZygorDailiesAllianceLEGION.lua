@@ -181,6 +181,19 @@ click Aethril Cluster##0
 Aethril Cluster gathered |q 41545/1 |goto 40.03,9.73
 |next "Court_Of_Farondis_WQ"
 step
+label quest-41286
+Follow the path |goto Azsuna/0 63.36,30.21 < 20 |only if walking
+Follow the path |goto 62.93,34.47 < 25 |only if walking
+Follow the path |goto 62.53,36.10 < 25 |only if walking
+Follow the path |goto 61.32,39.14 < 25 |only if walking
+accept Aethril Cluster##41286 |goto Azsuna/0 61.54,41.80
+|tip You will accept this quest automatically.
+step
+kill Lost Gatherer##109070
+click Aethril Cluster##0
+Aethril Cluster gathered |q 41286/1 |goto 61.54,41.80
+|next "Court_Of_Farondis_WQ"
+step
 label quest-42652
 Cross the bridge |goto Azsuna/0 56.49,62.07 < 30 |only if walking
 Follow the path up |goto 55.77,65.84 < 30 |only if walking
@@ -357,11 +370,13 @@ collect 10 Bushy Aethril##140951 |q 41529/1 |goto 62.25,49.27
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43193
-Cross the bridge |goto 56.51,62.07 < 30 |only if walking
-accept Calamitous Intent##43193 |goto Azsuna/0 56.42,67.31
+Follow the path |goto Azsuna/0 46.98,73.18 < 20 |only if walking
+Follow the path |goto 44.83,74.88 < 25 |only if walking
+Follow the path |goto 42.32,78.05 < 20 |only if walking
+accept Calamitous Intent##43193 |goto Azsuna/0 38.01,84.81
 |tip You will accept this quest automatically.
 step
-kill Calamir##109331 |q 43193/1 |goto 56.42,67.31
+kill Calamir##109331 |q 43193/1 |goto 38.01,84.81
 |tip
 _DAMAGE:_ |only if grouprole("DAMAGE")
 |tip Run away when Calamir casts Howling Gale. |only if grouprole("DAMAGE")
@@ -4234,7 +4249,7 @@ Follow the path |goto Highmountain/0 30.85,38.75 < 25 |only if walking
 Follow the path |goto 30.69,34.67 < 30 |only if walking
 Follow the path |goto 29.17,32.45 < 25 |only if walking
 Follow the path |goto 31.38,26.29 < 20 |only if walking
-Enter the cave |goto 33.64,28.10 < 10 |only if walking
+Enter the cave |goto 33.64,28.10 < 10 |walk
 accept Class Dismissed##46196 |goto Highmountain/40 59.66,56.96
 |tip You will accept this quest automatically.
 stickystart "Class"
@@ -4528,6 +4543,15 @@ accept Felwort##41511 |goto 41.41,56.05
 step
 click Felwort##195114
 Felwort gathered |q 41511/1 |goto 41.41,56.05
+|next "Court_Of_Farondis_WQ"
+step
+label quest-41225
+Follow the path |goto Highmountain/0 37.37,40.78 < 20 |only if walking
+accept Felwort##41225 |goto 41.41,56.05
+|tip You will accept this quest automatically.
+step
+click Felwort##195114
+Felwort gathered |q 41225/1 |goto 41.41,56.05
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41432
@@ -6244,13 +6268,12 @@ Kill #20# demons |q 46179/2 |goto 49.83,20.19
 |next "Court_Of_Farondis_WQ"
 step
 label quest-41950
-accept Cry More Thunder##41950 |goto Stormheim/0 37.47,64.20 |only Alliance
-accept Cry More Thunder##41950 |goto Stormheim/0 44.67,59.51 |only Horde
+Cross the bridge |goto Stormheim/0 40.07,62.75 < 15 |only if walking
+accept Cry More Thunder##41950 |goto Stormheim/0 43.74,60.32
 |tip You will accept this quest automatically.
 step
 talk Vethir##97979
-Begin the Assault on Hrydshal |q 41950/1 |goto 37.47,64.20 |only Alliance
-Begin the Assault on Hrydshal |q 41950/1 |goto 44.67,59.51 |only Horde
+Begin the Assault on Hrydshal |q 41950/1 |goto 43.74,60.32
 step
 Kill the enemies on the ground as you fly
 |tip Use the abilities on your action bar.
@@ -6821,7 +6844,7 @@ accept Leystone Basilisks##41507 |goto Stormheim/0 55.53,44.18
 step
 kill Leystone Basilisk##103514+
 |tip Mine the corpses.
-collect 60 Leystone-Encrusted Spike##134104 |q 41505/7 |goto 55.53,44.18
+collect 60 Leystone-Encrusted Spike##134104 |q 41507/1 |goto 55.53,44.18
 |next "Court_Of_Farondis_WQ"
 step
 label quest-45049
@@ -6875,6 +6898,17 @@ accept Lively Stormrays##41603 |goto 58.03,68.25
 step
 Fish from the Lively Stormray Schools |cast Fishing##131474
 collect 10 Lively Stormray##134570 |q 41603/1 |goto 58.03,68.25
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46016
+Follow the path |goto Stormheim/0 34.62,48.12 < 20 |only if walking
+Follow the path |goto 37.47,46.01 < 25 |only if walking
+Follow the path |goto 39.12,44.28 < 25 |only if walking
+accept Magdrezoth##46016 |goto Stormheim/0 37.43,41.84
+|tip You will accept this quest automatically.
+step
+kill Magdrezoth##117038
+Defeat Magdrezoth |q 46016/1 |goto 37.43,41.84
 |next "Court_Of_Farondis_WQ"
 step
 label quest-43771
@@ -7156,6 +7190,13 @@ _TANK:_ |only if grouprole("TANK")
 |tip Face Nithogg away from the raid. |only if grouprole("TANK")
 _EVERYONE:_
 |tip Every 20% health Nithogg loses, avoid standing in Crackling Jolt.
+|next "Court_Of_Farondis_WQ"
+step
+label quest-46017
+accept Shel'drozul##46017 |goto Stormheim/0 62.29,57.17
+|tip You will accept this quest automatically.
+step
+kill Shel'drozul##118013 |q 46017/1 |goto Stormheim/0 62.29,57.17
 |next "Court_Of_Farondis_WQ"
 step
 label quest-42178
@@ -7514,7 +7555,7 @@ label quest-43436
 Follow the path |goto Stormheim/0 39.25,63.83 < 30 |only if walking
 click Grapple Point |goto 40.34,65.79 < 10 |only if walking
 |tip It's the gray hook on the wall. |only if walking
-accept WANTED: Glimar Ironfist##43436
+accept WANTED: Glimar Ironfist##43436 |goto 41.48,66.66
 |tip You will accept this quest automatically.
 step
 kill Glimar Ironfist##91529 |q 43436/1 |goto 41.48,66.66
@@ -7524,7 +7565,7 @@ label quest-43622
 Follow the path |goto Stormheim/0 39.25,63.83 < 30 |only if walking
 click Grapple Point |goto 40.34,65.79 < 10 |only if walking
 |tip It's the gray hook on the wall. |only if walking
-accept WANTED: Glimar Ironfist##43622
+accept WANTED: Glimar Ironfist##43622 |goto 41.48,66.66
 |tip You will accept this quest automatically.
 step
 kill Glimar Ironfist##91529 |q 43622/1 |goto 41.48,66.66
@@ -9953,6 +9994,17 @@ kill Venemous Spitter##118721+, Noxious Weaver##118722+
 collect 8 Potent Venom Sac##147206 |q 46105/1 |goto Broken Shore/0 43.13,37.46
 |next "Court_Of_Farondis_WQ"
 step
+label quest-46006
+Cross the bridge |goto Stormheim/0 40.05,62.78 < 15 |only if walking
+Follow the path |goto 44.48,57.09 < 25 |only if walking
+Follow the path |goto 41.85,53.06 < 25 |only if walking
+accept Arkuthaz##46006 |goto Stormheim/0 39.16,53.21
+|tip You will accept this quest automatically.
+step
+kill Arkuthaz##117065
+Defeat Arkuthaz |q 46006/1 |goto 39.16,53.21
+|next "Court_Of_Farondis_WQ"
+step
 label quest-46750
 Swim across the water |goto Broken Shore/0 52.00,25.14 < 25 |only if walking
 Follow the path |goto 55.51,27.68 < 25 |only if walking
@@ -10016,7 +10068,7 @@ step
 label quest-46073
 Follow the path |goto Broken Shore/0 47.00,58.50 < 25 |only if walking
 Follow the path |goto 52.25,52.44 < 30 |only if walking
-accept Break Their Garrison##46073 |goto Broken Shore/0 45.56,58.94
+accept Break Their Garrison##46073 |goto Broken Shore/0 55.06,51.58
 |tip You will accept this quest automatically.
 step
 kill Felfire Imp##117555+, Imp Mother Flaz##118720+, Wrathguard Dreadblade##117559+, Eredar Summoner##117567+
@@ -10031,6 +10083,9 @@ Follow the path |goto 51.84,52.53 < 25 |only if walking
 Follow the path |goto 54.79,52.16 < 25 |only if walking
 accept Brew Bandits##46761 |goto 55.47,53.71
 |tip You will accept this quest automatically.
+step
+talk Master Jiedari##121321
+Talk to Master Jiedari |q 46761/1 |goto Broken Shore/0 55.47,53.71
 stickystart "Brew"
 step
 Use the Hozen Vaulting Staff |use Hozen Vaulting Staff##146896 |havebuff 667301
@@ -11063,7 +11118,7 @@ collect 12 Shipwrecked Supplies##142079 |q 44748/2 |goto 47.32,70.92
 step
 label quest-43639
 _Enter The Arcway Dungeon:_
-|tip You can only complete this dungeon on Mythic difficulty.
+|tip Use the Group Finder to enter the dungeon.
 accept The Arcway: Clogged Drain##43639 |goto Suramar/0 41.08,61.73
 |tip You will accept this quest automatically.
 step
@@ -11075,7 +11130,7 @@ kill Advisor Vandros##98208 |q 43639/2
 step
 label quest-43640
 _Enter The Arcway Dungeon:_
-|tip You can only complete this dungeon on Mythic difficulty.
+|tip Use the Group Finder to enter the dungeon.
 accept The Arcway: Creeping Suspicions##43640 |goto Suramar/0 41.08,61.73
 |tip You will accept this quest automatically.
 step
@@ -11089,7 +11144,7 @@ kill Advisor Vandros##98208 |q 43640/2 |goto The Arcway/1 48.04,42.48
 step
 label quest-43638
 _Enter The Arcway Dungeon:_
-|tip You can only complete this dungeon on Mythic difficulty.
+|tip Use the Group Finder to enter the dungeon.
 accept The Arcway: Silver Serpent##43638 |goto Suramar/0 41.08,61.73
 |tip You will accept this quest automatically.
 step
@@ -11167,9 +11222,7 @@ label quest-42769
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for the Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 accept Court of Stars: Bring Me the Eyes##42769 |goto Court of Stars/1 6.84,68.64
 |tip You will accept this quest automatically.
 step
@@ -11188,9 +11241,7 @@ label quest-42781
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for the Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 accept Court of Stars: Disarming the Watch##42781 |goto Court of Stars/1 6.84,68.64
 |tip You will accept this quest automatically.
 step
@@ -11206,9 +11257,7 @@ label quest-42784
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for the Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 accept Court of Stars: The Deceitful Student##42784 |goto Court of Stars/1 6.84,68.64
 |tip You will accept this quest automatically.
 step
@@ -11223,9 +11272,7 @@ label quest-42783
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for the Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 accept Court of Stars: They Bloom at Night##42783 |goto Court of Stars/1 6.84,68.64
 |tip You will accept this quest automatically.
 step
@@ -11241,9 +11288,7 @@ label quest-42764
 Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
 Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
 Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |goto Court of Stars/1 6.84,68.64 < 10000
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for the Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 accept Court of Stars: Wraith in the Machine##42764 |goto Court of Stars/1 6.84,68.64
 |tip You will accept this quest automatically.
 step
@@ -11852,7 +11897,7 @@ collect 1 Blood-Soaked Invitation##144363 |goto Stormheim/0 85.32,11.34 |n
 click Blood-Soaked Invitation##144363 |use Blood-Soaked Invitation##144363
 Earn the Achievement "The First Rule of Brawler's Guild" |achieve 11558
 step
-talk Quackenbush##68363 |goto Deeprun Tram/2 54.4,26.8 |
+talk Quackenbush##68363 |goto Deeprun Tram/2 54.4,26.8
 |tip We also suggest that you purchase potions from Quackenbush, located here. Once you have the potions, use the buff of your choice right before the fight, and then again during the fight to maximize your dps.
 _WARNING_
 |tip There is an enrage timer on all Brawler's Guild fights. You have 2 minutes to kill the current opponent before it activates. If it does, a wall of unavoidable meteors sweeps across the arena, killing you. Remember this as you go through this guide!
@@ -11861,492 +11906,492 @@ Click here after buying potions
 |confirm
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight.."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip When Oso begins casting Shotgun Blast move out from in front of him
-|tip He may occasionally knock you back and then cast Grizzly Leap run out of this circle
+|tip When Oso begins casting Shotgun Blast, move out from in front of him.
+|tip He may occasionally knock you back and then cast Grizzly Leap. Run out of this circle.
 only if ZGV:GetReputation(2011).friendRep<250
 step
 kill Oso##117753
-|tip When Oso begins casting Shotgun Blast move out from in front of him
-|tip He may occasionally knock you back and then cast Grizzly Leap run out of this circle
+|tip When Oso begins casting Shotgun Blast, move out from in front of him.
+|tip He may occasionally knock you back and then cast Grizzly Leap. Run out of this circle.
 Defeat Oso |condition ZGV:GetReputation(2011).friendRep>=250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Do Not step on the Luckydont dolls that he places around the room, these will be red and white
-|tip The Blue Luckydo dolls will give a health boost, these are ok to run over
-|tip When he reached 50 percent HP he will knock you back, be sure your back is not facing any of these bad dolls.
-|tip After he hits 50 percent he will start summoning the white Luckydonts, this will hop toward you, be sure not to hit any of these.
-|tip Interrupt Cantata of Flooting this is a channel that will heal him every .5 seconds.
+|tip Do not step on the Luckydont dolls that he places around the room, these will be red and white.
+|tip The Blue Luckydo dolls will give a health boost, these are ok to run over.
+|tip When he reaches 50 percent HP, he will knock you back. Be sure your back is not facing any of these bad dolls.
+|tip After he hits 50 percent he will start summoning the white Luckydonts that will hop towards you. Avoid these.
+|tip Interrupt Cantata of Flooting. This is a channeled ability that will heal him every .5 seconds.
 only if ZGV:GetReputation(2011).friendRep<500
 step
 kill Grandpa Grumplefloot##70678
-|tip Do Not step on the Luckydont dolls that he places around the room, these will be red and white
-|tip The Blue Luckydo dolls will give a health boost, these are ok to run over
-|tip When he reached 50 percent HP he will knock you back, be sure your back is not facing any of these bad dolls.
-|tip After he hits 50 percent he will start summoning the white Luckydonts, this will hop toward you, be sure not to hit any of these.
-|tip Interrupt Cantata of Flooting this is a channel that will heal him every .5 seconds.
+|tip Do not step on the Luckydont dolls that he places around the room, these will be red and white.
+|tip The Blue Luckydo dolls will give a health boost, these are ok to run over.
+|tip When he reaches 50 percent HP, he will knock you back. Be sure your back is not facing any of these bad dolls.
+|tip After he hits 50 percent he will start summoning the white Luckydonts that will hop towards you. Avoid these.
+|tip Interrupt Cantata of Flooting. This is a channeled ability that will heal him every .5 seconds.
 Defeat Grandpa Grumplefloot |condition ZGV:GetReputation(2011).friendRep>=500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Run away from him when he casts Horrific Pursuit this will one shot you
+|tip Run away from him when he casts Horrific Pursuit. This will one-shot you.
 only if ZGV:GetReputation(2011).friendRep<750
 step
 kill Ooliss##117133
-|tip Run away from him when he casts Horrific Pursuit this will one shot you
+|tip Run away from him when he casts Horrific Pursuit. This will one-shot you.
 Defeat Ooliss |condition ZGV:GetReputation(2011).friendRep>=750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
 |tip Move out of Molten Slag.
-|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds, be sure to keep moving while the cast is about to complete
+|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds. Be sure to keep moving while the cast is about to complete.
 |tip There will be 3 enemies in this fight, but they all share the same health pool.
 only if ZGV:GetReputation(2011).friendRep<1000
 step
 kill Altor Direvith##115294, Arstad the Wild##115295, Ulrich Forgeworth##115292
-|tip Move out of Molten Slag
-|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds, be sure to keep moving while the cast is about to complete
+|tip Move out of Molten Slag.
+|tip If Arstad the Wild finishes his Lightning Crash cast he will jump on where you are and stun you for 3 seconds. Be sure to keep moving while the cast is about to complete.
 |tip There will be 3 enemies in this fight, but they all share the same health pool.
 Defeat The Warhammer Council |condition ZGV:GetReputation(2011).friendRep>=1000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you
-|tip When Dippy takes damage, he is knocked back
-|tip You should prioritize fast attacks
+|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you.
+|tip When Dippy takes damage, he is knocked back.
+|tip You should prioritize fast attacks.
 only if ZGV:GetReputation(2011).friendRep<1250
 step
 kill Dippy##68255
-|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you
-|tip When Dippy takes damage, he is knocked back
-|tip You should prioritize fast attacks
+|tip Dippy has a melee ability called Peck. If you are in melee range when the cast is finished, it will kill you.
+|tip When Dippy takes damage, he is knocked back.
+|tip You should prioritize fast attacks.
 Defeat Dippy |condition ZGV:GetReputation(2011).friendRep>=1250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Bill will cast Summon Broom if this cast goes off he will one of 2 brooms.
-|tip Boom Broom will have a explosion timer and if it is near you when it runs out you will die.
-|tip These can be slowed and stunned
+|tip Bill will cast Summon Broom. If this cast goes off he will one of 2 brooms.
+|tip Boom Broom will have a explosion timer and if it is near you when it runs out, you will die.
+|tip These can be slowed and stunned.
 only if ZGV:GetReputation(2011).friendRep<1500
 step
 kill Bill the Janitor##117077
-|tip Bill will cast Summon Broom if this cast goes off he will one of 2 brooms.
-|tip Boom Broom will have a explosion timer and if it is near you when it runs out you will die.
-|tip These can be slowed and stunned
+|tip Bill will cast Summon Broom. If this cast goes off he will one of 2 brooms.
+|tip Boom Broom will have a explosion timer and if it is near you when it runs out, you will die.
+|tip These can be slowed and stunned.
 Defeat Bill the janitor |condition ZGV:GetReputation(2011).friendRep>=1500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through
-|tip Always Interrupt Pyroblast
+|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through.
+|tip Always interrupt Pyroblast.
 only if ZGV:GetReputation(2011).friendRep<1750
 step
 kill Sanoriak##67268
-|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through
-|tip Always Interrupt Pyroblast
+|tip Avoid Sanoriak's Firewall ability. There is always a safe opening to run through.
+|tip Always interrupt Pyroblast.
 Defeat Sanoriak |condition ZGV:GetReputation(2011).friendRep>=1750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Once the fight begins your character will continuously run forward
+|tip Once the fight begins, your character will continuously run forward.
 |tip You gain a buff that allows you to cast while running.
-|tip Run through the maze without hitting any of the blue tiles
-|tip While Whirling Kick is active you can not damage the monks, to cancel this collect one of the Yellow Orbs around the room
+|tip Run through the maze without hitting any of the blue tiles.
+|tip While Whirling Kick is active, you can not damage the monks. To cancel this, collect one of the yellow orbs around the room.
 only if ZGV:GetReputation(2011).friendRep<2000
 step
 kill Master Paku##115645
-|tip Once the fight begins your character will continuously run forward
+|tip Once the fight begins, your character will continuously run forward.
 |tip You gain a buff that allows you to cast while running.
-|tip Run through the maze without hitting any of the blue tiles
-|tip While Whirling Kick is active you can not damage the monks, to cancel this collect one of the Yellow Orbs around the room
+|tip Run through the maze without hitting any of the blue tiles.
+|tip While Whirling Kick is active, you can not damage the monks. To cancel this, collect one of the yellow orbs around the room.
 Defeat Master Paku |condition ZGV:GetReputation(2011).friendRep>=2000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip He doesn't do anything special, just auto attacks
+|tip He doesn't do anything special, just auto attacks.
 only if ZGV:GetReputation(2011).friendRep<2250
 step
 kill Doomflipper##117145
-|tip He doesn't do anything special, just auto attacks
+|tip He doesn't do anything special, just auto attacks.
 Defeat Doomflipper |condition ZGV:GetReputation(2011).friendRep>=2250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies
-|tip Avoid the copies of Splat and kill him before the copies overwhelm you
+|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies.
+|tip Avoid the copies of Splat and kill him before the copies overwhelm you.
 only if ZGV:GetReputation(2011).friendRep<2500
 step
 kill Splat##70736
-|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies
-|tip Avoid the copies of Splat and kill him before the copies overwhelm you
+|tip As the fight goes on, Splat will make copies of himself. These copies move slow and die when Splat dies.
+|tip Avoid the copies of Splat and kill him before the copies overwhelm you.
 Defeat Splat |condition ZGV:GetReputation(2011).friendRep>=2500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Shadowmaster will cast 2 spells Shadow Torch and Shadow Blast
-|tip His Shadow Torch ability will put a torch on the ground
-|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch
-|tip Be sure not to stand in these Shadow Blasts by not standing in between Shadow Torches
+|tip Shadowmaster will cast 2 spells: Shadow Torch and Shadow Blast.
+|tip His Shadow Torch ability will put a torch on the ground.
+|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch.
+|tip Be sure not to stand in these Shadow Blasts by not standing between Shadow Torches.
 only if ZGV:GetReputation(2011).friendRep<2750
 step
 kill Shadowmaster Aameen##116743
-|tip Shadowmaster will cast 2 spells Shadow Torch and Shadow Blast
-|tip His Shadow Torch ability will put a torch on the ground
-|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch
-|tip Be sure not to stand in these Shadow Blasts by not standing in between Shadow Torches
+|tip Shadowmaster will cast 2 spells: Shadow Torch and Shadow Blast.
+|tip His Shadow Torch ability will put a torch on the ground.
+|tip His Shadow Blast ability will create a ball of energy that travels toward a Shadow Torch.
+|tip Be sure not to stand in these Shadow Blasts by not standing between Shadow Torches.
 Defeat Shadowmaster Aameen |condition ZGV:GetReputation(2011).friendRep>=2750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Johnny Awesome will have a pet called, Dazzle
-|tip To kill his pet put his pet inbetween yourself and Johnny Awesome while he is casting Powershot
-|tip Once his pet is dead Johnny will start casting Revive Dazzle
-|tip This is a long cast and he will stop all other abilities to do this, also he will take 100 percent more damage when casting the revive ability.
-|tip Don't stand in Rain of Arrows indicated by green circles on the ground
-|tip Don't stand in front of him when he casts Volley
+|tip Johnny Awesome will have a pet called Dazzle.
+|tip To kill his pet, put his pet inbetween yourself and Johnny Awesome while he is casting Powershot.
+|tip Once his pet is dead, Johnny will start casting Revive Dazzle.
+|tip This is a long cast and he will stop all other abilities to do this. Also, he will take 100 percent more damage when casting the revive ability.
+|tip Don't stand in Rain of Arrows indicated by green circles on the ground.
+|tip Don't stand in front of him when he casts Volley.
 only if ZGV:GetReputation(2011).friendRep<3000
 step
 kill Johnny Awesome##115058
-|tip Johnny Awesome will have a pet called, Dazzle
-|tip To kill his pet put his pet inbetween yourself and Johnny Awesome while he is casting Powershot
-|tip Once his pet is dead Johnny will start casting Revive Dazzle
-|tip This is a long cast and he will stop all other abilities to do this, also he will take 100 percent more damage when casting the revive ability.
-|tip Don't stand in Rain of Arrows indicated by green circles on the ground
-|tip Don't stand in front of him when he casts Volley
+|tip Johnny Awesome will have a pet called Dazzle.
+|tip To kill his pet, put his pet inbetween yourself and Johnny Awesome while he is casting Powershot.
+|tip Once his pet is dead, Johnny will start casting Revive Dazzle.
+|tip This is a long cast and he will stop all other abilities to do this. Also, he will take 100 percent more damage when casting the revive ability.
+|tip Don't stand in Rain of Arrows indicated by green circles on the ground.
+|tip Don't stand in front of him when he casts Volley.
 Defeat Johnny Awesome |condition ZGV:GetReputation(2011).friendRep>=3000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
 |tip This is the first damage test of Brawler's Guild!
-|tip Burnstachio will have a buff called Ember Shield preventing all damage except players with the Water Shield buff
-|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire
+|tip Burnstachio will have a buff called Ember Shield, preventing all damage except from players with the Water Shield buff.
+|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire.
 |tip This is a RNG type fight.
-|tip Once you gain the Water Shield buff you will be immune to the fire and able to attack Burnstachio for 15 seconds.
-|tip Hitting the fire without the Water Shield buff will one shot you.
-|tip You will need to find a new rain cloud path before the buff runs out as a new Water Shield bubble will not spawn until your buff runs out.
+|tip Once you gain the Water Shield buff, you will be immune to the fire and able to attack Burnstachio for 15 seconds.
+|tip Hitting the fire without the Water Shield buff will one-shot you.
+|tip You will need to find a new rain cloud path before the buff runs out, as a new Water Shield bubble will not spawn until your buff expires.
 only if ZGV:GetReputation(2011).friendRep<3250
 step
 kill Burnstachio##115023
 |tip This is the first damage test of Brawler's Guild!
-|tip Burnstachio will have a buff called Ember Shield preventing all damage except players with the Water Shield buff
-|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire
+|tip Burnstachio will have a buff called Ember Shield, preventing all damage except from players with the Water Shield buff.
+|tip You must obtain the Water Shield by following the rain clouds that make a path rhough the fire.
 |tip This is a RNG type fight.
-|tip Once you gain the Water Shield buff you will be immune to the fire and able to attack Burnstachio for 15 seconds.
-|tip Hitting the fire without the Water Shield buff will one shot you.
-|tip You will need to find a new rain cloud path before the buff runs out as a new Water Shield bubble will not spawn until your buff runs out.
+|tip Once you gain the Water Shield buff, you will be immune to the fire and able to attack Burnstachio for 15 seconds.
+|tip Hitting the fire without the Water Shield buff will one-shot you.
+|tip You will need to find a new rain cloud path before the buff runs out, as a new Water Shield bubble will not spawn until your buff expires.
 Defeat Burnstachio |condition ZGV:GetReputation(2011).friendRep>=3250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Meatball has a 60 second enrage timer
-|tip Meatball drops purple orbs which will increase your damage and heal you
-|tip Stacking these orbs is the only way to defeat him before the enrage timer
-|tip Spend the first 30-45 seconds colleting these orbs
+|tip Meatball has a 60 second enrage timer.
+|tip Meatball drops purple orbs which will increase your damage and heal you.
+|tip Stacking these orbs is the only way to defeat him before the enrage timer.
+|tip Spend the first 30-45 seconds colleting these orbs.
 only if ZGV:GetReputation(2011).friendRep<3500
 step
 kill Meatball##67573
-|tip Meatball has a 60 second enrage timer
-|tip Meatball drops purple orbs which will increase your damage and heal you
-|tip Stacking these orbs is the only way to defeat him before the enrage timer
-|tip Spend the first 30-45 seconds colleting these orbs
+|tip Meatball has a 60 second enrage timer.
+|tip Meatball drops purple orbs which will increase your damage and heal you.
+|tip Stacking these orbs is the only way to defeat him before the enrage timer.
+|tip Spend the first 30-45 seconds colleting these orbs.
 Defeat Meatball |condition ZGV:GetReputation(2011).friendRep>=3500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Max Megablast will spam Goblin Rocket Barrage
-|tip Avoid these rockets and lead Bo Bobble into them
-|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it
-|tip 3 rockets will disable the shield
-|tip These 2 share one Health Pool.
+|tip Max Megablast will spam Goblin Rocket Barrage.
+|tip Avoid these rockets and lead Bo Bobble into them.
+|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it.
+|tip 3 rockets will disable the shield.
+|tip These two share one Health Pool.
 only if ZGV:GetReputation(2011).friendRep<3750
 step
 kill Max Megablast##67488, Bo Bobble##67487
-|tip Max Megablast will spam Goblin Rocket Barrage
-|tip Avoid these rockets and lead Bo Bobble into them
-|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it
-|tip 3 rockets will disable the shield
-|tip These 2 share one Health Pool.
+|tip Max Megablast will spam Goblin Rocket Barrage.
+|tip Avoid these rockets and lead Bo Bobble into them.
+|tip Periodically, Bo will retreat to a corner and put up a shield. Stand under the shield so Goblin Rocket Barrage will hit it.
+|tip 3 rockets will disable the shield.
+|tip These two share one Health Pool.
 Defeat GG Engineering |condition ZGV:GetReputation(2011).friendRep>=3750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Stiches will cast Stiches' Hook when the player is not in melee range
-|tip This will also apply a stack of Hooked which reduces movement speed by 10 percent per stack.
-|tip Surronding Stiches is an Aura of Rot, this applies a debuff every second or 2 increasing damage per stack.
-|tip Do not get to 10 stacks or it will instantly kill you
-|tip At around 7 or 8 stacks run out of the Aura asap, once out he will cast Stiches' Hook to bring you back in.
-|tip Keep repeating this process, save your movement speed increases for when you have higher stacks of Hooked.
+|tip Stiches will cast Stiches' Hook when the player is not in melee range.
+|tip This will also apply a stack of Hooked, which reduces movement speed by 10 percent per stack.
+|tip Surronding Stiches is an Aura of Rot. This applies a debuff every second or two, increasing damage per stack.
+|tip Do not get to 10 stacks or it will instantly kill you.
+|tip At around 7 or 8 stacks, run out of the Aura asap. Once out, he will cast Stiches' Hook to bring you back in.
+|tip Keep repeating this process. Save your movement speed increases for when you have higher stacks of Hooked.
 only if ZGV:GetReputation(2011).friendRep<4000
 step
 kill Stiches##117275
-|tip Stiches will cast Stiches' Hook when the player is not in melee range
-|tip This will also apply a stack of Hooked which reduces movement speed by 10 percent per stack.
-|tip Surronding Stiches is an Aura of Rot, this applies a debuff every second or 2 increasing damage per stack.
-|tip Do not get to 10 stacks or it will instantly kill you
-|tip At around 7 or 8 stacks run out of the Aura asap, once out he will cast Stiches' Hook to bring you back in.
-|tip Keep repeating this process, save your movement speed increases for when you have higher stacks of Hooked.
+|tip Stiches will cast Stiches' Hook when the player is not in melee range.
+|tip This will also apply a stack of Hooked, which reduces movement speed by 10 percent per stack.
+|tip Surronding Stiches is an Aura of Rot. This applies a debuff every second or two, increasing damage per stack.
+|tip Do not get to 10 stacks or it will instantly kill you.
+|tip At around 7 or 8 stacks, run out of the Aura asap. Once out, he will cast Stiches' Hook to bring you back in.
+|tip Keep repeating this process. Save your movement speed increases for when you have higher stacks of Hooked.
 Defeat Stiches |condition ZGV:GetReputation(2011).friendRep>=4000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip You will be fighting Wes and Sunny along with a few dancers
-|tip Throughout the fight Sunny will cast Sit Down, this can be interrupted, but if it goes off it will root you for 3 seconds
-|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged or waves of Drop the Bass! which can be jumped over.
-|tip These 2 abilities do about 50k-100k damage per hit, you will want to avoid these, so you will want to also interrupt every Sit Down cast.
+|tip You will be fighting Wes and Sunny, along with a few dancers.
+|tip Throughout the fight, Sunny will cast Sit Down. This can be interrupted, but if it goes off, it will root you for 3 seconds.
+|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged, or waves of Drop the Bass! which can be jumped over.
+|tip These 2 abilities do about 50k-100k damage per hit. You will want to avoid these by interrupting every Sit Down cast.
 only if ZGV:GetReputation(2011).friendRep<4250
 step
 kill Wes##114945, Sonny##114944
-|tip You will be fighting Wes and Sunny along with a few dancers
-|tip Throughout the fight Sunny will cast Sit Down, this can be interrupted, but if it goes off it will root you for 3 seconds
-|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged or waves of Drop the Bass! which can be jumped over.
-|tip These 2 abilities do about 50k-100k damage per hit, you will want to avoid these, so you will want to also interrupt every Sit Down cast.
+|tip You will be fighting Wes and Sunny, along with a few dancers.
+|tip Throughout the fight, Sunny will cast Sit Down. This can be interrupted, but if it goes off, it will root you for 3 seconds.
+|tip There will be Jukeboxes in the back that will shoot out Sound Waves which can be dodged, or waves of Drop the Bass! which can be jumped over.
+|tip These 2 abilities do about 50k-100k damage per hit. You will want to avoid these by interrupting every Sit Down cast.
 Defeat Thwack U |condition ZGV:GetReputation(2011).friendRep>=4250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Razorgrin will flop around on the ground going toward the player, simply kite him if you are a ranged.
-|tip If you are a melee you will need to get behind him and stay behind him at all times
+|tip Razorgrin will flop around on the ground, going towards the player. Simply kite him if you are a ranged.
+|tip If you are a melee, you will need to get behind him and stay behind him at all times.
 |tip This is the next dps check in the Brawler's Guild.
 only if ZGV:GetReputation(2011).friendRep<4500
 step
 kill Razorgrin##71085
-|tip Razorgrin will flop around on the ground going toward the player, simply kite him if you are a ranged.
-|tip If you are a melee you will need to get behind him and stay behind him at all times
+|tip Razorgrin will flop around on the ground, going towards the player. Simply kite him if you are a ranged.
+|tip If you are a melee, you will need to get behind him and stay behind him at all times.
 |tip This is the next dps check in the Brawler's Guild.
 Defeat Razorgrin |condition ZGV:GetReputation(2011).friendRep>=4500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip When the gnomes spawn, Wheezy is the only one at full health
-|tip Attack Queasy first, followed by the next lowest health gnome
-|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer
+|tip When the gnomes spawn, Wheezy is the only one at full health.
+|tip Attack Queasy first, followed by the next lowest health gnome.
+|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer.
 only if ZGV:GetReputation(2011).friendRep<4750
 step
 kill Fleasy##67515, Greazy##67514, Sleazy##67513, Wheezy##67516, Queasy##67511
-|tip When the gnomes spawn, Wheezy is the only one at full health
-|tip Attack Queasy first, followed by the next lowest health gnome
-|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer
+|tip When the gnomes spawn, Wheezy is the only one at full health.
+|tip Attack Queasy first, followed by the next lowest health gnome.
+|tip AoE damage is beneficial for this encounter, helping to beat the enrage timer.
 Defeat Leper Gnome Quintet |condition ZGV:GetReputation(2011).friendRep>=4750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
 |tip There will be a row of Cannons in the back of the room and long fuses going toward each one.
-|tip When a Lit Fuse reaches a cannon that cannon will fire, if you are in the row of that cannon its an instant kill
-|tip You will need to side step to safe areas, those being lit fuses still going toward the cannons.
+|tip When a Lit Fuse reaches a cannon, that cannon will fire. If you are in the row of that cannon, it's an instant kill
+|tip You will need to side step to safe areas.
 only if ZGV:GetReputation(2011).friendRep<5000
 step
 kill Blackmange##114902
 |tip There will be a row of Cannons in the back of the room and long fuses going toward each one.
-|tip When a Lit Fuse reaches a cannon that cannon will fire, if you are in the row of that cannon its an instant kill
-|tip You will need to side step to safe areas, those being lit fuses still going toward the cannons.
+|tip When a Lit Fuse reaches a cannon, that cannon will fire. If you are in the row of that cannon, it's an instant kill
+|tip You will need to side step to safe areas.
 Defeat Blackmange |condition ZGV:GetReputation(2011).friendRep>=5000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Topps will charge around the room, Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
+|tip Topps will charge around the room. Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
 |tip Simply dodge Dino Dash and save your cooldowns for when he is Dino Dazed.
-|tip Everytime Topps Dashes he will gain a buff making his next Dashes cast faster, this stacks.
-|tip This fight is more difficult for melee as you can not damage Topps when he is charging or about to charge.
-|tip This is another DPS check and requires a minimum of 410k DPS to kill it before the enrage.
+|tip Everytime Topps Dashes, he will gain a buff making his next Dashes cast faster. This effect stacks.
+|tip This fight is more difficult for melee, as you can not damage Topps when he is charging or about to charge.
+|tip This is another DPS check and requires a minimum of 410k DPS to avoid the enrage timer.
 only if ZGV:GetReputation(2011).friendRep<5250
 step
 kill Topps##116539
-|tip Topps will charge around the room, Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
+|tip Topps will charge around the room. Dino Dash, when dodged, will either give him a debuff called Dino Daze or will cast Dino Dash again.
 |tip Simply dodge Dino Dash and save your cooldowns for when he is Dino Dazed.
-|tip Everytime Topps Dashes he will gain a buff making his next Dashes cast faster, this stacks.
-|tip This fight is more difficult for melee as you can not damage Topps when he is charging or about to charge.
-|tip This is another DPS check and requires a minimum of 410k DPS to kill it before the enrage.
+|tip Everytime Topps Dashes, he will gain a buff making his next Dashes cast faster. This effect stacks.
+|tip This fight is more difficult for melee, as you can not damage Topps when he is charging or about to charge.
+|tip This is another DPS check and requires a minimum of 410k DPS to avoid the enrage timer.
 Defeat Topps |condition ZGV:GetReputation(2011).friendRep>=5250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip When Millie casts Megafantastic Discombobumorphanator get ready to run into Electric Dynamite
+|tip When Millie casts Megafantastic Discombobumorphanator, get ready to run into Electric Dynamite.
 |tip Electric Dynamite will put a lightning circle on the ground.
 |tip When the cast of Megafantastic Discombobumorphanator is almost finished, step into Electric Dynamite.
-|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray
+|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray.
 only if ZGV:GetReputation(2011).friendRep<5500
 step
 kill Millie Watt##67591
-|tip When Millie casts Megafantastic Discombobumorphanator get ready to run into Electric Dynamite
+|tip When Millie casts Megafantastic Discombobumorphanator, get ready to run into Electric Dynamite.
 |tip Electric Dynamite will put a lightning circle on the ground.
 |tip When the cast of Megafantastic Discombobumorphanator is almost finished, step into Electric Dynamite.
-|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray
+|tip Use defensive cooldowns to help mitigate Photoplasm Buster Ray.
 Defeat Millie Watt |condition ZGV:GetReputation(2011).friendRep>=5500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Carl is a giant worm that will Burrow across the room
-|tip Periodicaly he will spawn Lava Pools at a random location, when these spawn they will shot out Lava Waves in 4 directions
-|tip If one of these Lava Waves hits another Lava Pool it will spawn another 2 waves out of that pool
+|tip Carl is a giant worm that will Burrow across the room.
+|tip Periodicaly, he will spawn Lava Pools at a random location. When these spawn, they will shot out Lava Waves in 4 directions.
+|tip If one of these Lava Waves hits another Lava Pool, it will spawn another 2 waves out of that pool.
 only if ZGV:GetReputation(2011).friendRep<5750
 step
 kill Carl##115233
-|tip Carl is a giant worm that will Burrow across the room
-|tip Periodicaly he will spawn Lava Pools at a random location, when these spawn they will shot out Lava Waves in 4 directions
-|tip If one of these Lava Waves hits another Lava Pool it will spawn another 2 waves out of that pool
+|tip Carl is a giant worm that will Burrow across the room.
+|tip Periodicaly, he will spawn Lava Pools at a random location. When these spawn, they will shot out Lava Waves in 4 directions.
+|tip If one of these Lava Waves hits another Lava Pool, it will spawn another 2 waves out of that pool.
 Defeat Carl |condition ZGV:GetReputation(2011).friendRep>=5750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip There will be 3 bosses Hudson, Dupree, and Stuffshrew
-|tip Hudson will put up a Barrier which will need to be destroyed just by dealing damage and he will also cast Tesla Cannon
+|tip There will be 3 bosses: Hudson, Dupree, and Stuffshrew.
+|tip Hudson will put up a Barrier which will need to be destroyed by dealing damage. He will also cast Tesla Cannon.
 |tip Interrupt Tesla Cannon.
-|tip Dupree will only cast High Noon the entire fight you will need to kill him before this finishes casting
-|tip Stuffshrew will cast Maniacal Laugh which when completed will explode dealing a high amount of damage and knock you back if you are within 6 yards.
+|tip Dupree will only cast High Noon the entire fight. You will need to kill him before this finishes casting.
+|tip Stuffshrew will cast Maniacal Laugh which, when completed, will explode. This deals a high amount of damage and knocks you back if you are within 6 yards.
 |tip Run away from Stuffshrew when he casts this.
-|tip Stuffshrew will also put 3 bombs on the ground indicated by red circles, avoid standing in these
+|tip Stuffshrew will also put 3 bombs on the ground, indicated by red circles. Avoid standing in these.
 only if ZGV:GetReputation(2011).friendRep<6000
 step
 kill Dupree##114955, Hudson##114951, Stuffshrew##114941
-|tip There will be 3 bosses Hudson, Dupree, and Stuffshrew
-|tip Hudson will put up a Barrier which will need to be destroyed just by dealing damage and he will also cast Tesla Cannon
+|tip There will be 3 bosses: Hudson, Dupree, and Stuffshrew.
+|tip Hudson will put up a Barrier which will need to be destroyed by dealing damage. He will also cast Tesla Cannon.
 |tip Interrupt Tesla Cannon.
-|tip Dupree will only cast High Noon the entire fight you will need to kill him before this finishes casting
-|tip Stuffshrew will cast Maniacal Laugh which when completed will explode dealing a high amount of damage and knock you back if you are within 6 yards.
+|tip Dupree will only cast High Noon the entire fight. You will need to kill him before this finishes casting.
+|tip Stuffshrew will cast Maniacal Laugh which, when completed, will explode. This deals a high amount of damage and knocks you back if you are within 6 yards.
 |tip Run away from Stuffshrew when he casts this.
-|tip Stuffshrew will also put 3 bombs on the ground indicated by red circles, avoid standing in these
+|tip Stuffshrew will also put 3 bombs on the ground, indicated by red circles. Avoid standing in these.
 Defeat Ogrewatch |condition ZGV:GetReputation(2011).friendRep>=6000
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
 |tip Nibbleh will leave green pools on the ground. Each time he contacts a pool, he will gain increased damage and take less damage.
 |tip Melee will need to constantly backpedal and kite him in a circle around the room.
-|tip Kite Nibbleh and DPS him quickly before his stacks get to high
+|tip Kite Nibbleh and DPS him quickly before his stacks get too high.
 only if ZGV:GetReputation(2011).friendRep<6250
 step
 kill Nibbleh##70656
 |tip Nibbleh will leave green pools on the ground. Each time he contacts a pool, he will gain increased damage and take less damage.
 |tip Melee will need to constantly backpedal and kite him in a circle around the room.
-|tip Kite Nibbleh and DPS him quickly before his stacks get to high
+|tip Kite Nibbleh and DPS him quickly before his stacks get too high.
 Defeat Nibbleh |condition ZGV:GetReputation(2011).friendRep>=6250
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Serpent of Old will Spawn 4 Totems you will need to kite him to each of the totems around the room getting just enough stacks on each to where when you get back to the first those stacks will reset
+|tip Serpent of Old will Spawn 4 Totems. You will need to kite him to each of the totems, getting just enough stacks on each so that when you get back to the first, those stacks will reset.
 |tip Around 12 stacks on each totem.
 |tip If you have less dps and more defensives try to get more stacks of either the damage buff totem or the haste buff totem.
-|tip Totem of Ferocity This will give him a stacking damage bonus. 1% per stack
-|tip Warding Totem This will give him buff reducing his damage taken. 1% per stack
-|tip Healing Flume Totem This will give him a stacking healing buff. .01% per stack
-|tip Invigorating Totem This will give him a stacking buff increasing his haste and movement speed. 6% haste and 2% movement speed per stack
-|tip There will also be green barrels placed at your location throughout the fight, be sure to stay clear of these.
+|tip Totem of Ferocity will give him a stacking damage bonus. 1% per stack.
+|tip Warding Totem will give him a buff, reducing his damage taken. 1% per stack.
+|tip Healing Flume Totem will give him a stacking healing buff. .01% per stack.
+|tip Invigorating Totem will give him a stacking buff, increasing his haste and movement speed. 6% haste and 2% movement speed per stack.
+|tip There will also be green barrels placed at your location throughout the fight; be sure to stay clear of these.
 only if ZGV:GetReputation(2011).friendRep<6500
 step
 kill Serpent of Old##116692
-|tip Serpent of Old will Spawn 4 Totems you will need to kite him to each of the totems around the room getting just enough stacks on each to where when you get back to the first those stacks will reset
+|tip Serpent of Old will Spawn 4 Totems. You will need to kite him to each of the totems, getting just enough stacks on each so that when you get back to the first, those stacks will reset.
 |tip Around 12 stacks on each totem.
 |tip If you have less dps and more defensives try to get more stacks of either the damage buff totem or the haste buff totem.
-|tip Totem of Ferocity This will give him a stacking damage bonus. 1% per stack
-|tip Warding Totem This will give him buff reducing his damage taken. 1% per stack
-|tip Healing Flume Totem This will give him a stacking healing buff. .01% per stack
-|tip Invigorating Totem This will give him a stacking buff increasing his haste and movement speed. 6% haste and 2% movement speed per stack
-|tip There will also be green barrels placed at your location throughout the fight, be sure to stay clear of these.
+|tip Totem of Ferocity will give him a stacking damage bonus. 1% per stack.
+|tip Warding Totem will give him a buff, reducing his damage taken. 1% per stack.
+|tip Healing Flume Totem will give him a stacking healing buff. .01% per stack.
+|tip Invigorating Totem will give him a stacking buff, increasing his haste and movement speed. 6% haste and 2% movement speed per stack.
+|tip There will also be green barrels placed at your location throughout the fight; be sure to stay clear of these.
 Defeat Serpent of Old |condition ZGV:GetReputation(2011).friendRep>=6500
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip Throughout the entire fight he will put sound wave circles all over the room, avoid these at all costs
-|tip Periodically he will cast Destructolaser which will follow you around, avoid getting hit by this.
-|tip He will also cast Blue Crush this needs to be interrupted asap.
-|tip This is another high dps check and requires a minimum of 500k dps to beat the enrage timer.
+|tip Throughout the entire fight, he will put sound wave circles all over the room. Avoid these at all costs.
+|tip Periodically, he will cast Destructolaser, which will follow you around. Avoid getting hit by this.
+|tip He will also cast Blue Crush. This needs to be interrupted ASAP.
+|tip This is another dps check thay requires a minimum of 500k dps to beat the enrage timer.
 only if ZGV:GetReputation(2011).friendRep<6750
 step
 kill Epicus Maximus##67490
-|tip Throughout the entire fight he will put sound wave circles all over the room, avoid these at all costs
-|tip Periodically he will cast Destructolaser which will follow you around, avoid getting hit by this.
-|tip He will also cast Blue Crush this needs to be interrupted asap.
-|tip This is another high dps check and requires a minimum of 500k dps to beat the enrage timer.
+|tip Throughout the entire fight, he will put sound wave circles all over the room. Avoid these at all costs.
+|tip Periodically, he will cast Destructolaser, which will follow you around. Avoid getting hit by this.
+|tip He will also cast Blue Crush. This needs to be interrupted ASAP.
+|tip This is another dps check thay requires a minimum of 500k dps to beat the enrage timer.
 Defeat Epicus Maximus |condition ZGV:GetReputation(2011).friendRep>=6750
 step
 talk Bizmo's Brawlpub Bouncer##68408 |goto Deeprun Tram/2 62.2,35.0 < 5
-Tell him _"Yes, sign me up for a fight"_
+Tell him _"Yes, sign me up for a fight."_
 Wait to be teleported into the arena |goto Deeprun Tram/2 50.8,47.4 < 5 |c |noway
 _WHEN THE FIGHT BEGINS_
-|tip This boss will transform into multiple different bosses from the raid Hellfire Citadel
-|tip Siegemaster Mar'tak will cast Shockwave this need to be avoided at all costs
-|tip Kormrok will cast Grasping Hand you will need switch to this and destroy it asap, if it is up to long you may need to use a defensive cooldown
-|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minuites which is the rest of the encounter.
+|tip This boss will transform into multiple different bosses from the Hellfire Citadel raid.
+|tip Siegemaster Mar'tak will cast Shockwave. This need to be avoided at all costs.
+|tip Kormrok will cast Grasping Hand. You will need switch to this and destroy it ASAP. If it is up too long, you may need to use a defensive cooldown.
+|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minutes.
 |tip Watch your health and use your defensive cooldowns when needed.
-|tip Kilrogg Deadeye will cast Death Throes just side step these green circles
-|tip Gorefiend will cast Crushing Darkness just side step these purple circles
-|tip Fel Lord Zakuun will cast Fel Crystal try to place these in one of the 4 corners, and then run to the opposite side of the room
+|tip Kilrogg Deadeye will cast Death Throes. Just side step these green circles.
+|tip Gorefiend will cast Crushing Darkness. Just side step these purple circles.
+|tip Fel Lord Zakuun will cast Fel Crystal. Try to place these in one of the 4 corners and run to the opposite side of the room.
 |tip The Fel Crystal will continiously spawn Fel Waves that need to be dodged.
-|tip Tyrant Velhari will cast Gavel of the Tyrant, you will need to use an immunity or a big defensive before this goes off
-|tip Xhul'horacthat will cast Black Hole stay completly clear of this when it is put down
-|tip Mannoroth will cast Fel Imp-losion this will need to be interrupted
-|tip Archimonde will cast Shadowfel Burst this will knock you up high in the air
+|tip Tyrant Velhari will cast Gavel of the Tyrant. You will need to use an immunity or a big defensive cooldown before this goes off.
+|tip Xhul'horacthat will cast Black Hole. Stay completly clear of this when it is put down.
+|tip Mannoroth will cast Fel Imp-losion. This will need to be interrupted.
+|tip Archimonde will cast Shadowfel Burst. This will knock you up high in the air.
 |tip You will need a minimum of 550k dps to beat the enrage timer.
 only if ZGV:GetReputation(2011).friendRep<7000
 step
 kill Ray D. Tear##115040
-|tip This boss will transform into multiple different bosses from the raid Hellfire Citadel
-|tip Siegemaster Mar'tak will cast Shockwave this need to be avoided at all costs
-|tip Kormrok will cast Grasping Hand you will need switch to this and destroy it asap, if it is up to long you may need to use a defensive cooldown
-|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minuites which is the rest of the encounter.
+|tip This boss will transform into multiple different bosses from the Hellfire Citadel raid.
+|tip Siegemaster Mar'tak will cast Shockwave. This need to be avoided at all costs.
+|tip Kormrok will cast Grasping Hand. You will need switch to this and destroy it ASAP. If it is up too long, you may need to use a defensive cooldown.
+|tip Gurtogg Bloodboil will apply Acidic Wound which will deal 40k damage every 2 seconds and reduce your armor by 100 percent for 2 minutes.
 |tip Watch your health and use your defensive cooldowns when needed.
-|tip Kilrogg Deadeye will cast Death Throes just side step these green circles
-|tip Gorefiend will cast Crushing Darkness just side step these purple circles
-|tip Fel Lord Zakuun will cast Fel Crystal try to place these in one of the 4 corners, and then run to the opposite side of the room
+|tip Kilrogg Deadeye will cast Death Throes. Just side step these green circles.
+|tip Gorefiend will cast Crushing Darkness. Just side step these purple circles.
+|tip Fel Lord Zakuun will cast Fel Crystal. Try to place these in one of the 4 corners and run to the opposite side of the room.
 |tip The Fel Crystal will continiously spawn Fel Waves that need to be dodged.
-|tip Tyrant Velhari will cast Gavel of the Tyrant, you will need to use an immunity or a big defensive before this goes off
-|tip Xhul'horacthat will cast Black Hole stay completly clear of this when it is put down
-|tip Mannoroth will cast Fel Imp-losion this will need to be interrupted
-|tip Archimonde will cast Shadowfel Burst this will knock you up high in the air
+|tip Tyrant Velhari will cast Gavel of the Tyrant. You will need to use an immunity or a big defensive cooldown before this goes off.
+|tip Xhul'horacthat will cast Black Hole. Stay completly clear of this when it is put down.
+|tip Mannoroth will cast Fel Imp-losion. This will need to be interrupted.
+|tip Archimonde will cast Shadowfel Burst. This will knock you up high in the air.
 |tip You will need a minimum of 550k dps to beat the enrage timer.
 Defeat Ray D. Tear |condition ZGV:GetReputation(2011).friendRep>=7000
 step

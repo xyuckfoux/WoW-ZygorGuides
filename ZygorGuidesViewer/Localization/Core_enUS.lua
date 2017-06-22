@@ -1341,6 +1341,11 @@ If you're new to the guides, or have only started using them on this character, 
 	["stepgoal_havebuilding_active"] = "Finish %s level %s",
 	["stepgoal_havebuilding_ready"] = "Wait for %s level %s to build",
 
+	["stepgoal_itemset_item"] = "Obtain %s appereance",
+	["stepgoal_itemset_item_done"] = "Obtained %s appereance",
+	["stepgoal_itemset"] = "Obtain %s %s",
+	["stepgoal_itemset_done"] = "Obtained %s %s",
+
 	["stepgoal_or"] = "  - or -",
 
 	["completion_goal"] = "(%s/%s)",

@@ -3,6 +3,102 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("AchievementsAMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Brew",{
+condition_end="achieved(7305)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Brew"},
+description="This guide will walk you through completing the \"Master of the Brew\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Brew cooking on a single character
+Click here to load the Way of the Brew guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Brew"
+Earn the Master of the Brew Achievement |achieve 7305
+step
+_Congratulations!_
+You have earned the _Master of the Brew_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Grill",{
+condition_end="achieved(7300)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Grill"},
+description="This guide will walk you through completing the \"Master of the Grill\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Grill cooking on a single character
+Click here to load the Way of the Grill guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Grill"
+Earn the Master of the Grill Achievement |achieve 7300
+step
+_Congratulations!_
+You have earned the _Master of the Grill_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Oven",{
+condition_end="achieved(7304)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Oven"},
+description="This guide will walk you through completing the \"Master of the Oven\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Oven cooking on a single character
+Click here to load the Way of the Oven guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Oven"
+Earn the Master of the Oven Achievement |achieve 7304
+step
+_Congratulations!_
+You have earned the _Master of the Oven_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Pot",{
+condition_end="achieved(7302)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Pot"},
+description="This guide will walk you through completing the \"Master of the Pot\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Pot cooking on a single character
+Click here to load the Way of the Pot guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Pot"
+Earn the Master of the Pot Achievement |achieve 7302
+step
+_Congratulations!_
+You have earned the _Master of the Pot_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Steamer",{
+condition_end="achieved(7303)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Steamer"},
+description="This guide will walk you through completing the \"Master of the Steamer\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Steamer cooking on a single character
+Click here to load the Way of the Steamer guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Steamer"
+Earn the Master of the Steamer Achievement |achieve 7303
+step
+_Congratulations!_
+You have earned the _Master of the Steamer_ achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Profession Achievements\\Cooking\\Master of the Wok",{
+condition_end="achieved(7301)",
+author="support@zygorguides.com",
+startlevel=85,
+endlevel=90,
+keywords={"Cooking","Master","of","the","Wok"},
+description="This guide will walk you through completing the \"Master of the Wok\" Achievement.",
+},[[
+step
+For this achievement, you will need to reach level 600 Way of the Wok cooking on a single character
+Click here to load the Way of the Wok guide |confirm |next "Profession Guides\\Cooking\\Leveling Guides\\Way of the Wok"
+Earn the Master of the Wok Achievement |achieve 7301
+step
+_Congratulations!_
+You have earned the _Master of the Wok_ achievement
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battles\\Collect\\Pandaria Safari",{
 condition_end="achieved(6589)",
 description="Catch every battle pet in Pandaria.",
@@ -359,34 +455,34 @@ collect 3 Celestial Coin##101529 |next
 Click here to go back to the beginning of the guide to complete the weekly quest again. |confirm |next "start"
 step
 talk Master Li##73082
-buy 1 Yu'la, Broodling of Yu'lon##102147 |goto Timeless Isle/0 34.8,59.7 |next "yulal" |only if not achieved(8519/3) |or
-buy 1 Xu-Fu, Cub of Xuen##101771 |goto Timeless Isle/0 34.8,59.7 |next "xuful" |only if not achieved(8519/1) |or
-buy 1 Zao, Calfling of Niuzao##102146 |goto Timeless Isle/0 34.8,59.7 |next "zaol" |only if not achieved(8519/4) |or
-buy 1 Chi-Chi, Hatchling of Chi-Ji##102145 |goto Timeless Isle/0 34.8,59.7 |next "chichil" |only if not achieved(8519/2) |or
+buy 1 Yu'la, Broodling of Yu'lon##102147 |goto Timeless Isle/0 34.8,59.7 |next "yulal" |only if not achieved(8519,3) |or
+buy 1 Xu-Fu, Cub of Xuen##101771 |goto Timeless Isle/0 34.8,59.7 |next "xuful" |only if not achieved(8519,1) |or
+buy 1 Zao, Calfling of Niuzao##102146 |goto Timeless Isle/0 34.8,59.7 |next "zaol" |only if not achieved(8519,4) |or
+buy 1 Chi-Chi, Hatchling of Chi-Ji##102145 |goto Timeless Isle/0 34.8,59.7 |next "chichil" |only if not achieved(8519,2) |or
 step
 label "yulal"
 Use the _Yu'la, Broodling of Yu'lon_ in your bags. |use Yu'la, Broodling of Yu'lon##102147
 learnpet Yu'la, Broodling of Yu'lon##72463
 next "check"
-only if not achieved(8519/3)
+only if not achieved(8519,3)
 step
 label "chichil"
 Use the _Chi-Chi, Hatchling of Chi-Ji_ in your bags. |use Chi-Chi, Hatchling of Chi-Ji##102145
 learnpet Chi-Chi, Hatchling of Chi-Ji##72462
 next "check"
-only if not achieved(8519/2)
+only if not achieved(8519,2)
 step
 label "zaol"
 Use the _Zao, Calfling of Niuzao_ in your bags. |use Zao, Calfling of Niuzao##102146
 learnpet Zao, Calfling of Niuzao##72464
 next "check"
-only if not achieved(8519/4)
+only if not achieved(8519,4)
 step
 label "xuful"
 Use the _Xu-Fu, Cub of Xuen_ in your bags. |use Xu-Fu, Cub of Xuen##101771
 learnpet Xu-Fu, Cub of Xuen##71942
 next "check"
-only if not achieved(8519/1)
+only if not achieved(8519,1)
 step
 label "check"
 This will display your progress up to this point:
@@ -408,26 +504,26 @@ All of the pets in this guide are in-game, and do not require the Blizzard Store
 |confirm
 step
 label "menu"
-Click here to obtain the Black Tabby Cat |confirm |next "blacktabby" |only if not achieved(8397/1)
-Click here to obtain the Bombay Cat |confirm |next "bombay" |only if not achieved(8397/2)
-Click here to obtain the Calico Cat |confirm |next "calico" |only if not achieved(8397/3)
-Click here to obtain the Cat |confirm |next "normal" |only if not achieved(8397/4)
-Click here to obtain the Cheetah Cub |confirm |next "cheetah" |only if not achieved(8397/5)
-Click here to obtain the Cornish Rex |confirm |next "cornish" |only if not achieved(8397/7)
-Click here to obtain the Darkmoon Cub |confirm |next "darkmoon" |only if not achieved(8397/8)
-Click here to obtain the Feline Familiar |confirm |next "felinefam" |only if not achieved(8397/9)
-Click here to obtain the Fluxfire Feline |confirm |next "fluxfire" |only if not achieved(8397/24)
-Click here to obtain the Mr. Bigglesworth |confirm |next "bigglesworth" |only if not achieved(8397/10)
-Click here to obtain the Orange Tabby Cat |confirm |next "orangetabby" |only if not achieved(8397/12)
-Click here to obtain the Panther Cub |confirm |next "panthercub" |only if not achieved(8397/13)
-Click here to obtain the Sand Kitten |confirm |next "sandkitten" |only if not achieved(8397/14)
-Click here to obtain the Sapphire Cub |confirm |next "sapphire" |only if not achieved(8397/15)
-Click here to obtain the Siamese Cat |confirm |next "siamese" |only if not achieved(8397/16)
-Click here to obtain the Silver Tabby Cat |confirm |next "silvertabby" |only if not achieved(8397/17)
-Click here to obtain the Snow Cub |confirm |next "snowcub" |only if not achieved(8397/18)
-Click here to obtain the White Kitten |confirm |next "whitekitten" |only if not achieved(8397/21)
-Click here to obtain the Winterspring Cub |confirm |next "winterspring" |only if not achieved(8397/22)
-Click here to obtain Xu-Fu, Cub of Xuen |confirm |next "xufu" |only if not achieved(8397/23)
+Click here to obtain the Black Tabby Cat |confirm |next "blacktabby" |only if not achieved(8397,1)
+Click here to obtain the Bombay Cat |confirm |next "bombay" |only if not achieved(8397,2)
+Click here to obtain the Calico Cat |confirm |next "calico" |only if not achieved(8397,3)
+Click here to obtain the Cat |confirm |next "normal" |only if not achieved(8397,4)
+Click here to obtain the Cheetah Cub |confirm |next "cheetah" |only if not achieved(8397,5)
+Click here to obtain the Cornish Rex |confirm |next "cornish" |only if not achieved(8397,7)
+Click here to obtain the Darkmoon Cub |confirm |next "darkmoon" |only if not achieved(8397,8)
+Click here to obtain the Feline Familiar |confirm |next "felinefam" |only if not achieved(8397,9)
+Click here to obtain the Fluxfire Feline |confirm |next "fluxfire" |only if not achieved(8397,24)
+Click here to obtain the Mr. Bigglesworth |confirm |next "bigglesworth" |only if not achieved(8397,10)
+Click here to obtain the Orange Tabby Cat |confirm |next "orangetabby" |only if not achieved(8397,12)
+Click here to obtain the Panther Cub |confirm |next "panthercub" |only if not achieved(8397,13)
+Click here to obtain the Sand Kitten |confirm |next "sandkitten" |only if not achieved(8397,14)
+Click here to obtain the Sapphire Cub |confirm |next "sapphire" |only if not achieved(8397,15)
+Click here to obtain the Siamese Cat |confirm |next "siamese" |only if not achieved(8397,16)
+Click here to obtain the Silver Tabby Cat |confirm |next "silvertabby" |only if not achieved(8397,17)
+Click here to obtain the Snow Cub |confirm |next "snowcub" |only if not achieved(8397,18)
+Click here to obtain the White Kitten |confirm |next "whitekitten" |only if not achieved(8397,21)
+Click here to obtain the Winterspring Cub |confirm |next "winterspring" |only if not achieved(8397,22)
+Click here to obtain Xu-Fu, Cub of Xuen |confirm |next "xufu" |only if not achieved(8397,23)
 step
 label "blacktabby"
 _Kill_ any and all mobs in _Hillsbrad Foothills_
@@ -1191,7 +1287,7 @@ collect Spiky Collar##97548 |n |goto Karazhan/4 18.0,34.4
 Use your Spiky Collar. |use Spiky Collar##97548
 learnpet Lil' Bad Wolf##71014
 If the pet didn't drop, click here. |confirm
-|only if not achieved(8293/1)
+|only if not achieved(8293,1)
 step
 Go to the top of the ramp here. |goto Karazhan/4 24.5,49.1 |noway|c
 step
@@ -1216,7 +1312,7 @@ collect Instant Arcane Sanctum Security Kit##97549 |goto Karazhan/9 41.0,22.0
 Use your _Instant Arcane Sanctum Security Kit_. |use Instant Arcane Sanctum Security Kit##97549
 learnpet Menagerie Custodian##71015
 If the pet didn't drop, click here. |confirm
-|only if not achieved(8293/2)
+|only if not achieved(8293,2)
 step
 Follow the ramp down here. |goto Karazhan/9 51.6,43.4 |noway|c
 step
@@ -1232,7 +1328,7 @@ collect Satyr Charm##97551 |goto Karazhan/11 55.8,76.6
 Use the _Satyr Charm_. |use Satyr Charm##97551
 learnpet Fiendish Imp##71033
 Click here if the pet didn't drop. |confirm
-|only if not achieved(8293/4)
+|only if not achieved(8293,4)
 step
 Go up the ramp here and click on the bookcase to pass through. |goto Karazhan/11 68.5,24.0
 step
@@ -1276,7 +1372,7 @@ collect Tainted Core##97553 |n |goto Serpentshrine Cavern 36.8,84.8
 Use your _Tainted Core_. |use Tainted Core##97553
 learnpet Tainted Waveling##71018
 Click here if the pet didn't drop. |confirm
-|only if not achieved(8293/6)
+|only if not achieved(8293,6)
 step
 map Serpentshrine Cavern/1
 path	36.5,69.3	33.2,58.2	36.0,48.7
@@ -1302,19 +1398,19 @@ kill Al'ar##19514
 collect Brilliant Phoenix Hawk Feather##97557 |goto Tempest Keep/1 49.6,58.4
 Use your _Brilliant Phoenix Hawk Feather_. |use Brilliant Phoenix Hawk Feather##97557
 learnpet Phoenix Hawk Hatchling##141449
-|only if not achieved(8293/10)
+|only if not achieved(8293,10)
 step
 kill Void Reaver##19516
 collect Tiny Fel Engine Key##97555 |goto Tempest Keep/1 25.3,49.5
 Use your _Tiny Fel Engine Key_. |use Tiny Fel Engine Key##97555
 learnpet Pocket Reaver##141447
-|only if not achieved(8293/8)
+|only if not achieved(8293,8)
 step
 kill High Astromancer Solarian##18805
 collect Crystal of the Void##97556 |goto Tempest Keep/1 73.8,49.2
 Use your _crystal of the Void_. |use Crystal of the Void##97556
 learnpet Lesser Voidcaller##141448
-|only if not achieved(8293/9)
+|only if not achieved(8293,9)
 step
 Congratulations, you have earned the _Raiding with Leashes II: Attunement Edition_ achievement.
 ]])
@@ -4283,10 +4379,10 @@ click Lightning Ritual Stone
 kill Ancient Mogu Guardian## |achieve 8101/6 |goto Isle of Thunder 53.1,47.1
 step
 Enter the cave here |goto Isle of Thunder 49.3,33.0 |noway |c
-|only if not achieved(8101/5) or not achieved(8101/9)
+|only if not achieved(8101,5) or not achieved(8101,9)
 step
 Leave the cave here |goto Isle of Thunder/1 35.7,26.8 |noway |c
-|only if not achieved(8101/5) or not achieved(8101/9)
+|only if not achieved(8101,5) or not achieved(8101,9)
 step
 click Lightning Ritual Stone
 kill Qi'nor## |achieve 8101/5 |goto Isle of Thunder 48.0,26.0
@@ -4295,7 +4391,7 @@ click Primal Ritual Stone
 kill Incomplete Drakkari Colossus## |achieve 8101/9 |goto Isle of Thunder 49.9,20.7
 step
 Follow the cliffside here |goto Isle of Thunder 66.8,41.4
-|only if not achieved(8101/7)
+|only if not achieved(8101,7)
 step
 click Primal Ritual Stone
 kill Windreaver Akil'amon |achieve 8101/7 |goto Isle of Thunder 68.9,39.3
@@ -9043,7 +9139,7 @@ condition_end="achieved(8336)",
 achieveid={7947,7937,7940,7941,8335},
 description="Reach rank 10 with the Brawler's Guild.",
 },[[
-#include "A_Brawl"
+#include "A_Brawler's_Guild"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Events\\Brawler's Guild\\Haters Gonna Hate",{
 author="support@zygorguides.com",

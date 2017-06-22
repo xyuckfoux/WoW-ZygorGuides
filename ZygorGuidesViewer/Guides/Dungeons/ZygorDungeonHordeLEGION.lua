@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DungeonHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\The Arcway",{
-mapid=1045,
+mapid=1079,
 achieveid={10813},
 condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>830",
 keywords={"Legion, Suramar, Broken, Isles"},
@@ -12,12 +12,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Arcway dungeon in Suramar.",
 },[[
 step
-Follow the path |goto Suramar/0 42.77,61.25 < 15 |walk |region suramar_sanctum_of_order
-Follow the path |goto Suramar/0 41.51,60.63 < 15 |walk |region suramar_sanctum_of_order
-Walk into the swirling portal |goto Suramar/0 41.04,61.83 |n |region suramar_sanctum_of_order
-Enter the Arcway Dungeon |scenariostart
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for Arcway or enter the dungeon with your group |goto The Arcway/1 47.99,21.47 < 1000
 step
 map The Arcway/1
 path follow loose; loop off; ants curved; dist 20
@@ -512,7 +507,7 @@ step
 Congratulations you have completed the Cathedral of Eternal Night!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Court of Stars",{
-mapid=1045,
+mapid=1087,
 achieveid={10816},
 condition_suggested="level>=110 and level<=110 and _G.GetAverageItemLevel()>830",
 keywords={"Legion, Suramar, Broken, Isles, CoS"},
@@ -520,12 +515,7 @@ author="support@zygorguides.com",
 description="This guide will walk you through the Court of Stars dungeon in Suramar.",
 },[[
 step
-Jump down here |goto Suramar/0 48.34,65.22 < 20 |only if walking
-Enter the building |goto Suramar/0 48.99,65.02 < 20 |walk
-Walk into the swirling portal |goto Suramar/0 50.99,65.59 |n
-Enter the Court of Stars Dungeon |scenariostart
-|tip You cannot use the Group Finder to enter this dungeon, since this is a Mythic dungeon.
-|tip You will need to create a group yourself, composed of friends or guildmates, etc.
+Press _I_ and queue for Court of Stars or enter the dungeon with your group |goto Court of Stars/1 6.84,68.64 < 10000
 step
 click Signal Lantern
 |tip It's at the end of the dock in front of you after you enter the dungeon.
@@ -1053,7 +1043,7 @@ kill Helya##96759
 _EVERYONE:_ |grouprole EVERYONE
 |tip When Helya starts to cast Corrupted Bellow, quickly move away from the area she's facing. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
-|tip Quickly kill Destructor and Grasping Tentacles as the appear. |grouprole DAMAGE
+|tip Quickly kill Destructor and Grasping Tentacles as they appear. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
 |tip Players afflicted with Taint of the Sea will take damage. |grouprole HEALER
 _TANK:_ |grouprole TANK
@@ -2391,7 +2381,6 @@ Defeat Growing Ectoplasm |goto 60.82,81.70 |scenariogoal 5/34864
 The first pet will be a rare quailty Magic type pet and after that there will be 2 others either Beast, Aquatic, or Flying types.
 |tip This is an Elite type pet and takes 50 percent reduced damage.
 |tip Strong damaging Dragonkin type pets are good counters to Growing Ectoplasm.
-confirm
 step
 Jump down here |goto 60.30,80.88
 map 1127/1
@@ -2429,6 +2418,103 @@ turnin Pet Battle Challenge: Wailing Caverns##45539 |goto Northern Barrens/20 23
 step
 Congratulations you have compelted the Pet Dungeon Wailing Caverns!
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Dungeons\\Pet Battle\\Deadmines",{
+mapid=1137,
+condition_suggested="level>=110 and _G.GetAverageItemLevel()>855",
+keywords={"Pet, Battle, Dead, Mines"},
+author="support@zygorguides.com",
+description="This guide will walk you through the Pet Battle Deadmines dungeon.",
+},[[
+step
+talk Breanni##96479
+accept Deadmines, Part Three?##46293 |goto Dalaran L/10 58.42,39.22
+|only if not completedq(46293)
+step
+talk Marcus "Bagman" Brown##119390
+|tip He is behind the barn, outside, before you go into the mines.
+turnin Deadmines, Part Three?##46293 |goto Westfall/0 41.48,71.13 |only if not completedq(46291)
+accept The Deadmines Strike Back##46291 |goto Westfall/0 41.48,71.13 |only if not completedq(46291)
+accept Pet Battle Challenge: Deadmines##46292 |goto Westfall/0 41.48,71.13 |only if completedq(46291)
+|tip This is a Weekly quest! |only if completedq(46291)
+step
+This is a weekly account wide quest
+There are 9 pet battles in which you need to defeat to complete this dungeon so get as many level 25 pets as you can before attempting this
+|tip While doing this weekly quest you will not be able to heal your pets while inside.
+confirm
+|only if completedq(46291)
+step
+talk Marcus "Bagman" Brown##119390
+Tell him _"Take me into the Deadmines."_  |goto Westfall/0 41.48,71.13
+Ask Marcus Brown to take you into the Deadmines |q 46291/1 |goto Westfall/0 41.48,71.13 |only if not completedq(46291)
+|confirm |or
+step
+Enter the Deadmines |goto 1137/1 62.09,70.82
+Follow the path down |goto 1137/1 66.02,64.19
+Defeat Foe Reaper 50 |goto 1137/2 9.64,81.67 |scenariogoal 1/35577
+|tip Foe Reaper 50 is a Mechanical boss type pet and it's damage taken is reduced by 50 percent.
+|tip Strong damaging Elemental type pets are good counters to Foe Reaper 50.
+step
+Defeat Unfortunate Defias |scenariogoal 2/35591 |goto 1137/2 13.23,59.95
+|tip This is a Uncommon quality Undead type Pet with 2 Flying type pets after.
+|tip Although the first pet is Uncommon quality it is considered Elite and takes 50 percent reduced damage.
+step
+Defeat Angry Geode |scenariogoal 2/35594 |goto 1137/2 22.82,59.14
+|tip This is a Uncommon quality Elemental type Pet with 2 Flying type pets after.
+|tip Although the first pet is Uncommon quality it is considered Elite and takes 50 percent reduced damage.
+step
+Defeat Mining Monkey |scenariogoal 3/35587 |goto 1137/2 27.41,50.75
+|tip This is a Rare quality Beast type pet with 2 Critter type pets after
+|tip The first pet is considered Elite and takes 50 percent reduced damage.
+|tip Strong damaging Mechanical type pets are good counters to Mining Monkey.
+step
+map 1137/2
+path follow smart; loop off; ants curved; dist 15
+path	29.31,50.39	41.05,48.35	42.85,36.60
+path	46.98,20.86
+Follow the path avoiding the cannon shots |goto 46.98,20.86
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Defeat "Captain" Klutz |scenariogoal 4/35612 |goto 1137/2 52.79,20.23
+|tip Captain" Klutz is a Humanoid boss type pet and it's damage taken is reduced by 50 percent.
+|tip Strong damaging Undead type pets are good counters to Captain" Klutz.
+step
+map 1137/2
+path follow smart; loop off; ants curved; dist 15
+path	56.01,26.24	53.29,36.24	54.91,50.84
+Follow the path |goto 54.91,50.84
+|tip Opening the world map will display an ant trail guiding you through the current floor.
+confirm
+step
+Defeat Klutz's Battle Rat |scenariogoal 5/35613 |goto 1137/2 55.03,57.27
+|tip This is a Uncommon quality Critter type Pet with 2 random type pets after.
+|tip Although the first pet is Uncommon quality it is considered Elite and takes 50 percent reduced damage.
+step
+Defeat Klutz's Battle Monkey |scenariogoal 5/35615 |goto 1137/2 52.53,44.54
+|tip This is a Uncommon quality Beast type Pet with 2 random type pets after.
+|tip Although the first pet is Uncommon quality it is considered Elite and takes 50 percent reduced damage.
+step
+Defeat Klutz's Battle Bird |scenariogoal 5/35614 |goto 1137/2 54.67,38.02
+|tip This is a Uncommon quality Flying type Pet with 2 random type pets after.
+|tip Although the first pet is Uncommon quality it is considered Elite and takes 50 percent reduced damage.
+step
+Get onto the ship |goto 1137/2 58.37,38.89
+Watch the Dialogue
+Confront the Shadowy Figure |scenariogoal 6/35617
+step
+Defeat Cookie's Leftovers |scenariogoal 7/35616 |goto 1137/2 60.38,39.19
+|tip Cookie's Leftovers is a Legendary Magic boss type pet and it's damage taken is reduced by 50 percent.
+|tip Strong damaging Dragonkin type pets are good counters to Cookie's Leftovers.
+step
+Right click your portrait and click "Leave Instance Group"
+talk Marcus "Bagman" Brown##119390
+turnin The Deadmines Strike Back##46291 |goto Westfall/0 41.48,71.13 |only if not completedq(46291)
+turnin Pet Battle Challenge: Deadmines##46292 |goto Westfall/0 41.48,71.13 |only if completedq(46291)
+step
+Congratulations you have compelted the Pet Dungeon Deadmines!
+]])
+ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Raids\\Emerald Nightmare - Darkbough (LFR)",{
 mapid=1094,
 condition_suggested="level>=110 and level<=115 and _G.GetAverageItemLevel()>825",
@@ -5327,3 +5413,762 @@ confirm
 step
 Congratulations you have completed Trial of Valor!
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Portals",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing \"The Deaths of Chromie\" scenario.",
+condition_suggested="level>=110",
+condition_end="completedq(47558) and completedq(47560) and completedq(47557) and completedq(47559)",
+model={10008},
+startlevel=110.0,
+},[[
+step
+talk Archmage Khadgar##90417
+accept Chromie##48021 |goto Dalaran L/10 28.48,48.33
+step
+talk Chromie##27856
+accept The Day That Chromie Dies##47543 |goto Dragonblight/0 60.00,54.51
+step
+talk Chromie##27856
+Tell her: _"I'm ready. Let's go!"_
+Enter the scenario |scenariostart |goto 60.00,54.51 |q 47543 |future
+step
+talk Chromie##122510
+|tip She stands next to you.
+Tell her: _"Ready when you are."_
+Speak with Chromie |scenariogoal 1/36889 |goto Chromie Dragonblight/1 59.76,53.57 |q 47543 |future
+step
+Witness Chromie's demise |scenariogoal 2/36912 |goto Chromie Dragonblight/1 59.99,54.34 |q 47543 |future
+|tip Follow Chromie and wait for her to die.
+step
+talk Chromie##27856
+turnin The Day That Chromie Dies##47543 |goto Dragonblight/0 60.00,54.51
+accept Rewind##47545 |goto 60.00,54.51
+step
+talk Chromie##27856
+Tell her: _"I'm ready. Let's try this again!"_
+Enter the scenario |scenariostart |goto 60.00,54.51 |q 47545 |future
+step
+talk Kalecgos##122514
+Tell him: _"Seen anything strange lately?"_
+Speak with Kalecgos |scenariogoal 1/36904 |goto Chromie Dragonblight/1 59.51,54.28 |q 47545 |future
+step
+talk Lord Itharius##122513
+Tell him: _"Seen anything strange lately?"_
+Speak with Lord Itharius |scenariogoal 1/36903 |goto 59.63,54.55 |q 47545 |future
+step
+talk Alexstrasza the Life-Binder##122511
+Tell her: _"Seen anything strange lately?"_
+Speak with Alexstrasza |scenariogoal 1/36764 |goto 59.83,54.66 |q 47545 |future
+step
+talk Chromie##122510
+Tell her: _"Seen anything strange lately?"_
+Speak with Chromie |scenariogoal 1/36905 |goto 60.03,54.52 |q 47545 |future
+|tip Wait for the dialogue to complete.
+step
+Witness Chromie's demise... again |scenariogoal 2/36890 |goto 60.03,54.52 |q 47545 |future
+|tip Wait for the dialogue to complete.
+step
+label "Start"
+talk Chromie##27856
+turnin Rewind##47545 |goto Dragonblight/0 60.00,54.51 |only if not completedq(47545)
+accept The Many Advantages of Being a Time Dragon##47550 |goto 60.00,54.51 |only if not completedq(47550) and completedq(47545)
+accept Preserve the True Future##47904 |goto Dragonblight/0 60.00,54.51 |only if completedq(47550) and not completedq(47904)
+accept The Deaths of Chromie##47906 |goto Dragonblight/0 60.00,54.51 |only if completedq(47904)
+step
+talk Chromie##27856
+Tell her: _"Ready when you are!"_ |only if default
+Tell her: _"Let's go try to save you again!"_ |only if completedq(47550)
+Enter the scenario |scenariostart |goto 60.00,54.51
+stickystart "info"
+step
+talk Chromie##122663
+turnin The Many Advantages of Being a Time Dragon##47550 |goto Chromie Dragonblight/1 59.76,53.57
+step
+talk Chromie##122663
+Tell her: _"Let's adjust our strategy."_
+Select Chromie's talents |scenariogoal 1/36765 |goto 59.76,53.57 |or
+|tip Chromie's talents work similar to Class Hall upgrades.
+|tip Each talent has a specific reputation requirement, as well as a reseach time requirement.
+|tip It takes just over 10 days to unlock all of Chromie's talents.
+confirm |or
+|only if inscenario
+step
+talk Chromie##122663
+Tell her: _"I'm ready. Let's save your life!"_
+Start the scenario |scenariostage 1 |goto 59.76,53.57
+|next "Zorathides" |only not completedq(47558) and completedq(47644)
+|next "Icechill" |only if not completedq(47560) and completedq(47642)
+|next "Gargantuan" |only if not completedq(47557) and completedq(47645)
+|next "Vylethorn" |only if completedq(47559) and completedq(47643)
+|only if inscenario
+step
+Enter the cave |goto 37.25,31.80 < 15 |walk
+Follow the path |goto Chromie Dragonblight/2 67.27,59.79 < 15 |walk
+Follow the path |goto 59.59,56.44 < 15 |walk
+Follow the path |goto 61.71,19.31 < 15 |walk
+Follow the path |goto 54.22,23.92 < 15 |walk
+Follow the path |goto 45.47,45.81 < 15 |walk
+kill Charredbone Goliath##122528
+collect Demonic Corestone##150938 |n
+accept Demonic Corestone##47644 |goto 37.33,51.73
+|only if inscenario
+step
+Follow the path |goto 49.94,52.42 < 15 |walk
+Follow the path |goto 59.37,56.86 < 15 |walk
+Follow the path |goto 75.17,57.14 < 15 |walk
+talk Chromie##122663
+turnin Demonic Corestone##47644 |goto Chromie Dragonblight/1 37.45,31.85
+|only if inscenario
+step
+label "Zorathides"
+kill Zorathides##122871
+|tip Face Zorathides away from Chromie when he casts Carrion Swarm.
+|tip Stun Zorathides when he casts Infernal Strike whenever possible.
+collect 1 Fel-Touched Chronoshard##150944 |n
+accept Fel-Touched Chronoshard##47558 |goto 37.86,31.08
+|only if inscenario
+step
+talk Chromie##122663
+turnin Fel-Touched Chronoshard##47558 |goto 60.03,54.52
+|only if inscenario
+step
+kill Earlis the Deathrider##122541
+collect 1 Soul Crystal Fragment##150939 |goto 47.52,52.63 |q 47642 |future
+|only if inscenario
+step
+kill Alyndriel Graveborn##122542
+collect 2 Soul Crystal Fragment##150939 |goto 45.22,51.52 |q 47642 |future
+|only if inscenario
+step
+kill Festerbloat##122540
+collect 3 Soul Crystal Fragment##150939 |goto 49.14,45.14 |q 47642 |future
+|only if inscenario
+step
+Use the extra action button on-screen to form a Soul Crystal
+accept Soul Crystal##47642 |goto 49.14,45.14
+|only if inscenario
+step
+Enter the tree |goto 47.99,50.01 < 15 |walk
+talk Chromie##122663
+turnin Soul Crystal##47642 |goto 47.88,49.41
+|only if inscenario
+step
+label "Icechill"
+kill Talar Icechill##122874
+|tip Free Chromie from Deep Freeze.
+|tip Move Talar on top of Chromie to minimize DPS loss.
+collect 1 Frozen Chronoshard##150946 |n
+accept Frozen Chronoshard##47560 |goto 47.62,48.80
+|only if inscenario
+step
+talk Chromie##122663
+turnin Frozen Chronoshard##47560 |goto 60.03,54.52
+|only if inscenario
+step
+kill Leyline Elemental##122552+
+collect 50 Darkened Scrap of Vellum##151141 |goto 55.88,64.93 |q 47645 |future
+|only if inscenario
+step
+Use the extra action button on-screen
+accept Voidcallers' Scroll##47645 |goto 55.88,64.93
+|only if inscenario
+step
+talk Chromie##122663
+turnin Voidcallers' Scroll##47645 |goto 56.60,66.14
+|tip Fly up the the platform floating above the ground.
+|only if inscenario
+step
+label "Gargantuan"
+kill Void Gargantuan##122553
+|tip Interrupt Voidbolt as often as possible. This will shadow-lock it and prevent Looming Darkness from being cast as often.
+|tip You can also stun the Void Gargantuan to interrupt Looming Darkness.
+|tip If Looming Darkness is cast, quickly move out of the area on the ground.
+collect 1 Smoldering Chronoshard##150943 |n
+accept Smoldering Chronoshard##47557 |goto 56.60,66.14
+|only if inscenario
+step
+talk Chromie##122663
+turnin Smoldering Chronoshard##47557 |goto 60.03,54.52
+|only if inscenario
+step
+kill Emerald Skytalon##122548+, Emerald Lasher##27254+
+collect 24 Emeraldine Plume##151168 |goto Chromie Dragonblight/1 63.54,72.05 |q 47643 |future
+collect 30 Twisted Fiber##151167 |goto 63.54,72.05 |q 47643 |future
+|only if inscenario
+step
+Use the extra action button on-screen to create a Nightmare-Catcher
+kill Dream Tormentor##123458+ |goto 65.20,72.49
+confirm |q 47643 |future
+|only if inscenario
+step
+Use the extra action button on-screen to create a Nightmare-Catcher
+kill Dream Tormentor##123458+ |goto 63.28,75.76
+confirm |q 47643 |future
+|only if inscenario
+step
+Use the extra action button on-screen to create a Nightmare-Catcher
+kill Dream Tormentor##123458+ |goto 61.74,73.90
+confirm |q 47643 |future
+|only if inscenario
+step
+accept The Ancients' Wisdom##47643 |goto 61.87,73.89
+|tip You will accept this quest automatically.
+|only if inscenario
+step
+talk Chromie##122663
+turnin The Ancients' Wisdom##47643 |goto 63.52,71.99
+|only if inscenario
+step
+label "Vylethorn"
+kill Thalas Vylethorn##122875
+|tip Interrupt Sleep on every cast or you will lose time as well as take additional damage from avoidable effects.
+|tip Move out of Dark Eruption or you will take massive damage.
+|tip Nightmare Bolt will apply a stacking damage debuff called Vile Thorns.
+collect 1 Gleaming Chronoshard##150945 |n
+accept Gleaming Chronoshard##47559 |goto 63.91,72.57
+|only if inscenario
+step
+talk Chromie##122663
+turnin Gleaming Chronoshard##47559 |goto 60.03,54.52
+|only if inscenario
+step
+label "info"
+Use the _Sands of Time_ items you collect to gain various buffs
+|tip You will be able to select one of two random rewards.
+|tip Initially, you'll want to focus on reputation gains.
+|only if inscenario
+step
+label "qCheck"
+talk Chromie##122663 |only if completedq(47904,1) or completedq(47904,1)
+turnin Preserve the True Future##47904 |goto Dragonblight/0 60.00,54.51 |only if havequest(47904) and completedq(47904,1)
+turnin The Deaths of Chromie##47906 |goto Dragonblight/0 60.00,54.51 |only if havequest(47906) and completedq(47906,1)
+label "End"
+You still need to complete the following shrines:
+_Obsidian Dragonshrine_ |only if not completedq(47558)
+_Ruby Dragonshrine_ |only if not completedq(47560)
+_Azure Dragonshrine_ |only if not completedq(47557)
+_Emerald Dragonshrine_ |only if not completedq(47559)
+Click here to restart this scenario |confirm |next "Start" |only if not completedq(47558) or not completedq(47560) or not completedq(47557) or not completedq(47559)
+step
+talk Archmage Khadgar##90417
+turnin Chromie##48021 |goto Dalaran L/10 28.46,48.33
+step
+Congratulations!
+You have unlocked all of the portals in "The Deaths of Chromie" scenario
+Click here to load "The Deaths of Chromie Speed Run" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Speed Run"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie Speed Run",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing \"The Deaths of Chromie\" scenario as quickly as possible.",
+condition_suggested="level>=110",
+condition_end="completedq(47906)",
+model={10008},
+startlevel=110.0,
+},[[
+step
+label "Start"
+talk Chromie##27856
+accept Preserve the True Future##47904 |goto Dragonblight/0 60.00,54.51 |only if completedq(47550) and not completedq(47904)
+accept The Deaths of Chromie##47906 |goto Dragonblight/0 60.00,54.51 |only if completedq(47904)
+step
+talk Chromie##27856
+Tell her: _"Let's go try to save you again!"_
+Enter the scenario |scenariostart |goto 60.00,54.51
+stickystart "info"
+step
+talk Chromie##122663
+Tell her: _"Let's adjust our strategy."_
+Select Chromie's talents |scenariogoal 1/36765 |goto Chromie Dragonblight/1 59.76,53.57 |or
+|tip Chromie's talents work similar to Class Hall upgrades.
+|tip Each talent has a specific reputation requirement, as well as a reseach time requirement.
+|tip It takes just over 10 days to unlock all of Chromie's talents.
+confirm |or
+|only if inscenario
+step
+talk Chromie##122663
+Tell her: _"I'm ready. Let's save your life!"_
+Start the scenario |scenariostage 1 |goto 59.76,53.57
+|only if inscenario
+step
+talk Chromie##122510
+accept Worried About My Friends##47807 |goto Chromie Dragonblight/1 60.03,54.52 |or
+talk Alexstrasza the Life-Binder##122511
+accept The Dead Walk##47808 |goto Chromie Dragonblight/1 59.83,54.66 |or
+talk Lord Itharius##122513
+accept Darkened Dreams##47810 |goto Chromie Dragonblight/1 59.63,54.55 |or
+talk Kalecgos##122514
+accept Darkness in the Ley##47809 |goto Chromie Dragonblight/1 59.51,54.27 |or
+|tip A quest is not always offered. If no quest is available, just leave the temple.
+|tip
+Or
+|tip
+Exit the temple to the South |goto Chromie Dragonblight/1 59.80,54.25 > 60 |noway |c |or
+|tip There will be one quest available at most.
+|only if inscenario
+step
+kill Iceshatter##122522 |q 47937 |goto 61.49,69.73 |repeatable |future
+|tip Stay in melee range at all times or you will take heavy damage from Brutish Charge.
+|tip Move away from Iceshatter when he starts casting Pulsing Shards.
+|only if inscenario
+step
+kill Thalas Vylethorn##122875 |goto 63.91,72.57
+|tip Interrupt Sleep on every cast or you will lose time as well as take additional damage from avoidable effects.
+|tip Move out of Dark Eruption or you will take massive damage.
+|tip Nightmare Bolt will apply a stacking damage debuff called Vile Thorns.
+Click here after killing Thalas Vylethorn |confirm
+|only if inscenario
+step
+kill Bloodfeast##122524 |q 47938 |goto 58.56,63.94 |repeatable |future
+|tip Stay in melee range at all times or you will take heavy damage from Brutish Charge.
+|tip AoE maggots quickly or they will heal Bloodfeast.
+|only if inscenario
+step
+kill Void Gargantuan##122553 |goto 56.60,66.14
+|tip Interrupt Voidbolt as often as possible. This will shadow-lock it and prevent Looming Darkness from being cast as often.
+|tip You can also stun the Void Gargantuan to interrupt Looming Darkness.
+|tip If Looming Darkness is cast, quickly move out of the area on the ground.
+Click here after killing the Void Gargantuan |confirm
+|only if inscenario
+step
+kill Bonesunder##122521 |q 47936 |goto 57.20,54.85 |repeatable |future
+|tip Stay in melee range at all times or you will take heavy damage from Brutish Charge.
+|tip Run away during Bone Crack or you will take increased damage.
+|only if inscenario
+step
+kill Dregmar Runebrand##122519 |q 47934 |goto 52.59,49.60 |repeatable |future
+|tip Stay in melee range at all times or you will take heavy damage from Brutish Charge.
+|tip Move out of areas on the ground affected by Explosive Rune.
+|only if inscenario
+step
+Enter the tree |goto 47.92,49.71 < 10 |walk
+kill Talar Icechill##122874 |goto 47.62,48.80
+|tip Free Chromie from Deep Freeze.
+|tip Move Talar on top of Chromie to minimize DPS loss.
+Click here after killing Talar Icechill |confirm
+|only if inscenario
+step
+kill Icefist##122520 |q 47935 |goto 43.51,30.61 |repeatable |future
+|tip Stay in melee range at all times or you will take heavy damage from Brutish Charge.
+|tip Move away during Tusk Strike.
+|tip Be aware that your movement speed may be reduced from Ice Slash.
+|only if inscenario
+step
+kill Zorathides##122871 |goto 37.86,31.08
+|tip Face Zorathides away from Chromie when he casts Carrion Swarm.
+|tip Stun Zorathides when he casts Infernal Strike whenever possible.
+Click here after killing Zorathides |confirm
+|only if inscenario
+step
+Enter the Obsidian Dragonshrine |goto 37.14,31.76 < 15 |walk
+Follow the path |goto Chromie Dragonblight/2 70.04,52.04 < 10 |walk
+Follow the path |goto 71.86,29.85 < 10 |walk
+Check for the triple chest spawn, then die |goto 67.33,27.12 |condition _G.UnitIsDead("player")
+|tip Jump in the lava behind you, staying close to the wall so Chromie doesn't heal you.
+|only if inscenario
+step
+talk Chromie##122510 |only if havequest(47807)
+turnin Worried About My Friends##47807 |goto Chromie Dragonblight/1 60.03,54.52 |only if havequest(47807)
+talk Alexstrasza the Life-Binder##122511 |only if havequest(47808)
+turnin The Dead Walk##47808 |goto Chromie Dragonblight/1 59.83,54.66 |only if havequest(47808)
+talk Lord Itharius##122513 |only if havequest(47810)
+turnin Darkened Dreams##47810 |goto Chromie Dragonblight/1 59.63,54.55 |only if havequest(47810)
+talk Kalecgos##122514 |only if havequest(47809)
+turnin Darkness in the Ley##47809 |goto Chromie Dragonblight/1 59.51,54.27 |only if havequest(47809)
+|only if inscenario
+step
+click The War for Andorhal |goto Chromie Dragonblight/1 60.38,54.51
+Enter the portal |goto Chromie Dragonblight/3 43.50,69.83 < 100 |noway |c
+|next "Andorhal" |only if itemcount(151549) == 0
+|only if inscenario
+step
+talk Adrine Towhide##124379
+Give him the Cenarion Circle Documents |scenariogoal 2/37056 |count 5 |goto 43.47,69.23
+|next "leaveAnd"
+|only if inscenario
+step
+label "Andorhal"
+talk Chromie##124154
+accept Sky Ablaze With Cannonfire##47773 |goto 43.92,69.24 |repeatable
+|only if inscenario
+stickystart "Boom"
+step
+kill Potionmaster Donovan##124094
+collect 1 Experimental Alchemy Reagent##151368 |goto 41.73,73.55
+|only if inscenario
+step
+kill Gatzin Zapwrench##124095
+collect 1 Lightning Absorption Capsule##151369 |goto 38.91,68.18
+|only if inscenario
+step
+label "Boom"
+kill Deathguard War-Captain##124074+
+collect 7 Military Explosives##151370 |goto 41.62,68.93
+|tip War-Captains patrol around the area.
+|only if inscenario
+step
+click Alliance Siege Cannon##124053
+Use the Alchemy Reagent to remove the shield |use Experimental Alchemy Reagent##151368
+Use the Lightning Capsule to disable the defense grid |use Lightning Absorption Capsule##151369
+Use Military Explosives to defeat the cannon |use Military Explosives##151370
+Find a way to take down the Horde Siege Cannon |q 47773/1 |goto 43.67,65.20
+|only if inscenario
+step
+talk Chromie##124154
+turnin Sky Ablaze With Cannonfire##47773 |goto 43.92,69.23
+|only if inscenario
+step
+label "leaveAnd"
+click Wyrmrest Temple |goto 43.47,70.04
+Return to Wyrmrest Temple |goto Chromie Dragonblight/1 59.76,53.57 < 100 |noway |c
+|only if inscenario
+step
+click The Burning of Mount Hyjal |goto Chromie Dragonblight/1 60.09,55.06
+Enter the portal |goto Chromie Dragonblight/4 32.09,97.14 < 100 |noway |c
+|next "Hyjal" |only if itemcount(151547) == 0
+|only if inscenario
+step
+Use the Brimstone Beacon |use Brimstone Beacon##151547
+Summon the Fiery Behemoth |condition itemcount(151547) == 0 |goto 33.36,96.30
+|only if inscenario
+step
+label "Hyjal"
+kill Fiery Behemoth##123021 |scenariogoal 2/37056 |count 6 |goto 33.36,96.30
+|tip You will need to fight through three waves of trash before engaging this boss.
+|tip Be sure to keep an eye on Chromie's health, and move enemies away when she takes damage.
+|only if inscenario
+step
+click Wyrmrest Temple |goto 31.98,97.17
+Return to Wyrmrest Temple |goto Chromie Dragonblight/1 59.76,53.57 < 100 |noway |c
+|only if inscenario
+step
+click Culling of Stratholme |goto Chromie Dragonblight/1 59.61,55.12
+Enter the portal |goto Chromie Dragonblight/6 50.67,100.90 < 100 |noway |c
+|next "Stratholme" |only if itemcount(151546) >= 1
+|only if inscenario
+step
+Follow the path |goto 54.10,84.29 < 20 |walk
+Follow the path |goto 50.54,75.17 < 20 |walk
+Enter the inn |goto 53.13,65.91 < 10 |walk
+talk Emery Neill##123781
+accept Smoke, Meat, and Pretty Flowers##47744 |goto 56.33,68.39 |repeatable
+|only if inscenario
+step
+Follow the path |goto 45.79,62.72 < 25 |walk
+Enter the building |goto 42.49,71.23 < 10 |walk
+talk Fras Siabi##123782
+buy 1 Fras' Special Pipe Blend##151280 |n
+buy 1 Flinty Firestarter##151284 |n
+collect 1 Fras' Special Pipe Blend##151280 |goto 41.49,70.66
+collect 1 Flinty Firestarter##151284 |goto 41.49,70.66
+|only if inscenario
+step
+Follow the path |goto 46.70,62.14 < 25 |walk
+Follow the path |goto 55.32,60.73 < 15 |walk
+Enter the building |goto 63.34,54.07 < 10 |walk
+talk Sophie Aaren##123779
+buy 1 Marigold Bouquet##151287 |n
+collect 1 Marigold Bouquet##151287 |goto 63.86,55.63
+|only if inscenario
+step
+Enter the building |goto 58.80,44.92 < 10 |walk
+talk Robert Pierce##123783
+buy 1 Refurbished Military Rifle##151282 |n
+collect 1 Refurbished Military Rifle##151282 |goto 58.07,46.08
+|only if inscenario
+step
+Enter the building |goto 62.00,42.80 < 10 |walk
+talk Olivia Zenith##123780
+buy 1 Basic Cloth Bandages##151283 |n
+collect 1 Basic Cloth Bandages##151283 |goto 62.93,43.22
+|only if inscenario
+step
+Follow the path |goto 60.19,36.68 < 10 |walk
+talk George Goodman##123778
+buy 2 Salted Venison Jerky##151281 |n
+buy 1 Heavy Straw Rope##151286 |n
+collect 2 Salted Venison Jerky##151281 |goto 61.77,35.28
+collect 1 Heavy Straw Rope##151286 |goto 61.77,35.28
+|only if inscenario
+step
+Follow the path |goto 60.27,53.66 < 25 |walk
+Enter the inn |goto 53.13,65.91 < 10 |walk
+talk Emery Neill##123781
+turnin Smoke, Meat, and Pretty Flowers##47744 |goto 56.35,68.40
+accept Yeah, Definitely for the Kids##47745 |goto 56.35,68.40 |repeatable
+|only if inscenario
+step
+Enter the building |goto 48.89,71.67 < 25 |walk
+talk Orphan Matron Meliana##123790
+turnin Yeah, Definitely for the Kids##47745 |goto 47.29,70.40
+|only if inscenario
+step
+talk Orphan Matron Meliana##123790
+accept Holing Up##47746 |goto 49.23,71.71 |repeatable
+|only if inscenario
+step
+talk Orphan Matron Meliana##123790
+turnin Holing Up##47746 |goto 49.23,71.71
+accept For Emery##47750 |goto 49.23,71.71 |repeatable
+|only if inscenario
+step
+Enter the building |goto 53.10,65.88 < 10 |walk
+talk Emery Neill##123781
+turnin For Emery##47750 |goto 56.35,68.40
+accept Fight Plague with Fire##47747 |goto 56.35,68.40 |repeatable
+|only if inscenario
+step
+talk Emery Neill##123781
+turnin Fight Plague with Fire##47747 |goto 56.35,68.40
+|only if inscenario
+step
+Follow the path |goto 55.19,61.18 < 15 |walk
+Follow the path |goto 60.64,52.50 < 20 |walk
+click Town Hall Door
+Go up the steps |goto 56.92,26.65 < 5 |walk
+Follow the path |goto 60.51,31.61 < 10 |walk
+Follow the path |goto 65.29,21.10 < 5 |walk
+Follow the path |goto 67.02,19.10 < 5 |walk
+Enter the hidden passage |goto 67.02,19.10 < 5 |noway |c
+|only if inscenario
+step
+Follow the path |goto 64.89,14.82 < 10 |walk
+Follow the path |goto 46.01,17.90 < 10 |walk
+Follow the path |goto 38.34,26.99 < 10 |walk
+Follow the path |goto 38.97,41.85 < 15 |walk
+kill Nezar'Azret##123836
+click Chromie##123837
+Free Chromie from the web |scenariogoal 2/37056 |count 7 |goto 31.27,46.21
+|tip Run away from Chromie when you are webbed together!
+|only if inscenario
+|next "stratEnd"
+step
+label "Stratholme"
+Follow the path |goto 54.10,84.29 < 20 |walk
+Follow the path |goto 50.54,75.17 < 20 |walk
+Follow the path |goto 50.14,63.30 < 20 |walk
+Follow the path |goto 46.64,54.35 < 20 |walk
+click Market Row Gate
+Open the Market Row Gate |goto 46.64,54.35 < 6 |noway |c
+|only if inscenario
+step
+Follow the path |goto 38.97,41.85 < 15 |walk
+kill Nezar'Azret##123836
+click Chromie##123837
+Free Chromie from the web |scenariogoal 2/37056 |count 7 |goto 31.27,46.21
+|tip Run away from Chromie when you are webbed together!
+|only if inscenario
+step
+label "stratEnd"
+click Wyrmrest Temple |goto 30.95,45.22
+Return to Wyrmrest Temple |goto Chromie Dragonblight/1 59.76,53.57 < 100 |noway |c
+|only if inscenario
+step
+click The Well of Eternity |goto Chromie Dragonblight/1 59.26,54.66
+Enter the portal |goto Chromie Dragonblight/5 87.65,48.93 < 100 |noway |c
+|next "Eternity" |only if itemcount(151548) == 0
+|only if inscenario
+step
+Use Tyrande's Moonstone |use Tyrande's Moonstone##151548
+Enter the palace |goto 44.11,34.43 < 20 |noway |c
+|next "Palace"
+|only if inscenario
+step
+label "Eternity"
+Follow the path |goto 83.91,63.62
+click To Queen Azshara's Throne |goto 73.07,85.18
+Enter Queen Azshara's Throne |goto 44.11,34.43 < 20 |noway |c
+|only if inscenario
+step
+label "Palace"
+Follow the path |goto 41.09,21.91 < 15 |walk
+Follow the path |goto 32.38,23.11 < 15 |walk
+Follow the path |goto 33.92,36.98 < 15 |walk
+Follow the path |goto 24.30,46.90 < 15 |walk
+kill Grolethax##123721 |goto 20.16,61.72
+|tip Avoid as many mobs as possible along the way.
+|tip Stop to kill Grolethax quickly.
+Follow the path |goto 22.14,68.74 < 15 |walk
+click Wyrmrest Temple |goto 27.57,65.85
+Return to Wyrmrest Temple |goto Chromie Dragonblight/1 59.76,53.57 < 100 |noway |c
+|only if inscenario
+step
+label "info"
+Use the _Sands of Time_ items you collect to gain various buffs and effects
+|tip For speed run purposes, priority Sands of Time usage should be for time increases, Keepsake Boxes, and Acceleration.
+|tip Chests spawn at random and usually contain Sands of Time.
+|tip Similarly, rare spawns in the Dragonblight portion can be killed along the way for additional Sands.
+|only if inscenario
+step
+Checking
+|next "qCheck" |only if completedq(47904,1) and havequest(47904)
+|next "qCheck" |only if completedq(47906,1) and havequest(47906)
+|next "End" |only if default
+step
+label "qCheck"
+talk Chromie##27856
+turnin Preserve the True Future##47904 |goto Dragonblight/0 60.00,54.51 |only if completedq(47550) and not completedq(47904)
+turnin The Deaths of Chromie##47906 |goto Dragonblight/0 60.00,54.51 |only if completedq(47904)
+step
+label "End"
+Your time has expired
+Click here to restart this scenario |confirm |next "Start"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Dungeon Guides\\Legion Scenarios\\The Deaths of Chromie (Stratholme Intro)",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the initial Stratholme portion of \"The Deaths of Chromie\" scenario.",
+condition_suggested="level>=110",
+model={10008},
+startlevel=110.0,
+},[[
+step
+Please be aware that you MUST complete the quest "Fight Plague with Fire" in this guide before proceeding to the Speed Run guide
+|confirm
+step
+label "Start"
+talk Chromie##27856
+accept Preserve the True Future##47904 |goto Dragonblight/0 60.00,54.51 |only if completedq(47550) and not completedq(47904)
+accept The Deaths of Chromie##47906 |goto Dragonblight/0 60.00,54.51 |only if completedq(47904)
+step
+talk Chromie##27856
+Tell her: _"Let's go try to save you again!"_
+Enter the scenario |scenariostart |goto 60.00,54.51
+stickystart "info"
+step
+click Culling of Stratholme |goto Chromie Dragonblight/1 59.61,55.12
+Enter the portal |goto Chromie Dragonblight/6 50.67,100.90 < 100 |noway |c
+|only if inscenario
+step
+Follow the path |goto Chromie Dragonblight/6 54.10,84.29 < 20 |walk
+Follow the path |goto 50.54,75.17 < 20 |walk
+Enter the inn |goto 53.13,65.91 < 10 |walk
+talk Emery Neill##123781
+accept Smoke, Meat, and Pretty Flowers##47744 |goto 56.33,68.39 |repeatable
+|only if inscenario
+step
+Follow the path |goto 45.79,62.72 < 25 |walk
+Enter the building |goto 42.49,71.23 < 10 |walk
+talk Fras Siabi##123782
+buy 1 Fras' Special Pipe Blend##151280 |n
+collect 1 Fras' Special Pipe Blend##151280 |goto 41.49,70.66
+|only if inscenario
+step
+Follow the path |goto Chromie Dragonblight/6 46.70,62.14 < 25 |walk
+Follow the path |goto 55.32,60.73 < 15 |walk
+Enter the building |goto 63.34,54.07 < 10 |walk
+talk Sophie Aaren##123779
+buy 1 Marigold Bouquet##151287 |n
+collect 1 Marigold Bouquet##151287 |goto 63.86,55.63
+|only if inscenario
+step
+Follow the path |goto 60.19,36.68 < 10 |walk
+talk George Goodman##123778
+buy 1 Salted Venison Jerky##151281 |n
+collect 1 Salted Venison Jerky##151281 |goto 61.77,35.28
+|only if inscenario
+step
+Follow the path |goto 60.27,53.66 < 25 |walk
+Enter the inn |goto 53.13,65.91 < 10 |walk
+talk Emery Neill##123781
+turnin Smoke, Meat, and Pretty Flowers##47744 |goto 56.35,68.40
+accept Yeah, Definitely for the Kids##47745 |goto 56.35,68.40 |repeatable
+|only if inscenario
+step
+Enter the building |goto 48.89,71.67 < 25 |walk
+talk Orphan Matron Meliana##123790
+turnin Yeah, Definitely for the Kids##47745 |goto 47.29,70.40
+|only if inscenario
+step
+talk Orphan Matron Meliana##123790
+accept Holing Up##47746 |goto 49.23,71.71 |repeatable
+|only if inscenario
+step
+Follow the path |goto 54.85,61.42 < 15 |walk
+Enter the building |goto 58.80,44.92 < 10 |walk
+talk Robert Pierce##123783
+buy 1 Refurbished Military Rifle##151282 |n
+collect 1 Refurbished Military Rifle##151282 |goto 58.07,46.08
+|only if inscenario
+step
+Enter the building |goto 62.00,42.80 < 10 |walk
+talk Olivia Zenith##123780
+buy 1 Basic Cloth Bandages##151283 |n
+collect 1 Basic Cloth Bandages##151283 |goto 62.93,43.22
+|only if inscenario
+step
+Enter the building |goto 60.16,36.70 < 10 |walk
+talk George Goodman##123778
+buy 1 Salted Venison Jerky##151281 |n
+collect 1 Salted Venison Jerky##151281 |goto 61.77,35.28
+|only if inscenario
+step
+Follow the path |goto 59.40,55.01 < 20 |walk
+Follow the path |goto 51.60,65.12 < 25 |walk
+talk Orphan Matron Meliana##123790
+turnin Holing Up##47746 |goto 49.23,71.71
+accept For Emery##47750 |goto 49.23,71.71 |repeatable
+|only if inscenario
+step
+Enter the inn |goto 53.10,65.88 < 10 |walk
+talk Emery Neill##123781
+turnin For Emery##47750 |goto 56.35,68.40
+accept Fight Plague with Fire##47747 |goto 56.35,68.40 |repeatable
+|only if inscenario
+step
+Follow the path |goto 45.79,62.72 < 25 |walk
+Enter the building |goto 42.49,71.23 < 10 |walk
+talk Fras Siabi##123782
+buy 1 Flinty Firestarter##151284 |n
+collect 1 Flinty Firestarter##151284 |goto 41.49,70.66
+|only if inscenario
+step
+Follow the path |goto 46.53,62.36 < 20 |walk
+Follow the path |goto 56.48,59.22 < 15 |walk
+Follow the path |goto 60.42,49.67 < 20 |walk
+Enter the building |goto 60.16,36.77 < 10 |walk
+talk George Goodman##123778
+buy 1 Heavy Straw Rope##151286 |n
+collect 1 Heavy Straw Rope##151286 |goto 61.77,35.28
+|only if inscenario
+step
+Follow the path |goto 59.40,55.01 < 20 |walk
+Enter the inn |goto 53.02,65.87 < 10 |walk
+talk Emery Neill##123781
+turnin Fight Plague with Fire##47747 |goto 56.35,68.40
+|only if inscenario
+step
+Follow the path |goto 55.19,61.18 < 15 |walk
+Follow the path |goto 60.64,52.50 < 20 |walk
+click Town Hall Door
+Go up the steps |goto 56.92,26.65 < 5 |walk
+Follow the path |goto 60.51,31.61 < 10 |walk
+Follow the path |goto 65.29,21.10 < 5 |walk
+Follow the path |goto 67.02,19.10 < 5 |walk
+Enter the hidden passage |goto 67.02,19.10 < 5 |noway |c
+|only if inscenario
+step
+Follow the path |goto 64.89,14.82 < 10 |walk
+Follow the path |goto 46.01,17.90 < 10 |walk
+Follow the path |goto 38.34,26.99 < 10 |walk
+Follow the path |goto 38.97,41.85 < 15 |walk
+kill Nezar'Azret##123836
+click Chromie##123837
+Free Chromie from the web |scenariogoal 2/37056 |count 1 |goto 31.27,46.21
+|tip Run away from Chromie when you are webbed together!
+|only if inscenario
+step
+click Wyrmrest Temple |goto Chromie Dragonblight/6 30.95,45.22
+Return to Wyrmrest Temple |goto Chromie Dragonblight/1 59.76,53.57 < 100 |noway |c
+|only if inscenario
+step
+label "info"
+Use the _Sands of Time_ items you collect to gain various buffs
+|tip You will be able to select one of two random rewards.
+|tip Initially, you'll want to focus on reputation gains.
+|only if inscenario
+step
+Congratulations!
+You have completed the Culling of Stratholme intro
+Click here to load "The Deaths of Chromie Speed Run" guide |confirm |next "Zygor's Leveling Guides\\Legion (100-110)\\The Deaths of Chromie Speed Run"
+]])
+ZGV.BETAEND()

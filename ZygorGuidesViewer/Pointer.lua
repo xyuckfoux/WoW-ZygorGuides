@@ -2081,9 +2081,11 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	end
 
 
-	if Pointer.tmp_taxis_assumed then  ArrowFrame:SetNotice(L['pointer_arrow_noflightdata'])
-	else  ArrowFrame:SetNotice()
-	end
+	--[[ blue "taxis assumed" notice removed per request.
+		if Pointer.tmp_taxis_assumed then  ArrowFrame:SetNotice(L['pointer_arrow_noflightdata'])
+		else  ArrowFrame:SetNotice()
+		end
+	--]]
 
 
 	local waypoint = ArrowFrame.waypoint

@@ -11033,6 +11033,87 @@ Flame Warden of Cataclysm |achieve 6012
 Earn the Fires of Azeroth Achievement |achieve 1036
 |tip Use the Midsummer Fire Festival Flame Keeper Achievement guides to accomplish this.
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Draenor",{
+condition_end="achieved(11284)",
+condition_suggested="isevent('Midsummer Fire Festival')",
+keywords={"Flame","Keeper","of","Draenor"},
+description="This guide will walk you through obtaining the Flame Keeper of Draenor achievement.",
+},[[
+step
+talk Frostfire Ridge Flame Keeper##114499
+accept Honor the Flame##44580 |goto Frostfire Ridge/0 72.61,65.08 |instant
+step
+talk Gorgrond Flame Guardian##114491
+accept Honor the Flame##44573 |goto Gorgrond/0 43.92,93.78
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44573 |goto 43.92,93.83
+step
+talk Talador Flame Guardian##114489
+accept Honor the Flame##44571 |goto Talador/0 43.46,71.81
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44571 |goto 43.51,71.81
+step
+talk Spires of Arak Flame Guardian##114488
+accept Honor the Flame##44570 |goto Spires of Arak/0 48.01,44.72
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44570 |goto 48.03,44.76
+step
+talk Nagrand Flame Guardian##114490
+accept Honor the Flame##44572 |goto Nagrand D/0 80.54,47.71
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44572 |goto 80.58,47.67
+step
+_Congratulations_
+You haved eared the Flame Keeper of Draenor Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of the Broken Isles",{
+condition_end="achieved(11282)",
+condition_suggested="isevent('Midsummer Fire Festival')",
+keywords={"Flame","Keeper","of","the","Broken","Isles"},
+description="This guide will walk you through obtaining the Flame Keeper of the Broken Isles achievement.",
+},[[
+step
+talk Azsuna Flame Guardian##114492
+accept Honor the Flame##44574 |goto Azsuna/0 48.29,29.66
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44574 |goto 48.29,29.66
+step
+talk Val'Sharah Flame Guardian##114493
+accept Honor the Flame##44575 |goto Val'sharah/0 44.88,57.94
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44575 |goto 44.85,57.90
+step
+talk Suramar Flame Keeper##114518
+accept Honor the Flame##44614 |goto Suramar/0 30.47,45.38
+step
+talk Highmountain Flame Guardian##114494
+accept Honor the Flame##44576 |goto Highmountain/0 55.51,84.45
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44576 |goto 55.55,84.45
+step
+talk Stormheim Flame Guardian##114496
+accept Honor the Flame##44577 |goto Stormheim/0 32.49,42.14
+step
+click Midsummer Bonfire##101054
+turnin Honor the Flame##44577 |	goto 32.51,42.09
+step
+_Congratulations_
+You haved eared the Flame Keeper of the Broken Isles Achievement
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\King of the Fire Festival",{
+condition_end="achieved(11282)",
+condition_suggested="isevent('Midsummer Fire Festival')",
+keywords={"King","of","the","Fire","Festival"},
+description="This guide will walk you through obtaining the King of the Fire Festival achievement.",
+},[[
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Events Guides\\Harvest Festival\\Harvest Festival Quest",{
 author="support@zygorguides.com",
 condition_suggested="isevent('Harvest Festival')",

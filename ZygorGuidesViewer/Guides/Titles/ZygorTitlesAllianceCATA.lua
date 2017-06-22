@@ -3,6 +3,33 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("TitlesA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Brutal Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 4 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Challenger",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 35% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2090
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Duelist",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 3% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2092
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Justicar",{
 author="support@zygorguides.com",
 },[[
@@ -13,11 +40,66 @@ achieve 907
 step
 Congratulations! You have earned the title Justicar!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Merciless Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 2 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Rival",{
+author="support@zygorguides.com",
+},[[
+step
+This title is gained by finishing a PvP season in the top 10% of of the arena ladder
+You must also have at least 50 games won for the season
+achieve 2093
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Player versus Player\\Vengeful Gladiator",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by finishing the PvP Arena Season 3 and meeting the following conditions:
+Your team was ranked #1 in the 3v3 or 5v5 bracket
+Your character had a personal rating within 100 points of the team's rating
+Your character had to have played in at least 20% of the team's total games played
+Your character had to be max level for that time
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Champion of the Naaru",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by completing the attunement quest for Serpentshrine Cavern
+Players also had to summon and defeat Nightbane in Karazhan and defeat Gruul and Magtheridon
+achieve 432
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Dungeons & Raids\\Hand of A'dal",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was gained by completing the The Vials of Eternity questline before the 3.0.2 patch
+achieve 431
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Burning Crusade Titles\\Reputations\\Of the Shattered Sun",{
 author="support@zygorguides.com",
 description="This Guide will help you get your Reputation to Exalted to earn the title of the Shattered Sun.",
 },[[
 #include "A_SSO_PreQuest_Dailies"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Argent Defender",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Trial of the Grand Crusader with 50 attempts remaining.
+achieve 4080
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Astral Walker",{
 author="support@zygorguides.com",
@@ -41,6 +123,14 @@ achieve 4583
 step
 Congratulations! You have earned the title Bane of the Fallen King!
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Celestial Defender",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by participating in the realm first kill of Algalon the Observer in 25 player mode.
+achieve 3259
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of the Frozen Wastes",{
 author="support@zygorguides.com",
 },[[
@@ -50,6 +140,30 @@ Complete every Wrath of the Lich King Heroic Instance, with the exception of The
 achieve 1658
 step
 Congratulations! You have earned the title "Champion of the Frozen Wastes"!
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Champion of Ulduar",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Ulduar 10 man raid without any player dying.
+achieve 2903
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Naxxramas",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by participating in the realm first kill of Kel'Thuzad in Naxxramas in 25-player mode.
+achieve 1402
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\Conqueror of Ulduar",{
+author="support@zygorguides.com",
+},[[
+step
+This title is _no longer obtainable_!
+This title was earned by completing the Ulduar 25 man raid without any player dying.
+achieve 2904
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Dungeons & Raids\\The Kingslayer",{
 author="support@zygorguides.com",
@@ -179,8 +293,13 @@ author="support@zygorguides.com",
 },[[
 step
 This title is earned by completing the _Battlemaster_ achievement.
-In order to complete the _Battlemaster_ achievement you must obtain 5 achievements that make you the master of the following battlegrounds: Alterac Valley, Warsong Gulch, Strand of the Ancients, Arathi Basin, and Eye of the Storm.
-achieve 230
+In order to complete the _Battlemaster_ achievement you must obtain the following achievements:
+|tip Use the achievement guides to accomplish this.
+achieve 230/1
+achieve 230/2
+achieve 230/3
+achieve 230/4
+achieve 230/5
 step
 Congratulations! You have earned the title Battlemaster!
 ]])
@@ -277,16 +396,16 @@ keywords={"Champion"},
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Aspirant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Aspirant Rank dailies\nin order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader title.",
+description="This guide section will walk you through completing your race's Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant Rank with your own race and eventually Crusader title.",
 keywords={"Crusader"},
 },[[
 daily
 step
 talk Arcanist Taelis##33625
-accept Up To The Challenge##13672 |goto Icecrown,76.5,19.4
+accept Up To The Challenge##13672 |goto Icecrown 76.5,19.4
 step
 talk Arcanist Taelis##33625
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13666 |goto 76.5,19.4 |or
 accept A Worthy Weapon##13669 |goto 76.5,19.4 |or
 accept The Edge of Winter##13670 |goto 76.5,19.4 |or
@@ -295,49 +414,51 @@ talk Avareth Swiftstrike##33646
 accept Training in the Field##13671 |goto 76.5,19.4
 step
 talk Scout Shalyndria##33647
-accept Learning the Reins##13625 |goto Icecrown,76.5,19.5
+accept Learning the Reins##13625 |goto Icecrown 76.5,19.5
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
-Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
+Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake.
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13666/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13666/1 |goto Grizzly Hills 61.2,50.3
 step
-click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13669 |goto Icecrown,69.1,76.2
+click Winter Hyacinth##3231+
+collect 4 Winter Hyacinth##45000 |q 13669 |goto Icecrown 69.1,76.2
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13669/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13669/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13670 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13670 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13670/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13670/1 |goto Howling Fjord 42.2,19.7
 step
 kill Vrykul Necrolord##31783+, Frostbrood Whelp##31718+
-kill 8 Icecrown Scourge |q 13671/1 |goto Icecrown,71.3,37.5
+Kill #8# Icecrown Scourge |q 13671/1 |goto Icecrown 71.3,37.5
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Quel'dorei Steed |invehicle |q 13625 |goto Icecrown,75.9,20.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Quel'dorei Steed |invehicle |q 13625 |goto Icecrown 75.9,20.4
 step
-Target a Melee Target
-If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks
-Use your Thrust ability to attack the target 5 times |q 13625/1 |goto 72.6,19.7
+click Melee Target
+|tip If you don't want to kill your mount be sure to keep your Defend ability maxed out at 3 stacks.
+Use your Thrust Ability #5# Times |q 13625/1 |goto 72.6,19.7
 step
-Target a Charge Target from a distance
-Use Shield-Breaker ability until you notice the targets Defend is gone
-Use your Charge ability on the Charge Target 2 times |q 13625/3 |goto 72.9,18.8
+click Charge Target
+Use Shield-Breaker ability until the target's Defend is gone
+Use your Charge Ability on the Charge Target #2# Times |q 13625/3 |goto 72.9,18.8
 step
-Target a Ranged Target from a distance
-Use Shield-Breaker ability on Ranged Target to bring it's shields down
-Use Shield-Breaker ability on Ranged Target twice, while it's shields are down |q 13625/2 |goto 73.1,19.0
+click Ranged Target
+Use Shield-Breaker ability on Ranged Target to bring its shields down
+Use Shield-Breaker Ability on Ranged Target #2# Times |q 13625/2 |goto 73.1,19.0
+|tip These will only count if the target's shields are down.
 step
 talk Arcanist Taelis##33625
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13666 |goto 76.5,19.4
 turnin A Worthy Weapon##13669 |goto 76.5,19.4
 turnin The Edge of Winter##13670 |goto 76.5,19.4
@@ -346,31 +467,31 @@ talk Avareth Swiftstrike##33646
 turnin Training in the Field##13671 |goto 76.5,19.4
 step
 talk Scout Shalyndria##33647
-turnin Learning the Reins##13625 |goto Icecrown,76.5,19.5
+turnin Learning the Reins##13625 |goto Icecrown 76.5,19.5
 step
 talk Arcanist Taelis##33625
 turnin Up To The Challenge##13672 |goto 76.5,19.4
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Argent Tournament Grounds Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="This guide section will walk you through completing your race's Valiant Rank dailies\nin order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and earn the Crusader title.",
+description="This guide section will walk you through completing your race's Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion Rank with your own race.\nYou must have completed the Argent Tournament Grounds Aspirant Rank Dailies guide section\nin order to have access to the quests in this guide section and earn the Crusader title.",
 keywords={"Crusader"},
 },[[
 daily
 step
 talk Arcanist Taelis##33625
-accept The Aspirant's Challenge##13679 |goto Icecrown,76.5,19.4
-|tip You must turn in the Up To The Challenge quest before you can accept this quest.  The Up To The Challenge quest is turned in at the end of the ARGENT TOURNAMENT GROUNDS DAILIES (ASPIRANT RANK) guide section.
+accept The Aspirant's Challenge##13679 |goto Icecrown 76.5,19.4
+|tip You must turn in the Up To The Challenge quest before you can accept this quest. The Up To The Challenge quest is turned in at the end of the ARGENT TOURNAMENT GROUNDS DAILIES (ASPIRANT RANK) guide section.
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Quel'dorei Steed |invehicle |q 13679 |goto 71.8,20.0
 step
 talk Squire David##33447
-Tell him you are ready to fight!
-|tip Use your Defend ability on your hotbar to max your shield out at 3 charges before telling Squire David this.
-An Argent Valiant runs up on a horse
+Tell him _"I am ready to fight!"_
+|tip Use your Defend ability on your hotbar to max your shield out at 3 charges.
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Valiant
-|tip The best strategy to defeat the Argent Valiant is to always make sure your shield is up by using your Defend ability.  Then, use your Shield-Breaker ability to bring down the Argent Valiant's shield.  When his shield is down, use your Charge ability on him.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Valiant is to always make sure your shield is up by using your Defend ability. Then, use your Shield-Breaker ability to bring down the Argent Valiant's shield. When his shield is down, use your Charge ability on him. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13679/1 |goto 71.4,19.6
 step
 talk Arcanist Taelis##33625
@@ -407,7 +528,7 @@ accept The Valiant's Charge##13716 |goto 76.1,19.2
 only Draenei
 step
 talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13752 |goto 76.1,19.1 |or
 accept A Worthy Weapon##13753 |goto 76.1,19.1 |or
 accept The Edge Of Winter##13754 |goto 76.1,19.1 |or
@@ -423,62 +544,63 @@ accept At The Enemy's Gates##13854 |goto 76.2,19.1
 only Draenei
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13752/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13752/1 |goto Grizzly Hills 61.2,50.3
 only Draenei
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown 69.1,76.2
 only Draenei
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight 93.2,26.1
 only Draenei
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest 54.5,74.9
 only Draenei
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13754/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13754/1 |goto Howling Fjord 42.2,19.7
 only Draenei
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown 48.9,71.4
 only Draenei
 step
-kill 15 Boneguard Footman##33438 |q 13854/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13854/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13854/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13854/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13854/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13854/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 only Draenei
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13854 |goto 49.1,71.4
 only Draenei
 step
-kill 10 Converted Hero##32255 |q 13755/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13755/1 |goto 44.3,54.2
 only Draenei
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Exodar Elekk |invehicle |q 13756 |goto 76.4,20.5
 only Draenei
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13756/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13756/1 |goto 75.3,18.5
 only Draenei
 step
 talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13752 |goto 76.1,19.1
 turnin A Worthy Weapon##13753 |goto 76.1,19.1
 turnin The Edge Of Winter##13754 |goto 76.1,19.1
@@ -494,7 +616,7 @@ turnin At The Enemy's Gates##13854 |goto 76.2,19.1
 only Draenei
 step
 talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13741 |goto 76.6,19.5 |or
 accept A Worthy Weapon##13742 |goto 76.6,19.5 |or
 accept The Edge Of Winter##13743 |goto 76.6,19.5 |or
@@ -510,62 +632,63 @@ accept At The Enemy's Gates##13851 |goto 76.6,19.6
 only Dwarf
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13741/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13741/1 |goto Grizzly Hills 61.2,50.3
 only Dwarf
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13742 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13742 |goto Icecrown 69.1,76.2
 only Dwarf
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight 93.2,26.1
 only Dwarf
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest 54.5,74.9
 only Dwarf
 step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13743/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13743/1 |goto Howling Fjord 42.2,19.7
 only Dwarf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown 48.9,71.4
 only Dwarf
 step
-kill 15 Boneguard Footman##33438 |q 13851/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13851/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13851/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13851/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13851/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13851/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 only Dwarf
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13851 |goto 49.1,71.4
 only Dwarf
 step
-kill 10 Converted Hero##32255 |q 13744/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13744/1 |goto 44.3,54.2
 only Dwarf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Ironforge Ram |invehicle |q 13745 |goto 76.3,20.5
 only Dwarf
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13745/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13745/1 |goto 75.3,18.5
 only Dwarf
 step
 talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13741 |goto 76.6,19.5
 turnin A Worthy Weapon##13742 |goto 76.6,19.5
 turnin The Edge Of Winter##13743 |goto 76.6,19.5
@@ -581,7 +704,7 @@ turnin At The Enemy's Gates##13851 |goto 76.6,19.6
 only Dwarf
 step
 talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13603 |goto 76.6,19.1 |or
 accept A Worthy Weapon##13600 |goto 76.6,19.1 |or
 accept The Edge Of Winter##13616 |goto 76.6,19.1 |or
@@ -597,61 +720,63 @@ accept At The Enemy's Gates##13847 |goto 76.6,19.2
 only Human
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13603/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13603/1 |goto Grizzly Hills 61.2,50.3
 only Human
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown 69.1,76.2
 only Human
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight 93.2,26.1
 only Human
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest 54.5,74.9
 only Human
 step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13616/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13616/1 |goto Howling Fjord 42.2,19.7
 only Human
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown 48.9,71.4
 only Human
 step
-kill 15 Boneguard Footman##33438 |q 13847/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13847/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13847/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13847/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13847/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13847/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 only Human
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13847 |goto 49.1,71.4
 only Human
 step
-kill 10 Converted Hero##32255 |q 13592/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13592/1 |goto 44.3,54.2
 only Human
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Stormwind Steed |invehicle |q 13665 |goto 76.1,20.5
 only Human
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13665/1 |goto 75.3,18.5
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13665/1 |goto 75.3,18.5
 only Human
 step
 talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13603 |goto 76.6,19.1
 turnin A Worthy Weapon##13600 |goto 76.6,19.1
 turnin The Edge Of Winter##13616 |goto 76.6,19.1
@@ -667,7 +792,7 @@ turnin At The Enemy's Gates##13847 |goto 76.6,19.2
 only Human
 step
 talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13757 |goto 76.3,19.0 |or
 accept A Worthy Weapon##13758 |goto 76.3,19.0 |or
 accept The Edge Of Winter##13759 |goto 76.3,19.0 |or
@@ -683,62 +808,63 @@ accept At The Enemy's Gates##13855 |goto 76.4,19.0
 only NightElf
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13757/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13757/1 |goto Grizzly Hills 61.2,50.3
 only NightElf
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown 69.1,76.2
 only NightElf
 step
-Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
+Use Winter Hyacinths |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight 93.2,26.1
 only NightElf
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest 54.5,74.9
 only NightElf
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13759/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13759/1 |goto Howling Fjord 42.2,19.7
 only NightElf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown 48.9,71.4
 only NightElf
 step
-kill 15 Boneguard Footman##33438 |q 13855/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13855/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13855/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13855/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13855/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13855/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 only NightElf
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13855 |goto 49.1,71.4
 only NightElf
 step
-kill 10 Converted Hero##32255 |q 13760/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13760/1 |goto 44.3,54.2
 only NightElf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13761 |goto 76.0,20.4
 only NightElf
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13761/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13761/1 |goto 75.3,18.5
 only NightElf
 step
 talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13757 |goto 76.3,19.0
 turnin A Worthy Weapon##13758 |goto 76.3,19.0
 turnin The Edge Of Winter##13759 |goto 76.3,19.0
@@ -754,7 +880,7 @@ turnin At The Enemy's Gates##13855 |goto 76.4,19.0
 only NightElf
 step
 talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13746 |goto 76.5,19.8 |or
 accept A Worthy Weapon##13747 |goto 76.5,19.8 |or
 accept The Edge Of Winter##13748 |goto 76.5,19.8 |or
@@ -769,63 +895,64 @@ accept The Grand Melee##13750 |goto 76.5,19.9
 accept At The Enemy's Gates##13852 |goto 76.5,19.9
 only Gnome
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13746/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13746/1 |goto Grizzly Hills 61.2,50.3
 only Gnome
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown 69.1,76.2
 only Gnome
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight 93.2,26.1
 only Gnome
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest 54.5,74.9
 only Gnome
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13748/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13748/1 |goto Howling Fjord 42.2,19.7
 only Gnome
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown 48.9,71.4
 only Gnome
 step
-kill 15 Boneguard Footman##33438 |q 13852/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13852/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13852/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13852/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13852/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13852/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 only Gnome
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13852 |goto 49.1,71.4
 only Gnome
 step
-kill 10 Converted Hero##32255 |q 13749/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13749/1 |goto 44.3,54.2
 only Gnome
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13750 |goto 76.2,20.5
 only Gnome
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13750/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13750/1 |goto 75.3,18.5
 only Gnome
 step
 talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13746 |goto 76.5,19.8
 turnin A Worthy Weapon##13747 |goto 76.5,19.8
 turnin The Edge Of Winter##13748 |goto 76.5,19.8
@@ -842,15 +969,15 @@ only Gnome
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13718/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Human
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Human
 collect 25 Valiant's Seal |q 13714/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Dwarf
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Dwarf
 collect 25 Valiant's Seal |q 13717/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only NightElf
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only NightElf
 collect 25 Valiant's Seal |q 13715/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Gnome
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Gnome
 collect 25 Valiant's Seal |q 13716/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Draenei
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals. |only Draenei
 step
 talk Marshal Jacob Alerius##33225
 turnin The Valiant's Charge##13718 |goto 76.6,19.2
@@ -877,31 +1004,31 @@ turnin The Valiant's Charge##13716 |goto 76.1,19.2
 accept The Valiant's Challenge##13724 |goto 76.1,19.2
 only Draenei
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Stormwind Steed |invehicle |q 13699 |goto 71.6,22.4
 only Human
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13725 |goto 71.6,22.5
 only NightElf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Ironforge Ram |invehicle |q 13713 |goto 71.8,22.5
 only Dwarf
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13723 |goto 71.9,22.5
 only Gnome
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Exodar Elekk |invehicle |q 13724 |goto 71.7,22.4
 only Draenei
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13699/1 |goto 68.6,21.0 |only Human
 Defeat the Argent Valiant |q 13725/1 |goto 68.6,21.0 |only NightElf
 Defeat the Argent Valiant |q 13713/1 |goto 68.6,21.0 |only Dwarf
@@ -958,17 +1085,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Draenei.
 confirm always
 step
 talk Colosos##33593
-accept Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
-turnin Valiant Of The Exodar##13705 |goto Icecrown,76.1,19.1
-accept The Valiant's Charge##13716 |goto Icecrown,76.1,19.1
+accept Valiant Of The Exodar##13705 |goto Icecrown 76.1,19.1
+turnin Valiant Of The Exodar##13705 |goto Icecrown 76.1,19.1
+accept The Valiant's Charge##13716 |goto Icecrown 76.1,19.1
 step
 talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13752 |goto 76.1,19.1 |or
 accept A Worthy Weapon##13753 |goto 76.1,19.1 |or
 accept The Edge Of Winter##13754 |goto 76.1,19.1 |or
@@ -981,50 +1108,51 @@ accept The Grand Melee##13756 |goto 76.2,19.1
 accept At The Enemy's Gates##13854 |goto 76.2,19.1
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13752/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13752/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13753 |goto Icecrown 69.1,76.2
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13753/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13754 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13754/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13754/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13854 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438 |q 13854/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13854/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13854/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13854/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13854/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13854/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13854 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13755/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13755/1 |goto 44.3,54.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Exodar Elekk |invehicle |q 13756 |goto 76.4,20.5
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13756/1 |goto 75.3,18.5
+Tell them _"I am ready to fight!"_
+Fight and defeat them |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13756/1 |goto 75.3,18.5
 step
 talk Colosos##33593
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13752 |goto 76.1,19.1
 turnin A Worthy Weapon##13753 |goto 76.1,19.1
 turnin The Edge Of Winter##13754 |goto 76.1,19.1
@@ -1038,20 +1166,20 @@ turnin At The Enemy's Gates##13854 |goto 76.2,19.1
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13716/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Colosos##33593
 turnin The Valiant's Charge##13716 |goto 76.1,19.2
 accept The Valiant's Challenge##13724 |goto 76.1,19.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Exodar Elekk |invehicle |q 13724 |goto 71.7,22.4
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight. When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13724/1 |goto 68.6,21.0
 step
 talk Colosos##33593
@@ -1068,7 +1196,7 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Dwarf.
 confirm always
 step
@@ -1078,10 +1206,10 @@ turnin Valiant Of Ironforge##13703 |goto Icecrown,76.3,19.0
 accept The Valiant's Charge##13714 |goto Icecrown,76.3,19.0
 step
 talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5 |or
-accept A Worthy Weapon##13742 |goto Icecrown,76.6,19.5 |or
-accept The Edge Of Winter##13743 |goto Icecrown,76.6,19.5 |or
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13741 |goto Icecrown 76.6,19.5 |or
+accept A Worthy Weapon##13742 |goto Icecrown 76.6,19.5 |or
+accept The Edge Of Winter##13743 |goto Icecrown 76.6,19.5 |or
 step
 talk Rollo Sureshot##33315
 accept A Valiant's Field Training##13744 |goto 76.7,19.4
@@ -1090,34 +1218,35 @@ talk Clara Tumblebrew##33309
 accept The Grand Melee##13745 |goto 76.6,19.6
 accept At The Enemy's Gates##13851 |goto 76.6,19.6
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Ironforge Ram |invehicle |q 13745 |goto 76.3,20.5
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
-Fight and defeat them  |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
+Tell them _"I am ready to fight!"_
+Fight and defeat them
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
 collect 3 Mark of the Valiant |q 13745/1 |goto 75.3,18.5
 step
-kill 10 Converted Hero##32255 |q 13744/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13744/1 |goto 44.3,54.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13851 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438 |q 13851/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13851/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13851/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13851/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13851/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13851/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13851 |goto 49.1,71.4
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13741/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13741/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
 collect 4 Winter Hyacinth##45000 |q 13742 |goto Icecrown,69.1,76.2
@@ -1125,19 +1254,20 @@ step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13742/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13743 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13743/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13743/1 |goto Howling Fjord 42.2,19.7
 step
 talk Lana Stouthammer##33312
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-turnin A Blade Fit For A Champion##13741 |goto Icecrown,76.6,19.5
-turnin A Worthy Weapon##13742 |goto Icecrown,76.6,19.5
-turnin The Edge Of Winter##13743 |goto Icecrown,76.6,19.5
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+turnin A Blade Fit For A Champion##13741 |goto Icecrown 76.6,19.5
+turnin A Worthy Weapon##13742 |goto Icecrown 76.6,19.5
+turnin The Edge Of Winter##13743 |goto Icecrown 76.6,19.5
 step
 talk Rollo Sureshot##33315
 turnin A Valiant's Field Training##13744 |goto 76.7,19.4
@@ -1148,28 +1278,29 @@ turnin At The Enemy's Gates##13851 |goto 76.6,19.6
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13717/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Jaelyne Evensong##33592
 turnin The Valiant's Charge##13714 |goto 76.3,19.1
 accept The Valiant's Challenge##13713 |goto 76.3,19.1
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Ironforge Ram |invehicle |q 13713 |goto 76.3,20.5
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.
-When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.
-|tip Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.
+When the fight begins, immediately use your Charge ability on the Argent Champion. Stay in very close range and spam your Thrust ability. Remember to keep your shield maxed at 3 charges, also.
+|tip Eventually, the Argent Champion will try to run away to get into Charge range. When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13713/1 |goto 68.6,21.0
 step
 talk Jaelyne Evensong##33592
 turnin The Valiant's Challenge##13713 |goto 76.3,19.1
 step
-Congratulations, you are now a Champion of Ironforge! |tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
+Congratulations, you are now a Champion of Ironforge!
+|tip This is the end of the Dwarf Champion Rank Guide for the Crusader Title.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\Crusader\\Gnome Champion Rank",{
 author="support@zygorguides.com",
@@ -1179,17 +1310,17 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Gnome.
 confirm always
 step
 talk Ambrose Boltspark##33335
-accept Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
-turnin Valiant Of Gnomeregan##13704 |goto Icecrown,76.5,19.8
-accept The Valiant's Charge##13715 |goto Icecrown,76.5,19.8
+accept Valiant Of Gnomeregan##13704 |goto Icecrown 76.5,19.8
+turnin Valiant Of Gnomeregan##13704 |goto Icecrown 76.5,19.8
+accept The Valiant's Charge##13715 |goto Icecrown 76.5,19.8
 step
 talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 accept A Blade Fit For A Champion##13746 |goto 76.5,19.8 |or
 accept A Worthy Weapon##13747 |goto 76.5,19.8 |or
 accept The Edge Of Winter##13748 |goto 76.5,19.8 |or
@@ -1202,51 +1333,52 @@ accept The Grand Melee##13750 |goto 76.5,19.9
 accept At The Enemy's Gates##13852 |goto 76.5,19.9
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13746/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13746/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13747 |goto Icecrown 69.1,76.2
 step
 Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13747/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13748 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13748/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13748/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13852 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438 |q 13852/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13852/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13852/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13852/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13852/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13852/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13852 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13749/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13749/1 |goto 44.3,54.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13750 |goto 76.2,20.5
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
 |tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13750/1 |goto 75.3,18.5
+collect 3 Mark of the Valiant##45127 |q 13750/1 |goto 75.3,18.5
 step
 talk Ambrose Boltspark##33335
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13746 |goto 76.5,19.8
 turnin A Worthy Weapon##13747 |goto 76.5,19.8
 turnin The Edge Of Winter##13748 |goto 76.5,19.8
@@ -1260,20 +1392,20 @@ turnin At The Enemy's Gates##13852 |goto 76.5,19.9
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13715/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Ambrose Boltspark##33335
 turnin The Valiant's Charge##13715 |goto 76.5,19.8
 accept The Valiant's Challenge##13723 |goto 76.5,19.8
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Gnomeregan Mechanostrider |invehicle |q 13723 |goto 71.9,22.5
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13723/1 |goto 68.6,21.0
 step
 talk Ambrose Boltspark##33335
@@ -1290,20 +1422,20 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Human.
 confirm always
 step
 talk Marshal Jacob Alerius##33225
-accept Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
-turnin Valiant Of Stormwind##13593 |goto Icecrown,76.6,19.1
-accept The Valiant's Charge##13718 |goto Icecrown,76.6,19.1
+accept Valiant Of Stormwind##13593 |goto Icecrown 76.6,19.1
+turnin Valiant Of Stormwind##13593 |goto Icecrown 76.6,19.1
+accept The Valiant's Charge##13718 |goto Icecrown 76.6,19.1
 step
 talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13603 |goto Icecrown,76.6,19.1 |or
-accept A Worthy Weapon##13600 |goto Icecrown,76.6,19.1 |or
-accept The Edge Of Winter##13616 |goto Icecrown,76.6,19.1 |or
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13603 |goto Icecrown 76.6,19.1 |or
+accept A Worthy Weapon##13600 |goto Icecrown 76.6,19.1 |or
+accept The Edge Of Winter##13616 |goto Icecrown 76.6,19.1 |or
 step
 talk Sir Marcus Barlowe##33222
 accept A Valiant's Field Training##13592 |goto 76.5,19.1
@@ -1313,51 +1445,52 @@ accept The Grand Melee##13665 |goto 76.6,19.2
 accept At The Enemy's Gates##13847 |goto 76.6,19.2
 step
 Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13603/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13603/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13600 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13600/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13616 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath|use Everburning Ember##45005
-collect Winter's Edge |q 13616/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13616/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13847 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438 |q 13847/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13847/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13847/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13847/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13847/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13847/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13847 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13592/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13592/1 |goto 44.3,54.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Stormwind Steed |invehicle |q 13665 |goto 76.1,20.5
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13665/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13665/1 |goto 75.3,18.5
 step
 talk Marshal Jacob Alerius##33225
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13603 |goto 76.6,19.1
 turnin A Worthy Weapon##13600 |goto 76.6,19.1
 turnin The Edge Of Winter##13616 |goto 76.6,19.1
@@ -1371,20 +1504,20 @@ turnin At The Enemy's Gates##13847 |goto 76.6,19.2
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13718/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Marshal Jacob Alerius##33225
 turnin The Valiant's Charge##13718 |goto 76.6,19.2
 accept The Valiant's Challenge##13699 |goto 76.6,19.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Stormwind Steed |invehicle |q 13699 |goto 76.1,20.5
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13699/1 |goto 68.6,21.0
 step
 talk Marshal Jacob Alerius##33225
@@ -1401,20 +1534,20 @@ keywords={"Crusader"},
 daily
 step
 In order to be able to do this guide section, you must have already completed the Argent Tournament Grounds Valiant Rank Dailies guide section, and earned Champion rank with the Argent Tournament Grounds for your race.
-After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction.  Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
+After you have earned the Champion rank with your race, you will have access to become a Champion with the other races of your faction. Earning Champion rank with all the races of your faction, as well as becoming Exalted with Darnassus, Exodar, Gnomeregan Exiles, Ironforge, and Stormwind factions will earn you the Crusader title, and unlock more daily quests.
 You cannot complete this section if you are a Night Elf.
 confirm always
 step
 talk Jaelyne Evensong##33592
-accept Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
-turnin Valiant Of Darnassus##13706 |goto Icecrown,76.3,19.0
-accept The Valiant's Charge##13717 |goto Icecrown,76.3,19.0
+accept Valiant Of Darnassus##13706 |goto Icecrown 76.3,19.0
+turnin Valiant Of Darnassus##13706 |goto Icecrown 76.3,19.0
+accept The Valiant's Charge##13717 |goto Icecrown 76.3,19.0
 step
 talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
-accept A Blade Fit For A Champion##13757 |goto Icecrown,76.3,19.0 |or
-accept A Worthy Weapon##13758 |goto Icecrown,76.3,19.0 |or
-accept The Edge Of Winter##13759 |goto Icecrown,76.3,19.0 |or
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+accept A Blade Fit For A Champion##13757 |goto Icecrown 76.3,19.0 |or
+accept A Worthy Weapon##13758 |goto Icecrown 76.3,19.0 |or
+accept The Edge Of Winter##13759 |goto Icecrown 76.3,19.0 |or
 step
 talk Illestria Bladesinger##33652
 accept A Valiant's Field Training##13760 |goto 76.3,19.0
@@ -1423,52 +1556,53 @@ talk Airae Starseeker##33654
 accept The Grand Melee##13761 |goto 76.4,19.0
 accept At The Enemy's Gates##13855 |goto 76.4,19.0
 step
-Use the Warts-B-Gone Lip Balm|use Warts-B-Gone Lip Balm##44986
-Target Lake Frogs
+Use the Warts-B-Gone Lip Balm |use Warts-B-Gone Lip Balm##44986
+click Lake Frog##33211+
 Use the emote /kiss on the Lake Frogs
 Repeat this process until one of the Lake Frogs turns into the Maiden of Ashwood Lake
 talk Maiden of Ashwood Lake##33220
-collect Ashwood Brand |q 13757/1 |goto Grizzly Hills,61.2,50.3
+collect Ashwood Brand |q 13757/1 |goto Grizzly Hills 61.2,50.3
 step
 click Winter Hyacinth##3231
-collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown,69.1,76.2
+collect 4 Winter Hyacinth##45000 |q 13758 |goto Icecrown 69.1,76.2
 step
-Use Winter Hyacinths in the water here|use Winter Hyacinth##45000
+Use Winter Hyacinths in the water here |use Winter Hyacinth##45000
 Listen to the Maiden of Drak'Mar
 click Blade of Drak'Mar##8564
-collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight,93.2,26.1
+collect Blade of Drak'Mar |q 13758/1 |goto Dragonblight 93.2,26.1
 step
 kill Lord Everblaze##33289
-collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest,54.5,74.9
+collect 1 Everburning Ember##45005 |q 13759 |goto Crystalsong Forest 54.5,74.9
 step
-Use the Everburning Ember on Maiden of Winter's Breath |use Everburning Ember##45005
-collect Winter's Edge |q 13759/1 |goto Howling Fjord,42.2,19.7
+clicknpc Maiden of Winter's Breath##33303
+Use the Everburning Ember |use Everburning Ember##45005
+collect Winter's Edge |q 13759/1 |goto Howling Fjord 42.2,19.7
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
-Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown,48.9,71.4
+Equip the Alliance Lance |use Alliance Lance##46069
+Click to mount the Stabled Campaign Warhorse |invehicle |q 13855 |goto Icecrown 48.9,71.4
 step
-kill 15 Boneguard Footman##33438 |q 13855/1 |goto 50.1,74.8
-|tip They are skeletons that walk around this area.  You can simply run over these with your horse, you don't need to target or attack them at all.
-kill 10 Boneguard Scout##33550 |q 13855/2 |goto 50.1,74.8
-|tip They are gargoyles that fly around this area.  Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
-kill 3 Boneguard Lieutenant##33429 |q 13855/3 |goto 50.1,74.8
-|tip They ride horses around this area.  Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them.  Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
+kill 15 Boneguard Footman##33438+ |q 13855/1 |goto 50.1,74.8
+|tip They are skeletons that walk around this area. You can simply run over these with your horse, you don't need to target or attack them at all.
+kill 10 Boneguard Scout##33550+ |q 13855/2 |goto 50.1,74.8
+|tip They are gargoyles that fly around this area. Use your Shield-Breaker ability on them, while also using your Defend ability to keep your shield maxed at 3 charges.
+kill 3 Boneguard Lieutenant##33429+ |q 13855/3 |goto 50.1,74.8
+|tip They ride horses around this area. Use your Shield-Breaker ability on then to bring down their shields, then use your Charge ability on them. Also, keep your shield maxed at 3 by using your Defend ability.  If they get too close, you can also use your Thrust ability to do a good amount of damage, but just remember to keep your shield maxed at 3 charges.
 step
 Click the red arrow on your vehicle hot bar to stop riding the horse |outvehicle |q 13855 |goto 49.1,71.4
 step
-kill 10 Converted Hero##32255 |q 13760/1 |goto 44.3,54.2
+kill 10 Converted Hero##32255+ |q 13760/1 |goto 44.3,54.2
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13761 |goto 76.0,20.4
 step
 Talk to the riders on mounts of other Alliance races
-Tell them you are ready to fight!
+Tell them _"I am ready to fight!"_
 Fight and defeat them
-|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range.  Just remember to keep your shield maxed at 3 charges.
-collect 3 Mark of the Valiant |q 13761/1 |goto 75.3,18.5
+|tip Use your Defend ability to keep your shield maxed at 3 charges, then use your Shield-Breaker to lower the Valiants' shields, then use your Charge ability on them.  If they get close, use your Thrust ability, then use your Charge ability when they run away to get into Charge range. Just remember to keep your shield maxed at 3 charges.
+collect 3 Mark of the Valiant##45127 |q 13761/1 |goto 75.3,18.5
 step
 talk Jaelyne Evensong##33592
-You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
+|tip You will only be able to accept, and turn in, 1 of these 3 daily quests per day:
 turnin A Blade Fit For A Champion##13757 |goto 76.3,19.0
 turnin A Worthy Weapon##13758 |goto 76.3,19.0
 turnin The Edge Of Winter##13759 |goto 76.3,19.0
@@ -1482,26 +1616,27 @@ turnin At The Enemy's Gates##13855 |goto 76.4,19.0
 step
 Make sure you have 25 Valiant Seals:
 collect 25 Valiant's Seal |q 13717/1
-|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section.  It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
+|tip If you do not have 25 Valiant's Seals, keep repeating the daily quests in this guide section. It takes 5 days of doing these Valiant Rank dailies to get 25 Valiant's Seals.
 step
 talk Jaelyne Evensong##33592
 turnin The Valiant's Charge##13717 |goto 76.3,19.1
 accept The Valiant's Challenge##13725 |goto 76.3,19.1
 step
-Equip the Alliance Lance in your bags |use Alliance Lance##46069
+Equip the Alliance Lance |use Alliance Lance##46069
 Click to mount the Stabled Darnassian Nightsaber |invehicle |q 13725 |goto 76.0,20.4
 step
 talk Squire Danny##33518
-Tell him you are ready to fight!
-An Argent Champion runs up on a horse
+Tell him _"I am ready to fight!"_
+kill Argent Valiant##33448
 Use the abilities on your hotbar to defeat the Argent Champion
-|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability.  Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again.  Keep repeating this process until he is defeated.
+|tip The best strategy to defeat the Argent Champion is to always make sure your shield is up by using your Defend ability. Make sure your shield is stacked to 3 charges before you begin the fight.  When the fight begins, immediately use your Charge ability on the Argent Champion.  Stay in very close range and spam your Thrust ability.  Remember to keep your shield maxed at 3 charges, also.  Eventually, the Argent Champion will try to run away to get into Charge range.  When he starts to run away, start spamming your Charge ability until you charge him in the back, then get back into melee range and start spamming your Thrust ability again. Keep repeating this process until he is defeated.
 Defeat the Argent Valiant |q 13725/1 |goto 68.6,21.0
 step
 talk Jaelyne Evensong##33592
 turnin The Valiant's Challenge##13725 |goto 76.3,19.1
 step
-Congratulations, you are now a Champion of Darnassus! |tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
+Congratulations, you are now a Champion of Darnassus!
+|tip This is the end of the Night Elf Champion Rank Guide for the Crusader Title.
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Titles\\Wrath of the Lich King Titles\\Reputations\\The Diplomat\\Kurenai Faction",{
 author="support@zygorguides.com",

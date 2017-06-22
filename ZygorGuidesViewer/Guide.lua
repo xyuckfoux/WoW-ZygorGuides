@@ -149,6 +149,7 @@ function Guide:GetCompletion(mode)
 		or (self.type=="LOREMASTER" and "quests")
 		or (self.type=="LEVELING" and "quests")
 		or (self.type=="ACHIEVEMENTS" and self.achieved and "achievement")
+		or (type(self.condition_end)=="function" and "function_end")
 		or "steps"
 	local mode = mode or self.completionmode
 
@@ -212,6 +213,10 @@ function Guide:GetCompletion(mode)
 			self.completionfunc = func
 		end
 		local ret = self.completionfunc()
+		if type(ret)=="boolean" then ret=ret and 1 or 0 end
+		return ret,0,1
+	elseif mode=="function_end" then
+		local ret = self.condition_end()
 		if type(ret)=="boolean" then ret=ret and 1 or 0 end
 		return ret,0,1
 	elseif mode=="achievement" then

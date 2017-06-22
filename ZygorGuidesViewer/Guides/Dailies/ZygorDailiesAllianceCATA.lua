@@ -7318,6 +7318,28 @@ description="This guide section will walk you through completing the Extinguishi
 step
 #include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
 ]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Draenor",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(11276)",
+keywords={"Extinguishing","Draenor"},
+description="This guide section will walk you through completing the Extinguishing Draenor achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Draenor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Broken Isles",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(11278)",
+keywords={"Extinguishing","Broken","Isles"},
+description="This guide section will walk you through completing the Extinguishing Broken Isles achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Broken Isles"
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Eastern Kingdoms",{
 author="support@zygorguides.com",
 condition_suggested="isevent('Midsummer Fire Festival')",
@@ -7381,7 +7403,30 @@ condition_end="achieved(8045)",
 keywords={"Flame","Warden","of","Pandaria"},
 description="This guide section will walk you through completing the Flame Warden of Pandaria achievement for the Midsummer Fire Festival event.",
 },[[
+step
 #include "Midsummer Fire Festival Achievements_Extinguishing Pandaria"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Draenor",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(11283)",
+keywords={"Flame","Warden","of","Draenor"},
+description="This guide section will walk you through completing the Flame Warden of Draenor achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Draenor"
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Broken Isles",{
+author="support@zygorguides.com",
+condition_suggested="isevent('Midsummer Fire Festival')",
+startlevel=80,
+condition_end="achieved(11280)",
+keywords={"Flame","Warden","of","Broken","Isles"},
+description="This guide section will walk you through completing the Flame Warden of Broken Isles achievement for the Midsummer Fire Festival event.",
+},[[
+step
+#include "Midsummer Fire Festival Achievements_Extinguishing Broken Isles"
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Events Guides\\Harvest Festival\\Harvest Festival Quest",{
 author="support@zygorguides.com",

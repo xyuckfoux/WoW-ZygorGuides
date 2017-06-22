@@ -5,8 +5,10 @@ if ZGV:DoMutex("PetsAMOP") then return end
 ZGV.CommonPets=true
 ZygorGuidesViewer.GuideMenuTier = "MOP"
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Dancing Water Skimmer",{
-pet=751,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Dancing Water Skimmer",
+model={40584},
+pet=751,
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -14,8 +16,10 @@ Challenge one to a pet battle and capture it
 learnpet Dancing Water Skimmer##63847 |goto Vale of Eternal Blossoms 33.4,64.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Fishy",{
-pet=847,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Fishy",
+model={42721},
+pet=847,
 },[[
 step
 |tip This pet is obtained through completing part of the Jade Forest main questline.
@@ -60,8 +64,10 @@ step
 learnpet Fishy##62829 |use Fishy##84105
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Swamp Croaker",{
-pet=1182,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Swamp Croaker",
+model={47989},
+pet=1182,
 },[[
 step
 Challenge one to a pet battle and capture it.
@@ -69,8 +75,10 @@ Challenge one to a pet battle and capture it.
 learnpet Swamp Croaker##69819 |goto Isle of Thunder 55.3,70.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Aquatic Pets\\Tiny Goldfish",{
-pet=652,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Aquatic pet: Tiny Goldfish",
+model={47955},
+pet=652,
 },[[
 step
 Click here to be taken to the guide that will raise your reputation with _The Anglers_. |confirm |next "reputation"
@@ -248,8 +256,10 @@ step
 learnpet Tiny Goldfish##63559 |use Tiny Goldfish##85447
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Elder Python",{
-pet=1181,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Elder Python",
+model={47887},
+pet=1181,
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -258,8 +268,10 @@ You can also find them around [Isle of Thunder 53.5,56.5]
 learnpet Elder Python##69818 |goto Isle of Thunder 51.8,63.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Beast Pets\\Sumprush Rodent",{
-pet=1128,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Beast pet: Sumprush Rodent",
+model={40714},
+pet=1128,
 },[[
 step
 You need 2000 of them in order to purchase the item that contains this pet.
@@ -280,8 +292,10 @@ Use your Rodent Crate to capture the _Sumprush Rodent_. |use Rodent Crate##92532
 learnpet Sumprush Rodent##68506 |goto Krasarang Wilds 89.5,33.5
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pandaren Air Spirit",{
-pet=1125,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Pandaren Air Spirit",
+model={46810},
+pet=1125,
 },[[
 step
 This pet is only obtainable after defeating all of the pet battle master trainers.
@@ -336,8 +350,10 @@ step
 learnpet Pandaren Air Spirit##68467 |use Pandaren Air Spirit##92799
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pandaren Earth Spirit",{
-pet=1126,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Pandaren Earth Spirit",
+model={46811},
+pet=1126,
 },[[
 step
 This pet is only obtainable after defeating all of the pet battle master trainers.
@@ -392,8 +408,10 @@ step
 learnpet Pandaren Earth Spirit##68468 |use Pandaren Earth Spirit##92800
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pandaren Fire Spirit",{
-pet=1124,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Pandaren Fire Spirit",
+model={46809},
+pet=1124,
 },[[
 step
 This pet is only obtainable after defeating all of the pet battle master trainers.
@@ -448,8 +466,10 @@ step
 learnpet Pandaren Fire Spirit##68466 |use Pandaren Fire Spirit##92798
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Pandaren Water Spirit",{
-pet=868,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Pandaren Water Spirit",
+model={45942},
+pet=868,
 },[[
 step
 This pet is only obtainable after defeating all of the pet battle master trainers.
@@ -504,8 +524,10 @@ step
 learnpet Pandaren Water Spirit##66950 |use Pandaren Water Spirit##90173
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Sapphire Cub",{
-pet=846,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Sapphire Cub",
+model={42297},
+pet=846,
 },[[
 step
 Click here to gather and create the pet yourself |confirm |next "create"
@@ -537,8 +559,10 @@ label "done"
 learnpet Sapphire Cub##61883 |use Sapphire Cub##82775
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Elemental Pets\\Thundertail Flapper",{
-pet=1175,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Elemental pet: Thundertail Flapper",
+model={47633},
+pet=1175,
 },[[
 step
 Challenge one to a pet battle and capture it
@@ -546,8 +570,10 @@ Challenge one to a pet battle and capture it
 learnpet Thundertail Flapper##69648 |goto Isle of Thunder 45.3,64.7
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Chi-ji Kite",{
-pet=849,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Chi-ji Kite",
+model={44791},
+pet=849,
 },[[
 step
 |tip This pet requires you to either have level 600 Inscription, or purchase it from the Auction House.
@@ -588,8 +614,10 @@ label "done"
 learnpet Chi-ji Kite##66104 |use Chi-ji Kite##89368
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Jade Crane Chick", {
-pet=792,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Jade Crane Chick",
+model={43868},
+pet=792,
 },[[
 step
 |tip You must be a Pandaren in order to obtain this pet.
@@ -601,8 +629,10 @@ step
 learnpet Jade Crane Chick##65314 |use Jade Crane Chick##88148
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Flying Pets\\Yu'lon Kite",{
-pet=850,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Flying pet: Yu'lon Kite",
+model={44792},
+pet=850,
 },[[
 step
 Click here to gather and create the pet yourself |confirm |next "create"
@@ -643,8 +673,10 @@ label "done"
 learnpet Yu'lon Kite##66105 |use Yu'lon Kite##89367
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Mountain Panda",{
-pet=1198,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Mountain Panda",
+model={47748},
+pet=1198,
 },[[
 step
 Click here to be routed to  the _Battle Pet Questline_. |confirm
@@ -669,8 +701,10 @@ step
 Congratulations, you have attainted the _Mountain Panda_ pet!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Red Panda",{
-pet=1176,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Red Panda",
+model={47634},
+pet=1176,
 },[[
 step
 Click here to proceed to the Battle Pet Questline. |confirm
@@ -687,8 +721,10 @@ step
 Congratulations, you have obtained the _Red Panda_ pet!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Snowy Panda",{
-pet=1197,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Snowy Panda",
+model={47749},
+pet=1197,
 },[[
 step
 Click here to be routed to  the _Battle Pet Questline_. |confirm
@@ -713,8 +749,10 @@ step
 Congratulations, you have attainted the _Snowy Panda_ pet!
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Humanoid Pets\\Sunfur Panda",{
-pet=1196,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Humanoid pet: Sunfur Panda",
+model={47747},
+pet=1196,
 },[[
 step
 Click here to be routed to  the _Battle Pet Questline_. |confirm
@@ -738,9 +776,11 @@ learnpet Sunfur Panda##69891 |use Sunfur Panda##94208
 step
 Congratulations, you have attainted the _Sunfur Panda_ pet!
 ]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Jade Owl", {
-pet=845,
+ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Magic Pets\\Jade Owl",{
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Magic pet: Jade Owl",
+model={15905},
+pet=845,
 },[[
 step
 Click here to gather and create the pet yourself |confirm |next "create"
@@ -776,8 +816,10 @@ label "done"
 learnpet Jade Owl##61877 |use Jade Owl##82774
 ]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Pets & Mounts Guide\\Battle Pets\\Mechanical Pets\\Clock'em",{
-pet=1142,
+author="support@zygorguides.com",
 description="This guide will walk you through obtaining the Mechanical pet: Clock'em",
+model={46882},
+pet=1142,
 },[[
 step
 This pet will require you to reach Rank 4 in the Brawler's Guild.

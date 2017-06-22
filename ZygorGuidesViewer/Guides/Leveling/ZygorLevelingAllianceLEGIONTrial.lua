@@ -1678,3 +1678,5 @@ turnin In the Blink of an Eye##44184 |goto Dalaran L/10 57.57,45.75 |only if hav
 ]])
 ZGV.BETASTART()
 ZGV.BETAEND()
+ZGV.BETASTART()
+ZGV.BETAEND()

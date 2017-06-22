@@ -3,6 +3,32 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("AchievementsH") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
+ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\Pet Battles\\General\\Taming Azeroth",{
+author="support@zygorguides.com",
+description="This guide will walk you through earning the 'Taming Azeroth' achievement.",
+condition_end="achieved(6607)",
+achieveid={6607},
+condition_suggested="level>=1 and level<=90",
+},[[
+step
+Earn the _Taming Kalimdor_ achievement |achieve 6607/5
+Click here to load the "Battle Pet Tamers: Kalimdor" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Kalimdor" |only if not achieved(6607,5)
+|tip
+Earn the _Taming Outland_ achievement |achieve 6607/1
+Click here to load the "Battle Pet Tamers: Outland" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Outland" |only if not achieved(6607,1)
+|tip
+Earn the _Taming Northrend_ achievement |achieve 6607/2
+Click here to load the "Battle Pet Tamers: Northrend" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Northrend" |only if not achieved(6607,2)
+|tip
+Earn the _Taming Cataclysm_ achievement |achieve 6607/3
+Click here to load the "Battle Pet Tamers: Cataclysm" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Cataclysm" |only if not achieved(6607,3)
+|tip
+Earn the _Taming Pandaria_ achievement |achieve 6607/4
+Click here to load the "Battle Pet Tamers: Pandaria" guide |confirm |next "Zygor's Pets & Mounts Guide\\Battle Pet Quests\\Battle Pet Tamers: Pandaria" |only if not achieved(6607,4)
+step
+Congratulations!
+You have earned the _Taming Azeroth_ achievement!
+]])
 ZygorGuidesViewer:RegisterGuide("Zygor's Achievements Guides\\General Achievements\\Breaking The Sound Barrier",{
 condition_end="achieved(5180)",
 description="Learn the master riding skill.",
@@ -545,7 +571,7 @@ step
 talk Kylene##19186
 buy 1 Jug of Badlands Bourbon##2595 |goto Shattrath City 74.8,30.8
 buy 2 Skin of Dwarven Stout##2596 |goto Shattrath City 74.8,30.8
-only if not achieved(5754/5)
+only if not achieved(5754,5)
 step
 Make a Cooking Fire |cast Cooking Fire##818
 create 1 Darkbrew Lager##88015,Cooking,1 total |n
@@ -553,9 +579,9 @@ Drink the Darkbrew Lager |use Darkbrew Lager##62790 |achieve 5754/5 |goto Shattr
 step
 talk Innkeeper Gryshka##6929
 buy 3 Refreshing Spring Water##159 |goto Orgrimmar 53.6,78.8
-buy 1 Sparkling Oasis Water##58256 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754/7)
-buy 1 Fresh Water##58274 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754/8)
-buy 1 Highland Spring Water##58257 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754/9)
+buy 1 Sparkling Oasis Water##58256 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754,7)
+buy 1 Fresh Water##58274 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754,8)
+buy 1 Highland Spring Water##58257 |goto Orgrimmar 53.6,78.8 |only if not achieved(5754,9)
 step
 Drink the Sparkling Oasis Water |use Sparkling Oasis Water##58256 |achieve 5754/7
 Drink the Fresh Water |use Fresh Water##58274 |achieve 5754/8
@@ -569,8 +595,8 @@ buy 1 Greasy Whale Milk##59029 |n
 Drink the Greasy Whale Milk |use Greasy Whale Milk##59029 |achieve 5754/6 |goto Shimmering Expanse 49.1,42.0
 step
 talk Gronk Hamcheeks##57262
-buy 1 Fungus Squeezings##59230 |goto Twilight Highlands 50.6,58.4 |only if not achieved(5754/1)
-buy 1 Murky Water##59229 |goto Twilight Highlands 50.6,58.4 |only if not achieved(5754/3)
+buy 1 Fungus Squeezings##59230 |goto Twilight Highlands 50.6,58.4 |only if not achieved(5754,1)
+buy 1 Murky Water##59229 |goto Twilight Highlands 50.6,58.4 |only if not achieved(5754,3)
 step
 Drink the Fungus Squeezings |use Fungus Squeezings##59230 |achieve 5754/1
 Drink the Murky Water |use Murky Water##59229 |achieve 5754/3
@@ -14127,15 +14153,15 @@ confirm
 step
 To earn this achievement, start by jumping between the 2 platforms and gaining 2 stacks of the speed buff
 Then, talk to Thrall and start the encounter
-_Move as fast as you can to the fourth platform where Alexstrasza is!_ |only if not achieved(6180/1)
-If you made it in time, you will see a message about Deathwing Assaulting Alexstrazsa |only if not achieved(6180/1)
-Wait for the Mutation to case Impale at least 2 times |only if not achieved(6180/1)
-Destroy the arm and move on |only if not achieved(6180/1)
-Jump to Nozdomu's platform and repeat the process, only attacking after Deathwing has began assaulting Ysera |only if not achieved(6180/3)
-Destroy the arm then move to Ysera's platform |only if not achieved(6180/4)
-Wait for Deathwing to assault Ysera, wait for impale, then destroy the arm |only if not achieved(6180/4)
-Finally, jump to Kalecgos' platform|only if not achieved(6180/2)
-Wait for impale, then destroy the arm|only if not achieved(6180/2)
+_Move as fast as you can to the fourth platform where Alexstrasza is!_ |only if not achieved(6180,1)
+If you made it in time, you will see a message about Deathwing Assaulting Alexstrazsa |only if not achieved(6180,1)
+Wait for the Mutation to case Impale at least 2 times |only if not achieved(6180,1)
+Destroy the arm and move on |only if not achieved(6180,1)
+Jump to Nozdomu's platform and repeat the process, only attacking after Deathwing has began assaulting Ysera |only if not achieved(6180,3)
+Destroy the arm then move to Ysera's platform |only if not achieved(6180,4)
+Wait for Deathwing to assault Ysera, wait for impale, then destroy the arm |only if not achieved(6180,4)
+Finally, jump to Kalecgos' platform|only if not achieved(6180,2)
+Wait for impale, then destroy the arm|only if not achieved(6180,2)
 Once you have done so, kill Deathwing for the acheivement
 |achieve 6180/1
 |achieve 6180/2

@@ -2899,8 +2899,8 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 		turnin Smash the Pumpkin##12155 |goto 60.92,53.57
 	step
 		talk Darkcaller Yanka##15197
-		accept A Time to Build Up##29376 |goto Undercity,67.4,13.0
-		accept A Time to Break Down##29377 |goto Undercity,67.4,13.0
+		accept A Time to Build Up##29376 |goto Undercity 67.4,13.0
+		accept A Time to Break Down##29377 |goto Undercity 67.4,13.0
 	step
 		click Bonfire##200
 		Use the Bonfire |q 29376/1 |goto 67.7,14.5
@@ -2914,31 +2914,31 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Dailies_Horde",[[
 		accept Clean Up in Undercity##29375 |goto 68.8,7.8
 		accept Stink Bombs Away!##29374 |goto 68.8,7.8
 	step
-		All around Undercity
+		All around Undercity:
 		Run to the Orange Smoke and clean up the stink bombs |use Arcane Cleanser##70727
-		Remove 10 Stink Bombs |q 29375/1
+		Remove #10# Stink Bombs |q 29375/1
 	step
 		talk Candace Fenlow##53763
 		turnin Clean Up in Undercity##29375 |goto 68.8,7.9
 	step
 		talk Crina Fenlow##53764
-		I'm ready to attack Stormwind! |invehicle |goto 67.5,9.2
+		Tell her _"I'm ready to attack Stormwind!"_ |invehicle |goto 67.5,9.2
 	step
-		Use the _Toss Stink Bomb_ ability on your action bar all around _Stormwind_
+		Use the _Toss Stink Bomb_ ability on your action bar all around Stormwind
 		Drop 25 Stink Bombs |q 29374/1
 		Click the _Return Home_ button on your action bar |outvehicle
 	step	
 		talk Candace Fenlow##53763
 		turnin Stink Bombs Away!##29374 |goto 68.8,7.8
 	step
-		Use the Dousing Agent in your Bags on the _Wickerman_ when you fly in front of _Stormwind_ |use Dousing Agent##68647
-		Douse the Alliance's Wickerman |q 29377/1 |goto Elwynn Forest,33.6,48.2
+		Use the Dousing Agent in your Bags on the Wickerman when you fly in front of Stormwind |use Dousing Agent##68647
+		Douse the Alliance's Wickerman |q 29377/1 |goto Elwynn Forest 33.6,48.2
 	step
 		talk Darkcaller Yanka##15197
-		turnin A Time to Break Down##29377 |goto Undercity,67.4,13.0
+		turnin A Time to Break Down##29377 |goto Undercity 67.4,13.0
 	--New Legion Daily
 	step
-		For the next part of the dailies you will need to have the new Legion Dalaran unlocked.
+		For the next part of the dailies you will need to have the new Legion Dalaran unlocked
 		confirm
 	step
 		talk Duroc Ironjaw##109854
@@ -2991,151 +2991,151 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Durotar, Razor Hill |achieve 965/15 |goto Durotar,51.5,41.6
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
+		Visit the Candy Bucket in Durotar, Razor Hill |achieve 965/15 |goto Durotar 51.5,41.6
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Orgrimmar, Valley of Strength |achieve 965/9 |goto Orgrimmar,53.9,79.0
+		Visit the Candy Bucket in Orgrimmar, Valley of Strength |achieve 965/9 |goto Orgrimmar 53.9,79.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586 
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Azshara, Bilgewater Harbor |achieve 965/21 |goto Azshara,57.1,50.2
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
+		Visit the Candy Bucket in Azshara, Bilgewater Harbor |achieve 965/21 |goto Azshara 57.1,50.2
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Winterspring, Everlook |achieve 965/6 |goto Winterspring,59.8,51.2
-	step
-		click Candy Bucket##6404
-		Complete the Candy Bucket quest |use Handful of Treats##37586
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Felwood, Whisperwind Grove |achieve 965/27 |goto Felwood,44.7,29.0
-	step
-		click Candy Bucket##6404
-		Complete the Candy Bucket quest |use Handful of Treats##37586
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Ashenvale, Splintertree Post |achieve 965/14 |goto Ashenvale,74.0,60.6
-	step
-		click Candy Bucket##6404
-		Complete the Candy Bucket quest |use Handful of Treats##37586
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Ashenvale, Silverwind Refuge |achieve 965/16 |goto Ashenvale,50.2,67.3
-	step
-		click Candy Bucket##6404
-		Complete the Candy Bucket quest |use Handful of Treats##37586
-		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Ashenvale, Hellscream's Watch |achieve 965/18 |goto Ashenvale,38.6,42.3
+		Visit the Candy Bucket in Winterspring, Everlook |achieve 965/6 |goto Winterspring 59.8,51.2
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Ashenvale, Zoram'gar Outpost |achieve 965/25 |goto Ashenvale,13.0,34.1
+		Visit the Candy Bucket in Felwood, Whisperwind Grove |achieve 965/27 |goto Felwood 44.7,29.0
+	step
+		click Candy Bucket##6404
+		Complete the Candy Bucket quest |use Handful of Treats##37586
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
+		Visit the Candy Bucket in Ashenvale, Splintertree Post |achieve 965/14 |goto Ashenvale 74.0,60.6
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Stonetalon Mountains, Sun Rock Retreat |achieve 965/3 |goto Stonetalon Mountains,50.4,63.8
+		Visit the Candy Bucket in Ashenvale, Silverwind Refuge |achieve 965/16 |goto Ashenvale 50.2,67.3
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Stonetalon Mountains, Krom'gar Fortress |achieve 965/24 |goto Stonetalon Mountains,66.5,64.2
+		Visit the Candy Bucket in Ashenvale, Hellscream's Watch |achieve 965/18 |goto Ashenvale 38.6,42.3
+	step
+		click Candy Bucket##6404
+		Complete the Candy Bucket quest |use Handful of Treats##37586
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
+		Visit the Candy Bucket in Ashenvale, Zoram'gar Outpost |achieve 965/25 |goto Ashenvale 13.0,34.1
+	step
+		click Candy Bucket##6404
+		Complete the Candy Bucket quest |use Handful of Treats##37586
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
+		Visit the Candy Bucket in Stonetalon Mountains, Sun Rock Retreat |achieve 965/3 |goto Stonetalon Mountains 50.4,63.8
+	step
+		click Candy Bucket##6404
+		Complete the Candy Bucket quest |use Handful of Treats##37586
+		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
+		Visit the Candy Bucket in Stonetalon Mountains, Krom'gar Fortress |achieve 965/24 |goto Stonetalon Mountains 66.5,64.2
 	step
 		
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Stonetalon Mountains, Nozzlepot's Outpost |achieve 965/22 |goto Northern Barrens,62.5,16.6
+		Visit the Candy Bucket in Stonetalon Mountains, Nozzlepot's Outpost |achieve 965/22 |goto Northern Barrens 62.5,16.6
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Stonetalon Mountains, Grol'dom Farm |achieve 965/17 |goto Northern Barrens,56.2,40.0
+		Visit the Candy Bucket in Stonetalon Mountains, Grol'dom Farm |achieve 965/17 |goto Northern Barrens 56.2,40.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Barrens, The Crossroads |achieve 965/1 |goto Northern Barrens,49.5,57.9
+		Visit the Candy Bucket in Barrens, The Crossroads |achieve 965/1 |goto Northern Barrens 49.5,57.9
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Barrens, Ratchet |achieve 965/7 |goto Northern Barrens,67.4,74.7
+		Visit the Candy Bucket in Barrens, Ratchet |achieve 965/7 |goto Northern Barrens 67.4,74.7
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Thunder Bluff, Lower Rise |achieve 965/4 |goto Thunder Bluff,45.6,65.0
+		Visit the Candy Bucket in Thunder Bluff, Lower Rise |achieve 965/4 |goto Thunder Bluff 45.6,65.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Mulgore, Bloodhoof Village |achieve 965/10 |goto Mulgore,46.6,61.0
+		Visit the Candy Bucket in Mulgore, Bloodhoof Village |achieve 965/10 |goto Mulgore 46.6,61.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Southern Barrens, Desolation Hold |achieve 965/23 |goto Southern Barrens,40.7,69.3
+		Visit the Candy Bucket in Southern Barrens, Desolation Hold |achieve 965/23 |goto Southern Barrens 40.7,69.3
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Southern Barrens, Hunter's Hill |achieve 965/28 |goto Southern Barrens,39.2,20.0
+		Visit the Candy Bucket in Southern Barrens, Hunter's Hill |achieve 965/28 |goto Southern Barrens 39.2,20.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Desolace, Karnum's Glade |achieve 965/26 |goto Desolace,56.7,50.1
+		Visit the Candy Bucket in Desolace, Karnum's Glade |achieve 965/26 |goto Desolace 56.7,50.1
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Desolace, Shadowprey Village |achieve 965/11 | goto Desolace,24.1,68.3
+		Visit the Candy Bucket in Desolace, Shadowprey Village |achieve 965/11 |goto Desolace 24.1,68.3
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Feralas, Camp Ataya |achieve 965/19 |goto Feralas,41.5,15.7
+		Visit the Candy Bucket in Feralas, Camp Ataya |achieve 965/19 |goto Feralas 41.5,15.7
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Feralas, Stonemaul Hold |achieve 965/20 |goto Feralas,52.0,47.6
+		Visit the Candy Bucket in Feralas, Stonemaul Hold |achieve 965/20 |goto Feralas 52.0,47.6
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Desolace, Camp Mojache |achieve 965/13 |goto Feralas,74.8,45.1
+		Visit the Candy Bucket in Desolace, Camp Mojache |achieve 965/13 |goto Feralas 74.8,45.1
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Silithus, Cenarion Hold |achieve 965/12 |goto Silithus,55.5,36.8
+		Visit the Candy Bucket in Silithus, Cenarion Hold |achieve 965/12 |goto Silithus 55.5,36.8
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Un'Goro Crater, Marshal's Stand |achieve 965/30 |goto Un'Goro Crater,55.3,62.1
+		Visit the Candy Bucket in Un'Goro Crater, Marshal's Stand |achieve 965/30 |goto Un'Goro Crater 55.3,62.1
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. |use Handful of Treats##37586
-		Visit the Candy Bucket in Tanaris, Gadgetzan |achieve 965/8 |goto Tanaris,52.6,27.1
+		Visit the Candy Bucket in Tanaris, Gadgetzan |achieve 965/8 |goto Tanaris 52.6,27.1
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Tanaris, Bootlegger Outpost |achieve 965/29 |goto Tanaris,55.8,60.9
+		Visit the Candy Bucket in Tanaris, Bootlegger Outpost |achieve 965/29 |goto Tanaris 55.8,60.9
 	step
 		talk Zidormi##63546
-		Ask her to show you Theramore before it's destruction. |goto Dustwallow Marsh 55.9,49.6
+		Tell her _"Show me Theramore before it's destruction."_ |goto Dustwallow Marsh 55.9,49.6 < 5 |walk
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Dustwallow Marsh, Brackenwall Village |achieve 965/2 |goto Dustwallow Marsh,36.8,32.4
+		Visit the Candy Bucket in Dustwallow Marsh, Brackenwall Village |achieve 965/2 |goto Dustwallow Marsh 36.8,32.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3145,22 +3145,22 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in The Cape of Stranglethorn, Booty Bay |achieve 967/5 |goto The Cape of Stranglethorn,40.9,74.0
+		Visit the Candy Bucket in The Cape of Stranglethorn, Booty Bay |achieve 967/5 |goto The Cape of Stranglethorn 40.9,74.0
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in The Cape of Stranglethorn, Hardwrench Hideaway |achieve 967/6 |goto The Cape of Stranglethorn,35.0,27.2
+		Visit the Candy Bucket in The Cape of Stranglethorn, Hardwrench Hideaway |achieve 967/6 |goto The Cape of Stranglethorn 35.0,27.2
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Stranglethorn Vale, Grom'gol Base Camp |achieve 967/15 |goto Northern Stranglethorn,37.4,51.8
+		Visit the Candy Bucket in Stranglethorn Vale, Grom'gol Base Camp |achieve 967/15 |goto Northern Stranglethorn 37.4,51.8
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Swamp of Sorrows, Stonard |achieve 967/22 |goto Swamp of Sorrows,46.9,56.9
+		Visit the Candy Bucket in Swamp of Sorrows, Stonard |achieve 967/22 |goto Swamp of Sorrows 46.9,56.9
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3170,32 +3170,32 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Badlands, New Kargath |achieve 967/3 |goto Badlands,18.4,42.7
+		Visit the Candy Bucket in Badlands, New Kargath |achieve 967/3 |goto Badlands 18.4,42.7
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Badlands, Fuselight |achieve 967/2 |goto Badlands,65.8,35.6
+		Visit the Candy Bucket in Badlands, Fuselight |achieve 967/2 |goto Badlands 65.8,35.6
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Searing Gorge, Iron Summit |achieve 967/16 |goto Searing Gorge,39.4,66.1
+		Visit the Candy Bucket in Searing Gorge, Iron Summit |achieve 967/16 |goto Searing Gorge 39.4,66.1
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Arathi Highlands, Hammerfall |achieve 967/1 |goto Arathi Highlands,69.0,33.3
+		Visit the Candy Bucket in Arathi Highlands, Hammerfall |achieve 967/1 |goto Arathi Highlands 69.0,33.3
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in The Hinterlands, Revantusk Village |achieve 967/14 |goto The Hinterlands,78.2,81.5
+		Visit the Candy Bucket in The Hinterlands, Revantusk Village |achieve 967/14 |goto The Hinterlands 78.2,81.5
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Hinterlands, Hiri'watha Research Station |achieve 967/13 |goto The Hinterlands,31.8,57.9
+		Visit the Candy Bucket in Hinterlands, Hiri'watha Research Station |achieve 967/13 |goto The Hinterlands 31.8,57.9
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest
@@ -3205,17 +3205,17 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Western Plaguelands, Andorhal |achieve 967/26 |goto Western Plaguelands,48.3,63.8
+		Visit the Candy Bucket in Western Plaguelands, Andorhal |achieve 967/26 |goto Western Plaguelands 48.3,63.8
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Ghostlands, Tranquillien |achieve 967/10 |goto Ghostlands,48.7,31.9
+		Visit the Candy Bucket in Ghostlands, Tranquillien |achieve 967/10 |goto Ghostlands 48.7,31.9
 	step
 		click Candy Bucket##6404|use Handful of Treats##37586
 		Complete the Candy Bucket quest 
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Eversong Woods, Fairbreeze Village |achieve 967/8 |goto Eversong Woods,43.7,71.0
+		Visit the Candy Bucket in Eversong Woods, Fairbreeze Village |achieve 967/8 |goto Eversong Woods 43.7,71.0
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3225,7 +3225,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Silvermoon, The Bazaar |achieve 967/17 |goto Silvermoon City,67.6,72.9
+		Visit the Candy Bucket in Silvermoon, The Bazaar |achieve 967/17 |goto Silvermoon City 67.6,72.9
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest 
@@ -3235,49 +3235,49 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Undercity, The Trade Quarter |achieve 967/25 |goto Undercity,67.8,37.4
+		Visit the Candy Bucket in Undercity, The Trade Quarter |achieve 967/25 |goto Undercity 67.8,37.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Tirisfal Glades, Brill |achieve 967/23 |goto Tirisfal Glades,61.0,51.4
+		Visit the Candy Bucket in Tirisfal Glades, Brill |achieve 967/23 |goto Tirisfal Glades 61.0,51.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Tirisfal Glades, The Bulwark |achieve 967/24 |goto Tirisfal Glades,83.0,72.1
+		Visit the Candy Bucket in Tirisfal Glades, The Bulwark |achieve 967/24 |goto Tirisfal Glades 83.0,72.1
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Silverpine Forest, The Forsaken Rear Guard |achieve 967/19 |goto Silverpine Forest,44.3,20.3
+		Visit the Candy Bucket in Silverpine Forest, The Forsaken Rear Guard |achieve 967/19 |goto Silverpine Forest 44.3,20.3
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Silverpine Forest, The Sepulcher |achieve 967/20 |goto Silverpine Forest,46.5,42.9
+		Visit the Candy Bucket in Silverpine Forest, The Sepulcher |achieve 967/20 |goto Silverpine Forest 46.5,42.9
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Hillsbrad Foothills, Tarren Mill |achieve 967/12 |goto Hillsbrad Foothills,57.9,47.3
+		Visit the Candy Bucket in Hillsbrad Foothills, Tarren Mill |achieve 967/12 |goto Hillsbrad Foothills 57.9,47.3
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Hillsbrad Foothills, Eastpoint Tower |achieve 967/11 |goto Hillsbrad Foothills,60.3,63.7
+		Visit the Candy Bucket in Hillsbrad Foothills, Eastpoint Tower |achieve 967/11 |goto Hillsbrad Foothills 60.3,63.7
 	step
 		talk Zidormi##88206
 		Tell her _"Show me the Blasted Lands before the invasion"_ |goto Blasted Lands 48.2,7.3
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Blasted Lands, Dreadmaul Hold |achieve 967/4 |goto Blasted Lands,40.4,11.3
+		Visit the Candy Bucket in Blasted Lands, Dreadmaul Hold |achieve 967/4 |goto Blasted Lands 40.4,11.3
 	step
 		click Candy Bucket##6404 
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Hellfire Peninsula, Thrallmar |achieve 968/3 |goto Hellfire Peninsula,56.8,37.4
+		Visit the Candy Bucket in Hellfire Peninsula, Thrallmar |achieve 968/3 |goto Hellfire Peninsula 56.8,37.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3287,24 +3287,24 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Shattrath City, Scryer's Tier |achieve 968/11 |goto Shattrath City,56.3,81.9
+		Visit the Candy Bucket in Shattrath City, Scryer's Tier |achieve 968/11 |goto Shattrath City 56.3,81.9
 		only if rep ('The Scryers')>=Neutral
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Shattrath City, Aldor Rise |achieve 968/12 |goto Shattrath City,28.2,49.1
+		Visit the Candy Bucket in Shattrath City, Aldor Rise |achieve 968/12 |goto Shattrath City 28.2,49.1
 		only if rep ('The Aldor')>=Neutral
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Terokkar Forest, Stonebreaker Hold |achieve 968/7 |goto Terokkar Forest,48.7,45.2
+		Visit the Candy Bucket in Terokkar Forest, Stonebreaker Hold |achieve 968/7 |goto Terokkar Forest 48.7,45.2
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Shadowmoon Valley, Shadowmoon Village |achieve 968/4 |goto Shadowmoon Valley,30.3,27.7
+		Visit the Candy Bucket in Shadowmoon Valley, Shadowmoon Village |achieve 968/4 |goto Shadowmoon Valley 30.3,27.7
 	step
 		click Candy Bucket##6404 |use Handful of Treats##37586
 		Complete the Candy Bucket quest
@@ -3321,12 +3321,12 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Nagrand, Garadar |achieve 968/14 |goto Nagrand,56.7,34.5
+		Visit the Candy Bucket in Nagrand, Garadar |achieve 968/14 |goto Nagrand 56.7,34.5
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Zangarmarsh, Zabra'jin |achieve 968/1 |goto Zangarmarsh,30.6,50.9
+		Visit the Candy Bucket in Zangarmarsh, Zabra'jin |achieve 968/1 |goto Zangarmarsh 30.6,50.9
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3336,7 +3336,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents.
-		Visit the Candy Bucket in Blade's Edge Mountains, Mok'Nathal Village |achieve 968/8 |goto Blade's Edge Mountains,76.2,60.4
+		Visit the Candy Bucket in Blade's Edge Mountains, Mok'Nathal Village |achieve 968/8 |goto Blade's Edge Mountains 76.2,60.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3351,7 +3351,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
-		Visit the Candy Bucket in Netherstorm, Area 52 |achieve 968/6 |goto Netherstorm,32.0,64.4
+		Visit the Candy Bucket in Netherstorm, Area 52 |achieve 968/6 |goto Netherstorm 32.0,64.4
 	step
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
@@ -3413,13 +3413,13 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
 		Visit the Candy Bucket in Dalaran, Sunreaver's Sanctuary |achieve 5835/6 |goto Dalaran 66.7,29.8
 	step
-		_Enter_ The Underbelly here |goto Dalaran 34.7,45.5 < 15
+		Enter The Underbelly here |goto Dalaran 34.7,45.5 < 15
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
 		Visit the Candy Bucket in Dalaran, The Underbelly |achieve 5835/7 |goto Dalaran/2 38.0,60.1
 	step
-		_Leave_ The Underbelly. |goto Dalaran/1 34.7,45.5 < 15
+		Leave The Underbelly |goto Dalaran/1 34.7,45.5 < 15
 		click Candy Bucket##6404
 		Complete the Candy Bucket quest |use Handful of Treats##37586
 		|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Candy item in your bags and take out the contents. 
@@ -3547,7 +3547,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 	step
 		You must be at least level 90 to complete this step:
 		Use the Dungeon Finder to queue for The Headless Horseman
-		from Headless Horseman##23682
+		collect Headless Horseman##23682 |n
 		Complete the Bring Me The Head of... Oh Wait achievement |achieve 255
 	step
 		Use your Tricky Treats 5 times in a row quickly 
@@ -3562,7 +3562,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		Show off your sparkling smile by using a Tooth Pick |achieve 981 |goto Undercity 67.7,6.5
 	step
 		Use your Weighted Jack-o'-Lanterns on the following races: |use Weighted Jack-o'-Lantern##34068
-		|tip You receive Weighted Jack-o'-Lanterns by doing the Hallow's End daily quests.  Make sure the player doesn't already have a jack-o-lantern on their head or you won't get credit.
+		|tip You receive Weighted Jack-o'-Lanterns by doing the Hallow's End daily quests. Make sure the player doesn't already have a jack-o-lantern on their head or you won't get credit.
 		|tip The best place to complete this is in Dalaran, but it can be done anywhere in the world.
 		Blood Elf |achieve 291/3
 		Draenei |achieve 291/4
@@ -3594,7 +3594,7 @@ ZygorGuidesViewer:RegisterInclude("Hallows_End_Achievements_Horde",[[
 		Obtain a Hallowed Helm |achieve 292/2 |goto Undercity 67.7,6.5
 	step
 		Use your G.N.E.R.D.S. |use G.N.E.R.D.S.##37583 
-		|tip Use them every 30 minutes while PvPing to keep the buff on.  If you don't have the buff active while killing players, you won't get credit.
+		|tip Use them every 30 minutes while PvPing to keep the buff on. If you don't have the buff active while killing players, you won't get credit.
 		Do any type of PvP of your choice |tip You must be killing players that give you honor.
 		Earn 10 honorable kills while under the influence of the G.N.E.R.D. buff |achieve 1261
 	step
@@ -4191,8 +4191,8 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_MainQuestline",[[
 		accept The Spinner of Summer Tales##11971 |goto Thunder Bluff 40.8,56.1
 	step
 		talk Festival Talespinner##16818
-		turnin The Spinner of Summer Tales##11971 |goto 21.6,27.7
-		accept Incense for the Festival Scorchlings##11966 |goto 21.6,27.7
+		turnin The Spinner of Summer Tales##11971 |goto 21.62,27.75
+		accept Incense for the Festival Scorchlings##11966 |goto 21.62,27.75
 	step
 		talk Master Flame Eater##26113
 		turnin Playing with Fire##11915 |goto 21.0,26.4
@@ -4228,17 +4228,18 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_MainQuestline",[[
 		accept An Innocent Disguise##11891 |goto 15.7,20.3
 	step
 		Use your Orb of the Crawler in this spot |use Orb of the Crawler##35237
-		Get the Crab Disguise |havebuff Interface\Icons\Ability_Hunter_Pet_Crab |goto 9.6,13.2
+		Get the Crab Disguise |goto 9.6,13.2
+		Click here to continue |confirm
 	step
 		Listen to the plan of the Twilight Cultists |q 11891/1 |goto 9.2,12.6
 	step
 		Use your Totemic Beacon next to the blue bonfire |use Totemic Beacon##35828
 		talk Earthen Ring Guide##25324
-		turnin An Innocent Disguise##11891 |goto 9.7,13.3
-		accept Inform the Elder##12012 |goto 9.7,13.3
+		turnin An Innocent Disguise##11891 |goto Ashenvale/0 9.29,12.42
+		accept Inform the Elder##12012 |goto 9.29,12.42
 	step
 		talk Earthen Ring Elder##26221
-		turnin Inform the Elder##12012 |goto Orgrimmar 47.2,37.6
+		turnin Inform the Elder##12012 |goto Orgrimmar 47.26,37.89
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Midsummer_Dailies",[[
@@ -4286,82 +4287,102 @@ ZygorGuidesViewer:RegisterInclude("Midsummer_Dailies",[[
 ZygorGuidesViewer:RegisterInclude("Midsummer_Achievements",[[
 	step
 		talk Midsummer Merchant##26124
-		buy 15 Juggling Torch##34599 |goto Orgrimmar 47.6,37.8 |condition achieved(272) //VERIFY THE COORDINATES, NPC WAS FOR ALLIANCE!
+		buy 15 Juggling Torch##34599 |condition itemcount(34599) >= 15 |goto Orgrimmar 47.6,37.8 
 		|tip If you can't buy these be sure to complete the quests Torch Tossing and More Torch Tossing in our Midsummer Fire Festival Main Questline and Dailies guides.
+		|only if not achieved(272)
 	step
-		Use your 40 Juggling Torches as fast as you can |use Juggling Torch##34599 
-		|tip You must juggle them all in under 15 seconds. The best way to do this is to place your Juggling Torches on your hotbar. Press the hotbar key and click the ground at the same time. Keep spamming the hotbar key and clicking the ground at the same time as fast as possible and dont stop until you get the achievement.
-		Complete the Torch Juggler Achievement |goto Dalaran,36.8,44.1 |achieve 272
+		Place the _Juggling Torches_ on your hot bar
+		You will need to juggle torches 40 times
+		Place the marker over your character and spam toss as fast as you can |use Juggling Torch##34599 
+		|tip You must juggle them all in under 15 seconds.
+		Earn the Torch Juggler achievement |achieve 272 |goto Dalaran 36.8,44.1
 	step
 		Open up your Dungeon Finder [I], and queue for The Frost Lord Ahune battle 
-		|tip You must be at least level 89 to fight Lord Ahune.
+		|tip You will need to at least be high enough to enter the dungeon queue.
 		kill Lord Ahune##25740
-		Complete the Ice the Frost Lord Achievement |achieve 263
+		Earn the Ice the Frost Lord achievement |achieve 263
 	step
 		talk Midsummer Merchant##26124
-		buy 1 Mantle of the Fire Festival##23324 |goto Undercity,68.1,11.2
-		buy 1 Vestment of Summer##34685 |goto Undercity,68.1,11.2
-		buy 1 Sandals of Summer##34683 |goto Undercity,68.1,11.2
+		buy 1 Mantle of the Fire Festival##23324 |goto Undercity 68.1,11.2
+		buy 1 Vestment of Summer##34685 |goto 68.1,11.2
+		buy 1 Sandals of Summer##34683 |goto 68.1,11.2
+		Click here to continue |confirm
 	step
 		Equip your Mantle of the Fire Festival |use Mantle of the Fire Festival##23324
 		Equip your Vestment of Summer |use Vestment of Summer##34685
 		Equip your Sandals of Summer |use Sandals of Summer##34683
 		_
-		Click the Ribbon Pole |tip It looks like a tall metal pole with a small fire on top of it
+		Click the Ribbon Pole
+		|tip It looks like a tall metal pole with a small fire on top of it
 		Let your character spin around for 1 minute
-		Complete the Burning Hot Pole Dance Achievement |goto Undercity 68.0,14.4 |achieve 271
+		Earn the Burning Hot Pole Dance achievement |achieve 271 |goto Undercity 68.0,14.4
 	step
 		click Flame of Darnassus##6756
 		collect Flame of Darnassus##23184 |n
 		Click the Flame of Darnassus in your bags |use Flame of Darnassus##23184
 		accept Stealing Darnassus's Flame##9332 |goto Darnassus 64.0,47.1 
-		|tip It is recommended that you be level 100 when attempting to complete this guide step.
+		|tip It is recommended that you be level 110 when attempting to complete this guide step.
 	step
 		click Flame of the Exodar##6756
 		collect Flame of the Exodar##35569 |n
 		Click the Flame of the Exodar in your bags |use Flame of the Exodar##35569
 		accept Stealing the Exodar's Flame##11933 |goto The Exodar 41.6,26.9 
-		|tip It is recommended that you be level 100 when attempting to complete this guide step.
+		|tip It is recommended that you be level 110 when attempting to complete this guide step.
 	step
 		click Flame of Stormwind##6756
 		collect Flame of Stormwind##23182 |n
 		Click the Flame of Stormwind in your bags |use Flame of Stormwind##23182
 		accept Stealing Stormwind's Flame##9330 |goto Stormwind City 50.0,72.6 
-		|tip It is recommended that you be level 100 when attempting to complete this guide step.
+		|tip It is recommended that you be level 110 when attempting to complete this guide step.
 	step
 		click Flame of Ironforge##6756
 		collect Flame of Ironforge##23183 |n
 		Click the Flame of Ironforge in your bags |use Flame of Ironforge##23183
 		accept Stealing Ironforge's Flame##9331 |goto Ironforge 64.3,26.0 
-		|tip It is recommended that you be level 100 when attempting to complete this guide step.
+		|tip It is recommended that you be level 110 when attempting to complete this guide step.
 	step
 		talk Festival Talespinner##16818
 		turnin Stealing Darnassus's Flame##9332 |goto Orgrimmar 47.8,38.6
-		turnin Stealing the Exodar's Flame##11933 |goto Orgrimmar 47.8,38.6
-		turnin Stealing Stormwind's Flame##9330 |goto Orgrimmar 47.8,38.6
-		turnin Stealing Ironforge's Flame##9331 |goto Orgrimmar 47.8,38.6
+		turnin Stealing the Exodar's Flame##11933 |goto 47.8,38.6
+		turnin Stealing Stormwind's Flame##9330 |goto 47.8,38.6
+		turnin Stealing Ironforge's Flame##9331 |goto 47.8,38.6
 		accept A Thief's Reward##9339 |instant
-		Earn the King of the Fire Festival Achievement |achieve 1145 |goto Orgrimmar 47.8,38.6
+		Earn the King of the Fire Festival achievement |achieve 1145
 	step
-		Complete the following achievements:
-		Flame Warden of Eastern Kingdoms |achieve 1025
-		Flame Warden of Kalimdor |achieve 1026
-		Flame Warden of Outland |achieve 1027
-		Flame Warden of Northrend |achieve 6009
-		Flame Warden of Cataclysm |achieve 6012
-		Earn the Fires of Azeroth Achievement |achieve 1036 
-		|tip Use the Midsummer Fire Festival Flame Keeper Achievement guides to accomplish this.
+		Earn the Flame Keeper of Eastern Kingdoms achievement |achieve 1025
+		Click here to load the Flame Keeper of Eastern Kingdoms guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Eastern Kingdoms"
 	step
-		Complete the following achievements:
+		Earn the Flame Keeper of Kalimdor achievement |achieve 1026
+		Click here to load the Flame Keeper of Kalimdor achievement guide |confirm|next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Kalimdor"
+	step
+		Earn the Flame Keeper of Outland achievement |achieve 1027
+		Click here to load the Flame Keeper of Outland achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Outland"
+	step
+		Earn the Flame Keeper of Northrend achievement |achieve 6009
+		Click here to load the Flame Keeper of Northrend achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Northrend"
+	step
+		Earn the Flame Keeper of Cataclysm achievement |achieve 6012
+		Click here to load the Flame Keeper of Cataclysm achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Flame Keeper of Cataclysm"
+		Earn the Fires of Azeroth achievement |achieve 1036 
+	step
 		Extinguishing Eastern Kingdoms |achieve 1031
-		Extinguishing Kalimdor |achieve 1032
-		Extinguishing Outland |achieve 1033
-		Extinguishing Northrend |achieve 6010
-		Extinguishing the Cataclysm |achieve 6014
-		Earn the Desecration of the Alliance Achievement |achieve 1037
-		tip Use the Midsummer Fire Festival Extinguishing Achievement guides to accomplish this.
+		Click here to load the Extinguishing Eastern Kingdoms achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Eastern Kingdoms"
 	step
-		Congratulations, you are now a Flame Keeper!
+		Extinguishing Kalimdor |achieve 1032
+		Click here to load the Extinguishing Kalimdor achievmeent guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Kalimdor"
+	step
+		Extinguishing Outland |achieve 1033
+		Click here to load the Extinguishing Outland achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Outland"
+	step
+		Extinguishing Northrend |achieve 6010
+		Click here to load the Extinguishing Northrend achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing Northrend"
+	step
+		Extinguishing the Cataclysm |achieve 6014
+		Click here to load the Extinguishing the Cataclysm achievement guide |confirm |next "Zygor's Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\Fires of Azeroth\\Extinguishing the Cataclysm"
+		Earn the Desecration of the Alliance Achievement |achieve 1037
+	step
+		_Congratulations!_
+		You have earned _The Flame Keeper_ achievement
 ]])
 
 ZygorGuidesViewer:RegisterInclude("Midsummer_Desecrations_EasternKingdoms",[[
